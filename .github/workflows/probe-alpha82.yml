@@ -7,13 +7,12 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect shared source page
+      - name: Inspect firestorage client bundle
         shell: bash
         run: |
           set -euxo pipefail
-          curl -L --fail --retry 3 'https://firestorage.ai/ja/f/_x66KdzeNB9x' -o share.html
-          echo "=== HTML ==="
-          cat share.html
-          echo
-          echo "=== JS SOURCES ==="
-          grep -oE '<script[^>]+src="[^"]+"' share.html || true
+          BASE='https://firestorage.ai'
+          JS='/_next/static/chunks/app/(files)/ja/f/page-4d19ae0a4ce39d79.js'
+          curl -L --fail "$BASE$JS" -o page.js
+          echo "=== MATCHES ==="
+          tr ';' '\n' < page.js | grep -Ei 'download|share|public|api/|file_id|public_id|token' | head -250 || true
