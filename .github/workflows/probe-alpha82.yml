@@ -7,17 +7,22 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Inspect firestorage client bundle
+      - name: Find firestorage file endpoints
         shell: bash
         run: |
-          set -euxo pipefail
-          for URL in \
-            'https://firestorage.ai/_next/static/chunks/app/(files)/ja/f/page-4d19ae0a4ce39d79.js' \
-            'https://firestorage.ai/_next/static/chunks/4899-d89df949f2dbd5af.js' \
-            'https://firestorage.ai/_next/static/chunks/5841-1160578ba9bb4f3e.js'; do
-            echo "=== $URL ==="
-            curl -L -sS -D - "$URL" -o bundle.js || true
-            wc -c bundle.js || true
-            cat bundle.js || true
-            echo
-          done
+          set -euo pipefail
+          curl -L --fail 'https://firestorage.ai/_next/static/chunks/4899-d89df949f2dbd5af.js' -o bundle.js
+          python3 - <<'PY'
+          import re
+          s=open('bundle.js',encoding='utf-8').read()
+          pats=[
+              r'.{0,180}(?:download|share|publicId|fileId|objects/|folders/).{0,220}',
+              r'["\x60\x27][^"\x60\x27]{0,180}(?:download|objects|folders|shares?)[^"\x60\x27]{0,180}["\x60\x27]'
+          ]
+          seen=set()
+          for pat in pats:
+              for m in re.finditer(pat,s,re.I):
+                  x=m.group(0)
+                  if x not in seen:
+                      seen.add(x); print(x)
+          PY
