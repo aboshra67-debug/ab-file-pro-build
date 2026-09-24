@@ -11,8 +11,13 @@ jobs:
         shell: bash
         run: |
           set -euxo pipefail
-          BASE='https://firestorage.ai'
-          JS='/_next/static/chunks/app/(files)/ja/f/page-4d19ae0a4ce39d79.js'
-          curl -L --fail "$BASE$JS" -o page.js
-          echo "=== MATCHES ==="
-          tr ';' '\n' < page.js | grep -Ei 'download|share|public|api/|file_id|public_id|token' | head -250 || true
+          for URL in \
+            'https://firestorage.ai/_next/static/chunks/app/(files)/ja/f/page-4d19ae0a4ce39d79.js' \
+            'https://firestorage.ai/_next/static/chunks/4899-d89df949f2dbd5af.js' \
+            'https://firestorage.ai/_next/static/chunks/5841-1160578ba9bb4f3e.js'; do
+            echo "=== $URL ==="
+            curl -L -sS -D - "$URL" -o bundle.js || true
+            wc -c bundle.js || true
+            cat bundle.js || true
+            echo
+          done
