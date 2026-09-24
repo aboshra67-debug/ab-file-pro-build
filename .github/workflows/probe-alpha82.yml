@@ -7,22 +7,15 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Find firestorage file endpoints
+      - name: Resolve direct Alpha82 source URL
         shell: bash
         run: |
-          set -euo pipefail
-          curl -L --fail 'https://firestorage.ai/_next/static/chunks/4899-d89df949f2dbd5af.js' -o bundle.js
-          python3 - <<'PY'
-          import re
-          s=open('bundle.js',encoding='utf-8').read()
-          pats=[
-              r'.{0,180}(?:download|share|publicId|fileId|objects/|folders/).{0,220}',
-              r'["\x60\x27][^"\x60\x27]{0,180}(?:download|objects|folders|shares?)[^"\x60\x27]{0,180}["\x60\x27]'
-          ]
-          seen=set()
-          for pat in pats:
-              for m in re.finditer(pat,s,re.I):
-                  x=m.group(0)
-                  if x not in seen:
-                      seen.add(x); print(x)
-          PY
+          set -euxo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='_x66KdzeNB9x'
+          curl -L --fail "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          cat list.json
+          FILE_ID="$(python3 -c 'import json; d=json.load(open("list.json")); print(d["files"][0]["fileId"])')"
+          curl -L --fail -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          echo "=== DOWNLOAD RESPONSE ==="
+          cat download.json
