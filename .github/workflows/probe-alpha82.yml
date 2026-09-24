@@ -1,0 +1,23 @@
+name: Probe Alpha82 Source
+on:
+  push:
+    paths:
+      - ".github/workflows/probe-alpha82.yml"
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe shared source
+        shell: bash
+        run: |
+          set -euxo pipefail
+          curl -L --fail --retry 3 -D headers.txt 'https://firestorage.ai/ja/f/_x66KdzeNB9x' -o payload.bin
+          echo "=== HEADERS ==="
+          cat headers.txt
+          echo "=== FILE ==="
+          file payload.bin
+          wc -c payload.bin
+          echo "=== ZIP TEST ==="
+          unzip -t payload.bin || true
+          echo "=== POSSIBLE DOWNLOAD URLS ==="
+          strings payload.bin | grep -Eo 'https?://[^"<> ]+' | head -100 || true
