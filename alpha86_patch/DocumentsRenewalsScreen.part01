@@ -1,0 +1,75 @@
+private val DocsRed = Color(0xFFFF2D32)
+private val DocsGreen = Color(0xFF12A86B)
+private val DocsAmber = Color(0xFFF2A800)
+private val DocsInk = Color(0xFF111827)
+private val DocsMuted = Color(0xFF667085)
+
+private enum class DocumentFilter { ALL, SOON, EXPIRED }
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+internal fun DocumentsRenewalsScreen(
+    entries: List<AssistantEntry>,
+    onBack: () -> Unit,
+    onAdd: (String, String, AssistantCategory, Long?, Double?, String) -> Unit,
+    onUpdate: (AssistantEntry) -> Unit,
+    onDelete: (String) -> Unit,
+) {
+    val context = LocalContext.current
+    var query by remember { mutableStateOf("") }
+    var filter by remember { mutableStateOf(DocumentFilter.ALL) }
+    var editor by remember { mutableStateOf<AssistantEntry?>(null) }
+    var adding by remember { mutableStateOf(false) }
+    var showReminder by remember { mutableStateOf(false) }
+    val permissionLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
+
+    fun ensureReminderAccess() {
+        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+            permissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !DocumentRenewalAlarmScheduler.hasExactAlarmAccess(context)) {
+            runCatching { context.startActivity(Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM)) }
+        }
+    }
+
+    val docs = entries.sortedBy { it.dueAt ?: Long.MAX_VALUE }
+    val visible = docs.filter { entry ->
+        val meta = DocumentRenewalCodec.parse(entry.secondary)
+        val queryOk = query.isBlank() || entry.title.contains(query, true) || entry.details.contains(query, true) || meta.kind.arabicName.contains(query, true)
+        val status = DocumentRenewalCodec.status(entry)
+        val filterOk = when (filter) {
+            DocumentFilter.ALL -> true
+            DocumentFilter.SOON -> status == DocumentExpiryStatus.SOON
+            DocumentFilter.EXPIRED -> status == DocumentExpiryStatus.EXPIRED
+        }
+        queryOk && filterOk
+    }
+    val near = docs.firstOrNull { DocumentRenewalCodec.status(it) == DocumentExpiryStatus.SOON }
+
+    Scaffold(
+        containerColor = Color(0xFFFCFCFD),
+        topBar = {
+            TopAppBar(
+                title = { Text("المستندات والتجديدات", fontWeight = FontWeight.Black, fontSize = 26.sp) },
+                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, "رجوع") } },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+            )
+        },
+    ) { padding ->
+        LazyColumn(
+            modifier = Modifier.fillMaxSize().padding(padding).padding(horizontal = 16.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            item { PrivacyCard() }
+            item {
+                OutlinedTextField(
+                    value = query,
+                    onValueChange = { query = it.take(80) },
+                    modifier = Modifier.fillMaxWidth(),
+                    placeholder = { Text("ابحث عن مستند...") },
+                    leadingIcon = { Icon(Icons.Default.Search, null) },
+                    singleLine = true,
+                    shape = RoundedCornerShape(24.dp),
+                )
+            }
+            item { FilterTabs(filter) { filter = it } }
