@@ -1,0 +1,25 @@
+    var title by remember(existing?.id) { mutableStateOf(existing?.title.orEmpty()) }
+    var details by remember(existing?.id) { mutableStateOf(existing?.details.orEmpty()) }
+    var kind by remember(existing?.id) { mutableStateOf(existing?.let { DocumentRenewalCodec.parse(it.secondary).kind } ?: DocumentKind.NATIONAL_ID) }
+    var expiry by remember(existing?.id) { mutableStateOf(existing?.let { DocumentRenewalCodec.expiryDate(it) } ?: LocalDate.now().plusYears(1)) }
+    var lead by remember(existing?.id) { mutableStateOf(existing?.let { DocumentRenewalCodec.leadDays(it).toString() } ?: "30") }
+    val valid = title.trim().isNotEmpty() && lead.toIntOrNull()?.let { it in 0..365 } == true
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(if (existing == null) "إضافة مستند" else "بيانات المستند", fontWeight = FontWeight.Black) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(9.dp)) {
+                OutlinedTextField(title, { title = it.take(120) }, label = { Text("اسم المستند") }, modifier = Modifier.fillMaxWidth(), singleLine = true)
+                OutlinedTextField(details, { details = it.take(500) }, label = { Text("رقم المستند / ملاحظات") }, modifier = Modifier.fillMaxWidth())
+                OutlinedButton(onClick = { kind = DocumentKind.entries[(kind.ordinal + 1) % DocumentKind.entries.size] }, modifier = Modifier.fillMaxWidth()) { Text("نوع المستند: " + kind.arabicName) }
+                OutlinedButton(onClick = {
+                    DatePickerDialog(context, { _, y, m, d -> expiry = LocalDate.of(y, m + 1, d) }, expiry.year, expiry.monthValue - 1, expiry.dayOfMonth).show()
+                }, modifier = Modifier.fillMaxWidth()) { Text("تاريخ الانتهاء: " + formatDate(expiry)) }
+                OutlinedTextField(lead, { lead = it.filter(Char::isDigit).take(3) }, label = { Text("التنبيه قبل الانتهاء بعدد الأيام") }, modifier = Modifier.fillMaxWidth(), singleLine = true)
+                if (onDelete != null) TextButton(onClick = onDelete, modifier = Modifier.fillMaxWidth()) { Icon(Icons.Default.Delete, null, tint = DocsRed); Spacer(Modifier.size(5.dp)); Text("حذف المستند", color = DocsRed) }
+            }
+        },
+        confirmButton = { Button(onClick = { onSave(title.trim(), details.trim(), kind, expiry, lead.toInt()) }, enabled = valid) { Text("حفظ") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+    )
