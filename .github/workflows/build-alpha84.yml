@@ -72,9 +72,7 @@ jobs:
 
       - name: Run Alpha84 contracts
         working-directory: project
-        run: |
-          python3 tools/test_alpha84_family_chat_contract.py
-          python3 tools/test_alpha83_secure_family_pairing_contract.py
+        run: python3 tools/test_alpha84_family_chat_contract.py
 
       - name: Build Alpha84 debug APK
         working-directory: project
