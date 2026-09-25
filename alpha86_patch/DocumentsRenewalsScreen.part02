@@ -1,0 +1,75 @@
+            item { RenewalBanner(near) { editor = near } }
+            if (visible.isEmpty()) {
+                item { EmptyCard(if (docs.isEmpty()) "لا توجد مستندات محفوظة" else "لا توجد نتائج مطابقة") }
+            } else {
+                items(visible, key = { it.id }) { entry -> DocumentCard(entry) { editor = entry } }
+            }
+            item {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Button(
+                        onClick = { ensureReminderAccess(); showReminder = true },
+                        enabled = docs.isNotEmpty(),
+                        modifier = Modifier.weight(1f).height(60.dp),
+                        shape = RoundedCornerShape(18.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE9FFF5), contentColor = DocsGreen),
+                    ) {
+                        Icon(Icons.Default.NotificationsActive, null)
+                        Spacer(Modifier.size(6.dp))
+                        Text("إضافة تنبيه تجديد", fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                    }
+                    Button(
+                        onClick = { ensureReminderAccess(); adding = true },
+                        modifier = Modifier.weight(1f).height(60.dp),
+                        shape = RoundedCornerShape(18.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = DocsRed),
+                    ) {
+                        Icon(Icons.Default.Add, null)
+                        Spacer(Modifier.size(6.dp))
+                        Text("إضافة مستند", fontWeight = FontWeight.Black)
+                    }
+                }
+                Spacer(Modifier.height(24.dp))
+            }
+        }
+    }
+
+    if (adding) {
+        DocumentEditorDialog(null, { adding = false }) { title, details, kind, expiry, lead ->
+            onAdd(title, details, AssistantCategory.PERSONAL, DocumentRenewalCodec.expiryAtNine(expiry), lead.toDouble(), DocumentRenewalCodec.encode(DocumentEntryMeta(kind)))
+            adding = false
+        }
+    }
+
+    editor?.let { entry ->
+        DocumentEditorDialog(
+            existing = entry,
+            onDismiss = { editor = null },
+            onSave = { title, details, kind, expiry, lead ->
+                onUpdate(entry.copy(title = title, details = details, dueAt = DocumentRenewalCodec.expiryAtNine(expiry), amount = lead.toDouble(), secondary = DocumentRenewalCodec.encode(DocumentEntryMeta(kind)), enabled = true, completed = false))
+                editor = null
+            },
+            onDelete = { onDelete(entry.id); editor = null },
+        )
+    }
+
+    if (showReminder) {
+        ReminderDialog(docs, { showReminder = false }) { entry, days ->
+            onUpdate(entry.copy(amount = days.toDouble(), enabled = true, completed = false))
+            showReminder = false
+        }
+    }
+}
+
+@Composable
+private fun PrivacyCard() {
+    Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = Color(0xFFE9FFF5))) {
+        Row(Modifier.fillMaxWidth().padding(18.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+            Surface(shape = RoundedCornerShape(18.dp), color = Color(0xFFD2F8E8)) {
+                Icon(Icons.Default.Security, null, tint = DocsGreen, modifier = Modifier.padding(16.dp).size(42.dp))
+            }
+            Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                Text("محفوظة بأمان على جهازك", fontSize = 21.sp, fontWeight = FontWeight.Black, color = DocsInk)
+                Text("بياناتك تبقى في جهازك فقط ولا يتم مشاركتها مع أي جهة.", color = DocsMuted, textAlign = TextAlign.Right, fontSize = 13.sp)
+            }
+        }
+    }
