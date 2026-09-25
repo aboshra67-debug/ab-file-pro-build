@@ -15,12 +15,12 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='l8_uDhf1k6o3'
+          SHARE='MHd-aPIKDPW_'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
           d=json.load(open("list.json"))
-          wanted="AB_FILE_PRO_V2_ALPHA84_FAMILY_CHAT_SAFE_SOURCE.zip"
+          wanted="AB_FILE_PRO_V2_ALPHA84_FAMILY_CHAT_SAFE_SOURCE_CLEAN.zip"
           for x in d.get("files",[]):
               if x.get("fileName")==wanted:
                   print(x["fileId"])
@@ -31,7 +31,7 @@ jobs:
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
           curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha84-source.zip
-          echo "a86e57fddf78a6c1c61319b84abd3d7be4eb8d486d33205416f9bbf16ecf69a0  alpha84-source.zip" | sha256sum -c -
+          echo "6135cfd35c8251af152c052e5bc6b60d5ade5c7a1df48b561cc5a5015a1d2bbc  alpha84-source.zip" | sha256sum -c -
           mkdir project
           unzip -q alpha84-source.zip -d project
           grep -q '2.0.0-alpha84-family-chat' project/VERSION
