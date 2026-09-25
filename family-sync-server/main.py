@@ -16,11 +16,12 @@ from psycopg.types.json import Jsonb
 DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
 APP_KEY = os.getenv("APP_KEY", "").strip()
 MAX_ITEMS = 500
+MAX_CHAT_MESSAGES = 300
 MAX_DEVICES_PER_FAMILY = 8
 PAIRING_MINUTES_NEW = 15
 PAIRING_MINUTES_REOPEN = 10
 
-app = FastAPI(title="AB File Pro Family Sync", version="2.0.0")
+app = FastAPI(title="AB File Pro Family Sync", version="3.0.0")
 
 _join_lock = Lock()
 _join_ip_hits: dict[str, deque[float]] = defaultdict(deque)
@@ -42,6 +43,14 @@ class SyncRequest(BaseModel):
 
 class DeviceRequest(BaseModel):
     deviceId: str = Field(min_length=8, max_length=100)
+
+
+class ChatMessageCreate(BaseModel):
+    deviceId: str = Field(min_length=8, max_length=100)
+    messageId: str = Field(min_length=8, max_length=100)
+    senderName: str = Field(min_length=1, max_length=80)
+    body: str = Field(min_length=1, max_length=2000)
+    createdAt: int = Field(ge=0)
 
 
 @contextmanager
@@ -174,6 +183,33 @@ def read_sync_items(conn, family_code: str) -> list[dict[str, Any]]:
     ]
 
 
+def read_chat_messages(conn, family_code: str) -> list[dict[str, Any]]:
+    rows = conn.execute(
+        """
+        SELECT message_id, device_id, sender_name, body, created_at
+        FROM (
+            SELECT message_id, device_id, sender_name, body, created_at
+            FROM family_chat_messages
+            WHERE family_code = %s
+            ORDER BY created_at DESC, stored_at DESC
+            LIMIT %s
+        ) latest
+        ORDER BY created_at ASC, message_id ASC
+        """,
+        (family_code, MAX_CHAT_MESSAGES),
+    ).fetchall()
+    return [
+        {
+            "messageId": row[0],
+            "deviceId": row[1],
+            "senderName": row[2],
+            "body": row[3],
+            "createdAt": row[4],
+        }
+        for row in rows
+    ]
+
+
 @app.on_event("startup")
 def init_db() -> None:
     if not DATABASE_URL:
@@ -218,6 +254,24 @@ def init_db() -> None:
             )
             """
         )
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS family_chat_messages (
+                family_code VARCHAR(6) NOT NULL REFERENCES family_spaces(family_code) ON DELETE CASCADE,
+                message_id VARCHAR(100) NOT NULL,
+                device_id VARCHAR(100) NOT NULL,
+                sender_name VARCHAR(80) NOT NULL,
+                body TEXT NOT NULL,
+                created_at BIGINT NOT NULL,
+                stored_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                PRIMARY KEY (family_code, message_id)
+            )
+            """
+        )
+        conn.execute(
+            "CREATE INDEX IF NOT EXISTS family_chat_messages_family_created_idx "
+            "ON family_chat_messages (family_code, created_at DESC)"
+        )
 
 
 @app.get("/health")
@@ -227,6 +281,7 @@ def health() -> dict[str, Any]:
         "databaseConfigured": bool(DATABASE_URL),
         "legacyAppKeyConfigured": bool(APP_KEY),
         "familyAuthVersion": 2,
+        "familyChatVersion": 1,
     }
 
 
@@ -333,6 +388,54 @@ def sync_family_v2(
         "familyCode": code,
         "serverTime": int(time.time() * 1000),
         "items": items,
+    }
+
+
+@app.post("/v2/families/{family_code}/chat/messages", status_code=201)
+def send_chat_message(
+    family_code: str,
+    body: ChatMessageCreate,
+    authorization: str | None = Header(default=None),
+) -> dict[str, Any]:
+    code = validate_family_code(family_code)
+    sender_name = body.senderName.strip()[:80]
+    message_body = body.body.strip()[:2000]
+    if not sender_name or not message_body:
+        raise HTTPException(status_code=400, detail="sender name and message body are required")
+    with db() as conn:
+        require_device(conn, code, authorization, body.deviceId)
+        conn.execute(
+            """
+            INSERT INTO family_chat_messages
+                (family_code, message_id, device_id, sender_name, body, created_at)
+            VALUES (%s, %s, %s, %s, %s, %s)
+            ON CONFLICT (family_code, message_id) DO NOTHING
+            """,
+            (code, body.messageId, body.deviceId, sender_name, message_body, body.createdAt),
+        )
+    return {
+        "messageId": body.messageId,
+        "deviceId": body.deviceId,
+        "senderName": sender_name,
+        "body": message_body,
+        "createdAt": body.createdAt,
+    }
+
+
+@app.post("/v2/families/{family_code}/chat/pull")
+def pull_chat_messages(
+    family_code: str,
+    body: DeviceRequest,
+    authorization: str | None = Header(default=None),
+) -> dict[str, Any]:
+    code = validate_family_code(family_code)
+    with db() as conn:
+        require_device(conn, code, authorization, body.deviceId)
+        messages = read_chat_messages(conn, code)
+    return {
+        "familyCode": code,
+        "serverTime": int(time.time() * 1000),
+        "messages": messages,
     }
 
 
