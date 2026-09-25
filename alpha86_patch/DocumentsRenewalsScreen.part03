@@ -1,0 +1,75 @@
+}
+
+@Composable
+private fun FilterTabs(selected: DocumentFilter, onSelect: (DocumentFilter) -> Unit) {
+    Surface(shape = RoundedCornerShape(25.dp), color = Color(0xFFF3F4F6)) {
+        Row(Modifier.fillMaxWidth().padding(4.dp)) {
+            listOf(DocumentFilter.EXPIRED to "منتهي", DocumentFilter.SOON to "قريب", DocumentFilter.ALL to "الكل").forEach { pair ->
+                val active = selected == pair.first
+                Surface(
+                    modifier = Modifier.weight(1f).clickable { onSelect(pair.first) },
+                    shape = RoundedCornerShape(22.dp),
+                    color = if (active) DocsRed else Color.Transparent,
+                ) { Text(pair.second, modifier = Modifier.padding(vertical = 11.dp), textAlign = TextAlign.Center, color = if (active) Color.White else DocsInk, fontWeight = FontWeight.Bold) }
+            }
+        }
+    }
+}
+
+@Composable
+private fun RenewalBanner(entry: AssistantEntry?, onOpen: () -> Unit) {
+    Card(
+        modifier = Modifier.fillMaxWidth().clickable(enabled = entry != null) { onOpen() },
+        shape = RoundedCornerShape(22.dp),
+        colors = CardDefaults.cardColors(containerColor = if (entry == null) Color(0xFFF8FAFC) else Color(0xFFFFEEEE)),
+    ) {
+        Row(Modifier.fillMaxWidth().padding(18.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            Icon(Icons.Default.Alarm, null, tint = if (entry == null) DocsMuted else DocsRed, modifier = Modifier.size(40.dp))
+            Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                val days = entry?.let { DocumentRenewalCodec.daysUntilExpiry(it) }
+                Text(if (entry == null) "لا توجد تجديدات قريبة" else "تجديد قريب خلال " + (days ?: 0) + " يومًا", fontWeight = FontWeight.Black, fontSize = 20.sp, color = if (entry == null) DocsInk else Color(0xFFB31C24))
+                Text(if (entry == null) "كل المستندات خارج فترة التنبيه." else entry.title + " على وشك الانتهاء، يرجى التجديد في الوقت المناسب.", color = DocsMuted, fontSize = 12.sp, textAlign = TextAlign.Right)
+            }
+        }
+    }
+}
+
+@Composable
+private fun DocumentCard(entry: AssistantEntry, onOpen: () -> Unit) {
+    val status = DocumentRenewalCodec.status(entry)
+    val statusText = when (status) { DocumentExpiryStatus.VALID -> "ساري"; DocumentExpiryStatus.SOON -> "قريب"; DocumentExpiryStatus.EXPIRED -> "منتهي" }
+    val statusColor = when (status) { DocumentExpiryStatus.VALID -> DocsGreen; DocumentExpiryStatus.SOON -> DocsAmber; DocumentExpiryStatus.EXPIRED -> DocsRed }
+    val statusIcon = when (status) { DocumentExpiryStatus.VALID -> Icons.Default.CheckCircle; DocumentExpiryStatus.SOON -> Icons.Default.Schedule; DocumentExpiryStatus.EXPIRED -> Icons.Default.Alarm }
+    Card(modifier = Modifier.fillMaxWidth().clickable { onOpen() }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+        Row(Modifier.fillMaxWidth().padding(16.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            Surface(shape = RoundedCornerShape(16.dp), color = statusColor.copy(alpha = .10f)) { Icon(Icons.Default.Description, null, tint = statusColor, modifier = Modifier.padding(14.dp).size(34.dp)) }
+            Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                Text(entry.title, fontWeight = FontWeight.Black, fontSize = 20.sp, color = DocsInk)
+                Text("تاريخ الانتهاء: " + formatExpiry(entry), color = DocsMuted, fontSize = 12.sp)
+                Surface(shape = RoundedCornerShape(12.dp), color = statusColor.copy(alpha = .12f)) {
+                    Row(Modifier.padding(horizontal = 9.dp, vertical = 4.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Icon(statusIcon, null, tint = statusColor, modifier = Modifier.size(15.dp))
+                        Spacer(Modifier.size(4.dp))
+                        Text(statusText, color = statusColor, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                    }
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun EmptyCard(message: String) {
+    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+        Box(Modifier.fillMaxWidth().padding(vertical = 36.dp), contentAlignment = Alignment.Center) { Text(message, color = DocsMuted, fontWeight = FontWeight.Bold) }
+    }
+}
+
+@Composable
+private fun DocumentEditorDialog(
+    existing: AssistantEntry?,
+    onDismiss: () -> Unit,
+    onSave: (String, String, DocumentKind, LocalDate, Int) -> Unit,
+    onDelete: (() -> Unit)? = null,
+) {
+    val context = LocalContext.current
