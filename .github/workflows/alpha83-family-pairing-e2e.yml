@@ -1,0 +1,150 @@
+name: Alpha83 Family Pairing E2E
+
+on:
+  push:
+    paths:
+      - ".github/workflows/alpha83-family-pairing-e2e.yml"
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Simulate two phones against Railway API
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE='https://family-sync-api-production.up.railway.app'
+          FAMILY="$(python3 - <<'PY'
+          import secrets
+          print(f"{secrets.randbelow(1000000):06d}")
+          PY
+          )"
+          DEVICE_A="phone-a-${GITHUB_RUN_ID}"
+          DEVICE_B="phone-b-${GITHUB_RUN_ID}"
+
+          python3 - "$DEVICE_A" > register.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1]}))
+          PY
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/register"             -H 'Content-Type: application/json'             --data-binary @register.json -o reg.json
+          TOKEN_A="$(python3 -c 'import json; print(json.load(open("reg.json"))["deviceToken"])')"
+          test "${#TOKEN_A}" -ge 32
+
+          python3 - "$DEVICE_B" > join.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1]}))
+          PY
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/join"             -H 'Content-Type: application/json'             --data-binary @join.json -o join_out.json
+          TOKEN_B="$(python3 -c 'import json; print(json.load(open("join_out.json"))["deviceToken"])')"
+          test "${#TOKEN_B}" -ge 32
+
+          ITEM="req-${GITHUB_RUN_ID}"
+          TS="$(date +%s%3N)"
+          python3 - "$DEVICE_A" "$ITEM" "$TS" > create.json <<'PY'
+          import json,sys
+          device,item,ts=sys.argv[1],sys.argv[2],int(sys.argv[3])
+          print(json.dumps({
+            "deviceId":device,
+            "items":[{
+              "id":item,
+              "updatedAt":ts,
+              "deleted":False,
+              "payload":{
+                "module":"family_requests",
+                "title":"اختبار تليفونين",
+                "details":"من الجهاز الأول",
+                "category":"PERSONAL",
+                "createdAt":ts,
+                "completed":False,
+                "secondary":"new|cat=OTHER|qty=1|from=أنا|to=زوجتي",
+                "enabled":True,
+                "pinned":False
+              },
+              "comment":"A"
+            }]
+          }, ensure_ascii=False))
+          PY
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/sync"             -H 'Content-Type: application/json'             -H "Authorization: Bearer $TOKEN_A"             --data-binary @create.json -o a_create.json
+
+          python3 - "$DEVICE_B" > pull_b.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1],"items":[]}))
+          PY
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/sync"             -H 'Content-Type: application/json'             -H "Authorization: Bearer $TOKEN_B"             --data-binary @pull_b.json -o b_read.json
+
+          python3 - "$ITEM" <<'PY'
+          import json,sys
+          item=sys.argv[1]
+          d=json.load(open('b_read.json'))
+          rows=[x for x in d.get('items',[]) if x.get('id')==item]
+          assert rows, 'phone B did not receive create'
+          assert rows[-1]['payload']['title']=='اختبار تليفونين'
+          assert rows[-1]['comment']=='A'
+          print('CREATE_AND_READ_PASS')
+          PY
+
+          TS2="$((TS+1000))"
+          python3 - "$DEVICE_B" "$ITEM" "$TS2" > update_b.json <<'PY'
+          import json,sys
+          device,item,ts=sys.argv[1],sys.argv[2],int(sys.argv[3])
+          print(json.dumps({
+            "deviceId":device,
+            "items":[{
+              "id":item,
+              "updatedAt":ts,
+              "deleted":False,
+              "payload":{
+                "module":"family_requests",
+                "title":"اختبار تليفونين",
+                "details":"تم التعديل من الجهاز الثاني",
+                "category":"PERSONAL",
+                "createdAt":ts-1000,
+                "completed":True,
+                "secondary":"done|cat=OTHER|qty=1|from=أنا|to=زوجتي",
+                "enabled":True,
+                "pinned":False
+              },
+              "comment":"B"
+            }]
+          }, ensure_ascii=False))
+          PY
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/sync"             -H 'Content-Type: application/json'             -H "Authorization: Bearer $TOKEN_B"             --data-binary @update_b.json -o b_update.json
+
+          python3 - "$DEVICE_A" > pull_a.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1],"items":[]}))
+          PY
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/sync"             -H 'Content-Type: application/json'             -H "Authorization: Bearer $TOKEN_A"             --data-binary @pull_a.json -o a_read2.json
+
+          python3 - "$ITEM" <<'PY'
+          import json,sys
+          item=sys.argv[1]
+          d=json.load(open('a_read2.json'))
+          rows=[x for x in d.get('items',[]) if x.get('id')==item]
+          assert rows, 'phone A did not receive update'
+          assert rows[-1]['payload']['completed'] is True
+          assert rows[-1]['comment']=='B'
+          print('UPDATE_ROUNDTRIP_PASS')
+          PY
+
+          TS3="$((TS2+1000))"
+          python3 - "$DEVICE_A" "$ITEM" "$TS3" > delete_a.json <<'PY'
+          import json,sys
+          device,item,ts=sys.argv[1],sys.argv[2],int(sys.argv[3])
+          print(json.dumps({"deviceId":device,"items":[{"id":item,"updatedAt":ts,"deleted":True,"payload":{},"comment":""}]}))
+          PY
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/sync"             -H 'Content-Type: application/json'             -H "Authorization: Bearer $TOKEN_A"             --data-binary @delete_a.json -o a_delete.json
+
+          curl --fail --silent --show-error -X POST             "$BASE/v2/families/$FAMILY/sync"             -H 'Content-Type: application/json'             -H "Authorization: Bearer $TOKEN_B"             --data-binary @pull_b.json -o b_read2.json
+
+          python3 - "$ITEM" <<'PY'
+          import json,sys
+          item=sys.argv[1]
+          d=json.load(open('b_read2.json'))
+          rows=[x for x in d.get('items',[]) if x.get('id')==item]
+          assert rows and rows[-1]['deleted'] is True, 'phone B did not receive tombstone'
+          print('DELETE_TOMBSTONE_PASS')
+          PY
+
+          echo "TWO_PHONE_E2E_PASS family=$FAMILY"
