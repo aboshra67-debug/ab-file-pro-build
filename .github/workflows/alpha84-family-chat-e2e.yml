@@ -1,0 +1,98 @@
+name: Alpha84 Family Chat E2E
+
+on:
+  push:
+    paths:
+      - ".github/workflows/alpha84-family-chat-e2e.yml"
+
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Simulate two linked phones chatting
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE='https://family-sync-api-production.up.railway.app'
+          FAMILY="$(python3 - <<'PY'
+          import secrets
+          print(f"{secrets.randbelow(1000000):06d}")
+          PY
+          )"
+          DEVICE_A="chat-phone-a-${GITHUB_RUN_ID}"
+          DEVICE_B="chat-phone-b-${GITHUB_RUN_ID}"
+
+          python3 - "$DEVICE_A" > reg.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1]}))
+          PY
+          curl --fail --silent --show-error -X POST "$BASE/v2/families/$FAMILY/register"             -H 'Content-Type: application/json' --data-binary @reg.json -o reg_out.json
+          TOKEN_A="$(python3 -c 'import json; print(json.load(open("reg_out.json"))["deviceToken"])')"
+
+          python3 - "$DEVICE_B" > join.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1]}))
+          PY
+          curl --fail --silent --show-error -X POST "$BASE/v2/families/$FAMILY/join"             -H 'Content-Type: application/json' --data-binary @join.json -o join_out.json
+          TOKEN_B="$(python3 -c 'import json; print(json.load(open("join_out.json"))["deviceToken"])')"
+
+          TS="$(date +%s%3N)"
+          MSG_A="msg-a-${GITHUB_RUN_ID}"
+          python3 - "$DEVICE_A" "$MSG_A" "$TS" > send_a.json <<'PY'
+          import json,sys
+          device,msg,ts=sys.argv[1],sys.argv[2],int(sys.argv[3])
+          print(json.dumps({
+            "deviceId":device,
+            "messageId":msg,
+            "senderName":"أحمد",
+            "body":"رسالة من الجهاز الأول",
+            "createdAt":ts
+          }, ensure_ascii=False))
+          PY
+          curl --fail --silent --show-error -X POST "$BASE/v2/families/$FAMILY/chat/messages"             -H 'Content-Type: application/json' -H "Authorization: Bearer $TOKEN_A"             --data-binary @send_a.json -o sent_a.json
+
+          python3 - "$DEVICE_B" > pull_b.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1]}))
+          PY
+          curl --fail --silent --show-error -X POST "$BASE/v2/families/$FAMILY/chat/pull"             -H 'Content-Type: application/json' -H "Authorization: Bearer $TOKEN_B"             --data-binary @pull_b.json -o b_read.json
+          python3 - "$MSG_A" <<'PY'
+          import json,sys
+          msg=sys.argv[1]
+          d=json.load(open('b_read.json'))
+          rows=[x for x in d.get('messages',[]) if x.get('messageId')==msg]
+          assert rows, 'phone B did not receive phone A message'
+          assert rows[-1]['body']=='رسالة من الجهاز الأول'
+          print('A_TO_B_CHAT_PASS')
+          PY
+
+          TS2="$((TS+1000))"
+          MSG_B="msg-b-${GITHUB_RUN_ID}"
+          python3 - "$DEVICE_B" "$MSG_B" "$TS2" > send_b.json <<'PY'
+          import json,sys
+          device,msg,ts=sys.argv[1],sys.argv[2],int(sys.argv[3])
+          print(json.dumps({
+            "deviceId":device,
+            "messageId":msg,
+            "senderName":"الطرف الآخر",
+            "body":"تم الاستلام من الجهاز الثاني",
+            "createdAt":ts
+          }, ensure_ascii=False))
+          PY
+          curl --fail --silent --show-error -X POST "$BASE/v2/families/$FAMILY/chat/messages"             -H 'Content-Type: application/json' -H "Authorization: Bearer $TOKEN_B"             --data-binary @send_b.json -o sent_b.json
+
+          python3 - "$DEVICE_A" > pull_a.json <<'PY'
+          import json,sys
+          print(json.dumps({"deviceId":sys.argv[1]}))
+          PY
+          curl --fail --silent --show-error -X POST "$BASE/v2/families/$FAMILY/chat/pull"             -H 'Content-Type: application/json' -H "Authorization: Bearer $TOKEN_A"             --data-binary @pull_a.json -o a_read.json
+          python3 - "$MSG_A" "$MSG_B" <<'PY'
+          import json,sys
+          a,b=sys.argv[1],sys.argv[2]
+          d=json.load(open('a_read.json'))
+          ids={x.get('messageId') for x in d.get('messages',[])}
+          assert a in ids and b in ids, 'phone A did not receive complete conversation'
+          print('B_TO_A_CHAT_PASS')
+          print('TWO_PHONE_CHAT_E2E_PASS')
+          PY
