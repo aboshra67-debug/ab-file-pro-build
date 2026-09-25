@@ -15,7 +15,7 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='8JZVEZ4hqsVK'
+          SHARE='-K50bwOpAk57'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
@@ -31,7 +31,7 @@ jobs:
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
           curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha85-source.zip
-          echo "23c3c152997413030d43a6af5f0f89d07b6191c31cdecbdcaf83a17834e0c2fa  alpha85-source.zip" | sha256sum -c -
+          echo "b1bbb69379afed7cff971485b6041096092a458f81b2aa2fd8d2e4d2786603a5  alpha85-source.zip" | sha256sum -c -
           mkdir project
           unzip -q alpha85-source.zip -d project
           grep -q '2.0.0-alpha85-health-medication' project/VERSION
