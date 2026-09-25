@@ -1,0 +1,12 @@
+}
+
+@Composable
+private fun ReminderDialog(documents: List<AssistantEntry>, onDismiss: () -> Unit, onSave: (AssistantEntry, Int) -> Unit) {
+    var selected by remember { mutableStateOf(documents.firstOrNull()?.id.orEmpty()) }
+    var lead by remember { mutableStateOf(documents.firstOrNull()?.let { DocumentRenewalCodec.leadDays(it).toString() } ?: "30") }
+    val current = documents.firstOrNull { it.id == selected }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("إضافة تنبيه تجديد", fontWeight = FontWeight.Black) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(7.dp)) {
