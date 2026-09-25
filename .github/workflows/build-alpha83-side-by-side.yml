@@ -1,0 +1,90 @@
+name: Build Alpha83 Side By Side Test
+on:
+  push:
+    paths:
+      - '.github/workflows/build-alpha83-side-by-side.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Download exact Alpha83 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='30LQ49AZglTM'
+          curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          d=json.load(open('list.json'))
+          wanted='AB_FILE_PRO_V2_ALPHA83_FAMILY_SECURE_PAIRING_SAFE_SOURCE.zip'
+          for x in d.get('files',[]):
+              if x.get('fileName')==wanted:
+                  print(x['fileId']); break
+          PY
+          )
+          test -n "$FILE_ID"
+          curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha83-source.zip
+          echo 'b572a27574eb32790544c6b4008e5bb76d0b6d2283e008562b666b8b4a6d34cd  alpha83-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q alpha83-source.zip -d project
+
+      - name: Patch side-by-side test identity only
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('project/app/build.gradle.kts')
+          s=p.read_text()
+          needle='''        debug {\n            if (originalSigningReady) {'''
+          repl='''        debug {\n            applicationIdSuffix = ".alpha83test"\n            versionNameSuffix = "-side-by-side"\n            if (originalSigningReady) {'''
+          if needle not in s:
+              raise SystemExit('debug block not found')
+          p.write_text(s.replace(needle,repl,1))
+          m=Path('project/app/src/main/AndroidManifest.xml')
+          ms=m.read_text()
+          m.write_text(ms.replace('android:label="AB File Pro"','android:label="AB File Pro A83 Test"',1))
+          PY
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle 8.11.1
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Build side-by-side APK
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+
+      - name: Verify and package
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK='project/app/build/outputs/apk/debug/app-debug.apk'
+          AAPT=$(find /usr/local/lib/android/sdk/build-tools -type f -name aapt | sort -V | tail -n 1)
+          BADGING=$($AAPT dump badging "$APK" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app.alpha83test'"
+          echo "$BADGING" | grep -q "versionCode='144'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha83-family-secure-pairing-side-by-side'"
+          cp "$APK" AB_FILE_PRO_V2_ALPHA83_SECURE_PAIRING_SIDE_BY_SIDE_TEST.apk
+          sha256sum AB_FILE_PRO_V2_ALPHA83_SECURE_PAIRING_SIDE_BY_SIDE_TEST.apk > AB_FILE_PRO_V2_ALPHA83_SECURE_PAIRING_SIDE_BY_SIDE_TEST.apk.sha256.txt
+
+      - name: Upload side-by-side test APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: AB_FILE_PRO_V2_ALPHA83_SIDE_BY_SIDE_TEST
+          path: |
+            AB_FILE_PRO_V2_ALPHA83_SECURE_PAIRING_SIDE_BY_SIDE_TEST.apk
+            AB_FILE_PRO_V2_ALPHA83_SECURE_PAIRING_SIDE_BY_SIDE_TEST.apk.sha256.txt
+          if-no-files-found: error
+          retention-days: 7
