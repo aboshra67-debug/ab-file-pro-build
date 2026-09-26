@@ -1,0 +1,7 @@
+                OutlinedTextField(
+                    value = lead,
+                    onValueChange = { lead = it.filter(Char::isDigit).take(3) },
+                    label = { Text("التنبيه قبل الانتهاء بعدد الأيام") },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                )
