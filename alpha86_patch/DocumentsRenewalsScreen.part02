@@ -7,7 +7,7 @@
             item {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     Button(
-                        onClick = { ensureReminderAccess(); showReminder = true },
+                        onClick = { ensureReminderAccess(); editor = near ?: docs.firstOrNull() },
                         enabled = docs.isNotEmpty(),
                         modifier = Modifier.weight(1f).height(60.dp),
                         shape = RoundedCornerShape(18.dp),
