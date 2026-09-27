@@ -1,9 +1,10 @@
-name: Build AB File Pro Alpha95
+name: Build AB File Pro Alpha96
 
 on:
   push:
     paths:
       - ".github/workflows/build-alpha84.yml"
+      - "alpha96_patch_parts/**"
 
 permissions:
   contents: read
@@ -12,8 +13,11 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 40
     steps:
+      - name: Checkout Alpha96 patch
+        uses: actions/checkout@v4
+
       - name: Download exact Alpha95 Safe Source
         shell: bash
         run: |
@@ -41,17 +45,19 @@ jobs:
           unzip -q alpha95-source.zip -d project
           grep -q '2.0.0-alpha95-price-comparison-live' project/VERSION
           grep -q 'versionCode = 156' project/app/build.gradle.kts
-          grep -q 'versionName = "2.0.0-alpha95-price-comparison-live"' project/app/build.gradle.kts
 
-      - name: Validate Alpha95 price comparison live
+      - name: Apply Alpha96 classic UI safe patch
         shell: bash
         run: |
           set -euo pipefail
-          python3 project/tools/test_alpha95_price_comparison_live_contract.py
-          grep -q 'RENTAL_CONTRACT("rental_contract", "عقد إيجار")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
-          grep -q 'VISA("visa", "تأشيرة / فيزا")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
-          ! grep -q 'AssistantModule.DOCUMENTS' project/app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt
-          echo "Alpha95 price comparison live contract: PASS"
+          cat alpha96_patch_parts/*.b64 > alpha96.patch.b64
+          base64 -d alpha96.patch.b64 > alpha96.patch
+          echo "76a739f3af59714707e28d9751f23ba74503b27222c5a5807fcf8eba5f4e531f  alpha96.patch" | sha256sum -c -
+          patch -d project -p1 < alpha96.patch
+          grep -q '2.0.0-alpha96-price-comparison-classic-ui' project/VERSION
+          grep -q 'versionCode = 157' project/app/build.gradle.kts
+          grep -q 'versionName = "2.0.0-alpha96-price-comparison-classic-ui"' project/app/build.gradle.kts
+          python3 project/tools/test_alpha96_price_comparison_classic_ui_contract.py
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -85,11 +91,11 @@ jobs:
           curl -fL --retry 3 -o "$D/ara.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/ara.traineddata
           curl -fL --retry 3 -o "$D/fra.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/fra.traineddata
 
-      - name: Build Alpha95 debug APK
+      - name: Build Alpha96 debug APK
         working-directory: project
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
-      - name: Verify and package Alpha95
+      - name: Verify and package Alpha96
         shell: bash
         run: |
           set -euo pipefail
@@ -100,19 +106,19 @@ jobs:
           BADGING="$($AAPT dump badging "$APK" | head -n 1)"
           echo "$BADGING"
           echo "$BADGING" | grep -q "name='com.abfilepro.app'"
-          echo "$BADGING" | grep -q "versionCode='156'"
-          echo "$BADGING" | grep -q "versionName='2.0.0-alpha95-price-comparison-live'"
+          echo "$BADGING" | grep -q "versionCode='157'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha96-price-comparison-classic-ui'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
-          cp "$APK" release/AB_FILE_PRO_V2_ALPHA95_PRICE_COMPARISON_LIVE_ARM64_TEST_DEBUG_SIGNED.apk
-          cp alpha95-source.zip release/AB_FILE_PRO_V2_ALPHA95_PRICE_COMPARISON_LIVE_SAFE_SOURCE.zip
-          cp project/PATCH_REPORT_V2_ALPHA95_PRICE_COMPARISON_LIVE.txt release/
-          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA95_PRICE_COMPARISON_LIVE_SHA256SUMS.txt
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA96_PRICE_COMPARISON_CLASSIC_UI_ARM64_TEST_DEBUG_SIGNED.apk
+          cp project/PATCH_REPORT_V2_ALPHA96_PRICE_COMPARISON_CLASSIC_UI.txt release/
+          (cd project && zip -qr ../release/AB_FILE_PRO_V2_ALPHA96_PRICE_COMPARISON_CLASSIC_UI_SAFE_SOURCE.zip . -x '.gradle/*' 'build/*' 'app/build/*' '*.jks')
+          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA96_PRICE_COMPARISON_CLASSIC_UI_SHA256SUMS.txt
 
-      - name: Upload Alpha95 package
+      - name: Upload Alpha96 package
         uses: actions/upload-artifact@v4
         with:
-          name: AB_FILE_PRO_V2_ALPHA95_PRICE_COMPARISON_LIVE
+          name: AB_FILE_PRO_V2_ALPHA96_PRICE_COMPARISON_CLASSIC_UI
           path: release/*
           if-no-files-found: error
           retention-days: 7
