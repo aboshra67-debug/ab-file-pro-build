@@ -1,0 +1,71 @@
+                OutlinedTextField(
+                    value = query,
+                    onValueChange = { query = it.take(80) },
+                    modifier = Modifier.fillMaxWidth(),
+                    singleLine = true,
+                    placeholder = { Text("ابحث عن مستند...") },
+                    leadingIcon = { Icon(Icons.Default.Search, null) },
+                    shape = RoundedCornerShape(28.dp),
+                )
+            }
+            item {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    listOf(DocumentFilter.EXPIRED to "منتهي", DocumentFilter.SOON to "قريب", DocumentFilter.ALL to "الكل").forEach { (value, label) ->
+                        val active = value == filter
+                        Surface(
+                            modifier = Modifier.weight(1f).clickable { filter = value },
+                            shape = RoundedCornerShape(22.dp),
+                            color = if (active) DocsRed else Color(0xFFF5F5F6),
+                        ) {
+                            Text(label, modifier = Modifier.padding(vertical = 12.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold, color = if (active) Color.White else DocsInk)
+                        }
+                    }
+                }
+            }
+            near?.let { entry ->
+                item {
+                    Card(modifier = Modifier.fillMaxWidth().clickable { editing = entry }, shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF0F0))) {
+                        Row(Modifier.fillMaxWidth().padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Icon(Icons.Default.NotificationsActive, null, tint = DocsRed, modifier = Modifier.size(46.dp))
+                            Spacer(Modifier.width(14.dp))
+                            Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                                val days = DocumentRenewalCodec.daysUntilExpiry(entry) ?: 0
+                                Text("تجديد قريب خلال $days يومًا", fontWeight = FontWeight.Black, fontSize = 20.sp, color = DocsRed)
+                                Text(entry.title, fontWeight = FontWeight.Bold, color = DocsInk)
+                                Text("يرجى التجديد في الوقت المناسب.", color = DocsMuted)
+                            }
+                        }
+                    }
+                }
+            }
+            if (visible.isEmpty()) {
+                item {
+                    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+                        Text(if (docs.isEmpty()) "لا توجد مستندات محفوظة" else "لا توجد نتائج مطابقة", modifier = Modifier.fillMaxWidth().padding(34.dp), textAlign = TextAlign.Center, color = DocsMuted)
+                    }
+                }
+            } else {
+                items(visible, key = { it.id }) { entry ->
+                    val status = DocumentRenewalCodec.status(entry)
+                    val statusText = when (status) { DocumentExpiryStatus.VALID -> "ساري"; DocumentExpiryStatus.SOON -> "قريب"; DocumentExpiryStatus.EXPIRED -> "منتهي" }
+                    val statusColor = when (status) { DocumentExpiryStatus.VALID -> DocsGreen; DocumentExpiryStatus.SOON -> DocsAmber; DocumentExpiryStatus.EXPIRED -> DocsRed }
+                    Card(modifier = Modifier.fillMaxWidth().clickable { editing = entry }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+                        Row(Modifier.fillMaxWidth().padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Icon(Icons.Default.Description, null, tint = statusColor, modifier = Modifier.size(40.dp))
+                            Spacer(Modifier.width(12.dp))
+                            Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                                Text(entry.title, fontWeight = FontWeight.Black, fontSize = 19.sp, color = DocsInk)
+                                val date = DocumentRenewalCodec.expiryDate(entry)?.format(DateTimeFormatter.ofPattern("d MMMM yyyy", Locale("ar"))).orEmpty()
+                                if (date.isNotBlank()) Text("تاريخ الانتهاء: $date", color = DocsMuted, fontSize = 12.sp)
+                                Text(statusText, color = statusColor, fontWeight = FontWeight.Black)
+                            }
+                            Icon(Icons.Default.ChevronLeft, null, tint = DocsInk)
+                        }
+                    }
+                }
+            }
+            item {
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Button(
+                        onClick = { ensureReminderAccess(); showAdd = true },
+                        modifier = Modifier.weight(1f).height(60.dp),
