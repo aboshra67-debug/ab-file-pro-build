@@ -1,4 +1,4 @@
-name: Build AB File Pro Alpha82
+name: Build AB File Pro Alpha95
 on:
   push:
     paths:
@@ -13,13 +13,13 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='_x66KdzeNB9x'
+          SHARE='i1QI9_vBu-rI'
           curl -L --fail --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID="$(python3 -c 'import json; d=json.load(open("list.json")); print(d["files"][0]["fileId"])')"
           curl -L --fail --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL="$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')"
-          curl -L --fail --retry 3 "$DOWNLOAD_URL" -o alpha82-source.zip
-          echo "0528a8dcc4a6bf73987a27979ab997140bc0ddb04a87192534ea4fb4e5e42b2a  alpha82-source.zip" | sha256sum -c -
+          curl -L --fail --retry 3 "$DOWNLOAD_URL" -o alpha95-source.zip
+          echo "b632d4389689b7983333192dff9c70d8f34c8fde89d31a4f02928cca93a5dc84  alpha82-source.zip" | sha256sum -c -
           mkdir -p android
           unzip -q alpha82-source.zip -d android
           test -f android/settings.gradle.kts
@@ -36,9 +36,9 @@ jobs:
         with:
           gradle-version: "8.11.1"
 
-      - name: Run Alpha82 contract tests
+      - name: Run Alpha95 contract tests
         working-directory: android
-        run: python3 tools/test_alpha82_family_cloud_sync_contract.py
+        run: python3 tools/test_alpha95_price_comparison_live_contract.py
 
       - name: Build debug APK
         working-directory: android
