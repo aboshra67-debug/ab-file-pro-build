@@ -1,4 +1,4 @@
-name: Build AB File Pro Alpha91
+name: Build AB File Pro Alpha92
 
 on:
   push:
@@ -14,18 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Download exact Alpha91 Safe Source
+      - name: Download exact Alpha92 Safe Source
         shell: bash
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='0C4p69AtC_Xk'
-          WANT='AB_FILE_PRO_V2_ALPHA91_ASSISTANT_TOP_COORDINATE_FIX_SAFE_SOURCE.zip'
+          SHARE='rSopCuJMRwMw'
+          WANT='AB_FILE_PRO_V2_ALPHA91_REMOVE_EMPTY_NEXT_LABEL_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
           d=json.load(open("list.json"))
-          wanted="AB_FILE_PRO_V2_ALPHA91_ASSISTANT_TOP_COORDINATE_FIX_SAFE_SOURCE.zip"
+          wanted="AB_FILE_PRO_V2_ALPHA91_REMOVE_EMPTY_NEXT_LABEL_SAFE_SOURCE.zip"
           for x in d.get("files",[]):
               if x.get("fileName")==wanted:
                   print(x["fileId"])
@@ -35,23 +35,23 @@ jobs:
           test -n "$FILE_ID"
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
-          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha91-source.zip
-          echo "a79e1887f4a679af4296922bd0e270440fa832f60bf1de064cbc353b948569c5  alpha91-source.zip" | sha256sum -c -
+          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha92-source.zip
+          echo "170c034d52acd392ab7dd0929efb25bccd6a96b94b2d7347640cdc1b379ec4f8  alpha92-source.zip" | sha256sum -c -
           mkdir project
-          unzip -q alpha91-source.zip -d project
-          grep -q '2.0.0-alpha91-assistant-top-coordinate-fix' project/VERSION
-          grep -q 'versionCode = 152' project/app/build.gradle.kts
-          grep -q 'versionName = "2.0.0-alpha91-assistant-top-coordinate-fix"' project/app/build.gradle.kts
+          unzip -q alpha92-source.zip -d project
+          grep -q '2.0.0-alpha92-remove-empty-next-label' project/VERSION
+          grep -q 'versionCode = 153' project/app/build.gradle.kts
+          grep -q 'versionName = "2.0.0-alpha92-remove-empty-next-label"' project/app/build.gradle.kts
 
-      - name: Validate Alpha91 assistant top coordinate fix
+      - name: Validate Alpha92 assistant top coordinate fix
         shell: bash
         run: |
           set -euo pipefail
-          python3 project/tools/test_alpha91_assistant_top_coordinate_fix_contract.py
+          python3 project/tools/test_alpha92_remove_empty_next_label_contract.py
           grep -q 'RENTAL_CONTRACT("rental_contract", "عقد إيجار")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
           grep -q 'VISA("visa", "تأشيرة / فيزا")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
           ! grep -q 'AssistantModule.DOCUMENTS' project/app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt
-          echo "Alpha91 assistant top coordinate fix contract: PASS"
+          echo "Alpha92 remove empty next label contract: PASS"
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -85,11 +85,11 @@ jobs:
           curl -fL --retry 3 -o "$D/ara.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/ara.traineddata
           curl -fL --retry 3 -o "$D/fra.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/fra.traineddata
 
-      - name: Build Alpha91 debug APK
+      - name: Build Alpha92 debug APK
         working-directory: project
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
-      - name: Verify and package Alpha91
+      - name: Verify and package Alpha92
         shell: bash
         run: |
           set -euo pipefail
@@ -100,19 +100,19 @@ jobs:
           BADGING="$($AAPT dump badging "$APK" | head -n 1)"
           echo "$BADGING"
           echo "$BADGING" | grep -q "name='com.abfilepro.app'"
-          echo "$BADGING" | grep -q "versionCode='152'"
-          echo "$BADGING" | grep -q "versionName='2.0.0-alpha91-assistant-top-coordinate-fix'"
+          echo "$BADGING" | grep -q "versionCode='153'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha92-remove-empty-next-label'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
-          cp "$APK" release/AB_FILE_PRO_V2_ALPHA91_ASSISTANT_TOP_COORDINATE_FIX_ARM64_TEST_DEBUG_SIGNED.apk
-          cp alpha91-source.zip release/AB_FILE_PRO_V2_ALPHA91_ASSISTANT_TOP_COORDINATE_FIX_SAFE_SOURCE.zip
-          cp project/PATCH_REPORT_V2_ALPHA91_ASSISTANT_TOP_COORDINATE_FIX.txt release/
-          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA91_ASSISTANT_TOP_COORDINATE_FIX_SHA256SUMS.txt
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA91_REMOVE_EMPTY_NEXT_LABEL_ARM64_TEST_DEBUG_SIGNED.apk
+          cp alpha92-source.zip release/AB_FILE_PRO_V2_ALPHA91_REMOVE_EMPTY_NEXT_LABEL_SAFE_SOURCE.zip
+          cp project/PATCH_REPORT_V2_ALPHA91_REMOVE_EMPTY_NEXT_LABEL.txt release/
+          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA91_REMOVE_EMPTY_NEXT_LABEL_SHA256SUMS.txt
 
-      - name: Upload Alpha91 package
+      - name: Upload Alpha92 package
         uses: actions/upload-artifact@v4
         with:
-          name: AB_FILE_PRO_V2_ALPHA91_ASSISTANT_TOP_COORDINATE_FIX
+          name: AB_FILE_PRO_V2_ALPHA91_REMOVE_EMPTY_NEXT_LABEL
           path: release/*
           if-no-files-found: error
           retention-days: 7
