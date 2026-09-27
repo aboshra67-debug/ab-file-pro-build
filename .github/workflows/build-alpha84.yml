@@ -1,4 +1,4 @@
-name: Build AB File Pro Alpha86
+name: Build AB File Pro Alpha87
 
 on:
   push:
@@ -14,184 +14,47 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Checkout overlay
-        uses: actions/checkout@v4
-
-      - name: Download exact Alpha85 artifact baseline
-        shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          curl -L --fail --silent --show-error             -H "Authorization: Bearer $GH_TOKEN"             -H "Accept: application/vnd.github+json"             "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/artifacts/10874894552/zip"             -o alpha85-artifact.zip
-          mkdir artifact
-          unzip -q alpha85-artifact.zip -d artifact
-          SRC="artifact/AB_FILE_PRO_V2_ALPHA85_HEALTH_MEDICATION_SAFE_SOURCE.zip"
-          test -s "$SRC"
-          mkdir project
-          unzip -q "$SRC" -d project
-          grep -q '2.0.0-alpha85-health-medication' project/VERSION
-          grep -q 'versionCode = 146' project/app/build.gradle.kts
-
-      - name: Apply Alpha86 documents safe patch
+      - name: Download exact Alpha87 Safe Source
         shell: bash
         run: |
           set -euo pipefail
-          ASSIST="project/app/src/main/java/com/abfilepro/app/assistant"
-          UI="project/app/src/main/java/com/abfilepro/app/ui/screens/assistant"
-
-          cp alpha86_patch/DocumentRenewalCodec.kt "$ASSIST/DocumentRenewalCodec.kt"
-          cp alpha86_patch/DocumentRenewalAlarmScheduler.kt "$ASSIST/DocumentRenewalAlarmScheduler.kt"
-          cp alpha86_patch/DocumentRenewalAlarmReceiver.kt "$ASSIST/DocumentRenewalAlarmReceiver.kt"
-          cat alpha86_patch/docs_part0.ktfrag alpha86_patch/docs_part1.ktfrag alpha86_patch/docs_part2.ktfrag > "$UI/DocumentsRenewalsScreen.kt"
-
-          python3 - <<'PY'
-          from pathlib import Path
-
-          root=Path("project")
-          (root/"VERSION").write_text("2.0.0-alpha86-documents-renewals\n", encoding="utf-8")
-
-          p=root/"app/build.gradle.kts"
-          s=p.read_text(encoding="utf-8")
-          s=s.replace("versionCode = 146", "versionCode = 147")
-          s=s.replace('versionName = "2.0.0-alpha85-health-medication"', 'versionName = "2.0.0-alpha86-documents-renewals"')
-          p.write_text(s,encoding="utf-8")
-
-          p=root/"app/src/main/AndroidManifest.xml"
-          s=p.read_text(encoding="utf-8")
-          needle='''        <receiver
-                      android:name=".assistant.TaskRescheduleReceiver"'''
-          insert='''        <receiver
-                      android:name=".assistant.DocumentRenewalAlarmReceiver"
-                      android:exported="false" />
-
-                  <receiver
-                      android:name=".assistant.TaskRescheduleReceiver"'''
-          if ".assistant.DocumentRenewalAlarmReceiver" not in s:
-              if needle not in s: raise SystemExit("manifest anchor missing")
-              s=s.replace(needle,insert,1)
-          p.write_text(s,encoding="utf-8")
-
-          p=root/"app/src/main/java/com/abfilepro/app/assistant/TaskRescheduleReceiver.kt"
-          s=p.read_text(encoding="utf-8")
-          anchor="        HealthAlarmScheduler.rescheduleAll(context)\n"
-          if "DocumentRenewalAlarmScheduler.rescheduleAll(context)" not in s:
-              if anchor not in s: raise SystemExit("reschedule anchor missing")
-              s=s.replace(anchor, anchor+"        DocumentRenewalAlarmScheduler.rescheduleAll(context)\n",1)
-          p.write_text(s,encoding="utf-8")
-
-          p=root/"app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantModuleScreens.kt"
-          s=p.read_text(encoding="utf-8")
-          block='''    // Alpha86: documents & renewals native local-only screen.
-              if (module == AssistantModule.DOCUMENTS) {
-                  DocumentsRenewalsScreen(
-                      entries = entries,
-                      onBack = onBack,
-                      onAdd = onAdd,
-                      onUpdate = onUpdate,
-                      onDelete = onDelete,
-                  )
-                  return
-              }
-
-          '''
-          anchor="    // Alpha85: health & medication is a real native operational screen.\n"
-          if "DocumentsRenewalsScreen(" not in s:
-              if anchor not in s: raise SystemExit("module screen anchor missing")
-              s=s.replace(anchor,block+anchor,1)
-          p.write_text(s,encoding="utf-8")
-
-          p=root/"app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt"
-          s=p.read_text(encoding="utf-8")
-          add_anchor='''                if (module == AssistantModule.HEALTH) {
-                              entries.firstOrNull()?.let { com.abfilepro.app.assistant.HealthAlarmScheduler.sync(context, it) }
-                          }
-          '''
-          add_block='''                if (module == AssistantModule.DOCUMENTS) {
-                              entries.firstOrNull()?.let { com.abfilepro.app.assistant.DocumentRenewalAlarmScheduler.sync(context, it) }
-                          }
-          '''
-          if "if (module == AssistantModule.DOCUMENTS)" not in s:
-              if add_anchor not in s: raise SystemExit("add sync anchor missing")
-              s=s.replace(add_anchor,add_anchor+add_block,1)
-
-          update_anchor='''                if (entry.module == AssistantModule.HEALTH) {
-                              com.abfilepro.app.assistant.HealthAlarmScheduler.sync(context, entry)
-                          }
-          '''
-          update_block='''                if (entry.module == AssistantModule.DOCUMENTS) {
-                              com.abfilepro.app.assistant.DocumentRenewalAlarmScheduler.sync(context, entry)
-                          }
-          '''
-          if "if (entry.module == AssistantModule.DOCUMENTS)" not in s:
-              if update_anchor not in s: raise SystemExit("update sync anchor missing")
-              s=s.replace(update_anchor,update_anchor+update_block,1)
-
-          delete_anchor='''                if (module == AssistantModule.HEALTH) {
-                              com.abfilepro.app.assistant.HealthAlarmScheduler.cancel(context, id)
-                          }
-          '''
-          delete_block='''                if (module == AssistantModule.DOCUMENTS) {
-                              com.abfilepro.app.assistant.DocumentRenewalAlarmScheduler.cancel(context, id)
-                          }
-          '''
-          if "DocumentRenewalAlarmScheduler.cancel(context, id)" not in s:
-              if delete_anchor not in s: raise SystemExit("delete sync anchor missing")
-              s=s.replace(delete_anchor,delete_anchor+delete_block,1)
-          p.write_text(s,encoding="utf-8")
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='2qndvo10XbJs'
+          WANT='AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SAFE_SOURCE.zip'
+          curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          d=json.load(open("list.json"))
+          wanted="AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SAFE_SOURCE.zip"
+          for x in d.get("files",[]):
+              if x.get("fileName")==wanted:
+                  print(x["fileId"])
+                  break
           PY
+          )
+          test -n "$FILE_ID"
+          curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha87-source.zip
+          echo "bff2b3afeddea7c762202584c096052a25d4fdb7b9643337fbe0c25d318ef713  alpha87-source.zip" | sha256sum -c -
+          mkdir project
+          unzip -q alpha87-source.zip -d project
+          grep -q '2.0.0-alpha87-documents-ui-types' project/VERSION
+          grep -q 'versionCode = 148' project/app/build.gradle.kts
+          grep -q 'versionName = "2.0.0-alpha87-documents-ui-types"' project/app/build.gradle.kts
 
-          cat > project/PATCH_REPORT_V2_ALPHA86_DOCUMENTS_RENEWALS.txt <<'EOF'
-          AB File Pro V2 - Alpha86 Documents & Renewals Safe Patch
-          Baseline: Alpha85 Health & Medication
-          Version Code: 147
-          Version Name: 2.0.0-alpha86-documents-renewals
-
-          Added:
-          - Native Documents & Renewals screen.
-          - Local-only document metadata storage using existing AssistantRepository.
-          - Search and filters: all / soon / expired.
-          - Expiry status and next-renewal warning.
-          - National ID, driver license, passport, car insurance and other document types.
-          - Add, edit and delete documents.
-          - Configurable renewal reminder lead days.
-          - Exact local renewal alarm and notification receiver.
-          - Boot/time/package rescheduling.
-
-          Preserved:
-          - Alpha85 health and medication.
-          - Alpha84 family chat.
-          - Alpha83 secure family pairing.
-          - Family requests and shopping linkage.
-          - OCR and all existing modules.
-
-          Privacy:
-          - Documents are intentionally local-only and are not added to FamilyCloudSync.
-          - No working code or user data was removed.
-          EOF
-
-      - name: Validate Alpha86 patch
+      - name: Validate Alpha87 safe patch
         shell: bash
         run: |
           set -euo pipefail
-          grep -q '2.0.0-alpha86-documents-renewals' project/VERSION
-          grep -q 'versionCode = 147' project/app/build.gradle.kts
-          grep -q 'DocumentsRenewalsScreen(' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantModuleScreens.kt
-          grep -q 'محفوظة بأمان على جهازك' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
-          grep -q 'ابحث عن مستند' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
-          grep -q 'إضافة مستند' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
-          grep -q 'التنبيه قبل الانتهاء بعدد الأيام' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
-          grep -q 'setExactAndAllowWhileIdle' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalAlarmScheduler.kt
-          grep -q '.assistant.DocumentRenewalAlarmReceiver' project/app/src/main/AndroidManifest.xml
+          python3 project/tools/test_alpha87_documents_ui_types_contract.py
+          grep -q 'RENTAL_CONTRACT("rental_contract", "عقد إيجار")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
+          grep -q 'VISA("visa", "تأشيرة / فيزا")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
+          grep -q 'ExposedDropdownMenuBox' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
+          grep -q 'تاريخ بداية العقد' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
+          grep -q 'تاريخ الإصدار' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
           ! grep -q 'AssistantModule.DOCUMENTS' project/app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt
-          echo "Alpha86 contract: PASS"
-
-      - name: Prepare Safe Source
-        shell: bash
-        run: |
-          set -euo pipefail
-          rm -rf project/app/build project/.gradle
-          (cd project && zip -qr ../AB_FILE_PRO_V2_ALPHA86_DOCUMENTS_RENEWALS_SAFE_SOURCE.zip . -x 'app/src/main/assets/tessdata/*.traineddata')
+          echo "Alpha87 safe-patch contract: PASS"
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -225,11 +88,11 @@ jobs:
           curl -fL --retry 3 -o "$D/ara.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/ara.traineddata
           curl -fL --retry 3 -o "$D/fra.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/fra.traineddata
 
-      - name: Build Alpha86 debug APK
+      - name: Build Alpha87 debug APK
         working-directory: project
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
-      - name: Verify and package Alpha86
+      - name: Verify and package Alpha87
         shell: bash
         run: |
           set -euo pipefail
@@ -240,19 +103,19 @@ jobs:
           BADGING="$($AAPT dump badging "$APK" | head -n 1)"
           echo "$BADGING"
           echo "$BADGING" | grep -q "name='com.abfilepro.app'"
-          echo "$BADGING" | grep -q "versionCode='147'"
-          echo "$BADGING" | grep -q "versionName='2.0.0-alpha86-documents-renewals'"
+          echo "$BADGING" | grep -q "versionCode='148'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha87-documents-ui-types'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
-          cp "$APK" release/AB_FILE_PRO_V2_ALPHA86_DOCUMENTS_RENEWALS_ARM64_TEST_DEBUG_SIGNED.apk
-          cp AB_FILE_PRO_V2_ALPHA86_DOCUMENTS_RENEWALS_SAFE_SOURCE.zip release/
-          cp project/PATCH_REPORT_V2_ALPHA86_DOCUMENTS_RENEWALS.txt release/
-          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA86_DOCUMENTS_RENEWALS_SHA256SUMS.txt
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_ARM64_TEST_DEBUG_SIGNED.apk
+          cp alpha87-source.zip release/AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SAFE_SOURCE.zip
+          cp project/PATCH_REPORT_V2_ALPHA87_DOCUMENTS_UI_TYPES.txt release/
+          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SHA256SUMS.txt
 
-      - name: Upload Alpha86 package
+      - name: Upload Alpha87 package
         uses: actions/upload-artifact@v4
         with:
-          name: AB_FILE_PRO_V2_ALPHA86_DOCUMENTS_RENEWALS
+          name: AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES
           path: release/*
           if-no-files-found: error
           retention-days: 7
