@@ -19,7 +19,7 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='7tePIfnMnsOe'
+          SHARE='pgw6zY12xNn7'
           WANT='AB_FILE_PRO_V2_ALPHA90_ASSISTANT_TOP_FIX_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
@@ -36,7 +36,7 @@ jobs:
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
           curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha90-source.zip
-          echo "cfba8e24f769d4b91e69adc053f2d2ba0fff4b09831920fbf8b4cbb534176367  alpha90-source.zip" | sha256sum -c -
+          echo "c0ad66ce3739c7f4d603451745a40b668021ed7716e097e65630910c88f72922  alpha90-source.zip" | sha256sum -c -
           mkdir project
           unzip -q alpha90-source.zip -d project
           grep -q '2.0.0-alpha90-assistant-top-fix' project/VERSION
