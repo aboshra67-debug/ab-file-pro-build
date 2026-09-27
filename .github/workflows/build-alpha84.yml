@@ -19,7 +19,7 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='yaEkryna8xi8'
+          SHARE='9H7i5nCNhg_X'
           WANT='AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
@@ -36,7 +36,7 @@ jobs:
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
           curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha89-source.zip
-          echo "7d0c323d1366e56edc5ee9072800cfd21c972ba1a6049786d27c41ffe43cd081  alpha89-source.zip" | sha256sum -c -
+          echo "6cdedadcbd047816734cc00eaabf740b1d917a68896e4c0e7bb46ef3a6052cea  alpha89-source.zip" | sha256sum -c -
           mkdir project
           unzip -q alpha89-source.zip -d project
           grep -q '2.0.0-alpha89-classic-assistant-live' project/VERSION
