@@ -20,12 +20,12 @@ jobs:
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
           SHARE='yBi77GO5fNdK'
-          WANT='AB_FILE_PRO_V2_ALPHA93_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip'
+          WANT='AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
           d=json.load(open("list.json"))
-          wanted="AB_FILE_PRO_V2_ALPHA93_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip"
+          wanted="AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip"
           for x in d.get("files",[]):
               if x.get("fileName")==wanted:
                   print(x["fileId"])
@@ -104,15 +104,15 @@ jobs:
           echo "$BADGING" | grep -q "versionName='2.0.0-alpha94-summary-card-polish'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
-          cp "$APK" release/AB_FILE_PRO_V2_ALPHA93_SUMMARY_CARD_POLISH_ARM64_TEST_DEBUG_SIGNED.apk
-          cp alpha94-source.zip release/AB_FILE_PRO_V2_ALPHA93_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip
-          cp project/PATCH_REPORT_V2_ALPHA93_SUMMARY_CARD_POLISH.txt release/
-          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA93_SUMMARY_CARD_POLISH_SHA256SUMS.txt
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_ARM64_TEST_DEBUG_SIGNED.apk
+          cp alpha94-source.zip release/AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip
+          cp project/PATCH_REPORT_V2_ALPHA94_SUMMARY_CARD_POLISH.txt release/
+          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SHA256SUMS.txt
 
       - name: Upload Alpha94 package
         uses: actions/upload-artifact@v4
         with:
-          name: AB_FILE_PRO_V2_ALPHA93_SUMMARY_CARD_POLISH
+          name: AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH
           path: release/*
           if-no-files-found: error
           retention-days: 7
