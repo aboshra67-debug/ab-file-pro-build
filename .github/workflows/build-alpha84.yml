@@ -1,4 +1,4 @@
-name: Build AB File Pro Alpha89
+name: Build AB File Pro Alpha90
 
 on:
   push:
@@ -14,18 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Download exact Alpha89 Safe Source
+      - name: Download exact Alpha90 Safe Source
         shell: bash
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='9H7i5nCNhg_X'
-          WANT='AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip'
+          SHARE='7tePIfnMnsOe'
+          WANT='AB_FILE_PRO_V2_ALPHA90_ASSISTANT_TOP_FIX_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
           d=json.load(open("list.json"))
-          wanted="AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip"
+          wanted="AB_FILE_PRO_V2_ALPHA90_ASSISTANT_TOP_FIX_SAFE_SOURCE.zip"
           for x in d.get("files",[]):
               if x.get("fileName")==wanted:
                   print(x["fileId"])
@@ -35,23 +35,23 @@ jobs:
           test -n "$FILE_ID"
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
-          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha89-source.zip
-          echo "6cdedadcbd047816734cc00eaabf740b1d917a68896e4c0e7bb46ef3a6052cea  alpha89-source.zip" | sha256sum -c -
+          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha90-source.zip
+          echo "cfba8e24f769d4b91e69adc053f2d2ba0fff4b09831920fbf8b4cbb534176367  alpha90-source.zip" | sha256sum -c -
           mkdir project
-          unzip -q alpha89-source.zip -d project
-          grep -q '2.0.0-alpha89-classic-assistant-live' project/VERSION
-          grep -q 'versionCode = 150' project/app/build.gradle.kts
-          grep -q 'versionName = "2.0.0-alpha89-classic-assistant-live"' project/app/build.gradle.kts
+          unzip -q alpha90-source.zip -d project
+          grep -q '2.0.0-alpha90-assistant-top-fix' project/VERSION
+          grep -q 'versionCode = 151' project/app/build.gradle.kts
+          grep -q 'versionName = "2.0.0-alpha90-assistant-top-fix"' project/app/build.gradle.kts
 
-      - name: Validate Alpha89 classic assistant live
+      - name: Validate Alpha90 assistant top fix
         shell: bash
         run: |
           set -euo pipefail
-          python3 project/tools/test_alpha89_classic_assistant_live_contract.py
+          python3 project/tools/test_alpha90_assistant_top_fix_contract.py
           grep -q 'RENTAL_CONTRACT("rental_contract", "عقد إيجار")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
           grep -q 'VISA("visa", "تأشيرة / فيزا")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
           ! grep -q 'AssistantModule.DOCUMENTS' project/app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt
-          echo "Alpha89 classic assistant live contract: PASS"
+          echo "Alpha90 assistant top fix contract: PASS"
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -85,11 +85,11 @@ jobs:
           curl -fL --retry 3 -o "$D/ara.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/ara.traineddata
           curl -fL --retry 3 -o "$D/fra.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/fra.traineddata
 
-      - name: Build Alpha89 debug APK
+      - name: Build Alpha90 debug APK
         working-directory: project
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
-      - name: Verify and package Alpha89
+      - name: Verify and package Alpha90
         shell: bash
         run: |
           set -euo pipefail
@@ -100,19 +100,19 @@ jobs:
           BADGING="$($AAPT dump badging "$APK" | head -n 1)"
           echo "$BADGING"
           echo "$BADGING" | grep -q "name='com.abfilepro.app'"
-          echo "$BADGING" | grep -q "versionCode='150'"
-          echo "$BADGING" | grep -q "versionName='2.0.0-alpha89-classic-assistant-live'"
+          echo "$BADGING" | grep -q "versionCode='151'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha90-assistant-top-fix'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
-          cp "$APK" release/AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_ARM64_TEST_DEBUG_SIGNED.apk
-          cp alpha89-source.zip release/AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip
-          cp project/PATCH_REPORT_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE.txt release/
-          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SHA256SUMS.txt
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA90_ASSISTANT_TOP_FIX_ARM64_TEST_DEBUG_SIGNED.apk
+          cp alpha90-source.zip release/AB_FILE_PRO_V2_ALPHA90_ASSISTANT_TOP_FIX_SAFE_SOURCE.zip
+          cp project/PATCH_REPORT_V2_ALPHA90_ASSISTANT_TOP_FIX.txt release/
+          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA90_ASSISTANT_TOP_FIX_SHA256SUMS.txt
 
-      - name: Upload Alpha89 package
+      - name: Upload Alpha90 package
         uses: actions/upload-artifact@v4
         with:
-          name: AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE
+          name: AB_FILE_PRO_V2_ALPHA90_ASSISTANT_TOP_FIX
           path: release/*
           if-no-files-found: error
           retention-days: 7
