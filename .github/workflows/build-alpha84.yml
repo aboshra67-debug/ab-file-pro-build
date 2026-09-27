@@ -20,12 +20,12 @@ jobs:
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
           SHARE='yaEkryna8xi8'
-          WANT='AB_FILE_PRO_V2_ALPHA88_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip'
+          WANT='AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
           d=json.load(open("list.json"))
-          wanted="AB_FILE_PRO_V2_ALPHA88_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip"
+          wanted="AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip"
           for x in d.get("files",[]):
               if x.get("fileName")==wanted:
                   print(x["fileId"])
@@ -43,7 +43,7 @@ jobs:
           grep -q 'versionCode = 150' project/app/build.gradle.kts
           grep -q 'versionName = "2.0.0-alpha89-classic-assistant-live"' project/app/build.gradle.kts
 
-      - name: Validate Alpha89 assistant hardening
+      - name: Validate Alpha89 classic assistant live
         shell: bash
         run: |
           set -euo pipefail
@@ -104,15 +104,15 @@ jobs:
           echo "$BADGING" | grep -q "versionName='2.0.0-alpha89-classic-assistant-live'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
-          cp "$APK" release/AB_FILE_PRO_V2_ALPHA88_CLASSIC_ASSISTANT_LIVE_ARM64_TEST_DEBUG_SIGNED.apk
-          cp alpha89-source.zip release/AB_FILE_PRO_V2_ALPHA88_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip
-          cp project/PATCH_REPORT_V2_ALPHA88_CLASSIC_ASSISTANT_LIVE.txt release/
-          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA88_CLASSIC_ASSISTANT_LIVE_SHA256SUMS.txt
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_ARM64_TEST_DEBUG_SIGNED.apk
+          cp alpha89-source.zip release/AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SAFE_SOURCE.zip
+          cp project/PATCH_REPORT_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE.txt release/
+          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE_SHA256SUMS.txt
 
       - name: Upload Alpha89 package
         uses: actions/upload-artifact@v4
         with:
-          name: AB_FILE_PRO_V2_ALPHA88_CLASSIC_ASSISTANT_LIVE
+          name: AB_FILE_PRO_V2_ALPHA89_CLASSIC_ASSISTANT_LIVE
           path: release/*
           if-no-files-found: error
           retention-days: 7
