@@ -14,18 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Download exact Alpha94 Safe Source
+      - name: Download exact Alpha95 Safe Source
         shell: bash
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='yBi77GO5fNdK'
-          WANT='AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip'
+          SHARE='OB6ld8OunCaj'
+          WANT='AB_FILE_PRO_V2_ALPHA95_PRICE_COMPARISON_LIVE_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
           d=json.load(open("list.json"))
-          wanted="AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip"
+          wanted="AB_FILE_PRO_V2_ALPHA95_PRICE_COMPARISON_LIVE_SAFE_SOURCE.zip"
           for x in d.get("files",[]):
               if x.get("fileName")==wanted:
                   print(x["fileId"])
@@ -35,13 +35,13 @@ jobs:
           test -n "$FILE_ID"
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
-          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha94-source.zip
-          echo "ed1ce26227d397e0c8a84d7d4bc43e718f8de5f6a9ccf04738d8cfdb60b7b53f  alpha94-source.zip" | sha256sum -c -
+          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha95-source.zip
+          echo "96e3375165a54e1fa3cd539bff43be60ab84231121d73739803546a3f1d65aa6  alpha95-source.zip" | sha256sum -c -
           mkdir project
-          unzip -q alpha94-source.zip -d project
-          grep -q '2.0.0-alpha94-summary-card-polish' project/VERSION
-          grep -q 'versionCode = 155' project/app/build.gradle.kts
-          grep -q 'versionName = "2.0.0-alpha94-summary-card-polish"' project/app/build.gradle.kts
+          unzip -q alpha95-source.zip -d project
+          grep -q '2.0.0-alpha95-price-comparison-live' project/VERSION
+          grep -q 'versionCode = 156' project/app/build.gradle.kts
+          grep -q 'versionName = "2.0.0-alpha95-price-comparison-live"' project/app/build.gradle.kts
 
       - name: Validate Alpha94 summary card polish
         shell: bash
@@ -101,11 +101,11 @@ jobs:
           echo "$BADGING"
           echo "$BADGING" | grep -q "name='com.abfilepro.app'"
           echo "$BADGING" | grep -q "versionCode='155'"
-          echo "$BADGING" | grep -q "versionName='2.0.0-alpha94-summary-card-polish'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha95-price-comparison-live'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
           cp "$APK" release/AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_ARM64_TEST_DEBUG_SIGNED.apk
-          cp alpha94-source.zip release/AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SAFE_SOURCE.zip
+          cp alpha95-source.zip release/AB_FILE_PRO_V2_ALPHA95_PRICE_COMPARISON_LIVE_SAFE_SOURCE.zip
           cp project/PATCH_REPORT_V2_ALPHA94_SUMMARY_CARD_POLISH.txt release/
           sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA94_SUMMARY_CARD_POLISH_SHA256SUMS.txt
 
