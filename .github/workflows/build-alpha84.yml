@@ -1,4 +1,4 @@
-name: Build AB File Pro Alpha87
+name: Build AB File Pro Alpha88
 
 on:
   push:
@@ -14,18 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
-      - name: Download exact Alpha87 Safe Source
+      - name: Download exact Alpha88 Safe Source
         shell: bash
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='2qndvo10XbJs'
-          WANT='AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SAFE_SOURCE.zip'
+          SHARE='Mug48SOsxvtY'
+          WANT='AB_FILE_PRO_V2_ALPHA88_ASSISTANT_HARDENING_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
           import json
           d=json.load(open("list.json"))
-          wanted="AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SAFE_SOURCE.zip"
+          wanted="AB_FILE_PRO_V2_ALPHA88_ASSISTANT_HARDENING_SAFE_SOURCE.zip"
           for x in d.get("files",[]):
               if x.get("fileName")==wanted:
                   print(x["fileId"])
@@ -35,26 +35,23 @@ jobs:
           test -n "$FILE_ID"
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
-          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha87-source.zip
-          echo "bff2b3afeddea7c762202584c096052a25d4fdb7b9643337fbe0c25d318ef713  alpha87-source.zip" | sha256sum -c -
+          curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha88-source.zip
+          echo "a9a5db4bba1de58563c4197ec1e08a3405dfe5e705e099f68fa9f83a0dc93bed  alpha88-source.zip" | sha256sum -c -
           mkdir project
-          unzip -q alpha87-source.zip -d project
-          grep -q '2.0.0-alpha87-documents-ui-types' project/VERSION
-          grep -q 'versionCode = 148' project/app/build.gradle.kts
-          grep -q 'versionName = "2.0.0-alpha87-documents-ui-types"' project/app/build.gradle.kts
+          unzip -q alpha88-source.zip -d project
+          grep -q '2.0.0-alpha88-assistant-hardening' project/VERSION
+          grep -q 'versionCode = 149' project/app/build.gradle.kts
+          grep -q 'versionName = "2.0.0-alpha88-assistant-hardening"' project/app/build.gradle.kts
 
-      - name: Validate Alpha87 safe patch
+      - name: Validate Alpha88 assistant hardening
         shell: bash
         run: |
           set -euo pipefail
-          python3 project/tools/test_alpha87_documents_ui_types_contract.py
+          python3 project/tools/test_alpha88_personal_assistant_hardening_contract.py
           grep -q 'RENTAL_CONTRACT("rental_contract", "عقد إيجار")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
           grep -q 'VISA("visa", "تأشيرة / فيزا")' project/app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
-          grep -q 'ExposedDropdownMenuBox' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
-          grep -q 'تاريخ بداية العقد' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
-          grep -q 'تاريخ الإصدار' project/app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
           ! grep -q 'AssistantModule.DOCUMENTS' project/app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt
-          echo "Alpha87 safe-patch contract: PASS"
+          echo "Alpha88 assistant hardening contract: PASS"
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -88,11 +85,11 @@ jobs:
           curl -fL --retry 3 -o "$D/ara.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/ara.traineddata
           curl -fL --retry 3 -o "$D/fra.traineddata" https://github.com/tesseract-ocr/tessdata_fast/raw/main/fra.traineddata
 
-      - name: Build Alpha87 debug APK
+      - name: Build Alpha88 debug APK
         working-directory: project
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
-      - name: Verify and package Alpha87
+      - name: Verify and package Alpha88
         shell: bash
         run: |
           set -euo pipefail
@@ -103,19 +100,19 @@ jobs:
           BADGING="$($AAPT dump badging "$APK" | head -n 1)"
           echo "$BADGING"
           echo "$BADGING" | grep -q "name='com.abfilepro.app'"
-          echo "$BADGING" | grep -q "versionCode='148'"
-          echo "$BADGING" | grep -q "versionName='2.0.0-alpha87-documents-ui-types'"
+          echo "$BADGING" | grep -q "versionCode='149'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha88-assistant-hardening'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee apksigner.txt
           mkdir -p release
-          cp "$APK" release/AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_ARM64_TEST_DEBUG_SIGNED.apk
-          cp alpha87-source.zip release/AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SAFE_SOURCE.zip
-          cp project/PATCH_REPORT_V2_ALPHA87_DOCUMENTS_UI_TYPES.txt release/
-          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES_SHA256SUMS.txt
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA88_ASSISTANT_HARDENING_ARM64_TEST_DEBUG_SIGNED.apk
+          cp alpha88-source.zip release/AB_FILE_PRO_V2_ALPHA88_ASSISTANT_HARDENING_SAFE_SOURCE.zip
+          cp project/PATCH_REPORT_V2_ALPHA88_ASSISTANT_HARDENING.txt release/
+          sha256sum release/* > release/AB_FILE_PRO_V2_ALPHA88_ASSISTANT_HARDENING_SHA256SUMS.txt
 
-      - name: Upload Alpha87 package
+      - name: Upload Alpha88 package
         uses: actions/upload-artifact@v4
         with:
-          name: AB_FILE_PRO_V2_ALPHA87_DOCUMENTS_UI_TYPES
+          name: AB_FILE_PRO_V2_ALPHA88_ASSISTANT_HARDENING
           path: release/*
           if-no-files-found: error
           retention-days: 7
