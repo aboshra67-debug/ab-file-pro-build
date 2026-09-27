@@ -1,0 +1,83 @@
+                        shape = RoundedCornerShape(18.dp),
+                        colors = ButtonDefaults.buttonColors(containerColor = DocsRed),
+                    ) { Icon(Icons.Default.Add, null); Spacer(Modifier.width(6.dp)); Text("إضافة مستند", fontWeight = FontWeight.Black) }
+                    OutlinedButton(
+                        onClick = { ensureReminderAccess() },
+                        enabled = docs.isNotEmpty(),
+                        modifier = Modifier.weight(1f).height(60.dp),
+                        shape = RoundedCornerShape(18.dp),
+                    ) { Icon(Icons.Default.Alarm, null); Spacer(Modifier.width(6.dp)); Text("إضافة تنبيه تجديد", fontWeight = FontWeight.Black) }
+                }
+                Spacer(Modifier.height(24.dp))
+            }
+        }
+    }
+
+    if (showAdd) {
+        DocumentEditorDialog(null, { showAdd = false }) { title, details, kind, expiry, lead ->
+            onAdd(title, details, AssistantCategory.PERSONAL, DocumentRenewalCodec.expiryAtNine(expiry), lead.toDouble(), DocumentRenewalCodec.encode(DocumentEntryMeta(kind)))
+            showAdd = false
+        }
+    }
+    editing?.let { entry ->
+        DocumentEditorDialog(
+            existing = entry,
+            onDismiss = { editing = null },
+            onDelete = { onDelete(entry.id); editing = null },
+        ) { title, details, kind, expiry, lead ->
+            onUpdate(entry.copy(title = title, details = details, dueAt = DocumentRenewalCodec.expiryAtNine(expiry), amount = lead.toDouble(), secondary = DocumentRenewalCodec.encode(DocumentEntryMeta(kind)), enabled = true, completed = false))
+            editing = null
+        }
+    }
+}
+
+@Composable
+private fun DocumentEditorDialog(
+    existing: AssistantEntry?,
+    onDismiss: () -> Unit,
+    onDelete: (() -> Unit)? = null,
+    onSave: (String, String, DocumentKind, LocalDate, Int) -> Unit,
+) {
+    val context = LocalContext.current
+    val initialMeta = existing?.let { DocumentRenewalCodec.parse(it.secondary) } ?: DocumentEntryMeta()
+    var title by remember(existing?.id) { mutableStateOf(existing?.title.orEmpty()) }
+    var details by remember(existing?.id) { mutableStateOf(existing?.details.orEmpty()) }
+    var kind by remember(existing?.id) { mutableStateOf(initialMeta.kind) }
+    var expiry by remember(existing?.id) { mutableStateOf(existing?.let { DocumentRenewalCodec.expiryDate(it) } ?: LocalDate.now().plusYears(1)) }
+    var leadText by remember(existing?.id) { mutableStateOf((existing?.let { DocumentRenewalCodec.leadDays(it) } ?: 30).toString()) }
+    val valid = title.isNotBlank() && leadText.toIntOrNull() != null
+
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(if (existing == null) "إضافة مستند" else "تعديل المستند", fontWeight = FontWeight.Black) },
+        text = {
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                OutlinedTextField(title, { title = it.take(80) }, label = { Text("اسم المستند") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                OutlinedTextField(details, { details = it.take(160) }, label = { Text("ملاحظات") }, modifier = Modifier.fillMaxWidth())
+                Text("نوع المستند", fontWeight = FontWeight.Bold)
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(5.dp)) {
+                    DocumentKind.entries.take(4).forEach { value ->
+                        val selected = value == kind
+                        Surface(modifier = Modifier.weight(1f).clickable { kind = value }, shape = RoundedCornerShape(12.dp), color = if (selected) Color(0xFFFFE8E8) else Color(0xFFF4F4F5)) {
+                            Text(value.arabicName, modifier = Modifier.padding(7.dp), textAlign = TextAlign.Center, fontSize = 10.sp, fontWeight = FontWeight.Bold, color = if (selected) DocsRed else DocsInk)
+                        }
+                    }
+                }
+                OutlinedButton(
+                    onClick = {
+                        DatePickerDialog(context, { _, y, m, d -> expiry = LocalDate.of(y, m + 1, d) }, expiry.year, expiry.monthValue - 1, expiry.dayOfMonth).show()
+                    },
+                    modifier = Modifier.fillMaxWidth(),
+                ) { Text("تاريخ الانتهاء: " + expiry.format(DateTimeFormatter.ISO_LOCAL_DATE)) }
+                OutlinedTextField(leadText, { leadText = it.filter(Char::isDigit).take(3) }, label = { Text("التنبيه قبل الانتهاء بعدد الأيام") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+            }
+        },
+        confirmButton = { TextButton(enabled = valid, onClick = { onSave(title.trim(), details.trim(), kind, expiry, leadText.toInt().coerceIn(0,365)) }) { Text("حفظ") } },
+        dismissButton = {
+            Row {
+                if (onDelete != null) TextButton(onClick = onDelete) { Text("حذف", color = DocsRed) }
+                TextButton(onClick = onDismiss) { Text("إلغاء") }
+            }
+        },
+    )
+}
