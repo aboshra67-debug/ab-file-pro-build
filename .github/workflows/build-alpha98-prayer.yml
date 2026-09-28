@@ -1,0 +1,93 @@
+name: Build AB File Pro Alpha98 Prayer UI
+on:
+  push:
+    paths:
+      - ".github/workflows/build-alpha98-prayer.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Retrieve verified exact Alpha98 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='YNdoXqLmEaVC'
+          WANT='AB_FILE_PRO_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH_SAFE_SOURCE.zip'
+          curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          data = json.load(open('list.json'))
+          for item in data.get('files', []):
+              if item.get('fileName') == 'AB_FILE_PRO_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH_SAFE_SOURCE.zip':
+                  print(item['fileId'])
+                  break
+          PY
+          )
+          test -n "$FILE_ID"
+          curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl --fail -L --retry 3 "$URL" -o alpha98-source.zip
+          echo 'c3046b3afc3c85ef2f10ee19261d3cda6c17e69f0f81e11bf4fa82c61a482ab9  alpha98-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q alpha98-source.zip -d project
+          grep -q '^2.0.0-alpha98-prayer-ui-reference-polish$' project/VERSION
+          grep -q 'versionCode = 159' project/app/build.gradle.kts
+          test -s project/app/src/main/res/drawable-nodpi/prayer_mosque_banner.png
+      - name: Check all Alpha98 source and server contracts
+        run: |
+          set -euo pipefail
+          python3 project/tools/test_alpha98_prayer_ui_contract.py
+          python3 -m py_compile project/family-sync-server/main.py
+          test -s project/app/src/main/assets/tessdata/ara.traineddata
+          test -s project/app/src/main/assets/tessdata/eng.traineddata
+          test -s project/app/src/main/assets/tessdata/fra.traineddata
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Set up Android SDK 36
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK_ROOT="/usr/local/lib/android/sdk"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+      - name: Build and package real APK
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+      - name: Verify APK identity and signature
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$APK"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$APK" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app'"
+          echo "$BADGING" | grep -q "versionCode='159'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha98-prayer-ui-reference-polish'"
+          "$APKSIGNER" verify --verbose --print-certs "$APK" | tee verify.txt
+          mkdir -p release
+          cp "$APK" release/AB_FILE_PRO_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH_ARM64_TEST_DEBUG_SIGNED.apk
+          cp project/PATCH_REPORT_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH.txt release/
+          sha256sum release/*.apk > release/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AB_FILE_PRO_V2_ALPHA98_PRAYER_UI
+          path: release/*
+          if-no-files-found: error
+          retention-days: 7
