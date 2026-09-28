@@ -1,0 +1,112 @@
+name: Build Alpha99 Independent Install Preview
+on:
+  push:
+    paths:
+      - ".github/workflows/build-alpha99-independent-preview.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Retrieve verified exact Alpha99 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='Ix8ESS8mHCCp'
+          WANT='AB_FILE_PRO_V2_ALPHA99_CALCULATOR_CURRENCY_UI_SAFE_SOURCE.zip'
+          curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          data = json.load(open('list.json'))
+          for item in data.get('files', []):
+              if item.get('fileName') == 'AB_FILE_PRO_V2_ALPHA99_CALCULATOR_CURRENCY_UI_SAFE_SOURCE.zip':
+                  print(item['fileId'])
+                  break
+          PY
+          )
+          test -n "$FILE_ID"
+          curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl --fail -L --retry 3 "$URL" -o alpha99-source.zip
+          echo '70ae7f77fbc22aba37e3da1d86daeb5860e1ebba376c3a1fbdaea93437548828  alpha99-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q alpha99-source.zip -d project
+          grep -q '^2.0.0-alpha99-calculator-currency-ui$' project/VERSION
+          grep -q 'versionCode = 160' project/app/build.gradle.kts
+          test -s project/app/src/main/res/drawable-nodpi/prayer_mosque_banner.png
+      - name: Check all Alpha99 source and server contracts
+        run: |
+          set -euo pipefail
+          python3 project/tools/test_alpha99_calculator_currency_ui_contract.py
+          python3 -m py_compile project/family-sync-server/main.py
+          test -s project/app/src/main/assets/tessdata/ara.traineddata
+          test -s project/app/src/main/assets/tessdata/eng.traineddata
+          test -s project/app/src/main/assets/tessdata/fra.traineddata
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Set up Android SDK 36
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK_ROOT="/usr/local/lib/android/sdk"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+      - name: Build and package real APK
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+      - name: Verify APK identity and signature
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$APK"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$APK" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app'"
+          echo "$BADGING" | grep -q "versionCode='160'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha99-calculator-currency-ui'"
+          "$APKSIGNER" verify --verbose --print-certs "$APK" | tee verify.txt
+          mkdir -p release
+          # No standard package distributed: signature does not match users' existing installs.
+          cp project/PATCH_REPORT_V2_ALPHA99_CALCULATOR_CURRENCY_UI.txt release/
+          sha256sum release/*.apk > release/SHA256SUMS.txt
+      - name: Build uniquely named safe preview alongside all old builds
+        shell: bash
+        run: |
+          set -euo pipefail
+          # This step changes only the CI working directory, never the Safe Source artifact.
+          sed -i '/^        debug {$/a\            applicationIdSuffix = ".alpha99trial"' project/app/build.gradle.kts
+          sed -i 's/android:label="AB File Pro"/android:label="AB File Pro Alpha99 Test"/' project/app/src/main/AndroidManifest.xml
+          (cd project && gradle --no-daemon :app:assembleDebug)
+          PREVIEW=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$PREVIEW"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$PREVIEW" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app.alpha99trial'"
+          echo "$BADGING" | grep -q "versionCode='160'"
+          "$APKSIGNER" verify --verbose "$PREVIEW"
+          cp "$PREVIEW" release/AB_FILE_PRO_V2_ALPHA99_CALCULATOR_CURRENCY_UI_INDEPENDENT_PREVIEW99_TEST_SIGNED.apk
+          sha256sum release/*.apk > release/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AB_FILE_PRO_V2_ALPHA99_INDEPENDENT_PREVIEW
+          path: release/*
+          if-no-files-found: error
+          retention-days: 7
