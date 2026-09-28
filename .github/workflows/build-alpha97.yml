@@ -19,7 +19,7 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='eGY3Hu-LQqu8'
+          SHARE='oPiMrbtFffNC'
           WANT='AB_FILE_PRO_V2_ALPHA97_PERSONAL_ASSISTANT_FINAL_HARDENING_SAFE_SOURCE.zip'
           curl -L --fail --silent --show-error "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
@@ -36,7 +36,7 @@ jobs:
           curl -L --fail --silent --show-error -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           DOWNLOAD_URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
           curl -L --fail --silent --show-error "$DOWNLOAD_URL" -o alpha97-source.zip
-          echo "6d6739f517bf4fe861e9cf0aaa0bc69a682346c13243bbf40936d0a428efd70a  alpha97-source.zip" | sha256sum -c -
+          echo "a5796729e6e95a6ca28f4a1174693855ef84b7f15ee5413f696a07b04352a2c7  alpha97-source.zip" | sha256sum -c -
           mkdir project
           unzip -q alpha97-source.zip -d project
           grep -q '2.0.0-alpha97-personal-assistant-final-hardening' project/VERSION
