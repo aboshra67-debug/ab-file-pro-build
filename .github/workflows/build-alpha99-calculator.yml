@@ -2,7 +2,7 @@ name: Build AB File Pro Alpha99 Calculator UI
 on:
   push:
     paths:
-      - ".github/workflows/build-alpha99-prayer.yml"
+      - ".github/workflows/build-alpha99-calculator.yml"
   workflow_dispatch:
 permissions:
   contents: read
