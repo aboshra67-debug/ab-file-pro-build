@@ -17,7 +17,7 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='Ix8ESS8mHCCp'
+          SHARE='UeOS6_8D0BOS'
           WANT='AB_FILE_PRO_V2_ALPHA99_CALCULATOR_CURRENCY_UI_SAFE_SOURCE.zip'
           curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
