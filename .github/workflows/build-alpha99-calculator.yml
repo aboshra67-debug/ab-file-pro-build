@@ -1,0 +1,11 @@
+name: Build AB File Pro Alpha99 Calculator
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/build-alpha99-calculator.yml'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Preparing Alpha99 build'
