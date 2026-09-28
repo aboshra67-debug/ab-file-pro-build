@@ -17,7 +17,7 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='2yHncDgjD96B'
+          SHARE='arBR-d_r8oAn'
           WANT='AB_FILE_PRO_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH_SAFE_SOURCE.zip'
           curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
@@ -33,7 +33,7 @@ jobs:
           curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
           curl --fail -L --retry 3 "$URL" -o alpha98-source.zip
-          echo '1a885c57a1b9600ff369d7fb64b9655ee957d8e8ac6e95a344397d706c97ae2c  alpha98-source.zip' | sha256sum -c -
+          echo '161ce2bab7db5a988ba6e48fec3deb2c1ceb81bfdfedc2e7a29d2f241944969e  alpha98-source.zip' | sha256sum -c -
           mkdir project
           unzip -q alpha98-source.zip -d project
           grep -q '^2.0.0-alpha98-prayer-ui-reference-polish$' project/VERSION
@@ -84,6 +84,25 @@ jobs:
           mkdir -p release
           cp "$APK" release/AB_FILE_PRO_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH_ARM64_TEST_DEBUG_SIGNED.apk
           cp project/PATCH_REPORT_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH.txt release/
+          sha256sum release/*.apk > release/SHA256SUMS.txt
+      - name: Build side-by-side preview for existing Alpha97 users
+        shell: bash
+        run: |
+          set -euo pipefail
+          # This step changes only the CI working directory, never the Safe Source artifact.
+          sed -i '/^        debug {$/a\            applicationIdSuffix = ".preview"' project/app/build.gradle.kts
+          sed -i 's/android:label="AB File Pro"/android:label="AB File Pro Preview"/' project/app/src/main/AndroidManifest.xml
+          (cd project && gradle --no-daemon :app:assembleDebug)
+          PREVIEW=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$PREVIEW"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$PREVIEW" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app.preview'"
+          echo "$BADGING" | grep -q "versionCode='159'"
+          "$APKSIGNER" verify --verbose "$PREVIEW"
+          cp "$PREVIEW" release/AB_FILE_PRO_V2_ALPHA98_PRAYER_UI_SIDE_BY_SIDE_PREVIEW_ARM64_TEST_DEBUG_SIGNED.apk
           sha256sum release/*.apk > release/SHA256SUMS.txt
       - uses: actions/upload-artifact@v4
         with:
