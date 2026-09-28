@@ -17,7 +17,7 @@ jobs:
         run: |
           set -euo pipefail
           API='https://api.firestorage.ai/dev/file'
-          SHARE='YNdoXqLmEaVC'
+          SHARE='2yHncDgjD96B'
           WANT='AB_FILE_PRO_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH_SAFE_SOURCE.zip'
           curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
           FILE_ID=$(python3 - <<'PY'
@@ -33,7 +33,7 @@ jobs:
           curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
           URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
           curl --fail -L --retry 3 "$URL" -o alpha98-source.zip
-          echo 'c3046b3afc3c85ef2f10ee19261d3cda6c17e69f0f81e11bf4fa82c61a482ab9  alpha98-source.zip' | sha256sum -c -
+          echo '1a885c57a1b9600ff369d7fb64b9655ee957d8e8ac6e95a344397d706c97ae2c  alpha98-source.zip' | sha256sum -c -
           mkdir project
           unzip -q alpha98-source.zip -d project
           grep -q '^2.0.0-alpha98-prayer-ui-reference-polish$' project/VERSION
