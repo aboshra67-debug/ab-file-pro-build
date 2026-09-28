@@ -1,0 +1,101 @@
+name: Build AB File Pro Alpha98 Navigation P2 (safe preview)
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/build-alpha98-navigation-p2.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Download verified Alpha98 P2 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='ZAd6OgR0LF-j'
+          WANT='AB_Alpha98_Navigation_P2_Safe_Source.zip'
+          curl --fail --silent --show-error -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          matches = [row for row in json.load(open("list.json")).get("files",[]) if row.get("fileName")=="AB_Alpha98_Navigation_P2_Safe_Source.zip"]
+          if len(matches) != 1: raise SystemExit("P2 source missing or duplicated")
+          print(matches[0]["fileId"])
+          PY
+          )
+          curl --fail --silent --show-error -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl --fail --silent --show-error -L --retry 3 "$URL" -o alpha98-navigation.zip
+          echo 'a1f85ec0d42e21c2c2ebdba5df797da66ff320e363c3530eff8a66f95b3c53ab  alpha98-navigation.zip' | sha256sum -c -
+          mkdir project
+          unzip -q alpha98-navigation.zip -d project
+          grep -q '^2.0.0-alpha98-prayer-ui-reference-polish$' project/VERSION
+          grep -q 'versionCode = 159' project/app/build.gradle.kts
+          test -s project/app/src/main/assets/tessdata/ara.traineddata
+          test -s project/app/src/main/assets/tessdata/eng.traineddata
+          test -s project/app/src/main/assets/tessdata/fra.traineddata
+      - name: Run existing and new source regression checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 project/tools/test_alpha98_navigation_safe_patch.py
+          python3 project/tools/test_alpha98_calculator_currency_safe_patch.py
+          python3 project/tools/test_alpha98_prayer_ui_contract.py
+          python3 -m py_compile project/family-sync-server/main.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Setup Android SDK 36
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK_ROOT="/usr/local/lib/android/sdk"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+      - name: Isolate test app from all installed AB File Pro versions
+        shell: bash
+        run: |
+          set -euo pipefail
+          sed -i '/^        debug {$/a\            applicationIdSuffix = ".alpha98navp2"' project/app/build.gradle.kts
+          sed -i 's/android:label="AB File Pro"/android:label="AB File Pro Alpha98 Navigation Test"/' project/app/src/main/AndroidManifest.xml
+          grep -q 'applicationIdSuffix = ".alpha98navp2"' project/app/build.gradle.kts
+      - name: Build P2 Android debug APK
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+      - name: Verify APK package and signing
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$APK"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$APK" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app.alpha98navp2'"
+          echo "$BADGING" | grep -q "versionCode='159'"
+          "$APKSIGNER" verify --verbose --print-certs "$APK" | tee verify-signature.txt
+          mkdir release
+          cp "$APK" release/AB_Alpha98_Nav_P2.apk
+          cp verify-signature.txt release/
+          cp project/PATCH_REPORT_ALPHA98_ASSISTANT_NAV_P2.txt release/
+          echo "Independent preview package. Do not uninstall original app. Existing app data remains separate. Physical device install not verified." > release/INSTALL_NOTICE.txt
+          sha256sum release/*.apk > release/APK_SHA256.txt
+      - name: Publish artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AB_Alpha98_Navigation_P2_APK
+          path: release/*
+          if-no-files-found: error
+          retention-days: 7
