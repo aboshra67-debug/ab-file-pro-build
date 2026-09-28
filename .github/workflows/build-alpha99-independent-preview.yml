@@ -84,7 +84,6 @@ jobs:
           mkdir -p release
           # No standard package distributed: signature does not match users' existing installs.
           cp project/PATCH_REPORT_V2_ALPHA99_CALCULATOR_CURRENCY_UI.txt release/
-          sha256sum release/*.apk > release/SHA256SUMS.txt
       - name: Build uniquely named safe preview alongside all old builds
         shell: bash
         run: |
