@@ -1,0 +1,100 @@
+name: Build Alpha98 P9 Scanner Safe Update
+on:
+  push:
+    paths:
+      - ".github/workflows/build-alpha98-p9-scanner-safe-update.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Retrieve exact P9 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='seLzp6RLtj5-'
+          WANT='AB_FILE_PRO_V2_ALPHA98_P9_SCANNER_SAFE_UPDATE_SAFE_SOURCE.zip'
+          curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          data = json.load(open('list.json'))
+          for item in data.get('files', []):
+              if item.get('fileName') == 'AB_FILE_PRO_V2_ALPHA98_P9_SCANNER_SAFE_UPDATE_SAFE_SOURCE.zip':
+                  print(item['fileId'])
+                  break
+          PY
+          )
+          test -n "$FILE_ID"
+          curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl --fail -L --retry 3 "$URL" -o p9-source.zip
+          echo '864e3756ed1914a7b619752ebc0eecdaf52e92cb60bc50c1195b8d70d7b51c3f  p9-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q p9-source.zip -d project
+          grep -q '^2.0.0-alpha98-p9-scanner-safe-update$' project/VERSION
+          grep -q 'versionCode = 161' project/app/build.gradle.kts
+          grep -q 'applicationIdSuffix = ".ocrpreviewp8"' project/app/build.gradle.kts
+
+      - name: Scanner and Office regression contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 project/tools/test_alpha98_p9_scanner_update_contract.py
+          python3 project/tools/test_alpha98_p8_office_safe_patch.py
+          python3 -m py_compile project/family-sync-server/main.py
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Set up Android SDK 36
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK_ROOT="/usr/local/lib/android/sdk"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Build P9 debug APK
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+
+      - name: Verify APK identity and certificate
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$APK"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$APK" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app.ocrpreviewp8'"
+          echo "$BADGING" | grep -q "versionCode='161'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha98-p9-scanner-safe-update'"
+          "$APKSIGNER" verify --verbose --print-certs "$APK" | tee verify.txt
+          mkdir -p release
+          cp "$APK" release/AB98_P9_SCANNER_SAFE_UPDATE_PREVIEW.apk
+          cp project/PATCH_REPORT_AB98_P9_SCANNER_SAFE_UPDATE_AR.txt release/
+          sha256sum release/AB98_P9_SCANNER_SAFE_UPDATE_PREVIEW.apk > release/SHA256SUMS.txt
+          cp verify.txt release/APK_SIGNATURE_VERIFY.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AB98_P9_SCANNER_SAFE_UPDATE
+          path: release/*
+          if-no-files-found: error
+          retention-days: 7
