@@ -1,0 +1,98 @@
+name: Build Alpha98 P10 Batch Save Flow
+on:
+  push:
+    paths:
+      - ".github/workflows/build-alpha98-p10-batch-save-flow.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - name: Retrieve exact P10 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='beRrdMn7ygnP'
+          WANT='AB_FILE_PRO_V2_ALPHA98_P10_BATCH_SAVE_FLOW_SAFE_SOURCE.zip'
+          curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          data=json.load(open('list.json'))
+          for item in data.get('files', []):
+              if item.get('fileName') == 'AB_FILE_PRO_V2_ALPHA98_P10_BATCH_SAVE_FLOW_SAFE_SOURCE.zip':
+                  print(item['fileId']); break
+          PY
+          )
+          test -n "$FILE_ID"
+          curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl --fail -L --retry 3 "$URL" -o p10-source.zip
+          echo 'a3e2b125bba5a9ac90a64dbb1f9a077c099277ff08b6f54b2c9162ceed18d501  p10-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q p10-source.zip -d project
+          grep -q '^2.0.0-alpha98-p10-batch-save-flow$' project/VERSION
+          grep -q 'versionCode = 162' project/app/build.gradle.kts
+          grep -q 'applicationIdSuffix = ".p10batchtrial"' project/app/build.gradle.kts
+
+      - name: Run P10 scanner regressions
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 project/tools/test_alpha98_p10_batch_save_flow.py
+          python3 project/tools/test_alpha98_p10_scanner_regression.py
+          python3 -m py_compile project/family-sync-server/main.py
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Set up Android SDK 36
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK_ROOT="/usr/local/lib/android/sdk"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Build P10 APK
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+
+      - name: Verify APK identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$APK"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$APK" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app.p10batchtrial'"
+          echo "$BADGING" | grep -q "versionCode='162'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha98-p10-batch-save-flow'"
+          "$APKSIGNER" verify --verbose --print-certs "$APK" | tee verify.txt
+          mkdir release
+          cp "$APK" release/AB98_P10_BATCH_SAVE_FLOW_TEST.apk
+          cp project/PATCH_REPORT_AB98_P10_BATCH_SAVE_FLOW_AR.txt release/
+          sha256sum release/AB98_P10_BATCH_SAVE_FLOW_TEST.apk > release/SHA256SUMS.txt
+          cp verify.txt release/APK_SIGNATURE_VERIFY.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AB98_P10_BATCH_SAVE_FLOW
+          path: release/*
+          if-no-files-found: error
+          retention-days: 7
