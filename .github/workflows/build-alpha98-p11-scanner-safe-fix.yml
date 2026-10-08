@@ -1,0 +1,182 @@
+name: Build and test Alpha98 P11 Safe Scanner Fix
+on:
+  push:
+    branches: ["fix/p11-scanner-review-batch-20261008"]
+    paths:
+      - ".github/workflows/build-alpha98-p11-scanner-safe-fix.yml"
+      - "p11-overlay/**"
+      - "tools/scanner_runtime_test.py"
+      - "tools/apply_p11_overlay.py"
+      - "tools/package_p11_source.py"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve exact P10 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='beRrdMn7ygnP'
+          WANT='AB_FILE_PRO_V2_ALPHA98_P10_BATCH_SAVE_FLOW_SAFE_SOURCE.zip'
+          curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          data=json.load(open('list.json'))
+          for item in data.get('files', []):
+              if item.get('fileName') == 'AB_FILE_PRO_V2_ALPHA98_P10_BATCH_SAVE_FLOW_SAFE_SOURCE.zip':
+                  print(item['fileId']); break
+          PY
+          )
+          test -n "$FILE_ID"
+          curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl --fail -L --retry 3 "$URL" -o p10-source.zip
+          echo 'a3e2b125bba5a9ac90a64dbb1f9a077c099277ff08b6f54b2c9162ceed18d501  p10-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q p10-source.zip -d project
+          grep -q '^2.0.0-alpha98-p10-batch-save-flow$' project/VERSION
+          grep -q 'versionCode = 162' project/app/build.gradle.kts
+          grep -q 'applicationIdSuffix = ".p10batchtrial"' project/app/build.gradle.kts
+
+      - name: Verify baseline regression contracts before patch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 project/tools/test_alpha98_p10_batch_save_flow.py
+          python3 project/tools/test_alpha98_p10_scanner_regression.py
+          python3 -m py_compile project/family-sync-server/main.py
+
+      - name: Apply and audit Scanner-only patch
+        run: python3 tools/apply_p11_overlay.py
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Set up Android SDK 36
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK_ROOT="/usr/local/lib/android/sdk"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Build P11 APK and run all JVM unit tests
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:testDebugUnitTest :app:assembleDebug
+
+      - name: Verify APK identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK=project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$APK"
+          AAPT="$ANDROID_SDK_ROOT/build-tools/36.0.0/aapt"
+          APKSIGNER="$ANDROID_SDK_ROOT/build-tools/36.0.0/apksigner"
+          BADGING=$("$AAPT" dump badging "$APK" | head -n 1)
+          echo "$BADGING"
+          echo "$BADGING" | grep -q "name='com.abfilepro.app.p11scannertrial'"
+          echo "$BADGING" | grep -q "versionCode='163'"
+          echo "$BADGING" | grep -q "versionName='2.0.0-alpha98-p11-scanner-safe-fix'"
+          "$APKSIGNER" verify --verbose --print-certs "$APK" | tee verify.txt
+          mkdir release
+          cp "$APK" release/AB98_P11_SCANNER_SAFE_FIX_TEST.apk
+          python3 tools/package_p11_source.py
+          cp verify.txt release/APK_SIGNATURE_VERIFY.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AB98_P11_SCANNER_SAFE_FIX
+          path: release/*
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+
+      - name: Upload unit test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: P11_JVM_UNIT_TEST_REPORTS
+          path: project/app/build/test-results/testDebugUnitTest/
+          if-no-files-found: warn
+          retention-days: 14
+
+  scanner-runtime:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - group: capture-import
+            cases: capture3_save_restart,gallery_import3_save,gallery_import10_save
+          - group: batch-edit
+            cases: add_after_review5,batch_retake_replace,batch_bounds_button
+          - group: card
+            cases: card_missing_back_guard,card_two_sides_save
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P11_SCANNER_SAFE_FIX
+          path: release
+      - name: Verify build output and prepare test source
+        run: |
+          cd release
+          sha256sum -c SHA256SUMS.txt
+          cd ..
+          mkdir project runtime-evidence
+          unzip -q release/AB_FILE_PRO_V2_ALPHA98_P11_SCANNER_SAFE_FIX_SOURCE.zip -d project
+      - name: Install host test dependencies
+        run: python3 -m pip install --break-system-packages uiautomator2 Pillow pypdf
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Test real Scanner operations on Android 11
+        uses: reactivecircus/android-emulator-runner@v2
+        env:
+          SCANNER_TEST_PACKAGE: com.abfilepro.app.p11scannertrial
+          SCANNER_TEST_CASES: ${{ matrix.cases }}
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          emulator-boot-timeout: 600
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
+          script: |
+            adb shell getprop ro.product.cpu.abilist | tee runtime-evidence/device-abis.txt
+            adb shell getprop ro.dalvik.vm.native.bridge | tee runtime-evidence/native-bridge.txt
+            adb install -r release/AB98_P11_SCANNER_SAFE_FIX_TEST.apk
+            adb shell wm size 480x1054
+            adb shell wm density 213
+            adb shell svc wifi disable
+            adb shell svc data disable
+            timeout 15m python3 -u tools/scanner_runtime_test.py
+      - name: Upload runtime evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: P11_RUNTIME_EVIDENCE_${{ matrix.group }}
+          path: runtime-evidence/
+          if-no-files-found: warn
+          retention-days: 14
+

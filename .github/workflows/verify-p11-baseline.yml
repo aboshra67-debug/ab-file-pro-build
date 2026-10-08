@@ -1,10 +1,5 @@
 name: Confirm P10 defects before P11 fix
 on:
-  push:
-    branches: ["fix/p11-scanner-review-batch-20261008"]
-    paths:
-      - ".github/workflows/verify-p11-baseline.yml"
-      - "tools/scanner_runtime_test.py"
   workflow_dispatch:
 permissions:
   contents: read
