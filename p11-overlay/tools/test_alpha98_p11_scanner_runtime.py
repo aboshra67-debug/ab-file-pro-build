@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 import re
+import shlex
 import subprocess
 import sys
 import time
@@ -15,11 +16,12 @@ from PIL import Image, ImageDraw
 from pypdf import PdfReader
 from p11_jdwp_crop_gate import CropCommitGate
 
-PKG = os.environ.get('SCANNER_TEST_PACKAGE', 'com.abfilepro.app.p10batchtrial')
+PKG = os.environ.get('SCANNER_TEST_PACKAGE', 'com.abfilepro.app.p11scannertrial')
 OUT = Path('runtime-evidence')
 OUT.mkdir(exist_ok=True)
 RESULTS = []
 CASE = ''
+MODE = ''
 DIGITS = str.maketrans('٠١٢٣٤٥٦٧٨٩', '0123456789')
 STRINGS = {}
 for p in Path('project/app/src/main/res/values').glob('*.xml'):
@@ -39,6 +41,11 @@ def adb(*args, check=True):
         raise RuntimeError(r.stderr + r.stdout)
     return r.stdout
 
+# Isolated emulator cases reset application data; never run that setup on a phone.
+if adb('shell', 'getprop', 'ro.kernel.qemu').strip() != '1':
+    raise RuntimeError('Scanner regression tests require a disposable Android emulator')
+if PKG != 'com.abfilepro.app.p11scannertrial':
+    raise RuntimeError('Final regression tests target the separate P11 trial package only')
 d = u2.connect()
 d.settings['wait_timeout'] = 8
 
@@ -54,21 +61,36 @@ def center(n):
 
 def find(value, partial=False):
     value = value.translate(DIGITS).casefold()
-    for n in nodes():
+    root = ET.fromstring(dump())
+    parents = {child: parent for parent in root.iter() for child in parent}
+    for n in root.iter('node'):
         for attr in ('text', 'content-desc'):
             s = n.attrib.get(attr, '').translate(DIGITS).casefold()
-            if (value in s if partial else value == s) and n.attrib.get('enabled') != 'false':
+            if not (value in s if partial else value == s):
+                continue
+            current = n
+            while current is not None:
+                if current.attrib.get('enabled') == 'false':
+                    break
+                current = parents.get(current)
+            else:
                 return n
     return None
 
 def click(value, partial=False, timeout=20):
     end = time.monotonic() + timeout
+    previous = None
     while time.monotonic() < end:
         n = find(value, partial)
         if n is not None:
-            d.click(*center(n))
-            time.sleep(.45)
-            return
+            current = center(n)
+            if current == previous:
+                d.click(*current)
+                time.sleep(.45)
+                return
+            previous = current
+        else:
+            previous = None
         time.sleep(.35)
     raise TimeoutError('Cannot click: ' + value)
 
@@ -93,6 +115,8 @@ def texts():
     return [n.attrib.get('text', '').translate(DIGITS) for n in nodes() if n.attrib.get('text')]
 
 def start_mode(mode):
+    global MODE
+    MODE = mode
     adb('logcat', '-c', check=False)
     adb('shell', 'am', 'force-stop', PKG)
     adb('shell', 'pm', 'clear', PKG)
@@ -101,6 +125,8 @@ def start_mode(mode):
     adb('shell', 'am', 'start', '-n', PKG + '/com.abfilepro.app.MainActivity')
     end = time.monotonic() + 50
     while time.monotonic() < end:
+        if find(t('alpha11_scan_' + mode)) is not None:
+            break
         # The first launch asks Android to pin a workspace shortcut. Dismiss
         # this system modal before looking for Compose home screen semantics.
         if find('Add to Home screen') is not None:
@@ -110,14 +136,24 @@ def start_mode(mode):
         if transient is None:
             transient = find('لاحقًا')
         if transient is not None:
-            d.click(*center(transient))
-            time.sleep(.6)
+            try:
+                click(transient.attrib['text'], timeout=3)
+            except TimeoutError:
+                # The timed introduction can finish while we inspect it.
+                pass
+            continue
+        if find('المظهر والثيمات') is not None:
+            # A moving first-launch layout may finish beneath the Skip tap.
+            d.press('back')
+            time.sleep(.5)
             continue
         entry = find('Scanner المسح الضوئي')
         if entry is not None:
-            d.click(*center(entry))
-            time.sleep(.6)
-            break
+            try:
+                click('Scanner المسح الضوئي', timeout=5)
+            except TimeoutError:
+                pass
+            continue
         time.sleep(.5)
     else:
         snapshot('startup_failed')
@@ -197,11 +233,24 @@ def pdfs():
 def save_pdf(tag, action=None):
     before = pdfs()
     click(action or t('scan_screen_036'))
+    # The destination is created before export completes; a new filename
+    # alone must never be treated as a finished PDF.
+    if MODE == 'batch':
+        wait(t('alpha15_save_success_title'), timeout=60)
     end = time.monotonic() + 60
     while time.monotonic() < end:
         created = pdfs() - before
         if created:
             remote = sorted(created)[0]
+            # Document and Card keep P10's navigation to the saved folder.
+            # Their completed PDF trailer is the completion signal here.
+            tail = subprocess.run(
+                ['adb', 'shell', 'tail -c 128 ' + shlex.quote(remote)],
+                capture_output=True, timeout=30
+            )
+            if tail.returncode != 0 or not tail.stdout.rstrip().endswith(b'%%EOF'):
+                time.sleep(.4)
+                continue
             local = OUT / (tag + '.pdf')
             adb('pull', remote, str(local))
             time.sleep(.8)

@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 import re
+import shlex
 import subprocess
 import sys
 import time
@@ -20,6 +21,7 @@ OUT = Path('runtime-evidence')
 OUT.mkdir(exist_ok=True)
 RESULTS = []
 CASE = ''
+MODE = ''
 DIGITS = str.maketrans('٠١٢٣٤٥٦٧٨٩', '0123456789')
 STRINGS = {}
 for p in Path('project/app/src/main/res/values').glob('*.xml'):
@@ -113,6 +115,8 @@ def texts():
     return [n.attrib.get('text', '').translate(DIGITS) for n in nodes() if n.attrib.get('text')]
 
 def start_mode(mode):
+    global MODE
+    MODE = mode
     adb('logcat', '-c', check=False)
     adb('shell', 'am', 'force-stop', PKG)
     adb('shell', 'pm', 'clear', PKG)
@@ -231,12 +235,22 @@ def save_pdf(tag, action=None):
     click(action or t('scan_screen_036'))
     # The destination is created before export completes; a new filename
     # alone must never be treated as a finished PDF.
-    wait(t('alpha15_save_success_title'), timeout=60)
+    if MODE == 'batch':
+        wait(t('alpha15_save_success_title'), timeout=60)
     end = time.monotonic() + 60
     while time.monotonic() < end:
         created = pdfs() - before
         if created:
             remote = sorted(created)[0]
+            # Document and Card keep P10's navigation to the saved folder.
+            # Their completed PDF trailer is the completion signal here.
+            tail = subprocess.run(
+                ['adb', 'shell', 'tail -c 128 ' + shlex.quote(remote)],
+                capture_output=True, timeout=30
+            )
+            if tail.returncode != 0 or not tail.stdout.rstrip().endswith(b'%%EOF'):
+                time.sleep(.4)
+                continue
             local = OUT / (tag + '.pdf')
             adb('pull', remote, str(local))
             time.sleep(.8)
