@@ -1,0 +1,75 @@
+name: Verify P11 Card and Document final APK
+on:
+  push:
+    branches: ["fix/p11-scanner-review-batch-20261008"]
+    paths:
+      - ".github/workflows/verify-p11-card-document-final.yml"
+      - "tools/p11_card_document_test.py"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  scanner-runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - group: card-document
+            cases: card_missing_back_guard,card_two_sides_save,document_save_pdf
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P11_SCANNER_SAFE_FIX
+          run-id: 37838297785
+          github-token: ${{ github.token }}
+          path: release
+      - name: Verify build output and prepare test source
+        run: |
+          cd release
+          sha256sum -c SHA256SUMS.txt
+          echo "b2ab680131045babace88e5211d6d41c706687ee2d73576012224011651ea759  AB98_P11_SCANNER_SAFE_FIX_TEST.apk" | sha256sum -c -
+          cd ..
+          mkdir project runtime-evidence
+          unzip -q release/AB_FILE_PRO_V2_ALPHA98_P11_SCANNER_SAFE_FIX_SOURCE.zip -d project
+      - name: Install host test dependencies
+        run: python3 -m pip install --break-system-packages uiautomator2 Pillow pypdf
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Test real Scanner operations on Android 11
+        uses: reactivecircus/android-emulator-runner@v2
+        env:
+          SCANNER_TEST_PACKAGE: com.abfilepro.app.p11scannertrial
+          SCANNER_TEST_CASES: ${{ matrix.cases }}
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          emulator-boot-timeout: 600
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
+          script: |
+            adb shell getprop ro.product.cpu.abilist | tee runtime-evidence/device-abis.txt
+            adb shell getprop ro.dalvik.vm.native.bridge | tee runtime-evidence/native-bridge.txt
+            adb install -r release/AB98_P11_SCANNER_SAFE_FIX_TEST.apk
+            adb shell wm size 480x1054
+            adb shell wm density 213
+            adb shell svc wifi disable
+            adb shell svc data disable
+            timeout 15m python3 -u tools/p11_card_document_test.py
+      - name: Upload runtime evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: P11_FINAL_CARD_DOCUMENT_EVIDENCE
+          path: runtime-evidence/
+          if-no-files-found: warn
+          retention-days: 14
+
