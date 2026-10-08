@@ -1,10 +1,5 @@
 name: Confirm P11 bounds preservation defects
 on:
-  push:
-    branches: ["fix/p11-scanner-review-batch-20261008"]
-    paths:
-      - ".github/workflows/test-p11-ownership-baseline.yml"
-      - "tools/p11_ownership_red_test.py"
   workflow_dispatch:
 permissions:
   contents: read

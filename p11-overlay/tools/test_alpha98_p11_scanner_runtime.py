@@ -13,6 +13,7 @@ from pathlib import Path
 import uiautomator2 as u2
 from PIL import Image, ImageDraw
 from pypdf import PdfReader
+from p11_jdwp_crop_gate import CropCommitGate
 
 PKG = os.environ.get('SCANNER_TEST_PACKAGE', 'com.abfilepro.app.p10batchtrial')
 OUT = Path('runtime-evidence')
@@ -209,6 +210,9 @@ def save_pdf(tag, action=None):
     raise TimeoutError('No new final PDF found: ' + repr(texts()))
 
 def import_images(ids):
+    # A cold DocumentsUI process avoids its Android 11 stale-adapter crash
+    # between isolated cases; the application's import path is unchanged.
+    adb('shell', 'am', 'force-stop', 'com.google.android.documentsui')
     click(t('scanner_pro_camera_015'))
     time.sleep(1.5)
     for desc in ('Show roots', 'Open navigation drawer'):
@@ -303,7 +307,7 @@ def capture_save_three():
     snapshot('capture3_save_success')
     assert count == 3, 'Saved PDF has %s pages, expected 3' % count
     assert find('اختر المهمة') is None, 'Successful batch save returned to Scanner hub before New Scan'
-    click('مسح جديد')
+    click(t('alpha15_save_new_scan'))
     wait('دفعة متعددة', partial=True)
     assert count_camera() == 0, 'New batch retains old captures'
     return {'review_pages': actual, 'pdf_pages': count, 'restart_mode': 'BATCH', 'stages': stages}
@@ -505,6 +509,11 @@ def gallery_reorder_delete_add():
     actual, _ = process_review()
     assert actual == 3
     click(t('scan_screen_041'))
+    # LazyColumn preserves the moved item's viewport anchor. Return to the
+    # first reviewed page before explicitly deleting it.
+    for _ in range(3):
+        d.swipe_ext('down', scale=.55)
+        time.sleep(.2)
     click(t('scan_screen_042'))
     wait(t('scan_screen_050'))
     click(t('scan_screen_042'))
@@ -519,6 +528,70 @@ def gallery_reorder_delete_add():
     assert actual == 3 and count == 3 and markers == [1, 3, 4], 'Reviewed order/deletion was lost when adding a page: review=%s PDF=%s order=%s' % (actual, count, markers)
     return {'pdf_pages': count, 'page_order': markers}
 
+def cached_gallery_dimensions():
+    paths = adb('shell', 'run-as', PKG, 'find', 'cache/scan_review', '-type', 'f', '-name', '*.jpg').splitlines()
+    sizes = []
+    for i, path in enumerate(paths):
+        raw = subprocess.check_output(['adb', 'exec-out', 'run-as', PKG, 'cat', path], timeout=30)
+        local = OUT / (CASE + '_cache_%s.jpg' % i)
+        local.write_bytes(raw)
+        with Image.open(local) as image:
+            sizes.append(list(image.size))
+    return sizes
+
+def bounds_without_changes():
+    start_mode('batch')
+    import_images([1])
+    actual, _ = process_review()
+    assert actual == 1
+    before = cached_gallery_dimensions()
+    assert len(before) == 1, before
+    scroll_click(t('alpha20_bounds_title'))
+    assert find(t('scan_screen_029')) is None
+    click(t('alpha20_continue'))
+    wait(t('alpha34_save_continue'))
+    click(t('alpha34_save_continue'))
+    wait(t('scan_screen_029'))
+    after = cached_gallery_dimensions()
+    assert len(after) == 1 and all(abs(a - b) <= 2 for a, b in zip(before[0], after[0])), 'Reopening bounds without changing corners discarded image edges: before=%s after=%s' % (before, after)
+    pdf, count = save_pdf('unchanged_bounds_saved')
+    assert count == 1 and pdf_page_markers(pdf) == [1]
+    return {'before_dimensions': before, 'after_dimensions': after, 'pdf_pages': count}
+
+def cancel_at_crop_commit():
+    start_mode('batch')
+    import_images([1])
+    actual, _ = process_review()
+    assert actual == 1
+    scroll_click(t('alpha20_bounds_title'))
+    assert find(t('scan_screen_029')) is None
+    source = Path('project/app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt').read_text()
+    delete_line = next(i for i, line in enumerate(source.splitlines(), 1) if 'sourceFile.absolutePath != committed.absolutePath' in line)
+    gate = CropCommitGate(PKG, delete_line)
+    try:
+        click(t('alpha20_continue'))
+        gate.wait_hit()
+        wait(t('p9_scanner_cancel_processing'))
+        click(t('p9_scanner_cancel_processing'))
+        snapshot('cancelled_at_crop_commit')
+        gate.resume()
+        time.sleep(1.5)
+        wait(t('alpha20_bounds_title'))
+        assert find(t('alpha34_save_continue')) is None, 'Cancelled processing navigated into editor after cancellation'
+    finally:
+        gate.close()
+    click(t('alpha20_continue'))
+    try:
+        wait(t('alpha34_save_continue'), timeout=15)
+    except TimeoutError:
+        raise AssertionError('Cancelling bounds processing lost the committed page image')
+    click(t('alpha34_save_continue'))
+    wait(t('scan_screen_029'))
+    assert count_review() == 1
+    pdf, count = save_pdf('cancelled_crop_recovered_saved')
+    assert count == 1 and len(PdfReader(pdf).pages[0].images) == 1
+    return {'cancel_at_destructive_commit': True, 'page_recovered': True, 'pdf_pages': count}
+
 cases = {
     'capture3_save_restart': capture_save_three,
     'gallery_import3_save': import_three,
@@ -532,6 +605,8 @@ cases = {
     'gallery_bounds_retake_keep_pages': gallery_retake_preserves_siblings,
     'gallery_add_limit10_retake': gallery_add_to_limit_and_retake,
     'gallery_reorder_delete_add': gallery_reorder_delete_add,
+    'gallery_bounds_no_change': bounds_without_changes,
+    'batch_crop_cancel_keeps_page': cancel_at_crop_commit,
 }
 selected = os.environ.get('SCANNER_TEST_CASES', ','.join(cases)).split(',')
 for name in selected:

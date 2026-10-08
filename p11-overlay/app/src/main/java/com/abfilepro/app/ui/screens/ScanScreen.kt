@@ -308,6 +308,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     fun commitSingleDocumentBounds(page: ScanDraftPage) {
         boundsDetectionRequestId += 1L
         boundsDetectionBusy = false
+        val batchCommit = selectedMode == ScanCaptureMode.BATCH
         val adjusted = (singleDocumentBoundsPage ?: page).let { current ->
             if (current.perspective == null) current.copy(perspective = ScanQuad.insetDefault(.055f)) else current
         }
@@ -319,36 +320,58 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         flowStage = ScanUiStage.PROCESSING
 
         scope.launch {
-            val result = runCatching {
-                withContext(Dispatchers.IO) {
-                    ScanProcessor.commitPerspectiveCrop(context, adjusted)
-                }
-            }
-            if (documentProcessingRequestId != requestId) return@launch
-
-            result.onSuccess { flattened ->
-                if (selectedMode == ScanCaptureMode.BATCH) {
-                    // Perspective commit replaces the cache file; retain its new reference.
-                    multiPageCapturedPages = multiPageCapturedPages.map { current ->
-                        if (current.id == flattened.id) flattened else current
+            var isolatedInput: File? = null
+            var unadoptedOutput: File? = null
+            try {
+                val result = runCatching {
+                    withContext(Dispatchers.IO) {
+                        val processorPage = if (batchCommit) {
+                            // A cancelled crop must never delete the page still owned by Batch.
+                            RuntimeSafety.ensureStorage(context, estimatedOutputBytes = adjusted.file.length().coerceAtLeast(2L * 1024L * 1024L))
+                            val copy = File.createTempFile("batch_crop_", ".jpg", adjusted.file.parentFile)
+                            isolatedInput = copy
+                            adjusted.file.copyTo(copy, overwrite = true)
+                            adjusted.copy(file = copy)
+                        } else adjusted
+                        ScanProcessor.commitPerspectiveCrop(context, processorPage).also { flattened ->
+                            if (batchCommit) unadoptedOutput = flattened.file
+                        }
                     }
                 }
-                reviewPages = listOf(flattened)
-                singleDocumentBoundsPage = null
-                autoOpenEditorPageId = null
-                documentProcessingBusy = false
-                flowStage = ScanUiStage.EDITOR
-            }.onFailure { error ->
-                // Keep the approved corners intact so a processing failure never loses the capture.
-                singleDocumentBoundsPage = adjusted
-                reviewPages = listOf(adjusted)
-                documentProcessingBusy = false
-                flowStage = ScanUiStage.BOUNDS
-                Toast.makeText(
-                    context,
-                    error.message ?: context.uiText(language, "scan_screen_005"),
-                    Toast.LENGTH_LONG
-                ).show()
+                if (documentProcessingRequestId != requestId) return@launch
+
+                result.onSuccess { flattened ->
+                    if (batchCommit) {
+                        multiPageCapturedPages = multiPageCapturedPages.map { current ->
+                            if (current.id == flattened.id) flattened else current
+                        }
+                    }
+                    reviewPages = listOf(flattened)
+                    singleDocumentBoundsPage = null
+                    autoOpenEditorPageId = null
+                    documentProcessingBusy = false
+                    flowStage = ScanUiStage.EDITOR
+                    if (batchCommit) {
+                        // Retire the original only after this request has adopted a valid replacement.
+                        unadoptedOutput = null
+                        if (adjusted.file.absolutePath != flattened.file.absolutePath) runCatching { adjusted.file.delete() }
+                    }
+                }.onFailure { error ->
+                    // Keep the approved corners intact so a processing failure never loses the capture.
+                    singleDocumentBoundsPage = adjusted
+                    reviewPages = listOf(adjusted)
+                    documentProcessingBusy = false
+                    flowStage = ScanUiStage.BOUNDS
+                    Toast.makeText(
+                        context,
+                        error.message ?: context.uiText(language, "scan_screen_005"),
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            } finally {
+                // Clean only this operation's private files, never a shared gallery directory.
+                unadoptedOutput?.let { file -> runCatching { file.delete() } }
+                isolatedInput?.let { file -> runCatching { file.delete() } }
             }
         }
     }
@@ -1464,7 +1487,9 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                         documentProcessingRequestId += 1L
                         documentProcessingBusy = false
                         singleDocumentBoundsPage = page.copy(
-                            perspective = page.perspective ?: ScanQuad.insetDefault(.055f)
+                            perspective = page.perspective ?: ScanQuad.insetDefault(
+                                if (selectedMode == ScanCaptureMode.BATCH) 0f else .055f
+                            )
                         )
                         boundsDetectionBusy = false
                         boundsDetectionRequestId += 1L
