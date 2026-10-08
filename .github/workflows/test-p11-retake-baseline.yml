@@ -1,10 +1,5 @@
 name: Confirm remaining P11 retake defect
 on:
-  push:
-    branches: ["fix/p11-scanner-review-batch-20261008"]
-    paths:
-      - ".github/workflows/test-p11-retake-baseline.yml"
-      - "tools/p11_retake_red_test.py"
   workflow_dispatch:
 permissions:
   contents: read

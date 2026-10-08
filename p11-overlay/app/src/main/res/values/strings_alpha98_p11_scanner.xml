@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p11_card_missing_side_title_ar">أكمل وجهي البطاقة</string>
+    <string name="p11_card_missing_side_title_en">Complete both card sides</string>
+    <string name="p11_card_missing_side_title_fr">Complétez les deux faces de la carte</string>
+    <string name="p11_card_missing_side_message_ar">صوّر الوجه الثاني قبل حفظ وجهي البطاقة معًا في ملف واحد.</string>
+    <string name="p11_card_missing_side_message_en">Capture the second side before saving both card sides together in one file.</string>
+    <string name="p11_card_missing_side_message_fr">Photographiez la deuxième face avant de sauvegarder les deux faces dans un seul fichier.</string>
+    <string name="p11_card_capture_second_side_ar">تصوير الوجه الثاني</string>
+    <string name="p11_card_capture_second_side_en">Capture second side</string>
+    <string name="p11_card_capture_second_side_fr">Photographier la deuxième face</string>
+</resources>

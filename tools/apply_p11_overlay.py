@@ -14,6 +14,7 @@ allowed = {
 added = {
     'PATCH_REPORT_AB98_P11_SCANNER_SAFE_FIX_AR.txt',
     'tools/test_alpha98_p11_scanner_runtime.py',
+    'app/src/main/res/values/strings_alpha98_p11_scanner.xml',
 }
 digest = lambda data: hashlib.sha256(data).hexdigest()
 with zipfile.ZipFile('p10-source.zip') as original:

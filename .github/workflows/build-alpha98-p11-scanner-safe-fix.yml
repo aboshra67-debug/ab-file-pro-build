@@ -137,7 +137,9 @@ jobs:
           - group: batch-edit
             cases: add_after_review5,batch_retake_replace,batch_bounds_button
           - group: card
-            cases: card_missing_back_guard,card_two_sides_save
+            cases: card_missing_back_guard,card_two_sides_save,document_save_pdf
+          - group: gallery-edit
+            cases: gallery_bounds_retake_keep_pages,gallery_add_limit10_retake,gallery_reorder_delete_add
     steps:
       - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4

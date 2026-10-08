@@ -90,6 +90,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     var multiPageCapturedPages by remember { mutableStateOf<List<ScanDraftPage>>(emptyList()) }
     var multiPageFinalizedPages by remember { mutableStateOf<List<ScanDraftPage>>(emptyList()) }
     var multiPageReviewIndex by remember { mutableIntStateOf(0) }
+    var multiPageRetakeIndex by remember { mutableStateOf<Int?>(null) }
     var flowStage by remember { mutableStateOf(ScanUiStage.HUB) }
     var selectedMode by remember { mutableStateOf(ScanCaptureMode.DOCUMENT) }
     var singleDocumentRetakeIndex by remember { mutableStateOf<Int?>(null) }
@@ -127,6 +128,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     var pendingSingleDocumentSavePage by remember { mutableStateOf<ScanDraftPage?>(null) }
     var showSingleDocumentSaveOptions by remember { mutableStateOf(false) }
     var showSaveFolderPicker by remember { mutableStateOf(false) }
+    var showMissingCardSide by remember { mutableStateOf(false) }
     var selectedSaveDirectory by remember { mutableStateOf<File?>(null) }
 
     val singleDocumentOptions = remember {
@@ -176,6 +178,51 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         boundsDetectionRequestId += 1L
         singleDocumentBoundsEnteredAtMs = android.os.SystemClock.elapsedRealtime()
         flowStage = ScanUiStage.BOUNDS
+    }
+
+    fun batchPageCount(): Int {
+        val replacementPending = multiPageRetakeIndex?.let { it in multiPageCapturedPages.indices } == true
+        return multiPageCapturedPages.size - if (replacementPending) 1 else 0
+    }
+
+    fun acceptBatchPages(pages: List<ScanDraftPage>) {
+        val accepted = pages.take((selectedMode.maxPages - batchPageCount()).coerceAtLeast(0))
+        if (accepted.isEmpty()) return
+        val replaceIndex = multiPageRetakeIndex?.takeIf { it in multiPageCapturedPages.indices }
+        if (replaceIndex == null) {
+            multiPageCapturedPages = (multiPageCapturedPages + accepted).take(selectedMode.maxPages)
+        } else {
+            val replacement = accepted.first()
+            if (!replacement.file.isFile || replacement.file.length() == 0L) return
+            val previous = multiPageCapturedPages[replaceIndex]
+            multiPageCapturedPages = multiPageCapturedPages.toMutableList().also { updated ->
+                updated[replaceIndex] = replacement
+                updated.addAll(accepted.drop(1))
+            }
+            multiPageFinalizedPages = multiPageFinalizedPages.filterNot { it.id == previous.id }
+            // Retire only the replaced temporary image after its replacement is valid.
+            // Gallery pages share a cache directory; deleting it would erase siblings.
+            if (previous.file.absolutePath != replacement.file.absolutePath) runCatching { previous.file.delete() }
+        }
+        multiPageRetakeIndex = null
+    }
+
+    fun openBatchReview() {
+        // Closing the camera without a replacement keeps the prior page intact.
+        multiPageRetakeIndex = null
+        val completedIds = multiPageFinalizedPages.map { it.id }.toSet()
+        val nextIndex = multiPageCapturedPages.indexOfFirst { it.id !in completedIds }
+        cameraPages = emptyList()
+        reviewPages = emptyList()
+        if (multiPageCapturedPages.isEmpty()) {
+            flowStage = ScanUiStage.CAMERA
+        } else if (nextIndex < 0) {
+            reviewPages = multiPageCapturedPages
+            flowStage = ScanUiStage.REVIEW
+        } else {
+            multiPageReviewIndex = nextIndex
+            openSingleDocumentBounds(multiPageCapturedPages[nextIndex], cleanupExistingReview = false)
+        }
     }
 
 
@@ -280,6 +327,12 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             if (documentProcessingRequestId != requestId) return@launch
 
             result.onSuccess { flattened ->
+                if (selectedMode == ScanCaptureMode.BATCH) {
+                    // Perspective commit replaces the cache file; retain its new reference.
+                    multiPageCapturedPages = multiPageCapturedPages.map { current ->
+                        if (current.id == flattened.id) flattened else current
+                    }
+                }
                 reviewPages = listOf(flattened)
                 singleDocumentBoundsPage = null
                 autoOpenEditorPageId = null
@@ -333,7 +386,14 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         if (deleteCurrent) {
             val pagesToDelete = (reviewPages + listOfNotNull(singleDocumentBoundsPage))
                 .distinctBy { it.file.absolutePath }
-            ScanProcessor.cleanup(pagesToDelete)
+            if (selectedMode == ScanCaptureMode.BATCH) {
+                val current = singleDocumentBoundsPage ?: reviewPages.firstOrNull()
+                multiPageRetakeIndex = current?.let { page ->
+                    multiPageCapturedPages.indexOfFirst { it.id == page.id }.takeIf { it >= 0 }
+                }
+            } else {
+                ScanProcessor.cleanup(pagesToDelete)
+            }
         }
         singleDocumentBoundsPage = null
         reviewPages = emptyList()
@@ -360,7 +420,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 busy = true
                 try {
                     val currentCount = if (selectedMode == ScanCaptureMode.BATCH) {
-                        multiPageCapturedPages.size
+                        batchPageCount()
                     } else {
                         reviewPages.size + cameraPages.size
                     }
@@ -375,8 +435,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                         val nextCameraPages = cameraPages + cached
                         val total = reviewPages.size + nextCameraPages.size
                         if (selectedMode == ScanCaptureMode.BATCH) {
-                            val nextBatchPages = (multiPageCapturedPages + cached).take(selectedMode.maxPages)
-                            multiPageCapturedPages = nextBatchPages
+                            acceptBatchPages(cached)
+                            val nextBatchPages = multiPageCapturedPages
                             cameraPages = emptyList()
                             reviewPages = emptyList()
                             if (nextBatchPages.size >= selectedMode.maxPages) {
@@ -605,6 +665,10 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         if (busy || activeSaveJob?.isActive == true) return
         val pagesSnapshot = pagesOverride ?: reviewPages
         if (pagesSnapshot.isEmpty()) return
+        if (selectedMode == ScanCaptureMode.ID_CARD && pagesSnapshot.size < 2) {
+            showMissingCardSide = true
+            return
+        }
         // Alpha42: snapshot the requested format at click time. Compose state updates are asynchronous;
         // reading singleDocumentOutputFormat later could still see the previous PDF value after JPG was tapped.
         val requestedOutputFormat = outputFormatOverride ?: singleDocumentOutputFormat
@@ -731,6 +795,27 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             if (ownedPages.isNotEmpty()) ScanProcessor.cleanup(ownedPages)
             latestDocumentFallbackBackup?.file?.delete()
         }
+    }
+
+    if (showMissingCardSide) {
+        AlertDialog(
+            onDismissRequest = { showMissingCardSide = false },
+            title = { Text(context.uiText(language, "p11_card_missing_side_title")) },
+            text = { Text(context.uiText(language, "p11_card_missing_side_message")) },
+            confirmButton = {
+                TextButton(onClick = {
+                    showMissingCardSide = false
+                    cameraPages = reviewPages
+                    reviewPages = emptyList()
+                    flowStage = ScanUiStage.CAMERA
+                }) { Text(context.uiText(language, "p11_card_capture_second_side")) }
+            },
+            dismissButton = {
+                TextButton(onClick = { showMissingCardSide = false }) {
+                    Text(context.uiText(language, "scan_screen_052"))
+                }
+            }
+        )
     }
 
     if (showSingleDocumentFallback) {
@@ -917,6 +1002,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 multiPageCapturedPages = emptyList()
                 multiPageFinalizedPages = emptyList()
                 multiPageReviewIndex = 0
+                multiPageRetakeIndex = null
                 documentProcessingRequestId += 1L
                 documentProcessingBusy = false
                 discardSingleDocumentFallbackBackup()
@@ -938,6 +1024,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             multiPageCapturedPages = emptyList()
             multiPageFinalizedPages = emptyList()
             multiPageReviewIndex = 0
+            multiPageRetakeIndex = null
             reviewPages = emptyList()
             singleDocumentBoundsPage = null
         }
@@ -989,10 +1076,14 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
 
             ScannerProCamera(
                 mode = selectedMode,
-                existingPageCount = if (selectedMode == ScanCaptureMode.BATCH) multiPageCapturedPages.size else reviewPages.size + cameraPages.size,
+                existingPageCount = if (selectedMode == ScanCaptureMode.BATCH) batchPageCount() else reviewPages.size + cameraPages.size,
                 onPagesCaptured = { captured ->
-                    val capturedCount = if (selectedMode == ScanCaptureMode.BATCH) multiPageCapturedPages.size else 0
-                    val remaining = (selectedMode.maxPages - capturedCount - reviewPages.size - cameraPages.size).coerceAtLeast(0)
+                    val currentCount = if (selectedMode == ScanCaptureMode.BATCH) {
+                        batchPageCount()
+                    } else {
+                        reviewPages.size + cameraPages.size
+                    }
+                    val remaining = (selectedMode.maxPages - currentCount).coerceAtLeast(0)
                     val accepted = captured.take(remaining)
                     if (accepted.isNotEmpty()) {
                         val nextCameraPages = cameraPages + accepted
@@ -1006,7 +1097,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                             openSingleDocumentBounds(capturedPage)
                             discardSingleDocumentFallbackBackup()
                         } else if (selectedMode == ScanCaptureMode.BATCH) {
-                            multiPageCapturedPages = (multiPageCapturedPages + nextCameraPages).take(selectedMode.maxPages)
+                            acceptBatchPages(nextCameraPages)
                             cameraPages = emptyList()
                             reviewPages = emptyList()
                             flowStage = ScanUiStage.CAMERA
@@ -1036,7 +1127,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                                 openSingleDocumentBounds(pending.first())
                                 discardSingleDocumentFallbackBackup()
                             } else if (selectedMode == ScanCaptureMode.BATCH) {
-                                openSingleDocumentBounds(pending.first())
+                                acceptBatchPages(pending)
+                                openBatchReview()
                             } else if (selectedMode == ScanCaptureMode.TRANSLATION) {
                                 openSingleDocumentBounds(pending.first())
                                 discardSingleDocumentFallbackBackup()
@@ -1047,10 +1139,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                             }
                         }
                         selectedMode == ScanCaptureMode.BATCH && multiPageCapturedPages.isNotEmpty() -> {
-                            multiPageFinalizedPages = emptyList()
-                            multiPageReviewIndex = 0
-                            reviewPages = emptyList()
-                            openSingleDocumentBounds(multiPageCapturedPages.first(), cleanupExistingReview = false)
+                            openBatchReview()
                         }
                         reviewPages.isNotEmpty() -> flowStage = if (selectedMode == ScanCaptureMode.TRANSLATION) ScanUiStage.BOUNDS else ScanUiStage.REVIEW
                         singleDocumentFallbackBackup != null -> {
@@ -1071,7 +1160,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                                 openSingleDocumentBounds(pending.first())
                                 discardSingleDocumentFallbackBackup()
                             } else if (selectedMode == ScanCaptureMode.BATCH) {
-                                openSingleDocumentBounds(pending.first())
+                                acceptBatchPages(pending)
+                                openBatchReview()
                             } else if (selectedMode == ScanCaptureMode.TRANSLATION) {
                                 openSingleDocumentBounds(pending.first())
                                 discardSingleDocumentFallbackBackup()
@@ -1082,10 +1172,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                             }
                         }
                         selectedMode == ScanCaptureMode.BATCH && multiPageCapturedPages.isNotEmpty() -> {
-                            multiPageFinalizedPages = emptyList()
-                            multiPageReviewIndex = 0
-                            reviewPages = emptyList()
-                            openSingleDocumentBounds(multiPageCapturedPages.first(), cleanupExistingReview = false)
+                            openBatchReview()
                         }
                         reviewPages.isNotEmpty() -> flowStage = if (selectedMode == ScanCaptureMode.TRANSLATION) ScanUiStage.BOUNDS else ScanUiStage.REVIEW
                         singleDocumentFallbackBackup != null -> {
@@ -1228,19 +1315,15 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     onSaveAndContinue = { updated ->
                         if (!busy) {
                             if (selectedMode == ScanCaptureMode.BATCH) {
-                                val finalized = multiPageFinalizedPages + updated
-                                multiPageFinalizedPages = finalized
+                                multiPageCapturedPages = multiPageCapturedPages.map { current ->
+                                    if (current.id == updated.id) updated else current
+                                }
+                                val completedIds = multiPageFinalizedPages.map { it.id }.toSet() + updated.id
+                                multiPageFinalizedPages = multiPageCapturedPages.filter { it.id in completedIds }
                                 reviewPages = emptyList()
                                 singleDocumentBoundsPage = null
                                 cameraPages = emptyList()
-                                val nextIndex = multiPageReviewIndex + 1
-                                if (nextIndex < multiPageCapturedPages.size) {
-                                    multiPageReviewIndex = nextIndex
-                                    openSingleDocumentBounds(multiPageCapturedPages[nextIndex], cleanupExistingReview = false)
-                                } else {
-                                    reviewPages = finalized
-                                    flowStage = ScanUiStage.REVIEW
-                                }
+                                openBatchReview()
                             } else {
                                 reviewPages = listOf(updated)
                                 pendingSingleDocumentSavePage = updated
@@ -1335,11 +1418,23 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 onOutputFormatChange = { singleDocumentOutputFormat = it },
                 onQualityChange = { quality = it },
                 onPageSizeChange = { pageSize = it },
-                onPagesChange = { reviewPages = it },
+                onPagesChange = { updated ->
+                    reviewPages = updated
+                    if (selectedMode == ScanCaptureMode.BATCH) {
+                        multiPageCapturedPages = updated
+                        multiPageFinalizedPages = updated
+                        multiPageRetakeIndex = null
+                    }
+                },
                 onRetakePage = { index ->
                     val page = reviewPages.getOrNull(index)
                     if (page != null) {
-                        if (selectedMode == ScanCaptureMode.DOCUMENT) {
+                        if (selectedMode == ScanCaptureMode.BATCH) {
+                            // Keep the prior draft as a backup until a new capture replaces it.
+                            multiPageCapturedPages = reviewPages
+                            multiPageFinalizedPages = reviewPages
+                            multiPageRetakeIndex = index
+                        } else if (selectedMode == ScanCaptureMode.DOCUMENT) {
                             documentProcessingRequestId += 1L
                             documentProcessingBusy = false
                             singleDocumentFallbackBackup = page
@@ -1348,14 +1443,24 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                         } else {
                             runCatching { page.file.delete() }
                         }
-                        reviewPages = reviewPages.toMutableList().also { it.removeAt(index) }
+                        reviewPages = if (selectedMode == ScanCaptureMode.BATCH) {
+                            emptyList()
+                        } else {
+                            reviewPages.toMutableList().also { it.removeAt(index) }
+                        }
                         cameraPages = emptyList()
                         flowStage = ScanUiStage.CAMERA
                     }
                 },
                 onEditBounds = { index ->
                     val page = reviewPages.getOrNull(index)
-                    if (selectedMode == ScanCaptureMode.DOCUMENT && page != null) {
+                    if ((selectedMode == ScanCaptureMode.DOCUMENT || selectedMode == ScanCaptureMode.BATCH) && page != null) {
+                        if (selectedMode == ScanCaptureMode.BATCH) {
+                            multiPageCapturedPages = reviewPages
+                            multiPageFinalizedPages = reviewPages.filterNot { it.id == page.id }
+                            multiPageReviewIndex = index
+                            reviewPages = listOf(page)
+                        }
                         documentProcessingRequestId += 1L
                         documentProcessingBusy = false
                         singleDocumentBoundsPage = page.copy(
@@ -1372,6 +1477,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                         if (selectedMode == ScanCaptureMode.BATCH) {
                             multiPageCapturedPages = reviewPages
                             multiPageFinalizedPages = reviewPages
+                            multiPageRetakeIndex = null
+                            reviewPages = emptyList()
                         }
                         cameraPages = emptyList()
                         flowStage = ScanUiStage.CAMERA
@@ -1388,6 +1495,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     multiPageCapturedPages = emptyList()
                     multiPageFinalizedPages = emptyList()
                     multiPageReviewIndex = 0
+                    multiPageRetakeIndex = null
                     cameraPages = emptyList()
                     flowStage = ScanUiStage.HUB
                     lastResult = context.uiText(language, "scan_screen_014")
@@ -1605,7 +1713,10 @@ private fun ScanSaveSuccessContent(
 
     Scaffold(
         topBar = {
-            ScreenTopBar(context.uiText(language, "alpha15_save_success_title")) { onGoHome() }
+            ScreenTopBar(
+                context.uiText(language, "alpha15_save_success_title"),
+                onBack = onGoHome
+            )
         }
     ) { padding ->
         Column(

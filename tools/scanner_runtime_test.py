@@ -133,7 +133,8 @@ def start_mode(mode):
     # actual Camera2 open event rather than treating its presence as ready.
     end = time.monotonic() + 30
     while time.monotonic() < end:
-        camera_log = adb('logcat', '-d', '-s', 'Camera2CameraImpl:D', '*:S')
+        app_pid = adb('shell', 'pidof', PKG, check=False).strip().split()
+        camera_log = adb('logcat', '-d', '--pid=' + app_pid[0], '-s', 'Camera2CameraImpl:D', '*:S') if app_pid else ''
         if 'CameraDevice.onOpened()' in camera_log:
             time.sleep(1.5)
             print('P10_STEP camera_ready ' + mode, flush=True)
@@ -192,9 +193,9 @@ def process_review():
 def pdfs():
     return set(adb('shell', 'find /storage/emulated/0 -type f -name "*.pdf" 2>/dev/null', check=False).splitlines())
 
-def save_pdf(tag):
+def save_pdf(tag, action=None):
     before = pdfs()
-    click(t('scan_screen_036'))
+    click(action or t('scan_screen_036'))
     end = time.monotonic() + 60
     while time.monotonic() < end:
         created = pdfs() - before
@@ -217,6 +218,11 @@ def import_images(ids):
     if find('Downloads') is not None:
         click('Downloads')
     time.sleep(.7)
+    # DocumentsUI can retain the previous scroll position between imports.
+    # Start at the top before looking for the next fixture selection.
+    for _ in range(3):
+        d.swipe_ext('down', scale=.7)
+        time.sleep(.15)
     for index, page_id in enumerate(ids):
         value = 'P10_%02d.png' % page_id
         n = find(value, partial=True)
@@ -296,6 +302,7 @@ def capture_save_three():
     pdf, count = save_pdf('capture3_saved')
     snapshot('capture3_save_success')
     assert count == 3, 'Saved PDF has %s pages, expected 3' % count
+    assert find('اختر المهمة') is None, 'Successful batch save returned to Scanner hub before New Scan'
     click('مسح جديد')
     wait('دفعة متعددة', partial=True)
     assert count_camera() == 0, 'New batch retains old captures'
@@ -321,6 +328,11 @@ def import_ten():
     pdf, count = save_pdf('import10_saved')
     snapshot('import10_saved_result')
     assert actual == 10 and count == 10, 'Imported 10 images; review=%s, PDF=%s' % (actual, count)
+    bar_counts = pdf_page_markers(pdf)
+    assert bar_counts == list(range(1,11)), 'Saved PDF page order/bar markers: %s' % bar_counts
+    return {'review_pages': actual, 'pdf_pages': count, 'page_order': bar_counts}
+
+def pdf_page_markers(pdf):
     bar_counts = []
     for page in PdfReader(pdf).pages:
         im = page.images[0].image.convert('L')
@@ -333,15 +345,14 @@ def import_ten():
                 widths.append(width)
                 width = 0
         bar_counts.append(sum(w >= 10 for w in widths))
-    assert bar_counts == list(range(1,11)), 'Saved PDF page order/bar markers: %s' % bar_counts
-    return {'review_pages': actual, 'pdf_pages': count, 'page_order': bar_counts}
+    return bar_counts
 
 def retake_replaces_page():
     start_mode('batch')
     capture(2)
     actual, _ = process_review()
     assert actual == 2
-    click(t('scan_screen_046'))
+    scroll_click(t('scan_screen_046'))
     wait('Scanner Pro', partial=True)
     capture(1)
     actual = count_camera()
@@ -373,7 +384,7 @@ def edit_bounds_batch():
     capture(2)
     actual, _ = process_review()
     assert actual == 2
-    click(t('alpha20_bounds_title'))
+    scroll_click(t('alpha20_bounds_title'))
     time.sleep(1)
     snapshot('edit_bounds_batch_clicked')
     assert find(t('scan_screen_029')) is None, 'Bounds button leaves BATCH in review without opening adjustment'
@@ -401,7 +412,20 @@ def card_one_side():
         assert not (pdfs() - before), 'Two-sided card saved with only one capture; no missing-side confirmation'
         if find('الوجه الثاني', partial=True) is not None:
             snapshot('card_missing_back_guard')
-            return {'missing_side_prompt': True, 'pdf_created': False}
+            click(t('scan_screen_052'))
+            assert count_review() == 1, 'Dismissing the missing-side prompt lost the first capture'
+            click(t('scan_screen_036'))
+            wait('تصوير الوجه الثاني')
+            click('تصوير الوجه الثاني')
+            wait('Scanner Pro', partial=True)
+            assert count_camera() == 1, 'Continuing the card capture lost its first side'
+            time.sleep(2.5)
+            click(t('scanner_pro_camera_016'))
+            wait(t('scan_screen_029'), timeout=45)
+            assert count_review() == 2
+            pdf, count = save_pdf('card_guard_completed_saved')
+            assert count == 1, 'Completing the second side did not produce a combined single-page PDF'
+            return {'missing_side_prompt': True, 'first_side_preserved': True, 'completed_pdf_pages': count}
         time.sleep(.4)
     raise AssertionError('Saving a one-sided card did not prompt for the missing second side')
 
@@ -417,6 +441,84 @@ def card_two_sides():
     assert count == 1, 'Combined card must have one PDF page; actual=%s' % count
     return {'captured_sides': 2, 'pdf_pages': count}
 
+def document_save_pdf():
+    start_mode('document')
+    click(t('scanner_pro_camera_016'))
+    wait(t('alpha24_capture_success'), timeout=45)
+    click(t('alpha20_continue'))
+    wait(t('alpha20_bounds_title'))
+    click(t('alpha20_continue'))
+    wait(t('alpha34_save_continue'))
+    click(t('alpha34_save_continue'))
+    wait(t('alpha36_save_now'))
+    snapshot('document_save_options')
+    pdf, count = save_pdf('document_saved', t('alpha36_save_now'))
+    assert count == 1, 'Single-document save regression: PDF pages=%s' % count
+    assert len(PdfReader(pdf).pages[0].images) >= 1, 'Single-document PDF has no captured image'
+    snapshot('document_saved_result')
+    return {'pdf_pages': count, 'save_options_available': True}
+
+def gallery_retake_preserves_siblings():
+    start_mode('batch')
+    import_images([1, 2, 3])
+    actual, _ = process_review()
+    assert actual == 3
+    scroll_click(t('alpha20_bounds_title'))
+    assert find(t('scan_screen_029')) is None, 'Gallery batch bounds button did not open adjustment'
+    wait(t('alpha20_bounds_title'))
+    time.sleep(1)
+    click(t('alpha20_retake'))
+    wait('Scanner Pro', partial=True)
+    capture(1)
+    assert count_camera() == 3, 'Retake from bounds changed the three-page batch size'
+    actual, stages = process_review()
+    pdf, count = save_pdf('gallery_bounds_retake_saved')
+    assert actual == 3 and count == 3, 'Retake erased sibling gallery pages: review=%s PDF=%s' % (actual, count)
+    markers = pdf_page_markers(pdf)
+    assert markers[1:] == [2, 3], 'Retake lost or reordered untouched gallery pages: %s' % markers
+    return {'pdf_pages': count, 'stages': stages}
+
+def gallery_add_to_limit_and_retake():
+    start_mode('batch')
+    import_images([1, 2, 3, 4, 5])
+    actual, _ = process_review()
+    assert actual == 5
+    scroll_click(t('scan_screen_034'))
+    assert count_camera() == 5
+    import_images([6, 7, 8, 9, 10])
+    wait(t('scan_screen_029'))
+    assert count_review() == 10, 'Gallery append did not fill available five batch slots'
+    scroll_click(t('scan_screen_046'))
+    wait('Scanner Pro', partial=True)
+    assert count_camera() == 9, 'A full batch did not free its retake slot'
+    import_images([1])
+    wait(t('scan_screen_029'))
+    actual = count_review()
+    pdf, count = save_pdf('gallery_limit_retake_saved')
+    markers = pdf_page_markers(pdf)
+    assert actual == 10 and count == 10 and markers == list(range(1, 11)), 'Full-batch add/retake count or order failed: review=%s PDF=%s markers=%s' % (actual, count, markers)
+    return {'pdf_pages': count, 'page_order': markers, 'retake_at_capacity': True}
+
+def gallery_reorder_delete_add():
+    start_mode('batch')
+    import_images([1, 2, 3])
+    actual, _ = process_review()
+    assert actual == 3
+    click(t('scan_screen_041'))
+    click(t('scan_screen_042'))
+    wait(t('scan_screen_050'))
+    click(t('scan_screen_042'))
+    assert count_review() == 2, 'Deleting a reviewed page did not update the batch'
+    scroll_click(t('scan_screen_034'))
+    assert count_camera() == 2
+    import_images([4])
+    assert count_camera() == 3
+    actual, _ = process_review()
+    pdf, count = save_pdf('gallery_reordered_saved')
+    markers = pdf_page_markers(pdf)
+    assert actual == 3 and count == 3 and markers == [1, 3, 4], 'Reviewed order/deletion was lost when adding a page: review=%s PDF=%s order=%s' % (actual, count, markers)
+    return {'pdf_pages': count, 'page_order': markers}
+
 cases = {
     'capture3_save_restart': capture_save_three,
     'gallery_import3_save': import_three,
@@ -426,6 +528,10 @@ cases = {
     'batch_bounds_button': edit_bounds_batch,
     'card_missing_back_guard': card_one_side,
     'card_two_sides_save': card_two_sides,
+    'document_save_pdf': document_save_pdf,
+    'gallery_bounds_retake_keep_pages': gallery_retake_preserves_siblings,
+    'gallery_add_limit10_retake': gallery_add_to_limit_and_retake,
+    'gallery_reorder_delete_add': gallery_reorder_delete_add,
 }
 selected = os.environ.get('SCANNER_TEST_CASES', ','.join(cases)).split(',')
 for name in selected:
