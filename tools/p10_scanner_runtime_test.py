@@ -96,12 +96,19 @@ def start_mode(mode):
     adb('shell', 'am', 'start', '-n', PKG + '/com.abfilepro.app.MainActivity')
     end = time.monotonic() + 50
     while time.monotonic() < end:
+        # The first launch asks Android to pin a workspace shortcut. Dismiss
+        # this system modal before looking for Compose home screen semantics.
+        if find('Add to Home screen') is not None:
+            click('Cancel', timeout=3)
+            continue
         if find('تخطي') is not None:
             click('تخطي', timeout=2)
         if find('لاحقًا') is not None:
             click('لاحقًا', timeout=2)
-        if find('Scanner المسح الضوئي') is not None:
-            click('Scanner المسح الضوئي')
+        entry = find('Scanner المسح الضوئي')
+        if entry is not None:
+            d.click(*center(entry))
+            time.sleep(.6)
             break
         time.sleep(.5)
     else:
