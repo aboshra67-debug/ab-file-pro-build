@@ -1,0 +1,89 @@
+name: Confirm P10 defects before P11 fix
+on:
+  push:
+    branches: ["fix/p11-scanner-review-batch-20261008"]
+    paths:
+      - ".github/workflows/verify-p11-baseline.yml"
+      - "tools/scanner_runtime_test.py"
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  scanner-runtime:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P10_BATCH_SAVE_FLOW
+          run-id: 37371537380
+          github-token: ${{ github.token }}
+          path: original-apk
+      - name: Verify original uploaded APK checksum
+        run: |
+          echo '5fe48fe461effaf1deb1f5bfc78c2eafa84537303699ee876f96c3989ea79b5a  original-apk/AB98_P10_BATCH_SAVE_FLOW_TEST.apk' | sha256sum -c -
+          mkdir -p runtime-evidence
+      - name: Retrieve exact P10 Safe Source
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='beRrdMn7ygnP'
+          WANT='AB_FILE_PRO_V2_ALPHA98_P10_BATCH_SAVE_FLOW_SAFE_SOURCE.zip'
+          curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o list.json
+          FILE_ID=$(python3 - <<'PY'
+          import json
+          data=json.load(open('list.json'))
+          for item in data.get('files', []):
+              if item.get('fileName') == 'AB_FILE_PRO_V2_ALPHA98_P10_BATCH_SAVE_FLOW_SAFE_SOURCE.zip':
+                  print(item['fileId']); break
+          PY
+          )
+          test -n "$FILE_ID"
+          curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o download.json
+          URL=$(python3 -c 'import json; print(json.load(open("download.json"))["downloadUrl"])')
+          curl --fail -L --retry 3 "$URL" -o p10-source.zip
+          echo 'a3e2b125bba5a9ac90a64dbb1f9a077c099277ff08b6f54b2c9162ceed18d501  p10-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q p10-source.zip -d project
+          grep -q '^2.0.0-alpha98-p10-batch-save-flow$' project/VERSION
+          grep -q 'versionCode = 162' project/app/build.gradle.kts
+          grep -q 'applicationIdSuffix = ".p10batchtrial"' project/app/build.gradle.kts
+
+
+      - name: Install host test dependencies
+        run: python3 -m pip install --break-system-packages uiautomator2 Pillow pypdf
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Test original APK on Android 11 ARM translation image
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          emulator-boot-timeout: 600
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
+          script: |
+            adb shell getprop ro.product.cpu.abilist | tee runtime-evidence/device-abis.txt
+            adb shell getprop ro.dalvik.vm.native.bridge | tee runtime-evidence/native-bridge.txt
+            adb install -r original-apk/AB98_P10_BATCH_SAVE_FLOW_TEST.apk
+            adb shell wm size 480x1054
+            adb shell wm density 213
+            adb shell svc wifi disable
+            adb shell svc data disable
+            python3 -u tools/verify_baseline.py
+      - name: Upload runtime evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: P11_ORIGINAL_P10_RED_EVIDENCE
+          path: runtime-evidence/
+          if-no-files-found: warn
+          retention-days: 14
