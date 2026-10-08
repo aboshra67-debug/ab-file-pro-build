@@ -53,9 +53,6 @@ jobs:
           python3 project/tools/test_alpha98_p10_scanner_regression.py
           python3 -m py_compile project/family-sync-server/main.py
 
-      - name: Apply and audit Scanner-only patch
-        run: python3 tools/apply_p11_overlay.py
-
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -75,9 +72,18 @@ jobs:
           yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
           "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
 
-      - name: Build P11 APK and run all JVM unit tests
+      - name: Reproduce existing JVM failure on exact P10 baseline
+        run: python3 tools/run_p11_jvm_checks.py baseline
+
+      - name: Apply and audit Scanner-only patch
+        run: python3 tools/apply_p11_overlay.py
+
+      - name: Compare all JVM tests against original P10
+        run: python3 tools/run_p11_jvm_checks.py patched
+
+      - name: Build P11 APK
         working-directory: project
-        run: gradle --no-daemon --stacktrace :app:testDebugUnitTest :app:assembleDebug
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
 
       - name: Verify APK identity
         shell: bash
@@ -93,7 +99,7 @@ jobs:
           echo "$BADGING" | grep -q "versionCode='163'"
           echo "$BADGING" | grep -q "versionName='2.0.0-alpha98-p11-scanner-safe-fix'"
           "$APKSIGNER" verify --verbose --print-certs "$APK" | tee verify.txt
-          mkdir release
+          mkdir -p release
           cp "$APK" release/AB98_P11_SCANNER_SAFE_FIX_TEST.apk
           python3 tools/package_p11_source.py
           cp verify.txt release/APK_SIGNATURE_VERIFY.txt
@@ -111,7 +117,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: P11_JVM_UNIT_TEST_REPORTS
-          path: project/app/build/test-results/testDebugUnitTest/
+          path: |
+            project/app/build/test-results/testDebugUnitTest/
+            baseline-unit-reports/
+            baseline-jvm-results.json
           if-no-files-found: warn
           retention-days: 14
 
