@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw
 from pypdf import PdfReader
 from p11_jdwp_crop_gate import CropCommitGate
 
-PKG = os.environ.get('SCANNER_TEST_PACKAGE', 'com.abfilepro.app.p10batchtrial')
+PKG = os.environ.get('SCANNER_TEST_PACKAGE', 'com.abfilepro.app.p11scannertrial')
 OUT = Path('runtime-evidence')
 OUT.mkdir(exist_ok=True)
 RESULTS = []
@@ -39,6 +39,11 @@ def adb(*args, check=True):
         raise RuntimeError(r.stderr + r.stdout)
     return r.stdout
 
+# Isolated emulator cases reset application data; never run that setup on a phone.
+if adb('shell', 'getprop', 'ro.kernel.qemu').strip() != '1':
+    raise RuntimeError('Scanner regression tests require a disposable Android emulator')
+if PKG != 'com.abfilepro.app.p11scannertrial':
+    raise RuntimeError('Final regression tests target the separate P11 trial package only')
 d = u2.connect()
 d.settings['wait_timeout'] = 8
 
@@ -133,7 +138,7 @@ def start_mode(mode):
                 # The timed introduction can finish while we inspect it.
                 pass
             continue
-        if find('الإعدادات') is not None:
+        if find('المظهر والثيمات') is not None:
             # A moving first-launch layout may finish beneath the Skip tap.
             d.press('back')
             time.sleep(.5)
