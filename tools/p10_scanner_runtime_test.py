@@ -50,10 +50,10 @@ def center(n):
     return (v[0] + v[2]) // 2, (v[1] + v[3]) // 2
 
 def find(value, partial=False):
-    value = value.translate(DIGITS)
+    value = value.translate(DIGITS).casefold()
     for n in nodes():
         for attr in ('text', 'content-desc'):
-            s = n.attrib.get(attr, '').translate(DIGITS)
+            s = n.attrib.get(attr, '').translate(DIGITS).casefold()
             if (value in s if partial else value == s) and n.attrib.get('enabled') != 'false':
                 return n
     return None
@@ -89,6 +89,7 @@ def texts():
     return [n.attrib.get('text', '').translate(DIGITS) for n in nodes() if n.attrib.get('text')]
 
 def start_mode(mode):
+    adb('logcat', '-c', check=False)
     adb('shell', 'am', 'force-stop', PKG)
     adb('shell', 'pm', 'clear', PKG)
     adb('shell', 'pm', 'grant', PKG, 'android.permission.CAMERA')
@@ -101,10 +102,13 @@ def start_mode(mode):
         if find('Add to Home screen') is not None:
             click('Cancel', timeout=3)
             continue
-        if find('تخطي') is not None:
-            click('تخطي', timeout=2)
-        if find('لاحقًا') is not None:
-            click('لاحقًا', timeout=2)
+        transient = find('تخطي')
+        if transient is None:
+            transient = find('لاحقًا')
+        if transient is not None:
+            d.click(*center(transient))
+            time.sleep(.6)
+            continue
         entry = find('Scanner المسح الضوئي')
         if entry is not None:
             d.click(*center(entry))
@@ -117,13 +121,27 @@ def start_mode(mode):
     click(t('alpha11_scan_' + mode), timeout=25)
     wait('Scanner Pro', partial=True)
     for n in nodes():
-        if 'Switch' in n.attrib.get('class', '') and n.attrib.get('checked') == 'true':
+        if n.attrib.get('checkable') == 'true' and n.attrib.get('checked') == 'true':
             d.click(*center(n))
             time.sleep(.4)
             break
+    # CameraX retries validation on an emulator with only a back camera.
+    # The shutter appears before initialization completes; wait for the
+    # actual Camera2 open event rather than treating its presence as ready.
+    end = time.monotonic() + 30
+    while time.monotonic() < end:
+        camera_log = adb('logcat', '-d', '-s', 'Camera2CameraImpl:D', '*:S')
+        if 'CameraDevice.onOpened()' in camera_log:
+            time.sleep(1.5)
+            print('P10_STEP camera_ready ' + mode, flush=True)
+            return
+        time.sleep(.5)
+    raise TimeoutError('Camera2 did not open within 30s')
 
 def capture(count):
     for i in range(count):
+        time.sleep(2.5)
+        print('P10_STEP capture ' + str(i + 1), flush=True)
         click(t('scanner_pro_camera_016'), timeout=35)
         wait(t('alpha24_capture_success'), timeout=45)
         click(t('alpha50_next_page'), timeout=20)
