@@ -151,7 +151,8 @@ object PdfTools {
                 renderer.openPage(i).use { page ->
                     val renderWidth = (page.width * scale).toInt().coerceAtLeast(320)
                     val renderHeight = (page.height * scale).toInt().coerceAtLeast(420)
-                    val bitmap = Bitmap.createBitmap(renderWidth, renderHeight, Bitmap.Config.RGB_565)
+                    // PdfRenderer.Page.render accepts ARGB_8888 destinations.
+                    val bitmap = Bitmap.createBitmap(renderWidth, renderHeight, Bitmap.Config.ARGB_8888)
                     val matrix = android.graphics.Matrix().apply {
                         setScale(renderWidth.toFloat() / page.width, renderHeight.toFloat() / page.height)
                     }
