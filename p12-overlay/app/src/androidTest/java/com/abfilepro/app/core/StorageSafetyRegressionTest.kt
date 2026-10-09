@@ -287,4 +287,36 @@ class StorageSafetyRegressionTest {
         assertEquals("FIRST", File(saved, "first.txt").readText())
         assertEquals("SECOND", File(saved, "second.txt").readText())
     }
+
+    @Test fun fallbackMoveKeepsFileAddedAfterCopy() = runBlocking {
+        val source = folder("source")
+        val first = file(source, "first.txt", "ORIGINAL")
+        val late = File(source, "late.txt")
+        val controlledFirst = ControlledFile(first, onLastModified = { late.writeText("USER-ADDED") })
+        val controlled = ControlledFile(source, cannotRename = true, children = {
+            source.listFiles()!!.map { if (it.name == first.name) controlledFirst else it }.toTypedArray()
+        })
+        val destination = folder("destination")
+        val result = runCatching { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) }
+        assertTrue("A source addition must prevent destructive cleanup", result.isFailure)
+        assertEquals("USER-ADDED", late.readText())
+        assertEquals("ORIGINAL", first.readText())
+        assertEquals("ORIGINAL", File(destination, "source/first.txt").readText())
+    }
+
+    @Test fun fallbackMoveKeepsSameLengthSameTimeEditAfterCopy() = runBlocking {
+        val source = folder("source")
+        val first = file(source, "first.txt", "ORIGINAL")
+        val originalTime = first.lastModified()
+        val controlledFirst = ControlledFile(first, onLastModified = {
+            first.writeText("MODIFIED")
+            first.setLastModified(originalTime)
+        })
+        val controlled = ControlledFile(source, cannotRename = true, children = { arrayOf(controlledFirst) })
+        val destination = folder("destination")
+        val result = runCatching { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) }
+        assertTrue("A changed source must prevent destructive cleanup", result.isFailure)
+        assertEquals("MODIFIED", first.readText())
+        assertEquals("ORIGINAL", File(destination, "source/first.txt").readText())
+    }
 }
