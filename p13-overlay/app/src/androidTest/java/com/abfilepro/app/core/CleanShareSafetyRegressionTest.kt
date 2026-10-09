@@ -109,7 +109,7 @@ class CleanShareSafetyRegressionTest {
         val source = image(fixtures, "same.png")
         val existing = File(shareFolder, source.name).apply { writeText("USER FILE MUST STAY") }
         val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain)
-        assertEquals("USER FILE MUST STAY", existing.readText())
+        assertArrayEquals("USER FILE MUST STAY".toByteArray(), existing.readBytes())
         assertNotEquals(existing.canonicalPath, result.file.canonicalPath)
     }
 
@@ -117,7 +117,7 @@ class CleanShareSafetyRegressionTest {
         val source = pdf(fixtures, "same.pdf")
         val existing = File(shareFolder, source.name).apply { writeText("USER PDF MUST STAY") }
         val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain)
-        assertEquals("USER PDF MUST STAY", existing.readText())
+        assertArrayEquals("USER PDF MUST STAY".toByteArray(), existing.readBytes())
         assertNotEquals(existing.canonicalPath, result.file.canonicalPath)
     }
 
