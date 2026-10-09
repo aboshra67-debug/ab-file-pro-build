@@ -1,4 +1,4 @@
-import json,subprocess,xml.etree.ElementTree as ET
+import json,re,subprocess,xml.etree.ElementTree as ET
 from pathlib import Path
 
 phase=Path('p12-ci/phase').read_text().strip()
@@ -35,12 +35,25 @@ else:
     subprocess.run(['adb','shell','uiautomator','dump','/sdcard/p12-startup.xml'],check=True)
     subprocess.run(['adb','pull','/sdcard/p12-startup.xml',str(p/'startup.xml')],check=True)
     ui=ET.parse(p/'startup.xml')
-    assert any(node.attrib.get('package')==package for node in ui.iter('node')),'Target app UI did not appear'
+    shortcut_prompt_dismissed=False
+    if not any(node.attrib.get('package')==package for node in ui.iter('node')):
+        cancel=next((node for node in ui.iter('node') if node.attrib.get('package')=='com.google.android.apps.nexuslauncher' and node.attrib.get('text')=='Cancel'),None)
+        if cancel is not None:
+            (p/'startup-shortcut-dialog.xml').write_bytes((p/'startup.xml').read_bytes())
+            bounds=list(map(int,re.findall(r'\d+',cancel.attrib['bounds'])))
+            assert len(bounds)==4,bounds
+            subprocess.run(['adb','shell','input','tap',str((bounds[0]+bounds[2])//2),str((bounds[1]+bounds[3])//2)],check=True)
+            subprocess.run(['adb','shell','am','start','-W','-n',package+'/com.abfilepro.app.MainActivity'],check=True)
+            subprocess.run(['adb','shell','uiautomator','dump','/sdcard/p12-startup.xml'],check=True)
+            subprocess.run(['adb','pull','/sdcard/p12-startup.xml',str(p/'startup.xml')],check=True)
+            ui=ET.parse(p/'startup.xml')
+            shortcut_prompt_dismissed=True
     with (p/'startup.png').open('wb') as output:
         subprocess.run(['adb','exec-out','screencap','-p'],stdout=output,check=True)
     crash=subprocess.check_output(['adb','logcat','-d','-b','crash'],text=True)
     (p/'startup-crash-buffer.txt').write_text(crash)
     assert ('Process: '+package) not in crash,crash
-    (p/'startup-summary.json').write_text(json.dumps({'launch_status':'ok','target_ui_visible':True,'target_crash':False,'package':package},indent=2))
+    assert any(node.attrib.get('package')==package for node in ui.iter('node')),'Target app UI did not appear'
+    (p/'startup-summary.json').write_text(json.dumps({'launch_status':'ok','target_ui_visible':True,'target_crash':False,'package':package,'existing_launcher_shortcut_prompt_dismissed':shortcut_prompt_dismissed},indent=2))
     print('P12_STARTUP_VERIFIED',package,flush=True)
 print('P12_'+phase.upper().replace('-','_')+'_VERIFIED',len(records),'tests;',len(failed),'expected failures' if phase!='green' else 'failures',flush=True)
