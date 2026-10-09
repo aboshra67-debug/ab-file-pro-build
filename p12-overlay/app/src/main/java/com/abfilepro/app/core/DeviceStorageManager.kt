@@ -140,9 +140,12 @@ object DeviceStorageManager {
         currentCoroutineContext().ensureActive()
         val target = uniqueTarget(destination, entry.name)
         if (entry.file.renameTo(target)) return Entry(target)
+        // Capture before copying: later additions or edits do not belong to the
+        // completed destination and must never be removed as source cleanup.
+        val copiedSource = OwnedOutputSnapshot.capture(entry.file).token
         val copied = copy(entry, destination)
         currentCoroutineContext().ensureActive()
-        if (!deleteMoveSource(entry.file)) {
+        if (!OwnedOutputSnapshot.deleteIfUnchanged(entry.file, copiedSource).complete) {
             // Source cleanup can fail after removing some children. The complete
             // destination is then the only copy of those children: keep it.
             error("تم الاحتفاظ بالنسخة المكتملة في ${copied.path}؛ تعذر حذف بقية المصدر")
@@ -156,17 +159,6 @@ object DeviceStorageManager {
         require(!(entry.isDirectory && (dest == source || dest.path.startsWith(source.path + File.separator)))) {
             "لا يمكن نسخ أو نقل مجلد إلى داخله"
         }
-    }
-
-    private suspend fun deleteMoveSource(file: File): Boolean {
-        currentCoroutineContext().ensureActive()
-        if (!isInsideRoot(file) || file.canonicalFile == rootDir().canonicalFile) return false
-        if (file.isDirectory) {
-            val children = file.listFiles() ?: return false
-            for (child in children) if (!deleteMoveSource(child)) return false
-        }
-        currentCoroutineContext().ensureActive()
-        return !file.exists() || file.delete()
     }
 
     private suspend fun copyRecursively(source: File, target: File) {

@@ -14,7 +14,7 @@ import java.security.MessageDigest
 
 /** Content and identity proof for generated outputs. Never follows links. */
 internal object OwnedOutputSnapshot {
-    data class Node(val relative: String, val signature: String, val directory: Boolean, val identity: String)
+    data class Node(val relative: String, val signature: String, val directory: Boolean, val identity: String, val file: File)
     data class Snapshot(val token: String, val nodes: List<Node>)
     data class DeleteResult(val changed: Boolean, val complete: Boolean)
 
@@ -54,18 +54,19 @@ internal object OwnedOutputSnapshot {
         try {
             val snapshot = capture(root)
             if (snapshot.token != expected) return DeleteResult(false, false)
-            for (node in snapshot.nodes.asReversed()) {
+            // Children precede parents; stable sibling order also makes partial
+            // failures deterministic without re-enumerating new source files.
+            for (node in snapshot.nodes.sortedByDescending { if (it.relative.isEmpty()) 0 else it.relative.count { character -> character == '/' } + 1 }) {
                 currentCoroutineContext().ensureActive()
-                val file = if (node.relative.isEmpty()) root else File(root, node.relative)
+                val file = node.file
                 val current = readNode(file, node.relative)
                 if (node.directory) {
-                    // Own removals change a directory timestamp. Identity and an
-                    // empty listing still protect added files and replacements.
-                    if (!current.directory || current.identity != node.identity ||
-                        file.listFiles()?.isEmpty() != true) return DeleteResult(changed, false)
+                    // Own removals change directory timestamps. The OS refuses
+                    // deletion of a nonempty directory, preserving late additions.
+                    if (!current.directory || current.identity != node.identity) return DeleteResult(changed, false)
                 } else if (current.signature != node.signature) return DeleteResult(changed, false)
                 currentCoroutineContext().ensureActive()
-                Files.delete(file.toPath())
+                if (!file.delete()) return DeleteResult(changed, false)
                 changed = true
             }
             return DeleteResult(changed, true)
@@ -96,7 +97,7 @@ internal object OwnedOutputSnapshot {
         } else "directory"
         val after = Files.readAttributes(path, BasicFileAttributes::class.java, LinkOption.NOFOLLOW_LINKS)
         check(metadata(before) == metadata(after)) { "تغير ناتج العملية أثناء التحقق" }
-        return Node(relative, metadata(before) + ":" + content, before.isDirectory, before.fileKey()?.toString().orEmpty())
+        return Node(relative, metadata(before) + ":" + content, before.isDirectory, before.fileKey()?.toString().orEmpty(), file)
     }
 
     private fun metadata(attributes: BasicFileAttributes): String =

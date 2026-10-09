@@ -23,4 +23,19 @@ if phase in ('red','red-followup'):
     assert all('AssertionError' in x['details'] for x in records if x['status']=='FAIL'),summary
 else:
     assert run.returncode==0 and not failed,summary
+    package='com.abfilepro.app.p12filestrial'
+    launch=subprocess.check_output(['adb','shell','am','start','-W','-n',package+'/com.abfilepro.app.MainActivity'],text=True)
+    (p/'startup-launch.txt').write_text(launch)
+    assert 'Status: ok' in launch,launch
+    subprocess.run(['adb','shell','uiautomator','dump','/sdcard/p12-startup.xml'],check=True)
+    subprocess.run(['adb','pull','/sdcard/p12-startup.xml',str(p/'startup.xml')],check=True)
+    ui=ET.parse(p/'startup.xml')
+    assert any(node.attrib.get('package')==package for node in ui.iter('node')),'Target app UI did not appear'
+    with (p/'startup.png').open('wb') as output:
+        subprocess.run(['adb','exec-out','screencap','-p'],stdout=output,check=True)
+    crash=subprocess.check_output(['adb','logcat','-d','-b','crash'],text=True)
+    (p/'startup-crash-buffer.txt').write_text(crash)
+    assert ('Process: '+package) not in crash,crash
+    (p/'startup-summary.json').write_text(json.dumps({'launch_status':'ok','target_ui_visible':True,'target_crash':False,'package':package},indent=2))
+    print('P12_STARTUP_VERIFIED',package,flush=True)
 print('P12_'+phase.upper().replace('-','_')+'_VERIFIED',len(records),'tests;',len(failed),'expected failures' if phase!='green' else 'failures',flush=True)

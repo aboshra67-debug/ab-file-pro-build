@@ -19,6 +19,7 @@ apk=Path('project/app/build/outputs/apk/debug/app-debug.apk')
 tools=Path(os.environ['ANDROID_SDK_ROOT'])/'build-tools/36.0.0'
 badging=subprocess.check_output([str(tools/'aapt'),'dump','badging',str(apk)],text=True)
 assert "name='com.abfilepro.app.p12filestrial'" in badging and "versionCode='164'" in badging and "versionName='2.0.0-alpha98-p12-file-safety'" in badging
+assert "application-label:'AB File Pro P12'" in badging,badging
 signature=subprocess.check_output([str(tools/'apksigner'),'verify','--verbose','--print-certs',str(apk)],text=True)
 subprocess.run([str(tools/'zipalign'),'-c','-P','16','-v','4',str(apk)],check=True)
 (p/'apk-signature.txt').write_text(signature)
