@@ -46,10 +46,13 @@ android {
 
         buildConfigField("String", "FAMILY_SYNC_BASE_URL", "\"https://family-sync-api-production.up.railway.app\"")
 
-        // Size-safe device build: keep only 64-bit ARM native libraries.
-        // This does not change scanner logic; it only removes x86/x86_64/armeabi-v7a binaries.
+        // Device builds retain ARM64 only. CI can also package native x86_64
+        // to exercise ML Kit without the emulator's ARM translation layer.
         ndk {
             abiFilters += setOf("arm64-v8a")
+            if (providers.gradleProperty("AB_FILE_PRO_NATIVE_TEST").orNull == "true") {
+                abiFilters += "x86_64"
+            }
         }
     }
 

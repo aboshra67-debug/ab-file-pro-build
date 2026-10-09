@@ -53,7 +53,7 @@ jobs:
           "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
       - name: Build target APK and test APK
         working-directory: project
-        run: gradle --no-daemon --stacktrace :app:assembleDebug :app:assembleDebugAndroidTest
+        run: gradle --no-daemon --stacktrace -PAB_FILE_PRO_NATIVE_TEST=true :app:assembleDebug :app:assembleDebugAndroidTest
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules

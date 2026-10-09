@@ -1,10 +1,10 @@
-import json,re,subprocess,xml.etree.ElementTree as ET
+import hashlib,json,re,subprocess,zipfile,xml.etree.ElementTree as ET
 from pathlib import Path
 
 phase=Path('p13-ci/phase').read_text().strip()
 assert phase in ('red','green')
 p=Path('p13-evidence');p.mkdir(exist_ok=True)
-run=subprocess.run(['gradle','--no-daemon','--stacktrace',':app:connectedDebugAndroidTest'],cwd='project')
+run=subprocess.run(['gradle','--no-daemon','--stacktrace','-PAB_FILE_PRO_NATIVE_TEST=true',':app:connectedDebugAndroidTest'],cwd='project')
 records=[]
 for f in sorted(Path('project/app/build/outputs/androidTest-results').rglob('TEST-*.xml')):
     for case in ET.parse(f).getroot().iter('testcase'):
@@ -24,6 +24,24 @@ if phase=='red':
 else:
     assert run.returncode==0 and not failed,summary
     package='com.abfilepro.app.p13sharetrial'
+    apk=Path('project/app/build/outputs/apk/debug/app-debug.apk')
+    def payload(file):
+        with zipfile.ZipFile(file) as z:
+            assert z.testzip() is None
+            return {n:hashlib.sha256(z.read(n)).hexdigest() for n in z.namelist() if not n.endswith('/') and not n.startswith(('META-INF/','lib/x86_64/'))}
+    tested=payload(apk)
+    native_test_sha=hashlib.sha256(apk.read_bytes()).hexdigest()
+    with zipfile.ZipFile(apk) as z:
+        assert any(n.startswith('lib/x86_64/') for n in z.namelist())
+        assert any(n.startswith('lib/arm64-v8a/') for n in z.namelist())
+    # Rebuild the default ARM64 phone APK, preserving the project's size policy.
+    # Prove every shared packaged entry (including ARM native libraries) is identical.
+    subprocess.run(['gradle','--no-daemon','--stacktrace',':app:assembleDebug'],cwd='project',check=True)
+    delivered=payload(apk)
+    assert tested==delivered,{'added':sorted(set(delivered)-set(tested)),'missing':sorted(set(tested)-set(delivered)),'changed':[n for n in tested.keys()&delivered.keys() if tested[n]!=delivered[n]]}
+    with zipfile.ZipFile(apk) as z:
+        assert {n.split('/')[1] for n in z.namelist() if n.startswith('lib/')}=={'arm64-v8a'}
+    (p/'native-test-to-phone-payload.json').write_text(json.dumps({'native_test_apk_sha256':native_test_sha,'phone_apk_sha256':hashlib.sha256(apk.read_bytes()).hexdigest(),'native_test_abis':['arm64-v8a','x86_64'],'phone_abis':['arm64-v8a'],'shared_entries_verified':len(tested),'all_shared_entries_identical':True,'shared_payload_sha256':delivered},indent=2))
     # The connected-test runner cleans installed packages after instrumentation.
     # Reinstall the same built APK for the independent launcher smoke check.
     installed=subprocess.run(['adb','shell','pm','path',package],stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,check=False).stdout
