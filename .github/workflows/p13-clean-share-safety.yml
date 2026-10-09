@@ -1,0 +1,98 @@
+name: P13 Clean Share Safety Red Green and APK
+on:
+  push:
+    branches: ["fix/p13-clean-share-safety-20261009"]
+    paths: [".github/workflows/p13-clean-share-safety.yml", "p13-overlay/**", "p13-ci/**"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  clean-share-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore exact P10 and verified P11/P12 inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          API='https://api.firestorage.ai/dev/file'
+          SHARE='beRrdMn7ygnP'
+          curl --fail -L --retry 3 "$API/shares/$SHARE/files?maxResults=1000" -o p13-list.json
+          FILE_ID=$(python3 -c 'import json; print(next(i["fileId"] for i in json.load(open("p13-list.json")).get("files",[]) if i.get("fileName")=="AB_FILE_PRO_V2_ALPHA98_P10_BATCH_SAVE_FLOW_SAFE_SOURCE.zip"))')
+          curl --fail -L --retry 3 -X POST "$API/shares/$SHARE/files/$FILE_ID/download" -o p13-download.json
+          URL=$(python3 -c 'import json; print(json.load(open("p13-download.json"))["downloadUrl"])')
+          echo "::add-mask::$URL"
+          curl --fail -L --retry 3 "$URL" -o p10-source.zip
+          echo 'a3e2b125bba5a9ac90a64dbb1f9a077c099277ff08b6f54b2c9162ceed18d501  p10-source.zip' | sha256sum -c -
+          mkdir project
+          unzip -q p10-source.zip -d project
+          python3 tools/apply_p11_overlay.py
+          cp -a p12-overlay/. project/
+          cd project
+          sha256sum -c ../p13-ci/p12-compiled-inputs.sha256
+          cd ..
+          cp -a p13-overlay/. project/
+          rm -f p13-list.json p13-download.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Android SDK 36
+        run: |
+          set -euo pipefail
+          SDK_ROOT=/usr/local/lib/android/sdk
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+      - name: Build target APK and test APK
+        working-directory: project
+        run: gradle --no-daemon --stacktrace :app:assembleDebug :app:assembleDebugAndroidTest
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Run real Android Clean Share and P12 regression tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          emulator-boot-timeout: 600
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -camera-front none -no-snapshot
+          script: |
+            python3 p13-ci/run_android_checks.py
+      - name: Unit suite and verified APK artifact
+        if: ${{ hashFiles('p13-ci/phase') != '' }}
+        run: |
+          python3 p13-ci/finalize.py
+      - name: Upload execution evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: P13_CLEAN_SHARE_SAFETY_EVIDENCE
+          path: |
+            p13-evidence/
+            project/app/build/outputs/androidTest-results/
+            project/app/build/reports/androidTests/
+            project/app/build/test-results/testDebugUnitTest/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Upload verified P13 APK
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: AB98_P13_CLEAN_SHARE_SAFETY_APK
+          path: p13-release/*
+          if-no-files-found: ignore
+          retention-days: 14
+          compression-level: 0
