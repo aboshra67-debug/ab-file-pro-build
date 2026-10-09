@@ -2,6 +2,7 @@ package com.abfilepro.app.core
 
 import android.content.Context
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.pdf.PdfDocument
@@ -9,12 +10,19 @@ import android.graphics.pdf.PdfRenderer
 import android.os.ParcelFileDescriptor
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.google.mlkit.vision.barcode.BarcodeScanning
+import com.google.mlkit.vision.common.InputImage
 import kotlinx.coroutines.async
 import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.CompletableDeferred
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.tasks.await
+import kotlinx.coroutines.withTimeout
 import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
@@ -23,7 +31,12 @@ import org.junit.runner.RunWith
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
+import java.nio.file.Files
+import java.nio.file.StandardCopyOption
+import java.nio.file.attribute.BasicFileAttributes
 import java.util.UUID
+import java.util.concurrent.ConcurrentLinkedQueue
+import kotlin.coroutines.CoroutineContext
 
 /** Exercises the public processor with real PNGs, PDFs, and Android storage. */
 @RunWith(AndroidJUnit4::class)
@@ -88,8 +101,9 @@ class CleanShareSafetyRegressionTest {
         PdfRenderer(fd).use { it.pageCount }
     }
 
-    private fun cacheFiles(): Set<String> = File(context.cacheDir, "clean_share").walkTopDown()
-        .filter { it.isFile }.map { it.relativeTo(context.cacheDir).path }.toSet()
+    private fun cacheFiles(): Set<String> = context.cacheDir.listFiles().orEmpty()
+        .filter { it.name == "clean_share" || it.name.startsWith("clean_share_") }
+        .flatMap { folder -> folder.walkTopDown().filter { it.isFile }.map { it.relativeTo(context.cacheDir).path }.toList() }.toSet()
 
     @Test fun imageChosenFromShareFolderNeverReplacesItsSource() = runBlocking {
         val source = image(shareFolder, "original.png")
@@ -197,7 +211,7 @@ class CleanShareSafetyRegressionTest {
     @Test fun failedWriterRemovesOnlyItsPartialDraft() = runBlocking {
         val existing = File(shareFolder, "keep.txt").apply { writeText("USER DATA") }
         val outcome = runCatching {
-            CleanShareOutput.create({ shareFolder }) { draft ->
+            CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
                 draft.file("partial.png").writeText("partial bytes")
                 throw IOException("controlled writer failure")
             }
@@ -209,7 +223,7 @@ class CleanShareSafetyRegressionTest {
 
     @Test fun cancellationBeforePublicationRemovesPartialDraft() = runBlocking {
         val task = async {
-            CleanShareOutput.create({ shareFolder }) { draft ->
+            CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
                 val staged = draft.file("ready.png").apply { writeText("ready bytes") }
                 currentCoroutineContext().cancel()
                 draft.publish(staged, "result", "png")
@@ -221,7 +235,7 @@ class CleanShareSafetyRegressionTest {
 
     @Test fun failureAfterPublicationRemovesUnchangedOutput() = runBlocking {
         val outcome = runCatching {
-            CleanShareOutput.create({ shareFolder }) { draft ->
+            CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
                 draft.publish(draft.file("ready.txt").apply { writeText("ready bytes") }, "result", "txt")
                 throw IOException("controlled handoff failure")
             }
@@ -233,7 +247,7 @@ class CleanShareSafetyRegressionTest {
     @Test fun failedHandoffPreservesOutputEditedAfterPublication() = runBlocking {
         var published: File? = null
         val outcome = runCatching {
-            CleanShareOutput.create({ shareFolder }) { draft ->
+            CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
                 published = draft.publish(draft.file("ready.txt").apply { writeText("ready bytes") }, "result", "txt")
                 published!!.writeText("USER EDIT AFTER PUBLICATION")
                 throw IOException("controlled handoff failure")
@@ -245,7 +259,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun failedCompressionKeepsValidCleanedPdf() = runBlocking {
-        val result = CleanShareOutput.create({ shareFolder }) { draft ->
+        val result = CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
             val original = pdf(draft.directory, "cleaned.pdf")
             val candidate = draft.file("compressed.pdf")
             val selected = draft.preferSmallerPdf(original, candidate, 2) {
@@ -261,7 +275,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun invalidCompressionCandidateKeepsValidCleanedPdf() = runBlocking {
-        val result = CleanShareOutput.create({ shareFolder }) { draft ->
+        val result = CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
             val original = pdf(draft.directory, "cleaned.pdf")
             val candidate = draft.file("compressed.pdf")
             val selected = draft.preferSmallerPdf(original, candidate, 2) { candidate.writeText("%PDF-broken") }
@@ -272,7 +286,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun compressionCandidateMissingPagesIsRejected() = runBlocking {
-        val result = CleanShareOutput.create({ shareFolder }) { draft ->
+        val result = CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
             val original = pdf(draft.directory, "cleaned.pdf")
             val candidate = draft.file("compressed.pdf")
             val selected = draft.preferSmallerPdf(original, candidate, 2) {
@@ -304,5 +318,85 @@ class CleanShareSafetyRegressionTest {
         assertEquals(2, pageCount(result.file))
         assertArrayEquals(before, source.readBytes())
         assertFalse("Clean Share published an intermediate to the general PDF folder", File(fixtures, "pdf").exists())
+    }
+
+    private class PausedDispatcher : CoroutineDispatcher() {
+        private val queue = ConcurrentLinkedQueue<Runnable>()
+        override fun dispatch(context: CoroutineContext, block: Runnable) { queue.add(block) }
+        fun pending(): Boolean = queue.isNotEmpty()
+        fun runNext() { checkNotNull(queue.poll()).run() }
+        fun drain() { while (pending()) runNext() }
+    }
+
+    private suspend fun cancelDuringReturnHandoff(replaceWithIdenticalBytes: Boolean) = coroutineScope {
+        val caller = PausedDispatcher()
+        val ready = CompletableDeferred<File>()
+        val operation = async(caller) {
+            CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
+                val file = draft.publish(draft.file("ready.txt").apply { writeText("published bytes") }, "result", "txt")
+                ready.complete(file)
+                file
+            }
+        }
+        caller.runNext()
+        val output = withTimeout(10_000) { ready.await() }
+        withTimeout(10_000) { while (!caller.pending()) delay(5) }
+        assertTrue("The result must be complete before cancelling its queued return", output.isFile)
+        if (replaceWithIdenticalBytes) {
+            val bytes = output.readBytes()
+            val modified = output.lastModified()
+            val identity = Files.readAttributes(output.toPath(), BasicFileAttributes::class.java).fileKey()
+            val replacement = File(fixtures, "replacement.txt").apply { writeBytes(bytes) }
+            check(replacement.setLastModified(modified))
+            Files.move(replacement.toPath(), output.toPath(), StandardCopyOption.REPLACE_EXISTING)
+            assertEquals(modified, output.lastModified())
+            assertNotEquals("Fixture must replace file identity", identity,
+                Files.readAttributes(output.toPath(), BasicFileAttributes::class.java).fileKey())
+        }
+        operation.cancel()
+        withTimeout(10_000) {
+            while (!operation.isCompleted) { caller.drain(); delay(5) }
+        }
+        assertTrue(runCatching { operation.await() }.exceptionOrNull() is CancellationException)
+        if (replaceWithIdenticalBytes) {
+            assertEquals("published bytes", output.readText())
+            assertEquals(listOf(output.name), shareFolder.listFiles()!!.map { it.name })
+        } else assertTrue("Cancelled handoff left its unchanged output", shareFolder.listFiles()!!.isEmpty())
+    }
+
+    @Test fun cancelledReturnHandoffRemovesUnchangedPublication() = runBlocking {
+        cancelDuringReturnHandoff(false)
+    }
+
+    @Test fun cancelledReturnHandoffPreservesIdenticalReplacement() = runBlocking {
+        cancelDuringReturnHandoff(true)
+    }
+
+    @Test fun inputAndOcrDraftsRemainInAppPrivateCache() = runBlocking {
+        val before = cacheFiles()
+        CleanShareOutput.create({ shareFolder }, context.cacheDir) { draft ->
+            val sensitive = draft.file("source.pdf").apply { writeText("UNREDACTED INPUT FIXTURE") }
+            assertTrue(draft.directory.canonicalPath.startsWith(context.cacheDir.canonicalPath + File.separator))
+            assertEquals("UNREDACTED INPUT FIXTURE", sensitive.readText())
+            assertTrue("An input draft reached the user's output folder", shareFolder.listFiles()!!.isEmpty())
+        }
+        assertEquals(before, cacheFiles())
+    }
+
+    @Test fun qrRedactionStillWorksWithPrivateOcrDrafts() = runBlocking {
+        val bitmap = QrGenerator.create("https://example.com/AB-P13-SAFETY", 600)
+        val source = File(fixtures, "qr.png")
+        try { FileOutputStream(source).use { check(bitmap.compress(Bitmap.CompressFormat.PNG, 100, it)) } }
+        finally { bitmap.recycle() }
+        val before = source.readBytes()
+        val cacheBefore = cacheFiles()
+        val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain.copy(redactSensitive = true))
+        assertTrue("Existing QR detection/redaction stopped working", result.qrItems >= 1 && result.totalRedactions >= 1)
+        val cleaned = checkNotNull(BitmapFactory.decodeFile(result.file.path))
+        val scanner = BarcodeScanning.getClient()
+        try { assertTrue(scanner.process(InputImage.fromBitmap(cleaned, 0)).await().isEmpty()) }
+        finally { scanner.close(); cleaned.recycle() }
+        assertArrayEquals(before, source.readBytes())
+        assertEquals(cacheBefore, cacheFiles())
     }
 }

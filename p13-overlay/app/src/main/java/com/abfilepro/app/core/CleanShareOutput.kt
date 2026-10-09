@@ -10,6 +10,7 @@ import kotlinx.coroutines.ensureActive
 import kotlinx.coroutines.withContext
 import java.io.Closeable
 import java.io.File
+import java.io.FileOutputStream
 import java.nio.file.Files
 import java.util.UUID
 
@@ -17,11 +18,11 @@ import java.util.UUID
 internal object CleanShareOutput {
     data class Selection(val file: File, val compressed: Boolean)
 
-    suspend fun <T> create(outputDirectory: () -> File, block: suspend (Draft) -> T): T {
+    suspend fun <T> create(outputDirectory: () -> File, privateCache: File, block: suspend (Draft) -> T): T {
         var owner: Draft? = null
         try {
             return withContext(Dispatchers.IO) {
-                Draft(outputDirectory()).also { owner = it }.use { block(it) }
+                Draft(outputDirectory().canonicalFile, privateCache.canonicalFile).also { owner = it }.use { block(it) }
             }
         } catch (error: Throwable) {
             // withContext can discard a completed result when its caller cancels
@@ -31,8 +32,10 @@ internal object CleanShareOutput {
         }
     }
 
-    class Draft internal constructor(private val outputDirectory: File) : Closeable {
-        val directory: File = Files.createTempDirectory(outputDirectory.toPath(), ".ab_clean_share_").toFile()
+    class Draft internal constructor(private val outputDirectory: File, privateCache: File) : Closeable {
+        // Inputs and OCR intermediates remain in app-private cache. Only the
+        // already-cleaned candidate ever enters output publication staging.
+        val directory: File = Files.createTempDirectory(privateCache.toPath(), "clean_share_p13_").toFile().canonicalFile
         private var published: File? = null
         private var publicationToken: String? = null
 
@@ -48,16 +51,29 @@ internal object CleanShareOutput {
             require(owns(staged) && staged.isFile && staged.length() > 0) { "تعذر اعتماد نسخة المشاركة" }
             require(base.isNotBlank() && '/' !in base && '\\' !in base && extension.matches(Regex("[A-Za-z0-9]+")))
             check(published == null) { "تم اعتماد ناتج هذه المحاولة بالفعل" }
-            val proof = OwnedOutputSnapshot.capture(staged).token
-            // A fresh name also separates simultaneous attempts using the same
-            // display name. Never request replacement of an existing path.
-            val target = File(outputDirectory, "${base}_${UUID.randomUUID()}.$extension")
             currentCoroutineContext().ensureActive()
-            Files.move(staged.toPath(), target.toPath())
-            published = target
-            publicationToken = proof
-            currentCoroutineContext().ensureActive()
-            return target
+            val outputStage = Files.createTempDirectory(outputDirectory.toPath(), ".ab_clean_share_").toFile()
+            try {
+                val complete = File(outputStage, "ready.$extension")
+                val expectedBytes = staged.length()
+                staged.inputStream().use { input ->
+                    FileOutputStream(complete).use { output ->
+                        check(RuntimeSafety.copyCancellable(input, output) == expectedBytes) { "تعذر اكتمال نسخة المشاركة" }
+                        output.fd.sync()
+                    }
+                }
+                require(complete.length() == expectedBytes && staged.length() == expectedBytes)
+                val proof = OwnedOutputSnapshot.capture(complete).token
+                // A fresh name separates simultaneous attempts. This move is
+                // within one filesystem and never requests replacement.
+                val target = File(outputDirectory, "${base}_${UUID.randomUUID()}.$extension")
+                currentCoroutineContext().ensureActive()
+                Files.move(complete.toPath(), target.toPath())
+                published = target
+                publicationToken = proof
+                currentCoroutineContext().ensureActive()
+                return target
+            } finally { outputStage.deleteRecursively() }
         }
 
         suspend fun preferSmallerPdf(original: File, candidate: File, pages: Int, compress: suspend () -> Unit): Selection {

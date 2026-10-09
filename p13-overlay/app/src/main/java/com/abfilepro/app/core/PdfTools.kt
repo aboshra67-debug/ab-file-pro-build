@@ -139,7 +139,9 @@ object PdfTools {
         // Clean Share supplies its private draft target. Other callers retain
         // the existing output directory and compression behavior.
         val out = outputFile ?: File(FileUtils.outputDir(context, "pdf"), "Compressed_${System.currentTimeMillis()}.pdf")
-        require(FileUtils.isInsideRoot(context, out)) { "مسار ضغط PDF غير صالح" }
+        val privateCache = context.cacheDir.canonicalFile.path + File.separator
+        require(FileUtils.isInsideRoot(context, out) ||
+            (outputFile != null && out.canonicalPath.startsWith(privateCache))) { "مسار ضغط PDF غير صالح" }
         val pfd = context.contentResolver.openFileDescriptor(uri, "r") ?: error("تعذر فتح ملف PDF")
         val renderer = PdfRenderer(pfd)
         val pdf = PdfDocument()

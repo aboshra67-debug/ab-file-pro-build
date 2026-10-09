@@ -12,6 +12,7 @@ import android.graphics.pdf.PdfRenderer
 import android.net.Uri
 import android.os.ParcelFileDescriptor
 import android.provider.OpenableColumns
+import androidx.core.content.FileProvider
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
 import kotlinx.coroutines.CancellationException
@@ -52,7 +53,7 @@ object CleanShareProcessor {
     suspend fun clean(context: Context, uri: Uri, options: Options = Options()): Result = CleanShareOutput.create({
         RuntimeSafety.ensureStorage(context)
         FileUtils.outputDir(context, "AB Clean Share")
-    }) { draft ->
+    }, context.cacheDir) { draft ->
         val type = context.contentResolver.getType(uri).orEmpty().lowercase()
         when {
             type == "application/pdf" || type.endsWith("/pdf") -> cleanPdf(context, uri, options, draft)
@@ -176,7 +177,7 @@ object CleanShareProcessor {
         val selected = if (options.compress) {
             val candidate = draft.file("compressed.pdf")
             draft.preferSmallerPdf(staged, candidate, outputPages) {
-                PdfTools.compressPdf(context, FileUtils.contentUri(context, staged), .55f, outputFile = candidate)
+                PdfTools.compressPdf(context, FileProvider.getUriForFile(context, "${context.packageName}.files", staged), .55f, outputFile = candidate)
             }
         } else CleanShareOutput.Selection(staged, false)
         val finalFile = draft.publish(selected.file, base, "pdf")
@@ -195,7 +196,7 @@ object CleanShareProcessor {
     private suspend fun redactBitmap(context: Context, source: Bitmap, draft: CleanShareOutput.Draft): RedactionResult {
         val temp = draft.file("ocr_${java.util.UUID.randomUUID()}.jpg")
         FileOutputStream(temp).use { check(source.compress(Bitmap.CompressFormat.JPEG, 94, it)) { "تعذر تجهيز صورة الحجب" } }
-        val uri = FileUtils.contentUri(context, temp)
+        val uri = FileProvider.getUriForFile(context, "${context.packageName}.files", temp)
         val language = when {
             OcrProcessor.isModelReady(context, OcrProcessor.Language.ALL) -> OcrProcessor.Language.ALL
             OcrProcessor.isModelReady(context, OcrProcessor.Language.ARABIC_ENGLISH) -> OcrProcessor.Language.ARABIC_ENGLISH
