@@ -10,6 +10,9 @@ import android.os.ParcelFileDescriptor
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import kotlinx.coroutines.async
+import kotlinx.coroutines.CancellationException
+import kotlinx.coroutines.currentCoroutineContext
+import kotlinx.coroutines.cancel
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.runBlocking
 import org.junit.After
@@ -19,6 +22,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import java.io.File
 import java.io.FileOutputStream
+import java.io.IOException
 import java.util.UUID
 
 /** Exercises the public processor with real PNGs, PDFs, and Android storage. */
@@ -188,5 +192,117 @@ class CleanShareSafetyRegressionTest {
         assertTrue(runCatching { CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain.copy(removeBlankPages = true)) }.isFailure)
         assertArrayEquals(before, source.readBytes())
         assertTrue(shareFolder.listFiles()!!.isEmpty())
+    }
+
+    @Test fun failedWriterRemovesOnlyItsPartialDraft() = runBlocking {
+        val existing = File(shareFolder, "keep.txt").apply { writeText("USER DATA") }
+        val outcome = runCatching {
+            CleanShareOutput.create({ shareFolder }) { draft ->
+                draft.file("partial.png").writeText("partial bytes")
+                throw IOException("controlled writer failure")
+            }
+        }
+        assertTrue(outcome.exceptionOrNull() is IOException)
+        assertEquals("USER DATA", existing.readText())
+        assertEquals(listOf("keep.txt"), shareFolder.listFiles()!!.map { it.name })
+    }
+
+    @Test fun cancellationBeforePublicationRemovesPartialDraft() = runBlocking {
+        val task = async {
+            CleanShareOutput.create({ shareFolder }) { draft ->
+                val staged = draft.file("ready.png").apply { writeText("ready bytes") }
+                currentCoroutineContext().cancel()
+                draft.publish(staged, "result", "png")
+            }
+        }
+        assertTrue(runCatching { task.await() }.exceptionOrNull() is CancellationException)
+        assertTrue(shareFolder.listFiles()!!.isEmpty())
+    }
+
+    @Test fun failureAfterPublicationRemovesUnchangedOutput() = runBlocking {
+        val outcome = runCatching {
+            CleanShareOutput.create({ shareFolder }) { draft ->
+                draft.publish(draft.file("ready.txt").apply { writeText("ready bytes") }, "result", "txt")
+                throw IOException("controlled handoff failure")
+            }
+        }
+        assertTrue(outcome.exceptionOrNull() is IOException)
+        assertTrue(shareFolder.listFiles()!!.isEmpty())
+    }
+
+    @Test fun failedHandoffPreservesOutputEditedAfterPublication() = runBlocking {
+        var published: File? = null
+        val outcome = runCatching {
+            CleanShareOutput.create({ shareFolder }) { draft ->
+                published = draft.publish(draft.file("ready.txt").apply { writeText("ready bytes") }, "result", "txt")
+                published!!.writeText("USER EDIT AFTER PUBLICATION")
+                throw IOException("controlled handoff failure")
+            }
+        }
+        assertTrue(outcome.exceptionOrNull() is IOException)
+        assertEquals("USER EDIT AFTER PUBLICATION", published!!.readText())
+        assertEquals(1, shareFolder.listFiles()!!.size)
+    }
+
+    @Test fun failedCompressionKeepsValidCleanedPdf() = runBlocking {
+        val result = CleanShareOutput.create({ shareFolder }) { draft ->
+            val original = pdf(draft.directory, "cleaned.pdf")
+            val candidate = draft.file("compressed.pdf")
+            val selected = draft.preferSmallerPdf(original, candidate, 2) {
+                candidate.writeText("partial compressed PDF")
+                throw IOException("controlled compression failure")
+            }
+            assertFalse(selected.compressed)
+            assertEquals(original, selected.file)
+            draft.publish(selected.file, "result", "pdf")
+        }
+        assertEquals(2, pageCount(result))
+        assertEquals(listOf(result.name), shareFolder.listFiles()!!.map { it.name })
+    }
+
+    @Test fun invalidCompressionCandidateKeepsValidCleanedPdf() = runBlocking {
+        val result = CleanShareOutput.create({ shareFolder }) { draft ->
+            val original = pdf(draft.directory, "cleaned.pdf")
+            val candidate = draft.file("compressed.pdf")
+            val selected = draft.preferSmallerPdf(original, candidate, 2) { candidate.writeText("%PDF-broken") }
+            assertFalse(selected.compressed)
+            draft.publish(selected.file, "result", "pdf")
+        }
+        assertEquals(2, pageCount(result))
+    }
+
+    @Test fun compressionCandidateMissingPagesIsRejected() = runBlocking {
+        val result = CleanShareOutput.create({ shareFolder }) { draft ->
+            val original = pdf(draft.directory, "cleaned.pdf")
+            val candidate = draft.file("compressed.pdf")
+            val selected = draft.preferSmallerPdf(original, candidate, 2) {
+                pdf(draft.directory, candidate.name, listOf(true), 32)
+            }
+            assertFalse(selected.compressed)
+            draft.publish(selected.file, "result", "pdf")
+        }
+        assertEquals(2, pageCount(result))
+    }
+
+    @Test fun jpegOutputStillPreservesTheOriginalPng() = runBlocking {
+        val source = image(fixtures, "original.png")
+        val before = source.readBytes()
+        val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain.copy(compress = true))
+        assertArrayEquals(before, source.readBytes())
+        assertEquals("jpg", result.file.extension)
+        assertTrue(FileUtils.verifySavedFile(context, result.file))
+    }
+
+    @Test fun smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue() = runBlocking {
+        val source = pdf(fixtures, "large.pdf", listOf(false, false), 384)
+        val before = source.readBytes()
+        val normal = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain.copy(cleanFileName = true))
+        val normalSize = normal.file.length()
+        val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain.copy(compress = true, cleanFileName = true))
+        assertTrue("A smaller valid candidate should be used", result.compressed)
+        assertTrue(result.file.length() < normalSize)
+        assertEquals(2, pageCount(result.file))
+        assertArrayEquals(before, source.readBytes())
+        assertFalse("Clean Share published an intermediate to the general PDF folder", File(fixtures, "pdf").exists())
     }
 }

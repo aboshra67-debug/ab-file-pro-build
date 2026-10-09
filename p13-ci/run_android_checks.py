@@ -11,7 +11,7 @@ for f in sorted(Path('project/app/build/outputs/androidTest-results').rglob('TES
         failure=case.find('failure');error=case.find('error');skipped=case.find('skipped')
         status='FAIL' if failure is not None or error is not None else 'SKIP' if skipped is not None else 'PASS'
         records.append({'name':case.attrib['name'],'classname':case.attrib.get('classname'),'status':status,'details':(failure.text or '') if failure is not None else (error.text or '') if error is not None else ''})
-assert len(records)==33,(run.returncode,len(records),records)
+assert len(records)==(33 if phase=='red' else 42),(run.returncode,len(records),records)
 assert not any(x['status']=='SKIP' for x in records),records
 expected_red={'imageChosenFromShareFolderNeverReplacesItsSource','pdfChosenFromShareFolderNeverReplacesItsSource','existingImageWithSameNameIsPreserved','existingPdfWithSameNameIsPreserved','parallelImagesWithSameNameHaveIndependentOutputs','malformedPdfLeavesNoAttemptFiles','largerCompressionCandidateIsNotReportedAsCompressed'}
 failed={x['name'] for x in records if x['status']=='FAIL'}
