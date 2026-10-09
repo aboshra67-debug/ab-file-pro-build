@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p12_undo_protected_ar">تعذر التراجع بأمان. تم الاحتفاظ بالملفات التي تغيرت أو تعذر التحقق منها.</string>
+    <string name="p12_undo_protected_en">Could not undo safely. Changed or unverifiable files were kept.</string>
+    <string name="p12_undo_protected_fr">Annulation impossible en toute sécurité. Les fichiers modifiés ou non vérifiables ont été conservés.</string>
+    <string name="p12_undo_partial_ar">تم التراجع عن النتائج الآمنة فقط، والاحتفاظ بالباقي وسجله.</string>
+    <string name="p12_undo_partial_en">Safe outputs were undone. Remaining files and their history were kept.</string>
+    <string name="p12_undo_partial_fr">Les résultats vérifiés ont été annulés. Les autres fichiers et leur historique ont été conservés.</string>
+</resources>

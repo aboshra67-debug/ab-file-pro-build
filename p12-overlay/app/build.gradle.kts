@@ -38,9 +38,9 @@ android {
         applicationId = "com.abfilepro.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 163
+        versionCode = 164
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        versionName = "2.0.0-alpha98-p11-scanner-safe-fix"
+        versionName = "2.0.0-alpha98-p12-file-safety"
 
         vectorDrawables { useSupportLibrary = true }
 
@@ -56,7 +56,7 @@ android {
     buildTypes {
         debug {
             // Isolated install so testing never requires uninstalling the production app.
-            applicationIdSuffix = ".p11scannertrial"
+            applicationIdSuffix = ".p12filestrial"
             if (originalSigningReady) {
                 signingConfig = signingConfigs.getByName("original")
             }
