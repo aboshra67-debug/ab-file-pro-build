@@ -24,6 +24,11 @@ if phase in ('red','red-followup'):
 else:
     assert run.returncode==0 and not failed,summary
     package='com.abfilepro.app.p12filestrial'
+    # The connected-test runner cleans installed packages after instrumentation.
+    # Reinstall the same built APK for the independent launcher smoke check.
+    installed=subprocess.check_output(['adb','shell','pm','path',package],text=True)
+    (p/'startup-install-state-before.txt').write_text(installed)
+    subprocess.run(['adb','install','-r','project/app/build/outputs/apk/debug/app-debug.apk'],check=True)
     launch=subprocess.check_output(['adb','shell','am','start','-W','-n',package+'/com.abfilepro.app.MainActivity'],text=True)
     (p/'startup-launch.txt').write_text(launch)
     assert 'Status: ok' in launch,launch
