@@ -375,10 +375,21 @@ object ScanProcessor {
         val quad = page.perspective ?: return page
         requireValidPerspective(quad)
         currentCoroutineContext().ensureActive()
-        RuntimeSafety.ensureStorage(context, estimatedOutputBytes = page.file.length().coerceAtLeast(2L * 1024L * 1024L))
-
         val sourceFile = page.file
         require(sourceFile.isFile && sourceFile.length() > 0L) { "تعذر قراءة صورة الصفحة" }
+        if (quad == ScanQuad.insetDefault(0f)) {
+            // Unchanged bounds retire only the perspective metadata. Validate that
+            // the source still decodes, then preserve its bytes and all editor edits.
+            val readable = decodeScaled(sourceFile, 760)
+            try {
+                currentCoroutineContext().ensureActive()
+                return page.copy(perspective = null)
+            } finally {
+                readable.recycle()
+            }
+        }
+        RuntimeSafety.ensureStorage(context, estimatedOutputBytes = sourceFile.length().coerceAtLeast(2L * 1024L * 1024L))
+
         val dir = sourceFile.parentFile ?: error("تعذر تجهيز صورة الصفحة")
         val stamp = System.nanoTime()
         val pending = File(dir, "perspective_${stamp}.jpg.part")

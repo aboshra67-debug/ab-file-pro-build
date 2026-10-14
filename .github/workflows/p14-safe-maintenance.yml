@@ -38,7 +38,12 @@ jobs:
           sha256sum -c ../p14-ci/p13-inputs.sha256
           cd ..
           cp -a p14-tests/. project/
-          if [ "$(cat p14-ci/phase)" = green ]; then cp -a p14-overlay/. project/; fi
+          if [ "$(cat p14-ci/phase)" = green ]; then
+            cp -a p14-overlay/. project/
+            cd project
+            sha256sum -c ../p14-ci/p14-inputs.sha256
+            cd ..
+          fi
           rm -f p13-list.json p13-download.json
       - uses: actions/setup-java@v4
         with:
@@ -78,10 +83,7 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
           script: |
             python3 p14-ci/run_checks.py
-      - name: Unit suite and verified APK artifact
-        if: ${{ hashFiles('p14-ci/phase') != '' }}
-        run: |
-          python3 p14-ci/finalize.py
+            python3 p14-ci/finalize.py
       - name: Upload execution evidence
         if: always()
         uses: actions/upload-artifact@v4

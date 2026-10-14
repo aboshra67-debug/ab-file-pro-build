@@ -14,8 +14,6 @@ import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
 import java.util.ArrayDeque
-import java.nio.file.Files
-import java.nio.file.StandardOpenOption
 
 object FileUtils {
     private const val COPY_BUFFER_SIZE = 64 * 1024
@@ -346,21 +344,25 @@ object FileUtils {
         if (source.renameTo(target)) return target
         currentCoroutineContext().ensureActive()
         val sourceProof = OwnedOutputSnapshot.capture(source)
-        var created = false
+        var writer: OwnedFileWrite? = null
         var completeCopy = false
         try {
             source.inputStream().use { input ->
-                Files.newOutputStream(target.toPath(), StandardOpenOption.CREATE_NEW, StandardOpenOption.WRITE).use { output ->
-                    created = true
+                val owned = OwnedFileWrite.create(target).also { writer = it }
+                owned.stream.use { output ->
                     RuntimeSafety.copyCancellable(input, output)
                     output.flush()
                 }
             }
-            target.setLastModified(source.lastModified())
-            val copiedProof = OwnedOutputSnapshot.capture(target)
+            val copiedProof = requireNotNull(writer).seal()
             require(copiedProof.nodes.single().signature.substringAfterLast(':') ==
                 sourceProof.nodes.single().signature.substringAfterLast(':')) { "تعذر التحقق من اكتمال النسخ" }
             completeCopy = true
+            val modified = source.lastModified()
+            require(OwnedOutputSnapshot.capture(target).token == copiedProof.token) { "تغيرت الوجهة بعد النسخ؛ تم الاحتفاظ بالأصل" }
+            target.setLastModified(modified)
+            // Reverify owned bytes after metadata handling, before unlinking the source.
+            requireNotNull(writer).seal()
             currentCoroutineContext().ensureActive()
             require(OwnedOutputSnapshot.deleteIfUnchanged(source, sourceProof.token).complete) {
                 "حُفظت النسخة المكتملة في ${target.absolutePath}؛ لم يُحذف الأصل لأنه تغير أو تعذر حذفه"
@@ -369,7 +371,7 @@ object FileUtils {
         } catch (error: Throwable) {
             // A completed copy may be the only copy of some source bytes.
             // Never discard it merely because source cleanup failed/cancelled.
-            if (created && !completeCopy) target.delete()
+            if (!completeCopy) writer?.rollback()
             throw error
         }
     }

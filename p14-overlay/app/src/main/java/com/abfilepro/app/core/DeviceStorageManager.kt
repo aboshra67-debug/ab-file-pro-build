@@ -12,12 +12,14 @@ import android.webkit.MimeTypeMap
 import androidx.core.content.FileProvider
 import kotlinx.coroutines.currentCoroutineContext
 import kotlinx.coroutines.ensureActive
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.NonCancellable
+import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.nio.file.Files
 import java.nio.file.LinkOption
-import java.nio.file.StandardOpenOption
 import java.nio.file.attribute.BasicFileAttributes
 import java.util.UUID
 import java.util.zip.ZipEntry
@@ -194,17 +196,19 @@ object DeviceStorageManager {
         requireInsideRoot(parent)
         val base = FileManagerRules.safeName(rawName).ifBlank { "Archive.zip" }.let { if (it.endsWith(".zip", true)) it else "$it.zip" }
         val outputFile = uniqueTarget(parent, base)
+        val writer = OwnedFileWrite.create(outputFile)
         try {
-            ZipOutputStream(FileOutputStream(outputFile).buffered()).use { zip ->
+            ZipOutputStream(writer.stream.buffered()).use { zip ->
                 val used = HashSet<String>()
                 for (entry in selected) {
                     currentCoroutineContext().ensureActive()
                     addToZip(zip, entry.file, "", used)
                 }
             }
+            writer.seal()
             return Entry(outputFile)
         } catch (error: Throwable) {
-            outputFile.delete()
+            writer.rollback()
             throw error
         }
     }
@@ -247,6 +251,7 @@ object DeviceStorageManager {
         } else destination
         val canonicalBase = baseDestination.canonicalFile
         val created = ArrayList<Pair<File, String>>()
+        val createdFiles = ArrayList<OwnedFileWrite>()
         fun rememberCreated(file: File) {
             val identity = Files.readAttributes(file.toPath(), BasicFileAttributes::class.java, LinkOption.NOFOLLOW_LINKS).fileKey()?.toString().orEmpty()
             created += file to identity
@@ -285,10 +290,8 @@ object DeviceStorageManager {
                     } else {
                         createDirectories(requireNotNull(target.parentFile))
                         val actualTarget = if (target.exists()) uniqueTarget(target.parentFile!!, target.name) else target
-                        Files.newOutputStream(actualTarget.toPath(), StandardOpenOption.CREATE_NEW, StandardOpenOption.WRITE).use { output ->
-                            // Record ownership before the first byte so CRC/read failures
-                            // also clean the currently-written file and implicit parents.
-                            rememberCreated(actualTarget)
+                        val writer = OwnedFileWrite.create(actualTarget).also { createdFiles += it }
+                        writer.stream.use { output ->
                             val buffer = ByteArray(128 * 1024)
                             while (true) {
                                 currentCoroutineContext().ensureActive()
@@ -300,18 +303,23 @@ object DeviceStorageManager {
                             }
                             output.flush()
                         }
+                        writer.seal()
                     }
                     zip.closeEntry()
                 }
             }
-            return baseDestination to created.count { it.first.isFile }
+            return baseDestination to createdFiles.count { it.file.isFile }
         } catch (error: Throwable) {
-            created.asReversed().forEach { (file, identity) ->
-                runCatching {
-                    val current = Files.readAttributes(file.toPath(), BasicFileAttributes::class.java, LinkOption.NOFOLLOW_LINKS)
-                    if (identity.isNotBlank() && !current.isSymbolicLink && current.fileKey()?.toString() == identity) {
-                        // Empty-directory deletion preserves any late user additions.
-                        file.delete()
+            withContext(NonCancellable + Dispatchers.IO) {
+                // Completed entries keep their frozen content proof, so a later
+                // cancellation cannot acquire ownership of an in-place user edit.
+                createdFiles.asReversed().forEach { it.rollback() }
+                created.asReversed().forEach { (file, identity) ->
+                    runCatching {
+                        val current = Files.readAttributes(file.toPath(), BasicFileAttributes::class.java, LinkOption.NOFOLLOW_LINKS)
+                        if (identity.isNotBlank() && current.isDirectory && !current.isSymbolicLink && current.fileKey()?.toString() == identity) {
+                            file.delete() // Empty-directory deletion preserves late additions.
+                        }
                     }
                 }
             }

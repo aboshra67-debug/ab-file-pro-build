@@ -588,29 +588,32 @@ fun FilesScreen(
                 Button(
                     enabled = finalName.isNotBlank() && !operationBusy,
                     onClick = {
+                        val requestedName = renameText
                         scope.launch {
-                        operationBusy = true
-                        try {
-                        val result = withContext(Dispatchers.IO) {
-                            runCatching {
-                                val renamed = FileUtils.renameEntry(entry, renameText)
-                                FileUndoStore.recordRename(context, entry, renamed)
-                                renamed
+                            operationBusy = true
+                            try {
+                                val result = withContext(Dispatchers.IO) {
+                                    runCatching {
+                                        val renamed = FileUtils.renameEntry(entry, requestedName)
+                                        FileUndoStore.recordRename(context, entry, renamed)
+                                        renamed
+                                    }
+                                }
+                                result
+                                    .onSuccess { newEntry ->
+                                        updateFavoritePath(entry, newEntry)
+                                        updateRecentPath(entry, newEntry)
+                                        FileTagStore.movePath(context, entry, newEntry)
+                                        undoVersion++
+                                        tagVersion++
+                                        refresh()
+                                        Toast.makeText(context, context.uiText(language, "b2_files_rename_done"), Toast.LENGTH_SHORT).show()
+                                    }
+                                    .onFailure { Toast.makeText(context, context.uiText(language, "b2_files_rename_error"), Toast.LENGTH_LONG).show() }
+                                renameEntry = null
+                            } finally {
+                                operationBusy = false
                             }
-                        }
-                        result
-                            .onSuccess { newEntry ->
-                                updateFavoritePath(entry, newEntry)
-                                updateRecentPath(entry, newEntry)
-                                FileTagStore.movePath(context, entry, newEntry)
-                                undoVersion++
-                                tagVersion++
-                                refresh()
-                                Toast.makeText(context, context.uiText(language, "b2_files_rename_done"), Toast.LENGTH_SHORT).show()
-                            }
-                            .onFailure { Toast.makeText(context, context.uiText(language, "b2_files_rename_error"), Toast.LENGTH_LONG).show() }
-                        renameEntry = null
-                        } finally { operationBusy = false }
                         }
                     }
                 ) { Text(context.uiText(language, "b2_files_save")) }

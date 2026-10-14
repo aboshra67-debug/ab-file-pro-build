@@ -617,9 +617,11 @@ def bounds_without_changes():
 def cancel_at_crop_commit():
     start_mode('batch')
     import_images([1])
-    actual, _ = process_review()
-    assert actual == 1
-    scroll_click(t('alpha20_bounds_title'))
+    assert count_camera() == 1
+    # Pause the first real perspective crop. An unchanged full-frame reopen
+    # deliberately has no replacement-file/delete boundary after P14.
+    click('حفظ ومراجعة', partial=True)
+    wait(t('alpha20_bounds_title'))
     assert find(t('scan_screen_029')) is None
     source = Path('project/app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt').read_text()
     delete_line = next(i for i, line in enumerate(source.splitlines(), 1) if 'sourceFile.absolutePath != committed.absolutePath' in line)

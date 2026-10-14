@@ -217,8 +217,8 @@ object PdfTools {
     ): File = withContext(Dispatchers.IO) {
         RuntimeSafety.ensureStorage(context)
         val pfd = context.contentResolver.openFileDescriptor(uri, "r") ?: error("تعذر فتح ملف PDF")
-        val renderer = PdfRenderer(pfd)
-        try {
+        pfd.use {
+          PdfRenderer(pfd).use { renderer ->
             require(renderer.pageCount in 1..30) { "الصورة الطويلة تدعم من 1 إلى 30 صفحة في العملية الواحدة" }
             val sourceSizes = buildList {
                 for (index in 0 until renderer.pageCount) {
@@ -227,32 +227,41 @@ object PdfTools {
                 }
             }
             var targetWidth = preferredWidth.coerceIn(480, 1440)
-            fun projectedHeight(width: Int): Int = sourceSizes.sumOf { (w, h) ->
-                (h * (width.toDouble() / w.toDouble())).toInt().coerceAtLeast(1)
-            } + (sourceSizes.size - 1).coerceAtLeast(0) * 8
-
-            val maxHeight = 30_000
-            val maxPixels = 24_000_000L
-            var totalHeight = projectedHeight(targetWidth)
-            if (totalHeight > maxHeight || targetWidth.toLong() * totalHeight > maxPixels) {
-                val byHeight = maxHeight.toDouble() / totalHeight.coerceAtLeast(1)
-                val byPixels = kotlin.math.sqrt(maxPixels.toDouble() / (targetWidth.toDouble() * totalHeight.coerceAtLeast(1)))
-                val factor = minOf(1.0, byHeight, byPixels)
-                targetWidth = (targetWidth * factor).toInt().coerceAtLeast(480)
-                totalHeight = projectedHeight(targetWidth)
+            fun projectedHeights(width: Int): List<Long> = sourceSizes.map { (w, h) ->
+                (h * (width.toDouble() / w.toDouble())).toLong().coerceAtLeast(1L)
             }
-            require(totalHeight <= maxHeight && targetWidth.toLong() * totalHeight <= maxPixels) {
+            val gapHeight = (sourceSizes.size - 1).coerceAtLeast(0) * 8L
+            val maxHeight = 30_000L
+            val maxPixels = 24_000_000L
+            val runtime = Runtime.getRuntime()
+            val availableHeap = (runtime.maxMemory() - (runtime.totalMemory() - runtime.freeMemory())).coerceAtLeast(0L)
+            val byteBudget = minOf(96L * 1024L * 1024L, runtime.maxMemory() / 3L, availableHeap / 2L)
+            var pageHeights = projectedHeights(targetWidth)
+            var total = pageHeights.sum() + gapHeight
+            // Combined image uses two bytes per pixel; PdfRenderer requires
+            // four bytes per pixel for the largest live page bitmap.
+            fun workingBytes(): Long = targetWidth.toLong() * (total * 2L + pageHeights.maxOrNull()!! * 4L)
+            while (targetWidth > 480 && (total > maxHeight || targetWidth.toLong() * total > maxPixels || workingBytes() > byteBudget)) {
+                val factor = minOf(1.0, maxHeight.toDouble() / total,
+                    kotlin.math.sqrt(maxPixels.toDouble() / (targetWidth.toDouble() * total)),
+                    kotlin.math.sqrt(byteBudget.toDouble() / workingBytes()))
+                targetWidth = (targetWidth * factor).toInt().coerceIn(480, targetWidth - 1)
+                pageHeights = projectedHeights(targetWidth)
+                total = pageHeights.sum() + gapHeight
+            }
+            require(total <= maxHeight && targetWidth.toLong() * total <= maxPixels && workingBytes() <= byteBudget) {
                 "الملف كبير جدًا لإنشاء صورة طويلة بأمان على الهاتف"
             }
+            val totalHeight = total.toInt()
 
             val combined = Bitmap.createBitmap(targetWidth, totalHeight, Bitmap.Config.RGB_565)
             val canvas = android.graphics.Canvas(combined)
             canvas.drawColor(android.graphics.Color.WHITE)
             var y = 0
             try {
-                sourceSizes.forEachIndexed { index, (sourceW, sourceH) ->
+                sourceSizes.forEachIndexed { index, _ ->
                     currentCoroutineContext().ensureActive()
-                    val height = (sourceH * (targetWidth.toDouble() / sourceW.toDouble())).toInt().coerceAtLeast(1)
+                    val height = pageHeights[index].toInt()
                     val pageBitmap = Bitmap.createBitmap(targetWidth, height, Bitmap.Config.ARGB_8888)
                     try {
                         pageBitmap.eraseColor(android.graphics.Color.WHITE)
@@ -284,9 +293,7 @@ object PdfTools {
             } finally {
                 combined.recycle()
             }
-        } finally {
-            renderer.close()
-            pfd.close()
+          }
         }
     }
 

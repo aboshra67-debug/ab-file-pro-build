@@ -171,15 +171,20 @@ def click_card_retake(side_index):
         time.sleep(.2)
     expected_header = "الصفحة %s من 2" % (side_index + 1)
     retake_text = t("scan_screen_046").translate(DIGITS)
+    seen_requested_header = False
     for _ in range(28):
         root = ET.fromstring(dump())
         header = next((n for n in root.iter("node") if n.attrib.get("text", "").translate(DIGITS) == expected_header), None)
         if header is not None:
-            header_y = center(header)[1]
+            seen_requested_header = True
+        if seen_requested_header:
+            # A tall card can scroll its header out of view before its Retake
+            # button appears. Retain the observed page until the next header.
+            header_y = center(header)[1] if header is not None else 0
             following_header_ys = [
                 center(n)[1] for n in root.iter("node")
-                if re.fullmatch(r"الصفحة\s+\d+\s+من\s+2", n.attrib.get("text", "").translate(DIGITS))
-                and center(n)[1] > header_y
+                if (match := re.fullmatch(r"الصفحة\s+(\d+)\s+من\s+2", n.attrib.get("text", "").translate(DIGITS)))
+                and int(match.group(1)) > side_index + 1
             ]
             next_header_y = min(following_header_ys, default=10**9)
             candidates = [
