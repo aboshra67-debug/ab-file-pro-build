@@ -4,10 +4,12 @@
             android:name="com.abfilepro.app.core.MaintenanceDocumentsProvider"
             android:authorities="com.abfilepro.app.maintenance.test.documents"
             android:exported="true"
+            android:permission="android.permission.MANAGE_DOCUMENTS"
             android:grantUriPermissions="true">
             <intent-filter>
                 <action android:name="android.content.action.DOCUMENTS_PROVIDER" />
             </intent-filter>
         </provider>
+        <receiver android:name="com.abfilepro.app.core.MaintenanceGrantReceiver" android:exported="true" />
     </application>
 </manifest>

@@ -1,6 +1,10 @@
 package com.abfilepro.app.core
 
 import android.content.Context
+import android.app.Activity
+import android.content.BroadcastReceiver
+import android.content.ComponentName
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
@@ -8,6 +12,8 @@ import android.graphics.pdf.PdfDocument
 import android.graphics.pdf.PdfRenderer
 import android.net.Uri
 import android.os.ParcelFileDescriptor
+import android.os.Handler
+import android.os.Looper
 import android.provider.DocumentsContract
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -24,6 +30,8 @@ import java.nio.file.Files
 import java.security.MessageDigest
 import java.util.Comparator
 import java.util.UUID
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.TimeUnit
 import java.util.zip.CRC32
 import java.util.zip.ZipEntry
 import java.util.zip.ZipOutputStream
@@ -273,8 +281,20 @@ class MaintenanceSafetyRegressionTest {
         assertEquals("ORIGINAL", File(destination, "source.txt").readText())
     }
 
-    private fun safContext(): Context = InstrumentationRegistry.getInstrumentation().context
+    private fun safContext(): Context = context
     private fun resetProvider(fault: String = "") {
+        val granted = CountDownLatch(1)
+        var grantResult = Activity.RESULT_CANCELED
+        val receiver = object : BroadcastReceiver() {
+            override fun onReceive(context: Context, intent: Intent) {
+                grantResult = resultCode
+                granted.countDown()
+            }
+        }
+        val grant = Intent().setComponent(ComponentName(context.packageName + ".test", "com.abfilepro.app.core.MaintenanceGrantReceiver"))
+        context.sendOrderedBroadcast(grant, null, receiver, Handler(Looper.getMainLooper()), Activity.RESULT_CANCELED, null, null)
+        assertTrue("Test provider grant receiver did not respond", granted.await(10, TimeUnit.SECONDS))
+        assertEquals(Activity.RESULT_OK, grantResult)
         val ready = safContext().contentResolver.call(Uri.parse("content://$authority"), "reset_fixtures", fault, null)
         assertTrue(ready?.getBoolean("ready") == true)
     }

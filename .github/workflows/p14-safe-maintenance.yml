@@ -59,6 +59,8 @@ jobs:
       - name: Build target APK and test APK
         working-directory: project
         run: gradle --no-daemon --stacktrace -PAB_FILE_PRO_NATIVE_TEST=true :app:assembleDebug :app:assembleDebugAndroidTest
+      - name: Install Scanner host test dependencies
+        run: python3 -m pip install --break-system-packages uiautomator2 Pillow pypdf
       - name: Enable KVM
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -73,9 +75,10 @@ jobs:
           profile: pixel_2
           emulator-boot-timeout: 600
           disable-animations: true
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none -camera-front none -no-snapshot
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
           script: |
             python3 p14-ci/run_android_checks.py
+            python3 p14-ci/run_scanner_phase.py
       - name: Unit suite and verified APK artifact
         if: ${{ hashFiles('p14-ci/phase') != '' }}
         run: |
@@ -87,6 +90,7 @@ jobs:
           name: P14_SAFE_MAINTENANCE_EVIDENCE
           path: |
             p14-evidence/
+            runtime-evidence/
             project/app/build/outputs/androidTest-results/
             project/app/build/reports/androidTests/
             project/app/build/test-results/testDebugUnitTest/
