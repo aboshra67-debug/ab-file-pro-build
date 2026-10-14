@@ -8,6 +8,8 @@ assert phase in ('red', 'green')
 output = Path('p14-evidence')
 output.mkdir(exist_ok=True)
 run = subprocess.run(['gradle', '--no-daemon', '--stacktrace', '-PAB_FILE_PRO_NATIVE_TEST=true', ':app:connectedDebugAndroidTest'], cwd='project')
+with (output / (phase + '-android-logcat.txt')).open('w') as log:
+    subprocess.run(['adb', 'logcat', '-d', '-v', 'threadtime'], stdout=log, stderr=subprocess.STDOUT)
 records = []
 for file in sorted(Path('project/app/build/outputs/androidTest-results').rglob('TEST-*.xml')):
     for case in ET.parse(file).getroot().iter('testcase'):
@@ -30,7 +32,7 @@ if phase == 'red':
         'arabicDecimalAmountAndTaxStayComplete', 'arabicThousandsAndDecimalStayComplete',
         'persianDigitsAndArabicSeparatorsStayComplete', 'businessNameSurvivesMissingEmail',
         'businessNameSurvivesMissingWebsite', 'businessNameSurvivesMissingPhone',
-        'arabicNameSurvivesAllContactFieldsMissing', 'singlePdfPageRendersAsLongImage',
+        'arabicNameSurvivesAllContactFieldsMissing', 'fullBusinessContactFieldsStillParse', 'singlePdfPageRendersAsLongImage',
         'multiplePdfPagesRenderInOrderAsLongImage', 'unreadableImageFailsEntirePdfWithoutPublishingMissingPages',
         'failedZipEnumerationCannotSucceedWithEmptyDirectory', 'corruptZipRemovesPartialFileAndImplicitDirectories',
         'renameUndoNeverMovesAReplacementFile', 'moveUndoNeverMovesAReplacementFile',

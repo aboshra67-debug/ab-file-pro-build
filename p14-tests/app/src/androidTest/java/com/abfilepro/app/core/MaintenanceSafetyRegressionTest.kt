@@ -291,7 +291,10 @@ class MaintenanceSafetyRegressionTest {
                 granted.countDown()
             }
         }
-        val grant = Intent().setComponent(ComponentName(context.packageName + ".test", "com.abfilepro.app.core.MaintenanceGrantReceiver"))
+        val testPackage = InstrumentationRegistry.getInstrumentation().context.packageName
+        val grant = Intent().setComponent(ComponentName(testPackage, "com.abfilepro.app.core.MaintenanceGrantReceiver"))
+            .putExtra("target_package", context.packageName)
+            .addFlags(Intent.FLAG_INCLUDE_STOPPED_PACKAGES or Intent.FLAG_RECEIVER_FOREGROUND)
         context.sendOrderedBroadcast(grant, null, receiver, Handler(Looper.getMainLooper()), Activity.RESULT_CANCELED, null, null)
         assertTrue("Test provider grant receiver did not respond", granted.await(10, TimeUnit.SECONDS))
         assertEquals(Activity.RESULT_OK, grantResult)

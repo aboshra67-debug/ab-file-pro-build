@@ -9,8 +9,9 @@ import android.provider.DocumentsContract
 /** Grants only disposable test-provider fixtures to the corresponding isolated trial app. */
 class MaintenanceGrantReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
-        val target = context.packageName.removeSuffix(".test")
+        val target = requireNotNull(intent.getStringExtra("target_package"))
         check(target in setOf("com.abfilepro.app.p13sharetrial", "com.abfilepro.app.p14mainttrial"))
+        android.util.Log.i("P14Fixture", "Grant from ${context.packageName} to $target")
         val tree = DocumentsContract.buildTreeDocumentUri("com.abfilepro.app.maintenance.test.documents", "root")
         context.grantUriPermission(target, tree, Intent.FLAG_GRANT_READ_URI_PERMISSION or
             Intent.FLAG_GRANT_WRITE_URI_PERMISSION or Intent.FLAG_GRANT_PREFIX_URI_PERMISSION)

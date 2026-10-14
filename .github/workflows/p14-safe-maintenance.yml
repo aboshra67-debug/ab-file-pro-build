@@ -77,8 +77,7 @@ jobs:
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
           script: |
-            python3 p14-ci/run_android_checks.py
-            python3 p14-ci/run_scanner_phase.py
+            python3 p14-ci/run_checks.py
       - name: Unit suite and verified APK artifact
         if: ${{ hashFiles('p14-ci/phase') != '' }}
         run: |
