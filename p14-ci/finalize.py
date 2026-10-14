@@ -14,7 +14,7 @@ package = 'com.abfilepro.app.p14mainttrial'
 version = '2.0.0-alpha98-p14-safe-maintenance'
 android = json.loads((evidence / 'green-android-results.json').read_text())
 scanner = json.loads(Path('runtime-evidence/runtime_results.json').read_text())
-assert android['tests'] == 78 and android['failed'] == 0 and android['gradle_exit'] == 0, android
+assert android['tests'] == 79 and android['failed'] == 0 and android['gradle_exit'] == 0, android
 assert all(r['status'] == 'PASS' for r in android['results']), android
 assert len(scanner) == 19 and all(r['status'] == 'PASS' for r in scanner), scanner
 apk = Path('project/app/build/outputs/apk/debug/app-debug.apk')
@@ -114,7 +114,7 @@ assert any(n.attrib.get('package') == package for n in ui.iter('node')), 'Target
     'existing_launcher_shortcut_prompt_dismissed': dismissed}, indent=2))
 result = release / 'AB98_P14_SAFE_MAINTENANCE_TEST.apk'; shutil.copy2(apk, result)
 (release / 'APK_SHA256.txt').write_text(sha(result) + '  ' + result.name + '\n')
-summary = {'phase': 'green', 'android_functions': 78, 'scanner_ui_cases': 19, 'jvm_tests': 29, 'all_passed': True,
+summary = {'phase': 'green', 'android_functions': 79, 'scanner_ui_cases': 19, 'jvm_tests': 29, 'all_passed': True,
     'package': package, 'version_code': 166, 'version_name': version, 'apk': result.name,
     'apk_bytes': result.stat().st_size, 'apk_sha256': sha(result), 'commit': os.environ.get('GITHUB_SHA'),
     'run_id': os.environ.get('GITHUB_RUN_ID'),

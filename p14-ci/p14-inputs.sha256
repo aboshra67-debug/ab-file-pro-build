@@ -5,7 +5,7 @@ f3bbc14e03761943416d7c265f015ed2f14ade0552153c48f4d9547d6f11ead9  app/src/androi
 8483cacb9efc4099b89c7e82a6c3e2171292d643662cbec8a30a54ef26954547  app/src/androidTest/java/com/abfilepro/app/core/CleanShareSafetyRegressionTest.kt
 41717819fbced97697bfe65b3a179deb811435543fc4be2e869f64bb53821c26  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceDocumentsProvider.java
 a29992a559c41138e0c386d055a40c28b11966038dfec0623a75868a13410329  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceGrantReceiver.java
-21eb6044193564650fd8af43df8e850e21723d81b96f6a2d5cdab3b0da9af71e  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceSafetyRegressionTest.kt
+59b9d137d7c2f4b29b794c66d7019febcda0a3d9619835f9b440a0732cef7f7e  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceSafetyRegressionTest.kt
 12279f42e5ea79cc722de2a7113cfd8ff9420c04edbc5d4ab3dc03db9251f3e0  app/src/androidTest/java/com/abfilepro/app/core/StorageSafetyRegressionTest.kt
 e83cd35aee774565467c6a1a60bc09e5f9e66729701c282e353246bc4938ecea  app/src/debug/AndroidManifest.xml
 23aea76d9a799bfa12817f6871aa593a8eced15359fb0aaf8288e61c80520944  app/src/main/AndroidManifest.xml
@@ -80,7 +80,7 @@ e5ad201953c68a616280b32f574edf83acc5338e75be2df109b2337e9201ee60  app/src/main/j
 556b78b8075c5d905d2c258db9afcc0bb20908e9b76b7ff182224be56728af1d  app/src/main/java/com/abfilepro/app/core/RuntimeSafety.kt
 3581a0e51108f17cbbb00e0ab928dfe23e44c1f0dedc28a1448f7499de36b215  app/src/main/java/com/abfilepro/app/core/SafStorageManager.kt
 5cf23e2093e21e162ddf237b542171512cdac6baca8b28fd1f9fa1c4c7c9d6f3  app/src/main/java/com/abfilepro/app/core/ScanInteractionRules.kt
-8740b1f64a5dca542c5604c23047418f3468484c7698257089709eb6b1a0c3b1  app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt
+be7c43beee0b8f6584b36eb3908c5c4e5f9564a851dff637d33c03cc8255a6d5  app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt
 e058fa5a0510cd2a8c224206833e3f556ace18c0c2b44947cd5c5cd7f636657a  app/src/main/java/com/abfilepro/app/core/SecureValueStore.kt
 947239496756963254b86e28fdc9a71f068b353a15d558e1976ebc4a26aa4776  app/src/main/java/com/abfilepro/app/core/SimpleDocxPdfRenderer.kt
 3cadab09c4b1954fa20ca89a7d4461b1d581ad2a491bd3453b1878e1288bb212  app/src/main/java/com/abfilepro/app/core/SmartFormProcessor.kt
@@ -117,7 +117,7 @@ d52ddfac87758215463f30fe5392ee38aea4cf00ffbff64b8c6035e9e4288f2a  app/src/main/j
 3ccb3e7b2ac2b1ef5a98d2989b243097b773584b9f22d2b9cb8bf2e974144898  app/src/main/java/com/abfilepro/app/ui/screens/PdfViewerScreen.kt
 6f89d736609e96d5d92400b6c6bb2d39b008fd0c83dcd097c8fc8de457d63595  app/src/main/java/com/abfilepro/app/ui/screens/ReceiptInvoiceScreen.kt
 c07732da37a678084e1e459e58f73f0f91358c10613c0c367823ab988970fd37  app/src/main/java/com/abfilepro/app/ui/screens/SafFileManagerPane.kt
-1f7e2b772a5733585744bb58c90242ef6040971b4139e46a09ef560e745fb48c  app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt
+4882f11a7822fac661fcab7bfd75b0da2979b6fe8d9a61f5397512d029aec1c9  app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt
 594290e52dc899a5f98c1d62eca6cc882bc82fed797ba2fc3fb2768318d3f33b  app/src/main/java/com/abfilepro/app/ui/screens/ScanTranslationResult.kt
 b81ff898f33e871d18bb4e55471968600f2f941da2c333aeb329dd726d282c53  app/src/main/java/com/abfilepro/app/ui/screens/ScannerProCamera.kt
 49b5ac554f50d1b230bca0640121eb6fcde98b1dfccc18006fe06b1b6f3b6a57  app/src/main/java/com/abfilepro/app/ui/screens/SettingsScreen.kt

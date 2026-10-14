@@ -25,7 +25,7 @@ summary = {'phase': phase, 'gradle_exit': run.returncode, 'tests': len(records),
            'passed': sum(r['status'] == 'PASS' for r in records),
            'failed': sum(r['status'] == 'FAIL' for r in records), 'results': records}
 (output / (phase + '-android-results.json')).write_text(json.dumps(summary, ensure_ascii=False, indent=2))
-assert len(records) == 78, summary
+assert len(records) == 79, summary
 assert not any(r['status'] == 'SKIP' for r in records), summary
 if phase == 'red':
     expected_failures = {
@@ -43,6 +43,7 @@ if phase == 'red':
         'concaveCropIsRejectedBeforeChangingCapturedImage', 'crossingCropIsRejectedBeforeChangingCapturedImage',
         'fullFrameCropDoesNotReencodeOrDeleteSource',
         'zipCancellationKeepsFileEditedAfterExtraction', 'legacyFallbackFailureKeepsReplacementAtDestination',
+        'nonemptyUnreadableScannerImportCannotBecomeReplacement',
     }
     failed = {r['name'] for r in records if r['status'] == 'FAIL'}
     assert run.returncode != 0 and failed <= expected_failures, summary

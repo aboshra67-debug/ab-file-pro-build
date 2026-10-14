@@ -437,6 +437,19 @@ class MaintenanceSafetyRegressionTest {
         try { assertTrue(decoded.width > 100 && decoded.height > 150) } finally { decoded.recycle() }
     }
 
+    @Test fun nonemptyUnreadableScannerImportCannotBecomeReplacement() = runBlocking {
+        val approved = image("approved.png")
+        val before = sha(approved)
+        val unreadable = text(workspaceRoot, "broken.png", "NONEMPTY_INVALID_IMAGE")
+        assertTrue("A corrupt camera file was accepted for replacing a valid page",
+            runCatching { ScanProcessor.prepareCameraCapture(unreadable, ScanCaptureMode.ID_CARD) }.isFailure)
+        val result = runCatching { ScanProcessor.cacheScannerPages(context, listOf(Uri.fromFile(unreadable))) }
+        result.getOrNull()?.forEach { outputs += it.file }
+        assertTrue("A nonempty invalid image was accepted as a scanner page", result.isFailure)
+        assertEquals(before, sha(approved))
+        assertEquals("NONEMPTY_INVALID_IMAGE", unreadable.readText())
+    }
+
     @Test fun fullFrameCropDoesNotReencodeOrDeleteSource() = runBlocking {
         val source = image("unchanged.png")
         val before = sha(source)

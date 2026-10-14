@@ -116,6 +116,9 @@ object ScanProcessor {
                     copyScannerUriToFile(context, uri, file)
                     currentCoroutineContext().ensureActive()
                     require(file.length() > 0L) { "scan_page_empty" }
+                    // Imports are cached on the IO dispatcher. A nonempty file
+                    // must actually decode before it can replace an approved page.
+                    decodeScaled(file, 320).recycle()
                     normalizeCapturedOrientation(file)
                     pages += ScanDraftPage(id = System.nanoTime() + index, file = file)
                 } catch (cancelled: CancellationException) {
@@ -177,6 +180,7 @@ object ScanProcessor {
         detectedQuad: ScanQuad? = null
     ): List<ScanDraftPage> {
         require(file.exists() && file.length() > 0L) { "صورة الالتقاط غير صالحة" }
+        decodeScaled(file, 320).recycle()
         normalizeCapturedOrientation(file)
         if (!mode.splitBookCapture) {
             return listOf(

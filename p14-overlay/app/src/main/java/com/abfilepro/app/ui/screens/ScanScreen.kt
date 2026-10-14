@@ -549,11 +549,14 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     busy = true
                     try {
                         val cached = withContext(Dispatchers.IO) {
-                            ScanProcessor.cacheScannerPages(context, pages.map { it.imageUri })
+                            val chosen = if (reviewRetakeIndex != null) pages.take(1) else pages
+                            ScanProcessor.cacheScannerPages(context, chosen.map { it.imageUri })
                                 .map { it.copy(filter = selectedMode.defaultFilter) }
                         }
                         if (cached.isEmpty()) {
                             Toast.makeText(context, context.uiText(language, "scan_screen_005"), Toast.LENGTH_LONG).show()
+                        } else if (acceptReviewRetake(cached)) {
+                            lastResult = context.uiText(language, "scan_screen_006", reviewPages.size)
                         } else {
                             val nextReviewPages = if (appendNextScan) reviewPages + cached else {
                                 ScanProcessor.cleanup(reviewPages)
@@ -571,10 +574,16 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                             Toast.LENGTH_LONG
                         ).show()
                     } finally {
+                        reviewRetakeIndex = null
+                        flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
                         appendNextScan = false
                         busy = false
                     }
                 }
+            } else if (reviewRetakeIndex != null) {
+                reviewRetakeIndex = null
+                appendNextScan = false
+                flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
             } else if (pdfUri != null) {
                 scope.launch {
                     busy = true
@@ -593,6 +602,10 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             }
         } else {
             appendNextScan = false
+            if (reviewRetakeIndex != null) {
+                reviewRetakeIndex = null
+                flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
+            }
         }
     }
 
@@ -696,6 +709,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
 
     fun startLegacyScan(append: Boolean = false) {
         if (activity == null) {
+            reviewRetakeIndex = null
+            flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
             Toast.makeText(context, context.uiText(language, "scan_screen_008"), Toast.LENGTH_SHORT).show()
             return
         }
@@ -707,7 +722,9 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             }
             .addOnFailureListener {
                 busy = false
+                reviewRetakeIndex = null
                 appendNextScan = false
+                flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
                 Toast.makeText(context, context.uiText(language, "scan_screen_009"), Toast.LENGTH_LONG).show()
             }
     }
