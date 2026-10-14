@@ -259,7 +259,7 @@ class MaintenanceSafetyRegressionTest {
         assertFalse(current.exists())
     }
 
-    @Test fun legacyFallbackDeleteFailureKeepsCompletedCopy() {
+    @Test fun legacyFallbackDeleteFailureKeepsCompletedCopy() = runBlocking {
         val source = text(workspaceRoot, "source.txt", "COMPLETE_SOURCE")
         val destination = File(workspaceRoot, "destination").apply { check(mkdir()) }
         val controlled = ControlledFile(source, failedRename = true, failedDelete = true)
@@ -268,7 +268,7 @@ class MaintenanceSafetyRegressionTest {
         assertEquals("The complete destination was deleted after failed source deletion", "COMPLETE_SOURCE", File(destination, "source.txt").readText())
     }
 
-    @Test fun legacyFallbackNeverDeletesSourceModifiedAfterCopy() {
+    @Test fun legacyFallbackNeverDeletesSourceModifiedAfterCopy() = runBlocking {
         val source = text(workspaceRoot, "source.txt", "ORIGINAL")
         val destination = File(workspaceRoot, "destination").apply { check(mkdir()) }
         var mutated = false
@@ -373,5 +373,19 @@ class MaintenanceSafetyRegressionTest {
         outputs += result.file
         val decoded = requireNotNull(BitmapFactory.decodeFile(result.file.path))
         try { assertTrue(decoded.width > 100 && decoded.height > 150) } finally { decoded.recycle() }
+    }
+
+    @Test fun fullFrameCropDoesNotReencodeOrDeleteSource() = runBlocking {
+        val source = image("unchanged.png")
+        val before = sha(source)
+        var page = ScanDraftPage(1, source)
+        repeat(2) {
+            val result = ScanProcessor.commitPerspectiveCrop(context, page.copy(perspective = ScanQuad.insetDefault(0f)))
+            outputs += result.file
+            assertEquals("Unchanged full frame must preserve the captured file", source.path, result.file.path)
+            assertEquals(before, sha(source))
+            assertNull(result.perspective)
+            page = result
+        }
     }
 }

@@ -24,10 +24,10 @@ if package not in ALLOWED_PACKAGES:
     raise RuntimeError("Scanner checks only allow separate P13/P14 disposable trial packages")
 os.environ["SCANNER_TEST_PACKAGE"] = package
 
-helper_path = Path("project/tools/test_alpha98_p11_scanner_runtime.py")
+helper_path = Path("p14-ci/retained_scanner_runtime.py")
 if not helper_path.is_file():
     raise RuntimeError("Run Scanner checks from the checkout root containing project/")
-sys.path.insert(0, str(helper_path.parent.resolve()))
+sys.path.insert(0, str(Path("tools").resolve()))
 helper_source = helper_path.read_text(encoding="utf-8")
 guard = "if PKG != 'com.abfilepro.app.p11scannertrial':"
 if helper_source.count(guard) != 1:
