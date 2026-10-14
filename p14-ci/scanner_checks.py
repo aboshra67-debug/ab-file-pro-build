@@ -1,7 +1,7 @@
 """Real Scanner UI regressions for isolated P13/P14 trial APKs.
 
 Run from the CI checkout root (which contains project/).  The original P11
-helpers and fourteen cases remain unchanged; this runner loads their setup and
+fourteen case assertions are retained; this runner loads their isolated setup and
 definitions without their automatic case dispatch.  No app instrumentation or
 fake processor is installed.
 

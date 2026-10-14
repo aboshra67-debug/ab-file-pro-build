@@ -260,8 +260,14 @@ def save_pdf(tag, action=None):
 
 def import_images(ids):
     # A cold DocumentsUI process avoids its Android 11 stale-adapter crash
-    # between isolated cases; the application's import path is unchanged.
+    # between isolated cases. Clear its remembered folder as well: otherwise
+    # a restored Downloads breadcrumb sits behind the open drawer, and a
+    # generic Downloads text match can tap the drawer's Recent row instead.
+    # This setup is allowed only by the emulator/trial-package guards above.
     adb('shell', 'am', 'force-stop', 'com.google.android.documentsui')
+    cleared = adb('shell', 'pm', 'clear', 'com.google.android.documentsui')
+    if 'Success' not in cleared:
+        raise RuntimeError('Could not reset the disposable DocumentsUI picker: ' + cleared)
     click(t('scanner_pro_camera_015'))
     time.sleep(1.5)
     for desc in ('Show roots', 'Open navigation drawer'):
@@ -270,7 +276,8 @@ def import_images(ids):
             break
     if find('Downloads') is not None:
         click('Downloads')
-    time.sleep(.7)
+    wait('IMAGES IN DOWNLOADS', timeout=20)
+    snapshot('picker_downloads_ready')
     # DocumentsUI can retain the previous scroll position between imports.
     # Start at the top before looking for the next fixture selection.
     for _ in range(3):

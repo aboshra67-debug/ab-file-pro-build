@@ -19,6 +19,9 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
 import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.withContext
 import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
@@ -226,6 +229,46 @@ class MaintenanceSafetyRegressionTest {
         assertEquals("Partial extraction and implicit folders survived", listOf("keep.txt"), destination.listFiles()!!.map { it.name }.sorted())
     }
 
+    @Test fun zipCancellationKeepsFileEditedAfterExtraction() = runBlocking {
+        val archive = File(directRoot, "cancel.zip")
+        ZipOutputStream(archive.outputStream()).use { zip ->
+            for (name in listOf("first.txt", "second.txt")) {
+                zip.putNextEntry(ZipEntry(name))
+                zip.write("ORIGINAL_ENTRY".toByteArray())
+                zip.closeEntry()
+            }
+        }
+        val destination = File(directRoot, "destination").apply { check(mkdir()) }
+        val first = File(destination, "first.txt")
+        val operation = Job()
+        var edited = false
+        // Path validation for the next entry occurs after the first entry has
+        // finished. Inject a user edit there, without timing sleeps or hooks in
+        // production code, then cancel the actual extraction coroutine.
+        val controlled = object : File(destination.path) {
+            override fun getCanonicalFile(): File = this
+            override fun getPath(): String {
+                if (!edited && first.isFile && first.readText() == "ORIGINAL_ENTRY") {
+                    edited = true
+                    first.writeText("USER_EDIT")
+                    operation.cancel()
+                }
+                return super.getPath()
+            }
+        }
+        val result = runCatching {
+            withContext(Dispatchers.IO + operation) {
+                DeviceStorageManager.extractZip(DeviceStorageManager.Entry(archive), controlled, false)
+            }
+        }
+        operation.cancel()
+        assertTrue("Fixture did not reach the completed first entry", edited)
+        assertTrue(result.isFailure)
+        assertTrue("Cancellation removed a file already edited by the user", first.isFile)
+        assertEquals("USER_EDIT", first.readText())
+        assertTrue(archive.isFile)
+    }
+
     @Test fun renameUndoNeverMovesAReplacementFile() = runBlocking {
         val old = File(workspaceRoot, "old.txt")
         val current = text(workspaceRoot, "renamed.txt", "ORIGINAL")
@@ -279,6 +322,25 @@ class MaintenanceSafetyRegressionTest {
         assertTrue("Changed source was accepted as safely moved", result.isFailure)
         assertEquals("UPDATED_SOURCE", source.readText())
         assertEquals("ORIGINAL", File(destination, "source.txt").readText())
+    }
+
+    @Test fun legacyFallbackFailureKeepsReplacementAtDestination() = runBlocking {
+        val source = text(workspaceRoot, "source.txt", "ORIGINAL")
+        val destination = File(workspaceRoot, "destination").apply { check(mkdir()) }
+        val target = File(destination, "source.txt")
+        var replaced = false
+        val controlled = ControlledFile(source, failedRename = true, failedDelete = true, onModified = {
+            if (!replaced && target.isFile) {
+                replaced = true
+                check(target.delete())
+                target.writeText("USER_REPLACEMENT")
+            }
+        })
+        assertTrue(runCatching { FileUtils.moveFile(context, controlled, destination) }.isFailure)
+        assertTrue("Fixture did not replace the copied destination", replaced)
+        assertEquals("ORIGINAL", source.readText())
+        assertTrue("Failure removed the user's replacement", target.isFile)
+        assertEquals("USER_REPLACEMENT", target.readText())
     }
 
     private fun safContext(): Context = context
