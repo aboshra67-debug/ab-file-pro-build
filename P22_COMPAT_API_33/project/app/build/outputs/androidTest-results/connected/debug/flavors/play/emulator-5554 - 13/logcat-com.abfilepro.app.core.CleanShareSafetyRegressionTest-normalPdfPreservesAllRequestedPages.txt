@@ -1,0 +1,13 @@
+10-15 12:01:43.248  5210  5291 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:43.308  1057  4858 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.345  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 108 uptime_millis: 108 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.465  1057  4858 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.467  1057  3185 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 12:01:43.468  1297  3969 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 12:01:43.470  1297  3969 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-15 12:01:43.477  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 55 uptime_millis: 55 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.510   284  5373 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-15 12:01:43.512  3069  3311 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+10-15 12:01:43.515  3069  3311 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+10-15 12:01:43.516  3069  3311 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+10-15 12:01:43.533  5210  5291 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

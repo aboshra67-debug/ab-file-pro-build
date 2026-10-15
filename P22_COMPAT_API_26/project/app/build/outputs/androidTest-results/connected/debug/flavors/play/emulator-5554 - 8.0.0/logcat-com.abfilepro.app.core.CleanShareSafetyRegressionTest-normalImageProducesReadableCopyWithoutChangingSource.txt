@@ -1,0 +1,2 @@
+10-15 12:01:13.642  4992  5011 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:13.728  4992  5011 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

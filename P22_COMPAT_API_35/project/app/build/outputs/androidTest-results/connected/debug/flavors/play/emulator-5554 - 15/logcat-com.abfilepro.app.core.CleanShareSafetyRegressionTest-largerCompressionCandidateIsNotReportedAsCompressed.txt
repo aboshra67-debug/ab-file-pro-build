@@ -1,0 +1,41 @@
+10-15 11:59:18.802  4014  4061 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:18.804  1562  1562 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 11:59:18.814  1337  2400 E MDD     : FileGroupManager: Trying to add expired group enpromo-state-config.
+10-15 11:59:18.815  1172  2859 E IPCThreadState: Process seems to be sending too many oneway calls.
+10-15 11:59:18.815  1172  2859 W IPCThreadState: CallStack::getCurrentInternal not linked, returning null
+10-15 11:59:18.815  1172  2859 W oneway spamming: CallStack::logStackInternal not linked
+10-15 11:59:18.815  1172  2859 W BpBinder: Large outgoing transaction of 418260 bytes, interface descriptor , code 4
+10-15 11:59:18.828  1337  2400 W MDD     : MDDManager class dwld
+10-15 11:59:18.828  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.835  3206  3329 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.838  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa90d0
+10-15 11:59:18.838  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa90d0
+10-15 11:59:18.839  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.839  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa5fd0
+10-15 11:59:18.839  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa5fd0
+10-15 11:59:18.844  3202  3316 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.849  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.857  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa7150
+10-15 11:59:18.857  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa7150
+10-15 11:59:18.857  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.857  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa8110
+10-15 11:59:18.857  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa8110
+10-15 11:59:18.858  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.859  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa90d0
+10-15 11:59:18.859  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa90d0
+10-15 11:59:18.863  3202  3350 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.870  1337  3781 I GCM-GMS : Registering GMS for direct boot.
+10-15 11:59:18.870  1172  2196 W CCTFlatFileLogStore: Excessive logging: 64 events, 161865 bytes from log source PHENOTYPE last 0s
+10-15 11:59:18.871  3206  3631 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.874  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.881  3206  3329 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.888  1172  4055 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 86 [CONTEXT service_id=218 ]
+10-15 11:59:18.889  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa5fd0
+10-15 11:59:18.890  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa5fd0
+10-15 11:59:18.890  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.891  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa7150
+10-15 11:59:18.891  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa7150
+10-15 11:59:18.897  4014  4061 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.897  4014  4061 D pdf_document_jni: Deleting Document: 0x7de2eefa8110
+10-15 11:59:18.897  4014  4061 D pdf_document_jni: Destroyed Document: 0x7de2eefa8110
+10-15 11:59:18.902  4014  4061 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

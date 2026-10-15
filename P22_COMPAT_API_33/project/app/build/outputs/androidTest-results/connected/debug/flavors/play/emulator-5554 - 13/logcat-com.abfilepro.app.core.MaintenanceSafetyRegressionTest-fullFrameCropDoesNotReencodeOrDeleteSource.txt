@@ -1,0 +1,8 @@
+10-15 12:01:47.258  5210  5291 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:47.262  2046  5422 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 12:01:47.264  1609  2068 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 7 scheduled, 7 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 * {W:b:u:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 * {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea * {W:b:u:l, bg}
+10-15 12:01:47.266   284  5423 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10077 0}
+10-15 12:01:47.266   284  5424 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:01:47.267   284  5424 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7be3d089d910
+10-15 12:01:47.267   284  5424 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 12:01:47.273  5210  5291 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

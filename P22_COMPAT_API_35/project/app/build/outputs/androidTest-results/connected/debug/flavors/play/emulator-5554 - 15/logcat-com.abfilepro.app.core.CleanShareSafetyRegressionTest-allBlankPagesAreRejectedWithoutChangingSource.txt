@@ -1,0 +1,100 @@
+10-15 11:59:18.155  4014  4061 I TestRunner: started: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:18.200  1836  1836 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 11:59:18.200   559  1492 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 11:59:18.205  1337  4066 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.phenotype.com.google.android.gms.update.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.update [CONTEXT service_id=204 ]
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.update
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:18.213  1172  3922 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:18.218   361   404 I netd    : tetherGetStats() -> {[]} <0.27ms>
+10-15 11:59:18.222  2490  2570 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.tts
+10-15 11:59:18.251  1337  4068 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.253  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.254  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.254  1337  4070 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:18.254  1337  3643 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.257  1337  4067 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:18.257  1337  4067 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:18.257  1337  4067 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.auth_authzen [CONTEXT service_id=340 ]
+10-15 11:59:18.258  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.258  1337  4070 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:18.259  1337  4068 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:18.260  1337  3919 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 2.
+10-15 11:59:18.262  1359  1489 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.wellbeing
+10-15 11:59:18.263  1337  4070 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:18.265  1337  4070 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:18.268  1172  3634 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_authzen
+10-15 11:59:18.270  1359  1489 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.272  1337  3919 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-15 11:59:18.273  1337  3919 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.auth_authzen [CONTEXT service_id=204 ]
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.auth_authzen
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:18.275  1172  3530 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.vision [CONTEXT service_id=204 ]
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.vision
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:18.286  1172  3530 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:18.304  1836  2547 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.partnersetup
+10-15 11:59:18.335  1359  1556 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.wellbeing
+10-15 11:59:18.345  1359  1556 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.wallet [CONTEXT service_id=204 ]
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.wallet
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:18.352  1172  3634 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:18.356  1359  1359 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.kids#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.tron.metrics [CONTEXT service_id=204 ]
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.tron.metrics
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:18.363  1172  3634 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:18.396   559  1180 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:18.397  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa8110
+10-15 11:59:18.397  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa8110
+10-15 11:59:18.398   559  1180 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:18.398   559   972 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:18.402  4014  4061 I TestRunner: finished: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

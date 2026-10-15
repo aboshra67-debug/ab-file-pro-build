@@ -1,0 +1,125 @@
+10-15 12:01:41.518  5210  5291 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:41.519  1098  1110 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+10-15 12:01:41.532  1098  1110 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 12:01:41.532  1098  1110 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 12:01:41.535  1098  1110 D RefreshRatePrefCtr: DEFAULT_REFRESH_RATE : 60.0 mPeakRefreshRate : 60.0
+10-15 12:01:41.535  1098  1110 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: Get slice data from XML failed
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: java.lang.IllegalStateException: Invalid preference controller: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:146)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceBuilderUtils.getPreferenceController(SliceBuilderUtils.java:362)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromXML(SliceDataConverter.java:204)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromProvider(SliceDataConverter.java:149)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceData(SliceDataConverter.java:119)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.getSliceData(SlicesIndexer.java:94)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.indexSliceData(SlicesIndexer.java:75)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesFeatureProviderImpl.indexSliceData(SlicesFeatureProviderImpl.java:63)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.verifyIndexing(SlicesDatabaseAccessor.java:194)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceUris(SlicesDatabaseAccessor.java:96)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SettingsSliceProvider.onGetSliceDescendants(SettingsSliceProvider.java:332)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.onGetSliceDescendants(SliceProviderWrapperContainer.java:165)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at android.app.slice.SliceProvider.handleGetDescendants(SliceProvider.java:425)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at android.app.slice.SliceProvider.call(SliceProvider.java:406)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.call(SliceProviderWrapperContainer.java:122)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: Caused by: java.lang.ClassNotFoundException: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at java.lang.Class.classForName(Native Method)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at java.lang.Class.forName(Class.java:454)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at java.lang.Class.forName(Class.java:379)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:139)
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	... 19 more
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: Caused by: java.lang.ClassNotFoundException: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 12:01:41.559  1098  1110 W SliceDataConverter: 	... 23 more
+10-15 12:01:41.566  1098  1110 W SliceData: Highlight menu key res is empty: com.android.settings.accessibility.AccessibilitySlicePreferenceController
+10-15 12:01:41.567  1098  1110 W SliceData: Highlight menu key res is empty: com.android.settings.accessibility.AccessibilitySlicePreferenceController
+10-15 12:01:41.567  1098  1110 W SliceData: Highlight menu key res is empty: com.android.settings.accessibility.AccessibilitySlicePreferenceController
+10-15 12:01:41.571  1098  1110 D SlicesIndexer: Indexing slices database took: 352
+10-15 12:01:41.580  1098  1110 D SettingsSliceProvider: Allowlisting 16 uris to 3 pkgs.
+10-15 12:01:41.591  1098  1110 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.591  1098  1110 D SettingsSliceProvider: Allowlisting 5 uris to 3 pkgs.
+10-15 12:01:41.601  1098  1110 D SettingsSliceProvider: onBindSlice start: content://com.android.settings.slices/action/os_firmware_version
+10-15 12:01:41.604  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.604  1098  1373 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 12:01:41.604  1098  1110 V SettingsSliceProvider: onBindSlice end
+10-15 12:01:41.605  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 1
+10-15 12:01:41.609  1098  3750 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.609  1098  3750 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-15 12:01:41.612  1098  3750 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/hardware_info_device_model) in: 3
+10-15 12:01:41.614  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.615  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/smart_battery) in: 1
+10-15 12:01:41.617  1098  3750 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.621  1098  3750 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 4
+10-15 12:01:41.627  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.628  1098  1373 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/media_volume
+10-15 12:01:41.628  1098  1373 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/volume_slices
+10-15 12:01:41.629  1098  3750 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.636  1098  1098 D SettingsSliceProvider: Starting background worker for: content://com.android.settings.slices/action/media_volume
+10-15 12:01:41.636  1098  1098 D SliceBackgroundWorker: create instance: class com.android.settings.media.MediaOutputIndicatorWorker
+10-15 12:01:41.638  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/media_volume) in: 11
+10-15 12:01:41.638  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.639  1098  1373 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/ring_volume
+10-15 12:01:41.640  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/ring_volume) in: 2
+10-15 12:01:41.640  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.641  1098  1373 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-15 12:01:41.641  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/separate_ring_volume) in: 1
+10-15 12:01:41.641  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.642  1098  1373 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-15 12:01:41.643  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 2
+10-15 12:01:41.644  1098  1373 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+10-15 12:01:41.648  1098  3750 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/call_volume
+10-15 12:01:41.648  1098  3750 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/call_volume) in: 19
+10-15 12:01:41.650   762   817 D EGL_emulation: app_time_stats: avg=896.39ms min=806.32ms max=986.45ms count=2
+10-15 12:01:41.652  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.652  1098  1373 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-15 12:01:41.653  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 1
+10-15 12:01:41.655  1098  3750 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.656  1098  3750 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/auto_rotate) in: 1
+10-15 12:01:41.662  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.663  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/screen_magnification_gestures_preference_screen) in: 1
+10-15 12:01:41.680  1098  1113 D SettingsSliceProvider: onSlicePinned: content://com.android.settings.slices/action/notification_volume
+10-15 12:01:41.681  1098  3750 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.682  1098  3750 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-15 12:01:41.683  1098  3750 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 2
+10-15 12:01:41.691  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.692  1098  1373 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-15 12:01:41.693  1098  3750 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.695  1098  1373 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 3
+10-15 12:01:41.695  1098  3750 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/auto_rotate) in: 2
+10-15 12:01:41.755  1297  4708 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 12:01:41.755  1297  4708 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 12:01:41.755  1297  4708 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 12:01:41.816   480   580 I RoleService: Granting default roles...
+10-15 12:01:41.818  4838  4929 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:01:41.850  1098  1110 D WifiCallingSliceHelper: Wifi calling is either not provisioned or not enabled by Platform
+10-15 12:01:41.864  1098  1373 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.866  1098  1373 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 2
+10-15 12:01:41.872  1098  3750 D SlicesIndexer: Slices already indexed - returning.
+10-15 12:01:41.875  1098  3750 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 3
+10-15 12:01:41.897  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService started execution. cause:5 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+10-15 12:01:41.900  1098  1110 D WifiSlice: calling uid name : com.google.android.settings.intelligence
+10-15 12:01:41.905  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService finished executing. cause:5 result: 1 elapsed_millis: 383 uptime_millis: 383 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+10-15 12:01:41.915  1297  4708 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 12:01:41.918  1297  4708 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 12:01:41.933  1297  4708 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 119287.
+10-15 12:01:41.935   480   580 E RoleControllerManager: Error calling grantDefaultRoles()
+10-15 12:01:41.935   480   580 E RoleControllerManager: java.util.concurrent.TimeoutException
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture.triggerTimeout(AndroidFuture.java:289)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture$$ExternalSyntheticLambda2.run(Unknown Source:2)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at android.os.Looper.loop(Looper.java:288)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at com.android.server.SystemServer.run(SystemServer.java:962)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at com.android.server.SystemServer.main(SystemServer.java:647)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 12:01:41.935   480   580 E RoleControllerManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+10-15 12:01:41.967  1297  5097 I AccountSeedingPrefetchI: AccountSeedingPrefetchInit intent operation started. [CONTEXT service_id=42 ]
+10-15 12:01:42.049  1297  5126 I GCM-GMS : Registering GMS for direct boot.
+10-15 12:01:42.050  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-15 12:01:42.146  4838  4929 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:01:42.175  5210  5291 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

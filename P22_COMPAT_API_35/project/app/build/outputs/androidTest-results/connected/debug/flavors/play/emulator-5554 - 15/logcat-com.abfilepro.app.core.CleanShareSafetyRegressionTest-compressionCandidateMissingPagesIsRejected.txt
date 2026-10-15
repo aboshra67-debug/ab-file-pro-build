@@ -1,0 +1,23 @@
+10-15 11:59:18.403  4014  4061 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:18.438  1337  4068 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.445  1337  4068 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:18.447  1337  4068 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:18.447  4014  4077 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.447  1337  4068 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:18.447  1337  4068 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.libraries.surveys#com.google.android.gms [CONTEXT service_id=340 ]
+10-15 11:59:18.447  4014  4077 D pdf_document_jni: Deleting Document: 0x7de2eefb6b90
+10-15 11:59:18.447  4014  4077 D pdf_document_jni: Destroyed Document: 0x7de2eefb6b90
+10-15 11:59:18.448  1337  4068 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.449  4014  4077 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.449  4014  4077 D pdf_document_jni: Deleting Document: 0x7de2eefb6f10
+10-15 11:59:18.449  4014  4077 D pdf_document_jni: Destroyed Document: 0x7de2eefb6f10
+10-15 11:59:18.449  1337  4068 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:18.449  1337  3919 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.450  1337  3919 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:18.450  1337  4068 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:18.451  1337  1642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:18.452  1337  4068 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:18.457  4014  4061 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.457  4014  4061 D pdf_document_jni: Deleting Document: 0x7de2eefba550
+10-15 11:59:18.457  4014  4061 D pdf_document_jni: Destroyed Document: 0x7de2eefba550
+10-15 11:59:18.460  4014  4061 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

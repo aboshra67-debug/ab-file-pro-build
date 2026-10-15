@@ -1,0 +1,64 @@
+10-15 11:59:18.655  4014  4061 I TestRunner: started: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:18.657  1562  1562 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.googleapp.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 11:59:18.661  4014  4061 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.662  4014  4061 D pdf_document_jni: Deleting Document: 0x7de2eefa90d0
+10-15 11:59:18.662  4014  4061 D pdf_document_jni: Destroyed Document: 0x7de2eefa90d0
+10-15 11:59:18.680  1172  2600 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1792065558680) [CONTEXT service_id=51 ]
+10-15 11:59:18.684  3202  3324 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.690  3202  3336 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@f186cdc
+10-15 11:59:18.691  3202  3350 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.messaging
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.icing.mdd [CONTEXT service_id=204 ]
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.icing.mdd
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:18.697  1172  3903 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:18.697  3202  3362 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging#com.google.android.apps.messaging" ]
+10-15 11:59:18.697  3202  3362 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@f766761
+10-15 11:59:18.699  3202  3202 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 11:59:18.699  1172  2600 I HeterodyneSyncScheduler: Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-15 11:59:18.704  3202  3336 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@8f58112
+10-15 11:59:18.707  3655  3659 W gs.intelligence: Cleared Reference was only reachable from finalizer (only reported once)
+10-15 11:59:18.709  3202  3324 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.apps.messaging
+10-15 11:59:18.710  3202  3324 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.715  3202  3362 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@d2ba199
+10-15 11:59:18.720  3202  3316 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.messaging
+10-15 11:59:18.721  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.725  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 11:59:18.729  3202  3336 I BuglePhenotype: onReceive for cslib package [CONTEXT package_name="com.google.android.ims.library" ]
+10-15 11:59:18.730  3202  3336 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@d9925f8
+10-15 11:59:18.730  3202  3202 I PhenotypeBackgroundRecv: Skipping com.google.android.ims.library which doesn't use ProcessStable flags.
+10-15 11:59:18.734  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 11:59:18.734  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+10-15 11:59:18.734  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 11:59:18.735  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+10-15 11:59:18.735  1320  1320 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 11:59:18.736  1320  1320 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 11:59:18.737  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 11:59:18.738  1320  1837 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.inputmethod.latin
+10-15 11:59:18.739  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+10-15 11:59:18.740  1320  1320 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 11:59:18.740  1320  1320 I PhenotypeBackgroundRecv: Skipping com.google.android.inputmethod.latin#com.google.android.inputmethod.latin which doesn't use ProcessStable flags.
+10-15 11:59:18.741  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 11:59:18.744  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 11:59:18.746  3655  3661 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 11:59:18.766  1172  2587 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:9 exec_start_elapsed_seconds: 86 [CONTEXT service_id=218 ]
+10-15 11:59:18.771  1172  2563 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:9 result: 1 elapsed_millis: 63 uptime_millis: 63 exec_start_elapsed_seconds: 86 [CONTEXT service_id=218 ]
+10-15 11:59:18.781  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa5fd0
+10-15 11:59:18.781  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa5fd0
+10-15 11:59:18.781  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.781  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa8110
+10-15 11:59:18.781  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa8110
+10-15 11:59:18.788  1562  2343 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:18.797  4014  4061 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.797  4014  4061 D pdf_document_jni: Deleting Document: 0x7de2eefa7150
+10-15 11:59:18.797  4014  4061 D pdf_document_jni: Destroyed Document: 0x7de2eefa7150
+10-15 11:59:18.799  1562  2334 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.googlequicksearchbox
+10-15 11:59:18.800  4014  4061 I TestRunner: finished: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

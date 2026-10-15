@@ -1,0 +1,53 @@
+10-15 12:01:40.983  5210  5291 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 12:01:41.037   480   590 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 12:01:41.052   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:01:41.053   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:01:41.055   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:01:41.056   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:01:41.062   762   762 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 12:01:41.070  3223  3376 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@a9ea65d
+10-15 12:01:41.072  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837973
+10-15 12:01:41.073  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838041
+10-15 12:01:41.073  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838412
+10-15 12:01:41.073  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837964
+10-15 12:01:41.073  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838540
+10-15 12:01:41.073  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838539
+10-15 12:01:41.074  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838553
+10-15 12:01:41.090  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838190
+10-15 12:01:41.090  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838026
+10-15 12:01:41.091  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838419
+10-15 12:01:41.091  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837999
+10-15 12:01:41.093  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838146
+10-15 12:01:41.093  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837998
+10-15 12:01:41.095  1018  1018 D MainContentCaptureSession: Flushing 19 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=TEXT_CHANGE
+10-15 12:01:41.109  4838  4929 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:01:41.113  1057  4171 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 12:01:41.118  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838217
+10-15 12:01:41.124  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838050
+10-15 12:01:41.125  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838044
+10-15 12:01:41.125  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838051
+10-15 12:01:41.125  4887  4990 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837961
+10-15 12:01:41.133  4838  5318 I PermissionControllerServiceImpl: Updating user sensitive for uid 10119
+10-15 12:01:41.147   284  5354 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-15 12:01:41.147   284  5358 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:01:41.147   284  5358 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7be41089e810
+10-15 12:01:41.147   284  5358 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-15 12:01:41.148   986   986 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 12:01:41.152   986   986 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 12:01:41.152   986   986 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 12:01:41.156  1297  4825 I PeopleGalProvider: Gal directories started.
+10-15 12:01:41.163   284  5359 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:01:41.163   284  5359 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7be4008960b0
+10-15 12:01:41.163   284  5359 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-15 12:01:41.164  1297  4708 D TrafficStats: tagSocket(94) with statsTag=0x30000408, statsUid=-1
+10-15 12:01:41.174  1297  4708 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 12:01:41.175  1297  4825 I PeopleGalProvider: Method 1 completed.
+10-15 12:01:41.175  1297  4825 I PeopleGalProvider: Method 1 finished successfully.
+10-15 12:01:41.179  1841  1870 I d.process.acore: Background young concurrent copying GC freed 9694(588KB) AllocSpace objects, 0(0B) LOS objects, 47% free, 2534KB/4828KB, paused 67.930ms,5us total 115.919ms
+10-15 12:01:41.182  3751  5350 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 12:01:41.201  1057  5105 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 12:01:41.216  1098  1110 D SlicesDatabaseHelper: Created databases
+10-15 12:01:41.219  1098  1110 D SlicesDatabaseHelper: Created databases
+10-15 12:01:41.254  1098  1110 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 12:01:41.267  1297  4708 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 12:01:41.277  5210  5291 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

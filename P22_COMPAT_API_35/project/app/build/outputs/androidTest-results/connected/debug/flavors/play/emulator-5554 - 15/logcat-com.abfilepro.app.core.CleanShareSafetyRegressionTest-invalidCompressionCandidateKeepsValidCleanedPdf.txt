@@ -1,0 +1,130 @@
+10-15 11:59:21.987  4014  4061 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:21.998  1172  2743 I PTCommittedOperation: Receive new configuration for com.google.android.gms.credential_manager
+10-15 11:59:21.999  1337  3992 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:21.999  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.credential_manager [CONTEXT service_id=204 ]
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.credential_manager
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:22.000  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:22.002  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.002  1337  3913 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:22.002  1337  3920 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:22.003  1337  3915 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:22.003  1337  3915 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.credential_manager [CONTEXT service_id=340 ]
+10-15 11:59:22.003  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.003  1337  3915 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:22.003  1337  4053 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:22.004  1337  3915 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:22.004  1337  3915 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.chimera_debug [CONTEXT service_id=204 ]
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.chimera_debug
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:22.014  1172  3530 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:22.021  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.022  1172  3634 I PTCommittedOperation: Receive new configuration for com.google.android.gms.autofill
+10-15 11:59:22.024  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.024  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.025  1337  3920 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:22.027  1337  3915 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:22.027  1337  3915 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:22.027  1337  3915 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.autofill [CONTEXT service_id=340 ]
+10-15 11:59:22.027  1337  3643 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.028  1337  3917 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:22.028  1337  3643 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:22.029  1337  3643 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:22.030  1337  3643 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.autofill [CONTEXT service_id=204 ]
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.autofill
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:22.033  1172  4098 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.notificationsregistration#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.notificationsregistration#com.google.android.gms
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:22.037  1172  4099 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.maps#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.maps#com.google.android.gms
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:22.041  1172  4099 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:22.042  1337  4030 I GmsSyncPolicyEngine: Periodic sync 4 disabled by policy, cancelled.
+10-15 11:59:22.043  1337  4030 I GmsSyncPolicyEngine: Periodic sync 7 disabled
+10-15 11:59:22.044  4014  4083 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 11:59:22.044  4014  4083 D pdf_document_jni: Deleting Document: 0x7de2eefb8950
+10-15 11:59:22.044  4014  4083 D pdf_document_jni: Destroyed Document: 0x7de2eefb8950
+10-15 11:59:22.045  4014  4083 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 11:59:22.045  4014  4083 E document: Parse Document failed (err=3).
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: Can't parse the header version.
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:487)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:141)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:125)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:285)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 11:59:22.048  4014  4083 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 11:59:22.055  4014  4061 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 11:59:22.055  4014  4061 D pdf_document_jni: Deleting Document: 0x7de2eefbe7d0
+10-15 11:59:22.055  4014  4061 D pdf_document_jni: Destroyed Document: 0x7de2eefbe7d0
+10-15 11:59:22.057  4014  4061 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

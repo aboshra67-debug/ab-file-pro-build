@@ -1,0 +1,4 @@
+10-15 11:59:18.463  4014  4061 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:18.474  4014  4077 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.475  4014  4077 E document: Parse Document failed (err=3).
+10-15 11:59:18.490  4014  4061 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

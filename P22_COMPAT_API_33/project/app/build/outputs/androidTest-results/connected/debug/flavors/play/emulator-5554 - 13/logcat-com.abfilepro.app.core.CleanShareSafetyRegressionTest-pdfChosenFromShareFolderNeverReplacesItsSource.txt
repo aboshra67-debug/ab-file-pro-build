@@ -1,0 +1,15 @@
+10-15 12:01:42.621  5210  5291 I TestRunner: started: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:42.640  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-15 12:01:42.652  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 23 uptime_millis: 23 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-15 12:01:42.700  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:5 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:42.716  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:5 result: 1 elapsed_millis: 38 uptime_millis: 38 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:42.736  3607  3653 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 12:01:42.738  3607  3653 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 12:01:42.738  3607  3653 I RemoteProvisioningService: Pool status.
+10-15 12:01:42.738  3607  3653 I RemoteProvisioningService: Total: 6
+10-15 12:01:42.738  3607  3653 I RemoteProvisioningService: Attested: 6
+10-15 12:01:42.738  3607  3653 I RemoteProvisioningService: Unassigned: 5
+10-15 12:01:42.738  3607  3653 I RemoteProvisioningService: Expiring: 0
+10-15 12:01:42.738  3607  3653 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 12:01:42.738  3607  3653 I RemoteProvisioningService: No provisioning needed.
+10-15 12:01:42.801  5210  5291 I TestRunner: finished: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,6 @@
+10-15 12:01:15.755  4992  5011 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:15.768  5051  5051 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:01:15.769  1612  1662 E memtrack: Couldn't load memtrack module
+10-15 12:01:15.769  1612  1662 W android.os.Debug: failed to get memory consumption info: -1
+10-15 12:01:15.874  4992  5069 D ProfileInstaller: Installing profile for com.abfilepro.app.p22mainttrial
+10-15 12:01:15.932  4992  5011 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

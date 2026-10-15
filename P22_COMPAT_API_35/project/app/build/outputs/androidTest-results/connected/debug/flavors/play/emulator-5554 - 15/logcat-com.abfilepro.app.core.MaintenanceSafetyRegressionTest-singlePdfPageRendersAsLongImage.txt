@@ -1,0 +1,13 @@
+10-15 11:59:23.118  4014  4061 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 11:59:23.123  1172  3924 I ProximityAuth: [FeatureLoader] auth_easyunlock module load status: 2
+10-15 11:59:23.125  1172  1172 I ProximityAuth: [PhoneHubService] Handling intent for PhoneHubChimeraService.
+10-15 11:59:23.126  4014  4083 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 11:59:23.127  1172  3493 I ProximityAuth: [PhoneHubService] No enabled account, stopping service
+10-15 11:59:23.128  1172  1172 I ProximityAuth: [PhoneHubService] Destroying PhoneHubChimeraService.
+10-15 11:59:23.128  1172  1172 W ProximityAuth: [PhoneHubNotificationProcessor] shutdown(): context is null.
+10-15 11:59:23.128  1172  1172 I ProximityAuth: [PhoneHubService] All devices have disconnected. Performing cleanup...
+10-15 11:59:23.128  1172  1172 W ChimeraUtils: Module com.google.android.gms.auth_proximity missing resource null(0)
+10-15 11:59:23.129  1172  3924 W ProximityAuth: [GetSyncedDevices] Attestation: No devices out of 0 passed verification.
+10-15 11:59:23.143  4014  4083 D pdf_document_jni: Deleting Document: 0x7de2eefb8950
+10-15 11:59:23.143  4014  4083 D pdf_document_jni: Destroyed Document: 0x7de2eefb8950
+10-15 11:59:23.147  4014  4061 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

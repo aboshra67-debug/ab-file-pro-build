@@ -1,0 +1,7 @@
+10-15 12:01:47.787  5210  5291 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:01:47.837  4534  5168 I ConfigUpdater: Update downloaded, starting installation
+10-15 12:01:47.841  4534  5168 I ConfigUpdater: doneInstall
+10-15 12:01:47.844  1745  1745 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+10-15 12:01:47.848  2046  5226 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt via provider delete
+10-15 12:01:47.851  1616  1648 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt
+10-15 12:01:47.856  5210  5291 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

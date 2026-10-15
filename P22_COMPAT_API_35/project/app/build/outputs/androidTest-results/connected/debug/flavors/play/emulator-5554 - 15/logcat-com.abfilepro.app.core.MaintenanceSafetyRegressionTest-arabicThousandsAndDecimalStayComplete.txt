@@ -1,0 +1,2 @@
+10-15 11:59:22.810  4014  4061 I TestRunner: started: arabicThousandsAndDecimalStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 11:59:22.813  4014  4061 I TestRunner: finished: arabicThousandsAndDecimalStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

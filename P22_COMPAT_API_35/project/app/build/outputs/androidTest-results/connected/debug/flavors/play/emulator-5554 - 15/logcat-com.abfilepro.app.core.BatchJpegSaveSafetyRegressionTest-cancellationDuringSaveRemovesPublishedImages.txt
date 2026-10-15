@@ -1,0 +1,14 @@
+10-15 11:59:17.644  4014  4061 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 11:59:17.645  1063  1063 D CarrierSvcBindHelper: onPackageModified: com.abfilepro.app.p22mainttrial
+10-15 11:59:17.647  1063  1063 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 11:59:17.648   904   904 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 11:59:17.650   905   917 I PermissionControllerServiceImpl: Updating user sensitive for uid 10209
+10-15 11:59:17.659  1063  1063 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 11:59:17.668   559   665 I RoleService: Granting default roles...
+10-15 11:59:17.669  1063  1063 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 11:59:17.676   559  1012 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 11:59:17.676   559  1012 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 11:59:17.678   559  1012 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 11:59:17.682  1063  1290 D ImsResolver: maybeAddedImsService, packageName: com.abfilepro.app.p22mainttrial
+10-15 11:59:17.687   559  1012 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+10-15 11:59:17.700  4014  4061 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

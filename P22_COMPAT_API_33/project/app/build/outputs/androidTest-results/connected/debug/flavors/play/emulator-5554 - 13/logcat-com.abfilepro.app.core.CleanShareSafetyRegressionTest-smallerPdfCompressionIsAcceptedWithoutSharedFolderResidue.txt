@@ -1,0 +1,65 @@
+10-15 12:01:45.214  5210  5291 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:45.259  1616  2288 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 227 items in 66021ms, 223 inserts 4 updates 0 deletes
+10-15 12:01:45.282  1616  2288 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/ringtones/Ring_Synth_04.ogg)
+10-15 12:01:45.283  1616  2288 I MediaProvider: Open with lower FS for /product/media/audio/ringtones/Ring_Synth_04.ogg. Uid: 10161
+10-15 12:01:45.290  1616  2288 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/notifications/pixiedust.ogg)
+10-15 12:01:45.291  1616  2288 I MediaProvider: Open with lower FS for /product/media/audio/notifications/pixiedust.ogg. Uid: 10161
+10-15 12:01:45.319  1616  2288 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/alarms/Alarm_Classic.ogg)
+10-15 12:01:45.323  1616  2288 I MediaProvider: Open with lower FS for /product/media/audio/alarms/Alarm_Classic.ogg. Uid: 10161
+10-15 12:01:45.419  1057  4858 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-15 12:01:45.421  1616  2288 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 12:01:45.425  1616  2288 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 12:01:45.426  1616  2288 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 12:01:45.427  1616  2288 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 12:01:45.433  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 29 uptime_millis: 29 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-15 12:01:45.446  1616  1927 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android to set project id.: Operation not permitted
+10-15 12:01:45.448  1616  1927 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android
+10-15 12:01:45.448  1616  1927 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 12:01:45.448  1616  1927 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 12:01:45.450  1616  1927 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android/media to set project id.: Operation not permitted
+10-15 12:01:45.451  1616  1927 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 12:01:45.451  1616  1927 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 12:01:45.451  1616  1927 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 12:01:45.451  1616  2288 I MediaProvider: Scanned external_primary due to REASON_MOUNTED, found 17 items in 111ms, 4 inserts 0 updates 0 deletes
+10-15 12:01:45.471  1616  2288 I MediaProvider: End Intent { act=com.android.providers.media.action.SCAN_VOLUME (has extras) }
+10-15 12:01:45.476  1616  2288 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 12:01:45.479  1616  2288 I MediaProvider: Volume MediaVolume name: [external_primary] id: [emulated;0] user: [UserHandle{0}] path: [/storage/emulated/0] externallyManaged: [false] mPublicVolume: [false] already attached
+10-15 12:01:45.479  1616  2288 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 12:01:45.616  1057  3337 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.device_performance#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 12:01:45.617  1057  3324 I bwdg    : No Heterodyne serving version in database [CONTEXT service_id=51 ]
+10-15 12:01:45.622  1057  3337 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 12:01:45.634  1057  3184 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 12:01:45.663  1057  1362 W bwft    : Succeeded but not registered: com.google.android.gms.appintegrity [CONTEXT service_id=51 ]
+10-15 12:01:45.681  1057  1064 I .gms.persistent: Compiler allocated 4813KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+10-15 12:01:45.703  3751  3751 I ProvidersCache: Updating roots due to change on user 0at content://com.android.externalstorage.documents/
+10-15 12:01:45.731  3751  5386 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 12:01:45.739  1057  1064 I .gms.persistent: Compiler allocated 5782KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+10-15 12:01:45.761  1057  1362 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.android.apps.messaging.auto#com.google.android.apps.messaging) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 12:01:45.792  1057  1362 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.android.apps.messaging#com.google.android.apps.messaging) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 12:01:45.813  1057  1362 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 12:01:45.855  1057  3337 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+10-15 12:01:45.855  1057  3337 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+10-15 12:01:45.879  1057  3337 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-15 12:01:45.962  5210  5291 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

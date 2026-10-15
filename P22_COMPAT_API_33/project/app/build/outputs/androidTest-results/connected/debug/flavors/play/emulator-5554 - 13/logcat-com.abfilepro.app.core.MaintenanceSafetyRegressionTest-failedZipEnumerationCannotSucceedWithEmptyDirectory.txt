@@ -1,0 +1,2 @@
+10-15 12:01:46.333  5210  5291 I TestRunner: started: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:46.398  5210  5291 I TestRunner: finished: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

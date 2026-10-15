@@ -1,0 +1,77 @@
+10-15 12:01:46.216  5210  5291 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:46.228   284  5399 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10119 0}
+10-15 12:01:46.236   284  5401 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:01:46.237   284  5401 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7be400892010
+10-15 12:01:46.237   284  5401 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+10-15 12:01:46.239   284  5400 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:01:46.242   284  5400 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7be41089df50
+10-15 12:01:46.243   284  5400 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+10-15 12:01:46.248  1745  2144 W NamedFutures: Timeout future task has been cancelled: 60000 milliseconds
+10-15 12:01:46.250  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.262  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.265  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.269  1745  1745 E A       : Task 255 failed or timed out. Client 7676383227504797 disconnecting from SearchService!
+10-15 12:01:46.269  1745  1745 E A       : java.util.concurrent.CancellationException: Task was cancelled.
+10-15 12:01:46.269  1745  1745 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
+10-15 12:01:46.269  1745  1745 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
+10-15 12:01:46.269  1745  1745 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-15 12:01:46.269  1745  1745 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-15 12:01:46.269  1745  1745 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-15 12:01:46.269  1745  1745 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
+10-15 12:01:46.269  1745  1745 E A       : 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 12:01:46.269  1745  1745 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 12:01:46.269  1745  1745 E A       : 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 12:01:46.269  1745  1745 E A       : 	at android.os.Looper.loop(Looper.java:288)
+10-15 12:01:46.269  1745  1745 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 12:01:46.269  1745  1745 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 12:01:46.269  1745  1745 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 12:01:46.269  1745  1745 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 12:01:46.273  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.279  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.283  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.292  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.295  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.310  1057  5397 D TrafficStats: tagSocket(258) with statsTag=0x1203, statsUid=10119
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: EXCLUSIVE background task SEND_GSA_HOME_REQUEST was cancelled.
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 12:01:46.310  1745  2569 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: Can't parse the header version.
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:455)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:141)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:125)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:285)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 12:01:46.313  5210  5356 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 12:01:46.332  5210  5291 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,34 @@
+10-15 12:01:48.015  5210  5291 I TestRunner: started: twoSidedCardIsSavedIntoTheScannerFolder(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 12:01:48.016  1745  1745 E A       : onError
+10-15 12:01:48.016  1745  1745 E A       : com.google.android.apps.gsa.shared.speech.a.m: errorCode: 65561, engine: 2
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.staticplugins.dc.a.e.a(PG:3)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.s3.n.hh(PG:1)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.cd.g.a.f.e(PG:2)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:22)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.ks(PG:6)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.s3.o.e(PG:14)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.s3.p.run(PG:1)
+10-15 12:01:48.016  1745  1745 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-15 12:01:48.016  1745  1745 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:2)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bi.run(PG:1)
+10-15 12:01:48.016  1745  1745 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 12:01:48.016  1745  1745 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 12:01:48.016  1745  1745 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:5)
+10-15 12:01:48.016  1745  1745 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.o: errorCode: 65586, engine: 2
+10-15 12:01:48.016  1745  1745 E A       : 	... 15 more
+10-15 12:01:48.016  1745  1745 E A       : Caused by: com.google.android.apps.gsa.shared.speech.a.k: errorCode: 401, engine: 2
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.h.a(PG:5)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hE(PG:2)
+10-15 12:01:48.016  1745  1745 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:16)
+10-15 12:01:48.016  1745  1745 E A       : 	... 12 more
+10-15 12:01:48.023  1745  2920 I NetworkRecognitionRnr: Using pair HTTP connection
+10-15 12:01:48.025  1745  2925 I A       : [Upload] Connected
+10-15 12:01:48.027  1745  1745 W A       : Failed to sync device settings.
+10-15 12:01:48.031  1745  1745 I A       : Retrying to sync device settings.
+10-15 12:01:48.048  1057  1057 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+10-15 12:01:48.052  1609  1609 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+10-15 12:01:48.078  1609  2068 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 12:01:48.103  5210  5291 I TestRunner: finished: twoSidedCardIsSavedIntoTheScannerFolder(com.abfilepro.app.core.ScannerEngineRegressionTest)

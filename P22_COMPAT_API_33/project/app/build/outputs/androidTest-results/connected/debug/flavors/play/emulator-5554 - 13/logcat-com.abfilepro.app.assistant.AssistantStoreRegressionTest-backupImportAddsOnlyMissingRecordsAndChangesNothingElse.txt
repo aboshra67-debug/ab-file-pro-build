@@ -1,0 +1,14 @@
+10-15 12:01:39.958  5210  5291 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:01:39.964   284  5335 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:01:39.964   284  5335 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7be3d089e810
+10-15 12:01:39.967   284  5335 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 12:01:39.968  2046  5319 D TrafficStats: tagSocket(76) with statsTag=0xffffff01, statsUid=10105
+10-15 12:01:39.990  1057  3590 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+10-15 12:01:39.990  1057  3590 D BluetoothAdapter: isLeEnabled(): ON
+10-15 12:01:39.993   986   986 D ImsResolver: maybeAddedImsService, packageName: com.abfilepro.app.p22mainttrial
+10-15 12:01:40.003   986   986 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 12:01:40.012   955  4254 D BtGatt.GattService: stopScan() - queue size =2
+10-15 12:01:40.020   955  1253 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10119]]
+10-15 12:01:40.020   955  1253 D BtGatt.ScanManager: stop gattClientScanNative
+10-15 12:01:40.037   955  4254 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 12:01:40.042  5210  5291 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

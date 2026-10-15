@@ -1,0 +1,2 @@
+10-15 11:59:23.361  4014  4061 I TestRunner: started: playBuildDoesNotRequestInstallPackages(com.abfilepro.app.core.PlayChannelPolicyTest)
+10-15 11:59:23.362  4014  4061 I TestRunner: finished: playBuildDoesNotRequestInstallPackages(com.abfilepro.app.core.PlayChannelPolicyTest)

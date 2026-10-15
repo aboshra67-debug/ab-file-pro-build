@@ -1,0 +1,13 @@
+10-15 12:01:17.672  4992  5011 I TestRunner: started: fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:17.720  1816  2102 D EGL_emulation: eglMakeCurrent: 0x7819ff63d4a0: ver 3 0 (tinfo 0x7819ff60d9c0)
+10-15 12:01:17.730  1390  1390 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 12:01:17.730  1816  1816 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{344fa5e VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:01:17.730  1816  1816 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{f69134f VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:01:17.730  1816  1816 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{552b70e VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:01:17.730  1816  1816 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{6de3056 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:01:17.730  1816  1816 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{78447e7 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:01:17.730  1816  1816 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{9015b06 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:01:17.751  1816  2102 D EGL_emulation: eglMakeCurrent: 0x7819ff63d4a0: ver 3 0 (tinfo 0x7819ff60d9c0)
+10-15 12:01:17.762  1390  1390 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 12:01:17.766  1390  1390 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 12:01:17.806  4992  5011 I TestRunner: finished: fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

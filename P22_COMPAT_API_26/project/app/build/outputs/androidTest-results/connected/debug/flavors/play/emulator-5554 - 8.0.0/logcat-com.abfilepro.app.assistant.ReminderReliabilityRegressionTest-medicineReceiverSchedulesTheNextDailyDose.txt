@@ -1,0 +1,6 @@
+10-15 12:01:11.620  4992  5011 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 12:01:11.661  1816  5028 W System  : ClassLoader referenced unknown path:
+10-15 12:01:11.685  1816  1816 I zygote64: Deoptimizing void com.android.systemui.statusbar.notification.NotificationHeaderViewWrapper.onContentUpdated(com.android.systemui.statusbar.ExpandableNotificationRow) due to JIT inline cache
+10-15 12:01:11.698  1816  1816 D StatusBar: disable<e i a s b h r c s q >
+10-15 12:01:11.705  1816  1816 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.NotificationStackScrollLayout.updateContentHeight() due to JIT inline cache
+10-15 12:01:11.706  4992  5011 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

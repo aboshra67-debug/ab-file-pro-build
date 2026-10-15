@@ -1,0 +1,985 @@
+10-15 11:59:19.364  4014  4061 I TestRunner: started: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:19.368  3202  3350 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=62 ]
+10-15 11:59:19.369  3202  3350 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 11:59:19.370  3202  3340 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 11:59:19.371  3202  3316 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=49 ]
+10-15 11:59:19.376  3202  3340 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 11:59:19.380  3202  3316 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=49 ]
+10-15 11:59:19.382  3202  3340 W BugleAction: No default number, returning empty msisdn
+10-15 11:59:19.383  1562  1798 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:19.398  3202  3340 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=56 ]
+10-15 11:59:19.399  3202  3481 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 11:59:19.399  3202  3481 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 11:59:19.400   559  1884 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:19.401   559  1884 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:19.401   559  1884 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:19.404  1063  1063 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=86938 mSleepTimeMs=0 mIdleTimeMs=86925 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[0, 0, 0, 0, 0],mRxTimeMs=0}]}
+10-15 11:59:19.407  3202  3340 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 11:59:19.407  3202  3340 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 11:59:19.408  3202  3340 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 11:59:19.408  1562  1807 I A       : (REDACTED) Refusing EXCLUSIVE task %s, it is already pending. Try again in %d seconds.
+10-15 11:59:19.409  3202  3350 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningListenableWorker
+10-15 11:59:19.427  3202  3316 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is 6191232d-ab61-4456-a9bf-3a46758ca9ed [CONTEXT thread_id=49 ]
+10-15 11:59:19.430  3202  3316 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 11:59:19.432  3202  3202 I BugleRcsWorker: [seqId=0][workId=dd1484ec-077f-49fb-84a0-abe52ac4069c] RCS provisioning task has started
+10-15 11:59:19.437  1562  1580 W earchbox:search: Suspending all threads took: 13.503ms
+10-15 11:59:19.438  1562  2355 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 11:59:19.446  3426  3495 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d5f84f65-9451]" thread_id=65 ]
+10-15 11:59:19.447  3426  3488 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d5f84f65-9451]>Handler" thread_id=63 ]
+10-15 11:59:19.447  3426  3488 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d5f84f65-9451]>Handler" thread_id=63 ]
+10-15 11:59:19.447  3426  3488 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d5f84f65-9451]" thread_id=63 ]
+10-15 11:59:19.447  3426  3488 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d5f84f65-9451]" thread_id=63 ]
+10-15 11:59:19.447  3426  3488 I BugleRcsEngine: resetting RcsEngine internal state [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d5f84f65-9451]" thread_id=63 ]
+10-15 11:59:19.450  3202  3362 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 11:59:19.458  1172  3636 I AppDoctorConfigChanged: Refreshing configuration on flag commit.
+10-15 11:59:19.460  3426  3488 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[d5f84f65-9451]>Handler" thread_id=63 ]
+10-15 11:59:19.467  1562  1818 I Ma      : #handleFlagUpdate()
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.appdoctor [CONTEXT service_id=204 ]
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.appdoctor
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.468  1172  2082 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.474  3426  3488 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+10-15 11:59:19.484  1562  1807 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 11:59:19.486  1449  1783 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 11:59:19.487  1449  1783 I A       : #handleFlagsUpdate: listeners notified
+10-15 11:59:19.489  1562  1843 I A       : NGA enabled in interactor.
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.firebase.auth [CONTEXT service_id=204 ]
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.firebase.auth
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.503  1172  2082 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.508  1172  3921 I PTCommittedOperation: Receive new configuration for com.google.android.gms.firebase.auth
+10-15 11:59:19.511  1337  3916 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.511  1337  3916 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.512  1337  1642 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:19.512  1337  1642 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:19.512  1337  1642 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.firebase.auth [CONTEXT service_id=340 ]
+10-15 11:59:19.513  1337  4068 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:19.513  1337  3914 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.515  1337  4051 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.516  1337  4051 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:19.516  1337  3912 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:19.520  1337  1345 I PeopleGalProvider: Gal directories started.
+10-15 11:59:19.526  1337  4051 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:19.527  1337  4051 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:19.527  1337  1345 I PeopleGalProvider: Method 1 completed.
+10-15 11:59:19.528  1337  1345 I PeopleGalProvider: Method 1 finished successfully.
+10-15 11:59:19.537  1562  1580 I earchbox:search: Background concurrent mark compact GC freed 17MB AllocSpace bytes, 20(3044KB) LOS objects, 50% free, 18MB/37MB, paused 13.988ms,6.262ms total 259.655ms
+10-15 11:59:19.542  3202  3336 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@badf28a
+10-15 11:59:19.559  3202  3350 I BugleRcsWorker: [seqId=0][workId=dd1484ec-077f-49fb-84a0-abe52ac4069c] Starting StateMachine, trigger is CSLIB_PHENOTYPE_UPDATE
+10-15 11:59:19.563  1172  2600 I AppDoctorManager: Updating appdoctor Uri Permissions. [CONTEXT service_id=256 ]
+10-15 11:59:19.564  3202  3350 I BugleRcsEngine: start PEv2, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is dd1484ec-077f-49fb-84a0-abe52ac4069c [null] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=62 ]
+10-15 11:59:19.567  1172  2600 I AppDoctorManager: Granting access to 'com.google.android.gms' [CONTEXT service_id=256 ]
+10-15 11:59:19.568  1172  2196 W CCTFlatFileLogStore: Excessive logging: 128 events, 301310 bytes from log source PHENOTYPE last 1s
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.quickstart#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.quickstart#com.google.android.gms
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.579  1172  3636 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.583  3202  3350 I BugleRcsEngine: Created new RcsProvisioningProtoDataStorage for sim redacted-pii:sim_id[chars:20,last3:897] [CONTEXT thread_id=62 ]
+10-15 11:59:19.598  1337  3642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.599  1172  3921 I PTCommittedOperation: Receive new configuration for com.google.android.gms.ads
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.ads [CONTEXT service_id=204 ]
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.ads
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.600  1172  3925 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.606  1337  3642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.607  1562  1913 I SettingsDataLayer.AE: Set isHotwordOpaEligible
+10-15 11:59:19.608  1562  1818 I SettingsDataLayer.AE: Set Assistant eligibility status
+10-15 11:59:19.612  4014  4083 D nativeloader: Load /data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!/lib/x86_64/libjpeg.so using ns clns-7 from class loader (caller=/data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!classes10.dex): ok
+10-15 11:59:19.613  4014  4083 D nativeloader: Load /data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!/lib/x86_64/libpngx.so using ns clns-7 from class loader (caller=/data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!classes10.dex): ok
+10-15 11:59:19.613  1337  4051 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:19.614  1337  4067 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:19.615  4014  4083 D nativeloader: Load /data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!/lib/x86_64/libleptonica.so using ns clns-7 from class loader (caller=/data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!classes10.dex): ok
+10-15 11:59:19.615  1337  4068 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:19.615  1337  4068 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.ads [CONTEXT service_id=340 ]
+10-15 11:59:19.616  1337  3642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.617  1337  4050 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:19.621  4014  4083 D nativeloader: Load /data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!/lib/x86_64/libtesseract.so using ns clns-7 from class loader (caller=/data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!classes10.dex): ok
+10-15 11:59:19.622  1337  3642 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:19.623  1337  3642 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:19.623  3202  3350 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=62 ]
+10-15 11:59:19.624  1337  3642 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.car [CONTEXT service_id=204 ]
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.car
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.629  1172  3903 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.631  3202  3350 I BugleRcsEngine: start [null] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=62 ]
+10-15 11:59:19.633  3202  4084 I BugleRcsEngine: Enter EnabledState [null] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.640  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.643  3202  4084 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Send Provisioning Session ID (18)], redacted-pii:[chars:97] [CONTEXT thread_id=121 ]
+10-15 11:59:19.643  3202  4084 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:255] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=121 ]
+10-15 11:59:19.646  3202  4084 I BugleRcsEngine: Start a new provisioning session [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.647  3202  4084 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:19.648  3202  4084 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:19.651  3202  4084 I BugleRcsEngine: transitionViaMessage, srcState=EnabledState, destState = CheckPreconditionsState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.651  3202  4084 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Update provisioning status (11)], redacted-pii:[chars:85] [CONTEXT thread_id=121 ]
+10-15 11:59:19.652  3202  4084 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:243] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=121 ]
+10-15 11:59:19.652  3202  4084 I BugleRcsEngine: EnabledState: Transition to check preconditions [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.653  3202  4084 I BugleRcsEngine: transitionTo: destState=CheckPreconditionsState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.653  3202  4084 I BugleRcsEngine: onTransitionRequested EnabledState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.654  3202  4084 I BugleRcsEngine: Enter CheckPreconditionsState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.656  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.657  3202  4084 I BugleRcsEngine: Battery optimization is not required. [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.657  3202  4084 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:19.657  3202  4084 I BugleRcsEngine: transitionViaMessage, srcState=CheckPreconditionsState, destState = ReadyState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.657  3202  4084 I BugleRcsEngine: CheckPreconditionsState: Transition to ready [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.657  3202  4084 I BugleRcsEngine: transitionTo: destState=ReadyState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.657  3202  4084 I BugleRcsEngine: onTransitionRequested CheckPreconditionsState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.659  3202  4084 I BugleRcsEngine: Exit CheckPreconditionsState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.661  3202  4084 I BugleRcsEngine: Exit EnabledState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.661  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.662  3202  4084 I BugleRcsEngine: Enter InProgressState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.669  1337  3642 I DckStubModuleInit: Loading stub module components [CONTEXT service_id=289 ]
+10-15 11:59:19.669  1337  3642 I Dck     : disableDckSupport: false [CONTEXT service_id=289 ]
+10-15 11:59:19.671  1337  3642 I Dck     : doesDeviceHaveSupportedWirelessCapabilities: wccSysProp:0, wccMendel:3, deviceWccOverride:false [CONTEXT service_id=289 ]
+10-15 11:59:19.671  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.672  3202  4084 I BugleRcsEngine: Enter ReadyState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.674  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.674  1337  3642 I Dck     : Dck module condition - hasWccSupport: false [CONTEXT service_id=289 ]
+10-15 11:59:19.674  1337  3642 I Dck     : Dck module condition - downloadAllowed: false [CONTEXT service_id=289 ]
+10-15 11:59:19.674  1337  3642 W Dck     : Dck module not eligible for asynchronous downloading [CONTEXT service_id=289 ]
+10-15 11:59:19.677  3202  4084 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.dck [CONTEXT service_id=204 ]
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.dck
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.680  1172  3921 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.681  3202  3340 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Send Provisioning Session ID
+10-15 11:59:19.682  3202  3362 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@47e3eb6
+10-15 11:59:19.689  3202  4084 I BugleRcsEngine: transitionViaMessage, srcState=ReadyState, destState = RequestWithImsiState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.689  3202  4084 I BugleRcsEngine: ReadyState: Transition to request with imsi [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.689  3202  4084 I BugleRcsEngine: transitionTo: destState=RequestWithImsiState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.690  3202  4084 I BugleRcsEngine: onTransitionRequested ReadyState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.690  3202  4084 I BugleRcsEngine: Exit ReadyState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.690  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.690  3202  4084 I BugleRcsEngine: Enter RequestWithImsiState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.693  1337  1341 I gle.android.gms: Background concurrent mark compact GC freed 15MB AllocSpace bytes, 31(1452KB) LOS objects, 49% free, 16MB/33MB, paused 297us,711us total 183.637ms
+10-15 11:59:19.694  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.696  3202  3316 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Update provisioning status
+10-15 11:59:19.700  1337  2400 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 11:59:19.707  1337  1654 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 11:59:19.711  1337  1343 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk' with 1 weak references
+10-15 11:59:19.714  3202  3362 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@971c166
+10-15 11:59:19.716  3202  4084 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=121 ]
+10-15 11:59:19.717  3202  4084 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:19.724  1337  4051 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.725  1337  4051 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.725  1337  4051 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:19.726  1337  4050 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:19.726  1337  4050 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:19.726  1337  4050 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.gcm [CONTEXT service_id=340 ]
+10-15 11:59:19.726  1337  4050 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.727  1337  4050 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:19.727  1337  4050 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:19.728  1337  4050 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:19.728  1337  4068 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:19.729  1337  4067 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.gcm [CONTEXT service_id=204 ]
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.gcm
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.735  1172  3925 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.740  1172  4079 I PTCommittedOperation: Receive new configuration for com.google.android.gms.gcm
+10-15 11:59:19.751  3202  4084 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:19.752  3202  4084 W BugleRcsEngine: Could not retrieve MSISDN from configuration. Configuration is empty. [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.753  3202  4084 W BugleRcsEngine: Skipping adding Tachyon identity key to request. Null/empty RCS msisdn from configuration for sim ID: redacted-pii:sim_id[chars:20,last3:897]. [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.778  1337  3781 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 11:59:19.779  1337  1514 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.ipa [CONTEXT service_id=204 ]
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.ipa
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.781  1172  3903 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.788  1337  3781 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 11:59:19.796   559  2054 D FileUtils: Rounded bytes from 2593202176 to 4000000000
+10-15 11:59:19.797  1337  3781 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 11:59:19.796  2192  2192 W binder:2192_6: type=1400 audit(0.0:195): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 11:59:19.803  2192  3946 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 11:59:19.800  2192  2192 W binder:2192_6: type=1400 audit(0.0:196): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 11:59:19.807  2192  3946 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 11:59:19.809  3202  3316 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=49 ]
+10-15 11:59:19.813   361  4086 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10143 0}
+10-15 11:59:19.813  2192  3946 D TrafficStats: tagSocket(129) with statsTag=0x1809, statsUid=-1
+10-15 11:59:19.829  3202  4084 E BugleRcsEngine: Could not create DroidGuard token creation event [CONTEXT log_prefix="DroidGuardLogger" thread_id=121 ]
+10-15 11:59:19.831  3202  4084 I BugleRcsEngine: RequestWithImsiState: event Send config request [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.832  3202  3316 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=49 ]
+10-15 11:59:19.833  3202  4084 I BugleRcsEngine: InProgressState: event Send config request [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:19.834  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:19.838  3202  3340 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 11:59:19.839   361  4087 I resolv  : GetAddrInfoHandler::run: {101 786533 101 983141 10131 0}
+10-15 11:59:19.840   361  4088 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 11:59:19.840   361  4089 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 11:59:19.845  3202  3211 W .apps.messaging: Suspending all threads took: 5.837ms
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.ocr [CONTEXT service_id=204 ]
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.ocr
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.851  1172  3903 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.857   361  4088 I resolv  : res_nsend: used send_dg 76 terrno: 0
+10-15 11:59:19.857   361  4088 I resolv  : doQuery: rcode=0, ancount=1, return value=76
+10-15 11:59:19.860   361  4089 I resolv  : res_nsend: used send_dg 64 terrno: 0
+10-15 11:59:19.860   361  4089 I resolv  : doQuery: rcode=0, ancount=1, return value=64
+10-15 11:59:19.863  3202  3340 D TrafficStats: tagSocket(160) with statsTag=0xc82, statsUid=-1
+10-15 11:59:19.865  3202  3316 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=49 ]
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: The extras of the task (com.google.android.gms.ocr.service.ModelCleanUpTaskService:type_[2]) are not valid to be persisted so that the task is not persisted [CONTEXT service_id=218 ]
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: java.lang.IllegalArgumentException: Only the following extra parameter types are supported: Integer, Long, Double, String, Boolean, and nested Bundles with the same restrictions.
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at bpky.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):69)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at dcbg.d(:com.google.android.gms@242335041@24.23.35 (190800-646585959):510)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at dbyt.n(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at dbyt.u(:com.google.android.gms@242335041@24.23.35 (190800-646585959):360)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at dbyt.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):51)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at dbto.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):72)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.871  1172  3493 W NetworkScheduler: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.878  3202  3211 I .apps.messaging: Background concurrent mark compact GC freed 10MB AllocSpace bytes, 95(4308KB) LOS objects, 49% free, 14MB/28MB, paused 6.849ms,576us total 188.822ms
+10-15 11:59:19.881  4014  4083 I Tesseract(native): Initialized Tesseract API with language=ara+eng+fra
+10-15 11:59:19.901  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.devicelockcontroller
+10-15 11:59:19.938  2192  2218 W id.gms.unstable: Missing inline cache for int fkid.a(java.lang.Object)
+10-15 11:59:19.942  1337  3642 I Pay     : A Phenotype flag has been updated. [CONTEXT service_id=198 ]
+10-15 11:59:19.957  1337  3642 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+10-15 11:59:19.959  1337  3642 I Pay     : Scheduling sync auth setting task. [CONTEXT service_id=198 ]
+10-15 11:59:19.966  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.modulemetadata
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.pay [CONTEXT service_id=204 ]
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.pay
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.968  1172  3921 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.981  1172  2858 I TapAndPay: deviceSupportsHce has detected emulator [CONTEXT service_id=79 ]
+10-15 11:59:19.989  1172  2858 I TapAndPay: Enabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 11:59:20.000  1172  2858 I TapAndPay: Enabling TapAndPay Services [CONTEXT service_id=79 ]
+10-15 11:59:20.000  1172  2858 I TapAndPay: Initialize tap and pay services [CONTEXT service_id=79 ]
+10-15 11:59:20.004  3202  3340 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 11:59:20.004  1172  2858 I TapAndPay: deviceSupportsHce has detected emulator [CONTEXT service_id=79 ]
+10-15 11:59:20.004  1172  2858 I TapAndPay: Enabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 11:59:20.005  3202  4084 I BugleRcsEngine: RequestWithImsiState: event HTTP Response [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.006  3202  4084 I BugleRcsEngine: InProgressState: event HTTP Response [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.006  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.006  3202  4084 I BugleRcsEngine: RequestWithImsiState: event HTTP 200 (OK) [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.007  3202  4084 W BugleRcsEngine: Couldn't find cookies [CONTEXT thread_id=121 ]
+10-15 11:59:20.008  3202  4084 I BugleRcsEngine: transitionTo: destState=ProcessConfigurationState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.008  3202  4084 I BugleRcsEngine: onTransitionRequested RequestWithImsiState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.008  3202  4084 I BugleRcsEngine: Exit RequestWithImsiState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.009  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.009  3202  4084 I BugleRcsEngine: Enter ProcessConfigurationState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.014  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.015  3202  4084 I BugleRcsEngine: ProcessConfigurationState: event Config document received [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.016   559   819 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.016   559   819 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.016   559   819 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.016   559   819 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.016   559   819 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.019  3202  4084 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:20.020  3202  4084 I BugleRcsEngine: Configuration update received. Updating
+10-15 11:59:20.020  3202  4084 I BugleRcsEngine: from [Type: 0, Version: 0, Validity: 0, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false]
+10-15 11:59:20.020  3202  4084 I BugleRcsEngine: to [Type: 2, Version: 0, Validity: 86400, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false]
+10-15 11:59:20.020  3202  4084 I BugleRcsEngine: [CONTEXT thread_id=121 ]
+10-15 11:59:20.024  3202  4084 W BugleRcsEngine: Received configuration with no token or invalid token during refresh. [CONTEXT thread_id=121 ]
+10-15 11:59:20.027  1172  3925 I AlarmManager: set [name: SystemMemoryCache type: 2 triggerAtMillis: 315360087561 windowMillis: -1 intervalMillis: 0]
+10-15 11:59:20.031  1172  3925 I TapAndPay: getInstance: new instance created [CONTEXT service_id=79 ]
+10-15 11:59:20.033  1172  1187 W .gms.persistent: Suspending all threads took: 29.683ms
+10-15 11:59:20.041  3202  4084 I BugleRcsEngine: Rcs Configuration was updated [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=121 ]
+10-15 11:59:20.041  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.042  3202  4084 I BugleRcsEngine: Provisioning refreshed with partial configuration. [CONTEXT thread_id=121 ]
+10-15 11:59:20.043  3202  3340 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 11:59:20.053  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.054  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.055  3202  4084 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=121 ]
+10-15 11:59:20.082  1172  3925 I TapAndPay: Maintaining payment bundles [CONTEXT service_id=79 ]
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.udc [CONTEXT service_id=204 ]
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.udc
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.085  1172  3921 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.085  1172  3925 I TapAndPay: Finished maintaining payment bundles [CONTEXT service_id=79 ]
+10-15 11:59:20.087  4014  4092 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 11:59:20.087  4014  4092 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 11:59:20.102  3202  4084 I BugleRcsEngine: transitionTo: destState=ConfiguredState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.102  3202  4084 I BugleRcsEngine: onTransitionRequested ProcessConfigurationState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.104  3202  4084 I BugleRcsEngine: Exit ProcessConfigurationState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.106  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.108  3202  4084 I BugleRcsEngine: Exit InProgressState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.108  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.111  3202  4084 I BugleRcsEngine: Enter ConfiguredState [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.112  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.116  4014  4093 D nativeloader: Load /data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!/lib/x86_64/libbarhopper_v3.so using ns clns-7 from class loader (caller=/data/app/~~BW4ZGx3uGXult65yOKOAZQ==/com.abfilepro.app.p22mainttrial-mVbzlqQTeZp4Kn5cXFwFbQ==/base.apk!classes10.dex): ok
+10-15 11:59:20.118  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.124  3202  4084 I BugleRcsEngine: Provisioned with disabled config (version < 0). Invoke failure [d52f3f1f-a602-4b80-98bb-500ed635bb95] [CONTEXT log_prefix="(PEv2-SM238731566-DefaultCallSmsData-1-4fd)" thread_id=121 ]
+10-15 11:59:20.124  3202  4084 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=121 ]
+10-15 11:59:20.127  3202  4084 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Update provisioning status (11)], redacted-pii:[chars:85] [CONTEXT thread_id=121 ]
+10-15 11:59:20.128  3202  4084 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:243] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=121 ]
+10-15 11:59:20.129  4014  4093 I tflite  : Initialized TensorFlow Lite runtime.
+10-15 11:59:20.131  3202  3316 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Update provisioning status
+10-15 11:59:20.131  3202  3362 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@bb3531a
+10-15 11:59:20.137  4014  4093 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-15 11:59:20.138  4014  4093 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 11:59:20.139  4014  4093 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 11:59:20.139  4014  4093 I native  : I0000 00:00:1792065560.139934    4093 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 11:59:20.142  1172  2600 W .gms.persistent: Long monitor contention with owner netscheduler-queue-handler (2534) at void dbyt.o(int)(:com.google.android.gms@242335041@24.23.35 (190800-646585959):27) waiters=0 in void dbyt.u(dbus, int) for 141ms
+10-15 11:59:20.142  3202  3317 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=50 ]
+10-15 11:59:20.155  1172  1187 I .gms.persistent: Background concurrent mark compact GC freed 19MB AllocSpace bytes, 8(404KB) LOS objects, 49% free, 20MB/41MB, paused 32.768ms,4.582ms total 200.564ms
+10-15 11:59:20.156  1337  3916 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.157  1337  4053 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.157  1337  4053 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.158  1337  4053 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.159  1337  3917 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.159  1337  3917 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.159  1337  3917 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.ulr [CONTEXT service_id=340 ]
+10-15 11:59:20.160  1337  4069 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.160  1337  4069 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.161  1337  4069 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.161  1337  4069 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.162  1337  3912 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.163  1337  4030 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 11:59:20.166  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 11:59:20.166  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 11:59:20.167  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 11:59:20.167  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 11:59:20.167  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 11:59:20.170  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 11:59:20.171  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 11:59:20.171  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 11:59:20.172  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 11:59:20.172  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 11:59:20.172  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 11:59:20.174  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 11:59:20.174  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 11:59:20.174  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 11:59:20.175  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.ulr [CONTEXT service_id=204 ]
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.ulr
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.175  1172  3636 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.finder_shared#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.finder_shared#com.google.android.gms
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.180  1172  3925 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.184  1172  3903 I PTCommittedOperation: Receive new configuration for com.google.android.gms.ulr
+10-15 11:59:20.198  4014  4090 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.appinvite [CONTEXT service_id=204 ]
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.appinvite
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.210  1172  4056 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.212  4014  4090 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=4073774 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-15 11:59:20.214   559  1492 D ConnectivityService: requestNetwork for uid/pid:1000/559 asUid: 10209 activeRequest: null callbackRequest: 135 [NetworkRequest [ REQUEST id=136, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 11:59:20.215  1337  4030 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 11:59:20.215   559   819 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=136, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 11:59:20.215   559   819 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=136, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 11:59:20.215   559   826 D ConnectivityService: NetReassign [136 : null → 101] [c 0] [a 0] [i 0]
+10-15 11:59:20.216   559   819 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=136, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 11:59:20.216   559   819 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=136, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 11:59:20.222  1337  3642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.222  1337  3642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.222  1337  3642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.223  1337  3642 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.223  1337  4067 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.223  1337  3915 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.223  1337  3915 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.appinvite [CONTEXT service_id=340 ]
+10-15 11:59:20.223  1337  4067 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.223  1337  4067 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.224  1337  3915 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.224  1337  3915 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.225  1172  2600 W NetworkScheduler: Immediate task was not started com.google.android.gms/.tapandpay.gcmtask.TapAndPayGcmTaskService{u=0 tag="hce.dynamic_aid_registration.oneoff" trigger=window{start=0s,end=1s,earliest=0s,latest=0s} requirements=[NET_ANY,PREFERRED_CHARGING] attributes=[] scheduled=0s last_run=N/A exec_window_multiplier=1.0000 jid=N/A status=PENDING retries=0 client_lib=GMS_TASK_SCHEDULER-242335000}. Rescheduling immediate tasks can cause excessive battery drain.
+10-15 11:59:20.225  1172  2600 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:7 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-15 11:59:20.225  1337  3915 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.225  4014  4090 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 11:59:20.226  1337  4030 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 11:59:20.228  4014  4090 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-1890003 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-15 11:59:20.228  1337  4030 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 11:59:20.232  1337  1337 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.constellation.service.START pkg=com.google.android.gms }
+10-15 11:59:20.235  1172  1501 I PTCommittedOperation: Receive new configuration for com.google.android.gms.appinvite
+10-15 11:59:20.241  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gsf
+10-15 11:59:20.242  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.tag
+10-15 11:59:20.248  1337  4051 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.248  1337  3912 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.249  1337  4050 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.250  1337  4051 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.251  1337  3992 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.251  1337  3992 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.251  1337  3992 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.setupservices [CONTEXT service_id=340 ]
+10-15 11:59:20.252  1337  4053 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.253  1337  4053 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.253  1337  4053 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.254  1337  4051 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.254  1337  4053 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.262  1172  4057 I PTCommittedOperation: Receive new configuration for com.google.android.gms.setupservices
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.setupservices [CONTEXT service_id=204 ]
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.setupservices
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.264  1172  4056 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.276  3202  3316 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=49 ]
+10-15 11:59:20.276  3202  3316 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=49 ]
+10-15 11:59:20.276  1172  2563 I GCoreUlr: Unbound from all signal providers.
+10-15 11:59:20.284  4014  4090 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 11:59:20.285  1337  4053 W ActiveUnlock: Tried to set empty triggers [CONTEXT service_id=327 ]
+10-15 11:59:20.287  1337  4053 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
+10-15 11:59:20.288  1172  1172 I GCoreUlr: Unbound from all signal providers.
+10-15 11:59:20.288  1172  1172 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.trustagent.activeunlock.primary#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.trustagent.activeunlock.primary#com.google.android.gms
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.291  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.297  4014  4090 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 11:59:20.299  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.nexuslauncher
+10-15 11:59:20.309  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.feedback
+10-15 11:59:20.316  1337  4053 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.320  1337  3916 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.320  1337  3917 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.320  1337  3917 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.321  1337  4066 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.322  1337  4066 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.322  1337  4066 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.usagereporting [CONTEXT service_id=340 ]
+10-15 11:59:20.322  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.323  1337  4070 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.323  1337  4070 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.323  1337  4070 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.323  1337  4052 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.usagereporting [CONTEXT service_id=204 ]
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.usagereporting
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.326  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.330  1172  3636 I PTCommittedOperation: Receive new configuration for com.google.android.gms.usagereporting
+10-15 11:59:20.345  1337  4051 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.346  1337  4051 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.346  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.346  1337  3913 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.constellation [CONTEXT service_id=204 ]
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.constellation
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.349  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.351  1337  3992 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.352  1337  4050 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.352  1337  4050 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.352  1337  3917 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.352  1337  3917 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.constellation [CONTEXT service_id=340 ]
+10-15 11:59:20.352  1337  3917 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.352  1337  4050 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.353  1337  3912 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.354  1172  3925 I PTCommittedOperation: Receive new configuration for com.google.android.gms.constellation
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.identitycredentials#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.identitycredentials#com.google.android.gms
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.356  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.359  1172  2534 W .gms.persistent: Long monitor contention with owner lowpool[14] (2600) at void dbyt.n(dbus, dbus, int)(:com.google.android.gms@242335041@24.23.35 (190800-646585959):49) waiters=0 in int dbyt.l(dbyf, bcsk) for 172ms
+10-15 11:59:20.367  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gms.supervision
+10-15 11:59:20.369  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+10-15 11:59:20.374  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.wallpaper
+10-15 11:59:20.377  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.systemui
+10-15 11:59:20.387  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.388  1337  4050 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.389  1337  3913 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.391  1337  3920 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.391  1172  2600 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:7 result: 1 elapsed_millis: 287 uptime_millis: 287 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-15 11:59:20.392  1337  3920 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.392  1337  3920 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.feedback [CONTEXT service_id=340 ]
+10-15 11:59:20.393  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.393  1337  4066 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.393  1337  4070 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.394  1337  3912 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.395  1337  4066 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.396  1337  4066 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.397  1172  3634 I PTCommittedOperation: Receive new configuration for com.google.android.gms.feedback
+10-15 11:59:20.402   559  1180 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.402   559  1180 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.403   559   961 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.feedback [CONTEXT service_id=204 ]
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.feedback
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.406  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.westworldfeatures#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.westworldfeatures#com.google.android.gms
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.409  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.417  1172  4055 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-15 11:59:20.419  1172  4055 W TapAndPay: NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=79 ]
+10-15 11:59:20.419  1172  4055 W TapAndPay: java.lang.NullPointerException: NfcAdapter is null
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at android.nfc.cardemulation.CardEmulation.getInstance(CardEmulation.java:170)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at dhwn.<init>(:com.google.android.gms@242335041@24.23.35 (190800-646585959):15)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at com.google.android.gms.tapandpay.hce.task.TapAndPayAidRegistrationTaskOperation.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskChimeraService.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):32)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at bpjj.call(:com.google.android.gms@242335041@24.23.35 (190800-646585959):32)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.419  1172  4055 W TapAndPay: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.424  1172  2423 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 3 elapsed_millis: 9 uptime_millis: 9 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-15 11:59:20.446  1172  4055 W .gms.persistent: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkSupported(I)Z (max-target-p, reflection, denied)
+10-15 11:59:20.446  1172  2196 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-15 11:59:20.454  1172  4055 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 87 [CONTEXT service_id=218 ]
+10-15 11:59:20.487  1172  2196 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-15 11:59:20.491  1172  2196 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-15 11:59:20.496  4014  4090 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 11:59:20.497  4014  4090 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 11:59:20.514  4014  4090 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 11:59:20.516  4014  4090 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 11:59:20.524  4014  4090 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 11:59:20.526  4014  4090 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 11:59:20.529  1172  3910 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 11:59:20.529  4014  4093 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 11:59:20.530  4014  4093 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 11:59:20.533  4014  4090 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 11:59:20.534  4014  4090 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 11:59:20.539  1172  2423 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-15 11:59:20.540  1337  3913 I AdservicesStatusTask: scheduling task by handle intent
+10-15 11:59:20.542  4014  4093 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 11:59:20.543  4014  4093 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.adsidentity [CONTEXT service_id=204 ]
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.adsidentity
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.544  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.550  4014  4093 I native  : I0000 00:00:1792065560.550347    4093 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.analytics [CONTEXT service_id=204 ]
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.analytics
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.565  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.569  1337  3913 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.570  1337  3913 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.570  1337  4066 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.571  1337  3912 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.571  1337  3912 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.572  1337  3912 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.analytics [CONTEXT service_id=340 ]
+10-15 11:59:20.572  1172  3925 I PTCommittedOperation: Receive new configuration for com.google.android.gms.analytics
+10-15 11:59:20.573  1337  4050 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.573  1337  4051 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.574  1337  4050 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.575  1337  4050 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.575  1337  4050 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.575  1337  4070 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.libraries.personalization.footprints#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.libraries.personalization.footprints#com.google.android.gms
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.577  1172  4057 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.cobalt#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.cobalt#com.google.android.gms
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.602  1172  3634 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.614  1172  2423 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 90 uptime_millis: 90 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.subscribedfeeds [CONTEXT service_id=204 ]
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.subscribedfeeds
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.623  1172  3634 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.642  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.642  1337  4050 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.642  1337  4050 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.643  1337  3913 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.644  1337  3913 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.644  1337  3913 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.auth_cryptauth [CONTEXT service_id=340 ]
+10-15 11:59:20.644  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.645  1337  4066 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.645  1337  4066 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.645  1337  4051 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.646  1337  4066 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.648  1337  3920 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.661  1172  3636 I PTCommittedOperation: Receive new configuration for com.google.android.gms.auth_cryptauth
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.auth_cryptauth [CONTEXT service_id=204 ]
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.auth_cryptauth
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.667  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.689  1172  2423 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-15 11:59:20.695  3202  3202 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-15 11:59:20.701   904  1033 D EGL_emulation: app_time_stats: avg=20557.64ms min=20557.64ms max=20557.64ms count=1
+10-15 11:59:20.712  1172  2423 W ChimeraUtils: Module com.google.android.gms.tapandpay missing resource null(0)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.kidssettings#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.kidssettings#com.google.android.gms
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.722  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.729  1172  1187 I .gms.persistent: Background concurrent mark compact GC freed 24MB AllocSpace bytes, 10(560KB) LOS objects, 49% free, 22MB/45MB, paused 1.051ms,1.186ms total 184.013ms
+10-15 11:59:20.731  1337  1337 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 11:59:20.732  1337  1337 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.gaia_experiments#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.gaia_experiments#com.google.android.gms
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.742  1172  3903 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.754  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 11:59:20.765  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~8m2_NWPT5UM9TcVyJNj9BA==/com.android.chrome-068kNwY1szu1Bhm5Sg_PFQ==/Chrome.apk' with 1 weak references
+10-15 11:59:20.766  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~suD7F9YedOzjhiMR7dBbfQ==/com.google.android.trichromelibrary_636771938-6AZssZVsAdRldDmhRsU5jg==/TrichromeLibrary.apk' with 1 weak references
+10-15 11:59:20.766  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 11:59:20.772  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 11:59:20.773  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 11:59:20.777  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 11:59:20.780  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.thunderbird [CONTEXT service_id=204 ]
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.thunderbird
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.781  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.781  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+10-15 11:59:20.784  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 11:59:20.786  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.magictether [CONTEXT service_id=204 ]
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.magictether
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.787  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.788  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 11:59:20.789  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 11:59:20.790  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 11:59:20.794  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 11:59:20.795  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 11:59:20.795  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 11:59:20.796  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 11:59:20.796  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 11:59:20.796  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 11:59:20.797  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 11:59:20.797  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 11:59:20.798  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 11:59:20.798  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 11:59:20.799  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 11:59:20.799  1172  1189 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 11:59:20.808  1172  2423 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.tapandpay.gcmtask.TapAndPayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 140 uptime_millis: 140 exec_start_elapsed_seconds: 88 [CONTEXT service_id=218 ]
+10-15 11:59:20.812  1337  4030 I Pay     : External corp badge is enabled: true [CONTEXT service_id=198 ]
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.metrics [CONTEXT service_id=204 ]
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.metrics
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.824  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.matchstick [CONTEXT service_id=204 ]
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.matchstick
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.834  1172  3924 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.841  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.842  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.843  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.844  1337  4066 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.mainline.release [CONTEXT service_id=204 ]
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.mainline.release
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.845  1172  4078 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.847  1172  4079 I PTCommittedOperation: Receive new configuration for com.google.android.mainline.release
+10-15 11:59:20.850  1337  3913 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.851  1337  3913 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.mainline.release [CONTEXT service_id=340 ]
+10-15 11:59:20.851  1337  3916 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.851  1337  3916 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.852  1337  3913 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.853  1337  4069 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.854  1337  3913 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.854  1337  3913 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.864  1337  4051 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.864  1337  4050 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.865  1337  4050 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:20.865  1337  1642 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:20.866  1337  1642 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:20.866  1337  1642 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.instantapps [CONTEXT service_id=340 ]
+10-15 11:59:20.866  1337  3642 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.866  1337  3642 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:20.866  1337  4050 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:20.866  1337  3642 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:20.867  1337  3642 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.instantapps [CONTEXT service_id=204 ]
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.instantapps
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:20.869  1172  4097 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:20.873  1172  4054 I PTCommittedOperation: Receive new configuration for com.google.android.gms.instantapps
+10-15 11:59:20.875  1337  3913 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:20.878  4014  4061 I TestRunner: finished: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,3 @@
+10-15 12:01:48.232  5210  5291 I TestRunner: started: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.233  1609  2853 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 613 bytes from https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip.
+10-15 12:01:48.243  5210  5291 I TestRunner: finished: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

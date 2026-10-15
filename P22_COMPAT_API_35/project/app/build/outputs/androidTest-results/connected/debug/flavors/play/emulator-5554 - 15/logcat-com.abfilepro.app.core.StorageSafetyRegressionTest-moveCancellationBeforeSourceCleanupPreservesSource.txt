@@ -1,0 +1,4 @@
+10-15 11:59:23.635  4014  4061 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 11:59:23.642  1172  2587 W CCTFlatFileLogStore: Excessive logging: 128 events, 233157 bytes from log source PHENOTYPE last 1s
+10-15 11:59:23.643  1172  3925 I PlatformConfigurator: updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+10-15 11:59:23.648  4014  4061 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

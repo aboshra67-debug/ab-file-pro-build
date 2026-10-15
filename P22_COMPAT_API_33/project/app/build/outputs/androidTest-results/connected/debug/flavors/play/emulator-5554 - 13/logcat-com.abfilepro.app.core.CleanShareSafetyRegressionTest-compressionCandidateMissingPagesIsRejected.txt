@@ -1,0 +1,6 @@
+10-15 12:01:42.361  5210  5291 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:42.387  1057  5247 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-15 12:01:42.440  1297  5126 I GCM-GMS : Got GMS direct boot token.
+10-15 12:01:42.446  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 1 elapsed_millis: 464 uptime_millis: 464 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-15 12:01:42.460  1297  1297 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.moduleinstall.ModuleInstallService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 12:01:42.483  5210  5291 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

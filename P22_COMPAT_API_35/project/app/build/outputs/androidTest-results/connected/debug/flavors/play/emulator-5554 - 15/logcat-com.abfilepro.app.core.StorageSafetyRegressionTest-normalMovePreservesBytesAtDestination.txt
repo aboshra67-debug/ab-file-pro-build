@@ -1,0 +1,4 @@
+10-15 11:59:23.724  4014  4061 I TestRunner: started: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 11:59:23.726   559   826 D InetDiagMessage: Destroyed live tcp sockets for uids={10140} in 5ms
+10-15 11:59:23.729   559   826 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 11:59:23.731  4014  4061 I TestRunner: finished: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,7 @@
+10-15 11:59:23.407  4014  4061 I TestRunner: started: googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 11:59:23.408  1337  4053 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+10-15 11:59:23.410   559  1651 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:23.410   559  1651 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:23.411   559   961 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:23.411  1337  4053 I Pay     : Scheduling sync auth setting task. [CONTEXT service_id=198 ]
+10-15 11:59:23.413  4014  4061 I TestRunner: finished: googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered(com.abfilepro.app.core.ScannerEngineRegressionTest)

@@ -1,0 +1,3 @@
+10-15 12:01:48.390  5210  5291 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.400   955  5434 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+10-15 12:01:48.406  5210  5291 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

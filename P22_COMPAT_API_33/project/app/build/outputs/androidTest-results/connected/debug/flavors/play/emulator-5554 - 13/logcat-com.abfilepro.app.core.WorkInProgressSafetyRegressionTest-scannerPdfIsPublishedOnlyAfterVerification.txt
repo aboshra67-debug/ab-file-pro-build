@@ -1,0 +1,3 @@
+10-15 12:01:48.531  5210  5291 I TestRunner: started: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 12:01:48.538  1609  2853 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip'
+10-15 12:01:48.545  5210  5291 I TestRunner: finished: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

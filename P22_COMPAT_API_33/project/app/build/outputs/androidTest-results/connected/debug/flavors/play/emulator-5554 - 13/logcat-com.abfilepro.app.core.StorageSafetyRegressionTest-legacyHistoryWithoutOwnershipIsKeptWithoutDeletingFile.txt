@@ -1,0 +1,4 @@
+10-15 12:01:48.472  5210  5291 I TestRunner: started: legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.473  1609  2853 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 309 bytes from https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip.
+10-15 12:01:48.480  1057  3324 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:9 result: 1 elapsed_millis: 29 uptime_millis: 29 exec_start_elapsed_seconds: 125 [CONTEXT service_id=218 ]
+10-15 12:01:48.482  5210  5291 I TestRunner: finished: legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile(com.abfilepro.app.core.StorageSafetyRegressionTest)

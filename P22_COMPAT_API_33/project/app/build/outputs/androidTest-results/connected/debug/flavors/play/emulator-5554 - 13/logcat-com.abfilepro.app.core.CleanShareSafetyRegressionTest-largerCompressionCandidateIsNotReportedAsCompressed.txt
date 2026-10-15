@@ -1,0 +1,14 @@
+10-15 12:01:42.802  5210  5291 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:42.812  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:42.866  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 74 uptime_millis: 74 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:42.964  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:42.977  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 26 uptime_millis: 26 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.062  3069  3311 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 12:01:43.062  3069  3311 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 12:01:43.055  3069  3069 W binder:3069_5: type=1400 audit(0.0:92): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:01:43.059  3069  3069 W binder:3069_5: type=1400 audit(0.0:93): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:01:43.092  3069  3311 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 12:01:43.135  1057  4858 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.136  1057  3185 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 12:01:43.153  1057  5247 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 47 uptime_millis: 47 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.169  5210  5291 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

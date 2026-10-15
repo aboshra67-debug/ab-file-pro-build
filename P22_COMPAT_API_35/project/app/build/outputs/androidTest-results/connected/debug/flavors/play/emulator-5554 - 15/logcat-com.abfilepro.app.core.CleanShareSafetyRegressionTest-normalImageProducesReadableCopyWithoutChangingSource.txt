@@ -1,0 +1,58 @@
+10-15 11:59:19.310  4014  4061 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:19.319  3202  3324 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+10-15 11:59:19.320  3202  3324 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 2, newAvailability: 10, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 11:59:19.322  3202  3316 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is RCS is disabled for this carrier by Google, simId hash = 3484044440245760397, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+10-15 11:59:19.325  3202  3316 I BugleRcsEngine: getRcsProvisioningGoogleTosConfiguration # bnuv@5d5fcd, consentState = 0, ServerUpdateTime = 0 [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=49 ]
+10-15 11:59:19.326  3202  3316 I BugleRcsProvisioning: RcsProvisioningTrigger: Should not schedule Revoke Google Consent Task because both the consent types are empty in the Storage
+10-15 11:59:19.328  3202  3350 I BugleRcsProvisioning: RcsProvisioningTrigger: Did not schedule RevokeGoogleConsentTask
+10-15 11:59:19.329  3202  3316 I BugleRcsEngine: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = RcsAvailability{mAvailability=CARRIER_SETUP_PENDING (Carrier RCS is not set up)} [CONTEXT log_prefix="RcsProvisioningManager" thread_id=49 ]
+10-15 11:59:19.331  3202  3316 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=49 ]
+10-15 11:59:19.332  3202  3350 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+10-15 11:59:19.332  3202  3350 W BugleRcs: dncp: FULL
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at cjmd.i(PG:53)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at cjuu.a(PG:3)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at cjux.a(PG:17)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at cknu.run(PG:9)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at dkqk.run(PG:21)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at crzm.run(PG:3)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at cryq.run(PG:6)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.332  3202  3350 W BugleRcs: 	at csaw.run(PG:64)
+10-15 11:59:19.333  3202  3324 I BugleTransport: onRcsAvailabilityUpdate: kicking off updateActiveTransport for simId:redacted-pii:sim_id[chars:20,last3:897]
+10-15 11:59:19.334  3202  3350 I BugleRcsEngine: CommonRcsProvisioningChangeListenerHandler.notifyListener : Notify RcsProvisioningChangeListener bjbz@f465f19 onRcsProvisioningChange, SIM = redacted-pii:sim_id[chars:35,last3:97)], available rcs provisioning ids  =  [CONTEXT log_prefix="RcsProvisioningManager" thread_id=62 ]
+10-15 11:59:19.335  3202  3316 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : isPreviousDisabled = true, isCurrentDisabled = false, config[simId:redacted-pii:sim_id[chars:20,last3:897]] = [Type: 0, Version: 0, Validity: 0, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false], hasToken: false, isValidAndUpdated: false
+10-15 11:59:19.335  3202  3324 I BugleRcsEngine: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener brtj@3981e60 onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = 10 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=54 ]
+10-15 11:59:19.335  3202  3316 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule KEEP provision when trigger configuration not valid
+10-15 11:59:19.335  3202  3316 I BugleRcsProvisioning: scheduleProvisioningForRcsProvisioningId rcsProvisioningId: redacted-pii:sim_id[chars:35,last3:97)], provisioningTriggerEvent: 9
+10-15 11:59:19.336  3202  3324 I afym    : scheduleProvisioningForRcsProvisioningId: rcsProvisioningId: SimId(idValue=89860318640220133897) operationTrigger: 6 bugle trigger event: 9
+10-15 11:59:19.337  3202  3324 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+10-15 11:59:19.337  3202  3324 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 11:59:19.338  3202  3481 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+10-15 11:59:19.338  3202  3316 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=49 ]
+10-15 11:59:19.338  3202  3316 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=49 ]
+10-15 11:59:19.339  3202  3316 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is dd1484ec-077f-49fb-84a0-abe52ac4069c [CONTEXT thread_id=49 ]
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.kids.common#com.google.android.gms [CONTEXT service_id=204 ]
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.kids.common#com.google.android.gms
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:19.341  1172  3903 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:19.345   559  1884 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:19.345   559  1884 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:19.349   559  1884 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:19.350   559  1884 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:19.350  1172  3910 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.onetimeinitializer
+10-15 11:59:19.351  3202  3340 W BugleAction: Failed to get msisdn from Bugle
+10-15 11:59:19.353  1562  2156 W SearchServiceCore: Abort, client detached.
+10-15 11:59:19.353  3202  3317 I BugleTransport: isChatAvailable: RcsAvailability is CARRIER_SETUP_PENDING (Carrier RCS is not set up)
+10-15 11:59:19.358  3202  3340 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 11:59:19.359  4014  4061 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

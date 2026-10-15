@@ -1,0 +1,3 @@
+10-15 12:01:48.408  5210  5291 I TestRunner: started: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.424  1609  2068 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 12:01:48.426  5210  5291 I TestRunner: finished: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,4 @@
+10-15 12:01:16.175  4992  5011 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:16.194  4992  5011 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 12:01:16.205  4992  5011 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 12:01:16.214  4992  5011 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

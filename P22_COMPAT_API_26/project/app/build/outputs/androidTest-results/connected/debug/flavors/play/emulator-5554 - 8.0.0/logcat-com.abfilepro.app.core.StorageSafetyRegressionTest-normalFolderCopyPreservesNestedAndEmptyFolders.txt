@@ -1,0 +1,5 @@
+10-15 12:01:17.459  4992  5011 I TestRunner: started: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:17.587  1612  1662 E memtrack: Couldn't load memtrack module
+10-15 12:01:17.588  1612  1662 W android.os.Debug: failed to get memory consumption info: -1
+10-15 12:01:17.629  1816  1816 D StatusBar: disable<e i a s b h r c s q >
+10-15 12:01:17.669  4992  5011 I TestRunner: finished: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)

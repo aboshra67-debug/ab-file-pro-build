@@ -1,0 +1,4 @@
+10-15 12:01:47.890  5210  5291 I TestRunner: started: androidWrittenPdfRendersItsRealContentOrIsRefusedSafely(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:01:47.892  1745  2920 I A       : [Upload] Connected
+10-15 12:01:47.933  1616  1648 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 83ms, 0 inserts 0 updates 0 deletes
+10-15 12:01:47.938  5210  5291 I TestRunner: finished: androidWrittenPdfRendersItsRealContentOrIsRefusedSafely(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

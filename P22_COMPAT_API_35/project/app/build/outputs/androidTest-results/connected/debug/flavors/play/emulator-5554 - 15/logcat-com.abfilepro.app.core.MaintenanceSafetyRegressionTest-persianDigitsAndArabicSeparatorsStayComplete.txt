@@ -1,0 +1,14 @@
+10-15 11:59:22.076  4014  4061 I TestRunner: started: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 11:59:22.078  1172  4099 I PTCommittedOperation: Receive new configuration for com.google.android.gms.cast
+10-15 11:59:22.079  1337  4050 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.080  1337  4066 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.081  1337  3913 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:22.082  1337  3913 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:22.082  1337  3913 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.cast [CONTEXT service_id=340 ]
+10-15 11:59:22.085  1337  3992 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:22.086  1337  3992 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:22.086  1337  3913 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:22.087  1337  3992 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:22.089  1337  3992 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:22.090  1337  3992 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:22.095  4014  4061 I TestRunner: finished: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

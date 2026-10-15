@@ -1,0 +1,4 @@
+10-15 12:01:40.044  5210  5291 I TestRunner: started: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:01:40.058   955  1253 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-15 12:01:40.087   955  4254 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 12:01:40.102  5210  5291 I TestRunner: finished: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

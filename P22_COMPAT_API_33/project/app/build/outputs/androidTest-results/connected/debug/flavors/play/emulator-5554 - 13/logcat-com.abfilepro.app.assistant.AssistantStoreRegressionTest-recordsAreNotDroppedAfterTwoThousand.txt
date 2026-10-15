@@ -1,0 +1,114 @@
+10-15 12:01:39.155  5210  5291 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:01:39.139  1297  1314 I FastPair: ServiceBindHelper.onSlicePinned, slice already pinned, uri = content://com.google.android.gms.nearby.fastpair/method_bind_service_for_discovery_item?is_bind=false
+10-15 12:01:39.178  2046  5211 D DownloadManager: [1] Finished with status SUCCESS
+10-15 12:01:39.245  1057  1067 W System  : A resource failed to call close.
+10-15 12:01:39.265  1057  1067 W System  : A resource failed to call end.
+10-15 12:01:39.283  1297  3016 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.GcmReceiverService} to 1 [CONTEXT service_id=250 ]
+10-15 12:01:39.284  1297  3016 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.GmsSubscribedFeedsProvider} to 1 [CONTEXT service_id=250 ]
+10-15 12:01:39.285  1297  3016 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.SyncService} to 1 [CONTEXT service_id=250 ]
+10-15 12:01:39.286  1297  3016 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.GmsFeedsSyncService} to 1 [CONTEXT service_id=250 ]
+10-15 12:01:39.291  1297  3016 I TelephonySpamInit: On boot completed TelephonySpam module initialized [CONTEXT service_id=150 ]
+10-15 12:01:39.291  1297  3016 I TelephonySpamInit: onModuleUpdated TelephonySpam module initialized [CONTEXT service_id=150 ]
+10-15 12:01:39.291  1297  3016 I SpamListSync: scheduleSyncTasks [CONTEXT service_id=150 ]
+10-15 12:01:39.291  1297  3016 I SpamListSync: schedulePeriodicTask [CONTEXT service_id=150 ]
+10-15 12:01:39.359  1297  5097 D SmartDevice: [ModuleInitializer] Module init - scheduling buffered logs cleanup task
+10-15 12:01:39.360  1297  5097 I SmartDevice: [CleanBufferedLogsService] Periodic task upload_buffered_logs_periodic scheduled!
+10-15 12:01:39.361  1297  5097 I ThreadNetworkModuleInit: Initializing runtime states: 2 [CONTEXT service_id=305 ]
+10-15 12:01:39.364  1297  5097 I ThreadNetworkModuleInit: Enabled component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
+10-15 12:01:39.366  1297  5097 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
+10-15 12:01:39.368  1297  3016 I SpamListSync: scheduleOneTimeTask [CONTEXT service_id=150 ]
+10-15 12:01:39.370  1057  4171 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 12:01:39.375  1297  3016 I TrustedTime: Skip initializing when trusted time feature disabled. [CONTEXT service_id=326 ]
+10-15 12:01:39.376  1297  1305 I gle.android.gms: Background concurrent copying GC freed 214221(9947KB) AllocSpace objects, 107(5272KB) LOS objects, 49% free, 13MB/27MB, paused 29us,16us total 465.066ms
+10-15 12:01:39.383  1297  5097 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.trustagent.activeunlock.primary#com.google.android.gms, using defaults.
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: xvd: wrv: Precondition check failed.
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at xut.apply(Unknown Source:4)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at vws.p(PG:5)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at vws.b(PG:2)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at xuv.d(PG:4)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at acvk.c(PG:51)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at acvk.j(PG:38)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at acvk.d(PG:3)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at acvi.run(Unknown Source:2)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at qhq.run(PG:2)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at qic.run(PG:4)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: Caused by: wrv: Precondition check failed.
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at xtk.k(PG:5)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at wfa.f(PG:17)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at wfa.c(PG:1)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at wdz.run(PG:21)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at vvz.run(PG:11)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	... 1 more
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: Caused by: dlh
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	at wdz.run(PG:14)
+10-15 12:01:39.385  1710  2627 W YouTubeMusic: 	... 4 more
+10-15 12:01:39.387  1297  5097 W ActiveUnlock: Tried to set empty triggers [CONTEXT service_id=327 ]
+10-15 12:01:39.390  1297  5097 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
+10-15 12:01:39.399  1057  1057 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
+10-15 12:01:39.420  1297  5093 I SystemUpdate: [Control,UpdateReminderDialogControl] Received action: android.intent.action.BOOT_COMPLETED
+10-15 12:01:39.458  1297  3016 I Wear_Controller: Wearable module requires a companion app to be installed.
+10-15 12:01:39.458  1297  3016 I Wear_Controller: onStartup - Wear is not available on this device.
+10-15 12:01:39.561   480   497 I system_server: Background young concurrent copying GC freed 827332(27MB) AllocSpace objects, 17(404KB) LOS objects, 52% free, 21MB/45MB, paused 36us,31us total 124.506ms
+10-15 12:01:39.609  1057  4171 W SystemServiceRegistry: No service published for: contexthub
+10-15 12:01:39.620  4838  4929 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:01:39.665  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService started execution. cause:7 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:01:39.679   480   580 E RoleControllerManager: Error calling grantDefaultRoles()
+10-15 12:01:39.679   480   580 E RoleControllerManager: java.util.concurrent.TimeoutException
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture.triggerTimeout(AndroidFuture.java:289)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture$$ExternalSyntheticLambda2.run(Unknown Source:2)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at android.os.Looper.loop(Looper.java:288)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at com.android.server.SystemServer.run(SystemServer.java:962)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at com.android.server.SystemServer.main(SystemServer.java:647)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 12:01:39.679   480   580 E RoleControllerManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+10-15 12:01:39.690  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService finished executing. cause:7 result: 3 elapsed_millis: 874 uptime_millis: 874 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:01:39.707  3069  3069 W binder:3069_5: type=1400 audit(0.0:90): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:01:39.721  3069  3311 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 12:01:39.729  3069  3311 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 12:01:39.719  3069  3069 W binder:3069_5: type=1400 audit(0.0:91): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:01:39.738  2046  5319 D DownloadManager: [2] Starting
+10-15 12:01:39.741  1297  4708 I Checkin : [CheckinOperation] Starting Checkin: Default Task Reason : 1 Force : false UserId : 0 Start time : 117096
+10-15 12:01:39.746  1297  4708 I CheckinUtil: Classify the device as Phone. [CONTEXT service_id=130 ]
+10-15 12:01:39.767  1297  5126 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-15 12:01:39.772  1057  4858 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+10-15 12:01:39.805  3223  3376 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@a9ea65d
+10-15 12:01:39.810   480   590 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 12:01:39.812   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:01:39.813   955   955 D MediaPlayerList: Name of package changed: com.abfilepro.app.p22mainttrial
+10-15 12:01:39.813   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:01:39.814   955   955 D MediaPlayerList: Name of package changed: com.abfilepro.app.p22mainttrial
+10-15 12:01:39.814   480   580 I RoleService: Granting default roles...
+10-15 12:01:39.815   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:01:39.816   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:01:39.816  3751  5327 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 12:01:39.817   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:01:39.819   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:01:39.822  4838  5318 I PermissionControllerServiceImpl: Updating user sensitive for uid 10174
+10-15 12:01:39.826  1297  5126 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-15 12:01:39.826  4838  5318 I PermissionControllerServiceImpl: Updating user sensitive for uid 10119
+10-15 12:01:39.830  1297  4825 I PeopleGalProvider: Gal directories started.
+10-15 12:01:39.831  1297  4825 I PeopleGalProvider: Method 1 completed.
+10-15 12:01:39.832  1297  4825 I PeopleGalProvider: Method 1 finished successfully.
+10-15 12:01:39.844  1057  4858 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+10-15 12:01:39.855   762   817 D EGL_emulation: app_time_stats: avg=10321.72ms min=10321.72ms max=10321.72ms count=1
+10-15 12:01:39.858   762   762 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 12:01:39.859   762   762 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 12:01:39.860  1057  5105 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 12:01:39.864  1057  5105 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 12:01:39.877   986   986 D CarrierSvcBindHelper: onPackageModified: com.abfilepro.app.p22mainttrial
+10-15 12:01:39.882   986   986 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 12:01:39.899  4838  4929 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:01:39.912  1057  4171 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 12:01:39.918  5210  5291 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

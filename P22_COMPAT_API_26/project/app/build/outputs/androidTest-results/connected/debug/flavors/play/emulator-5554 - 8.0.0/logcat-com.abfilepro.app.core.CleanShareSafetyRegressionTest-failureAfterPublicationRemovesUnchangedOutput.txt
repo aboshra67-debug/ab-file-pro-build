@@ -1,0 +1,48 @@
+10-15 12:01:13.523  4992  5011 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:13.552  2592  2592 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 12:01:13.556  2592  2592 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 12:01:13.563  2592  2592 I AudioController: Using mInputStreamFactoryBuilder
+10-15 12:01:13.568  2592  2592 I MicroDetectionWorker: onReady
+10-15 12:01:13.574  2592  2817 I MicroRecognitionRunner: Starting detection.
+10-15 12:01:13.579  2592  2711 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@bb32b40
+10-15 12:01:13.584  1512  5043 I AudioFlinger: AudioFlinger's thread 0xe6f83a40 tid=5043 ready to run
+10-15 12:01:13.585  2592  2711 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@bb32b40
+10-15 12:01:13.586  2592  2592 I MicroDetectionWorker: onReady
+10-15 12:01:13.587  2592  2711 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@bb32b40
+10-15 12:01:13.593  2592  2817 I MicroRecognitionRunner: Detection finished
+10-15 12:01:13.594  2592  2817 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 12:01:13.594  2592  2933 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 12:01:13.601  2592  2817 W ErrorProcessor: 	... 9 more
+10-15 12:01:13.601  2592  2817 I AudioController: internalShutdown
+10-15 12:01:13.612  2592  2592 I MicroDetector: Keeping mic open: false
+10-15 12:01:13.612  2592  2717 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 12:01:13.613  2592  2592 I MicroDetectionWorker: #onError(false)
+10-15 12:01:13.623  4992  5001 E System  : Uncaught exception thrown by finalizer
+10-15 12:01:13.624  4992  5001 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 12:01:13.624  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 12:01:13.624  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 12:01:13.624  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 12:01:13.624  4992  5001 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 12:01:13.624  4992  5001 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 12:01:13.624  4992  5001 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 12:01:13.624  4992  5001 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:01:13.638  4992  5011 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

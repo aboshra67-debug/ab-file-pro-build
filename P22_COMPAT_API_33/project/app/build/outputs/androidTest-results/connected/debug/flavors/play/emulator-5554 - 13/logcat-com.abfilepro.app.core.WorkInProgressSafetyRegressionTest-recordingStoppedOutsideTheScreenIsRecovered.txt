@@ -1,0 +1,4 @@
+10-15 12:01:48.596  5210  5291 I TestRunner: started: recordingStoppedOutsideTheScreenIsRecovered(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 12:01:48.612   284   321 I netd    : tetherGetStats() -> {[]} <35.91ms>
+10-15 12:01:48.637   284   321 I netd    : bandwidthSetGlobalAlert(2097152) <0.16ms>
+10-15 12:01:48.638  5210  5291 I TestRunner: finished: recordingStoppedOutsideTheScreenIsRecovered(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

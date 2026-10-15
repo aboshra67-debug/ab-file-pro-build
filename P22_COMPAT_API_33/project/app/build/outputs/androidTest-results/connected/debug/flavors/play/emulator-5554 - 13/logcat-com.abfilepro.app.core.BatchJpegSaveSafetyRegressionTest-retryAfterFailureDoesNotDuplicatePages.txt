@@ -1,0 +1,43 @@
+10-15 12:01:41.278  5210  5291 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 12:01:41.279  1098  1110 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: Get slice data from XML failed
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: java.lang.IllegalStateException: Invalid preference controller: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:146)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceBuilderUtils.getPreferenceController(SliceBuilderUtils.java:362)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromXML(SliceDataConverter.java:204)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromProvider(SliceDataConverter.java:149)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceData(SliceDataConverter.java:119)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.getSliceData(SlicesIndexer.java:94)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.indexSliceData(SlicesIndexer.java:75)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesFeatureProviderImpl.indexSliceData(SlicesFeatureProviderImpl.java:63)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.verifyIndexing(SlicesDatabaseAccessor.java:194)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceUris(SlicesDatabaseAccessor.java:96)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.slices.SettingsSliceProvider.onGetSliceDescendants(SettingsSliceProvider.java:332)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.onGetSliceDescendants(SliceProviderWrapperContainer.java:165)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.app.slice.SliceProvider.handleGetDescendants(SliceProvider.java:425)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.app.slice.SliceProvider.call(SliceProvider.java:406)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.call(SliceProviderWrapperContainer.java:122)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: Caused by: java.lang.reflect.InvocationTargetException
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:143)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	... 19 more
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: Caused by: java.lang.RuntimeException: Can't create handler inside thread Thread[binder:1098_2,5,main] that has not called Looper.prepare()
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.os.Handler.<init>(Handler.java:227)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at android.os.Handler.<init>(Handler.java:194)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	at com.android.settings.accessibility.VibrationMainSwitchPreferenceController.<init>(VibrationMainSwitchPreferenceController.java:52)
+10-15 12:01:41.297  1098  1110 W SliceDataConverter: 	... 22 more
+10-15 12:01:41.305  1297  4708 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 12:01:41.306  5210  5291 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 12:01:41.332  1098  1110 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 12:01:41.334  1098  1110 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 12:01:41.335  1098  1110 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 12:01:41.338  1098  1110 D ch_callQuality: isDeviceSupport: falsemIsChecked: true
+10-15 12:01:41.338  1098  1110 D ch_d2d  : isDeviceSupport: falsemIsChecked: false
+10-15 12:01:41.339  1098  1110 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 12:01:41.352  5210  5291 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

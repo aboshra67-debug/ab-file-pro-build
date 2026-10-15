@@ -1,0 +1,3 @@
+10-15 11:59:23.156  4014  4061 I TestRunner: started: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 11:59:23.166  1337  4065 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:23.167  4014  4061 I TestRunner: finished: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

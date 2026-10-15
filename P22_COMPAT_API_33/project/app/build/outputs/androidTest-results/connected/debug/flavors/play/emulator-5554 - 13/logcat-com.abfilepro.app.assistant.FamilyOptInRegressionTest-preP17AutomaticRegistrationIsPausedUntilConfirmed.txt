@@ -1,0 +1,5 @@
+10-15 12:01:40.257  5210  5291 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 12:01:40.261  1057  1057 I GCoreUlr: Unbound from all signal providers.
+10-15 12:01:40.261  1057  1057 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 12:01:40.330  1297  4708 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 1 attempt count: 1.
+10-15 12:01:40.368  5210  5291 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

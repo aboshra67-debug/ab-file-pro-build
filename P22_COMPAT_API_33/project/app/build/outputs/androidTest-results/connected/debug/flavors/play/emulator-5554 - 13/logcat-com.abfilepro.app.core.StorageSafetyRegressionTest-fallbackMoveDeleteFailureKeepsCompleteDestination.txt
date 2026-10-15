@@ -1,0 +1,4 @@
+10-15 12:01:48.456  5210  5291 I TestRunner: started: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.465  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:9 exec_start_elapsed_seconds: 125 [CONTEXT service_id=218 ]
+10-15 12:01:48.470  1609  2853 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip'
+10-15 12:01:48.471  5210  5291 I TestRunner: finished: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

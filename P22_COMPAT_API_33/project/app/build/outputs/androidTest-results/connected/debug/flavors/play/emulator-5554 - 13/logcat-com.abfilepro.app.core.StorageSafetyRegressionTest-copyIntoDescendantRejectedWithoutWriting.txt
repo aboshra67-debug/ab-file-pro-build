@@ -1,0 +1,3 @@
+10-15 12:01:48.373  5210  5291 I TestRunner: started: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.376   955   955 D BluetoothPbapService:  onChange on contact uri
+10-15 12:01:48.388  5210  5291 I TestRunner: finished: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)

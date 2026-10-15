@@ -1,0 +1,5 @@
+10-15 12:01:39.930  5210  5291 I TestRunner: started: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:01:39.935   986   986 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 12:01:39.936   986   986 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 12:01:39.938   284  5332 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10077 0}
+10-15 12:01:39.939  5210  5291 I TestRunner: finished: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

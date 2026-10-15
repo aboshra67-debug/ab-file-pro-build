@@ -1,0 +1,5 @@
+10-15 12:01:11.950  4992  5011 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 12:01:11.953  1816  1816 I zygote64: Deoptimizing void com.android.systemui.statusbar.ExpandableView.updateClipping() due to JIT inline cache
+10-15 12:01:11.966  1390  1390 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 12:01:11.969  1816  2102 D EGL_emulation: eglMakeCurrent: 0x7819ff63d4a0: ver 3 0 (tinfo 0x7819ff60d9c0)
+10-15 12:01:12.025  4992  5011 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

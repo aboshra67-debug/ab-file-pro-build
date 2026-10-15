@@ -1,0 +1,2 @@
+10-15 12:01:47.078  5210  5291 I TestRunner: started: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:47.090  5210  5291 I TestRunner: finished: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

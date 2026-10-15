@@ -1,0 +1,55 @@
+10-15 12:01:43.645  5210  5291 I TestRunner: started: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:43.648  1297  5239 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 12:01:43.707  1297  5239 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 12:01:43.714  1297  5239 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 12:01:43.714  1297  5239 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 12:01:43.715  1297  5239 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 12:01:43.716  1297  5239 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 12:01:43.717  1297  5239 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 12:01:43.754   480  1318 D WifiNl80211Manager: Scan result ready event
+10-15 12:01:43.754   480  1318 D WifiNative: Scan result ready event
+10-15 12:01:43.775  1297  5239 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 12:01:43.776  1297  5239 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 12:01:43.800  1057  4858 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 253 uptime_millis: 253 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:01:43.883  1057  3328 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 121 [CONTEXT service_id=218 ]
+10-15 12:01:43.912  1057  4858 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 49 uptime_millis: 49 exec_start_elapsed_seconds: 121 [CONTEXT service_id=218 ]
+10-15 12:01:44.021  1616  1927 W MediaProvider: getVolumePath for unknown volume: internal
+10-15 12:01:44.072  5210  5375 D ProfileInstaller: Installing profile for com.abfilepro.app.p22mainttrial
+10-15 12:01:44.170  5210  5355 I Tesseract(native): Initialized Tesseract API with language=ara+eng+fra
+10-15 12:01:44.345  5210  5379 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 12:01:44.345  5210  5379 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 12:01:44.383  5210  5380 I tflite  : Initialized TensorFlow Lite runtime.
+10-15 12:01:44.387  1057  1057 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 12:01:44.387  1057  1057 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 12:01:44.395  5210  5380 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-15 12:01:44.396  5210  5380 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 12:01:44.397  5210  5380 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 12:01:44.399  5210  5380 I native  : I0000 00:00:1792065704.399124    5380 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 12:01:44.420  5210  5376 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 12:01:44.424  5210  5376 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-1890003 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-15 12:01:44.431  5210  5376 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10174; state: ENABLED
+10-15 12:01:44.437   480  1549 D ConnectivityService: requestNetwork for uid/pid:1000/480 asUid: 10174 activeRequest: null callbackRequest: 130 [NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-15 12:01:44.444  5210  5376 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 12:01:44.447   480   697 D ConnectivityService: NetReassign [131 : null → 100] [c 2] [a 3] [i 4]
+10-15 12:01:44.447  5210  5376 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=4073774 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-15 12:01:44.448   480   690 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 12:01:44.449   480   690 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 12:01:44.450   480   690 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 12:01:44.450   480   690 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 12:01:44.454  5210  5376 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 12:01:44.458  5210  5376 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 12:01:44.694  5210  5376 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 12:01:44.697  5210  5376 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 12:01:44.708  5210  5376 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 12:01:44.712  5210  5376 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 12:01:44.715  5210  5376 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 12:01:44.716  5210  5376 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 12:01:44.731  5210  5380 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 12:01:44.731  5210  5380 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 12:01:44.737  5210  5376 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 12:01:44.740  5210  5380 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 12:01:44.740  5210  5376 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 12:01:44.741  5210  5380 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 12:01:44.743  5210  5380 I native  : I0000 00:00:1792065704.743144    5380 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 12:01:44.981  1057  1362 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.platform.statsd_java_boot) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 12:01:44.988  5210  5291 I TestRunner: finished: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

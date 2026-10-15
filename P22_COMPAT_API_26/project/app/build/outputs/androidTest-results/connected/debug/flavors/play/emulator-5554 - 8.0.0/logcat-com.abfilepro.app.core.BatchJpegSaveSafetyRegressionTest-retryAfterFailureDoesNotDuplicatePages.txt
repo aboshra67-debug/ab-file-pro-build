@@ -1,0 +1,5 @@
+10-15 12:01:12.026  4992  5011 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 12:01:12.074  4992  5011 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 12:01:12.087  1390  1390 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 12:01:12.115  1390  1390 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 12:01:12.265  4992  5011 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

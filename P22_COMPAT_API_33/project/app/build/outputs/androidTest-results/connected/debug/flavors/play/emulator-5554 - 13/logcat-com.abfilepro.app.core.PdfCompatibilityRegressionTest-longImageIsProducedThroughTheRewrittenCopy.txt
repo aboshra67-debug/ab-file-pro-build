@@ -1,0 +1,7 @@
+10-15 12:01:47.594  5210  5291 I TestRunner: started: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:01:47.599  1616  1648 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 12ms, 0 inserts 0 updates 0 deletes
+10-15 12:01:47.605  2046  5226 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-pins.txt via provider delete
+10-15 12:01:47.607  1616  1648 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-pins.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-pins.txt
+10-15 12:01:47.607  1616  1648 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-15 12:01:47.714  2046  5427 D DownloadManager: [4] Finished with status SUCCESS
+10-15 12:01:47.785  5210  5291 I TestRunner: finished: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

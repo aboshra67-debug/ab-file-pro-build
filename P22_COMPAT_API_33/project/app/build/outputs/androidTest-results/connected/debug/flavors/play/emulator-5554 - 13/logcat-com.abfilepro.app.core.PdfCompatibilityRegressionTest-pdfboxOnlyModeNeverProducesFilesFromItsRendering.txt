@@ -1,0 +1,10 @@
+10-15 12:01:47.535  5210  5291 I TestRunner: started: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:01:47.538  2046  5427 D DownloadManager: [4] Starting
+10-15 12:01:47.545  2046  5427 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 12:01:47.549  2046  5427 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 12:01:47.551  4534  5168 I ConfigUpdater: Update downloaded, starting installation
+10-15 12:01:47.554  2046  5427 D TrafficStats: tagSocket(76) with statsTag=0xffffff01, statsUid=10105
+10-15 12:01:47.581  4534  5168 I ConfigUpdater: doneInstall
+10-15 12:01:47.585  2046  5226 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-metadata.txt via provider delete
+10-15 12:01:47.589  1616  1648 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-metadata.txt
+10-15 12:01:47.593  5210  5291 I TestRunner: finished: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

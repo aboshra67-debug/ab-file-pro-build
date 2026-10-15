@@ -1,0 +1,2 @@
+10-15 12:01:11.165  4992  5011 I TestRunner: started: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:01:11.202  4992  5011 I TestRunner: finished: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

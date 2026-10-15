@@ -1,0 +1,3 @@
+10-15 12:01:47.939  5210  5291 I TestRunner: started: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:01:47.965  2046  5226 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt via provider delete
+10-15 12:01:47.987  5210  5291 I TestRunner: finished: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

@@ -1,0 +1,2 @@
+10-15 11:59:17.149  4014  4061 I TestRunner: started: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 11:59:17.158  4014  4061 I TestRunner: finished: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

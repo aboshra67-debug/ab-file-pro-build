@@ -1,0 +1,2 @@
+10-15 12:01:16.817  4992  5011 I TestRunner: started: androidWrittenPdfRendersItsRealContentOrIsRefusedSafely(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:01:16.834  4992  5011 I TestRunner: finished: androidWrittenPdfRendersItsRealContentOrIsRefusedSafely(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

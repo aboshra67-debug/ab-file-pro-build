@@ -1,0 +1,20 @@
+10-15 12:01:15.555  4992  5011 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:15.577  4992  5001 E System  : Uncaught exception thrown by finalizer
+10-15 12:01:15.577  4992  5001 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 12:01:15.577  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 12:01:15.577  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 12:01:15.577  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:01:15.577  4992  5001 E System  : Uncaught exception thrown by finalizer
+10-15 12:01:15.577  4992  5001 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 12:01:15.577  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 12:01:15.577  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 12:01:15.577  4992  5001 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 12:01:15.577  4992  5001 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:01:15.596  4992  5011 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

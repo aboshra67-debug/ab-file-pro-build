@@ -1,0 +1,3 @@
+10-15 12:01:42.579  5210  5291 I TestRunner: started: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:42.602  1297  1297 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-15 12:01:42.619  5210  5291 I TestRunner: finished: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

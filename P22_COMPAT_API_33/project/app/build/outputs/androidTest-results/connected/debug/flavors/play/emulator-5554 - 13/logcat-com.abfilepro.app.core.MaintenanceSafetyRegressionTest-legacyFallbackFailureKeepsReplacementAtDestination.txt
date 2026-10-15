@@ -1,0 +1,3 @@
+10-15 12:01:47.513  5210  5291 I TestRunner: started: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:47.516  2046  5422 D DownloadManager: [3] Finished with status SUCCESS
+10-15 12:01:47.530  5210  5291 I TestRunner: finished: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

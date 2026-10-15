@@ -1,0 +1,16 @@
+10-15 11:59:22.369  4014  4061 I TestRunner: started: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 11:59:22.374  4105  4105 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 11:59:22.376   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 11:59:22.377   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 11:59:22.377   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 11:59:22.377   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 11:59:22.378   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 11:59:22.378   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 11:59:22.379  1172  1187 W .gms.persistent: Suspending all threads took: 23.720ms
+10-15 11:59:22.382   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 11:59:22.383   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 11:59:22.383   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 11:59:22.383   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 11:59:22.383   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 11:59:22.384   559   572 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 11:59:22.396  4014  4061 I TestRunner: finished: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

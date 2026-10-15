@@ -1,0 +1,5 @@
+10-15 12:01:39.939  5210  5291 I TestRunner: started: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:01:39.945   284  5334 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:01:39.945   284  5334 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7be3d089d910
+10-15 12:01:39.945   284  5334 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 12:01:39.958  5210  5291 I TestRunner: finished: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

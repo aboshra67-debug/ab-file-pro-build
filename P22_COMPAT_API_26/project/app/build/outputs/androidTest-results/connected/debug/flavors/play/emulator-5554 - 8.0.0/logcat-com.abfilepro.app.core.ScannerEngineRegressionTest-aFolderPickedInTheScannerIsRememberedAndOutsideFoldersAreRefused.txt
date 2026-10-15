@@ -1,0 +1,2 @@
+10-15 12:01:17.058  4992  5011 I TestRunner: started: aFolderPickedInTheScannerIsRememberedAndOutsideFoldersAreRefused(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 12:01:17.119  4992  5011 I TestRunner: finished: aFolderPickedInTheScannerIsRememberedAndOutsideFoldersAreRefused(com.abfilepro.app.core.ScannerEngineRegressionTest)

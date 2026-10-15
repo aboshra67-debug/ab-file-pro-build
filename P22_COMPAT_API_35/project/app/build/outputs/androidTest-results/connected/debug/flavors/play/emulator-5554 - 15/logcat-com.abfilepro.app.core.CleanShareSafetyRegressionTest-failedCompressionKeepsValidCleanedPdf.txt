@@ -1,0 +1,42 @@
+10-15 11:59:17.867  4014  4061 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:17.951  4014  4074 D nativeloader: Load libpdfclient.so using APEX ns com_android_mediaprovider for caller /apex/com.android.mediaprovider/javalib/framework-pdf.jar: ok
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.auth.proximity [CONTEXT service_id=204 ]
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.auth.proximity
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:17.998  1172  2082 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:18.003  1172  3634 I ProximityAuth: [FeatureLoader] auth_easyunlock module load status: 2
+10-15 11:59:18.007  1172  1172 I ProximityAuth: [PhoneHubService] Handling intent for PhoneHubChimeraService.
+10-15 11:59:18.008  1172  3910 I ProximityAuth: [PhoneHubService] No enabled account, stopping service
+10-15 11:59:18.010  1172  1172 I ProximityAuth: [PhoneHubService] Destroying PhoneHubChimeraService.
+10-15 11:59:18.011  1172  1172 W ProximityAuth: [PhoneHubNotificationProcessor] shutdown(): context is null.
+10-15 11:59:18.011  1172  1172 I ProximityAuth: [PhoneHubService] All devices have disconnected. Performing cleanup...
+10-15 11:59:18.011  1172  1172 W ChimeraUtils: Module com.google.android.gms.auth_proximity missing resource null(0)
+10-15 11:59:18.026  1337  2400 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.auth_cryptauth, using defaults.
+10-15 11:59:18.027  1172  3634 W ProximityAuth: [GetSyncedDevices] Attestation: No devices out of 0 passed verification.
+10-15 11:59:18.041   905   917 I PermissionControllerServiceImpl: Updating user sensitive for user 0
+10-15 11:59:18.052   559  1180 W ParceledListSlice: Element #65 is 140064 bytes.
+10-15 11:59:18.052   559  1180 W ParceledListSlice: Overly large reply size: 164476
+10-15 11:59:18.055   559  1506 W ParceledListSlice: Element #139 is 59704 bytes.
+10-15 11:59:18.056   559  1506 W ParceledListSlice: Overly large reply size: 103484
+10-15 11:59:18.057   559  1506 W ParceledListSlice: Element #140 is 16980 bytes.
+10-15 11:59:18.061   559  1884 W ParceledListSlice: Element #189 is 21704 bytes.
+10-15 11:59:18.064   559  1506 W ParceledListSlice: Element #218 is 29204 bytes.
+10-15 11:59:18.118   905   915 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /system/framework/framework-res.apk' with 1 weak references
+10-15 11:59:18.118   905   915 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GoogleSafetyCenterResources@350820360/GoogleSafetyCenterResources.apk' with 1 weak references
+10-15 11:59:18.118   905   915 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+10-15 11:59:18.119  4014  4074 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.128  4014  4074 D pdf_document_jni: Deleting Document: 0x7de2eefa7150
+10-15 11:59:18.128  4014  4074 D pdf_document_jni: Destroyed Document: 0x7de2eefa7150
+10-15 11:59:18.139  4014  4061 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 11:59:18.139  4014  4061 D pdf_document_jni: Deleting Document: 0x7de2eefb6810
+10-15 11:59:18.140  4014  4061 D pdf_document_jni: Destroyed Document: 0x7de2eefb6810
+10-15 11:59:18.142  4014  4061 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

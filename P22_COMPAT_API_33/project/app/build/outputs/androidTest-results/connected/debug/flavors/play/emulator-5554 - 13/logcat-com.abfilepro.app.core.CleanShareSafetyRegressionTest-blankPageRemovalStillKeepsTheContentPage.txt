@@ -1,0 +1,2 @@
+10-15 12:01:45.035  5210  5291 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:45.202  5210  5291 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,3 @@
+10-15 12:01:48.203  5210  5291 I TestRunner: started: copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.216  1609  2068 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip to tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip.fetched (constraints: W:b:u:l)
+10-15 12:01:48.218  5210  5291 I TestRunner: finished: copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

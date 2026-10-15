@@ -1,0 +1,5 @@
+10-15 11:59:23.343  4014  4061 I TestRunner: started: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 11:59:23.358  4014  4061 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 109
+10-15 11:59:23.359  4014  4061 D pdf_document_jni: Deleting Document: 0x7de2eefbdf10
+10-15 11:59:23.359  4014  4061 D pdf_document_jni: Destroyed Document: 0x7de2eefbdf10
+10-15 11:59:23.360  4014  4061 I TestRunner: finished: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

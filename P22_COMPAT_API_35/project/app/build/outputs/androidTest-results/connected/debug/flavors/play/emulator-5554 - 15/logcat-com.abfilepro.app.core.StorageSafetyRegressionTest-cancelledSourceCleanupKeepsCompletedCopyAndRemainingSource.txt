@@ -1,0 +1,9 @@
+10-15 11:59:23.545  4014  4061 I TestRunner: started: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 11:59:23.563  1409  1510 I TranscodeHelper: Empty transcode compat stale
+10-15 11:59:23.563  1409  1510 I TranscodeHelper: Parsed 0 packages from resource
+10-15 11:59:23.563  1409  1510 I TranscodeHelper: Parsed 8 packages from device config
+10-15 11:59:23.564  1409  1602 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@71c152f[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 11:59:23.564  1409  1602 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@71c152f[Locked by thread fg]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 11:59:23.564  1409  1602 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@71c152f[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 11:59:23.564  1409  1510 I SyncWorkManager: Scheduling periodic proactive syncs
+10-15 11:59:23.575  4014  4061 I TestRunner: finished: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,4 @@
+10-15 11:59:22.858  4014  4061 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 11:59:22.863  4014  4061 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 11:59:22.864  4014  4061 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 11:59:22.866  4014  4061 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,2 @@
+10-15 12:01:16.532  4992  5011 I TestRunner: started: legacyFallbackDeleteFailureKeepsCompletedCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:16.561  4992  5011 I TestRunner: finished: legacyFallbackDeleteFailureKeepsCompletedCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

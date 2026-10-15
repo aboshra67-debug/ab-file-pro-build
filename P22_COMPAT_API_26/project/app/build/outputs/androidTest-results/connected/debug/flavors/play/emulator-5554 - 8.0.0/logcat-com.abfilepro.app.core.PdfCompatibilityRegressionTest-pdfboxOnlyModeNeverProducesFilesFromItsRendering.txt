@@ -1,0 +1,5 @@
+10-15 12:01:16.724  4992  5011 I TestRunner: started: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:01:16.764  4992  4997 I zygote64: Do partial code cache collection, code=225KB, data=155KB
+10-15 12:01:16.769  4992  4997 I zygote64: After code cache collection, code=225KB, data=155KB
+10-15 12:01:16.769  4992  4997 I zygote64: Increasing code cache capacity to 1024KB
+10-15 12:01:16.779  4992  5011 I TestRunner: finished: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

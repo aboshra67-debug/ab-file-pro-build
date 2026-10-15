@@ -1,0 +1,35 @@
+10-15 11:59:17.703  4014  4061 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 11:59:17.703   559  1012 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 11:59:17.703  1337  2786 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 11:59:17.705  1337  3915 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 11:59:17.705  1337  3915 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 11:59:17.705  1337  3915 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.signin [CONTEXT service_id=340 ]
+10-15 11:59:17.705  1337  4070 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 11:59:17.705  1337  4068 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 11:59:17.706  1337  4066 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 11:59:17.711  1337  4066 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 11:59:17.712  1337  4066 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 11:59:17.722  1211  1247 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.abfilepro.app.p22mainttrial]
+10-15 11:59:17.722   559   559 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 11:59:17.722   559   559 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 11:59:17.724  1427  1427 I AiAiEcho: AppFetcherImpl onPackageChanged com.abfilepro.app.p22mainttrial.
+10-15 11:59:17.725  1427  2392 I AiAiEcho: AppIndexer Package:[com.abfilepro.app.p22mainttrial] UserProfile:[0] Enabled:[true].
+10-15 11:59:17.725  1427  2392 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.abfilepro.app.p22mainttrial], userId:[0], reason:[package is updated.].
+10-15 11:59:17.730  1172  3634 I PTCommittedOperation: Receive new configuration for com.google.android.gms.signin
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: Update for unknown DeviceConfig package com.google.android.gms.signin [CONTEXT service_id=204 ]
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: daaf: No package exists for config package: com.google.android.gms.signin
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):233)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):29)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):207)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 11:59:17.735  1172  2082 W PlatformConfigurator: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 11:59:17.748  1211  1211 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+10-15 11:59:17.755  4014  4061 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 11:59:17.778  1211  1827 D EGL_emulation: app_time_stats: avg=1095.38ms min=92.82ms max=2571.27ms count=3
+10-15 11:59:17.824  4014  4061 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

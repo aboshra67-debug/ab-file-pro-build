@@ -1,0 +1,4 @@
+10-15 12:01:16.216  4992  5011 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:16.266  4992  4997 I zygote64: Do full code cache collection, code=249KB, data=183KB
+10-15 12:01:16.266  4992  4997 I zygote64: After code cache collection, code=218KB, data=132KB
+10-15 12:01:16.279  4992  5011 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,2 @@
+10-15 11:59:23.805  4014  4061 I TestRunner: started: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 11:59:23.812  4014  4061 I TestRunner: finished: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

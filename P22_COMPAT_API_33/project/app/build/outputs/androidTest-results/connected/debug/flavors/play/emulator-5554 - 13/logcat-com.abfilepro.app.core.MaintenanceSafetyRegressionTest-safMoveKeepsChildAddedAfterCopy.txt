@@ -1,0 +1,23 @@
+10-15 12:01:46.419  5210  5291 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:46.458   288   288 D Zygote  : Forked child process 5403
+10-15 12:01:46.479  5403  5403 I mainttrial.test: Late-enabling -Xcheck:jni
+10-15 12:01:46.570  5403  5403 I mainttrial.test: Using CollectorTypeCC GC.
+10-15 12:01:46.575  5403  5403 W mainttrial.test: Unexpected CPU variant for x86: x86_64.
+10-15 12:01:46.575  5403  5403 W mainttrial.test: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 12:01:46.601   374   399 I adbd    : jdwp connection from 5403
+10-15 12:01:46.656  5403  5403 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10175; state: ENABLED
+10-15 12:01:46.679  5403  5403 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 12:01:46.683  5403  5403 D nativeloader: Configuring classloader-namespace for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~f4EfQnvx0hCHL1BGODGnnw==/com.abfilepro.app.p22mainttrial.test-vcbwi3i2P1vTpwpx9E0asw==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p22mainttrial.test
+10-15 12:01:46.684  5403  5403 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 12:01:46.686  5403  5403 W mainttrial.test: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]})
+10-15 12:01:46.687  5403  5403 D nativeloader: Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~f4EfQnvx0hCHL1BGODGnnw==/com.abfilepro.app.p22mainttrial.test-vcbwi3i2P1vTpwpx9E0asw==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p22mainttrial.test
+10-15 12:01:46.688  5403  5403 W ziparchive: Unable to open '/data/app/~~f4EfQnvx0hCHL1BGODGnnw==/com.abfilepro.app.p22mainttrial.test-vcbwi3i2P1vTpwpx9E0asw==/base.dm': No such file or directory
+10-15 12:01:46.688  5403  5403 W ziparchive: Unable to open '/data/app/~~f4EfQnvx0hCHL1BGODGnnw==/com.abfilepro.app.p22mainttrial.test-vcbwi3i2P1vTpwpx9E0asw==/base.dm': No such file or directory
+10-15 12:01:46.699  5403  5403 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~f4EfQnvx0hCHL1BGODGnnw==/com.abfilepro.app.p22mainttrial.test-vcbwi3i2P1vTpwpx9E0asw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~f4EfQnvx0hCHL1BGODGnnw==/com.abfilepro.app.p22mainttrial.test-vcbwi3i2P1vTpwpx9E0asw==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p22mainttrial.test
+10-15 12:01:46.706  5403  5403 V GraphicsEnvironment: ANGLE Developer option for 'com.abfilepro.app.p22mainttrial.test' set to: 'default'
+10-15 12:01:46.706  5403  5403 V GraphicsEnvironment: ANGLE GameManagerService for com.abfilepro.app.p22mainttrial.test: false
+10-15 12:01:46.706  5403  5403 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 12:01:46.708  5403  5403 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 12:01:46.710  5403  5403 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 12:01:46.715  5403  5403 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:01:46.830  5210  5291 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

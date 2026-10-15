@@ -1,0 +1,3 @@
+10-15 12:01:16.103  4992  5011 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:16.141  4992  5034 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 12:01:16.149  4992  5011 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

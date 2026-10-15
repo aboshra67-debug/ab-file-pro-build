@@ -1,0 +1,3 @@
+10-15 12:01:18.253  4992  5011 I TestRunner: started: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 12:01:18.277  2203  5076 I Vision  : Checking for download completion for 129503 -- ocr
+10-15 12:01:18.309  4992  5011 I TestRunner: finished: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

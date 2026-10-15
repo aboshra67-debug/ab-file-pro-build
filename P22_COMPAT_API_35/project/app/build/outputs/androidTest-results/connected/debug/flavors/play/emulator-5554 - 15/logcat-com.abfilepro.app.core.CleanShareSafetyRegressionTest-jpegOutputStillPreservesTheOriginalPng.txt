@@ -1,0 +1,15 @@
+10-15 11:59:21.779  4014  4061 I TestRunner: started: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:21.791  1562  2156 W SearchServiceCore: Abort, client detached.
+10-15 11:59:21.799   559  1492 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:21.799   559  1492 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:21.800   559  1492 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:21.800   559  1492 W BestClock: java.time.DateTimeException: Missing network time fix
+10-15 11:59:21.810  3202  3316 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 11:59:21.811  3202  3340 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 11:59:21.812  3202  3296 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=42 ]
+10-15 11:59:21.813  3202  3296 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=42 ]
+10-15 11:59:21.813  3202  3340 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 11:59:21.817  3202  3316 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 11:59:21.818  3202  3317 W BugleAction: Failed to get msisdn from Bugle
+10-15 11:59:21.819  3202  3317 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 11:59:21.820  4014  4061 I TestRunner: finished: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

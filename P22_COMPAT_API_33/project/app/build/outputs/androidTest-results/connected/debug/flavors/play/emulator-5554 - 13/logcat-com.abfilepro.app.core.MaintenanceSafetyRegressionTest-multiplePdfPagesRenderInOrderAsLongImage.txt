@@ -1,0 +1,17 @@
+10-15 12:01:47.192  5210  5291 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:01:47.223  1609  2853 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 38498810 bytes from https://storage.googleapis.com/captions/aiai-en-US-v3003.zip.
+10-15 12:01:47.227  1609  1891 I LanguagePackMaintenance: Background downloading 0 packs, for an ideal set of 0 total packs
+10-15 12:01:47.228  1609  1891 I LPRequestState: [ManagerRequests] #resolveUnusedLanguagePacks
+10-15 12:01:47.228  1609  1891 I LPRequestState: [ManagerRequests] #resolveDesiredLanguagePacks
+10-15 12:01:47.228  1609  1891 I LPRequestState: [ManagerRequests] #resolveUnusedLanguagePacks
+10-15 12:01:47.228  1609  1891 I LPRequestState: [ManagerRequests] #resolveDesiredLanguagePacks
+10-15 12:01:47.228  1609  1891 I DefaultLPManager: #calculateRolledBackPacks
+10-15 12:01:47.229  1609  1891 I LanguagePackMaintenance: Background deleting 0 stale packs
+10-15 12:01:47.230  1609  1891 I LanguagePackMaintenance: Background LanguagePack updates finished successfully
+10-15 12:01:47.231  1609  2068 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 47084 ms. elapsed since start
+10-15 12:01:47.233  1609  2068 I SP.AiAi : Download stopped: captions_i18n_v0_en-US:asr_en-US_v3003, succeeded, size: 38498810
+10-15 12:01:47.242  1609  1891 I FakeAppFlowTransport: (TEST) Generic AppFlow event: # oss@7b9c8351
+10-15 12:01:47.246  2046  5422 D DownloadManager: [3] Starting
+10-15 12:01:47.251  1609  2068 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 12:01:47.254  1609  2068 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 12:01:47.255  5210  5291 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

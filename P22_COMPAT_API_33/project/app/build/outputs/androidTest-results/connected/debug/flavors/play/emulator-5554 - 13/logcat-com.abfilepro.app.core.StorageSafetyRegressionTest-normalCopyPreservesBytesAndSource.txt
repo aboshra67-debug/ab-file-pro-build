@@ -1,0 +1,3 @@
+10-15 12:01:48.140  5210  5291 I TestRunner: started: normalCopyPreservesBytesAndSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:01:48.154  1609  2068 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 12:01:48.158  5210  5291 I TestRunner: finished: normalCopyPreservesBytesAndSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

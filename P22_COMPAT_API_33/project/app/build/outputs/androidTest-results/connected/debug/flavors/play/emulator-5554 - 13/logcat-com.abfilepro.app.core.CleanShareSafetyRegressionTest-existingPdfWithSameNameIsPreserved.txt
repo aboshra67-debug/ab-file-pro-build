@@ -1,0 +1,53 @@
+10-15 12:01:45.984  5210  5291 I TestRunner: started: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:01:45.991  1057  3337 D nativeloader: Configuring classloader-namespace for other apk . target_sdk_version=33, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-15 12:01:45.998  1057  3590 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+10-15 12:01:46.000  1057  3590 D BluetoothAdapter: isLeEnabled(): ON
+10-15 12:01:46.006   955  4254 D BtGatt.GattService: stopScan() - queue size =2
+10-15 12:01:46.006   480   501 D ConnectivityService: requestNetwork for uid/pid:10119/1057 activeRequest: null callbackRequest: 132 [NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-15 12:01:46.008   480   697 D ConnectivityService: NetReassign [133 : null → 100] [c 0] [a 0] [i 0]
+10-15 12:01:46.008   480   690 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 12:01:46.009   480   690 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 12:01:46.009   480   690 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 12:01:46.010   480   690 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10119 RequestorUid: 10119 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 12:01:46.013   480   697 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 1]
+10-15 12:01:46.015   955  4254 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 12:01:46.015   955  1253 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10119]]
+10-15 12:01:46.016   955  1253 D BtGatt.ScanManager: stop gattClientScanNative
+10-15 12:01:46.035   955  1253 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-15 12:01:46.037   955  4254 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 12:01:46.038   955  1262 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:190 unregister_client: Client unregistered
+10-15 12:01:46.038   955  1262 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:194 unregister_client: Cancelled address rotation alarm
+10-15 12:01:46.040   955  1253 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 12:01:46.040   955  1211 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 12:01:46.040   955  1211 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 12:01:46.040   955  1253 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 12:01:46.041   955  1211 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 12:01:46.041   955  1211 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 12:01:46.041   955  1253 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 12:01:46.041   955  1211 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 12:01:46.041   955  1211 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 12:01:46.042   955  1253 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 12:01:46.042   955  1211 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 12:01:46.042   955  1211 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 12:01:46.042   955  1253 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 12:01:46.042   955  1211 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 12:01:46.042   955  1211 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 12:01:46.042   955  1253 D BtGatt.ScanManager: configureRegularScanParams() - queue=1
+10-15 12:01:46.042   955  1253 D BtGatt.ScanManager: configureRegularScanParams() - queue empty, scan stopped
+10-15 12:01:46.042   955  4254 D BtGatt.GattService: unregisterScanner() - scannerId=2
+10-15 12:01:46.042   955  4254 I bt_stack: [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:2
+10-15 12:01:46.045  1057  3590 I Nearby  : [MBleClient] M hardware scan: 1 clients, scanMode= OPPORTUNISTIC, filters size = 5 [CONTEXT service_id=49 ]
+10-15 12:01:46.045  1057  3590 D BluetoothAdapter: isLeEnabled(): ON
+10-15 12:01:46.047   955  4254 D BtGatt.GattService: registerScanner() - UUID=0aaa1273-faf7-449c-bca6-fd4dc34dff93
+10-15 12:01:46.047   955  4254 I bt_stack: [INFO:le_scanning_manager.cc(141)] RegisterScanner in shim layer
+10-15 12:01:46.047   955  1211 D BtGatt.GattService: onScannerRegistered() - UUID=0aaa1273-faf7-449c-bca6-fd4dc34dff93, scannerId=2, status=0
+10-15 12:01:46.047  1057  3188 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=2 mScannerId=0
+10-15 12:01:46.076   955  4254 D BtGatt.GattService: start scan with filters
+10-15 12:01:46.078   955  4254 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=224, mManufacturerData=[0, 0, 0], mManufacturerDataMask=[0, 0, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fef3-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000feaa-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fea0-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=76, mManufacturerData=[2, 21], mManufacturerDataMask=[-1, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null]])
+10-15 12:01:46.079   955  4254 D BtGatt.ScanManager: startScan()  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10119]]
+10-15 12:01:46.080   955  1253 D BtGatt.ScanManager: handling starting scan
+10-15 12:01:46.080   955  4254 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 12:01:46.081   955  4254 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 12:01:46.091  5210  5218 I p.p22mainttrial: Background young concurrent copying GC freed 13282(1427KB) AllocSpace objects, 47(3996KB) LOS objects, 47% free, 6281KB/11MB, paused 23us,7us total 104.961ms
+10-15 12:01:46.114  1057  3337 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+10-15 12:01:46.214  5210  5291 I TestRunner: finished: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

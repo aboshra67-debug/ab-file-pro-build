@@ -1,0 +1,3 @@
+10-15 12:01:47.990  5210  5291 I TestRunner: started: playBuildDoesNotRequestInstallPackages(com.abfilepro.app.core.PlayChannelPolicyTest)
+10-15 12:01:47.994  1745  2089 W LocationOracle: No location returned by GMS core getLastLocation()
+10-15 12:01:47.995  5210  5291 I TestRunner: finished: playBuildDoesNotRequestInstallPackages(com.abfilepro.app.core.PlayChannelPolicyTest)

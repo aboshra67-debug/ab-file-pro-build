@@ -1,0 +1,4 @@
+10-15 11:59:19.285  4014  4061 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 11:59:19.291  3202  3324 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=54 ]
+10-15 11:59:19.301  1562  2334 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.googlequicksearchbox
+10-15 11:59:19.306  4014  4061 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
