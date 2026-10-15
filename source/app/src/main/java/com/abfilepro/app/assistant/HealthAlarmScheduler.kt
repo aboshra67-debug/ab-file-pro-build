@@ -22,7 +22,8 @@ object HealthAlarmScheduler {
 
     fun cancel(context: Context, entryId: String) {
         val alarms = context.getSystemService(AlarmManager::class.java) ?: return
-        pendingIntent(context, entryId, PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
+        // P18: cancel the PendingIntent too, so a cancelled reminder is really gone (not just its alarm).
+        pendingIntent(context, entryId, PendingIntent.FLAG_NO_CREATE)?.let { alarms.cancel(it); it.cancel() }
     }
 
     private fun shouldSchedule(entry: AssistantEntry): Boolean =

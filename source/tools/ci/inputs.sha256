@@ -23,7 +23,7 @@ b76868020315bc906ad2885b33d0b5c466e544ae1f05dc8b42118c9d7d566742  app/src/main/j
 d6a5a3f0510476cc83b2f531f3ad5899652042150fd1ab249f84669a19dd1d29  app/src/main/java/com/abfilepro/app/assistant/AssistantRepository.kt
 eb2dda2fabc77a45843aa19dd8d0825755990f501e6aafb02c69f3c3e9634fe0  app/src/main/java/com/abfilepro/app/assistant/CurrencyRateService.kt
 75720b61ab4dd1875a8980000f7caa9f6da729d902b118a1846592c63c02f608  app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalAlarmReceiver.kt
-f5321f3ea5707a9015aa1fc4c7f99cabf50afd65f4267efa9cc982d7c0778390  app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalAlarmScheduler.kt
+998ede0b0e96d36a1bcf60ad315844d899f255844340a093c558963f043dddde  app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalAlarmScheduler.kt
 b705db3c82912e8966fcc7659a40a591f2ee3250e1dbc66dd661ed9b89b1df3d  app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt
 3013fb47986b8c7f0257d0c8834c97ab7e0940ed0fcf0c29768839bd1207f379  app/src/main/java/com/abfilepro/app/assistant/FamilyChatService.kt
 80910f2fb78eea001edc940de4ba59b72de1b0c93315d458e19cbef60f37e6cf  app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt
@@ -32,13 +32,13 @@ b705db3c82912e8966fcc7659a40a591f2ee3250e1dbc66dd661ed9b89b1df3d  app/src/main/j
 a238381ca9153fbd6be426dee0b32d5d3d1da9b0a46858f661e8415967472030  app/src/main/java/com/abfilepro/app/assistant/FamilySyncPolicy.kt
 27a8775e05b95a68f18a1e838c128dd6ecd32d7c96bd27d1e0aee8734375d2bf  app/src/main/java/com/abfilepro/app/assistant/GoldPriceService.kt
 fcb24e573e8c2af69d8018fdcac825769cc4c022ebe0c1325a07c6e99902acf2  app/src/main/java/com/abfilepro/app/assistant/HealthAlarmReceiver.kt
-4932a722d689caffaf5af43aa0331ae054e80858a092957e8678ad46c1cd1b89  app/src/main/java/com/abfilepro/app/assistant/HealthAlarmScheduler.kt
+ae8dc1de7cbd38431acc0b4bd2fc81e9d424273245ba297b000685d3c102c702  app/src/main/java/com/abfilepro/app/assistant/HealthAlarmScheduler.kt
 af2f23bc4403d6f0377e3f72ac94be2ebde0ffb2c74fecfee877f585f4ebf102  app/src/main/java/com/abfilepro/app/assistant/HealthEntryCodec.kt
 de30572f8c25d2717a047242fd15ab74919d136d5f2312c0cb01280aa6815b86  app/src/main/java/com/abfilepro/app/assistant/MarketAlertStore.kt
 f8970bad56aba1e2ea0f902664928beddda22e7cd9e60b1499c7092023f04596  app/src/main/java/com/abfilepro/app/assistant/MarketAlertWorker.kt
 a8a7e5154cf63b4dfbf4f9a5381c9702e63834b34b9e91b207dd6e0a347787c1  app/src/main/java/com/abfilepro/app/assistant/MeetingMinutesStore.kt
 4757323f807afb9ae223697d67b8a4007967d1785a4906a5b1c17c7ad63cb1f7  app/src/main/java/com/abfilepro/app/assistant/PrayerAlarmReceiver.kt
-09f575cb9d3b9a0744af333911306c5db1ed6ad25faa0682873c00f4231e109f  app/src/main/java/com/abfilepro/app/assistant/PrayerAlarmScheduler.kt
+7074687c9fd0b6424b9fa750b5b6b35e3ab1cc4c0c75fb96bf7fa30b37c007eb  app/src/main/java/com/abfilepro/app/assistant/PrayerAlarmScheduler.kt
 45863ed4623fc70ba426bdcfaa0d2d0099bf65d4f45d80d222ef3149f2dea34d  app/src/main/java/com/abfilepro/app/assistant/PrayerCompletionStore.kt
 2ca4a28b8a6e86e34e4a4efa64e628fb8a7dc7798223cf0547e517f63cf8964c  app/src/main/java/com/abfilepro/app/assistant/PrayerRescheduleReceiver.kt
 c3968d27e2ec027cd13e453aa0422a35bda160ca47a86cb545d0c8295d3e3e8f  app/src/main/java/com/abfilepro/app/assistant/PrayerResponseReceiver.kt
@@ -49,7 +49,7 @@ a05481c1ed4660f506442f8c156377063c64ef1cb7be1e5d79441fd6da761585  app/src/main/j
 20e73c607c9081f9bc4c86e2e412e7382167a380b5ef5f2aceee4c668d88fab3  app/src/main/java/com/abfilepro/app/assistant/SecureLocalSecrets.kt
 5ae405dc251b0e1687d360d928e4448478b1455ae556b104c07690f72bb24da0  app/src/main/java/com/abfilepro/app/assistant/ShoppingListSyncStore.kt
 62aeede2c292864743211b921cdcab89c4c11f8fb1ddbdd6e8ff2dfb8314d34a  app/src/main/java/com/abfilepro/app/assistant/TaskAlarmReceiver.kt
-658529f996cb30ddfbc2872fe2921480af7168ec2996fceb3005251f67763c9c  app/src/main/java/com/abfilepro/app/assistant/TaskAlarmScheduler.kt
+4b4398f4c9912bbc630cc0fc29bee62358c3bf3f9498fcdeacb3ccb66c327967  app/src/main/java/com/abfilepro/app/assistant/TaskAlarmScheduler.kt
 50412a55fd66ea5c4ddb70db086ee72b2e4bb50f204ecdb5dadbcd8e0613b311  app/src/main/java/com/abfilepro/app/assistant/TaskRescheduleReceiver.kt
 6724544e86c60ce33d50941fcd03f1ce7e6064ee31e317a9613cf87aa8c0bb49  app/src/main/java/com/abfilepro/app/assistant/VoiceRecordingController.kt
 f09abc7409571588379a8e51e214ffa3fdc2b9f8a8d0a68ff77a62529af14ffa  app/src/main/java/com/abfilepro/app/assistant/VoiceRecordingService.kt

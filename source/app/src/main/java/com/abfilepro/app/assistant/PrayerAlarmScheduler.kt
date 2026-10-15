@@ -86,8 +86,8 @@ object PrayerAlarmScheduler {
 
     fun cancelQuestion(context: Context, prayer: PrayerName, date: LocalDate) {
         val alarms = context.getSystemService(AlarmManager::class.java) ?: return
-        pendingIntent(context, prayer, EVENT_NUDGE, date, PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
-        pendingIntent(context, prayer, EVENT_CHECK, date, PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
+        pendingIntent(context, prayer, EVENT_NUDGE, date, PendingIntent.FLAG_NO_CREATE)?.let { alarms.cancel(it); it.cancel() }
+        pendingIntent(context, prayer, EVENT_CHECK, date, PendingIntent.FLAG_NO_CREATE)?.let { alarms.cancel(it); it.cancel() }
     }
 
     fun cancelAll(context: Context) {
@@ -96,7 +96,7 @@ object PrayerAlarmScheduler {
         PrayerName.entries.forEach { prayer ->
             listOf(EVENT_PRE, EVENT_ADHAN, EVENT_CHECK, EVENT_NUDGE).forEach { event ->
                 for (offset in -1L..2L) {
-                    pendingIntent(context, prayer, event, today.plusDays(offset), PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
+                    pendingIntent(context, prayer, event, today.plusDays(offset), PendingIntent.FLAG_NO_CREATE)?.let { alarms.cancel(it); it.cancel() }
                 }
             }
         }
