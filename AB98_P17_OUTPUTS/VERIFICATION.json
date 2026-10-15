@@ -1,0 +1,51 @@
+{
+  "phase": "green",
+  "android_functions": 91,
+  "scanner_ui_cases": 19,
+  "jvm_tests": 38,
+  "qa_r8_monkey_events": 1500,
+  "all_passed": true,
+  "version_code": 169,
+  "version_name": "2.0.0-alpha98-p17-family-privacy",
+  "channel_checks": {
+    "debug": {
+      "package": "com.abfilepro.app.p17mainttrial",
+      "label": "AB File Pro P17",
+      "install_permission_absent": true
+    },
+    "qa": {
+      "package": "com.abfilepro.app.p17qa",
+      "label": "AB File Pro P17 QA",
+      "install_permission_absent": true
+    },
+    "direct": {
+      "install_permission_present": true
+    }
+  },
+  "outputs": {
+    "AB98_P17_PLAY_TEST.apk": {
+      "bytes": 132041456,
+      "sha256": "80fa5b81504c295cdbc7eee3d71d7ebba2d85bb4f601a75f86175c32a9dad3b6"
+    },
+    "AB98_P17_PLAY_QA_R8.apk": {
+      "bytes": 108368394,
+      "sha256": "95695da5de311f68e7d44ecbf0fbfa4c83a81317cdd618a4ed3ec1d6beef7713"
+    },
+    "AB98_P17_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67806471,
+      "sha256": "b6a19edb37176615443ddd72e570b3a234222b2bab82e6c4559fbce43ae0bd14"
+    },
+    "AB98_P17_PLAY_RELEASE_mapping.txt": {
+      "bytes": 115908816,
+      "sha256": "f91b128176fce2f45a276d11f0bb09cef057fa353fedbdb8410f18d921a411ff"
+    }
+  },
+  "commit": "8e7121811918378c841ff6fc9f4f4962efa9889b",
+  "run_id": "38699788003",
+  "android_api_tested": "30",
+  "phone_abi": "arm64-v8a",
+  "physical_phone_tested": false,
+  "aab_signed": false,
+  "original_signing_key_available": false,
+  "play_release_ready": false
+}

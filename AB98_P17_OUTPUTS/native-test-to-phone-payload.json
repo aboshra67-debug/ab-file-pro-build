@@ -1,0 +1,14 @@
+{
+  "debug": {
+    "native_test_apk_sha256": "35efbbc88ecc822ce192c17738f8bef83b50e8a6233565db715246c142dccb66",
+    "phone_apk_sha256": "80fa5b81504c295cdbc7eee3d71d7ebba2d85bb4f601a75f86175c32a9dad3b6",
+    "shared_entries_verified": 662,
+    "all_shared_entries_identical": true
+  },
+  "qa": {
+    "native_test_apk_sha256": "05e53b5550068fbd70e6b0cdc9979b766356d242e272fd0b43a8c26e7217e3ff",
+    "phone_apk_sha256": "95695da5de311f68e7d44ecbf0fbfa4c83a81317cdd618a4ed3ec1d6beef7713",
+    "shared_entries_verified": 655,
+    "all_shared_entries_identical": true
+  }
+}
