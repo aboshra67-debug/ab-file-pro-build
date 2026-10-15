@@ -515,7 +515,7 @@ fun PdfEditorScreen(uriText: String, onBack: () -> Unit, onOpenPdf: (File) -> Un
         pageBitmap?.recycle(); pageBitmap = null
         busy = true
         try {
-            pageBitmap = withContext(Dispatchers.IO) { PdfViewerUtils.renderPage(file, pageIndex, 1500) }
+            pageBitmap = withContext(Dispatchers.IO) { PdfViewerUtils.renderPage(file, pageIndex, 1500, forPreview = true) }
             restoreDraft(pageIndex)
         } catch (cancelled: CancellationException) {
             throw cancelled

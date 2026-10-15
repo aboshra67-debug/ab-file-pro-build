@@ -75,7 +75,7 @@ fun PdfViewerScreen(filePath: String, onBack: () -> Unit) {
         if (pageCount > 0 && selectedPage in 0 until pageCount && file.exists()) {
             pageLoading = true
             val result = runCatching {
-                withContext(Dispatchers.IO) { PdfViewerUtils.renderPage(file, selectedPage, 1500) }
+                withContext(Dispatchers.IO) { PdfViewerUtils.renderPage(file, selectedPage, 1500, forPreview = true) }
             }
             result.onSuccess { pageBitmap = it }
                 .onFailure { pageError = context.uiText(appLanguage, "b2_viewer_error_page") }
@@ -243,7 +243,7 @@ private fun PdfThumbnail(file: File, pageIndex: Int, selected: Boolean, onClick:
     val appLanguage = LocalAppLanguage.current
     val bitmap by produceState<Bitmap?>(initialValue = null, file.absolutePath, pageIndex) {
         value = runCatching {
-            withContext(Dispatchers.IO) { PdfViewerUtils.renderPage(file, pageIndex, 220) }
+            withContext(Dispatchers.IO) { PdfViewerUtils.renderPage(file, pageIndex, 220, forPreview = true) }
         }.getOrNull()
     }
 

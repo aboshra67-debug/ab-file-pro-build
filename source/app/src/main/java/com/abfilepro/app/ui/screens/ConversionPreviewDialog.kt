@@ -53,7 +53,7 @@ fun ConversionPreviewDialog(
                         runCatching {
                             val count = PdfViewerUtils.pageCount(draft)
                             require(count > 0) { context.uiText(appLanguage, "b2_preview_no_pages") }
-                            count to PdfViewerUtils.renderPage(draft, 0, 1100)
+                            count to PdfViewerUtils.renderPage(draft, 0, 1100, forPreview = true)
                         }.getOrElse { previewError ->
                             if (draft.name.startsWith("Protected_", ignoreCase = true) &&
                                 draft.length() > 256L &&
@@ -218,7 +218,7 @@ fun BatchPdfPreviewDialog(
                     require(file.extension.equals("pdf", ignoreCase = true)) { context.uiText(appLanguage, "b2_preview_unexpected", file.name) }
                     val count = PdfViewerUtils.pageCount(file)
                     require(count > 0) { context.uiText(appLanguage, "b2_preview_file_no_pages", file.name) }
-                    PdfBatchPreviewItem(file, count, PdfViewerUtils.renderPage(file, 0, 700))
+                    PdfBatchPreviewItem(file, count, PdfViewerUtils.renderPage(file, 0, 700, forPreview = true))
                 }
             }
         }.onSuccess { previews = it }

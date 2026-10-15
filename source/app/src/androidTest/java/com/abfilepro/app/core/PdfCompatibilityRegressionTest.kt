@@ -39,7 +39,8 @@ class PdfCompatibilityRegressionTest {
     }
 
     @After fun tearDown() {
-        SafePdfRenderer.forceFallbackForTest = false
+        SafePdfRenderer.skipNativeOriginalForTest = false
+        SafePdfRenderer.skipNativeRewriteForTest = false
         outputs.forEach { it.delete() }
         dir.deleteRecursively()
     }
@@ -64,42 +65,84 @@ class PdfCompatibilityRegressionTest {
     private fun <T> open(file: File, block: (SafePdfRenderer) -> T): T =
         ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY).use { fd -> SafePdfRenderer.open(fd, context).use(block) }
 
+    private fun redTopWhiteBottom(bitmap: Bitmap) {
+        val top = bitmap.getPixel(bitmap.width / 2, bitmap.height / 5)
+        val bottom = bitmap.getPixel(bitmap.width / 2, bitmap.height * 17 / 20)
+        assertTrue("top half should be red, was ${Integer.toHexString(top)}", Color.red(top) > 200 && Color.green(top) < 80 && Color.blue(top) < 80)
+        assertTrue("bottom half should stay white, was ${Integer.toHexString(bottom)}", Color.red(bottom) > 200 && Color.green(bottom) > 200 && Color.blue(bottom) > 200)
+    }
+
+    private fun renderFirstPage(renderer: SafePdfRenderer): Bitmap {
+        val bitmap = Bitmap.createBitmap(150, 200, Bitmap.Config.ARGB_8888)
+        bitmap.eraseColor(Color.WHITE)
+        renderer.openPage(0).use { it.render(bitmap, null) }
+        return bitmap
+    }
+
+    private fun compatLeftovers(): List<String> =
+        File(context.cacheDir, "pdf_compat").listFiles()?.map { it.name }.orEmpty()
+
     @Test fun systemRendererStaysThePrimaryPathOnCurrentAndroid() {
         val file = androidPdf()
         open(file) { renderer ->
             assertEquals(2, renderer.pageCount)
-            if (Build.VERSION.SDK_INT >= 28) assertFalse(renderer.usesFallback)
+            if (Build.VERSION.SDK_INT >= 28) assertEquals(SafePdfRenderer.Mode.NATIVE, renderer.mode)
         }
     }
 
-    @Test fun fallbackReportsEveryPageWithItsSize() {
+    @Test fun androidWrittenPdfRendersItsRealContentOnThisAndroidVersion() {
         val file = androidPdf()
-        SafePdfRenderer.forceFallbackForTest = true
         open(file) { renderer ->
-            assertTrue(renderer.usesFallback)
+            assertTrue("pages must be rendered by the system renderer, mode=${renderer.mode}", renderer.mode != SafePdfRenderer.Mode.PDFBOX)
+            val bitmap = renderFirstPage(renderer)
+            try { redTopWhiteBottom(bitmap) } finally { bitmap.recycle() }
+        }
+    }
+
+    @Test fun rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards() {
+        val file = androidPdf()
+        val before = file.readBytes()
+        SafePdfRenderer.skipNativeOriginalForTest = true
+        open(file) { renderer ->
+            assertEquals(SafePdfRenderer.Mode.NATIVE_REWRITTEN, renderer.mode)
             assertEquals(2, renderer.pageCount)
             renderer.openPage(0).use { assertEquals(300 to 400, it.width to it.height) }
             renderer.openPage(1).use { assertEquals(500 to 250, it.width to it.height) }
+            val bitmap = renderFirstPage(renderer)
+            try { redTopWhiteBottom(bitmap) } finally { bitmap.recycle() }
         }
+        assertTrue("the user's PDF must not change", before.contentEquals(file.readBytes()))
+        assertEquals(emptyList<String>(), compatLeftovers())
     }
 
-    @Test fun fallbackRendersThePageContentIntoTheRequestedBitmap() {
+    @Test fun pdfboxOnlyModeNeverProducesFilesFromItsRendering() = runBlocking {
         val file = androidPdf()
-        SafePdfRenderer.forceFallbackForTest = true
-        val bitmap = Bitmap.createBitmap(150, 200, Bitmap.Config.ARGB_8888)
+        SafePdfRenderer.skipNativeOriginalForTest = true
+        SafePdfRenderer.skipNativeRewriteForTest = true
+        open(file) { renderer ->
+            assertEquals(SafePdfRenderer.Mode.PDFBOX, renderer.mode)
+            assertEquals(2, renderer.pageCount)
+            renderer.openPage(1).use { assertEquals(500 to 250, it.width to it.height) }
+            val bitmap = Bitmap.createBitmap(50, 50, Bitmap.Config.ARGB_8888)
+            try {
+                renderer.openPage(0).use { it.render(bitmap, null) }
+                fail("rendering for a saved file must be refused in PDFBox-only mode")
+            } catch (_: IOException) {
+            } finally { bitmap.recycle() }
+        }
         try {
-            bitmap.eraseColor(Color.WHITE)
-            open(file) { renderer -> renderer.openPage(0).use { it.render(bitmap, null) } }
-            val top = bitmap.getPixel(75, 40)
-            val bottom = bitmap.getPixel(75, 170)
-            assertTrue("top half should be red, was ${Integer.toHexString(top)}", Color.red(top) > 200 && Color.green(top) < 80 && Color.blue(top) < 80)
-            assertTrue("bottom half should stay white, was ${Integer.toHexString(bottom)}", Color.red(bottom) > 200 && Color.green(bottom) > 200 && Color.blue(bottom) > 200)
-        } finally { bitmap.recycle() }
+            outputs += PdfTools.pdfToLongImage(context, Uri.fromFile(file), preferredWidth = 600)
+            fail("long image must not be produced from PDFBox-only rendering")
+        } catch (_: IOException) {
+        }
+        CleanShareOutput.verifyPdf(file, 2)
+        val preview = PdfViewerUtils.renderPage(file, 0, 300, forPreview = true)
+        try { assertEquals(300, preview.width) } finally { preview.recycle() }
     }
 
     @Test fun brokenPdfIsStillRejectedWhenTheFallbackIsUsed() {
         val broken = File(dir, "broken.pdf").apply { writeText("%PDF-broken") }
-        SafePdfRenderer.forceFallbackForTest = true
+        SafePdfRenderer.skipNativeOriginalForTest = true
         try {
             open(broken) { it.pageCount }
             fail("a broken PDF must not open")
@@ -112,14 +155,17 @@ class PdfCompatibilityRegressionTest {
         }
     }
 
-    @Test fun longImageIsProducedThroughTheFallback() = runBlocking {
+    @Test fun longImageIsProducedThroughTheRewrittenCopy() = runBlocking {
         val file = androidPdf()
-        SafePdfRenderer.forceFallbackForTest = true
+        SafePdfRenderer.skipNativeOriginalForTest = true
         val result = PdfTools.pdfToLongImage(context, Uri.fromFile(file), preferredWidth = 600)
         outputs += result
-        val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
-        BitmapFactory.decodeFile(result.path, bounds)
-        assertEquals(600, bounds.outWidth)
-        assertTrue(bounds.outHeight > 800)
+        val image = requireNotNull(BitmapFactory.decodeFile(result.path))
+        try {
+            assertEquals(600, image.width)
+            assertTrue(image.height > 800)
+            val top = image.getPixel(300, 100)
+            assertTrue("first page content must be in the long image, was ${Integer.toHexString(top)}", Color.red(top) > 200 && Color.green(top) < 80)
+        } finally { image.recycle() }
     }
 }

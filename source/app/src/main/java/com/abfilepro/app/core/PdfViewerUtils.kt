@@ -14,12 +14,13 @@ object PdfViewerUtils {
         }
     }
 
-    fun renderPage(file: File, pageIndex: Int, targetWidth: Int): Bitmap {
+    /** [forPreview] = shown on screen only (never saved), which allows the last-resort PDFBox rendering. */
+    fun renderPage(file: File, pageIndex: Int, targetWidth: Int, forPreview: Boolean = false): Bitmap {
         require(file.exists()) { "ملف PDF غير موجود" }
         require(targetWidth > 0) { "عرض الصفحة غير صالح" }
 
         ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY).use { descriptor ->
-            SafePdfRenderer.open(descriptor).use { renderer ->
+            SafePdfRenderer.open(descriptor, allowPreviewOnlyRendering = forPreview).use { renderer ->
                 require(pageIndex in 0 until renderer.pageCount) { "رقم الصفحة غير صالح" }
                 renderer.openPage(pageIndex).use { page ->
                     val width = targetWidth.coerceAtLeast(180)
