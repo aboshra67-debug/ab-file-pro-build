@@ -653,3 +653,62 @@ the whole family space is deleted.</p>
 يُحذف ربط جهازك وما شاركته ورسائلك، وعند خروج آخر جهاز تُحذف مساحة العائلة كاملة.</p></div>
 {contact}
 </body></html>"""
+
+
+PRIVACY_UPDATED = "2026-10-15"
+
+
+@app.get("/privacy", response_class=HTMLResponse)
+def privacy_policy() -> str:
+    """P21: public privacy policy for the Google Play listing (Arabic and English)."""
+    contact = f'<a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>' if SUPPORT_EMAIL else "the contact address shown on the Google Play listing"
+    return f"""<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AB File Pro - Privacy policy</title>
+<style>body{{font-family:system-ui,sans-serif;max-width:720px;margin:2rem auto;padding:0 1rem;line-height:1.65}}h2{{margin-top:2rem}}</style></head>
+<body>
+<h1>AB File Pro - Privacy policy</h1>
+<p>Last updated: {PRIVACY_UPDATED}</p>
+<h2>What stays on your phone</h2>
+<p>Your files, scans, PDFs, text recognition (OCR), conversions, notes, tasks, calendar, expenses, budgets, health
+records, document reminders and voice recordings are processed and stored on your phone. Text recognition runs on the
+device. Your location is used on the device only to calculate prayer times and is not sent to us.</p>
+<h2>What leaves your phone, and why</h2>
+<ul>
+<li><b>Family sharing (optional, off by default).</b> Only if you create or join a family: the family requests, shopping
+list and chat messages you share, the names you type for the family, and - only if you turn on health sharing - the
+medicines and health appointments you choose to share. A random device identifier and a hashed device token are stored
+to link your phones. This data is sent over HTTPS to our family service and is visible to the phones in your family.</li>
+<li><b>Exchange rates and gold prices.</b> The app downloads public rates from open.er-api.com, exchangerate.fun and
+gold-api.com. No personal data is sent.</li>
+<li><b>Price comparison.</b> When you search for a product, your search words are sent to the retailer search pages
+you compare (Amazon Egypt, Noon, Jumia).</li>
+<li><b>Google services on the device.</b> Google's document scanner and ML Kit run on your phone; translation language
+models may be downloaded from Google.</li>
+</ul>
+<p>We do not show ads, we do not use analytics or tracking, and we do not sell or rent any data.</p>
+<h2>Permissions</h2>
+<p>Camera (scanning, QR, smart camera), microphone (voice recordings and meeting notes), location (prayer times),
+notifications (reminders), all-files access (the file manager), alarms (reminders on time) and a foreground service
+(keeps a voice recording running while the screen is off). Each is used only for the feature you open.</p>
+<h2>Keeping and deleting data</h2>
+<p>Data on your phone is deleted when you delete it in the app or uninstall the app. Family data is kept until you
+leave the family. In the app: Personal assistant &rarr; Family requests &rarr; Settings &rarr; <b>Leave family and
+delete my data</b>. This removes your device link, everything you shared and your chat messages; when the last phone
+leaves, the whole family space is deleted. See also <a href="/delete-account">/delete-account</a>.</p>
+<h2>Children</h2>
+<p>The app is not directed to children.</p>
+<h2>Contact</h2>
+<p>Questions or deletion requests: {contact}.</p>
+<div dir="rtl" lang="ar">
+<h1>سياسة الخصوصية - AB File Pro</h1>
+<p>ملفاتك ومسحاتك وملفات PDF والتعرف على النصوص والتحويلات والملاحظات والمهام والمصروفات والسجلات الصحية
+وتذكيرات المستندات والتسجيلات الصوتية بتتعالج وتتخزن على هاتفك. التعرف على النصوص بيتم على الهاتف. والموقع بيُستخدم على
+الهاتف بس لحساب مواقيت الصلاة ومش بيتبعت لنا.</p>
+<p><b>مشاركة العائلة اختيارية ومقفولة افتراضيًا:</b> لو أنشأت عائلة أو انضميت لعائلة، بيتبعت عن طريق HTTPS لخدمة العائلة:
+طلبات العائلة وقائمة التسوق ورسائل الشات اللي بتشاركها، والأسماء اللي بتكتبها، والأدوية والمواعيد الصحية لو فعّلت
+مشاركة الصحة بنفسك، ومعرّف عشوائي للجهاز. أسعار العملات والذهب بتتنزل من مصادر عامة من غير أي بيانات شخصية، وكلمات
+البحث في مقارنة الأسعار بتتبعت لصفحات البحث في المتاجر.</p>
+<p>مفيش إعلانات، ولا تحليلات أو تتبع، ولا بيع لأي بيانات. لحذف بيانات العائلة: المساعد الشخصي ← طلبات العائلة ←
+الإعدادات ← <b>مغادرة العائلة وحذف بياناتي</b>.</p>
+</div>
+</body></html>"""

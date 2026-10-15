@@ -184,3 +184,9 @@ def test_update_channel_has_no_default_package(monkeypatch):
 def test_delete_account_page_is_public():
     r = client.get("/delete-account")
     assert r.status_code == 200 and "Leave family and delete my data" in r.text
+
+
+def test_privacy_policy_is_public_and_bilingual():
+    r = client.get("/privacy")
+    assert r.status_code == 200
+    assert "Privacy policy" in r.text and "سياسة الخصوصية" in r.text and "/delete-account" in r.text
