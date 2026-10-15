@@ -1,0 +1,54 @@
+10-15 12:42:30.097  3866  3912 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:30.110  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 12:42:30.128  1346  1346 I SpBackgroundTask: SuperpacksBackgroundJobService.onStartJob():26 onStartJob: android.app.job.JobParameters@32e25fa
+10-15 12:42:30.129  1346  1346 I SP      : ====> Starting job {m:b:u:l, bg}
+10-15 12:42:30.133  1578  4038 D TrafficStats: tagSocket(82) with statsTag=0xffffff01, statsUid=10135
+10-15 12:42:30.133  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:30.141  3021  3472 I ConfigUpdater: Update downloaded, starting installation
+10-15 12:42:30.182  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.podcasts_android.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:30.187  3021  3472 I ConfigUpdater: doneInstall
+10-15 12:42:30.191  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, transformer_concept:2023011913_en * {m:b:u:l, bg}
+10-15 12:42:30.192  1346  1625 I SP      : Syncing dynamic_art (20220108) with slices: [b1f6f47a53f7820be91b9fe247728980, 305f81355a729e382ea9f374dd286d9f], metadata: false
+10-15 12:42:30.193  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:30.224  3866  3961 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:30.224  3866  3961 D pdf_document_jni: Deleting Document: 0x72847e507110
+10-15 12:42:30.224  3866  3961 D pdf_document_jni: Destroyed Document: 0x72847e507110
+10-15 12:42:30.225  3866  3961 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:30.225  3866  3961 E document: Parse Document failed (err=3).
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: Can't parse the header version.
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:487)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:141)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:125)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:285)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 12:42:30.234  3866  3961 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 12:42:30.242  1346  1625 I SP      : Scheduling: job start ({m:b:u:l, bg}), 1 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, transformer_concept:2023011913_en @ * {m:b:u:l, bg}
+10-15 12:42:30.270  1578  3753 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb.metadata via provider delete
+10-15 12:42:30.271  1346  1786 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 2185862
+10-15 12:42:30.295  1397  1412 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb.metadata
+10-15 12:42:30.324  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:30.338  3866  3912 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:30.339  3866  3912 D pdf_document_jni: Deleting Document: 0x72847e507b90
+10-15 12:42:30.339  3866  3912 D pdf_document_jni: Destroyed Document: 0x72847e507b90
+10-15 12:42:30.349  1397  1412 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 77ms, 0 inserts 0 updates 0 deletes
+10-15 12:42:30.366  3866  3912 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

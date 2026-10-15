@@ -1,0 +1,24 @@
+10-15 12:42:34.348  3866  3912 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:34.373  1346  1625 I SP      : Download stopped: handwriting_recognition:transformer_latin_tflite_20231010_zip, succeeded foreground, size: 11108262
+10-15 12:42:34.384  3866  3981 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:34.399  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 7 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip @ {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 12:42:34.402  3021  3472 I ConfigUpdater: Update downloaded, starting installation
+10-15 12:42:34.417  3021  3472 I ConfigUpdater: doneInstall
+10-15 12:42:34.419  1578  1591 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model.metadata via provider delete
+10-15 12:42:34.430  1346  1625 I SP      : Download stopped: handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip, succeeded foreground, size: 3152
+10-15 12:42:34.446  1397  1412 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.model.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.model.metadata
+10-15 12:42:34.454  1455  2608 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:34.455  1397  1412 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 9ms, 0 inserts 0 updates 0 deletes
+10-15 12:42:34.462  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.platform.ondevice.fulfillment.server.pop.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:34.466  1578  1591 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model via provider delete
+10-15 12:42:34.474  3866  3981 D pdf_document_jni: Deleting Document: 0x72847e506690
+10-15 12:42:34.474  3866  3981 D pdf_document_jni: Destroyed Document: 0x72847e506690
+10-15 12:42:34.477  1397  1412 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.model: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.model
+10-15 12:42:34.479  1397  1412 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 2ms, 0 inserts 0 updates 0 deletes
+10-15 12:42:34.493   556  1855 D ConnectivityService: requestNetwork for uid/pid:10143/1455 activeRequest: null callbackRequest: 136 [NetworkRequest [ REQUEST id=136, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Forbidden: LOCAL_NETWORK Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 12:42:34.497   556   833 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 0]
+10-15 12:42:34.497   556   833 D ConnectivityService: reportNetworkConnectivity(100, false) by 10143
+10-15 12:42:34.498  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gms.supervision
+10-15 12:42:34.502  1031  2178 D NetworkMonitor/100: Forcing reevaluation for UID 10143. Dns signal count: 0
+10-15 12:42:34.522  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 6 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 12:42:34.534  3866  3912 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

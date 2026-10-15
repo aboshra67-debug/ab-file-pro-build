@@ -1,0 +1,4 @@
+10-15 12:42:47.778  5129  5190 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:47.915  1054  3199 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:7 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:42:47.916  1054  3199 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:7 result: 1 elapsed_millis: 115 uptime_millis: 115 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:42:47.973  5129  5190 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

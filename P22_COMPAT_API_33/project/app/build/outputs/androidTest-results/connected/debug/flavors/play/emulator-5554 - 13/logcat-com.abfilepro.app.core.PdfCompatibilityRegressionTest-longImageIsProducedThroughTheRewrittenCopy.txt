@@ -1,0 +1,2 @@
+10-15 12:42:52.777  5129  5190 I TestRunner: started: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:42:52.834  5129  5190 I TestRunner: finished: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

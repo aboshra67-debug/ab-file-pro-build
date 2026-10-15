@@ -1,0 +1,8 @@
+10-15 12:42:44.768  5129  5190 I TestRunner: started: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 12:42:44.768   986   986 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 12:42:44.768   986   986 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 12:42:44.770   484   582 I RoleService: Granting default roles...
+10-15 12:42:44.771   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:42:44.779   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:42:44.781   763   763 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 12:42:44.785  5129  5190 I TestRunner: finished: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

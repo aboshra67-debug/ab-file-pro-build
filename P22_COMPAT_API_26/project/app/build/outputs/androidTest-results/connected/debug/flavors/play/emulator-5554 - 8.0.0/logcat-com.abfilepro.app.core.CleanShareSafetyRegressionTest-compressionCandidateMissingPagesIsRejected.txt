@@ -1,0 +1,39 @@
+10-15 12:42:42.602  5060  5079 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:42.609  2607  2607 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 12:42:42.620  2607  2607 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 12:42:42.642  2607  2607 I AudioController: Using mInputStreamFactoryBuilder
+10-15 12:42:42.654  2607  2607 I MicroDetectionWorker: onReady
+10-15 12:42:42.660  2607  2728 I MicroRecognitionRunner: Starting detection.
+10-15 12:42:42.668  2607  2699 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@f5ee562
+10-15 12:42:42.670  1512  5109 I AudioFlinger: AudioFlinger's thread 0xe4183c00 tid=5109 ready to run
+10-15 12:42:42.671  2607  2699 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@f5ee562
+10-15 12:42:42.674  2607  2699 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@f5ee562
+10-15 12:42:42.677  2607  2728 I MicroRecognitionRunner: Detection finished
+10-15 12:42:42.677  2607  2728 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 12:42:42.679  2607  2852 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 12:42:42.681  2607  2607 I MicroDetectionWorker: onReady
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 12:42:42.682  2607  2728 W ErrorProcessor: 	... 9 more
+10-15 12:42:42.683  2607  2728 I AudioController: internalShutdown
+10-15 12:42:42.693  2607  2607 I MicroDetector: Keeping mic open: false
+10-15 12:42:42.693  2607  2607 I MicroDetectionWorker: #onError(false)
+10-15 12:42:42.693  2607  2802 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 12:42:42.739  5060  5079 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

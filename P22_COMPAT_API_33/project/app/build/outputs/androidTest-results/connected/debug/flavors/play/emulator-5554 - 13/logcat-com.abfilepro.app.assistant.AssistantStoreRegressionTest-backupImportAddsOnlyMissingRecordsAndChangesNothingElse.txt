@@ -1,0 +1,24 @@
+10-15 12:42:44.516  5129  5190 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:42:44.517  1303  5204 I SystemUpdate: [Execution,ExecutionManager] Action pending executed for 0.19 seconds.
+10-15 12:42:44.544  1303  5204 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-15 12:42:44.553  1714  2112 W NamedFutures: Timeout future task has been cancelled: 60000 milliseconds
+10-15 12:42:44.564  1714  1714 E A       : Task 255 failed or timed out. Client 7540043788127240 disconnecting from SearchService!
+10-15 12:42:44.564  1714  1714 E A       : java.util.concurrent.CancellationException: Task was cancelled.
+10-15 12:42:44.564  1714  1714 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
+10-15 12:42:44.564  1714  1714 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
+10-15 12:42:44.564  1714  1714 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-15 12:42:44.564  1714  1714 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-15 12:42:44.564  1714  1714 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-15 12:42:44.564  1714  1714 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
+10-15 12:42:44.564  1714  1714 E A       : 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 12:42:44.564  1714  1714 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 12:42:44.564  1714  1714 E A       : 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 12:42:44.564  1714  1714 E A       : 	at android.os.Looper.loop(Looper.java:288)
+10-15 12:42:44.564  1714  1714 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 12:42:44.564  1714  1714 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 12:42:44.564  1714  1714 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 12:42:44.564  1714  1714 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 12:42:44.572  1303  4692 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+10-15 12:42:44.578  1054  4119 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+10-15 12:42:44.586  1054  4119 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+10-15 12:42:44.595  5129  5190 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

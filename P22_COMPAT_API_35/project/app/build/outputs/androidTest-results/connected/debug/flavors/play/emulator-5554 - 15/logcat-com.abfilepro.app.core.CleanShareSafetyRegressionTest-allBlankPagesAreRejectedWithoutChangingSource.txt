@@ -1,0 +1,27 @@
+10-15 12:42:21.424  3866  3912 I TestRunner: started: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:21.454  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.457  1220  3917 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 12:42:21.459  1501  2570 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 12:42:21.497  1501  1501 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.audit.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 12:42:21.497  1501  1501 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.audit.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 12:42:21.563  1501  2570 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 12:42:21.585  3866  3958 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 12:42:21.606  1501  2570 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 12:42:21.615  2359  2445 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 12:42:21.615  2359  2445 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 12:42:21.604  2359  2359 W binder:2359_4: type=1400 audit(0.0:199): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:42:21.632  1501  2570 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 12:42:21.612  2359  2359 W binder:2359_4: type=1400 audit(0.0:200): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:42:21.640   357  3962 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10144 0}
+10-15 12:42:21.641  2359  2445 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+10-15 12:42:21.642  2359  2445 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+10-15 12:42:21.644  2359  2445 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+10-15 12:42:21.667   556  1299 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 12:42:21.671  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 251 uptime_millis: 251 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.685  2359  2445 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 12:42:21.687  2359  2445 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 12:42:21.794  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+10-15 12:42:21.800  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 56 uptime_millis: 56 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+10-15 12:42:21.855  3866  3958 D pdf_document_jni: Deleting Document: 0x72847e50a050
+10-15 12:42:21.855  3866  3958 D pdf_document_jni: Destroyed Document: 0x72847e50a050
+10-15 12:42:21.861  3866  3912 I TestRunner: finished: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

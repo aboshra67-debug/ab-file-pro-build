@@ -1,0 +1,4 @@
+10-15 12:42:34.726  3866  3912 I TestRunner: started: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:34.734  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.systemui
+10-15 12:42:34.737  1346  1625 I SP      : Download stopped: handwriting_recognition:transformer_latin_seg_tflite_20231010_zip, succeeded foreground, size: 402290
+10-15 12:42:34.751  3866  3912 I TestRunner: finished: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

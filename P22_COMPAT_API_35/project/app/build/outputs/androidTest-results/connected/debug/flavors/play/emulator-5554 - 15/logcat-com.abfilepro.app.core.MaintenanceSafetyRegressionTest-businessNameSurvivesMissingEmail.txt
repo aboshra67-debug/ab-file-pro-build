@@ -1,0 +1,4 @@
+10-15 12:42:34.243  3866  3912 I TestRunner: started: businessNameSurvivesMissingEmail(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:34.280   556   587 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 12:42:34.297  1346  1801 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 16439942
+10-15 12:42:34.302  3866  3912 I TestRunner: finished: businessNameSurvivesMissingEmail(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

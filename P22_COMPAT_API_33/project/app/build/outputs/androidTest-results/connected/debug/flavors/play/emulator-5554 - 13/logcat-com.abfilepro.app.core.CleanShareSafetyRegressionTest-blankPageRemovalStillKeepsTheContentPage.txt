@@ -1,0 +1,4 @@
+10-15 12:42:50.325  5129  5190 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:50.486   484  2465 D WifiNl80211Manager: Scan result ready event
+10-15 12:42:50.487   484  2465 D WifiNative: Scan result ready event
+10-15 12:42:50.515  5129  5190 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

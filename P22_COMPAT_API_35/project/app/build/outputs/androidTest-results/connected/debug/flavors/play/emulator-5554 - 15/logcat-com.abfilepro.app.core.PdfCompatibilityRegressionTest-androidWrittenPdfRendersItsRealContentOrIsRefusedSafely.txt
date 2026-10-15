@@ -1,0 +1,5 @@
+10-15 12:42:36.322  3866  3912 I TestRunner: started: androidWrittenPdfRendersItsRealContentOrIsRefusedSafely(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:42:36.336  3866  3912 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:36.356  3866  3912 D pdf_document_jni: Deleting Document: 0x72847e508b50
+10-15 12:42:36.358  3866  3912 D pdf_document_jni: Destroyed Document: 0x72847e508b50
+10-15 12:42:36.358  3866  3912 I TestRunner: finished: androidWrittenPdfRendersItsRealContentOrIsRefusedSafely(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

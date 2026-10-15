@@ -1,0 +1,4 @@
+10-15 12:42:35.248  3866  3912 I TestRunner: started: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:35.275   915  1026 D EGL_emulation: app_time_stats: avg=30207.93ms min=30207.93ms max=30207.93ms count=1
+10-15 12:42:35.321  1346  1801 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 19446406
+10-15 12:42:35.372  3866  3912 I TestRunner: finished: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

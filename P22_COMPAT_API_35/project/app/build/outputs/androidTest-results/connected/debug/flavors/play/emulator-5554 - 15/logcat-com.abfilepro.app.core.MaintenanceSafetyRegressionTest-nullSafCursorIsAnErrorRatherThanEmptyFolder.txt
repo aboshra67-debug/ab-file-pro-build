@@ -1,0 +1,27 @@
+10-15 12:42:34.610  3866  3912 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:34.615  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.615  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.616  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.616  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.620  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.624  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.625  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.625  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.625  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.625  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.626  1031  4081 D NetworkMonitor/100: PROBE_DNS www.google.com 62ms OK 142.251.151.119,142.251.153.119,142.251.157.119,142.251.156.119,142.251.150.119,142.251.152.119,142.251.155.119,142.251.154.119,2001:4860:4827:7700::,2001:4860:482d:7700::,2001:4860:4828:7700::,2001:4860:482a:7700::,2001:4860:4826:7700::,2001:4860:482c:7700::,2001:4860:482b:7700::,2001:4860:4829:7700::
+10-15 12:42:34.628  1031  4082 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=18ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Thu, 15 Oct 2026 12:42:34 GMT], X-Android-Received-Millis=[1792068154627], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792068154620]}
+10-15 12:42:34.638   357  4090 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-15 12:42:34.638   357  4091 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:42:34.638   357  4091 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7315bc0dba10
+10-15 12:42:34.638   357  4092 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:42:34.638   357  4091 I resolv  : doQuery: rcode=0, ancount=8, return value=256
+10-15 12:42:34.638   357  4092 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73150c0dafd0
+10-15 12:42:34.638   357  4092 I resolv  : doQuery: rcode=0, ancount=8, return value=160
+10-15 12:42:34.641  1031  4081 D TrafficStats: tagSocket(83) with statsTag=0xffffff81, statsUid=-1
+10-15 12:42:34.646  1346  1625 I SP      : Download stopped: handwriting_recognition:transformer_latin_conf_tflite_20231010_zip, succeeded foreground, size: 866
+10-15 12:42:34.661  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:34.674  4047  4047 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:42:34.679  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.wallpaper
+10-15 12:42:34.703  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 12:42:34.719  3866  3912 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

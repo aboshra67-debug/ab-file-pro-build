@@ -1,0 +1,31 @@
+10-15 12:42:33.893  3866  3912 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:33.909  1455  2608 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:33.921  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.lens.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:33.958  1501  2457 W ChimeraConfigurator: Error syncing flags: ajjv: COMMIT_TIMEOUT
+10-15 12:42:33.958  1501  2457 I GmsDebugLogger: [79] COMMIT_TIMEOUT
+10-15 12:42:33.966  1501  2457 I GmsDebugLogger: [52]
+10-15 12:42:33.984  1501  2457 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43201] seconds from now (1792068153983) [CONTEXT service_id=264 ]
+10-15 12:42:33.994  1501  2457 I GmsDebugLogger: [83] 1 []
+10-15 12:42:34.002  1455  2634 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:34.007  1501  2457 I ChimeraConfigService: Scheduling checkin every 120 seconds, with flex of 60 seconds [CONTEXT service_id=264 ]
+10-15 12:42:34.017  1501  2849 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.chimera.container.InitConfigOperation for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (2457) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 44.481s
+10-15 12:42:34.026  1501  2849 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
+10-15 12:42:34.051   556  1890 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 12:42:34.069   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:34.078   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:34.091   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={10133} in 26ms
+10-15 12:42:34.091   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:34.091   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:34.091   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={20133} in 0ms
+10-15 12:42:34.136   357   357 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.07ms>
+10-15 12:42:34.136   357   385 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.21ms>
+10-15 12:42:34.138   357   357 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.24ms>
+10-15 12:42:34.139   357   357 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.11ms>
+10-15 12:42:34.144  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:34.151  3866  3981 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:34.163  3866  3981 D pdf_document_jni: Deleting Document: 0x72847e5079d0
+10-15 12:42:34.165  3866  3981 D pdf_document_jni: Destroyed Document: 0x72847e5079d0
+10-15 12:42:34.213  3866  3912 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:34.217  3866  3912 D pdf_document_jni: Deleting Document: 0x72847e504710
+10-15 12:42:34.217  3866  3912 D pdf_document_jni: Destroyed Document: 0x72847e504710
+10-15 12:42:34.237  3866  3912 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

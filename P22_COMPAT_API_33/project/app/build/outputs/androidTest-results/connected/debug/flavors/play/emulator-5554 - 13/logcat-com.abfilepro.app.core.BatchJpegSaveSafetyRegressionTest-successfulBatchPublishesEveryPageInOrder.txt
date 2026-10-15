@@ -1,0 +1,81 @@
+10-15 12:42:45.186  5129  5190 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 12:42:45.190  1303  5204 W GmsTaskScheduler: ScheduledCheckinGmsTaskService is not available. This may cause the task to be lost.
+10-15 12:42:45.192  1303  5204 I Checkin : [EventLogChimeraService] Accumulating logs since 1792068149438
+10-15 12:42:45.196   484   687 D RecoverableKeyStoreMgr: Saving the randomly chosen endpoint certificate to database
+10-15 12:42:45.197  3823  4014 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 12:42:45.205  3823  4014 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 12:42:45.205  3823  4014 I RemoteProvisioningService: Pool status.
+10-15 12:42:45.205  3823  4014 I RemoteProvisioningService: Total: 6
+10-15 12:42:45.205  3823  4014 I RemoteProvisioningService: Attested: 6
+10-15 12:42:45.205  3823  4014 I RemoteProvisioningService: Unassigned: 5
+10-15 12:42:45.205  3823  4014 I RemoteProvisioningService: Expiring: 0
+10-15 12:42:45.205  3823  4014 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 12:42:45.205  3823  4014 I RemoteProvisioningService: No provisioning needed.
+10-15 12:42:45.213  1303  4692 I AppDoctorManager: Updating appdoctor Uri Permissions. [CONTEXT service_id=256 ]
+10-15 12:42:45.240  1303  1317 I gle.android.gms: Background young concurrent copying GC freed 8156(448KB) AllocSpace objects, 24(1248KB) LOS objects, 6% free, 14MB/15MB, paused 43us,16us total 325.891ms
+10-15 12:42:45.243   484   687 I RecoverableKeyStoreMgr: This is a certificate change. Snapshot didn't exist
+10-15 12:42:45.245  1303  5198 I constellation: [intent_handler] Received onBootCompleted intent
+10-15 12:42:45.246  1303  5198 I constellation: [reboot_checker] Reboot checker check status.
+10-15 12:42:45.252  1303  4974 I RecoverableKeyStoreGms: [EnrollmentManager] Recovery service is initialized. [CONTEXT service_id=172 ]
+10-15 12:42:45.265  1303  1303 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.265  1303  1303 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.268  1303  5198 I constellation: [reboot_checker] Reboot Sync didn't run.
+10-15 12:42:45.271  1303  1303 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.287  1303  1303 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.287  1303  1303 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: Error reading snapshot for 10120 from disk
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10120.xml: open failed: ENOENT (No such file or directory)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:342)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2589)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:786)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 12:42:45.293   484  2369 E RecoverySnapshotStorage: 	... 8 more
+10-15 12:42:45.296  1303  1303 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.316   484  2369 W PlatformKeyManager: Platform generation ID was 0 but no entry was present in AndroidKeyStore. Generating fresh key.
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: [WrappingKeyManager] InternalRecoveryServiceException during wrapping key generation [CONTEXT service_id=172 ]
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: android.security.keystore.recovery.InternalRecoveryServiceException: Failed to import secret key.
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.wrapUnexpectedServiceSpecificException(RecoveryController.java:773)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:562)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at qiw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at qiw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at qfw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):68)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at com.google.android.gms.auth.folsom.operation.FolsomModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: Caused by: android.os.ServiceSpecificException: Failed to import secret key. (code 22)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3025)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at com.android.internal.widget.ILockSettings$Stub$Proxy.generateKey(ILockSettings.java:1574)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:549)
+10-15 12:42:45.341  1303  4974 W RecoverableKeyStoreGms: 	... 13 more
+10-15 12:42:45.359  1303  1303 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+10-15 12:42:45.359  1303  1303 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+10-15 12:42:45.366  1020  1806 D EGL_emulation: app_time_stats: avg=4047.68ms min=4047.68ms max=4047.68ms count=1
+10-15 12:42:45.390  1303  5203 W ChimeraUtils: Module com.google.android.gms.dck_stub missing resource null(0)
+10-15 12:42:45.399  1303  5203 I DckStubModuleInit: Loading stub module components [CONTEXT service_id=289 ]
+10-15 12:42:45.403  1303  5203 I Dck     : doesDeviceHaveSupportedWirelessCapabilities: wccSysProp:0, wccMendel:1, deviceWccOverride:false [CONTEXT service_id=289 ]
+10-15 12:42:45.404  1303  5203 I Dck     : isDckModuleEligible: isAtLeastR:true, hasWccSupport:false, downloadAllowed:false [CONTEXT service_id=289 ]
+10-15 12:42:45.404  1303  5203 W Dck     : Dck module not eligible for asynchronous downloading [CONTEXT service_id=289 ]
+10-15 12:42:45.440  1303  5203 I AlarmManager: set [name: ApiService type: 2 triggerAtMillis: 120000 windowMillis: -1 intervalMillis: 0]
+10-15 12:42:45.448  1303  1303 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.449  1303  1303 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.455  5129  5190 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

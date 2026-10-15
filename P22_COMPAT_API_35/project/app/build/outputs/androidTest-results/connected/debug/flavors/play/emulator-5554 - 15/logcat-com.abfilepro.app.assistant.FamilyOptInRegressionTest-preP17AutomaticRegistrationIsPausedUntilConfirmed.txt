@@ -1,0 +1,8 @@
+10-15 12:42:20.183  3866  3912 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 12:42:20.193  1501  3885 D TrafficStats: tagSocket(215) with statsTag=0x3c010301, statsUid=-1
+10-15 12:42:20.200  1501  3885 D TrafficStats: tagSocket(215) with statsTag=0x3c010301, statsUid=-1
+10-15 12:42:20.209  1501  3885 D TrafficStats: tagSocket(215) with statsTag=0x3c010301, statsUid=-1
+10-15 12:42:20.215  1501  3885 D TrafficStats: tagSocket(215) with statsTag=0x3c010301, statsUid=-1
+10-15 12:42:20.219  1501  1520 W gle.android.gms: Cleared Reference was only reachable from finalizer (only reported once)
+10-15 12:42:20.229  1501  3885 D TrafficStats: tagSocket(215) with statsTag=0x3c010301, statsUid=-1
+10-15 12:42:20.233  3866  3912 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

@@ -1,0 +1,24 @@
+10-15 12:42:34.544  3866  3912 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:34.557  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.policy#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:34.563  1031  4081 D TrafficStats: tagSocket(83) with statsTag=0xffffff81, statsUid=-1
+10-15 12:42:34.564  1031  4082 D TrafficStats: tagSocket(128) with statsTag=0xffffff81, statsUid=-1
+10-15 12:42:34.565  1031  4082 D TrafficStats: tagSocket(128) with statsTag=0xffffff81, statsUid=-1
+10-15 12:42:34.567   357  4083 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-15 12:42:34.567   357  4083 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7315ac0dd7f0
+10-15 12:42:34.568   357  4084 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-15 12:42:34.573  1031  4081 D TrafficStats: tagSocket(83) with statsTag=0xffffff81, statsUid=-1
+10-15 12:42:34.576   357  4084 I resolv  : res_nsend: used send_dg 63 terrno: 0
+10-15 12:42:34.576   357  4085 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-15 12:42:34.576   357  4085 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7315bc0dba10
+10-15 12:42:34.578   357  4086 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-15 12:42:34.578   357  4086 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73150c0dafd0
+10-15 12:42:34.581  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+10-15 12:42:34.582  1031  1031 D TrafficStats: tagSocket(128) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.582  1031  1031 D TrafficStats: tagSocket(128) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.594  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.595  1031  4082 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 30ms OK 142.251.150.120,2001:4860:4826:7800::
+10-15 12:42:34.597  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.599  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.603  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.606  1031  1031 D TrafficStats: tagSocket(83) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:34.608  3866  3912 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

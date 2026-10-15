@@ -1,0 +1,51 @@
+10-15 12:42:47.524  5060  5079 I TestRunner: started: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:42:47.582  1812  1812 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{dd0b78f VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:42:47.582  1812  1812 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{6c52dec VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:42:47.582  1812  1812 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{214a27f VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:42:47.582  1812  1812 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{198bf9d VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:42:47.582  1812  1812 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{dcad662 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:42:47.582  1812  1812 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{44dca0d VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 12:42:47.600  1812  2141 D EGL_emulation: eglMakeCurrent: 0x78946903ce60: ver 3 0 (tinfo 0x789469018920)
+10-15 12:42:47.605  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 12:42:47.609  1812  2141 D EGL_emulation: eglMakeCurrent: 0x78946903ce60: ver 3 0 (tinfo 0x789469018920)
+10-15 12:42:47.621  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 12:42:47.633  1643  1666 E memtrack: Couldn't load memtrack module
+10-15 12:42:47.633  1643  1666 W android.os.Debug: failed to get memory consumption info: -1
+10-15 12:42:47.641  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 12:42:47.672  1643  1666 E memtrack: Couldn't load memtrack module
+10-15 12:42:47.672  1643  1666 W android.os.Debug: failed to get memory consumption info: -1
+10-15 12:42:47.697  2607  2607 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 12:42:47.697  2607  2607 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 12:42:47.697  2607  2607 I AudioController: Using mInputStreamFactoryBuilder
+10-15 12:42:47.699  2607  2607 I MicroDetectionWorker: onReady
+10-15 12:42:47.699  2607  2706 I MicroRecognitionRunner: Starting detection.
+10-15 12:42:47.699  2607  2716 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@172c7c1
+10-15 12:42:47.701  1512  5154 I AudioFlinger: AudioFlinger's thread 0xe4003700 tid=5154 ready to run
+10-15 12:42:47.704  2607  2716 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@172c7c1
+10-15 12:42:47.707  2607  2607 I MicroDetectionWorker: onReady
+10-15 12:42:47.707  2607  2716 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@172c7c1
+10-15 12:42:47.710  2607  2706 I MicroRecognitionRunner: Detection finished
+10-15 12:42:47.710  2607  2706 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 12:42:47.710  2607  2852 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 12:42:47.710  2607  2706 W ErrorProcessor: 	... 9 more
+10-15 12:42:47.710  2607  2706 I AudioController: internalShutdown
+10-15 12:42:47.716  5060  5079 I TestRunner: finished: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,41 @@
+10-15 12:42:32.367  3866  3912 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:32.370  1346  1625 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():44 getSlices(): handwriting_recognition.86 useForeground=true
+10-15 12:42:32.371  1346  1625 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():103 getSlices(): result {slices=[{handwriting_recognition:pack_mapping_v1_lstm_20231127, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_conf_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_seg_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:en_us_20230613_compact_fst_zip, m:*:*:*, fg}, {handwriting_recognition:scribe_latin_20231123_tflite_zip, m:*:*:*, fg}, {handwriting_recognition:scribe_latin_20231123_recospec_zip, m:*:*:*, fg}], last batch=true, sync metadata=false}
+10-15 12:42:32.371  1346  1625 I SP      : Syncing handwriting_recognition (86) with slices: [{pack_mapping_v1_lstm_20231127, m:*:*:*, fg}, {transformer_latin_tflite_20231010_zip, m:*:*:*, fg}, {qrnn_en_us_reco_20231010_fst_20230613_recospec_zip, m:*:*:*, fg}, {transformer_latin_conf_tflite_20231010_zip, m:*:*:*, fg}, {transformer_latin_seg_tflite_20231010_zip, m:*:*:*, fg}, {en_us_20230613_compact_fst_zip, m:*:*:*, fg}, {scribe_latin_20231123_tflite_zip, m:*:*:*, fg}, {scribe_latin_20231123_recospec_zip, m:*:*:*, fg}], metadata: false
+10-15 12:42:32.376  1455  1455 E A       : onError
+10-15 12:42:32.376  1455  1455 E A       : com.google.android.apps.gsa.shared.speech.b.l: errorCode: 65561, engine: 2
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.staticplugins.bp.a.f.a(PG:23)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.s3.o.hi(PG:13)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.ci.g.a.f.e(PG:9)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:162)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.iO(PG:26)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.s3.p.c(PG:102)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.s3.q.run(PG:1)
+10-15 12:42:32.376  1455  1455 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 12:42:32.376  1455  1455 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:12)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bg.run(PG:3)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bg.run(PG:3)
+10-15 12:42:32.376  1455  1455 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 12:42:32.376  1455  1455 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 12:42:32.376  1455  1455 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:42)
+10-15 12:42:32.376  1455  1455 E A       : Caused by: com.google.android.apps.gsa.shared.speech.b.n: errorCode: 65586, engine: 2
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.s3.o.hi(PG:6)
+10-15 12:42:32.376  1455  1455 E A       : 	... 14 more
+10-15 12:42:32.376  1455  1455 E A       : Caused by: com.google.android.apps.gsa.shared.speech.b.j: errorCode: 401, engine: 2
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.i.b(PG:30)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hs(PG:11)
+10-15 12:42:32.376  1455  1455 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:135)
+10-15 12:42:32.376  1455  1455 E A       : 	... 12 more
+10-15 12:42:32.376   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:32.376   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={20166} in 18ms
+10-15 12:42:32.378  1455  2846 I NetworkRecognitionRnr: Using pair HTTP connection
+10-15 12:42:32.386  1455  2804 I A       : [Upload] Connected
+10-15 12:42:32.387  1455  1455 W A       : Failed to sync device settings.
+10-15 12:42:32.387  1455  1455 I A       : Retrying to sync device settings.
+10-15 12:42:32.390  1455  1455 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-353' has a deadline with functional constraints and an extremely short time window of 0 ms (delay=60000, deadline=60000). The functional constraints are not likely to be satisfied when the job runs.
+10-15 12:42:32.391   556  1458 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-353' has a deadline with functional constraints and an extremely short time window of 0 ms (delay=60000, deadline=60000). The functional constraints are not likely to be satisfied when the job runs.
+10-15 12:42:32.391   556  1458 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-353' has a deadline with functional constraints and an extremely short time window of 0 ms (delay=60000, deadline=60000). The functional constraints are not likely to be satisfied when the job runs.
+10-15 12:42:32.392  1455  1696 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-15 12:42:32.433  3866  3912 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

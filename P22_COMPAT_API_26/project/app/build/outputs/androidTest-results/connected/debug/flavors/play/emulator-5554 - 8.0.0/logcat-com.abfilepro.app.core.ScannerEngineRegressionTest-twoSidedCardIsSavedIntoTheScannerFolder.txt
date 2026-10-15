@@ -1,0 +1,12 @@
+10-15 12:42:46.964  5060  5079 I TestRunner: started: twoSidedCardIsSavedIntoTheScannerFolder(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 12:42:46.972  1390  1405 D hwcomposer: hw_composer sent 106 syncs in 62s
+10-15 12:42:47.017  5060  5069 E System  : Uncaught exception thrown by finalizer
+10-15 12:42:47.017  5060  5069 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 12:42:47.017  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 12:42:47.017  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 12:42:47.017  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 12:42:47.017  5060  5069 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 12:42:47.017  5060  5069 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 12:42:47.017  5060  5069 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 12:42:47.017  5060  5069 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:42:47.098  5060  5079 I TestRunner: finished: twoSidedCardIsSavedIntoTheScannerFolder(com.abfilepro.app.core.ScannerEngineRegressionTest)

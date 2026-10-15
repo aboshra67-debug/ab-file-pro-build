@@ -1,0 +1,10 @@
+10-15 12:42:47.260  5129  5190 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:47.271  1054  1054 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
+10-15 12:42:47.288  1303  5199 I SystemUpdate: [Control,UpdateReminderDialogControl] Received action: android.intent.action.BOOT_COMPLETED
+10-15 12:42:47.339  1303  4692 I Wear_Controller: Wearable module requires a companion app to be installed.
+10-15 12:42:47.341  1303  4692 I Wear_Controller: onStartup - Wear is not available on this device.
+10-15 12:42:47.363  1054  4182 W SystemServiceRegistry: No service published for: contexthub
+10-15 12:42:47.370  1054  3199 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService started execution. cause:5 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-15 12:42:47.372  1054  3199 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService finished executing. cause:5 result: 1 elapsed_millis: 112 uptime_millis: 112 exec_start_elapsed_seconds: 119 [CONTEXT service_id=218 ]
+10-15 12:42:47.384  1303  5204 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 1 attempt count: 1.
+10-15 12:42:47.396  5129  5190 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

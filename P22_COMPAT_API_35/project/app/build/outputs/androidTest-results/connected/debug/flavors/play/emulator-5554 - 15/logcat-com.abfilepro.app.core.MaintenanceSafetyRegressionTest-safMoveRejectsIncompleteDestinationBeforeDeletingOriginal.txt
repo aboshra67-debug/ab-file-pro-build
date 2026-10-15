@@ -1,0 +1,7 @@
+10-15 12:42:34.783  3866  3912 I TestRunner: started: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:34.796  1455  2634 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:34.822  4047  4047 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:42:34.840   357   357 I netd    : tetherGetStats() -> {[]} <0.28ms>
+10-15 12:42:34.848  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 12:42:34.888   357   357 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+10-15 12:42:35.089  3866  3912 I TestRunner: finished: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

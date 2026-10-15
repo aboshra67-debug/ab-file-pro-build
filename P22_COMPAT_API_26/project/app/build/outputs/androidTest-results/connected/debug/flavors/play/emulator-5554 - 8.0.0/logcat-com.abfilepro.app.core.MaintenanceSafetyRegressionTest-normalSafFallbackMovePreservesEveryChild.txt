@@ -1,0 +1,4 @@
+10-15 12:42:45.666  5060  5079 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:45.679  5123  5123 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:42:45.771  2185  5121 I GmscoreIpa: how are you::
+10-15 12:42:45.880  5060  5079 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

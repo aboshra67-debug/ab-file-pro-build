@@ -1,0 +1,7 @@
+10-15 12:42:44.608  5129  5190 I TestRunner: started: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 12:42:44.611  1303  4692 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+10-15 12:42:44.615  1054  4119 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+10-15 12:42:44.616  1054  4966 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+10-15 12:42:44.622  1303  4692 V Backup  : [AccountChangedIO] currentDestinationString: null
+10-15 12:42:44.633  1303  4692 I Backup  : [TargetEnabler] Setting target components to enabled = false
+10-15 12:42:44.633  5129  5190 I TestRunner: finished: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

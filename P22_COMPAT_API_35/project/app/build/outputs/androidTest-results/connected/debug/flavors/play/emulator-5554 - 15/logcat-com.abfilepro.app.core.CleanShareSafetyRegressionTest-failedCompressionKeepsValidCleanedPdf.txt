@@ -1,0 +1,63 @@
+10-15 12:42:20.761  3866  3912 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:20.903  1501  3885 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@1de51e1
+10-15 12:42:20.975  1501  3787 I NotificationsModuleTask: Registered accounts to Chime successfully. registration reason = REGISTRATION_ID_CHANGED [CONTEXT service_id=358 ]
+10-15 12:42:20.979  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService finished executing. cause:5 result: 1 elapsed_millis: 1067 uptime_millis: 1067 exec_start_elapsed_seconds: 113 [CONTEXT service_id=218 ]
+10-15 12:42:20.981  1501  1501 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+10-15 12:42:20.990   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:20.991   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:20.991   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={10091} in 2ms
+10-15 12:42:21.035  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 12:42:21.036  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+10-15 12:42:21.037  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 12:42:21.038  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 12:42:21.038  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 12:42:21.039  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 12:42:21.041  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 12:42:21.042  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 12:42:21.043  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 12:42:21.043  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 12:42:21.043  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 12:42:21.043  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 12:42:21.044  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 12:42:21.044  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 12:42:21.044  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 12:42:21.045  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 12:42:21.046  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 12:42:21.047  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 12:42:21.048  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 12:42:21.100  3866  3958 D nativeloader: Load libpdfclient.so using APEX ns com_android_mediaprovider for caller /apex/com.android.mediaprovider/javalib/framework-pdf.jar: ok
+10-15 12:42:21.115  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService started execution. cause:5 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.122  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService finished executing. cause:5 result: 1 elapsed_millis: 25 uptime_millis: 25 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.132   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:21.134   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:21.134   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={10205} in 2ms
+10-15 12:42:21.136   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:21.137   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:21.137   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={20205} in 3ms
+10-15 12:42:21.167  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.183  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 25 uptime_millis: 25 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.219  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.233  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 22 uptime_millis: 22 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.285  3866  3958 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:21.296   556  1023 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+10-15 12:42:21.301   556   556 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+10-15 12:42:21.304  3866  3958 D pdf_document_jni: Deleting Document: 0x72847e506f50
+10-15 12:42:21.304  3866  3958 D pdf_document_jni: Destroyed Document: 0x72847e506f50
+10-15 12:42:21.313  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.314   357   357 I netd    : tetherGetStats() -> {[]} <0.29ms>
+10-15 12:42:21.316   556  1023 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+10-15 12:42:21.319   556  1023 I RemoteProvisionSysSvc: Fetching key 10144 for client 169916288
+10-15 12:42:21.319   556  1023 I RegistrationProxy: getKeyAsync operation started with callback 81220025
+10-15 12:42:21.320  2918  2960 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10144, callback: 182885831
+10-15 12:42:21.321  2918  2960 I RkpdRegistrationBinder: Key successfully assigned to client
+10-15 12:42:21.323   556   556 I RemoteProvisionSysSvc: Successfully fetched key for client 169916288
+10-15 12:42:21.334  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 63 uptime_millis: 63 exec_start_elapsed_seconds: 114 [CONTEXT service_id=218 ]
+10-15 12:42:21.339   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 148: Using TAG_CERTIFICATE_NOT_BEFORE: 0
+10-15 12:42:21.339   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 154: Using TAG_CERTIFICATE_NOT_AFTER: 2461449600000
+10-15 12:42:21.340   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 159: Got certificate date params:  NotBefore = 0, NotAfter = 2461449600000
+10-15 12:42:21.341   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 273: Setting notBefore to 0
+10-15 12:42:21.341   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 282: Setting notAfter to 2461449600
+10-15 12:42:21.345  3866  3912 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:21.346  3866  3912 D pdf_document_jni: Deleting Document: 0x72847e4ead90
+10-15 12:42:21.346  3866  3912 D pdf_document_jni: Destroyed Document: 0x72847e4ead90
+10-15 12:42:21.349  3866  3912 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,4 @@
+10-15 12:42:51.336  5129  5190 I TestRunner: started: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:51.338  2738  2738 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+10-15 12:42:51.342  2738  2738 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():166 maybeFetchAndUpdate: start new task to fetch
+10-15 12:42:51.366  5129  5190 I TestRunner: finished: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

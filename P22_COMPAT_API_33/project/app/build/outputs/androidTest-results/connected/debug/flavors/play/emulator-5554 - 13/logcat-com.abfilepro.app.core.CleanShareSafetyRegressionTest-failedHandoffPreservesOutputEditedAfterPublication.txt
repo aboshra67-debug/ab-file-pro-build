@@ -1,0 +1,4 @@
+10-15 12:42:46.615  5129  5190 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:46.629  1303  3952 D LT_LitBstrpCntrl: Initializing BootstrapController Instance
+10-15 12:42:46.634  1054  1338 W DroidguardProvider: droidguard took a lot of time : 2216 millis [CONTEXT service_id=257 ]
+10-15 12:42:46.655  5129  5190 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

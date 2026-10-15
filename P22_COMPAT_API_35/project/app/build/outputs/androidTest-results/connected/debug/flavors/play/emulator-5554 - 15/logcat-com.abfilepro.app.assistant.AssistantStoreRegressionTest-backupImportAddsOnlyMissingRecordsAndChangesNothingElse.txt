@@ -1,0 +1,4 @@
+10-15 12:42:20.108  3866  3912 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:42:20.109  1220  2487 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 12:42:20.112  1220  2487 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 12:42:20.147  3866  3912 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

@@ -1,0 +1,4 @@
+10-15 12:42:46.035  5060  5079 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:46.083  5060  5148 D ProfileInstaller: Installing profile for com.abfilepro.app.p22mainttrial
+10-15 12:42:46.087  5060  5103 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 12:42:46.094  5060  5079 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,5 @@
+10-15 12:42:47.718  5060  5079 I TestRunner: started: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:42:47.724  2607  2607 I MicroDetector: Keeping mic open: false
+10-15 12:42:47.724  2607  2607 I MicroDetectionWorker: #onError(false)
+10-15 12:42:47.724  2607  2807 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 12:42:47.752  5060  5079 I TestRunner: finished: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,2 @@
+10-15 12:42:52.934  5129  5190 I TestRunner: started: twoSidedCardIsSavedIntoTheScannerFolder(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 12:42:52.968  5129  5190 I TestRunner: finished: twoSidedCardIsSavedIntoTheScannerFolder(com.abfilepro.app.core.ScannerEngineRegressionTest)

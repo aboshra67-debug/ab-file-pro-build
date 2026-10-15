@@ -1,0 +1,21 @@
+10-15 12:42:45.371  5060  5079 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:45.409  2607  2807 W CookieHeaderHelper: Auth token not ready, no auth header set.
+10-15 12:42:45.426  5060  5069 E System  : Uncaught exception thrown by finalizer
+10-15 12:42:45.426  5060  5069 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 12:42:45.426  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 12:42:45.426  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 12:42:45.426  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:42:45.426  5060  5069 E System  : Uncaught exception thrown by finalizer
+10-15 12:42:45.426  5060  5069 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 12:42:45.426  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 12:42:45.426  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 12:42:45.426  5060  5069 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 12:42:45.426  5060  5069 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 12:42:45.456  5060  5079 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

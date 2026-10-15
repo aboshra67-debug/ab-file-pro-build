@@ -1,0 +1,9 @@
+10-15 12:42:45.132  5129  5190 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 12:42:45.151  1303  4692 W BpBinder: Large outgoing transaction of 1056768 bytes, interface descriptor <uncached descriptor>, code 1
+10-15 12:42:45.153   484   687 D RecoverableKeyStoreMgr: Root of trust for recovery agent + 10120 is assigned for the first time to GoogleCloudKeyVaultServiceV1
+10-15 12:42:45.154  1303  4692 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 1056768)
+10-15 12:42:45.156  1054  1054 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+10-15 12:42:45.167  1303  5204 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+10-15 12:42:45.179   484   687 I RecoverableKeyStoreMgr: Updating the certificate with the new serial number 10020
+10-15 12:42:45.181   484   687 D RecoverableKeyStoreMgr: Getting and validating a random endpoint certificate
+10-15 12:42:45.183  5129  5190 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

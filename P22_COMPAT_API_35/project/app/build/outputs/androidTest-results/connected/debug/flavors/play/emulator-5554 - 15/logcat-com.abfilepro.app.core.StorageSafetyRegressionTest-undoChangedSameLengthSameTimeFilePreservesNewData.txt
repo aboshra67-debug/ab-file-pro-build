@@ -1,0 +1,2 @@
+10-15 12:42:36.947  3866  3912 I TestRunner: started: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 12:42:36.959  3866  3912 I TestRunner: finished: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)

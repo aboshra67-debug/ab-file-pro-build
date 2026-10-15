@@ -1,0 +1,16 @@
+{
+  "debug": {
+    "launch_status": "ok",
+    "target_ui_visible": true,
+    "target_crash": false,
+    "package": "com.abfilepro.app.p22mainttrial",
+    "apk_sha256": "9520c9d28e406750cf3e589ae71464218d9c1a8c3839e55b9195b24c563d8edf"
+  },
+  "qa": {
+    "launch_status": "ok",
+    "target_ui_visible": true,
+    "target_crash": false,
+    "package": "com.abfilepro.app.p22qa",
+    "apk_sha256": "001f74e409d1a6f41534ef6e6d02ac48b779c4a9d1277f288be18ae45112805d"
+  }
+}

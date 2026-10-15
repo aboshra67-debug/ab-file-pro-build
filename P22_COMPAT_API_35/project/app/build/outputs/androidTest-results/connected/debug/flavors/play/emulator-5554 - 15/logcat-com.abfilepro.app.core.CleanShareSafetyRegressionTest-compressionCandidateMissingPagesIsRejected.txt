@@ -1,0 +1,19 @@
+10-15 12:42:21.865  3866  3912 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:21.880  1220  2782 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.mdi.sync#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 12:42:21.906  1220  2782 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 12:42:21.914  1220  2490 W CCTFlatFileLogStore: Excessive logging: 256 events, 253959 bytes from log source PHENOTYPE last 31s
+10-15 12:42:21.937  1455  2634 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:21.946  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+10-15 12:42:21.980  3866  3959 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 12:42:21.981  1220  3917 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 12:42:21.982  3866  3959 D pdf_document_jni: Deleting Document: 0x72847e4ed250
+10-15 12:42:21.982  3866  3959 D pdf_document_jni: Destroyed Document: 0x72847e4ed250
+10-15 12:42:21.992  3866  3959 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 12:42:21.997  1220  2784 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 61 uptime_millis: 61 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+10-15 12:42:21.998  3866  3959 D pdf_document_jni: Deleting Document: 0x72847e4e9190
+10-15 12:42:21.998  3866  3959 D pdf_document_jni: Destroyed Document: 0x72847e4e9190
+10-15 12:42:22.001  1455  2497 W SearchServiceCore: Abort, client detached.
+10-15 12:42:22.008  3866  3912 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 12:42:22.009  3866  3912 D pdf_document_jni: Deleting Document: 0x72847e4eb650
+10-15 12:42:22.010  3866  3912 D pdf_document_jni: Destroyed Document: 0x72847e4eb650
+10-15 12:42:22.015  3866  3912 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,74 @@
+10-15 12:42:29.213  3866  3912 I TestRunner: started: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:29.220  3768  3772 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification artd has clients: 0
+10-15 12:42:29.220  3768  3772 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+10-15 12:42:29.228  1578  4025 D TrafficStats: tagSocket(97) with statsTag=0xffffff01, statsUid=10135
+10-15 12:42:29.238  3768  3772 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+10-15 12:42:29.259  1346  1346 I DownloadManager: DownloadManager.startDownload():484 start download of __KLP_delight__en-840
+10-15 12:42:29.286   357  4027 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 12:42:29.287   357  4028 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:42:29.287   357  4028 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73147c0d6690
+10-15 12:42:29.287   357  4028 I resolv  : doQuery: rcode=0, ancount=1, return value=59
+10-15 12:42:29.287   357  4029 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:42:29.289   556  1890 D ConnectivityService: requestNetwork for uid/pid:10152/1346 activeRequest: null callbackRequest: 134 [NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 12:42:29.311   357  4029 I resolv  : res_nsend: used send_dg 47 terrno: 0
+10-15 12:42:29.311   357  4029 I resolv  : doQuery: rcode=0, ancount=1, return value=47
+10-15 12:42:29.317   556   826 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 12:42:29.317   556   826 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 12:42:29.318   556   826 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 12:42:29.318   556   826 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 12:42:29.319   556   833 D ConnectivityService: NetReassign [135 : null → 100] [c 0] [a 0] [i 2]
+10-15 12:42:29.323  1220  1224 I .gms.persistent: Background concurrent mark compact GC freed 17MB AllocSpace bytes, 14(448KB) LOS objects, 50% free, 19MB/39MB, paused 3.875ms,6.057ms total 519.642ms
+10-15 12:42:29.335  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 12:42:29.336  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 12:42:29.342  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 12:42:29.343  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 12:42:29.343  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 12:42:29.344  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 12:42:29.345  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 12:42:29.346  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 12:42:29.346  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 12:42:29.346  1220  1226 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 12:42:29.353  1220  3925 W CCTFlatFileLogStore: Excessive logging: 256 events, 116959 bytes from log source PHENOTYPE last 26s
+10-15 12:42:29.356  1578  4032 D DownloadManager: [7] Starting
+10-15 12:42:29.373  1346  1765 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():469 Get empty configurations.
+10-15 12:42:29.386  1346  1738 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=false, fetchStatus=2026-10-15 12:42:28{reason=BROADCAST, isFullFetch=false, isEmpty=true, registeredFormFactor=phone, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=0, deletedFlagsCount=0, totalTime=615}
+10-15 12:42:29.395  1578  4025 D DownloadManager: [6] Finished with status SUCCESS
+10-15 12:42:29.397  1578  4016 D DownloadManager: [5] Finished with status SUCCESS
+10-15 12:42:29.397  1578  4032 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10135
+10-15 12:42:29.445  1346  1346 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-15 12:42:29.451  1578  1578 W JobService: onNetworkChanged() not implemented in com.android.providers.downloads.DownloadJobService. Must override in a subclass.
+10-15 12:42:29.500  3615  3686 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]>Handler" thread_id=65 ]
+10-15 12:42:29.504  3615  3662 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=54 ]
+10-15 12:42:29.561  3615  3686 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=65 ]
+10-15 12:42:29.567  3866  3961 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:29.592  1220  2572 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-15 12:42:29.625  1220  2572 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-15 12:42:29.671  1578  4032 D DownloadManager: [7] Finished with status SUCCESS
+10-15 12:42:29.700  1346  1625 I SP      : Successfully got manifest for transformer_concept-manifest: manifests:transformer_concept-2023011913
+10-15 12:42:29.719  1578  4034 D DownloadManager: [8] Starting
+10-15 12:42:29.760  1346  1625 I SP      : Successfully got manifest for emoji-manifest: manifests:emoji-2024051320
+10-15 12:42:29.785  1578  4034 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10135
+10-15 12:42:29.825  1455  2608 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.googlequicksearchbox
+10-15 12:42:29.864  1455  2608 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications#com.google.android.googlequicksearchbox
+10-15 12:42:29.879  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.smartsetup#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:29.897  1578  1587 W d.process.media: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 12:42:29.899  1346  1625 I SP      : Successfully got manifest for dynamic_art-manifest: manifests:dynamic_art-20220108
+10-15 12:42:29.917  1346  1625 I SP      : Successfully got manifest for handwriting_recognition-manifest: manifests:handwriting_recognition-86
+10-15 12:42:29.983  1578  4036 D DownloadManager: [9] Starting
+10-15 12:42:29.995  3021  3025 I d.configupdater: CollectorTransition concurrent mark compact GC freed 288KB AllocSpace bytes, 8(416KB) LOS objects, 49% free, 2306KB/4612KB, paused 43us,9.815ms total 21.578ms
+10-15 12:42:30.008  1578  4036 D TrafficStats: tagSocket(99) with statsTag=0xffffff01, statsUid=10135
+10-15 12:42:30.046  1578  4038 D DownloadManager: [10] Starting
+10-15 12:42:30.049  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.devicelockcontroller
+10-15 12:42:30.052  1346  1765 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks$2.apply():184 syncPackMapping()
+10-15 12:42:30.053  1346  1625 I SP      : Syncing transformer_concept (2023011913) with slices: [2023011913_en], metadata: false
+10-15 12:42:30.056  1346  1625 I EmojiSlicingStrategy: EmojiSlicingStrategy.matchEnabledLocalesWithPackLocales():129 matchEnabledLocalesWithPackLocales() : User enabled 1 locales; returning 1 slices
+10-15 12:42:30.059  1346  1625 I SP      : Syncing emoji (2024051320) with slices: [{2ada3c9a4a17d6bb81b1fe8d51502d60, m:*:*:*}], metadata: false
+10-15 12:42:30.061  1578  4034 D DownloadManager: [8] Finished with status SUCCESS
+10-15 12:42:30.062   357   357 I netd    : tetherGetStats() -> {[]} <0.25ms>
+10-15 12:42:30.064  3866  3961 D pdf_document_jni: Deleting Document: 0x72847e505350
+10-15 12:42:30.065  3866  3961 D pdf_document_jni: Destroyed Document: 0x72847e505350
+10-15 12:42:30.065  3866  3961 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:30.066  3866  3961 D pdf_document_jni: Deleting Document: 0x72847e507f10
+10-15 12:42:30.066  3866  3961 D pdf_document_jni: Destroyed Document: 0x72847e507f10
+10-15 12:42:30.079  1455  2634 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:30.090  3866  3912 I TestRunner: finished: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

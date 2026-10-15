@@ -1,0 +1,3 @@
+10-15 12:42:45.489  5060  5079 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:45.535  2607  2728 W zygote  : Long monitor contention with owner NonUserFacing2 (2706) at boolean android.os.BinderProxy.transactNative(int, android.os.Parcel, android.os.Parcel, int)(Binder.java:-2) waiters=0 in com.google.ap.c.b.a.i com.google.android.apps.gsa.r.c.a.bmD() for 238ms
+10-15 12:42:45.541  5060  5079 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

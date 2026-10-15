@@ -1,0 +1,8 @@
+10-15 12:42:20.165  3866  3912 I TestRunner: started: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 12:42:20.166   357  3954 I resolv  : res_nsend: used send_dg 273 terrno: 0
+10-15 12:42:20.167   357  3954 I resolv  : doQuery: rcode=0, ancount=8, return value=273
+10-15 12:42:20.170   357  3955 I resolv  : res_nsend: used send_dg 177 terrno: 0
+10-15 12:42:20.171   357  3955 I resolv  : doQuery: rcode=0, ancount=8, return value=177
+10-15 12:42:20.174  1501  3885 D TrafficStats: tagSocket(215) with statsTag=0x3c010301, statsUid=-1
+10-15 12:42:20.177  1501  3885 D TrafficStats: tagSocket(215) with statsTag=0x3c010301, statsUid=-1
+10-15 12:42:20.181  3866  3912 I TestRunner: finished: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

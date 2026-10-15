@@ -1,0 +1,6 @@
+10-15 12:42:41.388  5060  5079 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 12:42:41.531  1812  1812 I zygote64: Deoptimizing void com.android.systemui.statusbar.ExpandableView.updateClipping() due to JIT inline cache
+10-15 12:42:41.542  1812  2141 D EGL_emulation: eglMakeCurrent: 0x78946903ce60: ver 3 0 (tinfo 0x789469018920)
+10-15 12:42:41.548  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 12:42:41.552  1812  2141 D EGL_emulation: eglMakeCurrent: 0x78946903ce60: ver 3 0 (tinfo 0x789469018920)
+10-15 12:42:41.642  5060  5079 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

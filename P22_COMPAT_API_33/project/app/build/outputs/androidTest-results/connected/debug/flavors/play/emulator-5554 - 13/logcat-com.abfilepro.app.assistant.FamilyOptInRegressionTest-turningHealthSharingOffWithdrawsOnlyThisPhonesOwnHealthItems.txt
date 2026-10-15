@@ -1,0 +1,5 @@
+10-15 12:42:44.785  5129  5190 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 12:42:44.800  1582  1589 I FuseDaemon: Background young concurrent copying GC freed 22557(1461KB) AllocSpace objects, 32(640KB) LOS objects, 46% free, 2643KB/4971KB, paused 27us,23us total 114.492ms
+10-15 12:42:44.814  4782  4802 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:42:44.815  2981  3177 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@62771bb
+10-15 12:42:44.822  5129  5190 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

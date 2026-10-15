@@ -1,0 +1,3 @@
+10-15 12:42:47.991  5129  5190 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:48.015  1054  3199 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 64 uptime_millis: 64 exec_start_elapsed_seconds: 120 [CONTEXT service_id=218 ]
+10-15 12:42:48.022  5129  5190 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

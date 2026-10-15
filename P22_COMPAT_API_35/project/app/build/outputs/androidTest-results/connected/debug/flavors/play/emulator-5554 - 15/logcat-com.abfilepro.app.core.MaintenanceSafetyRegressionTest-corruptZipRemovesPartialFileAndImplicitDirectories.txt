@@ -1,0 +1,24 @@
+10-15 12:42:32.128  3866  3912 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:32.169   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 12:42:32.175   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 12:42:32.176   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 12:42:32.177   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 12:42:32.178   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 12:42:32.179   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 12:42:32.180   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 12:42:32.180   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 12:42:32.180   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 12:42:32.180   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 12:42:32.181   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 12:42:32.185   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 12:42:32.186   556   570 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 12:42:32.190  1346  1625 I SP      : GC for 'handwriting_recognition' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 12:42:32.190  1346  1625 I SP      : Download stopped: dynamic_art:b1f6f47a53f7820be91b9fe247728980, succeeded, size: 557904
+10-15 12:42:32.193  1346  1734 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$1():204 syncInternal(): syncing packs
+10-15 12:42:32.199  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:32.212  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}
+10-15 12:42:32.235  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.omnient.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:32.236  1346  1625 I SP      : <==== Finishing job {m:b:u:l, bg}, 744 ms. elapsed since start
+10-15 12:42:32.237  1346  1625 I SP      : Download stopped: dynamic_art:305f81355a729e382ea9f374dd286d9f, succeeded, size: 30514
+10-15 12:42:32.259  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:32.286  3866  3912 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

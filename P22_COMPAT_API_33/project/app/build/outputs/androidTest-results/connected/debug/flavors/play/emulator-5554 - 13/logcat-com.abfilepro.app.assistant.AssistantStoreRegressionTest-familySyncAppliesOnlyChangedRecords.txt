@@ -1,0 +1,14 @@
+10-15 12:42:44.421  5129  5190 I TestRunner: started: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:42:44.424   283  5213 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 12:42:44.426  1303  5198 I Ads     : Initialized AdMob in container 23.18.18 (190800-535401451)
+10-15 12:42:44.432  1303  1303 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:44.432  1303  1303 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:44.432   283  5215 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:42:44.433   283  5215 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x792866a510d0
+10-15 12:42:44.433   283  5215 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 12:42:44.435  1303  1303 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:44.436   283  5214 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:42:44.436   283  5214 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x792866a52510
+10-15 12:42:44.437   283  5214 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 12:42:44.437  1303  4974 D TrafficStats: tagSocket(149) with statsTag=0x30004800, statsUid=-1
+10-15 12:42:44.468  5129  5190 I TestRunner: finished: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

@@ -1,0 +1,37 @@
+10-15 12:42:48.027  5129  5190 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:48.034  4782  4797 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 12:42:48.038  1303  5204 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 12:42:48.041  1303  5204 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 12:42:48.041  1303  5204 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 12:42:48.044   484   593 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 12:42:48.047   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:42:48.047   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:42:48.050   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:42:48.050   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:42:48.052   763   763 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 12:42:48.060  1303  1325 I PeopleGalProvider: Gal directories started.
+10-15 12:42:48.061  1303  1325 I PeopleGalProvider: Method 1 completed.
+10-15 12:42:48.061  1303  1325 I PeopleGalProvider: Method 1 finished successfully.
+10-15 12:42:48.066  2981  3175 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@62771bb
+10-15 12:42:48.084  1054  5286 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 12:42:48.091   763   816 D EGL_emulation: app_time_stats: avg=1107.09ms min=778.31ms max=1435.87ms count=2
+10-15 12:42:48.098  1054  4966 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 12:42:48.148   484   582 I RoleService: Granting default roles...
+10-15 12:42:48.156  3758  5327 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 12:42:48.180   986   986 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 12:42:48.181   986   986 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 12:42:48.182   986   986 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 12:42:48.184  4782  4802 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:42:48.258  3823  3839 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 12:42:48.259  3823  3839 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 12:42:48.259  3823  3839 I RemoteProvisioningService: Pool status.
+10-15 12:42:48.259  3823  3839 I RemoteProvisioningService: Total: 6
+10-15 12:42:48.259  3823  3839 I RemoteProvisioningService: Attested: 6
+10-15 12:42:48.259  3823  3839 I RemoteProvisioningService: Unassigned: 5
+10-15 12:42:48.259  3823  3839 I RemoteProvisioningService: Expiring: 0
+10-15 12:42:48.259  3823  3839 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 12:42:48.259  3823  3839 I RemoteProvisioningService: No provisioning needed.
+10-15 12:42:48.290  1303  5204 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 12:42:48.295  1303  5204 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 12:42:48.313  1303  5204 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 121331.
+10-15 12:42:48.340  5129  5190 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

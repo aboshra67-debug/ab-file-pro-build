@@ -1,0 +1,8 @@
+10-15 12:42:35.450  3866  3912 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:35.463  1220  1224 W .gms.persistent: Suspending all threads took: 21.349ms
+10-15 12:42:35.500  3866  3981 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:35.504  1455  2634 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.social.connections#com.google.android.googlequicksearchbox
+10-15 12:42:35.519  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.gsa.pcp.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:35.648  3866  3981 D pdf_document_jni: Deleting Document: 0x72847e505c10
+10-15 12:42:35.649  3866  3981 D pdf_document_jni: Destroyed Document: 0x72847e505c10
+10-15 12:42:35.658  3866  3912 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

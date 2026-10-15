@@ -1,0 +1,9 @@
+10-15 12:42:45.008  5060  5079 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:45.038  5123  5123 I zygote64: Late-enabling -Xcheck:jni
+10-15 12:42:45.059  5123  5123 W zygote64: Unexpected CPU variant for X86 using defaults: x86_64
+10-15 12:42:45.084  5123  5123 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:42:45.099  2607  2706 I GservicesUpdateTask: Updating Gservices keys
+10-15 12:42:45.160  2607  2623 I zygote  : Background concurrent copying GC freed 15171(1000KB) AllocSpace objects, 11(4MB) LOS objects, 50% free, 4MB/8MB, paused 1.733ms total 128.173ms
+10-15 12:42:45.264  2607  2706 I GStaticConfiguration: #getNewConfigurationUrl [pref=2013_10_04_22_22_03, gservice=2018_04_18_16_50_26]
+10-15 12:42:45.308  2607  2716 I zygote  : Deoptimizing com.google.common.collect.dk com.google.common.collect.dk.c(int, java.lang.Object[]) due to JIT inline cache
+10-15 12:42:45.320  5060  5079 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

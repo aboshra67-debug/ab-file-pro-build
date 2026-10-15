@@ -1,0 +1,5 @@
+10-15 12:42:42.206  5060  5079 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:42.258  5060  5065 I zygote64: Do partial code cache collection, code=122KB, data=78KB
+10-15 12:42:42.260  5060  5065 I zygote64: After code cache collection, code=122KB, data=78KB
+10-15 12:42:42.260  5060  5065 I zygote64: Increasing code cache capacity to 512KB
+10-15 12:42:42.414  5060  5079 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

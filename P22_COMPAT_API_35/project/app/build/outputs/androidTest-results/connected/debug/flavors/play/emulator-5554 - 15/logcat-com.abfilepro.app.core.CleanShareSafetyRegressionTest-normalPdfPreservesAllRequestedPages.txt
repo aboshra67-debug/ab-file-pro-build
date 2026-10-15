@@ -1,0 +1,133 @@
+10-15 12:42:23.190  3866  3912 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:23.194  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.205  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.206  1220  3926 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 116 [CONTEXT service_id=218 ]
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.212  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.213  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.213  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.213  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:23.264  1096  1096 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.messaging
+10-15 12:42:23.265  1096  1096 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 12:42:23.270   924  3856 I PermissionControllerServiceImpl: Updating user sensitive for uid 10140
+10-15 12:42:23.274   556   587 I AppBindingService: Stopping: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 12:42:23.275   915   915 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 12:42:23.277  3615  3615 I CarrierServices: SystemBindingService onDestroy
+10-15 12:42:23.281  1170  1203 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.apps.messaging]
+10-15 12:42:23.282  3615  3615 I CarrierServices: SystemBindingService onCreate
+10-15 12:42:23.284  1387  1387 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.messaging.
+10-15 12:42:23.287  1387  2170 I AiAiEcho: AppIndexer Package:[com.google.android.apps.messaging] UserProfile:[0] Enabled:[true].
+10-15 12:42:23.298  1387  2170 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.messaging], userId:[0], reason:[package is updated.].
+10-15 12:42:23.300   556  1299 D ConnectivityService: requestNetwork for uid/pid:10140/3615 activeRequest: null callbackRequest: 128 [NetworkRequest [ TRACK_DEFAULT id=129, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10140 RequestorUid: 10140 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ], NetworkRequest [ REQUEST id=130, [ Transports: SATELLITE Capabilities: INTERNET&TRUSTED&NOT_VCN_MANAGED Uid: 10140 RequestorUid: 10140 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 12:42:23.302   556   833 D ConnectivityService: NetReassign [129 : null → 100] [c 0] [a 0] [i 1]
+10-15 12:42:23.302  1096  1096 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 12:42:23.308  1170  1170 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+10-15 12:42:23.314   556   587 I AppBindingService: Connected: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 12:42:23.314   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 12:42:23.314   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 12:42:23.346  1096  1096 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 12:42:23.348   556   667 I RoleService: Granting default roles...
+10-15 12:42:23.363  1170  1718 D EGL_emulation: app_time_stats: avg=1847.75ms min=64.80ms max=6451.04ms count=4
+10-15 12:42:23.389  1220  3935 I PlatformConfigurator: updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+10-15 12:42:23.392  1096  1616 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.messaging
+10-15 12:42:23.395   556  1057 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 12:42:23.406   556  1057 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 12:42:23.413  3866  3958 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 12:42:23.436   556  1057 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 12:42:23.440  1170  1176 I s.nexuslauncher: Background concurrent mark compact GC freed 4008KB AllocSpace bytes, 42(2204KB) LOS objects, 49% free, 6269KB/12MB, paused 275us,1.080ms total 121.611ms
+10-15 12:42:23.443   556   876 E system_server: No package ID 7f found for resource ID 0x7f0803ff.
+10-15 12:42:23.443   556   876 E system_server: No package ID 7f found for resource ID 0x7f1510ad.
+10-15 12:42:23.443   556   876 E system_server: No package ID 7f found for resource ID 0x7f1510ad.
+10-15 12:42:23.443   556   876 E system_server: No package ID 7f found for resource ID 0x7f1510ac.
+10-15 12:42:23.445  3615  3660 I CarrierServices: SystemBindingService: Starting JibeService
+10-15 12:42:23.450  1220  2522 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 218 uptime_millis: 218 exec_start_elapsed_seconds: 116 [CONTEXT service_id=218 ]
+10-15 12:42:23.453  3615  3660 I BugleRcsEngine: Broadcasting provisioning intent rcs.intent.action.rcsSystemBinding to Bugle with extras redacted-pii:[null] from source SYSTEM_BINDING_SERVICE [CONTEXT log_prefix="EngineBroadcaster" thread_id=52 ]
+10-15 12:42:23.456  1455  1813 I A       : (REDACTED) Refusing EXCLUSIVE task %s, it is already pending. Try again in %d seconds.
+10-15 12:42:23.457  1170  1178 W System  : A resource failed to call release.
+10-15 12:42:23.457  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~StUj93D0xvb1lKCipbLP7Q==/com.abfilepro.app.p22mainttrial-z5KsrnD1f-jk_x8ShAk0Fg==/base.apk' with 1 weak references
+10-15 12:42:23.457  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 12:42:23.460  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 12:42:23.462  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk' with 1 weak references
+10-15 12:42:23.464  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+10-15 12:42:23.464  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 12:42:23.464  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIEmulationPixel6/SystemUIEmulationPixel6Overlay.apk' with 1 weak references
+10-15 12:42:23.464  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 12:42:23.465  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 12:42:23.466  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 12:42:23.466  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 12:42:23.466  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+10-15 12:42:23.466  1170  1178 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 12:42:23.472  3285  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@507dae9
+10-15 12:42:23.474  1455  1771 I Ma      : #handleFlagUpdate()
+10-15 12:42:23.474  3285  3396 I BugleTransport: onSystemBound: kicking off updateActiveTransport
+10-15 12:42:23.474  3285  3396 I BugleRcsProvisioning: RcsProvisioningTrigger: System bound to :rcs process. Schedule provisioning.
+10-15 12:42:23.474  3285  3398 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 12:42:23.476  3615  3662 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=54 ]
+10-15 12:42:23.477  3285  3401 W BugleAction: Failed to get msisdn from Bugle
+10-15 12:42:23.478  3285  3396 I BugleRcsProvisioning: scheduleProvisioning using legacy code path
+10-15 12:42:23.480  3285  3401 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 12:42:23.481  3285  3401 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 12:42:23.481  3615  3686 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]>Handler" thread_id=65 ]
+10-15 12:42:23.481  3285  3396 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=53 ]
+10-15 12:42:23.481  3285  3396 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 12:42:23.482  3285  3381 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=49 ]
+10-15 12:42:23.483  3285  3422 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@b5892c1
+10-15 12:42:23.483  3285  3381 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=49 ]
+10-15 12:42:23.485  3285  3401 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 12:42:23.485  3285  3401 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -1, replacing with -1
+10-15 12:42:23.486  3285  3401 W BugleAction: No default number, returning empty msisdn
+10-15 12:42:23.487  3285  3401 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=57 ]
+10-15 12:42:23.487  3285  3381 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 12:42:23.488  3285  3381 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 12:42:23.489  3285  3396 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 12:42:23.489  3615  3686 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=65 ]
+10-15 12:42:23.490  3285  3396 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 12:42:23.492  3285  3396 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 12:42:23.495  3285  3401 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 12:42:23.496  1455  1813 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 12:42:23.498  1455  2497 W SearchServiceCore: Abort, client detached.
+10-15 12:42:23.499  1455  2497 W SearchServiceCore: Abort, client detached.
+10-15 12:42:23.506  1417  1721 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 12:42:23.506  1417  1721 I A       : #handleFlagsUpdate: listeners notified
+10-15 12:42:23.508  1220  2255 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-15 12:42:23.509  3615  3790 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]" thread_id=68 ]
+10-15 12:42:23.510  3285  3387 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 12:42:23.511  3615  3686 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]>Handler" thread_id=65 ]
+10-15 12:42:23.512  1220  2255 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-15 12:42:23.513  3615  3686 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]>Handler" thread_id=65 ]
+10-15 12:42:23.513  3615  3686 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]" thread_id=65 ]
+10-15 12:42:23.516  3615  3686 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]" thread_id=65 ]
+10-15 12:42:23.516  3615  3686 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]>Handler" thread_id=65 ]
+10-15 12:42:23.517  3615  3686 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=65 ]
+10-15 12:42:23.523  1220  1220 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 12:42:23.524   556  1057 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+10-15 12:42:23.526   556  1057 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 12:42:23.536  3615  3665 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=57 ]
+10-15 12:42:23.538  1455  1814 I A       : NGA enabled in interactor.
+10-15 12:42:23.565  1455  2008 I SettingsDataLayer.AE: Set Assistant eligibility status
+10-15 12:42:23.567  1455  2008 I SettingsDataLayer.AE: Set isHotwordOpaEligible
+10-15 12:42:23.571  1501  1995 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 12:42:23.588  1501  1995 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 12:42:23.609  1501  2898 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 12:42:23.616  1455  2497 W SearchServiceCore: Abort, client detached.
+10-15 12:42:23.617  3866  3958 D pdf_document_jni: Deleting Document: 0x72847e4eb650
+10-15 12:42:23.618  3866  3958 D pdf_document_jni: Destroyed Document: 0x72847e4eb650
+10-15 12:42:23.618  3866  3958 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 12:42:23.622  3866  3958 D pdf_document_jni: Deleting Document: 0x72847e4ead90
+10-15 12:42:23.623  3866  3958 D pdf_document_jni: Destroyed Document: 0x72847e4ead90
+10-15 12:42:23.627  1220  3242 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 116 [CONTEXT service_id=218 ]
+10-15 12:42:23.651  3866  3912 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 12:42:23.652  1501  2898 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 12:42:23.652  3866  3912 D pdf_document_jni: Deleting Document: 0x72847e4ed250
+10-15 12:42:23.654  3866  3912 D pdf_document_jni: Destroyed Document: 0x72847e4ed250
+10-15 12:42:23.657  3866  3912 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

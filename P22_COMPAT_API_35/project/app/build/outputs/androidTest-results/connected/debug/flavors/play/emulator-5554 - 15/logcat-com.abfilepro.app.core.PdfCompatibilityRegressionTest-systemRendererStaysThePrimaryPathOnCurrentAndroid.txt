@@ -1,0 +1,5 @@
+10-15 12:42:36.267  3866  3912 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:42:36.294  3866  3912 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 12:42:36.295  3866  3912 D pdf_document_jni: Deleting Document: 0x72847e505c10
+10-15 12:42:36.295  3866  3912 D pdf_document_jni: Destroyed Document: 0x72847e505c10
+10-15 12:42:36.295  3866  3912 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

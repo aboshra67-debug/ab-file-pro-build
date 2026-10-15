@@ -1,0 +1,7 @@
+10-15 12:42:44.491  5129  5190 I TestRunner: started: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 12:42:44.497  1303  5198 D Backup  : [MigrateCleaner] D2D transport was not selected, not selecting cloud transport.
+10-15 12:42:44.506  1303  5198 V Backup  : [G1ModuleInitIntentOperation] BbG1 notifications disabled by flag
+10-15 12:42:44.509  1303  4692 V Backup  : [SettingsModuleInit] onInitRuntimeState
+10-15 12:42:44.509  1303  4692 V Backup  : [NoBackupNotification] Disabled, not scheduling
+10-15 12:42:44.514  1303  4692 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+10-15 12:42:44.514  5129  5190 I TestRunner: finished: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

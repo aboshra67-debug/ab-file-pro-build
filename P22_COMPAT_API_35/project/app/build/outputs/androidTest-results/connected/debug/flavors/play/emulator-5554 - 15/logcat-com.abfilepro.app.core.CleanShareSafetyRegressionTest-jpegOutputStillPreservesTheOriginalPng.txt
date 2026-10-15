@@ -1,0 +1,53 @@
+10-15 12:42:28.969  3866  3912 I TestRunner: started: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:28.972  1346  1361 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024022600_2[2]
+10-15 12:42:28.974  1346  1361 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024022600_2[2]
+10-15 12:42:28.975  1346  1361 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024051500_1[2]
+10-15 12:42:28.976  1346  1361 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024051500_1[2]
+10-15 12:42:29.040   357  4017 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 12:42:29.041   357  4018 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:42:29.042   357  4018 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73147c0d5b50
+10-15 12:42:29.042   357  4018 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 12:42:29.042   357  4019 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:42:29.042   357  4019 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73147c0d5250
+10-15 12:42:29.042   357  4019 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 12:42:29.048  3021  3472 I ConfigUpdater: Update started
+10-15 12:42:29.062  1578  4016 D DownloadManager: [5] Starting
+10-15 12:42:29.071  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}
+10-15 12:42:29.072  1346  1625 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoji.registerManifest() cancelled
+10-15 12:42:29.072  1346  1625 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/emoji/20240513200046/superpacks_manifest.zip to emoji-2024051320.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:29.072  1346  1625 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 12:42:29.072  1346  1625 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 12:42:29.073  1346  1764 I SpeechPackManager: SpeechPackManager.lambda$registerManifest$4():483 registerManifest() : Fetching hash 1327534105
+10-15 12:42:29.091  1346  1738 E HandwritingSuperpacksUtil: HandwritingSuperpacksUtil.getPackMappingPackName():40 No pack mapping pack found in []
+10-15 12:42:29.091  1346  1738 I HandwritingSuperpacks: HandwritingSuperpacks.lambda$reloadCache$0():237 updatePackMappingsCache(): pack mapping pack unavailable [ONLINE]
+10-15 12:42:29.092  1346  1734 E HandwritingSuperpacksUtil: HandwritingSuperpacksUtil.getPackMappingPackName():40 No pack mapping pack found in []
+10-15 12:42:29.092  1346  1734 I HandwritingSuperpacks: HandwritingSuperpacks.lambda$reloadCache$0():237 updatePackMappingsCache(): pack mapping pack unavailable [OFFLINE]
+10-15 12:42:29.092  1346  1625 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: -1
+10-15 12:42:29.093  1346  1625 I SP      : Registering transformer_concept.2023011913, url: https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json, constraints: *:*:*:*, flags: *, requested: 2023011913, current: -1
+10-15 12:42:29.093  1346  1625 I SP      : Registering dynamic_art.20220108, url: https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json, constraints: *:*:*:*, flags: *, requested: 20220108, current: -1
+10-15 12:42:29.093  1346  1625 I SP      : Registering handwriting_recognition.86, url: https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json, constraints: m:*:*:*, flags: fg, requested: 86, current: -1
+10-15 12:42:29.093  1346  1625 I SP      : Registering handwriting_recognition.86, url: https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json, constraints: m:*:*:*, flags: fg, requested: 86, current: -1
+10-15 12:42:29.115  1455  2626 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:29.121  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:29.128  1346  1764 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_manifest_delight__en-840 with size 467
+10-15 12:42:29.136   357  4021 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10095 0}
+10-15 12:42:29.137   357  4022 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:42:29.137   357  4022 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73147c0d5b50
+10-15 12:42:29.137   357  4022 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 12:42:29.137   357  4023 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:42:29.137   357  4023 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73147c0d5250
+10-15 12:42:29.137   357  4023 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 12:42:29.139  1578  4016 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10135
+10-15 12:42:29.144  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}
+10-15 12:42:29.169  1346  1625 I SP      : Registering gboard-small-speech-packs.1327534105, url: https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json, constraints: m:b:*:*, flags: *, requested: 1327534105, current: 758538843
+10-15 12:42:29.172  1346  1786 I DownloadManager: DownloadManager.downloadInternal():390 Download for __KLP_delight__en-840 scheduled with params DownloadParams{allowMetered=true, requireCharging=false, foreground=true, immediately=false, priority=500}
+10-15 12:42:29.181  3021  3472 I ConfigUpdater: Update started
+10-15 12:42:29.183  1346  1765 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():38 onFailure(): handwriting_recognition.sync cancelled; expected if new request supersedes pending one.
+10-15 12:42:29.193  1346  1625 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 12:42:29.193  1346  1625 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json to transformer_concept-2023011913.fetched (constraints: m:b:u:l)
+10-15 12:42:29.195  1578  4025 D DownloadManager: [6] Starting
+10-15 12:42:29.196  1346  1625 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json to dynamic_art-20220108.fetched (constraints: m:b:u:l)
+10-15 12:42:29.202  1346  1625 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 handwriting_recognition.registerManifest() cancelled
+10-15 12:42:29.203  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json to handwriting_recognition-86.fetched (constraints: m:b:u:l)
+10-15 12:42:29.209  1346  1625 I SP      : Requesting download of URL https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json to gboard-small-speech-packs-1327534105.fetched (constraints: m:b:u:l)
+10-15 12:42:29.212  3866  3912 I TestRunner: finished: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

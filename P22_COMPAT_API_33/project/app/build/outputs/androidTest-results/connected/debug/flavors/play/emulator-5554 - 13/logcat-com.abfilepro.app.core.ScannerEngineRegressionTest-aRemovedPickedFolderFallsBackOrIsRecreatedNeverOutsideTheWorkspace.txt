@@ -1,0 +1,2 @@
+10-15 12:42:52.976  5129  5190 I TestRunner: started: aRemovedPickedFolderFallsBackOrIsRecreatedNeverOutsideTheWorkspace(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 12:42:52.989  5129  5190 I TestRunner: finished: aRemovedPickedFolderFallsBackOrIsRecreatedNeverOutsideTheWorkspace(com.abfilepro.app.core.ScannerEngineRegressionTest)

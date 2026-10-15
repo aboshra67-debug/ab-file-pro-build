@@ -1,0 +1,44 @@
+10-15 12:42:47.504  5129  5190 I TestRunner: started: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:47.508  1054  5252 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+10-15 12:42:47.515  1054  3663 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+10-15 12:42:47.515  1054  3663 D BluetoothAdapter: isLeEnabled(): ON
+10-15 12:42:47.517   955   967 D BtGatt.GattService: stopScan() - queue size =2
+10-15 12:42:47.521  1054  5208 I SemanticLocation: [MDD] ModelBundleMetadata: File not found [CONTEXT service_id=173 ]
+10-15 12:42:47.521  1054  5208 I SemanticLocation: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:714)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at bzxt.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at bzxd.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at cadb.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 12:42:47.521  1054  5208 I SemanticLocation: 	... 14 more
+10-15 12:42:47.524   955   967 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 12:42:47.525   955  1275 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10120]]
+10-15 12:42:47.525   955  1275 D BtGatt.ScanManager: stop gattClientScanNative
+10-15 12:42:47.540   955   967 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 12:42:47.554   955  1275 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-15 12:42:47.554   283  5316 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 12:42:47.555   283  5318 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:42:47.555   283  5317 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:42:47.555   283  5317 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7928a6a58a90
+10-15 12:42:47.555   283  5317 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-15 12:42:47.559   283  5318 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x792896a50110
+10-15 12:42:47.560   283  5318 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-15 12:42:47.560  1303  5204 D TrafficStats: tagSocket(150) with statsTag=0x30000408, statsUid=-1
+10-15 12:42:47.563  5129  5190 I TestRunner: finished: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,8 @@
+10-15 12:42:26.151  3866  3912 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:26.171  1455  1696 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 12:42:26.178  3866  3967 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 12:42:26.181  3866  3967 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 12:42:26.196  3285  3387 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 12:42:26.197  3615  3686 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]>Handler" thread_id=65 ]
+10-15 12:42:26.202  3615  3686 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[e06f6e2b-8940]>Handler" thread_id=65 ]
+10-15 12:42:26.211  3866  3912 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

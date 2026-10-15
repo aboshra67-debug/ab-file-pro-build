@@ -1,0 +1,38 @@
+10-15 12:42:44.635  5129  5190 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 12:42:44.640  1303  4692 I Backup  : [TargetEnabler] Enabling D2dMigrateHelperService on non-Pixel on P+
+10-15 12:42:44.643  1303  4692 I Backup  : [SourceEnabler] Setting source components to enabled = true
+10-15 12:42:44.643  1303  4692 V Backup  : [MigrateUtil] Using O+ select transport api
+10-15 12:42:44.664  1303  4692 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.CloudRestoreFlowActivity' to enabled=true
+10-15 12:42:44.669  1303  4692 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.RestoreSessionV0Service' to enabled=true
+10-15 12:42:44.677  1303  4692 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.D2dMigrateFlowActivity' to enabled=false
+10-15 12:42:44.694   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:42:44.694   955   955 D MediaPlayerList: Name of package changed: com.abfilepro.app.p22mainttrial
+10-15 12:42:44.694   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:42:44.695   955   955 D MediaPlayerList: Name of package changed: com.abfilepro.app.p22mainttrial
+10-15 12:42:44.698   484   593 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 12:42:44.699   763   763 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 12:42:44.701  4782  4797 I PermissionControllerServiceImpl: Updating user sensitive for uid 10174
+10-15 12:42:44.712   986   986 D CarrierSvcBindHelper: onPackageModified: com.abfilepro.app.p22mainttrial
+10-15 12:42:44.712   986   986 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 12:42:44.713   986   986 D ImsResolver: maybeAddedImsService, packageName: com.abfilepro.app.p22mainttrial
+10-15 12:42:44.729  1303  4692 V Backup  : [GmsBackupScheduler] Disabled, not scheduling.
+10-15 12:42:44.730  1303  4692 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 30, event: # dirw@b5357b6b
+10-15 12:42:44.731  4782  4797 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: EXCLUSIVE background task SEND_GSA_HOME_REQUEST was cancelled.
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 12:42:44.739  1714  2420 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 12:42:44.763   955   955 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 12:42:44.763   955   955 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 12:42:44.764  5129  5190 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

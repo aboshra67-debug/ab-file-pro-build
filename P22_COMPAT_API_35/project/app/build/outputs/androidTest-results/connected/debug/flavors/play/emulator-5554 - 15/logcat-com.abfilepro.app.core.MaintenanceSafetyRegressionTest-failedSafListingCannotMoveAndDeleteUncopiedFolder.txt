@@ -1,0 +1,4 @@
+10-15 12:42:32.089  3866  3912 I TestRunner: started: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:32.099  4047  4047 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:42:32.117   556   568 I system_server: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 47(932KB) LOS objects, 45% free, 28MB/52MB, paused 1.958ms,1.255ms total 833.406ms
+10-15 12:42:32.126  3866  3912 I TestRunner: finished: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

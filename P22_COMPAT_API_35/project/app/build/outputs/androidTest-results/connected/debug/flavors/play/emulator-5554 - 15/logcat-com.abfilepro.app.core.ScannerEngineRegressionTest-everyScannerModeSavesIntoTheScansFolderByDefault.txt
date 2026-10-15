@@ -1,0 +1,2 @@
+10-15 12:42:36.510  3866  3912 I TestRunner: started: everyScannerModeSavesIntoTheScansFolderByDefault(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 12:42:36.531  3866  3912 I TestRunner: finished: everyScannerModeSavesIntoTheScansFolderByDefault(com.abfilepro.app.core.ScannerEngineRegressionTest)

@@ -1,0 +1,3 @@
+10-15 12:42:44.585  5060  5079 I TestRunner: started: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:44.615  4663  4741 E FirebaseInstanceId: Token retrieval failed: INVALID_SENDER
+10-15 12:42:44.629  5060  5079 I TestRunner: finished: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,64 @@
+10-15 12:42:32.622  3866  3912 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:32.679  4047  4047 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:42:32.684  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 12:42:32.708  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 12:42:32.719  1346  1346 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 12:42:32.756  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 12:42:32.768  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 2 candidates
+10-15 12:42:32.770  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 2
+10-15 12:42:32.791   357   357 I netd    : tetherGetStats() -> {[]} <0.28ms>
+10-15 12:42:32.805  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}
+10-15 12:42:32.811  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 3 candidates
+10-15 12:42:32.818  3866  3871 I p.p22mainttrial: Background concurrent mark compact GC freed 1996KB AllocSpace bytes, 33(3732KB) LOS objects, 49% free, 5218KB/10MB, paused 8.694ms,8.402ms total 282.919ms
+10-15 12:42:32.821  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 3
+10-15 12:42:32.821  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gsf
+10-15 12:42:32.829  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.tag
+10-15 12:42:32.855  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 3 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 12:42:32.880  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 4 candidates
+10-15 12:42:32.882  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 4
+10-15 12:42:32.903  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 4 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 12:42:32.917  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.nexuslauncher
+10-15 12:42:32.925  1578  4038 D DownloadManager: [10] Finished with status SUCCESS
+10-15 12:42:32.933  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 5 candidates
+10-15 12:42:32.934  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 5
+10-15 12:42:32.945  1455  2608 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.subscriptions#com.google.android.googlequicksearchbox
+10-15 12:42:32.947  3021  3472 I ConfigUpdater: Update downloaded, starting installation
+10-15 12:42:32.951  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 5 scheduled, 6 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}
+10-15 12:42:32.956  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 6 candidates
+10-15 12:42:32.957  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:32.965  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 6
+10-15 12:42:33.017  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 6 scheduled, 7 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip * {m:b:u:l, fg}
+10-15 12:42:33.029   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:33.034  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 7 candidates
+10-15 12:42:33.040   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:33.040   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={10165} in 13ms
+10-15 12:42:33.040  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 7
+10-15 12:42:33.044   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:33.044   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:33.044   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={20165} in 0ms
+10-15 12:42:33.082  1346  1625 I SP      : Scheduling: download registered, 0 started, 0 paused, 7 scheduled, 8 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip * {m:b:u:l, fg}
+10-15 12:42:33.115  1220  1220 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+10-15 12:42:33.145  1346  1625 I SP      : Scheduling: job start ({m:b:u:l, fg}), 7 started, 0 paused, 0 scheduled, 8 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip @ * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip @ * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip @ * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip @ * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ * {m:b:u:l, fg}
+10-15 12:42:33.155  1455  2626 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:33.168  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:33.178  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/transformer.latin.tflite.20231010.zip to transformer_latin_tflite_20231010_zip.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:33.182  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/qrnn.en_us.reco_20231010.fst_20230613.recospec.zip to qrnn_en_us_reco_20231010_fst_20230613_recospec_zip.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:33.187  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/transformer.latin.conf.tflite.20231010.zip to transformer_latin_conf_tflite_20231010_zip.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:33.191  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/transformer.latin.seg.tflite.20231010.zip to transformer_latin_seg_tflite_20231010_zip.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:33.191  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/en_us.20230613.compact.fst.zip to en_us_20230613_compact_fst_zip.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:33.191  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/scribe.latin.20231123.tflite.zip to scribe_latin_20231123_tflite_zip.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:33.191  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/scribe.latin.20231123.recospec.zip to scribe_latin_20231123_recospec_zip.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:33.192  1346  4075 D TrafficStats: tagSocket(171) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:33.224  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.feedback
+10-15 12:42:33.263  1346  1625 I SP      : Sync for dynamic_art succeeded in 3187 ms: {added: [305f81355a729e382ea9f374dd286d9f, b1f6f47a53f7820be91b9fe247728980], metadata: false
+10-15 12:42:33.275  3021  3472 I ConfigUpdater: doneInstall
+10-15 12:42:33.288  1346  1801 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 14367366
+10-15 12:42:33.292  1578  4071 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb.metadata via provider delete
+10-15 12:42:33.310   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:33.312   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:33.312   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={10145} in 3ms
+10-15 12:42:33.313   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:33.313   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:33.313   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={20145} in 1ms
+10-15 12:42:33.317  1346  1625 I SP      : GC for 'dynamic_art' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 12:42:33.416  3866  3912 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

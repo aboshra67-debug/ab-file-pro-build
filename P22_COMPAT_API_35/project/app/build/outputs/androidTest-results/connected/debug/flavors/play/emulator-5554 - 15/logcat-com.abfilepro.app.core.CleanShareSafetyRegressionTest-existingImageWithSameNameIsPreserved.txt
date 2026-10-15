@@ -1,0 +1,4 @@
+10-15 12:42:23.660  3866  3912 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 12:42:23.665  1501  2570 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+10-15 12:42:23.667  1220  2522 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 81 uptime_millis: 81 exec_start_elapsed_seconds: 116 [CONTEXT service_id=218 ]
+10-15 12:42:23.700  3866  3912 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

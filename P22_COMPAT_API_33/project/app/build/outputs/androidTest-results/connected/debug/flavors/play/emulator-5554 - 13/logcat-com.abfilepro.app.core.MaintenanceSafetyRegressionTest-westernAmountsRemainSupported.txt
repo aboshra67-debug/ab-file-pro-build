@@ -1,0 +1,2 @@
+10-15 12:42:52.559  5129  5190 I TestRunner: started: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:52.564  5129  5190 I TestRunner: finished: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

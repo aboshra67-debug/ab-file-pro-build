@@ -1,0 +1,6 @@
+10-15 12:42:36.122  3866  3912 I TestRunner: started: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 12:42:36.191  3866  3981 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 111
+10-15 12:42:36.219  3866  3981 D pdf_document_jni: Deleting Document: 0x72847e505190
+10-15 12:42:36.219  3866  3981 D pdf_document_jni: Destroyed Document: 0x72847e505190
+10-15 12:42:36.248  1346  1786 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 23880436
+10-15 12:42:36.258  3866  3912 I TestRunner: finished: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

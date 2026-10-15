@@ -1,0 +1,112 @@
+10-15 12:42:30.612  3866  3912 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 12:42:30.626  1397  1412 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb
+10-15 12:42:30.627  1397  1412 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+10-15 12:42:30.648   357   357 I netd    : bandwidthSetGlobalAlert(2097152) <9.02ms>
+10-15 12:42:30.654  1346  1625 I SP      : Scheduling: download registered, 1 started, 0 paused, 1 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ * {m:b:u:l, bg}
+10-15 12:42:30.657   556   588 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10210, packageName = null, attributionTag = null, token = android.os.Binder@d0ff9c5, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-15 12:42:30.673   362   362 D Zygote  : Forked child process 4047
+10-15 12:42:30.708  4047  4047 I mainttrial.test: Late-enabling -Xcheck:jni
+10-15 12:42:30.753  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:30.777  4047  4047 I mainttrial.test: Using CollectorTypeCMC GC.
+10-15 12:42:30.779  4047  4047 W mainttrial.test: Unexpected CPU variant for x86: x86_64.
+10-15 12:42:30.779  4047  4047 W mainttrial.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-15 12:42:30.797   447   457 I adbd    : jdwp connection from 4047
+10-15 12:42:30.840  1455  1455 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.assistant_suw.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:30.856  4047  4047 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-15 12:42:30.965  1346  1625 I SP      : Scheduling: download registered, 1 started, 0 paused, 1 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ * {m:b:u:l, bg}
+10-15 12:42:30.966  1346  1625 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():44 getSlices(): handwriting_recognition.86 useForeground=true
+10-15 12:42:30.976  1346  1625 E HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():85 getSlices(): packMapping unavailable for en-US
+10-15 12:42:30.983  1346  1625 E HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():85 getSlices(): packMapping unavailable for en-US-x-gesture
+10-15 12:42:30.986  1346  1625 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():103 getSlices(): result {slices=[{handwriting_recognition:pack_mapping_v1_lstm_20231127, m:*:*:*, fg}], last batch=true, sync metadata=false}
+10-15 12:42:30.987  1346  1625 I SP      : Syncing handwriting_recognition (86) with slices: [{pack_mapping_v1_lstm_20231127, m:*:*:*, fg}], metadata: false
+10-15 12:42:30.988  1346  1625 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/animation.zip to b1f6f47a53f7820be91b9fe247728980.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:30.993  1346  1625 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/fonts.zip to 305f81355a729e382ea9f374dd286d9f.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:31.027  1346  1625 I SP      : Pausing download dynamic_art:b1f6f47a53f7820be91b9fe247728980, reason: PREEMPTED
+10-15 12:42:31.037  1346  1625 I SP      : Pausing download dynamic_art:305f81355a729e382ea9f374dd286d9f, reason: PREEMPTED
+10-15 12:42:31.038  1346  1625 I SP      : Pausing download transformer_concept:2023011913_en, reason: PREEMPTED
+10-15 12:42:31.040  1346  1625 I SP      : Pausing download emoji:2ada3c9a4a17d6bb81b1fe8d51502d60, reason: PREEMPTED
+10-15 12:42:31.043  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 12:42:31.074  1346  1346 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 12:42:31.084  1346  1346 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 12:42:31.096  1346  1625 I SP      : Scheduling: download registered, 0 started, 4 paused, 1 scheduled, 6 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 12:42:31.119  1346  1625 I SP      : Scheduling: job start ({m:b:u:l, fg}), 1 started, 4 paused, 0 scheduled, 6 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ * {m:b:u:l, fg}
+10-15 12:42:31.119  1346  1625 I SP      : Download stopped: transformer_concept:2023011913_en, succeeded paused, size: 1493590
+10-15 12:42:31.127   357   357 I netd    : tetherGetStats() -> {[]} <0.37ms>
+10-15 12:42:31.136  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ {m:b:u:l, fg}
+10-15 12:42:31.136  1346  1625 I SP      : Download stopped: emoji:2ada3c9a4a17d6bb81b1fe8d51502d60, succeeded paused, size: 91822
+10-15 12:42:31.148  1455  2626 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox
+10-15 12:42:31.153  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.hsi.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:31.160  4047  4047 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 12:42:31.170  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ {m:b:u:l, fg}
+10-15 12:42:31.172  4047  4047 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~ZSa8xVEvtWt0wFPZJPk0fA==/com.abfilepro.app.p22mainttrial.test-KYA37uGx4R472sykzak-ew==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p22mainttrial.test
+10-15 12:42:31.173  4047  4047 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 12:42:31.173  1346  1625 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/packmapping_release.20231127.pb to pack_mapping_v1_lstm_20231127.fetched (constraints: m:b:u:l)
+10-15 12:42:31.183  4047  4047 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~ZSa8xVEvtWt0wFPZJPk0fA==/com.abfilepro.app.p22mainttrial.test-KYA37uGx4R472sykzak-ew==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p22mainttrial.test
+10-15 12:42:31.185  4047  4047 W ziparchive: Unable to open '/data/app/~~ZSa8xVEvtWt0wFPZJPk0fA==/com.abfilepro.app.p22mainttrial.test-KYA37uGx4R472sykzak-ew==/base.dm': No such file or directory
+10-15 12:42:31.185  4047  4047 W ziparchive: Unable to open '/data/app/~~ZSa8xVEvtWt0wFPZJPk0fA==/com.abfilepro.app.p22mainttrial.test-KYA37uGx4R472sykzak-ew==/base.dm': No such file or directory
+10-15 12:42:31.188   357  4061 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 12:42:31.188   357  4063 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 12:42:31.188   357  4063 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73164c0d8e80
+10-15 12:42:31.188   357  4063 I resolv  : doQuery: rcode=0, ancount=1, return value=47
+10-15 12:42:31.188   357  4062 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 12:42:31.189   357  4062 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x73147c0d6690
+10-15 12:42:31.189   357  4062 I resolv  : doQuery: rcode=0, ancount=1, return value=59
+10-15 12:42:31.189  1346  4060 D TrafficStats: tagSocket(166) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:31.208  1346  1625 I SP      : Download for dynamic_art:b1f6f47a53f7820be91b9fe247728980 was canceled
+10-15 12:42:31.208  1346  1625 I SP      : Download stopped: dynamic_art:b1f6f47a53f7820be91b9fe247728980, failed (retriable) paused, size: 163840
+10-15 12:42:31.219   556  1908 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 12:42:31.239  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ {m:b:u:l, fg}
+10-15 12:42:31.239  1346  1625 I SP      : Download for dynamic_art:305f81355a729e382ea9f374dd286d9f was canceled
+10-15 12:42:31.239  1346  1625 I SP      : <==== Finishing job {m:b:u:l, bg}, 1110 ms. elapsed since start
+10-15 12:42:31.240  1346  1625 I SP      : Download stopped: dynamic_art:305f81355a729e382ea9f374dd286d9f, failed (retriable) paused, size: 0
+10-15 12:42:31.267  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ {m:b:u:l, fg}
+10-15 12:42:31.271  4047  4047 D nativeloader: Configuring clns-9 for other apk /data/app/~~ZSa8xVEvtWt0wFPZJPk0fA==/com.abfilepro.app.p22mainttrial.test-KYA37uGx4R472sykzak-ew==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~ZSa8xVEvtWt0wFPZJPk0fA==/com.abfilepro.app.p22mainttrial.test-KYA37uGx4R472sykzak-ew==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p22mainttrial.test
+10-15 12:42:31.272  1346  1786 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 5528198
+10-15 12:42:31.333  1220  2863 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.modulemetadata
+10-15 12:42:31.341  4047  4047 V GraphicsEnvironment: Currently set values for:
+10-15 12:42:31.341  4047  4047 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 12:42:31.341  4047  4047 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 12:42:31.341  4047  4047 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 12:42:31.342  4047  4047 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 12:42:31.366   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 12:42:31.367   556   833 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 12:42:31.367   556   833 D InetDiagMessage: Destroyed live tcp sockets for uids={10205} in 1ms
+10-15 12:42:31.380   556   556 D SdkSandboxManager: Property sdksandbox_next_activity_allowlist is empty.
+10-15 12:42:31.381   556   556 D SdkSandboxManager: Property sdksandbox_next_contentprovider_allowlist is empty.
+10-15 12:42:31.381   556   556 D SdkSandboxManager: Property sdksandbox_activity_allowlist_per_targetSdkVersion is empty.
+10-15 12:42:31.382   556   556 D SdkSandboxManager: Property contentprovider_allowlist_per_targetSdkVersion is empty.
+10-15 12:42:31.382   556   556 D SdkSandboxManager: Property services_allowlist_per_targetSdkVersion is empty.
+10-15 12:42:31.412  4047  4047 I P14Fixture: Granted fixture tree to com.abfilepro.app.p22mainttrial
+10-15 12:42:31.420  1346  1625 I SP      : <==== Finishing job {m:b:u:l, fg}, 336 ms. elapsed since start
+10-15 12:42:31.420  1346  1625 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.finishJob():56 SuperpacksForegroundTaskService.finishJob()
+10-15 12:42:31.432  1455  2608 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 12:42:31.446  1346  1625 I SP      : Download stopped: handwriting_recognition:pack_mapping_v1_lstm_20231127, succeeded foreground, size: 125598
+10-15 12:42:31.452  1346  1625 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 2 candidates
+10-15 12:42:31.470   556  1855 I system_server: IncrementDisableThreadFlip blocked for 5.740ms
+10-15 12:42:31.492  1346  1346 I SpBackgroundTask: SuperpacksBackgroundJobService.onStartJob():26 onStartJob: android.app.job.JobParameters@40686a
+10-15 12:42:31.493  1346  1346 I SP      : ====> Starting job {m:b:u:l, bg}
+10-15 12:42:31.566  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:31.571  1455  1455 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.readaloud#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 12:42:31.633  1346  1625 I SP      : Scheduling: download stopped, 0 started, 0 paused, 3 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 * {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f * {m:b:u:l, bg}
+10-15 12:42:31.687  1346  1625 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 12:42:31.757  1346  1625 I SP      : Scheduling: job start ({m:b:u:l, bg}), 2 started, 0 paused, 1 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ * {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ * {m:b:u:l, bg}
+10-15 12:42:31.812  1346  1625 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/animation.zip to b1f6f47a53f7820be91b9fe247728980.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:31.812  1346  1625 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/fonts.zip to 305f81355a729e382ea9f374dd286d9f.zip.fetched (constraints: m:b:u:l)
+10-15 12:42:31.812  1346  1625 I SP      : Sync for transformer_concept succeeded in 1895 ms: {added: [2023011913_en], metadata: false
+10-15 12:42:31.820  1346  4069 D TrafficStats: tagSocket(167) with statsTag=0xffffffff, statsUid=-1
+10-15 12:42:31.833  1346  1625 I SP      : Sync for emoji succeeded in 1778 ms: {added: [2ada3c9a4a17d6bb81b1fe8d51502d60], metadata: false
+10-15 12:42:31.843   357   357 I netd    : tetherGetStats() -> {[]} <2.30ms>
+10-15 12:42:31.862  1455  1455 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+10-15 12:42:31.864   357   357 I netd    : bandwidthSetGlobalAlert(2097152) <0.08ms>
+10-15 12:42:31.867  1346  1625 I SP      : GC for 'transformer_concept' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 12:42:31.868  1346  1625 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 12:42:31.870  1455  1463 I earchbox:search: Background concurrent mark compact GC freed 10MB AllocSpace bytes, 41(6308KB) LOS objects, 49% free, 18MB/37MB, paused 252us,1.864ms total 525.104ms
+10-15 12:42:31.900  1346  1778 I EmojiSuperpacksManager: EmojiSuperpacksManager.processPackSet():504 processPackSet() : isBundled = false
+10-15 12:42:31.902  1346  1767 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():71 0 emoji shortcut maps loaded.
+10-15 12:42:31.904  1346  1767 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():82 Finished loading emoji shortcuts
+10-15 12:42:31.908  1346  1625 I SP      : Sync for handwriting_recognition succeeded in 1498 ms: {added: [pack_mapping_v1_lstm_20231127], metadata: false
+10-15 12:42:31.910  1346  1801 I Environment: Environment.isPackageInstalled():234 com.bitstrips.imoji is not installed
+10-15 12:42:31.917   556  1023 D WifiNl80211Manager: Scan result ready event
+10-15 12:42:31.917   556  1023 D WifiNative: Scan result ready event
+10-15 12:42:32.013   556   826 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+10-15 12:42:32.087  3866  3912 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

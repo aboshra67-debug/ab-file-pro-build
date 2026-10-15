@@ -1,0 +1,30 @@
+10-15 12:42:45.456  5129  5190 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 12:42:45.459  1303  1303 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 12:42:45.460  1303  5198 I constellation: [intent_handler] on init with intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+10-15 12:42:45.465  1303  5198 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.dtdi#com.google.android.gms, using defaults.
+10-15 12:42:45.466  1303  5198 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Device Discovery. Flag is disabled. [CONTEXT service_id=312 ]
+10-15 12:42:45.466  1303  5198 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Spatial Orchestration. Flag is disabled. [CONTEXT service_id=312 ]
+10-15 12:42:45.467  1303  5198 I Dtdi    : [DtdiModuleInitIntentOperation] Cannot initialize Media Transfer. Flag is disabled. [CONTEXT service_id=312 ]
+10-15 12:42:45.474  1303  4974 I EnterpriseLoader: [ConditionsChecker] ZT config not present. [CONTEXT service_id=225 ]
+10-15 12:42:45.475  1303  4974 I EsimModuleInit: onHandleIntent action: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=333 ]
+10-15 12:42:45.475  1303  4974 I Fido    : [FidoInitIntentOperation] Initializing Fido module, InitRuntimeState=2
+10-15 12:42:45.480  3823  3839 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 12:42:45.482  3823  3839 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 12:42:45.482  3823  3839 I RemoteProvisioningService: Pool status.
+10-15 12:42:45.482  3823  3839 I RemoteProvisioningService: Total: 6
+10-15 12:42:45.482  3823  3839 I RemoteProvisioningService: Attested: 6
+10-15 12:42:45.482  3823  3839 I RemoteProvisioningService: Unassigned: 5
+10-15 12:42:45.482  3823  3839 I RemoteProvisioningService: Expiring: 0
+10-15 12:42:45.482  3823  3839 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 12:42:45.482  3823  3839 I RemoteProvisioningService: No provisioning needed.
+10-15 12:42:45.508  2641  2641 W binder:2641_4: type=1400 audit(0.0:88): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=269 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:42:45.527  2641  3313 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 12:42:45.537  1303  4974 I GCM-GMS : Scheduling task to register GMS
+10-15 12:42:45.540  2641  3313 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 12:42:45.524  2641  2641 W binder:2641_4: type=1400 audit(0.0:89): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=61 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 12:42:45.544  1303  4974 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+10-15 12:42:45.547  1303  4974 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+10-15 12:42:45.562  1303  4974 I MobileDataHub: Scheduling periodic tasks
+10-15 12:42:45.563  1054  5230 I Herrevad: [316] aqwl.a: updateListenState
+10-15 12:42:45.572  1054  5212 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 138590]
+10-15 12:42:45.583  5129  5190 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

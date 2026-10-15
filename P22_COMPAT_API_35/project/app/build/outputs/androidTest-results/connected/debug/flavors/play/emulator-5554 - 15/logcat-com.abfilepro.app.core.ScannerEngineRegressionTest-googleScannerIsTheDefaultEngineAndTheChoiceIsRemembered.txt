@@ -1,0 +1,2 @@
+10-15 12:42:36.598  3866  3912 I TestRunner: started: googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 12:42:36.604  3866  3912 I TestRunner: finished: googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered(com.abfilepro.app.core.ScannerEngineRegressionTest)
