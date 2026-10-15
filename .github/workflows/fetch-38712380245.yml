@@ -1,0 +1,37 @@
+name: Copy verified artifacts of 38712380245 to a branch
+on:
+  push:
+    branches: ["artifacts/p21f-fetch-20261015"]
+    paths: [".github/workflows/fetch-38712380245.yml"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 38712380245
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Commit artifacts (large files split under GitHub's 100 MB limit)
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          for d in dl/*/; do
+            name=$(basename "$d")
+            mkdir -p "out/$name"
+            cp -a "$d"/. "out/$name/" 2>/dev/null || true
+          done
+          # Evidence folders become one zip each; big binaries are split.
+          for d in out/*EVIDENCE* out/*SERVER*; do [ -d "$d" ] && (cd "$d" && zip -qr -X "../$(basename "$d").zip" . && cd .. && rm -rf "$(basename "$d")"); done
+          find out -type f -size +60M | while read -r f; do sha256sum "$f" | sed "s#  out/#  #" > "$f.FULL_SHA256.txt"; split -b 60m -d "$f" "$f.part"; rm "$f"; done
+          git init -q pub && cd pub
+          git checkout -q -b artifacts/p21f-verified-20261015
+          cp -a ../out/. .
+          git add -A
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -qm "Verified outputs of run 38712380245"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:artifacts/p21f-verified-20261015
