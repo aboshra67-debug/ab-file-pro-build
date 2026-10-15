@@ -1,0 +1,301 @@
+[
+  {
+    "name": "capture3_save_restart",
+    "status": "PASS",
+    "observations": {
+      "review_pages": 3,
+      "pdf_pages": 3,
+      "restart_mode": "BATCH",
+      "stages": [
+        "bounds",
+        "editor",
+        "bounds",
+        "editor",
+        "bounds",
+        "editor"
+      ]
+    },
+    "seconds": 56.33
+  },
+  {
+    "name": "gallery_import3_save",
+    "status": "PASS",
+    "observations": {
+      "review_pages": 3,
+      "pdf_pages": 3
+    },
+    "seconds": 53.22
+  },
+  {
+    "name": "gallery_import10_save",
+    "status": "PASS",
+    "observations": {
+      "review_pages": 10,
+      "pdf_pages": 10,
+      "page_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "seconds": 45.73
+  },
+  {
+    "name": "add_after_review5",
+    "status": "PASS",
+    "observations": {
+      "camera_pages": 6,
+      "pdf_pages": 6,
+      "stages": [
+        "bounds",
+        "editor"
+      ]
+    },
+    "seconds": 115.12
+  },
+  {
+    "name": "batch_retake_replace",
+    "status": "PASS",
+    "observations": {
+      "camera_pages": 2,
+      "pdf_pages": 2,
+      "stages": [
+        "bounds",
+        "editor"
+      ]
+    },
+    "seconds": 54.07
+  },
+  {
+    "name": "batch_bounds_button",
+    "status": "PASS",
+    "observations": {
+      "bounds_opened": true,
+      "pdf_pages": 2
+    },
+    "seconds": 44.86
+  },
+  {
+    "name": "card_missing_back_guard",
+    "status": "PASS",
+    "observations": {
+      "missing_side_prompt": true,
+      "first_side_preserved": true,
+      "completed_pdf_pages": 1
+    },
+    "seconds": 36.69
+  },
+  {
+    "name": "card_two_sides_save",
+    "status": "PASS",
+    "observations": {
+      "captured_sides": 2,
+      "pdf_pages": 1
+    },
+    "seconds": 23.91
+  },
+  {
+    "name": "document_save_pdf",
+    "status": "PASS",
+    "observations": {
+      "pdf_pages": 1,
+      "save_options_available": true
+    },
+    "seconds": 25.16
+  },
+  {
+    "name": "gallery_bounds_retake_keep_pages",
+    "status": "PASS",
+    "observations": {
+      "pdf_pages": 3,
+      "stages": [
+        "bounds",
+        "editor"
+      ]
+    },
+    "seconds": 68.25
+  },
+  {
+    "name": "gallery_add_limit10_retake",
+    "status": "PASS",
+    "observations": {
+      "pdf_pages": 10,
+      "page_order": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "retake_at_capacity": true
+    },
+    "seconds": 134.85
+  },
+  {
+    "name": "gallery_reorder_delete_add",
+    "status": "PASS",
+    "observations": {
+      "pdf_pages": 3,
+      "page_order": [
+        1,
+        3,
+        4
+      ]
+    },
+    "seconds": 97.48
+  },
+  {
+    "name": "gallery_bounds_no_change",
+    "status": "PASS",
+    "observations": {
+      "before_dimensions": [
+        [
+          858,
+          1057
+        ]
+      ],
+      "after_dimensions": [
+        [
+          858,
+          1057
+        ]
+      ],
+      "pdf_pages": 1
+    },
+    "seconds": 51.44
+  },
+  {
+    "name": "batch_crop_cancel_keeps_page",
+    "status": "PASS",
+    "observations": {
+      "cancel_at_destructive_commit": true,
+      "page_recovered": true,
+      "pdf_pages": 1
+    },
+    "seconds": 45.46
+  },
+  {
+    "name": "batch_editor_back_no_recrop",
+    "status": "PASS",
+    "observations": {
+      "before_dimensions": [
+        858,
+        1057
+      ],
+      "after_dimensions": [
+        858,
+        1057
+      ],
+      "edge_drift": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pdf_pages": 1,
+      "page_markers": [
+        1
+      ]
+    },
+    "seconds": 45.53
+  },
+  {
+    "name": "document_review_bounds_no_recrop_twice",
+    "status": "PASS",
+    "observations": {
+      "unchanged_repeats": [
+        {
+          "before_dimensions": [
+            858,
+            1057
+          ],
+          "after_dimensions": [
+            858,
+            1057
+          ],
+          "edge_drift": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "before_dimensions": [
+            858,
+            1057
+          ],
+          "after_dimensions": [
+            858,
+            1057
+          ],
+          "edge_drift": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "pdf_pages": 1,
+      "page_markers": [
+        1
+      ]
+    },
+    "seconds": 54.73
+  },
+  {
+    "name": "card_front_retake_cancel_preserves_sources",
+    "status": "PASS",
+    "observations": {
+      "review_sides": 2,
+      "source_hashes_unchanged": true,
+      "pdf_pages": 1,
+      "image_order": [
+        1,
+        2
+      ]
+    },
+    "seconds": 57.94
+  },
+  {
+    "name": "card_front_retake_preserves_pdf_order",
+    "status": "PASS",
+    "observations": {
+      "review_sides": 2,
+      "untouched_source_preserved": true,
+      "pdf_pages": 1,
+      "image_order": [
+        3,
+        2
+      ]
+    },
+    "seconds": 72.93
+  },
+  {
+    "name": "card_back_retake_preserves_pdf_order",
+    "status": "PASS",
+    "observations": {
+      "review_sides": 2,
+      "untouched_source_preserved": true,
+      "pdf_pages": 1,
+      "image_order": [
+        1,
+        3
+      ]
+    },
+    "seconds": 86.4
+  }
+]
