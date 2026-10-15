@@ -1,0 +1,31 @@
+name: Publish P23 test APKs as a release
+on:
+  push:
+    branches: ["apk/p23-test-20261015"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P23_OUTPUTS
+          run-id: 38775261409
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p23-test-apk-vc175 AB98_P23_PLAY_TEST.apk AB98_P23_PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p23-test-20261015 --prerelease \
+            --title "AB File Pro P23 (VC175) - test APKs (debug-signed)" \
+            --notes "Debug-signed test builds from verified run 38775261409. PLAY_TEST = com.abfilepro.app.p23mainttrial (debug). PLAY_QA_R8 = com.abfilepro.app.p23qa (release code, R8). Both install side by side with older versions."
