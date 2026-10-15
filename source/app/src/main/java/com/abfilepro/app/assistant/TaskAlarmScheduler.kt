@@ -24,7 +24,8 @@ object TaskAlarmScheduler {
 
     fun cancel(context: Context, taskId: String) {
         val alarms = context.getSystemService(AlarmManager::class.java) ?: return
-        pendingIntent(context, taskId, PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
+        // P18: cancel the PendingIntent too, so a cancelled reminder is really gone (not just its alarm).
+        pendingIntent(context, taskId, PendingIntent.FLAG_NO_CREATE)?.let { alarms.cancel(it); it.cancel() }
     }
 
     private fun triggerAt(context: Context, task: AssistantEntry): Long? {
