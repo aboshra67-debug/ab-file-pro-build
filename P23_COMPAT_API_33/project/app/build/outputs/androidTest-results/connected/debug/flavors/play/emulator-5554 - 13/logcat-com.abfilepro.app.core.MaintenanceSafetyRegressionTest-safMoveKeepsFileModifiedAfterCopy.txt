@@ -1,0 +1,5 @@
+10-15 17:24:26.291  4620  4902 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:26.297  5517  5517 I P14Fixture: Granted fixture tree to com.abfilepro.app.p23mainttrial
+10-15 17:24:26.326   285   285 I netd    : tetherGetStats() -> {[]} <0.29ms>
+10-15 17:24:26.330   285   285 I netd    : bandwidthSetGlobalAlert(2097152) <0.05ms>
+10-15 17:24:26.348  4620  4902 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

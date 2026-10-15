@@ -1,0 +1,5 @@
+10-15 17:23:00.892  3700  3801 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:00.897   560   560 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+10-15 17:23:00.928  3700  3833 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 17:23:00.928  1326  1618 I SP      : Download stopped: handwriting_recognition:transformer_latin_conf_tflite_20231010_zip, succeeded foreground, size: 866
+10-15 17:23:00.932  3700  3801 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

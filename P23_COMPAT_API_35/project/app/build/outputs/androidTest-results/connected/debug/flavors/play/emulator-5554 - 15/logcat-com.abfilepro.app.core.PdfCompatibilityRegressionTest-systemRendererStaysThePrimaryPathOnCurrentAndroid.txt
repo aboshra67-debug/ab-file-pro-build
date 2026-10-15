@@ -1,0 +1,7 @@
+10-15 17:23:02.573  3700  3801 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 17:23:02.590  2259  2358 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 17:23:02.601  1639  1647 W d.process.media: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 17:23:02.605  3700  3801 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 110
+10-15 17:23:02.606  3700  3801 D pdf_document_jni: Deleting Document: 0x7df998e49e90
+10-15 17:23:02.606  3700  3801 D pdf_document_jni: Destroyed Document: 0x7df998e49e90
+10-15 17:23:02.606  3700  3801 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

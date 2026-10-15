@@ -1,0 +1,6 @@
+10-15 17:23:01.709  3700  3801 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:01.754  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 110
+10-15 17:23:01.787  1565  1565 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+10-15 17:23:01.858  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e49e90
+10-15 17:23:01.863  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e49e90
+10-15 17:23:01.875  3700  3801 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

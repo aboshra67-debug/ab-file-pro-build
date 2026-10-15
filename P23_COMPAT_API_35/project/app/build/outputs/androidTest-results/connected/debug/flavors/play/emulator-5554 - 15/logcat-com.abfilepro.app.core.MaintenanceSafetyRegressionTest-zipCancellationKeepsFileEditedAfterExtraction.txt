@@ -1,0 +1,6 @@
+10-15 17:22:59.834  3700  3801 I TestRunner: started: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:22:59.851  2259  2358 W DG      : [flow devicekey] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+10-15 17:22:59.937  1326  1752 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 18636800
+10-15 17:22:59.951  1565  1701 I PhenotypeBackgroundRecv: Successfully updated snapshot for profile_primitives_android#com.google.android.googlequicksearchbox
+10-15 17:22:59.976  1216  1216 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 17:22:59.985  3700  3801 I TestRunner: finished: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

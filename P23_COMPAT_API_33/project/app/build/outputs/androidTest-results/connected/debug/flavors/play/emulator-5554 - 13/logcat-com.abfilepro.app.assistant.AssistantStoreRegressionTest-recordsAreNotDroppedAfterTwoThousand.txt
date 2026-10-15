@@ -1,0 +1,36 @@
+10-15 17:24:05.648  4620  4902 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gm#com.google.android.gm_Hub failed
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at ogi.v(PG:7)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at qgi.a(PG:2)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at qgi.j(PG:2)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at qgi.h(Unknown Source:4)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at gdz.run(PG:7)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:05.649  4799  4863 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:05.663  1328  3166 E SQLiteLog: (1) no such table: Alarm_cross_device_com.google.android.deskclock_seq_table in "SELECT * FROM [Alarm_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT 20"
+10-15 17:24:05.669  1083  1083 D MainContentCaptureSession: Flushing 50 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=TEXT_CHANGE
+10-15 17:24:05.674  1669  1669 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 17:24:05.696  1328  3166 E Icing   : Cursor call threw an exception: no such table: Alarm_cross_device_com.google.android.deskclock_seq_table (code 1 SQLITE_ERROR): , while compiling: SELECT * FROM [Alarm_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT 20
+10-15 17:24:05.704  1328  3166 I Icing   : Indexing done com.google.android.deskclock-internal.3p:Alarm_cross_device
+10-15 17:24:05.704  1328  3166 E Icing   : Aborting indexing of corpus internal.3p:Alarm_cross_device
+10-15 17:24:05.739  1328  3166 I Icing   : Indexing com.google.android.deskclock-internal.3p:Stopwatch_cross_device from com.google.android.deskclock
+10-15 17:24:05.758  1328  3166 E SQLiteLog: (1) no such table: Stopwatch_cross_device_com.google.android.deskclock_seq_table in "SELECT * FROM [Stopwatch_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT
+10-15 17:24:05.782  1328  3166 E Icing   : Cursor call threw an exception: no such table: Stopwatch_cross_device_com.google.android.deskclock_seq_table (code 1 SQLITE_ERROR): , while compiling: SELECT * FROM [Stopwatch_cross_device_com.google.android.deskclock_seq_table] WHERE seqno>0 AND tag IS NULL ORDER BY seqno LIMIT 20
+10-15 17:24:05.847  1328  3166 I Icing   : Indexing done com.google.android.deskclock-internal.3p:Stopwatch_cross_device
+10-15 17:24:05.847  1328  3166 E Icing   : Aborting indexing of corpus internal.3p:Stopwatch_cross_device
+10-15 17:24:05.899   488   499 I system_server: Background young concurrent copying GC freed 500937(18MB) AllocSpace objects, 35(1276KB) LOS objects, 40% free, 26MB/44MB, paused 127us,67us total 291.558ms
+10-15 17:24:05.926  1837  1837 I DialerStatusCheckJobService: com.android.voicemail.impl.StatusCheckJobService.onStartJob:100 attempting to reactivate ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, 1, UserHandle{0} [CONTEXT enable_persistent_logger=true ]
+10-15 17:24:05.936  4620  4641 I p.p23mainttrial: Background concurrent copying GC freed 104350(4272KB) AllocSpace objects, 11(1368KB) LOS objects, 49% free, 5704KB/11MB, paused 150us,67us total 148.428ms
+10-15 17:24:05.954  4799  4864 W DynamiteModule: Local module descriptor class for com.google.android.gms.providerinstaller.dynamite not found.
+10-15 17:24:05.964  3222  3233 I .apps.messaging: JIT allocated 73KB for compiled code of java.lang.Object uwq.k()
+10-15 17:24:05.966  3222  3233 I .apps.messaging: Compiler allocated 5768KB to compile java.lang.Object uwq.k()
+10-15 17:24:06.001  1149  3088 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+10-15 17:24:06.003  4799  4864 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module com.google.android.gms.providerinstaller.dynamite found. Local version is 0 and remote version is 0.
+10-15 17:24:06.043  4799  4864 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 17:24:06.047  4799  4864 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 17:24:06.056  4799  4864 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+10-15 17:24:06.077  4799  4864 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+10-15 17:24:06.098  4799  4864 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-15 17:24:06.103  4620  4902 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

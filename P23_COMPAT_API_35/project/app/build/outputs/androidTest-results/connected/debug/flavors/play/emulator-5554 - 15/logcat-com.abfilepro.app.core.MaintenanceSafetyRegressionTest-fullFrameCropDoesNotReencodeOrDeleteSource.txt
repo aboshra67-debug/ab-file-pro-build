@@ -1,0 +1,6 @@
+10-15 17:23:01.139  3700  3801 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:01.154   358  3992 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 17:23:01.154  2259  2358 D TrafficStats: tagSocket(127) with statsTag=0x1809, statsUid=-1
+10-15 17:23:01.156  2259  2358 D TrafficStats: tagSocket(127) with statsTag=0x1809, statsUid=-1
+10-15 17:23:01.161  2259  2358 D TrafficStats: tagSocket(127) with statsTag=0x1809, statsUid=-1
+10-15 17:23:01.168  3700  3801 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,3 @@
+10-15 17:24:25.953  4620  4902 I TestRunner: started: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:25.960  5517  5517 I P14Fixture: Granted fixture tree to com.abfilepro.app.p23mainttrial
+10-15 17:24:25.974  4620  4902 I TestRunner: finished: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

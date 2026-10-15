@@ -1,0 +1,3 @@
+10-15 17:23:01.898  3700  3801 I TestRunner: started: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:01.983  1565  2243 I NetworkRecognitionRnr: Using pair HTTP connection
+10-15 17:23:01.999  3700  3801 I TestRunner: finished: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,31 @@
+EXECUTING: /usr/local/lib/android/sdk/build-tools/35.0.0/aapt dump badging /home/runner/work/ab-file-pro-build/ab-file-pro-build/checkout/source/app/build/outputs/apk/androidTest/play/debug/app-play-debug-androidTest.apk
+CURRENT_WORKING_DIRECTORY: /home/runner/work/ab-file-pro-build/ab-file-pro-build/checkout/source
+START_TIME: 2026-10-15 17:24:29.505
+START_TIME-NANOS: 2026-10-15 17:24:29.505414948
+ENVIRONMENT:
+
+*****************************************
+STDOUT/STDERR BELOW
+===================
+package: name='com.abfilepro.app.p23mainttrial.test' versionCode='' versionName='' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+sdkVersion:'26'
+targetSdkVersion:'36'
+uses-permission: name='android.permission.REORDER_TASKS'
+application: label='' icon=''
+application-debuggable
+uses-library:'android.test.runner'
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+provides-component:'document-provider'
+other-activities
+other-receivers
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--'
+densities: '160'
+===================
+END_TIME: 2026-10-15 17:24:29.512
+END_TIME-NANOS: 2026-10-15 17:24:29.512834990
+DURATION: 7ms
+EXIT CODE: 0

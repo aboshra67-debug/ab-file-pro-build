@@ -1,0 +1,2 @@
+10-15 17:24:27.473  4620  4902 I TestRunner: started: oneSheetIsOutlinedAtItsCorners(com.abfilepro.app.core.SmartCameraRegressionTest)
+10-15 17:24:27.489  4620  4902 I TestRunner: finished: oneSheetIsOutlinedAtItsCorners(com.abfilepro.app.core.SmartCameraRegressionTest)

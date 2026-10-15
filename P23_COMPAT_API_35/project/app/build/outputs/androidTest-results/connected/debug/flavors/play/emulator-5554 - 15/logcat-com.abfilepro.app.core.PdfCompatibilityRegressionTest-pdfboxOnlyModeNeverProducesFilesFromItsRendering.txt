@@ -1,0 +1,40 @@
+10-15 17:23:02.049  3700  3801 I TestRunner: started: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 17:23:02.135  1565  2403 I A       : [Upload] Connected
+10-15 17:23:02.149  1565  2403 I NetworkRecognitionRnr: Using pair HTTP connection
+10-15 17:23:02.159  1565  1755 W A       : (REDACTED) Failed to get connectivityLock in %d ms
+10-15 17:23:02.160  1565  1565 E A       : onError
+10-15 17:23:02.160  1565  1565 E A       : com.google.android.apps.gsa.shared.speech.b.l: errorCode: 65561, engine: 2
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.staticplugins.bp.a.f.a(PG:23)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.s3.o.hi(PG:13)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.ci.g.a.f.e(PG:9)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:162)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.iO(PG:26)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.s3.p.c(PG:102)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.s3.q.run(PG:1)
+10-15 17:23:02.160  1565  1565 E A       : 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 17:23:02.160  1565  1565 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.e.run(PG:12)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bg.run(PG:3)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.bg.run(PG:3)
+10-15 17:23:02.160  1565  1565 E A       : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 17:23:02.160  1565  1565 E A       : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 17:23:02.160  1565  1565 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.l.run(PG:42)
+10-15 17:23:02.160  1565  1565 E A       : Caused by: com.google.android.apps.gsa.shared.speech.b.n: errorCode: 65586, engine: 2
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.s3.o.hi(PG:6)
+10-15 17:23:02.160  1565  1565 E A       : 	... 14 more
+10-15 17:23:02.160  1565  1565 E A       : Caused by: com.google.android.apps.gsa.shared.speech.b.j: errorCode: 401, engine: 2
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.assistant.shared.n.i.b(PG:30)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.s3.producers.j.hs(PG:11)
+10-15 17:23:02.160  1565  1565 E A       : 	at com.google.android.apps.gsa.speech.k.a.g.d(PG:135)
+10-15 17:23:02.160  1565  1565 E A       : 	... 12 more
+10-15 17:23:02.162  1565  2621 I A       : [Upload] Connected
+10-15 17:23:02.162  1565  1947 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-15 17:23:02.169  1565  1565 W A       : Failed to sync device settings.
+10-15 17:23:02.169  1565  1565 I A       : Retrying to sync device settings.
+10-15 17:23:02.179  1565  1565 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-353' has a deadline with functional constraints and an extremely short time window of 0 ms (delay=60000, deadline=60000). The functional constraints are not likely to be satisfied when the job runs.
+10-15 17:23:02.179   560  1880 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-353' has a deadline with functional constraints and an extremely short time window of 0 ms (delay=60000, deadline=60000). The functional constraints are not likely to be satisfied when the job runs.
+10-15 17:23:02.188   560  1880 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-353' has a deadline with functional constraints and an extremely short time window of 0 ms (delay=60000, deadline=60000). The functional constraints are not likely to be satisfied when the job runs.
+10-15 17:23:02.223   358   407 I netd    : tetherGetStats() -> {[]} <0.88ms>
+10-15 17:23:02.248  3700  3707 W p.p23mainttrial: Suspending all threads took: 31.664ms
+10-15 17:23:02.381  3700  3801 I TestRunner: finished: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

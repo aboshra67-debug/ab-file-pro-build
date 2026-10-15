@@ -1,0 +1,26 @@
+10-15 17:22:50.177  3700  3801 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:50.180  3251  3417 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 17:22:50.184  3251  3417 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 17:22:50.209  3251  3417 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 17:22:50.210  3251  3413 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 17:22:50.214  3251  3413 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=6f60585f-a8f3-426b-8bbf-16c3a3335a97, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 17:22:50.220  3251  3417 W BugleAction: No default number, returning empty msisdn
+10-15 17:22:50.220  3251  3417 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=56 ]
+10-15 17:22:50.221  3251  3415 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 17:22:50.223  3251  3415 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 17:22:50.224  3251  3415 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 17:22:50.224  3251  3415 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 17:22:50.225  3251  3415 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 17:22:50.232  3251  3415 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 17:22:50.240  3590  3742 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]" thread_id=64 ]
+10-15 17:22:50.245  3590  3717 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]>Handler" thread_id=61 ]
+10-15 17:22:50.245  1216  3797 I PTCommittedOperation: Receive new configuration for com.google.android.gms
+10-15 17:22:50.245  1216  3797 I PTCommittedOperation: Running Fixer Framework for com.google.android.gms
+10-15 17:22:50.246  3700  3707 I p.p23mainttrial: Background concurrent mark compact GC freed 1384KB AllocSpace bytes, 40(2920KB) LOS objects, 49% free, 4222KB/8445KB, paused 11.508ms,13.300ms total 104.994ms
+10-15 17:22:50.246  3251  3466 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 17:22:50.247  3590  3717 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]>Handler" thread_id=61 ]
+10-15 17:22:50.248  3590  3717 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]" thread_id=61 ]
+10-15 17:22:50.249  3590  3717 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]" thread_id=61 ]
+10-15 17:22:50.251  3590  3717 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]>Handler" thread_id=61 ]
+10-15 17:22:50.255  3590  3717 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 17:22:50.260  3700  3801 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,5 @@
+10-15 17:22:27.163  4964  4983 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 17:22:27.170  4964  4969 I zygote64: Do partial code cache collection, code=228KB, data=157KB
+10-15 17:22:27.171  4964  4969 I zygote64: After code cache collection, code=228KB, data=157KB
+10-15 17:22:27.171  4964  4969 I zygote64: Increasing code cache capacity to 1024KB
+10-15 17:22:27.177  4964  4983 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

@@ -1,0 +1,5 @@
+10-15 17:23:03.777  3700  3801 I TestRunner: started: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:23:03.802  1565  1701 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:23:03.806  1565  1701 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:23:03.808  1565  1565 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.omnient#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:23:03.815  3700  3801 I TestRunner: finished: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)

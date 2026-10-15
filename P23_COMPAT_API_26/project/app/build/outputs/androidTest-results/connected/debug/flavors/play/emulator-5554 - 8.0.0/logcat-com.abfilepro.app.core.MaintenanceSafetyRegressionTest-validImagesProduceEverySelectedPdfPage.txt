@@ -1,0 +1,13 @@
+10-15 17:22:26.518  4964  4983 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:22:26.579  4964  4969 I zygote64: Do full code cache collection, code=249KB, data=184KB
+10-15 17:22:26.580  4964  4973 E System  : Uncaught exception thrown by finalizer
+10-15 17:22:26.580  4964  4969 I zygote64: After code cache collection, code=218KB, data=132KB
+10-15 17:22:26.580  4964  4973 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 17:22:26.580  4964  4973 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 17:22:26.580  4964  4973 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 17:22:26.580  4964  4973 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 17:22:26.580  4964  4973 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 17:22:26.580  4964  4973 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 17:22:26.580  4964  4973 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 17:22:26.580  4964  4973 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 17:22:26.604  4964  4983 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

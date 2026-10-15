@@ -1,0 +1,31 @@
+10-15 17:24:11.059  4620  4902 I TestRunner: started: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:11.067  1247  1247 D LeAudioProfile: Bluetooth service connected
+10-15 17:24:11.068  1247  1247 D LocalBluetoothLeBroadcastAssistant: Bluetooth service connected
+10-15 17:24:11.068  1247  1247 D BluetoothLeBroadcastAssistant: getConnectedDevices()
+10-15 17:24:11.071  1021  4956 D BassClientService: getConnectedDevices: []
+10-15 17:24:11.073  1247  1247 D CsipSetCoordinatorProfile: Bluetooth service connected
+10-15 17:24:11.120  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController
+10-15 17:24:11.120  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.AddUserWhenLockedPreferenceController
+10-15 17:24:11.121  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.WalletPrivacyPreferenceController
+10-15 17:24:11.122  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsPrivacyPreferenceController
+10-15 17:24:11.122  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsTrivialPrivacyPreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.CustomizableLockScreenQuickAffordancesPreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.LockscreenClockPreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.display.LockscreenWeatherPreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayWhenToShowPreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 17:24:11.123  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayNotificationsPreferenceController
+10-15 17:24:11.123  1247  1324 W PrefControllerMixin: Skipping updateNonIndexableKeys due to empty key com.android.settings.notification.LockScreenNotificationPreferenceController@5ba380
+10-15 17:24:11.153  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController@7d5cdb9
+10-15 17:24:11.172  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.projection.gearhead
+10-15 17:24:11.176  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:11.180  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.settings.intelligence
+10-15 17:24:11.184  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.projection.gearhead
+10-15 17:24:11.199  4620  5197 D ProfileInstaller: Installing profile for com.abfilepro.app.p23mainttrial
+10-15 17:24:11.215  1247  1324 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 17:24:11.217  1247  1324 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 17:24:11.226  1247  1324 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 17:24:11.227  4620  4902 I TestRunner: finished: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

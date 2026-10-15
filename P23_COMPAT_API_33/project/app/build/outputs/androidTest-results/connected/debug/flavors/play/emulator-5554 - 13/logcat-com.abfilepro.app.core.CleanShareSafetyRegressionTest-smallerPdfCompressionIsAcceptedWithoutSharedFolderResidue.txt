@@ -1,0 +1,303 @@
+10-15 17:24:21.783  4620  4902 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:21.803  1149  5358 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:21.816  1149  5358 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:21.880  1149  5427 W SystemServiceRegistry: No service published for: contexthub
+10-15 17:24:21.911  5047  5079 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 17:24:21.942  1328  5321 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 1 attempt count: 1.
+10-15 17:24:21.943  1149  1149 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-15 17:24:21.975  4620  4641 I p.p23mainttrial: Background young concurrent copying GC freed 15126(3098KB) AllocSpace objects, 31(2792KB) LOS objects, 43% free, 7167KB/12MB, paused 18us,11us total 188.818ms
+10-15 17:24:22.036  1149  5340 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService started execution. cause:7 exec_start_elapsed_seconds: 218 [CONTEXT service_id=218 ]
+10-15 17:24:22.041  1149  5340 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService finished executing. cause:7 result: 3 elapsed_millis: 749 uptime_millis: 749 exec_start_elapsed_seconds: 218 [CONTEXT service_id=218 ]
+10-15 17:24:22.063   488   499 I system_server: Background concurrent copying GC freed 615788(26MB) AllocSpace objects, 14(360KB) LOS objects, 45% free, 28MB/52MB, paused 99us,3.664ms total 2.053s
+10-15 17:24:22.144  1883  2587 I A       : Scheduled one-off task for batch; batchId=2 taskId=-1000004 corpora=[1004,1008,1014,1015]
+10-15 17:24:22.145  1883  2587 I A       : Pending callbacks: 2
+10-15 17:24:22.228   488   590 E RoleControllerManager: Error calling grantDefaultRoles()
+10-15 17:24:22.228   488   590 E RoleControllerManager: java.util.concurrent.TimeoutException
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture.triggerTimeout(AndroidFuture.java:289)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture$$ExternalSyntheticLambda2.run(Unknown Source:2)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at android.os.Looper.loop(Looper.java:288)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at com.android.server.SystemServer.run(SystemServer.java:962)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at com.android.server.SystemServer.main(SystemServer.java:647)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 17:24:22.228   488   590 E RoleControllerManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+10-15 17:24:22.250  1149  2300 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+10-15 17:24:22.267  5047  5272 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 17:24:22.267   488   590 I RoleService: Granting default roles...
+10-15 17:24:22.270   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:22.272  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:22.272  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 17:24:22.272  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:22.273  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 17:24:22.273   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:22.280  3222  3314 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:22.285  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 17:24:22.286  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:22.286  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 17:24:22.294   285   285 I netd    : tetherGetStats() -> {[]} <0.31ms>
+10-15 17:24:22.299  1328  4929 I PeopleGalProvider: Gal directories started.
+10-15 17:24:22.302  1328  4929 I PeopleGalProvider: Method 1 completed.
+10-15 17:24:22.302  1328  4929 I PeopleGalProvider: Method 1 finished successfully.
+10-15 17:24:22.309   285   285 I netd    : bandwidthSetGlobalAlert(2097152) <0.07ms>
+10-15 17:24:22.311   285   285 I netd    : bandwidthRemoveInterfaceQuota(eth0) <0.44ms>
+10-15 17:24:22.312   285   285 I netd    : bandwidthSetInterfaceQuota(eth0, 9223372036854775807) <0.42ms>
+10-15 17:24:22.323  3972  5496 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:22.327  1149  5423 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:22.330  1149  5484 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:22.336  1149  2300 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+10-15 17:24:22.370  1149  5340 W .gms.persistent: Long monitor contention with owner netscheduler-queue-handler (3594) at void bytb.o(int)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4) waiters=0 in int bytb.r(byps) for 171ms
+10-15 17:24:22.378  5047  5079 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 17:24:22.396  1149  3763 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+10-15 17:24:22.396  1149  3763 D BluetoothAdapter: isLeEnabled(): ON
+10-15 17:24:22.400  1021  1834 D BtGatt.GattService: stopScan() - queue size =2
+10-15 17:24:22.407  1021  1340 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10120]]
+10-15 17:24:22.408  1021  1340 D BtGatt.ScanManager: stop gattClientScanNative
+10-15 17:24:22.409  1021  1834 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 17:24:22.421  1021  1834 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 17:24:22.427  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-15 17:24:22.439  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+10-15 17:24:22.445  1021  1834 D BtGatt.GattService: unregisterScanner() - scannerId=2
+10-15 17:24:22.447  1021  1834 I bt_stack: [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:2
+10-15 17:24:22.448  1149  3763 I Nearby  : [MBleClient] M hardware scan: 1 clients, scanMode= LOW_LATENCY, filters size = 5 [CONTEXT service_id=49 ]
+10-15 17:24:22.448  1149  3763 D BluetoothAdapter: isLeEnabled(): ON
+10-15 17:24:22.454  1021  1834 D BtGatt.GattService: registerScanner() - UUID=c8986579-92d1-4314-84f5-79c9c5963bcd
+10-15 17:24:22.455  1021  1834 I bt_stack: [INFO:le_scanning_manager.cc(141)] RegisterScanner in shim layer
+10-15 17:24:22.457  1021  1228 D BtGatt.GattService: onScannerRegistered() - UUID=c8986579-92d1-4314-84f5-79c9c5963bcd, scannerId=2, status=0
+10-15 17:24:22.457  1149  2981 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=2 mScannerId=0
+10-15 17:24:22.458  1021  1834 D BtGatt.GattService: start scan with filters
+10-15 17:24:22.462  1021  1834 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=224, mManufacturerData=[0, 0, 0], mManufacturerDataMask=[0, 0, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fef3-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000feaa-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fea0-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=76, mManufacturerData=[2, 21], mManufacturerDataMask=[-1, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null]])
+10-15 17:24:22.468  1021  1834 D BtGatt.ScanManager: startScan()  [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10120]]
+10-15 17:24:22.468  1021  1340 D BtGatt.ScanManager: handling starting scan
+10-15 17:24:22.469  1021  1834 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 17:24:22.469  1021  1834 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 17:24:22.469  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(238)] ScanFilterEnable in shim layer
+10-15 17:24:22.469  1021  1228 D BtGatt.GattService: onScanFilterEnableDisabled() - clientIf=2, status=0, action=1
+10-15 17:24:22.469  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.473  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(213)] ScanFilterAdd in shim layer
+10-15 17:24:22.473  1021  1228 D BtGatt.GattService: onScanFilterConfig() - clientIf=2, action = 0 status = 0, filterType=0, availableSpace=0
+10-15 17:24:22.473  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.473  1021  1340 D BtGatt.ScanManager: configureFilterParamter 500 10000 1 0
+10-15 17:24:22.473  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 17:24:22.473  1021  1228 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 17:24:22.474  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.474  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(213)] ScanFilterAdd in shim layer
+10-15 17:24:22.474  1021  1228 D BtGatt.GattService: onScanFilterConfig() - clientIf=2, action = 0 status = 0, filterType=0, availableSpace=0
+10-15 17:24:22.474  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.474  1021  1340 D BtGatt.ScanManager: configureFilterParamter 500 10000 1 0
+10-15 17:24:22.474  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 17:24:22.474  1021  1228 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 17:24:22.474  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.474  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(213)] ScanFilterAdd in shim layer
+10-15 17:24:22.474  1021  1228 D BtGatt.GattService: onScanFilterConfig() - clientIf=2, action = 0 status = 0, filterType=0, availableSpace=0
+10-15 17:24:22.474  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.474  1021  1340 D BtGatt.ScanManager: configureFilterParamter 500 10000 1 0
+10-15 17:24:22.474  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 17:24:22.474  1021  1228 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 17:24:22.474  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.474  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(213)] ScanFilterAdd in shim layer
+10-15 17:24:22.474  1021  1228 D BtGatt.GattService: onScanFilterConfig() - clientIf=2, action = 0 status = 0, filterType=0, availableSpace=0
+10-15 17:24:22.474  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.474  1021  1340 D BtGatt.ScanManager: configureFilterParamter 500 10000 1 0
+10-15 17:24:22.475  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 17:24:22.475  1021  1228 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 17:24:22.475  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.475  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(213)] ScanFilterAdd in shim layer
+10-15 17:24:22.475  1021  1228 D BtGatt.GattService: onScanFilterConfig() - clientIf=2, action = 0 status = 0, filterType=0, availableSpace=0
+10-15 17:24:22.475  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.475  1021  1340 D BtGatt.ScanManager: configureFilterParamter 500 10000 1 0
+10-15 17:24:22.475  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 17:24:22.475  1021  1228 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 17:24:22.475  1021  1228 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 17:24:22.475  1021  1340 D BtGatt.ScanManager: start gattClientScanNative from startRegularScan()
+10-15 17:24:22.475  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer started
+10-15 17:24:22.475  1021  1340 D BtGatt.ScanManager: configureRegularScanParams() - queue=2
+10-15 17:24:22.476  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-15 17:24:22.476  1021  1340 D BtGatt.ScanManager: Start gattClientScanNative with old scanMode -1 new scanMode 2 ( in MS: 100 / 100, in scan unit: 160 / 160 ) [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10120]]
+10-15 17:24:22.476  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(250)] SetScanParameters in shim layer
+10-15 17:24:22.476  1021  1340 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer started
+10-15 17:24:22.476  1021  1340 D BtGatt.ScanManager: apply scan timeout (1800000)to scannerId 2
+10-15 17:24:22.492  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+10-15 17:24:22.499  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:172 register_client: Scheduled address rotation for first client registered
+10-15 17:24:22.499  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:175 register_client: Client registered
+10-15 17:24:22.499  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:190 unregister_client: Client unregistered
+10-15 17:24:22.499  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:194 unregister_client: Cancelled address rotation alarm
+10-15 17:24:22.499  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:659 stop_scan: Scanning already stopped, return!
+10-15 17:24:22.499  1021  1228 D BtGatt.GattService: onScanParamSetupCompleted : 0
+10-15 17:24:22.500  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:172 register_client: Scheduled address rotation for first client registered
+10-15 17:24:22.500  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:175 register_client: Client registered
+10-15 17:24:22.506  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:1347 on_advertising_filter_complete: Got a Command complete LE_ADV_FILTER, status UNKNOWN_CONNECTION
+10-15 17:24:22.507  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:1347 on_advertising_filter_complete: Got a Command complete LE_ADV_FILTER, status UNKNOWN_CONNECTION
+10-15 17:24:22.508  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:1347 on_advertising_filter_complete: Got a Command complete LE_ADV_FILTER, status UNKNOWN_CONNECTION
+10-15 17:24:22.510  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:1347 on_advertising_filter_complete: Got a Command complete LE_ADV_FILTER, status UNKNOWN_CONNECTION
+10-15 17:24:22.512  1021  1361 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_scanning_manager.cc:1347 on_advertising_filter_complete: Got a Command complete LE_ADV_FILTER, status UNKNOWN_CONNECTION
+10-15 17:24:22.539  1149  2257 W SQLiteConnectionPool: The connection pool for database '/data/user/0/com.google.android.gms/databases/phenotype.db' has been unable to grant a connection to thread 79 (highpool[4]) with flags 0x2 for 30.000002 seconds.
+10-15 17:24:22.539  1149  2257 W SQLiteConnectionPool: Connections: 0 active, 1 idle, 2 available.
+10-15 17:24:22.579   488  1292 W system_server: Long monitor contention with owner android.bg (519) at void com.android.server.pm.ShortcutService.handlePackageChanged(java.lang.String, int)(ShortcutService.java:3957) waiters=0 in java.util.List com.android.server.pm.ShortcutService$LocalService.getShortcuts(int, java.lang.String, long, java.lang.String, java.util.List, java.util.List, android.content.ComponentName, int, int, int, int) for 373ms
+10-15 17:24:22.599   285  5503 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 17:24:22.601   285  5505 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 17:24:22.601   285  5505 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7798c6e6bdd0
+10-15 17:24:22.602   285  5505 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-15 17:24:22.605   285  5504 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 17:24:22.605   285  5504 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7798d6e74290
+10-15 17:24:22.606   285  5504 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-15 17:24:22.607  1328  5321 D TrafficStats: tagSocket(106) with statsTag=0x30000408, statsUid=-1
+10-15 17:24:22.616  1328  5321 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 17:24:22.624  1328  5321 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:22.624  1328  5321 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:22.650  1328  5321 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 17:24:22.651  1328  5321 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:22.651  1328  5321 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:22.755  1149  2300 I GCoreUlr: WorldUpdater:init: Ensuring that reporting is stopped because of reasons: (no Google accounts)
+10-15 17:24:22.773  1149  2300 I GCoreUlr: Unbound from all signal providers.
+10-15 17:24:22.828  1328  1328 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-15 17:24:22.831  1149  5440 I SemanticLocation: [MDD] ModelBundleMetadata: File not found [CONTEXT service_id=173 ]
+10-15 17:24:22.831  1149  5440 I SemanticLocation: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:714)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at bzxt.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at bzxd.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at bzxd.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at cadn.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at cadn.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):36)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at cadn.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at com.google.android.gms.semanticlocation.service.SemanticLocationChimeraService.k(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at com.google.android.gms.semanticlocation.service.SemanticLocationChimeraService.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):17)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at cacs.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):68)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 17:24:22.831  1149  5440 I SemanticLocation: 	... 22 more
+10-15 17:24:22.875  1149  1149 I GCoreUlr: Unbound from all signal providers.
+10-15 17:24:22.876  1149  1149 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 17:24:23.013  1328  5321 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 17:24:23.058  1328  5321 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 17:24:23.082  1328  5321 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 222272.
+10-15 17:24:23.083  1328  1328 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 17:24:23.091  1149  5440 I SemanticLocation: [MDD] ModelBundleMetadata: File not found [CONTEXT service_id=173 ]
+10-15 17:24:23.091  1149  5440 I SemanticLocation: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:714)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:245)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at bzxt.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at bzxd.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at cadb.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 17:24:23.091  1149  5440 I SemanticLocation: 	... 14 more
+10-15 17:24:23.299   488   590 E RoleControllerManager: Error calling grantDefaultRoles()
+10-15 17:24:23.299   488   590 E RoleControllerManager: java.util.concurrent.TimeoutException
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture.triggerTimeout(AndroidFuture.java:289)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture$$ExternalSyntheticLambda2.run(Unknown Source:2)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at android.os.Looper.loop(Looper.java:288)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at com.android.server.SystemServer.run(SystemServer.java:962)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at com.android.server.SystemServer.main(SystemServer.java:647)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 17:24:23.299   488   590 E RoleControllerManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+10-15 17:24:23.327  1328  3325 W ChimeraConfigurator: Error syncing flags: zgv: SYNC_TIMEOUT, java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-15 17:24:23.327  1328  3325 I GmsDebugLogger: [79] SYNC_TIMEOUT, java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-15 17:24:23.335  1328  3325 I GmsDebugLogger: [52]
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: GmsPipelineLogger Failed to obtain device id [CONTEXT service_id=256 ]
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: java.lang.NullPointerException
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at dhat.y(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at avot.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at avot.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at avor.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.341  1328  5400 W GmsPipelineLogger: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:23.344  1328  3325 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43200] seconds from now (1792085063343) [CONTEXT service_id=264 ]
+10-15 17:24:23.345  1328  3325 I GmsDebugLogger: [83] 1 []
+10-15 17:24:23.351  1328  3325 I ChimeraConfigService: Scheduling checkin every 120 seconds, with flex of 60 seconds [CONTEXT service_id=264 ]
+10-15 17:24:23.354  1328  3786 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.chimera.container.InitConfigOperation for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (3325) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 39.016s
+10-15 17:24:23.355  1328  3786 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
+10-15 17:24:23.546   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:23.548  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:23.549  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 17:24:23.549  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:23.549  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 17:24:23.550   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:23.552  3222  3314 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:23.557  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 17:24:23.558  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:23.558  1328  1348 I PeopleGalProvider: Gal directories started.
+10-15 17:24:23.559  1328  1348 I PeopleGalProvider: Method 1 completed.
+10-15 17:24:23.559  1328  1348 I PeopleGalProvider: Method 1 finished successfully.
+10-15 17:24:23.562   488   590 I RoleService: Granting default roles...
+10-15 17:24:23.569  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 17:24:23.570  1149  5484 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:23.583  1149  5484 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:23.587  5047  5272 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.lighter.android#com.google.android.gms failed
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at bwch.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at crqn.apply(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlny.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlnz.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlpk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlnv.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlnv.l(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlnv.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlrs.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlqs.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at dlrt.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at crqq.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at crri.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:23.615  1328  5434 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:23.621  3972  5509 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:23.642  5047  5079 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 17:24:23.703  1669  1681 I ogle.android.as: Background young concurrent copying GC freed 34982(2186KB) AllocSpace objects, 0(0B) LOS objects, 2% free, 23MB/24MB, paused 32us,22us total 270.974ms
+10-15 17:24:23.714  1047  1063 I m.android.phone: Background concurrent copying GC freed 73620(3432KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 3537KB/7075KB, paused 33us,18us total 147.460ms
+10-15 17:24:23.716  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:23.716  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:23.782   285   285 I netd    : tetherGetStats() -> {[]} <0.35ms>
+10-15 17:24:23.785   285   285 I netd    : bandwidthSetGlobalAlert(2097152) <0.06ms>
+10-15 17:24:23.842  1669  1681 I ogle.android.as: Background concurrent copying GC freed 7954(970KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 23MB/47MB, paused 24us,18us total 138.861ms
+10-15 17:24:23.845  1149  1149 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 17:24:23.854  4620  4902 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

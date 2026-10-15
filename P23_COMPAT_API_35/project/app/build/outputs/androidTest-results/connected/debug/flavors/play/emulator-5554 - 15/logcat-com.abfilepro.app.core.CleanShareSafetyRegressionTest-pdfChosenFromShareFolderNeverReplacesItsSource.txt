@@ -1,0 +1,42 @@
+10-15 17:22:49.498  3700  3801 I TestRunner: started: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:49.507  3700  3801 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.516  1216  3386 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 103 uptime_millis: 103 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-15 17:22:49.518  3700  3801 D pdf_document_jni: Deleting Document: 0x7df998e45510
+10-15 17:22:49.518  3700  3801 D pdf_document_jni: Destroyed Document: 0x7df998e45510
+10-15 17:22:49.532   560   686 E ReportEncoder: No watchlist hash
+10-15 17:22:49.548  3700  3707 I p.p23mainttrial: Background concurrent mark compact GC freed 1044KB AllocSpace bytes, 38(2156KB) LOS objects, 49% free, 4102KB/8205KB, paused 64us,6.334ms total 62.373ms
+10-15 17:22:49.576  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.596  3590  3677 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=55 ]
+10-15 17:22:49.597  1216  1900 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-15 17:22:49.597  1216  1900 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-15 17:22:49.597  3590  3717 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]>Handler" thread_id=61 ]
+10-15 17:22:49.602  3590  3717 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 17:22:49.603  1216  3467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-15 17:22:49.651  1216  3386 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 85 uptime_millis: 85 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-15 17:22:49.653  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e49cd0
+10-15 17:22:49.653  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e49cd0
+10-15 17:22:49.653  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.654  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e2fc50
+10-15 17:22:49.654  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e2fc50
+10-15 17:22:49.673  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 17:22:49.674  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 17:22:49.674  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 17:22:49.675  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 17:22:49.675  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 17:22:49.675  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 17:22:49.675  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 17:22:49.675  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 17:22:49.676  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 17:22:49.676  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 17:22:49.676  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 17:22:49.677  3700  3801 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.677  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 17:22:49.677  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 17:22:49.677  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 17:22:49.678  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 17:22:49.678  3700  3801 D pdf_document_jni: Deleting Document: 0x7df998e30510
+10-15 17:22:49.678  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 17:22:49.678  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 17:22:49.678  3700  3801 D pdf_document_jni: Destroyed Document: 0x7df998e30510
+10-15 17:22:49.678  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 17:22:49.682  3700  3801 I TestRunner: finished: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

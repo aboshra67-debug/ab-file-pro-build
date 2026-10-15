@@ -1,0 +1,6 @@
+10-15 17:24:14.319  4620  4902 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:14.342  3972  3972 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10085; state: ENABLED
+10-15 17:24:14.342  3972  3972 I ProvidersCache: Updating roots due to change on user 0at content://com.google.android.apps.docs.storage/root
+10-15 17:24:14.414  3972  5284 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:14.415  5244  5244 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10120; state: ENABLED
+10-15 17:24:14.423  4620  4902 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

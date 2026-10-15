@@ -1,0 +1,33 @@
+10-15 17:24:08.563  4620  4902 I TestRunner: started: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 17:24:08.591  3191  3761 I CarrierServices: [65] EventHubProxy.unsubscribe: Removing event listener 85154118 for category 5 for hub UI
+10-15 17:24:08.591  3222  3281 I RcsClientLib: Disconnecting EventService
+10-15 17:24:08.608   488   522 I libprocessgroup: Successfully killed process cgroup uid 10159 pid 817 in 5ms
+10-15 17:24:08.623  1669  1669 I AiAi    : onTrimMemory() with level 10
+10-15 17:24:08.629  1083  1083 D MainContentCaptureSession: Flushing 37 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=TEXT_CHANGE
+10-15 17:24:08.633  1669  1669 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 17:24:08.635  1535  1535 I AppBase : AppBase.onTrimMemory():497 onTrimMemory(): 10
+10-15 17:24:08.635  1535  1535 I GoogleInputMethodService: GoogleInputMethodService.onTrimMemory():4406 onTrimMemory(): 10
+10-15 17:24:08.640  3222  3281 I RcsClientLib: Disconnecting ContactsService
+10-15 17:24:08.652   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:08.655   289   289 I Zygote  : Process 817 exited due to signal 9 (Killed)
+10-15 17:24:08.664  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:08.664  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.permissioncontroller
+10-15 17:24:08.664  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:08.665  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.permissioncontroller
+10-15 17:24:08.669   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:08.674  3222  3291 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:08.690   289   289 D Zygote  : Forked child process 5047
+10-15 17:24:08.693  3972  5043 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:08.699  3222  3281 I RcsClientLib: Disconnecting FileTransferService
+10-15 17:24:08.702  5047  5047 I ssioncontroller: Using CollectorTypeCC GC.
+10-15 17:24:08.704  5047  5047 W ssioncontroller: Unexpected CPU variant for x86: x86_64.
+10-15 17:24:08.704  5047  5047 W ssioncontroller: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 17:24:08.705  3222  3281 I RcsClientLib: Disconnecting LocationSharingService
+10-15 17:24:08.713  3222  3281 I RcsClientLib: Disconnecting ImsConnectionTrackerService
+10-15 17:24:08.720  1149  4543 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:08.733  3222  3281 I RcsClientLib: Disconnecting RcsProfileService
+10-15 17:24:08.736  3222  3281 I RcsClientLib: Disconnecting BusinessInfoService
+10-15 17:24:08.739  3222  3281 I RcsClientLib: Disconnecting RcsMessagingService
+10-15 17:24:08.766  1149  5028 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:08.770  3222  3281 I RcsClientLib: Disconnecting TransportControlService
+10-15 17:24:08.782  4620  4902 I TestRunner: finished: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

@@ -1,0 +1,44 @@
+10-15 17:24:08.314  4620  4902 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 17:24:08.320   816   876 D EGL_emulation: app_time_stats: avg=2798.42ms min=2798.42ms max=2798.42ms count=1
+10-15 17:24:08.357  1883  2555 I A       : Starting new batch; batchId=1 corpus=1014
+10-15 17:24:08.358  1883  2309 I A       : Joining existing batch; batchId=1 corpus=1015
+10-15 17:24:08.358  1883  2587 I A       : Joining existing batch; batchId=1 corpus=1004
+10-15 17:24:08.358  1883  2541 I A       : Download file group for language pack: en-US
+10-15 17:24:08.358  1883  2541 W A       : Locale en-US is not compatible, please check manifest exists
+10-15 17:24:08.358  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:08.358  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:08.359  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:08.359  1883  2541 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:08.359  1883  2541 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:08.359  1883  2541 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:08.359  1883  2541 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:08.359  1883  2541 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:08.359  1883  2541 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:08.363  1883  2541 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-15 17:24:08.363  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:08.365  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:08.365  1883  2541 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:08.365  1883  2592 I A       : Joining existing batch; batchId=1 corpus=1008
+10-15 17:24:08.365  1883  2541 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:08.368  1883  2541 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:08.369  1883  2541 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:08.369  1883  2541 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:08.369  1883  2541 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:08.369  1883  2541 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-15 17:24:08.370  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:08.370  1883  2541 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:08.370  1883  2541 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:08.370  1883  2541 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:08.370  1883  2541 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:08.370  1883  2541 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:08.370  1883  2541 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:08.370  1883  2541 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-15 17:24:08.394  1149  5028 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:08.403  1883  2474 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792085030564]
+10-15 17:24:08.404  1883  2454 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792085030564]
+10-15 17:24:08.404  1883  2470 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792085030564]
+10-15 17:24:08.406  1883  2470 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-15 17:24:08.407  1883  2454 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-15 17:24:08.407  1883  2474 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-15 17:24:08.418  1328  3166 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 17:24:08.419  4620  4902 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

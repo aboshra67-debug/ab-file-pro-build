@@ -1,0 +1,159 @@
+10-15 17:24:06.383  4620  4902 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 17:24:06.395  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.395  1883  1883 I HotwordUpgradeTask: App version upgraded to 301194889: running speaker ID model upgrade tasks v2.
+10-15 17:24:06.396  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.396  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.396  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.396  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.396  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.396  1883  1883 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.396  1883  1883 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.396  1883  1883 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.396  1883  1883 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.396  1883  1883 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.396  1883  1883 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.397  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.397  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.398  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.398  1883  1883 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.398  1883  1883 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.399  1883  1883 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.399  1883  1883 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.399  1883  1883 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.399  1883  1883 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.400  1883  1883 I HotwordUpgradeTask: #shouldShowNotificationForUserUpgrade - false [isUserSpeakerIdEnabled: false, isUserUpgraded: true]
+10-15 17:24:06.400  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.401  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.402  1883  1883 I A       : Using proto config with mendel
+10-15 17:24:06.402  1883  1883 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.402  1883  1883 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.402  1883  1883 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.403  1883  1883 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.403  1883  1883 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.403  1883  1883 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.404  1883  1883 I HotwordUpgradeTask: #shouldShowNotificationForModelDownload - false [shouldCheckHotwordModel: false, xGoogleHotwordModelPresent: true, isUserSpeakerIdEnabled: false]
+10-15 17:24:06.405  1883  1883 I HotwordUpgradeTask: Notification requirements not met. Do not show notification.
+10-15 17:24:06.409  1883  2555 I A       : Using proto config with mendel
+10-15 17:24:06.411  1883  2555 I A       : Using proto config with mendel
+10-15 17:24:06.413  1883  2555 I A       : #Utterance files for modelType-2 found-0
+10-15 17:24:06.413  1883  2555 I A       : Utterances rename task completed.
+10-15 17:24:06.419  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task ACTIVITY_LEVEL_TASK.
+10-15 17:24:06.428  1883  1883 I A       : Util.isLowRamDevice: false, canUsePreemptibleAudioSource: true
+10-15 17:24:06.436  1883  2454 I A       : Cobalt: try to find ProjectConfig for given tags
+10-15 17:24:06.436  1883  2454 W A       : Cobalt: couldn't find ProjectConfig for given tags
+10-15 17:24:06.440   488   519 E system_server: No package ID 7f found for ID 0x7f0805a7.
+10-15 17:24:06.445  1883  1883 I GnpSdk  : [ChimeBroadcastReceiver] Intent received for action [android.intent.action.BOOT_COMPLETED] package [com.google.android.googlequicksearchbox].
+10-15 17:24:06.445  1883  1883 I GnpSdk  : [ChimeBroadcastReceiver] Phenotype initialized.
+10-15 17:24:06.458  1883  1883 I GnpSdk  : [ChimeBroadcastReceiver] Validation OK for action [android.intent.action.BOOT_COMPLETED].
+10-15 17:24:06.462  1883  2454 I A       : Cobalt: try to find ProjectConfig for given tags
+10-15 17:24:06.464  1883  2454 W A       : Cobalt: couldn't find ProjectConfig for given tags
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.notifications#com.google.android.googlequicksearchbox, using defaults.
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: java.io.FileNotFoundException: /data/user/0/com.google.android.googlequicksearchbox/files/phenotype/shared/com.google.android.libraries.notifications#com.google.android.googlequicksearchbox.pb: open failed: ENOENT (No such file or directory)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.v.e(PG:3)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.c.e(PG:2)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.n.b(PG:1)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.m.a(PG:1)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.storage.a.i.c(PG:2)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.aa.b(PG:3)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.c(PG:12)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.a(PG:1)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at f.a.a.e.a.c.c(PG:1)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.c.onReceive(PG:25)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.os.Looper.loop(Looper.java:288)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at libcore.io.Linux.open(Native Method)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 17:24:06.465  1883  1883 W SnapshotHandler: 	... 21 more
+10-15 17:24:06.465  1883  1883 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Submitting Broadcast execution [260843295] to tiktok executor.
+10-15 17:24:06.466  1883  2587 I GnpSdk  : [ChimeBroadcastReceiver] Executing action in BroadcastReceiver [android.intent.action.BOOT_COMPLETED].
+10-15 17:24:06.477  1883  1883 I A       : Start work
+10-15 17:24:06.485  3222  3281 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 17:24:06.497   488   519 E system_server: No package ID 7f found for ID 0x7f150421.
+10-15 17:24:06.504  1883  2592 E BistoWorker: Couldn't get logged in Google account.
+10-15 17:24:06.505  1883  2454 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=35ba364c-13e5-4a6e-9e9f-6c7fcb08aeec, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.staticplugins.chime.registration.tasks.PeriodicChimeRegistrationWorker } ]
+10-15 17:24:06.512   817   838 I PermissionControllerServiceImpl: Updating user sensitive for uid 10119
+10-15 17:24:06.518   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:06.523  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:06.532  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.googlequicksearchbox
+10-15 17:24:06.532  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:06.532  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.googlequicksearchbox
+10-15 17:24:06.532  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:06.532  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gm
+10-15 17:24:06.532  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:06.532  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gm
+10-15 17:24:06.532   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:06.533   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:06.533   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:06.560  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.googlequicksearchbox
+10-15 17:24:06.561  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:06.576  3222  3314 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:06.589  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.gm
+10-15 17:24:06.590  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox, using defaults.
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: java.io.FileNotFoundException: /data/user/0/com.google.android.googlequicksearchbox/files/phenotype/shared/com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox.pb: open failed: ENOENT (No such file or directory)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.v.e(PG:3)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.storage.a.a.c.e(PG:2)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.n.b(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.storage.a.g.m.a(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.storage.a.i.c(PG:2)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.aa.b(PG:3)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.c(PG:12)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.phenotype.client.stable.bb.a(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at f.a.a.i.a.i.b(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at f.a.a.i.a.g.c(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.n.f(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.n.a(PG:2)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.notifications.data.impl.o.a(PG:2)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.notifications.o.a.a.b(PG:5)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.restart.a.b(PG:14)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.c.b(PG:3)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.notifications.entrypoints.b.run(PG:2)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.apps.tiktok.tracing.ei.run(PG:2)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.common.util.concurrent.dy.a(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.common.util.concurrent.cv.run(PG:4)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.common.util.concurrent.dz.run(PG:1)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.i.i.run(PG:2)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at libcore.io.Linux.open(Native Method)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 17:24:06.592  1883  2587 W SnapshotHandler: 	... 28 more
+10-15 17:24:06.603  1883  1883 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_LOCATION_REPORTING_STATE.
+10-15 17:24:06.608  3972  4951 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:06.616  1883  2454 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=e503a6a9-3b4c-4c5b-a481-9432bb68fddf, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.smartspace.task.LoggerTask } ]
+10-15 17:24:06.634  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.googlequicksearchbox
+10-15 17:24:06.640  1883  2454 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=9414effb-70b8-44e8-8a68-949f97baf828, tags={ com.google.apps.tiktok.contrib.work.TikTokListenableWorker, TikTokWorker#com.google.android.apps.gsa.staticplugins.opa.worker.nudgeui.ResetOpaNgaQueryCounterTask } ]
+10-15 17:24:06.652  1883  2587 I GnpSdk  : [ChimeExecutorApiImpl-Tiktok] Finished Broadcast execution [260843295].
+10-15 17:24:06.662  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task AWARE_TIP_WORKER_PROCESS_TIPS.
+10-15 17:24:06.662  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gm
+10-15 17:24:06.667  1149  4542 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:06.696  1149  4541 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:06.701   817   838 I PermissionControllerServiceImpl: Updating user sensitive for uid 10144
+10-15 17:24:06.708   488   519 E system_server: No package ID 7f found for ID 0x7f0805a7.
+10-15 17:24:06.708   488   519 E system_server: No package ID 7f found for ID 0x7f150421.
+10-15 17:24:06.756  4620  4902 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,3 @@
+10-15 17:24:26.420  4620  4902 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:26.434  4620  5031 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 17:24:26.437  4620  4902 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

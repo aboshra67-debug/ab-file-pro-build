@@ -1,0 +1,33 @@
+10-15 17:24:07.315  4620  4902 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 17:24:07.326  1883  1883 V ClearcutMetricXmitter: Transmission is done.
+10-15 17:24:07.345  3222  3281 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 17:24:07.395  3222  3222 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+10-15 17:24:07.444   289   289 D Zygote  : Forked child process 4973
+10-15 17:24:07.455  4973  4973 I timeinitializer: Using CollectorTypeCC GC.
+10-15 17:24:07.458  4973  4973 W timeinitializer: Unexpected CPU variant for x86: x86_64.
+10-15 17:24:07.458  4973  4973 W timeinitializer: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 17:24:07.466  1328  1328 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 17:24:07.466  1328  1328 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 17:24:07.502  1535  1772 I LauncherIconVisibilityInitializerBase: LauncherIconVisibilityInitializerBase.lambda$doUpdate$1():69 doUpdate() : Visible = false
+10-15 17:24:07.625   488  1844 W system_server: Long monitor contention with owner android.bg (519) at com.android.server.pm.Computer com.android.server.pm.PackageManagerService.snapshotComputer()(PackageManagerService.java:1111) waiters=6 in com.android.server.pm.Computer com.android.server.pm.PackageManagerService.snapshotComputer() for 114ms
+10-15 17:24:07.633  3222  4625 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 17:24:07.666   399   407 I adbd    : jdwp connection from 4973
+10-15 17:24:07.672  4973  4973 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10109; state: ENABLED
+10-15 17:24:07.715  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task CONTACT_AFFINITY_MODEL_CONTACTS_CHANGE_REFRESH.
+10-15 17:24:07.721  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task CONTACT_AFFINITY_MODEL_PERIODIC_REFRESH.
+10-15 17:24:07.731  1883  2592 W CAMPeriodicRefresh: Refreshing not complete, unable to upload top contacts.
+10-15 17:24:07.752  4973  4973 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/GoogleOneTimeInitializer/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.onetimeinitializer:/product/lib64:/system/product/lib64
+10-15 17:24:07.774  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task DOODLE_SCHEDULE_SYNC_TASK.
+10-15 17:24:07.776  4973  4973 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.onetimeinitializer' set to: 'default'
+10-15 17:24:07.776  4973  4973 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.onetimeinitializer: false
+10-15 17:24:07.776  4973  4973 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:24:07.779  4973  4973 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:07.780  4973  4973 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:07.780  4973  4973 V OneTimeInitializerReceiver: OneTimeInitializerReceiver.onReceive
+10-15 17:24:07.782  4973  4994 V OneTimeInitializer: OneTimeInitializer.initialize
+10-15 17:24:07.785  4973  4994 V OneTimeInitializer: Device Policy is not installed, doing nothing.
+10-15 17:24:07.804  1883  1883 I BgTaskExecutorImpl: Starting EXCLUSIVE background task OPA_NOTIFICATION_DELAYED_TRIGGER_SYNC.
+10-15 17:24:07.822   289   289 D Zygote  : Forked child process 4999
+10-15 17:24:07.834  3222  3281 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 17:24:07.851  3222  4625 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 17:24:07.873  4620  4902 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

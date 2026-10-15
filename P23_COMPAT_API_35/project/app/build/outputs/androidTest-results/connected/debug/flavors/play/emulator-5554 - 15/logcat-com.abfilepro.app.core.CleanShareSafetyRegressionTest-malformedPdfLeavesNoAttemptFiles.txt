@@ -1,0 +1,8 @@
+10-15 17:22:49.344  3700  3801 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:49.359  1522  3506 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 17:22:49.361  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.361  3700  3833 E document: Parse Document failed (err=3).
+10-15 17:22:49.363  1522  3506 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 17:22:49.369  1522  3506 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 17:22:49.377  1216  3386 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 97 uptime_millis: 97 exec_start_elapsed_seconds: 106 [CONTEXT service_id=218 ]
+10-15 17:22:49.391  3700  3801 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

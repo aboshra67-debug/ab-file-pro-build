@@ -1,0 +1,108 @@
+10-15 17:22:57.983  3700  3801 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:22:57.990  1326  1618 I SP      : Sync for transformer_concept succeeded in 1871 ms: {added: [2023011913_en], metadata: false
+10-15 17:22:58.001   560   597 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10210, packageName = null, attributionTag = null, token = android.os.Binder@81a9f34, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-15 17:22:58.013  1522  1522 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 17:22:58.034  1565  1701 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:22:58.035   359   359 D Zygote  : Forked child process 3965
+10-15 17:22:58.064  3965  3965 I mainttrial.test: Late-enabling -Xcheck:jni
+10-15 17:22:58.078  1326  1618 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 17:22:58.078  1326  1618 I SP      : GC for 'dynamic_art' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 17:22:58.079  1326  1618 I SP      : GC for 'transformer_concept' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 17:22:58.118  1216  3467 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gms.supervision
+10-15 17:22:58.120  1326  1752 I EmojiSuperpacksManager: EmojiSuperpacksManager.processPackSet():504 processPackSet() : isBundled = false
+10-15 17:22:58.122  1326  1732 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():71 0 emoji shortcut maps loaded.
+10-15 17:22:58.123  1326  1732 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():82 Finished loading emoji shortcuts
+10-15 17:22:58.124  1326  1618 I SP      : Sync for handwriting_recognition succeeded in 1316 ms: {added: [pack_mapping_v1_lstm_20231127], metadata: false
+10-15 17:22:58.125  1326  1752 I Environment: Environment.isPackageInstalled():234 com.bitstrips.imoji is not installed
+10-15 17:22:58.134  3965  3965 I mainttrial.test: Using CollectorTypeCMC GC.
+10-15 17:22:58.135  3965  3965 W mainttrial.test: Unexpected CPU variant for x86: x86_64.
+10-15 17:22:58.135  3965  3965 W mainttrial.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-15 17:22:58.161   438   446 I adbd    : jdwp connection from 3965
+10-15 17:22:58.167  1326  1618 I SP      : GC for 'handwriting_recognition' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 17:22:58.167  1326  1725 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$1():204 syncInternal(): syncing packs
+10-15 17:22:58.184  3965  3965 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-15 17:22:58.195  1522  1522 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.constellation.service.START pkg=com.google.android.gms }
+10-15 17:22:58.209  1216  3467 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+10-15 17:22:58.232   358   407 I netd    : tetherGetStats() -> {[]} <2.10ms>
+10-15 17:22:58.251  1326  1332 I putmethod.latin: Background concurrent mark compact GC freed 10MB AllocSpace bytes, 8(416KB) LOS objects, 49% free, 11MB/22MB, paused 4.052ms,3.073ms total 118.604ms
+10-15 17:22:58.264  1326  1733 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$0():228 syncInternal(): used {old=[], new=[pack_mapping_v1_lstm_20231127], metadata=false, last batch=true} to update cache, success=true
+10-15 17:22:58.268  1326  1618 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():44 getSlices(): handwriting_recognition.86 useForeground=true
+10-15 17:22:58.270  1326  1618 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():103 getSlices(): result {slices=[{handwriting_recognition:pack_mapping_v1_lstm_20231127, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_conf_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_seg_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:en_us_20230613_compact_fst_zip, m:*:*:*, fg}, {handwriting_recognition:scribe_latin_20231123_tflite_zip, m:*:*:*, fg}, {handwriting_recognition:scribe_latin_20231123_recospec_zip, m:*:*:*, fg}], last batch=true, sync metadata=false}
+10-15 17:22:58.272  1326  1618 I SP      : Syncing handwriting_recognition (86) with slices: [{pack_mapping_v1_lstm_20231127, m:*:*:*, fg}, {transformer_latin_tflite_20231010_zip, m:*:*:*, fg}, {qrnn_en_us_reco_20231010_fst_20230613_recospec_zip, m:*:*:*, fg}, {transformer_latin_conf_tflite_20231010_zip, m:*:*:*, fg}, {transformer_latin_seg_tflite_20231010_zip, m:*:*:*, fg}, {en_us_20230613_compact_fst_zip, m:*:*:*, fg}, {scribe_latin_20231123_tflite_zip, m:*:*:*, fg}, {scribe_latin_20231123_recospec_zip, m:*:*:*, fg}], metadata: false
+10-15 17:22:58.302  3965  3965 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 17:22:58.315  3965  3965 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~hZXUnYSuCq9y3ail3bA4DQ==/com.abfilepro.app.p23mainttrial.test-d1_2lvsxTwio6-0AWhGwVg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p23mainttrial.test
+10-15 17:22:58.316  3965  3965 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 17:22:58.341  3965  3965 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~hZXUnYSuCq9y3ail3bA4DQ==/com.abfilepro.app.p23mainttrial.test-d1_2lvsxTwio6-0AWhGwVg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p23mainttrial.test
+10-15 17:22:58.342  3965  3965 W ziparchive: Unable to open '/data/app/~~hZXUnYSuCq9y3ail3bA4DQ==/com.abfilepro.app.p23mainttrial.test-d1_2lvsxTwio6-0AWhGwVg==/base.dm': No such file or directory
+10-15 17:22:58.342  3965  3965 W ziparchive: Unable to open '/data/app/~~hZXUnYSuCq9y3ail3bA4DQ==/com.abfilepro.app.p23mainttrial.test-d1_2lvsxTwio6-0AWhGwVg==/base.dm': No such file or directory
+10-15 17:22:58.364  1565  2241 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.social.connections#com.google.android.googlequicksearchbox
+10-15 17:22:58.375  1565  1565 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.gsa.pcp.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:58.420  3965  3965 D nativeloader: Configuring clns-9 for other apk /data/app/~~hZXUnYSuCq9y3ail3bA4DQ==/com.abfilepro.app.p23mainttrial.test-d1_2lvsxTwio6-0AWhGwVg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~hZXUnYSuCq9y3ail3bA4DQ==/com.abfilepro.app.p23mainttrial.test-d1_2lvsxTwio6-0AWhGwVg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p23mainttrial.test
+10-15 17:22:58.453  1565  1701 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:22:58.454  3965  3965 V GraphicsEnvironment: Currently set values for:
+10-15 17:22:58.454  3965  3965 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 17:22:58.455  3965  3965 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 17:22:58.455  3965  3965 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 17:22:58.455  3965  3965 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:22:58.460  1565  1565 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.soda_hotword.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:58.466  3032  3519 I ConfigUpdater: Update downloaded, starting installation
+10-15 17:22:58.513  1326  1618 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 17:22:58.517  3032  3519 I ConfigUpdater: doneInstall
+10-15 17:22:58.517  1326  1326 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 17:22:58.524  3965  3965 I P14Fixture: Granted fixture tree to com.abfilepro.app.p23mainttrial
+10-15 17:22:58.530  1326  1326 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 17:22:58.572  1639  3837 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model.metadata via provider delete
+10-15 17:22:58.586  1418  3072 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.model.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.model.metadata
+10-15 17:22:58.589  1326  1618 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 17:22:58.599  1326  1618 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 2 candidates
+10-15 17:22:58.609  1326  1326 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 2
+10-15 17:22:58.623  1418  3072 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 37ms, 0 inserts 0 updates 0 deletes
+10-15 17:22:58.667  1326  1618 I SP      : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}
+10-15 17:22:58.684  1326  1618 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 3 candidates
+10-15 17:22:58.704  1326  1326 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 3
+10-15 17:22:58.736  1639  3837 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model via provider delete
+10-15 17:22:58.737  1326  1618 I SP      : Scheduling: download registered, 0 started, 0 paused, 3 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 17:22:58.746  1216  3467 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.wallpaper
+10-15 17:22:58.753  1326  1618 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 4 candidates
+10-15 17:22:58.755  1326  1326 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 4
+10-15 17:22:58.763  1326  1618 I SP      : Scheduling: download registered, 0 started, 0 paused, 4 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 17:22:58.764  1565  2241 I PhenotypeBackgroundRecv: Successfully updated snapshot for clienttracing.android#com.google.android.googlequicksearchbox
+10-15 17:22:58.779  1565  1565 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.lens.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:58.785  1326  1618 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 5 candidates
+10-15 17:22:58.787  1326  1326 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 5
+10-15 17:22:58.799  1326  1618 I SP      : Scheduling: download registered, 0 started, 0 paused, 5 scheduled, 6 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}
+10-15 17:22:58.810  1418  3072 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.model: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.model
+10-15 17:22:58.811  1326  1618 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 6 candidates
+10-15 17:22:58.815  1418  3072 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 63ms, 0 inserts 0 updates 0 deletes
+10-15 17:22:58.817  1326  1326 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 6
+10-15 17:22:58.838  1326  1618 I SP      : Scheduling: download registered, 0 started, 0 paused, 6 scheduled, 7 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip * {m:b:u:l, fg}
+10-15 17:22:58.845   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 17:22:58.846   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 17:22:58.846   560   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10167} in 6ms
+10-15 17:22:58.848   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 17:22:58.851  1326  1618 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 7 candidates
+10-15 17:22:58.853  1326  1326 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 7
+10-15 17:22:58.855   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 17:22:58.855   560   835 D InetDiagMessage: Destroyed live tcp sockets for uids={20167} in 8ms
+10-15 17:22:58.873  1326  1618 I SP      : Scheduling: download registered, 0 started, 0 paused, 7 scheduled, 8 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip * {m:b:u:l, fg}
+10-15 17:22:58.887  1326  1618 I SP      : Scheduling: job start ({m:b:u:l, fg}), 7 started, 0 paused, 0 scheduled, 8 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip @ * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip @ * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip @ * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip @ * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ * {m:b:u:l, fg}
+10-15 17:22:58.888  1326  1618 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/transformer.latin.tflite.20231010.zip to transformer_latin_tflite_20231010_zip.zip.fetched (constraints: m:b:u:l)
+10-15 17:22:58.890  1326  1618 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/qrnn.en_us.reco_20231010.fst_20230613.recospec.zip to qrnn_en_us_reco_20231010_fst_20230613_recospec_zip.zip.fetched (constraints: m:b:u:l)
+10-15 17:22:58.892  1326  1618 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/transformer.latin.conf.tflite.20231010.zip to transformer_latin_conf_tflite_20231010_zip.zip.fetched (constraints: m:b:u:l)
+10-15 17:22:58.894  1326  3979 D TrafficStats: tagSocket(92) with statsTag=0xffffffff, statsUid=-1
+10-15 17:22:58.897  1326  1618 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/transformer.latin.seg.tflite.20231010.zip to transformer_latin_seg_tflite_20231010_zip.zip.fetched (constraints: m:b:u:l)
+10-15 17:22:58.898  1326  1618 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/en_us.20230613.compact.fst.zip to en_us_20230613_compact_fst_zip.zip.fetched (constraints: m:b:u:l)
+10-15 17:22:58.898  1326  1618 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/scribe.latin.20231123.tflite.zip to scribe_latin_20231123_tflite_zip.zip.fetched (constraints: m:b:u:l)
+10-15 17:22:58.899  1326  1618 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/scribe.latin.20231123.recospec.zip to scribe_latin_20231123_recospec_zip.zip.fetched (constraints: m:b:u:l)
+10-15 17:22:58.936  1326  1752 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 14467072
+10-15 17:22:58.937   358   407 I netd    : tetherGetStats() -> {[]} <0.32ms>
+10-15 17:22:58.951   358   407 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+10-15 17:22:59.039  3032  3519 I ConfigUpdater: Update downloaded, starting installation
+10-15 17:22:59.119  3032  3519 I ConfigUpdater: doneInstall
+10-15 17:22:59.154  1639  3582 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb.metadata via provider delete
+10-15 17:22:59.164  1565  2241 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:22:59.181  1418  3072 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.fb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.fb.metadata
+10-15 17:22:59.212   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 17:22:59.230   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 17:22:59.230   560   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10132} in 18ms
+10-15 17:22:59.236  3700  3801 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,5 @@
+10-15 17:23:01.230  3700  3801 I TestRunner: started: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:01.216  2259  2259 W binder:2259_3: type=1400 audit(0.0:202): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 17:23:01.237  2259  2358 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 17:23:01.237  2259  2358 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 17:23:01.238  3700  3801 I TestRunner: finished: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

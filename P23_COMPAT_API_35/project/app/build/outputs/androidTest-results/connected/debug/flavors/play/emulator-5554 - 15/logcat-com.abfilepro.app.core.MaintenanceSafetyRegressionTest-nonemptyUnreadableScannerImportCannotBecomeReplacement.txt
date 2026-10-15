@@ -1,0 +1,7 @@
+10-15 17:23:00.952  3700  3801 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:00.960  3700  3801 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 17:23:00.963  3700  3801 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 17:23:00.966   560  1877 I RemoteProvisionSysSvc: Fetching key 10143 for client 57977489
+10-15 17:23:00.966   560  1877 I RegistrationProxy: getKeyAsync operation started with callback 30080502
+10-15 17:23:00.966  2702  2781 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10143, callback: 149621842
+10-15 17:23:00.967  3700  3801 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

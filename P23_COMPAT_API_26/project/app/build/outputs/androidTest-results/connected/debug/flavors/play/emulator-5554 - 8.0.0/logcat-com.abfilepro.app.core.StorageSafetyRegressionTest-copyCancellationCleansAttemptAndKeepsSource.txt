@@ -1,0 +1,5 @@
+10-15 17:22:28.338  4964  4983 I TestRunner: started: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:22:28.341  1810  2141 D EGL_emulation: eglMakeCurrent: 0x700b1ce555a0: ver 3 0 (tinfo 0x700b1ce0d740)
+10-15 17:22:28.349  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 17:22:28.352  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 17:22:28.426  4964  4983 I TestRunner: finished: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

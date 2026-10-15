@@ -1,0 +1,35 @@
+10-15 17:22:49.828  3700  3801 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:49.833  2369  2369 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.audio.device#com.google.android.tts which doesn't use ProcessStable flags.
+10-15 17:22:49.842  1216  1216 I GCoreUlr: Unbound from all signal providers.
+10-15 17:22:49.842  1216  1216 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 17:22:49.843  1522  2017 W ChimeraConfigurator: Error syncing flags: ajjv: COMMIT_TIMEOUT
+10-15 17:22:49.843  1522  2017 I GmsDebugLogger: [79] COMMIT_TIMEOUT
+10-15 17:22:49.852  1216  2136 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.lockbox) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 17:22:49.854  1565  1565 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:49.863  3251  3413 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:22:49.867  1522  2017 I GmsDebugLogger: [52]
+10-15 17:22:49.883  3251  3390 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=46 ]
+10-15 17:22:49.883  1522  2017 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43201] seconds from now (1792084969883) [CONTEXT service_id=264 ]
+10-15 17:22:49.883  1522  2017 I GmsDebugLogger: [83] 1 []
+10-15 17:22:49.885  1565  2396 W SearchServiceCore: Abort, client detached.
+10-15 17:22:49.891  1216  2238 W CCTFlatFileLogStore: Excessive logging: 256 events, 165930 bytes from log source PHENOTYPE last 41s
+10-15 17:22:49.903  1522  2017 I ChimeraConfigService: Scheduling checkin every 120 seconds, with flex of 60 seconds [CONTEXT service_id=264 ]
+10-15 17:22:49.905  1522  2724 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.chimera.container.InitConfigOperation for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (2017) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 27.368s
+10-15 17:22:49.905  1522  2724 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
+10-15 17:22:49.910   560   648 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 17:22:49.939  1216  1914 E czvx    : Phenotype API error. Event: # fozr@e1c26458, EventCode: COMMIT_CONFIG [CONTEXT service_id=51 ]
+10-15 17:22:49.939  1216  1914 E czvx    : czue: 29501: Stale snapshot for com.google.android.gms.magictether(change count changed - expected 1  but was 0)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at czwc.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):507)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at czwb.i(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):18)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 17:22:49.939  1216  1914 E czvx    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:22:49.940  3700  3801 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

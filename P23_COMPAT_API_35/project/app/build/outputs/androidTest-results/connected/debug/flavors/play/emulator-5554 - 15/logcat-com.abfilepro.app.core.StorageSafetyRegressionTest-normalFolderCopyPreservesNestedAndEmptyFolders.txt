@@ -1,0 +1,3 @@
+10-15 17:23:03.667  3700  3801 I TestRunner: started: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:23:03.674  1522  3508 I NotificationsModuleTask: Registered accounts to Chime successfully. registration reason = REGISTRATION_ID_CHANGED [CONTEXT service_id=358 ]
+10-15 17:23:03.680  3700  3801 I TestRunner: finished: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)

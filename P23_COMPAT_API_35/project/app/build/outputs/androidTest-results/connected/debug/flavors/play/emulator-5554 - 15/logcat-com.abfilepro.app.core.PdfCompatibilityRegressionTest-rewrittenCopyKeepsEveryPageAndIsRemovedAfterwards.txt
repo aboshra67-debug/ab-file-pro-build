@@ -1,0 +1,9 @@
+10-15 17:23:02.656  3700  3801 I TestRunner: started: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 17:23:02.672  1326  1618 I SP      : Download stopped: handwriting_recognition:scribe_latin_20231123_recospec_zip, succeeded foreground, size: 346
+10-15 17:23:02.677  1216  2424 W GmsUrlRequestImpl: Content-Type header is overwritten.
+10-15 17:23:02.698  1216  1216 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 17:23:02.698  1216  1216 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 17:23:02.705  3700  3801 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 111
+10-15 17:23:02.706  3700  3801 D pdf_document_jni: Deleting Document: 0x7df998e45510
+10-15 17:23:02.707  3700  3801 D pdf_document_jni: Destroyed Document: 0x7df998e45510
+10-15 17:23:02.712  3700  3801 I TestRunner: finished: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

@@ -1,0 +1,4 @@
+10-15 17:23:02.744  3700  3801 I TestRunner: started: everyScannerModeSavesIntoTheScansFolderByDefault(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 17:23:02.764   560   596 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 17:23:02.789  1326  1618 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}
+10-15 17:23:02.800  3700  3801 I TestRunner: finished: everyScannerModeSavesIntoTheScansFolderByDefault(com.abfilepro.app.core.ScannerEngineRegressionTest)

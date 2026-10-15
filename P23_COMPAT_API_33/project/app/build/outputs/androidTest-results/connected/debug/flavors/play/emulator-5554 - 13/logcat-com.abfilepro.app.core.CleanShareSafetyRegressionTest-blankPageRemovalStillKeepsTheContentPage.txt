@@ -1,0 +1,287 @@
+10-15 17:24:20.308  4620  4902 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:20.338  1328  5322 I NearbyFastPair: onInitRuntimeState isEnableWearableListener: false [CONTEXT service_id=265 ]
+10-15 17:24:20.341  1328  5323 I MS_RegUtils: checking registration with Lighter
+10-15 17:24:20.343  1328  5322 I NearbyFastPair: FastPairInitIntentOperation: check the Footprints sync tasks. [CONTEXT service_id=265 ]
+10-15 17:24:20.344  1328  5322 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_PERIODIC_SCHEDULE success. [CONTEXT service_id=265 ]
+10-15 17:24:20.344  1328  5322 I NearbyFastPair: TSS cancel footprints recon sync [CONTEXT service_id=265 ]
+10-15 17:24:20.345  1328  5322 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_RECON_SYNC_SCHEDULE success. [CONTEXT service_id=265 ]
+10-15 17:24:20.345  1328  5322 I NearbyFastPair: TSS scheduleFootprintsOneOffSync: not enable [CONTEXT service_id=265 ]
+10-15 17:24:20.355  1328  3483 I NearbySharing: Runtime state initialization complete. Sharing is enabled. [CONTEXT service_id=194 ]
+10-15 17:24:20.356  1328  2940 W libc    : Access denied finding property "ro.hardware.chipname"
+10-15 17:24:20.356  1328  2940 W ChipsetHelper: Unknown chipset! [CONTEXT service_id=301 ]
+10-15 17:24:20.356  1328  4133 I NearbySharing: onBindSlice failed since shareTargets is empty [CONTEXT service_id=194 ]
+10-15 17:24:20.357  1328  2940 I NnApiDriverManager: Registering application with chipset 'unknown' [CONTEXT service_id=301 ]
+10-15 17:24:20.366  1083  1083 D MainContentCaptureSession: Flushing 23 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=TEXT_CHANGE
+10-15 17:24:20.366  1669  1669 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 17:24:20.370  1328  2940 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_vulkan_queue_submit_with_commands ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_multi_configs ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0
+10-15 17:24:20.386  1328  4133 I NearbySharing: Granted slice and Uri permissions to android [CONTEXT service_id=194 ]
+10-15 17:24:20.398  3290  3302 I .android.as.oss: Background young concurrent copying GC freed 7810(862KB) AllocSpace objects, 0(0B) LOS objects, 19% free, 3700KB/4584KB, paused 25us,10us total 130.377ms
+10-15 17:24:20.399  1328  2940 D EGL_emulation: eglCreateContext: 0x7b279f8e3a10: maj 3 min 0 rcv 3
+10-15 17:24:20.401  1149  1149 I NearbySharing: ReceiveSurfaceService started [CONTEXT service_id=194 ]
+10-15 17:24:20.403  1149  5370 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-15 17:24:20.421  1328  2940 D EGL_emulation: eglMakeCurrent: 0x7b279f8e3a10: ver 3 0 (tinfo 0x7b29b9fa5100) (first time)
+10-15 17:24:20.436  1328  2940 I NnApiDriverManager: Registering application with GPU 'Android Emulator OpenGL ES Translator (Google SwiftShader)' by 'Google (Google Inc.)' [CONTEXT service_id=301 ]
+10-15 17:24:20.509  1328  5322 W PeoplePU: getComponentEnabledSetting failed.
+10-15 17:24:20.509  1328  5322 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3015)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:5916)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3068)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at buru.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at com.google.android.gms.people.api.init.PeopleModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:20.509  1328  5322 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5234)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5216)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:387)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:2953)
+10-15 17:24:20.509  1328  5322 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:5980)
+10-15 17:24:20.509  1328  5322 W PeoplePU:
+10-15 17:24:20.525  1328  3483 W PeoplePU: getServiceInfo failed.
+10-15 17:24:20.525  1328  3483 W PeoplePU: android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.google.android.gms/com.google.android.gms.people.sync.focus.ContactsSyncAdapterService}
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:613)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at android.app.ApplicationPackageManager.getServiceInfo(ApplicationPackageManager.java:596)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at bvox.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at com.google.android.gms.people.sync.focus.ContactsSyncIntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):43)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:20.525  1328  3483 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:20.526  1328  3483 I FSA2_ContactsSyncIntentOp: Sync is disabled. Skip prepareToSync
+10-15 17:24:20.544  1328  5322 I PeopleGalProvider: Gal directories started.
+10-15 17:24:20.544  1328  5322 I PeopleGalProvider: Method 1 completed.
+10-15 17:24:20.544  1328  5322 I PeopleGalProvider: Method 1 finished successfully.
+10-15 17:24:20.547  1328  4128 I LT_StubFactory: tachyonHostName = instantmessaging-pa.googleapis.com and tachyonPortNumber = 443
+10-15 17:24:20.550  1149  3152 E enyj    : *~*~*~ Previous channel {0} was not shutdown properly!!! ~*~*~*
+10-15 17:24:20.550  1149  3152 E enyj    :     Make sure to call shutdown()/shutdownNow() and wait until awaitTermination() returns true.
+10-15 17:24:20.550  1149  3152 E enyj    : java.lang.RuntimeException: ManagedChannel allocation site
+10-15 17:24:20.550  1149  3152 E enyj    : 	at enyi.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at enyj.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at enyh.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at enqe.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at abxw.H(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at abxw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at apld.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):74)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at abxe.call(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.550  1149  3152 E enyj    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:20.561  1021  1021 D BluetoothPbapService:  onChange on contact uri
+10-15 17:24:20.563  1328  5322 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
+10-15 17:24:20.577  1328  5322 I GalProviderController: Setting component enabled succeeds.
+10-15 17:24:20.582  1328  5322 I PeopleGalProvider: Gal directories started.
+10-15 17:24:20.584  1328  5322 I PeopleGalProvider: Method 1 completed.
+10-15 17:24:20.584  1328  5322 I PeopleGalProvider: Method 1 finished successfully.
+10-15 17:24:20.598  3135  5360 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 17:24:20.598  1328  5322 I DeletedNullContactsCleanup: Scheduling the service.
+10-15 17:24:20.606  1149  4542 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:20.613  1328  5321 I Checkin : [CheckinOperation] Starting Checkin: Default Task Reason : 1 Force : false UserId : 0 Start time : 219804
+10-15 17:24:20.619  1328  5321 I CheckinUtil: Classify the device as Phone. [CONTEXT service_id=130 ]
+10-15 17:24:20.634  1149  3639 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-15 17:24:20.636  1149  3639 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
+10-15 17:24:20.636  1149  3639 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
+10-15 17:24:20.637  1149  3072 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 17:24:20.644  1149  2304 I NearbyShared: FastPairSlice: enableBindServiceForDiscoveryItem called, isBind = false
+10-15 17:24:20.645  1328  4128 D LT_OkHttpChannelBuilder: Using Spatula header keyless authentication.
+10-15 17:24:20.645   285  5430 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 17:24:20.651   285  5432 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 17:24:20.651   285  5432 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7798c6e6f210
+10-15 17:24:20.651   285  5432 I resolv  : doQuery: rcode=0, ancount=8, return value=177
+10-15 17:24:20.652   285  5431 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 17:24:20.652   285  5431 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7798d6e71350
+10-15 17:24:20.652   285  5431 I resolv  : doQuery: rcode=0, ancount=8, return value=273
+10-15 17:24:20.670  1328  5322 I BackupAndSyncValidation: Scheduling the service.
+10-15 17:24:20.674  1149  5337 I LSR     : Cancelling periodic location reporting maintenance task [CONTEXT service_id=277 ]
+10-15 17:24:20.681  1149  3072 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 17:24:20.686  1021  5428 D BluetoothPbapUtils: primaryVersionCounter = 0, secondaryVersionCounter=0
+10-15 17:24:20.701  1328  1328 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 17:24:20.701  1328  1328 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 17:24:20.717  1328  4929 I FastPair: ServiceBindHelper.onSlicePinned, slice already pinned, uri = content://com.google.android.gms.nearby.fastpair/method_bind_service_for_discovery_item?is_bind=false
+10-15 17:24:20.728  1328  5322 I PeopleInitIntentOp: Not initializing debuggability [CONTEXT service_id=5 ]
+10-15 17:24:20.743  1149  3072 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 17:24:20.744  1328  5322 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.personalsafety, using defaults.
+10-15 17:24:20.745  1328  4128 E enyj    : *~*~*~ Previous channel {0} was not shutdown properly!!! ~*~*~*
+10-15 17:24:20.745  1328  4128 E enyj    :     Make sure to call shutdown()/shutdownNow() and wait until awaitTermination() returns true.
+10-15 17:24:20.745  1328  4128 E enyj    : java.lang.RuntimeException: ManagedChannel allocation site
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enyi.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enyj.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enyh.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enqe.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at abxw.H(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at abxw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at cdbp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at cdav.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at cdav.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at zcr.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:20.745  1328  4128 E enyj    : *~*~*~ Previous channel {0} was not shutdown properly!!! ~*~*~*
+10-15 17:24:20.745  1328  4128 E enyj    :     Make sure to call shutdown()/shutdownNow() and wait until awaitTermination() returns true.
+10-15 17:24:20.745  1328  4128 E enyj    : java.lang.RuntimeException: ManagedChannel allocation site
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enyi.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enyj.<init>(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enyh.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):21)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at enqe.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at abxw.H(:com.google.android.gms@231818047@23.18.18 (190800-535401451):22)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at abxw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at cdbp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at cdav.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at cdav.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at zcr.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:20.745  1328  4128 E enyj    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:24:20.752  1328  2940 W ChimeraUtils: Module com.google.android.gms.phonesky_recovery missing resource null(0)
+10-15 17:24:20.754  1328  2940 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.phonesky_recovery, using defaults.
+10-15 17:24:20.758  1669  1681 I ogle.android.as: Background concurrent copying GC freed 31311(3349KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 12MB/24MB, paused 10.018ms,16us total 349.484ms
+10-15 17:24:20.764  1328  4128 D LT_LitBstrpCntrl: Initializing BootstrapController Instance
+10-15 17:24:20.784  1328  5323 W gle.android.gms: Long monitor contention with owner highpool[8] (4128) at cooe cooe.a(android.content.Context)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2) waiters=0 in cooe cooe.a(android.content.Context) for 405ms
+10-15 17:24:20.791  1149  5337 D TrafficStats: tagSocket(115) with statsTag=0x30008100, statsUid=-1
+10-15 17:24:20.793  1149  3172 I TetheringManager: registerTetheringEventCallback:com.google.android.gms
+10-15 17:24:20.808  1328  1328 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 17:24:20.808  1328  1328 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 17:24:20.814  1328  1328 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 17:24:20.827  1328  1328 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 17:24:20.827  1328  1328 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 17:24:20.829  1328  2940 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.vision, using defaults.
+10-15 17:24:20.830  1328  1328 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 17:24:20.841  1328  2940 I GmsDebugLogger: [53] +mlkit.barcode.ui:0
+10-15 17:24:20.896  1149  2936 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 17:24:20.926  1149  5346 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 17:24:20.930  1328  5327 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 17:24:20.930  1328  5327 W Pay     : [eMoney card recovery task] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+10-15 17:24:20.932  1328  5327 I Pay     : Requested immediate check to see whether to show pay module downloading complete notification. [CONTEXT service_id=198 ]
+10-15 17:24:20.936  1328  5327 I Pay     : Closed loop HCE not migrated or access is not enabled. [CONTEXT service_id=198 ]
+10-15 17:24:20.945  1328  5327 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+10-15 17:24:20.950  1328  5327 W Pay     : Mdl not supported. Not triggering periodic MSO refresh task. [CONTEXT service_id=198 ]
+10-15 17:24:20.951  1149  2936 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 17:24:20.953  1328  5327 I Pay     : Closed loop HCE not migrated and campus id not enabled. [CONTEXT service_id=198 ]
+10-15 17:24:20.960  1149  1149 I rcs     : [RcsBindingManager] Checking if we should rebind to previous service. Attempt 0
+10-15 17:24:20.960  1149  1149 I rcs     : [RcsBindingManager] No valid settings for binding.
+10-15 17:24:20.975  1149  5346 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 17:24:20.984  1328  3483 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1792108800000]
+10-15 17:24:21.047  1328  5327 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 17:24:21.047  1328  5327 W Pay     : [eMoney txn sync] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+10-15 17:24:21.055  1328  2940 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.geller.GellerCleanupService.GellerCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 17:24:21.059  1328  5327 V SmartDevice: [ModuleInitializer] ModuleInitializer got intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
+10-15 17:24:21.060  1328  5327 W ChimeraUtils: Module com.google.android.gms.smartdevice missing resource null(0)
+10-15 17:24:21.067  3222  3314 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:21.068   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:21.078  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:21.079  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 17:24:21.079  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:21.079  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 17:24:21.081  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_CHARGING_TASK.
+10-15 17:24:21.088  1328  4929 I PeopleGalProvider: Gal directories started.
+10-15 17:24:21.088  1328  4929 I PeopleGalProvider: Method 1 completed.
+10-15 17:24:21.088  1328  4929 I PeopleGalProvider: Method 1 finished successfully.
+10-15 17:24:21.092  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 17:24:21.092  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:21.095  5047  5064 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 17:24:21.099   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:21.105  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 17:24:21.111   488   590 I RoleService: Granting default roles...
+10-15 17:24:21.114  3972  5457 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:21.115  1883  2541 E SingleDataFileGroupPop: Failed to add file group
+10-15 17:24:21.132  1883  2587 I A       : Starting new batch; batchId=2 corpus=1004
+10-15 17:24:21.147  1883  2592 I A       : Joining existing batch; batchId=2 corpus=1014
+10-15 17:24:21.147  1883  2309 I A       : Joining existing batch; batchId=2 corpus=1015
+10-15 17:24:21.147  1883  2587 I A       : Joining existing batch; batchId=2 corpus=1008
+10-15 17:24:21.157  1883  2541 I A       : Download file group for language pack: en-US
+10-15 17:24:21.157  1883  2541 W A       : Locale en-US is not compatible, please check manifest exists
+10-15 17:24:21.158  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:21.158  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:21.158  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:21.158  1883  2541 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:21.158  1883  2541 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:21.158  1883  2541 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:21.158  1883  2541 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:21.158  1883  2541 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:21.158  1883  2541 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:21.159  1883  2541 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-15 17:24:21.160  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:21.161  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:21.161  1883  2541 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:21.161  1883  2541 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:21.161  1883  2541 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:21.161  1883  2541 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:21.161  1883  2541 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:21.161  1883  2541 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:21.161  1883  2541 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-15 17:24:21.162  1883  2541 I A       : Using proto config with mendel
+10-15 17:24:21.162  1883  2541 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:21.162  1883  2541 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:21.162  1883  2541 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:21.162  1883  2541 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:21.162  1883  2541 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:21.162  1883  2541 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:21.162  1883  2541 I HotwordModelPopulator: #updateHotwordFileGroup group name: hotword_model_en-US_okhey, raw locale: en-US, locale: en-US
+10-15 17:24:21.176  1149  3172 W MagicTether: [TetherListenerService] Invalid account list. [CONTEXT service_id=276 ]
+10-15 17:24:21.189  1883  2454 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792085030564]
+10-15 17:24:21.189  1883  2470 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792085030564]
+10-15 17:24:21.189  1883  2474 I MicroModelsUtil: #getHotwordModelFromMobstore [mobstoreUri: android://com.google.android.googlequicksearchbox/files/datadownload/shared/public/datadownloadfile_1792085030564]
+10-15 17:24:21.192  1883  2454 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-15 17:24:21.192  1883  2470 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-15 17:24:21.193  1883  2474 I HotwordModelPopulator: Updated file group for locale 'hotword_model_en-US_okhey' from location: https://www.gstatic.com/android-search/hotword/x_google/975058821313279e27b2c3f04de0beef/hotword.data. Download already finished.
+10-15 17:24:21.231  1328  1328 D LT_ClntIntrcptrFctryV12: Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0YpLmgpvPvwMAw
+10-15 17:24:21.240  1149  1149 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START pkg=com.google.android.gms }
+10-15 17:24:21.243  1149  5337 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 17:24:21.243  1149  5337 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:21.245  1149  5337 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:21.250  1328  5327 D SmartDevice: [ModuleInitializer] Module init - scheduling buffered logs cleanup task
+10-15 17:24:21.250  1328  5327 I SmartDevice: [CleanBufferedLogsService] Periodic task upload_buffered_logs_periodic scheduled!
+10-15 17:24:21.259  1149  5337 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 17:24:21.260  1149  5337 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 17:24:21.260  1149  5337 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 17:24:21.261  1328  5448 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.GcmReceiverService} to 1 [CONTEXT service_id=250 ]
+10-15 17:24:21.262  1328  5448 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.GmsSubscribedFeedsProvider} to 1 [CONTEXT service_id=250 ]
+10-15 17:24:21.263  1328  5448 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.SyncService} to 1 [CONTEXT service_id=250 ]
+10-15 17:24:21.263  1328  5448 I SubscribedFeeds: Setting ComponentInfo{com.google.android.gms/com.google.android.gms.subscribedfeeds.GmsFeedsSyncService} to 1 [CONTEXT service_id=250 ]
+10-15 17:24:21.267  1328  5448 I TelephonySpamInit: On boot completed TelephonySpam module initialized [CONTEXT service_id=150 ]
+10-15 17:24:21.267  1328  5448 I TelephonySpamInit: onModuleUpdated TelephonySpam module initialized [CONTEXT service_id=150 ]
+10-15 17:24:21.267  1328  5448 I SpamListSync: scheduleSyncTasks [CONTEXT service_id=150 ]
+10-15 17:24:21.267  1328  5448 I SpamListSync: schedulePeriodicTask [CONTEXT service_id=150 ]
+10-15 17:24:21.281  1328  5448 I SpamListSync: scheduleOneTimeTask [CONTEXT service_id=150 ]
+10-15 17:24:21.282  1328  5448 I ThreadNetworkModuleInit: Initializing runtime states: 2 [CONTEXT service_id=305 ]
+10-15 17:24:21.283  1149  3072 W .gms.persistent: Long monitor contention with owner highpool[11] (5429) at bdki bdki.c(android.content.Context, java.lang.String)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4) waiters=0 in bdki bdki.c(android.content.Context, java.lang.String) for 473ms
+10-15 17:24:21.285  1328  5448 I ThreadNetworkModuleInit: Enabled component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
+10-15 17:24:21.295  1328  5448 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
+10-15 17:24:21.305  1328  1336 I gle.android.gms: Background young concurrent copying GC freed 68412(3489KB) AllocSpace objects, 61(3140KB) LOS objects, 23% free, 15MB/19MB, paused 32us,20us total 471.188ms
+10-15 17:24:21.320  1328  5448 I TrustedTime: Skip initializing when trusted time feature disabled. [CONTEXT service_id=326 ]
+10-15 17:24:21.329  1328  5448 W ActiveUnlock: Tried to set empty triggers [CONTEXT service_id=327 ]
+10-15 17:24:21.330  1328  5448 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
+10-15 17:24:21.479  1328  5327 I SystemUpdate: [Control,UpdateReminderDialogControl] Received action: android.intent.action.BOOT_COMPLETED
+10-15 17:24:21.510  1149  1149 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+10-15 17:24:21.544  1149  5358 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 17:24:21.572  1328  5434 D LT_PhenotypeApiImplV12: Retrieve experiment configurations
+10-15 17:24:21.595  1328  1338 W System  : A resource failed to call close.
+10-15 17:24:21.596  1328  5327 I Wear_Controller: Wearable module requires a companion app to be installed.
+10-15 17:24:21.614  1328  5327 I Wear_Controller: onStartup - Wear is not available on this device.
+10-15 17:24:21.620  1149  1149 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
+10-15 17:24:21.729  4620  4902 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

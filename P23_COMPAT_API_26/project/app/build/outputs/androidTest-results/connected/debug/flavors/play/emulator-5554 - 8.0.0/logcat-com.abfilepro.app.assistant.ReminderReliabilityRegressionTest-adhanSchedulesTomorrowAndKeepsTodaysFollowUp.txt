@@ -1,0 +1,4 @@
+10-15 17:22:21.800  4964  4983 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 17:22:21.911  1810  1825 I zygote64: NativeAllocBackground concurrent copying GC freed 37111(2MB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 4MB/9MB, paused 6.228ms total 27.727ms
+10-15 17:22:21.921  1810  4999 W System  : ClassLoader referenced unknown path:
+10-15 17:22:21.922  4964  4983 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,10 @@
+10-15 17:24:07.886  4620  4902 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 17:24:07.888  3222  3281 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 17:24:07.905  4999  4999 I ackageinstaller: Using CollectorTypeCC GC.
+10-15 17:24:07.912  4999  4999 W ackageinstaller: Unexpected CPU variant for x86: x86_64.
+10-15 17:24:07.912  4999  4999 W ackageinstaller: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 17:24:07.917  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task FETCH_ADVERTISING_INFO.
+10-15 17:24:07.928   817  1000 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 17:24:07.936  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task FETCH_SCHEDULED_BUBBLES.
+10-15 17:24:07.948  1328  3166 W Icing   : No valid account for uploading user actions
+10-15 17:24:07.960  4620  4902 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,4 @@
+10-15 17:22:47.427  3700  3801 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 17:22:47.435  1216  2238 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.usagereporting.service.UsageReportingChimeraService$CheckboxRestoringTaskBoundService finished executing. cause:5 result: 1 elapsed_millis: 449 uptime_millis: 449 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-15 17:22:47.514   560  1231 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 17:22:47.555  3700  3801 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

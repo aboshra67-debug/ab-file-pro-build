@@ -1,0 +1,25 @@
+10-15 17:24:14.535  4620  4902 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:14.541  5244  5244 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+10-15 17:24:14.557  5134  5239 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.gms.accountsettings.content/settings/indexables_xml_res
+10-15 17:24:14.558  5134  5239 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.577   488   519 E system_server: No package ID 7f found for ID 0x7f08069b.
+10-15 17:24:14.577   488   519 E system_server: No package ID 7f found for ID 0x7f140c6e.
+10-15 17:24:14.578  5134  5239 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.589  5134  5240 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.600  5134  5239 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.601  5134  5239 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.623   488   519 E system_server: No package ID 7f found for ID 0x7f080729.
+10-15 17:24:14.623   488   519 E system_server: No package ID 7f found for ID 0x7f142028.
+10-15 17:24:14.631  5244  5244 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-15 17:24:14.656   488   519 E system_server: No package ID 7f found for ID 0x7f0802b0.
+10-15 17:24:14.656   488   519 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-15 17:24:14.656   488   519 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-15 17:24:14.656   488   519 E system_server: No package ID 7f found for ID 0x7f150a3f.
+10-15 17:24:14.658  3972  3972 I ProvidersCache: Updating roots due to change on user 0at content://com.android.externalstorage.documents/
+10-15 17:24:14.686  3972  5296 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:14.710  5244  5302 I GMS_MM_Logger: Start time: 206949
+10-15 17:24:14.711  5244  5302 I GMS_MM_Logger: Started.
+10-15 17:24:14.713  5244  5244 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10120; state: ENABLED
+10-15 17:24:14.713  5244  5244 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 213451, Startup latency (ms): 446, Is system user: true
+10-15 17:24:14.714  5244  5244 I cuir    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+10-15 17:24:14.785  4620  4902 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

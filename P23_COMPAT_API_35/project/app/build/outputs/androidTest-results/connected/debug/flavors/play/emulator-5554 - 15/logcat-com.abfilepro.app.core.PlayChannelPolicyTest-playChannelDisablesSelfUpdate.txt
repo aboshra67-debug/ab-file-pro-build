@@ -1,0 +1,2 @@
+10-15 17:23:02.737  3700  3801 I TestRunner: started: playChannelDisablesSelfUpdate(com.abfilepro.app.core.PlayChannelPolicyTest)
+10-15 17:23:02.740  3700  3801 I TestRunner: finished: playChannelDisablesSelfUpdate(com.abfilepro.app.core.PlayChannelPolicyTest)

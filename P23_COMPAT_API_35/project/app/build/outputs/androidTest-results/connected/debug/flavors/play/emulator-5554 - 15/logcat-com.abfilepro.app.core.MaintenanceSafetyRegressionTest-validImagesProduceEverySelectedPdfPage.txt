@@ -1,0 +1,16 @@
+10-15 17:23:00.969  3700  3801 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:00.974  2702  2781 I RkpdRegistrationBinder: Key successfully assigned to client
+10-15 17:23:00.975   560   560 I RemoteProvisionSysSvc: Successfully fetched key for client 57977489
+10-15 17:23:00.989   174   174 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 148: Using TAG_CERTIFICATE_NOT_BEFORE: 0
+10-15 17:23:00.989   174   174 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 154: Using TAG_CERTIFICATE_NOT_AFTER: 2461449600000
+10-15 17:23:00.989   174   174 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 159: Got certificate date params:  NotBefore = 0, NotAfter = 2461449600000
+10-15 17:23:00.989   174   174 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 273: Setting notBefore to 0
+10-15 17:23:00.989   174   174 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 282: Setting notAfter to 2461449600
+10-15 17:23:00.995  1326  1830 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 23880436
+10-15 17:23:01.003  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 110
+10-15 17:23:01.004  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e31310
+10-15 17:23:01.004  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e31310
+10-15 17:23:01.021  3700  3801 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 110
+10-15 17:23:01.022  3700  3801 D pdf_document_jni: Deleting Document: 0x7df998e47f10
+10-15 17:23:01.022  3700  3801 D pdf_document_jni: Destroyed Document: 0x7df998e47f10
+10-15 17:23:01.024  3700  3801 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

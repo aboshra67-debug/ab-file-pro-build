@@ -1,0 +1,3 @@
+10-15 17:24:26.835  4620  4902 I TestRunner: started: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:26.837  3135  5360 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 17:24:26.845  4620  4902 I TestRunner: finished: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

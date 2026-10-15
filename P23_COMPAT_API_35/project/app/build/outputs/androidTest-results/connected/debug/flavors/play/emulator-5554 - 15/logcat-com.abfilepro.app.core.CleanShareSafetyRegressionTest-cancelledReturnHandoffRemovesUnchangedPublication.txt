@@ -1,0 +1,51 @@
+10-15 17:22:52.830  3700  3801 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:52.843  3251  3412 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 17:22:52.867  3251  3413 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=17557490-0d65-4863-a37c-4da56a37bd34, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 17:22:52.867  3251  3400 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.apps.messaging
+10-15 17:22:52.882  1565  1565 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.audio.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:52.893  3590  3744 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]" thread_id=67 ]
+10-15 17:22:52.893  3251  3466 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 17:22:52.898  3590  3717 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]>Handler" thread_id=61 ]
+10-15 17:22:52.898  3251  3466 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@78770a3
+10-15 17:22:52.902  3866  3866 D nativeloader: Configuring clns-shared-7 for other apk /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk. target_sdk_version=35, uses_libraries=, library_path=/apex/com.android.extservices/priv-app/GoogleExtServices@350820300/lib/x86_64:/apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk!/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.ext.services:/apex/com.android.extservices/priv-app/GoogleExtServices@350820300:/system/lib64:/system_ext/lib64
+10-15 17:22:52.902  3590  3717 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]>Handler" thread_id=61 ]
+10-15 17:22:52.902  3590  3717 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]" thread_id=61 ]
+10-15 17:22:52.902  3590  3717 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]" thread_id=61 ]
+10-15 17:22:52.902  3590  3717 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[1dcb4acb-3419]>Handler" thread_id=61 ]
+10-15 17:22:52.905  3558  3570 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification artd has clients: 0
+10-15 17:22:52.905  3558  3570 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+10-15 17:22:52.910  3866  3866 D nativeloader: InitApexLibraries:
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_adservices: libhpke_jni.so:libtflite_support_classifiers_native.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_appsearch: libicing.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_art: libartservice.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_btservices: libbluetooth_jni.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_conscrypt: libjavacrypto.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_mediaprovider: libpdfclient.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_nfcservices: libnfc_nci_jni.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_ondevicepersonalization: libfcp_cpp_dep_jni.so:libfcp_hpke_jni.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_os_statsd: libstats_jni.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcrypto.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.121.0.6167.71.so:libservice-connectivity.so:libservice-thread-jni.so:libssl.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_uwb: libuwb_uci_jni_rust.so
+10-15 17:22:52.910  3866  3866 D nativeloader:   com_android_virt: libvirtualizationservice_jni.so:libvirtualmachine_jni.so
+10-15 17:22:52.916  3558  3570 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+10-15 17:22:52.917  3290  3298 W marvin.talkback: Suspending all threads took: 13.717ms
+10-15 17:22:52.918  3590  3717 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 17:22:52.921  3866  3866 D CompatChangeReporter: Compat change id reported: 202956589; UID 10205; state: ENABLED
+10-15 17:22:52.923  3290  3298 I marvin.talkback: Background concurrent mark compact GC freed 1088KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 1972KB/3944KB, paused 13.930ms,374us total 49.276ms
+10-15 17:22:52.939   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 17:22:52.939   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 17:22:52.939   560   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10208} in 9ms
+10-15 17:22:52.939   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 17:22:52.939   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 17:22:52.939   560   835 D InetDiagMessage: Destroyed live tcp sockets for uids={20208} in 0ms
+10-15 17:22:52.942  1418  1995 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/alarms/Alarm_Classic.ogg)
+10-15 17:22:52.954  1418  1995 I MediaProvider: Open with lower FS for /product/media/audio/alarms/Alarm_Classic.ogg. Uid: 1000
+10-15 17:22:52.955  3866  3866 V GraphicsEnvironment: Currently set values for:
+10-15 17:22:52.955  3866  3866 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 17:22:52.955  3866  3866 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 17:22:52.955  3866  3866 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 17:22:52.955  3866  3866 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:22:52.963  1418  1995 V MediaProvider: attachVolume() called for external_primary with state:null
+10-15 17:22:52.979  1565  1701 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:22:52.983  1565  1565 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.nlu_ff.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:52.984  3700  3801 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

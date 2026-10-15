@@ -1,0 +1,4 @@
+10-15 17:24:26.765  4620  4902 I TestRunner: started: fullBusinessContactFieldsStillParse(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:26.774  3135  5360 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 17:24:26.775  3135  5360 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 17:24:26.787  4620  4902 I TestRunner: finished: fullBusinessContactFieldsStillParse(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

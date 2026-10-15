@@ -1,0 +1,5 @@
+10-15 17:22:59.674  3700  3801 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:22:59.707  1522  1522 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 17:22:59.709  1522  1522 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 17:22:59.774  1216  2424 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 17:22:59.783  3700  3801 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

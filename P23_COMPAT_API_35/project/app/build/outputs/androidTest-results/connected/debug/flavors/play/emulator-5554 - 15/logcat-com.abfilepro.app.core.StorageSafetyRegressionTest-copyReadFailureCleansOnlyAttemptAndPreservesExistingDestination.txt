@@ -1,0 +1,4 @@
+10-15 17:23:03.479  3700  3801 I TestRunner: started: copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:23:03.495  1565  1701 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:23:03.554   142   142 I lowmemorykiller: lmkd data connection established
+10-15 17:23:03.559  3700  3801 I TestRunner: finished: copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

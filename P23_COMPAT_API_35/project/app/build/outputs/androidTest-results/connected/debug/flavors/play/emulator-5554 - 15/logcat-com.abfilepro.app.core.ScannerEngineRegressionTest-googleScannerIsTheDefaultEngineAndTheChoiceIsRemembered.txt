@@ -1,0 +1,43 @@
+10-15 17:23:02.893  3700  3801 I TestRunner: started: googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 17:23:02.893  1216  2424 W GLSUser : [AppCertManager] Exception while requesting key:
+10-15 17:23:02.893  1216  2424 W GLSUser : java.util.concurrent.ExecutionException: bpcw: Parse Proto Exception with response code 400
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at etvr.s(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at etvr.get(:com.google.android.gms@242335041@24.23.35 (190800-646585959):10)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at yfw.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):477)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at yfu.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at yfu.hf(:com.google.android.gms@242335041@24.23.35 (190800-646585959):16)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at oxh.onTransact(:com.google.android.gms@242335041@24.23.35 (190800-646585959):96)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at android.os.Binder.transact(Binder.java:1345)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at bjld.onTransact(:com.google.android.gms@242335041@24.23.35 (190800-646585959):18)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at android.os.Binder.transact(Binder.java:1345)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at bbqp.onTransact(:com.google.android.gms@242335041@24.23.35 (190800-646585959):147)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at android.os.Binder.execTransact(Binder.java:1444)
+10-15 17:23:02.893  1216  2424 W GLSUser : Caused by: bpcw: Parse Proto Exception with response code 400
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at bpdw.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):80)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at bpgb.e(:com.google.android.gms@242335041@24.23.35 (190800-646585959):17)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at bpgp.onSucceeded(:com.google.android.gms@242335041@24.23.35 (190800-646585959):7)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at m.mw.onSucceeded(:com.google.android.gms.dynamite_cronetdynamite@242335041@24.23.35 (190800-0):3)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at m.lt.run(:com.google.android.gms.dynamite_cronetdynamite@242335041@24.23.35 (190800-0):25)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:23:02.893  1216  2424 W GLSUser : Caused by: fkhe: Protocol message contained an invalid tag (zero).
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkea.k(:com.google.android.gms@242335041@24.23.35 (190800-646585959):39)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkid.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):309)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkid.i(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkgi.fe(:com.google.android.gms@242335041@24.23.35 (190800-646585959):25)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkgc.g(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkdw.e(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkdw.d(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at fkdw.p(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at bpdw.g(:com.google.android.gms@242335041@24.23.35 (190800-646585959):68)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	at bpdw.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 17:23:02.893  1216  2424 W GLSUser : 	... 10 more
+10-15 17:23:02.893  1216  3467 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 17:23:02.900  1565  1701 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.android.billingclient#com.google.android.googlequicksearchbox
+10-15 17:23:02.902   358   407 I netd    : tetherGetStats() -> {[]} <0.27ms>
+10-15 17:23:02.902  3700  3801 I TestRunner: finished: googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered(com.abfilepro.app.core.ScannerEngineRegressionTest)

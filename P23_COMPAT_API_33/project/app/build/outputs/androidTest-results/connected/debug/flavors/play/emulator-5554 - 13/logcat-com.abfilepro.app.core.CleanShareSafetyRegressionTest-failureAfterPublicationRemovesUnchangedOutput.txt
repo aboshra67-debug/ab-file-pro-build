@@ -1,0 +1,5 @@
+10-15 17:24:14.429  4620  4902 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:14.517  5244  5244 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+10-15 17:24:14.518  5244  5244 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+10-15 17:24:14.518  5244  5244 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+10-15 17:24:14.530  4620  4902 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

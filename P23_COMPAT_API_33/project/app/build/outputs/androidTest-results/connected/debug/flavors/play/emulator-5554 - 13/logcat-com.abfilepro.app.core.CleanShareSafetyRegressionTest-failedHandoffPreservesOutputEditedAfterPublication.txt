@@ -1,0 +1,18 @@
+10-15 17:24:09.583  4620  4902 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:09.587  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.android.vending
+10-15 17:24:09.588  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:09.588  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.android.vending
+10-15 17:24:09.602  5047  5065 I PermissionControllerServiceImpl: Updating user sensitive for uid 10142
+10-15 17:24:09.605   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:09.610  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:09.610  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.apps.maps
+10-15 17:24:09.613  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:09.621  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.apps.maps
+10-15 17:24:09.623   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:09.638  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.maps
+10-15 17:24:09.638  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:09.638  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.maps
+10-15 17:24:09.651  3222  3291 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:09.664  3972  5127 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:09.670   285   285 I netd    : tetherGetStats() -> {[]} <0.38ms>
+10-15 17:24:09.677  4620  4902 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

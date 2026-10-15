@@ -1,0 +1,2 @@
+10-15 17:24:27.506  4620  4902 I TestRunner: started: anEmptyDeskHasNoOutline(com.abfilepro.app.core.SmartCameraRegressionTest)
+10-15 17:24:27.519  4620  4902 I TestRunner: finished: anEmptyDeskHasNoOutline(com.abfilepro.app.core.SmartCameraRegressionTest)

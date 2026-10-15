@@ -1,0 +1,110 @@
+10-15 17:24:06.764  4620  4902 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 17:24:06.765  1883  1883 I A       : Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.assistant.platform.contexttrigger.impl.ContextTriggerBroadcastReceiver_Receiver (has extras) }
+10-15 17:24:06.771  1149  4543 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:06.772  1883  2502 W A       : No value provided for the places model index flag.
+10-15 17:24:06.800  1149  4541 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:06.801  1083  1991 D EGL_emulation: app_time_stats: avg=2099.10ms min=2099.10ms max=2099.10ms count=1
+10-15 17:24:06.816  1883  2528 E TipSharedPrefManager: invalid tip 40070019: tip does not need conditions checked only once
+10-15 17:24:06.818  1883  2528 E TipSharedPrefManager: invalid tip 40070055: tip does not need conditions checked only once
+10-15 17:24:06.824  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.824  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.825  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.825  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.826  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.826  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.826  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.826  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.826  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.827  1883  2528 E TipSharedPrefManager: invalid tip 40070197: tip does not need conditions checked only once
+10-15 17:24:06.828  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.829  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.830  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.830  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.830  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.830  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.831  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.832  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.832  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.833  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.834  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.835  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.836  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.836  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.836  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.836  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.836  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.837  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.839  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.839  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.839  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.840  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.840  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.840  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.840  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.840  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.840  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.840  1883  2528 E TipSharedPrefManager: invalid tip 40070251: tip does not need conditions checked only once
+10-15 17:24:06.872  1149  1149 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-15 17:24:06.872  1149  1149 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-15 17:24:06.882  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.883  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.883  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.884  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.901  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.902  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.902  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.910  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.915  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.934  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.935  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.936  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.937  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.937  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.941  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.941  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.941  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.942  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.945  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.946  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.948  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.948  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.948  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.948  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.948  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.948  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.948  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.948  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.949  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.949  1883  2528 I A       : Using proto config with mendel
+10-15 17:24:06.949  1883  2528 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:06.949  1883  2528 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.952  1883  2528 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:06.952  1883  2528 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:06.953  1883  2528 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:06.954  1883  2528 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:06.971  1883  1883 I o       : processValidityUpdateForAllData
+10-15 17:24:06.977  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task CHROME_EXPERIMENT_SYNC.
+10-15 17:24:06.990  1328  1328 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-15 17:24:06.990  1328  1328 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-15 17:24:07.087   488   519 E system_server: No package ID 7f found for ID 0x7f0805a7.
+10-15 17:24:07.087   488   519 E system_server: No package ID 7f found for ID 0x7f150421.
+10-15 17:24:07.103  3222  3281 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 17:24:07.170  3222  3233 I .apps.messaging: JIT allocated 64KB for compiled code of java.lang.Object uwq.o()
+10-15 17:24:07.204  1083  1083 D MainContentCaptureSession: Flushing 53 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-15 17:24:07.205  1083  1083 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-15 17:24:07.209  1669  1669 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 17:24:07.210  1669  1669 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 17:24:07.220  1149  1149 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 17:24:07.220  1149  1149 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 17:24:07.224   488   590 I RoleService: Granting default roles...
+10-15 17:24:07.236  1883  1883 I BgTaskExecutorImpl: Starting PERIODIC background task CLEAR_DATA_DETECTOR.
+10-15 17:24:07.239  1883  2587 I FirstRunClassifier: First run of com.google.android.googlequicksearchbox on this device detected
+10-15 17:24:07.257  3191  3191 I CarrierServices: [2] CarrierServicesBaseApp.initialize:126 Initialized already, return.
+10-15 17:24:07.284  1328  4128 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=AMBIENT_ASSISTANT serviceId=32
+10-15 17:24:07.288  3191  3191 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: android.intent.action.BOOT_COMPLETED
+10-15 17:24:07.295   488   519 E system_server: No package ID 7f found for ID 0x7f0802b0.
+10-15 17:24:07.295   488   519 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-15 17:24:07.295   488   519 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-15 17:24:07.295   488   519 E system_server: No package ID 7f found for ID 0x7f150a3f.
+10-15 17:24:07.299  3191  3191 I CarrierServices: [2] RcsStateFetcher.bindService:108 Migration binding to RcsMigrationService
+10-15 17:24:07.312  4620  4902 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

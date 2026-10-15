@@ -1,0 +1,21 @@
+10-15 17:22:22.119  4964  4983 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 17:22:22.124  4964  4969 I zygote64: Do full code cache collection, code=123KB, data=83KB
+10-15 17:22:22.125  4964  4969 I zygote64: After code cache collection, code=114KB, data=67KB
+10-15 17:22:22.164  1790  2783 W Nearby  : Failed attempt #3 out of 3 for RestoreDeviceName [CONTEXT service_id=49 ]
+10-15 17:22:22.164  1790  2783 W Nearby  : java.lang.IllegalStateException: BluetoothAdapter not ready yet!
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at ajpy.d(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at ajpx.run(Unknown Source:0)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at bwuj.call(Unknown Source:0)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at bwuo.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at bwuo.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):9)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at ajpw.run(Unknown Source:0)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at sow.run(Unknown Source:0)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at sux.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-15 17:22:22.164  1790  2783 W Nearby  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 17:22:22.254  1810  2141 D EGL_emulation: eglMakeCurrent: 0x700b1ce555a0: ver 3 0 (tinfo 0x700b1ce0d740)
+10-15 17:22:22.260  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 17:22:22.264  1810  2141 D EGL_emulation: eglMakeCurrent: 0x700b1ce555a0: ver 3 0 (tinfo 0x700b1ce0d740)
+10-15 17:22:22.271  4964  4983 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

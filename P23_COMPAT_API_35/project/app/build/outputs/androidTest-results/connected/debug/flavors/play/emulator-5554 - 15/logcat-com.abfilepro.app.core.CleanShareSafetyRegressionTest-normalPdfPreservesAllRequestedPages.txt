@@ -1,0 +1,33 @@
+10-15 17:22:49.944  3700  3801 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:49.946  1216  1914 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.icing.mdd) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 17:22:49.947  1216  2370 D TrafficStats: tagSocket(197) with statsTag=0x1203, statsUid=10143
+10-15 17:22:49.954  1216  1914 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(7, com.google.lighter.android#com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 17:22:49.955  1216  2136 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.nnapi.drivermanager) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 17:22:49.958  1522  1522 I LT_PhenotypeApiImplV12: Phenotype registration succeeded
+10-15 17:22:49.963  1522  3713 W MobStoreFlagStore: Failed to commit due to stale snapshot for com.google.android.gms.magictether. Experiments may be delayed til next app start. Error code: 29501. Triggering flag update.
+10-15 17:22:50.039  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:50.061  1522  1526 I gle.android.gms: Background concurrent mark compact GC freed 7301KB AllocSpace bytes, 105(8616KB) LOS objects, 49% free, 14MB/29MB, paused 374us,610us total 105.523ms
+10-15 17:22:50.085   358   407 I netd    : tetherGetStats() -> {[]} <0.33ms>
+10-15 17:22:50.091  1522  1528 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+10-15 17:22:50.095  1216  1216 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 17:22:50.105  1216  1914 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.people) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 17:22:50.117  1216  3467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-15 17:22:50.119  1216  3467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 171 uptime_millis: 171 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-15 17:22:50.128  3251  3413 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 17:22:50.132  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e45510
+10-15 17:22:50.133  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e45510
+10-15 17:22:50.133  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:50.133  3251  3390 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=46 ]
+10-15 17:22:50.134  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e49cd0
+10-15 17:22:50.134  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e49cd0
+10-15 17:22:50.134  1216  2136 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.westworld) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 17:22:50.139  3251  3417 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 17:22:50.141  3251  3390 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=46 ]
+10-15 17:22:50.141  3251  3476 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=67 ]
+10-15 17:22:50.157  3251  3413 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 17:22:50.167  3251  3412 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 17:22:50.168  3251  3417 W BugleAction: Failed to get msisdn from Bugle
+10-15 17:22:50.171  3700  3801 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:50.171  3700  3801 D pdf_document_jni: Deleting Document: 0x7df998e2fc50
+10-15 17:22:50.172  3700  3801 D pdf_document_jni: Destroyed Document: 0x7df998e2fc50
+10-15 17:22:50.176  3700  3801 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

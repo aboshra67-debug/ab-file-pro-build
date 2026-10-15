@@ -1,0 +1,4 @@
+10-15 17:22:28.239  4964  4983 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:22:28.261  1614  1656 E memtrack: Couldn't load memtrack module
+10-15 17:22:28.261  1614  1656 W android.os.Debug: failed to get memory consumption info: -1
+10-15 17:22:28.291  4964  4983 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

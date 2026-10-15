@@ -1,0 +1,6 @@
+10-15 17:23:03.394  3700  3801 I TestRunner: started: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:23:03.426   358   407 I netd    : tetherGetStats() -> {[]} <0.49ms>
+10-15 17:23:03.429   930   937 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /system/framework/framework-res.apk' with 1 weak references
+10-15 17:23:03.429   930   937 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GoogleSafetyCenterResources@350820360/GoogleSafetyCenterResources.apk' with 1 weak references
+10-15 17:23:03.429   930   937 W ssioncontroller: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+10-15 17:23:03.470  3700  3801 I TestRunner: finished: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)

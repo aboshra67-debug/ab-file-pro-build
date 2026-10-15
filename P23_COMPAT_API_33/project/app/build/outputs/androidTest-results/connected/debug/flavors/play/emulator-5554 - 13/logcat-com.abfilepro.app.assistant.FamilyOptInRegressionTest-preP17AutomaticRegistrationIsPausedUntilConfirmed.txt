@@ -1,0 +1,5 @@
+10-15 17:24:06.218  4620  4902 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 17:24:06.230   488   590 I RoleService: Granting default roles...
+10-15 17:24:06.261   817  1000 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 17:24:06.303   488  1865 W system_server: Long monitor contention with owner android.bg (519) at void com.android.server.pm.ShortcutService.saveDirtyInfo()(ShortcutService.java:1238) waiters=0 in android.content.pm.ParceledListSlice com.android.server.pm.ShortcutService.getShortcuts(java.lang.String, int, int) for 1.198s
+10-15 17:24:06.317  4620  4902 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

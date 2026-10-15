@@ -1,0 +1,4 @@
+10-15 17:24:23.898  4620  4902 I TestRunner: started: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:24.233   816   876 D EGL_emulation: app_time_stats: avg=4164.91ms min=960.94ms max=7368.88ms count=2
+10-15 17:24:24.526  1149  5340 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 221 [CONTEXT service_id=218 ]
+10-15 17:24:24.536  4620  4902 I TestRunner: finished: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

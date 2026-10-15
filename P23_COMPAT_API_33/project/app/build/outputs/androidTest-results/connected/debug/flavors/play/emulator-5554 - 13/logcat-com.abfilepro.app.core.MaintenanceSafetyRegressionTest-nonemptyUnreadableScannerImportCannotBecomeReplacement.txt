@@ -1,0 +1,4 @@
+10-15 17:24:26.446  4620  4902 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:26.455  4620  4902 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 17:24:26.457  4620  4902 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 17:24:26.459  4620  4902 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

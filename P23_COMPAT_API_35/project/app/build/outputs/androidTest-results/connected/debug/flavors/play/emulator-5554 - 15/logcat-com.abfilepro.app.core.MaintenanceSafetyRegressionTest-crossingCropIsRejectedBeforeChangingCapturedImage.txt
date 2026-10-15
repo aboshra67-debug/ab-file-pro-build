@@ -1,0 +1,5 @@
+10-15 17:23:00.934  3700  3801 I TestRunner: started: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:23:00.938   560  1880 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+10-15 17:23:00.943  1326  1752 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 23764992
+10-15 17:23:00.948  1326  1618 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 17:23:00.952  3700  3801 I TestRunner: finished: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,341 @@
+10-15 17:24:12.816  4620  4902 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:12.826  1083  1132 D ModelWriter: removing items from db . Reason: [removed because the corresponding package or component is removed. mOp=2 removedPackages=[com.android.nfc] removedComponents=[]]
+10-15 17:24:12.850   488   519 E system_server: No package ID 7f found for ID 0x7f0801ef.
+10-15 17:24:12.850   488   519 E system_server: No package ID 7f found for ID 0x7f140400.
+10-15 17:24:12.850   488   519 E system_server: No package ID 7f found for ID 0x7f140401.
+10-15 17:24:12.851   488   519 E system_server: No package ID 7f found for ID 0x7f0801f0.
+10-15 17:24:12.854   488   519 E system_server: No package ID 7f found for ID 0x7f140402.
+10-15 17:24:12.854   488   519 E system_server: No package ID 7f found for ID 0x7f140403.
+10-15 17:24:12.872  1083  1991 D EGL_emulation: app_time_stats: avg=216.82ms min=146.36ms max=286.61ms count=5
+10-15 17:24:12.969  1669  1669 I AiAiEcho: EchoSearch: AppFetcherImpl is initialized with [19] apps [time=7, reason=com.abfilepro.app.p23mainttrial is added]
+10-15 17:24:12.981   488   745 W FileUtils: Failed to chmod(/data/misc/apexdata/com.android.wifi/WifiConfigStoreSoftAp.xml, 384):
+10-15 17:24:12.981   488   745 W FileUtils: android.system.ErrnoException: chmod failed: ENOENT (No such file or directory)
+10-15 17:24:12.981   488   745 W FileUtils: 	at libcore.io.Linux.chmod(Native Method)
+10-15 17:24:12.981   488   745 W FileUtils: 	at libcore.io.ForwardingOs.chmod(ForwardingOs.java:165)
+10-15 17:24:12.981   488   745 W FileUtils: 	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java:83)
+10-15 17:24:12.981   488   745 W FileUtils: 	at android.system.Os.chmod(Os.java:119)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.util.FileUtils.chmod(Unknown Source:0)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiConfigStore$StoreFile.writeBufferedRawData(Unknown Source:16)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiConfigStore.writeBufferedData(Unknown Source:27)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiConfigStore.write(Unknown Source:74)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiConfigManager.saveToStore(Unknown Source:197)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiApConfigStore.persistConfigAndTriggerBackupManagerProxy(Unknown Source:7)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiApConfigStore.getApConfiguration(Unknown Source:20)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiServiceImpl$$ExternalSyntheticLambda32.get(Unknown Source:2)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner.lambda$call$0(Unknown Source:0)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner.$r8$lambda$IBysPtKlrlExB9JJ-BwyCtiuSXA(Unknown Source:0)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner$$ExternalSyntheticLambda1.run(Unknown Source:4)
+10-15 17:24:12.981   488   745 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner$BlockingRunnable.run(Unknown Source:3)
+10-15 17:24:12.981   488   745 W FileUtils: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 17:24:12.981   488   745 W FileUtils: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 17:24:12.981   488   745 W FileUtils: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 17:24:12.981   488   745 W FileUtils: 	at android.os.Looper.loop(Looper.java:288)
+10-15 17:24:12.981   488   745 W FileUtils: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 17:24:13.010   488   745 D WifiConfigStore: Writing to stores completed in 83 ms.
+10-15 17:24:13.013  1247  1324 D WifiTetherMaximizeCompatibilityPref: getBand:1
+10-15 17:24:13.015  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 17:24:13.030  1247  1324 V SettingsSearchProvider: com.android.settings.wifi.WifiSettings$4@f22dc54 tried to add an empty non-indexable key
+10-15 17:24:13.030  1247  1324 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 17:24:13.030  1247  1324 V SettingsSearchProvider: com.google.android.settings.aware.AwareDisplaySettings$1@6dafcf2 tried to add an empty non-indexable key
+10-15 17:24:13.031  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.ConversationListSummaryPreferenceController
+10-15 17:24:13.031  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleSummaryNotificationPreferenceController
+10-15 17:24:13.031  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessController
+10-15 17:24:13.031  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.RedactNotificationPreferenceController
+10-15 17:24:13.033  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.RedactNotificationPreferenceController
+10-15 17:24:13.034  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController
+10-15 17:24:13.034  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.zen.ZenModePreferenceController
+10-15 17:24:13.034  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.ShowOnlyUnseenNotificationsOnLockscreenPreferenceController
+10-15 17:24:13.035  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SnoozeNotificationPreferenceController
+10-15 17:24:13.035  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BadgingNotificationPreferenceController
+10-15 17:24:13.035  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.PulseNotificationPreferenceController
+10-15 17:24:13.039  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController@3c4b6f9
+10-15 17:24:13.040  1247  1324 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 17:24:13.040  1247  1324 V SettingsSearchProvider: com.google.android.settings.aware.TapGestureSettings$1@12eec9f tried to add an empty non-indexable key
+10-15 17:24:13.040  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.WebActionCategoryController
+10-15 17:24:13.040  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.InstantAppWebActionPreferenceController
+10-15 17:24:13.040  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.InstantAppAccountPreferenceController
+10-15 17:24:13.041  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.DomainAppPreferenceController
+10-15 17:24:13.042  1247  1324 V SettingsSearchProvider: com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment$1@c99384a tried to add an empty non-indexable key
+10-15 17:24:13.043  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.AssistGestureSettingsPreferenceController
+10-15 17:24:13.043  1247  1324 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 17:24:13.045  1247  1324 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 17:24:13.045  1247  1324 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 17:24:13.046  1247  1324 V SettingsSearchProvider: com.google.android.settings.aware.WakeScreenGestureSettings$1@d3a8f16 tried to add an empty non-indexable key
+10-15 17:24:13.046  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTogglePreferenceController
+10-15 17:24:13.046  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingFooterPreferenceController
+10-15 17:24:13.046  1247  1324 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@2e00284 tried to add an empty non-indexable key
+10-15 17:24:13.046  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 17:24:13.046  1247  1324 W PrefCtrlListHelper: Controller requires key but it's not defined in xml: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 17:24:13.048  1247  1324 V SettingsSearchProvider: com.android.settings.development.transcode.TranscodeSettingsFragment$1@ec45069 tried to add an empty non-indexable key
+10-15 17:24:13.048  1247  1324 V SettingsSearchProvider: com.android.settings.display.NightDisplaySettings$1@f323b8f tried to add an empty non-indexable key
+10-15 17:24:13.049  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationIllustrationPreferenceController
+10-15 17:24:13.049  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationPreferenceController
+10-15 17:24:13.049  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DaltonizerPreferenceController
+10-15 17:24:13.049  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ColorInversionPreferenceController
+10-15 17:24:13.049  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DarkUIPreferenceController
+10-15 17:24:13.049  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DisableAnimationsPreferenceController
+10-15 17:24:13.050  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.LargePointerIconPreferenceController
+10-15 17:24:13.051  1247  1324 V SettingsSearchProvider: com.android.settings.notification.SoundWorkSettings$1@ba101ab tried to add an empty non-indexable key
+10-15 17:24:13.051  1247  1324 V SettingsSearchProvider: com.android.settings.accessibility.MagnificationPreferenceFragment$1@81ca3a1 tried to add an empty non-indexable key
+10-15 17:24:13.052  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationInjectedServicesForWorkPreferenceController
+10-15 17:24:13.070  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkMobileProviderController
+10-15 17:24:13.081  1247  1324 V SettingsSearchProvider: com.android.settings.enterprise.EnterprisePrivacySettings$1@2f1fb23 tried to add an empty non-indexable key
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: No service published for: ethernet
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$136.createService(SystemServiceRegistry.java:1809)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1908)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1585)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2120)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:900)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.content.Context.getSystemService(Context.java:4168)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at com.android.settings.TetherSettings$2.getNonIndexableKeys(TetherSettings.java:612)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.getNonIndexableKeysFromProvider(SettingsSearchIndexablesProvider.java:284)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryNonIndexableKeys(SettingsSearchIndexablesProvider.java:157)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.provider.SearchIndexablesProvider.query(SearchIndexablesProvider.java:127)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1455)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 17:24:13.096  1247  1324 E SystemServiceRegistry: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 17:24:13.106  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.RecentLocationAccessSeeAllPreferenceController
+10-15 17:24:13.109  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.RemoteVolumeGroupController
+10-15 17:24:13.113  1669  1669 I AiAiEcho: EchoSearch: AppFetcherImpl is initialized with [19] apps [time=21, reason=com.abfilepro.app.p23mainttrial.test is added]
+10-15 17:24:13.143  1247  1324 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+10-15 17:24:13.143  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaOutputPreferenceController
+10-15 17:24:13.146  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.CallVolumePreferenceController
+10-15 17:24:13.146  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.HandsFreeProfileOutputPreferenceController
+10-15 17:24:13.160  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.zen.ZenModePreferenceController
+10-15 17:24:13.160  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SpatialAudioParentPreferenceController
+10-15 17:24:13.163  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsParentPreferenceController
+10-15 17:24:13.163  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationPreferenceController
+10-15 17:24:13.163  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PreventRingingParentPreferenceController
+10-15 17:24:13.163  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingPreferenceController
+10-15 17:24:13.163  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.WorkSoundsPreferenceController
+10-15 17:24:13.168  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsPreferenceController
+10-15 17:24:13.168  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsLockScreenPreferenceController
+10-15 17:24:13.168  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsRecommendationController
+10-15 17:24:13.169  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.ManageDeviceAdminPreferenceController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.SystemAlertWindowPreferenceController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.zenaccess.ZenAccessController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.DataSaverController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.vrlistener.EnabledVrListenersController
+10-15 17:24:13.170  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.MoreSpecialAccessPreferenceController
+10-15 17:24:13.180  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.ManageDeviceAdminPreferenceController
+10-15 17:24:13.181  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.EnterprisePrivacyPreferenceController
+10-15 17:24:13.181  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.FinancedPrivacyPreferenceController
+10-15 17:24:13.181  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SimLockPreferenceController
+10-15 17:24:13.182  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 17:24:13.182  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.ManageTrustAgentsPreferenceController
+10-15 17:24:13.182  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ScreenPinningPreferenceController
+10-15 17:24:13.182  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ConfirmSimDeletionPreferenceController
+10-15 17:24:13.241  1247  3971 W MobileNetworkUtils: EuiccManager is not enabled.
+10-15 17:24:13.243  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeActivationPreferenceController
+10-15 17:24:13.243  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TwilightLocationPreferenceController
+10-15 17:24:13.244  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeScheduleSelectorController
+10-15 17:24:13.244  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController
+10-15 17:24:13.252  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController@f4cb34d
+10-15 17:24:13.252  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.SelectLongPressTimeoutPreferenceController
+10-15 17:24:13.253  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutPreferenceController
+10-15 17:24:13.253  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AutoclickPreferenceController
+10-15 17:24:13.258  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.ButtonNavigationSettingsAssistController
+10-15 17:24:13.259  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickCustomSeekbarController
+10-15 17:24:13.259  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickFooterPreferenceController
+10-15 17:24:13.261  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wifi.CellularFallbackPreferenceController
+10-15 17:24:13.280  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController
+10-15 17:24:13.280  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.AddDevicePreferenceController
+10-15 17:24:13.281  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SpatialAudioPreferenceController
+10-15 17:24:13.281  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SpatialAudioWiredHeadphonesController
+10-15 17:24:13.305  1083  1083 D MainContentCaptureSession: Flushing 193 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARING
+10-15 17:24:13.305  1083  1083 D MainContentCaptureSession: Flushing 2 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=VIEW_TREE_APPEARED
+10-15 17:24:13.307   816   876 D EGL_emulation: app_time_stats: avg=1411.94ms min=1411.94ms max=1411.94ms count=1
+10-15 17:24:13.308  1669  1669 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 17:24:13.309  1669  1669 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 17:24:13.359  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingSwitchPreferenceController
+10-15 17:24:13.361  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingTopIntroController
+10-15 17:24:13.361  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingSeekBarController
+10-15 17:24:13.361  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingAutoTurnOnSwitchPreferenceController
+10-15 17:24:13.363  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.AdaptiveChargingPreferenceController
+10-15 17:24:13.364  1247  1324 V SettingsSearchProvider: com.android.settings.datetime.timezone.TimeZoneSettings$1@66edb67 tried to add an empty non-indexable key
+10-15 17:24:13.365  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.MoreSettingsPreferenceController
+10-15 17:24:13.366  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureEntrypointPreferenceController
+10-15 17:24:13.366  1247  1324 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 17:24:13.366  1247  1324 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 17:24:13.366  1247  1324 V SettingsSearchProvider: com.android.settings.gestures.AssistGestureSettings$1@903c703 tried to add an empty non-indexable key
+10-15 17:24:13.368  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationInjectedServicesPreferenceController
+10-15 17:24:13.368  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationServicesWifiScanningPreferenceController
+10-15 17:24:13.368  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.LocationServicesBluetoothScanningPreferenceController
+10-15 17:24:13.368  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 17:24:13.368  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverStickyPreferenceController
+10-15 17:24:13.374  1247  1324 V SettingsSearchProvider: com.android.settings.connecteddevice.NfcAndPaymentFragment$1@371d05f tried to add an empty non-indexable key
+10-15 17:24:13.403  5134  5163 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.404  5134  5163 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.404  5134  5163 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.404  5134  5163 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.404  5134  5163 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.404  5134  5163 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.404  5134  5163 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.417  1669  2192 I AiAiEcho: EchoSearch: WidgetFetcherImpl is initialized with [25] widgets [reason=package added for userId: 0]
+10-15 17:24:13.447   289   289 D Zygote  : Forked child process 5223
+10-15 17:24:13.475  5134  5221 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.traceur/settings/indexables_xml_res
+10-15 17:24:13.475  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.493  5223  5223 I droid.emergency: Using CollectorTypeCC GC.
+10-15 17:24:13.495  5223  5223 W droid.emergency: Unexpected CPU variant for x86: x86_64.
+10-15 17:24:13.495  5223  5223 W droid.emergency: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 17:24:13.511   399   407 I adbd    : jdwp connection from 5223
+10-15 17:24:13.565  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.574  5134  5222 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.580  5134  5228 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.624  5134  5222 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.648  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.649  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.649  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.649  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.657  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.657  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.658  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.658  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.658  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.658  5134  5221 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.660  5134  5230 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.664  5134  5222 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.665  5134  5222 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.667   289   289 D Zygote  : Forked child process 5244
+10-15 17:24:13.675  1557  3158 W fxb     : Unsupported: feature flag disabled.
+10-15 17:24:13.677  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.678  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.684   289   289 D Zygote  : Forked child process 5245
+10-15 17:24:13.715  5244  5244 I .android.gms.ui: Using CollectorTypeCC GC.
+10-15 17:24:13.716  5244  5244 W .android.gms.ui: Unexpected CPU variant for x86: x86_64.
+10-15 17:24:13.716  5244  5244 W .android.gms.ui: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 17:24:13.717   488   499 I system_server: Background young concurrent copying GC freed 431849(13MB) AllocSpace objects, 29(788KB) LOS objects, 31% free, 30MB/44MB, paused 73us,42us total 471.547ms
+10-15 17:24:13.723  5223  5223 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10156; state: ENABLED
+10-15 17:24:13.727  5245  5245 I marvin.talkback: Using CollectorTypeCC GC.
+10-15 17:24:13.727  5245  5245 W marvin.talkback: Unexpected CPU variant for x86: x86_64.
+10-15 17:24:13.727  5245  5245 W marvin.talkback: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 17:24:13.756  5134  5170 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.760  5223  5223 D nativeloader: Configuring classloader-namespace-shared for other apk /system_ext/priv-app/EmergencyInfo/EmergencyInfo.apk. target_sdk_version=33, uses_libraries=, library_path=/system_ext/priv-app/EmergencyInfo/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.android.emergency:/system_ext/priv-app/EmergencyInfo:/system/lib64:/system_ext/lib64
+10-15 17:24:13.764   399   407 I adbd    : jdwp connection from 5244
+10-15 17:24:13.788   399   407 I adbd    : jdwp connection from 5245
+10-15 17:24:13.789  5134  5169 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.793  5134  5228 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.794  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.794  5134  5173 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.795  5134  5230 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.796  5134  5171 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.800  5134  5228 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.801  5134  5230 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.801  5134  5230 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.803  5134  5228 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.823  5223  5223 V GraphicsEnvironment: ANGLE Developer option for 'com.android.emergency' set to: 'default'
+10-15 17:24:13.824  5223  5223 V GraphicsEnvironment: ANGLE GameManagerService for com.android.emergency: false
+10-15 17:24:13.824  5223  5223 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:24:13.826  5134  5170 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.827  5223  5223 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:13.828  5223  5223 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:13.830  5134  5170 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.830  5134  5170 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.834  5245  5245 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10145; state: ENABLED
+10-15 17:24:13.850  5047  5061 I SafetyCenterResContext: Found Safety Center resources APK at: com.google.android.safetycenter.resources
+10-15 17:24:13.853  5245  5245 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/app/talkback/lib/x86_64:/product/app/talkback/talkback.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.marvin.talkback
+10-15 17:24:13.854  5245  5245 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/app/talkback/lib/x86_64:/product/app/talkback/talkback.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.marvin.talkback
+10-15 17:24:13.859  1535  1552 I SettingsSearchIndexablesProvider: SettingsSearchIndexablesProvider.queryXmlResources():81 queryXmlResources
+10-15 17:24:13.863  5244  5244 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10120; state: ENABLED
+10-15 17:24:13.863   488   519 E system_server: No package ID 7f found for ID 0x7f08069b.
+10-15 17:24:13.863   488   519 E system_server: No package ID 7f found for ID 0x7f140c6e.
+10-15 17:24:13.863   488   519 E system_server: No package ID 7f found for ID 0x7f080729.
+10-15 17:24:13.863   488   519 E system_server: No package ID 7f found for ID 0x7f142028.
+10-15 17:24:13.873  5134  5220 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.emergency/settings/indexables_xml_res
+10-15 17:24:13.874  5134  5220 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.882  5134  5174 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.882  5134  5220 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.emergency/settings/indexables_raw
+10-15 17:24:13.882  5134  5220 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.882  1535  1552 I SettingsSearchIndexablesProvider: SettingsSearchIndexablesProvider.queryRawData():89 queryRawData
+10-15 17:24:13.882  5134  5220 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.emergency/settings/non_indexables_key
+10-15 17:24:13.882  5134  5220 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.884  5134  5220 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.888   488  1427 W SafetyCenterService: Called getSafetyCenterData, but Safety Center is disabled
+10-15 17:24:13.891  5245  5245 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/talkback/talkback.apk. target_sdk_version=34, uses_libraries=, library_path=/product/app/talkback/lib/x86_64:/product/app/talkback/talkback.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.marvin.talkback:/product/lib64:/system/product/lib64
+10-15 17:24:13.903  1535  1552 W ListPreference: Setting a summary with a String formatting marker is no longer supported. You should use a SummaryProvider instead.
+10-15 17:24:13.903  1535  1552 W ListPreference: Setting a summary with a String formatting marker is no longer supported. You should use a SummaryProvider instead.
+10-15 17:24:13.904  1535  1552 W ListPreference: Setting a summary with a String formatting marker is no longer supported. You should use a SummaryProvider instead.
+10-15 17:24:13.917  5244  5244 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 17:24:13.929  5244  5244 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 17:24:13.939  5134  5174 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.945  5244  5244 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 17:24:13.946  5244  5244 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 17:24:13.946  5244  5244 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 17:24:13.948  5134  5171 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:13.952  5245  5245 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.marvin.talkback' set to: 'default'
+10-15 17:24:13.959  5244  5244 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+10-15 17:24:13.960  5245  5245 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.marvin.talkback: false
+10-15 17:24:13.961  5245  5245 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:24:13.968  1083  1991 D EGL_emulation: app_time_stats: avg=547.67ms min=309.37ms max=785.96ms count=2
+10-15 17:24:13.968  1083  1083 I Choreographer: Skipped 34 frames!  The application may be doing too much work on its main thread.
+10-15 17:24:13.969  5245  5245 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:13.969  5245  5245 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:13.980  5134  5171 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.009  5134  5171 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.009  5134  5174 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.039  5134  5174 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.042  5134  5243 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.046  5134  5243 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.056  1883  3157 I A       : Using proto config with mendel
+10-15 17:24:14.056  1883  3157 I A       : Using proto config with mendel
+10-15 17:24:14.057  1883  3157 I A       : Using proto config with mendel
+10-15 17:24:14.058  1883  3157 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:14.060  1883  3157 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:14.060  1883  3157 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:14.060  1883  3157 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:14.060  1883  3157 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:14.060  1883  3157 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:14.061  1883  3157 I A       : hasHotwordEverywhere-true
+10-15 17:24:14.061  1883  3157 I A       : Using proto config with mendel
+10-15 17:24:14.061  1883  3157 I A       : Using proto config with mendel
+10-15 17:24:14.061  1883  3157 I A       : Using proto config with mendel
+10-15 17:24:14.061  1883  3157 I A       : Merging legacy hotword config map with new proto.
+10-15 17:24:14.061  1883  3157 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:14.061  1883  3157 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 17:24:14.061  1883  3157 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 17:24:14.061  1883  3157 I A       : Skipping. Expected model: 2 Found: 1
+10-15 17:24:14.061  1883  3157 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 17:24:14.165  5244  5244 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.gms' set to: 'default'
+10-15 17:24:14.165  5244  5244 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
+10-15 17:24:14.165  5244  5244 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:24:14.174   488   504 W system_server: Long monitor contention with owner android.bg (519) at void com.android.server.pm.ShortcutService.injectPostToHandlerDebounced(java.lang.Object, java.lang.Runnable)(ShortcutService.java:1762) waiters=0 in java.util.List com.android.server.pm.ShortcutService$LocalService.getShortcuts(int, java.lang.String, long, java.lang.String, java.util.List, java.util.List, android.content.ComponentName, int, int, int, int) for 723ms
+10-15 17:24:14.234  5134  5224 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.235  5134  5172 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/indexables_xml_res
+10-15 17:24:14.235  5134  5172 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.238  5134  5243 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: Provider querying exception:
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: java.lang.IllegalStateException: We should initialize FormFactorUtils before getting instance.
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at com.google.android.accessibility.utils.FormFactorUtils.getInstance(PG:1)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at com.google.android.accessibility.talkback.preference.search.TalkBackSearchIndexablesProvider.queryRawData(PG:3)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at com.google.android.settings.search.SearchIndexablesProvider.query(PG:6)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at android.content.ContentProvider.query(ContentProvider.java:1455)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 17:24:14.239  5245  5270 E IndexablesProvider: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 17:24:14.243  5134  5224 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.244  5134  5169 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.244  5134  5172 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/indexables_raw
+10-15 17:24:14.244  5134  5172 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.245  5134  5169 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.245  5134  5243 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.245  5134  5172 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/non_indexables_key
+10-15 17:24:14.245  5134  5172 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.245  5134  5169 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.245  5134  5172 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.246  5134  5224 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.246  5134  5224 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 17:24:14.254  5244  5244 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-15 17:24:14.256  5244  5244 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-15 17:24:14.311  1669  2192 I AiAiEcho: EchoSearch: WidgetFetcherImpl is initialized with [25] widgets [reason=package added for userId: 0]
+10-15 17:24:14.315  4620  4902 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,10 @@
+10-15 17:22:57.705  3700  3801 I TestRunner: started: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:22:57.788  1565  1565 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.policy#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:57.833  3700  3707 W p.p23mainttrial: Suspending all threads took: 10.618ms
+10-15 17:22:57.844  1216  3467 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.feedback
+10-15 17:22:57.878  3700  3707 I p.p23mainttrial: Background concurrent mark compact GC freed 1004KB AllocSpace bytes, 31(3068KB) LOS objects, 49% free, 5418KB/10MB, paused 13.312ms,17.490ms total 237.116ms
+10-15 17:22:57.887  1639  3949 D DownloadManager: [12] Finished with status SUCCESS
+10-15 17:22:57.892  1565  1565 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:22:57.910  1639  3943 D DownloadManager: [11] Finished with status SUCCESS
+10-15 17:22:57.915  1326  1618 I SP      : Sync for emoji succeeded in 2484 ms: {added: [2ada3c9a4a17d6bb81b1fe8d51502d60], metadata: false
+10-15 17:22:57.917  3700  3801 I TestRunner: finished: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

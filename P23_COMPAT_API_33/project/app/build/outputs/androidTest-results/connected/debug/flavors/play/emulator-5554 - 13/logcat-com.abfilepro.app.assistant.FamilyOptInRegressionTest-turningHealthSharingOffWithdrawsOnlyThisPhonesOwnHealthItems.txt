@@ -1,0 +1,5 @@
+10-15 17:24:06.338  4620  4902 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 17:24:06.369  1883  1883 I A       : Scheduling growth periodic tasks
+10-15 17:24:06.370  1883  1883 I WeatherWorkerScheduler: Scheduling weather workers.
+10-15 17:24:06.370  1883  1883 I PcpLocalCalendarStartup: #onDeviceInstallOrBoot(): Starting PCP calendar tasks.
+10-15 17:24:06.372  4620  4902 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

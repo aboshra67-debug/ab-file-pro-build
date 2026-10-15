@@ -1,0 +1,3 @@
+10-15 17:23:03.595  3700  3801 I TestRunner: started: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:23:03.610   560   576 I system_server: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 25(512KB) LOS objects, 47% free, 26MB/50MB, paused 637us,1.643ms total 239.244ms
+10-15 17:23:03.612  3700  3801 I TestRunner: finished: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

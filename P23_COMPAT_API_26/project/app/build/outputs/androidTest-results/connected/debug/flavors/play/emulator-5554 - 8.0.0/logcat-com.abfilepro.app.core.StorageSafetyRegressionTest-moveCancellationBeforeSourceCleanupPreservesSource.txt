@@ -1,0 +1,12 @@
+10-15 17:22:28.292  4964  4983 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:22:28.296  1810  1810 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{424a223 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 17:22:28.296  1810  1810 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{b431df0 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 17:22:28.297  1810  1810 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{1925a13 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 17:22:28.297  1810  1810 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{601070c VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 17:22:28.297  1810  1810 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{5712be5 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 17:22:28.297  1810  1810 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{65a4b3c VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 17:22:28.321  1810  1819 I zygote64: Do full code cache collection, code=251KB, data=169KB
+10-15 17:22:28.321  1810  1819 I zygote64: After code cache collection, code=225KB, data=138KB
+10-15 17:22:28.328  1810  2141 D EGL_emulation: eglMakeCurrent: 0x700b1ce555a0: ver 3 0 (tinfo 0x700b1ce0d740)
+10-15 17:22:28.330  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 17:22:28.334  4964  4983 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

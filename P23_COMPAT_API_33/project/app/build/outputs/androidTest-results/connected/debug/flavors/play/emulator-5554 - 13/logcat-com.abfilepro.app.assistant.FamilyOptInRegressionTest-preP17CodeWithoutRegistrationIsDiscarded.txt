@@ -1,0 +1,4 @@
+10-15 17:24:06.319  4620  4902 I TestRunner: started: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 17:24:06.320  1149  3172 I GMS_MM_Logger: Memory Metric Logging not allowed. Stopping.
+10-15 17:24:06.328  1883  1883 I A       : Setting OMP browser to 2.
+10-15 17:24:06.336  4620  4902 I TestRunner: finished: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

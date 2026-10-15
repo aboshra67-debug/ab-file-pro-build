@@ -1,0 +1,6 @@
+10-15 17:24:26.116  4620  4902 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:26.131  5517  5517 I P14Fixture: Granted fixture tree to com.abfilepro.app.p23mainttrial
+10-15 17:24:26.190  1149  2300 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 225 [CONTEXT service_id=218 ]
+10-15 17:24:26.223  1149  5340 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 48 uptime_millis: 48 exec_start_elapsed_seconds: 225 [CONTEXT service_id=218 ]
+10-15 17:24:26.236  1328  1328 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 17:24:26.290  4620  4902 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

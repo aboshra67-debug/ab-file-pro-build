@@ -1,0 +1,5 @@
+10-15 17:22:47.175  3700  3801 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 17:22:47.203  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 17:22:47.203  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lmDtdeElQEzlvU72F2Ak7w==/com.android.chrome-n8YLa_7vG0b9oVJjaXw9WA==/Chrome.apk' with 1 weak references
+10-15 17:22:47.203  1216  1222 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~8nIx70Y1Ap-m8yepuaRo8w==/com.google.android.trichromelibrary_636771938-zGbVucZNYkN7L68rr28iFA==/TrichromeLibrary.apk' with 1 weak references
+10-15 17:22:47.210  3700  3801 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

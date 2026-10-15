@@ -1,0 +1,62 @@
+10-15 17:22:49.684  3700  3801 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:49.700  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.712  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e45510
+10-15 17:22:49.712  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e45510
+10-15 17:22:49.713  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.713  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e49cd0
+10-15 17:22:49.713  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e49cd0
+10-15 17:22:49.717  1216  3467 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-15 17:22:49.717  1522  3506 I GCM-GMS : Registering GMS 745476177629
+10-15 17:22:49.718  1522  3506 I GCM-GMS : Got GMS registration
+10-15 17:22:49.731  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.734  1216  1216 I GCoreUlr: GCM registration ID changed: Intent { act=com.google.android.gms.gcm.REGISTERED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/com.google.android.location.reporting.service.GcmRegistrationReceiver (has extras) }
+10-15 17:22:49.735  1522  3846 I Authzen : [AuthZenEventHandler] Handling event: com.google.android.gms.gcm.REGISTERED
+10-15 17:22:49.736  1522  3588 E MDM     : [168] btrf.a: No Google accounts; deferring server state update.
+10-15 17:22:49.744  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e30510
+10-15 17:22:49.744  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e30510
+10-15 17:22:49.744  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.744  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e2fc50
+10-15 17:22:49.745  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e2fc50
+10-15 17:22:49.745  1216  2515 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 1 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 107 [CONTEXT service_id=218 ]
+10-15 17:22:49.746  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.746  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e45510
+10-15 17:22:49.746  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e45510
+10-15 17:22:49.752  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.766  1216  2239 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.mdi.sync#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 17:22:49.772  1216  1914 E czvx    : Phenotype API error. Event: # fozr@e504c40d, EventCode: COMMIT_CONFIG [CONTEXT service_id=51 ]
+10-15 17:22:49.772  1216  1914 E czvx    : czue: 29500: Empty (package not registered?) or malformed snapshot token for null:
+10-15 17:22:49.772  1216  1914 E czvx    : 	at czwc.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1536)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at czwb.i(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):18)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 17:22:49.772  1216  1914 E czvx    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:22:49.774  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e49cd0
+10-15 17:22:49.774  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e49cd0
+10-15 17:22:49.774  3700  3833 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.775  3700  3833 D pdf_document_jni: Deleting Document: 0x7df998e30510
+10-15 17:22:49.775  3700  3833 D pdf_document_jni: Destroyed Document: 0x7df998e30510
+10-15 17:22:49.776  1216  1914 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29500 [CONTEXT service_id=51 ]
+10-15 17:22:49.776  1216  1914 W AsyncOperation: OperationException[Status{statusCode=Empty (package not registered?) or malformed snapshot token for null: , resolution=null}]
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):48)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 17:22:49.776  1216  1914 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 17:22:49.785  3700  3801 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 17:22:49.785  3700  3801 D pdf_document_jni: Deleting Document: 0x7df998e2fc50
+10-15 17:22:49.785  3700  3801 D pdf_document_jni: Destroyed Document: 0x7df998e2fc50
+10-15 17:22:49.788  3700  3801 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

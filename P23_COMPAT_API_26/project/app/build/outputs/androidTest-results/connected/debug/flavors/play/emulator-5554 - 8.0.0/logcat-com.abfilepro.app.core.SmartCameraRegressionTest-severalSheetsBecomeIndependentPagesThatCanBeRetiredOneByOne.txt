@@ -1,0 +1,2 @@
+10-15 17:22:27.649  4964  4983 I TestRunner: started: severalSheetsBecomeIndependentPagesThatCanBeRetiredOneByOne(com.abfilepro.app.core.SmartCameraRegressionTest)
+10-15 17:22:27.672  4964  4983 I TestRunner: finished: severalSheetsBecomeIndependentPagesThatCanBeRetiredOneByOne(com.abfilepro.app.core.SmartCameraRegressionTest)

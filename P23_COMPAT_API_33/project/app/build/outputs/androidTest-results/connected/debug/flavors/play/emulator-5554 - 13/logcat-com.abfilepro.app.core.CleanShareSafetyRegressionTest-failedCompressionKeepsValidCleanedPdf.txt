@@ -1,0 +1,125 @@
+10-15 17:24:08.788  4620  4902 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:08.813   399   407 I adbd    : jdwp connection from 5047
+10-15 17:24:08.847  5052  5052 I idmap2d : Starting
+10-15 17:24:08.869  3222  3281 W BugleRcs: disconnecting from all Rcs Services
+10-15 17:24:08.881  3222  3281 I BugleRcsEngine: [42] RcsStateProvider.lambda$onMigrationComplete$0$com-google-android-apps-messaging-rcsmigration-RcsStateProvider: JibeService stopped: false
+10-15 17:24:08.883  5047  5047 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10159; state: ENABLED
+10-15 17:24:08.891  5047  5047 D nativeloader: Configuring classloader-namespace-shared for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/apex/com.android.permission/priv-app/GooglePermissionController@331710050/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.permissioncontroller:/apex/com.android.permission/priv-app/GooglePermissionController@331710050:/system/lib64:/system_ext/lib64
+10-15 17:24:08.894  5047  5047 D nativeloader: Configuring classloader-namespace-shared for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/apex/com.android.permission/priv-app/GooglePermissionController@331710050/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.permissioncontroller:/apex/com.android.permission/priv-app/GooglePermissionController@331710050:/system/lib64:/system_ext/lib64
+10-15 17:24:08.917  5047  5047 D nativeloader: Configuring classloader-namespace-shared for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/apex/com.android.permission/priv-app/GooglePermissionController@331710050/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.permissioncontroller:/apex/com.android.permission/priv-app/GooglePermissionController@331710050:/system/lib64:/system_ext/lib64
+10-15 17:24:08.918  3222  3281 I RcsClientLib: Connecting ChatSessionService
+10-15 17:24:08.923  5047  5047 D nativeloader: Configuring classloader-namespace-shared for other apk /apex/com.android.permission/priv-app/GooglePermissionController@331710050/GooglePermissionController.apk. target_sdk_version=33, uses_libraries=, library_path=/apex/com.android.permission/priv-app/GooglePermissionController@331710050/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.permissioncontroller:/apex/com.android.permission/priv-app/GooglePermissionController@331710050:/system/lib64:/system_ext/lib64
+10-15 17:24:08.959  5047  5047 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.permissioncontroller' set to: 'default'
+10-15 17:24:08.989  5047  5047 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.permissioncontroller: false
+10-15 17:24:08.997  5047  5047 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:24:09.023  5047  5047 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:09.025  5047  5047 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:09.076  1047  1063 I m.android.phone: Background young concurrent copying GC freed 71310(3257KB) AllocSpace objects, 0(0B) LOS objects, 47% free, 3706KB/7059KB, paused 43us,22us total 315.063ms
+10-15 17:24:09.078  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.078  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.078  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.079  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.079  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.079  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.079  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.079  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.079  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.079  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.080  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.080  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.080  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.080  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.080  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.081  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.081  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.081  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.081  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.081  1047  1065 W System  : A resource failed to call AbstractCursor.close.
+10-15 17:24:09.087  3222  3286 I RcsClientLib: com.google.android.rcs.client.chatsession.ChatSessionService connected
+10-15 17:24:09.088  3222  3286 I BugleRcs: com.google.android.rcs.client.chatsession.ChatSessionService RCS service connected
+10-15 17:24:09.100  3290  3302 I .android.as.oss: Background young concurrent copying GC freed 46072(3839KB) AllocSpace objects, 0(0B) LOS objects, 46% free, 2469KB/4584KB, paused 65us,9us total 157.430ms
+10-15 17:24:09.110  3222  3281 I RcsClientLib: Connecting EventService
+10-15 17:24:09.125  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.166  3222  3286 I RcsClientLib: com.google.android.rcs.client.events.EventService connected
+10-15 17:24:09.167  3222  3286 I BugleRcs: com.google.android.rcs.client.events.EventService RCS service connected
+10-15 17:24:09.192  3222  3281 I RcsClientLib: Connecting ContactsService
+10-15 17:24:09.196  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.227  3222  3281 I RcsClientLib: Connecting FileTransferService
+10-15 17:24:09.227  3222  3286 I RcsClientLib: com.google.android.rcs.client.contacts.ContactsService connected
+10-15 17:24:09.227  3222  3286 I BugleRcs: com.google.android.rcs.client.contacts.ContactsService RCS service connected
+10-15 17:24:09.232  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.236  3222  3286 I RcsClientLib: com.google.android.rcs.client.filetransfer.FileTransferService connected
+10-15 17:24:09.236  3222  3286 I BugleRcs: com.google.android.rcs.client.filetransfer.FileTransferService RCS service connected
+10-15 17:24:09.236  3222  3281 I RcsClientLib: Connecting LocationSharingService
+10-15 17:24:09.240  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.252   488   590 I RoleService: Granting default roles...
+10-15 17:24:09.254  3222  3281 I RcsClientLib: Connecting ImsConnectionTrackerService
+10-15 17:24:09.255  3222  3286 I RcsClientLib: com.google.android.rcs.client.locationsharing.LocationSharingService connected
+10-15 17:24:09.256  3222  3286 I BugleRcs: com.google.android.rcs.client.locationsharing.LocationSharingService RCS service connected
+10-15 17:24:09.256  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.269  3222  3286 I RcsClientLib: com.google.android.rcs.client.ims.ImsConnectionTrackerService connected
+10-15 17:24:09.269  3222  3286 I BugleRcs: com.google.android.rcs.client.ims.ImsConnectionTrackerService RCS service connected
+10-15 17:24:09.274  3222  3286 I BugleRcs: subscribing to global rcs listener
+10-15 17:24:09.282  3222  3281 I RcsClientLib: Connecting RcsProfileService
+10-15 17:24:09.282  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.290  3222  3281 I RcsClientLib: Connecting BusinessInfoService
+10-15 17:24:09.291  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.298  3191  3761 I CarrierServices: [65] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@19bc3d2 for category 3 with key 26985426 for hub UI
+10-15 17:24:09.300  3191  3761 I CarrierServices: [65] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@b688ca3 for category 5 with key 191401123 for hub UI
+10-15 17:24:09.306  3191  3761 I CarrierServices: [65] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@f6fbba0 for category 2 with key 258980768 for hub UI
+10-15 17:24:09.319  5047  5065 I PermissionControllerServiceImpl: Updating user sensitive for uid 10159
+10-15 17:24:09.333  3222  3281 I RcsClientLib: Connecting RcsMessagingService
+10-15 17:24:09.335  5047  5047 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10159; state: ENABLED
+10-15 17:24:09.338  5047  5047 I PermissionEventCleanupJobService: No existing job, scheduling a new one
+10-15 17:24:09.340  5047  5047 D PermissionStorageTimeChangeReceiver: systemTimeSnapshot set to 1792085049340
+10-15 17:24:09.341  5047  5047 D PermissionStorageTimeChangeReceiver: realtimeSnapshot set to 208531
+10-15 17:24:09.360   289   289 D Zygote  : Forked child process 5086
+10-15 17:24:09.361  1883  2587 I A       : Scheduled one-off task for batch; batchId=1 taskId=-1000003 corpora=[1004,1008,1014,1015]
+10-15 17:24:09.361  1883  2587 I A       : Pending callbacks: 1
+10-15 17:24:09.365  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.384  5086  5086 I gearhead:shared: Using CollectorTypeCC GC.
+10-15 17:24:09.405  5086  5086 W gearhead:shared: Unexpected CPU variant for x86: x86_64.
+10-15 17:24:09.405  5086  5086 W gearhead:shared: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 17:24:09.407  3222  3281 I RcsClientLib: Connecting TransportControlService
+10-15 17:24:09.410  5047  5079 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 17:24:09.418  3222  3286 I RcsClientLib: com.google.android.rcs.client.profile.RcsProfileService connected
+10-15 17:24:09.418  3222  3286 I BugleRcs: com.google.android.rcs.client.profile.RcsProfileService RCS service connected
+10-15 17:24:09.420   399   407 I adbd    : jdwp connection from 5086
+10-15 17:24:09.422  3222  3281 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 17:24:09.442  5086  5086 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10108; state: ENABLED
+10-15 17:24:09.446  5086  5086 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/AndroidAutoStubPrebuilt/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.projection.gearhead
+10-15 17:24:09.447  5086  5086 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/AndroidAutoStubPrebuilt/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.projection.gearhead
+10-15 17:24:09.448   488   499 I system_server: Background young concurrent copying GC freed 484475(17MB) AllocSpace objects, 27(988KB) LOS objects, 39% free, 26MB/44MB, paused 50us,358us total 345.626ms
+10-15 17:24:09.452  5086  5086 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/AndroidAutoStubPrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.projection.gearhead:/product/lib64:/system/product/lib64
+10-15 17:24:09.461  5086  5086 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.projection.gearhead' set to: 'default'
+10-15 17:24:09.462  5086  5086 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.projection.gearhead: false
+10-15 17:24:09.462  5086  5086 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 17:24:09.463  5086  5086 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:09.463  5086  5086 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 17:24:09.464  5047  5065 I PermissionControllerServiceImpl: Updating user sensitive for uid 10138
+10-15 17:24:09.474   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:09.477  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:09.477  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.youtube
+10-15 17:24:09.478  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:09.478  1021  1021 D MediaPlayerList: Name of package changed: com.google.android.youtube
+10-15 17:24:09.479   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:09.485  1047  1047 D CarrierSvcBindHelper: onPackageModified: com.google.android.youtube
+10-15 17:24:09.485  1047  1047 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 17:24:09.487  1047  1047 D ImsResolver: maybeAddedImsService, packageName: com.google.android.youtube
+10-15 17:24:09.488  3222  3291 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:09.493  3972  5110 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:09.498  5086  5086 I CAR.GH  : onCreate
+10-15 17:24:09.521  1149  4541 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:09.534   488   600 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 17:24:09.538  5086  5114 W gearhead:shared: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (max-target-o, reflection, denied)
+10-15 17:24:09.538  5086  5114 W gearhead:shared: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+10-15 17:24:09.538  5086  5114 W gearhead:shared: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+10-15 17:24:09.538  5047  5065 I PermissionControllerServiceImpl: Updating user sensitive for uid 10127
+10-15 17:24:09.562  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:09.563  1021  1021 D MediaPlayerList: Name of package changed: com.android.vending
+10-15 17:24:09.564  1021  1021 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 17:24:09.564  1021  1021 D MediaPlayerList: Name of package changed: com.android.vending
+10-15 17:24:09.565   816   816 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 17:24:09.570  3222  3291 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@c542637
+10-15 17:24:09.579  3972  5119 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 17:24:09.581  4620  4902 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

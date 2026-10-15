@@ -1,0 +1,76 @@
+10-15 17:24:12.036  4620  4902 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:12.203   488   519 E system_server: No package ID 7f found for ID 0x7f0203e2.
+10-15 17:24:12.203   488   519 E system_server: No package ID 7f found for ID 0x7f0418b2.
+10-15 17:24:12.203   488   519 E system_server: No package ID 7f found for ID 0x7f0203e1.
+10-15 17:24:12.203   488   519 E system_server: No package ID 7f found for ID 0x7f0407ea.
+10-15 17:24:12.203   488   519 E system_server: No package ID 7f found for ID 0x7f0203e0.
+10-15 17:24:12.203   488   519 E system_server: No package ID 7f found for ID 0x7f04105d.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f080292.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f130588.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f130588.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f08028e.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f130586.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f130586.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f080290.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f130587.
+10-15 17:24:12.232   488   519 E system_server: No package ID 7f found for ID 0x7f130587.
+10-15 17:24:12.232   488   519 W ShortcutService: Invalid tag 'capability' found at depth 2
+10-15 17:24:12.232   488   519 E ShortcutService: Ignoring excessive intent tag.
+10-15 17:24:12.232   488   519 W ShortcutService: Invalid tag 'parameter' found at depth 4
+10-15 17:24:12.232   488   519 W ShortcutService: Invalid tag 'capability' found at depth 2
+10-15 17:24:12.232   488   519 W ShortcutService: Invalid tag 'slice' found at depth 3
+10-15 17:24:12.232   488   519 W ShortcutService: Invalid tag 'url-template' found at depth 4
+10-15 17:24:12.273   488   519 E system_server: No package ID 7f found for ID 0x7f080292.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f130588.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f130588.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f08028e.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f130586.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f130586.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f080290.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f130587.
+10-15 17:24:12.274   488   519 E system_server: No package ID 7f found for ID 0x7f130587.
+10-15 17:24:12.274   488   519 W ShortcutService: Invalid tag 'capability' found at depth 2
+10-15 17:24:12.274   488   519 E ShortcutService: Ignoring excessive intent tag.
+10-15 17:24:12.274   488   519 W ShortcutService: Invalid tag 'parameter' found at depth 4
+10-15 17:24:12.274   488   519 W ShortcutService: Invalid tag 'capability' found at depth 2
+10-15 17:24:12.274   488   519 W ShortcutService: Invalid tag 'slice' found at depth 3
+10-15 17:24:12.274   488   519 W ShortcutService: Invalid tag 'url-template' found at depth 4
+10-15 17:24:12.274  1247  1324 D BackupCallingPrefCtrl: Not supported by framework. subId = 1
+10-15 17:24:12.294  1149  1149 D BoundBrokerSvc: onBind: Intent { act=android.intent.action.RESOLVE_INSTANT_APP_PACKAGE cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-15 17:24:12.294  1149  1149 D BoundBrokerSvc: Loading bound service for intent: Intent { act=android.intent.action.RESOLVE_INSTANT_APP_PACKAGE cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-15 17:24:12.329  1247  1324 D BackupCallingPrefCtrl: Not supported by framework. subId = 1
+10-15 17:24:12.345  1247  1324 W Enable2gPreferenceController: Telephony manager not yet initialized
+10-15 17:24:12.347  1247  1324 D VoNrSettings: init:
+10-15 17:24:12.385  1247  1324 D VoNrSettings: mHas5gCapability: true,mIsNrEnabledFromCarrierConfig: true,mIsVonrEnabledFromCarrierConfig: false,mIsVonrVisibleFromCarrierConfig: true
+10-15 17:24:12.385  1247  1324 D VoNrSettings: init:
+10-15 17:24:12.392  1247  1324 D VoNrSettings: mHas5gCapability: true,mIsNrEnabledFromCarrierConfig: true,mIsVonrEnabledFromCarrierConfig: false,mIsVonrVisibleFromCarrierConfig: true
+10-15 17:24:12.482  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.DisableSimFooterPreferenceController@420fcea
+10-15 17:24:12.482  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.NrDisabledInDsdsFooterPreferenceController@6172bdb
+10-15 17:24:12.483  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsScreenPreferenceController
+10-15 17:24:12.483  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.BatteryHeaderPreferenceController
+10-15 17:24:12.485  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController
+10-15 17:24:12.486  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingPreferenceController
+10-15 17:24:12.487  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.BatteryPercentagePreferenceController
+10-15 17:24:12.488  1247  1324 D FaceSettings: FaceManager is null
+10-15 17:24:12.488  1247  1324 D FaceSettings: FaceManager is null
+10-15 17:24:12.488  1247  1324 D FaceSettings: Get non indexable keys. isFaceHardwareDetected: false, size:12
+10-15 17:24:12.488  1247  1324 V SettingsSearchProvider: com.android.settings.biometrics.face.FaceSettings$1@2f7bc90 tried to add an empty non-indexable key
+10-15 17:24:12.488  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessScreenPreferenceController
+10-15 17:24:12.488  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppHeaderController
+10-15 17:24:12.488  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppButtonsController
+10-15 17:24:12.488  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPolicyController
+10-15 17:24:12.489  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerIllustrationPreferenceController
+10-15 17:24:12.489  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerForPowerMenuPreferenceController
+10-15 17:24:12.489  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerForAssistantPreferenceController
+10-15 17:24:12.489  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerSensitivityPreferenceController
+10-15 17:24:12.489  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerFooterPreferenceController
+10-15 17:24:12.491  1247  1324 V WifiManager: registerSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@64b0545, executor=android.os.HandlerExecutor@1ea749a
+10-15 17:24:12.514  1247  1261 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, newInfo: SoftApInfo{bandwidth= 0, frequency= 0, wifiStandard= 0, mApInstanceIdentifier= null, mIdleShutdownTimeoutMillis= 0}
+10-15 17:24:12.514  1247  1261 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, changedInfoList: []
+10-15 17:24:12.514  1247  1261 V WifiManager: SoftApCallbackProxy on mode 1, send onConnectedClientsChanged(clients): []
+10-15 17:24:12.515   488  1831 D CompatibilityChangeReporter: Compat change id reported: 215656264; UID 1000; state: ENABLED
+10-15 17:24:12.515   488  1831 D CompatibilityChangeReporter: Compat change id reported: 213289672; UID 1000; state: ENABLED
+10-15 17:24:12.515  1247  1247 I wifi_tether_security: WPA3 SAE is not supported on this device
+10-15 17:24:12.515  1247  1247 V WifiManager: unregisterSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@64b0545
+10-15 17:24:12.525   488   745 D WifiApConfigStore: Fallback to use default AP configuration
+10-15 17:24:12.610  4620  4902 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

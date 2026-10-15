@@ -1,0 +1,4 @@
+10-15 17:23:04.039  3700  3801 I TestRunner: started: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 17:23:04.047  1565  1701 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.onegoogle.consent#com.google.android.googlequicksearchbox
+10-15 17:23:04.050  1565  1565 I PhenotypeBackgroundRecv: Skipping com.google.ar.sceneviewer.android.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 17:23:04.053  3700  3801 I TestRunner: finished: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

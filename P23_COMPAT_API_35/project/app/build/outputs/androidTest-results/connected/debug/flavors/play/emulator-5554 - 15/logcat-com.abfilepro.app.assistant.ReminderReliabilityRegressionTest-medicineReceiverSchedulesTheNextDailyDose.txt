@@ -1,0 +1,6 @@
+10-15 17:22:47.337  3700  3801 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 17:22:47.347   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 17:22:47.353   560   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 17:22:47.353   560   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10177} in 9ms
+10-15 17:22:47.355  1216  2238 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.usagereporting.service.UsageReportingChimeraService$CheckboxRestoringTaskBoundService started execution. cause:5 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-15 17:22:47.385  3700  3801 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

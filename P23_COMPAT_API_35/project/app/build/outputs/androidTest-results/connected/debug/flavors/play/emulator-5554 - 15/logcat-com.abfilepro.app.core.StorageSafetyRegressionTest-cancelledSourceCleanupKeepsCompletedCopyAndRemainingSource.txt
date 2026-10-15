@@ -1,0 +1,9 @@
+10-15 17:23:03.614  3700  3801 I TestRunner: started: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:23:03.617   142   142 I lowmemorykiller: Using psi monitors for memory pressure detection
+10-15 17:23:03.617   142   142 I lowmemorykiller: Properties reinitilized
+10-15 17:23:03.617  3998  3998 I lowmemorykiller: lmkd updated properties successfully
+10-15 17:23:03.617   142   142 I lowmemorykiller: lmkd data connection dropped
+10-15 17:23:03.617   142   142 I lowmemorykiller: closing lmkd data connection
+10-15 17:23:03.618   560   578 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 17:23:03.618   560   578 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 17:23:03.658  3700  3801 I TestRunner: finished: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

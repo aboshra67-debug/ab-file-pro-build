@@ -1,0 +1,51 @@
+10-15 17:24:11.252  4620  4902 I TestRunner: started: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:11.258   488   590 I RoleService: Granting default roles...
+10-15 17:24:11.267  5047  5079 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 17:24:11.282  1149  4542 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:11.285  1149  4542 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 17:24:11.286  1149  4543 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 17:24:11.302  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.TrustAgentsPreferenceController
+10-15 17:24:11.302  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureScreenPreferenceController
+10-15 17:24:11.302  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptionFooterPreferenceController
+10-15 17:24:11.303  1247  1324 W BaseSearchIndex: Error initial controller
+10-15 17:24:11.304  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AirplaneModePreferenceController
+10-15 17:24:11.305  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AllInOneTetherPreferenceController
+10-15 17:24:11.309  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AdaptiveConnectivityPreferenceController
+10-15 17:24:11.312  1247  1324 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 17:24:11.312  1247  1324 V SettingsSearchProvider: com.google.android.settings.aware.AwareSettings$1@f8d0aae tried to add an empty non-indexable key
+10-15 17:24:11.313  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 17:24:11.314  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPreferenceController
+10-15 17:24:11.314  1247  1324 W PrefCtrlListHelper: encryption_and_credentials_encryption_status already has a controller
+10-15 17:24:11.315  1669  1681 I ogle.android.as: Background concurrent copying GC freed 42301(3753KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 7360KB/14MB, paused 23us,17us total 132.434ms
+10-15 17:24:11.317  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.AssistGestureSettingsPreferenceController
+10-15 17:24:11.317  1247  1324 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 17:24:11.318  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.SwipeToNotificationPreferenceController
+10-15 17:24:11.318  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 17:24:11.318  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTwistPreferenceController
+10-15 17:24:11.318  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.SystemNavigationPreferenceController
+10-15 17:24:11.318  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedEnablePreferenceController
+10-15 17:24:11.319  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 17:24:11.319  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
+10-15 17:24:11.319  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 17:24:11.319  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PowerMenuPreferenceController
+10-15 17:24:11.319  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PreventRingingParentPreferenceController
+10-15 17:24:11.319  1247  1324 D AssistGesture: mAssistOnly:false, isSupported:false, isSensorAvailable:false
+10-15 17:24:11.319  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.SwipeToNotificationPreferenceController@8a7ce5
+10-15 17:24:11.319  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.DoubleTwistPreferenceController@b2323ba
+10-15 17:24:11.320  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.TapScreenGesturePreferenceController@eb5126b
+10-15 17:24:11.320  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.DoubleTapScreenPreferenceController@877a1c8
+10-15 17:24:11.320  1247  1324 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.PickupGesturePreferenceController@6eb0261
+10-15 17:24:11.329  1247  1324 V OnDeviceRecognitionPreferenceController: Recognition service with no settings activity: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService.
+10-15 17:24:11.329  1247  1324 V OnDeviceRecognitionPreferenceController: Recognition service not in the same package as the default on-device recognizer: com.google.android.tts/com.google.android.apps.speech.tts.googletts.service.GoogleTTSRecognitionService.
+10-15 17:24:11.329  1247  1324 V OnDeviceRecognitionPreferenceController: No speech recognition services with proper `recognition-service` meta-data found in the same package as the default on-device recognizer.
+10-15 17:24:11.330  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 17:24:11.330  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 17:24:11.330  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.language.OnDeviceRecognitionPreferenceController
+10-15 17:24:11.330  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.language.UserDictionaryPreferenceController
+10-15 17:24:11.330  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.GameControllerPreferenceController
+10-15 17:24:11.330  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.core.WorkPreferenceController
+10-15 17:24:11.331  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.SpellCheckerForWorkPreferenceController
+10-15 17:24:11.332  1247  1324 V OnDeviceRecognitionPreferenceController: Recognition service with no settings activity: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiSpeechRecognitionService.
+10-15 17:24:11.332  1247  1324 V OnDeviceRecognitionPreferenceController: Recognition service not in the same package as the default on-device recognizer: com.google.android.tts/com.google.android.apps.speech.tts.googletts.service.GoogleTTSRecognitionService.
+10-15 17:24:11.332  1247  1324 V OnDeviceRecognitionPreferenceController: No speech recognition services with proper `recognition-service` meta-data found in the same package as the default on-device recognizer.
+10-15 17:24:11.341  4620  4902 I TestRunner: finished: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

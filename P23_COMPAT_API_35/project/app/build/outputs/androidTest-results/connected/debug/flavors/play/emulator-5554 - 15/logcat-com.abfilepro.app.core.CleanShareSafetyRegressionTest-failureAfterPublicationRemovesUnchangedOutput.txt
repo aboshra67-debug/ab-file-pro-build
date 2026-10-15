@@ -1,0 +1,4 @@
+10-15 17:22:50.264  3700  3801 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:22:50.273  1357  1469 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 17:22:50.292  2369  2388 W gle.android.tts: Missing inline cache for hip czg.a(java.lang.Object)
+10-15 17:22:50.307  3700  3801 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

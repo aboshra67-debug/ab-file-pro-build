@@ -1,0 +1,41 @@
+10-15 17:22:27.361  4964  4983 I TestRunner: started: aRemovedPickedFolderFallsBackOrIsRecreatedNeverOutsideTheWorkspace(com.abfilepro.app.core.ScannerEngineRegressionTest)
+10-15 17:22:27.369  2595  2595 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 17:22:27.369  2595  2595 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 17:22:27.369  2595  2595 I AudioController: Using mInputStreamFactoryBuilder
+10-15 17:22:27.372  2595  2883 I zygote  : Deoptimizing void com.google.protobuf.bd.a(com.google.protobuf.bp, com.google.protobuf.bd) due to JIT inline cache
+10-15 17:22:27.372  2595  2595 I MicroDetectionWorker: onReady
+10-15 17:22:27.374  2595  2702 I MicroRecognitionRunner: Starting detection.
+10-15 17:22:27.376  2595  2716 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@b716d7e
+10-15 17:22:27.379  1513  5080 I AudioFlinger: AudioFlinger's thread 0xef383c00 tid=5080 ready to run
+10-15 17:22:27.383  2595  2716 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@b716d7e
+10-15 17:22:27.385  2595  2716 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@b716d7e
+10-15 17:22:27.387  2595  2595 I MicroDetectionWorker: onReady
+10-15 17:22:27.387  2595  2702 I MicroRecognitionRunner: Detection finished
+10-15 17:22:27.387  2595  2702 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 17:22:27.388  2595  2702 W ErrorProcessor: 	... 9 more
+10-15 17:22:27.388  2595  2702 I AudioController: internalShutdown
+10-15 17:22:27.388  2595  2883 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 17:22:27.388  2595  2702 I AudioController: internalShutdown
+10-15 17:22:27.404  2595  2595 I MicroDetector: Keeping mic open: false
+10-15 17:22:27.404  2595  2595 I MicroDetectionWorker: #onError(false)
+10-15 17:22:27.404  2595  2778 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 17:22:27.418  4964  4983 I TestRunner: finished: aRemovedPickedFolderFallsBackOrIsRecreatedNeverOutsideTheWorkspace(com.abfilepro.app.core.ScannerEngineRegressionTest)

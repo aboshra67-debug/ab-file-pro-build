@@ -1,0 +1,54 @@
+10-15 17:24:10.500  4620  4902 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 17:24:10.505  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.SmartAutoRotateCameraStateController
+10-15 17:24:10.512  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.SmartAutoRotateBatterySaverController
+10-15 17:24:10.512  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.SmartAutoRotateController
+10-15 17:24:10.528  1247  1324 I TetheringManager: registerTetheringEventCallback:com.android.settings
+10-15 17:24:10.537   488  1245 D ConnectivityService: requestNetwork for uid/pid:10138/1884 activeRequest: null callbackRequest: 129 [NetworkRequest [ REQUEST id=130, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-15 17:24:10.540  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTwistPreferenceController
+10-15 17:24:10.562  1247  1261 D HighlightableMenu: add menu key: top_level_wellbeing
+10-15 17:24:10.563  1247  1261 D HighlightableMenu: add menu key: top_level_google
+10-15 17:24:10.565   488   752 D ConnectivityService: NetReassign [130 : null → 100] [c 4] [a 6] [i 12]
+10-15 17:24:10.574   488   745 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=130, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 17:24:10.576   488   745 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=130, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 17:24:10.577   488   745 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=130, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 17:24:10.578   488   745 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=130, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 17:24:10.602  1247  1324 V SettingsSearchProvider: com.android.settings.biometrics.combination.CombinedBiometricSearchIndexProvider@57dd9c1 tried to add an empty non-indexable key
+10-15 17:24:10.603  1247  1324 V SettingsSearchProvider: com.android.settings.development.featureflags.FeatureFlagsDashboard$1@79a80a7 tried to add an empty non-indexable key
+10-15 17:24:10.607  1247  1324 V SettingsSearchProvider: com.android.settings.development.graphicsdriver.GraphicsDriverDashboard$1@f46c1f2 tried to add an empty non-indexable key
+10-15 17:24:10.608  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkProviderSimsCategoryController
+10-15 17:24:10.608  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.network.NetworkProviderSimsCategoryController
+10-15 17:24:10.608  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkProviderDownloadedSimsCategoryController
+10-15 17:24:10.610  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.network.NetworkProviderDownloadedSimsCategoryController
+10-15 17:24:10.630  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.DeviceNamePreferenceController
+10-15 17:24:10.639  3222  3286 I RcsClientLib: com.google.android.rcs.client.messaging.RcsMessagingService connected
+10-15 17:24:10.639  3222  3286 I BugleRcs: com.google.android.rcs.client.messaging.RcsMessagingService RCS service connected
+10-15 17:24:10.667  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.BrandedAccountPreferenceController
+10-15 17:24:10.678  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.PhoneNumberPreferenceController
+10-15 17:24:10.678  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.warranty.WarrantyPreferenceController
+10-15 17:24:10.678  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.HardwareInfoPreferenceController
+10-15 17:24:10.678  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController
+10-15 17:24:10.678  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController
+10-15 17:24:10.678  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.BuildNumberPreferenceController
+10-15 17:24:10.689  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.GestureNavigationSettingsAssistController
+10-15 17:24:10.699  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.PrimaryMonoPreferenceController
+10-15 17:24:10.699  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-15 17:24:10.699  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.hardwareinfo.SerialNumberPreferenceController
+10-15 17:24:10.699  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.hardwareinfo.HardwareRevisionPreferenceController
+10-15 17:24:10.700  1247  1324 V SettingsSearchProvider: com.android.settings.security.ScreenPinningSettings$2@ceb11dd tried to add an empty non-indexable key
+10-15 17:24:10.702  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 17:24:10.703  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 17:24:10.703  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.RingVibrationTogglePreferenceController
+10-15 17:24:10.705  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.RingVibrationTogglePreferenceController
+10-15 17:24:10.705  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 17:24:10.705  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 17:24:10.705  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.NotificationVibrationTogglePreferenceController
+10-15 17:24:10.705  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.NotificationVibrationTogglePreferenceController
+10-15 17:24:10.705  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AlarmVibrationTogglePreferenceController
+10-15 17:24:10.705  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.AlarmVibrationTogglePreferenceController
+10-15 17:24:10.705  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HapticFeedbackTogglePreferenceController
+10-15 17:24:10.705  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.HapticFeedbackTogglePreferenceController
+10-15 17:24:10.705  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.MediaVibrationTogglePreferenceController
+10-15 17:24:10.706  1247  1324 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.MediaVibrationTogglePreferenceController
+10-15 17:24:10.706  1247  1324 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AdaptiveConnectivityTogglePreferenceController
+10-15 17:24:10.706  1247  1324 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@33f1520 tried to add an empty non-indexable key
+10-15 17:24:10.719  4620  4902 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

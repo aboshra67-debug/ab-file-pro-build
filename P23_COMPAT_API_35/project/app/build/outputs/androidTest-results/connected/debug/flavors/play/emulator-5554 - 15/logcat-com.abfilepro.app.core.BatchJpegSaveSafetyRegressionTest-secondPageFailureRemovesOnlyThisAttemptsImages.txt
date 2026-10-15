@@ -1,0 +1,5 @@
+10-15 17:22:47.776  3700  3801 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 17:22:47.796  1522  3588 I Checkin : [AndroidCheckinProtoModule] Checkin reason type: 8 attempt count: 1.
+10-15 17:22:47.809  1216  3386 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 17:22:47.813  3700  3801 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 17:22:47.817  3700  3801 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

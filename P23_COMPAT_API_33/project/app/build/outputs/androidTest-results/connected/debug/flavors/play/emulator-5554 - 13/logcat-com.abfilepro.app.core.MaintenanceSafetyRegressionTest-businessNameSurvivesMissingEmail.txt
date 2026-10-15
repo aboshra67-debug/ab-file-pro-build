@@ -1,0 +1,6 @@
+10-15 17:24:26.541  4620  4902 I TestRunner: started: businessNameSurvivesMissingEmail(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 17:24:26.545   285  5540 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 17:24:26.546  3135  5360 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+10-15 17:24:26.548  3135  5360 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+10-15 17:24:26.550  3135  5360 D TrafficStats: tagSocket(111) with statsTag=0x1809, statsUid=-1
+10-15 17:24:26.551  4620  4902 I TestRunner: finished: businessNameSurvivesMissingEmail(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

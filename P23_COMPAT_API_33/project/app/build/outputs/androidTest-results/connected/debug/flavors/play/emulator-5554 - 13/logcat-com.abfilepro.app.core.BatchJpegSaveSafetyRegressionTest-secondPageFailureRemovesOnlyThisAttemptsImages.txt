@@ -1,0 +1,10 @@
+10-15 17:24:08.502  4620  4902 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 17:24:08.507   817   817 I HibernationPolicy: scheduleHibernationJob with frequency 1296000000ms and threshold 7776000000ms
+10-15 17:24:08.508  3222  3281 I RcsClientLib: Disconnecting ChatSessionService
+10-15 17:24:08.518   817   817 I HibernationPolicy: user 0 is a profileowner. Running hibernation job.
+10-15 17:24:08.519   817   817 I HibernationPolicy: No existing job, scheduling a new one
+10-15 17:24:08.545  3191  3761 I CarrierServices: [65] EventHubProxy.unsubscribe: Removing event listener 9733895 for category 2 for hub UI
+10-15 17:24:08.548  3191  3761 I CarrierServices: [65] EventHubProxy.unsubscribe: Removing event listener 128131361 for category 3 for hub UI
+10-15 17:24:08.552  1669  3419 I AstreaHttpConnection: Started download from url='https://storage.googleapis.com/captions/sound_recognition_v1.zip'
+10-15 17:24:08.552  4620  4902 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 17:24:08.559  4620  4902 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

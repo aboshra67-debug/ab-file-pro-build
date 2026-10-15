@@ -1,0 +1,3 @@
+10-15 17:22:47.706  3700  3801 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 17:22:47.741  3700  3801 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 17:22:47.772  3700  3801 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

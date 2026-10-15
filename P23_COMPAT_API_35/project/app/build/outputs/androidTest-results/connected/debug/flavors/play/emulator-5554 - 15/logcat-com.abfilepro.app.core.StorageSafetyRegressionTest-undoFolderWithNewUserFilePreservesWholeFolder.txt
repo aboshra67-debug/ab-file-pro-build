@@ -1,0 +1,4 @@
+10-15 17:23:03.708  3700  3801 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 17:23:03.719  1216  2090 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService finished executing. cause:4 result: 1 elapsed_millis: 4291 uptime_millis: 4291 exec_start_elapsed_seconds: 117 [CONTEXT service_id=218 ]
+10-15 17:23:03.721  1522  1522 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+10-15 17:23:03.730  3700  3801 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
