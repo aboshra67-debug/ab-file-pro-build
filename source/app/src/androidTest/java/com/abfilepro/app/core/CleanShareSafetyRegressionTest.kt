@@ -114,6 +114,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun pdfChosenFromShareFolderNeverReplacesItsSource() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf(shareFolder, "original.pdf")
         val before = source.readBytes()
         val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain)
@@ -131,6 +132,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun existingPdfWithSameNameIsPreserved() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf(fixtures, "same.pdf")
         val existing = File(shareFolder, source.name).apply { writeText("USER PDF MUST STAY") }
         val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain)
@@ -162,6 +164,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun largerCompressionCandidateIsNotReportedAsCompressed() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf(fixtures, "small.pdf", listOf(false), 32)
         val input = FileUtils.contentUri(context, source)
         val normal = CleanShareProcessor.clean(context, input, plain.copy(cleanFileName = true))
@@ -182,6 +185,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun normalPdfPreservesAllRequestedPages() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf(fixtures, "outside.pdf", listOf(false, true, false))
         val before = source.readBytes()
         val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain)
@@ -192,6 +196,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun blankPageRemovalStillKeepsTheContentPage() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf(fixtures, "with_blank.pdf", listOf(true, false))
         val result = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain.copy(removeBlankPages = true))
         assertEquals(1, result.blankPagesRemoved)
@@ -307,6 +312,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     @Test fun smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf(fixtures, "large.pdf", listOf(false, false), 384)
         val before = source.readBytes()
         val normal = CleanShareProcessor.clean(context, FileUtils.contentUri(context, source), plain.copy(cleanFileName = true))

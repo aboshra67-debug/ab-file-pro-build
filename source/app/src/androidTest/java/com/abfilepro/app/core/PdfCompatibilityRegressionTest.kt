@@ -90,16 +90,26 @@ class PdfCompatibilityRegressionTest {
         }
     }
 
-    @Test fun androidWrittenPdfRendersItsRealContentOnThisAndroidVersion() {
+    @Test fun androidWrittenPdfRendersItsRealContentOrIsRefusedSafely() {
         val file = androidPdf()
         open(file) { renderer ->
-            assertTrue("pages must be rendered by the system renderer, mode=${renderer.mode}", renderer.mode != SafePdfRenderer.Mode.PDFBOX)
-            val bitmap = renderFirstPage(renderer)
-            try { redTopWhiteBottom(bitmap) } finally { bitmap.recycle() }
+            if (renderer.mode == SafePdfRenderer.Mode.PDFBOX) {
+                assertTrue("only Android 8 may fall back to PDFBox, API ${Build.VERSION.SDK_INT}", Build.VERSION.SDK_INT < 28)
+                val bitmap = Bitmap.createBitmap(50, 50, Bitmap.Config.ARGB_8888)
+                try {
+                    renderer.openPage(0).use { it.render(bitmap, null) }
+                    fail("a page that cannot be rendered reliably must not be produced")
+                } catch (_: IOException) {
+                } finally { bitmap.recycle() }
+            } else {
+                val bitmap = renderFirstPage(renderer)
+                try { redTopWhiteBottom(bitmap) } finally { bitmap.recycle() }
+            }
         }
     }
 
     @Test fun rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards() {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val file = androidPdf()
         val before = file.readBytes()
         SafePdfRenderer.skipNativeOriginalForTest = true
@@ -156,6 +166,7 @@ class PdfCompatibilityRegressionTest {
     }
 
     @Test fun longImageIsProducedThroughTheRewrittenCopy() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val file = androidPdf()
         SafePdfRenderer.skipNativeOriginalForTest = true
         val result = PdfTools.pdfToLongImage(context, Uri.fromFile(file), preferredWidth = 600)

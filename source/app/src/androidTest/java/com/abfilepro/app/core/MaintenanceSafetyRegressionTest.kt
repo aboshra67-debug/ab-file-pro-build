@@ -133,6 +133,7 @@ class MaintenanceSafetyRegressionTest {
     }
 
     @Test fun singlePdfPageRendersAsLongImage() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf("one.pdf", listOf(Color.RED))
         val original = sha(source)
         val result = PdfTools.pdfToLongImage(context, Uri.fromFile(source), 480).also { outputs += it }
@@ -146,6 +147,7 @@ class MaintenanceSafetyRegressionTest {
     }
 
     @Test fun multiplePdfPagesRenderInOrderAsLongImage() = runBlocking {
+        PdfTestSupport.assumeSystemPdfRendering(context)
         val source = pdf("two.pdf", listOf(Color.RED, Color.BLUE))
         val original = sha(source)
         val result = PdfTools.pdfToLongImage(context, Uri.fromFile(source), 480).also { outputs += it }
