@@ -1,0 +1,59 @@
+{
+  "release": "AB98 P22",
+  "version_code": 174,
+  "version_name": "2.0.0-alpha98-p22-google-scanner",
+  "baseline": "AB98 P21 (VC173)",
+  "deleted_files": [],
+  "ci_run": "38735300755",
+  "ci_commit": "30d9f3676e8f3b7b7e46cb151edaaabed1ec6716",
+  "results": {
+    "android": "117/117",
+    "scanner_ui": "19/19",
+    "jvm": "51/51",
+    "qa_r8_monkey": "1500 events, no crash/ANR",
+    "server_pytest": "15/15",
+    "compat": {
+      "26": {
+        "passed": 107,
+        "skipped": 10,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      },
+      "33": {
+        "passed": 117,
+        "skipped": 0,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      },
+      "35": {
+        "passed": 117,
+        "skipped": 0,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      }
+    }
+  },
+  "outputs": {
+    "AB98_P22_PLAY_TEST.apk": {
+      "bytes": 132161232,
+      "sha256": "9520c9d28e406750cf3e589ae71464218d9c1a8c3839e55b9195b24c563d8edf"
+    },
+    "AB98_P22_PLAY_QA_R8.apk": {
+      "bytes": 108422638,
+      "sha256": "001f74e409d1a6f41534ef6e6d02ac48b779c4a9d1277f288be18ae45112805d"
+    },
+    "AB98_P22_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67877643,
+      "sha256": "9e4ff15562ca1599ae3dd9b5eb378b9a8089806a922189e8859cb16ee679a458"
+    },
+    "AB98_P22_PLAY_RELEASE_mapping.txt": {
+      "bytes": 116446798,
+      "sha256": "0d66eacb63c22b53d2146a5759261dca56f131ad57ab7cd6617e7f9a13321071"
+    }
+  },
+  "signing": "debug only (original key unavailable; no replacement key used)",
+  "physical_phone_tested": false
+}

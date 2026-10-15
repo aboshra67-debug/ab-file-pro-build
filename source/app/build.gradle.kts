@@ -38,9 +38,9 @@ android {
         applicationId = "com.abfilepro.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 174
+        versionCode = 175
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        versionName = "2.0.0-alpha98-p22-google-scanner"
+        versionName = "2.0.0-alpha98-p23-smart-camera"
 
         vectorDrawables { useSupportLibrary = true }
 
@@ -76,7 +76,7 @@ android {
     buildTypes {
         debug {
             // Isolated install so testing never requires uninstalling the production app.
-            applicationIdSuffix = ".p22mainttrial"
+            applicationIdSuffix = ".p23mainttrial"
             if (originalSigningReady) {
                 signingConfig = signingConfigs.getByName("original")
             }
@@ -95,7 +95,7 @@ android {
         // so the optimized build is exercised on the emulator before any store upload.
         create("qa") {
             initWith(getByName("release"))
-            applicationIdSuffix = ".p22qa"
+            applicationIdSuffix = ".p23qa"
             signingConfig = signingConfigs.getByName("debug")
             matchingFallbacks += listOf("release")
         }

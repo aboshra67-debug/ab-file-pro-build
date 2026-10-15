@@ -1,20 +1,20 @@
-"""Single source of the values P22 verification pins (version, packages, expected counts)."""
-TAG = 'P22'
-EVIDENCE = 'p22-evidence'
-RELEASE = 'p22-release'
-VERSION_CODE = 174
-VERSION_NAME = '2.0.0-alpha98-p22-google-scanner'
-TEST_PACKAGE = 'com.abfilepro.app.p22mainttrial'
-QA_PACKAGE = 'com.abfilepro.app.p22qa'
-TEST_LABEL = 'AB File Pro P22'
-QA_LABEL = 'AB File Pro P22 QA'
-SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial']
+"""Single source of the values P23 verification pins (version, packages, expected counts)."""
+TAG = 'P23'
+EVIDENCE = 'p23-evidence'
+RELEASE = 'p23-release'
+VERSION_CODE = 175
+VERSION_NAME = '2.0.0-alpha98-p23-smart-camera'
+TEST_PACKAGE = 'com.abfilepro.app.p23mainttrial'
+QA_PACKAGE = 'com.abfilepro.app.p23qa'
+TEST_LABEL = 'AB File Pro P23'
+QA_LABEL = 'AB File Pro P23 QA'
+SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial', 'com.abfilepro.app.p23mainttrial']
 DEBUG_APK = 'project/app/build/outputs/apk/play/debug/app-play-debug.apk'
 QA_APK = 'project/app/build/outputs/apk/play/qa/app-play-qa.apk'
 DIRECT_APK = 'project/app/build/outputs/apk/direct/debug/app-direct-debug.apk'
 AAB = 'project/app/build/outputs/bundle/playRelease/app-play-release.aab'
 MAPPING = 'project/app/build/outputs/mapping/playRelease/mapping.txt'
-ANDROID_TESTS = 117
+ANDROID_TESTS = 122
 SCANNER_CASES = 19
-JVM_TESTS = 51
-REQUIRED_TESTS = {k: set(v) for k, v in {'P15': ['successfulBatchPublishesEveryPageInOrder', 'secondPageFailureRemovesOnlyThisAttemptsImages', 'retryAfterFailureDoesNotDuplicatePages', 'cancellationDuringSaveRemovesPublishedImages', 'imageChangedAfterPublishIsKeptOnRollback'], 'P16': ['playChannelDisablesSelfUpdate', 'playBuildDoesNotRequestInstallPackages'], 'P17': ['freshInstallHasNoFamilyAndNoSession', 'preP17AutomaticRegistrationIsPausedUntilConfirmed', 'preP17CodeWithoutRegistrationIsDiscarded', 'turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems', 'leavingWhileNotLinkedClearsStateWithoutNetwork'], 'P18': ['calendarReminderWhoseLeadTimeAlreadyPassedStillFires', 'medicineReceiverSchedulesTheNextDailyDose', 'documentWhoseReminderWindowStartedIsRemindedOnce', 'adhanSchedulesTomorrowAndKeepsTodaysFollowUp'], 'P19': ['reviewPagesRoundTripThroughSavedState', 'restoredReviewDropsPagesWhoseImageIsGone', 'scannerPdfIsPublishedOnlyAfterVerification', 'invalidScannerResultFailsCleanlyWithoutLeavingFiles', 'recordingStoppedOutsideTheScreenIsRecovered'], 'P20': ['recordsAreNotDroppedAfterTwoThousand', 'staleScreenCopyCannotUndoAChangeMadeElsewhere', 'updatingARecordDeletedElsewhereDoesNotBringItBack', 'preP20RecordsAreMigratedAndTheOldCopyIsKept', 'backupImportAddsOnlyMissingRecordsAndChangesNothingElse', 'familySyncAppliesOnlyChangedRecords'], 'P21': ['androidWrittenPdfRendersItsRealContentOrIsRefusedSafely', 'rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards', 'pdfboxOnlyModeNeverProducesFilesFromItsRendering', 'brokenPdfIsStillRejectedWhenTheFallbackIsUsed', 'longImageIsProducedThroughTheRewrittenCopy'], 'P22': ['googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered', 'everyScannerModeSavesIntoTheScansFolderByDefault', 'aFolderPickedInTheScannerIsRememberedAndOutsideFoldersAreRefused', 'twoSidedCardIsSavedIntoTheScannerFolder']}.items()}
+JVM_TESTS = 62
+REQUIRED_TESTS = {k: set(v) for k, v in {'P15': ['successfulBatchPublishesEveryPageInOrder', 'secondPageFailureRemovesOnlyThisAttemptsImages', 'retryAfterFailureDoesNotDuplicatePages', 'cancellationDuringSaveRemovesPublishedImages', 'imageChangedAfterPublishIsKeptOnRollback'], 'P16': ['playChannelDisablesSelfUpdate', 'playBuildDoesNotRequestInstallPackages'], 'P17': ['freshInstallHasNoFamilyAndNoSession', 'preP17AutomaticRegistrationIsPausedUntilConfirmed', 'preP17CodeWithoutRegistrationIsDiscarded', 'turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems', 'leavingWhileNotLinkedClearsStateWithoutNetwork'], 'P18': ['calendarReminderWhoseLeadTimeAlreadyPassedStillFires', 'medicineReceiverSchedulesTheNextDailyDose', 'documentWhoseReminderWindowStartedIsRemindedOnce', 'adhanSchedulesTomorrowAndKeepsTodaysFollowUp'], 'P19': ['reviewPagesRoundTripThroughSavedState', 'restoredReviewDropsPagesWhoseImageIsGone', 'scannerPdfIsPublishedOnlyAfterVerification', 'invalidScannerResultFailsCleanlyWithoutLeavingFiles', 'recordingStoppedOutsideTheScreenIsRecovered'], 'P20': ['recordsAreNotDroppedAfterTwoThousand', 'staleScreenCopyCannotUndoAChangeMadeElsewhere', 'updatingARecordDeletedElsewhereDoesNotBringItBack', 'preP20RecordsAreMigratedAndTheOldCopyIsKept', 'backupImportAddsOnlyMissingRecordsAndChangesNothingElse', 'familySyncAppliesOnlyChangedRecords'], 'P21': ['androidWrittenPdfRendersItsRealContentOrIsRefusedSafely', 'rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards', 'pdfboxOnlyModeNeverProducesFilesFromItsRendering', 'brokenPdfIsStillRejectedWhenTheFallbackIsUsed', 'longImageIsProducedThroughTheRewrittenCopy'], 'P22': ['googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered', 'everyScannerModeSavesIntoTheScansFolderByDefault', 'aFolderPickedInTheScannerIsRememberedAndOutsideFoldersAreRefused', 'twoSidedCardIsSavedIntoTheScannerFolder'], 'P23': ['oneSheetIsOutlinedAtItsCorners', 'severalSheetsInOneShotAreFoundSeparatelyInReadingOrder', 'anEmptyDeskHasNoOutline', 'cameraLuminanceIsRotatedToTheUprightScreen', 'severalSheetsBecomeIndependentPagesThatCanBeRetiredOneByOne']}.items()}

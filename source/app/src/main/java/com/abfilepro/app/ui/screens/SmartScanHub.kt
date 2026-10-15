@@ -36,7 +36,9 @@ enum class SmartScanAction {
     RECEIPT,
     BARCODE,
     TRANSLATION,
-    IMAGES_TO_PDF
+    IMAGES_TO_PDF,
+    /** P23: several receipts/cards/sheets in one shot (replaces the Images to PDF tile). */
+    MULTI_DOCUMENT
 }
 
 private data class SmartScanHubEntry(
@@ -66,7 +68,8 @@ fun SmartScanHub(
         SmartScanHubEntry(SmartScanAction.RECEIPT, R.drawable.scan_mode_receipt, "alpha11_scan_receipt", "alpha11_scan_receipt_desc"),
         SmartScanHubEntry(SmartScanAction.BARCODE, R.drawable.scan_mode_barcode, "alpha11_scan_barcode", "alpha11_scan_barcode_desc", "alpha11_scan_direct_live"),
         SmartScanHubEntry(SmartScanAction.TRANSLATION, R.drawable.scan_mode_translation, "alpha11_scan_translation", "alpha11_scan_translation_desc"),
-        SmartScanHubEntry(SmartScanAction.IMAGES_TO_PDF, R.drawable.scan_mode_images_pdf, "alpha11_scan_images_pdf", "alpha11_scan_images_pdf_desc")
+        // P23: Images to PDF stays in the conversion center and the file manager.
+        SmartScanHubEntry(SmartScanAction.MULTI_DOCUMENT, R.drawable.scan_mode_receipt, "p23_scan_multi", "p23_scan_multi_desc")
     )
 
     Scaffold(topBar = { ScreenTopBar(context.uiText(language, "alpha11_scan_title"), onBack) }) { padding ->
@@ -109,6 +112,12 @@ fun SmartScanHub(
                             modifier = Modifier.weight(1f)
                         )
                         FilterChip(
+                            selected = engine == ScannerEngine.SMART,
+                            onClick = { onEngineChange(ScannerEngine.SMART) },
+                            label = { Text(context.uiText(language, "p23_engine_smart"), maxLines = 1) },
+                            modifier = Modifier.weight(1f)
+                        )
+                        FilterChip(
                             selected = engine == ScannerEngine.BUILT_IN,
                             onClick = { onEngineChange(ScannerEngine.BUILT_IN) },
                             label = { Text(context.uiText(language, "p22_engine_builtin"), maxLines = 1) },
@@ -119,12 +128,12 @@ fun SmartScanHub(
             }
 
             items(entries, key = { it.action.name }, span = { entry ->
-                if (entry.action == SmartScanAction.IMAGES_TO_PDF) GridItemSpan(maxLineSpan) else GridItemSpan(1)
+                if (entry.action == SmartScanAction.MULTI_DOCUMENT) GridItemSpan(maxLineSpan) else GridItemSpan(1)
             }) { entry ->
                 SmartScanImageCard(
                     entry = entry,
                     onClick = { onAction(entry.action) },
-                    modifier = if (entry.action == SmartScanAction.IMAGES_TO_PDF) {
+                    modifier = if (entry.action == SmartScanAction.MULTI_DOCUMENT) {
                         Modifier.height(204.dp)
                     } else {
                         Modifier.height(218.dp)
@@ -172,7 +181,7 @@ private fun SmartScanImageCard(
 ) {
     val context = LocalContext.current
     val language = LocalAppLanguage.current
-    val isWide = entry.action == SmartScanAction.IMAGES_TO_PDF
+    val isWide = entry.action == SmartScanAction.MULTI_DOCUMENT
     Card(
         onClick = onClick,
         modifier = modifier.fillMaxWidth(),

@@ -1,8 +1,7 @@
 name: P22 Safe Maintenance, R8 QA and APK
+# Kept for history; runs only on demand.
 on:
   workflow_dispatch:
-  push:
-    paths: ["app/**", "tools/**", "family-sync-server/**", "*.kts", "gradle.properties", "VERSION", ".github/workflows/p22-standalone.yml"]
 permissions:
   contents: read
   actions: read

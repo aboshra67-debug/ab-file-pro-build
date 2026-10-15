@@ -154,6 +154,11 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     var scannerEngine by remember { mutableStateOf(ScannerEngineStore.engine(context)) }
     // Non-null while the pages in review came from Google's scanner (retake/add go back to it).
     var googleSessionMode by rememberSaveable { mutableStateOf<ScanCaptureMode?>(null) }
+    // P23: non-null while the pages in review came from the AB smart camera.
+    var smartSessionMode by rememberSaveable { mutableStateOf<ScanCaptureMode?>(null) }
+    var smartCameraRequest by remember { mutableStateOf<SmartCameraRequest?>(null) }
+    /** Pages captured by Google's scanner or the smart camera (retake/add reopen that camera). */
+    fun externalSession(): Boolean = googleSessionMode != null || smartSessionMode != null
     var googleRetakeIndex by remember { mutableStateOf<Int?>(null) }
     var googleAppend by remember { mutableStateOf(false) }
     var showDiscardScan by remember { mutableStateOf(false) }
@@ -749,9 +754,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 } else {
                     val (merged, retired) = ScannerEnginePolicy.merge(selectedMode, reviewPages, cached, retakeIndex, append)
                     reviewPages = merged
-                    val live = merged.map { it.file.absolutePath }.toSet()
-                    val unused = retired.filter { it.file.absolutePath !in live }
-                    if (unused.isNotEmpty()) ScanProcessor.cleanup(unused)
+                    // P23: file-level removal; pages of one scan share a folder.
+                    ScanPageFiles.retire(retired, merged)
                     lastResult = context.uiText(language, "scan_screen_006", merged.size)
                 }
             } catch (error: Throwable) {
@@ -786,6 +790,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             .build()
         selectedMode = mode
         googleSessionMode = mode
+        smartSessionMode = null
         googleRetakeIndex = retakeIndex
         googleAppend = append
         busy = true
@@ -806,6 +811,20 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
                 }
             }
+    }
+
+    /** P23: retake / add pages go back to the camera that captured this review list. */
+    fun reopenCapture(retakeIndex: Int?, append: Boolean) {
+        if (smartSessionMode != null) {
+            val cameraMode = when {
+                retakeIndex != null -> SmartCaptureMode.DOCUMENT
+                selectedMode == ScanCaptureMode.ID_CARD -> SmartCaptureMode.ID_CARD
+                else -> SmartCaptureMode.BATCH
+            }
+            smartCameraRequest = SmartCameraRequest(cameraMode, retakeIndex, append)
+        } else {
+            launchGoogleScanner(selectedMode, retakeIndex = retakeIndex, append = append)
+        }
     }
 
     fun launchProfessionalSinglePageScanner(mode: ScanCaptureMode, retakeIndex: Int? = null) {
@@ -1032,6 +1051,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     ScanProcessor.cleanup(reviewPages)
                     reviewPages = emptyList()
                     googleSessionMode = null
+                    smartSessionMode = null
                     googleBoundsIndex = null
                     googleBoundsBackup = null
                     flowStage = ScanUiStage.HUB
@@ -1049,6 +1069,39 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         return
     }
 
+    smartCameraRequest?.let { request ->
+        SmartScannerCamera(
+            initialMode = request.mode,
+            existingPageCount = if (request.retakeIndex != null || request.append) reviewPages.size else 0,
+            singlePageOnly = request.retakeIndex != null,
+            onDone = { captured, capturedMode ->
+                smartCameraRequest = null
+                if (request.retakeIndex == null && !request.append) selectedMode = capturedMode
+                smartSessionMode = selectedMode
+                googleSessionMode = null
+                val (merged, retired) = ScannerEnginePolicy.merge(selectedMode, reviewPages, captured, request.retakeIndex, request.append)
+                reviewPages = merged
+                ScanPageFiles.retire(retired, merged)
+                lastResult = context.uiText(language, "scan_screen_006", merged.size)
+                flowStage = if (merged.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
+            },
+            onClose = {
+                smartCameraRequest = null
+                if (reviewPages.isEmpty()) {
+                    smartSessionMode = null
+                    flowStage = ScanUiStage.HUB
+                } else {
+                    flowStage = ScanUiStage.REVIEW
+                }
+            },
+            onOpenQr = {
+                smartCameraRequest = null
+                barcodeReaderOpen = true
+            }
+        )
+        return
+    }
+
     if (showMissingCardSide) {
         AlertDialog(
             onDismissRequest = { showMissingCardSide = false },
@@ -1057,7 +1110,9 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             confirmButton = {
                 TextButton(onClick = {
                     showMissingCardSide = false
-                    if (googleSessionMode != null) {
+                    if (smartSessionMode != null) {
+                        smartCameraRequest = SmartCameraRequest(SmartCaptureMode.ID_CARD, append = true)
+                    } else if (googleSessionMode != null) {
                         launchGoogleScanner(selectedMode, append = true)
                     } else {
                         cameraPages = reviewPages
@@ -1248,8 +1303,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             onMessenger = { file -> runCatching { shareToMessenger(context, file) }.onFailure { FileUtils.shareFile(context, file) } },
             onOpenFolder = { file -> onOpenSavedLocation(file) },
             onNewScan = newScan@{
-                if (ScannerEnginePolicy.usesGoogle(selectedMode, scannerEngine)) {
-                    // P22: a new scan reopens Google's scanner in the same mode.
+                if (ScannerEnginePolicy.usesGoogle(selectedMode, scannerEngine) || ScannerEnginePolicy.usesSmart(selectedMode, scannerEngine)) {
+                    // P22: a new scan reopens Google's scanner (P23: or the smart camera) in the same mode.
                     saveSuccessFile = null
                     startNewScan(selectedMode)
                     return@newScan
@@ -1282,6 +1337,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
 
     fun launchBuiltInMode(mode: ScanCaptureMode) {
         googleSessionMode = null
+        smartSessionMode = null
         selectedMode = mode
         reviewRetakeIndex = null
         cameraPages = emptyList()
@@ -1304,11 +1360,31 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     }
     startBuiltInCamera = { mode -> launchBuiltInMode(mode) }
 
+    /** P23: opens the AB smart camera for a new scan (also the "several sheets" tile). */
+    fun launchSmartCamera(cameraMode: SmartCaptureMode, mode: ScanCaptureMode) {
+        if (reviewPages.isNotEmpty()) ScanProcessor.cleanup(reviewPages)
+        reviewPages = emptyList()
+        cameraPages = emptyList()
+        multiPageCapturedPages = emptyList()
+        multiPageFinalizedPages = emptyList()
+        multiPageRetakeIndex = null
+        reviewRetakeIndex = null
+        singleDocumentBoundsPage = null
+        googleSessionMode = null
+        smartSessionMode = null
+        selectedMode = mode
+        singleDocumentOutputFormat = ScanOutputFormat.PDF
+        lastResult = context.uiText(language, "scan_screen_001")
+        smartCameraRequest = SmartCameraRequest(cameraMode)
+    }
+
     /** P22: every new scan starts clean, as PDF, on the chosen engine. */
     fun launchMode(mode: ScanCaptureMode) {
         if (busy) return
         singleDocumentOutputFormat = ScanOutputFormat.PDF
-        if (ScannerEnginePolicy.usesGoogle(mode, scannerEngine)) {
+        if (ScannerEnginePolicy.usesSmart(mode, scannerEngine)) {
+            launchSmartCamera(SmartCaptureMode.from(mode), mode)
+        } else if (ScannerEnginePolicy.usesGoogle(mode, scannerEngine)) {
             if (reviewPages.isNotEmpty()) ScanProcessor.cleanup(reviewPages)
             reviewPages = emptyList()
             cameraPages = emptyList()
@@ -1695,15 +1771,16 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             if (reviewPages.isEmpty()) {
                 LaunchedEffect(flowStage) {
                     if (flowStage != ScanUiStage.SUCCESS) {
-                        flowStage = if (googleSessionMode != null) ScanUiStage.HUB else ScanUiStage.CAMERA
+                        flowStage = if (externalSession()) ScanUiStage.HUB else ScanUiStage.CAMERA
                         googleSessionMode = null
+                        smartSessionMode = null
                     }
                 }
                 return
             }
 
             // P22: corner adjustment of a Google-scanned page edits that page in place and returns here.
-            val boundsIndex = googleBoundsIndex?.takeIf { googleSessionMode != null && it in reviewPages.indices }
+            val boundsIndex = googleBoundsIndex?.takeIf { externalSession() && it in reviewPages.indices }
             if (boundsIndex != null) {
                 fun closeBounds(restore: Boolean) {
                     val backup = googleBoundsBackup
@@ -1725,7 +1802,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     onContinue = { closeBounds(restore = false) },
                     onRetake = {
                         closeBounds(restore = true)
-                        launchGoogleScanner(selectedMode, retakeIndex = boundsIndex)
+                        reopenCapture(retakeIndex = boundsIndex, append = false)
                     },
                     onBack = { closeBounds(restore = true) }
                 )
@@ -1760,8 +1837,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 },
                 onRetakePage = { index ->
                     val page = reviewPages.getOrNull(index)
-                    if (page != null && googleSessionMode != null) {
-                        launchGoogleScanner(selectedMode, retakeIndex = index)
+                    if (page != null && externalSession()) {
+                        reopenCapture(retakeIndex = index, append = false)
                     } else if (page != null) {
                         if (selectedMode == ScanCaptureMode.BATCH) {
                             // Keep the prior draft as a backup until a new capture replaces it.
@@ -1790,7 +1867,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 },
                 onEditBounds = { index ->
                     val page = reviewPages.getOrNull(index)
-                    if (googleSessionMode != null && page != null) {
+                    if (externalSession() && page != null) {
                         googleBoundsBackup = page
                         googleBoundsIndex = index
                     } else if ((selectedMode == ScanCaptureMode.DOCUMENT || selectedMode == ScanCaptureMode.BATCH) && page != null) {
@@ -1806,8 +1883,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     }
                 },
                 onAddPages = {
-                    if (googleSessionMode != null) {
-                        launchGoogleScanner(selectedMode, append = true)
+                    if (externalSession()) {
+                        reopenCapture(retakeIndex = null, append = true)
                     } else if (!busy && reviewPages.size < selectedMode.maxPages) {
                         if (selectedMode == ScanCaptureMode.BATCH) {
                             multiPageCapturedPages = reviewPages
@@ -1845,7 +1922,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     }
                 },
                 onBack = {
-                    if (googleSessionMode != null) {
+                    if (externalSession()) {
                         // P22: pages scanned with Google have no camera/corner step to return to.
                         showDiscardScan = true
                     } else if (selectedMode == ScanCaptureMode.DOCUMENT) {
@@ -1898,6 +1975,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                         SmartScanAction.BARCODE -> barcodeReaderOpen = true
                         SmartScanAction.TRANSLATION -> launchMode(ScanCaptureMode.TRANSLATION)
                         SmartScanAction.IMAGES_TO_PDF -> launchMode(ScanCaptureMode.PHOTO)
+                        // P23: several sheets in one shot always use the AB smart camera.
+                        SmartScanAction.MULTI_DOCUMENT -> launchSmartCamera(SmartCaptureMode.MULTI, ScanCaptureMode.BATCH)
                     }
                 },
                 onBack = onBack,

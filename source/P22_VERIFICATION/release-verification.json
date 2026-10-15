@@ -1,0 +1,51 @@
+{
+  "phase": "green",
+  "android_functions": 117,
+  "scanner_ui_cases": 19,
+  "jvm_tests": 51,
+  "qa_r8_monkey_events": 1500,
+  "all_passed": true,
+  "version_code": 174,
+  "version_name": "2.0.0-alpha98-p22-google-scanner",
+  "channel_checks": {
+    "debug": {
+      "package": "com.abfilepro.app.p22mainttrial",
+      "label": "AB File Pro P22",
+      "install_permission_absent": true
+    },
+    "qa": {
+      "package": "com.abfilepro.app.p22qa",
+      "label": "AB File Pro P22 QA",
+      "install_permission_absent": true
+    },
+    "direct": {
+      "install_permission_present": true
+    }
+  },
+  "outputs": {
+    "AB98_P22_PLAY_TEST.apk": {
+      "bytes": 132161232,
+      "sha256": "9520c9d28e406750cf3e589ae71464218d9c1a8c3839e55b9195b24c563d8edf"
+    },
+    "AB98_P22_PLAY_QA_R8.apk": {
+      "bytes": 108422638,
+      "sha256": "001f74e409d1a6f41534ef6e6d02ac48b779c4a9d1277f288be18ae45112805d"
+    },
+    "AB98_P22_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67877643,
+      "sha256": "9e4ff15562ca1599ae3dd9b5eb378b9a8089806a922189e8859cb16ee679a458"
+    },
+    "AB98_P22_PLAY_RELEASE_mapping.txt": {
+      "bytes": 116446798,
+      "sha256": "0d66eacb63c22b53d2146a5759261dca56f131ad57ab7cd6617e7f9a13321071"
+    }
+  },
+  "commit": "30d9f3676e8f3b7b7e46cb151edaaabed1ec6716",
+  "run_id": "38735300755",
+  "android_api_tested": "30",
+  "phone_abi": "arm64-v8a",
+  "physical_phone_tested": false,
+  "aab_signed": false,
+  "original_signing_key_available": false,
+  "play_release_ready": false
+}

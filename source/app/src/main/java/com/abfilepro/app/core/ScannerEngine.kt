@@ -11,7 +11,10 @@ import java.io.File
  *    scanner is unavailable on the phone (for example without Google services), and for modes
  *    Google's scanner does not cover (book split, images to PDF).
  */
-enum class ScannerEngine { GOOGLE, BUILT_IN }
+enum class ScannerEngine { GOOGLE, SMART, BUILT_IN }
+
+/** P23: a request to open the AB smart camera (new scan, retake of one page, or add pages). */
+data class SmartCameraRequest(val mode: SmartCaptureMode, val retakeIndex: Int? = null, val append: Boolean = false)
 
 /** Pure rules (JVM-testable). */
 object ScannerEnginePolicy {
@@ -28,6 +31,10 @@ object ScannerEnginePolicy {
 
     fun usesGoogle(mode: ScanCaptureMode, engine: ScannerEngine): Boolean =
         engine == ScannerEngine.GOOGLE && mode in googleModes
+
+    /** P23: the AB smart camera covers the same modes as Google's scanner. */
+    fun usesSmart(mode: ScanCaptureMode, engine: ScannerEngine): Boolean =
+        engine == ScannerEngine.SMART && mode in googleModes
 
     /**
      * How many pages Google's scanner may return for this request.
@@ -71,6 +78,22 @@ object ScannerEnginePolicy {
         }
         val kept = returned.take(mode.maxPages)
         return kept to (existing + returned.drop(mode.maxPages))
+    }
+}
+
+/**
+ * P23: pages retired from a review list (retake, overflow) are removed file by file.
+ * Pages of one scan share a cache folder, so deleting a page's folder would erase its
+ * siblings (P22 bug on retake). The folder goes only once it is empty.
+ */
+object ScanPageFiles {
+    fun retire(retired: List<ScanDraftPage>, stillUsed: List<ScanDraftPage>) {
+        val live = stillUsed.map { it.file.absolutePath }.toSet()
+        retired.filter { it.file.absolutePath !in live }.forEach { page ->
+            runCatching { page.file.delete() }
+            val parent = page.file.parentFile
+            if (parent != null && parent.isDirectory && parent.listFiles().isNullOrEmpty()) runCatching { parent.delete() }
+        }
     }
 }
 

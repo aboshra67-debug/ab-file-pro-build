@@ -2,7 +2,37 @@
 
 إصدار مبني على P21. Version Code: 174. Version Name: `2.0.0-alpha98-p22-google-scanner`.
 
-{{RESULTS}}
+## نتيجة الاختبار الفعلي (GitHub Actions)
+
+- Run: https://github.com/aboshra67-debug/ab-file-pro-build/actions/runs/38735300755
+- Commit: `30d9f3676e8f3b7b7e46cb151edaaabed1ec6716`
+
+| الفحص | النتيجة |
+|---|---|
+| اختبارات Android على المحاكي (API 30) | 117/117 ناجحة |
+| اختبارات واجهة الماسح | 19/19 ناجحة |
+| اختبارات JVM | 51/51 ناجحة |
+| نسخة QA بـ R8 + Monkey | 1500 حدث بدون Crash أو ANR |
+| اختبارات السيرفر (pytest + PostgreSQL) | 15/15 ناجحة |
+| Android 8.0 (API 26): Android + QA R8 + Monkey 800 | 107 ناجحة، 10 متخطاة (رسم PDF)، 0 فاشلة، والتشغيل بدون Crash |
+| Android 13 (API 33): Android + QA R8 + Monkey 800 | 117 ناجحة، 0 فاشلة، والتشغيل بدون Crash |
+| Android 15 (API 35): Android + QA R8 + Monkey 800 | 117 ناجحة، 0 فاشلة، والتشغيل بدون Crash |
+
+### الملفات الناتجة
+
+| الملف | الحجم (bytes) | SHA-256 |
+|---|---|---|
+| `AB98_P22_PLAY_TEST.apk` | 132,161,232 | `9520c9d28e406750cf3e589ae71464218d9c1a8c3839e55b9195b24c563d8edf` |
+| `AB98_P22_PLAY_QA_R8.apk` | 108,422,638 | `001f74e409d1a6f41534ef6e6d02ac48b779c4a9d1277f288be18ae45112805d` |
+| `AB98_P22_PLAY_RELEASE_UNSIGNED.aab` | 67,877,643 | `9e4ff15562ca1599ae3dd9b5eb378b9a8089806a922189e8859cb16ee679a458` |
+| `AB98_P22_PLAY_RELEASE_mapping.txt` | 116,446,798 | `0d66eacb63c22b53d2146a5759261dca56f131ad57ab7cd6617e7f9a13321071` |
+
+- رابط التنزيل المباشر: https://github.com/aboshra67-debug/ab-file-pro-build/releases/tag/p22-test-apk-vc174
+- `PLAY_TEST.apk` بتوقيع Debug وباسم حزمة `com.abfilepro.app.p22mainttrial` بيتثبت جنب النسخة القديمة.
+- `PLAY_QA_R8.apk` نفس كود الـ Release (R8) بتوقيع Debug وحزمة `com.abfilepro.app.p22qa`.
+- الـ AAB غير موقّع، المفتاح الأصلي غير متاح، ومتعملش أي مفتاح بديل.
+- اتجرّب على محاكي فقط؛ لسه محتاج تجربة على موبايل حقيقي.
+
 
 ## ليه الإصدار ده
 

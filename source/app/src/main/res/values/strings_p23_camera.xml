@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P23: AB smart camera. -->
+<resources>
+    <string name="p23_camera_title_ar">كاميرا AB الذكية</string>
+    <string name="p23_camera_title_en">AB smart camera</string>
+    <string name="p23_camera_title_fr">Caméra intelligente AB</string>
+    <string name="p23_engine_smart_ar">الكاميرا الذكية</string>
+    <string name="p23_engine_smart_en">Smart camera</string>
+    <string name="p23_engine_smart_fr">Caméra intelligente</string>
+    <string name="p23_auto_on_ar">تلقائي</string>
+    <string name="p23_auto_on_en">Auto</string>
+    <string name="p23_auto_on_fr">Auto</string>
+    <string name="p23_auto_off_ar">يدوي</string>
+    <string name="p23_auto_off_en">Manual</string>
+    <string name="p23_auto_off_fr">Manuel</string>
+    <string name="p23_torch_ar">الفلاش</string>
+    <string name="p23_torch_en">Flash</string>
+    <string name="p23_torch_fr">Flash</string>
+    <string name="p23_hint_saving_ar">جاري الحفظ…</string>
+    <string name="p23_hint_saving_en">Saving…</string>
+    <string name="p23_hint_saving_fr">Enregistrement…</string>
+    <string name="p23_hint_point_ar">وجّه الكاميرا على الورقة</string>
+    <string name="p23_hint_point_en">Point the camera at the paper</string>
+    <string name="p23_hint_point_fr">Visez le document</string>
+    <string name="p23_hint_dark_ar">المكان ضلمة، شغّل الفلاش</string>
+    <string name="p23_hint_dark_en">Too dark, turn on the flash</string>
+    <string name="p23_hint_dark_fr">Trop sombre, activez le flash</string>
+    <string name="p23_hint_steady_ar">ثبّت الموبايل</string>
+    <string name="p23_hint_steady_en">Hold the phone steady</string>
+    <string name="p23_hint_steady_fr">Tenez le téléphone immobile</string>
+    <string name="p23_hint_flip_card_ar">اقلب البطاقة وصوّر الوش التاني</string>
+    <string name="p23_hint_flip_card_en">Flip the card and capture the back</string>
+    <string name="p23_hint_flip_card_fr">Retournez la carte et capturez le verso</string>
+    <string name="p23_hint_hold_ar">ثبّت… هيصوّر لوحده</string>
+    <string name="p23_hint_hold_en">Hold still… capturing automatically</string>
+    <string name="p23_hint_hold_fr">Ne bougez pas… capture automatique</string>
+    <string name="p23_hint_sheets_ar" formatted="true">%1$d أوراق، هتتحفظ كل واحدة لوحدها</string>
+    <string name="p23_hint_sheets_en" formatted="true">%1$d sheets, each saved as its own page</string>
+    <string name="p23_hint_sheets_fr" formatted="true">%1$d feuilles, chacune en page séparée</string>
+    <string name="p23_kind_card_ar">اتعرف: بطاقة</string>
+    <string name="p23_kind_card_en">Recognized: card</string>
+    <string name="p23_kind_card_fr">Reconnu : carte</string>
+    <string name="p23_kind_receipt_ar">اتعرف: إيصال</string>
+    <string name="p23_kind_receipt_en">Recognized: receipt</string>
+    <string name="p23_kind_receipt_fr">Reconnu : reçu</string>
+    <string name="p23_kind_document_ar">اتعرف: مستند</string>
+    <string name="p23_kind_document_en">Recognized: document</string>
+    <string name="p23_kind_document_fr">Reconnu : document</string>
+    <string name="p23_hint_ready_ar">جاهز</string>
+    <string name="p23_hint_ready_en">Ready</string>
+    <string name="p23_hint_ready_fr">Prêt</string>
+    <string name="p23_flip_card_ar">تمام الوش الأول ✓
+اقلب البطاقة</string>
+    <string name="p23_flip_card_en">Front done ✓
+Flip the card</string>
+    <string name="p23_flip_card_fr">Recto fait ✓
+Retournez la carte</string>
+    <string name="p23_allow_camera_ar">السماح بالكاميرا</string>
+    <string name="p23_allow_camera_en">Allow camera</string>
+    <string name="p23_allow_camera_fr">Autoriser la caméra</string>
+    <string name="p23_mode_auto_ar">تلقائي</string>
+    <string name="p23_mode_auto_en">Auto</string>
+    <string name="p23_mode_auto_fr">Auto</string>
+    <string name="p23_mode_document_ar">مستند</string>
+    <string name="p23_mode_document_en">Document</string>
+    <string name="p23_mode_document_fr">Document</string>
+    <string name="p23_mode_batch_ar">دفعة</string>
+    <string name="p23_mode_batch_en">Batch</string>
+    <string name="p23_mode_batch_fr">Lot</string>
+    <string name="p23_mode_card_ar">بطاقة</string>
+    <string name="p23_mode_card_en">Card</string>
+    <string name="p23_mode_card_fr">Carte</string>
+    <string name="p23_mode_receipt_ar">إيصال</string>
+    <string name="p23_mode_receipt_en">Receipt</string>
+    <string name="p23_mode_receipt_fr">Reçu</string>
+    <string name="p23_mode_multi_ar">عدة أوراق</string>
+    <string name="p23_mode_multi_en">Several sheets</string>
+    <string name="p23_mode_multi_fr">Plusieurs feuilles</string>
+    <string name="p23_mode_translation_ar">ترجمة</string>
+    <string name="p23_mode_translation_en">Translate</string>
+    <string name="p23_mode_translation_fr">Traduire</string>
+    <string name="p23_import_ar">استيراد صور</string>
+    <string name="p23_import_en">Import photos</string>
+    <string name="p23_import_fr">Importer des photos</string>
+    <string name="p23_done_ar" formatted="true">تم (%1$d)</string>
+    <string name="p23_done_en" formatted="true">Done (%1$d)</string>
+    <string name="p23_done_fr" formatted="true">Terminé (%1$d)</string>
+    <string name="p23_leave_title_ar">عندك صفحات متصوّرة</string>
+    <string name="p23_leave_title_en">You have captured pages</string>
+    <string name="p23_leave_title_fr">Vous avez des pages capturées</string>
+    <string name="p23_leave_message_ar" formatted="true">%1$d صفحة لسه متحفظتش. تراجعها ولا تحذفها؟</string>
+    <string name="p23_leave_message_en" formatted="true">%1$d page(s) not saved yet. Review or discard them?</string>
+    <string name="p23_leave_message_fr" formatted="true">%1$d page(s) non enregistrée(s). Les vérifier ou les supprimer ?</string>
+    <string name="p23_leave_review_ar">مراجعة</string>
+    <string name="p23_leave_review_en">Review</string>
+    <string name="p23_leave_review_fr">Vérifier</string>
+    <string name="p23_scan_multi_ar">عدة أوراق في لقطة</string>
+    <string name="p23_scan_multi_en">Several sheets in one shot</string>
+    <string name="p23_scan_multi_fr">Plusieurs feuilles en une prise</string>
+    <string name="p23_scan_multi_desc_ar">صوّر كذا إيصال أو كارت مرة واحدة، وكل واحد يطلع صفحة لوحده</string>
+    <string name="p23_scan_multi_desc_en">Shoot several receipts or cards at once; each becomes its own page</string>
+    <string name="p23_scan_multi_desc_fr">Photographiez plusieurs reçus ou cartes ; chacun devient une page</string>
+</resources>
