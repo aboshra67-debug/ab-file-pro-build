@@ -2,6 +2,9 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- P19: keeps a voice recording alive with the screen off (foreground service, type microphone). -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
@@ -29,6 +32,11 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+        <service
+            android:name=".assistant.VoiceRecordingService"
+            android:exported="false"
+            android:foregroundServiceType="microphone" />
 
         <receiver
             android:name=".assistant.PrayerAlarmReceiver"
@@ -73,6 +81,8 @@
                 <action android:name="android.intent.action.TIME_SET" />
                 <action android:name="android.intent.action.TIMEZONE_CHANGED" />
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <!-- P18 (AS-09): re-plan prayer alarms when the user grants exact alarms. -->
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
             </intent-filter>
         </receiver>
 

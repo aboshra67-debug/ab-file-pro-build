@@ -1,8 +1,7 @@
 name: P16 Play channel, R8 QA and APK
+# Kept for history; runs only on demand.
 on:
   workflow_dispatch:
-  push:
-    paths: ["app/**", "tools/**", "*.kts", "gradle.properties", "VERSION", ".github/workflows/p16-standalone.yml"]
 permissions:
   contents: read
   actions: read

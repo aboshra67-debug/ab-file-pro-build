@@ -50,9 +50,11 @@ class MarketAlertWorker(
             val met = alert.conditionMet(current)
             when {
                 met && !alert.triggered -> {
-                    notifyAlert(alert, current)
-                    changed = true
-                    alert.copy(triggered = true)
+                    // P18 (MKT-01): an alert counts as delivered only if it was really shown.
+                    if (notifyAlert(alert, current)) {
+                        changed = true
+                        alert.copy(triggered = true)
+                    } else alert
                 }
                 !met && alert.triggered -> {
                     changed = true
@@ -65,8 +67,9 @@ class MarketAlertWorker(
         return Result.success()
     }
 
-    private fun notifyAlert(alert: MarketPriceAlert, current: Double) {
-        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(applicationContext, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) return
+    private fun notifyAlert(alert: MarketPriceAlert, current: Double): Boolean {
+        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(applicationContext, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) return false
+        if (!NotificationManagerCompat.from(applicationContext).areNotificationsEnabled()) return false
         ensureChannel()
         val launchIntent = Intent(applicationContext, MainActivity::class.java).apply {
             flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
@@ -89,6 +92,7 @@ class MarketAlertWorker(
             .setContentIntent(pending)
             .build()
         NotificationManagerCompat.from(applicationContext).notify(alert.id.hashCode(), notification)
+        return true
     }
 
     private fun ensureChannel() {

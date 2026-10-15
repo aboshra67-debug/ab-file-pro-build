@@ -4,25 +4,22 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 
 object TaskAlarmScheduler {
-    fun hasExactAlarmAccess(context: Context): Boolean {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) return true
-        val alarms = context.getSystemService(AlarmManager::class.java) ?: return false
-        return alarms.canScheduleExactAlarms()
-    }
+    fun hasExactAlarmAccess(context: Context): Boolean = ReminderAlarms.exactAllowed(context)
 
     fun rescheduleAll(context: Context, entries: List<AssistantEntry> = AssistantRepository(context).loadEntries()) {
         entries.filter { it.module == AssistantModule.TASKS || it.module == AssistantModule.CALENDAR }.forEach { entry ->
-            cancel(context, entry.id)
-            if (shouldSchedule(entry)) scheduleExact(context, entry)
+            sync(context, entry)
         }
     }
 
     fun sync(context: Context, task: AssistantEntry) {
         cancel(context, task.id)
-        if (shouldSchedule(task)) scheduleExact(context, task)
+        val triggerAt = triggerAt(context, task) ?: return
+        val operation = pendingIntent(context, task.id, PendingIntent.FLAG_UPDATE_CURRENT) ?: return
+        // P18: falls back to an inexact alarm when exact alarms are not allowed (Android 14+ default).
+        ReminderAlarms.set(context, triggerAt, operation)
     }
 
     fun cancel(context: Context, taskId: String) {
@@ -30,25 +27,17 @@ object TaskAlarmScheduler {
         pendingIntent(context, taskId, PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
     }
 
-    private fun shouldSchedule(task: AssistantEntry): Boolean {
-        if (task.module != AssistantModule.TASKS && task.module != AssistantModule.CALENDAR) return false
-        if (task.completed || !task.enabled || task.dueAt == null) return false
-        return triggerAt(task) > System.currentTimeMillis()
-    }
-
-    private fun scheduleExact(context: Context, task: AssistantEntry) {
-        if (!hasExactAlarmAccess(context)) return
-        val triggerAt = triggerAt(task)
-        val alarms = context.getSystemService(AlarmManager::class.java) ?: return
-        val operation = pendingIntent(context, task.id, PendingIntent.FLAG_UPDATE_CURRENT) ?: return
-        alarms.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAt, operation)
-    }
-
-    private fun triggerAt(task: AssistantEntry): Long {
-        val due = task.dueAt ?: return 0L
+    private fun triggerAt(context: Context, task: AssistantEntry): Long? {
+        if (task.module != AssistantModule.TASKS && task.module != AssistantModule.CALENDAR) return null
+        if (task.completed || !task.enabled) return null
+        val due = task.dueAt ?: return null
         val leadMinutes = if (task.module == AssistantModule.CALENDAR) (task.amount ?: 0.0).toLong().coerceAtLeast(0L) else 0L
-        return due - (leadMinutes * 60_000L)
+        return ReminderPolicy.triggerFor(due, leadMinutes * 60_000L, System.currentTimeMillis(), ReminderLedger.notifiedFor(context, task.id))
     }
+
+    /** Test/diagnostic hook: is a reminder alarm pending for this entry? */
+    internal fun isScheduled(context: Context, id: String): Boolean =
+        pendingIntent(context, id, PendingIntent.FLAG_NO_CREATE) != null
 
     private fun pendingIntent(context: Context, taskId: String, mode: Int): PendingIntent? = PendingIntent.getBroadcast(
         context,

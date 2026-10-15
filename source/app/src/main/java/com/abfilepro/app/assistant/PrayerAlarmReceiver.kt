@@ -23,6 +23,8 @@ class PrayerAlarmReceiver : BroadcastReceiver() {
         val prayer = PrayerName.fromStorageId(intent.getStringExtra(EXTRA_PRAYER).orEmpty()) ?: return
         val event = intent.getStringExtra(EXTRA_EVENT).orEmpty()
         val date = runCatching { LocalDate.parse(intent.getStringExtra(EXTRA_DATE)) }.getOrNull() ?: LocalDate.now()
+        // P18: keep the daily chain alive first, even if notifications are blocked right now.
+        if (event == EVENT_ADHAN) runCatching { PrayerAlarmScheduler.scheduleFollowing(context, prayer) }
         when (event) {
             EVENT_PRE -> showPreAlert(context, prayer)
             EVENT_ADHAN -> showAdhan(context, prayer)
@@ -35,11 +37,11 @@ class PrayerAlarmReceiver : BroadcastReceiver() {
         val settings = AssistantRepository(context).loadPrayerSettings()
         createChannels(context, settings)
         val minutes = settings.preAlertMinutes.coerceAtLeast(1)
-        val name = arabicPrayerName(prayer)
-        val body = "فاضل على صلاة $name $minutes دقائق — استعد للصلاة"
+        val name = prayerName(context, prayer)
+        val body = ReminderText.pick(context, "فاضل على صلاة $name $minutes دقائق — استعد للصلاة", "$name prayer in $minutes minutes", "Prière $name dans $minutes minutes")
         val notification = NotificationCompat.Builder(context, PRE_CHANNEL_ID)
             .setSmallIcon(R.drawable.ab_logo_icon)
-            .setContentTitle("اقترب موعد صلاة $name")
+            .setContentTitle(ReminderText.pick(context, "اقترب موعد صلاة $name", "$name prayer is near", "La prière $name approche"))
             .setContentText(body)
             .setStyle(NotificationCompat.BigTextStyle().bigText(body))
             .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -54,11 +56,11 @@ class PrayerAlarmReceiver : BroadcastReceiver() {
         if (!canNotify(context)) return
         val settings = AssistantRepository(context).loadPrayerSettings()
         createChannels(context, settings)
-        val name = arabicPrayerName(prayer)
-        val body = "حان الآن موعد صلاة $name"
+        val name = prayerName(context, prayer)
+        val body = ReminderText.pick(context, "حان الآن موعد صلاة $name", "It is time for $name prayer", "C'est l'heure de la prière $name")
         val notification = NotificationCompat.Builder(context, ADHAN_CHANNEL_ID)
             .setSmallIcon(R.drawable.ab_logo_icon)
-            .setContentTitle("حان الآن موعد صلاة $name")
+            .setContentTitle(body)
             .setContentText(body)
             .setStyle(NotificationCompat.BigTextStyle().bigText(body))
             .setPriority(NotificationCompat.PRIORITY_MAX)
@@ -78,13 +80,13 @@ class PrayerAlarmReceiver : BroadcastReceiver() {
         if (store.answer(date, prayer) == true) return
         val settings = AssistantRepository(context).loadPrayerSettings()
         createChannels(context, settings)
-        val name = arabicPrayerName(prayer)
+        val name = prayerName(context, prayer)
         val yesIntent = responseIntent(context, prayer, date, true)
         val noIntent = responseIntent(context, prayer, date, false)
-        val body = "هل صليت $name؟ لازم تختار نعم أو لا. لو ما رديتش هفكّرك تاني."
+        val body = ReminderText.pick(context, "هل صليت $name؟ لازم تختار نعم أو لا. لو ما رديتش هفكّرك تاني.", "Did you pray $name? Choose yes or no; you will be reminded again otherwise.", "Avez-vous prié $name ? Choisissez oui ou non.")
         val notification = NotificationCompat.Builder(context, QUESTION_CHANNEL_ID)
             .setSmallIcon(R.drawable.ab_logo_icon)
-            .setContentTitle("هل صليت $name؟")
+            .setContentTitle(ReminderText.pick(context, "هل صليت $name؟", "Did you pray $name?", "Avez-vous prié $name ?"))
             .setContentText(body)
             .setStyle(NotificationCompat.BigTextStyle().bigText(body))
             .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -92,8 +94,8 @@ class PrayerAlarmReceiver : BroadcastReceiver() {
             .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
             .setOngoing(true)
             .setAutoCancel(false)
-            .addAction(0, "نعم، صليت", yesIntent)
-            .addAction(0, "لا", noIntent)
+            .addAction(0, ReminderText.pick(context, "نعم، صليت", "Yes, I prayed", "Oui"), yesIntent)
+            .addAction(0, ReminderText.pick(context, "لا", "No", "Non"), noIntent)
             .setContentIntent(openAppIntent(context, 9_300 + prayer.ordinal))
             .build()
         (context.getSystemService(NotificationManager::class.java) ?: return).notify(questionNotificationId(prayer), notification)
@@ -156,6 +158,13 @@ class PrayerAlarmReceiver : BroadcastReceiver() {
         private const val NOTIFICATION_BASE = 8_500
 
         fun questionNotificationId(prayer: PrayerName): Int = NOTIFICATION_BASE + prayer.ordinal * 10 + 2
+        fun prayerName(context: Context, prayer: PrayerName): String = when (ReminderText.language(context)) {
+            "en", "fr" -> when (prayer) {
+                PrayerName.FAJR -> "Fajr"; PrayerName.SUNRISE -> "Sunrise"; PrayerName.DHUHR -> "Dhuhr"
+                PrayerName.ASR -> "Asr"; PrayerName.MAGHRIB -> "Maghrib"; PrayerName.ISHA -> "Isha"
+            }
+            else -> arabicPrayerName(prayer)
+        }
         fun arabicPrayerName(prayer: PrayerName): String = when (prayer) {
             PrayerName.FAJR -> "الفجر"
             PrayerName.SUNRISE -> "الشروق"
