@@ -1,0 +1,4 @@
+10-15 08:48:44.168  4908  5033 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:44.171  1034  3736 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 08:48:44.177  5274  5274 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 08:48:44.184  4908  5033 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

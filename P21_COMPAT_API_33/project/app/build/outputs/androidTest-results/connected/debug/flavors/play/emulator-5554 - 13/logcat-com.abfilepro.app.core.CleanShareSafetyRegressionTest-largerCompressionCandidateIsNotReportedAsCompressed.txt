@@ -1,0 +1,104 @@
+10-15 08:48:39.347  4908  5033 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:39.359  1284  4292 I Auth    : [WorkAccount] update authenticator enabled for boot or update
+10-15 08:48:39.363  1284  5161 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 08:48:39.365  1284  3465 I Auth    : [FRP,FrpUpdateIntentOperation] FRP is not supported for this device / user
+10-15 08:48:39.369  1284  5161 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.update.BASE_MODULE_INIT cat=[targeted_intent_op_prefix:.update.control.ReceiverIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+10-15 08:48:39.370  1034  3227 I Auth    : [WorkAccountServiceImpl] init work authenticator
+10-15 08:48:39.394  1284  5153 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 1.
+10-15 08:48:39.396  1284  5159 I Ads     : Initialized AdMob in container 23.18.18 (190800-535401451)
+10-15 08:48:39.397  1284  5155 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.BOOT_COMPLETED
+10-15 08:48:39.398  1284  5155 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-15 08:48:39.398  1284  5155 W Auth    : [PubsubPeriodicSyncherRuntimeInit] Initializing periodic tasks, IntentAction=android.intent.action.BOOT_COMPLETED, InitRuntimeState=2
+10-15 08:48:39.401  1284  5154 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+10-15 08:48:39.406  1284  5154 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-15 08:48:39.410  1284  5152 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Initializing auth_folsom
+10-15 08:48:39.413  1284  5155 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+10-15 08:48:39.413  1284  5155 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-15 08:48:39.413  1284  5155 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-15 08:48:39.413  1284  5155 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.EmmActivity
+10-15 08:48:39.413  1284  5155 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity
+10-15 08:48:39.414  1284  5155 W Auth    : [AuthManaged, SettingsSecurityDeviceOwnerChimeraActivity] device owner: n/a
+10-15 08:48:39.415  1284  5155 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] disabling com.google.android.gms.auth.managed.ui.SettingsSecurityDeviceOwnerActivity
+10-15 08:48:39.415  1284  5155 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+10-15 08:48:39.415  1284  5155 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-15 08:48:39.416  1284  5155 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-15 08:48:39.416  1284  5152 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService is already enabled. Ignore.
+10-15 08:48:39.416  1284  5152 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.GcmReceiverService is already enabled. Ignore.
+10-15 08:48:39.420  1034  4803 W EasyUnlock: [EasyUnlockSupportReporterIntentOperation] Invalid account list. [CONTEXT service_id=234 ]
+10-15 08:48:39.425   480  1922 V RecoverableKeyStoreMgr: Not updating secret types - same as old value.
+10-15 08:48:39.425  1284  5152 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+10-15 08:48:39.425   480  1913 V RecoverableKeyStoreMgr: Not updating server params - same as old value.
+10-15 08:48:39.427   480  1913 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10120
+10-15 08:48:39.428  1284  5152 I RecoverableKeyStoreGms: [EnrollmentManager] Returning certificates list from cache [CONTEXT service_id=172 ]
+10-15 08:48:39.430  1284  5155 I AutofillModuleInitInten: AutofillModuleInitIntentOperation onInitRuntimeState(2) [CONTEXT service_id=177 ]
+10-15 08:48:39.443  1284  5163 I Authzen : [AuthZenEventHandler] Handling event: android.intent.action.BOOT_COMPLETED
+10-15 08:48:39.445  1284  5163 I Authzen : [TransactionCache] Clearing transaction cache
+10-15 08:48:39.477   480  1913 I RecoverableKeyStoreMgr: The cert file serial number is the same, so skip updating.
+10-15 08:48:39.477  1284  5152 I RecoverableKeyStoreGms: [EnrollmentManager] Recovery service is initialized. [CONTEXT service_id=172 ]
+10-15 08:48:39.479  1034  5167 W EasyUnlock: [HostValidator] Invalid account list. [CONTEXT service_id=234 ]
+10-15 08:48:39.494  1284  1284 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 08:48:39.494  1284  1284 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 08:48:39.497  1284  1284 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 08:48:39.499  1284  4292 V Backup  : [MigrateUtil] Clearing migrate temp dir: /data/user/0/com.google.android.gms/files/migrate_dir
+10-15 08:48:39.500  1284  4292 D Backup  : [MigrateCleaner] D2D transport was not selected, not selecting cloud transport.
+10-15 08:48:39.501  1284  4292 V Backup  : [G1ModuleInitIntentOperation] BbG1 notifications disabled by flag
+10-15 08:48:39.501  1284  5161 V Backup  : [SettingsModuleInit] onInitRuntimeState
+10-15 08:48:39.501  1284  5161 V Backup  : [NoBackupNotification] Disabled, not scheduling
+10-15 08:48:39.502  1284  5161 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: Error reading snapshot for 10120 from disk
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10120.xml: open failed: ENOENT (No such file or directory)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:342)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2589)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:786)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 08:48:39.508   480  1913 E RecoverySnapshotStorage: 	... 8 more
+10-15 08:48:39.513  1284  5161 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+10-15 08:48:39.514   480  1922 W PlatformKeyManager: Platform generation ID was 0 but no entry was present in AndroidKeyStore. Generating fresh key.
+10-15 08:48:39.517  1034  4803 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: [WrappingKeyManager] InternalRecoveryServiceException during wrapping key generation [CONTEXT service_id=172 ]
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: android.security.keystore.recovery.InternalRecoveryServiceException: Failed to import secret key.
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.wrapUnexpectedServiceSpecificException(RecoveryController.java:773)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:562)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at qiw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at qiw.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):15)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at qfw.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):68)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at com.google.android.gms.auth.folsom.operation.FolsomModuleInitIntentOperation.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at zdm.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at zhv.onHandleIntent(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at hjm.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at hjl.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):11)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: Caused by: android.os.ServiceSpecificException: Failed to import secret key. (code 22)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3025)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at android.os.Parcel.createException(Parcel.java:2995)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2978)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at android.os.Parcel.readException(Parcel.java:2920)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at com.android.internal.widget.ILockSettings$Stub$Proxy.generateKey(ILockSettings.java:1574)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	at android.security.keystore.recovery.RecoveryController.generateKey(RecoveryController.java:549)
+10-15 08:48:39.519  1284  5152 W RecoverableKeyStoreGms: 	... 13 more
+10-15 08:48:39.525  1284  5161 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+10-15 08:48:39.527  1284  5161 V Backup  : [AccountChangedIO] currentDestinationString: null
+10-15 08:48:39.531  1284  5152 I Backup  : [TargetEnabler] Setting target components to enabled = false
+10-15 08:48:39.534  1284  5152 I Backup  : [TargetEnabler] Enabling D2dMigrateHelperService on non-Pixel on P+
+10-15 08:48:39.536  1284  5152 I Backup  : [SourceEnabler] Setting source components to enabled = true
+10-15 08:48:39.536  1284  5152 V Backup  : [MigrateUtil] Using O+ select transport api
+10-15 08:48:39.540  1284  5152 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.CloudRestoreFlowActivity' to enabled=true
+10-15 08:48:39.541  1284  5152 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.RestoreSessionV0Service' to enabled=true
+10-15 08:48:39.541  1284  5152 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.D2dMigrateFlowActivity' to enabled=false
+10-15 08:48:39.542  1284  5152 V Backup  : [GmsBackupScheduler] Disabled, not scheduling.
+10-15 08:48:39.543  1284  5152 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 30, event: # dirw@b5357b6b
+10-15 08:48:39.545  4908  5033 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

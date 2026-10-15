@@ -1,0 +1,9 @@
+10-15 08:48:49.604  3800  3859 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.630  1541  2063 I ChimeraCfgMgr: Updating module config: container:2423359190800 -> container:2423359190800
+10-15 08:48:49.630  1541  2063 E DowngradeHelper: isModuleDowngradeRequired false
+10-15 08:48:49.636  3800  3904 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 08:48:49.641  1542  2278 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.googlequicksearchbox
+10-15 08:48:49.644  1541  1574 I gle.android.gms: Background concurrent mark compact GC freed 10MB AllocSpace bytes, 150(5708KB) LOS objects, 49% free, 22MB/45MB, paused 3.191ms,1.340ms total 368.171ms
+10-15 08:48:49.645  1387  1543 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.apps.wellbeing
+10-15 08:48:49.647  1542  1542 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.audio.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 08:48:49.649  3800  3859 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

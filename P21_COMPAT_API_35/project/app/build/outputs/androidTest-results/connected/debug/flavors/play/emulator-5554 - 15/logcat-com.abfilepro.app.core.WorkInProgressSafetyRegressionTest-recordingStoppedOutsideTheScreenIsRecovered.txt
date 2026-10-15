@@ -1,0 +1,9 @@
+10-15 08:48:52.320  3800  3859 I TestRunner: started: recordingStoppedOutsideTheScreenIsRecovered(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 08:48:52.324  1348  1626 I HandwritingSuperpacks: HandwritingSuperpacks.register():273 register(): version '86', url 'https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json' [ONLINE]
+10-15 08:48:52.326  1348  1626 I HandwritingOfflineSuperpacks: HandwritingOfflineSuperpacks.syncInternal():80 no bundled lm for handwriting.
+10-15 08:48:52.326  1348  1626 I HandwritingSuperpacks: HandwritingSuperpacks.register():273 register(): version '86', url 'https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json' [ONLINE]
+10-15 08:48:52.326  1348  1626 I HandwritingOfflineSuperpacks: HandwritingOfflineSuperpacks.syncInternal():80 no bundled lm for handwriting.
+10-15 08:48:52.331  1348  1648 I SP      : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 * {m:b:u:l, bg}
+10-15 08:48:52.332  1348  1648 I SP      : Syncing dynamic_art (20220108) with slices: [b1f6f47a53f7820be91b9fe247728980, 305f81355a729e382ea9f374dd286d9f], metadata: false
+10-15 08:48:52.337  1348  1648 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 08:48:52.343  3800  3859 I TestRunner: finished: recordingStoppedOutsideTheScreenIsRecovered(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

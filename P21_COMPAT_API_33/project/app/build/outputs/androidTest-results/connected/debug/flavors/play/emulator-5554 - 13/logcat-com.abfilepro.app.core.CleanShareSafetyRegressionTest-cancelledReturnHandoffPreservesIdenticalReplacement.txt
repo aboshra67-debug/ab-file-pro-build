@@ -1,0 +1,7 @@
+10-15 08:48:39.569  4908  5033 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:39.578  1034  1034 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+10-15 08:48:39.578  1034  1034 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+10-15 08:48:39.592  1034  4803 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+10-15 08:48:39.593  1284  5155 I AppDoctorManager: Updating appdoctor Uri Permissions. [CONTEXT service_id=256 ]
+10-15 08:48:39.594  1034  4803 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+10-15 08:48:39.600  4908  5033 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

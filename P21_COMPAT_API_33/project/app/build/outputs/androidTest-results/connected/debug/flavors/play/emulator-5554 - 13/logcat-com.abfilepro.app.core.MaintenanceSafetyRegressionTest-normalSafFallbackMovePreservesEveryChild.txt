@@ -1,0 +1,4 @@
+10-15 08:48:43.762  4908  5033 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:43.769  5274  5274 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 08:48:43.874  4908  4931 I p.p21mainttrial: Background concurrent copying GC freed 36355(3174KB) AllocSpace objects, 53(5888KB) LOS objects, 49% free, 6246KB/12MB, paused 23us,7us total 186.455ms
+10-15 08:48:43.878  4908  5033 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

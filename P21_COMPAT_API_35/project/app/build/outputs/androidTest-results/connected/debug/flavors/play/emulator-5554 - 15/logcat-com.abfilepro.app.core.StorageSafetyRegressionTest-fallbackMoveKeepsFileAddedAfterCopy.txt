@@ -1,0 +1,4 @@
+10-15 08:48:51.980  3800  3859 I TestRunner: started: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:51.994  1348  1648 I SP      : Registering gboard-small-speech-packs.1327534105, url: https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json, constraints: m:b:*:*, flags: *, requested: 1327534105, current: 758538843
+10-15 08:48:51.998  1348  1648 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json to dynamic_art-20220108.fetched (constraints: m:b:u:l)
+10-15 08:48:52.035  3800  3859 I TestRunner: finished: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

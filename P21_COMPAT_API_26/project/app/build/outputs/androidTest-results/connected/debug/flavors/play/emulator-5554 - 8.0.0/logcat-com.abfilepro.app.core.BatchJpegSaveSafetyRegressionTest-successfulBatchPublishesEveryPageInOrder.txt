@@ -1,0 +1,4 @@
+10-15 08:48:30.851  5020  5039 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:30.907  1619  1655 E memtrack: Couldn't load memtrack module
+10-15 08:48:30.907  1619  1655 W android.os.Debug: failed to get memory consumption info: -1
+10-15 08:48:31.069  5020  5039 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

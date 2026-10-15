@@ -1,0 +1,29 @@
+10-15 08:48:38.047  3800  3859 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 08:48:38.048  3694  3832 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+10-15 08:48:38.056  1476  1476 D BluetoothAdapter: HEADSET connected
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: Error locating SCO method
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: java.lang.NoSuchMethodException: android.bluetooth.BluetoothHeadset.startScoUsingVirtualVoiceCall [class android.bluetooth.BluetoothDevice]
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at java.lang.Class.getMethod(Class.java:2950)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at java.lang.Class.getMethod(Class.java:2450)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at com.google.android.apps.gsa.speech.audio.a.l.<clinit>(PG:13)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at com.google.android.apps.gsa.speech.audio.a.i.onServiceConnected(PG:1)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.bluetooth.BluetoothAdapter$ProfileConnection.connect(BluetoothAdapter.java:902)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.bluetooth.BluetoothAdapter.lambda$getProfileProxy$0(BluetoothAdapter.java:3553)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.bluetooth.BluetoothAdapter.$r8$lambda$hVDf6ETlKaEPiQ6OcMRJtNWsJSg(Unknown Source:0)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.bluetooth.BluetoothAdapter$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.os.Looper.loop(Looper.java:317)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at android.app.ActivityThread.main(ActivityThread.java:8705)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:580)
+10-15 08:48:38.060  1476  1476 E VS.BluetoothShim: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:886)
+10-15 08:48:38.071  3305  3878 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@c07abbd
+10-15 08:48:38.085  1542  2176 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+10-15 08:48:38.085  1542  2176 W A       : (REDACTED) %s task was not run. Callback from Service received after client was disposed.
+10-15 08:48:38.095  3305  3437 I Bugle   : VerifiedSmsEnabledCheckerImpl: VSMS is disabled via Phenotype flag.
+10-15 08:48:38.098  3305  3393 I Bugle   : VerifiedSmsStartupTask: Checking if Verified SMS tasks should be enqueued. feature supported: false, feature enabled: false, eligible / has registered key: false, C11N: false
+10-15 08:48:38.099  3305  3393 I Bugle   : VerifiedSmsStartupTask: Not enqueuing VSMS periodic task, VSMS is disabled or not supported.
+10-15 08:48:38.099  3305  3464 I Bugle   : VerifiedSmsStartupTask: Not calling C11N to get phone numbers.
+10-15 08:48:38.107  3800  3859 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

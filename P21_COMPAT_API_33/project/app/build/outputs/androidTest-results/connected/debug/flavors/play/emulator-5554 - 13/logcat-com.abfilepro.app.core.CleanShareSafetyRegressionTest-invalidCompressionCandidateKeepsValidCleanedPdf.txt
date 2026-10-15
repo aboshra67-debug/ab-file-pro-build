@@ -1,0 +1,59 @@
+10-15 08:48:43.203  4908  5033 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:43.208   978   988 I m.android.phone: Background concurrent copying GC freed 71387(3312KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 3347KB/6693KB, paused 39us,11us total 227.966ms
+10-15 08:48:43.210   978   990 W System  : A resource failed to call AbstractCursor.close.
+10-15 08:48:43.210   978   990 W System  : A resource failed to call AbstractCursor.close.
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.lighter.android#com.google.android.gms failed
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at cfsz.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at bwch.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at bwch.j(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at bwch.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at crqn.apply(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlny.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlnz.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):9)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlpk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlnv.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlnv.l(:com.google.android.gms@231818047@23.18.18 (190800-535401451):10)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlnv.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlrs.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlqs.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at dlrt.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at crqq.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at crri.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:43.219  1284  5205 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:43.245  4830  4830 I HibernationPolicy: Unused apps for user 0: []
+10-15 08:48:43.248  4830  4830 I HibernationController: Done hibernating apps []
+10-15 08:48:43.248  4830  4830 I HibernationController:  Globally hibernating apps []
+10-15 08:48:43.249  4830  4830 I AutoRevokePermissions: Done auto-revoke for user 0 - revoked []
+10-15 08:48:43.252  4830  4830 I PermissionEventCleanupJobService: onStartJob
+10-15 08:48:43.266  4830  5270 D BasePermissionEventStorage: 0 old permission events removed
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: Can't parse the header version.
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:455)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:115)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:104)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:280)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 08:48:43.281  4908  5134 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 08:48:43.301  4908  5033 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

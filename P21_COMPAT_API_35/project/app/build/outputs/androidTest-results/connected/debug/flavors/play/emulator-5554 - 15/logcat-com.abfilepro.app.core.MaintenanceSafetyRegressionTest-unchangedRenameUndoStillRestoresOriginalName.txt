@@ -1,0 +1,6 @@
+10-15 08:48:49.581  3800  3859 I TestRunner: started: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.584   355   389 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.04ms>
+10-15 08:48:49.584   355   389 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.04ms>
+10-15 08:48:49.585   355   389 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.03ms>
+10-15 08:48:49.598  1387  1543 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.apps.wellbeing
+10-15 08:48:49.602  3800  3859 I TestRunner: finished: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

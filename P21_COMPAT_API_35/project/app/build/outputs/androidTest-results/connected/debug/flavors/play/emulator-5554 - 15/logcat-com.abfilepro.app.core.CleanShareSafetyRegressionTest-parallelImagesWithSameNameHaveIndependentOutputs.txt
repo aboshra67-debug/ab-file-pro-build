@@ -1,0 +1,46 @@
+10-15 08:48:41.011  3800  3859 I TestRunner: started: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:41.024  1541  3503 I NearbyDiscovery: FastPair: HeadsetPieceImage, grant permission files:0 [CONTEXT service_id=265 ]
+10-15 08:48:41.034  1541  3503 I NearbyFastPair: onInitRuntimeState isEnableWearableListener: false [CONTEXT service_id=265 ]
+10-15 08:48:41.041  1541  2723 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 08:48:41.043  1541  2723 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 08:48:41.050  1541  3503 I NearbyFastPair: FastPairInitIntentOperation: check the Footprints sync tasks. [CONTEXT service_id=265 ]
+10-15 08:48:41.052  1541  3503 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_PERIODIC_SCHEDULE success. [CONTEXT service_id=265 ]
+10-15 08:48:41.056  1270  3910 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-15 08:48:41.058  1541  3503 I NearbyFastPair: TSS scheduleFootprintsOneOffSync: not enable [CONTEXT service_id=265 ]
+10-15 08:48:41.085  1541  2723 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 106711.
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gms.playlog.uploader failed
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at dkkh.n(:com.google.android.gms@242335041@24.23.35 (190800-646585959):53)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at czsy.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at czsy.j(:com.google.android.gms@242335041@24.23.35 (190800-646585959):42)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at czsy.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.ClearcutInitChimeraIntentService.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):45)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at ajjh.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):136)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.DefaultPriorityClearcutInitChimeraIntentService.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):12)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 08:48:41.088  1541  2105 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:41.091  1541  2642 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.networktransparency#com.google.android.gms, using defaults.
+10-15 08:48:41.099  1541  3503 I AccountSeedingPrefetchI: AccountSeedingPrefetchInit intent operation started. [CONTEXT service_id=42 ]
+10-15 08:48:41.104  1270  2543 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-15 08:48:41.106  1270  2543 I NearbyDiscovery: DiscoveryController, showNotification, itemSize=0 [CONTEXT service_id=265 ]
+10-15 08:48:41.109  3305  3420 I BugleJobs: GenericWorkerQueueAction: Rescheduling immediately to continue processing since we didn't yet reach the end.
+10-15 08:48:41.109  3305  3420 W JobInfo : Job 'com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionJobService#302' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:41.110   554  1159 W JobInfo : Job 'com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionJobService#302' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:41.111  1541  3867 I NearbySharing: onBindSlice failed since shareTargets is empty [CONTEXT service_id=194 ]
+10-15 08:48:41.114  1541  3935 W gle.android.gms: Long monitor contention with owner LIT-UnlimitedExecutor #2 (3937) at android.database.sqlite.SQLiteDatabase android.database.sqlite.SQLiteOpenHelper.getWritableDatabase()(SQLiteOpenHelper.java:316) waiters=0 in android.database.sqlite.SQLiteDatabase android.database.sqlite.SQLiteOpenHelper.getWritableDatabase() for 307ms
+10-15 08:48:41.115  1541  2105 W libc    : Access denied finding property "ro.hardware.chipname"
+10-15 08:48:41.116  1541  2105 W ChipsetHelper: Unknown chipset! [CONTEXT service_id=301 ]
+10-15 08:48:41.117  1541  3935 D LT_PhenotypeApiImplV12: Retrieve experiment configurations
+10-15 08:48:41.118  1541  2105 I NnApiDriverManager: Registering application with chipset 'unknown' [CONTEXT service_id=301 ]
+10-15 08:48:41.119  1541  3867 I NearbySharing: Granted slice and uri permissions to android [CONTEXT service_id=194 ]
+10-15 08:48:41.120  1270  2543 I NearbyDiscovery: Show notifications: 0 total, no changes since last shown, no-op. [CONTEXT service_id=265 ]
+10-15 08:48:41.122  1541  3867 I NearbySharing: Granted slice and uri permissions to com.google.android.apps.nbu.files [CONTEXT service_id=194 ]
+10-15 08:48:41.139  3305  3437 I BugleDataModel: ActionExecutorImpl: ACTION_RESPONSE_QUEUED_GenericWorkerQueueAction
+10-15 08:48:41.141  3305  3420 I BugleDataModel: ActionExecutorImpl: Stopping ActionService
+10-15 08:48:41.157  3800  3859 I TestRunner: finished: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,10 @@
+10-15 08:48:30.755  5020  5039 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 08:48:30.764  5090  5118 I irr     : Beginning new tracing period at 112641.03481.
+10-15 08:48:30.765  5090  5118 W irr     : START TRACE Inbox first results loaded <8505e13843cff29b000001a13ebfaa2b>@112641.03481
+10-15 08:48:30.784  5090  5090 W GAV2    : Thread[main,5,main]: Need to call initialize() and be in fallback mode to start dispatch.
+10-15 08:48:30.792  1813  1813 I zygote64: Deoptimizing void com.android.systemui.statusbar.notification.NotificationHeaderViewWrapper.onContentUpdated(com.android.systemui.statusbar.ExpandableNotificationRow) due to JIT inline cache
+10-15 08:48:30.799  1813  1813 D StatusBar: disable<e i a s b h r c s q >
+10-15 08:48:30.805  1813  1813 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.NotificationStackScrollLayout.updateContentHeight() due to JIT inline cache
+10-15 08:48:30.815  1813  1813 I zygote64: Deoptimizing void com.android.systemui.statusbar.ExpandableView.updateClipping() due to JIT inline cache
+10-15 08:48:30.819  1813  1813 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.StackScrollAlgorithm.updateClipping(com.android.systemui.statusbar.stack.StackScrollState, com.android.systemui.statusbar.stack.StackScrollAlgorithm$StackScrollAlgorithmState, com.android.systemui.statusbar.stack.AmbientState) due to JIT inline cache
+10-15 08:48:30.848  5020  5039 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,66 @@
+10-15 08:48:40.894  3800  3859 I TestRunner: started: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:40.909  3305  3437 I BugleJobs: GenericWorkerQueueAction: Work found
+10-15 08:48:40.913  1541  3867 W ChimeraUtils: Module com.google.android.gms.mobiledataplan missing resource null(0)
+10-15 08:48:40.926  1541  2723 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: Failed to apply ContentProviderOperation(type=insert uri=content://media/internal/file values={instance_id=null, compilation=null, disc_number=null, duration=1000, is_ringtone=0, album_artist=null, resolution=null, orientation=null, artist=Unknown, author=null, height=null, is_drm=0, is_audiobook=0, date_modified=1737651906, writer=null, composer=null, _modifier=3, is_recording=0, datetaken=null, mime_type=audio/ogg, is_notification=1, bitrate=80000, cd_track_number=null, xmp=[], year=null, _data=/product/media/audio/notifications/Arcturus.ogg, _size=7933, album=notifications, genre=Unknown, is_alarm=0, title=Arcturus, track=null, width=null, is_music=0, document_id=null, is_podcast=0, capture_framerate=null, num_tracks=1, original_document_id=null, media_type=2} exceptionAllowed)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.util.DatabaseUtils.executeInsert(DatabaseUtils.java:488)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:640)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$insert$1(SQLiteQueryBuilder.java:604)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.$r8$lambda$1_sr46pjM8wwFdSQpMjCTR4_wfk(SQLiteQueryBuilder.java:0)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder$$ExternalSyntheticLambda4.apply(R8$$SyntheticClass:0)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:891)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:603)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.lambda$insertAllowingUpsert$22(MediaProvider.java:5196)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.$r8$lambda$mZGNBB-NL1wGl2XhivazUsuTbqM(MediaProvider.java:0)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda46.apply(R8$$SyntheticClass:0)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:891)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertAllowingUpsert(MediaProvider.java:5186)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertFile(MediaProvider.java:5168)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertInternal(MediaProvider.java:5637)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insert(MediaProvider.java:5330)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.content.ContentProviderOperation.applyInternal(ContentProviderOperation.java:375)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:347)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2678)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.applyBatch(MediaProvider.java:5689)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2669)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at android.content.ContentResolver.applyBatch(ContentResolver.java:2246)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.applyPending(ModernMediaScanner.java:973)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.maybeApplyPending(ModernMediaScanner.java:963)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:868)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:351)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:467)
+10-15 08:48:40.927  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:430)
+10-15 08:48:40.929  1541  2723 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+10-15 08:48:40.930  1541  2723 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:419)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner.scanDirectory(ModernMediaScanner.java:265)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.scanDirectory(MediaProvider.java:2150)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onScanVolume(MediaService.java:204)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onScanVolume(MediaService.java:172)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onHandleWork(MediaService.java:95)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:396)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:387)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 08:48:40.932  1458  1920 W ModernMediaScanner: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:40.946  1270  2594 I LSR     : Unregistering for activity transition updates. [CONTEXT service_id=277 ]
+10-15 08:48:40.956  1541  3867 W Glide   : Failed to find GeneratedAppGlideModule. You should include an annotationProcessor compile dependency on com.github.bumptech.glide:compiler in your application and a @GlideModule annotated AppGlideModule implementation or LibraryGlideModules will be silently ignored
+10-15 08:48:40.965  1270  2594 I LSR     : Cancelling periodic location reporting maintenance task [CONTEXT service_id=277 ]
+10-15 08:48:40.974   554  1833 D ConnectivityService: requestNetwork for uid/pid:10143/1541 activeRequest: null callbackRequest: 124 [NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 08:48:40.981   554   827 D ConnectivityService: NetReassign [125 : null → 100] [c 3] [a 0] [i 1]
+10-15 08:48:40.990   554   820 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:40.990   554   820 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:40.990   554   820 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:40.990   554   820 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:40.992  1541  3503 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-15 08:48:41.000  1541  3503 I NearbyDiscovery: Trigger rescan contextual cards [CONTEXT service_id=265 ]
+10-15 08:48:41.003  3800  3859 I TestRunner: finished: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

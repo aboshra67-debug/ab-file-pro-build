@@ -1,0 +1,9 @@
+10-15 08:48:49.973  3800  3859 I TestRunner: started: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.973  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.devicelock/priv-app/DeviceLockControllerGoogle@AE3A.240806.043/DeviceLockControllerGoogle.apk' with 1 weak references
+10-15 08:48:49.977  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 08:48:49.977  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BuiltInPrintService/BuiltInPrintService.apk' with 1 weak references
+10-15 08:48:49.977  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/BuiltInPrintService__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 08:48:49.977  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk' with 1 weak references
+10-15 08:48:49.977  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MusicFX/MusicFX.apk' with 1 weak references
+10-15 08:48:49.977  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 08:48:49.989  3800  3859 I TestRunner: finished: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

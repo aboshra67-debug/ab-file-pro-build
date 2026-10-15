@@ -1,0 +1,5 @@
+10-15 08:48:37.593  3800  3859 I TestRunner: started: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 08:48:37.595  3305  3437 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 08:48:37.595  1542  1590 I A       : Calling beginBinderSession().
+10-15 08:48:37.600  3305  3649 I BugleRcsProvisioning: RcsProvisioningTrigger: System bound to :rcs process. Schedule provisioning.
+10-15 08:48:37.607  3800  3859 I TestRunner: finished: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

@@ -1,0 +1,9 @@
+10-15 08:48:49.666  3800  3859 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.666  1541  2063 I ChimeraConfigurator: Checking 1 listeners. All downloaded: false
+10-15 08:48:49.667  1541  2063 I GmsDebugLogger: [83] 1 []
+10-15 08:48:49.679  1541  2063 I ChimeraConfigService: Scheduling checkin every 120 seconds, with flex of 60 seconds [CONTEXT service_id=264 ]
+10-15 08:48:49.681  3800  3859 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 08:48:49.685  1541  2678 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.chimera.container.InitConfigOperation for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (2063) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 30.135s
+10-15 08:48:49.686  1541  2678 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: tflite_dynamite:-1
+10-15 08:48:49.691  3800  3859 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 08:48:49.694  3800  3859 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,20 @@
+10-15 08:48:50.725  3800  3859 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:50.726  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcForegroundPreferenceController
+10-15 08:48:50.727  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 08:48:50.727  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverModePreferenceController
+10-15 08:48:50.727  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.AdaptiveBatteryExpandController
+10-15 08:48:50.728  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverFooterPreferenceController
+10-15 08:48:50.728  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcPreferenceController
+10-15 08:48:50.730  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcDetectionPointController
+10-15 08:48:50.730  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.SecureNfcPreferenceController
+10-15 08:48:50.732  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.DefaultPaymentSettingsPreferenceController
+10-15 08:48:50.732  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.FirstDayOfWeekItemCategoryController
+10-15 08:48:50.732  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.RecentLocationAccessSeeAllPreferenceController
+10-15 08:48:50.733  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeActivationPreferenceController
+10-15 08:48:50.734  3800  3859 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:50.735  3800  3859 D pdf_document_jni: Deleting Document: 0x77d58ebd2150
+10-15 08:48:50.735  3800  3859 D pdf_document_jni: Destroyed Document: 0x77d58ebd2150
+10-15 08:48:50.735  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TwilightLocationPreferenceController
+10-15 08:48:50.735  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeScheduleSelectorController
+10-15 08:48:50.735  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController
+10-15 08:48:50.736  3800  3859 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

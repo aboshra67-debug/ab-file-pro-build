@@ -1,0 +1,42 @@
+10-15 08:48:51.832  3800  3859 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:51.855  1348  1348 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019806, callback=null, lastModifier=2, keyCodes=[8], actions=[0]}
+10-15 08:48:51.855  1348  1348 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019808, callback=gnd@7f2e862, lastModifier=2, keyCodes=[62], actions=[0]}
+10-15 08:48:51.855  1348  1348 W NotificationCenter: NotificationCenter$ListenerData.notifyOnExecutor():672 Heavy notify work detected on UI thread: |kyz->kzx| takes 74ms
+10-15 08:48:51.856  1348  1805 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():120 Create keyboard group manager listenable future in eid
+10-15 08:48:51.857  1348  1807 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():83 parseKeyboardGroupDef() 2132214039 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 1 ms
+10-15 08:48:51.860  1348  1348 I EmojiExtensionHelper: EmojiExtensionHelper.flagsUpdated():142 Received flag change: enable_emoji_tall_view{type=Boolean, finalValue=true, DEFAULT=false, PHENOTYPE=true}.
+10-15 08:48:51.860  1348  1348 I EmojiExtensionHelper: EmojiExtensionHelper.flagsUpdated():142 Received flag change: enable_expression_tablet_layout{type=Boolean, finalValue=true, DEFAULT=false, PHENOTYPE=true}.
+10-15 08:48:51.860  1348  1348 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():538 Destroy existing keyboard group manager in fvq
+10-15 08:48:51.860  1348  1348 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():120 Create keyboard group manager listenable future in fvq
+10-15 08:48:51.863  1348  1805 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():83 parseKeyboardGroupDef() 2132214033 -> 0_resource_name_obfuscated : WaitTime = 1 ms : RunTime = 2 ms
+10-15 08:48:51.863  1542  1542 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 08:48:51.867  1348  1807 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():83 parseKeyboardGroupDef() 2132214034 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 2 ms
+10-15 08:48:51.872  1348  1348 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019799, callback=cfr@a4fbaf8, lastModifier=2, keyCodes=[50], actions=[0]}
+10-15 08:48:51.875  1348  1348 I SpeechPackManager: SpeechPackManager.refreshManifest():374 refreshManifest()
+10-15 08:48:51.875  1348  1348 I SpeechPackManager: SpeechPackManager.registerManifest():473 registerManifest() : https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json
+10-15 08:48:51.884  1348  1868 I DelightKLPDownloader: DelightKLPDownloader.downloadKLPInternal():185 downloading KLP for en_840
+10-15 08:48:51.885  1348  1868 I ManifestedDataDownloader: ManifestedDataDownloader.download():57 downloading manifest https://www.gstatic.com/android/keyboard/dictionarypack/2024070918/metadata.json-perlang/en-840.json?v=2024071002
+10-15 08:48:51.889  1348  1868 I DataFileManager: DataFileManager.removeDataWithoutNotify():219 removing data en-US delight
+10-15 08:48:51.890  1348  1348 I GoogleInputMethodService: GoogleInputMethodService.setShouldResetInputView():4197 Reset input view at next onStartInput()
+10-15 08:48:51.903  1348  1854 I DownloadManager: DownloadManager.downloadInternal():390 Download for __KLP_manifest_delight__en-840 scheduled with params DownloadParams{allowMetered=true, requireCharging=false, foreground=false, immediately=true, priority=0}
+10-15 08:48:51.903  1348  1854 I DownloadManager: DownloadManager.startDownload():484 start download of __KLP_manifest_delight__en-840
+10-15 08:48:51.916  1348  1348 I AccessPointsListHolderController: AccessPointsListHolderController.removeAccessPoint():304 The access point share is not added
+10-15 08:48:51.918  1348  1348 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():552 KeyboardGroupManager destroyed in fvq.
+10-15 08:48:51.919  1348  1348 I BaseClearcutAdapter: BaseClearcutAdapter.lambda$queryAndUpdateUserCheckboxOptIn$1():273 Checkbox = false
+10-15 08:48:51.939   554  1159 I system_server: IncrementDisableThreadFlip blocked for 13.331ms
+10-15 08:48:51.947   355  4041 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 08:48:51.948   355  4042 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 08:48:51.948   355  4042 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76b512117010
+10-15 08:48:51.948   355  4042 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 08:48:51.950   355  4043 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 08:48:51.950   355  4043 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76b5121179d0
+10-15 08:48:51.950   355  4043 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 08:48:51.951  1348  1648 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}
+10-15 08:48:51.951  1348  1648 I SP      : Registering transformer_concept.2023011913, url: https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json, constraints: *:*:*:*, flags: *, requested: 2023011913, current: -1
+10-15 08:48:51.952  1348  1648 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 08:48:51.952  1348  1648 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 08:48:51.952  1348  1648 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 08:48:51.956  1348  1854 I SpeechPackManager: SpeechPackManager.lambda$registerManifest$4():483 registerManifest() : Fetching hash 1327534105
+10-15 08:48:51.966  1348  1648 I SP      : Registering dynamic_art.20220108, url: https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json, constraints: *:*:*:*, flags: *, requested: 20220108, current: -1
+10-15 08:48:51.966  1348  1648 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json to transformer_concept-2023011913.fetched (constraints: m:b:u:l)
+10-15 08:48:51.970  3800  3859 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

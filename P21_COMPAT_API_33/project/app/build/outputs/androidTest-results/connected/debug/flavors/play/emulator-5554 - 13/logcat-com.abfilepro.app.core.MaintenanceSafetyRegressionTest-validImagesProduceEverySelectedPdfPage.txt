@@ -1,0 +1,50 @@
+10-15 08:48:44.008  4908  5033 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:44.011  1632  2301 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/ringtones/Ring_Synth_04.ogg)
+10-15 08:48:44.012  1632  2301 I MediaProvider: Open with lower FS for /product/media/audio/ringtones/Ring_Synth_04.ogg. Uid: 10161
+10-15 08:48:44.022  1632  2301 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/notifications/pixiedust.ogg)
+10-15 08:48:44.023  1632  2301 I MediaProvider: Open with lower FS for /product/media/audio/notifications/pixiedust.ogg. Uid: 10161
+10-15 08:48:44.029  1632  2301 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/alarms/Alarm_Classic.ogg)
+10-15 08:48:44.029  1632  2301 I MediaProvider: Open with lower FS for /product/media/audio/alarms/Alarm_Classic.ogg. Uid: 10161
+10-15 08:48:44.040  1632  2301 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 08:48:44.041  1632  2301 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 08:48:44.042  1632  2301 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 08:48:44.043  1632  2301 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 08:48:44.051  1632  1902 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android to set project id.: Operation not permitted
+10-15 08:48:44.055  1632  2301 I MediaProvider: Scanned external_primary due to REASON_MOUNTED, found 17 items in 23ms, 4 inserts 0 updates 0 deletes
+10-15 08:48:44.056  1632  2301 I MediaProvider: End Intent { act=com.android.providers.media.action.SCAN_VOLUME (has extras) }
+10-15 08:48:44.056  1632  2301 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 08:48:44.056  1632  2301 I MediaProvider: Volume MediaVolume name: [external_primary] id: [emulated;0] user: [UserHandle{0}] path: [/storage/emulated/0] externallyManaged: [false] mPublicVolume: [false] already attached
+10-15 08:48:44.056  1632  2301 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 08:48:44.056  1632  2301 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 08:48:44.056  1632  2301 I MediaProvider: Volume MediaVolume name: [external_primary] id: [emulated;0] user: [UserHandle{0}] path: [/storage/emulated/0] externallyManaged: [false] mPublicVolume: [false] already attached
+10-15 08:48:44.056  1632  2301 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 08:48:44.057  1632  1902 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android
+10-15 08:48:44.057  1632  1902 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 08:48:44.057  1632  1902 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 08:48:44.060  1632  1902 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android/media to set project id.: Operation not permitted
+10-15 08:48:44.060  1632  1902 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 08:48:44.060  1632  1902 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 08:48:44.060  1632  1902 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 08:48:44.081  4908  5033 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

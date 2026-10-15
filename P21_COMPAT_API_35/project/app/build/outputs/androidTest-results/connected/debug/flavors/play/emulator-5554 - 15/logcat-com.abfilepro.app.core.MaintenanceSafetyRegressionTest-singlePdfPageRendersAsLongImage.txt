@@ -1,0 +1,7 @@
+10-15 08:48:50.198  3800  3859 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:50.212  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:50.216  1270  2935 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:5 exec_start_elapsed_seconds: 115 [CONTEXT service_id=218 ]
+10-15 08:48:50.221   554  1850 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:50.225  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebd1dd0
+10-15 08:48:50.225  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebd1dd0
+10-15 08:48:50.232  3800  3859 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

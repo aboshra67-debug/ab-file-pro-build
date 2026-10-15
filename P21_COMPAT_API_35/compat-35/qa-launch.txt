@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity
+TotalTime: 2766
+WaitTime: 2838
+Complete

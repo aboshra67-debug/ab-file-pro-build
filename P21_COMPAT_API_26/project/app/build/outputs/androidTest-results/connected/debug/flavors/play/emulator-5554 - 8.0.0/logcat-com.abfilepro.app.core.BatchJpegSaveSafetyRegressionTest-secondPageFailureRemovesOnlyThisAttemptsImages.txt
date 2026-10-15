@@ -1,0 +1,6 @@
+10-15 08:48:31.402  5020  5039 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:31.438  5134  5134 W zygote64: Unexpected CPU variant for X86 using defaults: x86_64
+10-15 08:48:31.519  5020  5039 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 08:48:31.541  2178  4920 I Vision  : Requesting optional module download of ocr.
+10-15 08:48:31.543  2178  4920 I Vision  : Checking for download completion for 123596 -- ocr
+10-15 08:48:31.545  5020  5039 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

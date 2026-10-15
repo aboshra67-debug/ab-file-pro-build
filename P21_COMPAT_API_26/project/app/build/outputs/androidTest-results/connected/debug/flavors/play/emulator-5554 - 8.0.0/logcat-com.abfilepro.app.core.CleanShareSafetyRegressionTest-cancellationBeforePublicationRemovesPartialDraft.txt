@@ -1,0 +1,4 @@
+10-15 08:48:34.760  5020  5039 I TestRunner: started: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:34.766  5020  5025 I zygote64: Do full code cache collection, code=249KB, data=184KB
+10-15 08:48:34.766  5020  5025 I zygote64: After code cache collection, code=208KB, data=130KB
+10-15 08:48:34.779  5020  5039 I TestRunner: finished: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

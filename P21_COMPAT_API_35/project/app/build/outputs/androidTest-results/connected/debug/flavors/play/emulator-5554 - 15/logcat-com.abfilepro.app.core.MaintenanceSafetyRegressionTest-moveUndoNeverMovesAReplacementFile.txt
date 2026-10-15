@@ -1,0 +1,17 @@
+10-15 08:48:50.259  3800  3859 I TestRunner: started: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:50.270   554   966 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:50.271   554  1850 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:50.273  3144  3144 W CardCollectorJobService: refreshJob, cancel job.
+10-15 08:48:50.274  3144  3144 W BatteryWidgetPhenotypeCommitListener: Phenotype flag updated = true
+10-15 08:48:50.278  3144  3144 W BatteryPhenotypeCommitListener: pheotype flag is update success=true
+10-15 08:48:50.280  3144  3144 W BatteryPhenotypeCommitListener: dump configurations:
+10-15 08:48:50.280  3144  3144 W BatteryPhenotypeCommitListener: 	isFeatureEnabled:true
+10-15 08:48:50.280  3144  3144 W BatteryPhenotypeCommitListener: 	dataFetchInterval:60
+10-15 08:48:50.280  3144  3144 W BatteryPhenotypeCommitListener: 	dataRetentionDays:9
+10-15 08:48:50.280  3144  3144 W BatteryPhenotypeCommitListener: 	grantExactAlarmPermission:true
+10-15 08:48:50.280  3144  3144 W BatteryPhenotypeCommitListener: has 3 listeners
+10-15 08:48:50.285  3144  3144 W BatterySaverPhenotype: onCommitFinishedBatterySaver configuration:
+10-15 08:48:50.285  3144  3144 W BatterySaverPhenotype: 	isSchedulerOverrideEnabled: true
+10-15 08:48:50.285  3144  3144 W BatterySaverPhenotype: 	isSchedulerDefaultOnEnabled: false
+10-15 08:48:50.285  3144  3144 W BatterySaverPhenotype: 	isFlipendoConditionChecked:true
+10-15 08:48:50.297  3800  3859 I TestRunner: finished: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

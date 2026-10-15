@@ -1,0 +1,10 @@
+10-15 08:48:36.742  5020  5039 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:36.759  1813  1813 D StatusBar: disable<e i a s b h r c s q >
+10-15 08:48:36.849  5020  5132 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 08:48:36.858  1813  1813 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{1083d18 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 08:48:36.858  1813  1813 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{3919801 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 08:48:36.858  1813  1813 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{e111c48 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 08:48:36.858  1813  1813 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{2827167 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 08:48:36.858  1813  1813 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{36e70e4 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 08:48:36.858  1813  1813 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{1748257 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 08:48:36.868  5020  5039 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

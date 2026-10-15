@@ -1,0 +1,27 @@
+10-15 08:48:50.743  3800  3859 I TestRunner: started: fallbackReportsEveryPageWithItsSize(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:50.746  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datetime.TimeFeedbackPreferenceCategoryController
+10-15 08:48:50.746  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datetime.TimeFeedbackPreferenceController
+10-15 08:48:50.746  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datetime.AutoTimeFormatPreferenceController
+10-15 08:48:50.746  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datetime.TimeFormatPreferenceController
+10-15 08:48:50.747  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFaceStatusPreferenceController
+10-15 08:48:50.748  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFingerprintStatusPreferenceController
+10-15 08:48:50.751  1080  1140 I ActiveUnlockStatusUtils: authority not set
+10-15 08:48:50.751  1080  1140 I ActiveUnlockStatusUtils: authority not set
+10-15 08:48:50.751  1080  1140 I ActiveUnlockStatusUtils: authority not set
+10-15 08:48:50.751  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.remoteauth.RemoteAuthStatusPreferenceController
+10-15 08:48:50.753  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsKeyguardPreferenceController
+10-15 08:48:50.755  3694  3806 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:50.755  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController
+10-15 08:48:50.757  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wifi.WepNetworksPreferenceController
+10-15 08:48:50.766  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wifi.CellularFallbackPreferenceController
+10-15 08:48:50.771  1080  1140 D FaceSettings: FaceManager is not null. Hardware detected: true
+10-15 08:48:50.783  2127  2385 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.partnersetup.staging#com.google.android.partnersetup
+10-15 08:48:50.785  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.FaceUnlockCategoryPreferenceController
+10-15 08:48:50.785  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController
+10-15 08:48:50.785  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.BiometricLockscreenBypassPreferenceController
+10-15 08:48:50.785  1080  1140 W PrefCtrlListHelper: security_settings_face_keyguard already has a controller
+10-15 08:48:50.785  1080  1140 W PrefCtrlListHelper: security_settings_face_app already has a controller
+10-15 08:48:50.785  1080  1140 W PrefCtrlListHelper: security_settings_face_require_attention already has a controller
+10-15 08:48:50.785  1080  1140 W PrefCtrlListHelper: security_settings_face_require_confirmation already has a controller
+10-15 08:48:50.785  1080  1140 W PrefCtrlListHelper: security_face_footer already has a controller
+10-15 08:48:50.788  3800  3859 I TestRunner: finished: fallbackReportsEveryPageWithItsSize(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

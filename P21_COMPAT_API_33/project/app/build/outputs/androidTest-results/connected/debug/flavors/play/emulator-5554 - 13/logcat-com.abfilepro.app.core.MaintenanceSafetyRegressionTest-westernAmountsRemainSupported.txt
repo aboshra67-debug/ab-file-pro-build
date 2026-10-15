@@ -1,0 +1,3 @@
+10-15 08:48:44.192  4908  5033 I TestRunner: started: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:44.196  3262  3262 I CarrierServices: [2] PhenotypeManager.lambda$register$0:99 Phenotype registration successful? true
+10-15 08:48:44.199  4908  5033 I TestRunner: finished: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

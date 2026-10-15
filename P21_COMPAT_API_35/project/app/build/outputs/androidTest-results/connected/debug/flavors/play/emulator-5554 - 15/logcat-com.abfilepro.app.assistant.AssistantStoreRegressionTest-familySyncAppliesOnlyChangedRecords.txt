@@ -1,0 +1,4 @@
+10-15 08:48:37.453  3800  3859 I TestRunner: started: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 08:48:37.455  1476  1746 I NgaEntryPointEventSendr: setupConnection
+10-15 08:48:37.464   554   584 I AppBindingService: Connected: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 08:48:37.467  3800  3859 I TestRunner: finished: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

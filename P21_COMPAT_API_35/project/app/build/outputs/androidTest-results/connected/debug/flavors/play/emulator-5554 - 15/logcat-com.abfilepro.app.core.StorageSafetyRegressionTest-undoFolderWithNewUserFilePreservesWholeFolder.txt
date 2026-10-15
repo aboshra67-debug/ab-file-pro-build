@@ -1,0 +1,12 @@
+10-15 08:48:51.311  3800  3859 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:51.330  4011  4011 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+10-15 08:48:51.330  4011  4011 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-15 08:48:51.330  4011  4011 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-15 08:48:51.330  1270  1276 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 08:48:51.336  1270  1276 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 08:48:51.349  1542  1542 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.gsa.pcp.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 08:48:51.354  4011  4011 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+10-15 08:48:51.354  4011  4011 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk. target_sdk_version=35, uses_libraries=, library_path=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.settings.intelligence:/product/lib64:/system/product/lib64
+10-15 08:48:51.356  4011  4011 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+10-15 08:48:51.356  4011  4011 D CompatChangeReporter: Compat change id reported: 202956589; UID 10140; state: ENABLED
+10-15 08:48:51.360  3800  3859 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

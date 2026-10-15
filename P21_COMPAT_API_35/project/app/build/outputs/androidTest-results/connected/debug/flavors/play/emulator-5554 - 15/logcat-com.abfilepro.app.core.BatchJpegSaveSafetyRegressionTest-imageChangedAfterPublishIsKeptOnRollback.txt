@@ -1,0 +1,3 @@
+10-15 08:48:38.545  3800  3859 I TestRunner: started: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:38.550  3800  3811 I p.p21mainttrial: Background concurrent mark compact GC freed 10MB AllocSpace bytes, 102(8624KB) LOS objects, 49% free, 3325KB/6651KB, paused 262us,34.688ms total 313.212ms
+10-15 08:48:38.571  3800  3859 I TestRunner: finished: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

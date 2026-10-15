@@ -1,0 +1,7 @@
+10-15 08:48:38.350  3800  3859 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:38.388  1476  1892 I BistoHotwordHelper: (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+10-15 08:48:38.389  3800  3859 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 08:48:38.398  1541  3506 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 08:48:38.418  1476  1746 I A       : Successfully initialized all components
+10-15 08:48:38.422  1476  1728 I A       : (REDACTED) %s
+10-15 08:48:38.500  3800  3859 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

@@ -1,0 +1,46 @@
+10-15 08:48:44.288  4908  5033 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:44.295  1034  2918 W bwft    : Succeeded but not registered: com.google.android.gms.appintegrity [CONTEXT service_id=51 ]
+10-15 08:48:44.297  1034  1045 I .gms.persistent: Compiler allocated 4813KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+10-15 08:48:44.298  1034  2918 W bwft    : Succeeded but not registered: com.google.android.gms.tron.metrics [CONTEXT service_id=51 ]
+10-15 08:48:44.299  1034  2918 E bwfc    : Phenotype API error. Event # edax@9a7d34c8, EventCode: 32 [CONTEXT service_id=51 ]
+10-15 08:48:44.299  1034  2918 E bwfc    : bwdx: 29503
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at bwgv.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:44.299  1034  2918 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: operation=SetAppSpecificPropertiesOperationCall, opStatusCode=29503 [CONTEXT service_id=51 ]
+10-15 08:48:44.300  1034  2918 W AsyncOperation: OperationException[Status{statusCode=unknown status code: 29503, resolution=null}]
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:44.300  1034  2918 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: setAppSpecificProperties failed [CONTEXT service_id=301 ]
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: aard: 29503:
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at abmc.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at aawv.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at aawv.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at bwen.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at bwen.ek(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at gzc.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-15 08:48:44.302  1284  1284 W NnApiDriverManager: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 08:48:44.328  1034  3736 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+10-15 08:48:44.328  1034  3736 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+10-15 08:48:44.332  1034  3736 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-15 08:48:44.351  1034  2918 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.android.apps.messaging.auto#com.google.android.apps.messaging) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:44.352  4908  5033 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

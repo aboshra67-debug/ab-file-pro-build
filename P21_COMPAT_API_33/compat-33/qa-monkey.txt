@@ -1,0 +1,252 @@
+  bash arg: -p
+  bash arg: com.abfilepro.app.p21qa
+  bash arg: -s
+  bash arg: 2133
+  bash arg: --throttle
+  bash arg: 250
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: --pct-appswitch
+  bash arg: 0
+  bash arg: --pct-anyevent
+  bash arg: 0
+  bash arg: -v
+  bash arg: 800
+:Monkey: seed=2133 count=800
+:AllowPackage: com.abfilepro.app.p21qa
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 18.07229%
+//   1: 12.048193%
+//   2: 2.4096386%
+//   3: 18.07229%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 30.120483%
+//   7: 18.07229%
+//   8: -0.0%
+//   9: -0.0%
+//   10: 1.2048193%
+//   11: -0.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity } in package com.abfilepro.app.p21qa
+:Sending Touch (ACTION_DOWN): 0:(722.0,926.0)
+:Sending Touch (ACTION_UP): 0:(739.76746,926.39575)
+:Sending Touch (ACTION_DOWN): 0:(341.0,557.0)
+:Sending Touch (ACTION_UP): 0:(345.3419,547.9729)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(648.0,808.0)
+:Sending Touch (ACTION_UP): 0:(659.3336,814.2371)
+:Sending Touch (ACTION_DOWN): 0:(823.0,24.0)
+:Sending Touch (ACTION_UP): 0:(823.226,17.55786)
+:Sending Touch (ACTION_DOWN): 0:(586.0,2008.0)
+:Sending Touch (ACTION_UP): 0:(585.3678,2024.2742)
+:Sending Touch (ACTION_DOWN): 0:(542.0,96.0)
+:Sending Touch (ACTION_UP): 0:(587.03595,166.19977)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(561.0,1287.0)
+:Sending Touch (ACTION_UP): 0:(597.26685,1254.936)
+:Sending Touch (ACTION_DOWN): 0:(369.0,1509.0)
+:Sending Touch (ACTION_UP): 0:(371.68564,1507.8674)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+    //[calendar_time:2026-10-15 08:49:13.343  system_uptime:142310]
+    // Sending event #100
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(641.0,1664.0)
+:Sending Touch (ACTION_UP): 0:(650.84235,1721.7798)
+:Sending Touch (ACTION_DOWN): 0:(959.0,964.0)
+:Sending Touch (ACTION_UP): 0:(955.28766,967.1869)
+:Sending Touch (ACTION_DOWN): 0:(988.0,1563.0)
+:Sending Touch (ACTION_UP): 0:(988.7865,1554.6663)
+:Sending Touch (ACTION_DOWN): 0:(519.0,1585.0)
+:Sending Touch (ACTION_UP): 0:(528.6752,1586.5197)
+:Sending Touch (ACTION_DOWN): 0:(1029.0,1230.0)
+:Sending Touch (ACTION_UP): 0:(1025.9133,1234.0886)
+:Sending Touch (ACTION_DOWN): 0:(788.0,972.0)
+:Sending Touch (ACTION_UP): 0:(791.12256,962.5853)
+:Sending Touch (ACTION_DOWN): 0:(523.0,1209.0)
+:Sending Touch (ACTION_UP): 0:(514.29346,1198.1135)
+:Sending Touch (ACTION_DOWN): 0:(1017.0,1745.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,1717.4901)
+:Sending Touch (ACTION_DOWN): 0:(819.0,1333.0)
+:Sending Touch (ACTION_UP): 0:(761.2226,1284.6827)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(1061.0,829.0)
+:Sending Touch (ACTION_UP): 0:(1080.0,837.2996)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(983.0,1599.0)
+:Sending Touch (ACTION_UP): 0:(1001.66956,1636.5184)
+:Sending Touch (ACTION_DOWN): 0:(490.0,2017.0)
+:Sending Touch (ACTION_UP): 0:(481.67203,2018.1616)
+:Sending Touch (ACTION_DOWN): 0:(1014.0,569.0)
+:Sending Touch (ACTION_UP): 0:(1021.01013,575.7875)
+:Sending Touch (ACTION_DOWN): 0:(913.0,1977.0)
+    //[calendar_time:2026-10-15 08:49:18.096  system_uptime:147050]
+    // Sending event #200
+:Sending Touch (ACTION_UP): 0:(859.4326,2001.7368)
+:Sending Touch (ACTION_DOWN): 0:(95.0,314.0)
+:Sending Touch (ACTION_UP): 0:(127.13871,279.38855)
+:Sending Touch (ACTION_DOWN): 0:(828.0,1308.0)
+:Sending Touch (ACTION_UP): 0:(818.4777,1305.9762)
+:Sending Touch (ACTION_DOWN): 0:(11.0,143.0)
+:Sending Touch (ACTION_UP): 0:(11.039275,152.13153)
+:Sending Touch (ACTION_DOWN): 0:(206.0,828.0)
+:Sending Touch (ACTION_UP): 0:(195.20354,852.18097)
+:Sending Touch (ACTION_DOWN): 0:(404.0,1364.0)
+:Sending Touch (ACTION_UP): 0:(495.4835,1465.966)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(477.0,2034.0)
+:Sending Touch (ACTION_UP): 0:(470.1761,2047.7551)
+:Sending Touch (ACTION_DOWN): 0:(971.0,1880.0)
+:Sending Touch (ACTION_UP): 0:(958.9044,1892.9536)
+:Sending Touch (ACTION_DOWN): 0:(892.0,785.0)
+:Sending Touch (ACTION_UP): 0:(888.0533,795.3429)
+:Sending Touch (ACTION_DOWN): 0:(38.0,1396.0)
+:Sending Touch (ACTION_UP): 0:(35.65265,1397.8538)
+:Sending Flip keyboardOpen=false
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(178.0,859.0)
+:Sending Touch (ACTION_UP): 0:(186.94655,829.86316)
+:Sending Touch (ACTION_DOWN): 0:(982.0,1701.0)
+:Sending Touch (ACTION_UP): 0:(966.5526,1696.8866)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(106.0,1348.0)
+    //[calendar_time:2026-10-15 08:49:23.385  system_uptime:152338]
+    // Sending event #300
+:Sending Touch (ACTION_UP): 0:(116.66833,1274.1149)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(310.0,820.0)
+:Sending Touch (ACTION_UP): 0:(310.0257,821.03455)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(995.0,419.0)
+:Sending Touch (ACTION_UP): 0:(947.58905,460.18018)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(532.0,1843.0)
+:Sending Touch (ACTION_UP): 0:(558.17896,1859.9421)
+:Sending Touch (ACTION_DOWN): 0:(143.0,224.0)
+:Sending Touch (ACTION_UP): 0:(147.05592,223.72966)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+    //[calendar_time:2026-10-15 08:49:27.303  system_uptime:156257]
+    // Sending event #400
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(759.0,232.0)
+:Sending Touch (ACTION_UP): 0:(817.315,196.37022)
+:Sending Touch (ACTION_DOWN): 0:(116.0,1365.0)
+:Sending Touch (ACTION_UP): 0:(91.69489,1414.3015)
+:Sending Touch (ACTION_DOWN): 0:(269.0,735.0)
+:Sending Touch (ACTION_UP): 0:(266.71262,732.8163)
+:Sending Touch (ACTION_DOWN): 0:(343.0,696.0)
+:Sending Touch (ACTION_UP): 0:(337.79745,741.55695)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(273.0,1949.0)
+:Sending Touch (ACTION_UP): 0:(245.63847,1927.0552)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(284.0,1203.0)
+:Sending Touch (ACTION_UP): 0:(235.99506,1339.2301)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+    //[calendar_time:2026-10-15 08:49:29.701  system_uptime:158654]
+    // Sending event #500
+:Sending Touch (ACTION_DOWN): 0:(695.0,1644.0)
+:Sending Touch (ACTION_UP): 0:(692.9054,1634.3057)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(965.0,292.0)
+:Sending Touch (ACTION_UP): 0:(973.6014,299.3116)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(914.0,1034.0)
+:Sending Touch (ACTION_UP): 0:(895.89435,1063.401)
+:Sending Touch (ACTION_DOWN): 0:(328.0,386.0)
+:Sending Touch (ACTION_UP): 0:(299.92,365.169)
+:Sending Flip keyboardOpen=true
+Got IOException performing flipjava.io.FileNotFoundException: /dev/input/event0: open failed: EACCES (Permission denied)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(393.0,703.0)
+:Sending Touch (ACTION_UP): 0:(388.8962,702.73535)
+:Sending Touch (ACTION_DOWN): 0:(465.0,1782.0)
+:Sending Touch (ACTION_UP): 0:(417.86096,1757.1239)
+:Sending Touch (ACTION_DOWN): 0:(736.0,810.0)
+:Sending Touch (ACTION_UP): 0:(749.766,818.1865)
+:Sending Touch (ACTION_DOWN): 0:(559.0,1638.0)
+:Sending Touch (ACTION_UP): 0:(565.5799,1722.0983)
+:Sending Touch (ACTION_DOWN): 0:(100.0,1016.0)
+:Sending Touch (ACTION_UP): 0:(86.57666,1014.4015)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(266.0,690.0)
+    //[calendar_time:2026-10-15 08:49:34.710  system_uptime:163663]
+    // Sending event #600
+:Sending Touch (ACTION_UP): 0:(270.93027,687.5833)
+:Sending Touch (ACTION_DOWN): 0:(641.0,1853.0)
+:Sending Touch (ACTION_UP): 0:(628.8022,1755.8802)
+:Sending Touch (ACTION_DOWN): 0:(598.0,1564.0)
+:Sending Touch (ACTION_UP): 0:(591.7899,1577.2362)
+    // Rejecting start of Intent { act=android.intent.action.CREATE_DOCUMENT typ=application/json cmp=com.google.android.documentsui/com.android.documentsui.picker.PickActivity } in package com.google.android.documentsui
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1000.0,1021.0)
+:Sending Touch (ACTION_UP): 0:(976.5396,983.6206)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(629.0,1115.0)
+:Sending Touch (ACTION_UP): 0:(629.51794,1129.7421)
+:Sending Touch (ACTION_DOWN): 0:(193.0,1350.0)
+    //[calendar_time:2026-10-15 08:49:38.863  system_uptime:167816]
+    // Sending event #700
+:Sending Touch (ACTION_UP): 0:(197.1852,1280.0996)
+:Sending Touch (ACTION_DOWN): 0:(667.0,1850.0)
+:Sending Touch (ACTION_UP): 0:(663.7732,1844.9021)
+:Sending Touch (ACTION_DOWN): 0:(847.0,781.0)
+:Sending Touch (ACTION_UP): 0:(804.20386,748.9148)
+:Sending Touch (ACTION_DOWN): 0:(643.0,1335.0)
+:Sending Touch (ACTION_UP): 0:(603.9921,1314.6807)
+:Sending Touch (ACTION_DOWN): 0:(94.0,1555.0)
+:Sending Touch (ACTION_UP): 0:(71.26495,1596.2971)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(15.0,430.0)
+:Sending Touch (ACTION_UP): 0:(11.446595,426.73642)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+Events injected: 800
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=2 rotations=0
+## Network stats: elapsed time=38346ms (0ms mobile, 0ms wifi, 38346ms not connected)
+// Monkey finished
+args: [-p, com.abfilepro.app.p21qa, -s, 2133, --throttle, 250, --pct-syskeys, 0, --pct-appswitch, 0, --pct-anyevent, 0, -v, 800]
+ arg: "-p"
+ arg: "com.abfilepro.app.p21qa"
+ arg: "-s"
+ arg: "2133"
+ arg: "--throttle"
+ arg: "250"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "--pct-appswitch"
+ arg: "0"
+ arg: "--pct-anyevent"
+ arg: "0"
+ arg: "-v"
+ arg: "800"
+data="com.abfilepro.app.p21qa"
+data="2133"
+arg="--throttle" mCurArgData="null" mNextArg=5 argwas="--throttle" nextarg="250"
+data="250"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=7 argwas="--pct-syskeys" nextarg="0"
+data="0"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=9 argwas="--pct-appswitch" nextarg="0"
+data="0"
+arg="--pct-anyevent" mCurArgData="null" mNextArg=11 argwas="--pct-anyevent" nextarg="0"
+data="0"

@@ -1,0 +1,38 @@
+10-15 08:48:37.369  4908  5033 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 08:48:37.396  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.396  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.396  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.396  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.396  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.396  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.397  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.397  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.397  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.397  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.398  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.398  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.398  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.399  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.399  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.399  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.400  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.401  4925  4963 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.android.cellbroadcastreceiver"
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.android.emergency"
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.android.permissioncontroller"
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.android.permissioncontroller.role"
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.android.permissioncontroller.safetycenter"
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.android.settings"
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.android.traceur"
+10-15 08:48:37.464  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.gsa.opa.AssistantSettingsProvider"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.messaging.settings.search"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.nexuslauncher"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.wellbeing"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.gms"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.gms.accountsettings.content"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.inputmethod.latin"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.settings.intelligence.provider.search"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.settings.intelligence.routines.impl"
+10-15 08:48:37.465  4925  4963 W SQLiteLog: (28) double-quoted string literal: "com.google.android.settings.intelligence.smartringer.impl"
+10-15 08:48:37.468  4908  5033 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

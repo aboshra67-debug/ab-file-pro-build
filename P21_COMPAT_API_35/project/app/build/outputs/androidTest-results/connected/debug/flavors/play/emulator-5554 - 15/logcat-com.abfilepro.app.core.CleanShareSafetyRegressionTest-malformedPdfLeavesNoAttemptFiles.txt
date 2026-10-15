@@ -1,0 +1,24 @@
+10-15 08:48:40.771  3800  3859 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:40.774  1541  2827 I LT_StubFactory: tachyonHostName = instantmessaging-pa.googleapis.com and tachyonPortNumber = 443
+10-15 08:48:40.774  1541  2827 D LT_OkHttpChannelBuilder: Using Spatula header keyless authentication.
+10-15 08:48:40.779  1541  3863 I MS_RegUtils: checking registration with Lighter
+10-15 08:48:40.788  1541  2827 D LT_LitBstrpCntrl: Initializing BootstrapController Instance
+10-15 08:48:40.792  1541  1541 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 08:48:40.792  1541  1541 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 08:48:40.800  1270  1270 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+10-15 08:48:40.818  1270  3915 I MagicTether: [AutoDisconnectIntentOperation] Canceling task. [CONTEXT service_id=276 ]
+10-15 08:48:40.827  3800  3903 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:40.828  1541  3867 W MDM     : [175] btrf.d: Q+ devices does not need device admin.
+10-15 08:48:40.827  3800  3903 E document: Parse Document failed (err=3).
+10-15 08:48:40.835  1270  1968 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 08:48:40.853  2568  2590 W DG      : [flow devicekey] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+10-15 08:48:40.854  1541  3867 I MlBenchmarkInstaller: Intent: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=340 ]
+10-15 08:48:40.855  1541  3867 I MlBenchmarkInstaller: onInitRuntimeState(), intent action=android.intent.action.BOOT_COMPLETED [CONTEXT service_id=340 ]
+10-15 08:48:40.856  1541  2831 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.mlbenchmark#com.google.android.gms, using defaults.
+10-15 08:48:40.856  1541  3867 I MlBenchmarkInstaller: Device sampled out, skipping. [CONTEXT service_id=340 ]
+10-15 08:48:40.857  1541  3506 I LSR     : Empty geofences. [CONTEXT service_id=277 ]
+10-15 08:48:40.864  1541  1541 I MlBenchmarkInstaller: Feature unrequest success = true [CONTEXT service_id=340 ]
+10-15 08:48:40.876  1541  3938 I FA-SVC  : App measurement initialized, version: 242335
+10-15 08:48:40.877  3305  3305 I BugleDataModel: ActionExecutorImpl: Starting ActionService
+10-15 08:48:40.887  3305  3305 I BugleDataModel: ActionExecutorImpl: ACTION_EXECUTE_QUEUED_GenericWorkerQueueAction
+10-15 08:48:40.888  3800  3859 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

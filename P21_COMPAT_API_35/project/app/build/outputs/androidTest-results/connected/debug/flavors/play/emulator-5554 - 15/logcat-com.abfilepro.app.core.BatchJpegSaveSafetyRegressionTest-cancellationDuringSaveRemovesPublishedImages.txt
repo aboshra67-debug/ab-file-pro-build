@@ -1,0 +1,11 @@
+10-15 08:48:38.252  3800  3859 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:38.293  1542  2176 W SearchServiceCore: Abort, client detached.
+10-15 08:48:38.293  1542  2176 W SearchServiceCore: Abort, client detached.
+10-15 08:48:38.293  1542  2176 W SearchServiceCore: Abort, client detached.
+10-15 08:48:38.293  1542  2176 W SearchServiceCore: Abort, client detached.
+10-15 08:48:38.306  1542  2176 W SearchServiceCore: Abort, client detached.
+10-15 08:48:38.307  1542  2176 W SearchServiceCore: Abort, client detached.
+10-15 08:48:38.309  1542  2176 W SearchServiceCore: Abort, client detached.
+10-15 08:48:38.320  1542  2176 I MicroDetectionState: (REDACTED) #takeChangeMicroDetectorMode [mIsBargeInEnabled: %b, mCurrentDetectionMode: %s]
+10-15 08:48:38.322  1542  2176 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+10-15 08:48:38.343  3800  3859 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

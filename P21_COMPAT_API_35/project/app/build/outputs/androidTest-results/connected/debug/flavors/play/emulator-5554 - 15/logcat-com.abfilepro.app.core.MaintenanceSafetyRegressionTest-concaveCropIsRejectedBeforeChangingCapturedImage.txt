@@ -1,0 +1,6 @@
+10-15 08:48:48.977  3800  3859 I TestRunner: started: concaveCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:48.983  1270  2001 E IPCThreadState: Process seems to be sending too many oneway calls.
+10-15 08:48:48.983  1270  2001 W IPCThreadState: CallStack::getCurrentInternal not linked, returning null
+10-15 08:48:48.983  1270  2001 W oneway spamming: CallStack::logStackInternal not linked
+10-15 08:48:48.983  1270  2001 W BpBinder: Large outgoing transaction of 418524 bytes, interface descriptor , code 4
+10-15 08:48:49.000  3800  3859 I TestRunner: finished: concaveCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

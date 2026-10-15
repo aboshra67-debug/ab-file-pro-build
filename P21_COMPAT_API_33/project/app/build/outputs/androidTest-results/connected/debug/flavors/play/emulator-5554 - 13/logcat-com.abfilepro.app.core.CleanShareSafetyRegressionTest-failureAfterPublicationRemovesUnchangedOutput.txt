@@ -1,0 +1,13 @@
+10-15 08:48:39.883  4908  5033 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:39.886  1284  5154 I MobileDataHub: Scheduling periodic tasks
+10-15 08:48:39.886  1284  5154 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-15 08:48:39.912  3476  3742 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 08:48:39.918  3476  3742 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 08:48:39.918  3476  3742 I RemoteProvisioningService: Pool status.
+10-15 08:48:39.918  3476  3742 I RemoteProvisioningService: Total: 6
+10-15 08:48:39.918  3476  3742 I RemoteProvisioningService: Attested: 6
+10-15 08:48:39.918  3476  3742 I RemoteProvisioningService: Unassigned: 5
+10-15 08:48:39.918  3476  3742 I RemoteProvisioningService: Expiring: 0
+10-15 08:48:39.918  3476  3742 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 08:48:39.918  3476  3742 I RemoteProvisioningService: No provisioning needed.
+10-15 08:48:39.966  4908  5033 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

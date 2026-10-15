@@ -1,0 +1,8 @@
+10-15 08:48:47.784  3800  3859 I TestRunner: started: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:47.840  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:47.885  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebd16d0
+10-15 08:48:47.885  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebd16d0
+10-15 08:48:47.886  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:47.886  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebecc50
+10-15 08:48:47.886  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebecc50
+10-15 08:48:47.896  3800  3859 I TestRunner: finished: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

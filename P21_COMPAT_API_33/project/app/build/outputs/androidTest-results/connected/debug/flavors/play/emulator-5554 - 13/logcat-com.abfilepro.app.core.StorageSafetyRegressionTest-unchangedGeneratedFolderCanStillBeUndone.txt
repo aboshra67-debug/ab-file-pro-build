@@ -1,0 +1,3 @@
+10-15 08:48:44.936  4908  5033 I TestRunner: started: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:44.975  1705  1705 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPLOAD_ASSISTANT_DEVICE_SETTINGS.
+10-15 08:48:44.979  4908  5033 I TestRunner: finished: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

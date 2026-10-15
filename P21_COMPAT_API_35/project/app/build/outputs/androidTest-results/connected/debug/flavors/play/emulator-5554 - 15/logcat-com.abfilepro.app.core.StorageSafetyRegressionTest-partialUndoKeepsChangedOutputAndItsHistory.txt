@@ -1,0 +1,5 @@
+10-15 08:48:52.067  3800  3859 I TestRunner: started: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:52.067   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 08:48:52.071  1348  1648 I SP      : Requesting download of URL https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json to gboard-small-speech-packs-1327534105.fetched (constraints: m:b:u:l)
+10-15 08:48:52.083  1348  1854 I DownloadManager: DownloadManager.downloadInternal():390 Download for __KLP_delight__en-840 scheduled with params DownloadParams{allowMetered=true, requireCharging=false, foreground=true, immediately=false, priority=500}
+10-15 08:48:52.114  3800  3859 I TestRunner: finished: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,65 @@
+10-15 08:48:50.801  3800  3859 I TestRunner: started: fallbackRendersThePageContentIntoTheRequestedBitmap(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:50.804  3800  3811 I p.p21mainttrial: Background concurrent mark compact GC freed 2000KB AllocSpace bytes, 44(3792KB) LOS objects, 49% free, 7451KB/14MB, paused 395us,1.297ms total 277.223ms
+10-15 08:48:50.805  2127  2385 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.partnersetup
+10-15 08:48:50.806  2127  2127 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:50.806   554   966 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:50.812  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingMainSwitchPreferenceController
+10-15 08:48:50.818  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingFooterPreferenceController
+10-15 08:48:50.819  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGesturePreferenceController
+10-15 08:48:50.819  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureSoundPreferenceController
+10-15 08:48:50.819  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureNumberOverridePreferenceController
+10-15 08:48:50.819  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminListPreferenceController
+10-15 08:48:50.819  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsScreenPreferenceController
+10-15 08:48:50.819  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.DevelopmentMemtagPreferenceController
+10-15 08:48:50.842  1542  2278 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.social.peoplekit#com.google.android.googlequicksearchbox
+10-15 08:48:50.844  1080  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 08:48:50.845  1080  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 08:48:50.845  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.DevelopmentMemtagFooterPreferenceController
+10-15 08:48:50.845  1080  1140 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.development.DevelopmentMemtagFooterPreferenceController
+10-15 08:48:50.847  1542  1542 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.soundsearch.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 08:48:50.849  1080  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 08:48:50.851  3305  3649 I PhenotypeBackgroundRecv: Successfully updated snapshot for profile_primitives_android#com.google.android.apps.messaging
+10-15 08:48:50.855  3305  3464 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@9af0c23
+10-15 08:48:50.864  3800  3859 E TestRunner: failed: fallbackRendersThePageContentIntoTheRequestedBitmap(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:50.864  3800  3859 E TestRunner: ----- begin exception -----
+10-15 08:48:50.864  3800  3859 E TestRunner: java.lang.AssertionError: top half should be red, was ffffffff
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.Assert.fail(Assert.java:89)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.Assert.assertTrue(Assert.java:42)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at com.abfilepro.app.core.PdfCompatibilityRegressionTest.fallbackRendersThePageContentIntoTheRequestedBitmap(PdfCompatibilityRegressionTest.kt:95)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at androidx.test.internal.runner.junit4.statement.RunAfters.evaluate(RunAfters.java:61)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:463)
+10-15 08:48:50.864  3800  3859 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2594)
+10-15 08:48:50.864  3800  3859 E TestRunner: ----- end exception -----
+10-15 08:48:50.865  3800  3859 I TestRunner: finished: fallbackRendersThePageContentIntoTheRequestedBitmap(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

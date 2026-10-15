@@ -1,0 +1,37 @@
+10-15 08:48:37.630  3800  3859 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 08:48:37.630  1476  1746 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+10-15 08:48:37.642  1541  2393 D TrafficStats: tagSocket(90) with statsTag=0x30001803, statsUid=-1
+10-15 08:48:37.643  3305  3649 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=73 ]
+10-15 08:48:37.643  3305  3649 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 08:48:37.644  3305  3437 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 08:48:37.644  3305  3464 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@951704c
+10-15 08:48:37.646  1476  1746 I A       : (REDACTED) setNavBarVisible: %s
+10-15 08:48:37.647  3305  3438 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=59 ]
+10-15 08:48:37.668  3305  3438 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=59 ]
+10-15 08:48:37.689  1476  1880 E A       : Calling getConfiguration() before NgaConfigurationManager is initialized.
+10-15 08:48:37.689  1476  1880 E A       : com.google.common.f.w: MEDIUM
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.engine.g.a.au.b(PG:29)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.engine.x.l.gO(PG:3)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.engine.t.f.a(PG:4)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.engine.t.f.S(PG:1)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.engine.t.n.W(PG:11)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.engine.t.n.gQ(PG:21)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.engine.ao.b.a(PG:5)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.shared.n.g.gY(PG:5)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.apps.gsa.nga.shared.n.i.a(PG:27)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.libraries.gsa.h.a.k.call(PG:9)
+10-15 08:48:37.689  1476  1880 E A       : 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.common.util.concurrent.dk.run(PG:3)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.common.util.concurrent.dl.run(PG:76)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.libraries.k.x.run(PG:3)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.common.n.c.c.run(PG:50)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.libraries.k.e.run(PG:8)
+10-15 08:48:37.689  1476  1880 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:37.689  1476  1880 E A       : 	at com.google.android.libraries.k.d.b.run(PG:74)
+10-15 08:48:37.710  1476  1746 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+10-15 08:48:37.710  1476  1746 I A       : (REDACTED) TNG:MA active state changed to %s
+10-15 08:48:37.712  1476  1746 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+10-15 08:48:37.720  3305  3437 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 08:48:37.723  1476  1880 I A       : Disconnecting from SysUi, flag disabled [IVR-C]
+10-15 08:48:37.723  1476  1880 I A       : Disconnecting from SysUi, eligibilityNotifier absent [IVR-C]
+10-15 08:48:37.723  3800  3859 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

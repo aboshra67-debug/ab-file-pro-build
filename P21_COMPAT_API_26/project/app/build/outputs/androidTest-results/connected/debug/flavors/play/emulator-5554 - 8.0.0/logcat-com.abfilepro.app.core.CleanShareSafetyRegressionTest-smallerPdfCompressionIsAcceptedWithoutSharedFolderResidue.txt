@@ -1,0 +1,85 @@
+10-15 08:48:34.780  5020  5039 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:34.903  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:34.903  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:34.903  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:34.903  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:34.903  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:34.903  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:34.903  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:34.903  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:34.903  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:34.903  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:34.903  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:34.904  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:34.904  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:34.904  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:34.904  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:34.904  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:34.904  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:34.904  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:34.904  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:34.904  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:34.904  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:34.904  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:35.076  2178  4920 I GmscoreIpa: how are you::
+10-15 08:48:35.080  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:35.080  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:35.080  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:35.080  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:35.080  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:35.080  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:35.080  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:35.080  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:35.080  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:35.127  5020  5175 D ProfileInstaller: Installing profile for com.abfilepro.app.p21mainttrial
+10-15 08:48:35.183  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:35.183  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:35.183  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:35.183  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:35.183  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:35.183  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:35.183  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:35.183  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:35.183  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:35.330  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:35.330  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:35.330  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:35.330  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:35.330  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:35.330  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:35.330  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:35.330  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:35.330  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:35.420  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:35.420  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:35.420  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:35.420  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:35.420  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:35.420  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:35.420  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:35.420  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:35.420  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:35.420  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:35.420  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:35.525  5020  5039 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

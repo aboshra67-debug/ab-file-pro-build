@@ -1,0 +1,13 @@
+10-15 08:48:45.425  3800  3859 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:45.426  1270  2935 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.mdi.sync#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:45.430  3800  3958 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 08:48:45.435  1270  2935 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 08:48:45.477  2568  2588 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 08:48:45.477  2568  2588 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 08:48:45.478  1270  2532 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:45.464  2568  2568 W binder:2568_1: type=1400 audit(0.0:199): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 08:48:45.485  1270  2532 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 34 uptime_millis: 34 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:45.486  1348  1866 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():469 Get empty configurations.
+10-15 08:48:45.472  2568  2568 W binder:2568_1: type=1400 audit(0.0:200): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 08:48:45.490  1348  1857 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=false, fetchStatus=2026-10-15 08:48:33{reason=BROADCAST, isFullFetch=true, isEmpty=true, registeredFormFactor=phone, fetchedFormFactor=, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=0, deletedFlagsCount=0, totalTime=11762}
+10-15 08:48:45.491  3800  3859 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

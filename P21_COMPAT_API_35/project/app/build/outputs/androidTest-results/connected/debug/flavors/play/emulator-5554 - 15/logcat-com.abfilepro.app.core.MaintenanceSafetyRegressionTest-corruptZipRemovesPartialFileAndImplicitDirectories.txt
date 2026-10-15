@@ -1,0 +1,12 @@
+10-15 08:48:48.878  3800  3859 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:48.878  1542  1921 I Ma      : #handleFlagUpdate()
+10-15 08:48:48.882  1542  2235 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.googlequicksearchbox
+10-15 08:48:48.892  1542  1802 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 08:48:48.898  1476  1880 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 08:48:48.898  1476  1880 I A       : #handleFlagsUpdate: listeners notified
+10-15 08:48:48.917  1542  1921 I SettingsDataLayer.AE: Set Assistant eligibility status
+10-15 08:48:48.921  1542  1792 I SettingsDataLayer.AE: Set isHotwordOpaEligible
+10-15 08:48:48.951  1541  2829 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 08:48:48.954  1541  2642 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 08:48:48.970  1542  1856 I A       : NGA enabled in interactor.
+10-15 08:48:48.974  3800  3859 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

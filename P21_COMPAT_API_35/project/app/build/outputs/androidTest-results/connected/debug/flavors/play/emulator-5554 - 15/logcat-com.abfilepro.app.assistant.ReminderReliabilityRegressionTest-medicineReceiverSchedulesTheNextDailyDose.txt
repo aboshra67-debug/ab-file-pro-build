@@ -1,0 +1,6 @@
+10-15 08:48:37.980  3800  3859 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 08:48:37.998  1542  1542 W A       : (REDACTED) Queue length for executor %s is now %d. Perhaps some tasks are too long, or the pool is too small.
+10-15 08:48:38.013  1476  1880 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s (%s)
+10-15 08:48:38.031   554   998 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 08:48:38.039  3694  3713 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b6b63cd1-81b3]" thread_id=39 ]
+10-15 08:48:38.040  3800  3859 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,4 @@
+10-15 08:48:44.200  4908  5033 I TestRunner: started: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:44.204  5274  5274 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 08:48:44.241  1034  2976 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 08:48:44.243  4908  5033 I TestRunner: finished: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

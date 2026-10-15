@@ -1,0 +1,11 @@
+10-15 08:48:37.627  5020  5039 I TestRunner: started: partialFileMoveUndoRetainsConflictForRetry(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:37.641  5020  5029 E System  : Uncaught exception thrown by finalizer
+10-15 08:48:37.641  5020  5029 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 08:48:37.641  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 08:48:37.641  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 08:48:37.641  5020  5029 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 08:48:37.641  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 08:48:37.641  5020  5029 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 08:48:37.641  5020  5029 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 08:48:37.641  5020  5029 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:37.689  5020  5039 I TestRunner: finished: partialFileMoveUndoRetainsConflictForRetry(com.abfilepro.app.core.StorageSafetyRegressionTest)

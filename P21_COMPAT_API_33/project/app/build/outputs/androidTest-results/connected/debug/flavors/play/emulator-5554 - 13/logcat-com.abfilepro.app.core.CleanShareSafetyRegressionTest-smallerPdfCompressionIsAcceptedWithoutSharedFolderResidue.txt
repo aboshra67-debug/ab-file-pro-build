@@ -1,0 +1,67 @@
+10-15 08:48:42.356  4908  5033 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:42.375  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.384  1034  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:5 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.441  1632  1902 W MediaProvider: getVolumePath for unknown volume: internal
+10-15 08:48:42.484  1034  5191 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.495  1284  3994 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 08:48:42.495  1284  3994 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-15 08:48:42.495  1034  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.519  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 82 uptime_millis: 82 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.568  1034  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.584  1284  5159 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 08:48:42.584  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 24 uptime_millis: 24 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.588  1284  5159 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 08:48:42.599  1284  5159 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 111552.
+10-15 08:48:42.603  1284  4292 I AccountSeedingPrefetchI: AccountSeedingPrefetchInit intent operation started. [CONTEXT service_id=42 ]
+10-15 08:48:42.615  1034  5191 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.617  1034  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.621  1034  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 27 uptime_millis: 27 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.642  1284  4804 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+10-15 08:48:42.643  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.645  1034  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 11 uptime_millis: 11 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.658  1034  5191 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.659  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.659  1284  3994 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 08:48:42.659  1284  3994 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
+10-15 08:48:42.662  1284  3994 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 08:48:42.674  1284  3994 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 08:48:42.682  1284  3994 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 08:48:42.689  1284  3994 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 08:48:42.689  1284  3994 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 08:48:42.690  1284  3994 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 08:48:42.690  1284  3994 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 08:48:42.691  1284  3994 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 08:48:42.697  1284  3994 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 08:48:42.698  1284  3994 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 08:48:42.699  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 46 uptime_millis: 46 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.730  1034  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.731  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 12 uptime_millis: 12 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.765  1034  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.778  1034  5169 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 19 uptime_millis: 19 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 08:48:42.842  1034  2918 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.platform.statsd_java_boot) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:42.856  1034  3295 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (2938) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 45.054s
+10-15 08:48:42.857  1034  3687 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (2938) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=1 in void hjm.run() for 13.478s
+10-15 08:48:42.859  1034  3295 I NewModuleComplete: Received com.google.android.chimera.IntentOperation.NEW_MODULE(com.google.android.gms.chimera.PersistentIntentOperationService,2,true)
+10-15 08:48:42.862  1284  5159 I NewModuleHelper: Received com.google.android.chimera.container.NEW_MODULE_FINALIZE(2/0): com.google.android.gms.chimera.PersistentIntentOperationService,2,true
+10-15 08:48:42.923  4830  4858 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 08:48:42.924   480   586 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 08:48:42.925   950   950 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 08:48:42.925   950   950 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 08:48:42.925   950   950 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 08:48:42.927   950   950 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 08:48:42.927  3342  3440 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@4d4e864
+10-15 08:48:42.931   754   754 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 08:48:42.936   480   577 I RoleService: Granting default roles...
+10-15 08:48:42.936  1284  2988 I PeopleGalProvider: Gal directories started.
+10-15 08:48:42.938  1284  2988 I PeopleGalProvider: Method 1 completed.
+10-15 08:48:42.938  1284  2988 I PeopleGalProvider: Method 1 finished successfully.
+10-15 08:48:42.943  3819  5264 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 08:48:42.963  1034  3295 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 08:48:42.965  1034  5224 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 08:48:42.971  4830  4830 I HibernationPolicy: onStartJob
+10-15 08:48:42.973   978   978 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 08:48:42.975   978   978 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 08:48:42.983   978   978 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 08:48:42.989  4830  4869 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 08:48:42.999  4830  4830 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10166; state: ENABLED
+10-15 08:48:43.033  4908  5033 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

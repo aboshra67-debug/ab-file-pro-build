@@ -1,0 +1,4 @@
+10-15 08:48:44.380  4908  5033 I TestRunner: started: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:44.392  1034  2918 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(8, com.google.android.apps.messaging#com.google.android.apps.messaging) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:44.397  1034  2918 W bwft    : Succeeded but not registered: com.google.android.gms.auth.easyunlock [CONTEXT service_id=51 ]
+10-15 08:48:44.401  4908  5033 I TestRunner: finished: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

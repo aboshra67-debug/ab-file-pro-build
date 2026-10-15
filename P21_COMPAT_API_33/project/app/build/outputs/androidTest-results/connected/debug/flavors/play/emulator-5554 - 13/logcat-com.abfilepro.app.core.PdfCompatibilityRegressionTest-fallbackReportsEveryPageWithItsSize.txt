@@ -1,0 +1,2 @@
+10-15 08:48:44.599  4908  5033 I TestRunner: started: fallbackReportsEveryPageWithItsSize(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:44.612  4908  5033 I TestRunner: finished: fallbackReportsEveryPageWithItsSize(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

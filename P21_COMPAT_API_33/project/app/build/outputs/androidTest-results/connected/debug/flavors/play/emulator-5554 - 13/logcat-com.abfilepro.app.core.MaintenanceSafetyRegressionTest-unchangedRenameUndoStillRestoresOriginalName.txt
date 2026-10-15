@@ -1,0 +1,3 @@
+10-15 08:48:43.933  4908  5033 I TestRunner: started: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:43.934  1632  2301 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 227 items in 55866ms, 223 inserts 4 updates 0 deletes
+10-15 08:48:43.948  4908  5033 I TestRunner: finished: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

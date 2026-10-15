@@ -1,0 +1,2 @@
+10-15 08:48:45.035  4908  5033 I TestRunner: started: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 08:48:45.052  4908  5033 I TestRunner: finished: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

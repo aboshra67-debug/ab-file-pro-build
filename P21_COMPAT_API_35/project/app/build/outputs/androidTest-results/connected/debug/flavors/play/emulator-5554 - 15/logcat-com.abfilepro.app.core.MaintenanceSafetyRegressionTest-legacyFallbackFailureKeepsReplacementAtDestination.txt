@@ -1,0 +1,97 @@
+10-15 08:48:50.326  3800  3859 I TestRunner: started: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:50.329  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SimLockPreferenceController
+10-15 08:48:50.329  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 08:48:50.329  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.ManageTrustAgentsPreferenceController
+10-15 08:48:50.329  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ScreenPinningPreferenceController
+10-15 08:48:50.329  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagPagePreferenceController
+10-15 08:48:50.332  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.TemperatureUnitController
+10-15 08:48:50.332  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.FirstDayOfWeekController
+10-15 08:48:50.332  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.NumberingSystemController
+10-15 08:48:50.332  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.RegionalFooterPreferenceController
+10-15 08:48:50.335   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 08:48:50.335   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 08:48:50.335   554   827 D InetDiagMessage: Destroyed live tcp sockets for uids={10140} in 1ms
+10-15 08:48:50.335   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 08:48:50.339  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningPreviewPreferenceController
+10-15 08:48:50.340  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFontSizeController
+10-15 08:48:50.340   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 08:48:50.340   554   827 D InetDiagMessage: Destroyed live tcp sockets for uids={20140} in 5ms
+10-15 08:48:50.340  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningPresetController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningCustomController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningTypefaceController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningForegroundColorController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningForegroundOpacityController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningEdgeTypeController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningEdgeColorController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningBackgroundColorController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningBackgroundOpacityController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningWindowColorController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningWindowOpacityController
+10-15 08:48:50.341  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
+10-15 08:48:50.343  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FontWeightAdjustmentPreferenceController
+10-15 08:48:50.347  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.TopLevelNetworkEntryPreferenceController
+10-15 08:48:50.348  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.communal.CommunalPreferenceController
+10-15 08:48:50.348  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController
+10-15 08:48:50.348  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.TopLevelBatteryPreferenceController
+10-15 08:48:50.349  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.TopLevelStoragePreferenceController
+10-15 08:48:50.349  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TopLevelDisplayPreferenceController
+10-15 08:48:50.349  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TopLevelWallpaperPreferenceController
+10-15 08:48:50.349  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.TopLevelAccessibilityPreferenceController
+10-15 08:48:50.349  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.safetycenter.TopLevelSafetyCenterEntryPreferenceController
+10-15 08:48:50.349  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.TopLevelSecurityEntryPreferenceController
+10-15 08:48:50.350  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.TopLevelPrivacyEntryPreferenceController
+10-15 08:48:50.351  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.TopLevelLocationPreferenceController
+10-15 08:48:50.351  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accounts.TopLevelAccountEntryPreferenceController
+10-15 08:48:50.351  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController
+10-15 08:48:50.352  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.support.SupportPreferenceController
+10-15 08:48:50.353  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ContrastSelectorPreferenceController
+10-15 08:48:50.353  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HighTextContrastPreferenceController
+10-15 08:48:50.353  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ColorContrastFooterPreferenceController
+10-15 08:48:50.355  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreviewPreferenceController
+10-15 08:48:50.355  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonLocationPreferenceController
+10-15 08:48:50.355  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonGesturePreferenceController
+10-15 08:48:50.355  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuSizePreferenceController
+10-15 08:48:50.355  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuFadePreferenceController
+10-15 08:48:50.355  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuTransparencyPreferenceController
+10-15 08:48:50.357  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonFooterPreferenceController
+10-15 08:48:50.358  1542  2235 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:50.358  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.DefaultAppsPreferenceController
+10-15 08:48:50.358  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.ClonedAppsPreferenceController
+10-15 08:48:50.359  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.HibernatedAppsPreferenceController
+10-15 08:48:50.359  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.AppBatteryUsagePreferenceController
+10-15 08:48:50.359  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.appcompat.UserAspectRatioAppsPreferenceController
+10-15 08:48:50.360  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 08:48:50.365  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionTogglePreferenceController
+10-15 08:48:50.368  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionWorkSwitchController
+10-15 08:48:50.386  1462  1509 I AiAiEcho: Settings changed for uri: content://settings/secure/adaptive_charging_visible
+10-15 08:48:50.393  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.WebActionCategoryController
+10-15 08:48:50.393  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.InstantAppWebActionPreferenceController
+10-15 08:48:50.393  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.InstantAppAccountPreferenceController
+10-15 08:48:50.393   554   662 I RoleService: Granting default roles...
+10-15 08:48:50.395  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.DomainAppPreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.vrlistener.VrListenerScreenPreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadGoBackPreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadGoHomePreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadRecentAppsPreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadNotificationsPreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadSwitchAppsPreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TouchGesturesButtonPreferenceController
+10-15 08:48:50.396  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.GestureNavigationSettingsAssistController
+10-15 08:48:50.397  1080  1140 W OemUnlockPreferenceController: oem_unlock not supported.
+10-15 08:48:50.398  1080  1140 V GraphicsEnableAngleCtrl: Value of persist.graphics.egl is:
+10-15 08:48:50.406  1080  1140 D ForcePeakRefreshRateCtr: DEFAULT_REFRESH_RATE : 60.0 mPeakRefreshRate : 60.000004
+10-15 08:48:50.410  1077  1077 D CarrierSvcBindHelper: onPackageModified: com.google.android.settings.intelligence
+10-15 08:48:50.411  1077  1077 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 08:48:50.415  1462  1731 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 08:48:50.415  1462  1731 I AiAiEcho: EchoTargets:
+10-15 08:48:50.415  1462  1731 I AiAiEcho: Filtered by AiAi flag check:
+10-15 08:48:50.415  1462  1731 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:50.415  1462  1731 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:50.415  1462  1731 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 08:48:50.415  1462  1731 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 08:48:50.415  1462  1731 I AiAiEcho: EchoTargets:
+10-15 08:48:50.415  1462  1731 I AiAiEcho: Filtered by AiAi flag check:
+10-15 08:48:50.415  1462  1731 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:50.415  1462  1731 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:50.415  1462  1731 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 08:48:50.424  3800  3859 I TestRunner: finished: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

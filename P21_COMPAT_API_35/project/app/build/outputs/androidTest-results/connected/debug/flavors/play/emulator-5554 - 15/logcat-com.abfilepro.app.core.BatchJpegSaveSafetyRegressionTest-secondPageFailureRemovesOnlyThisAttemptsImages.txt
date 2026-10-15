@@ -1,0 +1,4 @@
+10-15 08:48:38.502  3800  3859 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:38.534  1541  1541 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+10-15 08:48:38.539  3800  3859 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 08:48:38.543  3800  3859 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

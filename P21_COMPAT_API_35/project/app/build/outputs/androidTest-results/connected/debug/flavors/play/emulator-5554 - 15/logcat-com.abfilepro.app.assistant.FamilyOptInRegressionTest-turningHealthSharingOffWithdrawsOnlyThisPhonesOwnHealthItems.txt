@@ -1,0 +1,7 @@
+10-15 08:48:37.752  3800  3859 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 08:48:37.776  2568  2590 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 08:48:37.780  3305  3437 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=56 ]
+10-15 08:48:37.783  1541  3506 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 08:48:37.785  1476  1746 I INV.SystemUI: showGestureNav
+10-15 08:48:37.787  3305  3438 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 08:48:37.787  3800  3859 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

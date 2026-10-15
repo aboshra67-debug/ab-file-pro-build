@@ -1,0 +1,38 @@
+10-15 08:48:51.363  3800  3859 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:51.375  4011  4011 V GraphicsEnvironment: Currently set values for:
+10-15 08:48:51.375  4011  4011 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 08:48:51.375  4011  4011 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 08:48:51.375  4011  4011 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 08:48:51.375  4011  4011 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 08:48:51.378  3305  3438 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.onegoogle#com.google.android.apps.messaging
+10-15 08:48:51.387  3305  3429 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@cf7cc99
+10-15 08:48:51.409  3305  3437 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mobileconfiguration#com.google.android.apps.messaging
+10-15 08:48:51.416  3311  3443 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:51.420  1542  2235 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:51.421  2609  4021 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.android.chrome
+10-15 08:48:51.437  2609  2609 I PhenotypeBackgroundRecv: Skipping com.google.android.partnersetup#com.android.chrome which doesn't use ProcessStable flags.
+10-15 08:48:51.449  1348  1348 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 08:48:51.452  1348  1348 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 08:48:51.458  1348  1865 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.inputmethod.latin
+10-15 08:48:51.465  1348  1348 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 08:48:51.468  4011  4011 W BatterySettingsContentProvider: create content provider from null
+10-15 08:48:51.474  1542  1542 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.searchbox.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 08:48:51.476  3305  3649 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:51.481  1270  2001 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.inputmethod.latin#com.google.android.inputmethod.latin) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:51.493  2939  2939 D ConfigUpdater: PhenotypeBroadcastReceiver : com.google.android.gms.phenotype.UPDATE
+10-15 08:48:51.498  3311  3469 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:51.513  1348  1865 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.inputmethod.latin
+10-15 08:48:51.525   554   998 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 08:48:51.527  1541  2678 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.finder_shared#com.google.android.gms [CONTEXT service_id=231 ]
+10-15 08:48:51.528  1541  2678 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.games [CONTEXT service_id=231 ]
+10-15 08:48:51.528  1541  2678 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.maps#com.google.android.gms [CONTEXT service_id=231 ]
+10-15 08:48:51.530  1541  2678 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.mobile_data_plan [CONTEXT service_id=231 ]
+10-15 08:48:51.530  1541  2678 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.libraries.spot#com.google.android.gms [CONTEXT service_id=231 ]
+10-15 08:48:51.533   907   907 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 08:48:51.534  3305  3429 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@99b4982
+10-15 08:48:51.535  1541  2678 E PhenotypeRegOp: Attempting to overwrite config package for com.google.android.gms.udc [CONTEXT service_id=231 ]
+10-15 08:48:51.539  1348  1348 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 08:48:51.539  1348  1865 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.inputmethod.latin
+10-15 08:48:51.544  4011  4011 W PrimesLoggerHolder: Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+10-15 08:48:51.546  1348  1348 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 08:48:51.551  3800  3859 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

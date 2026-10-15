@@ -1,0 +1,11 @@
+10-15 08:48:30.164  5020  5039 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 08:48:30.185  2270  3216 I Dialer  : VvmTaskExecutor - executing task com.android.voicemail.impl.ActivationTask@154515d
+10-15 08:48:30.187  2270  3216 I Dialer  : PreOMigrationHandler - ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, [e2f7d48dd2b5ca523e7313cf4ba0f6ea830b6281], UserHandle{0} already migrated
+10-15 08:48:30.194  1518  1518 I keystore: del USRPKEY_ab_file_pro_family_sync_token_v1 10077
+10-15 08:48:30.195  1518  1518 I keystore: del USRSKEY_ab_file_pro_family_sync_token_v1 10077
+10-15 08:48:30.196  1518  1518 I keystore: del USRCERT_ab_file_pro_family_sync_token_v1 10077
+10-15 08:48:30.196  1518  1518 I keystore: del CACERT_ab_file_pro_family_sync_token_v1 10077
+10-15 08:48:30.203  5048  5048 W zygote64: Unexpected CPU variant for X86 using defaults: x86_64
+10-15 08:48:30.247  5048  5048 I ContactsPerf: VoicemailContentProvider.onCreate start
+10-15 08:48:30.250  5048  5048 I ContactsPerf: VoicemailContentProvider.onCreate finish
+10-15 08:48:30.253  5020  5039 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

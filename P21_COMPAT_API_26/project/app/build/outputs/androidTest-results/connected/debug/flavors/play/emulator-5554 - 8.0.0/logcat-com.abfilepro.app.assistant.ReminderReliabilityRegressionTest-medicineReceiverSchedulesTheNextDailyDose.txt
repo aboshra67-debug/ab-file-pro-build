@@ -1,0 +1,7 @@
+10-15 08:48:30.652  5020  5039 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 08:48:30.658  5090  5090 W EasBundling: in EasBundling.init, isBundlingEnabled=true
+10-15 08:48:30.674  1813  5112 W System  : ClassLoader referenced unknown path:
+10-15 08:48:30.727  1777  1777 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 08:48:30.728  5048  5066 I ContactDirectoryManager: deleted 0 stale rows which don't have any relevant directory
+10-15 08:48:30.729  5048  5066 I ContactDirectoryManager: Discovered 0 contact directories in 275ms
+10-15 08:48:30.754  5020  5039 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

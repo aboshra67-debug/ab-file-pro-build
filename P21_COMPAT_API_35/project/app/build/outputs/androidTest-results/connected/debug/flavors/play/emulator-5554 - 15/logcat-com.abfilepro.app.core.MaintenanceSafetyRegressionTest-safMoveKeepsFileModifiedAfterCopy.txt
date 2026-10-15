@@ -1,0 +1,15 @@
+10-15 08:48:49.453  3800  3859 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.455  3694  3895 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b6b63cd1-81b3]" thread_id=65 ]
+10-15 08:48:49.455  3305  3429 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 08:48:49.458  3694  3832 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b6b63cd1-81b3]>Handler" thread_id=63 ]
+10-15 08:48:49.459  3694  3832 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b6b63cd1-81b3]>Handler" thread_id=63 ]
+10-15 08:48:49.459  3694  3832 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b6b63cd1-81b3]" thread_id=63 ]
+10-15 08:48:49.460  3694  3832 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b6b63cd1-81b3]" thread_id=63 ]
+10-15 08:48:49.464  3694  3832 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b6b63cd1-81b3]>Handler" thread_id=63 ]
+10-15 08:48:49.472  3985  3985 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 08:48:49.476  3694  3832 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=63 ]
+10-15 08:48:49.476  3305  3650 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.apps.messaging
+10-15 08:48:49.478  3305  3410 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 08:48:49.481  3305  3429 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@7c78c53
+10-15 08:48:49.493  3305  3438 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=0040eb8b-c869-4e4e-84a7-c58ee22a3fac, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 08:48:49.568  3800  3859 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

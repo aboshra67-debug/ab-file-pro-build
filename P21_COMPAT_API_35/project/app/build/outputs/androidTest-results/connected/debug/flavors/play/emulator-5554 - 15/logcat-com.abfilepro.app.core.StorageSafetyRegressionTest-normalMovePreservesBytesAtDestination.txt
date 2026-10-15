@@ -1,0 +1,3 @@
+10-15 08:48:52.038  3800  3859 I TestRunner: started: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:52.048   554   565 I system_server: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 29(592KB) LOS objects, 46% free, 27MB/51MB, paused 19.891ms,10.226ms total 488.255ms
+10-15 08:48:52.061  3800  3859 I TestRunner: finished: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

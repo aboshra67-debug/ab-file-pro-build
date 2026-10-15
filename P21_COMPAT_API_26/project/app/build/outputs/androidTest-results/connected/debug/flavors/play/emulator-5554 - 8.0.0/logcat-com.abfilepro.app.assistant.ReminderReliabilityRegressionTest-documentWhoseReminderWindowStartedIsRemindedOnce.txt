@@ -1,0 +1,8 @@
+10-15 08:48:30.342  5020  5039 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 08:48:30.358  2270  3216 I Dialer  : TelephonyMangerCompat.setVisualVoicemailSmsFilterSettings - using TelephonyManager
+10-15 08:48:30.366  2270  3216 I Dialer  : TelephonyMangerCompat.sendVisualVoicemailSms - using TelephonyManager
+10-15 08:48:30.421  5048  5066 D ContactsDatabaseHelper: WAL enabled for profile.db: true
+10-15 08:48:30.467  5073  5073 W zygote64: Unexpected CPU variant for X86 using defaults: x86_64
+10-15 08:48:30.526  5073  5073 I GoogleHttpClient: GMS http client unavailable, use old client
+10-15 08:48:30.542  5090  5090 W zygote64: Unexpected CPU variant for X86 using defaults: x86_64
+10-15 08:48:30.546  5020  5039 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

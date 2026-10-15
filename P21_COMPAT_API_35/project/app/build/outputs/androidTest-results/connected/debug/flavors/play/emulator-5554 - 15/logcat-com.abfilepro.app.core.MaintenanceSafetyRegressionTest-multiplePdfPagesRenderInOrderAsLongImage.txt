@@ -1,0 +1,12 @@
+10-15 08:48:49.849  3800  3859 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.851  1541  2678 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+10-15 08:48:49.854  1541  2678 I GmsDebugLogger: [83] 1 [maps_core]
+10-15 08:48:49.861  3305  3649 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.apps.messaging.onboarding#com.google.android.apps.messaging
+10-15 08:48:49.866  3305  3464 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@63f09c1
+10-15 08:48:49.867  3305  3305 I PhenotypeBackgroundRecv: Skipping com.google.lighter.android#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 08:48:49.870  3305  3429 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@ef180fd
+10-15 08:48:49.871  1541  2723 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: mlkit.barcode.ui:0
+10-15 08:48:49.873  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:49.903  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebef810
+10-15 08:48:49.903  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebef810
+10-15 08:48:49.915  3800  3859 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

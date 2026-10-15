@@ -1,0 +1,3 @@
+10-15 08:48:49.651  3800  3859 I TestRunner: started: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.655  1541  2063 I GmsDebugLogger: [46] container:2423359190800
+10-15 08:48:49.663  3800  3859 I TestRunner: finished: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

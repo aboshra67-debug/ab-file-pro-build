@@ -1,0 +1,3 @@
+10-15 08:48:49.015  3800  3859 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.028  3800  3811 I p.p21mainttrial: Background concurrent mark compact GC freed 1444KB AllocSpace bytes, 31(2528KB) LOS objects, 49% free, 6458KB/12MB, paused 6.785ms,1.351ms total 105.775ms
+10-15 08:48:49.044  3800  3859 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

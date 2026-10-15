@@ -1,0 +1,7 @@
+10-15 08:48:49.917  3800  3859 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.921  1387  1397 I .apps.wellbeing: Background concurrent mark compact GC freed 7449KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 6170KB/12MB, paused 28.721ms,9.101ms total 292.895ms
+10-15 08:48:49.925  1541  2723 I ChimeraConfigurator: Detected pending changes for urgent request: [mlkit.barcode.ui]. Pending module sets: container:2423359190800+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2627305025100800+tflite_dynamite
+10-15 08:48:49.928  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Camera2/Camera2.apk' with 1 weak references
+10-15 08:48:49.928  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/EasterEgg/EasterEgg.apk' with 1 weak references
+10-15 08:48:49.929  1387  1399 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MtpService/MtpService.apk' with 1 weak references
+10-15 08:48:49.933  3800  3859 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

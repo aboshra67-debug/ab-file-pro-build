@@ -1,0 +1,14 @@
+10-15 08:48:38.329  4908  5033 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:38.331  3342  3438 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@4d4e864
+10-15 08:48:38.343  1284  3451 I PeopleGalProvider: Gal directories started.
+10-15 08:48:38.347  1034  4803 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 08:48:38.351  1034  3293 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 08:48:38.352  1284  3451 I PeopleGalProvider: Method 1 completed.
+10-15 08:48:38.352  1284  3451 I PeopleGalProvider: Method 1 finished successfully.
+10-15 08:48:38.362   978   978 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 08:48:38.362   978   978 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 08:48:38.363  4830  4869 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 08:48:38.399   978   978 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 08:48:38.401  3819  5142 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 08:48:38.409  4908  5033 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 08:48:38.420  4908  5033 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

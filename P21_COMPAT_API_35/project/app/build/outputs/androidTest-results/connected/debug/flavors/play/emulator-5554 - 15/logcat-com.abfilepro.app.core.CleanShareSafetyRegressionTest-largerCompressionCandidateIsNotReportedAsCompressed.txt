@@ -1,0 +1,196 @@
+10-15 08:48:41.679  3800  3859 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:41.707  1541  3941 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 08:48:41.713  1541  3941 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 08:48:41.726  1541  3941 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 08:48:41.739  1541  2827 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.reminders, using defaults.
+10-15 08:48:41.742  1541  2827 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.security.safebrowsing#com.google.android.gms, using defaults.
+10-15 08:48:41.757  1270  3478 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:41.767  1155  1196 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.gms]
+10-15 08:48:41.767  1541  2105 I AlarmManager: setExactAndAllowWhileIdle [name: RemindersNSREFRESH_TIME_REMINDERS_ALARM type: 0 triggerAtMillis: 1792108800000]
+10-15 08:48:41.770  1462  1462 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.gms.
+10-15 08:48:41.775  1155  1196 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.gms
+10-15 08:48:41.778  1462  2201 I AiAiEcho: AppIndexer Package:[com.google.android.gms] UserProfile:[0] Enabled:[true].
+10-15 08:48:41.778  1462  2201 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.gms], userId:[0], reason:[package is updated.].
+10-15 08:48:41.798  1541  3863 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 08:48:41.798  1541  3863 I Pay     : Failed to get account info [CONTEXT service_id=198 ]
+10-15 08:48:41.835   554   554 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 08:48:41.835   554   554 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 08:48:41.857   554  1027 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+10-15 08:48:41.869  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:41.908  3305  3464 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@99b4982
+10-15 08:48:41.924  1541  1621 I PeopleGalProvider: Gal directories started.
+10-15 08:48:41.929  1541  1621 I PeopleGalProvider: Method 1 completed.
+10-15 08:48:41.929  1541  1621 I PeopleGalProvider: Method 1 finished successfully.
+10-15 08:48:41.936  2568  2590 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 08:48:41.936  2568  2590 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 08:48:41.928  2568  2568 W binder:2568_2: type=1400 audit(0.0:197): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 08:48:41.932  2568  2568 W binder:2568_2: type=1400 audit(0.0:198): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 08:48:41.954  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocation.mdd.MddDownloadScheduleService.schedule_mdd_task is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.954  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocation.service.SemanticLocationCleanupJob.SemanticLocationRemovedAccountsCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.985  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.geller.GellerCleanupService.GellerCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.986  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.settings.LocationHistoryActiveProcessingService.LocationHistoryActiveProcessing is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.989  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.settings.SettingsSyncService.OdlhSettingsSyncTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.991  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.settings.OdlhTombstonesCleanupJob.OdlhTombstonesCleanupJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.991  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhDatabaseCleanupJob.OdlhDatabaseCleanup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.992  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.edit.EditMergeJob.EditMergeJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.993  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhRemovedAccountsCleanupJob.OdlhRemovedAccountsCleanup is scheduled to run EVERY_14_DAYS [CONTEXT service_id=173 ]
+10-15 08:48:41.994  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.OdlhUserEditSyncJob.OdlhUserEditSync is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.995  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.monitoring.MonitoringService.MonitoringService is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.996  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.storevisits.StoreVisitsProcessingService.StoreVisitsProcessing is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+10-15 08:48:41.997  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.wifi.WifiPlaceVisitProcessingService.WifiPlaceVisit is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.997  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.uploads.BatchDeidentifiedDataUploadService.BatchDeidentifiedDataUpload is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+10-15 08:48:41.997  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.historicalbusyness.HistoricalBusynessProcessingService.HistoricalBusyness is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:41.997  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpInferenceService.PulpInference is scheduled to run EVERY_7_DAYS [CONTEXT service_id=173 ]
+10-15 08:48:42.002  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpMddDownloadScheduleService.PulpMddRefreshDownloadTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.004   554  1027 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 08:48:42.011  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.pulp.PulpMddMaintenanceService.PulpMddMaintenanceTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.012  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.deidentifieddata.pulptraining.PulpTrainingService.PulpTraining is scheduled to run EVERY_7_DAYS [CONTEXT service_id=173 ]
+10-15 08:48:42.013  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.topplace.TopPlaceProcessingService.TopPlaceProcessing is scheduled to run EVERY_3_DAYS [CONTEXT service_id=173 ]
+10-15 08:48:42.014  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebe89d0
+10-15 08:48:42.015  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebe89d0
+10-15 08:48:42.015  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.017  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedScheduleService.FederatedLocation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.018  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebe7850
+10-15 08:48:42.019  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedTaskIdentityDataService.FederatedTaskIdentityDataService is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.019  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebe7850
+10-15 08:48:42.021  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.FederatedJobHistoryService.FederatedJobHistoryService is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.024  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceFirstPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.027  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceSecondPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.027  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceThirdPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.030  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceFourthPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.034  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.BrellaInvocationService.BrellaInvocationServiceFifthPopulation is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.037  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddMaintenanceService.RegionMddMaintenanceTask is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.039  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.federated.regionfetcher.RegionMddDownloadScheduleService.RegionMddRefreshDownloadTask is scheduled to run EVERY_6_HOURS [CONTEXT service_id=173 ]
+10-15 08:48:42.039  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.db.backup.OdlhBackupService.OdlhBackup is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.040  1541  3941 I SemanticLocation: [Scheduler] Periodic Task com.google.android.gms.semanticlocationhistory.edit.EditUploadJob.EditUploadJob is scheduled to run EVERY_DAY [CONTEXT service_id=173 ]
+10-15 08:48:42.044  1270  3478 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.047  1541  3863 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 08:48:42.047  1541  3863 W Pay     : [eMoney card recovery task] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+10-15 08:48:42.060  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.061  1541  3941 I LocationHistory: [ModuleInit] Triggering settings sync one off task [CONTEXT service_id=314 ]
+10-15 08:48:42.070  1541  2105 V SmartDevice: [ModuleInitializer] ModuleInitializer got intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) } with flag 2
+10-15 08:48:42.071  1541  2105 W ChimeraUtils: Module com.google.android.gms.smartdevice missing resource null(0)
+10-15 08:48:42.109  1541  2105 D SmartDevice: [ModuleInitializer] Module init - scheduling buffered logs cleanup task
+10-15 08:48:42.109  1541  2105 I SmartDevice: [CleanBufferedLogsService] Periodic task upload_buffered_logs_periodic scheduled!
+10-15 08:48:42.112  1541  1574 I gle.android.gms: Background concurrent mark compact GC freed 7727KB AllocSpace bytes, 92(4676KB) LOS objects, 49% free, 14MB/28MB, paused 4.714ms,1.075ms total 203.306ms
+10-15 08:48:42.121  1541  3867 I TelephonySpamInit: On boot completed TelephonySpam module initialized [CONTEXT service_id=150 ]
+10-15 08:48:42.121  1541  3867 I TelephonySpamInit: onModuleUpdated TelephonySpam module initialized [CONTEXT service_id=150 ]
+10-15 08:48:42.121  1541  3867 I SpamListSync: scheduleSyncTasks [CONTEXT service_id=150 ]
+10-15 08:48:42.121  1541  3867 I SpamListSync: schedulePeriodicTask [CONTEXT service_id=150 ]
+10-15 08:48:42.122  1541  2827 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.telephonyspam, using defaults.
+10-15 08:48:42.124  1541  3867 I SpamListSync: scheduleOneTimeTask [CONTEXT service_id=150 ]
+10-15 08:48:42.124  1541  3867 I ThreadNetworkModuleInit: Initializing runtime states: 2 [CONTEXT service_id=305 ]
+10-15 08:48:42.124  1541  3867 I ThreadNetworkModuleInit: Enable component com.google.android.gms.threadnetwork.ui.ShareCredentialsActivity [CONTEXT service_id=305 ]
+10-15 08:48:42.127  1270  2843 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.131  2568  2590 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 08:48:42.135  1541  3867 I ThreadBrSynchronizer: Scheduled periodic Border Router sync task: PeriodicBrSync [CONTEXT service_id=305 ]
+10-15 08:48:42.147  1270  2036 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.thunderbird, using defaults.
+10-15 08:48:42.148  1541  2827 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.thunderbird, using defaults.
+10-15 08:48:42.156  1270  3478 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.157  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebec1d0
+10-15 08:48:42.158  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebec1d0
+10-15 08:48:42.160  1541  3863 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 08:48:42.160  1541  3863 I Pay     : PendingSeProvisioningTaskOperation: Active account not found! [CONTEXT service_id=198 ]
+10-15 08:48:42.160  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.161  1541  3863 W Pay     : Mdl not supported. Not triggering periodic MSO refresh task. [CONTEXT service_id=198 ]
+10-15 08:48:42.161  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebe9990
+10-15 08:48:42.162  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebe9990
+10-15 08:48:42.168  1541  1576 W System  : A resource failed to call close.
+10-15 08:48:42.169  1541  1576 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+10-15 08:48:42.171  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.172  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebe89d0
+10-15 08:48:42.172  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebe89d0
+10-15 08:48:42.174  1270  1270 I Thunderbird: starting outgoing sms listener [CONTEXT service_id=226 ]
+10-15 08:48:42.181   554  2195 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 08:48:42.181  1541  2827 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.trustagent.activeunlock.primary#com.google.android.gms, using defaults.
+10-15 08:48:42.187  1462  3065 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_provider
+10-15 08:48:42.191  1462  3065 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_target
+10-15 08:48:42.196  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.197  1462  1731 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 08:48:42.198  1462  1731 I AiAiEcho: EchoTargets:
+10-15 08:48:42.198  1462  1731 I AiAiEcho: Filtered by AiAi flag check:
+10-15 08:48:42.198  1462  1731 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.198  1462  1731 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.199  1462  1731 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 08:48:42.199  1462  1731 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 08:48:42.199  1462  1731 I AiAiEcho: EchoTargets:
+10-15 08:48:42.199  1462  1731 I AiAiEcho: Filtered by AiAi flag check:
+10-15 08:48:42.199  1462  1731 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.199  1462  1731 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.199  1462  1731 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 08:48:42.199  1462  1731 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 08:48:42.199  1462  1731 I AiAiEcho: EchoTargets:
+10-15 08:48:42.199  1462  1731 I AiAiEcho: Filtered by AiAi flag check:
+10-15 08:48:42.199  1462  1731 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.199  1462  1731 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.199  1462  1731 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 08:48:42.200  1462  1731 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 08:48:42.200  1462  1731 I AiAiEcho: EchoTargets:
+10-15 08:48:42.200  1462  1731 I AiAiEcho: Filtered by AiAi flag check:
+10-15 08:48:42.200  1462  1731 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.200  1462  1731 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 08:48:42.200  1462  1731 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 08:48:42.204  1541  3867 W ActiveUnlock: Tried to set empty triggers [CONTEXT service_id=327 ]
+10-15 08:48:42.205  1541  3867 W ChimeraUtils: Module com.google.android.gms.activeunlock_primary missing resource null(0)
+10-15 08:48:42.207  1270  1270 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 08:48:42.207  1270  1270 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 08:48:42.213  1462  1731 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-15 08:48:42.215  1155  1155 D SsBaseTemplateCard: No text view can be set up
+10-15 08:48:42.215  1155  1155 D SsBaseTemplateCard: Passed-in item info is null
+10-15 08:48:42.215  1155  1155 D SsBaseTemplateCard: Passed-in item info is null
+10-15 08:48:42.215  1155  1155 D SsBaseTemplateCard: Passed-in item info is null
+10-15 08:48:42.215  1155  1155 I SsBaseTemplateCard: Secondary card pane is null
+10-15 08:48:42.216  1462  1731 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-15 08:48:42.219  1462  1731 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-15 08:48:42.219   907   907 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-15 08:48:42.221  1462  1731 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-15 08:48:42.223  1541  2105 I Trustlet_Onbody: onbodyAlreadySet: false [CONTEXT service_id=294 ]
+10-15 08:48:42.223   907   907 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-15 08:48:42.224  1541  2105 I Trustlet_Onbody: isOnbodySuggestionEnabledByPhenotype: false [CONTEXT service_id=294 ]
+10-15 08:48:42.224  1541  2105 I Trustlet_Onbody: isTrustAgentEnabled: etys@2f0fe51[status=SUCCESS, result=[true]] [CONTEXT service_id=294 ]
+10-15 08:48:42.224  1541  2105 I Trustlet_Onbody: Trustlet onbody is supported. [CONTEXT service_id=294 ]
+10-15 08:48:42.225  1541  2105 I Trustlet_Onbody: isSupported: true [CONTEXT service_id=294 ]
+10-15 08:48:42.225  1541  2105 I Trustlet_Onbody: isChromeOsDevice: false [CONTEXT service_id=294 ]
+10-15 08:48:42.231  1155  1155 D SsBaseTemplateCard: No text view can be set up
+10-15 08:48:42.231  1155  1155 D SsBaseTemplateCard: Passed-in item info is null
+10-15 08:48:42.231  1155  1155 D SsBaseTemplateCard: Passed-in item info is null
+10-15 08:48:42.231  1155  1155 D SsBaseTemplateCard: Passed-in item info is null
+10-15 08:48:42.231  1155  1155 I SsBaseTemplateCard: Secondary card pane is null
+10-15 08:48:42.241  1270  3478 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.242  1155  1628 D EGL_emulation: app_time_stats: avg=5027.55ms min=5027.55ms max=5027.55ms count=1
+10-15 08:48:42.245  1541  3863 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 08:48:42.248  1541  3863 W Pay     : [eMoney txn sync] exiting without init: active tapandpay account not found! [CONTEXT service_id=198 ]
+10-15 08:48:42.271  1541  3863 I Pay     : Requested check of feature migrations. [CONTEXT service_id=198 ]
+10-15 08:48:42.333  1270  2843 I UsageReportingOptionsSt: User 0 is opted-in? false [CONTEXT service_id=41 ]
+10-15 08:48:42.336  1270  2843 I UsageReportingOptionsSt: Updating global setting to unknown [CONTEXT service_id=41 ]
+10-15 08:48:42.342  1270  3478 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.udc, using defaults.
+10-15 08:48:42.364  1541  3863 I Pay     : Requested immediate check to see whether to show pay module downloading complete notification. [CONTEXT service_id=198 ]
+10-15 08:48:42.371   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 08:48:42.375   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 08:48:42.389   554   827 D InetDiagMessage: Destroyed live tcp sockets for uids={10101} in 18ms
+10-15 08:48:42.417  3340  3350 W System  : A resource failed to call AbstractCursor.close.
+10-15 08:48:42.432  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebe7850
+10-15 08:48:42.432  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebe7850
+10-15 08:48:42.434  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.437  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebec1d0
+10-15 08:48:42.438  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebec1d0
+10-15 08:48:42.438  1541  2105 I Wear_Controller: Wearable module requires a companion app to be installed.
+10-15 08:48:42.440  1541  2105 I Wear_Controller: onStartup - Wear is not available on this device.
+10-15 08:48:42.448  1077  1077 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 08:48:42.449  1077  1077 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 08:48:42.468   910   922 I PermissionControllerServiceImpl: Updating user sensitive for uid 10143
+10-15 08:48:42.472  1155  1196 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.gms]
+10-15 08:48:42.478  1155  1196 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.gms
+10-15 08:48:42.481   907   907 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 08:48:42.482  1462  1462 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.gms.
+10-15 08:48:42.484   554   554 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 08:48:42.485   554   554 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 08:48:42.489  1077  1077 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 08:48:42.490  1270  1270 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+10-15 08:48:42.491  1462  2287 I AiAiEcho: AppIndexer Package:[com.google.android.gms] UserProfile:[0] Enabled:[true].
+10-15 08:48:42.494  1462  2287 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.gms], userId:[0], reason:[package is updated.].
+10-15 08:48:42.495  1270  1270 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+10-15 08:48:42.502  3800  3859 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.502  3800  3859 D pdf_document_jni: Deleting Document: 0x77d58ebe9990
+10-15 08:48:42.503  3800  3859 D pdf_document_jni: Destroyed Document: 0x77d58ebe9990
+10-15 08:48:42.506  3800  3859 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

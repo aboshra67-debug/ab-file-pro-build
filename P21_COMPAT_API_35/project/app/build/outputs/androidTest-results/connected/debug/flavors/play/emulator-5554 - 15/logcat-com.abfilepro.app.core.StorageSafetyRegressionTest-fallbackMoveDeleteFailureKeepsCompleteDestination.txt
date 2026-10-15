@@ -1,0 +1,15 @@
+10-15 08:48:52.124  3800  3859 I TestRunner: started: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:52.144  1348  1355 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024022600_2[2]
+10-15 08:48:52.144  1348  1355 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024022600_2[2]
+10-15 08:48:52.144  1348  1355 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024051500_1[2]
+10-15 08:48:52.144  1348  1355 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024051500_1[2]
+10-15 08:48:52.149  1348  1348 I DownloadManager: DownloadManager.startDownload():484 start download of __KLP_delight__en-840
+10-15 08:48:52.154  1348  1648 I SP      : Successfully got manifest for emoji-manifest: manifests:emoji-2024051320
+10-15 08:48:52.158   554  1456 D ConnectivityService: requestNetwork for uid/pid:10152/1348 activeRequest: null callbackRequest: 132 [NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 08:48:52.164   554   820 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 08:48:52.168   554   820 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 08:48:52.169   554   820 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 08:48:52.169   554   820 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 08:48:52.169   554   827 D ConnectivityService: NetReassign [133 : null → 100] [c 0] [a 1] [i 9]
+10-15 08:48:52.173   554   564 W system_server: Missing inline cache for void android.net.LinkProperties.writeToParcel(android.os.Parcel, int)
+10-15 08:48:52.173  3800  3859 I TestRunner: finished: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

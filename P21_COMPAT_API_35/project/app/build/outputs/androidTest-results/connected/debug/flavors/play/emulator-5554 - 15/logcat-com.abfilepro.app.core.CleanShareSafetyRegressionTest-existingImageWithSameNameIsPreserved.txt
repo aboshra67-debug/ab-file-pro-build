@@ -1,0 +1,4 @@
+10-15 08:48:42.998  3800  3859 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:43.032  1270  1270 I GCoreUlr: Unbound from all signal providers.
+10-15 08:48:43.032  1270  1270 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 08:48:43.046  3800  3859 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

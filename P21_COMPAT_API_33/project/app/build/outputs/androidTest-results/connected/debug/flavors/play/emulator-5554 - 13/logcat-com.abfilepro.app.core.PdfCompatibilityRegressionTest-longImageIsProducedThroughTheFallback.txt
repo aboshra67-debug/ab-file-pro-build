@@ -1,0 +1,34 @@
+10-15 08:48:44.403  4908  5033 I TestRunner: started: longImageIsProducedThroughTheFallback(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:44.404  1034  2918 W bwft    : Succeeded but not registered: com.google.android.gms.tron.metrics [CONTEXT service_id=51 ]
+10-15 08:48:44.426  3342  3444 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:44.433  3342  3342 W BugleRcsEngine: [2] benk.i: Unable to send RCS extension log
+10-15 08:48:44.442  1034  2918 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.apps.drive.android#com.google.android.apps.docs) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:44.476  1034  3736 D nativeloader: Configuring classloader-namespace for other apk . target_sdk_version=33, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-15 08:48:44.484   480  1783 D ConnectivityService: requestNetwork for uid/pid:10120/1034 activeRequest: null callbackRequest: 130 [NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-15 08:48:44.487   480   692 D ConnectivityService: NetReassign [131 : null → 100] [c 0] [a 2] [i 1]
+10-15 08:48:44.488   480   692 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 0]
+10-15 08:48:44.490  1705  2479 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:44.493   480   685 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:44.493   480   685 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:44.493   480   685 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:44.493   480   685 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:44.496  1034  3736 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+10-15 08:48:44.511  3342  3342 W BugleRcsEngine: [2] benk.i: Unable to send RCS extension log
+10-15 08:48:44.511  1034  2918 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.phenotype) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:44.517  1034  2918 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 08:48:44.520  3342  3433 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:44.545   283  5309 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 08:48:44.549   283  5310 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 08:48:44.549   283  5310 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x70f839409190
+10-15 08:48:44.550   283  5310 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+10-15 08:48:44.550   283  5311 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 08:48:44.556   283  5311 I resolv  : res_nsend: used send_dg 164 terrno: 0
+10-15 08:48:44.556   283  5311 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+10-15 08:48:44.561  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.565  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.566  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.568  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.570  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.571  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.572  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.573  4908  5033 I TestRunner: finished: longImageIsProducedThroughTheFallback(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

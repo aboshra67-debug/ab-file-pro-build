@@ -1,0 +1,4 @@
+10-15 08:48:44.574  4908  5033 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:44.575  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.577  1034  5307 D TrafficStats: tagSocket(251) with statsTag=0x1203, statsUid=10120
+10-15 08:48:44.590  4908  5033 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

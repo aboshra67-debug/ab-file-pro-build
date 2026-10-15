@@ -1,0 +1,3 @@
+10-15 08:48:44.100  4908  5033 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:44.134  1034  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:9 result: 1 elapsed_millis: 58 uptime_millis: 58 exec_start_elapsed_seconds: 113 [CONTEXT service_id=218 ]
+10-15 08:48:44.156  4908  5033 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

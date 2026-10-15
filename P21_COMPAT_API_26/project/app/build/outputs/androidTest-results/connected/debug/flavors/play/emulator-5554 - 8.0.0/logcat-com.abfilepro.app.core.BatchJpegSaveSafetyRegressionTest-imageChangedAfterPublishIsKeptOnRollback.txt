@@ -1,0 +1,39 @@
+10-15 08:48:31.549  5020  5039 I TestRunner: started: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 08:48:31.572  2630  2630 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 08:48:31.577  2630  2630 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 08:48:31.588  2630  2630 I AudioController: Using mInputStreamFactoryBuilder
+10-15 08:48:31.595  2630  2630 I MicroDetectionWorker: onReady
+10-15 08:48:31.609  2630  2703 I MicroRecognitionRunner: Starting detection.
+10-15 08:48:31.610  2630  2707 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@1b446bc
+10-15 08:48:31.618  1512  5163 I AudioFlinger: AudioFlinger's thread 0xe5f03900 tid=5163 ready to run
+10-15 08:48:31.628  2630  2707 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@1b446bc
+10-15 08:48:31.630  2630  2630 I MicroDetectionWorker: onReady
+10-15 08:48:31.631  2630  2707 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@1b446bc
+10-15 08:48:31.643  2630  2703 I MicroRecognitionRunner: Detection finished
+10-15 08:48:31.644  2630  2703 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 08:48:31.645  2630  2894 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 08:48:31.648  2630  2703 W ErrorProcessor: 	... 9 more
+10-15 08:48:31.648  2630  2703 I AudioController: internalShutdown
+10-15 08:48:31.651  2630  2630 I MicroDetector: Keeping mic open: false
+10-15 08:48:31.651  2630  2630 I MicroDetectionWorker: #onError(false)
+10-15 08:48:31.651  2630  2852 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 08:48:31.677  5020  5039 I TestRunner: finished: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

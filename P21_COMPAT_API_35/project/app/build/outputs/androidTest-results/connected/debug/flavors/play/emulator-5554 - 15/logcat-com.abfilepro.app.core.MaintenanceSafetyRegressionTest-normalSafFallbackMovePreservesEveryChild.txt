@@ -1,0 +1,37 @@
+10-15 08:48:49.171  3800  3859 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.186  3985  3985 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 08:48:49.206  1541  3728 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 08:48:49.219  1541  2063 I ChimeraConfigurator: Detected pending changes for urgent request: []. Pending module sets: container:2423359190800+maps_core+mlkit.barcode.ui+vision.barcode,tflite_dynamite:2627305025100800+tflite_dynamite
+10-15 08:48:49.252  1270  2935 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1792054129252) [CONTEXT service_id=51 ]
+10-15 08:48:49.260  1541  3728 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 08:48:49.306  1270  2935 I HeterodyneSyncScheduler: Scheduling a periodic sync task every 14400 seconds, with flex of 1800 seconds [CONTEXT service_id=51 ]
+10-15 08:48:49.308  1541  2063 I GmsDebugLogger: [73] 1801
+10-15 08:48:49.312  1270  2935 I HeterodyneSyncScheduler: Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-15 08:48:49.316  1541  2063 W ZappDownloader: No successful Zapp module downloads for requested modules [VisionBarcode.optional:242335100800:permitMetered, TfliteDynamiteDynamite.integ:262730502100800, MapsCoreDynamite.integ:241610202100800, MlkitBarcodeUi.optional:242335100800:permitMetered].
+10-15 08:48:49.316  1541  2063 I GmsDebugLogger: [30] [VisionBarcode.optional:242335100800],[TfliteDynamiteDynamite.integ:262730502100800],[MapsCoreDynamite.integ:241610202100800],[MlkitBarcodeUi.optional:242335100800]
+10-15 08:48:49.323  1541  2063 I ChimeraConfigService: Scheduling checkin for one-off execution between [3300,43201] seconds from now (1792054129323) [CONTEXT service_id=264 ]
+10-15 08:48:49.324  1541  2063 I ChimeraConfigurator: Update complete: success
+10-15 08:48:49.345  1541  2063 I GmsModuleFndr: Beginning GMS chimera module scan
+10-15 08:48:49.351  1541  2063 I ModuleSetResolution: Computing pending module set with APKs: [[AdsFdrDynamite.integ:241199801100000], [Cronetdynamite:242335190800], [Dynamiteloader:242335190000], [Dynamitemodulesa:242335190000], [Dynamitemodulesc:242335190000], [Googlecertificates:242335190000], [Mapsdynamite:242335190000], [Measurementdynamite:242335190000]]
+10-15 08:48:49.374  1541  2063 I ModuleSetResolution: Pending container module APKs: []
+10-15 08:48:49.375  1541  2063 I ModuleSetResolution: Pending non-container module APKs: []
+10-15 08:48:49.385  3305  3410 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 08:48:49.387  3305  3408 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=48 ]
+10-15 08:48:49.387  3305  3437 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 08:48:49.387  3305  3411 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=50 ]
+10-15 08:48:49.388  3305  3406 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=47 ]
+10-15 08:48:49.401  3305  3410 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 08:48:49.405  3305  3650 W BugleAction: Failed to get msisdn from Bugle
+10-15 08:48:49.407  3305  3439 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 08:48:49.408  3305  3650 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 08:48:49.410  3305  3650 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 08:48:49.422  3305  3650 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 08:48:49.433  3305  3650 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 08:48:49.438  3305  3650 W BugleAction: No default number, returning empty msisdn
+10-15 08:48:49.439  3305  3650 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=74 ]
+10-15 08:48:49.439  3305  3437 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 08:48:49.442  3305  3437 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 08:48:49.445  1541  2063 I ChimeraCfgMgr: Features changed, regenerating config
+10-15 08:48:49.446  3305  3437 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 08:48:49.447  3305  3437 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 08:48:49.449  3800  3859 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

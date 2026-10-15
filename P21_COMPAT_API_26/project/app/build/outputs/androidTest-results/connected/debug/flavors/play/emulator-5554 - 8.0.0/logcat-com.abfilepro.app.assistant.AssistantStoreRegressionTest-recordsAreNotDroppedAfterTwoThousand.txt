@@ -1,0 +1,13 @@
+10-15 08:48:29.646  5020  5039 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 08:48:29.828  1619  1655 E memtrack: Couldn't load memtrack module
+10-15 08:48:29.828  1619  1655 W android.os.Debug: failed to get memory consumption info: -1
+10-15 08:48:29.863  5020  5025 I zygote64: Do partial code cache collection, code=59KB, data=42KB
+10-15 08:48:29.873  5020  5025 I zygote64: After code cache collection, code=59KB, data=42KB
+10-15 08:48:29.873  5020  5025 I zygote64: Increasing code cache capacity to 256KB
+10-15 08:48:29.940  1777  3103 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 08:48:29.940  1777  3103 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-15 08:48:29.940  1777  3103 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-15 08:48:29.956  1777  3103 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 08:48:29.956  1777  3103 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-15 08:48:29.956  1777  3103 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-15 08:48:30.020  5020  5039 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

@@ -1,0 +1,2 @@
+10-15 08:48:38.044  5020  5039 I TestRunner: started: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:38.064  5020  5039 I TestRunner: finished: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

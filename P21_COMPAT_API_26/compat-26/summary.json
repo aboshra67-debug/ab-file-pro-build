@@ -1,0 +1,8 @@
+{
+  "api": "26",
+  "android_tests": 111,
+  "android_failed": 1,
+  "gradle_exit": 1,
+  "qa_launch_ok": true,
+  "qa_crash_or_anr": false
+}

@@ -1,0 +1,190 @@
+10-15 08:48:38.572  3800  3859 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:38.771  1541  3503 W ChimeraUtils: Module com.google.android.gms.container missing resource null(0)
+10-15 08:48:38.774  1541  2723 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.common.analytics.CoreAnalyticsLogEventOperation for action com.google.android.chimera.MODULE_CONFIGURATION_CHANGED (3503) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 4.968s
+10-15 08:48:38.803  1541  3503 I SystemUpdate: [Installation,ReceiverIntentOperation] Received intent: Intent { act=com.google.android.gms.update.BASE_MODULE_INIT cat=[targeted_intent_op_prefix:.update.control.ReceiverIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+10-15 08:48:38.806  1541  2105 I Auth    : [WorkAccount] update authenticator enabled for boot or update
+10-15 08:48:38.807   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 08:48:38.812   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 08:48:38.818   554   827 D InetDiagMessage: Destroyed live tcp sockets for uids={2000} in 11ms
+10-15 08:48:38.820  1541  3867 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 08:48:38.827  1541  3867 I Auth    : [FRP,FrpUpdateIntentOperation] Intent received: Intent { act=com.google.android.gms.auth.FRP_CONFIG_CHANGED cat=[targeted_intent_op_prefix:.auth.frp.FrpUpdateIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }
+10-15 08:48:38.834  1541  3867 I Auth    : [FRP,FrpUpdateIntentOperation] FRP is not supported for this device / user
+10-15 08:48:38.853  1270  1968 I Auth    : [WorkAccountServiceImpl] init work authenticator
+10-15 08:48:38.884  1541  2723 I Ads     : Initialized AdMob in container 24.23.35 (190800-646585959)
+10-15 08:48:38.895  1541  2389 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.BOOT_COMPLETED
+10-15 08:48:38.898  1541  3907 W Auth    : [PubsubPeriodicSyncherRuntimeInit] Initializing periodic tasks, IntentAction=android.intent.action.BOOT_COMPLETED, InitRuntimeState=2
+10-15 08:48:38.898  1541  2389 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-15 08:48:38.901  1541  3867 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 1.
+10-15 08:48:38.907  1541  3908 I Authzen : [AuthZenEventHandler] Handling event: android.intent.action.BOOT_COMPLETED
+10-15 08:48:38.908  1541  3908 I Authzen : [TransactionCache] Clearing transaction cache
+10-15 08:48:38.922  1541  2723 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+10-15 08:48:38.922  1541  2723 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-15 08:48:38.922  1541  2723 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-15 08:48:38.922  1541  2723 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.EmmActivity
+10-15 08:48:38.922  1541  2723 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity
+10-15 08:48:38.922  1541  2389 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Initializing auth_folsom
+10-15 08:48:38.922  1541  2723 W Auth    : [AuthManaged, SettingsSecurityDeviceOwnerChimeraActivity] device owner: n/a
+10-15 08:48:38.923  1541  2389 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Enabling com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService.
+10-15 08:48:38.926  1541  2723 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] disabling com.google.android.gms.auth.managed.ui.SettingsSecurityDeviceOwnerActivity
+10-15 08:48:38.928  1541  2105 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-15 08:48:38.929  1541  2105 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-15 08:48:38.931  1541  2723 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+10-15 08:48:38.931  1541  2723 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-15 08:48:38.931  1541  2723 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-15 08:48:38.932  1541  2389 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Enabling com.google.android.gms.auth.folsom.service.GcmReceiverService.
+10-15 08:48:38.944  1541  2723 I AutofillModuleInitInten: AutofillModuleInitIntentOperation onInitRuntimeState(2) [CONTEXT service_id=177 ]
+10-15 08:48:38.946   554  1800 D CleanupManager: Storing serial number for user 0.
+10-15 08:48:38.959  1541  2105 V Backup  : [MigrateUtil] Clearing migrate temp dir: /data/user/0/com.google.android.gms/files/migrate_dir
+10-15 08:48:38.960  1542  1572 I earchbox:search: Background concurrent mark compact GC freed 11MB AllocSpace bytes, 31(1392KB) LOS objects, 49% free, 17MB/34MB, paused 302us,9.763ms total 1.011s
+10-15 08:48:38.963  1542  1579 W earchbox:search: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~1uK7v-anI9Mpm6J0beIzng==/com.google.android.webview-HyHE1b_XWEHTaS0eYv4ybw==/WebViewGoogle.apk' with 2 weak references
+10-15 08:48:38.967  1541  3732 I GmsSyncPolicyEngine: Periodic sync 4 disabled by policy, cancelled.
+10-15 08:48:38.978  1541  2105 D Backup  : [MigrateCleaner] D2D transport was not selected, not selecting cloud transport.
+10-15 08:48:38.981  1541  2105 V Backup  : [G1ModuleInitIntentOperation] BbG1 notifications disabled by flag
+10-15 08:48:38.983  1541  3867 V Backup  : [SettingsModuleInit] onInitRuntimeState
+10-15 08:48:38.983  1541  3867 V Backup  : [NoBackupNotification] Disabled, not scheduling
+10-15 08:48:38.985  1541  3867 V Backup  : [ComponentEnabler] Enabling components
+10-15 08:48:38.989  1541  3907 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+10-15 08:48:38.991  1541  3867 I Backup  : [TargetEnabler] Setting target components to enabled = false
+10-15 08:48:38.998   554  1803 I RecoverableKeyStoreMgr: Initialized secret types.
+10-15 08:48:39.005  1541  3867 I Backup  : [TargetEnabler] Enabling D2dMigrateHelperService on non-Pixel on P+
+10-15 08:48:39.012  1541  3867 I Backup  : [SourceEnabler] Setting source components to enabled = true
+10-15 08:48:39.016  1541  3907 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+10-15 08:48:39.017  1541  3867 V Backup  : [MigrateUtil] Using O+ select transport api
+10-15 08:48:39.023  1541  3867 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.RestoreSessionV0Service' to enabled=true
+10-15 08:48:39.032  1541  3867 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.CloudRestoreFlowActivity' to enabled=true
+10-15 08:48:39.038  1541  3867 W Backup  : [ComponentEnablerUtil] Unable to set component 'com.google.android.gms.backup.component.D2dMigrateFlowActivity' to enabled=false
+10-15 08:48:39.040  1541  3867 V Backup  : [ComponentEnabler] Scheduling tasks.
+10-15 08:48:39.046  1541  3867 V Backup  : [GmsBackupScheduler] Disabled, not scheduling.
+10-15 08:48:39.054  1541  3907 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+10-15 08:48:39.055  1541  3867 V Backup  : [MmsBackupScheduler] Scheduled task to run in 1440 minutes, while idle: true, require charging: true, require wifi: true
+10-15 08:48:39.056  1541  3867 V Backup  : [CustomBackupNewScheduleLog] Task is scheduled to run
+10-15 08:48:39.062  1541  3907 V Backup  : [AccountChangedIO] currentDestinationString: null
+10-15 08:48:39.063  1541  3867 V Backup  : [ClearcutLoggerWithVerifier] Logging to Clearcut eventCode: 85, event: # eqmb@7c69e976
+10-15 08:48:39.063  1541  3867 I Checkin : [CheckinHSUMHandler] Do not register network callback if not user 0 on HSUM.
+10-15 08:48:39.083  1541  2389 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+10-15 08:48:39.084  1541  3867 I WakefulBroadcastRcvr: Processing wakeful broadcast: com.google.android.gms.checkin.CHECKIN_START_ACTION
+10-15 08:48:39.086  1541  2105 I SyncIntentOperation: Handling the intent: Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 08:48:39.094  1541  2723 I Checkin : [CheckinIntentOperation] onHandleIntent, Intent { act=com.google.android.gms.checkin.CHECKIN_START_ACTION cat=[targeted_intent_op_prefix:.checkin.CheckinIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+10-15 08:48:39.100  1541  2723 W GmsTaskScheduler: ScheduledCheckinGmsTaskService is not available. This may cause the task to be lost.
+10-15 08:48:39.107   554  1803 I RecoverableKeyStoreMgr: Initialized server params.
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: Error reading snapshot for 10143 from disk
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10143.xml: open failed: ENOENT (No such file or directory)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:377)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2709)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:844)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1444)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 08:48:39.122   554  1833 E RecoverySnapshotStorage: 	... 8 more
+10-15 08:48:39.127   554  2195 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10143
+10-15 08:48:39.152  1541  2389 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:3111
+10-15 08:48:39.155  1541  2389 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 3111
+10-15 08:48:39.165  1541  2389 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.dm': No such file or directory
+10-15 08:48:39.193   554  1159 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+10-15 08:48:39.203  1270  1270 I ProximityAuth: [PhoneHubService] Handling intent for PhoneHubChimeraService.
+10-15 08:48:39.207   355   390 I netd    : tetherGetStats() -> {[]} <1.65ms>
+10-15 08:48:39.208   554   554 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+10-15 08:48:39.222   554  1850 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+10-15 08:48:39.225  1270  2845 W ChimeraUtils: Module com.google.android.gms.backup_base missing resource null(0)
+10-15 08:48:39.227   554   889 I RemoteProvisionSysSvc: Fetching key 10143 for client 24175813
+10-15 08:48:39.227   554   889 I RegistrationProxy: getKeyAsync operation started with callback 136551962
+10-15 08:48:39.228  3124  3152 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10143, callback: 84083660
+10-15 08:48:39.230  3124  3152 I RkpdRegistrationBinder: Key successfully assigned to client
+10-15 08:48:39.232   554   554 I RemoteProvisionSysSvc: Successfully fetched key for client 24175813
+10-15 08:48:39.235  3800  3903 D nativeloader: Load libpdfclient.so using APEX ns com_android_mediaprovider for caller /apex/com.android.mediaprovider/javalib/framework-pdf.jar: ok
+10-15 08:48:39.242   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 148: Using TAG_CERTIFICATE_NOT_BEFORE: 0
+10-15 08:48:39.242   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 154: Using TAG_CERTIFICATE_NOT_AFTER: 2461449600000
+10-15 08:48:39.242   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 159: Got certificate date params:  NotBefore = 0, NotAfter = 2461449600000
+10-15 08:48:39.242   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 273: Setting notBefore to 0
+10-15 08:48:39.242   172   172 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 282: Setting notAfter to 2461449600
+10-15 08:48:39.244  1270  1270 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+10-15 08:48:39.244  1270  1270 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+10-15 08:48:39.261  1270  3913 I ProximityAuth: [AccountEligibilityMediator] checkEligibleAccountsCrossProfile not enabled, checking accounts in current profile.
+10-15 08:48:39.261  1270  2845 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+10-15 08:48:39.265  1270  2249 W WearableService: onGetService: Wear is not available on this device.
+10-15 08:48:39.293  1270  3911 W EasyUnlock: [HostValidator] Invalid account list. [CONTEXT service_id=234 ]
+10-15 08:48:39.308  1270  2845 V Backup  : [BackupAccountNotifier] Handling new intent. Show notification: true
+10-15 08:48:39.319  1270  3913 I ProximityAuth: [PhoneHubService] No enabled account, stopping service
+10-15 08:48:39.320  1541  3907 E IPCThreadState: Binder transaction failure. id: 205168, BR_*: 29201, error: -28 (No space left on device)
+10-15 08:48:39.320  1541  3907 W BpBinder: Large outgoing transaction of 1056768 bytes, interface descriptor , code 1
+10-15 08:48:39.320  1541  3907 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 1056768)
+10-15 08:48:39.323  1270  1270 I ProximityAuth: [PhoneHubService] Destroying PhoneHubChimeraService.
+10-15 08:48:39.323  1270  1270 W ProximityAuth: [PhoneHubNotificationProcessor] shutdown(): context is null.
+10-15 08:48:39.323  1270  1270 I ProximityAuth: [PhoneHubService] All devices have disconnected. Performing cleanup...
+10-15 08:48:39.324  1270  1270 W ChimeraUtils: Module com.google.android.gms.auth_proximity missing resource null(0)
+10-15 08:48:39.332  1541  2389 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=34, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.apk!/lib/x86_64:/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand
+10-15 08:48:39.335  1270  1270 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.chimera.container.BIND_FIND_BUFFER_SIZE dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+10-15 08:48:39.341  1541  3907 I CobaltLoggerImpl: CobaltModuleInitIntentOperation: 2 [CONTEXT service_id=364 ]
+10-15 08:48:39.342  1541  3907 I CobaltLoggerImpl: Scheduling Cobalt Observation Generation task to run every 24 hours [CONTEXT service_id=364 ]
+10-15 08:48:39.346  1541  2389 D nativeloader: Load /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.apk!/lib/x86_64/libcronet.126.0.6452.4.so using isolated ns clns-10 (caller=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.uncompressed.apk): ok
+10-15 08:48:39.365  1541  3907 I constellation: [intent_handler] Received onBootCompleted intent
+10-15 08:48:39.370  1541  3907 I constellation: [reboot_checker] Reboot checker check status.
+10-15 08:48:39.372  1541  3907 I constellation: [reboot_checker] Reboot Sync didn't run.
+10-15 08:48:39.379  3144  3173 I gs.intelligence: Background concurrent mark compact GC freed 4028KB AllocSpace bytes, 4(872KB) LOS objects, 49% free, 5223KB/10MB, paused 278us,11.924ms total 179.751ms
+10-15 08:48:39.402  2568  2590 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 08:48:39.411  1541  2389 I cr_CronetLibraryLoader: Cronet version: 126.0.6452.4, arch: x86_64
+10-15 08:48:39.452  1541  3907 I constellation: [intent_handler] on init with intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+10-15 08:48:39.454   554   889 D ConnectivityService: requestNetwork for uid/pid:10143/1541 activeRequest: null callbackRequest: 121 [NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 08:48:39.462   554   827 D ConnectivityService: NetReassign [122 : null → 100] [c 0] [a 0] [i 7]
+10-15 08:48:39.465   554   820 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:39.467   554   820 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:39.470   554   827 D ConnectivityService: NetReassign [no changes] [c 0] [a 1] [i 0]
+10-15 08:48:39.482   554   820 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:39.490   554  1494 I system_server: IncrementDisableThreadFlip blocked for 11.909ms
+10-15 08:48:39.503   554   820 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=122, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 08:48:39.522  3800  3920 D ProfileInstaller: Installing profile for com.abfilepro.app.p21mainttrial
+10-15 08:48:39.547   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 08:48:39.548   554   827 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 08:48:39.553   554   565 I system_server: Background concurrent mark compact GC freed 25MB AllocSpace bytes, 41(3236KB) LOS objects, 45% free, 28MB/52MB, paused 2.535ms,11.912ms total 968.533ms
+10-15 08:48:39.553   554   566 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+10-15 08:48:39.554   554  1800 V SafetySourceDataValidat: Package: com.google.android.gms has expected signature
+10-15 08:48:39.554   554  1800 V SafetySourceDataValidat: Package: com.google.android.gms has expected signature
+10-15 08:48:39.557   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 08:48:39.557   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 08:48:39.557   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 08:48:39.558   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 08:48:39.558   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 08:48:39.559   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 08:48:39.559   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 08:48:39.560   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 08:48:39.560   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 08:48:39.560   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 08:48:39.561   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 08:48:39.561   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 08:48:39.561   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 08:48:39.564   554   827 D InetDiagMessage: Destroyed live tcp sockets for uids={10185} in 18ms
+10-15 08:48:39.570  1541  3907 W GmsTaskScheduler: com.google.android.gms.credential.manager.tasks.PasswordSharingSubscriptionTaskBoundService is not available. This may cause the task to be lost.
+10-15 08:48:39.572  1541  3907 W ChimeraUtils: Module com.google.android.gms.dck_stub missing resource null(0)
+10-15 08:48:39.583  1541  3907 I DckStubModuleInit: Loading stub module components [CONTEXT service_id=289 ]
+10-15 08:48:39.584  1541  3907 I Dck     : disableDckSupport: false [CONTEXT service_id=289 ]
+10-15 08:48:39.584  1541  3907 I Dck     : doesDeviceHaveSupportedWirelessCapabilities: wccSysProp:0, wccMendel:3, deviceWccOverride:false [CONTEXT service_id=289 ]
+10-15 08:48:39.584  1541  3907 I Dck     : Dck module condition - hasWccSupport: false [CONTEXT service_id=289 ]
+10-15 08:48:39.584  1541  3907 I Dck     : Dck module condition - downloadAllowed: false [CONTEXT service_id=289 ]
+10-15 08:48:39.585  1541  3907 W Dck     : Dck module not eligible for asynchronous downloading [CONTEXT service_id=289 ]
+10-15 08:48:39.614   554  1800 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 08:48:39.638  2568  2590 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 08:48:39.639  2568  2590 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 08:48:39.669   355  3925 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 08:48:39.669   355  3926 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 08:48:39.669   355  3926 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76b512117010
+10-15 08:48:39.669   355  3926 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 08:48:39.669   355  3927 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 08:48:39.669   355  3927 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x76b5121179d0
+10-15 08:48:39.669   355  3927 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 08:48:39.683  3800  3903 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:39.690  1541  3919 D TrafficStats: tagSocket(203) with statsTag=0x4800, statsUid=-1
+10-15 08:48:39.715  1541  3919 D TrafficStats: tagSocket(205) with statsTag=0x4800, statsUid=-1
+10-15 08:48:39.718  3800  3903 D pdf_document_jni: Deleting Document: 0x77d58ebd2f50
+10-15 08:48:39.719  3800  3903 D pdf_document_jni: Destroyed Document: 0x77d58ebd2f50
+10-15 08:48:39.744  3800  3859 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:39.745  3800  3859 D pdf_document_jni: Deleting Document: 0x77d58ebe9990
+10-15 08:48:39.745  3800  3859 D pdf_document_jni: Destroyed Document: 0x77d58ebe9990
+10-15 08:48:39.752  3800  3859 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

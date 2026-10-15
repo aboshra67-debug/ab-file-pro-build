@@ -1,0 +1,4 @@
+10-15 08:48:52.276  3800  3859 I TestRunner: started: reviewPagesRoundTripThroughSavedState(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 08:48:52.282  1348  1348 I SpBackgroundTask: SuperpacksBackgroundJobService.onStartJob():26 onStartJob: android.app.job.JobParameters@5e68e19
+10-15 08:48:52.282  1348  1348 I SP      : ====> Starting job {m:b:u:l, bg}
+10-15 08:48:52.286  3800  3859 I TestRunner: finished: reviewPagesRoundTripThroughSavedState(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

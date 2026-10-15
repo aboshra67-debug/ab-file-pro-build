@@ -1,0 +1,7 @@
+10-15 08:48:36.871  5020  5039 I TestRunner: started: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:36.873  1813  1820 I zygote64: Do full code cache collection, code=252KB, data=172KB
+10-15 08:48:36.874  1813  1820 I zygote64: After code cache collection, code=224KB, data=138KB
+10-15 08:48:36.877  1813  2134 D EGL_emulation: eglMakeCurrent: 0x786db90eff40: ver 3 0 (tinfo 0x786db910d0a0)
+10-15 08:48:36.880  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 08:48:36.885  1813  2134 D EGL_emulation: eglMakeCurrent: 0x786db90eff40: ver 3 0 (tinfo 0x786db910d0a0)
+10-15 08:48:36.895  5020  5039 I TestRunner: finished: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

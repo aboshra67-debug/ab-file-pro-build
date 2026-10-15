@@ -1,0 +1,10 @@
+10-15 08:48:42.515  3800  3859 I TestRunner: started: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:42.525   554   662 I RoleService: Granting default roles...
+10-15 08:48:42.531   554  1027 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 08:48:42.533  1270  3478 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 08:48:42.534  1077  1326 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 08:48:42.538  1541  3863 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 08:48:42.539   554  1027 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 08:48:42.543   554  1027 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 08:48:42.547  1541  3863 W Pay     : Mdoc not supported. Not triggering periodic MSO refresh task. [CONTEXT service_id=198 ]
+10-15 08:48:42.548  3800  3859 I TestRunner: finished: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

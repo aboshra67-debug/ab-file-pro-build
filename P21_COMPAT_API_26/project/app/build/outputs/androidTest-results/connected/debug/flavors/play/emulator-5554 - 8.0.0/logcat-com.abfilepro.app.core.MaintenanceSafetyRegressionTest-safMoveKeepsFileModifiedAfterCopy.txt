@@ -1,0 +1,6 @@
+10-15 08:48:36.466  5020  5039 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:36.475  5179  5179 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 08:48:36.506  5020  5025 I zygote64: Do partial code cache collection, code=248KB, data=175KB
+10-15 08:48:36.507  5020  5025 I zygote64: After code cache collection, code=245KB, data=173KB
+10-15 08:48:36.507  5020  5025 I zygote64: Increasing code cache capacity to 1024KB
+10-15 08:48:36.577  5020  5039 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

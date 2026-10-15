@@ -1,0 +1,14 @@
+10-15 08:48:51.555  3800  3859 I TestRunner: started: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:51.570  4011  4011 D CompatChangeReporter: Compat change id reported: 311402873; UID 10140; state: ENABLED
+10-15 08:48:51.570  4011  4011 D CompatChangeReporter: Compat change id reported: 323349338; UID 10140; state: ENABLED
+10-15 08:48:51.570  4011  4011 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:51.571   554  1813 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:51.600   554   889 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:51.606  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusEnabledPreferenceController
+10-15 08:48:51.606  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusActionsPreferenceController
+10-15 08:48:51.607  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController
+10-15 08:48:51.608   554   998 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:51.614  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.SecurityStatusPreferenceController
+10-15 08:48:51.614  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.PrimarySecurityWarningPreferenceController
+10-15 08:48:51.620  1080  1140 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.FingerprintStatusGooglePreferenceController
+10-15 08:48:51.624  3800  3859 I TestRunner: finished: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,8 @@
+10-15 08:48:37.790  3800  3859 I TestRunner: started: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 08:48:37.793  3305  3437 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 08:48:37.794  1476  1746 I INV.SystemUI: (REDACTED) setUiHints(hints = %s)
+10-15 08:48:37.794  1476  1746 I A       : (REDACTED) stopListening(%s, %s)
+10-15 08:48:37.797  3305  3437 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 08:48:37.800  3305  3437 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 08:48:37.803  1476  1880 I A       : Initialize
+10-15 08:48:37.806  3800  3859 I TestRunner: finished: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

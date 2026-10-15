@@ -1,0 +1,3 @@
+10-15 08:48:39.758  3800  3859 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:39.788  1541  3919 D TrafficStats: tagSocket(205) with statsTag=0x4800, statsUid=-1
+10-15 08:48:39.798  3800  3859 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

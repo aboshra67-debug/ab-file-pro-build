@@ -1,0 +1,26 @@
+10-15 08:48:49.697  3800  3859 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:49.726  1541  2678 I ChimeraConfigurator: Detected pending changes for urgent request: [tflite_dynamite]. Pending module sets: container:2423359190800,tflite_dynamite:2627305025100800+tflite_dynamite
+10-15 08:48:49.742  1270  1270 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 08:48:49.746  1542  2235 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:49.748  1542  1542 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.nlu_ff.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 08:48:49.750  1387  1593 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:49.754  1541  2678 I GmsDebugLogger: [73] 1801
+10-15 08:48:49.759  1541  2678 W ZappDownloader: No successful Zapp module downloads for requested modules [TfliteDynamiteDynamite.integ:262730502100800:permitMetered].
+10-15 08:48:49.759  1541  2678 I GmsDebugLogger: [30] [TfliteDynamiteDynamite.integ:262730502100800]
+10-15 08:48:49.765  1541  1573 W gle.android.gms: Missing inline cache for ptf ptn.a()
+10-15 08:48:49.765  1541  1573 W gle.android.gms: Missing inline cache for ptf ptn.a()
+10-15 08:48:49.765  1541  1573 W gle.android.gms: Missing inline cache for ptf ptn.a()
+10-15 08:48:49.768  1541  2678 W ChimeraConfigService: Retry attempt was throttled. [CONTEXT service_id=264 ]
+10-15 08:48:49.768  1541  2678 I GmsDebugLogger: [83] 1 [tflite_dynamite]
+10-15 08:48:49.774  1541  2678 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: maps_core:-1
+10-15 08:48:49.780  1387  1397 W .apps.wellbeing: Suspending all threads took: 22.684ms
+10-15 08:48:49.781  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:49.783  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebed510
+10-15 08:48:49.784  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebed510
+10-15 08:48:49.788  1387  1524 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.wellbeing
+10-15 08:48:49.789  1387  1524 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:49.805  1541  2678 I ChimeraConfigurator: Detected pending changes for urgent request: [maps_core]. Pending module sets: container:2423359190800+maps_core
+10-15 08:48:49.812  3800  3859 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:49.813  3800  3859 D pdf_document_jni: Deleting Document: 0x77d58ebd2850
+10-15 08:48:49.813  3800  3859 D pdf_document_jni: Destroyed Document: 0x77d58ebd2850
+10-15 08:48:49.815  3800  3859 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

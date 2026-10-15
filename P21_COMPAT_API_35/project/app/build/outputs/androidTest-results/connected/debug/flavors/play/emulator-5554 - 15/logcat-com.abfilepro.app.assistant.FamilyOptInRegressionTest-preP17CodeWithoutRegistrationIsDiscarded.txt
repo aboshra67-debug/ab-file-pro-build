@@ -1,0 +1,9 @@
+10-15 08:48:37.724  3800  3859 I TestRunner: started: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 08:48:37.732  3305  3437 W BugleAction: No default number, returning empty msisdn
+10-15 08:48:37.738  1476  1880 I A       : No binding to unbind [IVR-C]
+10-15 08:48:37.738  1476  1880 I A       : Disconnected from SysUi [IVR-C]
+10-15 08:48:37.739  1476  1880 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+10-15 08:48:37.739  1476  1880 I A       : Subscribed to apa or classic variant change.
+10-15 08:48:37.739  1476  1746 I A       : (REDACTED) onApaFlowRoutingChanged routing = %s
+10-15 08:48:37.741  1476  1746 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+10-15 08:48:37.749  3800  3859 I TestRunner: finished: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

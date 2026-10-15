@@ -1,0 +1,6 @@
+10-15 08:48:36.898  5020  5039 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:36.899  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 08:48:36.907  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 08:48:36.921  5020  5039 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 08:48:36.948  5020  5039 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 08:48:36.959  5020  5039 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

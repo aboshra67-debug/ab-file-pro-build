@@ -1,0 +1,72 @@
+10-15 08:48:37.814  3800  3859 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 08:48:37.819  3305  3420 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 08:48:37.822  1476  1880 I A       : Disconnecting from SysUi, flag disabled [IVR-C]
+10-15 08:48:37.827  1476  1880 I A       : Disconnecting from SysUi, eligibilityNotifier absent [IVR-C]
+10-15 08:48:37.827  1476  1880 I A       : Disconnecting from SysUi, VM not enabled [IVR-C]
+10-15 08:48:37.830  3305  3420 I BugleNetwork: Creating gRPC Managed channel with Cronet: instantmessaging-pa.googleapis.com:443
+10-15 08:48:37.835  1476  1880 I A       : No binding to unbind [IVR-C]
+10-15 08:48:37.838  1476  1880 I A       : Disconnected from SysUi [IVR-C]
+10-15 08:48:37.841   355  3898 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10134 0}
+10-15 08:48:37.842   355  3899 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 08:48:37.842   355  3900 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 08:48:37.863  1476  1746 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+10-15 08:48:37.865   355  3899 I resolv  : res_nsend: used send_dg 276 terrno: 0
+10-15 08:48:37.865   355  3899 I resolv  : doQuery: rcode=0, ancount=8, return value=276
+10-15 08:48:37.871   355  3900 I resolv  : res_nsend: used send_dg 180 terrno: 0
+10-15 08:48:37.871   355  3900 I resolv  : doQuery: rcode=0, ancount=8, return value=180
+10-15 08:48:37.871  1542  1792 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8591)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at java.io.FileInputStream.<init>(FileInputStream.java:133)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.speech.e.b.a.b(PG:17)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.languagepack.as.<init>(PG:1)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.arq.g(PG:1)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.arq.b(PG:48)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at e.c.d.b(PG:14)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.bh.b(PG:506)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.actions.b.b.a(PG:208)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.tu.a(PG:1)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.tu.b(PG:52)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.search.core.service.f.a.d.a(PG:15)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.gsa.h.a.f.a(PG:9)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.util.concurrent.ds.a(PG:3)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.util.concurrent.cu.run(PG:21)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.util.concurrent.du.run(PG:5)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.k.x.run(PG:3)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.n.c.c.run(PG:50)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.k.e.run(PG:8)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.k.d.b.run(PG:74)
+10-15 08:48:37.871  1542  1792 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at libcore.io.BlockGuardOs.fstat(BlockGuardOs.java:194)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at libcore.io.ForwardingOs.fstat(ForwardingOs.java:261)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at libcore.io.IoBridge.open(IoBridge.java:563)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at java.io.FileInputStream.<init>(FileInputStream.java:133)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.speech.e.b.a.b(PG:17)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.languagepack.as.<init>(PG:1)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.arq.g(PG:1)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.arq.b(PG:48)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at e.c.d.b(PG:14)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.bh.b(PG:506)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.actions.b.b.a(PG:208)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.tu.a(PG:1)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.tu.b(PG:52)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.apps.gsa.search.core.service.f.a.d.a(PG:15)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.gsa.h.a.f.a(PG:9)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.util.concurrent.ds.a(PG:3)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.util.concurrent.cu.run(PG:21)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.util.concurrent.du.run(PG:5)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.k.x.run(PG:3)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.common.n.c.c.run(PG:50)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.k.e.run(PG:8)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:37.871  1542  1792 D StrictMode: 	at com.google.android.libraries.k.d.b.run(PG:74)
+10-15 08:48:37.872  3305  3878 D TrafficStats: tagSocket(154) with statsTag=0x1, statsUid=-1
+10-15 08:48:37.874  3305  3878 D TrafficStats: tagSocket(151) with statsTag=0x1, statsUid=-1
+10-15 08:48:37.878  3800  3859 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

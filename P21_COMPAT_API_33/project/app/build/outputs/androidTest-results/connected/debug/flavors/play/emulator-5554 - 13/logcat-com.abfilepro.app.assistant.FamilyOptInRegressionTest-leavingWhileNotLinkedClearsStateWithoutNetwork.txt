@@ -1,0 +1,3 @@
+10-15 08:48:37.252  4908  5033 I TestRunner: started: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 08:48:37.259   480   491 I system_server: Background young concurrent copying GC freed 805785(21MB) AllocSpace objects, 15(636KB) LOS objects, 47% free, 22MB/43MB, paused 61us,63us total 242.457ms
+10-15 08:48:37.273  4908  5033 I TestRunner: finished: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

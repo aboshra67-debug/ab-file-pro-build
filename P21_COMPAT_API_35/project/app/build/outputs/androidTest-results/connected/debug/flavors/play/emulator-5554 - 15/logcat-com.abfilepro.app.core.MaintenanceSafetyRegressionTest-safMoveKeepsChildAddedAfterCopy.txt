@@ -1,0 +1,67 @@
+10-15 08:48:48.018  3800  3859 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:48.030   554   585 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10210, packageName = null, attributionTag = null, token = android.os.Binder@f8ccb3c, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-15 08:48:48.048   355   389 I netd    : tetherGetStats() -> {[]} <0.50ms>
+10-15 08:48:48.052   356   356 D Zygote  : Forked child process 3985
+10-15 08:48:48.086  3985  3985 I mainttrial.test: Late-enabling -Xcheck:jni
+10-15 08:48:48.113  3985  3985 I mainttrial.test: Using CollectorTypeCMC GC.
+10-15 08:48:48.115  3985  3985 W mainttrial.test: Unexpected CPU variant for x86: x86_64.
+10-15 08:48:48.115  3985  3985 W mainttrial.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-15 08:48:48.132   436   444 I adbd    : jdwp connection from 3985
+10-15 08:48:48.134  3985  3985 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-15 08:48:48.192  3985  3985 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 08:48:48.209  3985  3985 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~-OAPJZBZIicUcKMaGGpsZw==/com.abfilepro.app.p21mainttrial.test-hRPyGZkDWnBDQ1ptOlK_Dg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 08:48:48.214  3985  3985 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 08:48:48.228  3985  3985 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~-OAPJZBZIicUcKMaGGpsZw==/com.abfilepro.app.p21mainttrial.test-hRPyGZkDWnBDQ1ptOlK_Dg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 08:48:48.233  3985  3985 W ziparchive: Unable to open '/data/app/~~-OAPJZBZIicUcKMaGGpsZw==/com.abfilepro.app.p21mainttrial.test-hRPyGZkDWnBDQ1ptOlK_Dg==/base.dm': No such file or directory
+10-15 08:48:48.238  3985  3985 W ziparchive: Unable to open '/data/app/~~-OAPJZBZIicUcKMaGGpsZw==/com.abfilepro.app.p21mainttrial.test-hRPyGZkDWnBDQ1ptOlK_Dg==/base.dm': No such file or directory
+10-15 08:48:48.288  1387  1387 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.wellbeing.device#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 08:48:48.335  3985  3985 D nativeloader: Configuring clns-9 for other apk /data/app/~~-OAPJZBZIicUcKMaGGpsZw==/com.abfilepro.app.p21mainttrial.test-hRPyGZkDWnBDQ1ptOlK_Dg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~-OAPJZBZIicUcKMaGGpsZw==/com.abfilepro.app.p21mainttrial.test-hRPyGZkDWnBDQ1ptOlK_Dg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 08:48:48.371  3305  3464 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@66ff2da
+10-15 08:48:48.378  3305  3305 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 08:48:48.386  3985  3985 V GraphicsEnvironment: Currently set values for:
+10-15 08:48:48.386  3985  3985 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 08:48:48.386  3985  3985 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 08:48:48.386  3985  3985 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 08:48:48.386  3985  3985 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 08:48:48.455  3985  3985 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 08:48:48.472  1542  2278 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.googlequicksearchbox
+10-15 08:48:48.478  1542  1542 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 08:48:48.482  1542  1542 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:48.483   554  1810 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 08:48:48.498  1542  1542 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+10-15 08:48:48.522  1387  1587 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:48.584  3305  3410 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:48.587  3305  3429 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging#com.google.android.apps.messaging" ]
+10-15 08:48:48.587  3305  3429 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@2a569df
+10-15 08:48:48.589  3305  3305 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 08:48:48.593  3305  3464 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@20c4fb
+10-15 08:48:48.596  3305  3437 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.messaging
+10-15 08:48:48.602  3305  3429 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@22cb5d7
+10-15 08:48:48.620  1387  1543 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.wellbeing
+10-15 08:48:48.703  3144  3998 D CompatChangeReporter: Compat change id reported: 312399441; UID 10140; state: ENABLED
+10-15 08:48:48.716  1387  1587 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.729  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.730  1542  1801 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 08:48:48.740  3305  3410 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:48.757  1542  2278 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 08:48:48.807  3800  3859 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

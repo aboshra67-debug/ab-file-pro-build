@@ -1,0 +1,37 @@
+10-15 08:48:47.898  3800  3859 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:47.960  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:47.960  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebd1dd0
+10-15 08:48:47.961  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebd1dd0
+10-15 08:48:47.961  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:47.961  3800  3904 E document: Parse Document failed (err=3).
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: Can't parse the header version.
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:487)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:115)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:104)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:280)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 08:48:47.964  3800  3904 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 08:48:47.965  3800  3904 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 08:48:47.977  3800  3859 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 08:48:47.978  3800  3859 D pdf_document_jni: Deleting Document: 0x77d58ebd5250
+10-15 08:48:47.978  3800  3859 D pdf_document_jni: Destroyed Document: 0x77d58ebd5250
+10-15 08:48:47.981  3800  3859 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

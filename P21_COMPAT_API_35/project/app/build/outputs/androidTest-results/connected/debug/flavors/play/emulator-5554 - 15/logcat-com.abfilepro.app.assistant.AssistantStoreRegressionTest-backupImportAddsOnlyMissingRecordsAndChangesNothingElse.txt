@@ -1,0 +1,6 @@
+10-15 08:48:37.545  3800  3859 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 08:48:37.558  3305  3411 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 08:48:37.565  3305  3437 W BugleAction: Failed to get msisdn from Bugle
+10-15 08:48:37.587  1476  1746 I NgaEntryPointEventSendr: (REDACTED) State changed: %s => %s
+10-15 08:48:37.590  1541  3506 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 08:48:37.591  3800  3859 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

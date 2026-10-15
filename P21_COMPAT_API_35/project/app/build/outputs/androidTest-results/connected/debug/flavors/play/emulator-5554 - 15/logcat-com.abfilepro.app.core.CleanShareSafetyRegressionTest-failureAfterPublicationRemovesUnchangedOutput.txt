@@ -1,0 +1,6 @@
+10-15 08:48:43.050  3800  3859 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:43.069   355  3950 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 08:48:43.069  2568  2590 D TrafficStats: tagSocket(132) with statsTag=0x1809, statsUid=-1
+10-15 08:48:43.071  2568  2590 D TrafficStats: tagSocket(132) with statsTag=0x1809, statsUid=-1
+10-15 08:48:43.072  2568  2590 D TrafficStats: tagSocket(132) with statsTag=0x1809, statsUid=-1
+10-15 08:48:43.084  3800  3859 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

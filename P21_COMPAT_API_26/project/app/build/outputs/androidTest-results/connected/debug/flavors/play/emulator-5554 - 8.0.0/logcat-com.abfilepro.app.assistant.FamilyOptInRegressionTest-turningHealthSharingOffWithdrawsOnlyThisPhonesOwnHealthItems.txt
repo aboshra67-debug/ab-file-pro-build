@@ -1,0 +1,5 @@
+10-15 08:48:30.269  5020  5039 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 08:48:30.279  5048  5066 D ContactsDatabaseHelper: WAL enabled for contacts2.db: true
+10-15 08:48:30.308  2270  3216 I Dialer  : VvmActivationTask - VVM content provider configured - vvm_type_cvvm
+10-15 08:48:30.309  2270  3216 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_ACTIVATING
+10-15 08:48:30.324  5020  5039 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

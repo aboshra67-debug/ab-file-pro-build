@@ -1,0 +1,2 @@
+10-15 08:48:37.502  5020  5039 I TestRunner: started: longImageIsProducedThroughTheFallback(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 08:48:37.550  5020  5039 I TestRunner: finished: longImageIsProducedThroughTheFallback(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

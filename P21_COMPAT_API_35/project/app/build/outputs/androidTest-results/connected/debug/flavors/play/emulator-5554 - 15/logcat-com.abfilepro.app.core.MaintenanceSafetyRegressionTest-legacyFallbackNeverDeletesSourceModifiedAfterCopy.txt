@@ -1,0 +1,3 @@
+10-15 08:48:50.152  3800  3859 I TestRunner: started: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 08:48:50.165  1541  1573 I gle.android.gms: Compiler allocated 4836KB to compile boolean ajkg.j(int, ajjm, java.util.List, ajkf)
+10-15 08:48:50.175  3800  3859 I TestRunner: finished: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

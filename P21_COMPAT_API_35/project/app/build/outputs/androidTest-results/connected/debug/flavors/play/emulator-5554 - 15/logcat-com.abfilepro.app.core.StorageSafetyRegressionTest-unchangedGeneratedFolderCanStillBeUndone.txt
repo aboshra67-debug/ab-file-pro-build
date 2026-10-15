@@ -1,0 +1,6 @@
+10-15 08:48:52.207  3800  3859 I TestRunner: started: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 08:48:52.209  1348  1648 I SP      : Successfully got manifest for transformer_concept-manifest: manifests:transformer_concept-2023011913
+10-15 08:48:52.214  1348  1648 I SP      : Successfully got manifest for dynamic_art-manifest: manifests:dynamic_art-20220108
+10-15 08:48:52.219  1348  1648 I EmojiSlicingStrategy: EmojiSlicingStrategy.matchEnabledLocalesWithPackLocales():129 matchEnabledLocalesWithPackLocales() : User enabled 1 locales; returning 1 slices
+10-15 08:48:52.219  1348  1648 I SP      : Syncing emoji (2024051320) with slices: [{2ada3c9a4a17d6bb81b1fe8d51502d60, m:*:*:*}], metadata: false
+10-15 08:48:52.246  3800  3859 I TestRunner: finished: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

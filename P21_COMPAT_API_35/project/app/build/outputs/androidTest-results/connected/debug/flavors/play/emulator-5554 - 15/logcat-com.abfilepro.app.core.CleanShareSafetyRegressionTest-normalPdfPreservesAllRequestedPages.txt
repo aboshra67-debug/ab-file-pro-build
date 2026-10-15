@@ -1,0 +1,96 @@
+10-15 08:48:42.623  3800  3859 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 08:48:42.668   554   565 I system_server: Background concurrent mark compact GC freed 25MB AllocSpace bytes, 84(2144KB) LOS objects, 48% free, 25MB/49MB, paused 2.892ms,2.645ms total 106.949ms
+10-15 08:48:42.668   554   566 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+10-15 08:48:42.673   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 08:48:42.675   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 08:48:42.676   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 08:48:42.677   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 08:48:42.678   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 08:48:42.679   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 08:48:42.680   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 08:48:42.681   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 08:48:42.681   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 08:48:42.681   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 08:48:42.681   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 08:48:42.683   554   567 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 08:48:42.710  1270  2538 W SemanticLocation: [MDD] ModelBundleMetadata: File not found: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory) [CONTEXT service_id=173 ]
+10-15 08:48:42.710  1270  2538 W SemanticLocation: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:774)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:251)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:251)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:251)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at ddho.k(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at ddhd.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):65)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at ddhd.<init>(:com.google.android.gms@242335041@24.23.35 (190800-646585959):16)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at ddov.j(:com.google.android.gms@242335041@24.23.35 (190800-646585959):18)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at ddov.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):184)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at ddov.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at com.google.android.gms.semanticlocation.service.SemanticLocationChimeraService.m(:com.google.android.gms@242335041@24.23.35 (190800-646585959):91)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at com.google.android.gms.semanticlocation.service.SemanticLocationChimeraService.p(:com.google.android.gms@242335041@24.23.35 (190800-646585959):248)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at com.google.android.gms.semanticlocation.service.SemanticLocationChimeraService.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):69)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at ddnv.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):743)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8591)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 08:48:42.710  1270  2538 W SemanticLocation: 	... 23 more
+10-15 08:48:42.737  1077  1092 I m.android.phone: Background concurrent mark compact GC freed 3748KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 3585KB/7171KB, paused 6.545ms,4.501ms total 178.445ms
+10-15 08:48:42.756  1077  1094 W System  : A resource failed to call AbstractCursor.close.
+10-15 08:48:42.775  1270  1270 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 08:48:42.775  1270  1270 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 08:48:42.814  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.847   554  2195 V SafetySourceDataValidat: Package: com.google.android.gms has expected signature
+10-15 08:48:42.847   554  2195 V SafetySourceDataValidat: Package: com.google.android.gms has expected signature
+10-15 08:48:42.883  1270  3916 W ChimeraUtils: Module com.google.android.gms.location__nonwearable missing resource location_module_display_name(0)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: [MDD] ModelBundleMetadata: File not found: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory) [CONTEXT service_id=173 ]
+10-15 08:48:42.885  1270  2538 W SemanticLocation: java.io.FileNotFoundException: /data/user/0/com.google.android.gms/files/model_bundle_metadata.pb: open failed: ENOENT (No such file or directory)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at android.app.ContextImpl.openFileInput(ContextImpl.java:774)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:251)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:251)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:251)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at ddho.k(:com.google.android.gms@242335041@24.23.35 (190800-646585959):5)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at ddhd.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):65)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at ddop.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):20)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at libcore.io.Linux.open(Native Method)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:8591)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 08:48:42.885  1270  2538 W SemanticLocation: 	... 14 more
+10-15 08:48:42.940  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebe89d0
+10-15 08:48:42.941  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebe89d0
+10-15 08:48:42.946  3800  3904 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.946  3800  3904 D pdf_document_jni: Deleting Document: 0x77d58ebe7850
+10-15 08:48:42.946  3800  3904 D pdf_document_jni: Destroyed Document: 0x77d58ebe7850
+10-15 08:48:42.949  3305  3464 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@99b4982
+10-15 08:48:42.969  1541  1621 I PeopleGalProvider: Gal directories started.
+10-15 08:48:42.970  1541  1621 I PeopleGalProvider: Method 1 completed.
+10-15 08:48:42.970  1541  1621 I PeopleGalProvider: Method 1 finished successfully.
+10-15 08:48:42.989  3800  3859 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 08:48:42.989  3800  3859 D pdf_document_jni: Deleting Document: 0x77d58ebe9990
+10-15 08:48:42.989  3800  3859 D pdf_document_jni: Destroyed Document: 0x77d58ebe9990
+10-15 08:48:42.993  1270  2532 I GCoreUlr: Unbound from all signal providers.
+10-15 08:48:42.995  3800  3859 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
