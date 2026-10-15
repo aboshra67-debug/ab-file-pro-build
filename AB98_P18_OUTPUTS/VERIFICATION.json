@@ -1,0 +1,51 @@
+{
+  "phase": "green",
+  "android_functions": 95,
+  "scanner_ui_cases": 19,
+  "jvm_tests": 43,
+  "qa_r8_monkey_events": 1500,
+  "all_passed": true,
+  "version_code": 170,
+  "version_name": "2.0.0-alpha98-p18-reminders",
+  "channel_checks": {
+    "debug": {
+      "package": "com.abfilepro.app.p18mainttrial",
+      "label": "AB File Pro P18",
+      "install_permission_absent": true
+    },
+    "qa": {
+      "package": "com.abfilepro.app.p18qa",
+      "label": "AB File Pro P18 QA",
+      "install_permission_absent": true
+    },
+    "direct": {
+      "install_permission_present": true
+    }
+  },
+  "outputs": {
+    "AB98_P18_PLAY_TEST.apk": {
+      "bytes": 132041452,
+      "sha256": "8f12a8e947ae4ad49a012422fae751a163aefea439b743d311e3ded04ac8a520"
+    },
+    "AB98_P18_PLAY_QA_R8.apk": {
+      "bytes": 108368394,
+      "sha256": "8c14bbe144434441b0f8962cec98d1a6f9a860d2a6754baf0e67852c49bab134"
+    },
+    "AB98_P18_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67808475,
+      "sha256": "b2e377aa3ad97fa8d298b5778397b74bbe54246e5005c98db728f7caebabd6f7"
+    },
+    "AB98_P18_PLAY_RELEASE_mapping.txt": {
+      "bytes": 115943586,
+      "sha256": "2c7ca2c9d99a9d5ad950721e6c31fa19a9bcccfeb4a3d0cbb0112aa7b5edbb92"
+    }
+  },
+  "commit": "4caab7a8f25f366f0328407d40aa3f39378e91c5",
+  "run_id": "38701172834",
+  "android_api_tested": "30",
+  "phone_abi": "arm64-v8a",
+  "physical_phone_tested": false,
+  "aab_signed": false,
+  "original_signing_key_available": false,
+  "play_release_ready": false
+}
