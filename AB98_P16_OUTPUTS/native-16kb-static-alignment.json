@@ -1,0 +1,275 @@
+{
+  "libraries": [
+    {
+      "name": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 7232,
+          "address": 23616,
+          "alignment": 16384
+        },
+        {
+          "offset": 8144,
+          "address": 40912,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libbarhopper_v3.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 4866048,
+          "address": 4866048,
+          "alignment": 16384
+        },
+        {
+          "offset": 4911488,
+          "address": 4927872,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libc++_shared.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 634032,
+          "address": 650416,
+          "alignment": 16384
+        },
+        {
+          "offset": 1250032,
+          "address": 1282800,
+          "alignment": 16384
+        },
+        {
+          "offset": 1289792,
+          "address": 1338944,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libface_detector_v2_jni.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 8142848,
+          "address": 8142848,
+          "alignment": 16384
+        },
+        {
+          "offset": 8479792,
+          "address": 8496176,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 26048,
+          "address": 42432,
+          "alignment": 16384
+        },
+        {
+          "offset": 26984,
+          "address": 59752,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libjpeg.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 247168,
+          "address": 263552,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/liblanguage_id_l2c_jni.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 983040,
+          "address": 983040,
+          "alignment": 16384
+        },
+        {
+          "offset": 1002864,
+          "address": 1019248,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libleptonica.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 2841360,
+          "address": 2857744,
+          "alignment": 16384
+        },
+        {
+          "offset": 2857184,
+          "address": 2889952,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 10272768,
+          "address": 10272768,
+          "alignment": 16384
+        },
+        {
+          "offset": 10840608,
+          "address": 10856992,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libopencv_java4.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 23899264,
+          "address": 23915648,
+          "alignment": 16384
+        },
+        {
+          "offset": 24367176,
+          "address": 24399944,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libpngx.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 214960,
+          "address": 231344,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libsurface_util_jni.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 2448,
+          "address": 18832,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libtesseract.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 4085984,
+          "address": 4102368,
+          "alignment": 16384
+        },
+        {
+          "offset": 4161264,
+          "address": 4194032,
+          "alignment": 16384
+        }
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libtranslate_jni.so",
+      "load_segments": [
+        {
+          "offset": 0,
+          "address": 0,
+          "alignment": 16384
+        },
+        {
+          "offset": 14450688,
+          "address": 14450688,
+          "alignment": 16384
+        },
+        {
+          "offset": 15157744,
+          "address": 15174128,
+          "alignment": 16384
+        }
+      ]
+    }
+  ],
+  "all_load_segments_16kb_aligned": true
+}
