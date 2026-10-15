@@ -28,14 +28,14 @@ class DocumentRenewalAlarmReceiver : BroadcastReceiver() {
         if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) return
 
         val dateText = DocumentRenewalCodec.expiryDate(entry)
-            ?.format(DateTimeFormatter.ofPattern("d MMMM yyyy", Locale("ar")))
+            ?.format(DateTimeFormatter.ofPattern("d MMMM yyyy", Locale(ReminderText.language(context))))
             .orEmpty()
         val days = DocumentRenewalCodec.daysUntilExpiry(entry)
         val body = when {
-            days == null -> "راجع بيانات التجديد"
-            days < 0 -> "انتهت صلاحية المستند — يرجى التجديد"
-            days == 0L -> "تنتهي صلاحية المستند اليوم"
-            else -> "متبقي " + days + " يوم — تاريخ الانتهاء " + dateText
+            days == null -> ReminderText.pick(context, "راجع بيانات التجديد", "Check the renewal details", "Vérifiez le renouvellement")
+            days < 0 -> ReminderText.pick(context, "انتهت صلاحية المستند — يرجى التجديد", "This document has expired — please renew", "Document expiré — à renouveler")
+            days == 0L -> ReminderText.pick(context, "تنتهي صلاحية المستند اليوم", "This document expires today", "Le document expire aujourd'hui")
+            else -> ReminderText.pick(context, "متبقي $days يوم — تاريخ الانتهاء $dateText", "$days days left — expires $dateText", "Encore $days jours — expire le $dateText")
         }
         val openApp = PendingIntent.getActivity(
             context,
@@ -45,7 +45,14 @@ class DocumentRenewalAlarmReceiver : BroadcastReceiver() {
         )
         val notification = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.ab_logo_icon)
-            .setContentTitle("تجديد قريب: " + entry.title)
+            .setContentTitle(ReminderText.pick(context, "تجديد قريب: ", "Renewal due: ", "Renouvellement : ") + entry.title)
+            .setVisibility(NotificationCompat.VISIBILITY_PRIVATE)
+            .setPublicVersion(
+                NotificationCompat.Builder(context, CHANNEL_ID)
+                    .setSmallIcon(R.drawable.ab_logo_icon)
+                    .setContentTitle(ReminderText.pick(context, "تذكير تجديد مستند", "Document renewal reminder", "Rappel de renouvellement"))
+                    .build()
+            )
             .setContentText(body)
             .setStyle(NotificationCompat.BigTextStyle().bigText(body))
             .setPriority(NotificationCompat.PRIORITY_HIGH)
@@ -54,14 +61,15 @@ class DocumentRenewalAlarmReceiver : BroadcastReceiver() {
             .setContentIntent(openApp)
             .build()
         NotificationManagerCompat.from(context).notify(id.hashCode(), notification)
+        entry.dueAt?.let { ReminderLedger.markNotified(context, id, it) }
     }
 
     private fun createChannel(context: Context) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val manager = context.getSystemService(NotificationManager::class.java)
             manager.createNotificationChannel(
-                NotificationChannel(CHANNEL_ID, "تنبيهات تجديد المستندات", NotificationManager.IMPORTANCE_HIGH).apply {
-                    description = "تنبيه قبل انتهاء المستندات والتجديدات"
+                NotificationChannel(CHANNEL_ID, ReminderText.pick(context, "تنبيهات تجديد المستندات", "Document renewals", "Renouvellement de documents"), NotificationManager.IMPORTANCE_HIGH).apply {
+                    description = ReminderText.pick(context, "تنبيه قبل انتهاء المستندات والتجديدات", "Reminder before documents expire", "Rappel avant expiration")
                     enableVibration(true)
                 }
             )

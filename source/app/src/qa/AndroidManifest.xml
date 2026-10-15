@@ -1,4 +1,4 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <application android:label="AB File Pro P16 QA" tools:replace="android:label" />
+    <application android:label="AB File Pro P18 QA" tools:replace="android:label" />
 </manifest>

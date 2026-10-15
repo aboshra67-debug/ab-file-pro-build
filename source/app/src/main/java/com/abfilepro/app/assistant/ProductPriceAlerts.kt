@@ -100,7 +100,7 @@ class ProductPriceAlertWorker(
             val met = cheapest <= alert.targetEgp
             when {
                 met && !alert.triggered -> {
-                    notify(alert, cheapest, snapshot.cheapest?.store?.arabicName.orEmpty())
+                    if (!notify(alert, cheapest, snapshot.cheapest?.store?.arabicName.orEmpty())) return@map alert
                     changed = true
                     alert.copy(triggered = true)
                 }
@@ -115,8 +115,10 @@ class ProductPriceAlertWorker(
         return Result.success()
     }
 
-    private fun notify(alert: ProductPriceAlert, current: Double, store: String) {
-        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(applicationContext, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) return
+    /** P18 (MKT-01): returns false when the alert could not be shown, so it is retried later. */
+    private fun notify(alert: ProductPriceAlert, current: Double, store: String): Boolean {
+        if (Build.VERSION.SDK_INT >= 33 && ContextCompat.checkSelfPermission(applicationContext, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) return false
+        if (!NotificationManagerCompat.from(applicationContext).areNotificationsEnabled()) return false
         ensureChannel()
         val pending = PendingIntent.getActivity(
             applicationContext,
@@ -138,6 +140,7 @@ class ProductPriceAlertWorker(
                 .setContentIntent(pending)
                 .build(),
         )
+        return true
     }
 
     private fun ensureChannel() {

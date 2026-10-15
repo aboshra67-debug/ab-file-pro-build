@@ -14,7 +14,8 @@ public final class MaintenanceGrantReceiver extends BroadcastReceiver {
         String target = intent.getStringExtra("target_package");
         if (!"com.abfilepro.app.p13sharetrial".equals(target) && !"com.abfilepro.app.p14mainttrial".equals(target)
                 && !"com.abfilepro.app.p15mainttrial".equals(target)
-                && !"com.abfilepro.app.p16mainttrial".equals(target)) {
+                && !"com.abfilepro.app.p16mainttrial".equals(target)
+                && !"com.abfilepro.app.p18mainttrial".equals(target)) {
             throw new IllegalArgumentException("Only isolated trial apps may read test fixtures");
         }
         Uri tree = DocumentsContract.buildTreeDocumentUri("com.abfilepro.app.maintenance.test.documents", "root");

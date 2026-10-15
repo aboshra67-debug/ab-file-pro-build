@@ -4,27 +4,22 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 import java.time.Instant
 import java.time.ZoneId
 
 object DocumentRenewalAlarmScheduler {
-    fun hasExactAlarmAccess(context: Context): Boolean {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S) return true
-        val alarms = context.getSystemService(AlarmManager::class.java) ?: return false
-        return alarms.canScheduleExactAlarms()
-    }
+    fun hasExactAlarmAccess(context: Context): Boolean = ReminderAlarms.exactAllowed(context)
 
     fun rescheduleAll(context: Context, entries: List<AssistantEntry> = AssistantRepository(context).loadEntries()) {
-        entries.filter { it.module == AssistantModule.DOCUMENTS }.forEach { entry ->
-            cancel(context, entry.id)
-            if (shouldSchedule(entry)) scheduleExact(context, entry)
-        }
+        entries.filter { it.module == AssistantModule.DOCUMENTS }.forEach { entry -> sync(context, entry) }
     }
 
     fun sync(context: Context, entry: AssistantEntry) {
         cancel(context, entry.id)
-        if (shouldSchedule(entry)) scheduleExact(context, entry)
+        val trigger = plannedTrigger(context, entry) ?: return
+        val operation = pendingIntent(context, entry.id, PendingIntent.FLAG_UPDATE_CURRENT) ?: return
+        // P18: inexact fallback when exact alarms are not allowed; a renewal reminder is never lost.
+        ReminderAlarms.set(context, trigger, operation)
     }
 
     fun cancel(context: Context, entryId: String) {
@@ -32,9 +27,12 @@ object DocumentRenewalAlarmScheduler {
         pendingIntent(context, entryId, PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
     }
 
-    private fun shouldSchedule(entry: AssistantEntry): Boolean {
-        if (entry.module != AssistantModule.DOCUMENTS || !entry.enabled || entry.completed || entry.dueAt == null) return false
-        return triggerAt(entry) > System.currentTimeMillis()
+    /** P18 (AS-05): if the lead time already passed but the expiry is still ahead, remind once now. */
+    private fun plannedTrigger(context: Context, entry: AssistantEntry): Long? {
+        if (entry.module != AssistantModule.DOCUMENTS || !entry.enabled || entry.completed) return null
+        val due = entry.dueAt ?: return null
+        val lead = (due - triggerAt(entry)).coerceAtLeast(0L)
+        return ReminderPolicy.triggerFor(due, lead, System.currentTimeMillis(), ReminderLedger.notifiedFor(context, entry.id))
     }
 
     private fun triggerAt(entry: AssistantEntry): Long {
@@ -44,12 +42,9 @@ object DocumentRenewalAlarmScheduler {
         return expiry.minusDays(DocumentRenewalCodec.leadDays(entry).toLong()).toInstant().toEpochMilli()
     }
 
-    private fun scheduleExact(context: Context, entry: AssistantEntry) {
-        if (!hasExactAlarmAccess(context)) return
-        val alarms = context.getSystemService(AlarmManager::class.java) ?: return
-        val operation = pendingIntent(context, entry.id, PendingIntent.FLAG_UPDATE_CURRENT) ?: return
-        alarms.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, triggerAt(entry), operation)
-    }
+    /** Test/diagnostic hook: is a reminder alarm pending for this entry? */
+    internal fun isScheduled(context: Context, id: String): Boolean =
+        pendingIntent(context, id, PendingIntent.FLAG_NO_CREATE) != null
 
     private fun pendingIntent(context: Context, entryId: String, mode: Int): PendingIntent? = PendingIntent.getBroadcast(
         context,
