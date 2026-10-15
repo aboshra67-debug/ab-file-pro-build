@@ -1,0 +1,51 @@
+{
+  "phase": "green",
+  "android_functions": 106,
+  "scanner_ui_cases": 19,
+  "jvm_tests": 43,
+  "qa_r8_monkey_events": 1500,
+  "all_passed": true,
+  "version_code": 172,
+  "version_name": "2.0.0-alpha98-p20-assistant-store",
+  "channel_checks": {
+    "debug": {
+      "package": "com.abfilepro.app.p20mainttrial",
+      "label": "AB File Pro P20",
+      "install_permission_absent": true
+    },
+    "qa": {
+      "package": "com.abfilepro.app.p20qa",
+      "label": "AB File Pro P20 QA",
+      "install_permission_absent": true
+    },
+    "direct": {
+      "install_permission_present": true
+    }
+  },
+  "outputs": {
+    "AB98_P20_PLAY_TEST.apk": {
+      "bytes": 132085276,
+      "sha256": "f0047ae4a2674288d0617c6c63a943de80ee75c4c3a315d1dc7898364e76b274"
+    },
+    "AB98_P20_PLAY_QA_R8.apk": {
+      "bytes": 108379454,
+      "sha256": "be5d7cc9f4b7ce684958094bd6af067ed1d12ff875e8f60d8e4fefc95ec416e3"
+    },
+    "AB98_P20_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67834566,
+      "sha256": "7aa981fb3f9208c4b7748ec5e93875fef762057904866de61cc6f0b7da4801ab"
+    },
+    "AB98_P20_PLAY_RELEASE_mapping.txt": {
+      "bytes": 115980214,
+      "sha256": "d8246077a2d57af26f78b6a96e03d89416bf639962e5e423f850a4ca630d33a7"
+    }
+  },
+  "commit": "1d115aae95624f0aaf1d49700a653cef8aa7bc6c",
+  "run_id": "38701180540",
+  "android_api_tested": "30",
+  "phone_abi": "arm64-v8a",
+  "physical_phone_tested": false,
+  "aab_signed": false,
+  "original_signing_key_available": false,
+  "play_release_ready": false
+}

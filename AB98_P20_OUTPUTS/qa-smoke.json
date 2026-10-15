@@ -1,0 +1,8 @@
+{
+  "package": "com.abfilepro.app.p20qa",
+  "launch": "ok",
+  "monkey_events": 1500,
+  "monkey_seed": 16016,
+  "monkey_exit": 0,
+  "crash_or_anr": false
+}
