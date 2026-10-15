@@ -1,0 +1,156 @@
+10-15 09:29:25.538  3861  3976 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:29:25.563  1185  1222 D InputMonitorCompat: Input event receiver for monitor (minus-one-disp0) created
+10-15 09:29:25.571  1365  1706 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.inputmethod.latin
+10-15 09:29:25.576  1365  1365 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:29:25.576  1365  1365 I PhenotypeBackgroundRecv: Skipping com.google.android.inputmethod.latin#com.google.android.inputmethod.latin which doesn't use ProcessStable flags.
+10-15 09:29:25.576  3331  3416 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging#com.google.android.apps.messaging" ]
+10-15 09:29:25.582  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@31834e6
+10-15 09:29:25.583  3331  3331 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 09:29:25.586  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@248767d
+10-15 09:29:25.588  3331  3418 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.apps.messaging
+10-15 09:29:25.589  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@64cba40
+10-15 09:29:25.590  3331  3418 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.messaging
+10-15 09:29:25.591  3331  3418 I BugleRcsProvisioning: RcsProvisioningTrigger: SIM swap detected, restarting provisioning
+10-15 09:29:25.594  3331  3418 I BugleRcsProvisioning: RcsProvisioningTrigger: updateRcsAvailabilityForProvisioningId : rcsProvisioningId = redacted-pii:sim_id[chars:35,last3:97)] hint = SIM_SWAP, logTriggerEvent = true
+10-15 09:29:25.597  3331  3418 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+10-15 09:29:25.598  3331  3418 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+10-15 09:29:25.601  3331  3418 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 2, newAvailability: 2, hint: SIM_SWAP
+10-15 09:29:25.602  3331  3417 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled for this carrier by Google, lastAvailabilityLocal is RCS is disabled for this carrier by Google, simId hash = 6492400215596401038, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+10-15 09:29:25.602  3331  3418 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+10-15 09:29:25.602  3331  3418 I BugleRcsEngine: RcsAvailabilityLogWorkerScheduler is cancelled [CONTEXT thread_id=54 ]
+10-15 09:29:25.603  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@54ad71f
+10-15 09:29:25.622  1362  1381 I .apps.wellbeing: Background concurrent mark compact GC freed 6296KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 5710KB/11MB, paused 89us,608us total 190.219ms
+10-15 09:29:25.625  1528  2412 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications#com.google.android.googlequicksearchbox
+10-15 09:29:25.627  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.smartsetup#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:25.631  3331  3429 I BugleTransport: onSystemBound: kicking off updateActiveTransport
+10-15 09:29:25.632  3331  3418 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:29:25.632  3331  3419 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:29:25.635  3331  3418 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:25.636  3331  3429 I BugleRcsProvisioning: RcsProvisioningTrigger: System bound to :rcs process. Schedule provisioning.
+10-15 09:29:25.637  3331  3418 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:25.643  3331  3418 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:25.649  3331  3429 I BugleRcsProvisioning: scheduleProvisioning using legacy code path
+10-15 09:29:25.649  3331  3429 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=62 ]
+10-15 09:29:25.649  3331  3429 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 09:29:25.651  3331  3418 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:25.651  3331  3419 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=55 ]
+10-15 09:29:25.651  3331  3419 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=55 ]
+10-15 09:29:25.651  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@50c04ca
+10-15 09:29:25.655  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@311c642
+10-15 09:29:25.655  3331  3429 E Bugle   : MobileConfigurationRetriever: The mobileConfigurationDataId cannot be removed as it is not present in the configurationCache
+10-15 09:29:25.655  3331  3418 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:29:25.656  3331  3418 W BugleAction: No default number, returning empty msisdn
+10-15 09:29:25.656  3331  3429 E Bugle   : MobileConfigurationRetriever: The mobileConfigurationDataId cannot be removed as it is not present in the configurationCache
+10-15 09:29:25.656  3331  3429 E Bugle   : MobileConfigurationRetriever: The mobileConfigurationDataId cannot be removed as it is not present in the configurationCache
+10-15 09:29:25.656  3331  3429 E Bugle   : MobileConfigurationRetriever: The mobileConfigurationDataId cannot be removed as it is not present in the configurationCache
+10-15 09:29:25.657  3331  3429 I BugleRcsProvisioning: RcsProvisioningTrigger: onMobileConfigurationUpdated for simId: redacted-pii:sim_id[chars:20,last3:897]
+10-15 09:29:25.657  3331  3429 I BugleRcsProvisioning: RcsProvisioningTrigger: onMobileConfigurationUpdatedWithoutReprovisionCampaign
+10-15 09:29:25.657  3331  3429 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = MOBILE_CONFIGURATION_UPDATE logTriggerEvent = true
+10-15 09:29:25.657  3331  3429 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForRcsProvisioningIdAsync, hint: MOBILE_CONFIGURATION_UPDATE
+10-15 09:29:25.657  3331  3429 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningIdAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: MOBILE_CONFIGURATION_UPDATE, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+10-15 09:29:25.658  3331  3418 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=54 ]
+10-15 09:29:25.658  3331  3432 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 09:29:25.659  3331  3432 I BugleTransport: Tachygram is disabled because the RCS Configuration is empty [CONTEXT ratelimit_period="5 SECONDS" skipped=3 ]
+10-15 09:29:25.659  3331  3432 I BugleTransport: Enabled chat transport is TRANSPORT_RCS [CONTEXT group_by="TRANSPORT_RCS" ratelimit_period="5 SECONDS" skipped=3 ]
+10-15 09:29:25.659  3331  3432 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 09:29:25.660  3331  3421 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=57 ]
+10-15 09:29:25.660  3331  3419 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 09:29:25.660  3331  3419 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 09:29:25.660  3331  3419 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 09:29:25.661  3331  3432 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 09:29:25.662  3331  3421 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+10-15 09:29:25.676  1436  2044 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+10-15 09:29:25.681  3611  4000 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=78 ]
+10-15 09:29:25.683  3611  3840 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:25.683  3611  3840 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:25.684  3331  3421 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 2, newAvailability: 2, hint: MOBILE_CONFIGURATION_UPDATE
+10-15 09:29:25.687  3331  3416 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:29:25.688  3331  3417 I BugleRcsEngine: Cancel All Provisioning work operation result is: SUCCESS, trigger is SIM_SWAP [CONTEXT thread_id=53 ]
+10-15 09:29:25.688  3611  3840 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:25.688  3611  3840 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:25.688  3611  3840 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:25.688  3331  3428 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=61 ]
+10-15 09:29:25.689  3611  3840 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=75 ]
+10-15 09:29:25.691  3331  3432 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled for this carrier by Google, lastAvailabilityLocal is RCS is disabled for this carrier by Google, simId hash = 6492400215596401038, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+10-15 09:29:25.691  3331  3419 I BugleRcsProvisioning: scheduleProvisioningForRcsProvisioningId rcsProvisioningId: redacted-pii:sim_id[chars:35,last3:97)], provisioningTriggerEvent: 20
+10-15 09:29:25.692  3331  3421 I afym    : scheduleProvisioningForRcsProvisioningId: rcsProvisioningId: SimId(idValue=89860318640220133897) operationTrigger: 7 bugle trigger event: 20
+10-15 09:29:25.693  3331  3428 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=61 ]
+10-15 09:29:25.693  3331  3421 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=57 ]
+10-15 09:29:25.698  3331  3421 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 09:29:25.698  3331  3419 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=55 ]
+10-15 09:29:25.698  3331  3419 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=55 ]
+10-15 09:29:25.713  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.mobileconfiguration.receiver.BugleMobileConfigurationBroadcastReceiver@95dc60f
+10-15 09:29:25.743   436   436 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: Failed to set whitelist for augmented autofill service.
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: java.lang.SecurityException: caller is not user's Augmented Autofill Service
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at android.view.autofill.AutofillManager.setAugmentedAutofillWhitelist(AutofillManager.java:2858)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at ema.c(PG:66)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at emw.h(PG:81)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at emw.j(PG:4)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at emw.i(PG:35)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at emy.a(PG:3)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at icx.run(PG:61)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at hqv.run(PG:11)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at wqm.a(PG:3)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at wpo.run(PG:21)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at wqn.run(PG:5)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at hqv.run(PG:221)
+10-15 09:29:25.753  1436  1743 W AiAiAutofill: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:25.758  1436  2044 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+10-15 09:29:25.760  1436  2044 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+10-15 09:29:25.761  1436  2044 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+10-15 09:29:25.761  1436  2044 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+10-15 09:29:25.762  1436  2044 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+10-15 09:29:25.769  1444  1444 I GsaVoiceInteractionSrv: (REDACTED) O received %s
+10-15 09:29:25.773  1414  1425 I PeopleGalProvider: Gal directories started.
+10-15 09:29:25.773  1414  1425 I PeopleGalProvider: Method 1 completed.
+10-15 09:29:25.773  1414  1425 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:29:25.780  1185  1222 D SearchTargetUtil: query= size=1
+10-15 09:29:25.780  1185  1222 D SearchTargetUtil: layoutType=icon_row resultType=4096 packageName= extras=Bundle{aiai_settings_enabled=true,icon_container_enabled=true,zero_state_query_ready=true,zero_state_all_apps_web_suggest_count=3,rank=1.0,toast_settings_toggle_values=16777476,key_ipc_start=75050,hide_subtitle=true,enable_launch_animations=true,zero_state_qsb_web_suggest_count=10,}ParentID: null targetID: SESSION_INFO:0::zero_state_flags
+10-15 09:29:25.837  3337  3478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: Failed to set whitelist for augmented autofill service.
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: java.lang.SecurityException: caller is not user's Augmented Autofill Service
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at android.view.autofill.AutofillManager.setAugmentedAutofillWhitelist(AutofillManager.java:2858)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at ema.c(PG:66)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at emw.h(PG:81)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at emw.j(PG:4)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at emw.i(PG:35)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at emy.a(PG:3)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at icx.run(PG:61)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at hqv.run(PG:11)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at wqm.a(PG:3)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at wpo.run(PG:21)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at wqn.run(PG:5)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at hqv.run(PG:221)
+10-15 09:29:25.854  1436  1743 W AiAiAutofill: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:25.872  3337  3478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:25.882  3337  3478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:25.901  1365  1683 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():469 Get empty configurations.
+10-15 09:29:25.902  1365  1683 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=false, fetchStatus=2026-10-15 09:29:25{reason=BROADCAST, isFullFetch=false, isEmpty=true, registeredFormFactor=phone, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=0, deletedFlagsCount=0, totalTime=740}
+10-15 09:29:25.907  1365  1578 I SP      : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}
+10-15 09:29:25.911  3331  3421 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:25.914  1365  1578 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 3 candidates
+10-15 09:29:25.921  1226  1906 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:29:25.937   365   365 I netd    : tetherGetStats() -> {[]} <2.71ms>
+10-15 09:29:25.945  1638  4006 D DownloadManager: [3] Starting
+10-15 09:29:25.946  1528  2107 W SearchServiceCore: Abort, client detached.
+10-15 09:29:25.948  1528  2465 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:25.955  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 3
+10-15 09:29:25.967  1365  1578 I SP      : Scheduling: download registered, 0 started, 0 paused, 3 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 09:29:25.969  1638  4006 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10136
+10-15 09:29:25.974  1365  1578 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 4 candidates
+10-15 09:29:25.979  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 4
+10-15 09:29:25.987  1365  1578 I SP      : Scheduling: download registered, 0 started, 0 paused, 4 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 09:29:25.992  3861  3976 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

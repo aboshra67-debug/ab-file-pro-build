@@ -1,0 +1,4 @@
+10-15 09:32:18.985  4865  4884 I TestRunner: started: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:32:18.991  2630  2650 I zygote  : Background concurrent copying GC freed 18226(1322KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 5MB/11MB, paused 161us total 105.218ms
+10-15 09:32:19.004  2128  2144 I zygote64: Background concurrent copying GC freed 54104(1941KB) AllocSpace objects, 2(40KB) LOS objects, 36% free, 10MB/16MB, paused 71us total 142.142ms
+10-15 09:32:19.023  4865  4884 I TestRunner: finished: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

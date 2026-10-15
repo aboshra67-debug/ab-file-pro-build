@@ -1,0 +1,4 @@
+10-15 09:29:26.004  3861  3976 I TestRunner: started: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:29:26.012  1226  1906 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:29:26.023  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 5
+10-15 09:29:26.032  3861  3976 I TestRunner: finished: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

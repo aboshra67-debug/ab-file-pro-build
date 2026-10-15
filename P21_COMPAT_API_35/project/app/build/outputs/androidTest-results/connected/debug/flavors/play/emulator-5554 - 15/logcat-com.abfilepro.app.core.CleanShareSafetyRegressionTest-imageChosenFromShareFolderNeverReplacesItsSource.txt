@@ -1,0 +1,5 @@
+10-15 09:29:30.623  3861  3976 I TestRunner: started: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:30.637  1638  4076 D DownloadManager: [10] Finished with status SUCCESS
+10-15 09:29:30.708  3331  3410 D PhFileGroupPop: Added file groups animated_emoji
+10-15 09:29:30.738  3331  3410 D PhFileGroupPop: Added file groups voice_moods
+10-15 09:29:30.738  3861  3976 I TestRunner: finished: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

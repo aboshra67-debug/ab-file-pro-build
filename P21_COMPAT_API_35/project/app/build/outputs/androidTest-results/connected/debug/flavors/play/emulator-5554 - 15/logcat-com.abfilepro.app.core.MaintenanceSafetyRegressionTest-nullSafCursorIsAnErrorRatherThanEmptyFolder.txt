@@ -1,0 +1,4 @@
+10-15 09:29:36.617  3861  3976 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.621  2112  2112 E tflite  : third_party/tensorflow/lite/core/subgraph.cc:1059 tensor.data.raw != nullptr was not true.
+10-15 09:29:36.624  4126  4126 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:29:36.633  3861  3976 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,32 @@
+10-15 09:29:26.469  3861  3976 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:29:26.480  3331  3410 D PhFileGroupPop: Added file groups multitask_experiment
+10-15 09:29:26.495  3331  3410 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+10-15 09:29:26.508  1226  3556 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:29:26.511  3331  3410 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+10-15 09:29:26.541   365  4036 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10095 0}
+10-15 09:29:26.541   365  4037 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:29:26.542   365  4038 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:29:26.542   365  4038 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x775ea98a6d90
+10-15 09:29:26.542   365  4038 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 09:29:26.542   365  4037 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x775ea98a7450
+10-15 09:29:26.542   365  4037 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:29:26.545  1638  4033 D TrafficStats: tagSocket(94) with statsTag=0xffffff01, statsUid=10136
+10-15 09:29:26.590  1414  4021 I PeopleGalProvider: Gal directories started.
+10-15 09:29:26.592  1414  2990 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.appinvite, using defaults.
+10-15 09:29:26.593  1414  4021 I PeopleGalProvider: Method 1 completed.
+10-15 09:29:26.594  1414  4021 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:29:26.615  1414  4022 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-15 09:29:26.616  1414  4022 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-15 09:29:26.624  1414  4022 V Backup  : [PhotosPackagedAddedIO] Flag is disabled.
+10-15 09:29:26.631  1414  4017 I Dck     : disableDckSupport: false [CONTEXT service_id=289 ]
+10-15 09:29:26.651  1414  4017 I Dck     : doesDeviceHaveSupportedWirelessCapabilities: wccSysProp:0, wccMendel:3, deviceWccOverride:false [CONTEXT service_id=289 ]
+10-15 09:29:26.653  1414  4009 I Blockstore: [DataStoreImpl] Clearing Blockstore Data for package com.abfilepro.app.p21mainttrial [CONTEXT service_id=258 ]
+10-15 09:29:26.664  1414  4009 I Blockstore: [DataStoreImpl] Keyless data not found or its IsLastInstallationData = false. [CONTEXT service_id=258 ]
+10-15 09:29:26.679  3331  3410 D PhFileGroupPop: Added file groups supersort_us_grammars
+10-15 09:29:26.682  1414  4017 I Dck     : Dck module condition - hasWccSupport: false [CONTEXT service_id=289 ]
+10-15 09:29:26.682  1414  4017 I Dck     : Dck module condition - downloadAllowed: false [CONTEXT service_id=289 ]
+10-15 09:29:26.685  1414  4017 W Dck     : Dck module not eligible for asynchronous downloading [CONTEXT service_id=289 ]
+10-15 09:29:26.685  1414  2990 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+10-15 09:29:26.686  1414  4021 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
+10-15 09:29:26.715  3331  3418 I BugleConnectivity: removeConnectivityStateListener: ConnectivityStateListener not found for subId -1.
+10-15 09:29:26.727  3861  3976 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,5 @@
+10-15 09:29:37.399  3861  3976 I TestRunner: started: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.402  1436  2845 I AiAiCaptions: loadManifest(): Successfully loaded embedded manifest of superpack 'captions_i18n_v0_background' (version 20240604)
+10-15 09:29:37.403  1436  2091 I AiAiCaptions: generateAndDownloadSuperpack(): Successfully created manifest of superpack 'captions_i18n_v0_en-US' (version 20240604), starting to download. Packs to skip:
+10-15 09:29:37.406  1436  1815 I SP.AiAi : Registering captions_i18n_v0_en-US.20240604, url: null, constraints: *:b:u:l, flags: *, requested: 20240604, current: 20210623
+10-15 09:29:37.407  3861  3976 I TestRunner: finished: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)

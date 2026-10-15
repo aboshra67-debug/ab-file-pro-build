@@ -1,0 +1,6 @@
+10-15 09:32:17.571  4865  4884 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:32:17.783  4865  4876 I zygote64: Background concurrent copying GC freed 7657(268KB) AllocSpace objects, 7(1176KB) LOS objects, 50% free, 4MB/8MB, paused 6.336ms total 24.722ms
+10-15 09:32:17.829  4865  4870 I zygote64: Do partial code cache collection, code=59KB, data=42KB
+10-15 09:32:17.830  4865  4870 I zygote64: After code cache collection, code=59KB, data=42KB
+10-15 09:32:17.830  4865  4870 I zygote64: Increasing code cache capacity to 256KB
+10-15 09:32:17.937  4865  4884 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

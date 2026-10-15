@@ -1,0 +1,79 @@
+10-15 09:29:30.885  3861  3976 I TestRunner: started: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:30.907  1083  1083 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.messaging
+10-15 09:29:30.907  1083  1083 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:29:30.919   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:30.922  1638  4074 D DownloadManager: [9] Finished with status SUCCESS
+10-15 09:29:30.924  1226  1226 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+10-15 09:29:30.931  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:30.932  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a152090
+10-15 09:29:30.932  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a152090
+10-15 09:29:30.942   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:30.950   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:30.963  1226  1226 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:29:30.964   915  1017 I PermissionControllerServiceImpl: Updating user sensitive for uid 10135
+10-15 09:29:30.966  1083  1083 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 09:29:30.973   563   671 I RoleService: Granting default roles...
+10-15 09:29:30.975   563  1034 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 09:29:30.975   563  1034 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 09:29:30.976   563  1034 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:29:30.984  3331  3410 D PhFileGroupPop: Added file groups screen_effects
+10-15 09:29:30.988  1185  1223 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.apps.messaging]
+10-15 09:29:30.991  1436  1436 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.messaging.
+10-15 09:29:30.993  1436  2077 I AiAiEcho: AppIndexer Package:[com.google.android.apps.messaging] UserProfile:[0] Enabled:[true].
+10-15 09:29:30.993  1436  2077 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.messaging], userId:[0], reason:[package is updated.].
+10-15 09:29:30.995   563  1034 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+10-15 09:29:30.997   563   875 E system_server: No package ID 7f found for resource ID 0x7f0803ff.
+10-15 09:29:30.997   563   875 E system_server: No package ID 7f found for resource ID 0x7f1510ad.
+10-15 09:29:30.997   563   875 E system_server: No package ID 7f found for resource ID 0x7f1510ad.
+10-15 09:29:30.997   563   875 E system_server: No package ID 7f found for resource ID 0x7f1510ac.
+10-15 09:29:31.003   915  1017 I PermissionControllerServiceImpl: Updating user sensitive for uid 10209
+10-15 09:29:31.003   563  1034 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 09:29:31.008   915  1017 I PermissionControllerServiceImpl: Updating user sensitive for uid 10143
+10-15 09:29:31.009  1083  1083 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:29:31.019   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:31.019   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:31.021   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:31.021   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:31.026  1436  1436 I AiAiEcho: AppFetcherImpl onPackageChanged com.abfilepro.app.p21mainttrial.
+10-15 09:29:31.030  1436  2188 I AiAiEcho: AppIndexer Package:[com.abfilepro.app.p21mainttrial] UserProfile:[0] Enabled:[true].
+10-15 09:29:31.030  1436  2188 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.abfilepro.app.p21mainttrial], userId:[0], reason:[package is updated.].
+10-15 09:29:31.044  1226  1226 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:29:31.059  1226  1226 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:29:31.062  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:31.064  1185  1185 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+10-15 09:29:31.066  1083  1282 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.messaging
+10-15 09:29:31.069  1083  1083 D CarrierSvcBindHelper: onPackageModified: com.abfilepro.app.p21mainttrial
+10-15 09:29:31.073  1083  1083 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:29:31.084  1185  1223 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.abfilepro.app.p21mainttrial]
+10-15 09:29:31.101  1185  1592 D EGL_emulation: app_time_stats: avg=5671.76ms min=5671.76ms max=5671.76ms count=1
+10-15 09:29:31.114  1083  1083 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 09:29:31.124  1083  1083 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:29:31.130  3013  3829 I ConfigUpdater: doneInstall
+10-15 09:29:31.141  1083  1282 D ImsResolver: maybeAddedImsService, packageName: com.abfilepro.app.p21mainttrial
+10-15 09:29:31.141  1083  1083 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 09:29:31.142  1083  1083 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:29:31.148  1083  1083 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 09:29:31.153  1083  1083 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:29:31.155  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a131390
+10-15 09:29:31.155  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a131390
+10-15 09:29:31.156  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:31.171  3861  3870 I p.p21mainttrial: Background concurrent mark compact GC freed 12MB AllocSpace bytes, 166(12MB) LOS objects, 49% free, 4214KB/8428KB, paused 72us,1.978ms total 121.767ms
+10-15 09:29:31.172  1185  1185 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+10-15 09:29:31.174  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a132a50
+10-15 09:29:31.174  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a132a50
+10-15 09:29:31.179  1083  1282 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 09:29:31.190   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:31.190   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:31.193  1185  1223 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.gms]
+10-15 09:29:31.193  1436  1436 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.gms.
+10-15 09:29:31.193  1638  2613 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model.metadata via provider delete
+10-15 09:29:31.199  1436  2193 I AiAiEcho: AppIndexer Package:[com.google.android.gms] UserProfile:[0] Enabled:[true].
+10-15 09:29:31.200  1436  2193 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.gms], userId:[0], reason:[package is updated.].
+10-15 09:29:31.207  1398  2995 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.model.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.model.metadata
+10-15 09:29:31.208  1398  2995 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-15 09:29:31.211  1185  1223 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.gms
+10-15 09:29:31.224  1638  2613 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.model via provider delete
+10-15 09:29:31.249  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.256  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a133d90
+10-15 09:29:31.256  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a133d90
+10-15 09:29:31.259  3861  3976 I TestRunner: finished: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

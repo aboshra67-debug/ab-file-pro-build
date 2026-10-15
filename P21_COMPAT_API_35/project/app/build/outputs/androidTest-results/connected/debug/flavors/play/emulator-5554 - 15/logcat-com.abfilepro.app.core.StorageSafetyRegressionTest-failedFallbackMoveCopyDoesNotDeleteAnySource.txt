@@ -1,0 +1,27 @@
+10-15 09:29:37.232  3861  3976 I TestRunner: started: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.227  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.236  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.236  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.236  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.236  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.236  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_en-US is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_en-US
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.237  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.237  1436  1815 I SP.AiAi : Registering captions_i18n_v0_background.20240604, url: https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json, constraints: W:b:u:l, flags: bg, requested: 20240604, current: 20210623
+10-15 09:29:37.238  1436  1815 I SP.AiAi : Registering captions_i18n_v0_background.20240604, url: https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json, constraints: W:b:u:l, flags: bg, requested: 20240604, current: 20210623
+10-15 09:29:37.243  3861  3976 I TestRunner: finished: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,7 @@
+10-15 09:33:19.674  4239  4258 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:19.686  4239  4372 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:33:19.694  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:19.697  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:19.698  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:19.700  3035  3254 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:19.705  4239  4258 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

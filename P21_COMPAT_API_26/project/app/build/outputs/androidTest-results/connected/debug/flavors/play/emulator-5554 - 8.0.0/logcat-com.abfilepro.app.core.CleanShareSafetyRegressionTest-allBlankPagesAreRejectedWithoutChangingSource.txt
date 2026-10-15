@@ -1,0 +1,5 @@
+10-15 09:32:19.236  4865  4884 I TestRunner: started: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:32:19.304  4865  4870 I zygote64: Do partial code cache collection, code=123KB, data=78KB
+10-15 09:32:19.304  4865  4870 I zygote64: After code cache collection, code=120KB, data=77KB
+10-15 09:32:19.304  4865  4870 I zygote64: Increasing code cache capacity to 512KB
+10-15 09:32:19.371  4865  4884 I TestRunner: finished: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

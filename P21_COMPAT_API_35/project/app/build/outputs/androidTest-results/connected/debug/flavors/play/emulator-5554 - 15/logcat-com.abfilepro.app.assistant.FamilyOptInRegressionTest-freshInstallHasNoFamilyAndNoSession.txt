@@ -1,0 +1,5 @@
+10-15 09:29:26.091  3861  3976 I TestRunner: started: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:29:26.099  1414  4012 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:29:26.102  1414  4011 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:29:26.108  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 6
+10-15 09:29:26.114  3861  3976 I TestRunner: finished: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

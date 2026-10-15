@@ -1,0 +1,2 @@
+10-15 09:33:33.429  4239  4258 I TestRunner: started: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.444  4239  4258 I TestRunner: finished: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)

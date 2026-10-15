@@ -1,0 +1,44 @@
+10-15 09:29:35.449  3861  3976 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:35.459  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/thumbs_up_effect.binarypb_1741114142080
+10-15 09:29:35.459  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/thumbs_up_effect.binarypb_1741114142080)
+10-15 09:29:35.474  3331  3418 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562240
+10-15 09:29:35.476  1414  1414 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 09:29:35.481  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/applause_effect.binarypb_1741113920033
+10-15 09:29:35.481  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/applause_effect.binarypb_1741113920033)
+10-15 09:29:35.487  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.487  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a150490
+10-15 09:29:35.487  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a150490
+10-15 09:29:35.488  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.488  3861  4055 E document: Parse Document failed (err=3).
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: Can't parse the header version.
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:487)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:141)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:125)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:285)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 09:29:35.491  3861  4055 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 09:29:35.504  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562232
+10-15 09:29:35.507  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.507  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a14f310
+10-15 09:29:35.507  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a14f310
+10-15 09:29:35.510  3861  3976 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,6 @@
+10-15 09:33:17.110  4239  4258 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:17.128  1282  1341 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:17.135  1743  2577 E SingleDataFileGroupPop: Failed to add file group
+10-15 09:33:17.147  1743  1780 I earchbox:search: JIT allocated 77KB for compiled code of java.lang.Object com.google.android.apps.gsa.binaries.velvet.app.amm.d()
+10-15 09:33:17.152  1050  3053 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:17.153  4239  4258 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

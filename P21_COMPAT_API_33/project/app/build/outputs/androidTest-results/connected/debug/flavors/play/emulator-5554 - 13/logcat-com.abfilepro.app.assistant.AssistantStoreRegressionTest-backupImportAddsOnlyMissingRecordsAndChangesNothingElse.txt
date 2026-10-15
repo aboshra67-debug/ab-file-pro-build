@@ -1,0 +1,30 @@
+10-15 09:33:12.061  4239  4258 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:33:12.065   282  4267 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:33:12.065   282  4268 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:33:12.082   282  4267 I resolv  : res_nsend: used send_dg 57 terrno: 0
+10-15 09:33:12.083   282  4267 I resolv  : doQuery: rcode=0, ancount=1, return value=57
+10-15 09:33:12.083   282  4268 I resolv  : res_nsend: used send_dg 45 terrno: 0
+10-15 09:33:12.083   282  4268 I resolv  : doQuery: rcode=0, ancount=1, return value=45
+10-15 09:33:12.085  2509  2874 D TrafficStats: tagSocket(6) with statsTag=0xffffffff, statsUid=-1
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: UID for network attribution might be misset for tag 805307399 [CONTEXT service_id=39 ]
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: dhwp: FULL
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at d.N(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aobf.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aqzt.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aqzk.d(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aqzp.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aqzk.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):5)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aqzk.execute(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at apiy.h(:com.google.android.gms@231818047@23.18.18 (190800-535401451):51)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at apit.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):7)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:12.109  1050  3599 E GmsConnectionFactory: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:12.112   282  4270 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 09:33:12.117   282  4271 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:33:12.119   282  4272 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:33:12.120  4239  4258 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

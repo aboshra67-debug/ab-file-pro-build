@@ -1,0 +1,13 @@
+10-15 09:29:36.463  3861  3976 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.490  3611  3654 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=60 ]
+10-15 09:29:36.493  3611  3840 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:36.514  1414  2984 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 09:29:36.517  1414  2990 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 09:29:36.525  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:36.530  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a152250
+10-15 09:29:36.530  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a152250
+10-15 09:29:36.543  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:36.543  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a14da90
+10-15 09:29:36.543  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a14da90
+10-15 09:29:36.545  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.assistant.invocation.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:36.546  3861  3976 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

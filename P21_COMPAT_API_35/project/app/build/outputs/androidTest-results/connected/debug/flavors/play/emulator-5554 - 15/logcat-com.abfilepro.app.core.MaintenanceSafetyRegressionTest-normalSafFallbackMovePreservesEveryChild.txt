@@ -1,0 +1,67 @@
+10-15 09:29:35.927  3861  3976 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:35.938  4126  4126 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:29:35.941  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:35.976  1528  2465 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:35.979  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.assistant.invocation.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:36.001  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:36.010  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:36.054   366   366 W Zygote  : forkRepeatedly terminated due to non-simple command
+10-15 09:29:36.054   366   366 D Zygote  : mbuffer starts with 1 , nice name is , mEnd = 35, mNext = 35, mLinesLeft = 0, mFd = 6
+10-15 09:29:36.064  1528  2465 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:36.066  3780  3781 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification artd has clients: 0
+10-15 09:29:36.066  3780  3781 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+10-15 09:29:36.072  3780  3781 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+10-15 09:29:36.104  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:36.104  1436  1871 E AiAiEcho: Reading elements from Geller failed with cause
+10-15 09:29:36.104  1436  1871 E AiAiEcho: iey: Code: UNKNOWN, Message: Geller data fetch is not enabled
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at ifp.a(PG:17)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at kzb.b(PG:22)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at aaer.g(PG:13)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at kotlinx.coroutines.DispatchedTask.run(PG:114)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at wqm.a(PG:3)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at wpo.run(PG:21)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at wqn.run(PG:5)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:307)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at hqv.run(PG:221)
+10-15 09:29:36.104  1436  1871 E AiAiEcho: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:36.106  1528  1528 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:36.107   563   585 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:36.112  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.112  1436  2091 I AiAiCaptions: TtsLangFetcherImpl::fetch(). Fetching locales en_US
+10-15 09:29:36.115  1436  2091 I TextToSpeech: Sucessfully bound to com.google.android.tts
+10-15 09:29:36.116  1436  2091 I AiAiCaptions: TtsLangFetcherImpl::fetch(). Fetching locales en_US
+10-15 09:29:36.116  1436  2091 W AiAiCaptions: TtsSynthesizerImpl::initialize(): TTS engine is initializing
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_en-US is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.116  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.116  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.119  3861  3976 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

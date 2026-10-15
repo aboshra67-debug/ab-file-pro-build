@@ -1,0 +1,11 @@
+10-15 09:32:19.552  4865  4884 I TestRunner: started: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:32:19.559  4865  4874 E System  : Uncaught exception thrown by finalizer
+10-15 09:32:19.562  4865  4874 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:32:19.562  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:32:19.562  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:32:19.562  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:32:19.562  4865  4874 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:32:19.562  4865  4874 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:32:19.562  4865  4874 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:32:19.562  4865  4874 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:32:19.624  4865  4884 I TestRunner: finished: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,59 @@
+10-15 09:33:31.059  4239  4258 I TestRunner: started: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:31.063  3035  3109 I BugleRcs: connecting to 10 Rcs Services
+10-15 09:33:31.065  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 4 scheduled, 4 pending: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d * {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 * {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 * {m:b:u:l, bg}, transformer_concept:2023011913_en * {m:b:u:l, bg}
+10-15 09:33:31.072  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:31.073  1282  4304 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 09:33:31.074  1282  4304 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 09:33:31.074  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.077  1743  2571 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+10-15 09:33:31.085  3035  3109 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:31.101  1743  2571 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-15 09:33:31.102   756   928 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:33:31.110  1282  4484 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-15 09:33:31.119  1282  4304 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 129885.
+10-15 09:33:31.124  3035  3121 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:31.138  1743  1743 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task ZIP_DOWNLOAD_PROCESSOR.
+10-15 09:33:31.147  1467  1896 I SP      : Scheduling: job start ({m:b:u:l, bg}), 4 started, 0 paused, 0 scheduled, 4 pending: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ * {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ * {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ * {m:b:u:l, bg}, transformer_concept:2023011913_en @ * {m:b:u:l, bg}
+10-15 09:33:31.147  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/emoji2expr.pb to e9a5a2de48a4f8b9a658b411bcfb375d.fetched (constraints: m:b:u:l)
+10-15 09:33:31.148  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/text2expr.pb to 8722425f4121ffdea802b1066df73991.fetched (constraints: m:b:u:l)
+10-15 09:33:31.148  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/contextual_ek.pb to fa1da98da1212aad6fb9a8efaff48148.fetched (constraints: m:b:u:l)
+10-15 09:33:31.148  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/en.zip to 2023011913_en.zip.fetched (constraints: m:b:u:l)
+10-15 09:33:31.150   282  4520 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10137 0}
+10-15 09:33:31.151  1743  2336 W LanguagePackUpdateContr: Querying download manager failed for ID : 2
+10-15 09:33:31.152  1605  2543 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 227 items in 68079ms, 223 inserts 4 updates 0 deletes
+10-15 09:33:31.153   282  4521 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:33:31.154   282  4521 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc2ae0a4d0
+10-15 09:33:31.156  4466  4466 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:33:31.157   282  4521 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:33:31.158  1743  2334 I ModelDnldProcssHelpr: #handleDownloadComplete, downloadId=2
+10-15 09:33:31.162  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.162  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.162  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.162  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.163  1282  4484 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-15 09:33:31.166  1282  4484 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:31.166   282  4522 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:33:31.166   282  4522 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc5ae074b0
+10-15 09:33:31.166   282  4522 I resolv  : doQuery: rcode=0, ancount=8, return value=161
+10-15 09:33:31.166  1467  4519 D TrafficStats: tagSocket(133) with statsTag=0xffffffff, statsUid=-1
+10-15 09:33:31.168  1282  4484 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:31.170  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.170  3035  3253 I RcsClientLib: com.google.android.rcs.client.businessinfo.BusinessInfoService connected
+10-15 09:33:31.171  3035  3253 I BugleRcs: com.google.android.rcs.client.businessinfo.BusinessInfoService RCS service connected
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:31.174  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
+10-15 09:33:31.177  1743  2338 E DownloadManagerWrapper: Can't find downloadId=2
+10-15 09:33:31.177  1743  2334 E ModelDnldProcssHelpr: pending download info for pending_hotword_model_download_info is null
+10-15 09:33:31.178  1743  2334 E ModelDnldProcssHelpr: pending download info for pending_xgoogle_hotword_model_download_info is null
+10-15 09:33:31.187  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.187  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.187  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.197  3035  3121 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:31.201  3035  3121 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.216  4239  4258 I TestRunner: finished: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

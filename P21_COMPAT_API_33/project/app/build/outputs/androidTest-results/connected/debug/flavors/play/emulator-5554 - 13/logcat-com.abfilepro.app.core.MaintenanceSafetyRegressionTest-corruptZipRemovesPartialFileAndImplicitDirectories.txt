@@ -1,0 +1,30 @@
+10-15 09:33:31.217  4239  4258 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:31.222  1467  1712 I SuperDelight: SuperDelightUnpacker$UnpackCancellableTask.execute():102 UnpackCancellableTask#execute(): fst-decompress /data/user/0/com.google.android.inputmethod.latin/files/superpacks/delight/main_en_840_2022102600_1.staged
+10-15 09:33:31.235  1743  2329 E BlobLobber: handleFinishedDownload but blob isn't finished (DownloadInfo[status=4,file=null,failure=null,bytesDownloaded=1565128])
+10-15 09:33:31.235  1743  2329 W BlobLobber: Notification for download id 1 which we didn't know or failed
+10-15 09:33:31.235  3035  3121 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:31.243  1743  1743 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task ZIP_DOWNLOAD_PROCESSOR.
+10-15 09:33:31.249  1743  2338 I ModelDnldProcssHelpr: #handleDownloadComplete, downloadId=1
+10-15 09:33:31.249  1743  2338 E ModelDnldProcssHelpr: pending download info for pending_hotword_model_download_info is null
+10-15 09:33:31.249  1743  2338 E ModelDnldProcssHelpr: pending download info for pending_xgoogle_hotword_model_download_info is null
+10-15 09:33:31.256  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.256  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.256  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.256  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.258  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:31.263  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.266  3035  3109 I BugleRcsEngine: [42] bgrh.b: Deleted transfers file: false
+10-15 09:33:31.277  3035  3121 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:31.280  1282  4304 I GCM-GMS : Scheduling task to register GMS
+10-15 09:33:31.280  1282  4457 I AccountSeedingPrefetchI: AccountSeedingPrefetchInit intent operation started. [CONTEXT service_id=42 ]
+10-15 09:33:31.299   283   283 D Zygote  : Forked child process 4524
+10-15 09:33:31.313  4524  4524 I ackageinstaller: Using CollectorTypeCC GC.
+10-15 09:33:31.314  4524  4524 W ackageinstaller: Unexpected CPU variant for x86: x86_64.
+10-15 09:33:31.314  4524  4524 W ackageinstaller: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 09:33:31.317   383   392 I adbd    : jdwp connection from 4524
+10-15 09:33:31.338  1743  2334 I LanguagePackUpdateContr: Not processing download: 1, not a language pack
+10-15 09:33:31.339  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.339  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.340  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:31.365  3035  3109 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:31.376  4239  4258 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

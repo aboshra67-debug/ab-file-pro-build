@@ -1,0 +1,10 @@
+10-15 09:33:32.880  4239  4258 I TestRunner: started: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:33:32.898  4239  4246 I p.p21mainttrial: Background young concurrent copying GC freed 22221(1918KB) AllocSpace objects, 33(2932KB) LOS objects, 0% free, 9932KB/9947KB, paused 29us,18us total 120.933ms
+10-15 09:33:32.904  1500  1578 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.apps.wellbeing
+10-15 09:33:32.910  2852  2852 I PhenotypeBackgroundRecv: Skipping com.google.android.ims#com.google.android.ims which doesn't use ProcessStable flags.
+10-15 09:33:32.931  1282  4484 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-15 09:33:32.980  1282  4484 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:32.981  1282  4484 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:33.000  3035  3121 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:33.031  1282  4484 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:33.039  4239  4258 I TestRunner: finished: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

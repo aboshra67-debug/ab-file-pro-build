@@ -1,0 +1,22 @@
+10-15 09:33:16.359  4239  4258 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:16.374  1050  3053 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:16.391   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:16.392   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:16.392   946   946 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 09:33:16.392   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:16.393   946   946 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 09:33:16.393   479   578 I RoleService: Granting default roles...
+10-15 09:33:16.394   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:16.405  3035  3206 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@cd6b645
+10-15 09:33:16.433  1743  1743 I BgTaskExecutorImpl: Starting EXCLUSIVE background task INTERNAL_PERIODIC_TASK_SYNC.
+10-15 09:33:16.448   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 09:33:16.457  1050  4182 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:33:16.469  1282  1341 I Icing   : updateResources: need to parse arkh{com.google.android.gms}
+10-15 09:33:16.478  1282  1341 I Icing   : updateResources: need to parse arkh{com.google.android.gms}
+10-15 09:33:16.490   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:16.497   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:16.497   946   946 D MediaPlayerList: Name of package changed: com.google.android.settings.intelligence
+10-15 09:33:16.497   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:16.499   946   946 D MediaPlayerList: Name of package changed: com.google.android.settings.intelligence
+10-15 09:33:16.500   756   928 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:33:16.512  4239  4258 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

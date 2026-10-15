@@ -1,0 +1,17 @@
+10-15 09:29:26.118  3861  3976 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:29:26.157  1638  4006 D DownloadManager: [3] Finished with status SUCCESS
+10-15 09:29:26.158  1638  4018 D DownloadManager: [4] Starting
+10-15 09:29:26.179  1365  1578 I SP      : Scheduling: download registered, 0 started, 0 paused, 6 scheduled, 7 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip * {m:b:u:l, fg}
+10-15 09:29:26.187  1414  4014 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 09:29:26.197  1365  1578 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 7 candidates
+10-15 09:29:26.205  1414  4008 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 09:29:26.206  1414  4017 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 09:29:26.207  1414  4017 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.people [CONTEXT service_id=340 ]
+10-15 09:29:26.209  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 7
+10-15 09:29:26.241  3331  3331 I BugleDataModel: ActionExecutorImpl: Starting ActionService
+10-15 09:29:26.245  1638  4018 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10136
+10-15 09:29:26.259  1365  1578 I SP      : Scheduling: download registered, 0 started, 0 paused, 7 scheduled, 8 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip * {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip * {m:b:u:l, fg}
+10-15 09:29:26.260  1414  4014 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:29:26.261  1414  4019 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 09:29:26.267  1414  4014 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 09:29:26.279  3861  3976 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

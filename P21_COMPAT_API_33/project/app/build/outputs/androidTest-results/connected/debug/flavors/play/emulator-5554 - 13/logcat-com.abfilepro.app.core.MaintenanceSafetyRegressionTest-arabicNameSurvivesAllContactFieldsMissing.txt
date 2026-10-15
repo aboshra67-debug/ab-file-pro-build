@@ -1,0 +1,2 @@
+10-15 09:33:32.556  4239  4258 I TestRunner: started: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:32.560  4239  4258 I TestRunner: finished: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

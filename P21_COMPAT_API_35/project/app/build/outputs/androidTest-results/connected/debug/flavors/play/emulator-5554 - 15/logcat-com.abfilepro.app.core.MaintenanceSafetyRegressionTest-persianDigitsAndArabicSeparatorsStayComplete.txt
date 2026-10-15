@@ -1,0 +1,4 @@
+10-15 09:29:35.533  3861  3976 I TestRunner: started: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:35.542  3331  3418 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/surprise_effect.binarypb_1741114006162
+10-15 09:29:35.543  3331  3418 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/surprise_effect.binarypb_1741114006162)
+10-15 09:29:35.547  3861  3976 I TestRunner: finished: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

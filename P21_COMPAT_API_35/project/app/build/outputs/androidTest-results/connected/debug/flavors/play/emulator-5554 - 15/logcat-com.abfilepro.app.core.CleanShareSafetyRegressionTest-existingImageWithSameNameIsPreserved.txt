@@ -1,0 +1,12 @@
+10-15 09:29:32.104  3861  3976 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:32.148  1362  1362 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.kids#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 09:29:32.175  1414  1425 I PeopleGalProvider: Gal directories started.
+10-15 09:29:32.177  1414  1425 I PeopleGalProvider: Method 1 completed.
+10-15 09:29:32.177  1414  1425 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:29:32.185  2112  2182 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.tts
+10-15 09:29:32.186  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 904KB AllocSpace bytes, 268(12MB) LOS objects, 45% free, 29MB/53MB, paused 2.920ms,933us total 108.170ms
+10-15 09:29:32.197  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561315
+10-15 09:29:32.199  3331  3421 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561314
+10-15 09:29:32.200  3331  3420 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/rewrite_config_80_percent_1554768285.pb
+10-15 09:29:32.200  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/rewrite_config_80_percent_1554768285.pb)
+10-15 09:29:32.214  3861  3976 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

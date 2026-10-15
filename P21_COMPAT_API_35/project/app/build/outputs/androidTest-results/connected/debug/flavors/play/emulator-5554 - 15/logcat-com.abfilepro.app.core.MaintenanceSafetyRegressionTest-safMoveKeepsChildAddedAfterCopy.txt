@@ -1,0 +1,34 @@
+10-15 09:29:35.548  3861  3976 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:35.553   563   602 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10210, packageName = null, attributionTag = null, token = android.os.Binder@a55466e, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-15 09:29:35.562   366   366 D Zygote  : Forked child process 4126
+10-15 09:29:35.569  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/sad_effect.binarypb_1741113818303
+10-15 09:29:35.569  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/sad_effect.binarypb_1741113818303)
+10-15 09:29:35.577  3331  3418 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562226
+10-15 09:29:35.579  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/anger_effect.binarypb_1741113673590
+10-15 09:29:35.579  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/anger_effect.binarypb_1741113673590)
+10-15 09:29:35.584  4126  4126 I mainttrial.test: Late-enabling -Xcheck:jni
+10-15 09:29:35.598  4126  4126 I mainttrial.test: Using CollectorTypeCMC GC.
+10-15 09:29:35.599  4126  4126 W mainttrial.test: Unexpected CPU variant for x86: x86_64.
+10-15 09:29:35.599  4126  4126 W mainttrial.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-15 09:29:35.602   447   455 I adbd    : jdwp connection from 4126
+10-15 09:29:35.605  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562222
+10-15 09:29:35.609  4126  4126 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-15 09:29:35.613  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562237
+10-15 09:29:35.633  4126  4126 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 09:29:35.636  4126  4126 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~0lqVNYBr5b0PD8tmHWl81w==/com.abfilepro.app.p21mainttrial.test-MLgTY1SU4wZu94sKJcupkQ==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 09:29:35.643  4126  4126 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 09:29:35.647  4126  4126 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~0lqVNYBr5b0PD8tmHWl81w==/com.abfilepro.app.p21mainttrial.test-MLgTY1SU4wZu94sKJcupkQ==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 09:29:35.648  4126  4126 W ziparchive: Unable to open '/data/app/~~0lqVNYBr5b0PD8tmHWl81w==/com.abfilepro.app.p21mainttrial.test-MLgTY1SU4wZu94sKJcupkQ==/base.dm': No such file or directory
+10-15 09:29:35.648  4126  4126 W ziparchive: Unable to open '/data/app/~~0lqVNYBr5b0PD8tmHWl81w==/com.abfilepro.app.p21mainttrial.test-MLgTY1SU4wZu94sKJcupkQ==/base.dm': No such file or directory
+10-15 09:29:35.662  4126  4126 D nativeloader: Configuring clns-9 for other apk /data/app/~~0lqVNYBr5b0PD8tmHWl81w==/com.abfilepro.app.p21mainttrial.test-MLgTY1SU4wZu94sKJcupkQ==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~0lqVNYBr5b0PD8tmHWl81w==/com.abfilepro.app.p21mainttrial.test-MLgTY1SU4wZu94sKJcupkQ==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 09:29:35.670  4126  4126 V GraphicsEnvironment: Currently set values for:
+10-15 09:29:35.670  4126  4126 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 09:29:35.670  4126  4126 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 09:29:35.670  4126  4126 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 09:29:35.671  4126  4126 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 09:29:35.687  4126  4126 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:29:35.747  1226  3187 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:29:35.774  1528  2107 W SearchServiceCore: Abort, client detached.
+10-15 09:29:35.791  1528  2412 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.subscriptions#com.google.android.googlequicksearchbox
+10-15 09:29:35.795  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:35.806  3861  3976 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

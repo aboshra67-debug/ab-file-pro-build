@@ -1,0 +1,2 @@
+10-15 09:32:23.206  4865  4884 I TestRunner: started: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:32:23.248  4865  4884 I TestRunner: finished: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

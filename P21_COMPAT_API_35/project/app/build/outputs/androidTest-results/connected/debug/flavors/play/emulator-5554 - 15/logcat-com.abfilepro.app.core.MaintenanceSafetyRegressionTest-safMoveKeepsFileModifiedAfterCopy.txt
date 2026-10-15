@@ -1,0 +1,34 @@
+10-15 09:29:36.123  3861  3976 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.126  2112  2112 I GoogleTtsServicePeer: Creating Google TTS service, version googletts.google-speech-apk_20240319.00_p0.617183227
+10-15 09:29:36.128  2112  2112 I ExoPlayerImpl: Init fc0a898 [AndroidXMedia3/1.3.0] [emu64xa, sdk_gphone64_x86_64, Google, 35]
+10-15 09:29:36.140   365   418 I netd    : tetherGetStats() -> {[]} <0.38ms>
+10-15 09:29:36.145  1528  2079 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.googlequicksearchbox
+10-15 09:29:36.148  4126  4126 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:29:36.157  2112  2112 I ExoPlayerImpl: Init 5f648f1 [AndroidXMedia3/1.3.0] [emu64xa, sdk_gphone64_x86_64, Google, 35]
+10-15 09:29:36.172  2112  2112 I PipelineReaderImpl: Initializing en-us-x-iog-lstm-embedded from disk
+10-15 09:29:36.176  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.181  1436  2044 I AiAiTextClassifier: [VisualCortexAdapter]: provideRegistration: Registered Prominent Screen Entities for updates.
+10-15 09:29:36.191  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.191  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.192  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:36.192  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.192  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.206  1528  2412 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.googlequicksearchbox
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.210  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.219  3861  3976 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

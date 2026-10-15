@@ -1,0 +1,2 @@
+10-15 09:33:32.399  4239  4258 I TestRunner: started: businessNameSurvivesMissingPhone(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:32.403  4239  4258 I TestRunner: finished: businessNameSurvivesMissingPhone(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

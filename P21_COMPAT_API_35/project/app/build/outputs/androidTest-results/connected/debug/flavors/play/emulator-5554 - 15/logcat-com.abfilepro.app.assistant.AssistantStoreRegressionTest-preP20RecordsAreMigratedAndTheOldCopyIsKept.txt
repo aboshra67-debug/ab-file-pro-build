@@ -1,0 +1,13 @@
+10-15 09:29:25.083  3861  3976 I TestRunner: started: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:29:25.128  1365  1665 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():469 Get empty configurations.
+10-15 09:29:25.132  1365  1691 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=false, fetchStatus=2026-10-15 09:29:22{reason=BROADCAST, isFullFetch=false, isEmpty=true, registeredFormFactor=phone, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=0, deletedFlagsCount=0, totalTime=2152}
+10-15 09:29:25.154  3331  3418 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:25.155  1365  1706 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.learning#com.google.android.inputmethod.latin
+10-15 09:29:25.162  1365  1365 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:29:25.164  1365  1365 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 09:29:25.165  1365  1365 I PhenotypeBackgroundRecv: Skipping com.google.android.inputmethod.latin#com.google.android.inputmethod.latin which doesn't use ProcessStable flags.
+10-15 09:29:25.197  1365  1578 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:29:25.201   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.231   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.263   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.279  3861  3976 I TestRunner: finished: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

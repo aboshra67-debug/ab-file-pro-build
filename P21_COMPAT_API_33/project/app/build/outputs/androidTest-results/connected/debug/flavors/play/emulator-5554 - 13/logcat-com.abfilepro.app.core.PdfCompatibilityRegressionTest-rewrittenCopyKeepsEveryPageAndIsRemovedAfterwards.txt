@@ -1,0 +1,2 @@
+10-15 09:33:33.130  4239  4258 I TestRunner: started: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:33:33.169  4239  4258 I TestRunner: finished: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

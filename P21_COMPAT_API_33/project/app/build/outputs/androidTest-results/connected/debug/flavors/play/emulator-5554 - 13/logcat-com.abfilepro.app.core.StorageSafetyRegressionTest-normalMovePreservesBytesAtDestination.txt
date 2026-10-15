@@ -1,0 +1,4 @@
+10-15 09:33:33.686  4239  4258 I TestRunner: started: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.701  1743  1743 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task UPDATE_GSERVICES_CONFIG.
+10-15 09:33:33.704  1743  2581 I A       : Updating Gservices keys
+10-15 09:33:33.706  4239  4258 I TestRunner: finished: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

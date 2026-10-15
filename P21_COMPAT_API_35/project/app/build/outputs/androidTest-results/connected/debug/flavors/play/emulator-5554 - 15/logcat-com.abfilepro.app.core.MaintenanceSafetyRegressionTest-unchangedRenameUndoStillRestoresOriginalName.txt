@@ -1,0 +1,11 @@
+10-15 09:29:36.240  3861  3976 I TestRunner: started: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.241  1528  1763 I A       : (REDACTED) Refusing EXCLUSIVE task %s, it is already pending. Try again in %d seconds.
+10-15 09:29:36.244  1528  1773 I Ma      : #handleFlagUpdate()
+10-15 09:29:36.244  1528  1763 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 09:29:36.279  1436  1743 I ModelReloader: Cancelled all jobs.
+10-15 09:29:36.279  1436  1743 I AmbientMusicServiceMana: Unloading model 9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15
+10-15 09:29:36.280  1436  1743 I SoundTriggerManagerComp: Unloading model 9f6ad62a-1f0b-11e7-87c5-40a8f03d3f15
+10-15 09:29:36.287  1444  1843 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 09:29:36.287  1444  1843 I A       : #handleFlagsUpdate: listeners notified
+10-15 09:29:36.288  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:36.289  3861  3976 I TestRunner: finished: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

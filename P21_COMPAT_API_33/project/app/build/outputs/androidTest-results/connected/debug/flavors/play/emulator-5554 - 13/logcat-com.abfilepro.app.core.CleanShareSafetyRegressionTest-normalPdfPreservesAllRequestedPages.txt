@@ -1,0 +1,201 @@
+10-15 09:33:16.518  4239  4258 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:16.521  1050  2363 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:16.528   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:16.544  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 09:33:16.546  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:16.548  3546  3546 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 09:33:16.548  1282  3877 I PeopleGalProvider: Gal directories started.
+10-15 09:33:16.553  3035  3129 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@cd6b645
+10-15 09:33:16.564   479   558 W system_server: Long monitor contention with owner ActivityManager (510) at void com.android.server.am.BroadcastQueue.processNextBroadcast(boolean)(BroadcastQueue.java:1156) waiters=1 in int com.android.server.am.ActivityManagerService.bindServiceInstance(android.app.IApplicationThread, android.os.IBinder, android.content.Intent, java.lang.String, android.app.IServiceConnection, int, java.lang.String, boolean, int, java.lang.String, java.lang.String, int) for 114ms
+10-15 09:33:16.581  1050  2363 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:16.615  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task ACTIVITY_LEVEL_TASK.
+10-15 09:33:16.623  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task AWARE_TIP_WORKER_PROCESS_TIPS.
+10-15 09:33:16.625  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task CHROME_EXPERIMENT_SYNC.
+10-15 09:33:16.629  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task CLEAR_DATA_DETECTOR.
+10-15 09:33:16.638  1050  3610 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:33:16.643  1050  3610 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:33:16.647  1743  2571 I FirstRunClassifier: First run of com.google.android.googlequicksearchbox on this device detected
+10-15 09:33:16.650  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.653  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.653  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.654  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.655  1050  3617 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:33:16.657  1743  2393 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:128)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7801)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at java.io.File.exists(File.java:813)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at android.app.ContextImpl.getDataDir(ContextImpl.java:2962)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at android.app.ContextImpl.getDir(ContextImpl.java:2981)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at android.content.ContextWrapper.getDir(ContextWrapper.java:347)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.ee.a.d.a(PG:2)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.amr.j(Unknown Source:3527)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.amr.b(PG:54)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at dagger.a.e.b(PG:1)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.ol.el(Unknown Source:6)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.ok.j(Unknown Source:4051)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.ok.b(PG:1)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.search.core.service.g.a.c.a(PG:2)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.libraries.gsa.k.a.f.a(PG:2)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.common.util.concurrent.dx.a(PG:1)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.common.util.concurrent.cv.run(PG:4)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.common.util.concurrent.dz.run(PG:1)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.libraries.i.k.run(PG:2)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 09:33:16.657  1743  2393 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:16.662  1743  2393 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:128)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7801)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at java.io.File.exists(File.java:813)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at android.app.ContextImpl.getDir(ContextImpl.java:2982)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at android.content.ContextWrapper.getDir(ContextWrapper.java:347)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.staticplugins.ee.a.d.a(PG:2)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.amr.j(Unknown Source:3527)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.amr.b(PG:54)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at dagger.a.e.b(PG:1)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.ol.el(Unknown Source:6)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.ok.j(Unknown Source:4051)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.binaries.velvet.app.ok.b(PG:1)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.apps.gsa.search.core.service.g.a.c.a(PG:2)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.libraries.gsa.k.a.f.a(PG:2)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.common.util.concurrent.dx.a(PG:1)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.common.util.concurrent.cv.run(PG:4)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.common.util.concurrent.dz.run(PG:1)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.libraries.i.k.run(PG:2)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 09:33:16.662  1743  2393 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:16.666  1743  4356 I A       : load shared preferences: file not found
+10-15 09:33:16.669  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_CORE_REFRESH_TASK.
+10-15 09:33:16.669  1282  3877 I PeopleGalProvider: Method 1 completed.
+10-15 09:33:16.671  1282  3877 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:33:16.688   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10107
+10-15 09:33:16.689  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_CORE_RELAXED_REFRESH_TASK.
+10-15 09:33:16.698  1050  2363 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:16.707  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.google.android.settings.intelligence
+10-15 09:33:16.708  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:16.714  1743  2777 E TipSharedPrefManager: invalid tip 40070019: tip does not need conditions checked only once
+10-15 09:33:16.717  4239  4354 D ProfileInstaller: Installing profile for com.abfilepro.app.p21mainttrial
+10-15 09:33:16.718  1743  2777 E TipSharedPrefManager: invalid tip 40070055: tip does not need conditions checked only once
+10-15 09:33:16.719  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.721  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.723  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.728  3546  3546 D ImsResolver: maybeAddedImsService, packageName: com.google.android.settings.intelligence
+10-15 09:33:16.728  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.729  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.729  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.729  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.729  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.729  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.730  1743  2777 E TipSharedPrefManager: invalid tip 40070197: tip does not need conditions checked only once
+10-15 09:33:16.731  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.732  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.732  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.732  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.732  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.733  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.733  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.734  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.734  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.735  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.735  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.736  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.736  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.736  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.737  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.737  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.738  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.738  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.739  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.742  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.743  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.744  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.744  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.744  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.744  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.745  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.745  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.746  1743  2777 E TipSharedPrefManager: invalid tip 40070251: tip does not need conditions checked only once
+10-15 09:33:16.765  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.765  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.765  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.765  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.767  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.768  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.769  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.769  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.770  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.770  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.771  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.771  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.771  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.773  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.773  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.774  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.776  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.780  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.780  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.780  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.780  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.781  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.784  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.784  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.785  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.786  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.788  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.788  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.788  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.788  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.788  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.789  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.790  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.792  1743  2777 I A       : Using proto config with mendel
+10-15 09:33:16.792  1743  2777 I A       : Merging legacy hotword config map with new proto.
+10-15 09:33:16.792  1743  2777 I A       : Adding from config to map. Locale: cmn-Hant-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.792  1743  2777 I A       : Adding from config to map. Locale: id-ID modelPrefix: x_google Location:cfffcc1a4c1c084c003c8eb27f73d770 isSpeakerIdSupported: true
+10-15 09:33:16.792  1743  2777 I A       : Adding from config to map. Locale: ko-KR modelPrefix: x_google Location:0b132163a2eb2c1194b202067475724b isSpeakerIdSupported: true
+10-15 09:33:16.792  1743  2777 I A       : Skipping. Expected model: 2 Found: 1
+10-15 09:33:16.793  1743  2777 I A       : Adding from config to map. Locale: zh-TW modelPrefix: x_google Location:4e7cae00daee30ec565c34e3aa67a51f isSpeakerIdSupported: true
+10-15 09:33:16.794  1282  1341 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:16.796  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.797  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.797  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.797  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.805  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_PKG_REFRESH_TASK.
+10-15 09:33:16.826  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.830  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_CELLULAR_CHARGING_TASK.
+10-15 09:33:16.830  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.831  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.831  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.843  1743  2577 I A       : Attempting to cache the data for corpora [21].
+10-15 09:33:16.845  1743  2578 I A       : Attempting to cache the data for corpora [21].
+10-15 09:33:16.846  1743  2329 I A       : Attempting to cache the data for corpora [].
+10-15 09:33:16.847  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.853  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.854  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.854  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.854  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.855  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.855  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.863  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.863  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.865  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task MDD_MAINTENANCE_TASK.
+10-15 09:33:16.867  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task GELLER_REFRESH_TASK.
+10-15 09:33:16.868  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task CONTACT_AFFINITY_MODEL_CONTACTS_CHANGE_REFRESH.
+10-15 09:33:16.873  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.873  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.873  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.873  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:16.884  1050  1343 W .gms.persistent: Long monitor contention with owner lowpool[14] (3631) at void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):200) waiters=0 in void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam) for 3.145s
+10-15 09:33:16.894  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task LEGACY_NOW_SYNC.
+10-15 09:33:16.908  4239  4258 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

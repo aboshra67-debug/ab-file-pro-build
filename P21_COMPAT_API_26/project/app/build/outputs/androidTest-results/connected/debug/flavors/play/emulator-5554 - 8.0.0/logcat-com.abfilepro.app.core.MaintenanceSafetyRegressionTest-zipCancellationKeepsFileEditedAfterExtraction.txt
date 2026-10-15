@@ -1,0 +1,2 @@
+10-15 09:32:21.764  4865  4884 I TestRunner: started: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:32:21.794  4865  4884 I TestRunner: finished: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

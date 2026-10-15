@@ -1,0 +1,2 @@
+10-15 09:32:21.085  4865  4884 I TestRunner: started: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:32:21.112  4865  4884 I TestRunner: finished: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

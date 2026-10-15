@@ -1,0 +1,4 @@
+10-15 09:33:12.393  4239  4258 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:33:12.398  1607  2271 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 6 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:text-classifier-annotator-1687347939 @ {W:b:u:l, bg}, manifests:text-classifier-actions-1140547708 @ {W:b:u:l, bg}, manifests:text-classifier-langid-1941001461 @ {W:b:u:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 @ {W:b:u:l, bg}
+10-15 09:33:12.398  1607  2271 I SP.AiAi : Download stopped: manifests:text-classifier-annotator-1687347939, succeeded, size: 407
+10-15 09:33:12.440  4239  4258 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

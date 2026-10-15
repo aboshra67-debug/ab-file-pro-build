@@ -1,0 +1,37 @@
+10-15 09:33:14.539  4239  4258 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:14.540  1282  3544 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PackageUpdateIntentOperation for action android.intent.action.PACKAGE_CHANGED (3484) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 6.730s
+10-15 09:33:14.549  3998  4025 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.googlequicksearchbox
+10-15 09:33:14.557  1282  3544 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-15 09:33:14.562  1282  3544 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-15 09:33:14.563  1282  4172 I BlockstoreStorage: Clearing Blockstore Data for package com.abfilepro.app.p21mainttrial.test [CONTEXT service_id=258 ]
+10-15 09:33:14.564  1282  1282 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:14.565  1282  1282 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:14.566  1282  4172 I BlockstoreStorage: Keyless data not found or its IsLastInstallationData = false. [CONTEXT service_id=258 ]
+10-15 09:33:14.571  3035  3108 I BugleRcsEngine: [41] bejl.run: SystemBindingManager: SystemBinding enabled: false
+10-15 09:33:14.571  3035  3108 I BugleRcsEngine: [41] bejm.b: System Binding updated
+10-15 09:33:14.579  1282  4298 I Dck     : doesDeviceHaveSupportedWirelessCapabilities: wccSysProp:0, wccMendel:1, deviceWccOverride:false [CONTEXT service_id=289 ]
+10-15 09:33:14.579  1282  4298 I Dck     : isDckModuleEligible: isAtLeastR:true, hasWccSupport:false, downloadAllowed:false [CONTEXT service_id=289 ]
+10-15 09:33:14.579  1282  4298 W Dck     : Dck module not eligible for asynchronous downloading [CONTEXT service_id=289 ]
+10-15 09:33:14.585  3035  3207 W BugleRcsEngine: [63] bemz.x: Unable to send diagnostic log
+10-15 09:33:14.595  2852  4162 I CarrierServices: [70] fjp.f: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+10-15 09:33:14.615  3035  3132 W BugleRcsEngine: [52] RcsProfileService.g: Result is null when getting value for id:4
+10-15 09:33:14.615  3035  3132 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:14.616  1607  2271 I SP.AiAi : Scheduling: job start ({W:b:u:l, bg}), 4 started, 0 paused, 2 scheduled, 6 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 @ * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ * {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ * {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea @ * {W:b:u:l, bg}
+10-15 09:33:14.617  1607  2271 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip to table_5f787033cc44fc7a8804e0030b2bf848.zip.fetched (constraints: W:b:u:l)
+10-15 09:33:14.618  1607  2271 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/tc_model_e202592534082c01f9642f709a627dd9.zip to tc_model_e202592534082c01f9642f709a627dd9.zip.fetched (constraints: W:b:u:l)
+10-15 09:33:14.621  1607  2271 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip to tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip.fetched (constraints: W:b:u:l)
+10-15 09:33:14.624  3035  3132 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:14.624  3035  3132 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:14.626  2852  3574 I CarrierServices: [66] fxv.d: Received Provisioning Event: [Bugle information (100)]
+10-15 09:33:14.632  1500  1576 W UsageLimitServiceImpl: Migrating limits: delete 0 obsolete limits, add 0 new limits
+10-15 09:33:14.634  2852  3574 I CarrierServices: [66] fxv.d: JibeService is running, passing event to provisioning engine.
+10-15 09:33:14.642  2852  3574 I CarrierServices: [66] fgw.f: Handling Provisioning Event: [Bugle information (100)]
+10-15 09:33:14.647  1282  1282 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:14.666  3035  3132 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:14.666  3035  3132 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
+10-15 09:33:14.670  3035  3132 W BugleAction: No default number, returning empty msisdn
+10-15 09:33:14.671  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:14.671  3035  3253 I BugleTransport: isChatAvailable: true, enabledTransport: 1
+10-15 09:33:14.672  1607  2271 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip to tc_model_19e9928974f9d8742ad3b10f52373dea.zip.fetched (constraints: W:b:u:l)
+10-15 09:33:14.673  2852  3574 I CarrierServices: [66] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+10-15 09:33:14.675  4239  4258 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

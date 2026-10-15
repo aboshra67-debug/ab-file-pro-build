@@ -1,0 +1,2 @@
+10-15 09:32:22.911  4865  4884 I TestRunner: started: fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:32:22.934  4865  4884 I TestRunner: finished: fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

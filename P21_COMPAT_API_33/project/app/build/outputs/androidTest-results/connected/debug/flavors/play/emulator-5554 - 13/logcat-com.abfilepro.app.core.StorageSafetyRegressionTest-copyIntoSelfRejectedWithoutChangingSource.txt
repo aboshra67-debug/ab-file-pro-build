@@ -1,0 +1,5 @@
+10-15 09:33:33.361  4239  4258 I TestRunner: started: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.367  2852  3285 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mobileconfiguration#com.google.android.ims
+10-15 09:33:33.369  2852  2852 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.ims which doesn't use ProcessStable flags.
+10-15 09:33:33.373  2852  3285 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.ims
+10-15 09:33:33.381  4239  4258 I TestRunner: finished: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

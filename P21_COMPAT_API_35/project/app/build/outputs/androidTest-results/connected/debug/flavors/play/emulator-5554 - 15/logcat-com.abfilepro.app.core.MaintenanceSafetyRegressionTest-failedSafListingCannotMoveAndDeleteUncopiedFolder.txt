@@ -1,0 +1,5 @@
+10-15 09:29:35.808  3861  3976 I TestRunner: started: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:35.812  4126  4126 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:29:35.824  1528  2465 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:35.826  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:35.826  3861  3976 I TestRunner: finished: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

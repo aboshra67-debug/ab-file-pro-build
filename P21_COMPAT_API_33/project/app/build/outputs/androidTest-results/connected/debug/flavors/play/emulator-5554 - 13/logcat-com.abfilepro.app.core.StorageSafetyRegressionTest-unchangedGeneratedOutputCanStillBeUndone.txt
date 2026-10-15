@@ -1,0 +1,11 @@
+10-15 09:33:33.600  4239  4258 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.605  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:33.605  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:33.605  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:33.608  1467  1896 I SuperDelight: SuperDelightMergingStrategy.merge():55 SuperDelightMergingStrategy#merge(): selected[[main_en_us_2022101700_1]] synced[[main_en_840_2022102600_1]]
+10-15 09:33:33.611  1467  1896 I SP      : Sync for delight succeeded in 11370 ms: {added: [main_en_840_2022102600_1], metadata: false
+10-15 09:33:33.640  1467  1896 I SP      : GC for 'delight' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:33:33.642  1467  1713 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight sync success, adding to data file manager
+10-15 09:33:33.642  1467  1713 I DataFileManager: DataFileManager.addDataWithoutNotify():166 adding data en-840 delight
+10-15 09:33:33.642  1467  1713 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+10-15 09:33:33.645  4239  4258 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

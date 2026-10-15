@@ -1,0 +1,2 @@
+10-15 09:33:33.591  4239  4258 I TestRunner: started: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.598  4239  4258 I TestRunner: finished: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)

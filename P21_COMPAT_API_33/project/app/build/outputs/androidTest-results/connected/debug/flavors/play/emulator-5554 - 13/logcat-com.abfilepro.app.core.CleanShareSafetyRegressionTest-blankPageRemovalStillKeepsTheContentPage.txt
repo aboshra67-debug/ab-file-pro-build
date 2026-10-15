@@ -1,0 +1,431 @@
+10-15 09:33:19.706  4239  4258 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:19.713  1050  3631 I HeterodyneSyncScheduler: Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-15 09:33:19.734  1627  2722 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.747  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:19.749  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:19.769  3035  3122 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.783  1743  2571 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.786  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:19.787  1627  2721 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.794  3035  3122 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.804  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:19.812  1467  1467 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+10-15 09:33:19.814  1467  1467 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+10-15 09:33:19.816  1467  1467 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+10-15 09:33:19.819  1467  1467 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+10-15 09:33:19.823  1050  1343 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1792056799823) [CONTEXT service_id=51 ]
+10-15 09:33:19.830  3035  3254 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:19.843  3035  3254 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:19.865  3035  3254 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:19.876  3035  3254 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:19.893  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:19.924  1434  1620 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.926  1434  1526 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.931  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:19.932  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:19.932  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:19.960  1743  2581 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.960  1434  1526 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.968  1743  1743 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-15 09:33:19.974  3998  3998 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:33:19.987  1467  1467 I EmojiSuperpacksManager: EmojiSuperpacksManager.triggerSync():374 triggerSync() : isBundled = false
+10-15 09:33:19.997  1467  1467 I EmojiSuperpacksManager: EmojiSuperpacksManager.triggerSync():374 triggerSync() : isBundled = false
+10-15 09:33:19.998  1467  1896 I SP      : Registering emoji.2023020111, url: https://www.gstatic.com/android/keyboard/modelpack/emoji/20230201113008/superpacks_manifest.zip, constraints: m:*:*:*, flags: fg, requested: 2023020111, current: -1
+10-15 09:33:20.010  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.011  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.017  1617  1617 I ContactsUpgradeReceiver: Creating or opening contacts database
+10-15 09:33:20.021  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.027  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.029  3035  3254 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:20.034  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.047  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.048  1467  1467 I DictionarySuperpacksManager: DictionarySuperpacksManager$1.onEnabledInputMethodEntriesChanged():61 onEnabledInputMethodEntriesChanged
+10-15 09:33:20.050  1617  1617 D StrictMode: StrictMode policy violation; ~duration=38 ms: android.os.strictmode.DiskReadViolation
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:128)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7801)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at java.io.File.exists(File.java:813)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:759)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ContextImpl.ensurePrivateDirExists(ContextImpl.java:750)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ContextImpl.getPreferencesDir(ContextImpl.java:706)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ContextImpl.getSharedPreferencesPath(ContextImpl.java:931)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:553)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:217)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:217)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:55)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.050  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.053  3035  3254 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:20.055  3035  3254 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:20.055  3035  3254 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:20.059  1467  1467 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-15 09:33:20.059  3035  3254 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:20.064  3035  3254 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:20.067  3035  3254 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:20.067  3035  3254 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:20.067  1467  1467 I StyledKeyboardTheme: StyledKeyboardTheme.<init>():87 Pref: [], themeName: [silk:], darkMode: [false], cacheKey: [overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c]
+10-15 09:33:20.071  1467  1467 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-15 09:33:20.072  1467  1467 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-15 09:33:20.072  1500  1578 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.072  1467  1467 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-15 09:33:20.072  1467  1467 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-15 09:33:20.072  1467  1467 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-15 09:33:20.072  1467  1467 I GoogleInputMethodService: GoogleInputMethodService.initializeKeyboardTheme():1343 Apply keyboard theme: theme_border_bottom4dp_stylesheet_noshadow_gsans_pillkey_silkpopup_materiallight_phone_400_overlay_builtin_dynamic_color_light_base.binarypb:dynamic-light-fff0f0f3-ff76d1ff-ce191c6173d879ea127e4e40bfd70d3c_port
+10-15 09:33:20.075  1743  2571 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.096  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.097  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.097  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.117  3035  3109 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Availability updated
+10-15 09:33:20.119  1617  1617 D StrictMode: StrictMode policy violation; ~duration=33 ms: android.os.strictmode.DiskReadViolation
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.awaitLoadedLocked(SharedPreferencesImpl.java:275)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.getInt(SharedPreferencesImpl.java:320)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:56)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.119  1617  1617 D StrictMode: StrictMode policy violation; ~duration=27 ms: android.os.strictmode.DiskReadViolation
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.access(BlockGuardOs.java:74)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.access(ForwardingOs.java:128)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread$AndroidOs.access(ActivityThread.java:7801)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at java.io.UnixFileSystem.checkAccess(UnixFileSystem.java:281)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at java.io.File.exists(File.java:813)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:738)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.119  1617  1617 D StrictMode: StrictMode policy violation; ~duration=26 ms: android.os.strictmode.DiskReadViolation
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:269)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:186)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.createFileOutputStream(SharedPreferencesImpl.java:702)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:793)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.119  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.122  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.124  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.124  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.129  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.131  3035  3254 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:20.134  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.138  3035  3254 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:20.139  1617  1617 D StrictMode: StrictMode policy violation; ~duration=26 ms: android.os.strictmode.DiskWriteViolation
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onWriteToDisk(StrictMode.java:1614)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:272)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7810)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:186)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.createFileOutputStream(SharedPreferencesImpl.java:702)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:793)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.139  1617  1617 D StrictMode: StrictMode policy violation; ~duration=26 ms: android.os.strictmode.DiskReadViolation
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.fstat(BlockGuardOs.java:194)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.fstat(ForwardingOs.java:261)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at libcore.io.IoBridge.open(IoBridge.java:563)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:186)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.createFileOutputStream(SharedPreferencesImpl.java:702)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:793)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.139  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.143  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.145  1617  1617 D StrictMode: StrictMode policy violation; ~duration=25 ms: android.os.strictmode.DiskWriteViolation
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onWriteToDisk(StrictMode.java:1614)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.write(BlockGuardOs.java:447)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.write(ForwardingOs.java:943)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at libcore.io.IoBridge.write(IoBridge.java:646)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at java.io.FileOutputStream.write(FileOutputStream.java:401)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.internal.util.FastXmlSerializer.flushBytes(FastXmlSerializer.java:253)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.internal.util.FastXmlSerializer.flush(FastXmlSerializer.java:274)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.internal.util.FastXmlSerializer.endDocument(FastXmlSerializer.java:219)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.internal.util.XmlSerializerWrapper.endDocument(XmlSerializerWrapper.java:68)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.internal.util.XmlUtils.writeMapXml(XmlUtils.java:408)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:803)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.145  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.146  1617  1617 D StrictMode: StrictMode policy violation; ~duration=22 ms: android.os.strictmode.DiskWriteViolation
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onWriteToDisk(StrictMode.java:1614)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java:81)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.chmod(ForwardingOs.java:165)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.system.Os.chmod(Os.java:119)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.os.FileUtils.setPermissions(FileUtils.java:168)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.ContextImpl.setFilePermissionsFromMode(ContextImpl.java:3326)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:812)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.146  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.149  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.149  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.150  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.150  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.150  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.150  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.151  1050  1343 W BpBinder: Large outgoing transaction of 329280 bytes, interface descriptor <uncached descriptor>, code 4
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-15 09:33:20.158  1743  2336 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-15 09:33:20.159  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.159  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.162  1617  1617 D StrictMode: StrictMode policy violation; ~duration=22 ms: android.os.strictmode.DiskReadViolation
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1658)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.stat(BlockGuardOs.java:419)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.stat(ForwardingOs.java:846)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread$AndroidOs.stat(ActivityThread.java:7824)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.system.Os.stat(Os.java:904)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:819)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.162  1617  1617 D StrictMode: StrictMode policy violation; ~duration=22 ms: android.os.strictmode.DiskWriteViolation
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onWriteToDisk(StrictMode.java:1614)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at libcore.io.BlockGuardOs.remove(BlockGuardOs.java:365)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at libcore.io.ForwardingOs.remove(ForwardingOs.java:673)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread$AndroidOs.remove(ActivityThread.java:7842)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at java.io.UnixFileSystem.delete(UnixFileSystem.java:331)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at java.io.File.delete(File.java:1035)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.writeToFile(SharedPreferencesImpl.java:833)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$mwriteToFile(Unknown Source:0)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$2.run(SharedPreferencesImpl.java:672)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.enqueueDiskWrite(SharedPreferencesImpl.java:691)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl.-$$Nest$menqueueDiskWrite(Unknown Source:0)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:604)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at com.android.providers.contacts.ContactsUpgradeReceiver.onReceive(ContactsUpgradeReceiver.java:76)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:4307)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread.-$$Nest$mhandleReceiver(Unknown Source:0)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2153)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.Handler.dispatchMessage(Handler.java:106)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 09:33:20.162  1617  1617 D StrictMode: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 09:33:20.162  1500  4385 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.170  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.178  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.187  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.188  1467  1467 I ClipboardDataHandler: ClipboardDataHandler.updateScreenshotsContentObserver():269 Disable the feature of handling screenshots in the clipboard.
+10-15 09:33:20.188  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.188  3035  3109 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Bugle receives rcs availability update to: 9
+10-15 09:33:20.191  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.196  1467  1467 I BaseClearcutAdapter: BaseClearcutAdapter.lambda$queryAndUpdateUserCheckboxOptIn$1():266 Checkbox = false
+10-15 09:33:20.199  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.204  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.205  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.206  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.208  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.225  1467  1896 I SP      : Registering emoji.2023020111, url: https://www.gstatic.com/android/keyboard/modelpack/emoji/20230201113008/superpacks_manifest.zip, constraints: m:*:*:*, flags: fg, requested: 2023020111, current: -1
+10-15 09:33:20.238  3035  3254 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:20.241  3035  3254 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:20.253  3035  3254 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:20.261  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:20.261  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:20.261  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:20.261  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:20.261  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:20.261  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:20.261  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:20.270  3035  3253 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.275  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/emoji/20230201113008/superpacks_manifest.zip to emoji-2023020111.zip.fetched (constraints: m:b:u:l)
+10-15 09:33:20.280  1627  2722 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.283  3035  3253 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.285  1743  1781 I earchbox:search: Background young concurrent copying GC freed 148511(6368KB) AllocSpace objects, 61(7832KB) LOS objects, 46% free, 16MB/30MB, paused 23us,40us total 103.815ms
+10-15 09:33:20.291  3035  3206 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@b9627b8
+10-15 09:33:20.292  3035  3122 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled due to SIM absent, lastAvailability is null, simId hash = -7080899432288714492, isPev3Enabled = false
+10-15 09:33:20.294  3035  3132 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.305  1050  1050 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10120; state: ENABLED
+10-15 09:33:20.314  3035  3043 I .apps.messaging: JIT allocated 64KB for compiled code of java.lang.Object uwq.o()
+10-15 09:33:20.320  1743  2338 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-15 09:33:20.320  1743  2338 I FedAssExpListener: Successfully processed experiments changed.
+10-15 09:33:20.321  1743  2336 I A       : NGA disabled due to not being eligible.
+10-15 09:33:20.330  1743  2334 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 09:33:20.338  1743  2334 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:20.341  3035  3043 I .apps.messaging: JIT allocated 73KB for compiled code of java.lang.Object uwq.k()
+10-15 09:33:20.341  3035  3043 I .apps.messaging: Compiler allocated 5773KB to compile java.lang.Object uwq.k()
+10-15 09:33:20.345  1282  3214 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 09:33:20.347  1467  1467 I DeviceModeUtil: DeviceModeUtil.getDeviceMode():122 Get device mode phone by ui mode:1 and smallestScreenWidthDp:411
+10-15 09:33:20.355  1282  2672 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 09:33:20.361  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.364  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.364  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.369  1607  2065 W AiAiEcho: SmartspaceNotificationPredictor no parser can handle this notification or notification is invalid
+10-15 09:33:20.373  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.374  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.375  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.419  1282  1330 W Icing   : No valid account for uploading user actions
+10-15 09:33:20.440  1434  1619 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:20.440  1282  1330 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:33:20.443  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.444  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.444  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.446  1467  1896 I SP      : Registering content_cache.2022112214, url: https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022112214, current: 2020101916
+10-15 09:33:20.448  1467  1896 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: 2022081613
+10-15 09:33:20.449  1467  1896 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():577 emoji.registerManifest() cancelled
+10-15 09:33:20.451   282   282 I netd    : tetherGetStats() -> {[]} <0.48ms>
+10-15 09:33:20.457  1282  1330 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:20.458  1282  1330 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:20.460  1282  1330 W Icing   : No valid account for uploading user actions
+10-15 09:33:20.460  3035  3132 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Request Bugle information
+10-15 09:33:20.467  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.startLoadingInputMethodEntrySettings():739 Start loading input method entry settings: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}]
+10-15 09:33:20.467  1467  1467 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():826 update loading task with resetImplicitlyEnabledEntries is false
+10-15 09:33:20.468  1467  1467 I InputMethodEntryManager: InputMethodEntryManager$5.onSuccess():845 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false
+10-15 09:33:20.470   755   809 D EGL_emulation: app_time_stats: avg=6015.55ms min=6015.55ms max=6015.55ms count=1
+10-15 09:33:20.471  4239  4258 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,3 @@
+10-15 09:32:18.456  4865  4884 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:32:18.476  1787  1787 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.StackScrollAlgorithm.updateClipping(com.android.systemui.statusbar.stack.StackScrollState, com.android.systemui.statusbar.stack.StackScrollAlgorithm$StackScrollAlgorithmState, com.android.systemui.statusbar.stack.AmbientState) due to JIT inline cache
+10-15 09:32:18.653  4865  4884 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

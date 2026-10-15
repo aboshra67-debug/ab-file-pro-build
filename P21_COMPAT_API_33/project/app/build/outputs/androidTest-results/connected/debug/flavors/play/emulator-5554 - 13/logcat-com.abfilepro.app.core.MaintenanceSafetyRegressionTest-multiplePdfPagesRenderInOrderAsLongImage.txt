@@ -1,0 +1,7 @@
+10-15 09:33:32.404  4239  4258 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:32.439  1467  1896 I SP      : Sync for transformer_concept succeeded in 10699 ms: {added: [2023011913_en], metadata: false
+10-15 09:33:32.472  1500  4385 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.apps.wellbeing
+10-15 09:33:32.481  1500  1500 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.kids#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 09:33:32.488  1467  1896 I SP      : GC for 'transformer_concept' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:33:32.492  1467  1929 I Environment: Environment.isPackageInstalled():237 com.bitstrips.imoji is not installed
+10-15 09:33:32.502  4239  4258 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,3 @@
+10-15 09:33:26.800  4239  4258 I TestRunner: started: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:26.864   479  1363 D RecoverableKeyStoreMgr: Root of trust for recovery agent + 10120 is assigned for the first time to GoogleCloudKeyVaultServiceV1
+10-15 09:33:26.930  4239  4258 I TestRunner: finished: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

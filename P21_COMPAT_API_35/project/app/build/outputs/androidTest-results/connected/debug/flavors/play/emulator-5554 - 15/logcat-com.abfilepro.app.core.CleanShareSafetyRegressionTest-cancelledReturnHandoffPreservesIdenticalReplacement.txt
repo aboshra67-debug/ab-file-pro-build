@@ -1,0 +1,6 @@
+10-15 09:29:31.740  3861  3976 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:31.746   365   418 I netd    : tetherGetStats() -> {[]} <0.29ms>
+10-15 09:29:31.755  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562293
+10-15 09:29:31.757  1362  1534 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:31.773  3013  3829 I ConfigUpdater: Update downloaded, starting installation
+10-15 09:29:31.804  3861  3976 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,6 @@
+10-15 09:29:34.342  3861  3976 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:34.344  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562278
+10-15 09:29:34.359  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/fall_effect.binarypb_1711576461804
+10-15 09:29:34.359  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/fall_effect.binarypb_1711576461804)
+10-15 09:29:34.365  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.pronunciationlearning#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.368  3861  3976 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,6 @@
+10-15 09:32:18.073  4865  4884 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:32:18.093  1497  1497 I keystore: del USRPKEY_ab_file_pro_family_sync_token_v1 10077
+10-15 09:32:18.093  1497  1497 I keystore: del USRSKEY_ab_file_pro_family_sync_token_v1 10077
+10-15 09:32:18.094  1497  1497 I keystore: del USRCERT_ab_file_pro_family_sync_token_v1 10077
+10-15 09:32:18.094  1497  1497 I keystore: del CACERT_ab_file_pro_family_sync_token_v1 10077
+10-15 09:32:18.126  4865  4884 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

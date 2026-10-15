@@ -1,0 +1,4 @@
+10-15 09:32:18.413  4865  4884 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:32:18.436  1787  1787 I zygote64: Deoptimizing void com.android.systemui.statusbar.notification.NotificationHeaderViewWrapper.onContentUpdated(com.android.systemui.statusbar.ExpandableNotificationRow) due to JIT inline cache
+10-15 09:32:18.447  1787  1787 D StatusBar: disable<e i a s b h r c s q >
+10-15 09:32:18.451  4865  4884 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

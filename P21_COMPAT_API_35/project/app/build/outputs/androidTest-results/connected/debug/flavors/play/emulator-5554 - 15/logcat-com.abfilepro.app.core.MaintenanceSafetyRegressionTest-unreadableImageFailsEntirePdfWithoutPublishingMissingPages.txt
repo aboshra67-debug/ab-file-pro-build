@@ -1,0 +1,32 @@
+10-15 09:29:36.292  3861  3976 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.294  1436  2233 I AiAiEcho: Settings changed for uri: content://settings/secure/now_playing_enabled
+10-15 09:29:36.304  1436  1663 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 09:29:36.304  1436  1663 I AiAiEcho: EchoTargets:
+10-15 09:29:36.304  1436  1663 I AiAiEcho: Filtered by AiAi flag check:
+10-15 09:29:36.304  1436  1663 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:29:36.304  1436  1663 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:29:36.305  1436  1663 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 09:29:36.305  1436  1663 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 09:29:36.305  1436  1663 I AiAiEcho: EchoTargets:
+10-15 09:29:36.305  1436  1663 I AiAiEcho: Filtered by AiAi flag check:
+10-15 09:29:36.305  1436  1663 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:29:36.305  1436  1663 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:29:36.305  1436  1663 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 09:29:36.306  1436  1663 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-15 09:29:36.308  1436  1663 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-15 09:29:36.308  1185  1185 D SsBaseTemplateCard: No text view can be set up
+10-15 09:29:36.308  1185  1185 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:29:36.308  1185  1185 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:29:36.308  1185  1185 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:29:36.308  1185  1185 I SsBaseTemplateCard: Secondary card pane is null
+10-15 09:29:36.314  1528  2107 W SearchServiceCore: Abort, client detached.
+10-15 09:29:36.314   912   912 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-15 09:29:36.315  1528  1794 I A       : NGA enabled in interactor.
+10-15 09:29:36.330  1528  1773 I SettingsDataLayer.AE: Set Assistant eligibility status
+10-15 09:29:36.332  1185  1592 D EGL_emulation: app_time_stats: avg=2615.45ms min=99.93ms max=5130.96ms count=2
+10-15 09:29:36.336  1436  1743 I AiAiTextClassifier: [KnowledgeGraphCollectionsTableDownloaderImpl] Config changed, triggering a sync of KnowledgeGraphCollectionsTable
+10-15 09:29:36.340  3861  4055 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 09:29:36.344  1436  1743 I AiAiTextClassifier: Updating text classifier flags in CutoffProvider.
+10-15 09:29:36.357  1528  1773 I SettingsDataLayer.AE: Set isHotwordOpaEligible
+10-15 09:29:36.371  1528  2466 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:36.374  3861  3976 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,11 @@
+10-15 09:29:36.386  3861  3976 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.392  3861  3976 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 09:29:36.406  3331  3331 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-15 09:29:36.407  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 2589KB AllocSpace bytes, 304(15MB) LOS objects, 49% free, 15MB/30MB, paused 326us,952us total 134.544ms
+10-15 09:29:36.408  1436  1743 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource: Another download of kg_collections_table is in progress.
+10-15 09:29:36.429  1436  1743 I AiAiStatsd: Usage metrics: 0 features enabled, 0 features used for date 2026-10-14.
+10-15 09:29:36.429  1436  1743 I AiAiStatsd: AiAi is used for the day (2026-10-14): true, the week: true
+10-15 09:29:36.430  1436  1743 I AiAiStatsd: Uploading atoms for date: 2026-10-14.
+10-15 09:29:36.430  1436  1743 I AiAiStatsd: Total days uploaded: 1 days.
+10-15 09:29:36.430  3861  3976 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 09:29:36.432  3861  3976 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

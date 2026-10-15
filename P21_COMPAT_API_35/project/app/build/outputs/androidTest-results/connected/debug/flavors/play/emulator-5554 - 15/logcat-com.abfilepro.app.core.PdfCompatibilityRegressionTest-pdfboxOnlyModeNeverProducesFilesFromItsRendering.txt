@@ -1,0 +1,138 @@
+10-15 09:29:36.920  3861  3976 I TestRunner: started: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:29:36.936  1436  2233 I AiAiCaptions: TtsSynthesizerImpl::handleRequestSuccess(): requestId: requestId: 2
+10-15 09:29:36.936  2112  4153 I GoogleTTSServiceImpl: Synthesis request for locale eng-USA and name en-us-x-tpf-local
+10-15 09:29:36.937  2112  4153 I GoogleTTSServiceImpl: TTS dispatch: en-us-x-tpf-lstm-embedded
+10-15 09:29:36.937  2112  2120 I gle.android.tts: Background concurrent mark compact GC freed 3780KB AllocSpace bytes, 1(28KB) LOS objects, 49% free, 4829KB/9659KB, paused 12.642ms,2.183ms total 65.666ms
+10-15 09:29:36.937  1436  2269 I AiAiCaptions: TtsSynthesizerImpl::handleRequestSuccess(): requestId: requestId: 3
+10-15 09:29:36.938  1436  2301 I AiAiCaptions: TtsLangFetcherImpl::fetch(). Fetching 1 lang packs is finished. Failures count: 0
+10-15 09:29:36.938  1436  2301 I AiAiCaptions: TtsLangFetcherImpl::fetch(). Fetching 1 lang packs is finished. Failures count: 0
+10-15 09:29:36.943  1436  2091 I AiAiCaptions: ComponentsManagerImpl::update()
+10-15 09:29:36.943  1436  2091 I AiAiCaptions: updateBasicComponents::updateBasicComponents()
+10-15 09:29:36.944  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.945  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.945  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.945  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.945  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.945  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.945  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.945  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.945  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.945   563   563 W ServiceConnector.Impl: mayInterruptIfRunning not supported - ignoring
+10-15 09:29:36.945  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.945  1436  2091 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity but already enabled
+10-15 09:29:36.945  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.945  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.945  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  2091 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity but already enabled
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.946  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.946  1436  2091 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService but already enabled
+10-15 09:29:36.947  1436  2098 I TextToSpeech: Disconnected from TTS engine
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_en-US is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_en-US is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_en-US
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.947  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:36.947  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:36.978  1436  1447 I ogle.android.as: Background concurrent mark compact GC freed 7977KB AllocSpace bytes, 8(296KB) LOS objects, 49% free, 7944KB/15MB, paused 335us,1.294ms total 127.449ms
+10-15 09:29:36.980  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk' with 1 weak references
+10-15 09:29:36.980  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+10-15 09:29:36.980  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:29:36.980  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIEmulationPixel6/SystemUIEmulationPixel6Overlay.apk' with 1 weak references
+10-15 09:29:36.980  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:29:36.981  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:29:36.981  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:29:36.981  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:29:36.981  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 09:29:36.981  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:36.981  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:29:36.982  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:29:36.982  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:29:36.982  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:36.982  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 09:29:36.982  1436  1449 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:29:36.987  1436  2091 I AiAiCaptions: CaptionsActivationOrchestrator::onDownloadTriggerFinished(): Components update is not required.
+10-15 09:29:36.990  1528  1794 I A       : (REDACTED) Refusing EXCLUSIVE task %s, it is already pending. Try again in %d seconds.
+10-15 09:29:36.997  1436  2091 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:29:36.999  1436  2091 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService but already enabled
+10-15 09:29:37.002  1436  2091 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:29:37.003  1528  1773 I Ma      : #handleFlagUpdate()
+10-15 09:29:37.004  1436  2091 I AiAiCaptions: shouldEnableCaptionsForCalls: isCallCaptioningEnabled is true
+10-15 09:29:37.005  1436  2091 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS but already enabled
+10-15 09:29:37.006  1436  2091 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:29:37.007  1436  2091 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService but already enabled
+10-15 09:29:37.009  1436  2091 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:29:37.010  1436  2091 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver but already enabled
+10-15 09:29:37.014  1436  2091 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:29:37.014  1444  1852 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 09:29:37.014  1444  1852 I A       : #handleFlagsUpdate: listeners notified
+10-15 09:29:37.015  3861  3976 I TestRunner: finished: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

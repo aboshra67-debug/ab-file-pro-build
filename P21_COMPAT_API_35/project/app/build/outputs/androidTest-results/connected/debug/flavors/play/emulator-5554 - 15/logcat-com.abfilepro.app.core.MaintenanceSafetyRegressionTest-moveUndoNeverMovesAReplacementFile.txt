@@ -1,0 +1,29 @@
+10-15 09:29:36.864  3861  3976 I TestRunner: started: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.871  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.871  2112  4153 I GoogleTTSServiceImpl: Synthesis request for locale eng-USA and name en-us-x-tpf-local
+10-15 09:29:36.875  2112  4153 I GoogleTTSServiceImpl: TTS dispatch: en-us-x-tpf-lstm-embedded
+10-15 09:29:36.875  2112  2585 W RankedDispatcher: The requested voice is not available for this app identifier
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.876  1528  1763 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:36.879  2112  2585 I GoogleTTSServiceImpl: onIsValidVoiceName(en-us-x-tpf-local): SUCCESS
+10-15 09:29:36.884  1414  1414 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.constellation.service.START pkg=com.google.android.gms }
+10-15 09:29:36.897  3861  3976 I TestRunner: finished: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

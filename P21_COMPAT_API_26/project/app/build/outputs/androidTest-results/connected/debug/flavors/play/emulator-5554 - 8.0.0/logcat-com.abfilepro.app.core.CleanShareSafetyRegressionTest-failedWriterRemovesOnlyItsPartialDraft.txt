@@ -1,0 +1,23 @@
+10-15 09:32:19.700  4865  4884 I TestRunner: started: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:32:19.736  4865  4874 E System  : Uncaught exception thrown by finalizer
+10-15 09:32:19.736  4865  4874 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:32:19.736  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:32:19.736  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:32:19.736  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:32:19.736  4865  4874 E System  : Uncaught exception thrown by finalizer
+10-15 09:32:19.736  4865  4874 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:32:19.736  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:32:19.736  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:32:19.736  4865  4874 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:32:19.736  4865  4874 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:32:19.750  2630  2630 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 09:32:19.750  2630  2630 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 09:32:19.779  2630  2630 I AudioController: Using mInputStreamFactoryBuilder
+10-15 09:32:19.784  4865  4884 I TestRunner: finished: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

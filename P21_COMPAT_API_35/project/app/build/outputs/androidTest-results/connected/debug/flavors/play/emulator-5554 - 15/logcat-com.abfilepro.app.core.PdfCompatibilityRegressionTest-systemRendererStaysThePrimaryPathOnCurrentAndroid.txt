@@ -1,0 +1,6 @@
+10-15 09:29:37.076  3861  3976 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:29:37.079  1414  2984 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 09:29:37.079  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:37.080  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a150b90
+10-15 09:29:37.080  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a150b90
+10-15 09:29:37.080  3861  3976 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

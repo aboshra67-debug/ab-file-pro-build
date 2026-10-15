@@ -1,0 +1,3 @@
+10-15 09:32:23.286  4865  4884 I TestRunner: started: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 09:32:23.288  2128  2745 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:32:23.322  4865  4884 I TestRunner: finished: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

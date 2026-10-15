@@ -1,0 +1,3 @@
+10-15 09:29:37.747  3861  3976 I TestRunner: started: restoredReviewDropsPagesWhoseImageIsGone(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 09:29:37.757  1398  1525 D WM-SystemJobScheduler: Scheduling work ID 431013c5-141d-435a-8397-cbf5ff67849bJob ID 1
+10-15 09:29:37.758  3861  3976 I TestRunner: finished: restoredReviewDropsPagesWhoseImageIsGone(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

@@ -1,0 +1,16 @@
+10-15 09:29:37.522  3861  3976 I TestRunner: started: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.530  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.531  1226  1230 W .gms.persistent: Missing inline cache for boolean dtol.b(dtoj, dtoo, byte[])
+10-15 09:29:37.532  1436  1815 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:29:37.578  1362  1534 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:37.590  1436  1436 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+10-15 09:29:37.599  1362  1383 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:29:37.603  3861  3976 I TestRunner: finished: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

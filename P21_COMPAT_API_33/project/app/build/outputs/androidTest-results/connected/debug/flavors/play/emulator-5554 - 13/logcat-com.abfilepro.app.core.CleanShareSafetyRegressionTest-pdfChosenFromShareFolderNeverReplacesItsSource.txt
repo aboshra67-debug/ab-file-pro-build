@@ -1,0 +1,98 @@
+10-15 09:33:14.907  4239  4258 I TestRunner: started: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:14.928  1050  3052 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:14.943  1500  1500 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.wellbeing.device#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 09:33:15.047   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:15.048   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10117
+10-15 09:33:15.050   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:15.050   946   946 D MediaPlayerList: Name of package changed: com.google.android.as
+10-15 09:33:15.051   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:15.051   946   946 D MediaPlayerList: Name of package changed: com.google.android.as
+10-15 09:33:15.054   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:15.065  3035  3206 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@cd6b645
+10-15 09:33:15.073  1050  3610 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:33:15.078  1050  4182 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:33:15.098   479   578 I RoleService: Granting default roles...
+10-15 09:33:15.103  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:15.106  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.google.android.as
+10-15 09:33:15.106  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:15.107  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:15.109  1607  2271 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 5 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 @ {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea @ {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea @ {W:b:u:l, bg}
+10-15 09:33:15.114  1050  3052 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:15.115  1050  3052 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:15.120  3035  3111 I BugleRcsProvisioning: RcsProvisioningTrigger: onCsLibPhenotypeUpdated, enableProvisioningTaskInBugle = false
+10-15 09:33:15.120  3035  3111 I BugleRcsProvisioning: RcsProvisioningTrigger: updateRcsAvailability : hint = CSLIB_PHENOTYPE_UPDATE
+10-15 09:33:15.121  3035  3111 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityAsync, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 09:33:15.123  3035  3111 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: swapAvailabilityUpdater, provisioningTaskInBugle: false, activeRcsAvailabilityUpdater: anft
+10-15 09:33:15.123  3035  3111 I BugleRcs: RcsAvailabilityUpdaterRemote: postUpdateRcsAvailability, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 09:33:15.123  3035  3111 I BugleRcs: RcsAvailabilityUpdaterRemote: updateRcsAvailabilityAsync, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 09:33:15.124  3035  3125 I BugleRcs: RcsAvailabilityUpdaterRemote: updateRcsAvailabilityAsync, trivialAvailability: null
+10-15 09:33:15.130  3546  3546 D ImsResolver: maybeAddedImsService, packageName: com.google.android.as
+10-15 09:33:15.132  3035  3111 W BugleRcsEngine: [43] bfvz.c: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false]
+10-15 09:33:15.133  3035  3111 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 09:33:15.134  3035  3253 W BugleRcsEngine: [70] bfvz.c: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false]
+10-15 09:33:15.134  3035  3253 I BugleRcsEngine: [70] vex.run: Provisioning task in Bugle is disabled by P/H flag
+10-15 09:33:15.144  3035  3111 I BugleRcsEngine: [43] bejl.run: SystemBindingManager: SystemBinding enabled: false
+10-15 09:33:15.144  3035  3111 I BugleRcsEngine: [43] bejm.b: System Binding updated
+10-15 09:33:15.144  3035  3132 W BugleRcsEngine: [52] bemz.x: Unable to send diagnostic log
+10-15 09:33:15.153   756   928 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:33:15.165  1607  2113 I SP.AiAi : Sync for actions-ranking-table succeeded in 1089 ms: {added: [table_5f787033cc44fc7a8804e0030b2bf848], metadata: false
+10-15 09:33:15.203  3035  3125 I BugleRcs: RcsAvailabilityUpdaterRemote: getRcsAvailabilityFromSignupServiceAsync
+10-15 09:33:15.207  2852  4320 I CarrierServices: [71] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+10-15 09:33:15.210  2852  3056 W CarrierServices: [47] dta.w: Unable to send diagnostic log
+10-15 09:33:15.210  1607  2113 I SP.AiAi : GC for 'actions-ranking-table' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:33:15.215  2852  4320 I CarrierServices: [71] fjp.y: Bugle is default SMS app: true
+10-15 09:33:15.216  1607  2113 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 09:33:15.217  1607  3024 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'actions-ranking-table', download version 211005.
+10-15 09:33:15.218  2852  4320 I CarrierServices: [71] fhf.b: Bugle has minimum required RCS permissions: true
+10-15 09:33:15.221  2852  4320 I CarrierServices: [71] fjp.x: Rcs is enabled from user settings: true
+10-15 09:33:15.242  1607  2479 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 09:33:15.242  1607  2479 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+10-15 09:33:15.331  3035  3122 I RcsClientLib: Connecting SignupService
+10-15 09:33:15.347  1500  1584 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:15.403  1500  1584 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.wellbeing
+10-15 09:33:15.409  3035  3122 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:15.424  3035  3253 I RcsClientLib: com.google.android.rcs.client.signup.SignupService connected
+10-15 09:33:15.424  2852  4320 I CarrierServices: [71] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+10-15 09:33:15.435  2852  2852 I PhenotypeBackgroundRecv: Skipping com.google.android.ims#com.google.android.ims which doesn't use ProcessStable flags.
+10-15 09:33:15.450   283   283 D Zygote  : Forked child process 4322
+10-15 09:33:15.453  2852  4162 I CarrierServices: [70] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+10-15 09:33:15.456  2852  4162 I CarrierServices: [70] fjp.y: Bugle is default SMS app: true
+10-15 09:33:15.464   479   492 I system_server: Background young concurrent copying GC freed 682658(20MB) AllocSpace objects, 12(304KB) LOS objects, 43% free, 22MB/40MB, paused 203us,49us total 372.941ms
+10-15 09:33:15.469  4322  4322 I gs.intelligence: Using CollectorTypeCC GC.
+10-15 09:33:15.473  4322  4322 W gs.intelligence: Unexpected CPU variant for x86: x86_64.
+10-15 09:33:15.473  4322  4322 W gs.intelligence: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 09:33:15.480  1282  1289 I gle.android.gms: Background young concurrent copying GC freed 38462(2534KB) AllocSpace objects, 1(20KB) LOS objects, 0% free, 17MB/17MB, paused 159.795ms,17us total 565.941ms
+10-15 09:33:15.520  1282  1289 W gle.android.gms: Cleared Reference was only reachable from finalizer (only reported once)
+10-15 09:33:15.545   383   392 I adbd    : jdwp connection from 4322
+10-15 09:33:15.545  4322  4322 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10107; state: ENABLED
+10-15 09:33:15.553  1282  1282 W gle.android.gms: Long monitor contention with owner highpool[3] (2672) at void asac.d()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2) waiters=1 in void asac.g(asae, long) for 122ms
+10-15 09:33:15.556  1050  1065 I .gms.persistent: Background young concurrent copying GC freed 35791(2006KB) AllocSpace objects, 8(3748KB) LOS objects, 14% free, 19MB/23MB, paused 8.878ms,18us total 376.909ms
+10-15 09:33:15.556  1282  1341 I Icing   : updateResources: need to parse arkh{com.google.android.gms}
+10-15 09:33:15.558  2852  4162 I CarrierServices: [70] fhf.b: Bugle has minimum required RCS permissions: true
+10-15 09:33:15.572  1050  1342 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:15.589  1050  1342 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:15.630  2852  4320 I CarrierServices: [71] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:33:15.630  2852  4320 I CarrierServices: [71] fdh.s: ProvisioningEngineManager: onCsLibPhenotypeUpdated, provisioningTaskInBugleEnabled = false, currentProvisioningStrategy = fgw
+10-15 09:33:15.642  4322  4322 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.settings.intelligence
+10-15 09:33:15.647  4322  4322 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.settings.intelligence
+10-15 09:33:15.649  2852  4162 I CarrierServices: [70] fjp.x: Rcs is enabled from user settings: true
+10-15 09:33:15.650  4322  4322 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.settings.intelligence
+10-15 09:33:15.655  4322  4322 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.settings.intelligence:/product/lib64:/system/product/lib64
+10-15 09:33:15.682  4322  4322 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.settings.intelligence' set to: 'default'
+10-15 09:33:15.682  4322  4322 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.settings.intelligence: false
+10-15 09:33:15.682  4322  4322 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 09:33:15.683  1050  1342 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:15.685  4322  4322 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 09:33:15.685  4322  4322 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 09:33:15.734  4322  4322 W gs.intelligence: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (max-target-o, reflection, denied)
+10-15 09:33:15.734  4322  4322 W gs.intelligence: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+10-15 09:33:15.734  4322  4322 W gs.intelligence: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (max-target-o, reflection, denied)
+10-15 09:33:15.763  4322  4322 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10107; state: ENABLED
+10-15 09:33:15.778  4322  4322 W BatterySettingsContentProvider: create content provider from null
+10-15 09:33:15.780  1050  1050 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:33:15.795  2852  4162 I CarrierServices: [70] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+10-15 09:33:15.795  2852  4162 I CarrierServices: [70] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:33:15.796  3035  3253 I BugleRcs: RcsAvailabilityUpdaterRemote: updateRcsAvailabilityPostProcess, Get Updated RcsAvailability, RcsAvailability: DISABLED_VIA_GSERVICES, SimId: redacted-pii[20-chars]
+10-15 09:33:15.797  3035  3253 I RcsClientLib: Disconnecting SignupService
+10-15 09:33:15.799  3035  3207 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled for this carrier by Google, lastAvailability is null, simId hash = -7080899432288714492, isPev3Enabled = false
+10-15 09:33:15.808  4239  4258 I TestRunner: finished: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

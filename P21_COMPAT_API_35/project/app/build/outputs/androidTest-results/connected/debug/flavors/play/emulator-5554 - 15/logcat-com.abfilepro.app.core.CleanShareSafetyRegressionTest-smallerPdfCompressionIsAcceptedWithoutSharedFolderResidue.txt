@@ -1,0 +1,203 @@
+10-15 09:29:34.576  3861  3976 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:34.603  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/fireworks_effect.binarypb_1711576607746
+10-15 09:29:34.603  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/fireworks_effect.binarypb_1711576607746)
+10-15 09:29:34.603  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562238
+10-15 09:29:34.610  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.fedora.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.628  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gsf
+10-15 09:29:34.629  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.tag
+10-15 09:29:34.632   365  4120 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 09:29:34.633  2372  2738 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+10-15 09:29:34.634  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562239
+10-15 09:29:34.634  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/good_morning_effect.binarypb_1711576816246
+10-15 09:29:34.634  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/good_morning_effect.binarypb_1711576816246)
+10-15 09:29:34.641  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/laugh_effect.binarypb_1711577045067
+10-15 09:29:34.641  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/laugh_effect.binarypb_1711577045067)
+10-15 09:29:34.643  2372  2738 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+10-15 09:29:34.644  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.nexuslauncher
+10-15 09:29:34.645   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:29:34.648  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:34.649  1528  2465 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.google.android.googlequicksearchbox
+10-15 09:29:34.653  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.assistant.ampactions#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.654   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:29:34.658  2372  2738 D TrafficStats: tagSocket(133) with statsTag=0x1809, statsUid=-1
+10-15 09:29:34.658   563   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10100} in 14ms
+10-15 09:29:34.663  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562230
+10-15 09:29:34.664  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.assistant.invocation.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.674  2372  2738 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 09:29:34.675  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.feedback
+10-15 09:29:34.699  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:34.702  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:34.712  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562233
+10-15 09:29:34.713  1528  2465 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.onegoogle#com.google.android.googlequicksearchbox
+10-15 09:29:34.721   365   418 I netd    : tetherGetStats() -> {[]} <0.95ms>
+10-15 09:29:34.722  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/spring_effect.binarypb_1711577525326
+10-15 09:29:34.722  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/spring_effect.binarypb_1711577525326)
+10-15 09:29:34.728  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.734  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/poop_effect.binarypb_1711577263836
+10-15 09:29:34.734  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/poop_effect.binarypb_1711577263836)
+10-15 09:29:34.739   563   822 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 09:29:34.750  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gms.supervision
+10-15 09:29:34.751  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+10-15 09:29:34.756  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562235
+10-15 09:29:34.769  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:34.771  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:34.773  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.omnient#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.780  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:34.782  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562245
+10-15 09:29:34.785  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/summer_effect.binarypb_1711577624595
+10-15 09:29:34.786  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/summer_effect.binarypb_1711577624595)
+10-15 09:29:34.794  3331  4111 E BugleRcsEngine: Could not create DroidGuard token creation event [CONTEXT log_prefix="DroidGuardLogger" thread_id=117 ]
+10-15 09:29:34.795  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/thumbs_down_effect.binarypb_1711577764760
+10-15 09:29:34.795  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/thumbs_down_effect.binarypb_1711577764760)
+10-15 09:29:34.796  3331  4111 I BugleRcsEngine: RequestWithImsiState: event Send config request [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:34.798  3331  4111 I BugleRcsEngine: InProgressState: event Send config request [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:34.799  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:34.822  1528  2079 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.onegoogle.consent#com.google.android.googlequicksearchbox
+10-15 09:29:34.823  3331  3417 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:29:34.823  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.wallpaper
+10-15 09:29:34.825  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.ar.sceneviewer.android.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.832   365  4121 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10135 0}
+10-15 09:29:34.832   365  4122 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:29:34.832   365  4123 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:29:34.841  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562231
+10-15 09:29:34.842   563   563 W ServiceConnector.Impl: mayInterruptIfRunning not supported - ignoring
+10-15 09:29:34.842  1436  1436 D AugmentedAutofillService: handleOnConnected(): debug=true, verbose=false
+10-15 09:29:34.845  1436  2049 I AiAiAutofill: Connected AiAiAugmentedAutofillService.
+10-15 09:29:34.852  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.systemui
+10-15 09:29:34.854  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562228
+10-15 09:29:34.862   365  4122 I resolv  : res_nsend: used send_dg 76 terrno: 0
+10-15 09:29:34.862   365  4122 I resolv  : doQuery: rcode=0, ancount=1, return value=76
+10-15 09:29:34.871   365  4123 I resolv  : res_nsend: used send_dg 64 terrno: 0
+10-15 09:29:34.872   365  4123 I resolv  : doQuery: rcode=0, ancount=1, return value=64
+10-15 09:29:34.873  3331  3417 D TrafficStats: tagSocket(161) with statsTag=0xd03, statsUid=-1
+10-15 09:29:34.883  3331  3428 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/winter_effect.binarypb_1711577828662
+10-15 09:29:34.883  3331  3428 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/winter_effect.binarypb_1711577828662)
+10-15 09:29:34.918  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/diwali_effect.binarypb_1727368166782
+10-15 09:29:34.918  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/diwali_effect.binarypb_1727368166782)
+10-15 09:29:34.943  3331  3428 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562247
+10-15 09:29:34.958  1528  2465 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consent.flows.footprints#com.google.android.googlequicksearchbox
+10-15 09:29:34.959  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562279
+10-15 09:29:34.961  1528  1528 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.soda_resourcemanager.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.974  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.980  1528  1528 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:34.981   563   585 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:34.987  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/good_night_effect.binarypb_1727368289371
+10-15 09:29:34.987  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/good_night_effect.binarypb_1727368289371)
+10-15 09:29:34.989  1528  1528 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+10-15 09:29:34.992  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a150490
+10-15 09:29:34.993  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a150490
+10-15 09:29:34.994  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:34.996  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a152250
+10-15 09:29:34.996  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a152250
+10-15 09:29:34.999  1528  2412 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.googlequicksearchbox
+10-15 09:29:35.004  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.googleapp.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:35.015  1528  2465 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:35.018  1528  2465 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox
+10-15 09:29:35.024  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:35.036  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.038  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562280
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.041  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.042  1528  1800 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:29:35.043  3331  3417 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:29:35.044  3331  4111 I BugleRcsEngine: RequestWithImsiState: event HTTP Response [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.047  3331  4111 I BugleRcsEngine: InProgressState: event HTTP Response [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.048  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.048  3331  4111 I BugleRcsEngine: RequestWithImsiState: event HTTP 200 (OK) [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.048  3331  4111 W BugleRcsEngine: Couldn't find cookies [CONTEXT thread_id=117 ]
+10-15 09:29:35.050  3331  4111 I BugleRcsEngine: transitionTo: destState=ProcessConfigurationState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.050  3331  4111 I BugleRcsEngine: onTransitionRequested RequestWithImsiState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.050  3331  4111 I BugleRcsEngine: Exit RequestWithImsiState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.050  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.050  3331  4111 I BugleRcsEngine: Enter ProcessConfigurationState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.053  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.054  3331  4111 I BugleRcsEngine: ProcessConfigurationState: event Config document received [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.055  3331  4111 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:35.055  3331  4111 I BugleRcsEngine: Configuration update received. Updating
+10-15 09:29:35.055  3331  4111 I BugleRcsEngine: from [Type: 0, Version: 0, Validity: 0, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false]
+10-15 09:29:35.055  3331  4111 I BugleRcsEngine: to [Type: 2, Version: 0, Validity: 86400, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false]
+10-15 09:29:35.055  3331  4111 I BugleRcsEngine: [CONTEXT thread_id=117 ]
+10-15 09:29:35.056  3331  3428 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/thanksgiving_effect.binarypb_1730231794200
+10-15 09:29:35.056  3331  3428 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/thanksgiving_effect.binarypb_1730231794200)
+10-15 09:29:35.058  3331  4111 W BugleRcsEngine: Received configuration with no token or invalid token during refresh. [CONTEXT thread_id=117 ]
+10-15 09:29:35.063  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:35.065  3331  4111 I BugleRcsEngine: Rcs Configuration was updated [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:35.067  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.069  3331  4111 I BugleRcsEngine: Provisioning refreshed with partial configuration. [CONTEXT thread_id=117 ]
+10-15 09:29:35.074  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.077  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.078  3331  4111 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=117 ]
+10-15 09:29:35.096  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/christmas_effect.binarypb_1730231587407
+10-15 09:29:35.096  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/christmas_effect.binarypb_1730231587407)
+10-15 09:29:35.108  3331  3429 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=62 ]
+10-15 09:29:35.135  3331  3428 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562281
+10-15 09:29:35.144  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a14f310
+10-15 09:29:35.144  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a14f310
+10-15 09:29:35.145  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.145  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a150b90
+10-15 09:29:35.145  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a150b90
+10-15 09:29:35.146  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.147  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a150490
+10-15 09:29:35.147  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a150490
+10-15 09:29:35.149  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.150  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562282
+10-15 09:29:35.177  3331  4111 I BugleRcsEngine: transitionTo: destState=ConfiguredState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.178  3331  4111 I BugleRcsEngine: onTransitionRequested ProcessConfigurationState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.178  3331  4111 I BugleRcsEngine: Exit ProcessConfigurationState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.179  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.180  3331  4111 I BugleRcsEngine: Exit InProgressState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.182  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.182  3331  4111 I BugleRcsEngine: Enter ConfiguredState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.183  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.209  3331  3418 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/pride_effect.binarypb_1716494383862
+10-15 09:29:35.209  3331  3418 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/pride_effect.binarypb_1716494383862)
+10-15 09:29:35.215  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.216  1528  1763 I A       : (REDACTED) Refusing EXCLUSIVE task %s, it is already pending. Try again in %d seconds.
+10-15 09:29:35.219  3331  4111 I BugleRcsEngine: Provisioned with disabled config (version < 0). Invoke failure [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:35.219  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:35.220  3331  4111 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Update provisioning status (11)], redacted-pii:[chars:85] [CONTEXT thread_id=117 ]
+10-15 09:29:35.220  3331  4111 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:243] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=117 ]
+10-15 09:29:35.222  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/halloween_effect.binarypb_1727368004493
+10-15 09:29:35.223  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/halloween_effect.binarypb_1727368004493)
+10-15 09:29:35.235  3331  3417 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:29:35.239  1528  1773 I Ma      : #handleFlagUpdate()
+10-15 09:29:35.242  3331  3417 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Update provisioning status
+10-15 09:29:35.243  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@efafae8
+10-15 09:29:35.247  1528  1763 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 09:29:35.257  3331  3418 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562283
+10-15 09:29:35.260  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a152250
+10-15 09:29:35.263  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a152250
+10-15 09:29:35.264  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.266  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a14f310
+10-15 09:29:35.266  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a14f310
+10-15 09:29:35.269  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 4813KB AllocSpace bytes, 284(14MB) LOS objects, 49% free, 16MB/33MB, paused 264us,6.889ms total 193.820ms
+10-15 09:29:35.271  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562284
+10-15 09:29:35.276  1528  1794 I A       : NGA enabled in interactor.
+10-15 09:29:35.282  1444  1852 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 09:29:35.282  1444  1852 I A       : #handleFlagsUpdate: listeners notified
+10-15 09:29:35.285  1226  1231 W .gms.persistent: Suspending all threads took: 12.706ms
+10-15 09:29:35.286  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.287  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a150b90
+10-15 09:29:35.288  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a150b90
+10-15 09:29:35.308  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/hannukah_effect.binarypb_1730231660344
+10-15 09:29:35.309  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/hannukah_effect.binarypb_1730231660344)
+10-15 09:29:35.309  3861  3976 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

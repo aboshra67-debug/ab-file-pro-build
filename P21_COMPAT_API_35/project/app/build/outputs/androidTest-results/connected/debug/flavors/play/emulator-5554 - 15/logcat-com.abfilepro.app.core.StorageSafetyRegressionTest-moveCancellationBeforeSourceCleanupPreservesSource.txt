@@ -1,0 +1,9 @@
+10-15 09:29:37.325  3861  3976 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.336   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:37.336   563   563 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:37.345  1853  2232 I HttpGrpcBindableService: Responding with header information for URL 'https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json'
+10-15 09:29:37.346  1436  2268 I AstreaHttpConnection: Started download from url='https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json'
+10-15 09:29:37.347  1853  2750 I HttpGrpcBindableService: [pfd-write] DOWNLOAD COMPLETE: Downloaded 19450 bytes from URL [https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json].
+10-15 09:29:37.347  1853  2750 W System.err: val in interceptor: null
+10-15 09:29:37.348  1436  2268 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded unknown number of bytes from https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json.
+10-15 09:29:37.357  3861  3976 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

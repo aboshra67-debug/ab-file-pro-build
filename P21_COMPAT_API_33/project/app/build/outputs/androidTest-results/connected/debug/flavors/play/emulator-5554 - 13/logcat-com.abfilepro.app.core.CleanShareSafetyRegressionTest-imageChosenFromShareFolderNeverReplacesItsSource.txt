@@ -1,0 +1,11 @@
+10-15 09:33:14.676  4239  4258 I TestRunner: started: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:14.690  2852  3574 I CarrierServices: [66] fjp.y: Bugle is default SMS app: true
+10-15 09:33:14.691  2852  3574 I CarrierServices: [66] fhf.b: Bugle has minimum required RCS permissions: true
+10-15 09:33:14.694  2852  3574 I CarrierServices: [66] fjp.x: Rcs is enabled from user settings: true
+10-15 09:33:14.708  1282  4300 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+10-15 09:33:14.718  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:14.734  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip'
+10-15 09:33:14.735  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 309 bytes from https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip.
+10-15 09:33:14.746  1282  4304 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+10-15 09:33:14.756  1282  4301 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+10-15 09:33:14.771  4239  4258 I TestRunner: finished: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

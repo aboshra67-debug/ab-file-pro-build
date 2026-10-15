@@ -1,0 +1,150 @@
+INFO: Constructing runner from config.
+INFO: Configuring Android Instrumentation driver: android_instrumentation_runtime {
+  instrumentation_info {
+    app_package: "com.abfilepro.app.p21mainttrial"
+    test_package: "com.abfilepro.app.p21mainttrial.test"
+    test_runner_class: "androidx.test.runner.AndroidJUnitRunner"
+  }
+  instrumentation_args {
+    args_map {
+      key: "additionalTestOutputDir"
+      value: "/sdcard/Android/media/com.abfilepro.app.p21mainttrial/additional_test_output"
+    }
+  }
+}
+am_instrument_timeout: 31536000
+
+INFO: Configuring AndroidTestApkInstallerPlugin: apks_to_install {
+  apk_paths: "/home/runner/work/ab-file-pro-build/ab-file-pro-build/checkout/source/app/build/outputs/apk/play/debug/app-play-debug.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+apks_to_install {
+  apk_paths: "/home/runner/work/ab-file-pro-build/ab-file-pro-build/checkout/source/app/build/outputs/apk/androidTest/play/debug/app-play-debug-androidTest.apk"
+  install_options {
+  }
+  uninstall_after_test: true
+}
+
+INFO: No installables found in test fixture. Nothing to install.
+INFO: Installing [/home/runner/work/ab-file-pro-build/ab-file-pro-build/checkout/source/app/build/outputs/apk/play/debug/app-play-debug.apk] on device emulator-5554.
+INFO: Installing [/home/runner/work/ab-file-pro-build/ab-file-pro-build/checkout/source/app/build/outputs/apk/androidTest/play/debug/app-play-debug-androidTest.apk] on device emulator-5554.
+INFO: Start logcat streaming.
+INFO: Running Android Instrumentation driver.
+INFO: Copying files from device to host: /sdcard/Android/media/com.abfilepro.app.p21mainttrial/additional_test_output to /home/runner/work/ab-file-pro-build/ab-file-pro-build/checkout/source/app/build/outputs/connected_android_test_additional_output/playDebugAndroidTest/connected/emulator-5554 - 15
+INFO: Stop logcat streaming.
+INFO: Uninstalling com.abfilepro.app.p21mainttrial for device emulator-5554.
+INFO: Uninstalling com.abfilepro.app.p21mainttrial.test for device emulator-5554.
+INFO: Execute com.abfilepro.app.assistant.AssistantStoreRegressionTest.recordsAreNotDroppedAfterTwoThousand: PASSED
+INFO: Execute com.abfilepro.app.assistant.AssistantStoreRegressionTest.familySyncAppliesOnlyChangedRecords: PASSED
+INFO: Execute com.abfilepro.app.assistant.AssistantStoreRegressionTest.updatingARecordDeletedElsewhereDoesNotBringItBack: PASSED
+INFO: Execute com.abfilepro.app.assistant.AssistantStoreRegressionTest.staleScreenCopyCannotUndoAChangeMadeElsewhere: PASSED
+INFO: Execute com.abfilepro.app.assistant.AssistantStoreRegressionTest.backupImportAddsOnlyMissingRecordsAndChangesNothingElse: PASSED
+INFO: Execute com.abfilepro.app.assistant.AssistantStoreRegressionTest.preP20RecordsAreMigratedAndTheOldCopyIsKept: PASSED
+INFO: Execute com.abfilepro.app.assistant.FamilyOptInRegressionTest.leavingWhileNotLinkedClearsStateWithoutNetwork: PASSED
+INFO: Execute com.abfilepro.app.assistant.FamilyOptInRegressionTest.preP17AutomaticRegistrationIsPausedUntilConfirmed: PASSED
+INFO: Execute com.abfilepro.app.assistant.FamilyOptInRegressionTest.preP17CodeWithoutRegistrationIsDiscarded: PASSED
+INFO: Execute com.abfilepro.app.assistant.FamilyOptInRegressionTest.turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems: PASSED
+INFO: Execute com.abfilepro.app.assistant.FamilyOptInRegressionTest.freshInstallHasNoFamilyAndNoSession: PASSED
+INFO: Execute com.abfilepro.app.assistant.ReminderReliabilityRegressionTest.documentWhoseReminderWindowStartedIsRemindedOnce: PASSED
+INFO: Execute com.abfilepro.app.assistant.ReminderReliabilityRegressionTest.adhanSchedulesTomorrowAndKeepsTodaysFollowUp: PASSED
+INFO: Execute com.abfilepro.app.assistant.ReminderReliabilityRegressionTest.medicineReceiverSchedulesTheNextDailyDose: PASSED
+INFO: Execute com.abfilepro.app.assistant.ReminderReliabilityRegressionTest.calendarReminderWhoseLeadTimeAlreadyPassedStillFires: PASSED
+INFO: Execute com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest.successfulBatchPublishesEveryPageInOrder: PASSED
+INFO: Execute com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest.cancellationDuringSaveRemovesPublishedImages: PASSED
+INFO: Execute com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest.retryAfterFailureDoesNotDuplicatePages: PASSED
+INFO: Execute com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest.secondPageFailureRemovesOnlyThisAttemptsImages: PASSED
+INFO: Execute com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest.imageChangedAfterPublishIsKeptOnRollback: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.failedCompressionKeepsValidCleanedPdf: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.failedHandoffPreservesOutputEditedAfterPublication: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.allBlankPagesAreRejectedWithoutChangingSource: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.compressionCandidateMissingPagesIsRejected: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.malformedPdfLeavesNoAttemptFiles: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.imageChosenFromShareFolderNeverReplacesItsSource: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.parallelImagesWithSameNameHaveIndependentOutputs: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.pdfChosenFromShareFolderNeverReplacesItsSource: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.largerCompressionCandidateIsNotReportedAsCompressed: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.failedWriterRemovesOnlyItsPartialDraft: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.cancelledReturnHandoffPreservesIdenticalReplacement: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.normalPdfPreservesAllRequestedPages: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.existingImageWithSameNameIsPreserved: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.failureAfterPublicationRemovesUnchangedOutput: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.normalImageProducesReadableCopyWithoutChangingSource: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.qrRedactionStillWorksWithPrivateOcrDrafts: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.inputAndOcrDraftsRemainInAppPrivateCache: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.cancelledReturnHandoffRemovesUnchangedPublication: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.blankPageRemovalStillKeepsTheContentPage: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.cancellationBeforePublicationRemovesPartialDraft: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.jpegOutputStillPreservesTheOriginalPng: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.existingPdfWithSameNameIsPreserved: PASSED
+INFO: Execute com.abfilepro.app.core.CleanShareSafetyRegressionTest.invalidCompressionCandidateKeepsValidCleanedPdf: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.failedZipEnumerationCannotSucceedWithEmptyDirectory: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.persianDigitsAndArabicSeparatorsStayComplete: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.safMoveKeepsChildAddedAfterCopy: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.failedSafListingCannotMoveAndDeleteUncopiedFolder: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.corruptZipRemovesPartialFileAndImplicitDirectories: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.concaveCropIsRejectedBeforeChangingCapturedImage: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.validPerspectiveCropStillProducesReadableImage: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.arabicDecimalAmountAndTaxStayComplete: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.zipCancellationKeepsFileEditedAfterExtraction: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.normalSafFallbackMovePreservesEveryChild: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.safMoveKeepsFileModifiedAfterCopy: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.arabicThousandsAndDecimalStayComplete: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.unchangedRenameUndoStillRestoresOriginalName: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.unreadableImageFailsEntirePdfWithoutPublishingMissingPages: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.crossingCropIsRejectedBeforeChangingCapturedImage: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.nonemptyUnreadableScannerImportCannotBecomeReplacement: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.validImagesProduceEverySelectedPdfPage: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.businessNameSurvivesMissingEmail: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.businessNameSurvivesMissingPhone: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.multiplePdfPagesRenderInOrderAsLongImage: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.fullFrameCropDoesNotReencodeOrDeleteSource: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.nullSafCursorIsAnErrorRatherThanEmptyFolder: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.arabicNameSurvivesAllContactFieldsMissing: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.westernAmountsRemainSupported: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.safMoveRejectsIncompleteDestinationBeforeDeletingOriginal: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.fullBusinessContactFieldsStillParse: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.legacyFallbackDeleteFailureKeepsCompletedCopy: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.legacyFallbackNeverDeletesSourceModifiedAfterCopy: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.renameUndoNeverMovesAReplacementFile: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.singlePdfPageRendersAsLongImage: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.businessNameSurvivesMissingWebsite: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.moveUndoNeverMovesAReplacementFile: PASSED
+INFO: Execute com.abfilepro.app.core.MaintenanceSafetyRegressionTest.legacyFallbackFailureKeepsReplacementAtDestination: PASSED
+INFO: Execute com.abfilepro.app.core.PdfCompatibilityRegressionTest.pdfboxOnlyModeNeverProducesFilesFromItsRendering: PASSED
+INFO: Execute com.abfilepro.app.core.PdfCompatibilityRegressionTest.longImageIsProducedThroughTheRewrittenCopy: PASSED
+INFO: Execute com.abfilepro.app.core.PdfCompatibilityRegressionTest.systemRendererStaysThePrimaryPathOnCurrentAndroid: PASSED
+INFO: Execute com.abfilepro.app.core.PdfCompatibilityRegressionTest.brokenPdfIsStillRejectedWhenTheFallbackIsUsed: PASSED
+INFO: Execute com.abfilepro.app.core.PdfCompatibilityRegressionTest.androidWrittenPdfRendersItsRealContentOrIsRefusedSafely: PASSED
+INFO: Execute com.abfilepro.app.core.PdfCompatibilityRegressionTest.rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards: PASSED
+INFO: Execute com.abfilepro.app.core.PlayChannelPolicyTest.playBuildDoesNotRequestInstallPackages: PASSED
+INFO: Execute com.abfilepro.app.core.PlayChannelPolicyTest.playChannelDisablesSelfUpdate: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.normalCopyPreservesBytesAndSource: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.partialFileMoveUndoRetainsConflictForRetry: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.undoReplacementAtSamePathPreservesReplacement: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.unreadableDirectoryCannotBePublishedAsEmptyCopy: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.copyIntoSelfRejectedWithoutChangingSource: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.failedFallbackMoveCopyDoesNotDeleteAnySource: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.normalFolderCopyPreservesNestedAndEmptyFolders: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveKeepsSameLengthSameTimeEditAfterCopy: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.undoFolderWithNewUserFilePreservesWholeFolder: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.moveCancellationBeforeSourceCleanupPreservesSource: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.copyCancellationCleansAttemptAndKeepsSource: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.undoChangedSameLengthSameTimeFilePreservesNewData: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.copyIntoDescendantRejectedWithoutWriting: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.unchangedGeneratedOutputCanStillBeUndone: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveKeepsFileAddedAfterCopy: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.normalMovePreservesBytesAtDestination: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.partialUndoKeepsChangedOutputAndItsHistory: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveDeleteFailureKeepsCompleteDestination: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile: PASSED
+INFO: Execute com.abfilepro.app.core.StorageSafetyRegressionTest.unchangedGeneratedFolderCanStillBeUndone: PASSED
+INFO: Execute com.abfilepro.app.core.WorkInProgressSafetyRegressionTest.scannerPdfIsPublishedOnlyAfterVerification: PASSED
+INFO: Execute com.abfilepro.app.core.WorkInProgressSafetyRegressionTest.reviewPagesRoundTripThroughSavedState: PASSED
+INFO: Execute com.abfilepro.app.core.WorkInProgressSafetyRegressionTest.restoredReviewDropsPagesWhoseImageIsGone: PASSED
+INFO: Execute com.abfilepro.app.core.WorkInProgressSafetyRegressionTest.invalidScannerResultFailsCleanlyWithoutLeavingFiles: PASSED
+INFO: Execute com.abfilepro.app.core.WorkInProgressSafetyRegressionTest.recordingStoppedOutsideTheScreenIsRecovered: PASSED

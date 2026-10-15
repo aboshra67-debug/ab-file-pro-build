@@ -1,0 +1,4 @@
+10-15 09:33:12.001  4239  4258 I TestRunner: started: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:33:12.010  1607  2271 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip to text-classifier-langid-1941001461.zip.fetched (constraints: W:b:u:l)
+10-15 09:33:12.011  1607  2271 I SP.AiAi : Requesting download of URL https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip to collections_table_main_21980965fbd997111d89f86c16e9e090.zip.fetched (constraints: W:b:u:l)
+10-15 09:33:12.012  4239  4258 I TestRunner: finished: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

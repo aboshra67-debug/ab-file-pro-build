@@ -1,0 +1,3 @@
+10-15 09:32:18.368  4865  4884 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:32:18.373  1787  4897 W System  : ClassLoader referenced unknown path:
+10-15 09:32:18.412  4865  4884 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,4 @@
+10-15 09:29:37.375  3861  3976 I TestRunner: started: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.384  1436  1741 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 5 scheduled, 5 pending: manifests:kg_collections_table-21051103 * {W:C:I:l, bg}, manifests:text-classifier-annotator-272525175 * {W:C:I:l, bg}, manifests:text-classifier-actions-1140547708 * {W:C:I:l, bg}, manifests:text-classifier-langid-1941001461 * {W:C:I:l, bg}, manifests:spelling_correction-22110320 * {W:C:I:l, bg}
+10-15 09:29:37.395  1436  1815 I SP.AiAi : Successfully got manifest for captions_i18n_v0_background-manifest: manifests:captions_i18n_v0_background-20240604
+10-15 09:29:37.398  3861  3976 I TestRunner: finished: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)

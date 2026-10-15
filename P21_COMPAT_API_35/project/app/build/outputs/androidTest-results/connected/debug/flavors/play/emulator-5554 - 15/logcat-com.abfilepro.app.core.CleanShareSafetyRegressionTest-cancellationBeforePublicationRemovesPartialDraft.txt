@@ -1,0 +1,2 @@
+10-15 09:29:34.566  3861  3976 I TestRunner: started: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:34.575  3861  3976 I TestRunner: finished: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

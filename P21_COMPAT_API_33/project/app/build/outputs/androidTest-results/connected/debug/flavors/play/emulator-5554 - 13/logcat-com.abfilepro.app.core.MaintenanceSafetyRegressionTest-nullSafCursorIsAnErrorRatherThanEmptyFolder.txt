@@ -1,0 +1,4 @@
+10-15 09:33:32.515  4239  4258 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:32.531  1500  1500 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.kids.libraries.android#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 09:33:32.533  4466  4466 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:33:32.554  4239  4258 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

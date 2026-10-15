@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.abfilepro.app.assistant.AssistantStoreRegressionTest" tests="112" failures="0" errors="0" skipped="10" time="8.038" timestamp="2026-10-15T09:32:25" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 8.0.0" />
+    <property name="flavor" value="play" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="recordsAreNotDroppedAfterTwoThousand" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.321" />
+  <testcase name="familySyncAppliesOnlyChangedRecords" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.001" />
+  <testcase name="updatingARecordDeletedElsewhereDoesNotBringItBack" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.001" />
+  <testcase name="staleScreenCopyCannotUndoAChangeMadeElsewhere" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.035" />
+  <testcase name="backupImportAddsOnlyMissingRecordsAndChangesNothingElse" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.003" />
+  <testcase name="preP20RecordsAreMigratedAndTheOldCopyIsKept" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.026" />
+  <testcase name="leavingWhileNotLinkedClearsStateWithoutNetwork" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.005" />
+  <testcase name="preP17AutomaticRegistrationIsPausedUntilConfirmed" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.053" />
+  <testcase name="preP17CodeWithoutRegistrationIsDiscarded" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.028" />
+  <testcase name="turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.035" />
+  <testcase name="freshInstallHasNoFamilyAndNoSession" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.0" />
+  <testcase name="documentWhoseReminderWindowStartedIsRemindedOnce" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.096" />
+  <testcase name="adhanSchedulesTomorrowAndKeepsTodaysFollowUp" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.078" />
+  <testcase name="medicineReceiverSchedulesTheNextDailyDose" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.057" />
+  <testcase name="calendarReminderWhoseLeadTimeAlreadyPassedStillFires" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.02" />
+  <testcase name="successfulBatchPublishesEveryPageInOrder" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.211" />
+  <testcase name="cancellationDuringSaveRemovesPublishedImages" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.126" />
+  <testcase name="retryAfterFailureDoesNotDuplicatePages" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.112" />
+  <testcase name="secondPageFailureRemovesOnlyThisAttemptsImages" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.093" />
+  <testcase name="imageChangedAfterPublishIsKeptOnRollback" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.028" />
+  <testcase name="failedCompressionKeepsValidCleanedPdf" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.181" />
+  <testcase name="failedHandoffPreservesOutputEditedAfterPublication" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.023" />
+  <testcase name="allBlankPagesAreRejectedWithoutChangingSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.127" />
+  <testcase name="compressionCandidateMissingPagesIsRejected" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.08" />
+  <testcase name="malformedPdfLeavesNoAttemptFiles" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.051" />
+  <testcase name="imageChosenFromShareFolderNeverReplacesItsSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.051" />
+  <testcase name="parallelImagesWithSameNameHaveIndependentOutputs" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.078" />
+  <testcase name="pdfChosenFromShareFolderNeverReplacesItsSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.062">
+    <skipped />
+  </testcase>
+  <testcase name="largerCompressionCandidateIsNotReportedAsCompressed" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.0">
+    <skipped />
+  </testcase>
+  <testcase name="failedWriterRemovesOnlyItsPartialDraft" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.075" />
+  <testcase name="cancelledReturnHandoffPreservesIdenticalReplacement" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.077" />
+  <testcase name="normalPdfPreservesAllRequestedPages" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.022">
+    <skipped />
+  </testcase>
+  <testcase name="existingImageWithSameNameIsPreserved" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.052" />
+  <testcase name="failureAfterPublicationRemovesUnchangedOutput" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.027" />
+  <testcase name="normalImageProducesReadableCopyWithoutChangingSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.052" />
+  <testcase name="qrRedactionStillWorksWithPrivateOcrDrafts" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="1.056" />
+  <testcase name="inputAndOcrDraftsRemainInAppPrivateCache" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.028" />
+  <testcase name="cancelledReturnHandoffRemovesUnchangedPublication" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.053" />
+  <testcase name="blankPageRemovalStillKeepsTheContentPage" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.001">
+    <skipped />
+  </testcase>
+  <testcase name="cancellationBeforePublicationRemovesPartialDraft" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.03" />
+  <testcase name="smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.049">
+    <skipped />
+  </testcase>
+  <testcase name="jpegOutputStillPreservesTheOriginalPng" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.049" />
+  <testcase name="existingPdfWithSameNameIsPreserved" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.029">
+    <skipped />
+  </testcase>
+  <testcase name="invalidCompressionCandidateKeepsValidCleanedPdf" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.125" />
+  <testcase name="failedZipEnumerationCannotSucceedWithEmptyDirectory" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.028" />
+  <testcase name="persianDigitsAndArabicSeparatorsStayComplete" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="safMoveKeepsChildAddedAfterCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.153" />
+  <testcase name="failedSafListingCannotMoveAndDeleteUncopiedFolder" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.022" />
+  <testcase name="corruptZipRemovesPartialFileAndImplicitDirectories" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.053" />
+  <testcase name="concaveCropIsRejectedBeforeChangingCapturedImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.003" />
+  <testcase name="validPerspectiveCropStillProducesReadableImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.025" />
+  <testcase name="arabicDecimalAmountAndTaxStayComplete" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0" />
+  <testcase name="zipCancellationKeepsFileEditedAfterExtraction" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.025" />
+  <testcase name="normalSafFallbackMovePreservesEveryChild" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.152" />
+  <testcase name="safMoveKeepsFileModifiedAfterCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.052" />
+  <testcase name="arabicThousandsAndDecimalStayComplete" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.028" />
+  <testcase name="unchangedRenameUndoStillRestoresOriginalName" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.03" />
+  <testcase name="unreadableImageFailsEntirePdfWithoutPublishingMissingPages" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.032" />
+  <testcase name="crossingCropIsRejectedBeforeChangingCapturedImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="nonemptyUnreadableScannerImportCannotBecomeReplacement" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.029" />
+  <testcase name="validImagesProduceEverySelectedPdfPage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.077" />
+  <testcase name="businessNameSurvivesMissingEmail" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.002" />
+  <testcase name="businessNameSurvivesMissingPhone" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.025" />
+  <testcase name="multiplePdfPagesRenderInOrderAsLongImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0">
+    <skipped />
+  </testcase>
+  <testcase name="fullFrameCropDoesNotReencodeOrDeleteSource" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.021" />
+  <testcase name="nullSafCursorIsAnErrorRatherThanEmptyFolder" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.028" />
+  <testcase name="arabicNameSurvivesAllContactFieldsMissing" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0" />
+  <testcase name="westernAmountsRemainSupported" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.025" />
+  <testcase name="safMoveRejectsIncompleteDestinationBeforeDeletingOriginal" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.053" />
+  <testcase name="fullBusinessContactFieldsStillParse" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.026" />
+  <testcase name="legacyFallbackDeleteFailureKeepsCompletedCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.052" />
+  <testcase name="legacyFallbackNeverDeletesSourceModifiedAfterCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.03" />
+  <testcase name="renameUndoNeverMovesAReplacementFile" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.057" />
+  <testcase name="singlePdfPageRendersAsLongImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001">
+    <skipped />
+  </testcase>
+  <testcase name="businessNameSurvivesMissingWebsite" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="moveUndoNeverMovesAReplacementFile" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.021" />
+  <testcase name="legacyFallbackFailureKeepsReplacementAtDestination" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.028" />
+  <testcase name="pdfboxOnlyModeNeverProducesFilesFromItsRendering" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.055" />
+  <testcase name="longImageIsProducedThroughTheRewrittenCopy" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.0">
+    <skipped />
+  </testcase>
+  <testcase name="systemRendererStaysThePrimaryPathOnCurrentAndroid" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.003" />
+  <testcase name="brokenPdfIsStillRejectedWhenTheFallbackIsUsed" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.0" />
+  <testcase name="androidWrittenPdfRendersItsRealContentOrIsRefusedSafely" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.003" />
+  <testcase name="rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.001">
+    <skipped />
+  </testcase>
+  <testcase name="playBuildDoesNotRequestInstallPackages" classname="com.abfilepro.app.core.PlayChannelPolicyTest" time="0.0" />
+  <testcase name="playChannelDisablesSelfUpdate" classname="com.abfilepro.app.core.PlayChannelPolicyTest" time="0.0" />
+  <testcase name="normalCopyPreservesBytesAndSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="partialFileMoveUndoRetainsConflictForRetry" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.05" />
+  <testcase name="undoReplacementAtSamePathPreservesReplacement" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.029" />
+  <testcase name="copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="unreadableDirectoryCannotBePublishedAsEmptyCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.025" />
+  <testcase name="copyIntoSelfRejectedWithoutChangingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.004" />
+  <testcase name="cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.052" />
+  <testcase name="failedFallbackMoveCopyDoesNotDeleteAnySource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="normalFolderCopyPreservesNestedAndEmptyFolders" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="fallbackMoveKeepsSameLengthSameTimeEditAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.004" />
+  <testcase name="undoFolderWithNewUserFilePreservesWholeFolder" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="moveCancellationBeforeSourceCleanupPreservesSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.029" />
+  <testcase name="copyCancellationCleansAttemptAndKeepsSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="undoChangedSameLengthSameTimeFilePreservesNewData" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="copyIntoDescendantRejectedWithoutWriting" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="unchangedGeneratedOutputCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.052" />
+  <testcase name="fallbackMoveKeepsFileAddedAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.052" />
+  <testcase name="normalMovePreservesBytesAtDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="partialUndoKeepsChangedOutputAndItsHistory" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.053" />
+  <testcase name="fallbackMoveDeleteFailureKeepsCompleteDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="unchangedGeneratedFolderCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.05" />
+  <testcase name="scannerPdfIsPublishedOnlyAfterVerification" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.025" />
+  <testcase name="reviewPagesRoundTripThroughSavedState" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.0" />
+  <testcase name="restoredReviewDropsPagesWhoseImageIsGone" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.001" />
+  <testcase name="invalidScannerResultFailsCleanlyWithoutLeavingFiles" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.026" />
+  <testcase name="recordingStoppedOutsideTheScreenIsRecovered" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.026" />
+</testsuite>

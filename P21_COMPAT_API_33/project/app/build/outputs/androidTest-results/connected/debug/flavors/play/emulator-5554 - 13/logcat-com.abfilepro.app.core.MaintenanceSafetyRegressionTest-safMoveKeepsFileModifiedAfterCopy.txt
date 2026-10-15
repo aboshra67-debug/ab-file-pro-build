@@ -1,0 +1,10 @@
+10-15 09:33:32.062  4239  4258 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:32.088  1500  1500 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.wellbeing.device#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 09:33:32.101  3035  3253 W BugleConnectivity: Unregister ConnectivityStateListener for subId -1 fail.
+10-15 09:33:32.105  4466  4466 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:33:32.153  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:32.175  1500  1578 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:32.178  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:32.227  1500  4385 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.wellbeing
+10-15 09:33:32.228  3035  3253 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:32.239  4239  4258 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,8 @@
+10-15 09:29:36.561  3861  3976 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.571  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:36.579  1414  3040 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:29:36.600  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a14f4d0
+10-15 09:29:36.601  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:36.602  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a14f4d0
+10-15 09:29:36.603  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:36.607  3861  3976 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

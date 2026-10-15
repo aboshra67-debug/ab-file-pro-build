@@ -1,0 +1,33 @@
+10-15 09:33:12.442  4239  4258 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:33:12.465   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:12.466   946   946 D MediaPlayerList: Name of package changed: com.google.android.apps.messaging
+10-15 09:33:12.467   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:12.468   946   946 D MediaPlayerList: Name of package changed: com.google.android.apps.messaging
+10-15 09:33:12.480   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:12.481   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:12.484  3035  3206 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@cd6b645
+10-15 09:33:12.502  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip'
+10-15 09:33:12.504  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 399 bytes from https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip.
+10-15 09:33:12.506   479  1580 D ConnectivityService: requestNetwork for uid/pid:10140/1787 activeRequest: null callbackRequest: 106 [NetworkRequest [ REQUEST id=107, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10140 RequestorUid: 10140 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-15 09:33:12.514   479   695 D ConnectivityService: NetReassign [107 : null → 100] [c 0] [a 4] [i 3]
+10-15 09:33:12.516   479   688 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=107, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10140 RequestorUid: 10140 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 09:33:12.518   479   688 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=107, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10140 RequestorUid: 10140 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 09:33:12.518   479   688 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=107, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10140 RequestorUid: 10140 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 09:33:12.518   479   688 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=107, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10140 RequestorUid: 10140 RequestorPkg: com.google.android.youtube UnderlyingNetworks: Null] ]
+10-15 09:33:12.521   479   578 I RoleService: Granting default roles...
+10-15 09:33:12.541  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.messaging
+10-15 09:33:12.548   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:12.552   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:12.552   946   946 D MediaPlayerList: Name of package changed: com.abfilepro.app.p21mainttrial
+10-15 09:33:12.554   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:12.554   946   946 D MediaPlayerList: Name of package changed: com.abfilepro.app.p21mainttrial
+10-15 09:33:12.556   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:12.556  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:12.557   756   928 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:33:12.566  2852  2852 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:12.567  3546  3546 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.messaging
+10-15 09:33:12.581  1050  3610 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:33:12.584  1050  3617 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:33:12.608   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10113
+10-15 09:33:12.609   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10174
+10-15 09:33:12.617  4239  4258 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

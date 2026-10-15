@@ -1,0 +1,67 @@
+10-15 09:29:24.209  3861  3976 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:29:24.219  3013  3013 D ConfigUpdater: PhenotypeBroadcastReceiver : com.google.android.gms.phenotype.UPDATE
+10-15 09:29:24.233  3013  3829 I ConfigUpdater: Update started
+10-15 09:29:24.269  1365  1578 I SP      : Pausing download transformer_concept:2023011913_en, reason: PREEMPTED
+10-15 09:29:24.272  1365  1578 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:29:24.302  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 09:29:24.311  1365  1578 I SP      : Scheduling: download registered, 0 started, 1 paused, 1 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 09:29:24.311  1365  1578 I SP      : <==== Finishing job {m:b:u:l, bg}, 895 ms. elapsed since start
+10-15 09:29:24.311  1365  1578 I SP      : Download stopped: transformer_concept:2023011913_en, succeeded paused, size: 1493590
+10-15 09:29:24.322  1365  1365 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 09:29:24.327  1365  1578 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:29:24.337   563  1968 D ConnectivityService: requestNetwork for uid/pid:1000/563 asUid: 10136 activeRequest: null callbackRequest: 134 [NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10136 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:29:24.338  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 2
+10-15 09:29:24.342   563   835 D ConnectivityService: NetReassign [135 : null → 100] [c 0] [a 2] [i 0]
+10-15 09:29:24.343   563   828 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10136 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:24.343   563   828 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10136 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:24.343   563   828 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10136 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:24.343   563   828 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10136 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:24.367  3013  3829 I ConfigUpdater: Update started
+10-15 09:29:24.378  1638  3983 D DownloadManager: [1] Starting
+10-15 09:29:24.390  1365  1578 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 09:29:24.409  1365  1669 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 4184643
+10-15 09:29:24.418  1414  1414 I NearbySharing: SharingTileService destroyed [CONTEXT service_id=194 ]
+10-15 09:29:24.430   365  3984 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10095 0}
+10-15 09:29:24.430   365  3985 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:29:24.430   365  3985 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x775ea98a7450
+10-15 09:29:24.430   365  3985 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:29:24.430   365  3986 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:29:24.430   365  3986 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x775ea98a6d90
+10-15 09:29:24.431   365  3986 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 09:29:24.439  1638  3983 D TrafficStats: tagSocket(82) with statsTag=0xffffff01, statsUid=10136
+10-15 09:29:24.498  1638  3988 D DownloadManager: [2] Starting
+10-15 09:29:24.506  1365  1578 I SP      : Scheduling: job start ({m:b:u:l, fg}), 1 started, 0 paused, 0 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ * {m:b:u:l, fg}
+10-15 09:29:24.506  1365  1578 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/packmapping_release.20231127.pb to pack_mapping_v1_lstm_20231127.fetched (constraints: m:b:u:l)
+10-15 09:29:24.516   365  3992 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 09:29:24.516   365  3993 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:29:24.516   365  3993 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x775e598aea30
+10-15 09:29:24.516   365  3993 I resolv  : doQuery: rcode=0, ancount=4, return value=143
+10-15 09:29:24.516   365  3994 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:29:24.516   365  3994 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x775f398a60b0
+10-15 09:29:24.517   365  3994 I resolv  : doQuery: rcode=0, ancount=4, return value=95
+10-15 09:29:24.519  1365  3991 D TrafficStats: tagSocket(160) with statsTag=0xffffffff, statsUid=-1
+10-15 09:29:24.522   365   365 I netd    : tetherGetStats() -> {[]} <0.22ms>
+10-15 09:29:24.538   915   915 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.abfilepro.app.p21mainttrial, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+10-15 09:29:24.560  1638  3988 D TrafficStats: tagSocket(96) with statsTag=0xffffff01, statsUid=10136
+10-15 09:29:24.581  1638  3983 D CompatChangeReporter: Compat change id reported: 312399441; UID 10095; state: ENABLED
+10-15 09:29:24.592   915   915 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.abfilepro.app.p21mainttrial.test, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+10-15 09:29:24.599  1638  3983 D DownloadManager: [1] Finished with status SUCCESS
+10-15 09:29:24.607  1365  1578 I SP      : Sync for emoji succeeded in 1272 ms: {added: [2ada3c9a4a17d6bb81b1fe8d51502d60], metadata: false
+10-15 09:29:24.617  1365  1578 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:29:24.647  2112  2185 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.tts
+10-15 09:29:24.652  1365  1669 I EmojiSuperpacksManager: EmojiSuperpacksManager.processPackSet():504 processPackSet() : isBundled = false
+10-15 09:29:24.653  1365  1687 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():71 0 emoji shortcut maps loaded.
+10-15 09:29:24.654  1365  1687 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():82 Finished loading emoji shortcuts
+10-15 09:29:24.658  1365  1578 I SP      : Sync for dynamic_art succeeded in 1168 ms: {added: [305f81355a729e382ea9f374dd286d9f, b1f6f47a53f7820be91b9fe247728980], metadata: false
+10-15 09:29:24.679  1365  1578 I SP      : GC for 'dynamic_art' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:29:24.680  1365  1578 I SP      : Sync for transformer_concept succeeded in 1046 ms: {added: [2023011913_en], metadata: false
+10-15 09:29:24.695  1365  1578 I SP      : GC for 'transformer_concept' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:29:24.696  1365  1578 I SP      : <==== Finishing job {m:b:u:l, fg}, 374 ms. elapsed since start
+10-15 09:29:24.696  1365  1578 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.finishJob():56 SuperpacksForegroundTaskService.finishJob()
+10-15 09:29:24.713  1638  3988 D DownloadManager: [2] Finished with status SUCCESS
+10-15 09:29:24.723  1365  1578 I SP      : Download stopped: handwriting_recognition:pack_mapping_v1_lstm_20231127, succeeded foreground, size: 125598
+10-15 09:29:24.727  1365  1578 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:29:24.761  1638  1656 W d.process.media: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 09:29:24.763  1362  1536 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.wellbeing
+10-15 09:29:24.778   365   365 I netd    : tetherGetStats() -> {[]} <0.29ms>
+10-15 09:29:24.865  3861  3976 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

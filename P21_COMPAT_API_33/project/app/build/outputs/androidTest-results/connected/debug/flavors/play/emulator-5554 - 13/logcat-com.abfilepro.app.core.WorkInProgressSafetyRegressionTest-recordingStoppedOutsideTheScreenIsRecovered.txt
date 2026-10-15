@@ -1,0 +1,2 @@
+10-15 09:33:33.889  4239  4258 I TestRunner: started: recordingStoppedOutsideTheScreenIsRecovered(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 09:33:33.895  4239  4258 I TestRunner: finished: recordingStoppedOutsideTheScreenIsRecovered(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

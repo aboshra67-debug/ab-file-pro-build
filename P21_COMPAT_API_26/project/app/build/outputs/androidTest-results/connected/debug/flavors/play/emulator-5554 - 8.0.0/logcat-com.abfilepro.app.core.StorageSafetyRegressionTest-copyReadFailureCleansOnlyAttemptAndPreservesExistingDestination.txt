@@ -1,0 +1,2 @@
+10-15 09:32:22.811  4865  4884 I TestRunner: started: copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:32:22.820  4865  4884 I TestRunner: finished: copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

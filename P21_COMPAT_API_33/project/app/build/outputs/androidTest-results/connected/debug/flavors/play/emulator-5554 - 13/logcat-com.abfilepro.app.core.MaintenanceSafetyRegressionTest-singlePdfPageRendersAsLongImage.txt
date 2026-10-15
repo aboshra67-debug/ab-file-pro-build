@@ -1,0 +1,3 @@
+10-15 09:33:32.701  4239  4258 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:32.714  1500  1578 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.wellbeing
+10-15 09:33:32.766  4239  4258 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

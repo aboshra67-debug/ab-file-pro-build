@@ -1,0 +1,6 @@
+10-15 09:29:37.244  3861  3976 I TestRunner: started: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.247  1436  1815 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:29:37.249  1083  1083 D CarrierSvcBindHelper: onPackageModified: com.google.android.as
+10-15 09:29:37.252   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:37.256   915  1018 I PermissionControllerServiceImpl: Updating user sensitive for uid 10137
+10-15 09:29:37.259  3861  3976 I TestRunner: finished: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)

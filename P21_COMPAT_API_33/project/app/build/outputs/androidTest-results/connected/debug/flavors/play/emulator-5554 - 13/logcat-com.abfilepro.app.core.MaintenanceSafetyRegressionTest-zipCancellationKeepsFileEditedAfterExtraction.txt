@@ -1,0 +1,9 @@
+10-15 09:33:31.466  4239  4258 I TestRunner: started: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:31.470  3035  3121 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:31.492  1605  2543 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/ringtones/Ring_Synth_04.ogg)
+10-15 09:33:31.516  1605  2543 I MediaProvider: Open with lower FS for /product/media/audio/ringtones/Ring_Synth_04.ogg. Uid: 10170
+10-15 09:33:31.518  3035  3121 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.519  4524  4524 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.packageinstaller' set to: 'default'
+10-15 09:33:31.520  4524  4524 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.packageinstaller: false
+10-15 09:33:31.520  4524  4524 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 09:33:31.557  4239  4258 I TestRunner: finished: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

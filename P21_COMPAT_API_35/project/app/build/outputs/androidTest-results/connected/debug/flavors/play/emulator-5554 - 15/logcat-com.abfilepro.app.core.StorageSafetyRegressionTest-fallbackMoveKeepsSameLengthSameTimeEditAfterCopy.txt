@@ -1,0 +1,24 @@
+10-15 09:29:37.261  3861  3976 I TestRunner: started: fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.267   563   671 I RoleService: Granting default roles...
+10-15 09:29:37.270   563  1034 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 09:29:37.270   563  1034 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 09:29:37.271  1083  1083 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 09:29:37.274   563  1034 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:29:37.274  1083  1083 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:29:37.275  1436  1436 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+10-15 09:29:37.280  1083  1282 D ImsResolver: maybeAddedImsService, packageName: com.google.android.as
+10-15 09:29:37.288  1185  1223 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.as]
+10-15 09:29:37.288  1436  1815 I SP.AiAi : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 6 pending: manifests:kg_collections_table-21051103 {W:C:I:l, bg}, manifests:text-classifier-annotator-272525175 {W:C:I:l, bg}, manifests:text-classifier-actions-1140547708 {W:C:I:l, bg}, manifests:text-classifier-langid-1941001461 {W:C:I:l, bg}, manifests:spelling_correction-22110320 {W:C:I:l, bg}, manifests:captions_i18n_v0_background-20240604 * {W:b:u:l, bg}
+10-15 09:29:37.289  1436  1436 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.as.
+10-15 09:29:37.290  1436  2077 I AiAiEcho: AppIndexer Package:[com.google.android.as] UserProfile:[0] Enabled:[true].
+10-15 09:29:37.291  1436  2077 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.as], userId:[0], reason:[package is updated.].
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: loadManifest(): Failed to register manifest of superpack 'captions_i18n_v0_background' (version 20240604)
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: android.os.RemoteException: Task was cancelled.
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: 	at sdd.e(PG:8)
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: 	at sec.a(PG:53)
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: 	at wpe.run(PG:37)
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:37.292  1436  2845 E AiAiCaptions: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:37.292  1185  1223 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.as
+10-15 09:29:37.298  3861  3976 I TestRunner: finished: fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

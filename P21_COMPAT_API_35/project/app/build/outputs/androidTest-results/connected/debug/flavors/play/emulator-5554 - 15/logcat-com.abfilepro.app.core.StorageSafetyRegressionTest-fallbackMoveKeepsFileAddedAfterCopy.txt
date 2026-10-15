@@ -1,0 +1,18 @@
+10-15 09:29:37.426  3861  3976 I TestRunner: started: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.427  1436  1815 I SP.AiAi : Successfully got manifest for captions_i18n_v0_en-US-manifest: manifests:captions_i18n_v0_en-US-20240604
+10-15 09:29:37.434  1436  2845 I AiAiCaptions: downloadSuperpack(): Successfully loaded embedded manifest of superpack 'captions_i18n_v0_en-US' (version 20240604)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+10-15 09:29:37.435  1226  3506 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.googlequicksearchbox(change count changed - expected 5  but was 4), resolution=null}]
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):48)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 09:29:37.435  1226  3506 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:37.437  1436  1815 I SP.AiAi : Syncing captions_i18n_v0_en-US (20240604) with slices: [{asr_en-US_v3056, W:b:u:l, bg}, {input_predictions_en-US_v4, W:b:u:l, bg}], metadata: false
+10-15 09:29:37.444  3861  3976 I TestRunner: finished: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

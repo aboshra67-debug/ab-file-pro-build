@@ -1,0 +1,8 @@
+10-15 09:29:36.680  3861  3976 I TestRunner: started: legacyFallbackDeleteFailureKeepsCompletedCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.684   563   601 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:29:36.688  1528  2465 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:36.693  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:36.695  1528  1528 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:36.698   563  1590 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:36.701  1528  1528 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+10-15 09:29:36.710  3861  3976 I TestRunner: finished: legacyFallbackDeleteFailureKeepsCompletedCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

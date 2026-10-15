@@ -1,0 +1,19 @@
+10-15 09:29:25.304  3861  3976 I TestRunner: started: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:29:25.311  1362  1534 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:25.319   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.322  1185  1223 D SessionCommitReceiver: Removing PromiseIcon for package: com.abfilepro.app.p21mainttrial.test, install reason: 0, alreadyAddedPromiseIcon: false
+10-15 09:29:25.322   563  1519 W system_server: Long monitor contention with owner ActivityManager (602) at void com.android.server.am.BroadcastQueueModernImpl.updateRunningList()(BroadcastQueueModernImpl.java:450) waiters=1 in android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, boolean, java.lang.String, java.lang.String, int, boolean, int, java.lang.String, java.lang.String) for 117ms
+10-15 09:29:25.362   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.376   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.380  1365  1365 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 09:29:25.394  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@153896a
+10-15 09:29:25.400  1365  1365 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 09:29:25.401  1365  1365 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:29:25.403  3331  3418 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.messaging
+10-15 09:29:25.407  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 972KB AllocSpace bytes, 261(13MB) LOS objects, 49% free, 14MB/28MB, paused 661us,4.073ms total 184.642ms
+10-15 09:29:25.409   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.429  1185  1592 D EGL_emulation: app_time_stats: avg=2140.22ms min=16.95ms max=4263.49ms count=2
+10-15 09:29:25.430  1365  1733 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 10295875
+10-15 09:29:25.433   912   912 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:29:25.437  1365  1578 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 09:29:25.454  3861  3976 I TestRunner: finished: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

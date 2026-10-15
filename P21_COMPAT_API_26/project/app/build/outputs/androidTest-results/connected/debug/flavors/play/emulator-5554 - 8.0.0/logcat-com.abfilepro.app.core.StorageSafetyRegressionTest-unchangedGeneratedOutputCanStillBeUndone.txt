@@ -1,0 +1,4 @@
+10-15 09:32:23.027  4865  4884 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:32:23.062  1645  1659 E memtrack: Couldn't load memtrack module
+10-15 09:32:23.062  1645  1659 W android.os.Debug: failed to get memory consumption info: -1
+10-15 09:32:23.067  4865  4884 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

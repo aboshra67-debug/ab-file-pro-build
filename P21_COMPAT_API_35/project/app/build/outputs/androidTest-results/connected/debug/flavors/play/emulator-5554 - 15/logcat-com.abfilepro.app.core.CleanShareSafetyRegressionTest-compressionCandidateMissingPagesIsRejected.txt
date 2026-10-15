@@ -1,0 +1,18 @@
+10-15 09:29:30.332  3861  3976 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:30.385  3013  3829 I ConfigUpdater: Update downloaded, starting installation
+10-15 09:29:30.402  1414  1414 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.audit.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 09:29:30.415  1414  1414 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 09:29:30.450  3013  3829 I ConfigUpdater: doneInstall
+10-15 09:29:30.479  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:30.479  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a14ef90
+10-15 09:29:30.479  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a14ef90
+10-15 09:29:30.486  1638  2613 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb.metadata via provider delete
+10-15 09:29:30.490  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:30.492  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a13db10
+10-15 09:29:30.492  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a13db10
+10-15 09:29:30.499  1398  2995 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb.metadata
+10-15 09:29:30.500  1398  2995 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-15 09:29:30.508  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:30.509  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a131390
+10-15 09:29:30.509  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a131390
+10-15 09:29:30.518  3861  3976 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

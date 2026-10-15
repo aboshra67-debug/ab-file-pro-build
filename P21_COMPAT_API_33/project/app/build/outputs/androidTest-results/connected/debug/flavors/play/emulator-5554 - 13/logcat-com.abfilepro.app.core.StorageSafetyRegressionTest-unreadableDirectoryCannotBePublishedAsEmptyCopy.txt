@@ -1,0 +1,2 @@
+10-15 09:33:33.334  4239  4258 I TestRunner: started: unreadableDirectoryCannotBePublishedAsEmptyCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.359  4239  4258 I TestRunner: finished: unreadableDirectoryCannotBePublishedAsEmptyCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

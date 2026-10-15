@@ -1,0 +1,8 @@
+10-15 09:33:12.320  4239  4258 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:33:12.325  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:12.328  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/superpacks_manifest.zip'
+10-15 09:33:12.330  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 407 bytes from https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/superpacks_manifest.zip.
+10-15 09:33:12.335  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:12.370  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip'
+10-15 09:33:12.373  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 408 bytes from https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip.
+10-15 09:33:12.391  4239  4258 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,5 @@
+10-15 09:29:24.969  3861  3976 I TestRunner: started: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:29:24.976  1365  1578 I SP      : Sync for handwriting_recognition succeeded in 796 ms: {added: [pack_mapping_v1_lstm_20231127], metadata: false
+10-15 09:29:24.982  1365  1578 I SP      : GC for 'handwriting_recognition' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:29:24.983  1365  1665 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$1():204 syncInternal(): syncing packs
+10-15 09:29:24.994  3861  3976 I TestRunner: finished: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

@@ -1,0 +1,36 @@
+10-15 09:29:34.369  3861  3976 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:34.400  3861  3870 I p.p21mainttrial: Background concurrent mark compact GC freed 4228KB AllocSpace bytes, 19(2932KB) LOS objects, 49% free, 4502KB/9004KB, paused 95us,5.507ms total 26.084ms
+10-15 09:29:34.404  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.devicelockcontroller
+10-15 09:29:34.415  2372  2738 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 09:29:34.417  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.modulemetadata
+10-15 09:29:34.418  2372  2738 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 09:29:34.439  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:34.439   152   152 I lowmemorykiller: lmkd data connection established
+10-15 09:29:34.442  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562241
+10-15 09:29:34.451  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562243
+10-15 09:29:34.467  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.470   152   152 I lowmemorykiller: Using psi monitors for memory pressure detection
+10-15 09:29:34.470   152   152 I lowmemorykiller: Properties reinitilized
+10-15 09:29:34.470  4119  4119 I lowmemorykiller: lmkd updated properties successfully
+10-15 09:29:34.470   152   152 I lowmemorykiller: lmkd data connection dropped
+10-15 09:29:34.470   152   152 I lowmemorykiller: closing lmkd data connection
+10-15 09:29:34.528  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/celebrate_effect.binarypb_1711576323144
+10-15 09:29:34.528  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/celebrate_effect.binarypb_1711576323144)
+10-15 09:29:34.536  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:34.538  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.ar.sceneviewer.android.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.550  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a150490
+10-15 09:29:34.550  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a150490
+10-15 09:29:34.550  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:34.550  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a152250
+10-15 09:29:34.550  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a152250
+10-15 09:29:34.554  2372  2738 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 09:29:34.555  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:34.555  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a14f310
+10-15 09:29:34.555  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a14f310
+10-15 09:29:34.555  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:34.555  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a150b90
+10-15 09:29:34.556  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a150b90
+10-15 09:29:34.556  2372  2738 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 09:29:34.552  2372  2372 W binder:2372_5: type=1400 audit(0.0:199): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 09:29:34.552  2372  2372 W binder:2372_5: type=1400 audit(0.0:200): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 09:29:34.564  3861  3976 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

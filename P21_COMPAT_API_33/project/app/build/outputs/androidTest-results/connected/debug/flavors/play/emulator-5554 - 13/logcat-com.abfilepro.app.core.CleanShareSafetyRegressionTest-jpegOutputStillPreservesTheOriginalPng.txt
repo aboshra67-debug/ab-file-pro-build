@@ -1,0 +1,37 @@
+10-15 09:33:23.257  4239  4258 I TestRunner: started: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:23.288  1282  4172 I ModuleSetMgr: Download of container feature antifingerprinting is disabled.
+10-15 09:33:23.289  1282  4172 I ModuleSetMgr: Download of container feature appsearch_dynamite_impl is disabled.
+10-15 09:33:23.291  1282  4172 I ModuleSetMgr: Download of container feature brella_dynamite is disabled.
+10-15 09:33:23.293  1282  4172 I ModuleSetMgr: Download of container feature cameraconnectivity_impl is disabled.
+10-15 09:33:23.294  1282  4172 I ModuleSetMgr: Download of container feature dck_management is disabled.
+10-15 09:33:23.296  1282  4172 I ModuleSetMgr: Download of container feature easyunlock is disabled.
+10-15 09:33:23.299  1282  4172 I ModuleSetMgr: Download of container feature enterprise is disabled.
+10-15 09:33:23.300  1282  4172 I ModuleSetMgr: Download of container feature enterprise_zt_mp_complete is disabled.
+10-15 09:33:23.304  1282  4172 I ModuleSetMgr: Download of container feature fast_pair is disabled.
+10-15 09:33:23.306  1282  4172 I ModuleSetMgr: Download of container feature game_platform is disabled.
+10-15 09:33:23.306  1282  4172 I ModuleSetMgr: Download of container feature games is disabled.
+10-15 09:33:23.307  1282  4172 I ModuleSetMgr: Download of container feature growth_upgradeparty is disabled.
+10-15 09:33:23.308  1282  4172 I ModuleSetMgr: Download of container feature tflite_dynamite is disabled.
+10-15 09:33:23.309  1282  4172 I ModuleSetMgr: Download of container feature homegraph is disabled.
+10-15 09:33:23.309  1282  4172 I ModuleSetMgr: Download of container feature magictether is disabled.
+10-15 09:33:23.311  1282  4172 I ModuleSetMgr: Download of container feature maps_core is disabled.
+10-15 09:33:23.311  1282  4172 I ModuleSetMgr: Download of container feature mlkit.docscan.crop is disabled.
+10-15 09:33:23.312  1282  4172 I ModuleSetMgr: Download of container feature mlkit.docscan.enhance is disabled.
+10-15 09:33:23.321  1282  4172 I ModuleSetMgr: Download of container feature multipackage_debug is disabled.
+10-15 09:33:23.322  1282  4172 I ModuleSetMgr: Download of container feature payse is disabled.
+10-15 09:33:23.328  1282  4172 I ModuleSetMgr: Download of container feature permissions_debug is disabled.
+10-15 09:33:23.329  1282  4172 I ModuleSetMgr: Download of container feature play_cloud_search is disabled.
+10-15 09:33:23.329  1282  4172 I ModuleSetMgr: Download of container feature semanticlocation_debug is disabled.
+10-15 09:33:23.330  1282  4172 I ModuleSetMgr: Download of container feature tflite_delegate_edgetpu is disabled.
+10-15 09:33:23.331  1282  4172 I ModuleSetMgr: Download of container feature tflite_delegate_test is disabled.
+10-15 09:33:23.332  1282  4172 I ModuleSetMgr: Download of container feature tflite_gpu_dynamite is disabled.
+10-15 09:33:23.332  1282  4172 I ModuleSetMgr: Download of container feature userstatus_impl is disabled.
+10-15 09:33:23.332  1282  4172 I ModuleSetMgr: Download of container feature usonia_iam is disabled.
+10-15 09:33:23.334  1282  4172 I ModuleSetMgr: Download of container feature vision.face is disabled.
+10-15 09:33:23.334  1282  4172 I ModuleSetMgr: Download of container feature vision.ica is disabled.
+10-15 09:33:23.334  1282  4172 I ModuleSetMgr: Download of container feature vision.ocr is disabled.
+10-15 09:33:23.340  2852  2852 I CarrierServices: [2] RcsAutoStartReceiver.a: RcsAutoStartReceiver triggered. Fetching RCS State. Action: com.google.gservices.intent.action.GSERVICES_CHANGED
+10-15 09:33:23.341  2852  2852 I CarrierServices: [2] RcsStateFetcher.bindService:108 Migration binding to RcsMigrationService
+10-15 09:33:23.353  3035  3035 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+10-15 09:33:23.383  3035  4023 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:23.397  4239  4258 I TestRunner: finished: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

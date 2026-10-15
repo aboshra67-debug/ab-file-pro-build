@@ -1,0 +1,5 @@
+10-15 09:32:18.180  4865  4884 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:32:18.249  2128  2745 W Icing   : No valid account for uploading user actions
+10-15 09:32:18.260  2128  2745 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:32:18.271  2128  3043 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+10-15 09:32:18.293  4865  4884 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

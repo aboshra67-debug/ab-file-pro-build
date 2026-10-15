@@ -1,0 +1,29 @@
+10-15 09:29:26.968  3861  3976 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:29:26.996   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:29:26.996   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:29:26.996   563   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10128} in 3ms
+10-15 09:29:26.997  1414  2636 D TrafficStats: tagSocket(181) with statsTag=0x30001803, statsUid=-1
+10-15 09:29:27.044   365   365 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.04ms>
+10-15 09:29:27.045   365   418 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.02ms>
+10-15 09:29:27.046   365   418 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.03ms>
+10-15 09:29:27.050   365   418 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.02ms>
+10-15 09:29:27.091   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:29:27.092   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:29:27.092   563   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10202} in 1ms
+10-15 09:29:27.092   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:29:27.093   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:29:27.093   563   835 D InetDiagMessage: Destroyed live tcp sockets for uids={10138} in 1ms
+10-15 09:29:27.097   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:29:27.098   563   835 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:29:27.098   563   835 D InetDiagMessage: Destroyed live tcp sockets for uids={20202} in 1ms
+10-15 09:29:27.107  1414  4021 I CpgSchemaBuilder: GroupContactOrder schema does not exist.
+10-15 09:29:27.127  1638  4043 D DownloadManager: [6] Finished with status SUCCESS
+10-15 09:29:27.146  1226  2054 W BpBinder: Large outgoing transaction of 418284 bytes, interface descriptor , code 4
+10-15 09:29:27.250  1638  4048 D DownloadManager: [7] Starting
+10-15 09:29:27.301  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 3048KB AllocSpace bytes, 280(14MB) LOS objects, 49% free, 14MB/29MB, paused 324us,2.246ms total 154.028ms
+10-15 09:29:27.333  1365  1578 I SP      : Download stopped: handwriting_recognition:transformer_latin_tflite_20231010_zip, succeeded foreground, size: 11108262
+10-15 09:29:27.339  3013  3829 I ConfigUpdater: Update downloaded, starting installation
+10-15 09:29:27.355  1638  4048 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10136
+10-15 09:29:27.372  1365  1578 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 7 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip @ {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip @ {m:b:u:l, fg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 09:29:27.376  1226  1789 W .gms.persistent: Long monitor contention with owner highpool[8] (2054) at android.database.sqlite.SQLiteConnection android.database.sqlite.SQLiteConnectionPool.waitForConnection(java.lang.String, int, android.os.CancellationSignal)(SQLiteConnectionPool.java:733) waiters=0 in void android.database.sqlite.SQLiteConnectionPool.releaseConnection(android.database.sqlite.SQLiteConnection) for 103ms
+10-15 09:29:27.390  3861  3976 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

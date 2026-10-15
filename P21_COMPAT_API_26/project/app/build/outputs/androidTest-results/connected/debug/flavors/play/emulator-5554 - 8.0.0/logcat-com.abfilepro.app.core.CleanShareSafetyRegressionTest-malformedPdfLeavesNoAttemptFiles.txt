@@ -1,0 +1,2 @@
+10-15 09:32:19.452  4865  4884 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:32:19.496  4865  4884 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

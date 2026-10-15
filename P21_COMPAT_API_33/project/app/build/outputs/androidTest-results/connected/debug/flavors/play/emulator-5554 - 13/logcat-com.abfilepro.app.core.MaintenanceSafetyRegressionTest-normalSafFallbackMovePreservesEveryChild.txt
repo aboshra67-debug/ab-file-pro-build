@@ -1,0 +1,77 @@
+10-15 09:33:31.586  4239  4258 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:31.587  4524  4524 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 09:33:31.587  4524  4524 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 09:33:31.604  4466  4466 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:33:31.605   756   928 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:33:31.647  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.647  3035  3253 I RcsClientLib: com.google.android.rcs.client.messaging.RcsMessagingService connected
+10-15 09:33:31.647  3035  3253 I BugleRcs: com.google.android.rcs.client.messaging.RcsMessagingService RCS service connected
+10-15 09:33:31.702  1605  2543 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/notifications/pixiedust.ogg)
+10-15 09:33:31.702  1605  2543 I MediaProvider: Open with lower FS for /product/media/audio/notifications/pixiedust.ogg. Uid: 10170
+10-15 09:33:31.760  1050  4462 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:33:31.779  3035  3121 I BugleDataModel: PendingMessagesProcessor: process from ProcessPendingMessagesAction due to scheduled processing with delay 0 with queues:
+10-15 09:33:31.781  1605  2543 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/alarms/Alarm_Classic.ogg)
+10-15 09:33:31.782  1605  2543 I MediaProvider: Open with lower FS for /product/media/audio/alarms/Alarm_Classic.ogg. Uid: 10170
+10-15 09:33:31.791  1050  3617 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:33:31.791  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:31.793  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.805  1282  1497 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:33:31.815  1605  2543 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:33:31.816  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 3 pending: content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}
+10-15 09:33:31.816  1605  2543 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:33:31.817  1605  2543 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:33:31.818  1605  2543 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:33:31.829  1605  2543 I MediaProvider: Scanned external_primary due to REASON_MOUNTED, found 17 items in 33ms, 4 inserts 0 updates 0 deletes
+10-15 09:33:31.870  1605  2543 I MediaProvider: End Intent { act=com.android.providers.media.action.SCAN_VOLUME (has extras) }
+10-15 09:33:31.871  1605  2543 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 09:33:31.875  1605  2543 I MediaProvider: Volume MediaVolume name: [external_primary] id: [emulated;0] user: [UserHandle{0}] path: [/storage/emulated/0] externallyManaged: [false] mPublicVolume: [false] already attached
+10-15 09:33:31.875  1605  2543 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 09:33:31.878  1605  1938 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android to set project id.: Operation not permitted
+10-15 09:33:31.878  1605  2543 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 09:33:31.878  1605  2543 I MediaProvider: Volume MediaVolume name: [external_primary] id: [emulated;0] user: [UserHandle{0}] path: [/storage/emulated/0] externallyManaged: [false] mPublicVolume: [false] already attached
+10-15 09:33:31.878  1605  2543 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 09:33:31.879  1605  1938 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android
+10-15 09:33:31.879  1605  1938 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:31.879  1605  1938 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 09:33:31.886  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.886  3035  3253 I RcsClientLib: com.google.android.rcs.client.transportcontrol.TransportControlService connected
+10-15 09:33:31.886  3035  3253 I BugleRcs: com.google.android.rcs.client.transportcontrol.TransportControlService RCS service connected
+10-15 09:33:31.888  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:31.888  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.890  1605  1938 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android/media to set project id.: Operation not permitted
+10-15 09:33:31.890  1605  1938 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 09:33:31.890  1605  1938 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:31.890  1605  1938 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 09:33:31.927  1467  1896 I SP      : Download stopped: content_cache:8722425f4121ffdea802b1066df73991, succeeded, size: 5017
+10-15 09:33:31.940  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:31.953  1282  1497 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:31.963  1050  4462 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:33:31.969  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 2 pending: content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}
+10-15 09:33:31.969  1467  1896 I SP      : Download stopped: content_cache:fa1da98da1212aad6fb9a8efaff48148, succeeded, size: 1065
+10-15 09:33:31.977  1050  4462 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:33:31.985  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 1 pending: transformer_concept:2023011913_en @ {m:b:u:l, bg}
+10-15 09:33:32.006  1467  1896 I SP      : <==== Finishing job {m:b:u:l, bg}, 968 ms. elapsed since start
+10-15 09:33:32.012  1467  1896 I SP      : Download stopped: transformer_concept:2023011913_en, succeeded, size: 1493590
+10-15 09:33:32.057  4239  4258 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

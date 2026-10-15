@@ -1,0 +1,30 @@
+10-15 09:29:36.800  3861  3976 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.801  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 09:29:36.807  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 09:29:36.808  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:29:36.808  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:29:36.808  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:29:36.808  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 09:29:36.809  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:29:36.809  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:29:36.810  2112  2585 W RankedDispatcher: The requested voice is not available for this app identifier
+10-15 09:29:36.811  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 09:29:36.814  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:29:36.814  2112  2585 I GoogleTTSServiceImpl: For default lang en-us is name en-US-language (en-us-x-iog-server)
+10-15 09:29:36.814  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:36.817  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:29:36.822  1436  2277 I TextToSpeech: Setting up the connection to TTS engine...
+10-15 09:29:36.827  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:29:36.830  1436  1436 I AiAiCaptions: TtsSynthesizerImpl::onInit(): status: true(0).
+10-15 09:29:36.841  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:29:36.844  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 09:29:36.844  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:29:36.845  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:36.845  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:36.845  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+10-15 09:29:36.845  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 09:29:36.845  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:36.846  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 09:29:36.854  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a150b90
+10-15 09:29:36.854  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a150b90
+10-15 09:29:36.857  3861  3976 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

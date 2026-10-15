@@ -1,0 +1,5 @@
+10-15 09:32:18.656  4865  4884 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:32:18.691  1787  2112 D EGL_emulation: eglMakeCurrent: 0x77d9fa4a7900: ver 3 0 (tinfo 0x77d9fa499b40)
+10-15 09:32:18.721  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 09:32:18.741  1787  2112 D EGL_emulation: eglMakeCurrent: 0x77d9fa4a7900: ver 3 0 (tinfo 0x77d9fa499b40)
+10-15 09:32:18.794  4865  4884 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

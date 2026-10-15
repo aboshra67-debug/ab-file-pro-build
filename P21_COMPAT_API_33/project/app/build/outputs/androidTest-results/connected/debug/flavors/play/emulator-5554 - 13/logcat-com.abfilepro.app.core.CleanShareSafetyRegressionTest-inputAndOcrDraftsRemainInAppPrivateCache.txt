@@ -1,0 +1,6 @@
+10-15 09:33:19.650  4239  4258 I TestRunner: started: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:19.657  4239  4372 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:33:19.668  1743  2571 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.668  1743  2581 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.669  3998  4033 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:19.672  4239  4258 I TestRunner: finished: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,2 @@
+10-15 09:29:36.711  3861  3976 I TestRunner: started: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.729  3861  3976 I TestRunner: finished: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,203 @@
+10-15 09:33:13.053  4239  4258 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:13.059  2852  3574 I CarrierServices: [66] RcsStateSaver.saveRcsState:57 Saving RCS State
+10-15 09:33:13.060  2852  3574 I CarrierServices: [66] RcsStateSaver.saveRcsState:66 Old operation mode: 2
+10-15 09:33:13.060  2852  3574 I CarrierServices: [66] RcsStateSaver.saveRcsState:71 New operation mode: 2
+10-15 09:33:13.061  2852  2852 I CarrierServices: [2] RcsStateFetcher$1.onPostExecute:189 Finalizing migration for RCS state: Operation mode FULL STACK
+10-15 09:33:13.062  3035  3530 I BugleRcsEngine: [81] RcsStateProvider.onMigrationComplete: Migration complete.
+10-15 09:33:13.081  2852  2852 I CarrierServices: [2] RcsStateFetcher$GetRcsStateConnection.onFinish:162 Unbinding RcsMigrationService
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: xvd: wrv: Precondition check failed.
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at xut.apply(Unknown Source:4)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at vws.p(PG:5)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at vws.b(PG:2)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at xuv.d(PG:4)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at acvk.c(PG:51)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at acvk.j(PG:38)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at acvk.d(PG:3)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at acvi.run(Unknown Source:2)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at qhq.run(PG:2)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at qic.run(PG:4)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: Caused by: wrv: Precondition check failed.
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at xtk.k(PG:5)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at wfa.f(PG:17)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at wfa.c(PG:1)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at wdz.run(PG:21)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at vvz.run(PG:11)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	... 1 more
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: Caused by: dlh
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	at wdz.run(PG:14)
+10-15 09:33:13.088  1742  2456 W YouTubeMusic: 	... 4 more
+10-15 09:33:13.114  3035  3132 I BugleRcsEngine: [52] RcsStateProvider.lambda$onMigrationComplete$0$com-google-android-apps-messaging-rcsmigration-RcsStateProvider: Rcs Engine should be running in cs.apk. Stopping JibeService.
+10-15 09:33:13.116  3035  3132 I RcsClientLib: Disconnecting ChatSessionService
+10-15 09:33:13.120  1607  2271 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 4 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, manifests:text-classifier-langid-1941001461 @ {W:b:u:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 @ {W:b:u:l, bg}
+10-15 09:33:13.120  1607  2271 I SP.AiAi : Download stopped: manifests:text-classifier-langid-1941001461, succeeded, size: 399
+10-15 09:33:13.125  2852  2905 I CarrierServices: [36] EventHubProxy.unsubscribe: Removing event listener 111094972 for category 2 for hub UI
+10-15 09:33:13.130  2852  2905 I CarrierServices: [36] EventHubProxy.unsubscribe: Removing event listener 225964174 for category 3 for hub UI
+10-15 09:33:13.132  2852  2905 I CarrierServices: [36] EventHubProxy.unsubscribe: Removing event listener 53534895 for category 5 for hub UI
+10-15 09:33:13.133  3035  3132 I RcsClientLib: Disconnecting EventService
+10-15 09:33:13.134  3035  3132 I RcsClientLib: Disconnecting ContactsService
+10-15 09:33:13.134  3035  3132 I RcsClientLib: Disconnecting FileTransferService
+10-15 09:33:13.135  3035  3132 I RcsClientLib: Disconnecting LocationSharingService
+10-15 09:33:13.136  3035  3132 I RcsClientLib: Disconnecting ImsConnectionTrackerService
+10-15 09:33:13.139  3035  3132 I RcsClientLib: Disconnecting RcsProfileService
+10-15 09:33:13.141  3035  3132 I RcsClientLib: Disconnecting BusinessInfoService
+10-15 09:33:13.144  3035  3132 I RcsClientLib: Disconnecting RcsMessagingService
+10-15 09:33:13.147  3035  3132 I RcsClientLib: Disconnecting TransportControlService
+10-15 09:33:13.149  3035  3132 W BugleRcs: disconnecting from all Rcs Services
+10-15 09:33:13.150  3035  3132 I BugleRcsEngine: [52] RcsStateProvider.lambda$onMigrationComplete$0$com-google-android-apps-messaging-rcsmigration-RcsStateProvider: JibeService stopped: false
+10-15 09:33:13.150  3035  3132 I RcsClientLib: Connecting ChatSessionService
+10-15 09:33:13.164  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:13.171  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.178  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:13.181  3035  3253 I RcsClientLib: com.google.android.rcs.client.chatsession.ChatSessionService connected
+10-15 09:33:13.181  3035  3253 I BugleRcs: com.google.android.rcs.client.chatsession.ChatSessionService RCS service connected
+10-15 09:33:13.182  3035  3132 I RcsClientLib: Connecting EventService
+10-15 09:33:13.185  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.188  3035  3253 I RcsClientLib: com.google.android.rcs.client.events.EventService connected
+10-15 09:33:13.188  3035  3253 I BugleRcs: com.google.android.rcs.client.events.EventService RCS service connected
+10-15 09:33:13.201  3035  3132 I RcsClientLib: Connecting ContactsService
+10-15 09:33:13.210  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.215  1607  2271 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 3 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 @ {W:b:u:l, bg}
+10-15 09:33:13.215  1607  2271 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 1813 ms. elapsed since start
+10-15 09:33:13.215  1607  2271 I SP.AiAi : Download stopped: kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090, succeeded, size: 613
+10-15 09:33:13.225  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:13.233  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:13.234  3035  3253 I RcsClientLib: com.google.android.rcs.client.contacts.ContactsService connected
+10-15 09:33:13.235  3035  3253 I BugleRcs: com.google.android.rcs.client.contacts.ContactsService RCS service connected
+10-15 09:33:13.239  3035  3132 I RcsClientLib: Connecting FileTransferService
+10-15 09:33:13.255  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.265  3035  3253 I RcsClientLib: com.google.android.rcs.client.filetransfer.FileTransferService connected
+10-15 09:33:13.266  3035  3253 I BugleRcs: com.google.android.rcs.client.filetransfer.FileTransferService RCS service connected
+10-15 09:33:13.268  3035  3132 I RcsClientLib: Connecting LocationSharingService
+10-15 09:33:13.268  1607  2271 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 2 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}
+10-15 09:33:13.276  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.280  1050  3631 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.device_performance#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:33:13.280  3035  3132 I RcsClientLib: Connecting ImsConnectionTrackerService
+10-15 09:33:13.282  3035  3253 I RcsClientLib: com.google.android.rcs.client.locationsharing.LocationSharingService connected
+10-15 09:33:13.282  3035  3253 I BugleRcs: com.google.android.rcs.client.locationsharing.LocationSharingService RCS service connected
+10-15 09:33:13.285  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.288  3035  3253 I RcsClientLib: com.google.android.rcs.client.ims.ImsConnectionTrackerService connected
+10-15 09:33:13.289  3035  3253 I BugleRcs: com.google.android.rcs.client.ims.ImsConnectionTrackerService RCS service connected
+10-15 09:33:13.290  3035  3132 I RcsClientLib: Connecting RcsProfileService
+10-15 09:33:13.292  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.294  3035  3132 I RcsClientLib: Connecting BusinessInfoService
+10-15 09:33:13.298  3035  3253 I BugleRcs: subscribing to global rcs listener
+10-15 09:33:13.299  1050  3631 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:33:13.301  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.304  3035  3132 I RcsClientLib: Connecting RcsMessagingService
+10-15 09:33:13.309  2852  2905 I CarrierServices: [36] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@5cc628f for category 3 with key 97280655 for hub UI
+10-15 09:33:13.317  2852  2905 I CarrierServices: [36] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@7a7b91c for category 5 with key 128432412 for hub UI
+10-15 09:33:13.318  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.321  3035  3132 I RcsClientLib: Connecting TransportControlService
+10-15 09:33:13.323  3035  3132 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:13.325  2852  2905 I CarrierServices: [36] EventHubProxy.subscribe: Adding event listener com.google.android.ims.rcsservice.events.IEventObserver$Stub$Proxy@4788925 for category 2 with key 75008293 for hub UI
+10-15 09:33:13.326  3035  3132 I BugleRcs: connecting to 10 Rcs Services
+10-15 09:33:13.330  3035  3132 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:13.360  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:13.361  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.419  1010  1876 D EGL_emulation: app_time_stats: avg=2463.74ms min=186.27ms max=4741.21ms count=2
+10-15 09:33:13.421  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.465  3035  3253 I RcsClientLib: com.google.android.rcs.client.profile.RcsProfileService connected
+10-15 09:33:13.465  3035  3253 I BugleRcs: com.google.android.rcs.client.profile.RcsProfileService RCS service connected
+10-15 09:33:13.496  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:13.497  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.515  3035  3132 I BugleRcsEngine: [52] bgrh.b: Deleted transfers file: false
+10-15 09:33:13.521  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.521  3035  3253 I RcsClientLib: com.google.android.rcs.client.businessinfo.BusinessInfoService connected
+10-15 09:33:13.521  3035  3253 I BugleRcs: com.google.android.rcs.client.businessinfo.BusinessInfoService RCS service connected
+10-15 09:33:13.522  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:13.523  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.529  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.529  3035  3253 I RcsClientLib: com.google.android.rcs.client.messaging.RcsMessagingService connected
+10-15 09:33:13.530  3035  3253 I BugleRcs: com.google.android.rcs.client.messaging.RcsMessagingService RCS service connected
+10-15 09:33:13.539  3035  3132 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:13.570  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:13.571  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.588  1050  2363 W bwft    : Succeeded but not registered: com.google.android.gms.appintegrity [CONTEXT service_id=51 ]
+10-15 09:33:13.603  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.603  3035  3253 I RcsClientLib: com.google.android.rcs.client.transportcontrol.TransportControlService connected
+10-15 09:33:13.605  3035  3253 I BugleRcs: com.google.android.rcs.client.transportcontrol.TransportControlService RCS service connected
+10-15 09:33:13.607  3035  3254 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 09:33:13.611  3035  3207 W BugleAction: Null config in BugleSharedPrefs
+10-15 09:33:13.612  3035  3207 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:33:13.613  3035  3112 I BugleRcsEngine: [44] bejl.run: SystemBindingManager: SystemBinding enabled: false
+10-15 09:33:13.614  3035  3112 I BugleRcsEngine: [44] bejm.b: System Binding updated
+10-15 09:33:13.615  3035  3109 W BugleRcsEngine: [42] bemz.x: Unable to send diagnostic log
+10-15 09:33:13.629  2852  3574 I CarrierServices: [66] fxv.d: Received Provisioning Event: [Bugle information (100)]
+10-15 09:33:13.630  2852  3574 I CarrierServices: [66] fxv.d: JibeService is running, passing event to provisioning engine.
+10-15 09:33:13.631  2852  3574 I CarrierServices: [66] fgw.f: Handling Provisioning Event: [Bugle information (100)]
+10-15 09:33:13.632  2852  3574 I CarrierServices: [66] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+10-15 09:33:13.635  2852  3574 I CarrierServices: [66] fjp.y: Bugle is default SMS app: true
+10-15 09:33:13.637  2852  3574 I CarrierServices: [66] fhf.b: Bugle has minimum required RCS permissions: true
+10-15 09:33:13.638  2852  3574 I CarrierServices: [66] fjp.x: Rcs is enabled from user settings: true
+10-15 09:33:13.644  2852  3574 I CarrierServices: [66] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+10-15 09:33:13.645  2852  3574 I CarrierServices: [66] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:33:13.660  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:13.661  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:13.662  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:13.663  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:13.664  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:13.697  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:13.701  1050  1343 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:33:13.718  2852  4162 I CarrierServices: [70] fjp.f: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist()
+10-15 09:33:13.720  1050  2363 W bwft    : Succeeded but not registered: com.google.android.gms.tron.metrics [CONTEXT service_id=51 ]
+10-15 09:33:13.723  3035  3207 W BugleRcsEngine: [63] RcsProfileService.g: Result is null when getting value for id:4
+10-15 09:33:13.723  3035  3207 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:13.724  3035  3207 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:13.724  3035  3207 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:13.726  3035  3207 W Bugle   : SubscriptionMetadataUtils get: invalid subId = -2
+10-15 09:33:13.727  2852  2890 I gle.android.ims: Background concurrent copying GC freed 20846(952KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 3608KB/7216KB, paused 568us,12us total 147.675ms
+10-15 09:33:13.732  1050  2363 E bwfc    : Phenotype API error. Event # edax@d71040d1, EventCode: 32 [CONTEXT service_id=51 ]
+10-15 09:33:13.732  1050  2363 E bwfc    : bwdx: 29503
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at bwgv.g(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:13.732  1050  2363 E bwfc    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:13.735  3035  3207 W Bugle   : SubscriptionUtilsAsOfLMR1: getSelfRawNumber: subInfo is null for subscription{id:-1}
+10-15 09:33:13.737  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:13.748  1050  2363 W AsyncOperation: operation=SetAppSpecificPropertiesOperationCall, opStatusCode=29503 [CONTEXT service_id=51 ]
+10-15 09:33:13.748  1050  2363 W AsyncOperation: OperationException[Status{statusCode=unknown status code: 29503, resolution=null}]
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at bwfc.e(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at bwfc.f(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at avsy.eo(:com.google.android.gms@231818047@23.18.18 (190800-535401451):1)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at avtf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):14)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at dfhf.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at aced.c(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at aced.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at acjn.run(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:13.748  1050  2363 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:13.762  3035  3207 W BugleAction: No default number, returning empty msisdn
+10-15 09:33:13.763  3035  3132 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:13.765  3035  3132 I BugleTransport: isChatAvailable: true, enabledTransport: 1
+10-15 09:33:13.768  1050  2363 W bwft    : Succeeded but not registered: com.google.android.gms.auth.easyunlock [CONTEXT service_id=51 ]
+10-15 09:33:13.770  1050  2363 W bwft    : Succeeded but not registered: com.google.android.gms.tron.metrics [CONTEXT service_id=51 ]
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: setAppSpecificProperties failed [CONTEXT service_id=301 ]
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: aard: 29503:
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at abmc.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at aawv.b(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at aawv.a(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at bwen.o(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at bwen.ek(:com.google.android.gms@231818047@23.18.18 (190800-535401451):4)
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at gzc.onTransact(:com.google.android.gms@231818047@23.18.18 (190800-535401451):8)
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at android.os.Binder.execTransactInternal(Binder.java:1285)
+10-15 09:33:13.771  1282  1282 W NnApiDriverManager: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 09:33:13.771  1050  3479 D TrafficStats: tagSocket(198) with statsTag=0x1203, statsUid=10120
+10-15 09:33:13.778  1050  1064 I .gms.persistent: Compiler allocated 4811KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+10-15 09:33:13.792  4239  4258 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

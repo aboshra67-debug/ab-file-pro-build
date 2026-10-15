@@ -1,0 +1,7 @@
+10-15 09:29:30.520  3861  3976 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:30.544  1638  2613 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb via provider delete
+10-15 09:29:30.555  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:30.558  3861  4054 E document: Parse Document failed (err=3).
+10-15 09:29:30.578  1398  2995 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb
+10-15 09:29:30.578  1398  2995 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 0ms, 0 inserts 0 updates 0 deletes
+10-15 09:29:30.622  3861  3976 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

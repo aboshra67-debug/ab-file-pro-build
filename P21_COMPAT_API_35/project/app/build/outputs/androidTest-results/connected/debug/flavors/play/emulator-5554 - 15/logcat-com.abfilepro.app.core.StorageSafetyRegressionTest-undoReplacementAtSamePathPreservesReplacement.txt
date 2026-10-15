@@ -1,0 +1,5 @@
+10-15 09:29:37.162  3861  3976 I TestRunner: started: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.174  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.174  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.175  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.179  3861  3976 I TestRunner: finished: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)

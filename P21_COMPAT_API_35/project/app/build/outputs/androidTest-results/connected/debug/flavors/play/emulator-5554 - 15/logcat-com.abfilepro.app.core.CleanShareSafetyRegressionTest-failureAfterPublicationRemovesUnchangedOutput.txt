@@ -1,0 +1,20 @@
+10-15 09:29:32.219  3861  3976 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:32.219  3331  3422 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/rewrite_config_100_percent_1554768285.pb
+10-15 09:29:32.219  3331  3422 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/rewrite_config_100_percent_1554768285.pb)
+10-15 09:29:32.231  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561316
+10-15 09:29:32.237  3331  3421 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_0_percent_1556155539.pb
+10-15 09:29:32.237  3331  3421 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_0_percent_1556155539.pb)
+10-15 09:29:32.256  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561317
+10-15 09:29:32.259  3331  3420 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_10_percent_1556155539.pb
+10-15 09:29:32.259  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_10_percent_1556155539.pb)
+10-15 09:29:32.302  3331  3421 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561318
+10-15 09:29:32.304  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561319
+10-15 09:29:32.326  1362  1534 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:32.339  3331  3422 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_15_percent_1556155539.pb
+10-15 09:29:32.339  3331  3422 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_15_percent_1556155539.pb)
+10-15 09:29:32.348  3331  3421 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_20_percent_1556155539.pb
+10-15 09:29:32.349  3331  3421 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_20_percent_1556155539.pb)
+10-15 09:29:32.376  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@ba3bee
+10-15 09:29:32.385  3331  3331 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 09:29:32.407  1528  1528 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:32.431  3861  3976 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

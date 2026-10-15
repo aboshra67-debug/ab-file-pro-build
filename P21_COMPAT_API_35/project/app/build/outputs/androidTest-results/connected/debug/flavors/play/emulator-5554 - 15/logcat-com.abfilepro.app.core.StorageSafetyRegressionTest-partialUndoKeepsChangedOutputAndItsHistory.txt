@@ -1,0 +1,9 @@
+10-15 09:29:37.454  3861  3976 I TestRunner: started: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.485  1362  1362 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.wellbeing.device#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 09:29:37.490  2112  2185 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.tts
+10-15 09:29:37.493  2112  2112 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.tts which doesn't use ProcessStable flags.
+10-15 09:29:37.495   365   418 I netd    : tetherGetStats() -> {[]} <0.70ms>
+10-15 09:29:37.495  1528  1763 E A       : (REDACTED) Failed to commit flags to Phenotype. %s (%s)
+10-15 09:29:37.495  1528  2107 W SearchServiceCore: Abort, client detached.
+10-15 09:29:37.516  1362  1536 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:37.519  3861  3976 I TestRunner: finished: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)

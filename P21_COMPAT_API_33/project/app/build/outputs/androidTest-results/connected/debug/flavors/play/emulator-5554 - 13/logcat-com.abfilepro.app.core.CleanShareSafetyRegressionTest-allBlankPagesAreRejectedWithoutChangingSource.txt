@@ -1,0 +1,104 @@
+10-15 09:33:13.821  4239  4258 I TestRunner: started: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:13.880  1607  2113 I SP.AiAi : Successfully got manifest for actions-ranking-table-manifest: manifests:actions-ranking-table-211005
+10-15 09:33:13.887  1607  2113 I SP.AiAi : Successfully got manifest for text-classifier-annotator-manifest: manifests:text-classifier-annotator-1687347939
+10-15 09:33:13.893  1607  2113 I SP.AiAi : Successfully got manifest for text-classifier-actions-manifest: manifests:text-classifier-actions-1140547708
+10-15 09:33:13.897  1607  2113 I SP.AiAi : Successfully got manifest for text-classifier-langid-manifest: manifests:text-classifier-langid-1941001461
+10-15 09:33:13.900  1050  2363 W BpBinder: Large outgoing transaction of 328256 bytes, interface descriptor <uncached descriptor>, code 4
+10-15 09:33:13.908  1607  2113 I SP.AiAi : Sync for captions_i18n_v0_en-US succeeded in 41996 ms: {added: [asr_en-US_v3003], metadata: false
+10-15 09:33:13.924  1607  3024 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'actions-ranking-table' (download version 211005), starting to download superpack.
+10-15 09:33:13.927  1607  3024 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'text-classifier-actions' (download version 1140547708), starting to download superpack.
+10-15 09:33:13.930  1607  3024 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'text-classifier-langid' (download version 1941001461), starting to download superpack.
+10-15 09:33:13.930  1607  2113 I SP.AiAi : Sync for kg_collections_table succeeded in 35772 ms: {added: [collections_table_main_21980965fbd997111d89f86c16e9e090], metadata: false
+10-15 09:33:13.937  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-15 09:33:13.937  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-15 09:33:13.938  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-15 09:33:13.938  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-15 09:33:13.938  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-15 09:33:13.938  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-15 09:33:13.938  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-15 09:33:13.938  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-15 09:33:13.939  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-15 09:33:13.939  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-15 09:33:13.939  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-15 09:33:13.939  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-15 09:33:13.940  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-15 09:33:13.940  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-15 09:33:13.941  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-15 09:33:13.941  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-15 09:33:13.942  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-15 09:33:13.942  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-15 09:33:13.943  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-15 09:33:13.943  1743  2338 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-15 09:33:13.943  1743  2338 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-15 09:33:13.943  1743  2338 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-15 09:33:13.958  1607  4296 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully loaded embedded superpacks manifest for 'text-classifier-annotator' (download version 1687347939), starting to download superpack.
+10-15 09:33:13.965  3035  3035 W BugleRcsEngine: [2] benk.i: Unable to send RCS extension log
+10-15 09:33:13.983  1607  2113 I SP.AiAi : GC for 'captions_i18n_v0_en-US' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:33:13.986  1607  2113 I SP.AiAi : GC for 'kg_collections_table' (10) with ttl of 0 ms took 3 ms (0/3/0)
+10-15 09:33:13.990  1607  2113 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 09:33:13.993  1607  2113 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 09:33:14.001  1607  4296 I AiAiCaptions: downloadSuperpack(): Successfully downloaded superpack 'captions_i18n_v0_en-US' version 20210623.
+10-15 09:33:14.018  1607  2612 I AiAiCaptions: ComponentsManagerImpl::update()
+10-15 09:33:14.018  1607  2612 I AiAiCaptions: updateBasicComponents::updateBasicComponents()
+10-15 09:33:14.019  1607  2612 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity but already enabled
+10-15 09:33:14.019  1607  2612 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity but already enabled
+10-15 09:33:14.019  1607  2612 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService but already enabled
+10-15 09:33:14.022  1607  2612 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:33:14.028  1607  3024 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'kg_collections_table', download version 21051103.
+10-15 09:33:14.029  1607  2612 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService
+10-15 09:33:14.032  1607  2612 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:33:14.035  1607  2612 I AiAiCaptions: Would disable com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS (reason: Captions for calls is disabled in device config) but already disabled
+10-15 09:33:14.037  1607  2612 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:33:14.038  1607  2612 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService
+10-15 09:33:14.049  1607  2612 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:33:14.052  1607  2612 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver
+10-15 09:33:14.055  1607  2612 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:33:14.058  1743  2337 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 301 seconds.
+10-15 09:33:14.060  1743  2336 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-15 09:33:14.060  1743  2336 I FedAssExpListener: Successfully processed experiments changed.
+10-15 09:33:14.061  1743  2334 I A       : NGA disabled due to not being eligible.
+10-15 09:33:14.064  1743  2337 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 09:33:14.068  1607  2612 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.quicksetting.CaptionsTileService
+10-15 09:33:14.074  1607  2612 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 09:33:14.076  1607  2113 I SP.AiAi : Syncing actions-ranking-table (211005) with slices: [table_5f787033cc44fc7a8804e0030b2bf848], metadata: false
+10-15 09:33:14.115  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:14.116  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:14.117  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:33:14.126  1607  1607 I SP.AiAi : ====> Starting job {W:b:u:l, bg}
+10-15 09:33:14.132  1282  2672 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 09:33:14.132  1282  1585 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 09:33:14.135  1607  2113 I SP.AiAi : Scheduling: download registered, 0 started, 0 paused, 3 scheduled, 3 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}
+10-15 09:33:14.142  1607  2612 I AiAiCaptions: setVolumeControlEnabled() changing volume control state to enabled because: volume control behavior is: ENABLE
+10-15 09:33:14.149  1050  2363 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.phenotype) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:33:14.151  1607  2113 I SP.AiAi : Syncing text-classifier-actions (1140547708) with slices: [tc_model_e202592534082c01f9642f709a627dd9], metadata: false
+10-15 09:33:14.154  1607  2612 I AiAiCaptions: updateComponents(): Updated components state
+10-15 09:33:14.155  1607  3447 I AiAiEcho: Settings cha with uri: content://settings/secure/odi_captions_volume_ui_enabled
+10-15 09:33:14.156  1607  2612 I AiAiCaptions: updateTriggerState(): stopping trigger.
+10-15 09:33:14.157  1607  2612 I AiAiCaptions: stop(): stop is called but CaptionsTriggerImpl already stopped
+10-15 09:33:14.174  3998  4033 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:33:14.213  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:14.215  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:14.216  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 2 candidates
+10-15 09:33:14.218  1607  2113 I SP.AiAi : Scheduling: download registered, 0 started, 0 paused, 4 scheduled, 4 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 * {W:b:u:l, bg}
+10-15 09:33:14.221  1282  1497 W Icing   : No valid account for uploading user actions
+10-15 09:33:14.259  1607  2113 I SP.AiAi : Syncing text-classifier-langid (1941001461) with slices: [tc_model_436dc3fd14049b93d75788a8c0cc8eea], metadata: false
+10-15 09:33:14.262  1607  2005 I AiAiEcho: Predicting[0]:
+10-15 09:33:14.262  1607  2005 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-15 09:33:14.265  1607  2005 I AiAiEcho: Predicting[0]:
+10-15 09:33:14.265  1607  2005 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:
+10-15 09:33:14.266  1607  2005 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-15 09:33:14.267  1607  2005 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-15 09:33:14.268  1607  2005 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0
+10-15 09:33:14.268  1607  2005 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0
+10-15 09:33:14.288  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:14.290  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:14.291  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 3 candidates
+10-15 09:33:14.293  1607  2113 I SP.AiAi : Scheduling: download registered, 0 started, 0 paused, 5 scheduled, 5 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 * {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea * {W:b:u:l, bg}
+10-15 09:33:14.301  1607  2113 I SP.AiAi : Syncing text-classifier-annotator (1687347939) with slices: [tc_model_19e9928974f9d8742ad3b10f52373dea], metadata: false
+10-15 09:33:14.302  1607  2479 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 09:33:14.316  1282  2672 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+10-15 09:33:14.336  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:14.338  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:14.339  1607  2113 I SP.AiAi : Scheduling job with delay of 0s for {W:b:u:l, bg}, 4 candidates
+10-15 09:33:14.341  1607  2113 I SP.AiAi : Scheduling: download registered, 0 started, 0 paused, 6 scheduled, 6 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 * {W:b:u:l, bg}, text-classifier-actions:tc_model_e202592534082c01f9642f709a627dd9 * {W:b:u:l, bg}, text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea * {W:b:u:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea * {W:b:u:l, bg}
+10-15 09:33:14.357  4239  4258 I TestRunner: finished: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

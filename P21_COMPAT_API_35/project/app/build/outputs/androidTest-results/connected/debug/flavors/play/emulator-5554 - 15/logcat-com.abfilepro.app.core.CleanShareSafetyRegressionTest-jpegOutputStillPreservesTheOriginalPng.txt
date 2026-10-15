@@ -1,0 +1,6 @@
+10-15 09:29:35.310  3861  3976 I TestRunner: started: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:35.339  1528  1773 I SettingsDataLayer.AE: Set isHotwordOpaEligible
+10-15 09:29:35.340  1414  2990 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 09:29:35.342  1528  1937 I SettingsDataLayer.AE: Set Assistant eligibility status
+10-15 09:29:35.345  1414  2984 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 09:29:35.346  3861  3976 I TestRunner: finished: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

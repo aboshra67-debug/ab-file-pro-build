@@ -1,0 +1,3 @@
+10-15 09:33:16.340  4239  4258 I TestRunner: started: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:16.350  1282  1341 I Icing   : updateResources: need to parse arkh{com.google.android.gms}
+10-15 09:33:16.358  4239  4258 I TestRunner: finished: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

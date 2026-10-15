@@ -1,0 +1,2 @@
+10-15 09:33:12.013  4239  4258 I TestRunner: started: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:33:12.029  4239  4258 I TestRunner: finished: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

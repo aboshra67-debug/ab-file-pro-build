@@ -1,0 +1,10 @@
+10-15 09:33:12.947  4239  4258 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:33:12.950   282  4289 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:33:12.950   282  4289 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc5ae092f0
+10-15 09:33:12.950   282  4289 I resolv  : doQuery: rcode=0, ancount=8, return value=169
+10-15 09:33:12.952   282  4288 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:33:12.952   282  4288 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc6ae12990
+10-15 09:33:12.953   282  4288 I resolv  : doQuery: rcode=0, ancount=8, return value=265
+10-15 09:33:12.956  3035  3530 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:12.989  4239  4258 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 09:33:12.999  4239  4258 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

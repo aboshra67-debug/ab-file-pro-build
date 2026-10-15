@@ -1,0 +1,2 @@
+10-15 09:32:19.202  4865  4884 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:32:19.234  4865  4884 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

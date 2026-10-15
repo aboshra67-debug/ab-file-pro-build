@@ -1,0 +1,6 @@
+10-15 09:29:34.306  3861  3976 I TestRunner: started: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:34.309  3861  4108 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:29:34.322  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562277
+10-15 09:29:34.337  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/love_effect.binarypb_1705016173644
+10-15 09:29:34.338  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/love_effect.binarypb_1705016173644)
+10-15 09:29:34.341  3861  3976 I TestRunner: finished: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

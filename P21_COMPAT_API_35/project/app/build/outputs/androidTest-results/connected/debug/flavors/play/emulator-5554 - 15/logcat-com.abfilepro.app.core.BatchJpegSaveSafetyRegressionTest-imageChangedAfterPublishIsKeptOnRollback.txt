@@ -1,0 +1,17 @@
+10-15 09:29:28.346  3861  3976 I TestRunner: started: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:29:28.356   365   418 I netd    : tetherGetStats() -> {[]} <0.27ms>
+10-15 09:29:28.371  3331  3418 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 09:29:28.388  3331  3409 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=47 ]
+10-15 09:29:28.389  3331  3428 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=61 ]
+10-15 09:29:28.390  3331  3400 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=42 ]
+10-15 09:29:28.391  3331  3421 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=57 ]
+10-15 09:29:28.398  3331  3331 I BugleDataModel: ActionExecutorImpl: Starting ActionService
+10-15 09:29:28.408  1365  1578 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 09:29:28.417  1365  1578 I SP      : Download stopped: handwriting_recognition:scribe_latin_20231123_tflite_zip, succeeded foreground, size: 273180
+10-15 09:29:28.422  3331  3418 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 09:29:28.424  3331  3331 I BugleDataModel: ActionExecutorImpl: ACTION_EXECUTE_QUEUED_GenericWorkerQueueAction
+10-15 09:29:28.430  1365  1578 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 09:29:28.438  1365  1733 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 22403651
+10-15 09:29:28.440  3331  3419 I BugleDataModel: ExecuteActionRunnable: running action GenericWorkerQueueAction
+10-15 09:29:28.440  3331  3419 I BugleDataModel: ActionExecutorImpl: ACTION_BACKGROUND_QUEUED_GenericWorkerQueueAction
+10-15 09:29:28.441  3861  3976 I TestRunner: finished: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

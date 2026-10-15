@@ -1,0 +1,4 @@
+10-15 09:29:29.739  3861  3976 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:29.778  1638  4074 D TrafficStats: tagSocket(96) with statsTag=0xffffff01, statsUid=10136
+10-15 09:29:29.783  3235  3238 I ocessService0:0: Background concurrent mark compact GC freed 308KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 1975KB/3951KB, paused 42us,18.019ms total 60.046ms
+10-15 09:29:29.795  3861  3976 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

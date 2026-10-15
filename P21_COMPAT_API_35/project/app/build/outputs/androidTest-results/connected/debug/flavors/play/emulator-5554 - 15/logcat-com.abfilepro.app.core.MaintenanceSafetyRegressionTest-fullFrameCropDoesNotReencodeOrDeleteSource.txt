@@ -1,0 +1,2 @@
+10-15 09:29:36.608  3861  3976 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:29:36.616  3861  3976 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

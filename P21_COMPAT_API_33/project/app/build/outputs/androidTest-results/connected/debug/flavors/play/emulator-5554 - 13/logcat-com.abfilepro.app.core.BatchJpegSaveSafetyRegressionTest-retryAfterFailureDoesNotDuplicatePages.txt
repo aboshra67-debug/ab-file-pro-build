@@ -1,0 +1,10 @@
+10-15 09:33:12.831  4239  4258 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:33:12.843  1050  3599 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-15 09:33:12.865  4239  4258 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 09:33:12.872  1607  2271 I SP.AiAi : Download stopped: manifests:text-classifier-actions-1140547708, succeeded, size: 408
+10-15 09:33:12.904  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip'
+10-15 09:33:12.905  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 613 bytes from https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip.
+10-15 09:33:12.912  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:12.915  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:12.944   282  4287 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10132 0}
+10-15 09:33:12.945  4239  4258 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

@@ -1,0 +1,6 @@
+10-15 09:32:18.796  4865  4884 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:32:18.824  4865  4870 I zygote64: Do full code cache collection, code=124KB, data=86KB
+10-15 09:32:18.824  4865  4870 I zygote64: After code cache collection, code=113KB, data=66KB
+10-15 09:32:18.828  4865  4884 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 09:32:18.868  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 09:32:18.891  4865  4884 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

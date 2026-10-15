@@ -1,0 +1,251 @@
+10-15 09:33:24.415  4239  4258 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:24.421  1282  4302 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+10-15 09:33:24.439  3035  3122 I RcsClientLib: Connecting TransportControlService
+10-15 09:33:24.440  3035  3122 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:24.480  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:24.496  1467  1477 I putmethod.latin: Background young concurrent copying GC freed 93772(4085KB) AllocSpace objects, 0(0B) LOS objects, 18% free, 11MB/14MB, paused 660us,569us total 721.095ms
+10-15 09:33:24.500  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:24.575  3035  3121 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 09:33:24.617  3998  3998 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:33:24.621  3035  3122 I BugleRcs: connecting to 10 Rcs Services
+10-15 09:33:24.633   479   578 I RoleService: Granting default roles...
+10-15 09:33:24.640   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:24.641   946   946 D MediaPlayerList: Name of package changed: com.google.android.youtube
+10-15 09:33:24.641   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:24.642   946   946 D MediaPlayerList: Name of package changed: com.google.android.youtube
+10-15 09:33:24.645   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:24.649  3035  3206 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@cd6b645
+10-15 09:33:24.656  1050  1343 W BpBinder: Large outgoing transaction of 329284 bytes, interface descriptor <uncached descriptor>, code 4
+10-15 09:33:24.667   479   492 I system_server: Background young concurrent copying GC freed 466416(16MB) AllocSpace objects, 18(616KB) LOS objects, 39% free, 24MB/40MB, paused 374us,69us total 674.610ms
+10-15 09:33:24.682  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+10-15 09:33:24.683  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+10-15 09:33:24.685  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+10-15 09:33:24.686  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+10-15 09:33:24.687  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+10-15 09:33:24.687  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+10-15 09:33:24.688  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+10-15 09:33:24.688  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+10-15 09:33:24.689  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+10-15 09:33:24.690  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+10-15 09:33:24.691  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+10-15 09:33:24.691  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+10-15 09:33:24.691  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+10-15 09:33:24.692  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+10-15 09:33:24.692  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+10-15 09:33:24.693  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+10-15 09:33:24.694  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+10-15 09:33:24.695  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+10-15 09:33:24.696  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+10-15 09:33:24.697  1743  2337 W A       : Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+10-15 09:33:24.698  1743  2337 W A       : Can't format flag bindle_flags__bloblobber_blob to integer.
+10-15 09:33:24.699  1743  2337 W A       : Can't format flag bindle_flags__velour_jar to integer.
+10-15 09:33:24.729   479  2376 I RecoverableKeyStoreMgr: Initialized server params.
+10-15 09:33:24.733   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10140
+10-15 09:33:24.742  1743  2334 I A       : Refusing EXCLUSIVE task 24, it is already pending. Try again in 355 seconds.
+10-15 09:33:24.744  1743  2336 I FedAssExpListener: Fed-ass not supported for signed out users.
+10-15 09:33:24.745  1743  2336 I FedAssExpListener: Successfully processed experiments changed.
+10-15 09:33:24.746  1743  2338 I A       : NGA disabled due to not being eligible.
+10-15 09:33:24.747   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10128
+10-15 09:33:24.748  1743  2334 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 09:33:24.772   756   928 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: Error reading snapshot for 10120 from disk
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10120.xml: open failed: ENOENT (No such file or directory)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:160)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:342)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2589)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:786)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 09:33:24.791   479  2376 E RecoverySnapshotStorage: 	... 8 more
+10-15 09:33:24.798   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:24.798   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:24.802   946   946 D MediaPlayerList: Name of package changed: com.android.vending
+10-15 09:33:24.802   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:24.803  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.google.android.youtube
+10-15 09:33:24.804  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:24.807   946   946 D MediaPlayerList: Name of package changed: com.android.vending
+10-15 09:33:24.807  3035  3122 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:24.813   479  1703 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10120
+10-15 09:33:24.822   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:24.823   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:24.824  3546  3546 D ImsResolver: maybeAddedImsService, packageName: com.google.android.youtube
+10-15 09:33:24.915   282   282 I netd    : tetherGetStats() -> {[]} <0.36ms>
+10-15 09:33:24.946   479   518 W system_server: Long monitor contention with owner binder:479_1F (2389) at void com.android.server.am.OomAdjuster.performUpdateOomAdjPendingTargetsLocked(java.lang.String)(OomAdjuster.java:731) waiters=0 in int com.android.server.am.ActivityManagerService.getUidState(int) for 171ms
+10-15 09:33:24.956   282   282 I netd    : bandwidthSetGlobalAlert(2097152) <0.11ms>
+10-15 09:33:25.038  1050  4173 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:25.061  3035  3121 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=00539531-9ace-4ae0-9750-c1650203c7ec, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim, icing_index_update_handler- } ]
+10-15 09:33:25.114  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:25.118  3035  3253 I RcsClientLib: com.google.android.rcs.client.businessinfo.BusinessInfoService connected
+10-15 09:33:25.118  3035  3253 I BugleRcs: com.google.android.rcs.client.businessinfo.BusinessInfoService RCS service connected
+10-15 09:33:25.129  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:25.132  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:25.137   479   509 E system_server: No package ID 7f found for ID 0x7f0806ce.
+10-15 09:33:25.137   479   509 E system_server: No package ID 7f found for ID 0x7f140b31.
+10-15 09:33:25.140   479   509 E system_server: No package ID 7f found for ID 0x7f0806cc.
+10-15 09:33:25.140   479   509 E system_server: No package ID 7f found for ID 0x7f140af3.
+10-15 09:33:25.140   479   509 E system_server: No package ID 7f found for ID 0x7f0806d0.
+10-15 09:33:25.140   479   509 E system_server: No package ID 7f found for ID 0x7f140c3f.
+10-15 09:33:25.140   479   509 E system_server: No package ID 7f found for ID 0x7f0806ca.
+10-15 09:33:25.140   479   509 E system_server: No package ID 7f found for ID 0x7f140422.
+10-15 09:33:25.201   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:25.204   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:25.205   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:25.206   946   946 D MediaPlayerList: Name of package changed: com.google.android.apps.maps
+10-15 09:33:25.213   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:25.216   946   946 D MediaPlayerList: Name of package changed: com.google.android.apps.maps
+10-15 09:33:25.220   479   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:33:25.222   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:25.237   479  2365 W system_server: Long monitor contention with owner binder:479_6 (842) at void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int)(ActivityManagerService.java:14660) waiters=5 in android.content.ComponentName com.android.server.am.ActivityManagerService.startService(android.app.IApplicationThread, android.content.Intent, java.lang.String, boolean, java.lang.String, java.lang.String, int) for 602ms
+10-15 09:33:25.245   479  2457 W system_server: Long monitor contention with owner binder:479_6 (842) at void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int)(ActivityManagerService.java:14660) waiters=7 in android.content.Intent com.android.server.am.ActivityManagerService.registerReceiverWithFeature(android.app.IApplicationThread, java.lang.String, java.lang.String, java.lang.String, android.content.IIntentReceiver, android.content.IntentFilter, java.lang.String, int, int) for 498ms
+10-15 09:33:25.246   946   946 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 09:33:25.246   946   946 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:33:25.246   946   946 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 09:33:25.248   479   812 W system_server: Long monitor contention with owner binder:479_6 (842) at void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int)(ActivityManagerService.java:14660) waiters=8 in int com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(android.app.IApplicationThread, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], java.lang.String[], java.lang.String[], int, android.os.Bundle, boolean, boolean, int) for 485ms
+10-15 09:33:25.253   479   854 W system_server: Long monitor contention with owner binder:479_6 (842) at void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int)(ActivityManagerService.java:14660) waiters=9 in android.content.Intent com.android.server.am.ActivityManagerService.registerReceiverWithFeature(android.app.IApplicationThread, java.lang.String, java.lang.String, java.lang.String, android.content.IIntentReceiver, android.content.IntentFilter, java.lang.String, int, int) for 369ms
+10-15 09:33:25.253   479   685 W system_server: Long monitor contention with owner binder:479_6 (842) at void com.android.server.am.ActivityManagerService.finishReceiver(android.os.IBinder, int, java.lang.String, android.os.Bundle, boolean, int)(ActivityManagerService.java:14660) waiters=10 in int com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(android.app.IApplicationThread, java.lang.String, android.content.Intent, java.lang.String, android.content.IIntentReceiver, int, java.lang.String, android.os.Bundle, java.lang.String[], java.lang.String[], java.lang.String[], int, android.os.Bundle, boolean, boolean, int) for 292ms
+10-15 09:33:25.259   755   755 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.c(PG:7)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(Unknown Source:2)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.r.run(PG:5)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.k.a.h.run(PG:2)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.i.k.run(PG:2)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 09:33:25.263  1743  2334 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:25.265  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:25.265  3035  3253 I RcsClientLib: com.google.android.rcs.client.messaging.RcsMessagingService connected
+10-15 09:33:25.265  3035  3253 I BugleRcs: com.google.android.rcs.client.messaging.RcsMessagingService RCS service connected
+10-15 09:33:25.265  3035  3253 W BugleTachygram: Not using Tachygram because PEv3 is disabled
+10-15 09:33:25.266  3035  3253 W BugleConnectivity: getNetworkState: NetworkStateMonitor not found for subId 1.
+10-15 09:33:25.306   282  4447 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 09:33:25.308   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10143
+10-15 09:33:25.319   756  4204 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 09:33:25.325  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:25.325  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:25.325  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:25.325  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:25.325  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:25.325  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:25.325  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:25.333  2944  2951 I id.gms.unstable: Background young concurrent copying GC freed 8740(611KB) AllocSpace objects, 5(212KB) LOS objects, 43% free, 3827KB/6739KB, paused 49us,16us total 501.606ms
+10-15 09:33:25.341  3035  3206 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@cd6b645
+10-15 09:33:25.344  3035  3122 I BugleRcsEngine: [47] bgrh.b: Deleted transfers file: false
+10-15 09:33:25.346   282  4449 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:33:25.346   282  4449 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc5ae074b0
+10-15 09:33:25.347   282  4449 I resolv  : doQuery: rcode=0, ancount=8, return value=161
+10-15 09:33:25.351  1282  4433 W gle.android.gms: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.GmsIntentOperationChimeraService-Executor] processing com.google.android.gms.icing.service.SystemEventIntentOperation for action com.google.gservices.intent.action.GSERVICES_CHANGED (4432) at android.content.IContentProvider android.app.ActivityThread.acquireProvider(android.content.Context, java.lang.String, int, boolean)(ActivityThread.java:7079) waiters=0 in android.content.IContentProvider android.app.ActivityThread.acquireProvider(android.content.Context, java.lang.String, int, boolean) for 380ms
+10-15 09:33:25.353   282  4448 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:33:25.353   282  4448 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc2ae0a4d0
+10-15 09:33:25.353   282  4448 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:33:25.355  1282  4302 D TrafficStats: tagSocket(163) with statsTag=0x30004800, statsUid=-1
+10-15 09:33:25.418  1282  4432 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+10-15 09:33:25.437  1282  3214 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 09:33:25.442  1282  3877 I PeopleGalProvider: Gal directories started.
+10-15 09:33:25.453  1282  3877 I PeopleGalProvider: Method 1 completed.
+10-15 09:33:25.468  1282  2672 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 09:33:25.473  1282  3877 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:33:25.475  1282  3284 D TrafficStats: tagSocket(83) with statsTag=0x30001803, statsUid=-1
+10-15 09:33:25.483  1050  4173 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:25.499  1050  2056 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: Can't parse the header version.
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:455)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:141)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:125)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:285)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 09:33:25.547  4239  4318 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 09:33:25.550  4239  4318 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 09:33:25.609  1050  1050 I GCoreUlr: Unbound from all signal providers.
+10-15 09:33:25.609  1050  1050 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 09:33:25.630  3035  3109 I BugleSearch: Queues icing index update work item. [CONTEXT class_name="IcingIndexUpdateHandlerScheduler" ]
+10-15 09:33:25.645   479   578 I RoleService: Granting default roles...
+10-15 09:33:25.672   479  2457 D WifiNl80211Manager: Scan result ready event
+10-15 09:33:25.672   479  2457 D WifiNative: Scan result ready event
+10-15 09:33:25.696  1050  4173 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:25.706  4239  4318 W p.p21mainttrial: Verification of void com.tom_roush.pdfbox.cos.COSName.<clinit>() took 127.219ms (37926.70 bytecodes/s) (110416B approximate peak alloc)
+10-15 09:33:25.744   479  1703 W system_server: Long monitor contention with owner android.fg (499) at java.util.Set com.android.server.pm.permission.PermissionManagerServiceImpl.getGrantedPermissionsInternal(java.lang.String, int)(PermissionManagerServiceImpl.java:2486) waiters=1 in int com.android.server.pm.permission.PermissionManagerServiceImpl.checkPermissionInternal(com.android.server.pm.parsing.pkg.AndroidPackage, boolean, java.lang.String, int) for 160ms
+10-15 09:33:25.775  3035  3109 I BugleDataModel: ParticipantFullRefresh: Number of participants refreshed: 2
+10-15 09:33:25.796  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.android.vending
+10-15 09:33:25.796  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:25.848  1282  4433 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: Could not register for notifications with InnerTube:
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: xvd: wrv: Precondition check failed.
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at xut.apply(Unknown Source:4)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at vws.p(PG:5)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at vws.b(PG:2)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at xuv.d(PG:4)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at acvk.c(PG:51)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at acvk.j(PG:38)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at acvk.d(PG:3)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at acvi.run(Unknown Source:2)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:463)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at qhq.run(PG:2)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at qic.run(PG:4)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: Caused by: wrv: Precondition check failed.
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at xtk.k(PG:5)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at wfa.f(PG:17)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at wfa.c(PG:1)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at wdz.run(PG:21)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at vvz.run(PG:11)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	... 1 more
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: Caused by: dlh
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	at wdz.run(PG:14)
+10-15 09:33:25.857  1742  2456 W YouTubeMusic: 	... 4 more
+10-15 09:33:25.925  3505  4143 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 09:33:25.927  3505  4143 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 09:33:25.928  3505  4143 I RemoteProvisioningService: Pool status.
+10-15 09:33:25.928  3505  4143 I RemoteProvisioningService: Total: 6
+10-15 09:33:25.928  3505  4143 I RemoteProvisioningService: Attested: 6
+10-15 09:33:25.928  3505  4143 I RemoteProvisioningService: Unassigned: 5
+10-15 09:33:25.928  3505  4143 I RemoteProvisioningService: Expiring: 0
+10-15 09:33:25.928  3505  4143 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 09:33:25.928  3505  4143 I RemoteProvisioningService: No provisioning needed.
+10-15 09:33:25.958  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.maps
+10-15 09:33:25.960  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:25.972  1282  1330 W Icing   : No valid account for uploading user actions
+10-15 09:33:26.049  3035  3122 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:26.072  4239  4258 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

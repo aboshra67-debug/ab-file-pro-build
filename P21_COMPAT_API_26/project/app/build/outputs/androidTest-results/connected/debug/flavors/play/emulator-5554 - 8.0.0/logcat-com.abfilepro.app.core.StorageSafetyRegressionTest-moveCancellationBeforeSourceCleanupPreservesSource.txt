@@ -1,0 +1,2 @@
+10-15 09:32:22.959  4865  4884 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:32:22.974  4865  4884 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

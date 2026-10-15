@@ -1,0 +1,526 @@
+10-15 09:29:32.477  3861  3976 I TestRunner: started: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:32.482  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 1480KB AllocSpace bytes, 303(13MB) LOS objects, 35% free, 43MB/67MB, paused 1.427ms,5.051ms total 211.037ms
+10-15 09:29:32.507  3861  3870 I p.p21mainttrial: Background concurrent mark compact GC freed 1588KB AllocSpace bytes, 48(3484KB) LOS objects, 49% free, 5254KB/10MB, paused 222us,89.702ms total 313.766ms
+10-15 09:29:32.512   365   418 I netd    : tetherGetStats() -> {[]} <0.33ms>
+10-15 09:29:32.550  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561320
+10-15 09:29:32.551  3331  3421 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561321
+10-15 09:29:32.572  3331  3420 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_35_percent_1556155539.pb
+10-15 09:29:32.572  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_35_percent_1556155539.pb)
+10-15 09:29:32.586  1226  2601 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1792056572586) [CONTEXT service_id=51 ]
+10-15 09:29:32.605  3331  3422 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_50_percent_1556155539.pb
+10-15 09:29:32.605  3331  3422 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_50_percent_1556155539.pb)
+10-15 09:29:32.634  3013  3829 I ConfigUpdater: doneInstall
+10-15 09:29:32.656  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561323
+10-15 09:29:32.659  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561322
+10-15 09:29:32.668  3331  3418 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_65_percent_1556155539.pb
+10-15 09:29:32.668  3331  3418 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_65_percent_1556155539.pb)
+10-15 09:29:32.670  3331  3422 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_80_percent_1556155539.pb
+10-15 09:29:32.670  3331  3422 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_80_percent_1556155539.pb)
+10-15 09:29:32.674  3331  3420 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:32.718  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@8f8dd52
+10-15 09:29:32.720  3331  3418 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561324
+10-15 09:29:32.723  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561325
+10-15 09:29:32.724  3331  3420 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.messaging
+10-15 09:29:32.729  3331  3422 I .apps.messaging: IncrementDisableThreadFlip blocked for 6.161ms
+10-15 09:29:32.754  3331  3420 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_100_percent_1556155539.pb
+10-15 09:29:32.754  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/gif_rewrite_config_100_percent_1556155539.pb)
+10-15 09:29:32.766  3331  3444 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging#com.google.android.apps.messaging" ]
+10-15 09:29:32.766  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@7dd3f4c
+10-15 09:29:32.767  3331  3421 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/file_id_map.json_1737482826108
+10-15 09:29:32.767  3331  3421 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/file_id_map.json_1737482826108)
+10-15 09:29:32.768  3331  3331 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 09:29:32.780  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@909b89b
+10-15 09:29:32.802  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:32.806  1638  2613 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb.metadata via provider delete
+10-15 09:29:32.807  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.lens.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:32.808  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 3068KB AllocSpace bytes, 334(17MB) LOS objects, 26% free, 66MB/90MB, paused 5.237ms,3.752ms total 266.620ms
+10-15 09:29:32.833   915  1017 I PermissionControllerServiceImpl: Updating user sensitive for user 0
+10-15 09:29:32.856   563  1972 W ParceledListSlice: Element #64 is 140064 bytes.
+10-15 09:29:32.857   563  1972 W ParceledListSlice: Overly large reply size: 162396
+10-15 09:29:32.864   563  1518 W ParceledListSlice: Element #139 is 59704 bytes.
+10-15 09:29:32.864   563  1518 W ParceledListSlice: Overly large reply size: 106276
+10-15 09:29:32.865   563  1972 W ParceledListSlice: Element #140 is 16980 bytes.
+10-15 09:29:32.865   563  1972 W ParceledListSlice: Element #189 is 21704 bytes.
+10-15 09:29:32.869   563  1590 W ParceledListSlice: Element #218 is 29204 bytes.
+10-15 09:29:32.872  1398  2995 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.fb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.fb.metadata
+10-15 09:29:32.875  1226  2601 I HeterodyneSyncScheduler: Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-15 09:29:32.876  3905  4085 D CompatChangeReporter: Compat change id reported: 312399441; UID 10139; state: ENABLED
+10-15 09:29:32.880  1398  2995 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 8ms, 0 inserts 0 updates 0 deletes
+10-15 09:29:32.902  3331  3432 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:32.912  3331  3421 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562248
+10-15 09:29:32.914  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056561326
+10-15 09:29:32.920  3331  3432 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/priority_map.json_1737482888319
+10-15 09:29:32.920  3331  3432 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/priority_map.json_1737482888319)
+10-15 09:29:32.929  3331  3421 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/pumpkin_model_config_screen_effects_experiment.pb_1741726035806
+10-15 09:29:32.930  3331  3421 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/pumpkin_model_config_screen_effects_experiment.pb_1741726035806)
+10-15 09:29:32.936  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:32.941  1638  2613 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb via provider delete
+10-15 09:29:32.948  3331  3432 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562249
+10-15 09:29:32.950  3331  3420 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/screen_effects_templates_experiment.pb_1741726035806
+10-15 09:29:32.950  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/screen_effects_templates_experiment.pb_1741726035806)
+10-15 09:29:32.951  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:32.958  3331  3421 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562250
+10-15 09:29:32.966  1226  3506 W BpBinder: Large outgoing transaction of 418344 bytes, interface descriptor , code 4
+10-15 09:29:32.969  1398  2995 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.fb: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.fb
+10-15 09:29:32.969  1398  2995 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 0ms, 0 inserts 0 updates 0 deletes
+10-15 09:29:32.975  3331  4062 I .apps.messaging: IncrementDisableThreadFlip blocked for 7.365ms
+10-15 09:29:32.984  1414  1421 I gle.android.gms: Background concurrent mark compact GC freed 12MB AllocSpace bytes, 65(2924KB) LOS objects, 49% free, 15MB/30MB, paused 448us,4.349ms total 1.010s
+10-15 09:29:32.989  3331  3418 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/model_based_provider_configs_pumpkin_screen_effects_experiment.pb_1705014280576
+10-15 09:29:32.989  3331  3418 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/model_based_provider_configs_pumpkin_screen_effects_experiment.pb_1705014280576)
+10-15 09:29:33.022  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562251
+10-15 09:29:33.047  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 1768KB AllocSpace bytes, 332(21MB) LOS objects, 23% free, 80MB/104MB, paused 1.705ms,1.056ms total 202.382ms
+10-15 09:29:33.049  3331  3418 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562252
+10-15 09:29:33.050  3331  3432 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Thumbsdown_android.far_1741045114249
+10-15 09:29:33.050  3331  3432 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Thumbsdown_android.far_1741045114249)
+10-15 09:29:33.059  3331  3420 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Anger_android.far_1741045114249
+10-15 09:29:33.059  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Anger_android.far_1741045114249)
+10-15 09:29:33.078  3331  3422 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.apps.messaging
+10-15 09:29:33.083  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@168eebd
+10-15 09:29:33.084  1414  1423 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+10-15 09:29:33.084  1414  1423 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk' with 1 weak references
+10-15 09:29:33.085  3331  3429 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.apps.messaging
+10-15 09:29:33.088  3331  3444 I BuglePhenotype: onReceive for cslib package [CONTEXT package_name="com.google.android.ims.library" ]
+10-15 09:29:33.089  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@aada1fe
+10-15 09:29:33.090  3331  3331 I PhenotypeBackgroundRecv: Skipping com.google.android.ims.library which doesn't use ProcessStable flags.
+10-15 09:29:33.152  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.158  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.platform.ondevice.fulfillment.server.pop.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:33.167  1365  1365 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:29:33.167  1365  1365 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 09:29:33.175  3861  4055 D nativeloader: Load /data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!/lib/x86_64/libjpeg.so using ns clns-7 from class loader (caller=/data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!classes10.dex): ok
+10-15 09:29:33.176  3861  4055 D nativeloader: Load /data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!/lib/x86_64/libpngx.so using ns clns-7 from class loader (caller=/data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!classes10.dex): ok
+10-15 09:29:33.176  1365  1706 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.inputmethod.latin
+10-15 09:29:33.180  1365  1365 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:29:33.190  1226  2688 W CCTFlatFileLogStore: Excessive logging: 512 events, 315317 bytes from log source PHENOTYPE last 31s
+10-15 09:29:33.200  3861  4055 D nativeloader: Load /data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!/lib/x86_64/libleptonica.so using ns clns-7 from class loader (caller=/data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!classes10.dex): ok
+10-15 09:29:33.212  3331  3418 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.212  3337  3484 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.234  1226  3187 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator finished executing. cause:5 result: 1 elapsed_millis: 13559 uptime_millis: 13559 exec_start_elapsed_seconds: 69 [CONTEXT service_id=218 ]
+10-15 09:29:33.253  1414  4022 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:29:33.253  1414  4022 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:29:33.257  1414  4013 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:29:33.267  3861  4055 D nativeloader: Load /data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!/lib/x86_64/libtesseract.so using ns clns-7 from class loader (caller=/data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!classes10.dex): ok
+10-15 09:29:33.269  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 4500KB AllocSpace bytes, 325(20MB) LOS objects, 20% free, 90MB/114MB, paused 381us,876us total 174.862ms
+10-15 09:29:33.281  1226  3556 I PTCommittedOperation: Receive new configuration for com.google.android.gms.people
+10-15 09:29:33.288  1414  4089 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 09:29:33.294  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562254
+10-15 09:29:33.298  1414  4093 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 09:29:33.298  1414  4093 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 09:29:33.298  1414  4093 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.people [CONTEXT service_id=340 ]
+10-15 09:29:33.299  3331  3432 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562253
+10-15 09:29:33.304  1414  4020 I GmsSyncPolicyEngine: Periodic sync 1 disabled by policy, cancelled.
+10-15 09:29:33.304  1414  4096 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:29:33.304  1414  4096 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 09:29:33.310  1414  4095 W PeoplePU: getComponentEnabledSetting failed.
+10-15 09:29:33.310  1414  4095 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3246)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3226)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3209)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3151)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6361)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3191)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at cywf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at cyoi.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):34)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at com.google.android.gms.people.service.SettingsChangedBroadcastIntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):339)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:33.310  1414  4095 W PeoplePU: Caused by: android.os.RemoteException: Remote stack trace:
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSettingInternal(ComputerEngine.java:5265)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at com.android.server.pm.ComputerEngine.getComponentEnabledSetting(ComputerEngine.java:5247)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at com.android.server.pm.IPackageManagerBase.getComponentEnabledSetting(IPackageManagerBase.java:385)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at android.content.pm.IPackageManager$Stub.onTransact(IPackageManager.java:3160)
+10-15 09:29:33.310  1414  4095 W PeoplePU: 	at com.android.server.pm.PackageManagerService$IPackageManagerImpl.onTransact(PackageManagerService.java:6545)
+10-15 09:29:33.310  1414  4095 W PeoplePU:
+10-15 09:29:33.310  1414  4095 I FsaEntryPointSwitcher: setting component enabled=1 for com.google.android.gms.people.sync.focus.ContactsSyncAdapterService
+10-15 09:29:33.314  1414  4020 I GmsSyncPolicyEngine: Periodic sync 2 disabled by policy, cancelled.
+10-15 09:29:33.314  1414  4095 I FsaEntryPointSwitcher: Setting component enabled succeeds.
+10-15 09:29:33.314  1414  4020 I GmsSyncPolicyEngine: Periodic sync 3 disabled by policy, cancelled.
+10-15 09:29:33.315  1414  4095 W PeoplePU: getComponentEnabledSetting failed.
+10-15 09:29:33.315  1414  4095 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ContactsSyncAdapterService}
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3246)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3226)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3209)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3151)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6361)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3191)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at cywf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at cyoi.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):208)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at com.google.android.gms.people.service.SettingsChangedBroadcastIntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):339)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:33.315  1414  4095 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:33.315  3331  3418 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Sad_android.far_1741221527170
+10-15 09:29:33.315  3331  3418 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Sad_android.far_1741221527170)
+10-15 09:29:33.316  1414  4095 W PeoplePU: getComponentEnabledSetting failed.
+10-15 09:29:33.316  1414  4095 W PeoplePU: java.lang.IllegalArgumentException: Unknown component: ComponentInfo{com.google.android.syncadapters.contacts/com.google.android.syncadapters.contacts.ProxyGalProvider}
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3246)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at android.os.Parcel.createException(Parcel.java:3226)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3209)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at android.os.Parcel.readException(Parcel.java:3151)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at android.content.pm.IPackageManager$Stub$Proxy.getComponentEnabledSetting(IPackageManager.java:6361)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at android.app.ApplicationPackageManager.getComponentEnabledSetting(ApplicationPackageManager.java:3191)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at cywf.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at cxyx.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at com.google.android.gms.people.service.SettingsChangedBroadcastIntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):366)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:33.316  1414  4095 W PeoplePU: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:33.316  3331  3420 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Applause_android.far_1741045114249
+10-15 09:29:33.318  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Applause_android.far_1741045114249)
+10-15 09:29:33.332  1414  4095 I PeopleGalProvider: Gal directories started.
+10-15 09:29:33.332  1414  4095 I PeopleGalProvider: Method 1 completed.
+10-15 09:29:33.332  1414  4095 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:29:33.335  1414  4095 I GalProviderController: setting component enabled=1 for com.google.android.gms.people.service.galprovider.PeopleGalProvider
+10-15 09:29:33.341  3331  3418 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562255
+10-15 09:29:33.342  3331  3432 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Surprise_android.far_1741045114249
+10-15 09:29:33.342  3331  3432 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Surprise_android.far_1741045114249)
+10-15 09:29:33.343  1414  4095 I GalProviderController: Setting component enabled succeeds.
+10-15 09:29:33.343  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562256
+10-15 09:29:33.346  3331  3418 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Poop_android.far_1741045114249
+10-15 09:29:33.346  3331  3418 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Poop_android.far_1741045114249)
+10-15 09:29:33.369  1414  4095 I PeopleGalProvider: Gal directories started.
+10-15 09:29:33.370  3331  3432 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562257
+10-15 09:29:33.370  1414  4095 I PeopleGalProvider: Method 1 completed.
+10-15 09:29:33.370  1414  4095 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:29:33.372  3331  3420 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Celebrate_android.far_1741045114249
+10-15 09:29:33.372  3331  3420 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Celebrate_android.far_1741045114249)
+10-15 09:29:33.385  1414  4095 I CpgSchemaBuilder: Creating session
+10-15 09:29:33.401  3331  3418 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562258
+10-15 09:29:33.405  3331  3432 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Fall_android.far_1741045114249
+10-15 09:29:33.405  3331  3432 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Fall_android.far_1741045114249)
+10-15 09:29:33.406  1414  4095 I CpgSchemaBuilder: GroupContactOrder schema exists already.
+10-15 09:29:33.406  1414  4095 I CpgSchemaBuilder: GroupContactOrder schema exists and visible to Contacts app.
+10-15 09:29:33.421  3331  3420 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562259
+10-15 09:29:33.422  3331  3418 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 09:29:33.425  3331  3404 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=45 ]
+10-15 09:29:33.427  3331  3421 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Love_android.far_1741045114249
+10-15 09:29:33.427  3331  3421 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Love_android.far_1741045114249)
+10-15 09:29:33.429  3331  3422 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=58 ]
+10-15 09:29:33.432  3331  3411 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=49 ]
+10-15 09:29:33.433  3331  3420 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 09:29:33.442  1226  2602 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator started execution. cause:5 exec_start_elapsed_seconds: 82 [CONTEXT service_id=218 ]
+10-15 09:29:33.448  3331  3432 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562260
+10-15 09:29:33.461  3331  3418 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 09:29:33.467  3337  3478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.470   365   418 I netd    : tetherGetStats() -> {[]} <0.31ms>
+10-15 09:29:33.471  3331  3404 I BuglePhenotype: Notify about updates in current package [CONTEXT current_package_name="com.google.android.ims.library" ]
+10-15 09:29:33.474  3331  3421 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562261
+10-15 09:29:33.476  3331  3422 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Laugh_android.far_1741045114249
+10-15 09:29:33.476  3331  3422 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Laugh_android.far_1741045114249)
+10-15 09:29:33.480  3861  4055 I Tesseract(native): Initialized Tesseract API with language=ara+eng+fra
+10-15 09:29:33.482  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.policy#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:33.485  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Thumbsup_android.far_1741045114249
+10-15 09:29:33.485  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Thumbsup_android.far_1741045114249)
+10-15 09:29:33.494  3337  3478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.495  1365  1685 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdatesInternal():538 Latency of updating configurations from phenotype (experiment v4): 0
+10-15 09:29:33.495  1365  1685 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():478 Latency of updating configurations from phenotype (ExperimentV4): 0
+10-15 09:29:33.499  1365  1685 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=true, fetchStatus=2026-10-15 09:29:33{reason=BROADCAST, isFullFetch=false, isEmpty=false, registeredFormFactor=phone, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=true, fetchedFlagsCount=1, deletedFlagsCount=0, totalTime=329}
+10-15 09:29:33.502  3331  3409 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=47 ]
+10-15 09:29:33.502  3331  3409 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=47 ]
+10-15 09:29:33.514  1365  1706 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.inputmethod.latin
+10-15 09:29:33.520  3331  3432 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 09:29:33.529  1365  1365 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:29:33.530  1365  1365 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 09:29:33.531  1365  1365 I PhenotypeBackgroundRecv: Skipping com.google.android.inputmethod.latin#com.google.android.inputmethod.latin which doesn't use ProcessStable flags.
+10-15 09:29:33.532  3331  3429 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=1ce6caa5-abc0-4e6d-904a-09bb945314c3, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 09:29:33.555  3611  3639 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.568  1226  2601 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService started execution. cause:9 exec_start_elapsed_seconds: 82 [CONTEXT service_id=218 ]
+10-15 09:29:33.572  3331  3428 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:29:33.573  3331  3428 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:33.573  3331  3428 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:33.585  3331  3404 I BugleRcsProvisioning: RcsProvisioningTrigger: onCsLibPhenotypeUpdated, enableProvisioningTaskInBugle = true
+10-15 09:29:33.586  3331  3404 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = CSLIB_PHENOTYPE_UPDATE logTriggerEvent = true
+10-15 09:29:33.590  3331  3404 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 09:29:33.591  3331  3421 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=57 ]
+10-15 09:29:33.591  3331  3404 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: CSLIB_PHENOTYPE_UPDATE, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+10-15 09:29:33.594  3331  3404 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: onCsLibPhenotypeUpdated
+10-15 09:29:33.596  3331  3409 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=47 ]
+10-15 09:29:33.596  3331  3409 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=47 ]
+10-15 09:29:33.598  3331  3421 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=57 ]
+10-15 09:29:33.599  3331  3412 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=50 ]
+10-15 09:29:33.599  3331  3437 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:29:33.599  3331  3417 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:29:33.599  3331  3429 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForDefaultCallSim: hint: CSLIB_PHENOTYPE_UPDATE, canReshowWelcomeMessage: false
+10-15 09:29:33.600  1226  2688 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.icing.proxy.IcingInternalCorporaUpdateService finished executing. cause:9 result: 1 elapsed_millis: 99 uptime_millis: 99 exec_start_elapsed_seconds: 82 [CONTEXT service_id=218 ]
+10-15 09:29:33.602  3331  3428 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:33.613  3331  3428 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:29:33.614  3331  3428 W BugleAction: No default number, returning empty msisdn
+10-15 09:29:33.614  3331  3428 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=61 ]
+10-15 09:29:33.622  3331  3429 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=62 ]
+10-15 09:29:33.622  3331  3418 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 09:29:33.622  3331  3418 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 09:29:33.623  3331  3417 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 09:29:33.624  3331  3417 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 09:29:33.625  3331  3417 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 09:29:33.630  3331  3429 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=62 ]
+10-15 09:29:33.630  3331  3429 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+10-15 09:29:33.631  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:33.633  3331  3429 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=62 ]
+10-15 09:29:33.639  3331  3428 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 09:29:33.640  3331  3429 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+10-15 09:29:33.641  3331  3429 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 2, newAvailability: 10, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 09:29:33.646  3331  3418 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+10-15 09:29:33.646  3331  3429 I afym    : scheduleProvisioningForEligibleSims: operationTrigger: 2 bugle trigger event: 9
+10-15 09:29:33.647  3331  3428 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is RCS is disabled for this carrier by Google, simId hash = 6492400215596401038, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+10-15 09:29:33.647  3331  3429 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_CALL_SIM operationTrigger: 2 bugle trigger event: 9
+10-15 09:29:33.647  3331  3429 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=62 ]
+10-15 09:29:33.647  3331  3429 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 09:29:33.649  3611  4000 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=78 ]
+10-15 09:29:33.651  3611  3840 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:33.651  3611  3840 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:33.651  3331  3418 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+10-15 09:29:33.659  3331  3428 I BugleRcsEngine: getRcsProvisioningGoogleTosConfiguration # bnuv@5d5fcd, consentState = 0, ServerUpdateTime = 0 [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 09:29:33.660  3331  3418 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=54 ]
+10-15 09:29:33.661  3331  3428 I BugleRcsProvisioning: RcsProvisioningTrigger: Should not schedule Revoke Google Consent Task because both the consent types are empty in the Storage
+10-15 09:29:33.663  3611  3840 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:33.663  3611  3840 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:33.664  3611  3840 I BugleRcsEngine: resetting RcsEngine internal state [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:33.665  3331  3429 I BugleRcsProvisioning: RcsProvisioningTrigger: Did not schedule RevokeGoogleConsentTask
+10-15 09:29:33.665  3331  3416 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:29:33.669  3331  3418 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is fcbd5951-74ac-4fbd-9b36-c58059db0e84 [CONTEXT thread_id=54 ]
+10-15 09:29:33.671  3331  3428 I BugleRcsEngine: Receive onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = RcsAvailability{mAvailability=CARRIER_SETUP_PENDING (Carrier RCS is not set up)} [CONTEXT log_prefix="RcsProvisioningManager" thread_id=61 ]
+10-15 09:29:33.671  3611  3840 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:33.676  3331  3428 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 09:29:33.678  3331  3432 I BugleTransport: onRcsAvailabilityUpdate: kicking off updateActiveTransport for simId:redacted-pii:sim_id[chars:20,last3:897]
+10-15 09:29:33.682  3331  3428 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : isPreviousDisabled = true, isCurrentDisabled = false, config[simId:redacted-pii:sim_id[chars:20,last3:897]] = [Type: 0, Version: 0, Validity: 0, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false], hasToken: false, isValidAndUpdated: false
+10-15 09:29:33.686  3331  3432 I BugleRcsEngine: AvailabilityObserver.onUpdate : Notify RcsAvailabilityListener brtj@f34b99f onRcsAvailabilityUpdate, SIM = redacted-pii:sim_id[chars:20,last3:897], availability = 10 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=63 ]
+10-15 09:29:33.687  3331  3437 I BugleTransport: isChatAvailable: RcsAvailability is CARRIER_SETUP_PENDING (Carrier RCS is not set up)
+10-15 09:29:33.687  3331  3418 W BugleRcs: getAvailableProvisioningIds: accessing uninitialized provisioning identities.
+10-15 09:29:33.687  3331  3418 W BugleRcs: dncp: FULL
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at cjmd.i(PG:53)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at cjuu.a(PG:3)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at cjux.a(PG:17)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at cknu.run(PG:9)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at dkqk.run(PG:21)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at crzm.run(PG:3)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at cryq.run(PG:6)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:29:33.687  3331  3418 W BugleRcs: 	at csaw.run(PG:64)
+10-15 09:29:33.687  3331  3418 I BugleRcsEngine: CommonRcsProvisioningChangeListenerHandler.notifyListener : Notify RcsProvisioningChangeListener bjbz@9fbaaec onRcsProvisioningChange, SIM = redacted-pii:sim_id[chars:35,last3:97)], available rcs provisioning ids  =  [CONTEXT log_prefix="RcsProvisioningManager" thread_id=54 ]
+10-15 09:29:33.690  3331  3428 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule KEEP provision when trigger configuration not valid
+10-15 09:29:33.690  3331  3428 I BugleRcsProvisioning: scheduleProvisioningForRcsProvisioningId rcsProvisioningId: redacted-pii:sim_id[chars:35,last3:97)], provisioningTriggerEvent: 9
+10-15 09:29:33.692  3611  3840 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=75 ]
+10-15 09:29:33.692  3331  3429 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:29:33.693  3331  3429 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:33.693  3331  3418 I afym    : scheduleProvisioningForRcsProvisioningId: rcsProvisioningId: SimId(idValue=89860318640220133897) operationTrigger: 6 bugle trigger event: 9
+10-15 09:29:33.694  3331  3418 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+10-15 09:29:33.694  3331  3418 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 09:29:33.694  3331  3429 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:33.698  3331  3429 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:33.698  3331  3428 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=61 ]
+10-15 09:29:33.700  3331  3428 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 09:29:33.700  3331  3428 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is e7bf514b-08c1-4384-9f87-833e6a15c926 [CONTEXT thread_id=61 ]
+10-15 09:29:33.702  3331  3429 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:29:33.703  3331  3429 W BugleAction: No default number, returning empty msisdn
+10-15 09:29:33.703  3331  3429 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=62 ]
+10-15 09:29:33.703  3331  3428 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 09:29:33.704  3331  3428 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 09:29:33.706  3331  3429 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 09:29:33.708  3331  3429 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 09:29:33.722  3331  3429 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 09:29:33.724  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562262
+10-15 09:29:33.736  3861  4110 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:29:33.736  3861  4110 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:29:33.751  3331  3429 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 09:29:33.752  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562263
+10-15 09:29:33.753  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Drumroll_android.far_1741045114249
+10-15 09:29:33.753  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Drumroll_android.far_1741045114249)
+10-15 09:29:33.756  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Summer_android.far_1741045114249
+10-15 09:29:33.756  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Summer_android.far_1741045114249)
+10-15 09:29:33.757  3331  3422 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningListenableWorker
+10-15 09:29:33.762  3331  3331 I BugleRcsWorker: [seqId=0][workId=fcbd5951-74ac-4fbd-9b36-c58059db0e84] RCS provisioning task has started
+10-15 09:29:33.763  1365  1691 I DataFileManager: DataFileManager.addDataWithoutNotify():185 adding data en-840 mdd
+10-15 09:29:33.763  1365  1691 I DelightKLPDownloader: DelightKLPDownloader$2.onSuccess():207 klp en_840 downloaded with version 2024070900
+10-15 09:29:33.764  1365  1669 I ForegroundDownloadTaskWorker: ForegroundDownloadTaskWorker$1.onSuccess():68 onSuccess
+10-15 09:29:33.767  1365  1665 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=c48821ab-478b-4890-92ab-e92c823d6f98, tags={ com.google.android.libraries.inputmethod.mdd.ForegroundDownloadTaskWorker } ]
+10-15 09:29:33.772  1226  3187 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.onetimeinitializer
+10-15 09:29:33.779  3611  4000 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=78 ]
+10-15 09:29:33.780  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.781  3861  4110 D nativeloader: Load /data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!/lib/x86_64/libbarhopper_v3.so using ns clns-7 from class loader (caller=/data/app/~~hmzrruBxj5mZ8W5ntNLoKg==/com.abfilepro.app.p21mainttrial-LI6Lf1qkqd6utTLtu57y8Q==/base.apk!classes10.dex): ok
+10-15 09:29:33.784  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562265
+10-15 09:29:33.792  3611  3840 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:33.794  3611  3840 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:33.794  3611  3840 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:33.796  3611  3840 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:33.798  3611  3840 I BugleRcsEngine: resetting RcsEngine internal state [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:33.798  3611  3840 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:33.800  3611  3840 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=75 ]
+10-15 09:29:33.804  3331  3444 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:29:33.805  3331  3422 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Winter_android.far_1741221527170
+10-15 09:29:33.805  3331  3422 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Winter_android.far_1741221527170)
+10-15 09:29:33.811  3331  3419 I BugleRcsWorker: [seqId=0][workId=fcbd5951-74ac-4fbd-9b36-c58059db0e84] Starting StateMachine, trigger is CSLIB_PHENOTYPE_UPDATE
+10-15 09:29:33.812  3331  3419 I BugleRcsEngine: start PEv2, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is fcbd5951-74ac-4fbd-9b36-c58059db0e84 [null] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=55 ]
+10-15 09:29:33.813  3331  3419 I BugleRcsEngine: Created new RcsProvisioningProtoDataStorage for sim redacted-pii:sim_id[chars:20,last3:897] [CONTEXT thread_id=55 ]
+10-15 09:29:33.814  3331  3419 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=55 ]
+10-15 09:29:33.814  3331  3419 I BugleRcsEngine: start [null] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=55 ]
+10-15 09:29:33.814  3331  4111 I BugleRcsEngine: Enter EnabledState [null] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.815  1365  1685 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():469 Get empty configurations.
+10-15 09:29:33.816  1365  1685 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=false, fetchStatus=2026-10-15 09:29:33{reason=BROADCAST, isFullFetch=false, isEmpty=true, registeredFormFactor=phone, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=0, deletedFlagsCount=0, totalTime=285}
+10-15 09:29:33.817  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:33.819  3331  4111 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Send Provisioning Session ID (18)], redacted-pii:[chars:97] [CONTEXT thread_id=117 ]
+10-15 09:29:33.819  3331  4111 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:255] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=117 ]
+10-15 09:29:33.823  3331  4111 I BugleRcsEngine: Start a new provisioning session [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.824  3331  4111 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:33.825  3331  4111 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:33.825  3331  4111 I BugleRcsEngine: transitionViaMessage, srcState=EnabledState, destState = CheckPreconditionsState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.825  3331  4111 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Update provisioning status (11)], redacted-pii:[chars:85] [CONTEXT thread_id=117 ]
+10-15 09:29:33.825  3331  4111 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:243] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=117 ]
+10-15 09:29:33.827  3331  4111 I BugleRcsEngine: EnabledState: Transition to check preconditions [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.827  3331  4111 I BugleRcsEngine: transitionTo: destState=CheckPreconditionsState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.827  3331  4111 I BugleRcsEngine: onTransitionRequested EnabledState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.828  3331  4111 I BugleRcsEngine: Enter CheckPreconditionsState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.829  3861  4110 I tflite  : Initialized TensorFlow Lite runtime.
+10-15 09:29:33.829  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:33.830  3331  4111 I BugleRcsEngine: Battery optimization is not required. [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.830  3331  4111 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:33.831  3331  4111 I BugleRcsEngine: transitionViaMessage, srcState=CheckPreconditionsState, destState = ReadyState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.831  3331  4111 I BugleRcsEngine: CheckPreconditionsState: Transition to ready [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.831  3331  4111 I BugleRcsEngine: transitionTo: destState=ReadyState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.831  3331  4111 I BugleRcsEngine: onTransitionRequested CheckPreconditionsState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.831  3331  4111 I BugleRcsEngine: Exit CheckPreconditionsState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.831  3331  4111 I BugleRcsEngine: Exit EnabledState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.831  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:33.831  3331  4111 I BugleRcsEngine: Enter InProgressState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.833  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:33.833  3331  4111 I BugleRcsEngine: Enter ReadyState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.834  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:33.835  3331  4111 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:33.837  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562264
+10-15 09:29:33.838  3331  4111 I BugleRcsEngine: transitionViaMessage, srcState=ReadyState, destState = RequestWithImsiState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.838  3331  4111 I BugleRcsEngine: ReadyState: Transition to request with imsi [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.838  3331  4111 I BugleRcsEngine: transitionTo: destState=RequestWithImsiState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.838  3331  4111 I BugleRcsEngine: onTransitionRequested ReadyState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.838  3331  4111 I BugleRcsEngine: Exit ReadyState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.839  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:33.839  3331  4111 I BugleRcsEngine: Enter RequestWithImsiState [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.840  3331  4111 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=117 ]
+10-15 09:29:33.843  3861  4110 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-15 09:29:33.844  3861  4110 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:29:33.846  3861  4110 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:29:33.846  3861  4110 I native  : I0000 00:00:1792056573.846913    4110 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:29:33.851  3331  3422 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562266
+10-15 09:29:33.853  3331  3418 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Send Provisioning Session ID
+10-15 09:29:33.853  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@861f5d2
+10-15 09:29:33.856  3331  3428 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Update provisioning status
+10-15 09:29:33.856  3331  3444 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@93739ff
+10-15 09:29:33.862  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Fireworks_android.far_1741045114249
+10-15 09:29:33.862  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Fireworks_android.far_1741045114249)
+10-15 09:29:33.866  3331  4111 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=117 ]
+10-15 09:29:33.867  3331  4111 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:33.869  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Spring_android.far_1741045114249
+10-15 09:29:33.869  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Spring_android.far_1741045114249)
+10-15 09:29:33.878  1528  2465 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.social.connections#com.google.android.googlequicksearchbox
+10-15 09:29:33.882  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.gsa.pcp.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:33.887  3331  4111 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=117 ]
+10-15 09:29:33.888  3331  4111 W BugleRcsEngine: Could not retrieve MSISDN from configuration. Configuration is empty. [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.889  3331  4111 W BugleRcsEngine: Skipping adding Tachyon identity key to request. Null/empty RCS msisdn from configuration for sim ID: redacted-pii:sim_id[chars:20,last3:897]. [af0c5c77-5c8b-469a-b5fc-ff25fc4b94c8] [CONTEXT log_prefix="(PEv2-SM202410049-DefaultCallSmsData-1-75b)" thread_id=117 ]
+10-15 09:29:33.910  3331  3428 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=61 ]
+10-15 09:29:33.911  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562268
+10-15 09:29:33.914  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562267
+10-15 09:29:33.914  2372  2738 W DG      : [flow rcs_provisioning] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+10-15 09:29:33.919  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Pride_android.far_1730233018137
+10-15 09:29:33.920  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Pride_android.far_1730233018137)
+10-15 09:29:33.923  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:33.929  1528  1528 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.soda_hotword.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:33.950  3331  3428 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Goodmorning_android.far_1741045114249
+10-15 09:29:33.950  3331  3428 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Goodmorning_android.far_1741045114249)
+10-15 09:29:33.953  3861  4108 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:29:33.961  3861  4108 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-7984852 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:29:33.963   563  1518 D ConnectivityService: requestNetwork for uid/pid:1000/563 asUid: 10209 activeRequest: null callbackRequest: 139 [NetworkRequest [ REQUEST id=140, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:29:33.966   563   835 D ConnectivityService: NetReassign [140 : null → 100] [c 0] [a 1] [i 1]
+10-15 09:29:33.966   563   828 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=140, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:33.966   563   828 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=140, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:33.966   563   828 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=140, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:33.967   563   828 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=140, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:29:34.008  3861  4108 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:29:34.012  3861  4108 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-3004115 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:29:34.013  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562270
+10-15 09:29:34.018  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Goodnight_android.far_1741045114249
+10-15 09:29:34.018  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Goodnight_android.far_1741045114249)
+10-15 09:29:34.019  3331  3428 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562269
+10-15 09:29:34.035  3331  3417 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:29:34.036  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Thanksgiving_android.far_1730233018137
+10-15 09:29:34.036  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Thanksgiving_android.far_1730233018137)
+10-15 09:29:34.039  3861  4108 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:29:34.042  3861  4108 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:29:34.042   563   563 D SdkSandboxManager: Property sdksandbox_next_activity_allowlist is empty.
+10-15 09:29:34.042   563   563 D SdkSandboxManager: Property sdksandbox_next_contentprovider_allowlist is empty.
+10-15 09:29:34.042   563   563 D SdkSandboxManager: Property sdksandbox_activity_allowlist_per_targetSdkVersion is empty.
+10-15 09:29:34.042   563   563 D SdkSandboxManager: Property contentprovider_allowlist_per_targetSdkVersion is empty.
+10-15 09:29:34.042   563   563 D SdkSandboxManager: Property services_allowlist_per_targetSdkVersion is empty.
+10-15 09:29:34.051  3331  3342 W .apps.messaging: Suspending all threads took: 13.772ms
+10-15 09:29:34.067  1528  2079 I PhenotypeBackgroundRecv: Successfully updated snapshot for clienttracing.android#com.google.android.googlequicksearchbox
+10-15 09:29:34.071  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.lens.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.081  3861  4108 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:29:34.086  3861  4108 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:29:34.093  3861  4115 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:29:34.095  3861  4115 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:29:34.104   563  1518 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+10-15 09:29:34.109  3861  4108 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:29:34.110  3861  4115 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:29:34.111  3861  4115 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:29:34.112  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562271
+10-15 09:29:34.112  3861  4108 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:29:34.113  3861  4115 I native  : I0000 00:00:1792056574.113584    4115 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:29:34.116  3331  3428 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Christmas_android.far_1730233018137
+10-15 09:29:34.116  3331  3428 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Christmas_android.far_1730233018137)
+10-15 09:29:34.118  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562272
+10-15 09:29:34.133   563   563 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+10-15 09:29:34.141  3861  4108 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:29:34.142   563  1766 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+10-15 09:29:34.145  3861  4108 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:29:34.148   563  1518 I RemoteProvisionSysSvc: Fetching key 10143 for client 86869764
+10-15 09:29:34.148   563  1518 I RegistrationProxy: getKeyAsync operation started with callback 77456621
+10-15 09:29:34.149  2885  2933 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10143, callback: 264856598
+10-15 09:29:34.153  2885  2933 I RkpdRegistrationBinder: Key successfully assigned to client
+10-15 09:29:34.153   563   563 I RemoteProvisionSysSvc: Successfully fetched key for client 86869764
+10-15 09:29:34.156   182   182 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 148: Using TAG_CERTIFICATE_NOT_BEFORE: 0
+10-15 09:29:34.156   182   182 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 154: Using TAG_CERTIFICATE_NOT_AFTER: 2461449600000
+10-15 09:29:34.156   182   182 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 159: Got certificate date params:  NotBefore = 0, NotAfter = 2461449600000
+10-15 09:29:34.157   182   182 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 273: Setting notBefore to 0
+10-15 09:29:34.157   182   182 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 282: Setting notAfter to 2461449600
+10-15 09:29:34.159  1226  1231 I .gms.persistent: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 25(988KB) LOS objects, 49% free, 21MB/42MB, paused 1.038ms,1.286ms total 348.829ms
+10-15 09:29:34.166  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 09:29:34.166  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:29:34.167  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 09:29:34.169  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Diwali_android.far_1730233018137
+10-15 09:29:34.170  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Diwali_android.far_1730233018137)
+10-15 09:29:34.177  3331  3342 I .apps.messaging: Background concurrent mark compact GC freed 82MB AllocSpace bytes, 347(17MB) LOS objects, 49% free, 16MB/33MB, paused 14.337ms,10.872ms total 335.443ms
+10-15 09:29:34.182  3861  4108 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:29:34.184  3861  4108 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:29:34.197  1528  2412 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.googlequicksearchbox
+10-15 09:29:34.199  3331  3417 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:29:34.206  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562274
+10-15 09:29:34.215  1528  2079 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:34.220  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Halloween_android.far_1730233018137
+10-15 09:29:34.222  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Halloween_android.far_1730233018137)
+10-15 09:29:34.222  3331  3428 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562273
+10-15 09:29:34.226  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Hannukah_android.far_1735839955543
+10-15 09:29:34.226  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Hannukah_android.far_1735839955543)
+10-15 09:29:34.252  1528  2412 I PhenotypeBackgroundRecv: Successfully updated snapshot for profile_primitives_android#com.google.android.googlequicksearchbox
+10-15 09:29:34.260  3331  3429 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562276
+10-15 09:29:34.261  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562275
+10-15 09:29:34.275  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Lunarnewyear_android.far_1734389311285
+10-15 09:29:34.275  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Lunarnewyear_android.far_1734389311285)
+10-15 09:29:34.285  3331  3429 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Easter_android.far_1734389311285
+10-15 09:29:34.285  3331  3429 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/Screen_Effects_Easter_android.far_1734389311285)
+10-15 09:29:34.299  1528  2079 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.android.billingclient#com.google.android.googlequicksearchbox
+10-15 09:29:34.301  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.soundsearch.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:34.302  3861  3976 I TestRunner: finished: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

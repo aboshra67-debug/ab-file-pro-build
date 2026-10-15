@@ -1,0 +1,2 @@
+10-15 09:32:19.024  4865  4884 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:32:19.200  4865  4884 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

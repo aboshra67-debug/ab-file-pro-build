@@ -1,0 +1,63 @@
+10-15 09:29:35.347  3861  3976 I TestRunner: started: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:35.349  3331  3419 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=55 ]
+10-15 09:29:35.349  3331  3419 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=55 ]
+10-15 09:29:35.361  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562285
+10-15 09:29:35.380  3331  3419 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/lunar_new_year_effect.binarypb_1734386340431
+10-15 09:29:35.380  3331  3419 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/lunar_new_year_effect.binarypb_1734386340431)
+10-15 09:29:35.383  1414  3040 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:29:35.387  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.393  3331  3417 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/easter_effect.binarypb_1734386235955
+10-15 09:29:35.393  3331  3417 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/easter_effect.binarypb_1734386235955)
+10-15 09:29:35.395  1414  3040 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:29:35.402   563   581 I system_server: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 29(688KB) LOS objects, 47% free, 26MB/50MB, paused 4.036ms,1.129ms total 403.196ms
+10-15 09:29:35.403   563   582 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+10-15 09:29:35.410  3331  3419 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562286
+10-15 09:29:35.414   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:35.414   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:29:35.414   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 09:29:35.416  1226  1231 I .gms.persistent: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 6(300KB) LOS objects, 49% free, 18MB/37MB, paused 13.387ms,3.340ms total 315.600ms
+10-15 09:29:35.416   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 09:29:35.416   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 09:29:35.418   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 09:29:35.418   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:29:35.422   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:29:35.422   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:29:35.422   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:29:35.422   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:29:35.422   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:29:35.423   563   583 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:35.423  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 09:29:35.423  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 09:29:35.424  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 09:29:35.424  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:29:35.424  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:29:35.424  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:29:35.424  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 09:29:35.424  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:29:35.425  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:29:35.425  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 09:29:35.425  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:29:35.425  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:29:35.425  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:29:35.429  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~0dLqWhw2JUI0zO-QNtzRtA==/com.android.chrome-XTtXcsN8UTixXZ2P4XJAHw==/Chrome.apk' with 1 weak references
+10-15 09:29:35.429  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~04RATQiLhVw-bFs1OGaNpw==/com.google.android.trichromelibrary_636771938-3Zzb-xBlAMsqHnocDGktlg==/TrichromeLibrary.apk' with 1 weak references
+10-15 09:29:35.430  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:29:35.430  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 09:29:35.431  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:29:35.433  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:35.433  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:35.433  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+10-15 09:29:35.436  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 09:29:35.437  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 09:29:35.437  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 09:29:35.437  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 09:29:35.438  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a14da90
+10-15 09:29:35.438  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a14da90
+10-15 09:29:35.439  3861  4055 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 106
+10-15 09:29:35.439  3331  3417 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792056562287
+10-15 09:29:35.439  3861  4055 D pdf_document_jni: Deleting Document: 0x797c5a14f4d0
+10-15 09:29:35.439  3861  4055 D pdf_document_jni: Destroyed Document: 0x797c5a14f4d0
+10-15 09:29:35.440  1226  1233 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:29:35.446  3331  3418 D dasx    : Starting download: https://www.gstatic.com/messages/effects/screen_effect_suggestions/drumroll_effect.binarypb_1741114278771
+10-15 09:29:35.447  3331  3418 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/effects/screen_effect_suggestions/drumroll_effect.binarypb_1741114278771)
+10-15 09:29:35.448  3861  3976 I TestRunner: finished: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,2 @@
+10-15 09:33:12.271  4239  4258 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:33:12.308  4239  4258 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

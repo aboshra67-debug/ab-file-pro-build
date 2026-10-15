@@ -1,0 +1,2 @@
+10-15 09:32:21.487  4865  4884 I TestRunner: started: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:32:21.494  4865  4884 I TestRunner: finished: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

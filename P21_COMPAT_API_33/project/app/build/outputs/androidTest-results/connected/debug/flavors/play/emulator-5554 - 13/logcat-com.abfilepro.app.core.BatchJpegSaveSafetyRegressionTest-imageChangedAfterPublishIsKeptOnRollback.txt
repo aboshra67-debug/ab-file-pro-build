@@ -1,0 +1,2 @@
+10-15 09:33:13.000  4239  4258 I TestRunner: started: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:33:13.045  4239  4258 I TestRunner: finished: imageChangedAfterPublishIsKeptOnRollback(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

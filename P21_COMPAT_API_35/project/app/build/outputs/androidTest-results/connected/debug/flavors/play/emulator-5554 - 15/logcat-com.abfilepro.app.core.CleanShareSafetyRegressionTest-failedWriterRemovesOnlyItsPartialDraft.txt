@@ -1,0 +1,7 @@
+10-15 09:29:31.712  3861  3976 I TestRunner: started: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:31.719   563  1971 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=81197 mSleepTimeMs=0 mIdleTimeMs=81186 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[0, 0, 0, 0, 0],mRxTimeMs=0}]}
+10-15 09:29:31.721  3331  3422 D dasx    : Starting download: https://www.gstatic.com/android/keyboard/emoji/20230214122232/en_us.zip
+10-15 09:29:31.721  3331  3422 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/android/keyboard/emoji/20230214122232/en_us.zip)
+10-15 09:29:31.722  3331  3421 D dasx    : Starting download: https://www.gstatic.com/icing/idd/rewriter_rules/rewrite_config_0_percent_1554768285.pb
+10-15 09:29:31.722  3331  3421 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/icing/idd/rewriter_rules/rewrite_config_0_percent_1554768285.pb)
+10-15 09:29:31.738  3861  3976 I TestRunner: finished: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

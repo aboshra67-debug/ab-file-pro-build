@@ -1,0 +1,11 @@
+10-15 09:33:12.165  4239  4258 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:33:12.185  1282  1282 I NearbySharing: SharingTileService destroyed [CONTEXT service_id=194 ]
+10-15 09:33:12.204  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:12.204  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
+10-15 09:33:12.232  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/superpacks_manifest.zip'
+10-15 09:33:12.241  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 396 bytes from https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/superpacks_manifest.zip.
+10-15 09:33:12.251  1050  3599 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 09:33:12.252  1050  3599 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:12.252  1050  3599 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:12.257  1607  2271 I SP.AiAi : Download stopped: manifests:actions-ranking-table-211005, succeeded, size: 396
+10-15 09:33:12.259  4239  4258 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

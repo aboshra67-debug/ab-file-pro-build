@@ -1,0 +1,5 @@
+10-15 09:33:33.176  4239  4258 I TestRunner: started: normalCopyPreservesBytesAndSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.195  2852  3285 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.clearcut_client#com.google.android.ims
+10-15 09:33:33.199  1743  1743 I BgTaskExecutorImpl: Starting NONEXCLUSIVE background task UPDATE_GSERVICES_CONFIG.
+10-15 09:33:33.201  1743  2329 I A       : Updating Gservices keys
+10-15 09:33:33.219  4239  4258 I TestRunner: finished: normalCopyPreservesBytesAndSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

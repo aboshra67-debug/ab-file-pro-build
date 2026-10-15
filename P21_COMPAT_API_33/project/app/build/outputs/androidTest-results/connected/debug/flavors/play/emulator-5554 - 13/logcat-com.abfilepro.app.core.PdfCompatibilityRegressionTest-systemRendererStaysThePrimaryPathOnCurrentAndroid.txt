@@ -1,0 +1,3 @@
+10-15 09:33:33.046  4239  4258 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:33:33.055  1282  4484 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:33:33.069  4239  4258 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

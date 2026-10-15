@@ -1,0 +1,13 @@
+10-15 09:33:12.682  4239  4258 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:33:12.688  3035  3035 I BugleDataModel: RcsMigrationService: Returning RCS state provider.
+10-15 09:33:12.709   479   509 E system_server: No package ID 7f found for ID 0x7f0802b0.
+10-15 09:33:12.709   479   509 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-15 09:33:12.709   479   509 E system_server: No package ID 7f found for ID 0x7f150a40.
+10-15 09:33:12.709   479   509 E system_server: No package ID 7f found for ID 0x7f150a3f.
+10-15 09:33:12.714  3546  3546 D CarrierSvcBindHelper: onPackageModified: com.abfilepro.app.p21mainttrial
+10-15 09:33:12.714  3546  3546 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:33:12.725  3035  3530 I RcsProvisioning: Failed to read config: no config found /data/user/0/com.google.android.apps.messaging/files/rcsconfig: open failed: ENOENT (No such file or directory)
+10-15 09:33:12.742  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:12.743  3546  3546 D ImsResolver: maybeAddedImsService, packageName: com.abfilepro.app.p21mainttrial
+10-15 09:33:12.771  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:12.778  4239  4258 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

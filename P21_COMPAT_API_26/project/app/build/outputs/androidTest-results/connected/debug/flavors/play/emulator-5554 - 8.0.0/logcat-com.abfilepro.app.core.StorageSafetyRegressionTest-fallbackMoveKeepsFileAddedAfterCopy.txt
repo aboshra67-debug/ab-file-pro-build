@@ -1,0 +1,2 @@
+10-15 09:32:23.068  4865  4884 I TestRunner: started: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:32:23.109  4865  4884 I TestRunner: finished: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

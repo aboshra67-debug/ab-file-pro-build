@@ -1,0 +1,2 @@
+10-15 09:32:22.560  4865  4884 I TestRunner: started: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:32:22.584  4865  4884 I TestRunner: finished: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

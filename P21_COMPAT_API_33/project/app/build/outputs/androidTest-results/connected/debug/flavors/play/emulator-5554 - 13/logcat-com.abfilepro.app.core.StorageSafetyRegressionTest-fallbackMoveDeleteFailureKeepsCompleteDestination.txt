@@ -1,0 +1,3 @@
+10-15 09:33:33.760  4239  4258 I TestRunner: started: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.787   980  1538 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.clearcut_client#com.google.android.setupwizard
+10-15 09:33:33.792  4239  4258 I TestRunner: finished: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

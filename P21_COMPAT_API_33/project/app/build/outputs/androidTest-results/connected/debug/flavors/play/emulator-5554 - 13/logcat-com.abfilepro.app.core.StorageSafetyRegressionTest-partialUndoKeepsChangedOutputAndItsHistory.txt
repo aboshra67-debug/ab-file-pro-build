@@ -1,0 +1,2 @@
+10-15 09:33:33.711  4239  4258 I TestRunner: started: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:33:33.754  4239  4258 I TestRunner: finished: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)

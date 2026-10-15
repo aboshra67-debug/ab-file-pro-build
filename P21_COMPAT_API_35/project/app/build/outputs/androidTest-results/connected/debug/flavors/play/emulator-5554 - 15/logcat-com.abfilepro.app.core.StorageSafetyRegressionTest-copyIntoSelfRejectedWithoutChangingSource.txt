@@ -1,0 +1,6 @@
+10-15 09:29:37.207  3861  3976 I TestRunner: started: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.210  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.210  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.212  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.212  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.214  3861  3976 I TestRunner: finished: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

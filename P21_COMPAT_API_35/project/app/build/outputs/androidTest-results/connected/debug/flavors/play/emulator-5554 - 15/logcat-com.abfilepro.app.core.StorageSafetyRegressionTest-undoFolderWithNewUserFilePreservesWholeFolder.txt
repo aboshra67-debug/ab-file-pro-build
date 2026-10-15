@@ -1,0 +1,7 @@
+10-15 09:29:37.302  3861  3976 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.313   563  1034 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 09:29:37.315  1436  1741 I SP.AiAi : Scheduling: job start ({W:b:u:l, bg}), 1 started, 0 paused, 0 scheduled, 6 pending: manifests:kg_collections_table-21051103 {W:C:I:l, bg}, manifests:text-classifier-annotator-272525175 {W:C:I:l, bg}, manifests:text-classifier-actions-1140547708 {W:C:I:l, bg}, manifests:text-classifier-langid-1941001461 {W:C:I:l, bg}, manifests:spelling_correction-22110320 {W:C:I:l, bg}, manifests:captions_i18n_v0_background-20240604 @ * {W:b:u:l, bg}
+10-15 09:29:37.316  1436  1741 I SP.AiAi : Requesting download of URL https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json to captions_i18n_v0_background-20240604.fetched (constraints: W:b:u:l)
+10-15 09:29:37.319  1853  2232 W System.err: Seeding context with ref: 183141936
+10-15 09:29:37.320  1853  2232 I HttpGrpcBindableService: Downloading requested for URL 'https://storage.googleapis.com/captions/captions_i18n_v0_20240604_manifest.json'
+10-15 09:29:37.324  3861  3976 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

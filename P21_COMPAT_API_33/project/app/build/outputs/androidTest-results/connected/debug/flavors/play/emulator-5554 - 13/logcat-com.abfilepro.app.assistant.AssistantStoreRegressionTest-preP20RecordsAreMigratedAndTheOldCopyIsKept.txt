@@ -1,0 +1,16 @@
+10-15 09:33:12.121  4239  4258 I TestRunner: started: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:33:12.124   282  4272 I resolv  : res_nsend: used send_dg 109 terrno: 0
+10-15 09:33:12.124   282  4272 I resolv  : doQuery: rcode=0, ancount=2, return value=109
+10-15 09:33:12.125  1050  3599 D TrafficStats: tagSocket(181) with statsTag=0x30000407, statsUid=-1
+10-15 09:33:12.128  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:12.128  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:12.131  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
+10-15 09:33:12.131  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:12.131  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:12.131  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
+10-15 09:33:12.131  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:12.131  2509  2874 W .android.as.oss: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
+10-15 09:33:12.136  1050  3599 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 09:33:12.136  1050  3599 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:33:12.136  1050  3599 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:33:12.140  4239  4258 I TestRunner: finished: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

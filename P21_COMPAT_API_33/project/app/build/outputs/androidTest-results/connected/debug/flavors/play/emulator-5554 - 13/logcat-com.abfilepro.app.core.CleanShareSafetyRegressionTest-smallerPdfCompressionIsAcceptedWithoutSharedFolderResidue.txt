@@ -1,0 +1,356 @@
+10-15 09:33:20.710  4239  4258 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:20.748  2852  4320 I CarrierServices: [71] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+10-15 09:33:20.749  2852  4320 I CarrierServices: [71] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:33:20.760  1467  1467 I SpeechPackManager: SpeechPackManager.refreshManifest():352 refreshManifest()
+10-15 09:33:20.760  1467  1467 I SpeechPackManager: SpeechPackManager.registerManifest():451 registerManifest() : https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json
+10-15 09:33:20.766  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip'
+10-15 09:33:20.780  1467  1467 I EmojiExtensionHelper: EmojiExtensionHelper.flagsUpdated():144 Received flag change: enable_emoji_tall_view{type=Boolean, finalValue=true, DEFAULT=false, PHENOTYPE=true}.
+10-15 09:33:20.781  1467  1467 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in eco
+10-15 09:33:20.781  1467  1467 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in eco
+10-15 09:33:20.783  1467  1713 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214027 -> 0_resource_name_obfuscated : WaitTime = 1 ms : RunTime = 1 ms
+10-15 09:33:20.783  1467  1713 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214028 -> 0_resource_name_obfuscated : WaitTime = 1 ms : RunTime = 0 ms
+10-15 09:33:20.793  3546  3546 I VvmSimStateTracker: android.intent.action.SIM_STATE_CHANGED
+10-15 09:33:20.798  1467  1713 I SuperDelight: SuperDelightManager.initializeDelightSuperpacks():340 initializeDelightSuperpacks()
+10-15 09:33:20.798  1467  1713 I SuperDelight: SuperDelightManager.getDelightMetadataUriAndVersion():1011 getDelightMetadataUriAndVersion(): Phenotype : 2023020919 : https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json
+10-15 09:33:20.799  1467  1713 I SuperDelight: SuperDelightAppsSuperpacksManager.initializeDelightAppsSuperpacks():92 initializeDelightAppsSuperpacks()
+10-15 09:33:20.819  1467  1712 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in een
+10-15 09:33:20.819  1467  1712 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in een
+10-15 09:33:20.821  1467  1712 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214034 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 2 ms
+10-15 09:33:20.836  1467  1712 I InputContextSharingModule: InputContextSharingModule.onCreate():44 onCreate()
+10-15 09:33:20.843  1467  1712 I AbstractOpenableExtension: AbstractOpenableExtension.maybeDestroyExistingKeyboardGroupManager():512 Destroy existing keyboard group manager in csi
+10-15 09:33:20.843  1467  1712 I AbstractOpenableExtension: AbstractOpenableExtension.createKeyboardGroupManagerListenableFuture():124 Create keyboard group manager listenable future in csi
+10-15 09:33:20.845  1467  1712 I KeyboardGroupDefParser: KeyboardGroupDefParser.parseKeyboardGroupDef():88 parseKeyboardGroupDef() 2132214033 -> 0_resource_name_obfuscated : WaitTime = 0 ms : RunTime = 1 ms
+10-15 09:33:20.850  1467  1467 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():525 KeyboardGroupManager destroyed in eco.
+10-15 09:33:20.853  1467  1883 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdatesInternal():350 Latency of updating configurations from phenotype (experiment v4): 918
+10-15 09:33:20.870  1467  1929 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.CHARGING.PERIODIC.TASK (id=-625184177). Success.
+10-15 09:33:20.874  1282  4304 I constellation: [sim_state_checker] Handling intent Intent { act=android.intent.action.SIM_STATE_CHANGED flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+10-15 09:33:20.877  1467  1883 I PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():277 Latency of updating configurations from phenotype (ExperimentV4): 942
+10-15 09:33:20.883  1467  1929 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.MAINTENANCE.PERIODIC.GCM.TASK (id=-1115903610). Success.
+10-15 09:33:20.886  1467  1883 I PhenotypeModule: PhenotypeModule.lambda$fetchAndUpdate$2():220 fetchAndUpdate() : Success, hasFlags=true, fetchStatus=2026-10-15 09:33:18{reason=2, isFullFetch=true, success=true, isEmpty=false, isDelta=false, fetchedFlagsCount=922, deletedFlagsCount=0, updatedFlagsCount=0, totalTime=2083}
+10-15 09:33:20.893  1467  1929 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.CELLULAR.CHARGING.PERIODIC.TASK (id=671901099). Success.
+10-15 09:33:20.899  1467  1929 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_periodical_task_MDD.WIFI.CHARGING.PERIODIC.TASK (id=1350725024). Success.
+10-15 09:33:20.901  1467  1631 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: ExpressionDataPrunePeriodicTask (id=1111301416). Success.
+10-15 09:33:20.902  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:content_cache-2022112214 * {W:b:u:l, bg}
+10-15 09:33:20.915  1282  1282 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:20.915  1282  1282 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:20.919  1467  1631 I PlayCore: UID: [10137]  PID: [1467] SplitInstallService : deferredInstall([tenoranimation_feature_split])
+10-15 09:33:20.919  1467  4390 I PlayCore: UID: [10137]  PID: [1467] SplitInstallService : Initiate binding to the service.
+10-15 09:33:20.921  1467  1631 W MetricsManager: MetricsManager.addProcessorImpl():614 Processor dzr@12f1683 already exists.
+10-15 09:33:20.935  1467  4390 I PlayCore: UID: [10137]  PID: [1467] SplitInstallService : Failed to bind to the service.
+10-15 09:33:20.936  1467  1467 W hle     : FeatureSplitObservationModule$requestDeferredInstall$2.onFailure():98 Failed in installing tenoranimation_feature_split.
+10-15 09:33:20.936  1467  1467 W hle     : lja: Failed to bind to the service.
+10-15 09:33:20.936  1467  1467 W hle     : 	at lit.b(PG:9)
+10-15 09:33:20.936  1467  1467 W hle     : 	at liq.run(PG:1)
+10-15 09:33:20.936  1467  1467 W hle     : 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 09:33:20.936  1467  1467 W hle     : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 09:33:20.936  1467  1467 W hle     : 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:33:20.936  1467  1467 W hle     : 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:33:20.936  1467  1467 W hle     : 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 09:33:20.967  1467  1896 I SP      : Scheduling: job start ({W:b:u:l, bg}), 1 started, 0 paused, 0 scheduled, 1 pending: manifests:content_cache-2022112214 @ * {W:b:u:l, bg}
+10-15 09:33:20.969  1467  1712 I SuperDelight: SuperDelightManager.lambda$registerAndUpgradeSuperpacks$5():476 SuperDelightManager#registerAndUpgradeSuperpacks(delight): current 2022101700, required 2023020919
+10-15 09:33:20.971  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/superpacks_manifest.json to content_cache-2022112214.fetched (constraints: W:b:u:l)
+10-15 09:33:20.971  1467  1713 I SuperDelight: SuperDelightManager.lambda$registerAndUpgradeSuperpacks$5():476 SuperDelightManager#registerAndUpgradeSuperpacks(delight): current 2022101700, required 2023020919
+10-15 09:33:20.972  1282  1282 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:20.973  1467  1929 W MDD     : MDDManager Clearing MDD since FilesMetadata failed or needs migration.
+10-15 09:33:20.980  1467  1896 W SP      : Manifest for delight is not available, version: 2023020919
+10-15 09:33:20.981  1467  1896 I SP      : Registering dynamic_art.20220108, url: https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json, constraints: *:*:*:*, flags: *, requested: 20220108, current: -1
+10-15 09:33:20.981  1467  1896 I SP      : Registering transformer_concept.2023011913, url: https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json, constraints: *:*:*:*, flags: *, requested: 2023011913, current: -1
+10-15 09:33:20.981  1467  1896 I SP      : Registering content_cache.2022112214, url: https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022112214, current: 2020101916
+10-15 09:33:20.981  1386  1386 D CellBroadcastReceiver: onReceive Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+10-15 09:33:20.983  1467  3386 I SpeechPackManager: SpeechPackManager.lambda$registerManifest$4():461 registerManifest() : Fetching hash 1327534105
+10-15 09:33:20.988  1386  1386 D CellBroadcastReceiver: onServiceStateChanged, ss: 1
+10-15 09:33:21.025   282  4398 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10137 0}
+10-15 09:33:21.030  1434  1434 I DialerDataSubscriptionChangeReceiver: com.android.dialer.voicemail.service.receivers.DataSubscriptionChangeReceiver.onReceive:82 Received ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED
+10-15 09:33:21.031  1467  1896 I SP      : Registering delight.2023020919, url: https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json, constraints: m:*:*:*, flags: *, requested: 2023020919, current: 2022101700
+10-15 09:33:21.032  1467  1896 I SP      : Registering delight.2023020919, url: https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json, constraints: m:*:*:*, flags: *, requested: 2023020919, current: 2022101700
+10-15 09:33:21.037  1434  1434 I DialerBroadcastReceiverStrategyImpl: com.android.dialer.broadcastreceiverstrategy.impl.BroadcastReceiverStrategyImpl.backgroundThenInlineThenForeground:76 try doing work using a background service
+10-15 09:33:21.038   282  4400 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:33:21.038   282  4400 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc5ae074b0
+10-15 09:33:21.038   282  4400 I resolv  : doQuery: rcode=0, ancount=8, return value=161
+10-15 09:33:21.040  1467  1929 I DownloadManager: DownloadManager.downloadInternal():385 Download for nebulae-lc-artifacts scheduled with params DownloadParams{allowMetered=false, requireCharging=false, foreground=false, immediately=false, priority=0}
+10-15 09:33:21.043   282  4399 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:33:21.048  1467  1929 I JobSchedulerImpl: JobSchedulerImpl.schedule():91 Schedule task: mdd_download_task_unmetered_battery (id=-1811300920). Success.
+10-15 09:33:21.049   282  4399 I resolv  : res_nsend: used send_dg 61 terrno: 0
+10-15 09:33:21.049   282  4399 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:33:21.049  1467  4397 D TrafficStats: tagSocket(126) with statsTag=0xffffffff, statsUid=-1
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:21.061  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
+10-15 09:33:21.082  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:21.082  1467  4397 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
+10-15 09:33:21.115  1434  1542 I DialerRestVoicemailEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVoicemailEnabledFn.isEnabled:51 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 308]" ]
+10-15 09:33:21.115  1434  1542 I DialerCvvmEnabledFn: com.android.dialer.voicemail.service.impl.vvmclients.omtp.protocol.cvvm.CvvmEnabledFn.isEnabled:37 disabled by flag [CONTEXT ratelimit_period="1 MINUTES [skipped: 173]" ]
+10-15 09:33:21.164  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 0 scheduled, 1 pending: manifests:content_cache-2022112214 @ {W:b:u:l, bg}
+10-15 09:33:21.168  1434  1434 I DialerRefreshActivationStateJobService: com.android.voicemail.impl.RefreshActivationStateJobService.schedule:43 schedule job
+10-15 09:33:21.173  1467  1896 I SP      : Syncing emoticon_content_description (2022081613) with slices: [7a635888cb828dfa2fc744b7b9b50f04], metadata: false
+10-15 09:33:21.175  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json to dynamic_art-20220108.fetched (constraints: m:b:u:l)
+10-15 09:33:21.177   755   813 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-15 09:33:21.179  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json to transformer_concept-2023011913.fetched (constraints: m:b:u:l)
+10-15 09:33:21.179  1467  1896 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():577 content_cache.registerManifest() cancelled
+10-15 09:33:21.179  1467  1896 I SP      : Registering gboard-small-speech-packs.1327534105, url: https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json, constraints: m:b:*:*, flags: *, requested: 1327534105, current: 758538843
+10-15 09:33:21.179   755   813 D LocalImageResolver: Couldn't use ImageDecoder for drawable, falling back to non-resized load.
+10-15 09:33:21.184  1467  1713 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():36 onFailure(): delight.sync cancelled; expected if new request supersedes pending one.
+10-15 09:33:21.215  1467  1896 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():577 delight.registerManifest() cancelled
+10-15 09:33:21.216  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dictionarypack/Omei-normal/metadata.json to delight-2023020919.fetched (constraints: m:b:u:l)
+10-15 09:33:21.238  1467  1712 I SuperDelight: SuperDelightManager$2.onSuccess():635 delight sync success, adding to data file manager
+10-15 09:33:21.241  1467  1712 I DataFileManager: DataFileManager.addDataWithoutNotify():162 data en-US already exists
+10-15 09:33:21.246  1467  1896 I SP      : <==== Finishing job {W:b:u:l, bg}, 582 ms. elapsed since start
+10-15 09:33:21.250  1467  1896 I SP      : Download stopped: manifests:content_cache-2022112214, succeeded, size: 797
+10-15 09:33:21.287  3035  3109 I BugleDataModel: ParticipantFullRefresh: Start participant refresh. refreshMode: SELF_ONLY
+10-15 09:33:21.364  1386  1386 D CellBroadcastReceiver: onReceive Intent { act=android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED flg=0x21000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+10-15 09:33:21.364  1386  1386 D CellBroadcastReceiver: mockmodem is running? = false
+10-15 09:33:21.364  1386  1386 D CellBroadcastReceiver: Start Cell Broadcast configuration for intent=ACTION_ENABLE_CHANNELS
+10-15 09:33:21.401  1467  1896 I SP      : Requesting download of URL https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json to gboard-small-speech-packs-1327534105.fetched (constraints: m:b:u:l)
+10-15 09:33:21.433  3035  3109 I BugleSearch: Queues icing index update work item. [CONTEXT class_name="IcingIndexUpdateHandlerScheduler" ]
+10-15 09:33:21.438  1607  2113 I SP.AiAi : Sync for text-classifier-actions succeeded in 7286 ms: {added: [tc_model_e202592534082c01f9642f709a627dd9], metadata: false
+10-15 09:33:21.453  1386  4402 D CellBroadcastConfigService: Enable CellBroadcast on sub 1
+10-15 09:33:21.461  1386  4402 D CellBroadcastConfigService: mAlwaysOn is set to true, enable the range: 4370:4370
+10-15 09:33:21.484  3546  3546 I VvmSimStateTracker: android.intent.action.SIM_STATE_CHANGED
+10-15 09:33:21.487  3035  3109 I BugleDataModel: SelfParticipantsData: insertSelfParticipant. participantId: 2, selfParticipantId: 2, subId: 1
+10-15 09:33:21.492  1386  4402 D CellBroadcastConfigService: mAlwaysOn is set to true, enable the range: 4383:4383
+10-15 09:33:21.500  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 335528 bytes from https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip.
+10-15 09:33:21.501  1607  2271 I SP.AiAi : Download stopped: text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea, succeeded, size: 335528
+10-15 09:33:21.526  1050  1050 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:33:21.536  1467  1479 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[4]
+10-15 09:33:21.537  1467  1479 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2022101700_1[4]
+10-15 09:33:21.555  1607  2807 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip'
+10-15 09:33:21.563  1467  1896 I SP      : Successfully got manifest for emoji-manifest: manifests:emoji-2023020111
+10-15 09:33:21.587  1467  1892 I ManagedDeviceCheckModule: ManagedDeviceCheckModule$1.onSuccess():64 notifyUnmanagedDeviceStatusChanged(): unmanagedDevice=false
+10-15 09:33:21.590  1467  1467 I JobSchedulerImpl: JobSchedulerImpl$TaskRunnerJobService.onStartJob():204 onStartJob(): mdd_download_task_unmetered_battery.
+10-15 09:33:21.591  1467  1467 I MDDTaskScheduler: MDDTaskScheduler$Runner.onRunTask():41 task mdd_download_task_unmetered_battery started
+10-15 09:33:21.591  1467  1467 I DownloadManager: DownloadManager.startDownload():471 start download of nebulae-lc-artifacts
+10-15 09:33:21.600  1467  1631 E MDDMetricsProcessor: MDDMetricsProcessor.processDownloadSuccess():87 nebulae-lc-artifacts is not requested
+10-15 09:33:21.600  1467  1467 I JobSchedulerImpl: JobSchedulerImpl$TaskRunnerJobService$Callback.onSuccess():379 Task: mdd_download_task_unmetered_battery successes.
+10-15 09:33:21.604  1467  1896 I SP      : Sync for emoticon_content_description succeeded in 573 ms: no changes
+10-15 09:33:21.626  1467  1896 I SP      : GC for 'emoticon_content_description' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:33:21.635  1467  1896 I SP      : Successfully got manifest for content_cache-manifest: manifests:content_cache-2022112214
+10-15 09:33:21.636  1282  4172 I constellation: [sim_state_checker] Handling intent Intent { act=android.intent.action.SIM_STATE_CHANGED flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+10-15 09:33:21.642  1467  1896 I SP      : Successfully got manifest for dynamic_art-manifest: manifests:dynamic_art-20220108
+10-15 09:33:21.645  1467  1896 I SP      : Successfully got manifest for transformer_concept-manifest: manifests:transformer_concept-2023011913
+10-15 09:33:21.649  1467  1896 I EmojiSlicingStrategy: EmojiSlicingStrategy.matchEnabledLocalesWithPackLocales():127 matchEnabledLocalesWithPackLocales() : User enabled 1 locales; returning 1 slices
+10-15 09:33:21.649  1467  1896 I SP      : Syncing emoji (2023020111) with slices: [{60932fe37d5f6d7a3e60488d8a1755c4, m:*:*:*}], metadata: false
+10-15 09:33:21.654  1467  1896 I SP      : Successfully got manifest for delight-manifest: manifests:delight-2023020919
+10-15 09:33:21.663  3546  3546 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 09:33:21.663  3546  3546 W nsconfig: com.android.phone: New config does not match the previously set config.
+10-15 09:33:21.677  1282  1282 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:21.677  1282  1282 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:21.688  1467  1896 I SuperDelight: SuperDelightDownloadMetadataParser.parse():185 SuperDelightDownloadMetadataParser#parse(delight): Manifest parsed with 885 packs
+10-15 09:33:21.694  1434  1434 I DialerRefreshActivationStateJobService: com.android.voicemail.impl.RefreshActivationStateJobService.onStartJob:56 try refresh activation state
+10-15 09:33:21.704  1282  1282 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:21.711  1467  1896 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:21.717  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 1 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 * {m:b:u:l, bg}
+10-15 09:33:21.718  1467  1896 I SP      : Syncing dynamic_art (20220108) with slices: [b1f6f47a53f7820be91b9fe247728980, 305f81355a729e382ea9f374dd286d9f], metadata: false
+10-15 09:33:21.718  1467  1896 I SP      : Successfully got manifest for gboard-small-speech-packs-manifest: manifests:gboard-small-speech-packs-1327534105
+10-15 09:33:21.727  1386  1386 D CellBroadcastReceiver: onReceive Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+10-15 09:33:21.727  1386  1386 D CellBroadcastReceiver: onServiceStateChanged, ss: 0
+10-15 09:33:21.728  1386  1386 D CellBroadcastReceiver: networkOperator: 310260
+10-15 09:33:21.731  1386  1386 D CellBroadcastReceiver: update supported roaming operator as
+10-15 09:33:21.734  1467  1929 I SpeechPackManager: SpeechPackManager$2.onSuccess():359 refreshManifest() : Refreshed URL = https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json
+10-15 09:33:21.736  1467  1896 I SP      : Syncing content_cache (2022112214) with slices: [e9a5a2de48a4f8b9a658b411bcfb375d, 8722425f4121ffdea802b1066df73991, fa1da98da1212aad6fb9a8efaff48148], metadata: true
+10-15 09:33:21.740  1467  1713 I SuperDelight: SuperDelightManager.lambda$syncDownloadableLanguageModels$8():568 SuperDelightManager#syncDownloadableLanguageModels(delight): [OnDevice] Syncing for version 2023020919
+10-15 09:33:21.799  1434  1619 I DialerOmtpVvmCarrierConfigHelper: com.android.voicemail.impl.OmtpVvmCarrierConfigHelper.startActivation:465 startActivation [CONTEXT enable_persistent_logger=true ]
+10-15 09:33:21.804  1467  1467 I SpBackgroundTask: SuperpacksBackgroundJobService.onStartJob():23 onStartJob: android.app.job.JobParameters@5669a75
+10-15 09:33:21.805  1467  1467 I SP      : ====> Starting job {m:b:u:l, bg}
+10-15 09:33:21.814  1467  1896 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 2 candidates
+10-15 09:33:21.815  1605  1678 I FuseDaemon: Background young concurrent copying GC freed 30543(1465KB) AllocSpace objects, 6(120KB) LOS objects, 42% free, 2738KB/4769KB, paused 29us,9us total 258.634ms
+10-15 09:33:21.821  3035  3109 I Bugle   : CountryCodeDetector: updateMainDeviceCountry from default subscription network country. detected country: us
+10-15 09:33:21.840  3035  3109 I BugleSearch: Queues icing index update work item. [CONTEXT class_name="IcingIndexUpdateHandlerScheduler" ]
+10-15 09:33:21.855  3546  3546 I VvmSimStateTracker: android.intent.action.SIM_STATE_CHANGED
+10-15 09:33:21.875   282   282 I netd    : tetherGetStats() -> {[]} <0.34ms>
+10-15 09:33:21.876  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 09:33:21.877  1607  2113 I SP.AiAi : GC for 'text-classifier-actions' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:33:21.880  1607  2113 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 09:33:21.888  1607  2271 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 09:33:21.892   282   282 I netd    : bandwidthSetGlobalAlert(2097152) <0.12ms>
+10-15 09:33:21.893  1386  4402 D CellBroadcastReceiver: mockmodem is running? = false
+10-15 09:33:21.899  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 2 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 * {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 * {m:b:u:l, bg}
+10-15 09:33:21.904   755   809 D EGL_emulation: app_time_stats: avg=477.73ms min=199.29ms max=623.32ms count=3
+10-15 09:33:21.898  1282  1282 I WakefulBroadcastRcvr: Processing wakeful broadcast: com.google.android.gms.checkin.CHECKIN_START_ACTION
+10-15 09:33:21.906  1607  3024 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-actions', download version 1140547708.
+10-15 09:33:21.907  1467  1896 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 3 candidates
+10-15 09:33:21.909  1607  2069 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip
+10-15 09:33:21.920  1050  3599 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-15 09:33:21.931  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 3 scheduled, 3 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 * {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 * {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f * {m:b:u:l, bg}
+10-15 09:33:21.934  1467  1896 I SP      : Syncing transformer_concept (2023011913) with slices: [2023011913_en], metadata: false
+10-15 09:33:21.977  3035  3254 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Availability updated
+10-15 09:33:21.978  3035  3254 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Bugle receives rcs availability update to: 2
+10-15 09:33:21.983  3035  3206 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@a66c471
+10-15 09:33:21.986  3035  3122 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled for this carrier by Google, lastAvailability is null, simId hash = -7080899432288714492, isPev3Enabled = false
+10-15 09:33:21.992  3035  3207 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Request Bugle information
+10-15 09:33:21.996  1607  2479 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 09:33:22.003  2852  4320 I CarrierServices: [71] fxv.d: Received Provisioning Event: [Bugle information (100)]
+10-15 09:33:22.004  2852  4320 I CarrierServices: [71] fxv.d: JibeService is running, passing event to provisioning engine.
+10-15 09:33:22.004  2852  4320 I CarrierServices: [71] fgw.f: Handling Provisioning Event: [Bugle information (100)]
+10-15 09:33:22.004  2852  4320 I CarrierServices: [71] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+10-15 09:33:22.016  2852  4320 I CarrierServices: [71] fjp.y: Bugle is default SMS app: true
+10-15 09:33:22.019  1050  3599 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 650785]
+10-15 09:33:22.021  1467  1896 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 4 candidates
+10-15 09:33:22.025  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 4 scheduled, 4 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 * {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 * {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f * {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d * {m:b:u:l, bg}
+10-15 09:33:22.028  1467  1896 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 5 candidates
+10-15 09:33:22.030  3035  3129 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@f29573
+10-15 09:33:22.039  1282  4302 I constellation: [sim_state_checker] Handling intent Intent { act=android.intent.action.SIM_STATE_CHANGED flg=0x5000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }
+10-15 09:33:22.046  3035  3035 I BugleRcsEngine: [2] SingleRegistrationCapabilityReceiver.c: [SR]: Single Registration Capability Intent received!
+10-15 09:33:22.048  3035  3035 W BugleRcsEngine: [2] benk.i: Unable to send RCS extension log
+10-15 09:33:22.048  3035  3035 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityAsync, hint: SINGLE_REGISTRATION_CAPABILITY_UPDATE
+10-15 09:33:22.048  3035  3035 I BugleRcs: RcsAvailabilityUpdaterRemote: postUpdateRcsAvailability, hint: SINGLE_REGISTRATION_CAPABILITY_UPDATE
+10-15 09:33:22.048  3035  3035 I BugleRcs: RcsAvailabilityUpdaterRemote: updateRcsAvailabilityAsync, hint: SINGLE_REGISTRATION_CAPABILITY_UPDATE
+10-15 09:33:22.049  3035  3108 I BugleRcs: RcsAvailabilityUpdaterRemote: updateRcsAvailabilityAsync, trivialAvailability: null
+10-15 09:33:22.050  3035  3108 I BugleRcs: RcsAvailabilityUpdaterRemote: getRcsAvailabilityFromSignupServiceAsync
+10-15 09:33:22.052  3035  3207 I RcsClientLib: Connecting SignupService
+10-15 09:33:22.055  1282  1282 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:22.055  1282  1282 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:22.057  3035  3207 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:22.065  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 5 scheduled, 5 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 * {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 * {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f * {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d * {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 * {m:b:u:l, bg}
+10-15 09:33:22.068  1282  1282 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 09:33:22.068  1467  1896 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 6 candidates
+10-15 09:33:22.076  1467  1896 I SP      : Scheduling: download registered, 0 started, 0 paused, 6 scheduled, 6 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 * {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 * {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f * {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d * {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 * {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 * {m:b:u:l, bg}
+10-15 09:33:22.088  2852  4320 I CarrierServices: [71] fhf.b: Bugle has minimum required RCS permissions: true
+10-15 09:33:22.097  2852  4320 I CarrierServices: [71] fjp.x: Rcs is enabled from user settings: true
+10-15 09:33:22.103  1467  1896 I SP      : Scheduling: job start ({m:b:u:l, bg}), 6 started, 0 paused, 0 scheduled, 6 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 @ * {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ * {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ * {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ * {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ * {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ * {m:b:u:l, bg}
+10-15 09:33:22.104  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/emoji/20230201113008/en_us.zip to 60932fe37d5f6d7a3e60488d8a1755c4.zip.fetched (constraints: m:b:u:l)
+10-15 09:33:22.105  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/animation.zip to b1f6f47a53f7820be91b9fe247728980.zip.fetched (constraints: m:b:u:l)
+10-15 09:33:22.109  1467  4404 D TrafficStats: tagSocket(124) with statsTag=0xffffffff, statsUid=-1
+10-15 09:33:22.111  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/fonts.zip to 305f81355a729e382ea9f374dd286d9f.zip.fetched (constraints: m:b:u:l)
+10-15 09:33:22.111  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/emoji2expr.pb to e9a5a2de48a4f8b9a658b411bcfb375d.fetched (constraints: m:b:u:l)
+10-15 09:33:22.111  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/text2expr.pb to 8722425f4121ffdea802b1066df73991.fetched (constraints: m:b:u:l)
+10-15 09:33:22.112  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/contentcache/202211221443/contextual_ek.pb to fa1da98da1212aad6fb9a8efaff48148.fetched (constraints: m:b:u:l)
+10-15 09:33:22.118  1607  2479 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.118  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
+10-15 09:33:22.133  1282  4304 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+10-15 09:33:22.146  1282  4304 W GmsTaskScheduler: ScheduledCheckinGmsTaskService is not available. This may cause the task to be lost.
+10-15 09:33:22.151  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.151  1467  4404 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
+10-15 09:33:22.161  2852  4320 I CarrierServices: [71] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+10-15 09:33:22.169  1282  4304 I Checkin : [EventLogChimeraService] Accumulating logs since 1792056784932
+10-15 09:33:22.176  1050  3599 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 650942]
+10-15 09:33:22.185  2852  4320 I CarrierServices: [71] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:33:22.217  1607  2271 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 3 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea @ {W:b:u:l, bg}
+10-15 09:33:22.240  1467  1896 I SP      : Scheduling: download registered, 1 started, 0 paused, 0 scheduled, 7 pending: emoji:60932fe37d5f6d7a3e60488d8a1755c4 @ {m:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ * {m:b:u:l, bg}
+10-15 09:33:22.240  1467  1896 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/en.zip to 2023011913_en.zip.fetched (constraints: m:b:u:l)
+10-15 09:33:22.242  1467  1896 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():68 DownloadSlicing#getSlices() : Locale = [en_US]
+10-15 09:33:22.254  1607  2069 I AiAiTextClassifier: [TcLibModelManagerImpl]: updateModelsInTextClassifierLib: Done executing updateModels() from path: /data/user/0/com.google.android.as/files/superpacks/text-classifier-actions/tc_model_e202592534082c01f9642f709a627dd9/en.model.
+10-15 09:33:22.298  1467  1896 I SuperDelight: SuperDelightDownloadSlicingStrategy.getSlices():125 DownloadSlicing#getSlices(): result {slices=[{delight:main_en_840_2022102600_1, m:*:*:*, fg}], last batch=true, sync metadata=false}
+10-15 09:33:22.306  1467  1896 I SP      : Syncing delight (2023020919) with slices: [{main_en_840_2022102600_1, m:*:*:*, fg}], metadata: false
+10-15 09:33:22.306  1467  1896 I SP      : Download stopped: emoji:60932fe37d5f6d7a3e60488d8a1755c4, succeeded, size: 89667
+10-15 09:33:22.336  1050  3599 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 651102]
+10-15 09:33:22.343  1050  3599 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-15 09:33:22.362  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 6 pending: dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}
+10-15 09:33:22.401  1467  1896 I SP      : Pausing download content_cache:8722425f4121ffdea802b1066df73991, reason: PREEMPTED
+10-15 09:33:22.401  1467  1896 I SP      : Pausing download content_cache:e9a5a2de48a4f8b9a658b411bcfb375d, reason: PREEMPTED
+10-15 09:33:22.404  1467  1896 I SP      : Pausing download dynamic_art:b1f6f47a53f7820be91b9fe247728980, reason: PREEMPTED
+10-15 09:33:22.404  1467  1896 I SP      : Pausing download content_cache:fa1da98da1212aad6fb9a8efaff48148, reason: PREEMPTED
+10-15 09:33:22.405  1467  1896 I SP      : Pausing download dynamic_art:305f81355a729e382ea9f374dd286d9f, reason: PREEMPTED
+10-15 09:33:22.405  1467  1896 I SP      : Pausing download transformer_concept:2023011913_en, reason: PREEMPTED
+10-15 09:33:22.413  1467  1896 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:33:22.421  3035  3109 I BugleSearch: Queues icing index update work item. [CONTEXT class_name="IcingIndexUpdateHandlerScheduler" ]
+10-15 09:33:22.429  1607  2113 I SP.AiAi : Sync for text-classifier-langid succeeded in 8171 ms: {added: [tc_model_436dc3fd14049b93d75788a8c0cc8eea], metadata: false
+10-15 09:33:22.438  1467  1467 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():41 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 09:33:22.446  1467  1467 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 09:33:22.488  3035  3035 I BugleRcsEngine: [2] vgs.b: [SR]: Scheduling OPERATION_TYPE_TERMINATE_VENDOR_IMS task. Trigger: TRIGGER_SINGLE_REGISTRATION_CAPABILITY_UPDATE_INTENT
+10-15 09:33:22.503  3035  3122 I RcsClientLib: com.google.android.rcs.client.signup.SignupService connected
+10-15 09:33:22.506  2852  4162 I CarrierServices: [70] fhf.b: RcsAvailabilityManager: Calculating Rcs Availability
+10-15 09:33:22.509  3035  3035 W BugleRcsEngine: [2] benk.i: Unable to send RCS extension log
+10-15 09:33:22.515  1607  2113 I SP.AiAi : GC for 'text-classifier-langid' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:33:22.515  1607  2113 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 09:33:22.519  1607  3024 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-langid', download version 1941001461.
+10-15 09:33:22.520  1607  2479 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 09:33:22.527  1607  2479 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+10-15 09:33:22.531  1467  1896 I SP      : Scheduling: download registered, 0 started, 6 paused, 1 scheduled, 7 pending: dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2022102600_1 * {m:b:u:l, fg}
+10-15 09:33:22.543  1467  1896 I SP      : Scheduling: job start ({m:b:u:l, fg}), 1 started, 6 paused, 0 scheduled, 7 pending: dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2022102600_1 @ * {m:b:u:l, fg}
+10-15 09:33:22.550  1467  1896 I SP      : Requesting download of URL https://dl.google.com/gboard/klp/dict/en-840/en-840_d3_2022102600_7pl011ntk-hwpe7_main.dict to main_en_840_2022102600_1.fst-decompress.fetched (constraints: m:b:u:l)
+10-15 09:33:22.551  1467  1896 I SP      : Download stopped: dynamic_art:b1f6f47a53f7820be91b9fe247728980, succeeded paused, size: 557904
+10-15 09:33:22.561  1607  2069 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip
+10-15 09:33:22.568  2852  4162 I CarrierServices: [70] fjp.y: Bugle is default SMS app: true
+10-15 09:33:22.572  1101  1101 I SimDialogProhibitService: No SimDialogActivity for dismiss.
+10-15 09:33:22.618  2852  4162 I CarrierServices: [70] fhf.b: Bugle has minimum required RCS permissions: true
+10-15 09:33:22.621  1607  2069 I AiAiTextClassifier: [TcLibModelManagerImpl]: updateModelsInTextClassifierLib: Done executing updateModels() from path: /data/user/0/com.google.android.as/files/superpacks/text-classifier-langid/tc_model_436dc3fd14049b93d75788a8c0cc8eea/model.smfb.
+10-15 09:33:22.624   282  4412 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10137 0}
+10-15 09:33:22.625   282  4413 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:33:22.625   282  4413 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc2ae089d0
+10-15 09:33:22.625   282  4413 I resolv  : doQuery: rcode=0, ancount=1, return value=59
+10-15 09:33:22.635   282  4414 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:33:22.635   282  4414 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x74dc1ae0c610
+10-15 09:33:22.635   282  4414 I resolv  : doQuery: rcode=0, ancount=1, return value=47
+10-15 09:33:22.637  1467  4410 D TrafficStats: tagSocket(124) with statsTag=0xffffffff, statsUid=-1
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setUseSessionTickets(Z)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setUseSessionTickets(Z)V (max-target-q, reflection, denied)
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/ConscryptEngineSocket;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setHostname(Ljava/lang/String;)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setHostname(Ljava/lang/String;)V (max-target-q, reflection, denied)
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->setAlpnProtocols([B)V (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.646  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->setAlpnProtocols([B)V (max-target-q, reflection, denied)
+10-15 09:33:22.654  3035  3122 I RcsClientLib: Connecting SingleRegistrationVendorImsService
+10-15 09:33:22.654  3035  3207 W WM-WorkSpec: Backoff delay duration less than minimum value
+10-15 09:33:22.667  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:22.667  1467  4410 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
+10-15 09:33:22.667  2852  4162 I CarrierServices: [70] fjp.x: Rcs is enabled from user settings: true
+10-15 09:33:22.691  3035  3122 I RcsClientLib: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+10-15 09:33:22.702  1605  1938 W MediaProvider: getVolumePath for unknown volume: internal
+10-15 09:33:22.711  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 6 pending: dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2022102600_1 @ {m:b:u:l, fg}
+10-15 09:33:22.726  2852  4162 I CarrierServices: [70] fhf.b: Config state is not ACCEPTED, provisioning still in progress
+10-15 09:33:22.726  2852  4162 I CarrierServices: [70] fhf.b: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:33:22.730  3035  3121 I BugleRcs: RcsAvailabilityUpdaterRemote: updateRcsAvailabilityPostProcess, Get Updated RcsAvailability, RcsAvailability: DISABLED_VIA_GSERVICES, SimId: redacted-pii[20-chars]
+10-15 09:33:22.739  3035  3253 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled for this carrier by Google, lastAvailability is null, simId hash = -7080899432288714492, isPev3Enabled = false
+10-15 09:33:22.741  3035  3121 I RcsClientLib: Disconnecting SignupService
+10-15 09:33:22.769  1467  1896 I SP      : Download stopped: dynamic_art:305f81355a729e382ea9f374dd286d9f, succeeded paused, size: 30514
+10-15 09:33:22.835  3035  3112 I BugleRcs: RcsAvailabilityUpdaterRemote: postUpdateRcsAvailability : success updating RCS availability async
+10-15 09:33:22.836  2852  2852 I CarrierServices: [2] gch.onBind: JibeService: onBind in state STARTED, intent action = com.google.android.ims.rcs.singleregistration.ISingleRegistrationVendorImsController
+10-15 09:33:22.862  3035  3132 I RcsClientLib: com.google.android.rcs.client.provisioning.singleregistration.SingleRegistrationVendorImsService connected
+10-15 09:33:22.864  2852  3427 I CarrierServices: [64] SingleRegistrationVendorImsController.terminateVendorIms: [SR]: Vendor IMS was not setup for subId: 1.
+10-15 09:33:22.867  3035  3206 W BugleRcsEngine: [62] benk.i: Unable to send RCS extension log
+10-15 09:33:22.867  3035  3206 I BugleRcsEngine: [62] vgk.apply: [SR]: task completed. no retry expected
+10-15 09:33:22.892  3035  3132 W BugleRcsEngine: [52] bfvz.c: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false]
+10-15 09:33:22.892  3035  3132 I BugleRcsEngine: [52] vex.run: Provisioning task in Bugle is disabled by P/H flag
+10-15 09:33:22.918  1050  4182 I Herrevad: [267] aqwl.a: updateListenState
+10-15 09:33:22.922  1050  3617 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+10-15 09:33:22.922  1050  3617 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-15 09:33:22.923  1050  3617 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-15 09:33:22.949  3035  3122 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 09:33:22.954  3035  3121 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 09:33:22.957  3035  3121 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=eb6b19ec-ff4c-44ab-aa39-7619224d7f9a, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim, vendor_ims_call- } ]
+10-15 09:33:22.977  3035  3121 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=96cb0ad3-7120-4f33-ad2d-6f70cad2a961, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim, icing_index_update_handler- } ]
+10-15 09:33:22.998  1050  3599 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 135105]
+10-15 09:33:23.020  1050  3053 W bwft    : Succeeded but not registered: com.google.android.gms.trustlet_onbody [CONTEXT service_id=51 ]
+10-15 09:33:23.026  3505  3535 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 09:33:23.029  3505  3535 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 09:33:23.029  3505  3535 I RemoteProvisioningService: Pool status.
+10-15 09:33:23.029  3505  3535 I RemoteProvisioningService: Total: 6
+10-15 09:33:23.029  3505  3535 I RemoteProvisioningService: Attested: 6
+10-15 09:33:23.029  3505  3535 I RemoteProvisioningService: Unassigned: 5
+10-15 09:33:23.029  3505  3535 I RemoteProvisioningService: Expiring: 0
+10-15 09:33:23.030  3505  3535 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 09:33:23.030  3505  3535 I RemoteProvisioningService: No provisioning needed.
+10-15 09:33:23.133  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d @ {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2022102600_1 @ {m:b:u:l, fg}
+10-15 09:33:23.134  1467  1896 I SP      : Download for content_cache:e9a5a2de48a4f8b9a658b411bcfb375d was canceled
+10-15 09:33:23.134  1467  1896 I SP      : Download stopped: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d, failed (retriable) paused, size: 0
+10-15 09:33:23.149  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 @ {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2022102600_1 @ {m:b:u:l, fg}
+10-15 09:33:23.150  1467  1896 I SP      : Download for content_cache:8722425f4121ffdea802b1066df73991 was canceled
+10-15 09:33:23.151  1467  1896 I SP      : Download stopped: content_cache:8722425f4121ffdea802b1066df73991, failed (retriable) paused, size: 0
+10-15 09:33:23.163  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2022102600_1 @ {m:b:u:l, fg}
+10-15 09:33:23.163  1467  1896 I SP      : Download for content_cache:fa1da98da1212aad6fb9a8efaff48148 was canceled
+10-15 09:33:23.164  1467  1896 I SP      : Download stopped: content_cache:fa1da98da1212aad6fb9a8efaff48148, failed (retriable) paused, size: 0
+10-15 09:33:23.176  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2022102600_1 @ {m:b:u:l, fg}
+10-15 09:33:23.178  1467  1896 I SP      : Download for transformer_concept:2023011913_en was canceled
+10-15 09:33:23.182  1467  1896 I SP      : <==== Finishing job {m:b:u:l, bg}, 1376 ms. elapsed since start
+10-15 09:33:23.182  1467  1896 I SP      : Download stopped: transformer_concept:2023011913_en, failed (retriable) paused, size: 0
+10-15 09:33:23.196  1607  2807 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 350999 bytes from https://gstatic.com/matchmaker/tclib_models/annotator/v803/en-us/tc_model_19e9928974f9d8742ad3b10f52373dea.zip.
+10-15 09:33:23.196  1282  4172 I GmsModuleFndr: Beginning GMS chimera module scan
+10-15 09:33:23.197  1607  2271 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 9071 ms. elapsed since start
+10-15 09:33:23.199  1607  2271 I SP.AiAi : Download stopped: text-classifier-annotator:tc_model_19e9928974f9d8742ad3b10f52373dea, succeeded, size: 350999
+10-15 09:33:23.214  1467  1896 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 5 pending: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d {m:b:u:l, bg}, content_cache:8722425f4121ffdea802b1066df73991 {m:b:u:l, bg}, content_cache:fa1da98da1212aad6fb9a8efaff48148 {m:b:u:l, bg}, transformer_concept:2023011913_en {m:b:u:l, bg}, delight:main_en_840_2022102600_1 @ {m:b:u:l, fg}
+10-15 09:33:23.227  1050  2363 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+10-15 09:33:23.237  1282  4172 I ModuleSetMgr: Computing pending module set with APKs: [[AdsFdrDynamite.integ:231004600100000], [Cronetdynamite:231818190800], [Dynamiteloader:231818190000], [Dynamitemodulesa:231818190000], [Dynamitemodulesc:231818190000], [Googlecertificates:231818190000], [Mapsdynamite:231818190000], [Measurementdynamite:231818190000]]
+10-15 09:33:23.244  4239  4258 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

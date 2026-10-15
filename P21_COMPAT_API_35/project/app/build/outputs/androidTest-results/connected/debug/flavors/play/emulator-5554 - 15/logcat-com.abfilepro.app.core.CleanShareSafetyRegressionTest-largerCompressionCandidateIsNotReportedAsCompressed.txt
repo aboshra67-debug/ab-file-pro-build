@@ -1,0 +1,105 @@
+10-15 09:29:31.260  3861  3976 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:29:31.275  1528  2079 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.subscriptions#com.google.android.googlequicksearchbox
+10-15 09:29:31.281  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:31.289   563   601 I AppBindingService: Stopping: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 09:29:31.292  2092  2092 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:31.292   563  1518 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:29:31.298  3611  3611 I CarrierServices: SystemBindingService onDestroy
+10-15 09:29:31.311  1398  2995 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.model: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.model
+10-15 09:29:31.311  1398  2995 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 36ms, 0 inserts 0 updates 0 deletes
+10-15 09:29:31.316   365   418 I netd    : tetherGetStats() -> {[]} <1.62ms>
+10-15 09:29:31.320   365   418 I netd    : bandwidthSetGlobalAlert(2097152) <0.06ms>
+10-15 09:29:31.326  3331  3410 D PhFileGroupPop: Added file groups screen_effect_suggestions
+10-15 09:29:31.328  3611  3611 I CarrierServices: SystemBindingService onCreate
+10-15 09:29:31.339   365   418 I netd    : tetherGetStats() -> {[]} <0.95ms>
+10-15 09:29:31.340  3331  3410 D PhFileGroupPop: Added file groups selfie_gif_grammars
+10-15 09:29:31.342  3611  3722 I CarrierServices: SystemBindingService: Starting JibeService
+10-15 09:29:31.349  3611  3722 I BugleRcsEngine: Broadcasting provisioning intent rcs.intent.action.rcsSystemBinding to Bugle with extras redacted-pii:[null] from source SYSTEM_BINDING_SERVICE [CONTEXT log_prefix="EngineBroadcaster" thread_id=65 ]
+10-15 09:29:31.350   563  1590 D ConnectivityService: requestNetwork for uid/pid:10135/3611 activeRequest: null callbackRequest: 136 [NetworkRequest [ TRACK_DEFAULT id=137, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10135 RequestorUid: 10135 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ], NetworkRequest [ REQUEST id=138, [ Transports: SATELLITE Capabilities: INTERNET&TRUSTED&NOT_VCN_MANAGED Uid: 10135 RequestorUid: 10135 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:29:31.354  3331  3410 D PhFileGroupPop: Added file groups smarts_expressive_content_scoped_v1
+10-15 09:29:31.359  3331  3410 D PhFileGroupPop: Added file groups smart_actions_sensitive_classifier_models
+10-15 09:29:31.360   563   835 D ConnectivityService: NetReassign [137 : null → 100] [c 0] [a 5] [i 0]
+10-15 09:29:31.370  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.382  1362  1362 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.wellbeing.device#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 09:29:31.387  3331  3410 D PhFileGroupPop: Added file groups spam_fm_templates
+10-15 09:29:31.388  3331  3410 D PhFileGroupPop: Added file groups scripted_reply
+10-15 09:29:31.389  3331  3410 D PhFileGroupPop: Added file groups multitask_experiment
+10-15 09:29:31.389  3331  3410 D PhFileGroupPop: Added file groups spam_verdict_enforcement_policy_config
+10-15 09:29:31.389  3331  3410 D PhFileGroupPop: Added file groups smart_suggestion_reranker_models
+10-15 09:29:31.390  3331  3410 D PhFileGroupPop: Added file groups supersort_us_grammars
+10-15 09:29:31.392  3331  3410 D PhFileGroupPop: Added file groups nudge
+10-15 09:29:31.392  3331  3410 D PhFileGroupPop: Added file groups calendar_appointment_grammar
+10-15 09:29:31.392  3331  3410 D PhFileGroupPop: Added file groups birthday_suggestion
+10-15 09:29:31.392  3331  3410 D PhFileGroupPop: Added file groups birthday_grammars
+10-15 09:29:31.400  3331  3410 D PhFileGroupPop: Added file groups animated_emoji
+10-15 09:29:31.401   563   601 I AppBindingService: Connected: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 09:29:31.404  3331  3410 D PhFileGroupPop: Added file groups voice_moods
+10-15 09:29:31.406  3331  3410 D PhFileGroupPop: Added file groups screen_effects
+10-15 09:29:31.406  3331  3410 D PhFileGroupPop: Added file groups screen_effect_suggestions
+10-15 09:29:31.406  3331  3410 D PhFileGroupPop: Added file groups selfie_gif_grammars
+10-15 09:29:31.406  3331  3410 D PhFileGroupPop: Added file groups spam_fm_templates
+10-15 09:29:31.423  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a14bb10
+10-15 09:29:31.423  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a14bb10
+10-15 09:29:31.423  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.427  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a14b410
+10-15 09:29:31.428  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a14b410
+10-15 09:29:31.457  2092  2573 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.partnersetup
+10-15 09:29:31.462  1528  2412 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:29:31.465  1528  1528 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:29:31.467  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@311c642
+10-15 09:29:31.468  3331  3421 I BugleTransport: onSystemBound: kicking off updateActiveTransport
+10-15 09:29:31.470  3331  3432 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:29:31.474  3331  3432 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:31.477  3331  3432 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:31.477  3331  3432 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:31.478  3331  3422 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:29:31.484  3331  3421 I BugleRcsProvisioning: RcsProvisioningTrigger: System bound to :rcs process. Schedule provisioning.
+10-15 09:29:31.485  3331  3421 I BugleRcsProvisioning: scheduleProvisioning using legacy code path
+10-15 09:29:31.485  3331  3421 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=57 ]
+10-15 09:29:31.485  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.487  3331  3432 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:29:31.487  3331  3421 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 09:29:31.488  3331  3422 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=58 ]
+10-15 09:29:31.490  3331  3422 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=58 ]
+10-15 09:29:31.490  3331  3432 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:29:31.491  3331  3432 W BugleAction: No default number, returning empty msisdn
+10-15 09:29:31.491  3331  3432 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=63 ]
+10-15 09:29:31.497  3331  3422 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 09:29:31.497  3331  3422 I BugleTransport: Tachygram is disabled because the RCS Configuration is empty [CONTEXT ratelimit_period="5 SECONDS" skipped=3 ]
+10-15 09:29:31.497  3331  3422 I BugleTransport: Enabled chat transport is TRANSPORT_RCS [CONTEXT group_by="TRANSPORT_RCS" ratelimit_period="5 SECONDS" skipped=3 ]
+10-15 09:29:31.497  3331  3422 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 09:29:31.502  3331  3416 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@667fb7a
+10-15 09:29:31.502  3331  3421 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 09:29:31.507  3331  3421 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 09:29:31.512  2112  2182 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.tts
+10-15 09:29:31.512  3331  3421 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 09:29:31.516  3331  3422 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 09:29:31.521  3611  4000 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=78 ]
+10-15 09:29:31.530  3611  3639 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=45 ]
+10-15 09:29:31.537  3331  3444 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:29:31.544  3611  3840 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:31.548  3611  3840 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:31.551  3611  3840 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:31.551  3611  3840 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]" thread_id=75 ]
+10-15 09:29:31.554  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a14d550
+10-15 09:29:31.555  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a14d550
+10-15 09:29:31.556  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.561  3611  3840 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[26204af6-a0f3]>Handler" thread_id=75 ]
+10-15 09:29:31.563  3611  3840 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=75 ]
+10-15 09:29:31.563  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a149d50
+10-15 09:29:31.563  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a149d50
+10-15 09:29:31.564  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.564  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a14bb10
+10-15 09:29:31.564  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a14bb10
+10-15 09:29:31.569  3331  3410 D SharedPreferencesImpl: Time required to fsync /data/user/0/com.google.android.apps.messaging/shared_prefs/gms_icing_mdd_shared_files.xml: [<1: 136, <2: 305, <4: 272, <8: 211, <16: 77, <32: 20, <64: 2, <128: 0, <256: 1, <512: 0, <1024: 0, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
+10-15 09:29:31.592  1226  1226 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.tapandpay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:29:31.605  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.672  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a14b410
+10-15 09:29:31.672  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a14b410
+10-15 09:29:31.674  3861  4054 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.674  3861  4054 D pdf_document_jni: Deleting Document: 0x797c5a14d550
+10-15 09:29:31.674  3861  4054 D pdf_document_jni: Destroyed Document: 0x797c5a14d550
+10-15 09:29:31.692  3861  3976 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:29:31.696  3861  3976 D pdf_document_jni: Deleting Document: 0x797c5a152090
+10-15 09:29:31.697  3861  3976 D pdf_document_jni: Destroyed Document: 0x797c5a152090
+10-15 09:29:31.706  3861  3976 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

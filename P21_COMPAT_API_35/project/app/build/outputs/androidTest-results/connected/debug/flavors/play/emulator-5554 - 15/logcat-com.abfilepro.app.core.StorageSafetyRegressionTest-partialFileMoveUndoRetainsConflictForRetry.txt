@@ -1,0 +1,6 @@
+10-15 09:29:37.142  3861  3976 I TestRunner: started: partialFileMoveUndoRetainsConflictForRetry(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:29:37.144  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.144  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.147  1436  1741 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+10-15 09:29:37.147  1436  1741 I SP.Service.AiAi: UnspecifiedLegacyClient is already not in the set of current clients for captions_i18n_v0_mandatory
+10-15 09:29:37.161  3861  3976 I TestRunner: finished: partialFileMoveUndoRetainsConflictForRetry(com.abfilepro.app.core.StorageSafetyRegressionTest)

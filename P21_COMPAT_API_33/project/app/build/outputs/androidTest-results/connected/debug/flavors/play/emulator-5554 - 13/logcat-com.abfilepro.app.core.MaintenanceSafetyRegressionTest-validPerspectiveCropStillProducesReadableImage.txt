@@ -1,0 +1,6 @@
+10-15 09:33:31.406  4239  4258 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:33:31.408  4524  4524 D nativeloader: Configuring classloader-namespace-shared for other apk /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk. target_sdk_version=33, uses_libraries=, library_path=/system/priv-app/GooglePackageInstaller/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.google.android.packageinstaller:/system/priv-app/GooglePackageInstaller:/system/lib64:/system_ext/lib64
+10-15 09:33:31.422  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/OpenSSLSocketImpl;->getAlpnSelectedProtocol()[B (max-target-q,core-platform-api, reflection, denied)
+10-15 09:33:31.422  1467  4519 W putmethod.latin: Accessing hidden method Lcom/android/org/conscrypt/AbstractConscryptSocket;->getAlpnSelectedProtocol()[B (max-target-q, reflection, denied)
+10-15 09:33:31.443  1467  1896 I SP      : Download stopped: content_cache:e9a5a2de48a4f8b9a658b411bcfb375d, succeeded, size: 11231
+10-15 09:33:31.446  4239  4258 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

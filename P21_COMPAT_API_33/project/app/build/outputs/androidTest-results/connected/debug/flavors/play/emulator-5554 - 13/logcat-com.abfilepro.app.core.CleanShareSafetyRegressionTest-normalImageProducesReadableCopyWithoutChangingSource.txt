@@ -1,0 +1,26 @@
+10-15 09:33:17.157  4239  4258 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:33:17.162  1743  2578 E PCP.BackgroundTask: Missing PCP TNG entry point binding, or zero state response to PCP is not enabled.
+10-15 09:33:17.163  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.163  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.163  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.163  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.170  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task TNG_DISCOVER_CLEANUP.
+10-15 09:33:17.172  1743  2777 I TngDiscoverClean: Trying to cleanup TNG:Discover flag change
+10-15 09:33:17.172  1743  2777 I TngDiscoverClean: Starting FeedSync in TNG:Discover
+10-15 09:33:17.177  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.179  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.179  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.180  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.188  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task TNG_MINUS_ONE_SYNC.
+10-15 09:33:17.194  1743  2777 I TngMinusOneSync: Syncing TNG:-1
+10-15 09:33:17.195  1743  2777 W TngMinusOneSync: TNG state changed: FIRST_ENROLLED
+10-15 09:33:17.198  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.198  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.199  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.199  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.208  1743  1743 I BgTaskExecutorImpl: Starting PERIODIC background task UPDATE_LAUNCHER_SHORTCUT.
+10-15 09:33:17.228  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.231  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.231  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.231  1743  2777 W SearchServiceCore: Abort, client detached.
+10-15 09:33:17.247  4239  4258 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
