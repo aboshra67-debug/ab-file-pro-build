@@ -1,7 +1,6 @@
 package com.abfilepro.app.core
 
 import android.graphics.Bitmap
-import android.graphics.pdf.PdfRenderer
 import android.os.ParcelFileDescriptor
 import java.io.File
 
@@ -9,7 +8,7 @@ object PdfViewerUtils {
     fun pageCount(file: File): Int {
         require(file.exists()) { "ملف PDF غير موجود" }
         ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY).use { descriptor ->
-            PdfRenderer(descriptor).use { renderer ->
+            SafePdfRenderer.open(descriptor).use { renderer ->
                 return renderer.pageCount
             }
         }
@@ -20,7 +19,7 @@ object PdfViewerUtils {
         require(targetWidth > 0) { "عرض الصفحة غير صالح" }
 
         ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY).use { descriptor ->
-            PdfRenderer(descriptor).use { renderer ->
+            SafePdfRenderer.open(descriptor).use { renderer ->
                 require(pageIndex in 0 until renderer.pageCount) { "رقم الصفحة غير صالح" }
                 renderer.openPage(pageIndex).use { page ->
                     val width = targetWidth.coerceAtLeast(180)
@@ -28,7 +27,7 @@ object PdfViewerUtils {
                     val height = (width * ratio).toInt().coerceAtLeast(1)
                     val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
                     bitmap.eraseColor(android.graphics.Color.WHITE)
-                    page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+                    page.render(bitmap, null)
                     return bitmap
                 }
             }

@@ -4,7 +4,6 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.pdf.PdfDocument
-import android.graphics.pdf.PdfRenderer
 import android.net.Uri
 import android.os.ParcelFileDescriptor
 import com.tom_roush.pdfbox.io.MemoryUsageSetting
@@ -58,7 +57,7 @@ object PdfTools {
         val dir = FileUtils.outputDir(context, "pdf_images/${System.currentTimeMillis()}")
         val pfd: ParcelFileDescriptor = context.contentResolver.openFileDescriptor(uri, "r")
             ?: error("تعذر فتح ملف PDF")
-        val renderer = PdfRenderer(pfd)
+        val renderer = SafePdfRenderer.open(pfd, context)
         val results = mutableListOf<File>()
         try {
             for (i in 0 until renderer.pageCount) {
@@ -71,7 +70,7 @@ object PdfTools {
                     val bitmap = Bitmap.createBitmap(renderWidth, renderHeight, Bitmap.Config.ARGB_8888)
                     try {
                         val matrix = android.graphics.Matrix().apply { setScale(scale, scale) }
-                        page.render(bitmap, null, matrix, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+                        page.render(bitmap, matrix)
                         val file = File(dir, "page_${i + 1}.png")
                         FileOutputStream(file).use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
                         results += file
@@ -148,7 +147,7 @@ object PdfTools {
         require(FileUtils.isInsideRoot(context, out) ||
             (outputFile != null && out.canonicalPath.startsWith(privateCache))) { "مسار ضغط PDF غير صالح" }
         val pfd = context.contentResolver.openFileDescriptor(uri, "r") ?: error("تعذر فتح ملف PDF")
-        val renderer = PdfRenderer(pfd)
+        val renderer = SafePdfRenderer.open(pfd, context)
         val pdf = PdfDocument()
         try {
             for (i in 0 until renderer.pageCount) {
@@ -161,7 +160,7 @@ object PdfTools {
                     val matrix = android.graphics.Matrix().apply {
                         setScale(renderWidth.toFloat() / page.width, renderHeight.toFloat() / page.height)
                     }
-                    page.render(bitmap, null, matrix, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+                    page.render(bitmap, matrix)
                     val info = PdfDocument.PageInfo.Builder(page.width, page.height, i + 1).create()
                     val newPage = pdf.startPage(info)
                     val dst = android.graphics.RectF(0f, 0f, page.width.toFloat(), page.height.toFloat())
@@ -218,7 +217,7 @@ object PdfTools {
         RuntimeSafety.ensureStorage(context)
         val pfd = context.contentResolver.openFileDescriptor(uri, "r") ?: error("تعذر فتح ملف PDF")
         pfd.use {
-          PdfRenderer(pfd).use { renderer ->
+          SafePdfRenderer.open(pfd, context).use { renderer ->
             require(renderer.pageCount in 1..30) { "الصورة الطويلة تدعم من 1 إلى 30 صفحة في العملية الواحدة" }
             val sourceSizes = buildList {
                 for (index in 0 until renderer.pageCount) {
@@ -269,7 +268,7 @@ object PdfTools {
                             val matrix = android.graphics.Matrix().apply {
                                 setScale(targetWidth.toFloat() / page.width.coerceAtLeast(1), height.toFloat() / page.height.coerceAtLeast(1))
                             }
-                            page.render(pageBitmap, null, matrix, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+                            page.render(pageBitmap, matrix)
                         }
                         canvas.drawBitmap(pageBitmap, 0f, y.toFloat(), null)
                         y += height

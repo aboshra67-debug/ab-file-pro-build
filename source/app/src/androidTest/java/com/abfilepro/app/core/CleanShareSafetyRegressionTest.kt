@@ -6,7 +6,6 @@ import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.pdf.PdfDocument
-import android.graphics.pdf.PdfRenderer
 import android.os.ParcelFileDescriptor
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -98,7 +97,7 @@ class CleanShareSafetyRegressionTest {
     }
 
     private fun pageCount(file: File): Int = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY).use { fd ->
-        PdfRenderer(fd).use { it.pageCount }
+        SafePdfRenderer.open(fd).use { it.pageCount }
     }
 
     private fun cacheFiles(): Set<String> = context.cacheDir.listFiles().orEmpty()

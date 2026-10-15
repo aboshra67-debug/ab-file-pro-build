@@ -42,6 +42,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         PDFBoxResourceLoader.init(applicationContext)
+        com.abfilepro.app.core.SafePdfRenderer.init(applicationContext)
         lifecycleScope.launch(Dispatchers.IO) { RuntimeSafety.cleanupTemporaryFiles(applicationContext) }
 
         setContent {

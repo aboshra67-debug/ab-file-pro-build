@@ -9,7 +9,6 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Color
 import android.graphics.pdf.PdfDocument
-import android.graphics.pdf.PdfRenderer
 import android.net.Uri
 import android.os.ParcelFileDescriptor
 import android.os.Handler
@@ -178,7 +177,7 @@ class MaintenanceSafetyRegressionTest {
         val second = image("second.png", Color.BLUE)
         val result = PdfTools.imagesToPdf(context, listOf(Uri.fromFile(first), Uri.fromFile(second))).also { outputs += it }
         ParcelFileDescriptor.open(result, ParcelFileDescriptor.MODE_READ_ONLY).use { descriptor ->
-            PdfRenderer(descriptor).use { renderer -> assertEquals(2, renderer.pageCount) }
+            SafePdfRenderer.open(descriptor).use { renderer -> assertEquals(2, renderer.pageCount) }
         }
         assertTrue(first.isFile && second.isFile)
     }

@@ -1,6 +1,5 @@
 package com.abfilepro.app.core
 
-import android.graphics.pdf.PdfRenderer
 import android.os.ParcelFileDescriptor
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
@@ -106,7 +105,7 @@ internal object CleanShareOutput {
     fun verifyPdf(file: File, pages: Int) {
         require(pages > 0 && file.isFile && file.length() > 0) { "تعذر التحقق من نسخة المشاركة" }
         ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY).use { descriptor ->
-            PdfRenderer(descriptor).use { renderer ->
+            SafePdfRenderer.open(descriptor).use { renderer ->
                 require(renderer.pageCount == pages) { "نسخة المشاركة لا تحتوي جميع الصفحات المطلوبة" }
             }
         }

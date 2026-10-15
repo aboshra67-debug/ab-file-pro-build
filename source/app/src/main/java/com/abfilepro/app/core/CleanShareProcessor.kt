@@ -8,7 +8,6 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.RectF
 import android.graphics.pdf.PdfDocument
-import android.graphics.pdf.PdfRenderer
 import android.net.Uri
 import android.os.ParcelFileDescriptor
 import android.provider.OpenableColumns
@@ -120,7 +119,7 @@ object CleanShareProcessor {
         var outputPages = 0
 
         ParcelFileDescriptor.open(tempSource, ParcelFileDescriptor.MODE_READ_ONLY).use { descriptor ->
-            PdfRenderer(descriptor).use { renderer ->
+            SafePdfRenderer.open(descriptor, context).use { renderer ->
                 val pdf = PdfDocument()
                 try {
                     require(renderer.pageCount > 0) { "PDF لا يحتوي على صفحات" }
@@ -134,7 +133,7 @@ object CleanShareProcessor {
                             Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888).also { bitmap ->
                                 try {
                                     bitmap.eraseColor(Color.WHITE)
-                                    page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+                                    page.render(bitmap, null)
                                 } catch (error: Throwable) {
                                     bitmap.recycle()
                                     throw error
