@@ -475,8 +475,8 @@ private fun VoiceRecordingCard(
             FilledIconButton(onClick = onPlay, colors = androidx.compose.material3.IconButtonDefaults.filledIconButtonColors(containerColor = Color.White.copy(alpha = .82f))) {
                 Icon(if (isPlaying) Icons.Default.Stop else Icons.Default.PlayArrow, null, tint = Color(0xFF101828))
             }
-            IconButton(onClick = onShare) { Icon(Icons.Default.Share, null, tint = Color(0xFF344054)) }
-            IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, null, tint = Color(0xFFB42318)) }
+            IconButton(onClick = onShare) { Icon(Icons.Default.Share, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Share), tint = Color(0xFF344054)) }
+            IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.DeleteOutline), tint = Color(0xFFB42318)) }
         }
     }
 }

@@ -665,12 +665,12 @@ fun WindowsFileExplorerPane(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         IconButton(onClick = { scope.launch { drawerState.open() } }) { Icon(Icons.Default.Menu, context.uiText(language, "explorer_menu")) }
-                        IconButton(onClick = ::goBack) { Icon(Icons.Default.ArrowBack, null) }
+                        IconButton(onClick = ::goBack) { Icon(Icons.Default.ArrowBack, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.ArrowBack)) }
                         IconButton(
                             onClick = onBack,
                             modifier = Modifier.size(54.dp)
                         ) {
-                            Icon(Icons.Default.Home, contentDescription = null, modifier = Modifier.size(31.dp))
+                            Icon(Icons.Default.Home, contentDescription = com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Home), modifier = Modifier.size(31.dp))
                         }
                         Column(Modifier.weight(1f)) {
                             Text(

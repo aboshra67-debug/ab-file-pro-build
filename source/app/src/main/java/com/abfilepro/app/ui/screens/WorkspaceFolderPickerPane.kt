@@ -138,7 +138,7 @@ fun WorkspaceFolderPickerPane(
                         )
                     }
                 },
-                navigationIcon = { IconButton(onClick = ::goBack) { Icon(Icons.Default.ArrowBack, null) } },
+                navigationIcon = { IconButton(onClick = ::goBack) { Icon(Icons.Default.ArrowBack, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.ArrowBack)) } },
                 actions = {
                     IconButton(onClick = { createDialog = true }) { Icon(Icons.Default.CreateNewFolder, null) }
                 }

@@ -486,11 +486,11 @@ private fun ShoppingItemRow(
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
             Surface(shape = CircleShape, color = Color(0xFFF5F7FA)) {
-                IconButton(onClick = onMinus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Remove, null, tint = Color(0xFF475569)) }
+                IconButton(onClick = onMinus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Remove, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Remove), tint = Color(0xFF475569)) }
             }
             Text("${item.quantity}", fontWeight = FontWeight.Black, fontSize = 18.sp, modifier = Modifier.width(28.dp), textAlign = TextAlign.Center)
             Surface(shape = CircleShape, color = Color(0xFFFFEEF0)) {
-                IconButton(onClick = onPlus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Add, null, tint = Color(0xFFE11D2E)) }
+                IconButton(onClick = onPlus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Add, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Add), tint = Color(0xFFE11D2E)) }
             }
             Spacer(Modifier.weight(1f))
             Text(item.name, fontWeight = FontWeight.Bold, fontSize = 18.sp, textAlign = TextAlign.End)

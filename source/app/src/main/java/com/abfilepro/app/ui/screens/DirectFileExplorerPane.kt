@@ -69,7 +69,7 @@ fun AllFilesAccessGate(onGrant: () -> Unit, onBack: () -> Unit) {
                     Modifier.fillMaxWidth().windowInsetsPadding(WindowInsets.statusBars).heightIn(min = 58.dp).padding(horizontal = 8.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, null) }
+                    IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.ArrowBack)) }
                     Text(context.uiText(language, "explorer_this_device"), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
                 }
             }
@@ -726,18 +726,18 @@ fun DirectFileExplorerPane(initialDirectoryPath: String? = null, onBack: () -> U
                 Surface(tonalElevation = 2.dp, color = MaterialTheme.colorScheme.surface) {
                     Row(Modifier.fillMaxWidth().windowInsetsPadding(WindowInsets.statusBars).heightIn(min = 62.dp).padding(horizontal = 6.dp), verticalAlignment = Alignment.CenterVertically) {
                         IconButton(onClick = { scope.launch { drawerState.open() } }) { Icon(Icons.Default.Menu, null) }
-                        IconButton(onClick = ::goBack) { Icon(Icons.Default.ArrowBack, null) }
+                        IconButton(onClick = ::goBack) { Icon(Icons.Default.ArrowBack, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.ArrowBack)) }
                         IconButton(
                             onClick = onBack,
                             modifier = Modifier.size(54.dp)
                         ) {
-                            Icon(Icons.Default.Home, contentDescription = null, modifier = Modifier.size(31.dp))
+                            Icon(Icons.Default.Home, contentDescription = com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Home), modifier = Modifier.size(31.dp))
                         }
                         Column(Modifier.weight(1f)) {
                             Text(currentDir.name.ifBlank { context.uiText(language, "explorer_this_device") }, fontWeight = FontWeight.Bold, maxLines = 1, overflow = TextOverflow.Ellipsis)
                             Text(context.uiText(language, "workspace_premium_explorer"), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.secondary)
                         }
-                        IconButton(onClick = ::reload) { Icon(Icons.Default.Refresh, null) }
+                        IconButton(onClick = ::reload) { Icon(Icons.Default.Refresh, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Refresh)) }
                     }
                 }
             },
@@ -1019,7 +1019,7 @@ private fun DirectDetailsRow(
         }
         Text(if (e.isDirectory) context.uiText(language, "saf_folder") else FileManagerRules.extensionOf(e.name).uppercase(), Modifier.weight(.7f), style = MaterialTheme.typography.labelSmall, maxLines = 1)
         Text(if (e.isDirectory) "—" else Formatter.formatFileSize(context, e.size), Modifier.weight(.9f), style = MaterialTheme.typography.labelSmall, maxLines = 1)
-        IconButton(onClick = onContext, Modifier.size(36.dp)) { Icon(Icons.Default.MoreVert, null, Modifier.size(18.dp)) }
+        IconButton(onClick = onContext, Modifier.size(36.dp)) { Icon(Icons.Default.MoreVert, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.MoreVert), Modifier.size(18.dp)) }
     }
 }
 

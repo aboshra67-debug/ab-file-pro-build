@@ -376,7 +376,7 @@ private fun FamilyRequestCard(
                         shape = RoundedCornerShape(16.dp),
                     ) { Icon(Icons.Default.Check, null); Spacer(Modifier.width(4.dp)); Text("تم") }
                 }
-                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, null, tint = Color(0xFFB91C1C)) }
+                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.DeleteOutline), tint = Color(0xFFB91C1C)) }
             }
         }
     }

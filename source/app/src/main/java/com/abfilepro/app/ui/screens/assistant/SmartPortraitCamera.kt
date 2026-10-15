@@ -432,7 +432,7 @@ internal fun SmartPortraitCameraScreen(
                         color = Color.Black.copy(alpha = .42f),
                     ) {
                         IconButton(onClick = onBack, enabled = !busy) {
-                            Icon(Icons.Default.Close, null, tint = Color.White)
+                            Icon(Icons.Default.Close, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Close), tint = Color.White)
                         }
                     }
 
@@ -895,7 +895,7 @@ private fun PortraitEditorScreen(
         }
 
         Row(Modifier.align(Alignment.TopCenter).fillMaxWidth().padding(10.dp), verticalAlignment = Alignment.CenterVertically) {
-            FilledIconButton(onClick = onBack, enabled = !busy) { Icon(Icons.Default.Refresh, null) }
+            FilledIconButton(onClick = onBack, enabled = !busy) { Icon(Icons.Default.Refresh, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Refresh)) }
             Spacer(Modifier.width(8.dp))
             Text(portraitText(language.code, "تعديل الصورة", "Edit photo", "Modifier la photo"), color = Color.White, fontWeight = FontWeight.Black, fontSize = 18.sp)
             Spacer(Modifier.weight(1f))

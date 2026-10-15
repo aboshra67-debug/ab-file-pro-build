@@ -672,9 +672,12 @@ private fun PremiumIntroOverlay(step: Int, onSkip: () -> Unit) {
                     Icon(Icons.Default.Description, null, tint = Color.White, modifier = Modifier.size(44.dp))
                 }
             }
-            Row {
-                Text("AB File ", color = Color.White, fontSize = 32.sp, fontWeight = FontWeight.Black)
-                Text("Pro", color = Color(0xFFFFD54F), fontSize = 32.sp, fontWeight = FontWeight.Black)
+            // P21: the brand is Latin; keep "AB File Pro" in reading order inside the Arabic layout.
+            CompositionLocalProvider(androidx.compose.ui.platform.LocalLayoutDirection provides androidx.compose.ui.unit.LayoutDirection.Ltr) {
+                Row {
+                    Text("AB File ", color = Color.White, fontSize = 32.sp, fontWeight = FontWeight.Black)
+                    Text("Pro", color = Color(0xFFFFD54F), fontSize = 32.sp, fontWeight = FontWeight.Black)
+                }
             }
             Text(
                 context.uiText(language, keys[step.coerceIn(keys.indices)]),

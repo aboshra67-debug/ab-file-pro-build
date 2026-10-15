@@ -1,14 +1,14 @@
-"""Single source of the values P20 verification pins (version, packages, expected counts)."""
-TAG = 'P20'
-EVIDENCE = 'p20-evidence'
-RELEASE = 'p20-release'
-VERSION_CODE = 172
-VERSION_NAME = '2.0.0-alpha98-p20-assistant-store'
-TEST_PACKAGE = 'com.abfilepro.app.p20mainttrial'
-QA_PACKAGE = 'com.abfilepro.app.p20qa'
-TEST_LABEL = 'AB File Pro P20'
-QA_LABEL = 'AB File Pro P20 QA'
-SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial']
+"""Single source of the values P21 verification pins (version, packages, expected counts)."""
+TAG = 'P21'
+EVIDENCE = 'p21-evidence'
+RELEASE = 'p21-release'
+VERSION_CODE = 173
+VERSION_NAME = '2.0.0-alpha98-p21-final-readiness'
+TEST_PACKAGE = 'com.abfilepro.app.p21mainttrial'
+QA_PACKAGE = 'com.abfilepro.app.p21qa'
+TEST_LABEL = 'AB File Pro P21'
+QA_LABEL = 'AB File Pro P21 QA'
+SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial']
 DEBUG_APK = 'project/app/build/outputs/apk/play/debug/app-play-debug.apk'
 QA_APK = 'project/app/build/outputs/apk/play/qa/app-play-qa.apk'
 DIRECT_APK = 'project/app/build/outputs/apk/direct/debug/app-direct-debug.apk'

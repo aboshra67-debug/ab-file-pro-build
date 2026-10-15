@@ -55,6 +55,14 @@ class MainActivity : ComponentActivity() {
                 LocalAppLanguage provides appLanguage
             ) {
                 ABFileProTheme(darkTheme = darkMode) {
+                    // P21: status/navigation bar icons follow the app's dark mode (were always dark).
+                    SideEffect {
+                        val controller = androidx.core.view.WindowCompat.getInsetsController(window, window.decorView)
+                        controller.isAppearanceLightStatusBars = !darkMode
+                        controller.isAppearanceLightNavigationBars = !darkMode
+                        @Suppress("DEPRECATION")
+                        if (android.os.Build.VERSION.SDK_INT < 35) window.navigationBarColor = if (darkMode) 0xFF101418.toInt() else 0xFFFFFFFF.toInt()
+                    }
                     val nav = rememberNavController()
                     val updateScope = rememberCoroutineScope()
                     var availableUpdate by remember { mutableStateOf<AppUpdateManager.UpdateInfo?>(null) }
