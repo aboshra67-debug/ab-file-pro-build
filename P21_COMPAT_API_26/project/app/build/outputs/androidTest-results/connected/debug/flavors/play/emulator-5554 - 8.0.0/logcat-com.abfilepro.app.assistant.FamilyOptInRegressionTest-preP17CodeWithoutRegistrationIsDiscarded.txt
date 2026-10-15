@@ -1,0 +1,2 @@
+10-15 09:19:00.737  5221  5240 I TestRunner: started: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:19:00.750  5221  5240 I TestRunner: finished: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

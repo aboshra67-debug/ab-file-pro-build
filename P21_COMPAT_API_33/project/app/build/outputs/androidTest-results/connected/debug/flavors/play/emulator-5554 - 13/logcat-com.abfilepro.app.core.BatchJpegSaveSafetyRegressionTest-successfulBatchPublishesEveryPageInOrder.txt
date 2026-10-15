@@ -1,0 +1,4 @@
+10-15 09:18:24.112  5192  5333 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:18:24.134  1055  1055 I GCoreUlr: Unbound from all signal providers.
+10-15 09:18:24.135  1055  1055 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 09:18:24.242  5192  5333 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

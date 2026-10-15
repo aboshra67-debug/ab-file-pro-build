@@ -1,0 +1,6 @@
+10-15 09:18:32.115  5192  5333 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.118  1086  3858 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/ring_volume
+10-15 09:18:32.118  1086  3858 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/ring_volume) in: 5
+10-15 09:18:32.125  1086  4936 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/ring_volume
+10-15 09:18:32.126  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.notification.MediaVolumePreferenceController
+10-15 09:18:32.130  5192  5333 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

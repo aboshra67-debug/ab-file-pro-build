@@ -1,0 +1,2 @@
+10-15 09:19:05.551  5221  5240 I TestRunner: started: concaveCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:19:05.566  5221  5240 I TestRunner: finished: concaveCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,16 @@
+10-15 09:15:56.718  3847  3907 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.731  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:15:56.732  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:15:56.732  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 09:15:56.732  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:15:56.732  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:15:56.733  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:15:56.733  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:15:56.733  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 09:15:56.733  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:15:56.734  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:56.740  1356  1363 I putmethod.latin: NativeAlloc concurrent mark compact GC freed 10MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 14MB/28MB, paused 27.077ms,4.160ms total 226.487ms
+10-15 09:15:56.764  1356  1709 I SP      : GC for 'transformer_concept' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:15:56.779  1356  1799 I Environment: Environment.isPackageInstalled():234 com.bitstrips.imoji is not installed
+10-15 09:15:56.783  1597  3362 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:56.783  3847  3907 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

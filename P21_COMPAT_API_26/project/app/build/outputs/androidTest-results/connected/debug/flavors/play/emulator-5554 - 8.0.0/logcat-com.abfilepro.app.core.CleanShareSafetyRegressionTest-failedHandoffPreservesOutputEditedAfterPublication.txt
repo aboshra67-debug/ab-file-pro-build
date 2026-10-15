@@ -1,0 +1,5 @@
+10-15 09:19:02.516  5221  5240 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:19:02.562  5221  5226 I zygote64: Do partial code cache collection, code=123KB, data=78KB
+10-15 09:19:02.564  5221  5226 I zygote64: After code cache collection, code=121KB, data=77KB
+10-15 09:19:02.564  5221  5226 I zygote64: Increasing code cache capacity to 512KB
+10-15 09:19:02.574  5221  5240 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

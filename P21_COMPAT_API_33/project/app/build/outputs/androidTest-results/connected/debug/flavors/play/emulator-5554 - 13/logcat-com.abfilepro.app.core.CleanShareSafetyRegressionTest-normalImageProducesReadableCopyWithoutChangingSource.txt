@@ -1,0 +1,6 @@
+10-15 09:18:27.572  5192  5333 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:27.584  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.585  1055  5171 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 09:18:27.587  1274  5173 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 09:18:27.587  1274  5173 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
+10-15 09:18:27.611  5192  5333 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

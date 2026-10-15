@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity }
+Status: ok
+Activity: com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity
+ThisTime: 884
+TotalTime: 884
+WaitTime: 951
+Complete

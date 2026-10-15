@@ -1,0 +1,2 @@
+10-15 09:15:57.038  3847  3907 I TestRunner: started: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:57.059  3847  3907 I TestRunner: finished: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

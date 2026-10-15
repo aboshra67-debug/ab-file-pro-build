@@ -1,0 +1,159 @@
+10-15 09:15:51.073  3847  3907 I TestRunner: started: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:51.076  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 09:15:51.076  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk' with 1 weak references
+10-15 09:15:51.076  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk' with 1 weak references
+10-15 09:15:51.077  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk' with 1 weak references
+10-15 09:15:51.077  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TelephonyProvider/TelephonyProvider.apk' with 1 weak references
+10-15 09:15:51.077  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TelephonyProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.077  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk' with 1 weak references
+10-15 09:15:51.077  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:15:51.078  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CalendarProvider/CalendarProvider.apk' with 1 weak references
+10-15 09:15:51.078  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk' with 1 weak references
+10-15 09:15:51.078  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GoogleExtShared/GoogleExtShared.apk' with 1 weak references
+10-15 09:15:51.078  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk' with 1 weak references
+10-15 09:15:51.078  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/HTMLViewer/HTMLViewer.apk' with 1 weak references
+10-15 09:15:51.078  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CompanionDeviceManager/CompanionDeviceManager.apk' with 1 weak references
+10-15 09:15:51.078  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProvider/DownloadProvider.apk' with 1 weak references
+10-15 09:15:51.079  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 09:15:51.079  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 09:15:51.079  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.mediaprovider/priv-app/MediaProviderGoogle@350820300/MediaProviderGoogle.apk' with 1 weak references
+10-15 09:15:51.079  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 09:15:51.079  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProviderUi/DownloadProviderUi.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/app/OsuLoginGoogle@350820300/OsuLoginGoogle.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PacProcessor/PacProcessor.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/SimAppDialog/SimAppDialog.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SimAppDialog__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/AdServicesApkGoogle.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CertInstaller/CertInstaller.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk' with 1 weak references
+10-15 09:15:51.080  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Camera2/Camera2.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/EasterEgg/EasterEgg.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MtpService/MtpService.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.nfcservices/priv-app/NfcNciApexGoogle@AE3A.240806.043/NfcNciApexGoogle.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Stk/Stk.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode2Button/NavigationBarMode2ButtonOverlay.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+10-15 09:15:51.081  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.btservices/app/BluetoothGoogle@342010060/BluetoothGoogle.apk' with 1 weak references
+10-15 09:15:51.082  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/SettingsProvider/SettingsProvider.apk' with 1 weak references
+10-15 09:15:51.082  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/LargeScreenSettingsProviderOverlay.apk' with 1 weak references
+10-15 09:15:51.082  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.082  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PrintSpooler/PrintSpooler.apk' with 1 weak references
+10-15 09:15:51.082  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BasicDreams/BasicDreams.apk' with 1 weak references
+10-15 09:15:51.082  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.devicelock/priv-app/DeviceLockControllerGoogle@AE3A.240806.043/DeviceLockControllerGoogle.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BuiltInPrintService/BuiltInPrintService.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/BuiltInPrintService__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MusicFX/MusicFX.apk' with 1 weak references
+10-15 09:15:51.083  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationEmu01/DisplayCutoutEmulationEmu01Overlay.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/AvatarPickerGoogle/AvatarPickerGoogle.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/MarkupGoogle_v2/MarkupGoogle_v2.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.rkpd/priv-app/rkpdapp.google@350820300/rkpdapp.google.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/Telecom/Telecom.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/Telecom__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/KeyChain/KeyChain.apk' with 1 weak references
+10-15 09:15:51.084  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~88eGJbY5iAUb3KSYdmnTnA==/com.android.chrome-DBjep1pmG6DBNlAWGhaTbg==/Chrome.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~w7LaMPurG44f4jK3cIligg==/com.google.android.trichromelibrary_636771938-LCQQlFP_xpAzhAzL3r0xQg==/TrichromeLibrary.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PixelThemesStub/PixelThemesStub.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TagGoogle/TagGoogle.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CallLogBackup/CallLogBackup.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/NexusWallpapersStubPrebuilt2018/NexusWallpapersStubPrebuilt2018.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CarrierDefaultApp/CarrierDefaultApp.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CredentialManager/CredentialManager.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DeviceAsWebcam/DeviceAsWebcam.apk' with 1 weak references
+10-15 09:15:51.085  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ProxyHandler/ProxyHandler.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GoogleSafetyCenterResources@350820360/GoogleSafetyCenterResources.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/IntentResolver/IntentResolver.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/E2eeContactKeysProvider/E2eeContactKeysProvider.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.tethering/priv-app/ServiceConnectivityResourcesGoogle@350820300/ServiceConnectivityResourcesGoogle.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/goldfish_overlay_connectivity_google.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk' with 1 weak references
+10-15 09:15:51.086  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:15:51.087  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:51.091  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ManagedProvisioning/ManagedProvisioning.apk' with 1 weak references
+10-15 09:15:51.091  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/SoundPicker/SoundPicker.apk' with 1 weak references
+10-15 09:15:51.091  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk' with 1 weak references
+10-15 09:15:51.092  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGoogleTelemetryTvp/PrebuiltGoogleTelemetryTvp.apk' with 1 weak references
+10-15 09:15:51.092  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/MultiDisplayProvider/MultiDisplayProvider.apk' with 1 weak references
+10-15 09:15:51.092  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DeviceDiagnostics/DeviceDiagnostics.apk' with 1 weak references
+10-15 09:15:51.092   373  4078 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10154 0}
+10-15 09:15:51.094   373  4079 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:51.094   373  4079 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7fb88614d0
+10-15 09:15:51.094   373  4080 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:51.094   373  4079 I resolv  : doQuery: rcode=0, ancount=1, return value=59
+10-15 09:15:51.094   373  4080 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7e5886b400
+10-15 09:15:51.094   373  4080 I resolv  : doQuery: rcode=0, ancount=1, return value=47
+10-15 09:15:51.094  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/DeviceDiagnostics__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGoogleAdservicesTvp/PrebuiltGoogleAdservicesTvp.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/KidsSupervisionStub/KidsSupervisionStub.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/StorageManager/StorageManager.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/StorageManager__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BookmarkProvider/BookmarkProvider.apk' with 1 weak references
+10-15 09:15:51.095  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+10-15 09:15:51.097  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.097  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:51.097  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.uwb/priv-app/ServiceUwbResourcesGoogle@350820300/ServiceUwbResourcesGoogle.apk' with 1 weak references
+10-15 09:15:51.097  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/priv-app/ServiceWifiResourcesGoogle@350820300/ServiceWifiResourcesGoogle.apk' with 1 weak references
+10-15 09:15:51.097  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/ThemePicker/ThemePicker.apk' with 1 weak references
+10-15 09:15:51.097  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk' with 1 weak references
+10-15 09:15:51.097  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/OdadPrebuilt/OdadPrebuilt.apk' with 1 weak references
+10-15 09:15:51.098  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TeleService/TeleService.apk' with 1 weak references
+10-15 09:15:51.098  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/TeleService__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+10-15 09:15:51.098  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TeleService__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.098  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/Shell/Shell.apk' with 1 weak references
+10-15 09:15:51.098  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk' with 1 weak references
+10-15 09:15:51.098  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/UserDictionaryProvider/UserDictionaryProvider.apk' with 1 weak references
+10-15 09:15:51.098  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/EmergencyInfoGoogleNoUi/EmergencyInfoGoogleNoUi.apk' with 1 weak references
+10-15 09:15:51.101  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk' with 1 weak references
+10-15 09:15:51.101  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/FusedLocation/FusedLocation.apk' with 1 weak references
+10-15 09:15:51.101  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk' with 1 weak references
+10-15 09:15:51.101  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+10-15 09:15:51.101  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.101  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIEmulationPixel6/SystemUIEmulationPixel6Overlay.apk' with 1 weak references
+10-15 09:15:51.101  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 09:15:51.102  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BluetoothMidiService/BluetoothMidiService.apk' with 1 weak references
+10-15 09:15:51.102  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+10-15 09:15:51.102  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+10-15 09:15:51.103  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ContactsProvider/ContactsProvider.apk' with 1 weak references
+10-15 09:15:51.103  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/ContactsProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 09:15:51.103  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:51.104  1391  1405 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 09:15:51.107  1597  2478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:51.111  3053  3997 I ConfigUpdater: doneInstall
+10-15 09:15:51.117  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.podcasts_android.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:51.120  1678  1953 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/08202014-metadata.txt via provider delete
+10-15 09:15:51.128  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverSchedulePreferenceController
+10-15 09:15:51.128  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverStickyPreferenceController
+10-15 09:15:51.128  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverReminderPreferenceController
+10-15 09:15:51.129  1356  1748 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():469 Get empty configurations.
+10-15 09:15:51.129  1356  1748 I PhenotypeModule: PhenotypeModule.handleResult():319 fetchAndUpdate() : Success, hasFlags=false, fetchStatus=2026-10-15 09:15:51{reason=BROADCAST, isFullFetch=false, isEmpty=true, registeredFormFactor=phone, fetchedFormFactor=phone, success=true, failureMessage=null, isDelta=false, fetchedFlagsCount=0, deletedFlagsCount=0, totalTime=83}
+10-15 09:15:51.132  1460  1644 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/08202014-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/08202014-metadata.txt
+10-15 09:15:51.132  3847  3907 I TestRunner: finished: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

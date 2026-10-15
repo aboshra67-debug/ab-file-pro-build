@@ -1,0 +1,4 @@
+10-15 09:19:01.147  5221  5240 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:19:01.153  1860  1860 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.NotificationStackScrollLayout.updateContentHeight() due to JIT inline cache
+10-15 09:19:01.267  1860  1860 I zygote64: Deoptimizing void com.android.systemui.statusbar.ExpandableView.updateClipping() due to JIT inline cache
+10-15 09:19:01.272  5221  5240 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

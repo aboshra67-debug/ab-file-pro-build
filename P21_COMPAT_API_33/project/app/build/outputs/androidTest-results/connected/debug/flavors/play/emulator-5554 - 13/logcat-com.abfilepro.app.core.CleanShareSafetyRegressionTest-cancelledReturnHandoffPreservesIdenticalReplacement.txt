@@ -1,0 +1,6 @@
+10-15 09:18:27.189  5192  5333 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:27.208  1055  5171 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 09:18:27.209  1274  5173 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 09:18:27.210  1274  5173 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-15 09:18:27.215  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.225  5192  5333 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

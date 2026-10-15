@@ -1,0 +1,3 @@
+10-15 09:18:32.291  5192  5333 I TestRunner: started: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.301  1086  1314 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 12
+10-15 09:18:32.355  5192  5333 I TestRunner: finished: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

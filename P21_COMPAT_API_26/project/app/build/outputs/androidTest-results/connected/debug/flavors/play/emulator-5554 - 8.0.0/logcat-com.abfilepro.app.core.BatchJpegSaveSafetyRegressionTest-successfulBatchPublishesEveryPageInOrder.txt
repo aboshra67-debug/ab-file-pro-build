@@ -1,0 +1,33 @@
+10-15 09:19:01.485  5221  5240 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 09:19:01.508  2619  2771 W ErrorProcessor: 	... 9 more
+10-15 09:19:01.508  2619  2771 I AudioController: internalShutdown
+10-15 09:19:01.509  2619  3002 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 09:19:01.514  2619  2619 I MicroDetector: Keeping mic open: false
+10-15 09:19:01.514  2619  2619 I MicroDetectionWorker: #onError(false)
+10-15 09:19:01.515  2619  2804 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 09:19:01.537  1860  1860 I zygote64: Deoptimizing void com.android.systemui.statusbar.ExpandableView.updateClipping() due to JIT inline cache
+10-15 09:19:01.546  1860  2118 D EGL_emulation: eglMakeCurrent: 0x74d2cce3cdc0: ver 3 0 (tinfo 0x74d2cce0d840)
+10-15 09:19:01.562  1388  1388 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 09:19:01.567  1860  2118 D EGL_emulation: eglMakeCurrent: 0x74d2cce3cdc0: ver 3 0 (tinfo 0x74d2cce0d840)
+10-15 09:19:01.603  2619  2628 I zygote  : Do full code cache collection, code=502KB, data=347KB
+10-15 09:19:01.603  2619  2628 I zygote  : After code cache collection, code=488KB, data=314KB
+10-15 09:19:01.702  5221  5240 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

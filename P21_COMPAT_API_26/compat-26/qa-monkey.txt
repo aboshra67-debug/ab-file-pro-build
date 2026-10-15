@@ -1,0 +1,288 @@
+  bash arg: -p
+  bash arg: com.abfilepro.app.p21qa
+  bash arg: -s
+  bash arg: 2126
+  bash arg: --throttle
+  bash arg: 250
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: --pct-appswitch
+  bash arg: 0
+  bash arg: --pct-anyevent
+  bash arg: 0
+  bash arg: -v
+  bash arg: 800
+:Monkey: seed=2126 count=800
+:AllowPackage: com.abfilepro.app.p21qa
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 18.07229%
+//   1: 12.048193%
+//   2: 2.4096386%
+//   3: 18.07229%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 30.120483%
+//   7: 18.07229%
+//   8: -0.0%
+//   9: -0.0%
+//   10: 1.2048193%
+//   11: -0.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.abfilepro.app.p21qa/com.abfilepro.app.MainActivity } in package com.abfilepro.app.p21qa
+:Sending Touch (ACTION_DOWN): 0:(739.0,485.0)
+:Sending Touch (ACTION_UP): 0:(715.9907,483.4249)
+:Sending Touch (ACTION_DOWN): 0:(893.0,330.0)
+:Sending Touch (ACTION_UP): 0:(893.2483,325.60855)
+:Sending Touch (ACTION_DOWN): 0:(254.0,1387.0)
+:Sending Touch (ACTION_UP): 0:(257.1438,1398.9916)
+:Sending Touch (ACTION_DOWN): 0:(518.0,333.0)
+:Sending Touch (ACTION_UP): 0:(510.57062,328.0291)
+:Sending Touch (ACTION_DOWN): 0:(1000.0,2009.0)
+:Sending Touch (ACTION_UP): 0:(1026.7701,1998.1288)
+:Sending Touch (ACTION_DOWN): 0:(53.0,1350.0)
+:Sending Touch (ACTION_UP): 0:(6.767478,1333.971)
+:Sending Touch (ACTION_DOWN): 0:(599.0,833.0)
+:Sending Touch (ACTION_UP): 0:(655.4265,888.35583)
+:Sending Touch (ACTION_DOWN): 0:(313.0,1900.0)
+:Sending Touch (ACTION_UP): 0:(306.75546,1892.8029)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(27.0,1567.0)
+:Sending Touch (ACTION_UP): 0:(22.191063,1571.5573)
+:Sending Touch (ACTION_DOWN): 0:(656.0,1448.0)
+:Sending Touch (ACTION_UP): 0:(654.51624,1451.3597)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(410.0,2256.0)
+:Sending Touch (ACTION_UP): 0:(418.37616,2259.0283)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(234.0,1420.0)
+:Sending Touch (ACTION_UP): 0:(246.91345,1435.4208)
+    //[calendar_time:2026-10-15 09:19:46.122  system_uptime:228464]
+    // Sending event #100
+    //[calendar_time:2026-10-15 09:19:46.374  system_uptime:228715]
+    // Sending event #100
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(757.0,103.0)
+:Sending Touch (ACTION_UP): 0:(757.7592,99.84982)
+:Sending Touch (ACTION_DOWN): 0:(168.0,382.0)
+:Sending Touch (ACTION_UP): 0:(155.49821,386.945)
+:Sending Touch (ACTION_DOWN): 0:(966.0,1884.0)
+:Sending Touch (ACTION_UP): 0:(937.3404,1942.7004)
+:Sending Touch (ACTION_DOWN): 0:(273.0,117.0)
+:Sending Touch (ACTION_UP): 0:(272.61728,125.42202)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(237.0,1731.0)
+:Sending Touch (ACTION_UP): 0:(220.3645,1726.2306)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(742.0,606.0)
+:Sending Touch (ACTION_UP): 0:(737.0671,605.5947)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+    //[calendar_time:2026-10-15 09:19:50.132  system_uptime:232473]
+    // Sending event #200
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1042.0,1804.0)
+:Sending Touch (ACTION_UP): 0:(1061.9902,1769.1602)
+:Sending Touch (ACTION_DOWN): 0:(79.0,1445.0)
+:Sending Touch (ACTION_UP): 0:(39.71722,1421.1663)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(115.0,756.0)
+:Sending Touch (ACTION_UP): 0:(125.821594,720.68384)
+:Sending Touch (ACTION_DOWN): 0:(788.0,1167.0)
+:Sending Touch (ACTION_UP): 0:(805.7832,1165.9263)
+:Sending Touch (ACTION_DOWN): 0:(305.0,1871.0)
+:Sending Touch (ACTION_UP): 0:(310.9703,1872.7487)
+:Sending Touch (ACTION_DOWN): 0:(343.0,1784.0)
+:Sending Touch (ACTION_UP): 0:(340.04248,1781.5077)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(459.0,296.0)
+:Sending Touch (ACTION_UP): 0:(459.70786,297.05112)
+:Sending Touch (ACTION_DOWN): 0:(498.0,1951.0)
+:Sending Touch (ACTION_UP): 0:(488.42664,1926.4081)
+:Sending Touch (ACTION_DOWN): 0:(436.0,416.0)
+:Sending Touch (ACTION_UP): 0:(432.33704,415.82333)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(322.0,2064.0)
+:Sending Touch (ACTION_UP): 0:(323.0232,2063.6992)
+:Sending Touch (ACTION_DOWN): 0:(351.0,1693.0)
+:Sending Touch (ACTION_UP): 0:(343.8734,1690.1967)
+    // Rejecting start of Intent { act=android.intent.action.CREATE_DOCUMENT typ=application/json cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(401.0,1704.0)
+:Sending Touch (ACTION_UP): 0:(385.75076,1710.5305)
+    // Rejecting start of Intent { act=android.intent.action.CREATE_DOCUMENT typ=application/json cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+    //[calendar_time:2026-10-15 09:19:54.965  system_uptime:237306]
+    // Sending event #300
+    //[calendar_time:2026-10-15 09:19:55.216  system_uptime:237557]
+    // Sending event #300
+:Sending Touch (ACTION_DOWN): 0:(447.0,356.0)
+:Sending Touch (ACTION_UP): 0:(483.24664,399.62967)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(65.0,1226.0)
+:Sending Touch (ACTION_UP): 0:(82.997635,1223.4506)
+:Sending Touch (ACTION_DOWN): 0:(1008.0,40.0)
+:Sending Touch (ACTION_UP): 0:(1007.0156,60.94747)
+:Sending Touch (ACTION_DOWN): 0:(770.0,2109.0)
+:Sending Touch (ACTION_UP): 0:(771.3872,2117.2124)
+:Sending Touch (ACTION_DOWN): 0:(733.0,619.0)
+:Sending Touch (ACTION_UP): 0:(724.6185,586.16064)
+:Sending Touch (ACTION_DOWN): 0:(429.0,1485.0)
+:Sending Touch (ACTION_UP): 0:(420.91425,1482.522)
+:Sending Touch (ACTION_DOWN): 0:(371.0,474.0)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_UP): 0:(451.8545,442.62024)
+:Sending Touch (ACTION_DOWN): 0:(634.0,1765.0)
+:Sending Touch (ACTION_UP): 0:(628.131,1800.1357)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(71.0,524.0)
+:Sending Touch (ACTION_UP): 0:(89.11562,557.7952)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+    //[calendar_time:2026-10-15 09:20:01.955  system_uptime:244296]
+    // Sending event #400
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(458.0,1718.0)
+:Sending Touch (ACTION_UP): 0:(459.5355,1704.1704)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(597.0,130.0)
+:Sending Touch (ACTION_UP): 0:(585.58,148.24397)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(876.0,2089.0)
+:Sending Touch (ACTION_UP): 0:(886.71155,2090.6782)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(1057.0,1437.0)
+:Sending Touch (ACTION_UP): 0:(1051.3934,1431.3198)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(851.0,2230.0)
+:Sending Touch (ACTION_UP): 0:(834.4979,2265.715)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(1066.0,1301.0)
+:Sending Touch (ACTION_UP): 0:(1045.0519,1286.3987)
+:Sending Touch (ACTION_DOWN): 0:(393.0,1271.0)
+:Sending Touch (ACTION_UP): 0:(407.77078,1266.751)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(746.0,1270.0)
+:Sending Touch (ACTION_UP): 0:(768.57556,1235.4906)
+:Sending Touch (ACTION_DOWN): 0:(407.0,1602.0)
+:Sending Touch (ACTION_UP): 0:(404.97812,1614.3088)
+:Sending Touch (ACTION_DOWN): 0:(1059.0,126.0)
+:Sending Touch (ACTION_UP): 0:(1005.4255,172.8397)
+:Sending Touch (ACTION_DOWN): 0:(224.0,2255.0)
+:Sending Touch (ACTION_UP): 0:(224.80971,2254.9219)
+:Sending Touch (ACTION_DOWN): 0:(980.0,1698.0)
+    //[calendar_time:2026-10-15 09:20:08.758  system_uptime:251099]
+    // Sending event #500
+:Sending Touch (ACTION_UP): 0:(886.19,1781.469)
+:Sending Touch (ACTION_DOWN): 0:(630.0,1925.0)
+:Sending Touch (ACTION_UP): 0:(630.006,1924.7473)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(122.0,229.0)
+:Sending Touch (ACTION_UP): 0:(111.02302,226.78973)
+:Sending Touch (ACTION_DOWN): 0:(52.0,2040.0)
+:Sending Touch (ACTION_UP): 0:(58.400784,2039.7778)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(79.0,1176.0)
+:Sending Touch (ACTION_UP): 0:(57.62921,1171.8987)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(12.0,825.0)
+:Sending Touch (ACTION_UP): 0:(5.286187,824.5842)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(767.0,2142.0)
+:Sending Touch (ACTION_UP): 0:(778.32947,2156.455)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(36.0,1430.0)
+:Sending Touch (ACTION_UP): 0:(38.586193,1428.0554)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(76.0,587.0)
+:Sending Touch (ACTION_UP): 0:(92.23971,630.487)
+:Sending Touch (ACTION_DOWN): 0:(102.0,489.0)
+:Sending Touch (ACTION_UP): 0:(117.641136,485.78348)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+    //[calendar_time:2026-10-15 09:20:16.318  system_uptime:258659]
+    // Sending event #600
+:Sending Touch (ACTION_DOWN): 0:(712.0,1008.0)
+:Sending Touch (ACTION_UP): 0:(714.8364,1023.2382)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(960.0,2157.0)
+:Sending Touch (ACTION_UP): 0:(952.8253,2149.9797)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(697.0,446.0)
+:Sending Touch (ACTION_UP): 0:(695.8756,438.61252)
+:Sending Touch (ACTION_DOWN): 0:(41.0,1965.0)
+:Sending Touch (ACTION_UP): 0:(2.3381786,1966.1592)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(354.0,1766.0)
+:Sending Touch (ACTION_UP): 0:(347.25763,1765.8075)
+    // Rejecting start of Intent { act=android.intent.action.OPEN_DOCUMENT typ=*/* cmp=com.android.documentsui/.picker.PickActivity } in package com.android.documentsui
+:Sending Touch (ACTION_DOWN): 0:(782.0,1916.0)
+:Sending Touch (ACTION_UP): 0:(831.0597,1862.1725)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(397.0,1262.0)
+:Sending Touch (ACTION_UP): 0:(311.70633,1184.512)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+    //[calendar_time:2026-10-15 09:20:20.425  system_uptime:262766]
+    // Sending event #700
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(662.0,1631.0)
+:Sending Touch (ACTION_UP): 0:(669.2012,1636.889)
+:Sending Touch (ACTION_DOWN): 0:(153.0,1038.0)
+:Sending Touch (ACTION_UP): 0:(161.48805,1030.5148)
+    // Rejecting start of Intent { act=android.content.pm.action.REQUEST_PERMISSIONS pkg=com.google.android.packageinstaller cmp=com.google.android.packageinstaller/com.android.packageinstaller.permission.ui.GrantPermissionsActivity } in package com.google.android.packageinstaller
+:Sending Touch (ACTION_DOWN): 0:(943.0,10.0)
+:Sending Touch (ACTION_UP): 0:(935.41064,18.608345)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(809.0,1481.0)
+:Sending Touch (ACTION_UP): 0:(778.89465,1414.2236)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(272.0,550.0)
+:Sending Touch (ACTION_UP): 0:(297.8333,548.56104)
+:Sending Touch (ACTION_DOWN): 0:(828.0,779.0)
+:Sending Touch (ACTION_UP): 0:(828.9689,779.7975)
+:Sending Touch (ACTION_DOWN): 0:(845.0,439.0)
+:Sending Touch (ACTION_UP): 0:(842.61707,432.91534)
+Events injected: 800
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=45382ms (0ms mobile, 0ms wifi, 45382ms not connected)
+// Monkey finished
+args: [-p, com.abfilepro.app.p21qa, -s, 2126, --throttle, 250, --pct-syskeys, 0, --pct-appswitch, 0, --pct-anyevent, 0, -v, 800]
+ arg: "-p"
+ arg: "com.abfilepro.app.p21qa"
+ arg: "-s"
+ arg: "2126"
+ arg: "--throttle"
+ arg: "250"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "--pct-appswitch"
+ arg: "0"
+ arg: "--pct-anyevent"
+ arg: "0"
+ arg: "-v"
+ arg: "800"
+data="com.abfilepro.app.p21qa"
+data="2126"
+arg="--throttle" mCurArgData="null" mNextArg=5 argwas="--throttle" nextarg="250"
+data="250"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=7 argwas="--pct-syskeys" nextarg="0"
+data="0"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=9 argwas="--pct-appswitch" nextarg="0"
+data="0"
+arg="--pct-anyevent" mCurArgData="null" mNextArg=11 argwas="--pct-anyevent" nextarg="0"
+data="0"

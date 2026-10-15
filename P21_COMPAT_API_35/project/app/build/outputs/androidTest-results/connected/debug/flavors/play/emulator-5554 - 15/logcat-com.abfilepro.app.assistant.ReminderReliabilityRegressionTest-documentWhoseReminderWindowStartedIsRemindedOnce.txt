@@ -1,0 +1,17 @@
+10-15 09:15:44.871  3847  3907 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:15:44.874  1108  1117 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+10-15 09:15:44.878  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.884  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.889  1108  2826 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+10-15 09:15:44.892  1108  1117 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.893  1108  2638 D SettingsSliceProvider: content://com.android.settings.slices/action/alarm_volume loaded from cache
+10-15 09:15:44.894  1108  2826 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+10-15 09:15:44.895  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.896  1108  2826 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-15 09:15:44.897  1108  2826 D SliceBuilder: Creating slice for: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 09:15:44.902  1108  1117 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.909  1108  3221 D SettingsSliceProvider: content://com.android.settings.slices/action/os_firmware_version loaded from cache
+10-15 09:15:44.913  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.920  1108  2638 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.921  1108  2638 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 09:15:44.924  3847  3907 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

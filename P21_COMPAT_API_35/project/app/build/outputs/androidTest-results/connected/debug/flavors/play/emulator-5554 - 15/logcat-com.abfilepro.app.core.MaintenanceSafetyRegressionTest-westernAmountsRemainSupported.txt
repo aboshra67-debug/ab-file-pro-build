@@ -1,0 +1,6 @@
+10-15 09:15:55.112  3847  3907 I TestRunner: started: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:55.116  1678  4127 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt via provider delete
+10-15 09:15:55.122  1460  1644 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/05132026-sms-denylist-metadata.txt
+10-15 09:15:55.123  1460  1644 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 6ms, 0 inserts 0 updates 0 deletes
+10-15 09:15:55.138  1356  1709 I SP      : GC for 'handwriting_recognition' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:15:55.145  3847  3907 I TestRunner: finished: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

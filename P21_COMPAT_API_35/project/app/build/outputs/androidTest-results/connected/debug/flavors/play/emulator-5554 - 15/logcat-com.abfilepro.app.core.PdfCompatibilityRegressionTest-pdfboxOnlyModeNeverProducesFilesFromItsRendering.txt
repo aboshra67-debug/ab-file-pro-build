@@ -1,0 +1,30 @@
+10-15 09:15:55.683  3847  3907 I TestRunner: started: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:15:55.695  1260  2338 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:15:55.700  1678  4147 D DownloadManager: [10] Starting
+10-15 09:15:55.705  3278  4124 E BugleRcsEngine: Could not create DroidGuard token creation event [CONTEXT log_prefix="DroidGuardLogger" thread_id=107 ]
+10-15 09:15:55.712  3278  4124 I BugleRcsEngine: RequestWithImsiState: event Send config request [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:55.712  3278  4124 I BugleRcsEngine: InProgressState: event Send config request [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:55.716  1678  4147 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10136
+10-15 09:15:55.717  1597  1771 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.social.connections#com.google.android.googlequicksearchbox
+10-15 09:15:55.723  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.gsa.pcp.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:55.732  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:55.739  3278  3960 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=92 ]
+10-15 09:15:55.743   373  4149 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10134 0}
+10-15 09:15:55.744   373  4150 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:55.744   373  4151 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:55.762   373  4150 I resolv  : res_nsend: used send_dg 76 terrno: 0
+10-15 09:15:55.762   373  4150 I resolv  : doQuery: rcode=0, ancount=1, return value=76
+10-15 09:15:55.764  1356  1709 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:15:55.771   373  4151 I resolv  : res_nsend: used send_dg 64 terrno: 0
+10-15 09:15:55.771   373  4151 I resolv  : doQuery: rcode=0, ancount=1, return value=64
+10-15 09:15:55.773  3278  3960 D TrafficStats: tagSocket(159) with statsTag=0xcce, statsUid=-1
+10-15 09:15:55.776  1356  1356 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 09:15:55.778  1597  3362 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:55.783  1356  1356 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 09:15:55.787   373   421 I netd    : tetherGetStats() -> {[]} <0.42ms>
+10-15 09:15:55.791  1597  1597 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.soda_hotword.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:55.814  1356  1709 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 09:15:55.841  1356  1709 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 2 candidates
+10-15 09:15:55.843  1356  1356 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 2
+10-15 09:15:55.847  1678  4153 D DownloadManager: [11] Starting
+10-15 09:15:55.850  3847  3907 I TestRunner: finished: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

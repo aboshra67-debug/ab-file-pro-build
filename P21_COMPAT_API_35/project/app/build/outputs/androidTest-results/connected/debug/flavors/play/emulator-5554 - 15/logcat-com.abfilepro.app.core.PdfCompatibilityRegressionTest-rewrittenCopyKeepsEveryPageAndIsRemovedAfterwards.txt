@@ -1,0 +1,6 @@
+10-15 09:15:56.016  3847  3907 I TestRunner: started: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:15:56.019  1597  2478 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.googlequicksearchbox
+10-15 09:15:56.023  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 109
+10-15 09:15:56.024  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d044d90
+10-15 09:15:56.024  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d044d90
+10-15 09:15:56.025  3847  3907 I TestRunner: finished: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

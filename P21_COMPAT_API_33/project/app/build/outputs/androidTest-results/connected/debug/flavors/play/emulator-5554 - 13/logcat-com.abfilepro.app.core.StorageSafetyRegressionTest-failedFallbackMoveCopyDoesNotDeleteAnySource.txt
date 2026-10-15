@@ -1,0 +1,6 @@
+10-15 09:18:32.043  5192  5333 I TestRunner: started: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.048  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.049  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.notification.CallVolumePreferenceController
+10-15 09:18:32.055  1086  1314 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/call_volume
+10-15 09:18:32.055  1086  1314 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/call_volume) in: 7
+10-15 09:18:32.058  5192  5333 I TestRunner: finished: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)

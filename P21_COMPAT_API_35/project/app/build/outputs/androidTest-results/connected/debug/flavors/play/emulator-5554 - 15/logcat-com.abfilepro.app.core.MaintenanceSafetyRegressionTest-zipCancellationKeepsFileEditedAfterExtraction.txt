@@ -1,0 +1,65 @@
+10-15 09:15:53.223  3847  3907 I TestRunner: started: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:53.231  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:15:53.233  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:15:53.233  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:15:53.234  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 09:15:53.234  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:15:53.237  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:15:53.237  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 09:15:53.239  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:15:53.239  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:15:53.240  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:15:53.241  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~88eGJbY5iAUb3KSYdmnTnA==/com.android.chrome-DBjep1pmG6DBNlAWGhaTbg==/Chrome.apk' with 1 weak references
+10-15 09:15:53.242  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~w7LaMPurG44f4jK3cIligg==/com.google.android.trichromelibrary_636771938-LCQQlFP_xpAzhAzL3r0xQg==/TrichromeLibrary.apk' with 1 weak references
+10-15 09:15:53.242  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:15:53.242  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 09:15:53.243  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:15:53.247  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:53.256  1606  1606 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-15 09:15:53.272  3278  3495 I BugleRcsWorker: [seqId=0][workId=a64be045-59bb-4319-9256-612510055321] Starting StateMachine, trigger is CSLIB_PHENOTYPE_UPDATE
+10-15 09:15:53.275  3278  3495 I BugleRcsEngine: start PEv2, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is a64be045-59bb-4319-9256-612510055321 [null] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=66 ]
+10-15 09:15:53.276  3278  3495 I BugleRcsEngine: Created new RcsProvisioningProtoDataStorage for sim redacted-pii:sim_id[chars:20,last3:897] [CONTEXT thread_id=66 ]
+10-15 09:15:53.285  1356  1709 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en {m:b:u:l, bg}, delight:main_en_840_2024070900_1 @ {m:b:u:l, fg}
+10-15 09:15:53.289  3278  3495 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=66 ]
+10-15 09:15:53.300  3278  3495 I BugleRcsEngine: start [null] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=66 ]
+10-15 09:15:53.301  3278  4124 I BugleRcsEngine: Enter EnabledState [null] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.315  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:53.331  3278  4124 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Send Provisioning Session ID (18)], redacted-pii:[chars:97] [CONTEXT thread_id=107 ]
+10-15 09:15:53.331  3278  4124 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:255] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=107 ]
+10-15 09:15:53.353  3278  3486 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@47e1c5a
+10-15 09:15:53.355  3278  3495 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Send Provisioning Session ID
+10-15 09:15:53.357  3278  3486 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@be6a48a
+10-15 09:15:53.361  3278  4124 I BugleRcsEngine: Start a new provisioning session [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.361  3278  4124 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:53.369  3278  4124 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:53.373  3278  4124 I BugleRcsEngine: transitionViaMessage, srcState=EnabledState, destState = CheckPreconditionsState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.377  3278  4124 I BugleRcsEngine: Sending ProvisioningEvent to Bugle [Update provisioning status (11)], redacted-pii:[chars:85] [CONTEXT thread_id=107 ]
+10-15 09:15:53.377  3278  4124 I BugleRcsEngine: Broadcasting provisioning intent com.google.android.ims.provisioning.engine.provisioningEventAction to Bugle with extras redacted-pii:[chars:243] from source PROVISIONING_EVENT [CONTEXT log_prefix="EngineBroadcaster" thread_id=107 ]
+10-15 09:15:53.373   573  1048 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+10-15 09:15:53.387  1356  1363 I putmethod.latin: Background concurrent mark compact GC freed 10184KB AllocSpace bytes, 33(1700KB) LOS objects, 49% free, 13MB/27MB, paused 317us,1.690ms total 220.962ms
+10-15 09:15:53.414  3278  4124 I BugleRcsEngine: EnabledState: Transition to check preconditions [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.414  3278  4124 I BugleRcsEngine: transitionTo: destState=CheckPreconditionsState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.414  3278  4124 I BugleRcsEngine: onTransitionRequested EnabledState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.415  3278  4124 I BugleRcsEngine: Enter CheckPreconditionsState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.421  3670  4095 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=75 ]
+10-15 09:15:53.423  3278  3473 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Update provisioning status
+10-15 09:15:53.424  3670  3836 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:53.424  3670  3836 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:53.428  3278  3486 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:15:53.431  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:53.435   573  1048 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 09:15:53.437  3278  4124 I BugleRcsEngine: Battery optimization is not required. [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.438  3278  4124 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:53.438  3278  4124 I BugleRcsEngine: transitionViaMessage, srcState=CheckPreconditionsState, destState = ReadyState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.438  3278  4124 I BugleRcsEngine: CheckPreconditionsState: Transition to ready [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.439  3278  4124 I BugleRcsEngine: transitionTo: destState=ReadyState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.441  3278  4124 I BugleRcsEngine: onTransitionRequested CheckPreconditionsState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.442  3278  4124 I BugleRcsEngine: Exit CheckPreconditionsState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.442  3278  4124 I BugleRcsEngine: Exit EnabledState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.445  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:53.446  3278  4124 I BugleRcsEngine: Enter InProgressState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.448  3278  3477 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@eb9443a
+10-15 09:15:53.456  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:53.457  3278  4124 I BugleRcsEngine: Enter ReadyState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.461  3278  3473 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:15:53.462  3847  3907 I TestRunner: finished: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

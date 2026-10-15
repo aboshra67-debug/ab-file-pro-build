@@ -1,0 +1,22 @@
+10-15 09:18:23.790  5192  5333 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:18:23.818   483   589 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS |
+10-15 09:18:23.819   957   957 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:18:23.819   957   957 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 09:18:23.819   957   957 V MediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_CHANGED
+10-15 09:18:23.820   957   957 D MediaPlayerList: Name of package changed: com.google.android.gms
+10-15 09:18:23.822   757   757 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:18:23.827  3213  3381 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of atsi@f717e3
+10-15 09:18:23.834  1274  4830 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 09:18:23.834  1274  4830 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:18:23.834  1274  4830 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:18:23.836   984   984 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 09:18:23.837   984   984 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:18:23.841  1274  2089 I PeopleGalProvider: Gal directories started.
+10-15 09:18:23.842  1274  2089 I PeopleGalProvider: Method 1 completed.
+10-15 09:18:23.842  1274  2089 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:18:23.845  1548  5079 I PermissionControllerServiceImpl: Updating user sensitive for uid 10120
+10-15 09:18:23.850   483   578 I RoleService: Granting default roles...
+10-15 09:18:23.882  1055  4792 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package: flg=0x45000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:18:23.891  1548  1577 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:18:23.896   984   984 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 09:18:23.930  5192  5333 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

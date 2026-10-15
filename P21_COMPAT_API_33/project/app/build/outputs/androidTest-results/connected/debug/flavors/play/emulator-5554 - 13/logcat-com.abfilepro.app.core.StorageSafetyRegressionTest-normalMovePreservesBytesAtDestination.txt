@@ -1,0 +1,2 @@
+10-15 09:18:32.252  5192  5333 I TestRunner: started: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.258  5192  5333 I TestRunner: finished: normalMovePreservesBytesAtDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

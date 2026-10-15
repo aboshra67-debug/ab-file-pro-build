@@ -1,0 +1,2 @@
+10-15 09:19:00.625  5221  5240 I TestRunner: started: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:19:00.639  5221  5240 I TestRunner: finished: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

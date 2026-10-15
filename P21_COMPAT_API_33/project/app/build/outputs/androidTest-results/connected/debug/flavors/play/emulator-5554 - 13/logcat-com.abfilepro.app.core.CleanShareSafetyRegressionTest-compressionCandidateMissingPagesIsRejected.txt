@@ -1,0 +1,7 @@
+10-15 09:18:26.339  5192  5333 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:26.377  1055  4456 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-15 09:18:26.388  1641  2342 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/ringtones/Ring_Synth_04.ogg)
+10-15 09:18:26.423  1274  5172 I GCM-GMS : Got GMS direct boot token.
+10-15 09:18:26.439  1641  2342 I MediaProvider: Open with lower FS for /product/media/audio/ringtones/Ring_Synth_04.ogg. Uid: 10173
+10-15 09:18:26.462  1055  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 1 elapsed_millis: 871 uptime_millis: 871 exec_start_elapsed_seconds: 121 [CONTEXT service_id=218 ]
+10-15 09:18:26.491  5192  5333 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

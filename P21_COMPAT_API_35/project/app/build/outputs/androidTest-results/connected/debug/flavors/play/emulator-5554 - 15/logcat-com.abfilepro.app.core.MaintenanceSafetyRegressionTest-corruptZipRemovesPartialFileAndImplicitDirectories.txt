@@ -1,0 +1,101 @@
+10-15 09:15:52.736  3847  3907 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:52.745  1356  1356 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 09:15:52.763  1356  1356 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 09:15:52.766   573   573 W system_server: Long monitor contention with owner android.bg (605) at boolean com.android.server.PackageWatchdog.saveToFile()(PackageWatchdog.java:1194) waiters=0 in void com.android.server.PackageWatchdog.syncRequests() for 107ms
+10-15 09:15:52.774   573   573 D SdkSandboxManager: Property sdksandbox_next_activity_allowlist is empty.
+10-15 09:15:52.774   573   573 D SdkSandboxManager: Property sdksandbox_next_contentprovider_allowlist is empty.
+10-15 09:15:52.774   573   573 D SdkSandboxManager: Property sdksandbox_activity_allowlist_per_targetSdkVersion is empty.
+10-15 09:15:52.774   573   573 D SdkSandboxManager: Property contentprovider_allowlist_per_targetSdkVersion is empty.
+10-15 09:15:52.774   573   573 D SdkSandboxManager: Property services_allowlist_per_targetSdkVersion is empty.
+10-15 09:15:52.792  3847  3852 W p.p21mainttrial: Suspending all threads took: 7.371ms
+10-15 09:15:52.818  3278  3473 I BugleJobs: GenericWorkerQueueAction: Rescheduling immediately to continue processing since we didn't yet reach the end.
+10-15 09:15:52.819  3278  3473 W JobInfo : Job 'com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionJobService#302' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:52.825   573  1645 W JobInfo : Job 'com.google.android.apps.messaging/.shared.datamodel.action.execution.ActionJobService#302' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:52.830  3847  3852 I p.p21mainttrial: Background concurrent mark compact GC freed 2340KB AllocSpace bytes, 51(4360KB) LOS objects, 49% free, 5462KB/10MB, paused 8.908ms,16.837ms total 207.447ms
+10-15 09:15:52.830   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:52.830   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:52.833  1356  1709 I SP      : Scheduling: download registered, 0 started, 3 paused, 1 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2024070900_1 * {m:b:u:l, fg}
+10-15 09:15:52.833  1356  1709 I SP      : Download stopped: dynamic_art:305f81355a729e382ea9f374dd286d9f, succeeded paused, size: 30514
+10-15 09:15:52.834   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10139} in 20ms
+10-15 09:15:52.836  3278  3454 I BugleDataModel: ActionExecutorImpl: ACTION_RESPONSE_QUEUED_GenericWorkerQueueAction
+10-15 09:15:52.836  1460  1644 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 104ms, 0 inserts 0 updates 0 deletes
+10-15 09:15:52.837  3278  3473 I BugleDataModel: ActionExecutorImpl: Stopping ActionService
+10-15 09:15:52.843  1356  1709 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:15:52.844  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.readaloud#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:52.850  1356  1356 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 2
+10-15 09:15:52.859  3278  3278 I BugleDataModel: ActionExecutorImpl: Starting ActionService
+10-15 09:15:52.861  3278  3278 I BugleDataModel: ActionExecutorImpl: ACTION_EXECUTE_QUEUED_GenericWorkerQueueAction
+10-15 09:15:52.861  3278  3473 I BugleDataModel: ExecuteActionRunnable: running action GenericWorkerQueueAction
+10-15 09:15:52.862  3278  3473 I BugleDataModel: ActionExecutorImpl: ACTION_BACKGROUND_QUEUED_GenericWorkerQueueAction
+10-15 09:15:52.865  3278  3495 I BugleJobs: GenericWorkerQueueAction: Bailing early, no work found, no failed work found
+10-15 09:15:52.866  3278  3495 I BugleDataModel: ActionExecutorImpl: ACTION_RESPONSE_QUEUED_GenericWorkerQueueAction
+10-15 09:15:52.866  3278  3454 I BugleDataModel: ActionExecutorImpl: Stopping ActionService
+10-15 09:15:52.872  1356  1709 I SP      : Scheduling: download stopped, 0 started, 2 paused, 1 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2024070900_1 * {m:b:u:l, fg}
+10-15 09:15:52.872  1356  1709 I SP      : Download stopped: emoji:2ada3c9a4a17d6bb81b1fe8d51502d60, succeeded paused, size: 91822
+10-15 09:15:52.876  1356  1709 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:15:52.878  1356  1356 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 3
+10-15 09:15:52.884  1356  1709 I SP      : Scheduling: download stopped, 0 started, 1 paused, 1 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2024070900_1 * {m:b:u:l, fg}
+10-15 09:15:52.899  1096  1096 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 09:15:52.899  1096  1096 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:15:52.902   923  3529 I PermissionControllerServiceImpl: Updating user sensitive for uid 10143
+10-15 09:15:52.910   922   922 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 09:15:52.910  1356  1709 I SP      : Scheduling: job start ({m:b:u:l, fg}), 1 started, 1 paused, 0 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, delight:main_en_840_2024070900_1 @ * {m:b:u:l, fg}
+10-15 09:15:52.911  3278  3294 I .apps.messaging: Compiler allocated 5914KB to compile java.lang.Object aflc.x()
+10-15 09:15:52.917   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:52.929   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:52.932   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10102} in 16ms
+10-15 09:15:52.951  1260  2370 I .gms.persistent: IncrementDisableThreadFlip blocked for 59.907ms
+10-15 09:15:52.979  1096  1096 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 09:15:52.987  1678  1698 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/ifw-empty.xml via provider delete
+10-15 09:15:52.993  1356  1709 I SP      : Requesting download of URL https://dl.google.com/gboard/klp/dict/en-840/en-840_d3_2024070900_lb_w7ne5j9h16yc6main.dict to main_en_840_2024070900_1.fst-decompress.fetched (constraints: m:b:u:l)
+10-15 09:15:52.997  3278  3432 W .apps.messaging: Long monitor contention with owner AsyncTask #1 (3488) at java.lang.Object ddfw.a(java.lang.String)(PG:52) waiters=0 in java.lang.Object ddfw.a(java.lang.String) for 460ms
+10-15 09:15:52.997  3278  3432 I BugleRcsProvisioning: RcsProvisioningTrigger: onCsLibPhenotypeUpdated, enableProvisioningTaskInBugle = true
+10-15 09:15:52.997  3278  3485 W .apps.messaging: Long monitor contention with owner AsyncTask #1 (3488) at java.lang.Object ddfw.a(java.lang.String)(PG:52) waiters=1 in java.lang.Object ddfw.a(java.lang.String) for 460ms
+10-15 09:15:52.997  3278  3432 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = CSLIB_PHENOTYPE_UPDATE logTriggerEvent = true
+10-15 09:15:52.997  3278  3485 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=62 ]
+10-15 09:15:52.997  3278  3432 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 09:15:52.998  3278  3432 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: CSLIB_PHENOTYPE_UPDATE, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+10-15 09:15:52.998  3278  3432 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: onCsLibPhenotypeUpdated
+10-15 09:15:52.998  3278  3960 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=92 ]
+10-15 09:15:53.000  3278  3495 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForDefaultCallSim: hint: CSLIB_PHENOTYPE_UPDATE, canReshowWelcomeMessage: false
+10-15 09:15:53.004   573   678 I RoleService: Granting default roles...
+10-15 09:15:53.004  3278  3454 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=48 ]
+10-15 09:15:53.005  3278  3432 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=42 ]
+10-15 09:15:53.006  3278  3433 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=43 ]
+10-15 09:15:53.006  3278  3473 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:15:53.006  1096  1096 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:15:53.007   373  4118 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10154 0}
+10-15 09:15:53.007   373  4119 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:53.007   373  4119 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7fb88614d0
+10-15 09:15:53.007   373  4119 I resolv  : doQuery: rcode=0, ancount=1, return value=59
+10-15 09:15:53.008   373  4120 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:53.013  3278  3495 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=66 ]
+10-15 09:15:53.016   373  4120 I resolv  : res_nsend: used send_dg 47 terrno: 0
+10-15 09:15:53.016   373  4120 I resolv  : doQuery: rcode=0, ancount=1, return value=47
+10-15 09:15:53.017  1096  1330 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 09:15:53.018  1356  4117 D TrafficStats: tagSocket(167) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:53.022  3278  3495 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=66 ]
+10-15 09:15:53.023  3278  3495 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+10-15 09:15:53.026  3278  3495 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=66 ]
+10-15 09:15:53.029   573  1048 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 09:15:53.029   573  1048 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 09:15:53.031   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:53.031   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:53.031   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10101} in 1ms
+10-15 09:15:53.032  3278  3495 I RcsAvailabilityUpdaterL: RcsAvailability: Subscription Id: 1, simId: redacted-pii:sim_id[chars:20,last3:897], sipConnectionType: DUAL_REG, isRcsAvailable: false
+10-15 09:15:53.033  3278  3495 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 2, newAvailability: 10, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 09:15:53.037  3278  3960 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+10-15 09:15:53.039  3278  3485 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to Carrier RCS is not set up, lastAvailabilityLocal is RCS is disabled for this carrier by Google, simId hash = -5620425022836157585, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+10-15 09:15:53.042   573  1048 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:15:53.049  3278  3473 I afym    : scheduleProvisioningForEligibleSims: operationTrigger: 2 bugle trigger event: 9
+10-15 09:15:53.049  3278  3473 I afym    : scheduleProvisioningForDefaultSimIfEligible: defaultSimType: DEFAULT_CALL_SIM operationTrigger: 2 bugle trigger event: 9
+10-15 09:15:53.050  3278  3473 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=53 ]
+10-15 09:15:53.050  3278  3473 I afym    : RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 09:15:53.051  3278  3960 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=92 ]
+10-15 09:15:53.053  3278  3485 I BugleRcsEngine: getRcsProvisioningGoogleTosConfiguration # bnuv@5d5fcd, consentState = 0, ServerUpdateTime = 0 [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=62 ]
+10-15 09:15:53.055  3278  3960 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=92 ]
+10-15 09:15:53.058  3278  3485 I BugleRcsProvisioning: RcsProvisioningTrigger: Should not schedule Revoke Google Consent Task because both the consent types are empty in the Storage
+10-15 09:15:53.060  3308  3364 I marvin.talkback: Background concurrent mark compact GC freed 1356KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 2096KB/4192KB, paused 6.269ms,608us total 14.443ms
+10-15 09:15:53.061  3308  3375 W System  : A resource failed to call AbstractCursor.close.
+10-15 09:15:53.066  1460  1644 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/ifw-empty.xml: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/ifw-empty.xml
+10-15 09:15:53.072  3847  3907 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

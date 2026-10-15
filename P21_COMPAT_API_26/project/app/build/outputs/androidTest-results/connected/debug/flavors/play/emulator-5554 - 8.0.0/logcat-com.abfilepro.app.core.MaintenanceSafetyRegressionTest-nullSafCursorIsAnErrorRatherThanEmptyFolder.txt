@@ -1,0 +1,5 @@
+10-15 09:19:06.303  5221  5240 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:19:06.311  1696  1710 E memtrack: Couldn't load memtrack module
+10-15 09:19:06.311  1696  1710 W android.os.Debug: failed to get memory consumption info: -1
+10-15 09:19:06.312  5276  5276 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:19:06.326  5221  5240 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

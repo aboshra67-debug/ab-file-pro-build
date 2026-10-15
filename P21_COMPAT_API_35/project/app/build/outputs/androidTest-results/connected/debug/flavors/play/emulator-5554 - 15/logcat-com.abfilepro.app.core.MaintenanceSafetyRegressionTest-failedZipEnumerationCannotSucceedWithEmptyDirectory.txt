@@ -1,0 +1,72 @@
+10-15 09:15:51.011  3847  3907 I TestRunner: started: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:51.030  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.credentials.CredentialManagerPreferenceController
+10-15 09:15:51.030  1108  3984 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.applications.credentials.CredentialManagerPreferenceController
+10-15 09:15:51.032  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTwistPreferenceController
+10-15 09:15:51.032  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.TemperatureUnitController
+10-15 09:15:51.032  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.FirstDayOfWeekController
+10-15 09:15:51.032  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.NumberingSystemController
+10-15 09:15:51.032  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.RegionalFooterPreferenceController
+10-15 09:15:51.032  1108  3984 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.regionalpreferences.RegionalFooterPreferenceController@486f53f
+10-15 09:15:51.034  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.TrustAgentsPreferenceController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningPreviewPreferenceController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFontSizeController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningPresetController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningCustomController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningTypefaceController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningForegroundColorController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningForegroundOpacityController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningEdgeTypeController
+10-15 09:15:51.037  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningEdgeColorController
+10-15 09:15:51.038  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningBackgroundColorController
+10-15 09:15:51.038  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningBackgroundOpacityController
+10-15 09:15:51.038  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningWindowColorController
+10-15 09:15:51.038  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningWindowOpacityController
+10-15 09:15:51.038  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
+10-15 09:15:51.044  1108  3984 V OnDeviceRecognitionPreferenceController: Recognition service in the same package as the default on-device recognizer with settings activity: com.google.android.as/com.google.android.apps.miphone.aiai.speech.languagepacks.settings.ui.SettingsActivity.
+10-15 09:15:51.044  1108  3984 V OnDeviceRecognitionPreferenceController: Recognition service not in the same package as the default on-device recognizer: com.google.android.tts/com.google.android.apps.speech.tts.googletts.service.GoogleTTSRecognitionService.
+10-15 09:15:51.044  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.language.PhoneLanguagePreferenceController
+10-15 09:15:51.044  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 09:15:51.044  1108  3984 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 09:15:51.044  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.RegionalPreferencesController
+10-15 09:15:51.044  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.language.OnDeviceRecognitionPreferenceController
+10-15 09:15:51.044  1108  3984 W PrefCtrlListHelper: on_device_recognition_settings already has a controller
+10-15 09:15:51.046  1356  1356 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:15:51.046  1356  1356 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 09:15:51.047  1356  1753 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.inputmethod.latin
+10-15 09:15:51.050   573  1645 D ConnectivityService: requestNetwork for uid/pid:10154/1356 activeRequest: null callbackRequest: 133 [NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10154 RequestorUid: 10154 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:15:51.050  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureScreenPreferenceController
+10-15 09:15:51.051   573   835 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10154 RequestorUid: 10154 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 09:15:51.052   573   835 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10154 RequestorUid: 10154 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 09:15:51.052   573   842 D ConnectivityService: NetReassign [134 : null → 100] [c 0] [a 1] [i 0]
+10-15 09:15:51.053  1260  1954 E IPCThreadState: Process seems to be sending too many oneway calls.
+10-15 09:15:51.053  1260  1954 W IPCThreadState: CallStack::getCurrentInternal not linked, returning null
+10-15 09:15:51.053  1260  1954 W oneway spamming: CallStack::logStackInternal not linked
+10-15 09:15:51.053  1260  1954 W BpBinder: Large outgoing transaction of 418544 bytes, interface descriptor , code 4
+10-15 09:15:51.053   573   835 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10154 RequestorUid: 10154 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 09:15:51.053   573   835 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=134, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10154 RequestorUid: 10154 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 09:15:51.055  1356  1356 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:15:51.056  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.dream.DreamMainSwitchPreferenceController
+10-15 09:15:51.056  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.dream.DreamComplicationPreferenceController
+10-15 09:15:51.057  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.BatteryHeaderPreferenceController
+10-15 09:15:51.057  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterytip.BatteryTipPreferenceController
+10-15 09:15:51.057  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingPreferenceController
+10-15 09:15:51.057  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingPreferenceController
+10-15 09:15:51.057  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.BatteryPercentagePreferenceController
+10-15 09:15:51.061  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusEnabledPreferenceController
+10-15 09:15:51.061  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusActionsPreferenceController
+10-15 09:15:51.061  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController
+10-15 09:15:51.061  1108  3984 V SettingsSearchProvider: com.google.android.settings.gestures.columbus.ColumbusSettings$1@ef05fc5 tried to add an empty non-indexable key
+10-15 09:15:51.062  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTogglePreferenceController
+10-15 09:15:51.062  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTipsButtonPreferenceController
+10-15 09:15:51.062  1108  3984 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@2b9e04b tried to add an empty non-indexable key
+10-15 09:15:51.062  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.AdaptiveTouchSensitivityPreferenceController
+10-15 09:15:51.062  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.TouchSensitivityPreferenceController
+10-15 09:15:51.062  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 09:15:51.062  1108  3984 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 09:15:51.062  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationFooterPreferenceController
+10-15 09:15:51.062  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingSwitchPreferenceController
+10-15 09:15:51.062  1356  1356 I DownloadManager: DownloadManager.startDownload():484 start download of __KLP_delight__en-840
+10-15 09:15:51.067  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingTopIntroController
+10-15 09:15:51.067  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingSeekBarController
+10-15 09:15:51.067  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingAutoTurnOnSwitchPreferenceController
+10-15 09:15:51.070  3847  3907 I TestRunner: finished: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

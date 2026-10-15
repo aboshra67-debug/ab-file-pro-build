@@ -1,0 +1,4 @@
+10-15 09:18:31.908  5192  5333 I TestRunner: started: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:18:31.910  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.display.SmartAutoRotatePreferenceController
+10-15 09:18:31.916  1055  1055 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.nearby.exposurenotification.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+10-15 09:18:31.935  5192  5333 I TestRunner: finished: rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

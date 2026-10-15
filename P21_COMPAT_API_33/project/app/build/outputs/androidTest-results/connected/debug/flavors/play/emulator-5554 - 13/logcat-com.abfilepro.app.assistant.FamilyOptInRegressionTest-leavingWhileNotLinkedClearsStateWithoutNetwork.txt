@@ -1,0 +1,2 @@
+10-15 09:18:23.523  5192  5333 I TestRunner: started: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:18:23.552  5192  5333 I TestRunner: finished: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

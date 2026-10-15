@@ -1,0 +1,130 @@
+10-15 09:15:50.904  3847  3907 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:50.910  1108  3984 V SettingsSearchProvider: com.android.settings.notification.SoundWorkSettings$1@d21634e tried to add an empty non-indexable key
+10-15 09:15:50.910  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 09:15:50.910  1108  3984 W PrefCtrlListHelper: Controller requires key but it's not defined in xml: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 09:15:50.911  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FlashNotificationsIntroPreferenceController
+10-15 09:15:50.911  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FlashNotificationIllustrationPreferenceController
+10-15 09:15:50.911  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CameraFlashNotificationPreferenceController
+10-15 09:15:50.911  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ScreenFlashNotificationPreferenceController
+10-15 09:15:50.911  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FlashNotificationsPreviewPreferenceController
+10-15 09:15:50.911  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FlashNotificationsFooterPreferenceController
+10-15 09:15:50.923  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.DevelopmentMemtagPreferenceController
+10-15 09:15:50.923  1678  4071 D DownloadManager: [5] Finished with status SUCCESS
+10-15 09:15:50.929  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.DevelopmentMemtagFooterPreferenceController
+10-15 09:15:50.932  1108  3984 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.development.DevelopmentMemtagFooterPreferenceController
+10-15 09:15:50.935  1108  3984 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@db4665a tried to add an empty non-indexable key
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.TemperatureUnitCategoryController
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessScreenPreferenceController
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.slices.SlicePreferenceController
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.AddDevicePreferenceController
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.PreviouslyConnectedDevicePreferenceController
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.fastpair.FastPairDevicePreferenceController
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.AdvancedConnectedDeviceController
+10-15 09:15:50.935  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.DiscoverableFooterPreferenceController
+10-15 09:15:50.944  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wifi.WepNetworksPreferenceController
+10-15 09:15:50.944  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wifi.CellularFallbackPreferenceController
+10-15 09:15:50.949  1356  1799 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_manifest_delight__en-840 with size 467
+10-15 09:15:50.956  1108  3984 E BaseSearchIndex: com.android.settings.notification.modes.ZenModesListAddModePreferenceController must implement com.android.settings.core.PreferenceControllerMixin treating the key non-indexable
+10-15 09:15:50.957  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerIllustrationPreferenceController
+10-15 09:15:50.958  1678  4076 D DownloadManager: [6] Starting
+10-15 09:15:50.959  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerForPowerMenuPreferenceController
+10-15 09:15:50.959  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerForAssistantPreferenceController
+10-15 09:15:50.959  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerSensitivityPreferenceController
+10-15 09:15:50.959  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerFooterPreferenceController
+10-15 09:15:50.959  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreferenceController
+10-15 09:15:50.959  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityShortcutPreferenceController
+10-15 09:15:50.962  2213  2295 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.tts
+10-15 09:15:50.963  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcPreferenceController
+10-15 09:15:50.963  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcDetectionPointController
+10-15 09:15:50.963  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.SecureNfcPreferenceController
+10-15 09:15:50.963  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.DefaultPaymentSettingsPreferenceController
+10-15 09:15:50.964  1108  3984 V SettingsSearchProvider: com.android.settings.connecteddevice.NfcAndPaymentFragment$1@42c1f5f tried to add an empty non-indexable key
+10-15 09:15:50.964  1108  3984 W BaseSearchIndex: Error initializing controller in fragment: com.android.settings.network.NetworkDashboardFragment$1@6df0820, e: java.lang.IllegalArgumentException: Lifecycle must be set
+10-15 09:15:50.964  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkProviderCallsSmsController
+10-15 09:15:50.964  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AirplaneModePreferenceController
+10-15 09:15:50.966  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.TetherPreferenceController
+10-15 09:15:50.967  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AdaptiveConnectivityPreferenceController
+10-15 09:15:50.967  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.CellularSecurityPreferenceController
+10-15 09:15:50.967  2213  2213 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.tts which doesn't use ProcessStable flags.
+10-15 09:15:50.973  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AvailableHearingDevicePreferenceController
+10-15 09:15:50.973  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.AddDevicePreferenceController
+10-15 09:15:50.973  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.SavedHearingDevicePreferenceController
+10-15 09:15:50.974  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HearingAidAudioRoutingPreferenceController
+10-15 09:15:50.974  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HearingAidCompatibilityPreferenceController
+10-15 09:15:50.974  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HearingDeviceFooterPreferenceController
+10-15 09:15:50.976  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagPreferenceController
+10-15 09:15:50.976  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagFooterPreferenceController
+10-15 09:15:50.976  1108  3984 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.security.MemtagFooterPreferenceController@72785ba
+10-15 09:15:50.976  1108  3984 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@560ccd6 tried to add an empty non-indexable key
+10-15 09:15:50.978  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningLocalePreferenceController
+10-15 09:15:50.978  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
+10-15 09:15:50.981  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsPreferenceController
+10-15 09:15:50.981  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsLockScreenPreferenceController
+10-15 09:15:50.981  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsRecommendationController
+10-15 09:15:50.984  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.GestureNavigationSettingsAssistController
+10-15 09:15:50.987  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.snooplogger.SnoopLoggerFiltersPreferenceController
+10-15 09:15:50.987  1108  3984 V SettingsSearchProvider: com.android.settings.development.snooplogger.SnoopLoggerFiltersDashboard$1@648c529 tried to add an empty non-indexable key
+10-15 09:15:50.987  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningTogglePreferenceController
+10-15 09:15:50.987  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningAppearancePreferenceController
+10-15 09:15:50.987  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
+10-15 09:15:50.989  3847  3979 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:15:50.989  3847  3979 D pdf_document_jni: Deleting Document: 0x70195d047cd0
+10-15 09:15:50.989  3847  3979 D pdf_document_jni: Destroyed Document: 0x70195d047cd0
+10-15 09:15:50.989  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AutoBrightnessPreferenceController
+10-15 09:15:50.989  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.EvenDimmerPreferenceController
+10-15 09:15:50.990  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.screenlock.LockScreenPreferenceController
+10-15 09:15:50.990  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.FoldLockBehaviorPreferenceController
+10-15 09:15:50.990  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ScreenTimeoutPreferenceController
+10-15 09:15:50.990  3847  3979 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:15:50.990  3847  3979 E document: Parse Document failed (err=3).
+10-15 09:15:50.991  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DarkUIPreferenceController
+10-15 09:15:50.991  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ScreenSaverPreferenceController
+10-15 09:15:50.991  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.TextReadingFragmentForDisplaySettingsController
+10-15 09:15:50.991  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.SystemNavigationPreferenceController
+10-15 09:15:50.991  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DisplayWhiteBalancePreferenceController
+10-15 09:15:50.991  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.NightDisplayPreferenceController
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: Can't parse the header version.
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: java.lang.NumberFormatException: For input string: "bro"
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at jdk.internal.math.FloatingDecimal.parseFloat(FloatingDecimal.java:122)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at java.lang.Float.parseFloat(Float.java:487)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parseHeader(COSParser.java:2699)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.COSParser.parsePDFHeader(COSParser.java:2626)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdfparser.PDFParser.parse(PDFParser.java:215)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1219)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.tom_roush.pdfbox.pdmodel.PDDocument.load(PDDocument.java:1119)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open(SafePdfRenderer.kt:141)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.SafePdfRenderer$Companion.open$default(SafePdfRenderer.kt:125)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:108)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:85)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:285)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 09:15:50.992  3847  3979 D PdfBox-Android: Missing end of file marker '%%EOF'
+10-15 09:15:50.993  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ColorModePreferenceController
+10-15 09:15:50.993  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ContrastPreferenceController
+10-15 09:15:50.993  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.TouchSensitivitySettingsPreferenceController
+10-15 09:15:50.993  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.SmartAutoRotatePreferenceController
+10-15 09:15:50.993  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DeviceStateAutoRotateOverviewController
+10-15 09:15:50.993  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ScreenResolutionController
+10-15 09:15:50.993  1108  3984 E ScreenResolutionController: No support
+10-15 09:15:50.993  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.PeakRefreshRatePreferenceController
+10-15 09:15:50.995  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.podcasts_android.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:50.995  1356  1743 I DownloadManager: DownloadManager.downloadInternal():390 Download for __KLP_delight__en-840 scheduled with params DownloadParams{allowMetered=true, requireCharging=false, foreground=true, immediately=false, priority=500}
+10-15 09:15:50.996  1108  3984 D RefreshRatePrefCtr: DEFAULT_REFRESH_RATE : 60.0 mPeakRefreshRate : 60.0
+10-15 09:15:51.000  1678  4076 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10136
+10-15 09:15:51.004  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:15:51.005  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d0459d0
+10-15 09:15:51.005  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d0459d0
+10-15 09:15:51.006  3278  3960 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:51.006  1391  1553 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:51.007  3847  3907 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

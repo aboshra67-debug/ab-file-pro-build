@@ -1,0 +1,2 @@
+10-15 09:18:29.819  5192  5333 I TestRunner: started: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:29.921  5192  5333 I TestRunner: finished: existingPdfWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

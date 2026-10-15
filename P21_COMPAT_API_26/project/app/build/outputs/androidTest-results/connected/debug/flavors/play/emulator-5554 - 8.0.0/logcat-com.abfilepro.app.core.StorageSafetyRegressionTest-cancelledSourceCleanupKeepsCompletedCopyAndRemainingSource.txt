@@ -1,0 +1,49 @@
+10-15 09:19:07.617  5221  5240 I TestRunner: started: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:19:07.651  1860  2118 D EGL_emulation: eglMakeCurrent: 0x74d2cce3cdc0: ver 3 0 (tinfo 0x74d2cce0d840)
+10-15 09:19:07.654  1860  1860 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{8f1d857 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 09:19:07.654  1860  1860 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{a8ff914 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 09:19:07.654  1860  1860 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{ac38547 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 09:19:07.654  1860  1860 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{e688570 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 09:19:07.654  1860  1860 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{53c6779 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 09:19:07.654  1860  1860 W View    : requestLayout() improperly called by com.android.internal.widget.NotificationExpandButton{8202aa0 VFED..C.. ......ID 422,41-459,81 #1020233 android:id/expand_button} during layout: running second layout pass
+10-15 09:19:07.655  1388  1388 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 09:19:07.657  1860  2118 D EGL_emulation: eglMakeCurrent: 0x74d2cce3cdc0: ver 3 0 (tinfo 0x74d2cce0d840)
+10-15 09:19:07.667  1388  1388 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 09:19:07.698  1388  1388 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 274432
+10-15 09:19:07.762  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:07.762  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:07.762  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:07.762  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:07.762  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:07.762  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:07.762  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:07.762  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:07.762  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:07.762  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:07.762  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:07.763  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:07.763  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:07.763  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:07.763  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:07.763  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:07.763  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:07.763  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:07.763  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:07.763  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:07.763  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:07.763  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:07.768  5221  5240 I TestRunner: finished: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

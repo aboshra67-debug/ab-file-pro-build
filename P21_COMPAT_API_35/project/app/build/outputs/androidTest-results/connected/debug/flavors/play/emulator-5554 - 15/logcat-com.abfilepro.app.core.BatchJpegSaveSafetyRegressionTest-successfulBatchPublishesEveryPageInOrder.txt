@@ -1,0 +1,3 @@
+10-15 09:15:45.081  3847  3907 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:15:45.088  1260  1260 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.bootcount.service.START pkg=com.google.android.gms }
+10-15 09:15:45.151  3847  3907 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

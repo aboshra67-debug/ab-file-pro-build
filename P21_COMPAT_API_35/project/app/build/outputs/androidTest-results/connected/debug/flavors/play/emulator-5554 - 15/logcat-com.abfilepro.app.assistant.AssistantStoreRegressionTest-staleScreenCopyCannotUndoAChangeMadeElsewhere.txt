@@ -1,0 +1,26 @@
+10-15 09:15:44.567  3847  3907 I TestRunner: started: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:15:44.570  1260  1260 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:15:44.570  1260  1260 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:15:44.577  1260  2895 W GmsUrlRequestImpl: Content-Type header is overwritten.
+10-15 09:15:44.578   373  3925 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 09:15:44.578   373  3926 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:44.578   373  3926 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7f8885f190
+10-15 09:15:44.578   373  3926 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-15 09:15:44.578   373  3927 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:44.578   373  3927 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7f0886c590
+10-15 09:15:44.578   373  3927 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-15 09:15:44.579  1260  2419 D TrafficStats: tagSocket(268) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.582  1260  2419 D TrafficStats: tagSocket(268) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.588  1260  2419 D TrafficStats: tagSocket(268) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.593  1260  2419 D TrafficStats: tagSocket(102) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.595  1260  2419 D TrafficStats: tagSocket(102) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.600  1108  1117 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 09:15:44.610  1260  2419 D TrafficStats: tagSocket(102) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.614   573  1962 D ConnectivityService: requestNetwork for uid/pid:10144/1597 activeRequest: null callbackRequest: 117 [NetworkRequest [ REQUEST id=117, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Forbidden: LOCAL_NETWORK Uid: 10144 RequestorUid: 10144 RequestorPkg: com.google.android.googlequicksearchbox UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:15:44.615  1108  1151 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.616  1260  2419 D TrafficStats: tagSocket(102) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.617  1260  2419 D TrafficStats: tagSocket(102) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.617  1108  2638 D SettingsSliceProvider: content://com.android.settings.slices/action/call_volume loaded from cache
+10-15 09:15:44.620   573   585 W system_server: Missing inline cache for void android.net.LinkProperties.writeToParcel(android.os.Parcel, int)
+10-15 09:15:44.621  1260  2419 D TrafficStats: tagSocket(102) with statsTag=0x401, statsUid=10143
+10-15 09:15:44.625  3847  3907 I TestRunner: finished: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

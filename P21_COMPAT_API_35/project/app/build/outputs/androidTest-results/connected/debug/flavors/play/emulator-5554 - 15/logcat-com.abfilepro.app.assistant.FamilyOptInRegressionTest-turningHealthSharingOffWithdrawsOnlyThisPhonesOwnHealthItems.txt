@@ -1,0 +1,28 @@
+10-15 09:15:44.830  3847  3907 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:15:44.831   373  3944 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 09:15:44.831   373  3945 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:44.832   373  3946 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:44.837  1108  2826 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-15 09:15:44.839  1108  3221 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.839  1108  2826 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.840  1108  2638 D SettingsSliceProvider: content://com.android.settings.slices/action/notification_volume loaded from cache
+10-15 09:15:44.840  1108  3221 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-15 09:15:44.841  1108  3221 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/separate_ring_volume) in: 3
+10-15 09:15:44.843  1108  1117 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+10-15 09:15:44.846   373  3946 I resolv  : res_nsend: used send_dg 177 terrno: 0
+10-15 09:15:44.846   373  3946 I resolv  : doQuery: rcode=0, ancount=8, return value=177
+10-15 09:15:44.852  1108  2826 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.854  1108  2638 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.854  1108  2826 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-15 09:15:44.855  1108  2826 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.856  1108  2638 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/media_volume
+10-15 09:15:44.857  1108  3221 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.857  1108  3221 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/media_volume
+10-15 09:15:44.858  1108  1108 D SettingsSliceProvider: Starting background worker for: content://com.android.settings.slices/action/media_volume
+10-15 09:15:44.858  1108  2638 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/media_volume) in: 5
+10-15 09:15:44.858  1108  2638 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.859  1108  3221 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/media_volume) in: 3
+10-15 09:15:44.861  1108  2638 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-15 09:15:44.862   373  3945 I resolv  : res_nsend: used send_dg 273 terrno: 0
+10-15 09:15:44.862   373  3945 I resolv  : doQuery: rcode=0, ancount=8, return value=273
+10-15 09:15:44.864  3847  3907 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

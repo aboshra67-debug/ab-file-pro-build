@@ -1,0 +1,2 @@
+10-15 09:18:31.284  5192  5333 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:31.343  5192  5333 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

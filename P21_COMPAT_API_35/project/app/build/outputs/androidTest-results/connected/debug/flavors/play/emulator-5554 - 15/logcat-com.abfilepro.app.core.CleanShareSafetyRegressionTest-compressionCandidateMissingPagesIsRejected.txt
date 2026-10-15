@@ -1,0 +1,349 @@
+10-15 09:15:46.115  3847  3907 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:46.116  3278  3454 I SyncScheduler: scheduling sync for 0 seconds later, policy = REPLACE
+10-15 09:15:46.118  3278  3455 I GnpSdk  : GrowthKit is disabled by Phenotype flag.
+10-15 09:15:46.121  3278  3433 I BugleSimStateTracker: default call SIM: redacted-pii:sim_id[chars:20,last3:897], default sms SIM redacted-pii:sim_id[chars:20,last3:897]. default data SIM redacted-pii:sim_id[chars:20,last3:897].
+10-15 09:15:46.122  3278  3454 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:46.129  3278  3454 I BugleJobs: Starts to observe table change.
+10-15 09:15:46.132  3670  3682 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=38 ]
+10-15 09:15:46.138  3278  3455 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=49 ]
+10-15 09:15:46.141  3278  3455 I BugleJobs: Scheduling IcingRecurringWorker. [CONTEXT class_name="IcingMonitoringUtils" ]
+10-15 09:15:46.158  3278  3454 I BugleNetwork: FirebaseRegistrationStartupTask: Enabling Firebase component
+10-15 09:15:46.161  1260  1260 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START pkg=com.google.android.gms }
+10-15 09:15:46.162  1260  1260 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.account.data.service.START pkg=com.google.android.gms }
+10-15 09:15:46.166  3278  3486 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:15:46.167  3670  3836 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:46.168  3670  3836 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:46.168  3670  3836 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=68 ]
+10-15 09:15:46.168  3670  3836 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=68 ]
+10-15 09:15:46.169  3670  3836 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:46.170  1606  3869 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:15:46.172  3278  3433 I BugleSimStateTracker: Looking up Fi through package names.
+10-15 09:15:46.174  3278  3433 W SharedPreferencesSimSta: SharedPreferencesSimStateStore: No loggable guid found for sim id
+10-15 09:15:46.177  3670  3836 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=68 ]
+10-15 09:15:46.178  1597  2477 W A       : (REDACTED) [%s] response code: %d
+10-15 09:15:46.180  3278  3433 I BugleSimStateTracker: allNewlyBuiltSimSubscriptionInfos (simId, loggableGuid): [(redacted-pii:sim_id[chars:20,last3:897], a301d7b6-b842-4f6d-8c74-b04e2b2a0474)]
+10-15 09:15:46.180  3278  3433 I BugleSimStateTracker: Storing updatedSimSubscriptionInfos: [(redacted-pii:sim_id[chars:20,last3:897], a301d7b6-b842-4f6d-8c74-b04e2b2a0474)]
+10-15 09:15:46.191  3278  3960 D nativeloader: Load /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!/lib/x86_64/libscytale_v2_jni.so using ns product-clns-8 from class loader (caller=/product/priv-app/PrebuiltBugle/PrebuiltBugle.apk!classes3.dex): ok
+10-15 09:15:46.198  3278  3493 D MddListenableWorkerFactory: createWorker for class: com.google.android.libraries.communications.mobileconfiguration.sync.SyncWorker
+10-15 09:15:46.200  1260  2000 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.ims.library) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:15:46.201  3278  3960 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:15:46.205  3278  3433 I BugleSimStateTracker: Default call SIM changed. Broadcasting SIM SWAP. Old simId redacted-pii:sim_id[chars:0,last3:], new simId: redacted-pii:sim_id[chars:20,last3:897]
+10-15 09:15:46.205  3278  3433 I BugleSimStateTracker: Default SMS SIM changed. Old simId redacted-pii:sim_id[chars:0,last3:], new simId: redacted-pii:sim_id[chars:20,last3:897]
+10-15 09:15:46.205  3278  3433 I BugleSimStateTracker: Broadcasting SIM_LOADED event for newly loaded SIMs: [(redacted-pii:sim_id[chars:20,last3:897], a301d7b6-b842-4f6d-8c74-b04e2b2a0474)]
+10-15 09:15:46.205  3278  3960 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:15:46.206  3278  3960 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:15:46.208  3278  3960 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:15:46.209  3278  3960 W BugleAction: No default number, returning empty msisdn
+10-15 09:15:46.209  3278  3960 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=92 ]
+10-15 09:15:46.209  3278  3960 W BugleEtouffee: E2eeStartupTask: Skip prekey checking because MSISDN is empty.
+10-15 09:15:46.215  3278  3278 I SyncHelper: [3d68edd1-c692-487f-ad22-2554082c3ab2] sync started, workRequestId:4e2c77d9-54bb-47d7-b367-d15a53c8d70c
+10-15 09:15:46.227  1260  2100 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 75 [CONTEXT service_id=218 ]
+10-15 09:15:46.228   573   590 D ConnectivityService: requestNetwork for uid/pid:10134/3278 activeRequest: null callbackRequest: 118 [NetworkRequest [ TRACK_DEFAULT id=119, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ], NetworkRequest [ REQUEST id=120, [ Transports: SATELLITE Capabilities: INTERNET&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:15:46.235   573   842 D ConnectivityService: NetReassign [119 : null → 100] [c 0] [a 0] [i 0]
+10-15 09:15:46.236  1260  1912 W WearableService: onGetService: Wear is not available on this device.
+10-15 09:15:46.242  1606  3869 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 09:15:46.250  3847  3949 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.253  3278  3475 I BugleWorkQueue: WorkQueueCancellationController: Cancelled rows with handler, handlerKey: run_analyze, itemCount: 0
+10-15 09:15:46.255  3278  3486 D StrictMode: StrictMode policy violation: android.os.strictmode.CustomViolation: gcore.dynamite
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onCustomSlowCall(StrictMode.java:1650)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.os.StrictMode.noteSlowCall(StrictMode.java:2785)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at anlp.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.gms.chimera.container.GmsModuleChimeraProvider.query(:com.google.android.gms@242335041@24.23.35 (190800-646585959):135)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at ajjb.query(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1620)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at pgr.superQuery(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at ajjb.query(:com.google.android.gms@242335041@24.23.35 (190800-646585959):13)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentProvider.query(ContentProvider.java:1716)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at pgr.superQuery(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.chimera.ContentProvider.query(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at pgr.query(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:295)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.os.Binder.execTransact(Binder.java:1444)
+10-15 09:15:46.255  3278  3486 D StrictMode: # via Binder call with stack:
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.os.StrictMode.readAndHandleBinderCallViolations(StrictMode.java:2588)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.os.Parcel.readExceptionCode(Parcel.java:3187)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:152)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:495)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1229)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1161)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at android.content.ContentResolver.query(ContentResolver.java:1117)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.e(PG:69)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:85)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at cfya.b(PG:1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at cfyb.a(PG:7)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:58)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at cgxj.b(PG:45)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:6)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:25)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:16)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at afjt.d(PG:446)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at afjt.b(PG:1997)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at aflc.m(PG:1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at aflc.b(PG:2105)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at aeuj.b(PG:1)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at aeui.get(PG:3)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at dmju.get(PG:14)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at aeuj.a(PG:3)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at aflf.e(PG:1780)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at aflf.b(PG:44)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at clnr.a(PG:376)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at dqoh.d(PG:3)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at dqoj.run(PG:42)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at crzm.run(PG:3)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at dnmw.run(PG:50)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at cscj.run(PG:18)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at cryt.run(PG:8)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:15:46.255  3278  3486 D StrictMode: 	at csaw.run(PG:64)
+10-15 09:15:46.260  3278  3486 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:301)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at java.io.File.isDirectory(File.java:859)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.makeDexElements(DexPathList.java:376)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:117)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cfya.b(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cfyb.a(PG:7)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:58)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cgxj.b(PG:45)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:6)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:25)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:16)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at afjt.d(PG:446)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at afjt.b(PG:1997)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflc.m(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflc.b(PG:2105)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aeuj.b(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aeui.get(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dmju.get(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aeuj.a(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflf.e(PG:1780)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflf.b(PG:44)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at clnr.a(PG:376)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dqoh.d(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dqoj.run(PG:42)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at crzm.run(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dnmw.run(PG:50)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cscj.run(PG:18)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cryt.run(PG:8)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at csaw.run(PG:64)
+10-15 09:15:46.260  3278  3486 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:301)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at java.io.File.isFile(File.java:892)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.makeDexElements(DexPathList.java:380)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:117)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cfya.b(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cfyb.a(PG:7)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:58)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cgxj.b(PG:45)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:6)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:25)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:16)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at afjt.d(PG:446)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at afjt.b(PG:1997)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflc.m(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflc.b(PG:2105)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aeuj.b(PG:1)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aeui.get(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dmju.get(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aeuj.a(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflf.e(PG:1780)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at aflf.b(PG:44)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at clnr.a(PG:376)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dqoh.d(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dqoj.run(PG:42)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at crzm.run(PG:3)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at dnmw.run(PG:50)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cscj.run(PG:18)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at cryt.run(PG:8)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:15:46.260  3278  3486 D StrictMode: 	at csaw.run(PG:64)
+10-15 09:15:46.262  3847  3949 D pdf_document_jni: Deleting Document: 0x70195d040090
+10-15 09:15:46.262  3847  3949 D pdf_document_jni: Destroyed Document: 0x70195d040090
+10-15 09:15:46.263  3278  3486 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+10-15 09:15:46.263  3278  3486 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+10-15 09:15:46.263  3847  3949 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.264  3847  3949 D pdf_document_jni: Deleting Document: 0x70195d042550
+10-15 09:15:46.264  3847  3949 D pdf_document_jni: Destroyed Document: 0x70195d042550
+10-15 09:15:46.268  3278  3486 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:301)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at java.io.File.isDirectory(File.java:859)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DexPathList$Element.<init>(DexPathList.java:681)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.makeDexElements(DexPathList.java:412)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:166)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:117)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cfya.b(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cfyb.a(PG:7)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:58)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cgxj.b(PG:45)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:6)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:25)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:16)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at afjt.d(PG:446)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at afjt.b(PG:1997)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflc.m(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflc.b(PG:2105)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeuj.b(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeui.get(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dmju.get(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeuj.a(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflf.e(PG:1780)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflf.b(PG:44)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at clnr.a(PG:376)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dqoh.d(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dqoj.run(PG:42)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at crzm.run(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dnmw.run(PG:50)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cscj.run(PG:18)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cryt.run(PG:8)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at csaw.run(PG:64)
+10-15 09:15:46.268  3278  3486 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at libcore.io.BlockGuardOs.stat(BlockGuardOs.java:419)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at libcore.io.ForwardingOs.stat(ForwardingOs.java:846)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at android.app.ActivityThread$AndroidOs.stat(ActivityThread.java:8605)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.splitPaths(DexPathList.java:319)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:181)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:117)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cfya.b(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cfyb.a(PG:7)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:58)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cgxj.b(PG:45)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:6)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:25)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:16)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at afjt.d(PG:446)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at afjt.b(PG:1997)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflc.m(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflc.b(PG:2105)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeuj.b(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeui.get(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dmju.get(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeuj.a(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflf.e(PG:1780)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflf.b(PG:44)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at clnr.a(PG:376)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dqoh.d(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dqoj.run(PG:42)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at crzm.run(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dnmw.run(PG:50)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cscj.run(PG:18)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cryt.run(PG:8)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at csaw.run(PG:64)
+10-15 09:15:46.268  3278  3486 D StrictMode: StrictMode policy violation: android.os.strictmode.DiskReadViolation
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1683)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at java.io.UnixFileSystem.getBooleanAttributes(UnixFileSystem.java:301)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at java.io.File.isDirectory(File.java:859)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.makePathElements(DexPathList.java:507)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DexPathList.<init>(DexPathList.java:182)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:160)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.BaseDexClassLoader.<init>(BaseDexClassLoader.java:105)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.PathClassLoader.<init>(PathClassLoader.java:71)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:106)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dalvik.system.DelegateLastClassLoader.<init>(DelegateLastClassLoader.java:56)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.b(PG:117)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cfya.b(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cfyb.a(PG:7)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.dynamite.DynamiteModule.d(PG:58)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cgxj.b(PG:45)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.tryToInstallCronetProvider(PG:6)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at com.google.android.gms.net.PlayServicesCronetProvider.isEnabled(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.getEnabledCronetProviders(PG:25)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.createBuilderDelegate(PG:16)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.CronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at org.chromium.net.ExperimentalCronetEngine$Builder.<init>(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at afjt.d(PG:446)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at afjt.b(PG:1997)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflc.m(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflc.b(PG:2105)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeuj.b(PG:1)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeui.get(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dmju.get(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aeuj.a(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflf.e(PG:1780)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at aflf.b(PG:44)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at eaaq.b(PG:14)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at clnr.a(PG:376)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dqoh.d(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dqoj.run(PG:42)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at crzm.run(PG:3)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at dnmw.run(PG:50)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cscj.run(PG:18)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at cryt.run(PG:8)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:15:46.268  3278  3486 D StrictMode: 	at csaw.run(PG:64)
+10-15 09:15:46.269  3278  3486 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:3111
+10-15 09:15:46.269  3278  3486 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 3111
+10-15 09:15:46.269  3278  3486 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+10-15 09:15:46.271  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.272  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d028f50
+10-15 09:15:46.273  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d028f50
+10-15 09:15:46.277  3278  3960 D ProfileInstaller: Installing profile for com.google.android.apps.messaging
+10-15 09:15:46.279  3278  3493 I BugleRcsProvisioning: RcsProvisioningTrigger: Schedule provisioning on app startup
+10-15 09:15:46.279  3278  3493 I BugleRcsProvisioning: RcsProvisioningTrigger: updateAvailabilityForAllSimsAsync : hint = NO_HINT logTriggerEvent = false
+10-15 09:15:46.279  3278  3493 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: NO_HINT
+10-15 09:15:46.279  3278  3493 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: NO_HINT, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+10-15 09:15:46.280  3278  3473 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForDefaultCallSim: hint: NO_HINT, canReshowWelcomeMessage: false
+10-15 09:15:46.280  3278  3960 I BugleNetwork: Startup: registering tachyon.
+10-15 09:15:46.283  3847  3907 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

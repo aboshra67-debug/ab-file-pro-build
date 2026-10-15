@@ -1,0 +1,8 @@
+10-15 09:18:26.494  5192  5333 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:26.542  1641  2342 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/notifications/pixiedust.ogg)
+10-15 09:18:26.544  1641  2342 I MediaProvider: Open with lower FS for /product/media/audio/notifications/pixiedust.ogg. Uid: 10173
+10-15 09:18:26.545  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 122 [CONTEXT service_id=218 ]
+10-15 09:18:26.560  1641  2342 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/alarms/Alarm_Classic.ogg)
+10-15 09:18:26.560  1641  2342 I MediaProvider: Open with lower FS for /product/media/audio/alarms/Alarm_Classic.ogg. Uid: 10173
+10-15 09:18:26.590  1641  2342 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:18:26.610  5192  5333 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

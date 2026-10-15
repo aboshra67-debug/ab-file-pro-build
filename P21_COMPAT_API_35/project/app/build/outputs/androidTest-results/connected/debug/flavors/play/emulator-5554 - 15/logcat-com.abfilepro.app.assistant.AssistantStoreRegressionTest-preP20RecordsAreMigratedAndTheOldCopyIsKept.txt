@@ -1,0 +1,25 @@
+10-15 09:15:44.659  3847  3907 I TestRunner: started: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:15:44.661  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.662  1020  3930 D TrafficStats: tagSocket(130) with statsTag=0xffffff81, statsUid=-1
+10-15 09:15:44.664   373  3934 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-15 09:15:44.667   373  3935 I resolv  : ResNSendHandler::run: 0 / {100 983140 100 983140 1073 1}
+10-15 09:15:44.667   373  3935 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7f1886cbf0
+10-15 09:15:44.669  1020  3931 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 17ms OK 142.251.150.120,2001:4860:4826:7800::
+10-15 09:15:44.674   373  3934 I resolv  : res_nsend: used send_dg 256 terrno: 0
+10-15 09:15:44.675   373  3936 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 1073 1}
+10-15 09:15:44.675   373  3937 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:44.676   373  3937 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7ef886cdd0
+10-15 09:15:44.676   373  3937 I resolv  : doQuery: rcode=0, ancount=1, return value=75
+10-15 09:15:44.676   373  3938 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:44.676   373  3938 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7ef886d690
+10-15 09:15:44.676   373  3938 I resolv  : doQuery: rcode=0, ancount=1, return value=63
+10-15 09:15:44.676  1020  3931 D TrafficStats: tagSocket(130) with statsTag=0xffffff81, statsUid=-1
+10-15 09:15:44.679  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.682  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.683  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.684  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.687  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.689  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.691  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.691  1020  1020 D TrafficStats: tagSocket(129) with statsTag=0xffffffff, statsUid=-1
+10-15 09:15:44.692  3847  3907 I TestRunner: finished: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

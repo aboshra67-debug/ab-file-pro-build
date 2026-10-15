@@ -1,0 +1,2 @@
+10-15 09:19:07.012  5221  5240 I TestRunner: started: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:19:07.094  5221  5240 I TestRunner: finished: pdfboxOnlyModeNeverProducesFilesFromItsRendering(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

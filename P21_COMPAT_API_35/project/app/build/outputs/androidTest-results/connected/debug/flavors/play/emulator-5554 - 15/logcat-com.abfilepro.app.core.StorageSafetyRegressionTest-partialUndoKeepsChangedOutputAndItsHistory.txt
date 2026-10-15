@@ -1,0 +1,10 @@
+10-15 09:15:56.875  3847  3907 I TestRunner: started: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.877  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.fedora.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:56.926  1597  1771 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:56.993  1597  1601 I earchbox:search: Background concurrent mark compact GC freed 12MB AllocSpace bytes, 24(5420KB) LOS objects, 49% free, 18MB/36MB, paused 383us,1.409ms total 104.245ms
+10-15 09:15:56.997  1597  3362 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.google.android.googlequicksearchbox
+10-15 09:15:57.003  1260  1260 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-15 09:15:57.005  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.assistant.ampactions#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:57.019  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.assistant.invocation.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:57.027   373   421 I netd    : tetherGetStats() -> {[]} <0.27ms>
+10-15 09:15:57.034  3847  3907 I TestRunner: finished: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)

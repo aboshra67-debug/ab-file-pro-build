@@ -1,0 +1,29 @@
+10-15 09:15:47.100  3847  3907 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:47.101  2461  2495 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 09:15:47.102  2461  2495 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 09:15:47.112  1260  2447 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+10-15 09:15:47.125  1260  2267 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 09:15:47.146  1606  2546 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 09:15:47.152  3847  3979 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:47.160  1606  1606 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.audit.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 09:15:47.162  1606  1606 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.audit.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 09:15:47.201  3278  3454 I BugleNetwork: Creating gRPC Managed channel with Cronet: instantmessaging-pa.googleapis.com:443
+10-15 09:15:47.203   373  3986 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10134 0}
+10-15 09:15:47.203   373  3988 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:47.205   373  3987 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:47.214   373  3988 I resolv  : res_nsend: used send_dg 180 terrno: 0
+10-15 09:15:47.214   373  3988 I resolv  : doQuery: rcode=0, ancount=8, return value=180
+10-15 09:15:47.218  1606  2546 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 09:15:47.221  3847  3979 D pdf_document_jni: Deleting Document: 0x70195d03fd10
+10-15 09:15:47.222  3847  3979 D pdf_document_jni: Destroyed Document: 0x70195d03fd10
+10-15 09:15:47.222  3847  3979 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:47.223  3847  3979 D pdf_document_jni: Deleting Document: 0x70195d040090
+10-15 09:15:47.223  3847  3979 D pdf_document_jni: Destroyed Document: 0x70195d040090
+10-15 09:15:47.224   373  3987 I resolv  : res_nsend: used send_dg 276 terrno: 0
+10-15 09:15:47.224   373  3987 I resolv  : doQuery: rcode=0, ancount=8, return value=276
+10-15 09:15:47.226  3278  3969 D TrafficStats: tagSocket(156) with statsTag=0x1, statsUid=-1
+10-15 09:15:47.227  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x1, statsUid=-1
+10-15 09:15:47.256  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:47.257  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d028f50
+10-15 09:15:47.257  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d028f50
+10-15 09:15:47.260  3847  3907 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

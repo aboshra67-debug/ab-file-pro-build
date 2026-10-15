@@ -1,0 +1,9 @@
+10-15 09:18:25.735  5192  5333 I TestRunner: started: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:25.793  1055  4456 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 121 [CONTEXT service_id=218 ]
+10-15 09:18:25.794  1274  5172 I GCM-GMS : Registering GMS for direct boot.
+10-15 09:18:25.903   283  4331 I netd    : tetherGetStats() -> {[]} <0.53ms>
+10-15 09:18:25.914   283  4331 I netd    : bandwidthSetGlobalAlert(2097152) <0.13ms>
+10-15 09:18:26.265   483  1107 D WifiNl80211Manager: Scan result ready event
+10-15 09:18:26.265   483  1107 D WifiNative: Scan result ready event
+10-15 09:18:26.329  1641  2342 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 227 items in 58227ms, 223 inserts 4 updates 0 deletes
+10-15 09:18:26.337  5192  5333 I TestRunner: finished: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

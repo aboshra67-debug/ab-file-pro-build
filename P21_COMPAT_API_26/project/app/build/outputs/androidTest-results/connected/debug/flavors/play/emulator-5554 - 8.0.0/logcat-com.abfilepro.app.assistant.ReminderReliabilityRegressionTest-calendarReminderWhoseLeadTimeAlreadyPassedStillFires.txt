@@ -1,0 +1,19 @@
+10-15 09:19:01.274  5221  5240 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:19:01.281  1860  1860 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.StackScrollAlgorithm.updateClipping(com.android.systemui.statusbar.stack.StackScrollState, com.android.systemui.statusbar.stack.StackScrollAlgorithm$StackScrollAlgorithmState, com.android.systemui.statusbar.stack.AmbientState) due to JIT inline cache
+10-15 09:19:01.343  2619  2619 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 09:19:01.359  2619  2619 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 09:19:01.361  2204  5147 I Vision  : Requesting optional module download of ocr.
+10-15 09:19:01.363  2204  5147 I Vision  : Checking for download completion for 193702 -- ocr
+10-15 09:19:01.371  5221  5226 I zygote64: Do full code cache collection, code=124KB, data=83KB
+10-15 09:19:01.371  5221  5226 I zygote64: After code cache collection, code=112KB, data=65KB
+10-15 09:19:01.374  2619  2619 I AudioController: Using mInputStreamFactoryBuilder
+10-15 09:19:01.406  2619  2619 I MicroDetectionWorker: onReady
+10-15 09:19:01.432  2619  2771 I MicroRecognitionRunner: Starting detection.
+10-15 09:19:01.435  2619  2773 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@27f00e6
+10-15 09:19:01.442  1540  5260 I AudioFlinger: AudioFlinger's thread 0xe6683180 tid=5260 ready to run
+10-15 09:19:01.442  2619  2773 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@27f00e6
+10-15 09:19:01.447  2619  2773 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@27f00e6
+10-15 09:19:01.448  2619  2771 I MicroRecognitionRunner: Detection finished
+10-15 09:19:01.448  2619  2771 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 09:19:01.464  2619  2619 I MicroDetectionWorker: onReady
+10-15 09:19:01.481  5221  5240 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

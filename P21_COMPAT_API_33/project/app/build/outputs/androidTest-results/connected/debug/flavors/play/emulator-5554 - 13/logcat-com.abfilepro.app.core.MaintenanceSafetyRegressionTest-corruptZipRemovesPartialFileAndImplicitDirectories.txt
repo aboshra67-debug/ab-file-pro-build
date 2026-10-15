@@ -1,0 +1,2 @@
+10-15 09:18:30.947  5192  5333 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:30.979  5192  5333 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,40 @@
+10-15 09:18:26.612  5192  5333 I TestRunner: started: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:26.626  1641  2342 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:18:26.628  1641  2342 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:18:26.631  1641  2342 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 09:18:26.658  1641  2342 I MediaProvider: Scanned external_primary due to REASON_MOUNTED, found 17 items in 83ms, 4 inserts 0 updates 0 deletes
+10-15 09:18:26.660  1641  2342 I MediaProvider: End Intent { act=com.android.providers.media.action.SCAN_VOLUME (has extras) }
+10-15 09:18:26.667  1641  2342 I MediaProvider: Begin Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 09:18:26.670  1641  2342 I MediaProvider: Volume MediaVolume name: [external_primary] id: [emulated;0] user: [UserHandle{0}] path: [/storage/emulated/0] externallyManaged: [false] mPublicVolume: [false] already attached
+10-15 09:18:26.670  1641  2342 I MediaProvider: End Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///... flg=0x5000010 cmp=com.google.android.providers.media.module/com.android.providers.media.MediaService (has extras) }
+10-15 09:18:26.672  1641  1917 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android to set project id.: Operation not permitted
+10-15 09:18:26.674  1641  1917 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android
+10-15 09:18:26.674  1641  1917 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:18:26.674  1641  1917 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 09:18:26.676  1641  1917 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android/media to set project id.: Operation not permitted
+10-15 09:18:26.676  1641  1917 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 09:18:26.676  1641  1917 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2618)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:851)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:826)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider.-$$Nest$mupdateQuotaTypeForUri(Unknown Source:0)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.lambda$onInsert$0(MediaProvider.java:880)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider$4.$r8$lambda$DnIEye5Sx8fODP4Bt_qvKpm3U-Q(Unknown Source:0)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at com.android.providers.media.MediaProvider$4$$ExternalSyntheticLambda0.run(Unknown Source:6)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at android.os.Looper.loop(Looper.java:288)
+10-15 09:18:26.676  1641  1917 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 09:18:26.691  5192  5333 I TestRunner: finished: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

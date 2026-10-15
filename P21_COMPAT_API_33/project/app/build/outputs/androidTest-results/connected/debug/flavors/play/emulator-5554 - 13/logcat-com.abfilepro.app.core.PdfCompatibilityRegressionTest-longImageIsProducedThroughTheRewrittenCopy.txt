@@ -1,0 +1,3 @@
+10-15 09:18:31.726  5192  5333 I TestRunner: started: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:18:31.842  5192  5205 I p.p21mainttrial: Background concurrent copying GC freed 27139(2622KB) AllocSpace objects, 20(1468KB) LOS objects, 49% free, 7812KB/15MB, paused 26us,5us total 107.800ms
+10-15 09:18:31.860  5192  5333 I TestRunner: finished: longImageIsProducedThroughTheRewrittenCopy(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

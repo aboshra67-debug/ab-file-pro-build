@@ -1,0 +1,9 @@
+10-15 09:15:56.681  3847  3907 I TestRunner: started: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.688  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 09:15:56.692  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:56.696  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 09:15:56.697  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 09:15:56.699  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:15:56.711  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:15:56.711  1260  1269 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:15:56.713  3847  3907 I TestRunner: finished: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)

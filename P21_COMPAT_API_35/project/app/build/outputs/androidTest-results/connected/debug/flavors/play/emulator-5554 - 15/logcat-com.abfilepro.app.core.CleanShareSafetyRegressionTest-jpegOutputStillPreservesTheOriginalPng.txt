@@ -1,0 +1,25 @@
+10-15 09:15:50.438  3847  3907 I TestRunner: started: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:50.441  1096  1096 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:15:50.444  1096  1096 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 09:15:50.446  1096  1330 D ImsResolver: maybeAddedImsService, packageName: com.abfilepro.app.p21mainttrial
+10-15 09:15:50.446  1096  1096 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:15:50.448  1096  1096 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 09:15:50.450  1096  1096 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:15:50.452   573   605 I AppBindingService: Stopping: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 09:15:50.457  1356  1356 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:15:50.460  1356  1356 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 09:15:50.461  3670  3670 I CarrierServices: SystemBindingService onDestroy
+10-15 09:15:50.469  1096  1330 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 09:15:50.470  1356  1753 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.inputmethod.latin
+10-15 09:15:50.474  1356  1356 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 09:15:50.475  3281  3481 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:50.479  2002  2002 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:50.480   573   993 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:50.481  3670  3670 I CarrierServices: SystemBindingService onCreate
+10-15 09:15:50.481   573  1946 D ConnectivityService: requestNetwork for uid/pid:10134/3670 activeRequest: null callbackRequest: 130 [NetworkRequest [ TRACK_DEFAULT id=131, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ], NetworkRequest [ REQUEST id=132, [ Transports: SATELLITE Capabilities: INTERNET&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:15:50.482   573   842 D ConnectivityService: NetReassign [131 : null → 100] [c 0] [a 0] [i 0]
+10-15 09:15:50.470  1597  2478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:50.488  3670  3863 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=69 ]
+10-15 09:15:50.495  3670  3708 I CarrierServices: SystemBindingService: Starting JibeService
+10-15 09:15:50.497  3670  3708 I BugleRcsEngine: Broadcasting provisioning intent rcs.intent.action.rcsSystemBinding to Bugle with extras redacted-pii:[null] from source SYSTEM_BINDING_SERVICE [CONTEXT log_prefix="EngineBroadcaster" thread_id=58 ]
+10-15 09:15:50.498  3847  3907 I TestRunner: finished: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

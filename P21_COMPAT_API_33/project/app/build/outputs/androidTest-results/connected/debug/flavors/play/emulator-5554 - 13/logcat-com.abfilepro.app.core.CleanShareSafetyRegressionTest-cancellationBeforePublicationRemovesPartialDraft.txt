@@ -1,0 +1,3 @@
+10-15 09:18:29.176  5192  5333 I TestRunner: started: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:29.175  1055  1309 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:18:29.186  5192  5333 I TestRunner: finished: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

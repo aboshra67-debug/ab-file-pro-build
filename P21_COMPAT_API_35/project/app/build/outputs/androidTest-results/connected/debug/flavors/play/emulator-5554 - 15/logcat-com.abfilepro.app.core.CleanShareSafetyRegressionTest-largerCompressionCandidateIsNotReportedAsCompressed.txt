@@ -1,0 +1,32 @@
+10-15 09:15:46.907  3847  3907 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:46.951  3847  3948 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.961  2461  2495 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 09:15:46.967  3847  3948 D pdf_document_jni: Deleting Document: 0x70195d03d4d0
+10-15 09:15:46.968  3847  3948 D pdf_document_jni: Destroyed Document: 0x70195d03d4d0
+10-15 09:15:46.968  3847  3948 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.969  3847  3948 D pdf_document_jni: Deleting Document: 0x70195d028850
+10-15 09:15:46.969  3847  3948 D pdf_document_jni: Destroyed Document: 0x70195d028850
+10-15 09:15:46.978  3847  3949 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.988  3847  3949 D pdf_document_jni: Deleting Document: 0x70195d042550
+10-15 09:15:46.989  3847  3949 D pdf_document_jni: Destroyed Document: 0x70195d042550
+10-15 09:15:46.990  3847  3949 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.990  3847  3949 D pdf_document_jni: Deleting Document: 0x70195d040090
+10-15 09:15:46.991  3847  3949 D pdf_document_jni: Destroyed Document: 0x70195d040090
+10-15 09:15:46.991  3847  3949 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:46.992  3847  3949 D pdf_document_jni: Deleting Document: 0x70195d03f450
+10-15 09:15:46.992  3847  3949 D pdf_document_jni: Destroyed Document: 0x70195d03f450
+10-15 09:15:46.997  3847  3949 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:47.004  1260  2338 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+10-15 09:15:47.011  3847  3949 D pdf_document_jni: Deleting Document: 0x70195d040790
+10-15 09:15:47.011  3847  3949 D pdf_document_jni: Destroyed Document: 0x70195d040790
+10-15 09:15:47.012  3847  3949 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:47.012  3847  3949 D pdf_document_jni: Deleting Document: 0x70195d042550
+10-15 09:15:47.012  3847  3949 D pdf_document_jni: Destroyed Document: 0x70195d042550
+10-15 09:15:47.015  1260  2267 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 09:15:47.016  1606  2057 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 09:15:47.017  1606  2057 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-15 09:15:47.019  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:47.020  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d026e10
+10-15 09:15:47.020  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d026e10
+10-15 09:15:47.024  1260  2447 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+10-15 09:15:47.026  3847  3907 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

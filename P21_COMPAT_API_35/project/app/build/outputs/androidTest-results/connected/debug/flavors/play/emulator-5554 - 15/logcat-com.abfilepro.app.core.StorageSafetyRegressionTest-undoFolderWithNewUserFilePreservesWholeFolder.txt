@@ -1,0 +1,9 @@
+10-15 09:15:56.449  3847  3907 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.462  1678  4127 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb.metadata via provider delete
+10-15 09:15:56.468  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.pronunciationlearning#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:56.475  1460  1644 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb.metadata
+10-15 09:15:56.478  1460  1644 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 10ms, 0 inserts 0 updates 0 deletes
+10-15 09:15:56.535  1678  4127 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb via provider delete
+10-15 09:15:56.537  1460  1644 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb
+10-15 09:15:56.546  1460  1644 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 9ms, 0 inserts 0 updates 0 deletes
+10-15 09:15:56.552  3847  3907 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

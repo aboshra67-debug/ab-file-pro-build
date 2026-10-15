@@ -1,0 +1,2 @@
+10-15 09:18:32.017  5192  5333 I TestRunner: started: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.041  5192  5333 I TestRunner: finished: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

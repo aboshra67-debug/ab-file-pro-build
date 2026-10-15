@@ -1,0 +1,53 @@
+10-15 09:15:46.495  3847  3907 I TestRunner: started: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:46.496  3278  3433 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=43 ]
+10-15 09:15:46.496  3278  3474 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=54 ]
+10-15 09:15:46.498  3278  3493 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=65 ]
+10-15 09:15:46.498  3278  3435 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=44 ]
+10-15 09:15:46.500   373  3978 I resolv  : res_nsend: used send_dg 183 terrno: 0
+10-15 09:15:46.503   373  3978 I resolv  : doQuery: rcode=0, ancount=8, return value=183
+10-15 09:15:46.504  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.506  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.507  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.508  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.510  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.513  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.517  3278  3475 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 09:15:46.519  3278  3961 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:15:46.521  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.527  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.528  3278  3473 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 09:15:46.529  3278  3961 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:15:46.529  3278  3961 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:15:46.532  3278  3969 D TrafficStats: tagSocket(153) with statsTag=0x2100, statsUid=-1
+10-15 09:15:46.537  3278  3961 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:15:46.539  3278  3961 W BugleAction: No default number, returning empty msisdn
+10-15 09:15:46.541  2461  2494 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 09:15:46.542  2461  2494 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 09:15:46.543  3278  3961 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=93 ]
+10-15 09:15:46.544  3278  3474 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 09:15:46.545  3278  3474 I BugleTransport: Tachygram is disabled because the RCS Configuration is empty [CONTEXT ratelimit_period="5 SECONDS" skipped=2 ]
+10-15 09:15:46.547  3278  3474 I BugleTransport: Enabled chat transport is TRANSPORT_RCS [CONTEXT group_by="TRANSPORT_RCS" ratelimit_period="5 SECONDS" skipped=2 ]
+10-15 09:15:46.547  3278  3474 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 09:15:46.552  3278  3961 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 09:15:46.564  3278  3961 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 09:15:46.565  3278  3961 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 09:15:46.568  3278  3474 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 09:15:46.574   373   421 I netd    : setProcSysNet(4, 2, wlan0, retrans_time_ms, 750) <0.11ms>
+10-15 09:15:46.578   373   421 I netd    : setProcSysNet(4, 2, wlan0, ucast_solicit, 10) <0.05ms>
+10-15 09:15:46.578   373   421 I netd    : setProcSysNet(6, 2, wlan0, retrans_time_ms, 750) <0.06ms>
+10-15 09:15:46.579   373   421 I netd    : setProcSysNet(6, 2, wlan0, ucast_solicit, 10) <0.03ms>
+10-15 09:15:46.583  3278  3475 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 09:15:46.591  3278  3473 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 09:15:46.596  3278  3455 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=49 ]
+10-15 09:15:46.598  3278  3475 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=9c7ec5b5-4143-469e-90c7-c33b0a7aa074, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 09:15:46.601  3278  3455 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=49 ]
+10-15 09:15:46.610  3278  3473 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 09:15:46.597  3670  3682 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=38 ]
+10-15 09:15:46.617  3278  3477 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:15:46.619  3670  3836 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:46.619  3670  3836 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:46.623  3278  3969 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@5f30ec0
+10-15 09:15:46.634  3278  3477 I RpcManager: [3d68edd1-c692-487f-ad22-2554082c3ab2] processing getConfiguration response, workRequestId:4e2c77d9-54bb-47d7-b367-d15a53c8d70c
+10-15 09:15:46.636  3278  3474 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=54 ]
+10-15 09:15:46.638  3278  3960 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=92 ]
+10-15 09:15:46.640  3847  3907 I TestRunner: finished: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

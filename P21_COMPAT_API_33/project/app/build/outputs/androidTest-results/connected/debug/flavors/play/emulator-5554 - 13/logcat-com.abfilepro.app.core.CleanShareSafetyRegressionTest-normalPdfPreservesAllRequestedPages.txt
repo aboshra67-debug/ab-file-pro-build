@@ -1,0 +1,12 @@
+10-15 09:18:27.227  5192  5333 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:27.278  1055  4456 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 103 uptime_millis: 103 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.408  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.414   483   496 I system_server: Background young concurrent copying GC freed 1000350(22MB) AllocSpace objects, 2(40KB) LOS objects, 44% free, 25MB/45MB, paused 73us,5.102ms total 171.835ms
+10-15 09:18:27.416  1274  5172 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+10-15 09:18:27.470   283  5377 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 09:18:27.471  2607  2726 D TrafficStats: tagSocket(103) with statsTag=0x1809, statsUid=-1
+10-15 09:18:27.472  2607  2726 D TrafficStats: tagSocket(103) with statsTag=0x1809, statsUid=-1
+10-15 09:18:27.473  2607  2726 D TrafficStats: tagSocket(103) with statsTag=0x1809, statsUid=-1
+10-15 09:18:27.478  2607  2726 D EGL_emulation: eglCreateContext: 0x79f116e3e190: maj 3 min 0 rcv 3
+10-15 09:18:27.494  1055  4456 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 120 uptime_millis: 120 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.519  5192  5333 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

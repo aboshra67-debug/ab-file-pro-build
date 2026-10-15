@@ -1,0 +1,5 @@
+10-15 09:19:01.880  5221  5240 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:19:01.931  1860  1870 I zygote64: Do full code cache collection, code=253KB, data=170KB
+10-15 09:19:01.931  1860  1870 I zygote64: After code cache collection, code=205KB, data=126KB
+10-15 09:19:02.034  5221  5240 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 09:19:02.159  5221  5240 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

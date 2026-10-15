@@ -1,0 +1,9 @@
+10-15 09:15:44.705  3847  3907 I TestRunner: started: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:15:44.707  1020  3931 D NetworkMonitor/100: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=34ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Thu, 15 Oct 2026 09:15:45 GMT], X-Android-Received-Millis=[1792055744703], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1792055744688]}
+10-15 09:15:44.709   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:44.709   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:44.709   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10136} in 2ms
+10-15 09:15:44.711   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:44.712   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:44.712   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={20136} in 3ms
+10-15 09:15:44.722  3847  3907 I TestRunner: finished: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

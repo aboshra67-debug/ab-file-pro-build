@@ -1,0 +1,10 @@
+10-15 09:15:54.429  3847  3907 I TestRunner: started: arabicThousandsAndDecimalStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:54.438  1356  1709 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/packmapping_release.20231127.pb to pack_mapping_v1_lstm_20231127.fetched (constraints: m:b:u:l)
+10-15 09:15:54.441   573   573 I RemoteProvisionSysSvc: Successfully fetched key for client 235345702
+10-15 09:15:54.452   189   189 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 148: Using TAG_CERTIFICATE_NOT_BEFORE: 0
+10-15 09:15:54.452   189   189 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 154: Using TAG_CERTIFICATE_NOT_AFTER: 2461449600000
+10-15 09:15:54.452   189   189 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 159: Got certificate date params:  NotBefore = 0, NotAfter = 2461449600000
+10-15 09:15:54.452   189   189 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 273: Setting notBefore to 0
+10-15 09:15:54.452   189   189 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 282: Setting notAfter to 2461449600
+10-15 09:15:54.458  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:54.471  3847  3907 I TestRunner: finished: arabicThousandsAndDecimalStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

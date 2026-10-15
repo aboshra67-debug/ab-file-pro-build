@@ -1,0 +1,2 @@
+10-15 09:15:57.145  3847  3907 I TestRunner: started: restoredReviewDropsPagesWhoseImageIsGone(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 09:15:57.147  3847  3907 I TestRunner: finished: restoredReviewDropsPagesWhoseImageIsGone(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

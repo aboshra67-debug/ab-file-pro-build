@@ -1,0 +1,2 @@
+10-15 09:19:03.307  5221  5240 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:19:03.350  5221  5240 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

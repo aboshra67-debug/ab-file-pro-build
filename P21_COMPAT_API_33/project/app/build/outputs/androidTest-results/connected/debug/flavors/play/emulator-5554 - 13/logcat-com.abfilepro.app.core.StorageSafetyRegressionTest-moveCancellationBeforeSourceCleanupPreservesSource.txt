@@ -1,0 +1,3 @@
+10-15 09:18:32.132  5192  5333 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.139  1086  1099 D MediaVolumePreCtrl: The slice doesn't support end item
+10-15 09:18:32.144  5192  5333 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

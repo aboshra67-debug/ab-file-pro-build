@@ -1,0 +1,3 @@
+10-15 09:18:31.506  5192  5333 I TestRunner: started: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:31.513  4902  4902 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10107; state: ENABLED
+10-15 09:18:31.520  5192  5333 I TestRunner: finished: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

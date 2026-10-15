@@ -1,0 +1,2 @@
+10-15 09:19:02.576  5221  5240 I TestRunner: started: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:19:02.760  5221  5240 I TestRunner: finished: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

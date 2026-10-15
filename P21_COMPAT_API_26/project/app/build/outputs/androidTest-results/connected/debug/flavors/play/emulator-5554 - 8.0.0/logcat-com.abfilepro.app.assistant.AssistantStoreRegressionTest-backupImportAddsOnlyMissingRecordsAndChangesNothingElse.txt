@@ -1,0 +1,2 @@
+10-15 09:19:00.582  5221  5240 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:19:00.623  5221  5240 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

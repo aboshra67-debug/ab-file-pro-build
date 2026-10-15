@@ -1,0 +1,38 @@
+10-15 09:19:05.124  5221  5240 I TestRunner: started: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:19:05.147  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:05.150  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:05.150  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:05.150  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:05.150  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:05.150  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:05.150  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:05.150  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:05.150  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:05.157  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:05.158  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:05.158  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:05.158  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:05.158  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:05.158  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:05.158  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:05.158  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:05.158  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:05.160  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:05.162  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:05.162  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:05.162  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:05.162  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:05.162  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:05.162  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:05.162  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:05.162  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:05.163  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:05.164  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:05.164  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:05.164  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:05.164  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:05.164  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:05.164  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:05.164  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:05.164  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:05.175  5221  5240 I TestRunner: finished: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

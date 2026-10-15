@@ -1,0 +1,14 @@
+10-15 09:15:44.807  3847  3907 I TestRunner: started: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:15:44.808  1108  3221 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.809  1108  2638 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.811  1108  2826 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.811  1108  3221 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/call_volume
+10-15 09:15:44.813  1606  1606 D LT_ClntIntrcptrFctryV12: Spatula header: CjYKFmNvbS5nb29nbGUuYW5kcm9pZC5nbXMaHFdPSEVFejkwUWV3OUxDY0NjS0ZJQXRwSHVnND0Ylpaxkf+5vpU0
+10-15 09:15:44.814  1108  2638 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/call_volume
+10-15 09:15:44.814  1108  3221 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/call_volume) in: 10
+10-15 09:15:44.814  1108  3221 D SettingsSliceProvider: content://com.android.settings.slices/action/separate_ring_volume loaded from cache
+10-15 09:15:44.816  1108  2638 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/call_volume) in: 7
+10-15 09:15:44.818  1108  1117 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
+10-15 09:15:44.820  1260  2895 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 09:15:44.820  1260  2895 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 09:15:44.829  3847  3907 I TestRunner: finished: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

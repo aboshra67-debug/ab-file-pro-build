@@ -1,0 +1,11 @@
+10-15 09:18:28.956  5192  5333 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:28.962  1055  1302 D nativeloader: Configuring classloader-namespace for other apk . target_sdk_version=33, uses_libraries=ALL, library_path=/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-15 09:18:28.973   483  1966 D ConnectivityService: requestNetwork for uid/pid:10120/1055 activeRequest: null callbackRequest: 134 [NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-15 09:18:28.975   483   700 D ConnectivityService: NetReassign [135 : null → 100] [c 0] [a 1] [i 1]
+10-15 09:18:28.975   483   693 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 09:18:28.976   483   693 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 09:18:28.976   483   693 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 09:18:28.976   483   693 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=135, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10120 RequestorUid: 10120 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 09:18:28.979   483   700 D ConnectivityService: NetReassign [no changes] [c 1] [a 0] [i 0]
+10-15 09:18:28.980  1055  1302 I cr_CronetLibraryLoader: Cronet version: 113.0.5672.51, arch: x86_64
+10-15 09:18:28.988  5192  5333 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

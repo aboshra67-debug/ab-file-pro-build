@@ -1,0 +1,2 @@
+10-15 09:18:26.699  5192  5333 I TestRunner: started: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:26.737  5192  5333 I TestRunner: finished: parallelImagesWithSameNameHaveIndependentOutputs(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

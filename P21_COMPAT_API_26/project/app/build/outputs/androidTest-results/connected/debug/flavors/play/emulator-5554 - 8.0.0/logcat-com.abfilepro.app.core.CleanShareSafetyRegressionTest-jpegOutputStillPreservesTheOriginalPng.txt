@@ -1,0 +1,2 @@
+10-15 09:19:04.844  5221  5240 I TestRunner: started: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:19:04.927  5221  5240 I TestRunner: finished: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

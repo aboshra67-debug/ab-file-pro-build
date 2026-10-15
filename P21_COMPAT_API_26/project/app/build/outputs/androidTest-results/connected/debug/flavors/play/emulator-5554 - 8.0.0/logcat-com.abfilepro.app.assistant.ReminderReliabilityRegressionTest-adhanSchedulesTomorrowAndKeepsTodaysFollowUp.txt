@@ -1,0 +1,6 @@
+10-15 09:19:00.965  5221  5240 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:19:01.092  2550  2581 I zygote64: NativeAllocBackground concurrent copying GC freed 12176(1071KB) AllocSpace objects, 11(496KB) LOS objects, 49% free, 2MB/5MB, paused 41.090ms total 63.831ms
+10-15 09:19:01.102  1860  1880 I zygote64: NativeAllocBackground concurrent copying GC freed 37944(2MB) AllocSpace objects, 1(20KB) LOS objects, 49% free, 4MB/9MB, paused 27.825ms total 47.296ms
+10-15 09:19:01.112  1860  5255 W System  : ClassLoader referenced unknown path:
+10-15 09:19:01.137  1860  1860 I zygote64: Deoptimizing void com.android.systemui.statusbar.notification.NotificationHeaderViewWrapper.onContentUpdated(com.android.systemui.statusbar.ExpandableNotificationRow) due to JIT inline cache
+10-15 09:19:01.143  5221  5240 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

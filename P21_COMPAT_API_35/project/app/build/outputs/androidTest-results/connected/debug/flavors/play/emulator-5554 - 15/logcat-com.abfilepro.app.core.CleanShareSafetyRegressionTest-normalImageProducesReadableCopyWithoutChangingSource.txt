@@ -1,0 +1,5 @@
+10-15 09:15:47.339  3847  3907 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:47.363  1260  2338 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+10-15 09:15:47.368  1260  2267 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 09:15:47.373  1260  2338 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 42 uptime_millis: 42 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+10-15 09:15:47.380  3847  3907 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

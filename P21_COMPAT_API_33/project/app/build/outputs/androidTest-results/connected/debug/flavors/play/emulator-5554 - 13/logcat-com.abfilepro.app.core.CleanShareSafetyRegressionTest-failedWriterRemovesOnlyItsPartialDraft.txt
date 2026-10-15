@@ -1,0 +1,2 @@
+10-15 09:18:27.179  5192  5333 I TestRunner: started: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:27.188  5192  5333 I TestRunner: finished: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

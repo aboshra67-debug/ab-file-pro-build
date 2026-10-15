@@ -1,0 +1,3 @@
+10-15 09:18:30.002  5192  5333 I TestRunner: started: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:30.021  1055  5399 D TrafficStats: tagSocket(187) with statsTag=0x1203, statsUid=10120
+10-15 09:18:30.041  5192  5333 I TestRunner: finished: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

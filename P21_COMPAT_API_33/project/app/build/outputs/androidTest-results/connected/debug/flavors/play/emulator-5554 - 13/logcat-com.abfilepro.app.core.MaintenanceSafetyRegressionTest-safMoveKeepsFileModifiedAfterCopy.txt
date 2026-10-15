@@ -1,0 +1,3 @@
+10-15 09:18:31.167  5192  5333 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:31.171  5407  5407 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:18:31.209  5192  5333 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

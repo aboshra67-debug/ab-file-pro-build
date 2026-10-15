@@ -1,0 +1,3 @@
+10-15 09:18:32.201  5192  5333 I TestRunner: started: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.206  1086  3858 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.207  5192  5333 I TestRunner: finished: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,31 @@
+10-15 09:15:56.084  3847  3907 I TestRunner: started: partialFileMoveUndoRetainsConflictForRetry(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.086  1356  1709 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 4 candidates
+10-15 09:15:56.090  1356  1743 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 20675373
+10-15 09:15:56.098  1356  1356 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 4
+10-15 09:15:56.107  3278  3960 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=92 ]
+10-15 09:15:56.107  3278  4124 I BugleRcsEngine: RequestWithImsiState: event HTTP Response [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.108  3278  4124 I BugleRcsEngine: InProgressState: event HTTP Response [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.109  1678  4147 D DownloadManager: [10] Finished with status SUCCESS
+10-15 09:15:56.110  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:56.111  1678  4156 D DownloadManager: [12] Starting
+10-15 09:15:56.112  3278  4124 I BugleRcsEngine: RequestWithImsiState: event HTTP 200 (OK) [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.113  3278  4124 W BugleRcsEngine: Couldn't find cookies [CONTEXT thread_id=107 ]
+10-15 09:15:56.116  3278  4124 I BugleRcsEngine: transitionTo: destState=ProcessConfigurationState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.118  1597  3362 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:56.119  3278  4124 I BugleRcsEngine: onTransitionRequested RequestWithImsiState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.121  3278  4124 I BugleRcsEngine: Exit RequestWithImsiState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.122  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:56.122  3278  4124 I BugleRcsEngine: Enter ProcessConfigurationState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.129  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:56.129  3278  4124 I BugleRcsEngine: ProcessConfigurationState: event Config document received [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:56.131  3278  4124 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:56.131  3278  4124 I BugleRcsEngine: Configuration update received. Updating
+10-15 09:15:56.131  3278  4124 I BugleRcsEngine: from [Type: 0, Version: 0, Validity: 0, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false]
+10-15 09:15:56.131  3278  4124 I BugleRcsEngine: to [Type: 2, Version: 0, Validity: 86400, Last updated: 0, Remaining validity: 0, Reconfiguration requested: false, Messaging technology: SIMPLE_IM, rcsVolteSingleRegistration: false]
+10-15 09:15:56.131  3278  4124 I BugleRcsEngine: [CONTEXT thread_id=107 ]
+10-15 09:15:56.131  3278  4124 W BugleRcsEngine: Received configuration with no token or invalid token during refresh. [CONTEXT thread_id=107 ]
+10-15 09:15:56.136  3278  3960 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=92 ]
+10-15 09:15:56.147  3278  4124 I BugleRcsEngine: Rcs Configuration was updated [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:56.148  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:56.148  3278  4124 I BugleRcsEngine: Provisioning refreshed with partial configuration. [CONTEXT thread_id=107 ]
+10-15 09:15:56.153  3847  3907 I TestRunner: finished: partialFileMoveUndoRetainsConflictForRetry(com.abfilepro.app.core.StorageSafetyRegressionTest)

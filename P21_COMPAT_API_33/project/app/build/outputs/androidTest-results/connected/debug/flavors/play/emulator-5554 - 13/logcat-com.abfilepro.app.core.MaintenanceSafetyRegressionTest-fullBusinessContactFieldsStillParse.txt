@@ -1,0 +1,2 @@
+10-15 09:18:31.484  5192  5333 I TestRunner: started: fullBusinessContactFieldsStillParse(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:31.490  5192  5333 I TestRunner: finished: fullBusinessContactFieldsStillParse(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

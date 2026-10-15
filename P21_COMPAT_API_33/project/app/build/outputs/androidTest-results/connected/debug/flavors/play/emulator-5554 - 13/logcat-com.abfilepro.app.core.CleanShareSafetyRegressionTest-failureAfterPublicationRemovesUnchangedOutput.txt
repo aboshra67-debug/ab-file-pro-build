@@ -1,0 +1,2 @@
+10-15 09:18:27.554  5192  5333 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:27.570  5192  5333 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

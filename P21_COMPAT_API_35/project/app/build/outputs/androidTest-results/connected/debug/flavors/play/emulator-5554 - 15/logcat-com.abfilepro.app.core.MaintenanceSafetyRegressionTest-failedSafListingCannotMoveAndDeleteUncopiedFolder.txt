@@ -1,0 +1,8 @@
+10-15 09:15:52.640  3847  3907 I TestRunner: started: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:52.665  1260  2338 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+10-15 09:15:52.681  4082  4082 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:15:52.705  1356  1709 I SP      : Pausing download dynamic_art:305f81355a729e382ea9f374dd286d9f, reason: PREEMPTED
+10-15 09:15:52.707  1356  1709 I SP      : Pausing download emoji:2ada3c9a4a17d6bb81b1fe8d51502d60, reason: PREEMPTED
+10-15 09:15:52.708  1356  1709 I SP      : Pausing download transformer_concept:2023011913_en, reason: PREEMPTED
+10-15 09:15:52.709  1356  1709 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:15:52.726  3847  3907 I TestRunner: finished: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

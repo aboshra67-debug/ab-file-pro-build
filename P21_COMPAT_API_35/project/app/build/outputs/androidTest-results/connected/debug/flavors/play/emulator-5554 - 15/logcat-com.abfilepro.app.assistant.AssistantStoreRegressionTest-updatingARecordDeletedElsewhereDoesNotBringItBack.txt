@@ -1,0 +1,4 @@
+10-15 09:15:44.554  3847  3907 I TestRunner: started: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:15:44.556  1606  3742 I Wear_Controller: Wearable module requires a companion app to be installed.
+10-15 09:15:44.556  1606  3742 I Wear_Controller: onStartup - Wear is not available on this device.
+10-15 09:15:44.567  3847  3907 I TestRunner: finished: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

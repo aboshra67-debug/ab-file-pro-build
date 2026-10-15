@@ -1,0 +1,4 @@
+10-15 09:19:01.705  5221  5240 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:19:01.735  1388  1388 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 09:19:01.758  1388  1388 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 09:19:01.872  5221  5240 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

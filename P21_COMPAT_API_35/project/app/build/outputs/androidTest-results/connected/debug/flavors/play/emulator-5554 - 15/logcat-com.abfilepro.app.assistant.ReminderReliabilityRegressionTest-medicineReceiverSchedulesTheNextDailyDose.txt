@@ -1,0 +1,3 @@
+10-15 09:15:45.015  3847  3907 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:15:45.035  3174  3177 W gs.intelligence: Missing inline cache for void dkc.B(qh, bgy)
+10-15 09:15:45.057  3847  3907 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

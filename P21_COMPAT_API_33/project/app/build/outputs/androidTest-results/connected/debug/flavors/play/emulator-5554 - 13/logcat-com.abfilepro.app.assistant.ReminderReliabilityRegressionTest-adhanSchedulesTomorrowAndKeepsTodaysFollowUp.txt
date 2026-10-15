@@ -1,0 +1,2 @@
+10-15 09:18:23.933  5192  5333 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:18:23.988  5192  5333 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

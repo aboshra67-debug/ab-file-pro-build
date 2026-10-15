@@ -1,0 +1,19 @@
+10-15 09:18:32.180  5192  5333 I TestRunner: started: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.181  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-15 09:18:32.183  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 09:18:32.184  1086  3858 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 11
+10-15 09:18:32.185  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 09:18:32.187  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.188  1086  1314 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 09:18:32.189  1086  1314 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 2
+10-15 09:18:32.189  1086  3858 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.190  1086  3858 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 1
+10-15 09:18:32.190  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.192  1086  1314 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 2
+10-15 09:18:32.192  1086  3858 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.192  1086  3858 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 09:18:32.193  1086  3858 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 1
+10-15 09:18:32.195  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.notification.AlarmVolumePreferenceController
+10-15 09:18:32.195  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.197  1086  1314 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 2
+10-15 09:18:32.200  5192  5333 I TestRunner: finished: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)

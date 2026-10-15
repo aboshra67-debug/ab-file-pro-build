@@ -1,0 +1,3 @@
+10-15 09:15:55.419  3847  3907 I TestRunner: started: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:55.419  1678  4139 D DownloadManager: [9] Finished with status SUCCESS
+10-15 09:15:55.458  3847  3907 I TestRunner: finished: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

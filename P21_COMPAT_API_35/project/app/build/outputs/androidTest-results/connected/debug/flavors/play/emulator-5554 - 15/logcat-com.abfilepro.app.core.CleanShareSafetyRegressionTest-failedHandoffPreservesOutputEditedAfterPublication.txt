@@ -1,0 +1,4 @@
+10-15 09:15:45.622  3847  3907 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:45.636  1260  2267 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.westworld) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:15:45.647  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:45.654  3847  3907 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

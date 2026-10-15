@@ -1,0 +1,9 @@
+10-15 09:15:48.948  3847  3907 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:48.963  3278  3473 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.apps.messaging
+10-15 09:15:48.969  3278  3486 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@1a796d2
+10-15 09:15:48.969  1597  1771 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:48.973  3278  3961 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.apps.messaging
+10-15 09:15:48.976  3278  3477 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@b444e1e
+10-15 09:15:48.979  1597  1597 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.nlu_ff.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:48.998  3278  3961 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:49.010  3847  3907 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

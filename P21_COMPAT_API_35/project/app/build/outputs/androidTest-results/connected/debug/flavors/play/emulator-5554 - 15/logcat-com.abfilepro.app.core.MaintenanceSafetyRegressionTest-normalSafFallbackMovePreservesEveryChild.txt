@@ -1,0 +1,65 @@
+10-15 09:15:53.465  3847  3907 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:53.466  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:53.467  3278  4124 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:53.492  3670  3836 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=68 ]
+10-15 09:15:53.492  3278  4124 I BugleRcsEngine: transitionViaMessage, srcState=ReadyState, destState = RequestWithImsiState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.492  3278  4124 I BugleRcsEngine: ReadyState: Transition to request with imsi [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.493  3278  4124 I BugleRcsEngine: transitionTo: destState=RequestWithImsiState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.493  3278  4124 I BugleRcsEngine: onTransitionRequested ReadyState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.493  3278  4124 I BugleRcsEngine: Exit ReadyState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.493  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:53.493  3278  4124 I BugleRcsEngine: Enter RequestWithImsiState [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.495  3670  3836 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=68 ]
+10-15 09:15:53.495  3670  3836 I BugleRcsEngine: resetting RcsEngine internal state [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=68 ]
+10-15 09:15:53.498  1606  2881 I PeopleGalProvider: Gal directories started.
+10-15 09:15:53.500  1606  2881 I PeopleGalProvider: Method 1 completed.
+10-15 09:15:53.500  1606  2881 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:15:53.503  3670  3836 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:53.513  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:53.530  3278  4124 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=107 ]
+10-15 09:15:53.531  3278  4124 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:53.534  3278  3473 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=53 ]
+10-15 09:15:53.567   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:53.583  3278  3960 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=92 ]
+10-15 09:15:53.596  1260  1260 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:15:53.575   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:53.597   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10157} in 30ms
+10-15 09:15:53.637  1356  1709 I SP      : Successfully got manifest for handwriting_recognition-manifest: manifests:handwriting_recognition-86
+10-15 09:15:53.640  3278  4124 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=107 ]
+10-15 09:15:53.644  3278  4124 W BugleRcsEngine: Could not retrieve MSISDN from configuration. Configuration is empty. [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.646  3278  4124 W BugleRcsEngine: Skipping adding Tachyon identity key to request. Null/empty RCS msisdn from configuration for sim ID: redacted-pii:sim_id[chars:20,last3:897]. [faf76f06-f979-4bef-b19f-751aa522af9e] [CONTEXT log_prefix="(PEv2-SM17473702-DefaultCallSmsData-1-474)" thread_id=107 ]
+10-15 09:15:53.647   573   586 I system_server: Background concurrent mark compact GC freed 29MB AllocSpace bytes, 62(1320KB) LOS objects, 46% free, 27MB/51MB, paused 1.574ms,28.791ms total 996.558ms
+10-15 09:15:53.654   573   587 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+10-15 09:15:53.677  1462  1462 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.gms.
+10-15 09:15:53.677  1462  2593 I AiAiEcho: AppIndexer Package:[com.google.android.gms] UserProfile:[0] Enabled:[true].
+10-15 09:15:53.677  1462  2593 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.gms], userId:[0], reason:[package is updated.].
+10-15 09:15:53.679  3670  3836 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=68 ]
+10-15 09:15:53.691  4082  4082 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:15:53.706  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.omnient.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:53.730   373   421 I netd    : tetherGetStats() -> {[]} <0.89ms>
+10-15 09:15:53.747   373   421 I netd    : bandwidthSetGlobalAlert(2097152) <0.12ms>
+10-15 09:15:53.757  1356  1741 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks$2.apply():184 syncPackMapping()
+10-15 09:15:53.763  1163  1180 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.gms]
+10-15 09:15:53.806  1163  1180 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.gms
+10-15 09:15:53.811  2461  2495 W DG      : [flow rcs_provisioning] DroidGuardRunner.newVmProcessForFastSignalCollection(): Fast program not found [CONTEXT service_id=25 ]
+10-15 09:15:53.876  1597  2478 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:53.878   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:15:53.882   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:15:53.882   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 09:15:53.883   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:15:53.894   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:15:53.894   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:53.894   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:53.895   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:15:53.895   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 09:15:53.895   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 09:15:53.951  1356  1709 I SP      : Sync for dynamic_art succeeded in 2597 ms: {added: [305f81355a729e382ea9f374dd286d9f, b1f6f47a53f7820be91b9fe247728980], metadata: false
+10-15 09:15:53.983  1260  2338 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.wallpaper
+10-15 09:15:54.002  3053  3997 I ConfigUpdater: Update started
+10-15 09:15:54.062  1356  1363 I putmethod.latin: Background concurrent mark compact GC freed 17MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 12MB/24MB, paused 715us,1.401ms total 102.688ms
+10-15 09:15:54.074  1356  1743 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 12655405
+10-15 09:15:54.080   923  1006 I PermissionControllerServiceImpl: Updating user sensitive for user 0
+10-15 09:15:54.102  1356  1709 I SP      : Sync for emoji succeeded in 2660 ms: {added: [2ada3c9a4a17d6bb81b1fe8d51502d60], metadata: false
+10-15 09:15:54.146  1597  3362 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.subscriptions#com.google.android.googlequicksearchbox
+10-15 09:15:54.154  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:54.165  3847  3907 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

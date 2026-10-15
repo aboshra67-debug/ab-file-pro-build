@@ -1,0 +1,16 @@
+10-15 09:15:48.917  3847  3907 I TestRunner: started: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+10-15 09:15:48.919  1260  2000 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot for com.google.android.libraries.consentverifier#com.google.android.settings.intelligence(change count changed - expected 2  but was 1), resolution=null}]
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):48)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 09:15:48.919  1260  2000 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:15:48.924  3847  4015 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:15:48.947  3847  3907 I TestRunner: finished: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

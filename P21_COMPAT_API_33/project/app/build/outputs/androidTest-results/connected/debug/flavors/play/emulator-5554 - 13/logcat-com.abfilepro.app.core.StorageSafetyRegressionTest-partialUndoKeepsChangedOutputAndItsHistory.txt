@@ -1,0 +1,9 @@
+10-15 09:18:32.259  5192  5333 I TestRunner: started: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.264  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.265  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+10-15 09:18:32.266  1086  1314 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 2
+10-15 09:18:32.270  1086  3858 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.271  1086  3858 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 1
+10-15 09:18:32.272  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 09:18:32.283  1086  1099 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 09:18:32.288  5192  5333 I TestRunner: finished: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)

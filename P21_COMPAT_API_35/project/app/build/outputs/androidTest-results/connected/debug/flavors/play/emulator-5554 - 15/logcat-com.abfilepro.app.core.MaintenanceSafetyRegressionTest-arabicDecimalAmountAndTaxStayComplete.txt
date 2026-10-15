@@ -1,0 +1,7 @@
+10-15 09:15:53.179  3847  3907 I TestRunner: started: arabicDecimalAmountAndTaxStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:53.192  3278  3454 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 09:15:53.198   573  1645 D ConnectivityService: requestNetwork for uid/pid:10134/3278 activeRequest: null callbackRequest: 135 [NetworkRequest [ TRACK_DEFAULT id=136, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ], NetworkRequest [ REQUEST id=137, [ Transports: SATELLITE Capabilities: INTERNET&TRUSTED&NOT_VCN_MANAGED Uid: 10134 RequestorUid: 10134 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 09:15:53.199   573   842 D ConnectivityService: NetReassign [136 : null → 100] [c 0] [a 0] [i 0]
+10-15 09:15:53.203  3278  3454 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningListenableWorker
+10-15 09:15:53.209  1096  1100 I m.android.phone: Background concurrent mark compact GC freed 3572KB AllocSpace bytes, 0(0B) LOS objects, 49% free, 3505KB/7010KB, paused 12.844ms,777us total 291.240ms
+10-15 09:15:53.213  3847  3907 I TestRunner: finished: arabicDecimalAmountAndTaxStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

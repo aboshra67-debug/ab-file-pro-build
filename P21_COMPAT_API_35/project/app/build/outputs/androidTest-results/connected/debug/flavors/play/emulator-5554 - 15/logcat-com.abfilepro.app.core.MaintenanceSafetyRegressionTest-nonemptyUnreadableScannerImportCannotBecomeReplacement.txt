@@ -1,0 +1,13 @@
+10-15 09:15:54.645  3847  3907 I TestRunner: started: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:54.658   373  4132 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10094 0}
+10-15 09:15:54.658   373  4133 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:54.658   373  4133 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7fb885fcd0
+10-15 09:15:54.658   373  4133 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:15:54.659   373  4134 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:54.659   373  4134 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7fb8860690
+10-15 09:15:54.659   373  4134 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 09:15:54.662  1678  4131 D TrafficStats: tagSocket(94) with statsTag=0xffffff01, statsUid=10136
+10-15 09:15:54.664  3847  3907 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 09:15:54.669  3847  3907 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 09:15:54.669  1597  3362 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:54.683  3847  3907 I TestRunner: finished: nonemptyUnreadableScannerImportCannotBecomeReplacement(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

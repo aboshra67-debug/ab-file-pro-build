@@ -1,0 +1,12 @@
+10-15 09:15:47.049  3847  3907 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:47.052  2461  2495 D TrafficStats: tagSocket(134) with statsTag=0x1809, statsUid=-1
+10-15 09:15:47.054  2461  2495 D TrafficStats: tagSocket(134) with statsTag=0x1809, statsUid=-1
+10-15 09:15:47.055  2461  2495 D TrafficStats: tagSocket(134) with statsTag=0x1809, statsUid=-1
+10-15 09:15:47.058   573  1018 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 09:15:47.065  2461  2495 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 09:15:47.065  2461  2495 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 09:15:47.060  2461  2461 W binder:2461_2: type=1400 audit(0.0:197): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 09:15:47.060  2461  2461 W binder:2461_2: type=1400 audit(0.0:198): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 09:15:47.083  1260  2447 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+10-15 09:15:47.086  1260  2338 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 14 uptime_millis: 14 exec_start_elapsed_seconds: 76 [CONTEXT service_id=218 ]
+10-15 09:15:47.096  3847  3907 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

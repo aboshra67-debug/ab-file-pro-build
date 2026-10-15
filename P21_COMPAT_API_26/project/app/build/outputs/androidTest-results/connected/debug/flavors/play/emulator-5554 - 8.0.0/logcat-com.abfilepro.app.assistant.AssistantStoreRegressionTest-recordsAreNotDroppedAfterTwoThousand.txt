@@ -1,0 +1,5 @@
+10-15 09:18:59.947  5221  5240 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:19:00.264  5221  5226 I zygote64: Do partial code cache collection, code=60KB, data=44KB
+10-15 09:19:00.265  5221  5226 I zygote64: After code cache collection, code=60KB, data=44KB
+10-15 09:19:00.265  5221  5226 I zygote64: Increasing code cache capacity to 256KB
+10-15 09:19:00.462  5221  5240 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

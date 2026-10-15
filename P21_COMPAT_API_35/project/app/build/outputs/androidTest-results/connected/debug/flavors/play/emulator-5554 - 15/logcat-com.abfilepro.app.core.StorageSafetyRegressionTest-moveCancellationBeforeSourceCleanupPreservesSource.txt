@@ -1,0 +1,7 @@
+10-15 09:15:56.558  3847  3907 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.580   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:56.594   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:56.596   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10100} in 17ms
+10-15 09:15:56.602  3847  3852 I p.p21mainttrial: Background concurrent mark compact GC freed 4220KB AllocSpace bytes, 48(3296KB) LOS objects, 49% free, 7803KB/15MB, paused 65us,3.212ms total 159.444ms
+10-15 09:15:56.607  1356  1709 I SP      : Sync for transformer_concept succeeded in 4292 ms: {added: [2023011913_en], metadata: false
+10-15 09:15:56.614  3847  3907 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

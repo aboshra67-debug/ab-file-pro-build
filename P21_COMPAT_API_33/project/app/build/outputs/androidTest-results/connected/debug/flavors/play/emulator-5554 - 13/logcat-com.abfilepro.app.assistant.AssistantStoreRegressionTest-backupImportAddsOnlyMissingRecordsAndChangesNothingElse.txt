@@ -1,0 +1,3 @@
+10-15 09:18:23.457  5192  5333 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:18:23.494  1055  4456 I GCoreUlr: WorldUpdater received intent Intent { act=com.google.android.location.reporting.ACTION_UPDATE_WORLD cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) } with receiverAction init
+10-15 09:18:23.503  5192  5333 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

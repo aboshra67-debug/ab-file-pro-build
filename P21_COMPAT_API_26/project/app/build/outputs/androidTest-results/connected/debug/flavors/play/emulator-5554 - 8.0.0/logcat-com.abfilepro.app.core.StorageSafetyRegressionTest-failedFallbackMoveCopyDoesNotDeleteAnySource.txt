@@ -1,0 +1,2 @@
+10-15 09:19:07.778  5221  5240 I TestRunner: started: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:19:07.826  5221  5240 I TestRunner: finished: failedFallbackMoveCopyDoesNotDeleteAnySource(com.abfilepro.app.core.StorageSafetyRegressionTest)

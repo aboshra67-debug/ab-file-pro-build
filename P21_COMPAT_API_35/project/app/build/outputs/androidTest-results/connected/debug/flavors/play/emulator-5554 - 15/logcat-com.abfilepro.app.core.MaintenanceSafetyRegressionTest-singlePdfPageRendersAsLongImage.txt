@@ -1,0 +1,7 @@
+10-15 09:15:55.488  3847  3907 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:55.495  3847  3979 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:15:55.531  2461  2495 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 09:15:55.531  2461  2495 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 09:15:55.541  3847  3979 D pdf_document_jni: Deleting Document: 0x70195d043c10
+10-15 09:15:55.546  3847  3979 D pdf_document_jni: Destroyed Document: 0x70195d043c10
+10-15 09:15:55.554  3847  3907 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

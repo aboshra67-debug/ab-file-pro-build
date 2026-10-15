@@ -1,0 +1,2 @@
+10-15 09:19:00.810  5221  5240 I TestRunner: started: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:19:00.963  5221  5240 I TestRunner: finished: documentWhoseReminderWindowStartedIsRemindedOnce(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

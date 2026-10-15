@@ -1,0 +1,2 @@
+10-15 09:19:08.019  5221  5240 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:19:08.075  5221  5240 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

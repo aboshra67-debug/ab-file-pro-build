@@ -1,0 +1,4 @@
+10-15 09:15:55.022  3847  3907 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:55.027  1356  1709 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/en.zip to 2023011913_en.zip.fetched (constraints: m:b:u:l)
+10-15 09:15:55.028  1356  1702 I SuperDelight: SuperDelightUnpacker$UnpackCancellableTask.execute():105 UnpackCancellableTask#execute(): fst-decompress /data/user/0/com.google.android.inputmethod.latin/files/superpacks/delight/main_en_840_2024070900_1.staged
+10-15 09:15:55.034  3847  3907 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

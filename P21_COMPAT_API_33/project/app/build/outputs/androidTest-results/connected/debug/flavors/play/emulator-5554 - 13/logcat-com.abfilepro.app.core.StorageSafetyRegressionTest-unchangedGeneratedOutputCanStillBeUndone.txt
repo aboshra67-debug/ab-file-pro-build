@@ -1,0 +1,23 @@
+10-15 09:18:32.209  5192  5333 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.212  1086  1101 D SliceBuilder: Creating slice for: com.android.settings.notification.MediaVolumePreferenceController
+10-15 09:18:32.214  1086  1314 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+10-15 09:18:32.215  1086  1101 D MediaVolumePreCtrl: The slice doesn't support end item
+10-15 09:18:32.216  1086  3858 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.217  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.218  1086  3858 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/call_volume
+10-15 09:18:32.218  1086  1314 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/call_volume
+10-15 09:18:32.218  1086  1314 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/call_volume) in: 1
+10-15 09:18:32.218  1086  3858 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/call_volume) in: 2
+10-15 09:18:32.219  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.220  1086  1101 D SliceBuilder: Creating slice for: com.android.settings.notification.SeparateRingVolumePreferenceController
+10-15 09:18:32.220  1086  1314 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/separate_ring_volume
+10-15 09:18:32.221  1086  1314 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/separate_ring_volume) in: 2
+10-15 09:18:32.223  1086  3858 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.224  1086  3858 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-15 09:18:32.224  1086  3858 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 1
+10-15 09:18:32.225  1086  4936 D SliceBuilder: Creating slice for: com.android.settings.notification.NotificationVolumePreferenceController
+10-15 09:18:32.227  1086  1314 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:18:32.227  1086  1101 D SliceBuilder: Creating slice for: com.android.settings.accessibility.MagnificationGesturesPreferenceController
+10-15 09:18:32.228  1086  1314 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/screen_magnification_gestures_preference_screen) in: 1
+10-15 09:18:32.229  1086  4937 D SliceBuilder: Creating slice for: com.android.settings.notification.RingVolumePreferenceController
+10-15 09:18:32.232  5192  5333 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,7 @@
+10-15 09:19:05.198  5221  5240 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:19:05.219  5276  5276 I zygote64: Late-enabling -Xcheck:jni
+10-15 09:19:05.231  5276  5276 W zygote64: Unexpected CPU variant for X86 using defaults: x86_64
+10-15 09:19:05.258  1696  1710 E memtrack: Couldn't load memtrack module
+10-15 09:19:05.258  1696  1710 W android.os.Debug: failed to get memory consumption info: -1
+10-15 09:19:05.282  5276  5276 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:19:05.451  5221  5240 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

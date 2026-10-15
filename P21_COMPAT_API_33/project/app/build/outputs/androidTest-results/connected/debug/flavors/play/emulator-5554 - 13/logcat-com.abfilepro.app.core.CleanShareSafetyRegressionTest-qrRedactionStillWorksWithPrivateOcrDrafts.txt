@@ -1,0 +1,120 @@
+10-15 09:18:27.613  5192  5333 I TestRunner: started: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:27.630  1055  1055 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+10-15 09:18:27.632  1274  5173 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 09:18:27.647  1274  5173 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 09:18:27.662  1274  5173 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 09:18:27.678  1274  5173 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 09:18:27.680  1274  5173 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 09:18:27.680  1274  5173 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 09:18:27.680  1274  5173 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 09:18:27.682  1274  5173 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 09:18:27.692  1274  5173 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 09:18:27.694  1274  5173 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 09:18:27.714  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 153 uptime_millis: 153 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.754  1055  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.776  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 40 uptime_millis: 40 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.788  1055  2825 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-15 09:18:27.803  1055  5171 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 09:18:27.805  1055  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.808  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.844  1055  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.894  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 59 uptime_millis: 59 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.909  3860  3860 I ProvidersCache: Updating roots due to change on user 0at content://com.android.externalstorage.documents/
+10-15 09:18:27.933  1625  1632 I ogle.android.as: Background young concurrent copying GC freed 105116(12MB) AllocSpace objects, 0(0B) LOS objects, 22% free, 43MB/55MB, paused 31us,16us total 102.265ms
+10-15 09:18:27.955  3860  5382 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 09:18:27.964  1055  1479 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:27.970  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 21 uptime_millis: 21 exec_start_elapsed_seconds: 123 [CONTEXT service_id=218 ]
+10-15 09:18:28.064  5192  5362 I Tesseract(native): Initialized Tesseract API with language=ara+eng+fra
+10-15 09:18:28.167  1055  3644 I Nearby  : [MBleClient] Start ble scanning from NearbyDirect:BluetoothAdapterWrapper, context tag = nearby_messages [CONTEXT service_id=49 ]
+10-15 09:18:28.167  1055  3644 D BluetoothAdapter: isLeEnabled(): ON
+10-15 09:18:28.173   957  1960 D BtGatt.GattService: stopScan() - queue size =2
+10-15 09:18:28.174   957  1960 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 09:18:28.174   957  1960 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 09:18:28.175   957  1235 D BtGatt.ScanManager: handling stopping scan  [ScanClient scanModeApp 2 scanModeUsed 2 [appScanStats com.google.uid.shared:10120]]
+10-15 09:18:28.175   957  1235 D BtGatt.ScanManager: stop gattClientScanNative
+10-15 09:18:28.175   957  1235 I bt_stack: [INFO:le_scanning_manager.cc(154)] Scan in shim layer stopped
+10-15 09:18:28.176   957  1241 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:190 unregister_client: Client unregistered
+10-15 09:18:28.176   957  1241 I bluetooth: packages/modules/Bluetooth/system/gd/hci/le_address_manager.cc:194 unregister_client: Cancelled address rotation alarm
+10-15 09:18:28.177   957  1235 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 09:18:28.178   957  1209 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 09:18:28.178   957  1209 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 09:18:28.178   957  1235 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 09:18:28.178   957  1209 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 09:18:28.178   957  1209 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 09:18:28.179   957  1235 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 09:18:28.179   957  1209 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 09:18:28.180   957  1209 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 09:18:28.180   957  1235 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 09:18:28.180   957  1209 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 09:18:28.180   957  1209 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 09:18:28.180   957  1960 D BtGatt.GattService: unregisterScanner() - scannerId=2
+10-15 09:18:28.180   957  1960 I bt_stack: [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:2
+10-15 09:18:28.180  1055  3644 I Nearby  : [MBleClient] M hardware scan: 1 clients, scanMode= OPPORTUNISTIC, filters size = 5 [CONTEXT service_id=49 ]
+10-15 09:18:28.180  1055  3644 D BluetoothAdapter: isLeEnabled(): ON
+10-15 09:18:28.181   957  1235 I bt_stack: [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+10-15 09:18:28.181   957  1209 D BtGatt.GattService: onScanFilterParamsConfigured() - clientIf=2, status=0, action=0, availableSpace=0
+10-15 09:18:28.181   957  1209 D BtGatt.ScanManager: callback done for scannerId - 2 status - 0
+10-15 09:18:28.181   957  1235 D BtGatt.ScanManager: configureRegularScanParams() - queue=1
+10-15 09:18:28.181   957  1235 D BtGatt.ScanManager: configureRegularScanParams() - queue empty, scan stopped
+10-15 09:18:28.183   957  1960 D BtGatt.GattService: registerScanner() - UUID=87f532d8-eea5-417a-80eb-735c4a67b5a4
+10-15 09:18:28.184   957  1960 I bt_stack: [INFO:le_scanning_manager.cc(141)] RegisterScanner in shim layer
+10-15 09:18:28.184   957  1209 D BtGatt.GattService: onScannerRegistered() - UUID=87f532d8-eea5-417a-80eb-735c4a67b5a4, scannerId=2, status=0
+10-15 09:18:28.184  1055  2522 D BluetoothLeScanner: onScannerRegistered() - status=0 scannerId=2 mScannerId=0
+10-15 09:18:28.184   957  1960 D BtGatt.GattService: start scan with filters
+10-15 09:18:28.185   957  1960 D BtGatt.GattService: enforcePrivilegedPermissionIfNeeded([BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=224, mManufacturerData=[0, 0, 0], mManufacturerDataMask=[0, 0, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fef3-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000feaa-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=0000fea0-0000-1000-8000-00805f9b34fb, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=-1, mManufacturerData=null, mManufacturerDataMask=null, mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null], BluetoothLeScanFilter [mDeviceName=null, mDeviceAddress=null, mUuid=null, mUuidMask=null, mServiceSolicitationUuid=null, mServiceSolicitationUuidMask=null, mServiceDataUuid=null, mServiceData=null, mServiceDataMask=null, mManufacturerId=76, mManufacturerData=[2, 21], mManufacturerDataMask=[-1, -1], mAdvertisingDataType=-1, mAdvertisingData=null, mAdvertisingDataMask=null]])
+10-15 09:18:28.186   957  1960 D BtGatt.ScanManager: startScan()  [ScanClient scanModeApp -1 scanModeUsed -1 [appScanStats com.google.uid.shared:10120]]
+10-15 09:18:28.186   957  1960 D ActivityAttributionService: notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+10-15 09:18:28.186   957  1960 I bt_btif : packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+10-15 09:18:28.187   957  1235 D BtGatt.ScanManager: handling starting scan
+10-15 09:18:28.229  5192  5389 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:18:28.230  5192  5389 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:18:28.240  1751  2461 W A       : Calling registerSyncInternal api failed.
+10-15 09:18:28.299  5192  5386 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:18:28.302  5192  5386 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-7984852 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:18:28.304  5192  5386 D CompatibilityChangeReporter: Compat change id reported: 194532703; UID 10174; state: ENABLED
+10-15 09:18:28.310  5192  5389 I tflite  : Initialized TensorFlow Lite runtime.
+10-15 09:18:28.312   483  1075 D ConnectivityService: requestNetwork for uid/pid:1000/483 asUid: 10174 activeRequest: null callbackRequest: 132 [NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647
+10-15 09:18:28.328  5192  5389 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-15 09:18:28.332  5192  5389 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:18:28.333  5192  5389 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:18:28.335  5192  5389 I native  : I0000 00:00:1792055908.335306    5389 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:18:28.341   483   700 D ConnectivityService: NetReassign [133 : null → 100] [c 4] [a 11] [i 9]
+10-15 09:18:28.346   483   693 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:18:28.347   483   693 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:18:28.350   483   693 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:18:28.350   483   693 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED Uid: 10174 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 09:18:28.352  1055  1055 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:18:28.352  1055  1055 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 09:18:28.362  5192  5205 W p.p21mainttrial: Suspending all threads took: 7.851ms
+10-15 09:18:28.372  5192  5205 I p.p21mainttrial: Background young concurrent copying GC freed 15469(1771KB) AllocSpace objects, 0(0B) LOS objects, 13% free, 6409KB/7433KB, paused 684us,8.665ms total 86.042ms
+10-15 09:18:28.398  5192  5386 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:18:28.401  5192  5386 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-3004115 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:18:28.419  5192  5386 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:18:28.421  5192  5386 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:18:28.580  5192  5386 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:18:28.587  5192  5386 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:18:28.593  5192  5386 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:18:28.595  5192  5386 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:18:28.608  5192  5386 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:18:28.609  5192  5386 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:18:28.627  5192  5389 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:18:28.627  5192  5389 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:18:28.630  5192  5386 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:18:28.634  5192  5386 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:18:28.638  5192  5389 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:18:28.639  5192  5389 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:18:28.640  5192  5389 I native  : I0000 00:00:1792055908.640675    5389 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:18:28.769  1055  1309 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.platform.statsd_java_boot) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:18:28.778  1055  1309 W bwft    : Succeeded but not registered: com.google.android.apps.messaging#com.google.android.apps.messaging [CONTEXT service_id=51 ]
+10-15 09:18:28.781  1055  3229 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (3230) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 60.239s
+10-15 09:18:28.783  1055  4511 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (3230) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=1 in void hjm.run() for 24.059s
+10-15 09:18:28.790  1055  3229 I NewModuleComplete: Received com.google.android.chimera.IntentOperation.NEW_MODULE(com.google.android.gms.chimera.PersistentIntentOperationService,2,true)
+10-15 09:18:28.798  1274  4830 I NewModuleHelper: Received com.google.android.chimera.container.NEW_MODULE_FINALIZE(2/0): com.google.android.gms.chimera.PersistentIntentOperationService,2,true
+10-15 09:18:28.799  1055  1309 W bwft    : Succeeded but not registered: com.google.android.apps.messaging.auto#com.google.android.apps.messaging [CONTEXT service_id=51 ]
+10-15 09:18:28.801  1055  1309 W bwft    : Succeeded but not registered: com.google.android.libraries.consentverifier#com.google.android.gm [CONTEXT service_id=51 ]
+10-15 09:18:28.846  1055  1302 I DynamiteModule: Considering local module com.google.android.gms.cronet_dynamite:0 and remote module com.google.android.gms.cronet_dynamite:2411
+10-15 09:18:28.847  1055  1302 I DynamiteModule: Selected remote version of com.google.android.gms.cronet_dynamite, version >= 2411
+10-15 09:18:28.852  1055  1302 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.dm': No such file or directory
+10-15 09:18:28.857  1055  1302 I .gms.persistent: Waiting for a blocking GC ClassLinker
+10-15 09:18:28.873  1055  1302 I .gms.persistent: WaitForGcToComplete blocked ClassLinker on Background for 16.003ms
+10-15 09:18:28.939  5192  5333 I TestRunner: finished: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

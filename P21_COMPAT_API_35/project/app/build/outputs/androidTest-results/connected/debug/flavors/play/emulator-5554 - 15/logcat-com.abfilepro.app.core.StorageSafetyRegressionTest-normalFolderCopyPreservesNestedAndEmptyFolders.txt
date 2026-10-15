@@ -1,0 +1,13 @@
+10-15 09:15:56.391  3847  3907 I TestRunner: started: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.391   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:56.391   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10191} in 5ms
+10-15 09:15:56.397   373   421 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+10-15 09:15:56.398  3278  3495 I BugleRcsProvisioning: RcsProvisioningEventReceiver: Received ProvisioningEvent: Update provisioning status
+10-15 09:15:56.404  3278  3486 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.receiver.RcsProvisioningEventReceiver@40d95ac
+10-15 09:15:56.408  3053  3997 I ConfigUpdater: doneInstall
+10-15 09:15:56.415   373  4160 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10154 0}
+10-15 09:15:56.415   373  4161 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:15:56.415   373  4161 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x7e7fb88614d0
+10-15 09:15:56.415   373  4161 I resolv  : doQuery: rcode=0, ancount=1, return value=59
+10-15 09:15:56.416   373  4162 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:15:56.426  3847  3907 I TestRunner: finished: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)

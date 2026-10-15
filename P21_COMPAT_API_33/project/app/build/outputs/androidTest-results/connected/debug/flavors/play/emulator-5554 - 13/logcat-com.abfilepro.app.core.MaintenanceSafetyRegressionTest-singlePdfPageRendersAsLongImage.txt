@@ -1,0 +1,2 @@
+10-15 09:18:31.533  5192  5333 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:31.580  5192  5333 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

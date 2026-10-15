@@ -1,0 +1,19 @@
+10-15 09:15:44.926  3847  3907 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:15:44.927  1108  1151 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.927  1108  2638 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 7
+10-15 09:15:44.927  1108  2638 D SettingsSliceProvider: content://android.settings.slices/action/battery_saver loaded from cache
+10-15 09:15:44.928  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.931  1108  1117 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 09:15:44.947  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.948  1108  2638 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.949  1108  1117 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+10-15 09:15:44.950  1108  2638 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 2
+10-15 09:15:44.951  1108  1151 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 09:15:44.951  1108  3221 D SettingsSliceProvider: content://android.settings.slices/action/airplane_mode loaded from cache
+10-15 09:15:44.957  1108  2638 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:44.959  1108  1117 D SliceBuilder: Creating slice for: com.android.settings.notification.MediaVolumePreferenceController
+10-15 09:15:44.960  1108  2638 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 3
+10-15 09:15:44.962  1108  1117 D MediaVolumePreCtrl: The slice doesn't support end item
+10-15 09:15:44.970  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.981  1606  3888 D TrafficStats: tagSocket(221) with statsTag=0x3c010301, statsUid=-1
+10-15 09:15:44.997  3847  3907 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

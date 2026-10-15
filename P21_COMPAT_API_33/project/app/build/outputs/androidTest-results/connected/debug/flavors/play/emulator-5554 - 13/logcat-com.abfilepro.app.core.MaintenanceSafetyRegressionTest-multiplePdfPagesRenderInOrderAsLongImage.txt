@@ -1,0 +1,2 @@
+10-15 09:18:31.360  5192  5333 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:31.405  5192  5333 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

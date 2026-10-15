@@ -1,0 +1,3 @@
+10-15 09:18:32.007  5192  5333 I TestRunner: started: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:18:32.014  1086  3858 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/auto_rotate) in: 298
+10-15 09:18:32.016  5192  5333 I TestRunner: finished: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

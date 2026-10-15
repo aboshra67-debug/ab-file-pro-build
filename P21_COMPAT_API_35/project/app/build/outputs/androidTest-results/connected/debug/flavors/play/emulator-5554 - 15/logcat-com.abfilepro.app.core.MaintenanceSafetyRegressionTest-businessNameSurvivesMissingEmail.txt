@@ -1,0 +1,5 @@
+10-15 09:15:54.797  3847  3907 I TestRunner: started: businessNameSurvivesMissingEmail(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:54.800  1678  1688 W d.process.media: Suspending all threads took: 5.016ms
+10-15 09:15:54.809  1678  1688 I d.process.media: Background concurrent mark compact GC freed 2063KB AllocSpace bytes, 8(160KB) LOS objects, 49% free, 2783KB/5566KB, paused 5.222ms,1.008ms total 33.618ms
+10-15 09:15:54.813  1678  1690 W d.process.media: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 09:15:54.820  3847  3907 I TestRunner: finished: businessNameSurvivesMissingEmail(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,7 @@
+10-15 09:15:56.155  3847  3907 I TestRunner: started: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:56.157  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:56.160  3278  4124 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=107 ]
+10-15 09:15:56.165  1356  1709 I SP      : Scheduling: download registered, 0 started, 0 paused, 4 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_conf_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:transformer_latin_seg_tflite_20231010_zip * {m:b:u:l, fg}
+10-15 09:15:56.174  3278  4124 I BugleRcsEngine: Using config server URL from biuf [CONTEXT log_prefix="ProvisioningServerUtil" thread_id=107 ]
+10-15 09:15:56.186  1356  1709 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 5 candidates
+10-15 09:15:56.193  3847  3907 I TestRunner: finished: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)

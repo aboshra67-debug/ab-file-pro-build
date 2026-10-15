@@ -1,0 +1,22 @@
+10-15 09:18:28.990  5192  5333 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:29.017   283  5401 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 09:18:29.019   283  5402 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:18:29.020   283  5402 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x713acc159110
+10-15 09:18:29.020   283  5402 I resolv  : doQuery: rcode=0, ancount=8, return value=260
+10-15 09:18:29.026   283  5403 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:18:29.033   283  5403 I resolv  : res_nsend: used send_dg 164 terrno: 0
+10-15 09:18:29.035   283  5403 I resolv  : doQuery: rcode=0, ancount=8, return value=164
+10-15 09:18:29.037  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.042  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.044  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.045  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.046  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.047  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.048  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.050  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.052  1055  5399 D TrafficStats: tagSocket(266) with statsTag=0x1203, statsUid=10120
+10-15 09:18:29.129  1055  3360 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.device_performance#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:18:29.130  1055  3474 I bwdg    : No Heterodyne serving version in database [CONTEXT service_id=51 ]
+10-15 09:18:29.141  1055  3360 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:18:29.156  1055  1061 I .gms.persistent: Compiler allocated 4807KB to compile void bwhy.D(java.util.Set, java.util.List, dmtw, java.lang.String, boolean, dzew, bwhx, java.util.LinkedHashMap, dhlq, boolean, edam)
+10-15 09:18:29.175  5192  5333 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

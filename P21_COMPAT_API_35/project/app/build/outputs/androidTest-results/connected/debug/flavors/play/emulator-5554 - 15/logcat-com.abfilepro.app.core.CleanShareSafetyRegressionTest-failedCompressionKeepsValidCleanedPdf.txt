@@ -1,0 +1,57 @@
+10-15 09:15:45.312  3847  3907 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:45.368  1260  2451 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.mdi.sync#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:15:45.373  1260  2451 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:15:45.377  3278  3474 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 09:15:45.384  3278  3432 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=42 ]
+10-15 09:15:45.385  3278  3433 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=43 ]
+10-15 09:15:45.402  3278  3474 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 09:15:45.407  3278  3475 W BugleAction: Failed to get msisdn from Bugle
+10-15 09:15:45.408  3278  3475 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:15:45.408  3278  3475 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:15:45.421  3278  3495 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_SIM_ABSENT (RCS is disabled due to SIM absent)
+10-15 09:15:45.423  3278  3475 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:15:45.423  3278  3475 W BugleAction: No default number, returning empty msisdn
+10-15 09:15:45.424  3278  3475 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=55 ]
+10-15 09:15:45.424  3278  3495 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 09:15:45.424  3278  3495 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 09:15:45.427  3278  3475 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 09:15:45.430  3278  3475 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 09:15:45.433  3278  3475 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 09:15:45.440  3278  3475 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 09:15:45.442  1606  3888 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@d0813b4
+10-15 09:15:45.446  3670  3682 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=38 ]
+10-15 09:15:45.447  3670  3836 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:45.447  3278  3486 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 09:15:45.447  3670  3836 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:45.449  3670  3836 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=68 ]
+10-15 09:15:45.449  3670  3836 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]" thread_id=68 ]
+10-15 09:15:45.449  3670  3836 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[b26b7fbf-0c28]>Handler" thread_id=68 ]
+10-15 09:15:45.452  3670  3836 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=68 ]
+10-15 09:15:45.454  3278  3474 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 09:15:45.463  3278  3474 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=00885046-831b-4ad6-8c27-7cf301d9a933, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 09:15:45.484  3847  3948 D nativeloader: Load libpdfclient.so using APEX ns com_android_mediaprovider for caller /apex/com.android.mediaprovider/javalib/framework-pdf.jar: ok
+10-15 09:15:45.510  1606  3869 I NotificationsModuleTask: Registered accounts to Chime successfully. registration reason = REGISTRATION_ID_CHANGED [CONTEXT service_id=358 ]
+10-15 09:15:45.512  1260  2743 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService finished executing. cause:4 result: 1 elapsed_millis: 1691 uptime_millis: 1691 exec_start_elapsed_seconds: 73 [CONTEXT service_id=218 ]
+10-15 09:15:45.513  1606  1606 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+10-15 09:15:45.533  2213  2296 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.tts
+10-15 09:15:45.540  2213  2213 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.audio.device#com.google.android.tts which doesn't use ProcessStable flags.
+10-15 09:15:45.544  1391  1548 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:45.551  1260  1954 I RegisterSyncOperation: Register sync called by com.google.android.googlequicksearchbox, syncing since something changed [CONTEXT service_id=51 ]
+10-15 09:15:45.553  1260  3822 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.phenotype.UPDATE (2263) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 1.526s
+10-15 09:15:45.569  1260  1954 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 09:15:45.574  1606  1606 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.usagereporting.service.UsageReportingChimeraService$CheckboxRestoringTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+10-15 09:15:45.575  1606  1606 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.usagereporting.service.UsageReportingChimeraService$CheckboxRestoringTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+10-15 09:15:45.580  1260  2743 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.usagereporting.service.UsageReportingChimeraService$CheckboxRestoringTaskBoundService started execution. cause:5 exec_start_elapsed_seconds: 75 [CONTEXT service_id=218 ]
+10-15 09:15:45.582  3847  3948 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:45.583  1260  2267 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.lockbox) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:15:45.595  3847  3948 D pdf_document_jni: Deleting Document: 0x70195d03d4d0
+10-15 09:15:45.595  3847  3948 D pdf_document_jni: Destroyed Document: 0x70195d03d4d0
+10-15 09:15:45.595  1260  2267 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.icing.mdd) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:15:45.599  1260  2267 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.nnapi.drivermanager) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:15:45.608  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:15:45.611  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d028850
+10-15 09:15:45.611  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d028850
+10-15 09:15:45.613  1597  1771 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:45.614  1260  2267 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(7, com.google.lighter.android#com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 09:15:45.616  1606  1606 I LT_PhenotypeApiImplV12: Phenotype registration succeeded
+10-15 09:15:45.618  3847  3907 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

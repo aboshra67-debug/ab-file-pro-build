@@ -1,0 +1,2 @@
+10-15 09:15:57.061  3847  3907 I TestRunner: started: legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:15:57.070  3847  3907 I TestRunner: finished: legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile(com.abfilepro.app.core.StorageSafetyRegressionTest)

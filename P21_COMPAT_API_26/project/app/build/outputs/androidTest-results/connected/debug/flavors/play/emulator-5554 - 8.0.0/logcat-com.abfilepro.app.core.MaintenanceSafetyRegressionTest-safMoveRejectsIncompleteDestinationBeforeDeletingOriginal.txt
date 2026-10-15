@@ -1,0 +1,77 @@
+10-15 09:19:06.383  5221  5240 I TestRunner: started: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:19:06.441  5276  5276 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:19:06.511  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:06.514  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:06.514  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:06.514  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:06.514  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:06.514  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:06.514  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:06.514  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:06.514  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:06.515  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:06.517  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:06.517  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:06.517  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:06.517  5221  5230 E System  : Uncaught exception thrown by finalizer
+10-15 09:19:06.517  5221  5230 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:19:06.517  5221  5230 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:19:06.517  5221  5230 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:06.520  2619  2619 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 09:19:06.520  2619  2619 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 09:19:06.521  2619  2619 I AudioController: Using mInputStreamFactoryBuilder
+10-15 09:19:06.523  2619  2619 I MicroDetectionWorker: onReady
+10-15 09:19:06.525  2619  2785 I MicroRecognitionRunner: Starting detection.
+10-15 09:19:06.525  2619  2773 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@af17d58
+10-15 09:19:06.528  2619  2773 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@af17d58
+10-15 09:19:06.529  1540  5303 I AudioFlinger: AudioFlinger's thread 0xe6503d00 tid=5303 ready to run
+10-15 09:19:06.533  2619  2773 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@af17d58
+10-15 09:19:06.533  1389  1406 D hwcomposer: hw_composer sent 162 syncs in 61s
+10-15 09:19:06.534  2619  2785 I MicroRecognitionRunner: Detection finished
+10-15 09:19:06.534  2619  2785 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 09:19:06.535  2619  2785 W ErrorProcessor: 	... 9 more
+10-15 09:19:06.535  2619  2785 I AudioController: internalShutdown
+10-15 09:19:06.535  2619  3002 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 09:19:06.553  2619  2619 I MicroDetectionWorker: onReady
+10-15 09:19:06.554  2619  2619 I MicroDetector: Keeping mic open: false
+10-15 09:19:06.554  2619  2619 I MicroDetectionWorker: #onError(false)
+10-15 09:19:06.554  2619  2771 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 09:19:06.556  5221  5240 I TestRunner: finished: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

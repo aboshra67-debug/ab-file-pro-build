@@ -1,0 +1,2 @@
+10-15 09:18:31.254  5192  5333 I TestRunner: started: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:18:31.266  5192  5333 I TestRunner: finished: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,5 @@
+10-15 09:15:55.039  3847  3907 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:55.039  3053  3997 I ConfigUpdater: Update downloaded, starting installation
+10-15 09:15:55.051  4082  4082 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:15:55.052  1678  4131 D DownloadManager: [7] Finished with status SUCCESS
+10-15 09:15:55.064  3847  3907 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

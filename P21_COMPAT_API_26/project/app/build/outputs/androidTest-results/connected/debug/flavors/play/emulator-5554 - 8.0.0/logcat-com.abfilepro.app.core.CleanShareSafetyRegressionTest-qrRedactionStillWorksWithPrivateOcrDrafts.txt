@@ -1,0 +1,37 @@
+10-15 09:19:03.588  5221  5240 I TestRunner: started: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:19:03.926  5221  5265 I Tesseract(native): Initialized Tesseract API with language=ara+eng+fra
+10-15 09:19:04.081  5221  5272 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:19:04.081  5221  5272 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:19:04.087  1696  1710 E memtrack: Couldn't load memtrack module
+10-15 09:19:04.087  1696  1710 W android.os.Debug: failed to get memory consumption info: -1
+10-15 09:19:04.097  5221  5271 W GooglePlayServicesUtil: Google Play services out of date for com.abfilepro.app.p21mainttrial.  Requires 203400000 but found 202414023
+10-15 09:19:04.097  5221  5271 W GoogleApiManager: The service for com.google.android.gms.common.internal.service.zap is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null}
+10-15 09:19:04.113  1696  1710 E memtrack: Couldn't load memtrack module
+10-15 09:19:04.113  1696  1710 W android.os.Debug: failed to get memory consumption info: -1
+10-15 09:19:04.118  5221  5272 I tflite  : Initialized TensorFlow Lite runtime.
+10-15 09:19:04.131  5221  5272 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-15 09:19:04.131  5221  5272 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:19:04.131  5221  5272 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:19:04.133  5221  5272 I native  : I0000 00:00:1792055944.133884    5272 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:19:04.176  5221  5269 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:19:04.187  5221  5269 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-7984852 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:19:04.217  5221  5269 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:19:04.227  5221  5269 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-3004115 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:19:04.238  5221  5269 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:19:04.247  5221  5269 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:19:04.353  5221  5269 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:19:04.364  5221  5271 W GooglePlayServicesUtil: Google Play services out of date for com.abfilepro.app.p21mainttrial.  Requires 203400000 but found 202414023
+10-15 09:19:04.365  5221  5271 W GoogleApiManager: The service for com.google.android.gms.common.internal.service.zap is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null}
+10-15 09:19:04.366  5221  5269 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:19:04.382  5221  5269 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:19:04.389  5221  5269 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:19:04.402  5221  5269 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:19:04.412  5221  5269 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:19:04.416  5221  5272 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:19:04.416  5221  5272 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:19:04.426  5221  5272 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:19:04.426  5221  5272 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:19:04.427  5221  5272 I native  : I0000 00:00:1792055944.427511    5272 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:19:04.438  5221  5269 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:19:04.476  5221  5269 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:19:04.641  5221  5240 I TestRunner: finished: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

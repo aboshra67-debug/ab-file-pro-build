@@ -1,0 +1,20 @@
+10-15 09:15:55.153  3847  3907 I TestRunner: started: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:55.154  1356  1741 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$1():204 syncInternal(): syncing packs
+10-15 09:15:55.164   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:55.180   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:55.180   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10192} in 15ms
+10-15 09:15:55.189  4082  4082 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:15:55.200  2461  2461 W binder:2461_2: type=1400 audit(0.0:199): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 09:15:55.210  2461  2495 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 09:15:55.210  2461  2495 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 09:15:55.231  1678  4127 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt via provider delete
+10-15 09:15:55.233  1460  1644 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/05132026-sms-denylist.txt
+10-15 09:15:55.233  1460  1644 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-15 09:15:55.208  2461  2461 W binder:2461_2: type=1400 audit(0.0:200): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 09:15:55.246  1597  3362 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:55.270  1356  1739 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$0():228 syncInternal(): used {old=[], new=[pack_mapping_v1_lstm_20231127], metadata=false, last batch=true} to update cache, success=true
+10-15 09:15:55.273  1356  1709 I SP      : <==== Finishing job {m:b:u:l, bg}, 323 ms. elapsed since start
+10-15 09:15:55.274  1356  1709 I SP      : Download stopped: transformer_concept:2023011913_en, succeeded, size: 1493590
+10-15 09:15:55.293  1356  1709 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:15:55.316  1356  1709 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}
+10-15 09:15:55.347  3847  3907 I TestRunner: finished: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

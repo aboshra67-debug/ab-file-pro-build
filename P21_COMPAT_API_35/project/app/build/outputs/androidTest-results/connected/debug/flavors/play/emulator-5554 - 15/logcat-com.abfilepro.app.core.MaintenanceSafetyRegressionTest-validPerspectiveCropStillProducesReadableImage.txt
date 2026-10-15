@@ -1,0 +1,15 @@
+10-15 09:15:53.110  3847  3907 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:53.112  3278  3485 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=62 ]
+10-15 09:15:53.113  3278  3485 I BugleRcsEngine: No RCS Configuration was found in Bugle for simID: redacted-pii:sim_id[chars:20,last3:897] [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=62 ]
+10-15 09:15:53.120  3278  3960 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 09:15:53.124  3278  3485 I BugleRcsEngine: Scheduled provisioning task with 0 seconds delay, KEEP policy, trigger is CSLIB_PHENOTYPE_UPDATE, workerId is a44027ce-8312-491b-b62d-0b714f93ab31 [CONTEXT thread_id=62 ]
+10-15 09:15:53.127  1356  1709 I SP      : Download for transformer_concept:2023011913_en was canceled
+10-15 09:15:53.128  3278  3960 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 09:15:53.133  1356  1709 I SP      : <==== Finishing job {m:b:u:l, bg}, 1258 ms. elapsed since start
+10-15 09:15:53.133  1356  1709 I SP      : Download stopped: transformer_concept:2023011913_en, failed (retriable) paused, size: 524216
+10-15 09:15:53.142  3278  3960 W BugleAction: No default number, returning empty msisdn
+10-15 09:15:53.143  3278  3960 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=92 ]
+10-15 09:15:53.145  3278  3495 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 09:15:53.150  3278  3495 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 09:15:53.154  3278  3960 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 09:15:53.159  3847  3907 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

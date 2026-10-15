@@ -1,0 +1,6 @@
+10-15 09:18:24.243  5192  5333 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:18:24.266  1274  4830 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 09:18:24.267  1274  4830 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 09:18:24.295  1274  3784 I AccountSeedingPrefetchI: AccountSeedingPrefetchInit intent operation started. [CONTEXT service_id=42 ]
+10-15 09:18:24.341  1274  4830 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 120371.
+10-15 09:18:24.410  5192  5333 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

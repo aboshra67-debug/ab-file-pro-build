@@ -1,0 +1,2 @@
+10-15 09:19:06.693  5221  5240 I TestRunner: started: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:19:06.744  5221  5240 I TestRunner: finished: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

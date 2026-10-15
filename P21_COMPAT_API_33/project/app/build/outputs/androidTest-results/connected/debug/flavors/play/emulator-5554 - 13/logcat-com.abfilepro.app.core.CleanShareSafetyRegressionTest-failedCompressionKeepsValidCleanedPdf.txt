@@ -1,0 +1,11 @@
+10-15 09:18:24.558  5192  5333 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:18:24.581  1534  1541 I .apps.wellbeing: Background concurrent copying GC freed 85602(4491KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 5827KB/11MB, paused 34us,10us total 152.799ms
+10-15 09:18:24.614   483   496 I system_server: Background young concurrent copying GC freed 770693(22MB) AllocSpace objects, 22(504KB) LOS objects, 45% free, 24MB/45MB, paused 1.705ms,38us total 607.786ms
+10-15 09:18:24.934  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 118 [CONTEXT service_id=218 ]
+10-15 09:18:24.962  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService finished executing. cause:5 result: 3 elapsed_millis: 376 uptime_millis: 376 exec_start_elapsed_seconds: 118 [CONTEXT service_id=218 ]
+10-15 09:18:25.118  1274  1274 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 09:18:25.274  1625  1632 I ogle.android.as: Background concurrent copying GC freed 6416(1189KB) AllocSpace objects, 0(0B) LOS objects, 42% free, 31MB/55MB, paused 36us,23us total 207.284ms
+10-15 09:18:25.343   757   802 D EGL_emulation: app_time_stats: avg=3253.49ms min=3253.49ms max=3253.49ms count=1
+10-15 09:18:25.431  1055  4456 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService started execution. cause:5 exec_start_elapsed_seconds: 121 [CONTEXT service_id=218 ]
+10-15 09:18:25.447  1055  5231 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService finished executing. cause:5 result: 1 elapsed_millis: 44 uptime_millis: 44 exec_start_elapsed_seconds: 121 [CONTEXT service_id=218 ]
+10-15 09:18:25.701  5192  5333 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

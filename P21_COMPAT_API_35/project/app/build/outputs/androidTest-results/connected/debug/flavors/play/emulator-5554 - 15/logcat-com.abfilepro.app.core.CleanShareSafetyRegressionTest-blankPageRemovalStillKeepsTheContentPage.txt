@@ -1,0 +1,596 @@
+10-15 09:15:49.013  3847  3907 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:15:49.029   573  1562 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:49.049  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.interactor.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:49.055  1260  1954 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1792055749055) [CONTEXT service_id=51 ]
+10-15 09:15:49.058  3278  3961 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.abuse.hades.moirai#com.google.android.apps.messaging
+10-15 09:15:49.058   573  1645 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:49.059   573  1645 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:49.062  3278  3486 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@db266f7
+10-15 09:15:49.064  3278  3473 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.messaging
+10-15 09:15:49.065  3174  3174 W CardCollectorJobService: refreshJob, cancel job.
+10-15 09:15:49.065  3174  3174 W BatteryWidgetPhenotypeCommitListener: Phenotype flag updated = true
+10-15 09:15:49.067  3278  3477 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@c1c7b93
+10-15 09:15:49.072  3174  3174 W BatteryPhenotypeCommitListener: pheotype flag is update success=true
+10-15 09:15:49.073  3174  3174 W BatteryPhenotypeCommitListener: dump configurations:
+10-15 09:15:49.073  3174  3174 W BatteryPhenotypeCommitListener: 	isFeatureEnabled:true
+10-15 09:15:49.073  3174  3174 W BatteryPhenotypeCommitListener: 	dataFetchInterval:60
+10-15 09:15:49.073  3174  3174 W BatteryPhenotypeCommitListener: 	dataRetentionDays:9
+10-15 09:15:49.073  3174  3174 W BatteryPhenotypeCommitListener: 	grantExactAlarmPermission:true
+10-15 09:15:49.074  3174  3174 W BatteryPhenotypeCommitListener: has 3 listeners
+10-15 09:15:49.074  3174  3174 W BatterySaverPhenotype: onCommitFinishedBatterySaver configuration:
+10-15 09:15:49.074  3174  3174 W BatterySaverPhenotype: 	isSchedulerOverrideEnabled: true
+10-15 09:15:49.074  3174  3174 W BatterySaverPhenotype: 	isSchedulerDefaultOnEnabled: false
+10-15 09:15:49.074  3174  3174 W BatterySaverPhenotype: 	isFlipendoConditionChecked:true
+10-15 09:15:49.078  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DaltonizerPreferenceController
+10-15 09:15:49.078  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DaltonizerPreferenceController
+10-15 09:15:49.079  3847  3948 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 109
+10-15 09:15:49.079  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DaltonizerPreferenceController
+10-15 09:15:49.080  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ColorInversionPreferenceController
+10-15 09:15:49.080  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ColorInversionPreferenceController
+10-15 09:15:49.080  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ColorInversionPreferenceController
+10-15 09:15:49.081  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DarkUIPreferenceController
+10-15 09:15:49.081  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleForceInvertPreferenceController
+10-15 09:15:49.081  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DisableAnimationsPreferenceController
+10-15 09:15:49.081  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DarkUIPreferenceController
+10-15 09:15:49.081  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleForceInvertPreferenceController
+10-15 09:15:49.082  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DisableAnimationsPreferenceController
+10-15 09:15:49.082  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.LargePointerIconPreferenceController
+10-15 09:15:49.082  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.LargePointerIconPreferenceController
+10-15 09:15:49.082  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DarkUIPreferenceController
+10-15 09:15:49.082  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleForceInvertPreferenceController
+10-15 09:15:49.082  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DisableAnimationsPreferenceController
+10-15 09:15:49.082  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.LargePointerIconPreferenceController
+10-15 09:15:49.086  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.mediadrm.ForceSwSecureCryptoFallbackPreferenceController
+10-15 09:15:49.086  1108  3984 V SettingsSearchProvider: com.android.settings.development.mediadrm.MediaDrmSettingsFragment$1@8996fa5 tried to add an empty non-indexable key
+10-15 09:15:49.087  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.mediadrm.ForceSwSecureCryptoFallbackPreferenceController
+10-15 09:15:49.088  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 09:15:49.088  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.AccessibilityUsagePreferenceController
+10-15 09:15:49.090  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 09:15:49.090  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.AccessibilityUsagePreferenceController
+10-15 09:15:49.091  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsLockScreenPreferenceController
+10-15 09:15:49.091  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.CameraExtensionsFallbackPreferenceController
+10-15 09:15:49.091  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.EnableContentCapturePreferenceController
+10-15 09:15:49.091  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.EnableContentCaptureWithServiceSettingsPreferenceController
+10-15 09:15:49.094  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.CellularSecurityPreferenceController
+10-15 09:15:49.094  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionPreferenceController
+10-15 09:15:49.094  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.ManageDeviceAdminPreferenceController
+10-15 09:15:49.094  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.EnterprisePrivacyPreferenceController
+10-15 09:15:49.095  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.FinancedPrivacyPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsLockScreenPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.CameraExtensionsFallbackPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.EnableContentCapturePreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.EnableContentCaptureWithServiceSettingsPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.CellularSecurityPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.ManageDeviceAdminPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.EnterprisePrivacyPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.FinancedPrivacyPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.devicelock.DeviceLockPreferenceController
+10-15 09:15:49.095  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SimLockPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.AccessibilityUsagePreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsLockScreenPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.CameraExtensionsFallbackPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.EnableContentCapturePreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.EnableContentCaptureWithServiceSettingsPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.CellularSecurityPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.ManageDeviceAdminPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.EnterprisePrivacyPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.FinancedPrivacyPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.devicelock.DeviceLockPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SimLockPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.ManageTrustAgentsPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ScreenPinningPreferenceController
+10-15 09:15:49.098  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagPagePreferenceController
+10-15 09:15:49.098  1108  3984 W PrefControllerMixin: Skipping updateNonIndexableKeys due to empty key com.android.settings.notification.LockScreenNotificationPreferenceController@8c97f25
+10-15 09:15:49.099  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.devicelock.DeviceLockPreferenceController
+10-15 09:15:49.099  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SimLockPreferenceController
+10-15 09:15:49.099  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 09:15:49.099  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.ManageTrustAgentsPreferenceController
+10-15 09:15:49.099  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ScreenPinningPreferenceController
+10-15 09:15:49.099  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagPagePreferenceController
+10-15 09:15:49.099  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFaceStatusPreferenceController
+10-15 09:15:49.100  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFingerprintStatusPreferenceController
+10-15 09:15:49.100  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.101  1108  3218 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.101  1108  3218 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.101  1108  3218 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.101  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.remoteauth.RemoteAuthStatusPreferenceController
+10-15 09:15:49.101  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsKeyguardPreferenceController
+10-15 09:15:49.102  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 09:15:49.102  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.ManageTrustAgentsPreferenceController
+10-15 09:15:49.102  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ScreenPinningPreferenceController
+10-15 09:15:49.102  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.MemtagPagePreferenceController
+10-15 09:15:49.103  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController
+10-15 09:15:49.104   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:49.106  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.107  1108  1151 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:49.108  1108  1151 D SettingsSliceProvider: provide 58 non-public slices
+10-15 09:15:49.108  1108  1151 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:49.109  1108  1151 D SettingsSliceProvider: Allowlisting 70 uris to 3 pkgs.
+10-15 09:15:49.110   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:49.110   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={10140} in 6ms
+10-15 09:15:49.110   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:15:49.110   573   842 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:15:49.110   573   842 D InetDiagMessage: Destroyed live tcp sockets for uids={20140} in 0ms
+10-15 09:15:49.110  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.111  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 09:15:49.111  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPreferenceController
+10-15 09:15:49.111  1108  3218 W PrefCtrlListHelper: encryption_and_credentials_encryption_status already has a controller
+10-15 09:15:49.115  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.115  1462  1816 I AiAiEcho: Settings changed for uri: content://settings/secure/adaptive_charging_visible
+10-15 09:15:49.118  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.118  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.118  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.118  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.118  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityControlTimeoutFooterPreferenceController
+10-15 09:15:49.118  1462  1627 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 09:15:49.118  1462  1627 I AiAiEcho: EchoTargets:
+10-15 09:15:49.118  1462  1627 I AiAiEcho: Filtered by AiAi flag check:
+10-15 09:15:49.118  1462  1627 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.118  1462  1627 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.118  1462  1627 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 09:15:49.118  1462  1627 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 09:15:49.118  1462  1627 I AiAiEcho: EchoTargets:
+10-15 09:15:49.118  1462  1627 I AiAiEcho: Filtered by AiAi flag check:
+10-15 09:15:49.118  1462  1627 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.118  1462  1627 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.118  1462  1627 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 09:15:49.119  1462  1627 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-15 09:15:49.119  1462  1627 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-15 09:15:49.119  1163  1163 D SsBaseTemplateCard: No text view can be set up
+10-15 09:15:49.120  1163  1163 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:15:49.120  1163  1163 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:15:49.120  1163  1163 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:15:49.120  1163  1163 I SsBaseTemplateCard: Secondary card pane is null
+10-15 09:15:49.122  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.125   922   922 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-15 09:15:49.131  1096  1096 D CarrierSvcBindHelper: onPackageModified: com.google.android.settings.intelligence
+10-15 09:15:49.131  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.audiosharing.AudioSharingPreferenceController
+10-15 09:15:49.131  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.NfcAndPaymentFragmentController
+10-15 09:15:49.134  1096  1096 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:15:49.136  1163  1812 D EGL_emulation: app_time_stats: avg=2368.52ms min=48.28ms max=4688.76ms count=2
+10-15 09:15:49.139  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFaceStatusPreferenceController
+10-15 09:15:49.140   373   421 I netd    : tetherGetStats() -> {[]} <0.85ms>
+10-15 09:15:49.140  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFingerprintStatusPreferenceController
+10-15 09:15:49.149  1108  2826 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.149  1108  2826 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.149  1108  2826 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.149  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.remoteauth.RemoteAuthStatusPreferenceController
+10-15 09:15:49.154  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.159  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsKeyguardPreferenceController
+10-15 09:15:49.159  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController
+10-15 09:15:49.161  1108  2826 E ScreenResolutionController: No support
+10-15 09:15:49.161  2002  2002 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:49.162  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 09:15:49.163   573  1563 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:49.164   923  1006 I PermissionControllerServiceImpl: Updating user sensitive for uid 10140
+10-15 09:15:49.171  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPreferenceController
+10-15 09:15:49.171  1096  1096 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 09:15:49.173  1108  2826 W PrefCtrlListHelper: encryption_and_credentials_encryption_status already has a controller
+10-15 09:15:49.174  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.174  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wfd.WifiDisplayPreferenceController
+10-15 09:15:49.180  1108  3984 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController@f497405
+10-15 09:15:49.184  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.184  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.184  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.184  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.184  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.184  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityControlTimeoutFooterPreferenceController
+10-15 09:15:49.185  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.audiosharing.AudioSharingPreferenceController
+10-15 09:15:49.185  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.NfcAndPaymentFragmentController
+10-15 09:15:49.185  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFragmentController
+10-15 09:15:49.190  1096  1096 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 09:15:49.191  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wfd.WifiDisplayPreferenceController
+10-15 09:15:49.191  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.uwb.UwbPreferenceController
+10-15 09:15:49.193  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFragmentController
+10-15 09:15:49.194  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.uwb.UwbPreferenceController
+10-15 09:15:49.196  1462  1816 I AiAiEcho: Settings changed for uri: content://settings/secure/incompatible_charger_warning_disabled
+10-15 09:15:49.197  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 09:15:49.197  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverModePreferenceController
+10-15 09:15:49.197  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.AdaptiveBatteryExpandController
+10-15 09:15:49.198  1462  1627 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 09:15:49.198  1462  1627 I AiAiEcho: EchoTargets:
+10-15 09:15:49.198  1462  1627 I AiAiEcho: Filtered by AiAi flag check:
+10-15 09:15:49.198  1462  1627 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.198  1462  1627 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.198  1462  1627 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 09:15:49.198  1462  1627 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 09:15:49.198  1462  1627 I AiAiEcho: EchoTargets:
+10-15 09:15:49.198  1462  1627 I AiAiEcho: Filtered by AiAi flag check:
+10-15 09:15:49.198  1462  1627 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.198  1462  1627 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 09:15:49.198  1462  1627 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 09:15:49.199  1462  1627 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-15 09:15:49.200  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 09:15:49.200  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverModePreferenceController
+10-15 09:15:49.200  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.AdaptiveBatteryExpandController
+10-15 09:15:49.200  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverFooterPreferenceController
+10-15 09:15:49.199   573  1962 W ParceledListSlice: Element #25 is 19764 bytes.
+10-15 09:15:49.200   573  1962 W ParceledListSlice: Element #26 is 19800 bytes.
+10-15 09:15:49.200   573  1018 W ParceledListSlice: Element #27 is 19644 bytes.
+10-15 09:15:49.200   573  1018 W ParceledListSlice: Element #28 is 19552 bytes.
+10-15 09:15:49.200   573  1018 W ParceledListSlice: Element #29 is 19664 bytes.
+10-15 09:15:49.201  1163  1180 W PackageManager: Failure retrieving text 0x7f130786 in package com.android.systemui
+10-15 09:15:49.201  1163  1180 W PackageManager: android.content.res.Resources$NotFoundException: String resource ID #0x7f130786
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.content.res.Resources.getText(Resources.java:466)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2405)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.appwidget.AppWidgetProviderInfo.loadDescription(AppWidgetProviderInfo.java:484)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at com.android.launcher3.model.WidgetItem.<init>(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:4)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at com.android.launcher3.model.WidgetsModel.update(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:72)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at com.android.launcher3.p0.execute(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:16)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at com.android.launcher3.LauncherModel.a(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:27)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at com.android.launcher3.t0.run(go/retraceme 31f9979659277bb965985aff1272c33e3c3c9e755b77166d20a2465454178f2c:12)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.os.Looper.loop(Looper.java:317)
+10-15 09:15:49.201  1163  1180 W PackageManager: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+10-15 09:15:49.202  1462  1627 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-15 09:15:49.203   922   922 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-15 09:15:49.208  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverFooterPreferenceController
+10-15 09:15:49.208  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 09:15:49.216  1096  1330 D ImsResolver: maybeAddedImsService, packageName: com.google.android.settings.intelligence
+10-15 09:15:49.217  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 09:15:49.218  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 09:15:49.222  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 09:15:49.226  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverTopIntroPreferenceController
+10-15 09:15:49.226  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverEnableForAllAppsPreferenceController
+10-15 09:15:49.226  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverAppPreferenceController
+10-15 09:15:49.238   573   678 I RoleService: Granting default roles...
+10-15 09:15:49.245  1108  1151 D SlicesIndexer: Slices already indexed - returning.
+10-15 09:15:49.245  1108  1151 D SettingsSliceProvider: Allowlisting 5 uris to 3 pkgs.
+10-15 09:15:49.249   573  1048 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 09:15:49.250   573  1048 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 09:15:49.256  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.FirstDayOfWeekItemCategoryController
+10-15 09:15:49.256  1108  2826 D BatterySettingsFeatureProviderGoogleImpl: isBatteryInfoEnabled = false
+10-15 09:15:49.256  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
+10-15 09:15:49.267   573  1048 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 09:15:49.271  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.FirstDayOfWeekItemCategoryController
+10-15 09:15:49.271  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryManufactureDatePreferenceController
+10-15 09:15:49.271  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryFirstUseDatePreferenceController
+10-15 09:15:49.271  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryCycleCountPreferenceController
+10-15 09:15:49.271  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
+10-15 09:15:49.272  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionTogglePreferenceController
+10-15 09:15:49.278  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkProviderSimListController
+10-15 09:15:49.278  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionWorkSwitchController
+10-15 09:15:49.280  1108  2826 D SlotSimStatus: Number of active SIM: 1
+10-15 09:15:49.281  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingMainSwitchPreferenceController
+10-15 09:15:49.281  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingFooterPreferenceController
+10-15 09:15:49.281  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.CallsDefaultSubscriptionController
+10-15 09:15:49.283  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFaceStatusPreferenceController
+10-15 09:15:49.283  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFingerprintStatusPreferenceController
+10-15 09:15:49.283  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.283  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.283  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.284  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.remoteauth.RemoteAuthStatusPreferenceController
+10-15 09:15:49.284  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsKeyguardPreferenceController
+10-15 09:15:49.284  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController
+10-15 09:15:49.284  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.284  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.284  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.285  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.SmsDefaultSubscriptionController
+10-15 09:15:49.286  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController
+10-15 09:15:49.286  1108  2826 W BaseSearchIndex: Error initializing controller in fragment: com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment$1@b00d25c, e: java.lang.IllegalStateException: Cannot invoke setValue on a background thread
+10-15 09:15:49.287  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.DeviceNamePreferenceController
+10-15 09:15:49.287  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.BrandedAccountPreferenceController
+10-15 09:15:49.293  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.PhoneNumberPreferenceController
+10-15 09:15:49.294  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.warranty.WarrantyPreferenceController
+10-15 09:15:49.295  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController
+10-15 09:15:49.295  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.HardwareInfoPreferenceController
+10-15 09:15:49.295  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.295  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.296  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.296  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.network.ConnectivityHelperCallQualityPreferenceController
+10-15 09:15:49.296  1108  3218 D ch_callQuality: isDeviceSupport: falsemIsChecked: true
+10-15 09:15:49.296  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.network.ConnectivityHelperDeviceToDevicePreferenceController
+10-15 09:15:49.298  1108  3218 D ch_d2d  : isDeviceSupport: falsemIsChecked: false
+10-15 09:15:49.301  1108  1151 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/call_volume
+10-15 09:15:49.305  1597  1771 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:49.306   374   374 I Zygote  : Process 3174 exited due to signal 9 (Killed)
+10-15 09:15:49.308  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController
+10-15 09:15:49.308  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.datetime.timezone.TimeZoneInfoPreferenceController
+10-15 09:15:49.308  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController
+10-15 09:15:49.309  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryInfoPreferenceController
+10-15 09:15:49.309  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.BuildNumberPreferenceController
+10-15 09:15:49.311  3278  3959 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:49.313   573   586 W system_server: Suspending all threads took: 8.006ms
+10-15 09:15:49.314   573   608 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10140/pid_3174
+10-15 09:15:49.317  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkProviderSimListController
+10-15 09:15:49.318  1108  3218 D SlotSimStatus: Number of active SIM: 1
+10-15 09:15:49.318  1108  3218 W BaseSearchIndex: Error initializing controller in fragment: com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment$1@b00d25c, e: java.lang.IllegalStateException: Cannot invoke setValue on a background thread
+10-15 09:15:49.318  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.DeviceNamePreferenceController
+10-15 09:15:49.320  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.BrandedAccountPreferenceController
+10-15 09:15:49.320  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.PhoneNumberPreferenceController
+10-15 09:15:49.321  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.warranty.WarrantyPreferenceController
+10-15 09:15:49.321  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.simstatus.SimStatusPreferenceController
+10-15 09:15:49.321  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.HardwareInfoPreferenceController
+10-15 09:15:49.321  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.imei.ImeiInfoPreferenceController
+10-15 09:15:49.321  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionPreferenceController
+10-15 09:15:49.321  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryInfoPreferenceController
+10-15 09:15:49.321  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.BuildNumberPreferenceController
+10-15 09:15:49.322  1108  3218 D PrefControllerMixin: shouldHidePreference():false
+10-15 09:15:49.334  1108  3218 V WifiManager: registerSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@7962d86, executor=android.os.HandlerExecutor@c90c01d
+10-15 09:15:49.340  1108  2826 D PrefControllerMixin: shouldHidePreference():false
+10-15 09:15:49.340  1108  2826 V WifiManager: registerSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@8746647, executor=android.os.HandlerExecutor@c90c01d
+10-15 09:15:49.341  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.343  1108  1151 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, newInfo: SoftApInfo{bandwidth= 0, frequency= 0, wifiStandard= 0, mApInstanceIdentifier= null, mIdleShutdownTimeoutMillis= 0, mVendorData= []}
+10-15 09:15:49.343  1108  1151 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, changedInfoList: []
+10-15 09:15:49.343  1108  1151 V WifiManager: SoftApCallbackProxy on mode 1, send onConnectedClientsChanged(clients): []
+10-15 09:15:49.343  1108  1108 I wifi_tether_security: WPA3 SAE is not supported on this device
+10-15 09:15:49.343  1108  1108 V WifiManager: unregisterSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@7962d86
+10-15 09:15:49.343  1108  3218 D WifiTetherMaximizeCompatibilityPref: mShouldHidePreference:false
+10-15 09:15:49.343  1108  3218 D WifiTetherMaximizeCompatibilityPref: getBand:1
+10-15 09:15:49.350  1108  2826 D WifiTetherMaximizeCompatibilityPref: mShouldHidePreference:false
+10-15 09:15:49.350  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedMainSwitchPreferenceController
+10-15 09:15:49.350  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedPreferenceCategoryController
+10-15 09:15:49.350  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedActionPullDownPrefController
+10-15 09:15:49.350  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedActionShowNotificationPrefController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.UserDictionaryListPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadTouchGestureSettingsController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadTapToClickPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadReverseScrollingPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadBottomPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadTapDraggingPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadPointerSpeedPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TouchGesturesButtonPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsScreenPreferenceController
+10-15 09:15:49.351  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 09:15:49.352  1108  2826 D WifiTetherMaximizeCompatibilityPref: getBand:1
+10-15 09:15:49.352  1108  1116 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, newInfo: SoftApInfo{bandwidth= 0, frequency= 0, wifiStandard= 0, mApInstanceIdentifier= null, mIdleShutdownTimeoutMillis= 0, mVendorData= []}
+10-15 09:15:49.352  1108  1116 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, changedInfoList: []
+10-15 09:15:49.352  1108  1116 V WifiManager: SoftApCallbackProxy on mode 1, send onConnectedClientsChanged(clients): []
+10-15 09:15:49.354  1108  3984 I ActiveUnlockStatusUtils: authority not set
+10-15 09:15:49.354  1260  2338 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.onetimeinitializer
+10-15 09:15:49.354  1108  1108 I wifi_tether_security: WPA3 SAE is not supported on this device
+10-15 09:15:49.355  1108  1108 V WifiManager: unregisterSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@8746647
+10-15 09:15:49.358  1163  1163 D SsBaseTemplateCard: No text view can be set up
+10-15 09:15:49.358  1163  1163 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:15:49.358  1163  1163 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:15:49.358  1163  1163 D SsBaseTemplateCard: Passed-in item info is null
+10-15 09:15:49.358  1163  1163 I SsBaseTemplateCard: Secondary card pane is null
+10-15 09:15:49.359  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:49.369  1108  3984 E ScreenResolutionController: No support
+10-15 09:15:49.370  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.UserDictionaryListPreferenceController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SecurityAdvancedSettingsController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.NightDisplayTopIntroPreferenceController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.NightDisplayActivationPreferenceController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TwilightLocationPreferenceController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.NightDisplayAutoModePreferenceController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.NightDisplayCustomStartTimePreferenceController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.NightDisplayCustomEndTimePreferenceController
+10-15 09:15:49.371  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.NightDisplayIntensityPreferenceController
+10-15 09:15:49.372  1108  1112 I ndroid.settings: Background concurrent mark compact GC freed 6821KB AllocSpace bytes, 8(416KB) LOS objects, 49% free, 8398KB/16MB, paused 1.058ms,4.496ms total 121.682ms
+10-15 09:15:49.372  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.BackupDataPreferenceController
+10-15 09:15:49.372  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.ConfigureAccountPreferenceController
+10-15 09:15:49.372  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.DataManagementPreferenceController
+10-15 09:15:49.372  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.AutoRestorePreferenceController
+10-15 09:15:49.372  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.BackupInactivePreferenceController
+10-15 09:15:49.373  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.AdbDeviceNamePreferenceController
+10-15 09:15:49.373  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.AdbQrCodePreferenceController
+10-15 09:15:49.375  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreviewPreferenceController
+10-15 09:15:49.375  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonLocationPreferenceController
+10-15 09:15:49.375  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonGesturePreferenceController
+10-15 09:15:49.376  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuSizePreferenceController
+10-15 09:15:49.376  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuFadePreferenceController
+10-15 09:15:49.376  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuTransparencyPreferenceController
+10-15 09:15:49.376  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonFooterPreferenceController
+10-15 09:15:49.376  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ContrastSelectorPreferenceController
+10-15 09:15:49.376  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HighTextContrastPreferenceController
+10-15 09:15:49.376  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ColorContrastFooterPreferenceController
+10-15 09:15:49.376  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:15:49.379  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 09:15:49.384  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:15:49.391  1108  1116 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/media_volume
+10-15 09:15:49.398  1108  1116 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-15 09:15:49.401   573  1048 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+10-15 09:15:49.406  1108  1108 D SettingsSliceProvider: Stopping background worker for: content://com.android.settings.slices/action/media_volume
+10-15 09:15:49.414  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:15:49.415  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 09:15:49.415  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:15:49.415  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+10-15 09:15:49.418  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 09:15:49.418  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPreferenceController
+10-15 09:15:49.419  1108  3984 W PrefCtrlListHelper: encryption_and_credentials_encryption_status already has a controller
+10-15 09:15:49.419  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.419  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.419  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.419  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.419  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutController
+10-15 09:15:49.419  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityControlTimeoutFooterPreferenceController
+10-15 09:15:49.420  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.audiosharing.AudioSharingPreferenceController
+10-15 09:15:49.420  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.NfcAndPaymentFragmentController
+10-15 09:15:49.420  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wfd.WifiDisplayPreferenceController
+10-15 09:15:49.420  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFragmentController
+10-15 09:15:49.420  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.uwb.UwbPreferenceController
+10-15 09:15:49.420  1108  3984 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.connecteddevice.NfcAndPaymentFragmentController@354b31a
+10-15 09:15:49.420  1108  3984 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFragmentController@9be5e4b
+10-15 09:15:49.420  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 09:15:49.420  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverModePreferenceController
+10-15 09:15:49.421  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.AdaptiveBatteryExpandController
+10-15 09:15:49.421  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverFooterPreferenceController
+10-15 09:15:49.421  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 09:15:49.421  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 09:15:49.421  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadTouchGestureSettingsController
+10-15 09:15:49.421  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadTapToClickPreferenceController
+10-15 09:15:49.421  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadReverseScrollingPreferenceController
+10-15 09:15:49.421  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadBottomPreferenceController
+10-15 09:15:49.421  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadTapDraggingPreferenceController
+10-15 09:15:49.421  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadPointerSpeedPreferenceController
+10-15 09:15:49.421  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TouchGesturesButtonPreferenceController
+10-15 09:15:49.422  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsScreenPreferenceController
+10-15 09:15:49.422  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 09:15:49.422  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkToggleController
+10-15 09:15:49.422  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFooterController
+10-15 09:15:49.423  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGesturePreferenceController
+10-15 09:15:49.423  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureSoundPreferenceController
+10-15 09:15:49.423  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureNumberOverridePreferenceController
+10-15 09:15:49.427  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreviewPreferenceController
+10-15 09:15:49.428  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonLocationPreferenceController
+10-15 09:15:49.429  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AdaptiveConnectivityTogglePreferenceController
+10-15 09:15:49.429  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationIllustrationPreferenceController
+10-15 09:15:49.429  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationPreferenceController
+10-15 09:15:49.430  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.communal.GlanceableHubTogglePreferenceController
+10-15 09:15:49.430  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController
+10-15 09:15:49.430  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.AddUserWhenLockedPreferenceController
+10-15 09:15:49.431  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverTopIntroPreferenceController
+10-15 09:15:49.431  3278  3960 I PhenotypeBackgroundRecv: Successfully updated snapshot for profile_primitives_android#com.google.android.apps.messaging
+10-15 09:15:49.432  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverEnableForAllAppsPreferenceController
+10-15 09:15:49.432  1108  3984 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverAppPreferenceController
+10-15 09:15:49.435  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonGesturePreferenceController
+10-15 09:15:49.435  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuSizePreferenceController
+10-15 09:15:49.436  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuFadePreferenceController
+10-15 09:15:49.436  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuTransparencyPreferenceController
+10-15 09:15:49.436  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonFooterPreferenceController
+10-15 09:15:49.436  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ContrastSelectorPreferenceController
+10-15 09:15:49.438  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HighTextContrastPreferenceController
+10-15 09:15:49.438  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ColorContrastFooterPreferenceController
+10-15 09:15:49.438  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkToggleController
+10-15 09:15:49.438  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFooterController
+10-15 09:15:49.439  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.WalletPrivacyPreferenceController
+10-15 09:15:49.441  1108  1114 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 09:15:49.442  3278  3477 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@29890e8
+10-15 09:15:49.442  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.442  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.442  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.442  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.443   573   586 I system_server: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 29(540KB) LOS objects, 46% free, 27MB/51MB, paused 9.589ms,10.943ms total 225.589ms
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1597  3389 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 09:15:49.450  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsPrivacyPreferenceController
+10-15 09:15:49.450  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsTrivialPrivacyPreferenceController
+10-15 09:15:49.450  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.CustomizableLockScreenQuickAffordancesPreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.LockscreenClockPreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayWhenToShowPreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayNotificationsPreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.language.UserDictionaryPreferenceController
+10-15 09:15:49.451  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.GameControllerPreferenceController
+10-15 09:15:49.453  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.core.WorkPreferenceController
+10-15 09:15:49.453  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.SpellCheckerForWorkPreferenceController
+10-15 09:15:49.455  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AdaptiveConnectivityTogglePreferenceController
+10-15 09:15:49.455  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationIllustrationPreferenceController
+10-15 09:15:49.456  1163  1180 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.settings.intelligence]
+10-15 09:15:49.457  1163  1180 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.settings.intelligence
+10-15 09:15:49.457  1462  1462 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.settings.intelligence.
+10-15 09:15:49.458  1462  2593 I AiAiEcho: AppIndexer Package:[com.google.android.settings.intelligence] UserProfile:[0] Enabled:[true].
+10-15 09:15:49.458  1462  2593 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.settings.intelligence], userId:[0], reason:[package is updated.].
+10-15 09:15:49.459  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationPreferenceController
+10-15 09:15:49.460  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.communal.GlanceableHubTogglePreferenceController
+10-15 09:15:49.460  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController
+10-15 09:15:49.461  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.AddUserWhenLockedPreferenceController
+10-15 09:15:49.461  2002  2557 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.partnersetup.staging#com.google.android.partnersetup
+10-15 09:15:49.463  2002  2002 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:49.463   573   591 W JobInfo : Job 'com.google.android.partnersetup/.PhenotypeJobService#2' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:15:49.466  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 09:15:49.467  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 09:15:49.467  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.RingVibrationIntensityPreferenceController
+10-15 09:15:49.468  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.RingVibrationIntensityPreferenceController
+10-15 09:15:49.468  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 09:15:49.468  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 09:15:49.468  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.NotificationVibrationIntensityPreferenceController
+10-15 09:15:49.468  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.NotificationVibrationIntensityPreferenceController
+10-15 09:15:49.468   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:49.469  3847  3948 D pdf_document_jni: Deleting Document: 0x70195d044d90
+10-15 09:15:49.469  3847  3948 D pdf_document_jni: Destroyed Document: 0x70195d044d90
+10-15 09:15:49.469   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 09:15:49.469   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 09:15:49.469   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:15:49.469  3847  3948 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 109
+10-15 09:15:49.469  3847  3948 D pdf_document_jni: Deleting Document: 0x70195d0452d0
+10-15 09:15:49.469  3847  3948 D pdf_document_jni: Destroyed Document: 0x70195d0452d0
+10-15 09:15:49.469   573   588 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 09:15:49.470  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AlarmVibrationIntensityPreferenceController
+10-15 09:15:49.471  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.AlarmVibrationIntensityPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveHapticsTogglePreferenceController
+10-15 09:15:49.471  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveHapticsTogglePreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationPreferenceController
+10-15 09:15:49.471  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveVibrationPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HapticFeedbackIntensityPreferenceController
+10-15 09:15:49.471  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.HapticFeedbackIntensityPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.MediaVibrationIntensityPreferenceController
+10-15 09:15:49.471  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.MediaVibrationIntensityPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.KeyboardVibrationTogglePreferenceController
+10-15 09:15:49.471  1108  3218 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.KeyboardVibrationTogglePreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickPreferenceController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickCustomSeekbarController
+10-15 09:15:49.471  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickFooterPreferenceController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.enterprise.ManageDeviceAdminPreferenceController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.applications.specialaccess.DebuggingDataPreferenceController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.SystemAlertWindowPreferenceController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.zenaccess.ZenAccessController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.notificationaccess.NotificationAccessController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.MediaRoutingControlPreferenceController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.spa.app.specialaccess.UseFullScreenIntentPreferenceController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.DataSaverController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.vrlistener.EnabledVrListenersController
+10-15 09:15:49.472  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.MoreSpecialAccessPreferenceController
+10-15 09:15:49.472   573  1048 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 09:15:49.472  1597  1801 I A       : (REDACTED) Refusing EXCLUSIVE task %s, it is already pending. Try again in %d seconds.
+10-15 09:15:49.473  1597  1781 I Ma      : #handleFlagUpdate()
+10-15 09:15:49.475  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.WalletPrivacyPreferenceController
+10-15 09:15:49.479  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsPrivacyPreferenceController
+10-15 09:15:49.479  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsTrivialPrivacyPreferenceController
+10-15 09:15:49.479  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.CustomizableLockScreenQuickAffordancesPreferenceController
+10-15 09:15:49.479  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.LockscreenClockPreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayWhenToShowPreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayNotificationsPreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.language.UserDictionaryPreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.GameControllerPreferenceController
+10-15 09:15:49.480  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.core.WorkPreferenceController
+10-15 09:15:49.480  1108  3984 V SettingsSearchProvider: com.android.settings.development.graphicsdriver.GraphicsDriverDashboard$1@ad3faa8 tried to add an empty non-indexable key
+10-15 09:15:49.482  1597  1801 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 09:15:49.489  1108  3218 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.NfcTagAppsPreferenceController
+10-15 09:15:49.491  3278  3960 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.google.android.apps.messaging
+10-15 09:15:49.492  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.SpellCheckerForWorkPreferenceController
+10-15 09:15:49.482  1517  1835 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 09:15:49.492  1517  1835 I A       : #handleFlagsUpdate: listeners notified
+10-15 09:15:49.493  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 09:15:49.493  1108  2826 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 09:15:49.493  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.RingVibrationIntensityPreferenceController
+10-15 09:15:49.493  1108  2826 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.RingVibrationIntensityPreferenceController
+10-15 09:15:49.493  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 09:15:49.493  1108  2826 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 09:15:49.493  1108  2826 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.NotificationVibrationIntensityPreferenceController
+10-15 09:15:49.497  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 109
+10-15 09:15:49.499  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d045d50
+10-15 09:15:49.500  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d045d50
+10-15 09:15:49.500  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 109
+10-15 09:15:49.501  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d047790
+10-15 09:15:49.501  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d047790
+10-15 09:15:49.503  1597  1802 I A       : NGA enabled in interactor.
+10-15 09:15:49.503  3278  3486 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@94a9500
+10-15 09:15:49.505  1597  3362 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:15:49.507  3847  3907 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

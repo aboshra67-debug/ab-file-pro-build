@@ -1,0 +1,11 @@
+10-15 09:15:54.686  3847  3907 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:15:54.704  1597  1597 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.lens.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:15:54.749  3053  3997 I ConfigUpdater: Update started
+10-15 09:15:54.754  3847  3979 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:15:54.756  3847  3979 D pdf_document_jni: Deleting Document: 0x70195d047cd0
+10-15 09:15:54.756  3847  3979 D pdf_document_jni: Destroyed Document: 0x70195d047cd0
+10-15 09:15:54.757  1678  4136 D DownloadManager: [8] Starting
+10-15 09:15:54.781  3847  3907 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:15:54.781  3847  3907 D pdf_document_jni: Deleting Document: 0x70195d0467d0
+10-15 09:15:54.781  3847  3907 D pdf_document_jni: Destroyed Document: 0x70195d0467d0
+10-15 09:15:54.789  3847  3907 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

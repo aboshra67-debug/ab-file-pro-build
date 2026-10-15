@@ -1,0 +1,14 @@
+10-15 09:18:23.556  5192  5333 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 09:18:23.569   283  5348 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 09:18:23.571   283  5349 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:18:23.571   283  5349 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x713acc15b950
+10-15 09:18:23.571   283  5349 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-15 09:18:23.586   283  5350 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:18:23.586   283  5350 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x713abc15ea30
+10-15 09:18:23.586   283  5350 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-15 09:18:23.587  1274  4830 D TrafficStats: tagSocket(147) with statsTag=0x30000408, statsUid=-1
+10-15 09:18:23.618  1274  4830 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 09:18:23.637  1274  4830 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):2)
+10-15 09:18:23.642  1274  4830 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@231818047@23.18.18 (190800-535401451):0)
+10-15 09:18:23.701  1055  3404 W .gms.persistent: Long monitor contention with owner lowpool[20] (5231) at void bytb.n(byps, byps, int)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):6) waiters=0 in int bytb.l(bysm, aphn) for 159ms
+10-15 09:18:23.714  5192  5333 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

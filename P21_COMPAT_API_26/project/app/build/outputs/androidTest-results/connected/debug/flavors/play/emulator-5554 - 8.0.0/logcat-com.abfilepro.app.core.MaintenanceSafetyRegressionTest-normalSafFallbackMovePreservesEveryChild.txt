@@ -1,0 +1,4 @@
+10-15 09:19:05.645  5221  5240 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:19:05.655  5276  5276 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:19:05.709  5221  5294 D ProfileInstaller: Installing profile for com.abfilepro.app.p21mainttrial
+10-15 09:19:05.885  5221  5240 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
