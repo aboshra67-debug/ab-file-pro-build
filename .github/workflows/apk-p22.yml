@@ -1,0 +1,31 @@
+name: Publish P22 test APKs as a release
+on:
+  push:
+    branches: ["apk/p22-test-20261015"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P22_OUTPUTS
+          run-id: 38735300755
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p22-test-apk-vc174 AB98_P22_PLAY_TEST.apk AB98_P22_PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p22-test-20261015 --prerelease \
+            --title "AB File Pro P22 (VC174) - test APKs (debug-signed)" \
+            --notes "Debug-signed test builds from verified run 38735300755. PLAY_TEST = com.abfilepro.app.p22mainttrial (debug). PLAY_QA_R8 = com.abfilepro.app.p22qa (release code, R8). Both install side by side with older versions."
