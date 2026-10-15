@@ -1,0 +1,4 @@
+10-15 09:03:59.074  3827  3892 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:03:59.097  3157  3273 D dasx    : Starting download: https://c.tenor.com/qA8V492wNnQAAAAk/tenor.gif
+10-15 09:03:59.098  3157  3273 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/qA8V492wNnQAAAAk/tenor.gif)
+10-15 09:03:59.104  3827  3892 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

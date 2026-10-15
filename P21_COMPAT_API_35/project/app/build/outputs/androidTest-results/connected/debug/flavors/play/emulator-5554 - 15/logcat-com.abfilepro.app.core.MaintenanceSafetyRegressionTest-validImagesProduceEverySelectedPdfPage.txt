@@ -1,0 +1,11 @@
+10-15 09:03:57.844  3827  3892 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:57.867  3157  3273 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016601
+10-15 09:03:57.871  3827  3946 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:03:57.872  3827  3946 D pdf_document_jni: Deleting Document: 0x7337155e3b50
+10-15 09:03:57.872  3827  3946 D pdf_document_jni: Destroyed Document: 0x7337155e3b50
+10-15 09:03:57.872  3157  3702 D dasx    : Starting download: https://c.tenor.com/MHwuNDTmeV8AAAAk/tenor.gif
+10-15 09:03:57.872  3157  3702 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/MHwuNDTmeV8AAAAk/tenor.gif)
+10-15 09:03:57.875  3827  3892 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:03:57.875  3827  3892 D pdf_document_jni: Deleting Document: 0x7337155e1d90
+10-15 09:03:57.875  3827  3892 D pdf_document_jni: Destroyed Document: 0x7337155e1d90
+10-15 09:03:57.876  3827  3892 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

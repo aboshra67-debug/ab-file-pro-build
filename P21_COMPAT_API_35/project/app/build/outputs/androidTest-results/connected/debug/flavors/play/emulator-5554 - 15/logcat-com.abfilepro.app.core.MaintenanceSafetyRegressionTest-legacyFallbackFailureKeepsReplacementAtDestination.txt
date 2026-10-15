@@ -1,0 +1,6 @@
+10-15 09:03:58.270  3827  3892 I TestRunner: started: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:58.276  3157  3702 D dasx    : Starting download: https://c.tenor.com/1Uxfz02VWCAAAAAk/tenor.gif
+10-15 09:03:58.276  3157  3702 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/1Uxfz02VWCAAAAAk/tenor.gif)
+10-15 09:03:58.279  3157  3273 D dasx    : Starting download: https://c.tenor.com/yo4EXUSX8TkAAAAk/tenor.gif
+10-15 09:03:58.280  3157  3273 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/yo4EXUSX8TkAAAAk/tenor.gif)
+10-15 09:03:58.301  3827  3892 I TestRunner: finished: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

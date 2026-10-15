@@ -1,0 +1,6 @@
+10-15 09:03:49.839  3827  3892 I TestRunner: started: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:03:49.842  1324  1610 I SP      : Download stopped: handwriting_recognition:scribe_latin_20231123_tflite_zip, succeeded foreground, size: 273180
+10-15 09:03:49.849  1627  2368 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.google.android.googlequicksearchbox
+10-15 09:03:49.852  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.assistant.ampactions#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:49.865  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.assistant.invocation.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:49.925  3827  3892 I TestRunner: finished: imageChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

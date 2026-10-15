@@ -1,0 +1,5 @@
+10-15 09:02:30.879  4692  4711 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:02:30.888  4741  4741 I zygote64: Late-enabling -Xcheck:jni
+10-15 09:02:30.896  4741  4741 W zygote64: Unexpected CPU variant for X86 using defaults: x86_64
+10-15 09:02:30.914  4741  4741 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:02:30.999  4692  4711 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

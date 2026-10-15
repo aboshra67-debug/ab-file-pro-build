@@ -1,0 +1,35 @@
+10-15 09:02:29.173  4692  4711 I TestRunner: started: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:02:29.202  2159  2572 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:02:29.202  2159  2572 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-15 09:02:29.224  2159  2572 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-15 09:02:29.224  2159  2572 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:02:29.225  2159  2572 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:02:29.286  4692  4701 E System  : Uncaught exception thrown by finalizer
+10-15 09:02:29.286  4692  4701 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:02:29.286  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:02:29.286  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:02:29.286  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:02:29.286  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:02:29.286  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:02:29.286  4692  4701 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:02:29.286  4692  4701 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:29.299  4692  4711 E TestRunner: failed: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:02:29.300  4692  4711 E TestRunner: ----- begin exception -----
+10-15 09:02:29.300  4692  4711 E TestRunner: java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:136)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:27)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:58)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 09:02:29.300  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 09:02:29.300  4692  4711 E TestRunner: ----- end exception -----
+10-15 09:02:29.301  4692  4711 I TestRunner: finished: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,4 @@
+10-15 09:02:28.220  4692  4711 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:02:28.221  1789  1789 D StatusBar: disable<e i a s b h r c s q >
+10-15 09:02:28.240  1789  1789 I zygote64: Deoptimizing void com.android.systemui.statusbar.ExpandableView.updateClipping() due to JIT inline cache
+10-15 09:02:28.362  4692  4711 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

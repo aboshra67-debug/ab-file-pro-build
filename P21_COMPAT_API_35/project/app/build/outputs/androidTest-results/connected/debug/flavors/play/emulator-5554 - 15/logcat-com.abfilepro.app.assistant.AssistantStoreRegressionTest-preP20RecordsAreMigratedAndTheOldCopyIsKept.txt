@@ -1,0 +1,6 @@
+10-15 09:03:46.296  3827  3892 I TestRunner: started: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:03:46.324  1324  1610 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 4 candidates
+10-15 09:03:46.335  1324  1324 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 4
+10-15 09:03:46.335  1627  1877 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:03:46.351  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.soda_apa.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:46.356  3827  3892 I TestRunner: finished: preP20RecordsAreMigratedAndTheOldCopyIsKept(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

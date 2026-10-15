@@ -1,0 +1,4 @@
+10-15 09:03:58.813  3827  3892 I TestRunner: started: unreadableDirectoryCannotBePublishedAsEmptyCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:03:58.819  3157  3263 D dasx    : Starting download: https://c.tenor.com/rdXxVEqOYlgAAAAk/tenor.gif
+10-15 09:03:58.820  3157  3263 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/rdXxVEqOYlgAAAAk/tenor.gif)
+10-15 09:03:58.828  3827  3892 I TestRunner: finished: unreadableDirectoryCannotBePublishedAsEmptyCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,4 @@
+10-15 09:03:57.705  3827  3892 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:57.709  4068  4068 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:03:57.729  1627  1627 I A       : (REDACTED) disposing SearchServiceClient after timeout %s
+10-15 09:03:57.753  3827  3892 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

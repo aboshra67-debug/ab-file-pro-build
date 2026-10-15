@@ -1,0 +1,14 @@
+10-15 09:02:28.861  4692  4711 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:02:28.914  1634  1714 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-15 09:02:28.915  1634  1714 I InputReader: Reconfiguring input devices.  changes=0x00000010
+10-15 09:02:28.916  1634  1649 W ResourceType: No known package when getting value for resource number 0x7f020078
+10-15 09:02:28.916  1634  1649 W ResourceType: No known package when getting value for resource number 0x7f100262
+10-15 09:02:28.929  1755  4627 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.google.android.gm flg=0x45000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:02:28.930  1755  4628 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:02:28.934  1915  1915 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:02:28.939  1915  1915 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 09:02:28.939  1915  1915 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gm
+10-15 09:02:28.940  1915  1915 D ImsResolver: maybeAddedImsService, packageName: com.abfilepro.app.p21mainttrial
+10-15 09:02:28.951  1755  4626 I Fitness : OnPackageChangedOperation got intent: Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.abfilepro.app.p21mainttrial flg=0x45000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) } [CONTEXT service_id=17 ]
+10-15 09:02:28.958  1755  4628 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_CHANGED [CONTEXT service_id=17 ]
+10-15 09:02:28.980  4692  4711 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

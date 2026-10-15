@@ -1,0 +1,7 @@
+10-15 09:03:46.199  3827  3892 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:03:46.220  1324  1610 I SP      : Scheduling: download registered, 0 started, 0 paused, 2 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:transformer_latin_tflite_20231010_zip * {m:b:u:l, fg}, handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip * {m:b:u:l, fg}
+10-15 09:03:46.225  1388  1388 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mdd.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 09:03:46.242  1324  1610 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 3 candidates
+10-15 09:03:46.247  1324  1324 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 3
+10-15 09:03:46.274  1324  1762 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 15241464
+10-15 09:03:46.288  3827  3892 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

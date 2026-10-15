@@ -1,0 +1,47 @@
+10-15 09:02:31.694  4692  4711 I TestRunner: started: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:02:31.716  4692  4701 E System  : Uncaught exception thrown by finalizer
+10-15 09:02:31.716  4692  4701 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:31.716  4692  4701 E System  : Uncaught exception thrown by finalizer
+10-15 09:02:31.716  4692  4701 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:31.716  4692  4701 E System  : Uncaught exception thrown by finalizer
+10-15 09:02:31.716  4692  4701 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:31.716  4692  4701 E System  : Uncaught exception thrown by finalizer
+10-15 09:02:31.716  4692  4701 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:31.716  4692  4701 E System  : Uncaught exception thrown by finalizer
+10-15 09:02:31.716  4692  4701 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:02:31.716  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:02:31.716  4692  4701 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:31.718  4692  4711 I TestRunner: finished: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

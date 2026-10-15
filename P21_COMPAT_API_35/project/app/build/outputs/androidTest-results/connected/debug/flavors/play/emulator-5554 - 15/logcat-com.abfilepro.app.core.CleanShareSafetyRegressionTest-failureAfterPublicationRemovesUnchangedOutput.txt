@@ -1,0 +1,27 @@
+10-15 09:03:51.567  3827  3892 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:03:51.584  3157  3297 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016512
+10-15 09:03:51.586  3157  3275 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016513
+10-15 09:03:51.591  2175  3964 I GoogleTTSServiceImpl: Synthesis request for locale eng-USA and name en-us-x-tpf-local
+10-15 09:03:51.592  1445  2567 I AiAiCaptions: TtsSynthesizerImpl::handleRequestSuccess(): requestId: requestId: 2
+10-15 09:03:51.593  2175  3964 I GoogleTTSServiceImpl: TTS dispatch: en-us-x-tpf-lstm-embedded
+10-15 09:03:51.594  3157  3265 D dasx    : Starting download: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_complete_individual_011_confidence.pb
+10-15 09:03:51.595  3157  3265 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_complete_individual_011_confidence.pb)
+10-15 09:03:51.599  1445  1461 I AiAiCaptions: TtsSynthesizerImpl::handleRequestSuccess(): requestId: requestId: 3
+10-15 09:03:51.599  1445  2402 I AiAiCaptions: TtsLangFetcherImpl::fetch(). Fetching 1 lang packs is finished. Failures count: 0
+10-15 09:03:51.599  1445  2402 I AiAiCaptions: TtsLangFetcherImpl::fetch(). Fetching 1 lang packs is finished. Failures count: 0
+10-15 09:03:51.606   558   558 W ServiceConnector.Impl: mayInterruptIfRunning not supported - ignoring
+10-15 09:03:51.607  1445  3971 I TextToSpeech: Disconnected from TTS engine
+10-15 09:03:51.611  3157  3297 D dasx    : Starting download: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_complete_individual_013_confidence.pb
+10-15 09:03:51.611  3157  3297 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_complete_individual_013_confidence.pb)
+10-15 09:03:51.646  1388  3967 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:03:51.646  1388  3967 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:03:51.646  1648  1676 W d.process.media: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 09:03:51.647  1388  3967 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:03:51.647  1388  3967 I SyncIntentOperation: Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }. [CONTEXT service_id=80 ]
+10-15 09:03:51.647  1388  3967 I MdiSyncModule: flag handling is skipping irrelevant intent.
+10-15 09:03:51.648  1388  3967 I MlBenchmarkInstaller: Intent: com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=340 ]
+10-15 09:03:51.648  1388  3967 I MlBenchmarkInstaller: COMMITTED Extra package name: com.google.android.gms.people [CONTEXT service_id=340 ]
+10-15 09:03:51.648  1388  3586 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+10-15 09:03:51.652  1214  1599 I PTCommittedOperation: Receive new configuration for com.google.android.gms.people
+10-15 09:03:51.653  1388  3967 I LocationHistory: [IntentOperation] Handling action com.google.android.gms.phenotype.COMMITTED [CONTEXT service_id=314 ]
+10-15 09:03:51.654  3827  3892 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

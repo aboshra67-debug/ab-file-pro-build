@@ -1,0 +1,40 @@
+10-15 09:03:50.578  3827  3892 I TestRunner: started: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:03:50.594  3157  3297 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016501
+10-15 09:03:50.601  3157  3275 D dasx    : Starting download: https://www.gstatic.com/messages/smarts/smart_actions_emotive_models/emotion_templates.pb_1693340267672
+10-15 09:03:50.603  3827  3945 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.603  3157  3275 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/smarts/smart_actions_emotive_models/emotion_templates.pb_1693340267672)
+10-15 09:03:50.626  3157  3265 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016502
+10-15 09:03:50.631  3827  3945 D pdf_document_jni: Deleting Document: 0x7337155c8250
+10-15 09:03:50.631  3827  3945 D pdf_document_jni: Destroyed Document: 0x7337155c8250
+10-15 09:03:50.632  3827  3945 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.635  3827  3945 D pdf_document_jni: Deleting Document: 0x7337155cc690
+10-15 09:03:50.635  3827  3945 D pdf_document_jni: Destroyed Document: 0x7337155cc690
+10-15 09:03:50.672  1445  1657 I AiAiStatsd: Usage metrics: 0 features enabled, 0 features used for date 2026-10-14.
+10-15 09:03:50.672  1445  1657 I AiAiStatsd: AiAi is used for the day (2026-10-14): true, the week: true
+10-15 09:03:50.675  3827  3945 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.702  3157  3275 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016503
+10-15 09:03:50.702  1445  1657 I AiAiStatsd: Uploading atoms for date: 2026-10-14.
+10-15 09:03:50.702  3827  3945 D pdf_document_jni: Deleting Document: 0x7337155c3c50
+10-15 09:03:50.703  3827  3945 D pdf_document_jni: Destroyed Document: 0x7337155c3c50
+10-15 09:03:50.703  3827  3945 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.704  3827  3945 D pdf_document_jni: Deleting Document: 0x7337155e1a10
+10-15 09:03:50.704  3827  3945 D pdf_document_jni: Destroyed Document: 0x7337155e1a10
+10-15 09:03:50.705  3157  3297 D dasx    : Starting download: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_templates_reply_grammar.pb
+10-15 09:03:50.706  3827  3945 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.706  3157  3297 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_templates_reply_grammar.pb)
+10-15 09:03:50.708  3827  3945 D pdf_document_jni: Deleting Document: 0x7337155c8250
+10-15 09:03:50.708  3827  3945 D pdf_document_jni: Destroyed Document: 0x7337155c8250
+10-15 09:03:50.713  3827  3945 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.721  1445  1657 I AiAiStatsd: Total days uploaded: 1 days.
+10-15 09:03:50.731  3827  3945 D pdf_document_jni: Deleting Document: 0x7337155cc690
+10-15 09:03:50.734  3827  3945 D pdf_document_jni: Destroyed Document: 0x7337155cc690
+10-15 09:03:50.735  3827  3945 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.736  3157  3297 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016504
+10-15 09:03:50.736  3827  3945 D pdf_document_jni: Deleting Document: 0x7337155c3c50
+10-15 09:03:50.736  3827  3945 D pdf_document_jni: Destroyed Document: 0x7337155c3c50
+10-15 09:03:50.741  3157  3275 D dasx    : Starting download: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_templates_cont_grammar.pb
+10-15 09:03:50.741  3157  3275 V dasx    : Is http uri, downloading (uri: https://www.gstatic.com/messages/smarts/smart_actions_ml_models/emotion_templates_cont_grammar.pb)
+10-15 09:03:50.742  3827  3892 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 09:03:50.743  3827  3892 D pdf_document_jni: Deleting Document: 0x7337155e1a10
+10-15 09:03:50.743  3827  3892 D pdf_document_jni: Destroyed Document: 0x7337155e1a10
+10-15 09:03:50.748  3827  3892 I TestRunner: finished: largerCompressionCandidateIsNotReportedAsCompressed(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

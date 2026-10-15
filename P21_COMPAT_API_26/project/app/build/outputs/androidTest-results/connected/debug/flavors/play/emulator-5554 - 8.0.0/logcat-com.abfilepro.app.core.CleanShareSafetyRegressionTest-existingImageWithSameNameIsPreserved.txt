@@ -1,0 +1,16 @@
+10-15 09:02:29.573  4692  4711 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:02:29.593  1755  2721 W Nearby  : Failed attempt #3 out of 3 for RestoreDeviceName [CONTEXT service_id=49 ]
+10-15 09:02:29.593  1755  2721 W Nearby  : java.lang.IllegalStateException: BluetoothAdapter not ready yet!
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at ajpy.d(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at ajpx.run(Unknown Source:0)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at bwuj.call(Unknown Source:0)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at bwuo.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):2)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at bwuo.a(:com.google.android.gms@202414023@20.24.14 (040800-319035315):9)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at ajpw.run(Unknown Source:0)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at sow.run(Unknown Source:0)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at sux.run(:com.google.android.gms@202414023@20.24.14 (040800-319035315):0)
+10-15 09:02:29.593  1755  2721 W Nearby  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:29.621  4692  4711 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

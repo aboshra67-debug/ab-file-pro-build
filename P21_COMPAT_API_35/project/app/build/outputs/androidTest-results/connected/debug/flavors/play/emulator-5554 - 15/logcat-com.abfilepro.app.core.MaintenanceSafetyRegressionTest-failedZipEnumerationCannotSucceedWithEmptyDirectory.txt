@@ -1,0 +1,6 @@
+10-15 09:03:56.742  3827  3892 I TestRunner: started: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:56.775  3157  3275 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016581
+10-15 09:03:56.781  3157  3702 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016580
+10-15 09:03:56.782  3157  3273 D dasx    : Starting download: https://c.tenor.com/Aq48a65922EAAAAk/tenor.gif
+10-15 09:03:56.782  3157  3273 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/Aq48a65922EAAAAk/tenor.gif)
+10-15 09:03:56.795  3827  3892 I TestRunner: finished: failedZipEnumerationCannotSucceedWithEmptyDirectory(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

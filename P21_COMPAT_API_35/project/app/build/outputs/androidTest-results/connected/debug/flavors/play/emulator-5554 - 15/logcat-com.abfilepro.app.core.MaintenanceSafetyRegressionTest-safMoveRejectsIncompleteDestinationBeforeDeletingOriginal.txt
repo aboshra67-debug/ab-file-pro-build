@@ -1,0 +1,8 @@
+10-15 09:03:58.010  3827  3892 I TestRunner: started: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:58.017  3157  3273 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016607
+10-15 09:03:58.020  4068  4068 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:03:58.025  3157  3164 I .apps.messaging: Background concurrent mark compact GC freed 9249KB AllocSpace bytes, 163(8136KB) LOS objects, 49% free, 17MB/34MB, paused 386us,5.782ms total 299.959ms
+10-15 09:03:58.043  3157  3263 D dasx    : Starting download: https://c.tenor.com/1HV4B3GCV6UAAAAk/tenor.gif
+10-15 09:03:58.043  3157  3263 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/1HV4B3GCV6UAAAAk/tenor.gif)
+10-15 09:03:58.051  3157  3702 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016606
+10-15 09:03:58.066  3827  3892 I TestRunner: finished: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

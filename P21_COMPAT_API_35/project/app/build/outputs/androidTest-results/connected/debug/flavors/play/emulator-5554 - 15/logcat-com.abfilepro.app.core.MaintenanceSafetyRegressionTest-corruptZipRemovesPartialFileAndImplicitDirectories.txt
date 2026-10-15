@@ -1,0 +1,9 @@
+10-15 09:03:57.372  3827  3892 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:57.379  3157  3273 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016592
+10-15 09:03:57.380  3157  3263 D dasx    : Starting download: https://c.tenor.com/RZuBKuhsZ38AAAAk/tenor.gif
+10-15 09:03:57.380  3157  3263 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/RZuBKuhsZ38AAAAk/tenor.gif)
+10-15 09:03:57.404  3157  3702 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016591
+10-15 09:03:57.440  3157  3263 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016593
+10-15 09:03:57.442  3157  3273 D dasx    : Starting download: https://c.tenor.com/luqCk8KoEe0AAAAk/tenor.gif
+10-15 09:03:57.442  3157  3273 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/luqCk8KoEe0AAAAk/tenor.gif)
+10-15 09:03:57.453  3827  3892 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

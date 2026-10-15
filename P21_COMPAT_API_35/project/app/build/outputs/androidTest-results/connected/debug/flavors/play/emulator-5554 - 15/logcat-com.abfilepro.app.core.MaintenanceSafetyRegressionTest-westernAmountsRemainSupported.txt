@@ -1,0 +1,4 @@
+10-15 09:03:57.987  3827  3892 I TestRunner: started: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:57.988  3745  3748 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+10-15 09:03:57.997  1627  2440 W A       : (REDACTED) [%s] response code: %d
+10-15 09:03:58.008  3827  3892 I TestRunner: finished: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

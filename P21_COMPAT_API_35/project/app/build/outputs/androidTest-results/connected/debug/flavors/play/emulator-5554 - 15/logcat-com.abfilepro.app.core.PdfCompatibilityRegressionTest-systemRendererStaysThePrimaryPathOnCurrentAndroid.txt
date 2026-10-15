@@ -1,0 +1,7 @@
+10-15 09:03:58.526  3827  3892 I TestRunner: started: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)
+10-15 09:03:58.530  3157  3275 D dasx    : Starting download: https://c.tenor.com/NF4F60jCiIgAAAAk/tenor.gif
+10-15 09:03:58.530  3157  3275 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/NF4F60jCiIgAAAAk/tenor.gif)
+10-15 09:03:58.535  3827  3892 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:03:58.536  3827  3892 D pdf_document_jni: Deleting Document: 0x7337155dffd0
+10-15 09:03:58.536  3827  3892 D pdf_document_jni: Destroyed Document: 0x7337155dffd0
+10-15 09:03:58.537  3827  3892 I TestRunner: finished: systemRendererStaysThePrimaryPathOnCurrentAndroid(com.abfilepro.app.core.PdfCompatibilityRegressionTest)

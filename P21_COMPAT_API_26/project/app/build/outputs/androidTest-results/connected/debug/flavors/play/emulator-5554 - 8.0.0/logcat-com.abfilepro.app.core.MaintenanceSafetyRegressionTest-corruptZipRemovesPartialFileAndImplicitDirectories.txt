@@ -1,0 +1,7 @@
+10-15 09:02:31.024  4692  4711 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:02:31.031  4692  4697 I zygote64: Do full code cache collection, code=248KB, data=192KB
+10-15 09:02:31.031  4692  4697 I zygote64: After code cache collection, code=212KB, data=135KB
+10-15 09:02:31.033  4692  4697 I zygote64: Do partial code cache collection, code=215KB, data=136KB
+10-15 09:02:31.034  4692  4697 I zygote64: After code cache collection, code=215KB, data=136KB
+10-15 09:02:31.034  4692  4697 I zygote64: Increasing code cache capacity to 1024KB
+10-15 09:02:31.067  4692  4711 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

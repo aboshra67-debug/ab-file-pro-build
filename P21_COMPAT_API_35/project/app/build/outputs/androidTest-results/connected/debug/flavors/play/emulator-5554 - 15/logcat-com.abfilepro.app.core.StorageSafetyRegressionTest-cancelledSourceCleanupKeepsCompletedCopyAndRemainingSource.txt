@@ -1,0 +1,5 @@
+10-15 09:03:58.838  3827  3892 I TestRunner: started: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:03:58.859  3157  3275 D dasx    : Starting download: https://c.tenor.com/Tb3VRYTHdt4AAAAk/tenor.gif
+10-15 09:03:58.859  3157  3275 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/Tb3VRYTHdt4AAAAk/tenor.gif)
+10-15 09:03:58.863  3157  3263 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016627
+10-15 09:03:58.881  3827  3892 I TestRunner: finished: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

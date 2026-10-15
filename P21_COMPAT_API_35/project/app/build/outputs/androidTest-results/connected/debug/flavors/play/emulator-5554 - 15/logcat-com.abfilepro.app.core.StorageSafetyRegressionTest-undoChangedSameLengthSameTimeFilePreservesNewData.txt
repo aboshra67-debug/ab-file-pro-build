@@ -1,0 +1,4 @@
+10-15 09:03:59.030  3827  3892 I TestRunner: started: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:03:59.044  3157  3275 D dasx    : Starting download: https://c.tenor.com/-dHADrq1XfMAAAAk/tenor.gif
+10-15 09:03:59.044  3157  3275 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/-dHADrq1XfMAAAAk/tenor.gif)
+10-15 09:03:59.058  3827  3892 I TestRunner: finished: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)

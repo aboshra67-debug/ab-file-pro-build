@@ -1,0 +1,5 @@
+10-15 09:03:58.901  3827  3892 I TestRunner: started: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:03:58.905  3157  3275 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.apps.messaging/files/datadownload/shared/public/datadownloadfile_1792055016628
+10-15 09:03:58.911  3157  3273 D dasx    : Starting download: https://c.tenor.com/KwC7gpNPTDUAAAAk/tenor.gif
+10-15 09:03:58.912  3157  3273 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/KwC7gpNPTDUAAAAk/tenor.gif)
+10-15 09:03:58.923  3827  3892 I TestRunner: finished: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)

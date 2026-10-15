@@ -1,0 +1,16 @@
+10-15 09:02:31.465  4692  4711 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:02:31.518  4692  4711 E TestRunner: failed: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:02:31.518  4692  4711 E TestRunner: ----- begin exception -----
+10-15 09:02:31.518  4692  4711 E TestRunner: java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at com.abfilepro.app.core.PdfTools$pdfToLongImage$2.invokeSuspend(PdfTools.kt:271)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 09:02:31.518  4692  4711 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 09:02:31.518  4692  4711 E TestRunner: ----- end exception -----
+10-15 09:02:31.519  4692  4711 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

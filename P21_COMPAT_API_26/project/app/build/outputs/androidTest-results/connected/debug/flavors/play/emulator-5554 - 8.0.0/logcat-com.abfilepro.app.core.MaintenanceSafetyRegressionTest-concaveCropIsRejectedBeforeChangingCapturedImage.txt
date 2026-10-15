@@ -1,0 +1,15 @@
+10-15 09:02:31.069  4692  4711 I TestRunner: started: concaveCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:02:31.069  2618  2618 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 09:02:31.069  2618  2618 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 09:02:31.080  2618  2618 I AudioController: Using mInputStreamFactoryBuilder
+10-15 09:02:31.084  2618  2618 I MicroDetectionWorker: onReady
+10-15 09:02:31.095  2618  2754 I MicroRecognitionRunner: Starting detection.
+10-15 09:02:31.096  2618  2734 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@9933875
+10-15 09:02:31.098  2618  2734 I MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.aa.c@9933875
+10-15 09:02:31.099  1493  4763 I AudioFlinger: AudioFlinger's thread 0xe9703980 tid=4763 ready to run
+10-15 09:02:31.101  2618  2618 I MicroDetectionWorker: onReady
+10-15 09:02:31.101  2618  2734 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@9933875
+10-15 09:02:31.103  2618  2754 I MicroRecognitionRunner: Detection finished
+10-15 09:02:31.103  2618  2754 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 09:02:31.103  2618  3007 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 09:02:31.105  4692  4711 I TestRunner: finished: concaveCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

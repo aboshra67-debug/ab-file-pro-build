@@ -1,0 +1,3 @@
+10-15 09:02:28.094  4692  4711 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:02:28.111  2159  2716 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:02:28.153  4692  4711 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,47 @@
+10-15 09:03:48.794  3827  3892 I TestRunner: started: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:03:48.795  1324  1610 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:en_us_20230613_compact_fst_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 09:03:48.809   362   395 I netd    : tetherGetStats() -> {[]} <0.29ms>
+10-15 09:03:48.896  3827  3950 D ProfileInstaller: Installing profile for com.abfilepro.app.p21mainttrial
+10-15 09:03:49.005  1627  2368 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.googlequicksearchbox
+10-15 09:03:49.046  3827  3944 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 09:03:49.060  1627  2368 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:03:49.122  3157  3164 I .apps.messaging: Background concurrent mark compact GC freed 516KB AllocSpace bytes, 296(15MB) LOS objects, 49% free, 15MB/30MB, paused 180us,8.762ms total 113.539ms
+10-15 09:03:49.128  1627  2339 I PhenotypeBackgroundRecv: Successfully updated snapshot for profile_primitives_android#com.google.android.googlequicksearchbox
+10-15 09:03:49.356   558   558 W ServiceConnector.Impl: mayInterruptIfRunning not supported - ignoring
+10-15 09:03:49.356  1214  1228 W .gms.persistent: Suspending all threads took: 9.605ms
+10-15 09:03:49.360  1445  1445 D AugmentedAutofillService: handleOnConnected(): debug=true, verbose=false
+10-15 09:03:49.369  1627  2368 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.android.billingclient#com.google.android.googlequicksearchbox
+10-15 09:03:49.375  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.soundsearch.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:49.474  1214  1228 I .gms.persistent: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 9(576KB) LOS objects, 49% free, 20MB/40MB, paused 15.214ms,5.656ms total 410.717ms
+10-15 09:03:49.524  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+10-15 09:03:49.530  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 09:03:49.530  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 09:03:49.532  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 09:03:49.533  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 09:03:49.534  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:03:49.536  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 09:03:49.538  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 09:03:49.538  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 09:03:49.538  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:03:49.539  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:03:49.539  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:03:49.540  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 09:03:49.545  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:03:49.550  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:03:49.550  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 09:03:49.551  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:03:49.551  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:03:49.552  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:03:49.552  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:03:49.552  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 09:03:49.552  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:03:49.553  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:03:49.553  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 09:03:49.557  1324  1610 I SP      : Download stopped: handwriting_recognition:en_us_20230613_compact_fst_zip, succeeded foreground, size: 10427736
+10-15 09:03:49.563  1445  2042 I AiAiAutofill: Connected AiAiAugmentedAutofillService.
+10-15 09:03:49.575  1324  1610 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:scribe_latin_20231123_tflite_zip @ {m:b:u:l, fg}, handwriting_recognition:scribe_latin_20231123_recospec_zip @ {m:b:u:l, fg}
+10-15 09:03:49.583  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.pronunciationlearning#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:49.620  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:49.631  3827  3944 D pdf_document_jni: Deleting Document: 0x7337155e1bd0
+10-15 09:03:49.631  3827  3944 D pdf_document_jni: Destroyed Document: 0x7337155e1bd0
+10-15 09:03:49.642  3827  3892 I TestRunner: finished: allBlankPagesAreRejectedWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

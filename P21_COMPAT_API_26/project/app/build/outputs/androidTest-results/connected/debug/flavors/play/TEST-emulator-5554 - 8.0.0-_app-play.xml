@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.abfilepro.app.assistant.AssistantStoreRegressionTest" tests="112" failures="11" errors="0" skipped="0" time="6.318" timestamp="2026-10-15T09:02:34" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 8.0.0" />
+    <property name="flavor" value="play" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="recordsAreNotDroppedAfterTwoThousand" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.277" />
+  <testcase name="familySyncAppliesOnlyChangedRecords" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.016" />
+  <testcase name="updatingARecordDeletedElsewhereDoesNotBringItBack" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.004" />
+  <testcase name="staleScreenCopyCannotUndoAChangeMadeElsewhere" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.032" />
+  <testcase name="backupImportAddsOnlyMissingRecordsAndChangesNothingElse" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.023" />
+  <testcase name="preP20RecordsAreMigratedAndTheOldCopyIsKept" classname="com.abfilepro.app.assistant.AssistantStoreRegressionTest" time="0.004" />
+  <testcase name="leavingWhileNotLinkedClearsStateWithoutNetwork" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.024" />
+  <testcase name="preP17AutomaticRegistrationIsPausedUntilConfirmed" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.053" />
+  <testcase name="preP17CodeWithoutRegistrationIsDiscarded" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.0" />
+  <testcase name="turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.027" />
+  <testcase name="freshInstallHasNoFamilyAndNoSession" classname="com.abfilepro.app.assistant.FamilyOptInRegressionTest" time="0.0" />
+  <testcase name="documentWhoseReminderWindowStartedIsRemindedOnce" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.058" />
+  <testcase name="adhanSchedulesTomorrowAndKeepsTodaysFollowUp" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.049" />
+  <testcase name="medicineReceiverSchedulesTheNextDailyDose" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.055" />
+  <testcase name="calendarReminderWhoseLeadTimeAlreadyPassedStillFires" classname="com.abfilepro.app.assistant.ReminderReliabilityRegressionTest" time="0.028" />
+  <testcase name="successfulBatchPublishesEveryPageInOrder" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.132" />
+  <testcase name="cancellationDuringSaveRemovesPublishedImages" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.054" />
+  <testcase name="retryAfterFailureDoesNotDuplicatePages" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.08" />
+  <testcase name="secondPageFailureRemovesOnlyThisAttemptsImages" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.03" />
+  <testcase name="imageChangedAfterPublishIsKeptOnRollback" classname="com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest" time="0.021" />
+  <testcase name="failedCompressionKeepsValidCleanedPdf" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.127" />
+  <testcase name="failedHandoffPreservesOutputEditedAfterPublication" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.055" />
+  <testcase name="allBlankPagesAreRejectedWithoutChangingSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.076" />
+  <testcase name="compressionCandidateMissingPagesIsRejected" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.13" />
+  <testcase name="malformedPdfLeavesNoAttemptFiles" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.053" />
+  <testcase name="imageChosenFromShareFolderNeverReplacesItsSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.08" />
+  <testcase name="parallelImagesWithSameNameHaveIndependentOutputs" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.056" />
+  <testcase name="pdfChosenFromShareFolderNeverReplacesItsSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.131">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:136)
+at com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:27)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:58)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)
+at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="largerCompressionCandidateIsNotReportedAsCompressed" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.073">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:136)
+at com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:27)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:58)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)
+at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="failedWriterRemovesOnlyItsPartialDraft" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.024" />
+  <testcase name="cancelledReturnHandoffPreservesIdenticalReplacement" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.055" />
+  <testcase name="normalPdfPreservesAllRequestedPages" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.105">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:136)
+at com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:27)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:58)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)
+at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="existingImageWithSameNameIsPreserved" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.051" />
+  <testcase name="failureAfterPublicationRemovesUnchangedOutput" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.025" />
+  <testcase name="normalImageProducesReadableCopyWithoutChangingSource" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.027" />
+  <testcase name="qrRedactionStillWorksWithPrivateOcrDrafts" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.755" />
+  <testcase name="inputAndOcrDraftsRemainInAppPrivateCache" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.026" />
+  <testcase name="cancelledReturnHandoffRemovesUnchangedPublication" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.029" />
+  <testcase name="blankPageRemovalStillKeepsTheContentPage" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.05">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:136)
+at com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:27)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:58)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)
+at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="cancellationBeforePublicationRemovesPartialDraft" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.0" />
+  <testcase name="smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.127">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:136)
+at com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:27)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:58)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)
+at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="jpegOutputStillPreservesTheOriginalPng" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.049" />
+  <testcase name="existingPdfWithSameNameIsPreserved" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.051">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:136)
+at com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:27)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:58)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)
+at com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)
+at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:24)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="invalidCompressionCandidateKeepsValidCleanedPdf" classname="com.abfilepro.app.core.CleanShareSafetyRegressionTest" time="0.076" />
+  <testcase name="failedZipEnumerationCannotSucceedWithEmptyDirectory" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.028" />
+  <testcase name="persianDigitsAndArabicSeparatorsStayComplete" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0" />
+  <testcase name="safMoveKeepsChildAddedAfterCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.127" />
+  <testcase name="failedSafListingCannotMoveAndDeleteUncopiedFolder" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.025" />
+  <testcase name="corruptZipRemovesPartialFileAndImplicitDirectories" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.027" />
+  <testcase name="concaveCropIsRejectedBeforeChangingCapturedImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.028" />
+  <testcase name="validPerspectiveCropStillProducesReadableImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.025" />
+  <testcase name="arabicDecimalAmountAndTaxStayComplete" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.024" />
+  <testcase name="zipCancellationKeepsFileEditedAfterExtraction" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.052" />
+  <testcase name="normalSafFallbackMovePreservesEveryChild" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.075" />
+  <testcase name="safMoveKeepsFileModifiedAfterCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.051" />
+  <testcase name="arabicThousandsAndDecimalStayComplete" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="unchangedRenameUndoStillRestoresOriginalName" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0" />
+  <testcase name="unreadableImageFailsEntirePdfWithoutPublishingMissingPages" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.023" />
+  <testcase name="crossingCropIsRejectedBeforeChangingCapturedImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="nonemptyUnreadableScannerImportCannotBecomeReplacement" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.026" />
+  <testcase name="validImagesProduceEverySelectedPdfPage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.052" />
+  <testcase name="businessNameSurvivesMissingEmail" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="businessNameSurvivesMissingPhone" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0" />
+  <testcase name="multiplePdfPagesRenderInOrderAsLongImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.081">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.PdfTools$pdfToLongImage$2.invokeSuspend(PdfTools.kt:271)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="fullFrameCropDoesNotReencodeOrDeleteSource" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="nullSafCursorIsAnErrorRatherThanEmptyFolder" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.024" />
+  <testcase name="arabicNameSurvivesAllContactFieldsMissing" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0" />
+  <testcase name="westernAmountsRemainSupported" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.0" />
+  <testcase name="safMoveRejectsIncompleteDestinationBeforeDeletingOriginal" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.05" />
+  <testcase name="fullBusinessContactFieldsStillParse" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="legacyFallbackDeleteFailureKeepsCompletedCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.026" />
+  <testcase name="legacyFallbackNeverDeletesSourceModifiedAfterCopy" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.026" />
+  <testcase name="renameUndoNeverMovesAReplacementFile" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.027" />
+  <testcase name="singlePdfPageRendersAsLongImage" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.027">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.PdfTools$pdfToLongImage$2.invokeSuspend(PdfTools.kt:271)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="businessNameSurvivesMissingWebsite" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.026" />
+  <testcase name="moveUndoNeverMovesAReplacementFile" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.001" />
+  <testcase name="legacyFallbackFailureKeepsReplacementAtDestination" classname="com.abfilepro.app.core.MaintenanceSafetyRegressionTest" time="0.026" />
+  <testcase name="pdfboxOnlyModeNeverProducesFilesFromItsRendering" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.024" />
+  <testcase name="longImageIsProducedThroughTheRewrittenCopy" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.028">
+    <failure>java.io.IOException: تعذر قراءة صفحات هذا الملف بأمان على إصدار Android ده؛ لم يتم حفظ أي ملف ناقص
+at com.abfilepro.app.core.SafePdfRenderer$Page.render(SafePdfRenderer.kt:79)
+at com.abfilepro.app.core.PdfTools$pdfToLongImage$2.invokeSuspend(PdfTools.kt:271)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+</failure>
+  </testcase>
+  <testcase name="systemRendererStaysThePrimaryPathOnCurrentAndroid" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.002" />
+  <testcase name="androidWrittenPdfRendersItsRealContentOnThisAndroidVersion" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.002">
+    <failure>java.lang.AssertionError: pages must be rendered by the system renderer, mode=PDFBOX
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.androidWrittenPdfRendersItsRealContentOnThisAndroidVersion$lambda$10(PdfCompatibilityRegressionTest.kt:96)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.$r8$lambda$WAQEDKdZtM5iAie7_ftoJ-Te7uc(Unknown Source:0)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.open(PdfCompatibilityRegressionTest.kt:66)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.androidWrittenPdfRendersItsRealContentOnThisAndroidVersion(PdfCompatibilityRegressionTest.kt:95)
+</failure>
+  </testcase>
+  <testcase name="brokenPdfIsStillRejectedWhenTheFallbackIsUsed" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.002" />
+  <testcase name="rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards" classname="com.abfilepro.app.core.PdfCompatibilityRegressionTest" time="0.022">
+    <failure>java.lang.AssertionError: expected:&lt;NATIVE_REWRITTEN&gt; but was:&lt;PDFBOX&gt;
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.failNotEquals(Assert.java:835)
+at org.junit.Assert.assertEquals(Assert.java:120)
+at org.junit.Assert.assertEquals(Assert.java:146)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards$lambda$13(PdfCompatibilityRegressionTest.kt:107)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.$r8$lambda$C4JtXFv5Qj-sut2-1YtQOi2tv2M(Unknown Source:0)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.open(PdfCompatibilityRegressionTest.kt:66)
+at com.abfilepro.app.core.PdfCompatibilityRegressionTest.rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards(PdfCompatibilityRegressionTest.kt:106)
+</failure>
+  </testcase>
+  <testcase name="playBuildDoesNotRequestInstallPackages" classname="com.abfilepro.app.core.PlayChannelPolicyTest" time="0.001" />
+  <testcase name="playChannelDisablesSelfUpdate" classname="com.abfilepro.app.core.PlayChannelPolicyTest" time="0.0" />
+  <testcase name="normalCopyPreservesBytesAndSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.028" />
+  <testcase name="partialFileMoveUndoRetainsConflictForRetry" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.025" />
+  <testcase name="undoReplacementAtSamePathPreservesReplacement" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.025" />
+  <testcase name="unreadableDirectoryCannotBePublishedAsEmptyCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.027" />
+  <testcase name="copyIntoSelfRejectedWithoutChangingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="failedFallbackMoveCopyDoesNotDeleteAnySource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.027" />
+  <testcase name="normalFolderCopyPreservesNestedAndEmptyFolders" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.024" />
+  <testcase name="fallbackMoveKeepsSameLengthSameTimeEditAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.027" />
+  <testcase name="undoFolderWithNewUserFilePreservesWholeFolder" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.029" />
+  <testcase name="moveCancellationBeforeSourceCleanupPreservesSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="copyCancellationCleansAttemptAndKeepsSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="undoChangedSameLengthSameTimeFilePreservesNewData" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.002" />
+  <testcase name="copyIntoDescendantRejectedWithoutWriting" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.025" />
+  <testcase name="unchangedGeneratedOutputCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.029" />
+  <testcase name="fallbackMoveKeepsFileAddedAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.025" />
+  <testcase name="normalMovePreservesBytesAtDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.025" />
+  <testcase name="partialUndoKeepsChangedOutputAndItsHistory" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="fallbackMoveDeleteFailureKeepsCompleteDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.053" />
+  <testcase name="legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="unchangedGeneratedFolderCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="scannerPdfIsPublishedOnlyAfterVerification" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.027" />
+  <testcase name="reviewPagesRoundTripThroughSavedState" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.0" />
+  <testcase name="restoredReviewDropsPagesWhoseImageIsGone" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.025" />
+  <testcase name="invalidScannerResultFailsCleanlyWithoutLeavingFiles" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.0" />
+  <testcase name="recordingStoppedOutsideTheScreenIsRecovered" classname="com.abfilepro.app.core.WorkInProgressSafetyRegressionTest" time="0.025" />
+</testsuite>

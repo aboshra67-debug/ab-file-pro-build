@@ -1,0 +1,3 @@
+10-15 09:02:31.570  4692  4711 I TestRunner: started: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:02:31.578  4741  4741 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:02:31.626  4692  4711 I TestRunner: finished: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

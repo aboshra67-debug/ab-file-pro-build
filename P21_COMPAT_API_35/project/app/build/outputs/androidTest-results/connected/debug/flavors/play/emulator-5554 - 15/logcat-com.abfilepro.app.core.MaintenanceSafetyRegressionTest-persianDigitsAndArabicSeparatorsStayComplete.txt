@@ -1,0 +1,4 @@
+10-15 09:03:56.796  3827  3892 I TestRunner: started: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:56.815  3157  3702 D dasx    : Starting download: https://c.tenor.com/ef41wTywedgAAAAk/tenor.gif
+10-15 09:03:56.815  3157  3702 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/ef41wTywedgAAAAk/tenor.gif)
+10-15 09:03:56.816  3827  3892 I TestRunner: finished: persianDigitsAndArabicSeparatorsStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

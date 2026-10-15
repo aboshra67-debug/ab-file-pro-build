@@ -1,0 +1,9 @@
+10-15 09:03:47.118  3827  3892 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:03:47.187   558   592 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 09:03:47.190  1648  3930 D DownloadManager: [10] Finished with status SUCCESS
+10-15 09:03:47.196  1324  1329 I putmethod.latin: Background concurrent mark compact GC freed 11MB AllocSpace bytes, 0(0B) LOS objects, 49% free, 12MB/25MB, paused 8.443ms,5.435ms total 189.951ms
+10-15 09:03:47.243   558   829 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 09:03:47.244   558   829 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 09:03:47.244   558   829 D InetDiagMessage: Destroyed live tcp sockets for uids={10205} in 1ms
+10-15 09:03:47.296  1324  1762 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 20656376
+10-15 09:03:47.302  3827  3892 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

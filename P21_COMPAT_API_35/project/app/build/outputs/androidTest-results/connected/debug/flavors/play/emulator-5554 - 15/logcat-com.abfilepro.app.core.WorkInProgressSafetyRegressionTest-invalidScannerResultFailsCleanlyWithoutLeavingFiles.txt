@@ -1,0 +1,4 @@
+10-15 09:03:59.358  3827  3892 I TestRunner: started: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 09:03:59.364  3157  3702 D dasx    : Starting download: https://c.tenor.com/Qo-dkJZzsXYAAAAk/tenor.gif
+10-15 09:03:59.364  3157  3702 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/Qo-dkJZzsXYAAAAk/tenor.gif)
+10-15 09:03:59.372  3827  3892 I TestRunner: finished: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

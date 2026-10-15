@@ -1,0 +1,4 @@
+10-15 09:02:28.154  4692  4711 I TestRunner: started: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 09:02:28.155  2159  2716 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:02:28.164  1789  4724 W System  : ClassLoader referenced unknown path:
+10-15 09:02:28.190  4692  4711 I TestRunner: finished: medicineReceiverSchedulesTheNextDailyDose(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,183 @@
+10-15 09:03:44.177  3827  3892 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 09:03:44.179   362  3908 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:03:44.179   362  3908 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x71ec4842c610
+10-15 09:03:44.179   362  3909 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:03:44.180   362  3908 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:03:44.180   362  3909 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x71ec4842e4d0
+10-15 09:03:44.180   362  3909 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 09:03:44.181  1324  1610 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/fonts.zip to 305f81355a729e382ea9f374dd286d9f.zip.fetched (constraints: m:b:u:l)
+10-15 09:03:44.184  1324  1610 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/emoji/20240513200046/en_us.zip to 2ada3c9a4a17d6bb81b1fe8d51502d60.zip.fetched (constraints: m:b:u:l)
+10-15 09:03:44.186  1648  3906 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10135
+10-15 09:03:44.193   362  3912 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 09:03:44.193   362  3913 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:03:44.193   362  3913 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x71ec4842c610
+10-15 09:03:44.193   362  3913 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 09:03:44.195   362  3914 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:03:44.195   362  3914 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x71ec4842e4d0
+10-15 09:03:44.195   362  3914 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 09:03:44.196  1324  3911 D TrafficStats: tagSocket(160) with statsTag=0xffffffff, statsUid=-1
+10-15 09:03:44.203  1324  1610 I SP      : Successfully got manifest for transformer_concept-manifest: manifests:transformer_concept-2023011913
+10-15 09:03:44.208   362   395 I netd    : tetherGetStats() -> {[]} <0.27ms>
+10-15 09:03:44.239  1388  3640 I PeopleGalProvider: Gal directories started.
+10-15 09:03:44.240  1388  3640 I PeopleGalProvider: Method 1 completed.
+10-15 09:03:44.240  1388  3640 I PeopleGalProvider: Method 1 finished successfully.
+10-15 09:03:44.245  1648  3915 D DownloadManager: [6] Starting
+10-15 09:03:44.263  3157  3298 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@1aba1e4
+10-15 09:03:44.269  3157  3164 I .apps.messaging: Background concurrent mark compact GC freed 1092KB AllocSpace bytes, 336(21MB) LOS objects, 23% free, 78MB/102MB, paused 803us,2.973ms total 389.537ms
+10-15 09:03:44.273  1324  1759 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 3379448
+10-15 09:03:44.279  2780  3339 I ConfigUpdater: Update started
+10-15 09:03:44.285  1627  2368 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.notifications.platform#com.google.android.googlequicksearchbox
+10-15 09:03:44.308  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.hsi.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:44.311  1324  1610 I SP      : Successfully got manifest for handwriting_recognition-manifest: manifests:handwriting_recognition-86
+10-15 09:03:44.325  1648  3915 D TrafficStats: tagSocket(96) with statsTag=0xffffff01, statsUid=10135
+10-15 09:03:44.439  2780  2788 I d.configupdater: Background concurrent mark compact GC freed 416KB AllocSpace bytes, 30(1560KB) LOS objects, 49% free, 2217KB/4435KB, paused 32us,9.048ms total 25.359ms
+10-15 09:03:44.491  1324  1610 I SP      : Syncing transformer_concept (2023011913) with slices: [2023011913_en], metadata: false
+10-15 09:03:44.495  1324  1707 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks$2.apply():184 syncPackMapping()
+10-15 09:03:44.563  1324  1610 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:03:44.585   362   395 I netd    : tetherGetStats() -> {[]} <1.34ms>
+10-15 09:03:44.588  1324  1610 I SP      : Scheduling: download registered, 1 started, 0 paused, 1 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ * {m:b:u:l, bg}
+10-15 09:03:44.588  1324  1610 I SP      : Successfully got manifest for gboard-small-speech-packs-manifest: manifests:gboard-small-speech-packs-1327534105
+10-15 09:03:44.589  1648  3917 D DownloadManager: [7] Starting
+10-15 09:03:44.590  1324  1610 I SP      : Download stopped: dynamic_art:b1f6f47a53f7820be91b9fe247728980, succeeded, size: 557904
+10-15 09:03:44.591  1324  1759 I SpeechPackManager: SpeechPackManager$2.onSuccess():381 refreshManifest() : Refreshed URL = https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json
+10-15 09:03:44.593  1324  1610 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:03:44.607  1324  1610 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}
+10-15 09:03:44.607  1324  1610 I SP      : Download stopped: dynamic_art:305f81355a729e382ea9f374dd286d9f, succeeded, size: 30514
+10-15 09:03:44.610   362   395 I netd    : bandwidthSetGlobalAlert(2097152) <0.17ms>
+10-15 09:03:44.612  1324  1610 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:03:44.612  1648  3906 D DownloadManager: [5] Finished with status SUCCESS
+10-15 09:03:44.623  1648  3915 D DownloadManager: [6] Finished with status SUCCESS
+10-15 09:03:44.629  1324  1324 W JobService: onNetworkChanged() not implemented in com.google.android.apps.inputmethod.libs.dataservice.superpacks.SuperpacksBackgroundJobService. Must override in a subclass.
+10-15 09:03:44.629  1324  1324 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-15 09:03:44.630  3157  3157 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-15 09:03:44.637  3157  3157 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-15 09:03:44.637  1648  1648 W JobService: onNetworkChanged() not implemented in com.android.providers.downloads.DownloadJobService. Must override in a subclass.
+10-15 09:03:44.641  1648  3917 D TrafficStats: tagSocket(92) with statsTag=0xffffff01, statsUid=10135
+10-15 09:03:44.645  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.readaloud#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:44.654  1324  1610 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}
+10-15 09:03:44.654  1324  1610 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/en.zip to 2023011913_en.zip.fetched (constraints: m:b:u:l)
+10-15 09:03:44.656  1214  2391 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-15 09:03:44.657  3157  3164 I .apps.messaging: Background concurrent mark compact GC freed 71MB AllocSpace bytes, 362(22MB) LOS objects, 49% free, 24MB/48MB, paused 286us,817us total 200.737ms
+10-15 09:03:44.675  1324  1610 I SP      : Download stopped: emoji:2ada3c9a4a17d6bb81b1fe8d51502d60, succeeded, size: 91822
+10-15 09:03:44.676  3416  3455 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=60 ]
+10-15 09:03:44.679  3416  3631 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[f64f8a1c-836f]>Handler" thread_id=68 ]
+10-15 09:03:44.680  1324  1610 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:03:44.692  1214  2391 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-15 09:03:44.709  3416  3631 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=68 ]
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: GmsPipelineLogger Failed to obtain device id [CONTEXT service_id=256 ]
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Class java.lang.Object.getClass()' on a null object reference
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at eoql.y(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at boal.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):43)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at boal.a(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at boai.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:487)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):76)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 09:03:44.738  1388  3371 W GmsPipelineLogger: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 09:03:44.743  1324  1610 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}
+10-15 09:03:44.743  1324  1610 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():44 getSlices(): handwriting_recognition.86 useForeground=true
+10-15 09:03:44.745  1324  1610 E HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():85 getSlices(): packMapping unavailable for en-US
+10-15 09:03:44.745  1324  1610 E HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():85 getSlices(): packMapping unavailable for en-US-x-gesture
+10-15 09:03:44.745  1324  1610 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():103 getSlices(): result {slices=[{handwriting_recognition:pack_mapping_v1_lstm_20231127, m:*:*:*, fg}], last batch=true, sync metadata=false}
+10-15 09:03:44.745  1324  1610 I SP      : Syncing handwriting_recognition (86) with slices: [{pack_mapping_v1_lstm_20231127, m:*:*:*, fg}], metadata: false
+10-15 09:03:44.771  1214  3115 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gms.supervision
+10-15 09:03:44.778  1214  3115 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+10-15 09:03:44.851  1648  3917 D DownloadManager: [7] Finished with status SUCCESS
+10-15 09:03:44.852  1627  2339 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:03:44.862  3157  3274 D SharedPreferencesImpl: Time required to fsync /data/user/0/com.google.android.apps.messaging/shared_prefs/gms_icing_mdd_shared_files.xml: [<1: 224, <2: 489, <4: 155, <8: 99, <16: 40, <32: 15, <64: 2, <128: 0, <256: 0, <512: 0, <1024: 0, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
+10-15 09:03:44.865  1324  1610 I SP      : Pausing download transformer_concept:2023011913_en, reason: PREEMPTED
+10-15 09:03:44.865  1324  1610 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 09:03:44.868  1648  3919 D DownloadManager: [8] Starting
+10-15 09:03:44.885  1648  3919 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10135
+10-15 09:03:44.886  1324  1324 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 09:03:44.896  1324  1324 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 09:03:44.914  1324  1610 I SP      : Scheduling: download registered, 0 started, 1 paused, 1 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 09:03:44.930  1324  1610 I SP      : Scheduling: job start ({m:b:u:l, fg}), 1 started, 1 paused, 0 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ * {m:b:u:l, fg}
+10-15 09:03:44.942  1324  1610 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/packmapping_release.20231127.pb to pack_mapping_v1_lstm_20231127.fetched (constraints: m:b:u:l)
+10-15 09:03:44.952   362  3922 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 09:03:44.953   362  3924 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 09:03:44.953   362  3924 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x71eda8425d30
+10-15 09:03:44.953   362  3924 I resolv  : doQuery: rcode=0, ancount=4, return value=95
+10-15 09:03:44.953   362  3923 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 09:03:44.953   362  3923 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x71ed584329b0
+10-15 09:03:44.953   362  3923 I resolv  : doQuery: rcode=0, ancount=4, return value=143
+10-15 09:03:44.953  1324  3921 D TrafficStats: tagSocket(170) with statsTag=0xffffffff, statsUid=-1
+10-15 09:03:44.981  1648  1676 W d.process.media: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 09:03:44.983  1627  1627 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.omnient.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 09:03:44.985  1324  1610 I SP      : <==== Finishing job {m:b:u:l, bg}, 1300 ms. elapsed since start
+10-15 09:03:44.986  1324  1610 I SP      : Download stopped: transformer_concept:2023011913_en, succeeded paused, size: 1493590
+10-15 09:03:44.992  1648  3925 D DownloadManager: [9] Starting
+10-15 09:03:45.022  1648  3925 D TrafficStats: tagSocket(96) with statsTag=0xffffff01, statsUid=10135
+10-15 09:03:45.026  1324  1610 I SP      : Scheduling: download stopped, 0 started, 0 paused, 0 scheduled, 2 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 @ {m:b:u:l, fg}
+10-15 09:03:45.099  2650  3001 I GMS_MM_Logger: Memory Metric Logging not allowed. Stopping.
+10-15 09:03:45.106   558   651 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 09:03:45.156  1214  1228 I .gms.persistent: Background concurrent mark compact GC freed 26MB AllocSpace bytes, 23(984KB) LOS objects, 49% free, 21MB/42MB, paused 2.126ms,1.334ms total 380.515ms
+10-15 09:03:45.168  1627  2339 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 09:03:45.174  1648  3930 D DownloadManager: [10] Starting
+10-15 09:03:45.204   362   395 I netd    : tetherGetStats() -> {[]} <0.29ms>
+10-15 09:03:45.214  1648  3919 D DownloadManager: [8] Finished with status SUCCESS
+10-15 09:03:45.239  1648  3930 D TrafficStats: tagSocket(83) with statsTag=0xffffff01, statsUid=10135
+10-15 09:03:45.265  1324  1610 I SP      : Sync for dynamic_art succeeded in 1858 ms: {added: [305f81355a729e382ea9f374dd286d9f, b1f6f47a53f7820be91b9fe247728980], metadata: false
+10-15 09:03:45.273  1324  1759 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 7033080
+10-15 09:03:45.330  2780  3339 I ConfigUpdater: Update downloaded, starting installation
+10-15 09:03:45.339  1324  1610 I SP      : <==== Finishing job {m:b:u:l, fg}, 443 ms. elapsed since start
+10-15 09:03:45.340  1324  1610 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.finishJob():56 SuperpacksForegroundTaskService.finishJob()
+10-15 09:03:45.353  1324  1610 I SP      : Download stopped: handwriting_recognition:pack_mapping_v1_lstm_20231127, succeeded foreground, size: 125598
+10-15 09:03:45.361  2780  3339 I ConfigUpdater: doneInstall
+10-15 09:03:45.371  1324  1610 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 09:03:45.394  1324  1610 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}
+10-15 09:03:45.394  1324  1610 I SP      : GC for 'dynamic_art' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:03:45.394  1324  1610 I SP      : Sync for emoji succeeded in 1987 ms: {added: [2ada3c9a4a17d6bb81b1fe8d51502d60], metadata: false
+10-15 09:03:45.395  1648  1684 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb.metadata via provider delete
+10-15 09:03:45.476  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 09:03:45.478  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 09:03:45.478  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 09:03:45.478  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 09:03:45.478  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 09:03:45.478  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 09:03:45.521   905  1010 D EGL_emulation: app_time_stats: avg=20289.80ms min=511.21ms max=40068.39ms count=2
+10-15 09:03:45.535  1324  1610 I SP      : GC for 'emoji' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:03:45.541  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 09:03:45.552  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 09:03:45.552  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 09:03:45.552  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 09:03:45.553  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 09:03:45.555  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 09:03:45.577  1431  1740 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb.metadata
+10-15 09:03:45.579  1431  1740 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 159ms, 0 inserts 0 updates 0 deletes
+10-15 09:03:45.584  1648  1684 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb via provider delete
+10-15 09:03:45.586  1324  1759 I EmojiSuperpacksManager: EmojiSuperpacksManager.processPackSet():504 processPackSet() : isBundled = false
+10-15 09:03:45.586  1431  1740 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb
+10-15 09:03:45.588  1324  1694 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():71 0 emoji shortcut maps loaded.
+10-15 09:03:45.589  1431  1740 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 3ms, 0 inserts 0 updates 0 deletes
+10-15 09:03:45.595  1324  1694 I EmojiShortcutsLoader: EmojiShortcutsLoader.call():82 Finished loading emoji shortcuts
+10-15 09:03:45.603  1214  3115 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.wallpaper
+10-15 09:03:45.634  1324  1610 I SP      : Sync for transformer_concept succeeded in 1146 ms: {added: [2023011913_en], metadata: false
+10-15 09:03:45.663  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 09:03:45.670  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 09:03:45.671  1324  1610 I SP      : GC for 'transformer_concept' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 09:03:45.676  1324  1610 I SP      : Sync for handwriting_recognition succeeded in 996 ms: {added: [pack_mapping_v1_lstm_20231127], metadata: false
+10-15 09:03:45.688  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 09:03:45.689  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 09:03:45.689  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~Vj0fC5oEFqP10R2dEHoeTQ==/com.android.chrome-YtRCxRauOMjkBHg1f1SHgg==/Chrome.apk' with 1 weak references
+10-15 09:03:45.689  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~A7aqDSk5O6VERSv5lt_Iyw==/com.google.android.trichromelibrary_636771938-4_YY1SVZnqt8TchzuHVVCA==/TrichromeLibrary.apk' with 1 weak references
+10-15 09:03:45.689  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 09:03:45.689  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 09:03:45.690  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 09:03:45.690  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 09:03:45.701  1324  1610 I SP      : GC for 'handwriting_recognition' (10) with ttl of 0 ms took 1 ms (0/1/0)
+10-15 09:03:45.708  1324  1692 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$1():204 syncInternal(): syncing packs
+10-15 09:03:45.713  1324  1762 I Environment: Environment.isPackageInstalled():234 com.bitstrips.imoji is not installed
+10-15 09:03:45.726   905   910 W ndroid.systemui: Missing inline cache for java.lang.Object com.android.systemui.statusbar.pipeline.mobile.ui.binder.MobileIconBinder$bind$1$2$1$2$1.emit(java.lang.Object, kotlin.coroutines.Continuation)
+10-15 09:03:45.741  1324  1707 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$0():228 syncInternal(): used {old=[], new=[pack_mapping_v1_lstm_20231127], metadata=false, last batch=true} to update cache, success=true
+10-15 09:03:45.742  1324  1610 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():44 getSlices(): handwriting_recognition.86 useForeground=true
+10-15 09:03:45.742  1324  1610 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():103 getSlices(): result {slices=[{handwriting_recognition:pack_mapping_v1_lstm_20231127, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:qrnn_en_us_reco_20231010_fst_20230613_recospec_zip, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_conf_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:transformer_latin_seg_tflite_20231010_zip, m:*:*:*, fg}, {handwriting_recognition:en_us_20230613_compact_fst_zip, m:*:*:*, fg}, {handwriting_recognition:scribe_latin_20231123_tflite_zip, m:*:*:*, fg}, {handwriting_recognition:scribe_latin_20231123_recospec_zip, m:*:*:*, fg}], last batch=true, sync metadata=false}
+10-15 09:03:45.743  1324  1610 I SP      : Syncing handwriting_recognition (86) with slices: [{pack_mapping_v1_lstm_20231127, m:*:*:*, fg}, {transformer_latin_tflite_20231010_zip, m:*:*:*, fg}, {qrnn_en_us_reco_20231010_fst_20230613_recospec_zip, m:*:*:*, fg}, {transformer_latin_conf_tflite_20231010_zip, m:*:*:*, fg}, {transformer_latin_seg_tflite_20231010_zip, m:*:*:*, fg}, {en_us_20230613_compact_fst_zip, m:*:*:*, fg}, {scribe_latin_20231123_tflite_zip, m:*:*:*, fg}, {scribe_latin_20231123_recospec_zip, m:*:*:*, fg}], metadata: false
+10-15 09:03:45.773  1214  1230 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 09:03:45.816  1388  1388 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 09:03:45.874  1214  3115 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.systemui
+10-15 09:03:45.964  3827  3892 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

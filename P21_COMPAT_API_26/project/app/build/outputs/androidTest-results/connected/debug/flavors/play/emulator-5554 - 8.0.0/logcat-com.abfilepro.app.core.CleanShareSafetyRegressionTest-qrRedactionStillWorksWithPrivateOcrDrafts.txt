@@ -1,0 +1,52 @@
+10-15 09:02:29.675  4692  4711 I TestRunner: started: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:02:29.910  4692  4727 I Tesseract(native): Initialized Tesseract API with language=ara+eng+fra
+10-15 09:02:30.013  4692  4701 E System  : Uncaught exception thrown by finalizer
+10-15 09:02:30.013  4692  4701 E System  : java.io.IOException: file not in PDF format or corrupted
+10-15 09:02:30.013  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.nativeClose(Native Method)
+10-15 09:02:30.013  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.doClose(PdfRenderer.java:247)
+10-15 09:02:30.013  4692  4701 E System  : 	at android.graphics.pdf.PdfRenderer.finalize(PdfRenderer.java:235)
+10-15 09:02:30.013  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:250)
+10-15 09:02:30.013  4692  4701 E System  : 	at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:237)
+10-15 09:02:30.013  4692  4701 E System  : 	at java.lang.Daemons$Daemon.run(Daemons.java:103)
+10-15 09:02:30.013  4692  4701 E System  : 	at java.lang.Thread.run(Thread.java:764)
+10-15 09:02:30.019  4692  4735 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:02:30.019  4692  4735 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:02:30.020  2159  2572 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:02:30.021  2159  2572 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:02:30.031  2159  2572 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 09:02:30.031  2159  2572 I Icing   : Indexing done com.google.android.gms-apps
+10-15 09:02:30.037  4692  4735 I tflite  : Initialized TensorFlow Lite runtime.
+10-15 09:02:30.038  4692  4735 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-15 09:02:30.038  4692  4735 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:02:30.039  4692  4735 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:02:30.039  4692  4735 I native  : I0000 00:00:1792054950.039838    4735 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:02:30.040  4692  4734 W GooglePlayServicesUtil: Google Play services out of date for com.abfilepro.app.p21mainttrial.  Requires 203400000 but found 202414023
+10-15 09:02:30.040  4692  4734 W GoogleApiManager: The service for com.google.android.gms.common.internal.service.zap is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null}
+10-15 09:02:30.086  2159  2572 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-15 09:02:30.087  2159  2572 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-15 09:02:30.092  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.094  4692  4733 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-7984852 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:02:30.101  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.104  4692  4733 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-3004115 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-15 09:02:30.109  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.110  4692  4733 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:02:30.125  2159  2572 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms
+10-15 09:02:30.128  2159  2572 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication
+10-15 09:02:30.226  4692  4734 W GooglePlayServicesUtil: Google Play services out of date for com.abfilepro.app.p21mainttrial.  Requires 203400000 but found 202414023
+10-15 09:02:30.226  4692  4734 W GoogleApiManager: The service for com.google.android.gms.common.internal.service.zap is not available: ConnectionResult{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null}
+10-15 09:02:30.226  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.229  4692  4733 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:02:30.234  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.235  4692  4733 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:02:30.240  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.241  4692  4733 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:02:30.249  4692  4735 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 09:02:30.249  4692  4735 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 09:02:30.252  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.255  4692  4733 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:02:30.262  4692  4735 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 09:02:30.263  4692  4735 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 09:02:30.263  4692  4735 I native  : I0000 00:00:1792054950.263499    4735 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 09:02:30.425  4692  4733 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 09:02:30.430  4692  4733 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 09:02:30.430  4692  4711 I TestRunner: finished: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

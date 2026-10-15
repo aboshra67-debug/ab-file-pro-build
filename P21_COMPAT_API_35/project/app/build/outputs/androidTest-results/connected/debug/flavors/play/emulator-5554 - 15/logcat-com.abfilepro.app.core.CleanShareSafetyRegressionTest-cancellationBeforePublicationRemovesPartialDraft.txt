@@ -1,0 +1,10 @@
+10-15 09:03:54.421  3827  3892 I TestRunner: started: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 09:03:54.437   362  3999 I resolv  : res_nsend: used send_dg 104 terrno: 0
+10-15 09:03:54.437   362  3999 I resolv  : doQuery: rcode=0, ancount=2, return value=104
+10-15 09:03:54.437   362  4002 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x71ed58434b70
+10-15 09:03:54.437   362  4002 I resolv  : doQuery: rcode=0, ancount=2, return value=104
+10-15 09:03:54.438  3157  3966 D TrafficStats: tagSocket(162) with statsTag=0xffffffff, statsUid=-1
+10-15 09:03:54.439  3157  3726 D TrafficStats: tagSocket(163) with statsTag=0xffffffff, statsUid=-1
+10-15 09:03:54.443   558   668 I RoleService: Granting default roles...
+10-15 09:03:54.456   558  1041 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 09:03:54.463  3827  3892 I TestRunner: finished: cancellationBeforePublicationRemovesPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

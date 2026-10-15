@@ -1,0 +1,9 @@
+10-15 09:02:28.419  4692  4711 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:02:28.432  1789  2049 D EGL_emulation: eglMakeCurrent: 0x7323a523ac20: ver 3 0 (tinfo 0x7323a520da40)
+10-15 09:02:28.437  1389  1389 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 10371072
+10-15 09:02:28.440  1789  1789 I zygote64: Deoptimizing void com.android.systemui.statusbar.ExpandableView.updateClipping() due to JIT inline cache
+10-15 09:02:28.443  1789  2049 D EGL_emulation: eglMakeCurrent: 0x7323a523ac20: ver 3 0 (tinfo 0x7323a520da40)
+10-15 09:02:28.463  4692  4711 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 09:02:28.474  4692  4697 I zygote64: Do full code cache collection, code=124KB, data=87KB
+10-15 09:02:28.478  4692  4697 I zygote64: After code cache collection, code=113KB, data=67KB
+10-15 09:02:28.495  4692  4711 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

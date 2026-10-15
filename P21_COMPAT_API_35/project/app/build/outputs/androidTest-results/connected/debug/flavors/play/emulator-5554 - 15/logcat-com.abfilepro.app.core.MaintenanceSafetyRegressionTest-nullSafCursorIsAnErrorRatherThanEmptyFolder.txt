@@ -1,0 +1,3 @@
+10-15 09:03:57.950  3827  3892 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:57.958  4068  4068 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 09:03:57.964  3827  3892 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

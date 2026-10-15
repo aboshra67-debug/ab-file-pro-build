@@ -1,0 +1,3 @@
+10-15 09:02:28.496  4692  4711 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 09:02:28.513  4692  4711 D skia    : --- SkAndroidCodec::NewFromStream returned null
+10-15 09:02:28.518  4692  4711 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

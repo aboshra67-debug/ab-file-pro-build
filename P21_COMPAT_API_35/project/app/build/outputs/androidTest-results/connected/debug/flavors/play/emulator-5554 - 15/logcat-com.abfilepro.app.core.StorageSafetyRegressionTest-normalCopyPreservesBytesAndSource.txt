@@ -1,0 +1,4 @@
+10-15 09:03:58.679  3827  3892 I TestRunner: started: normalCopyPreservesBytesAndSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 09:03:58.683  3157  3263 D dasx    : Starting download: https://c.tenor.com/0BP-FJexCAMAAAAk/tenor.gif
+10-15 09:03:58.683  3157  3263 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/0BP-FJexCAMAAAAk/tenor.gif)
+10-15 09:03:58.702  3827  3892 I TestRunner: finished: normalCopyPreservesBytesAndSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

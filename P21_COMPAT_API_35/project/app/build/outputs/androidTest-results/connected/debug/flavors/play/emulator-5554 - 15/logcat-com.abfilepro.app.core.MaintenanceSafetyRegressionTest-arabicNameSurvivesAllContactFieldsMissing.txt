@@ -1,0 +1,8 @@
+10-15 09:03:57.965  3827  3892 I TestRunner: started: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 09:03:57.968  3157  3702 D dasx    : Starting download: https://c.tenor.com/KWSi_2egDKAAAAAk/tenor.gif
+10-15 09:03:57.968  3157  3702 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/KWSi_2egDKAAAAAk/tenor.gif)
+10-15 09:03:57.976  3745  3748 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification artd has clients: 0
+10-15 09:03:57.976  3745  3748 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+10-15 09:03:57.979  3157  3273 D dasx    : Starting download: https://c.tenor.com/XbcbbNJsF_4AAAAk/tenor.gif
+10-15 09:03:57.979  3157  3273 V dasx    : Is http uri, downloading (uri: https://c.tenor.com/XbcbbNJsF_4AAAAk/tenor.gif)
+10-15 09:03:57.986  3827  3892 I TestRunner: finished: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
