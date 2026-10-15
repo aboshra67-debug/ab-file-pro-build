@@ -1,0 +1,6 @@
+10-15 07:58:50.689  3826  3896 I TestRunner: started: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:50.708  4012  4012 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+10-15 07:58:50.708  4012  4012 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-15 07:58:50.709  4012  4012 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-15 07:58:50.720  3826  3935 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 07:58:50.732  3826  3896 I TestRunner: finished: unreadableImageFailsEntirePdfWithoutPublishingMissingPages(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

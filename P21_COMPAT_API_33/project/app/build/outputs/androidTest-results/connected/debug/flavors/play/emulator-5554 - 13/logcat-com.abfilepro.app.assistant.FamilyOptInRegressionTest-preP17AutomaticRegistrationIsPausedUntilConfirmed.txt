@@ -1,0 +1,16 @@
+10-15 07:59:11.984  4834  5001 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:59:12.028  1086  1106 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+10-15 07:59:12.055  1086  1106 I MediaRouter: Skip setBluetoothA2dpOn(): types=8388615, isPlaybackActive()=false, BT route=null
+10-15 07:59:12.063  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.CallVolumePreferenceController
+10-15 07:59:12.063  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.HandsFreeProfileOutputPreferenceController
+10-15 07:59:12.066  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.zen.ZenModePreferenceController
+10-15 07:59:12.066  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.SpatialAudioParentPreferenceController
+10-15 07:59:12.074  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsParentPreferenceController
+10-15 07:59:12.074  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationPreferenceController
+10-15 07:59:12.074  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PreventRingingParentPreferenceController
+10-15 07:59:12.074  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingPreferenceController
+10-15 07:59:12.074  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.WorkSoundsPreferenceController
+10-15 07:59:12.074   485   518 E system_server: No package ID 7f found for ID 0x7f0805a7.
+10-15 07:59:12.074   485   518 E system_server: No package ID 7f found for ID 0x7f150421.
+10-15 07:59:12.104  1811  2364 W LocationOracle: No location returned by GMS core getLastLocation()
+10-15 07:59:12.107  4834  5001 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

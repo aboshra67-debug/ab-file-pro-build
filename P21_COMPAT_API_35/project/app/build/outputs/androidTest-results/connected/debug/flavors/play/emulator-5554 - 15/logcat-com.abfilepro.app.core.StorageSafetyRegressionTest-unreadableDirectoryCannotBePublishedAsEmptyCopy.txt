@@ -1,0 +1,19 @@
+10-15 07:58:53.021  3826  3896 I TestRunner: started: unreadableDirectoryCannotBePublishedAsEmptyCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:53.021  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.StorageSelectionPreferenceController
+10-15 07:58:53.021  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.StorageUsageProgressBarPreferenceController
+10-15 07:58:53.021  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.AutomaticStorageManagementSwitchPreferenceController
+10-15 07:58:53.021  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.ManageStoragePreferenceController
+10-15 07:58:53.021  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.deviceinfo.storage.StorageSelectionPreferenceController@60a41bf
+10-15 07:58:53.021  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.deviceinfo.storage.StorageUsageProgressBarPreferenceController@b20608c
+10-15 07:58:53.022  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FontWeightAdjustmentPreferenceController
+10-15 07:58:53.023  1331  1687 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 2 candidates
+10-15 07:58:53.043   556  1836 D ConnectivityService: requestNetwork for uid/pid:10152/1331 activeRequest: null callbackRequest: 132 [NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 07:58:53.060  1331  1687 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 07:58:53.061  1085  1144 D FaceSettings: FaceManager is not null. Hardware detected: true
+10-15 07:58:53.066   556   826 D ConnectivityService: NetReassign [133 : null → 100] [c 0] [a 0] [i 14]
+10-15 07:58:53.072   556   819 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 07:58:53.073   556   819 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 07:58:53.073   556   819 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 07:58:53.073   556   819 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=133, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10152 RequestorUid: 10152 RequestorPkg: com.google.android.inputmethod.latin UnderlyingNetworks: Null] ]
+10-15 07:58:53.073  1085  1144 D FaceSettings: FaceManager is not null. Hardware detected: true
+10-15 07:58:53.078  3826  3896 I TestRunner: finished: unreadableDirectoryCannotBePublishedAsEmptyCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

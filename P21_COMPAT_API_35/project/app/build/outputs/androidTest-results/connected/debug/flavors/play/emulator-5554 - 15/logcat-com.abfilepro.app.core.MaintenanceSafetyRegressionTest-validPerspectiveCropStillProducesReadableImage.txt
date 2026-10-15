@@ -1,0 +1,8 @@
+10-15 07:58:49.582  3826  3896 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:49.586  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.587  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.588  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.589  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.590  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.590  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.604  3826  3896 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,15 @@
+10-15 07:58:49.379  3826  3896 I TestRunner: started: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:49.383  1361  1479 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.apps.wellbeing
+10-15 07:58:49.397  3252  3406 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 07:58:49.401  3252  3392 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=54 ]
+10-15 07:58:49.403  3252  3369 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=47 ]
+10-15 07:58:49.405  3252  3392 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=54 ]
+10-15 07:58:49.405  3252  3353 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=42 ]
+10-15 07:58:49.409  3987  3987 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:58:49.413  3252  3406 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 07:58:49.418  3252  3392 W BugleAction: Failed to get msisdn from Bugle
+10-15 07:58:49.419  3252  3371 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 07:58:49.422  3252  3392 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:49.424  3252  3392 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:49.430  3252  3392 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:49.448  3826  3896 I TestRunner: finished: failedSafListingCannotMoveAndDeleteUncopiedFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

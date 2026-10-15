@@ -1,0 +1,23 @@
+10-15 07:59:14.073  4834  5001 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: Provider querying exception:
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: java.lang.IllegalStateException: We should initialize FormFactorUtils before getting instance.
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at com.google.android.accessibility.utils.FormFactorUtils.getInstance(PG:1)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at com.google.android.accessibility.talkback.preference.search.TalkBackSearchIndexablesProvider.queryRawData(PG:3)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at com.google.android.settings.search.SearchIndexablesProvider.query(PG:6)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at android.content.ContentProvider.query(ContentProvider.java:1455)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 07:59:14.075  5073  5106 E IndexablesProvider: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 07:59:14.076  4934  4976 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/indexables_raw
+10-15 07:59:14.076  4934  4976 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.077  4934  4976 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider/settings/non_indexables_key
+10-15 07:59:14.077  4934  4976 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.079  4934  4976 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.080  1662  2128 I SP.AiAi : GC for 'text-classifier-langid' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 07:59:14.080  1662  2128 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 07:59:14.093  1662  3379 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-langid', download version 1941001461.
+10-15 07:59:14.096  1662  2133 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/langid/v1/superpacks_manifest.zip
+10-15 07:59:14.121  4834  5001 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 07:59:14.124  4834  5001 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

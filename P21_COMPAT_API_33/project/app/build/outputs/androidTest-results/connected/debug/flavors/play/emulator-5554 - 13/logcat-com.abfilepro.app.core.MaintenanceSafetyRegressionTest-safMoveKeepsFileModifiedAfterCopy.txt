@@ -1,0 +1,24 @@
+10-15 07:59:21.898  4834  5001 I TestRunner: started: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:21.914  5302  5302 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:59:21.937  1811  2587 W A       : Calling registerSyncInternal api failed.
+10-15 07:59:21.995  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+10-15 07:59:22.002  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838217
+10-15 07:59:22.011  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838050
+10-15 07:59:22.011  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838044
+10-15 07:59:22.011  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838051
+10-15 07:59:22.011  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837961
+10-15 07:59:22.014  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837973
+10-15 07:59:22.016  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838041
+10-15 07:59:22.016  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838412
+10-15 07:59:22.016  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837964
+10-15 07:59:22.016  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838540
+10-15 07:59:22.017  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838539
+10-15 07:59:22.017  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838553
+10-15 07:59:22.017  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838190
+10-15 07:59:22.017  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838026
+10-15 07:59:22.018  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838419
+10-15 07:59:22.018  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837999
+10-15 07:59:22.018  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130838146
+10-15 07:59:22.020  4934  4979 W CursorConverter: Cannot get icon, pkg/id :com.android.settings/2130837998
+10-15 07:59:22.033  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 89 uptime_millis: 89 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+10-15 07:59:22.047  4834  5001 I TestRunner: finished: safMoveKeepsFileModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,251 @@
+10-15 07:58:37.826  3826  3896 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:58:37.830  1085  3866 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 07:58:37.832  1085  2470 D SettingsSliceProvider: content://com.android.settings.slices/action/notification_volume loaded from cache
+10-15 07:58:37.836  1085  3866 D VolumeSliceHelper: Unregistering uri broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-15 07:58:37.837  1085  3866 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:37.837  1085  3206 D SettingsSliceProvider: content://com.android.settings.slices/action/separate_ring_volume loaded from cache
+10-15 07:58:37.838  1085  3866 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:37.839  1085  2470 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:58:37.839  1085  2470 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-15 07:58:37.842  1085  2470 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 3
+10-15 07:58:37.851   556   984 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 07:58:37.857  3673  3706 V ClearcutMetricXmitter: Transmission is done.
+10-15 07:58:37.872  1085  3866 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:37.873  1085  3206 D SettingsSliceProvider: content://com.android.settings.slices/action/hardware_info_device_model loaded from cache
+10-15 07:58:37.874  1085  3866 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:37.875  1085  2470 D SettingsSliceProvider: content://com.android.settings.slices/action/os_firmware_version loaded from cache
+10-15 07:58:37.875  1085  3866 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:37.875  1085  3206 D SettingsSliceProvider: content://com.android.settings.slices/action/gesture_double_tap_power loaded from cache
+10-15 07:58:37.877  1085  3866 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:37.878  1085  2470 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:58:37.883   556  1041 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 07:58:37.883  1085  2470 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 5
+10-15 07:58:37.888  1512  3057 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:37.921  1085  3169 D SliceBuilder: Creating slice for: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 07:58:38.008  1085  3206 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:58:38.009  1085  3206 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 07:58:38.013  1085  3206 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 5
+10-15 07:58:38.040   556   587 I AppBindingService: Stopping: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 07:58:38.042  3673  3673 I CarrierServices: SystemBindingService onDestroy
+10-15 07:58:38.048   355  3910 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 07:58:38.049   355  3911 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 07:58:38.049   355  3911 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f7483fd5d0
+10-15 07:58:38.049   355  3911 I resolv  : doQuery: rcode=0, ancount=8, return value=264
+10-15 07:58:38.049   355  3912 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 07:58:38.049   355  3912 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f7783fe350
+10-15 07:58:38.049   355  3912 I resolv  : doQuery: rcode=0, ancount=8, return value=168
+10-15 07:58:38.051  1400  2619 D TrafficStats: tagSocket(211) with statsTag=0x30000408, statsUid=-1
+10-15 07:58:38.058  1512  3068 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:38.063  1085  3169 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:38.064  1512  1512 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:38.064  1085  2470 D SettingsSliceProvider: content://com.android.settings.slices/action/os_firmware_version loaded from cache
+10-15 07:58:38.065  1400  2619 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 07:58:38.066  1400  2619 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+10-15 07:58:38.066  1400  2619 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 07:58:38.115  1400  2619 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+10-15 07:58:38.115  1400  2619 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):204)
+10-15 07:58:38.115  1400  2619 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 07:58:38.136  3673  3673 I CarrierServices: SystemBindingService onCreate
+10-15 07:58:38.137   494   956 D mediaserver: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded.
+10-15 07:58:38.137   494   956 D mediaserver: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+10-15 07:58:38.155  3673  3723 I CarrierServices: SystemBindingService: Starting JibeService
+10-15 07:58:38.159  3673  3723 I BugleRcsEngine: Broadcasting provisioning intent rcs.intent.action.rcsSystemBinding to Bugle with extras redacted-pii:[null] from source SYSTEM_BINDING_SERVICE [CONTEXT log_prefix="EngineBroadcaster" thread_id=62 ]
+10-15 07:58:38.177  1085  3169 D SliceBuilder: Creating slice for: com.android.settings.network.AirplaneModePreferenceController
+10-15 07:58:38.187  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@f4c6d4a
+10-15 07:58:38.212  1400  1416 I PeopleGalProvider: Gal directories started.
+10-15 07:58:38.212  1400  1416 I PeopleGalProvider: Method 1 completed.
+10-15 07:58:38.212  1400  1416 I PeopleGalProvider: Method 1 finished successfully.
+10-15 07:58:38.222  1214  2061 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.phenotype.platform.CheckinCompleteIntentOperation for action com.google.android.checkin.CHECKIN_COMPLETE (2411) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 27.321s
+10-15 07:58:38.227  3252  3392 I BugleTransport: onSystemBound: kicking off updateActiveTransport
+10-15 07:58:38.228  3252  3392 I BugleRcsProvisioning: RcsProvisioningTrigger: System bound to :rcs process. Schedule provisioning.
+10-15 07:58:38.231  3252  3427 W BugleAction: Failed to get msisdn from Bugle
+10-15 07:58:38.237  3252  3392 I BugleRcsProvisioning: scheduleProvisioning using legacy code path
+10-15 07:58:38.238  3252  3392 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+10-15 07:58:38.238  3252  3392 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 07:58:38.239  3252  3427 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:38.239  3252  3427 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:38.239  3252  3436 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 07:58:38.241  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@ecf1cb3
+10-15 07:58:38.242  3252  3418 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=64 ]
+10-15 07:58:38.242  3252  3418 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=64 ]
+10-15 07:58:38.251  1214  1961 W GetConfigSnapshotOp: Succeeded but not registered: com.google.android.libraries.mobileconfiguration#com.google.android.apps.messaging [CONTEXT service_id=51 ]
+10-15 07:58:38.258  3252  3427 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 07:58:38.259  3252  3427 W BugleAction: No default number, returning empty msisdn
+10-15 07:58:38.259   355   405 I netd    : tetherGetStats() -> {[]} <0.30ms>
+10-15 07:58:38.261  3252  3427 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=68 ]
+10-15 07:58:38.263  3252  3392 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 07:58:38.264  3252  3392 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 07:58:38.271  3252  3427 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 07:58:38.273   556  1009 D ConnectivityService: requestNetwork for uid/pid:10138/3673 activeRequest: null callbackRequest: 119 [NetworkRequest [ TRACK_DEFAULT id=120, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ], NetworkRequest [ REQUEST id=121, [ Transports: SATELLITE Capabilities: INTERNET&TRUSTED&NOT_VCN_MANAGED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 07:58:38.274  3252  3427 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 07:58:38.275  3252  3427 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 07:58:38.281  3252  3392 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 07:58:38.283  3673  3913 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=66 ]
+10-15 07:58:38.284  3673  3722 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:38.284  3673  3722 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:38.284  3673  3722 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:38.284  3673  3722 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:38.284  3673  3722 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:38.285  3252  3423 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 07:58:38.286  1085  3866 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:38.288   556   826 D ConnectivityService: NetReassign [120 : null → 100] [c 0] [a 10] [i 1]
+10-15 07:58:38.303  3673  3722 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 07:58:38.311  1085  3206 D SettingsSliceProvider: content://android.settings.slices/action/airplane_mode loaded from cache
+10-15 07:58:38.315  1085  2470 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:58:38.331  1085  2470 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 16
+10-15 07:58:38.343  1085  3169 D SliceBuilder: Creating slice for: com.android.settings.fuelgauge.batterysaver.BatterySaverButtonPreferenceController
+10-15 07:58:38.353  1085  3169 W ElapsedTimeUtils: getElapsedTime: sSuwFinishedTimeStamp is null
+10-15 07:58:38.377  1085  3206 D SettingsSliceProvider: content://android.settings.slices/action/battery_saver loaded from cache
+10-15 07:58:38.380  1400  1746 I RecoverableKeyStoreGms: [EnrollmentManager] Successfully downloaded certificates. [CONTEXT service_id=172 ]
+10-15 07:58:38.397   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:38.397   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:38.398  1181  1216 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.abfilepro.app.p21mainttrial]
+10-15 07:58:38.401  1459  1459 I AiAiEcho: AppFetcherImpl onPackageChanged com.abfilepro.app.p21mainttrial.
+10-15 07:58:38.403  1459  2373 I AiAiEcho: AppIndexer Package:[com.abfilepro.app.p21mainttrial] UserProfile:[0] Enabled:[true].
+10-15 07:58:38.404  1459  2373 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.abfilepro.app.p21mainttrial], userId:[0], reason:[package is updated.].
+10-15 07:58:38.427   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:38.428   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:38.429  3673  3702 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=45 ]
+10-15 07:58:38.429  1459  1459 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.gms.
+10-15 07:58:38.430  1459  2347 I AiAiEcho: AppIndexer Package:[com.google.android.gms] UserProfile:[0] Enabled:[true].
+10-15 07:58:38.430  1459  2347 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.gms], userId:[0], reason:[package is updated.].
+10-15 07:58:38.436  1181  1181 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+10-15 07:58:38.441  1181  1216 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.gms]
+10-15 07:58:38.454  1181  1600 D EGL_emulation: app_time_stats: avg=2313.50ms min=2313.50ms max=2313.50ms count=1
+10-15 07:58:38.455  1181  1216 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.gms
+10-15 07:58:38.460  1085  2470 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:58:38.461  1085  2470 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 1
+10-15 07:58:38.515   556   639 D RecoverableKeyStoreMgr: Root of trust for recovery agent + 10143 is assigned for the first time to GoogleCloudKeyVaultServiceV1
+10-15 07:58:38.522   556   639 I RecoverableKeyStoreMgr: Updating the certificate with the new serial number 10020
+10-15 07:58:38.522   556   639 D RecoverableKeyStoreMgr: Getting and validating a random endpoint certificate
+10-15 07:58:38.535   556   639 D RecoverableKeyStoreMgr: Saving the randomly chosen endpoint certificate to database
+10-15 07:58:38.541   556   639 I RecoverableKeyStoreMgr: This is a certificate change. Snapshot didn't exist
+10-15 07:58:38.545  1400  1746 I RecoverableKeyStoreGms: [EnrollmentManager] Recovery service is initialized. [CONTEXT service_id=172 ]
+10-15 07:58:38.562  1459  1912 I SP.AiAi : Sync for captions_i18n_v0_en-US succeeded in 27798 ms: {added: [asr_en-US_v3003], metadata: false
+10-15 07:58:38.563  3252  3369 W BugleRcsEngine: Unable to send RCS extension log [CONTEXT thread_id=47 ]
+10-15 07:58:38.623  1459  1912 I SP.AiAi : GC for 'captions_i18n_v0_en-US' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 07:58:38.625  1459  1912 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: Error reading snapshot for 10143 from disk
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: java.io.FileNotFoundException: /data/system/recoverablekeystore/snapshots/10143.xml: open failed: ENOENT (No such file or directory)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at java.io.FileInputStream.<init>(FileInputStream.java:179)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.readFromDisk(RecoverySnapshotStorage.java:152)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.storage.RecoverySnapshotStorage.get(RecoverySnapshotStorage.java:104)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at com.android.server.locksettings.recoverablekeystore.RecoverableKeyStoreManager.getKeyChainSnapshot(RecoverableKeyStoreManager.java:377)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at com.android.server.locksettings.LockSettingsService.getKeyChainSnapshot(LockSettingsService.java:2709)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at com.android.internal.widget.ILockSettings$Stub.onTransact(ILockSettings.java:844)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at android.os.Binder.execTransact(Binder.java:1444)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at libcore.io.Linux.open(Native Method)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:563)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+10-15 07:58:38.626   556   953 E RecoverySnapshotStorage: 	... 8 more
+10-15 07:58:38.633   556   953 W PlatformKeyManager: Platform generation ID was 0 but no entry was present in AndroidKeyStore. Generating fresh key.
+10-15 07:58:38.635  1459  2934 I AiAiCaptions: downloadSuperpack(): Successfully downloaded superpack 'captions_i18n_v0_en-US' version 20210623.
+10-15 07:58:38.665  1400  2619 I Checkin : [CheckinRequestProcessor] updateCheckinIdTokenFileFromResponse, Reading existing AID
+10-15 07:58:38.667  3103  3107 W gs.intelligence: Suspending all threads took: 60.372ms
+10-15 07:58:38.674  3103  3107 W gs.intelligence: Cleared Reference was only reachable from finalizer (only reported once)
+10-15 07:58:38.682  1400  2619 I Checkin : [CheckinRequestProcessor] Default Task : Checkin Succeeded: https://android.googleapis.com/checkin (fragment #1).
+10-15 07:58:38.682  1459  2348 I AiAiCaptions: ComponentsManagerImpl::update()
+10-15 07:58:38.683  1459  2348 I AiAiCaptions: updateBasicComponents::updateBasicComponents()
+10-15 07:58:38.685  1459  2348 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.settingsui.settingsactivity.CaptionsSettingsActivity but already enabled
+10-15 07:58:38.691  1459  2348 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.CaptionsSettingsActivity but already enabled
+10-15 07:58:38.692  1459  2348 I AiAiCaptions: Would enable com.google.android.apps.miphone.aiai.captions.downloadservice.CaptionsDownloadService but already enabled
+10-15 07:58:38.694   556   587 I AppBindingService: Connected: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 07:58:38.700   556   953 I RecoverableAppKeyStore: Set 0/10143/com.google.android.gms.auth.folsom/v1/1792051118629/D3E573CEF2BD80BD152F3AC226707728: 32 bytes of key material
+10-15 07:58:38.703   556   953 I RecoverableAppKeyStore: Get 0/10143/com.google.android.gms.auth.folsom/v1/1792051118629/D3E573CEF2BD80BD152F3AC226707728
+10-15 07:58:38.709  1400  2619 I Checkin : [CheckinOperation] Checkin Operation finished with result: SUCCESS finish time: 98480.
+10-15 07:58:38.719  1459  2348 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 07:58:38.731  1459  2348 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsForegroundService
+10-15 07:58:38.740  1459  2348 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 07:58:38.741  1459  2348 I AiAiCaptions: shouldEnableCaptionsForCalls: isCallCaptioningEnabled is true
+10-15 07:58:38.742  1400  2617 D TrafficStats: tagSocket(131) with statsTag=0x30001803, statsUid=-1
+10-15 07:58:38.751  1459  2348 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.tulip.audiosource.impl.CIS
+10-15 07:58:38.756  3103  3107 I gs.intelligence: Background concurrent mark compact GC freed 7419KB AllocSpace bytes, 14(588KB) LOS objects, 49% free, 6030KB/11MB, paused 61.459ms,7.050ms total 380.643ms
+10-15 07:58:38.768  1459  2348 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 07:58:38.787  1459  2348 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.CaptionsOnboardingService
+10-15 07:58:38.791  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+10-15 07:58:38.792  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 07:58:38.792  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Traceur/Traceur.apk' with 1 weak references
+10-15 07:58:38.792  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 07:58:38.792  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk' with 1 weak references
+10-15 07:58:38.792  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 07:58:38.793  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 07:58:38.793  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.cellbroadcast/priv-app/GoogleCellBroadcastApp@350820300/GoogleCellBroadcastApp.apk' with 1 weak references
+10-15 07:58:38.802  1459  2348 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 07:58:38.807   556   567 I system_server: Background concurrent mark compact GC freed 25MB AllocSpace bytes, 33(688KB) LOS objects, 48% free, 25MB/49MB, paused 796us,1.190ms total 703.566ms
+10-15 07:58:38.814   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:38.814   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 07:58:38.819  1459  2348 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.notificationbroadcastreceiver.CaptionsNotificationBroadcastReceiver
+10-15 07:58:38.823   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 07:58:38.823   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 07:58:38.823   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 07:58:38.824   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 07:58:38.824   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 07:58:38.824   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 07:58:38.825   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 07:58:38.825   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 07:58:38.826   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 07:58:38.826   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 07:58:38.828   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:38.836  1459  2348 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 07:58:38.849  1400  2619 I EnterpriseLoader: [ConditionsChecker] ZT config not present. [CONTEXT service_id=225 ]
+10-15 07:58:38.853  1400  2619 I EsimModuleInit: onHandleIntent action: android.intent.action.BOOT_COMPLETED [CONTEXT service_id=333 ]
+10-15 07:58:38.854  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 07:58:38.859  1400  2619 I EsimPhSyncer: p/h flags sync is already completed. [CONTEXT service_id=333 ]
+10-15 07:58:38.860  1459  2348 I AiAiCaptions: Enable com.google.android.apps.miphone.aiai.captions.quicksetting.CaptionsTileService
+10-15 07:58:38.862  1400  2619 I Fido    : [FidoInitIntentOperation] Initializing Fido module, InitRuntimeState=2
+10-15 07:58:38.865  1459  2348 I AiAiCaptions: initialize(): bound to superpacks service.
+10-15 07:58:38.867  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.healthfitness/priv-app/HealthConnectControllerGoogle@350820300/HealthConnectControllerGoogle.apk' with 1 weak references
+10-15 07:58:38.876  1214  1214 W .gms.persistent: Long monitor contention with owner highpool[5] (1961) at java.io.InputStream android.content.res.AssetManager.openNonAsset(int, java.lang.String, int)(AssetManager.java:1108) waiters=0 in boolean android.content.res.AssetManager.isUpToDate() for 186ms
+10-15 07:58:38.882  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:38.885  1459  2348 I AiAiCaptions: setVolumeControlEnabled() changing volume control state to enabled because: volume control behavior is: ENABLE
+10-15 07:58:38.893  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+10-15 07:58:38.910  1459  2348 I AiAiCaptions: updateComponents(): Updated components state
+10-15 07:58:38.910  1459  2348 I AiAiCaptions: updateTriggerState(): stopping trigger.
+10-15 07:58:38.910  1459  2348 I AiAiCaptions: stop(): stop is called but CaptionsTriggerImpl already stopped
+10-15 07:58:38.911  1459  2307 I AiAiEcho: Settings changed for uri: content://settings/secure/odi_captions_volume_ui_enabled
+10-15 07:58:38.915  1866  1893 W d.process.media: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 07:58:38.920  1459  1639 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 07:58:38.921  1459  1639 I AiAiEcho: EchoTargets:
+10-15 07:58:38.921  1459  1639 I AiAiEcho: Filtered by AiAi flag check:
+10-15 07:58:38.921  1459  1639 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 07:58:38.922  1459  1639 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 07:58:38.927  1459  1639 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 07:58:38.929  1459  1639 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 07:58:38.929  3103  3109 W gs.intelligence: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+10-15 07:58:38.931  1459  1639 I AiAiEcho: EchoTargets:
+10-15 07:58:38.931  1459  1639 I AiAiEcho: Filtered by AiAi flag check:
+10-15 07:58:38.931  1459  1639 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 07:58:38.937  1459  1639 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 07:58:38.938  1459  1639 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 07:58:38.951  1459  1639 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-15 07:58:38.952  1181  1181 D SsBaseTemplateCard: No text view can be set up
+10-15 07:58:38.953  1181  1181 D SsBaseTemplateCard: Passed-in item info is null
+10-15 07:58:38.953  1459  1639 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-15 07:58:38.954  1181  1181 D SsBaseTemplateCard: Passed-in item info is null
+10-15 07:58:38.954  1181  1181 D SsBaseTemplateCard: Passed-in item info is null
+10-15 07:58:38.954  1181  1181 I SsBaseTemplateCard: Secondary card pane is null
+10-15 07:58:38.957  1400  3534 I AccountSeedingPrefetchI: AccountSeedingPrefetchInit intent operation started. [CONTEXT service_id=42 ]
+10-15 07:58:38.959   902   902 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.gms.playlog.uploader failed
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at dkkh.n(:com.google.android.gms@242335041@24.23.35 (190800-646585959):53)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at czsy.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at czsy.j(:com.google.android.gms@242335041@24.23.35 (190800-646585959):42)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at czsy.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):4)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.ClearcutInitChimeraIntentService.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):45)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at ajjh.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):136)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at com.google.android.gms.clearcut.init.DefaultPriorityClearcutInitChimeraIntentService.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):12)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):2)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at ajom.onHandleIntent(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at pkf.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):70)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at pke.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):152)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:38.998  1400  3573 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:39.000  1400  3573 I SpotInitializer: All Finder use cases are disabled. [CONTEXT service_id=284 ]
+10-15 07:58:39.004  3826  3896 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

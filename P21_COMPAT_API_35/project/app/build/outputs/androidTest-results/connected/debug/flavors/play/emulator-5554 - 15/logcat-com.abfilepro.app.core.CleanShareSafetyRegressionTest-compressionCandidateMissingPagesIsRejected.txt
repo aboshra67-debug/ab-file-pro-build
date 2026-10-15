@@ -1,0 +1,11 @@
+10-15 07:58:43.420  3826  3896 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:43.461  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:43.462  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c78750
+10-15 07:58:43.462  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c78750
+10-15 07:58:43.463  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:43.463  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c7c650
+10-15 07:58:43.464  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c7c650
+10-15 07:58:43.468  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:43.468  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c79e10
+10-15 07:58:43.468  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c79e10
+10-15 07:58:43.471  3826  3896 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,10 @@
+10-15 07:55:57.934  4931  4950 I TestRunner: started: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:55:57.956  4931  4936 I zygote64: Do partial code cache collection, code=30KB, data=25KB
+10-15 07:55:57.956  4931  4936 I zygote64: After code cache collection, code=28KB, data=25KB
+10-15 07:55:57.956  4931  4936 I zygote64: Increasing code cache capacity to 128KB
+10-15 07:55:58.009  2130  2715 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+10-15 07:55:58.015  2130  2715 I Icing   : Indexing done com.google.android.gms-apps
+10-15 07:55:58.144  4931  4936 I zygote64: Do partial code cache collection, code=61KB, data=44KB
+10-15 07:55:58.146  4931  4936 I zygote64: After code cache collection, code=57KB, data=43KB
+10-15 07:55:58.146  4931  4936 I zygote64: Increasing code cache capacity to 256KB
+10-15 07:55:58.225  4931  4950 I TestRunner: finished: recordsAreNotDroppedAfterTwoThousand(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

@@ -1,0 +1,36 @@
+10-15 07:59:13.694  4834  5001 I TestRunner: started: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 07:59:13.695  4934  5068 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.697  4934  4974 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.698  4934  5068 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.703  4934  4974 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.703  4934  4974 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.704  1493  3776 W ListPreference: Setting a summary with a String formatting marker is no longer supported. You should use a SummaryProvider instead.
+10-15 07:59:13.705  1493  3776 W ListPreference: Setting a summary with a String formatting marker is no longer supported. You should use a SummaryProvider instead.
+10-15 07:59:13.705  1493  3776 W ListPreference: Setting a summary with a String formatting marker is no longer supported. You should use a SummaryProvider instead.
+10-15 07:59:13.720  4934  5065 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.721  4934  5065 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.722  4934  5065 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.723  4934  5065 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.733  4934  5071 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.737  4934  5071 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.737  4890  4902 I SafetyCenterResContext: Found Safety Center resources APK at: com.google.android.safetycenter.resources
+10-15 07:59:13.754  4934  4978 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.755  4934  5071 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.755  4934  5071 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.756   485  2135 W SafetyCenterService: Called getSafetyCenterData, but Safety Center is disabled
+10-15 07:59:13.768  4934  4975 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.770  4934  4978 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.771  4934  4978 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.774   288   288 D Zygote  : Forked child process 5073
+10-15 07:59:13.800  5072  5072 I .android.gms.ui: Using CollectorTypeCC GC.
+10-15 07:59:13.801  5072  5072 W .android.gms.ui: Unexpected CPU variant for x86: x86_64.
+10-15 07:59:13.801  5072  5072 W .android.gms.ui: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 07:59:13.802  4934  4975 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.803  4934  4975 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.804  5073  5073 I marvin.talkback: Using CollectorTypeCC GC.
+10-15 07:59:13.805  5073  5073 W marvin.talkback: Unexpected CPU variant for x86: x86_64.
+10-15 07:59:13.805  5073  5073 W marvin.talkback: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 07:59:13.828   373   385 I adbd    : jdwp connection from 5072
+10-15 07:59:13.830   373   385 I adbd    : jdwp connection from 5073
+10-15 07:59:13.855  1518  1538 W fxb     : Unsupported: feature flag disabled.
+10-15 07:59:13.861  4834  5001 I TestRunner: finished: cancellationDuringSaveRemovesPublishedImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

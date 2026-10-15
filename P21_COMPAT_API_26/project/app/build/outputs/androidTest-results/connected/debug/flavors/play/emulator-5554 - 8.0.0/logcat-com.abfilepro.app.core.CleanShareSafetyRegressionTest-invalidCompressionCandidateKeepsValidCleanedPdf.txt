@@ -1,0 +1,22 @@
+10-15 07:56:00.953  4931  4950 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:56:00.984  4931  4950 E TestRunner: failed: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:56:00.984  4931  4950 E TestRunner: ----- begin exception -----
+10-15 07:56:00.984  4931  4950 E TestRunner: java.io.IOException: file not in PDF format or corrupted
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:109)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:81)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:281)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)
+10-15 07:56:00.984  4931  4950 E TestRunner: 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)
+10-15 07:56:00.984  4931  4950 E TestRunner: ----- end exception -----
+10-15 07:56:00.984  4931  4950 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,8 @@
+10-15 07:58:54.345  3826  3896 I TestRunner: started: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.346   355   405 I netd    : tetherGetStats() -> {[]} <0.60ms>
+10-15 07:58:54.348  1331  1687 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 07:58:54.349  1512  3068 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:54.354  1214  2809 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.modulemetadata
+10-15 07:58:54.363  1331  1687 I SP      : Scheduling: download stopped, 0 started, 0 paused, 3 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, transformer_concept:2023011913_en * {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 * {m:b:u:l, bg}
+10-15 07:58:54.374   355   405 I netd    : bandwidthSetGlobalAlert(2097152) <0.13ms>
+10-15 07:58:54.377  3826  3896 I TestRunner: finished: fallbackMoveKeepsFileAddedAfterCopy(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,12 @@
+10-15 07:58:39.423  3826  3896 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:58:39.425  1512  3068 I ModelDownloadController: (REDACTED) requestHotwordModelUpdate modelType-%s modelLocale-%s
+10-15 07:58:39.425  1400  3573 D LT_LitBstrpCntrl: Initializing BootstrapController Instance
+10-15 07:58:39.432  1512  3068 I A       : getLocaleToModelSpecsMap
+10-15 07:58:39.432  1512  3068 I A       : Fetching latest config from MDD...
+10-15 07:58:39.439  1400  1400 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 07:58:39.440  1512  1887 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 07:58:39.440  1400  1400 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 07:58:39.462  1512  2255 I MicroDetectionState: (REDACTED) #takeChangeMicroDetectorMode [mIsBargeInEnabled: %b, mCurrentDetectionMode: %s]
+10-15 07:58:39.463  1512  2255 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+10-15 07:58:39.468  1400  3921 D LT_PhenotypeApiImplV12: Retrieve experiment configurations
+10-15 07:58:39.487  3826  3896 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

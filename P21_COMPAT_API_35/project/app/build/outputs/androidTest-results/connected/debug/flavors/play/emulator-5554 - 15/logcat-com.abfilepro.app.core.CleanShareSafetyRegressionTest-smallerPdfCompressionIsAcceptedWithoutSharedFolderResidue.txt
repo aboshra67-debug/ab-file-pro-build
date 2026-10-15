@@ -1,0 +1,184 @@
+10-15 07:58:47.470  3826  3896 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:47.471  3252  3406 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 07:58:47.472  3252  3369 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: updateAvailabilityForAllSimsAsync, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 07:58:47.472  3252  3369 I RcsAvailabilityUpdaterL: updateAvailabilityForAllSimsAsync: scheduling updateAvailabilityForRcsProvisioningId call. Hint: CSLIB_PHENOTYPE_UPDATE, enableWelcomePopupWithoutGoogleTos: false, reshowSuccessPopup: false
+10-15 07:58:47.473  3252  3414 I RcsAvailabilityUpdaterL: updateRcsAvailabilityForDefaultCallSim: hint: CSLIB_PHENOTYPE_UPDATE, canReshowWelcomeMessage: false
+10-15 07:58:47.476  3252  3369 I Bugle   : RcsAvailabilityUtilForProvisioningEngineV2: onCsLibPhenotypeUpdated
+10-15 07:58:47.477  3252  3406 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 07:58:47.478  3252  3369 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=47 ]
+10-15 07:58:47.479  3252  3369 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=47 ]
+10-15 07:58:47.483  3252  3406 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=56 ]
+10-15 07:58:47.488  3252  3414 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=60 ]
+10-15 07:58:47.488  3252  3414 I RcsAvailabilityUpdaterL: RcsAvailability configuration availability and enabled status: simId: redacted-pii:sim_id[chars:20,last3:897], SipConnectionType: DUAL_REG, isConfigurationAvailableAndEnabled: false
+10-15 07:58:47.497  3252  3414 I RcsAvailabilityUpdaterL: updateAvailabilityForRcsProvisioningId. SimId: redacted-pii:sim_id[chars:20,last3:897], currentAvailability: 2, newAvailability: 2, hint: CSLIB_PHENOTYPE_UPDATE
+10-15 07:58:47.497  3252  3407 I BugleRcsProvisioning: RcsProvisioningTrigger: onRcsAvailabilityUpdate : availability is updated to RCS is disabled for this carrier by Google, lastAvailabilityLocal is RCS is disabled for this carrier by Google, simId hash = -4957135032251639698, simId = redacted-pii:sim_id[chars:20,last3:897], isPev3Enabled = true
+10-15 07:58:47.498  3252  3407 I BugleRcsProvisioning: scheduleProvisioningForEligibleSims
+10-15 07:58:47.498  3252  3407 I BugleRcsProvisioning: scheduleProvisioning using legacy code path
+10-15 07:58:47.499  3673  3683 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=36 ]
+10-15 07:58:47.500  3252  3387 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 07:58:47.501  3252  3407 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=57 ]
+10-15 07:58:47.501  3252  3407 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 07:58:47.501  3252  3427 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=68 ]
+10-15 07:58:47.502  3673  3722 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.502  3673  3722 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.504  3252  3427 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=68 ]
+10-15 07:58:47.508  1400  3809 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.westworldfeatures#com.google.android.gms, using defaults.
+10-15 07:58:47.512  3673  3722 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:47.514  3673  3722 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:47.514  3673  3722 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.519  3673  3722 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 07:58:47.522  2453  3852 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.tts
+10-15 07:58:47.565  1214  3429 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.westworld) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:47.606  1400  3803 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+10-15 07:58:47.622  1214  1221 I .gms.persistent: Background concurrent mark compact GC freed 14MB AllocSpace bytes, 6(520KB) LOS objects, 49% free, 21MB/43MB, paused 28.347ms,5.295ms total 456.494ms
+10-15 07:58:47.642  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 07:58:47.648  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 07:58:47.649  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 07:58:47.649  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 07:58:47.649  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 07:58:47.649  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 07:58:47.649  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 07:58:47.649  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 07:58:47.650  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-15 07:58:47.650  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 07:58:47.650  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 07:58:47.651  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 07:58:47.668  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleContacts/GoogleContacts.apk' with 1 weak references
+10-15 07:58:47.668  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 07:58:47.669  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 07:58:47.669  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 07:58:47.678  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:47.680  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:47.681  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+10-15 07:58:47.683  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 07:58:47.685  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:47.685  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 07:58:47.688  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.691  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.692  1512  1868 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:47.711  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:47.744  1214  2411 I PlatformConfigurator: updateFromConfigurations using legacy put method [CONTEXT service_id=204 ]
+10-15 07:58:47.755  1512  1862 I A       : (REDACTED) Refusing EXCLUSIVE task %s, it is already pending. Try again in %d seconds.
+10-15 07:58:47.765  1512  1780 I Ma      : #handleFlagUpdate()
+10-15 07:58:47.776  1475  2005 I A       : (REDACTED) #handleFlagsUpdate: changed %s
+10-15 07:58:47.777  1475  2005 I A       : #handleFlagsUpdate: listeners notified
+10-15 07:58:47.786  1512  1867 I A       : NGA enabled in interactor.
+10-15 07:58:47.789  1512  1862 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+10-15 07:58:47.793  1512  2255 W SearchServiceCore: Abort, client detached.
+10-15 07:58:47.793  1512  2255 W SearchServiceCore: Abort, client detached.
+10-15 07:58:47.813  1400  3809 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33
+10-15 07:58:47.819  1400  3808 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32
+10-15 07:58:47.836  1400  1787 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 07:58:47.844  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c7f910
+10-15 07:58:47.845  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c7f910
+10-15 07:58:47.846  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:47.846  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c935d0
+10-15 07:58:47.846  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c935d0
+10-15 07:58:47.849  1512  2003 I SettingsDataLayer.AE: Set Assistant eligibility status
+10-15 07:58:47.851  1512  2003 I SettingsDataLayer.AE: Set isHotwordOpaEligible
+10-15 07:58:47.851  1512  2255 W SearchServiceCore: Abort, client detached.
+10-15 07:58:47.865  1400  1787 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+10-15 07:58:47.887  1075  1075 D CarrierSvcBindHelper: onPackageModified: com.google.android.apps.messaging
+10-15 07:58:47.888  1075  1075 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 07:58:47.895   903  3454 I PermissionControllerServiceImpl: Updating user sensitive for uid 10138
+10-15 07:58:47.898   902   902 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 07:58:47.907  1075  1075 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 07:58:47.909  1075  1075 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 07:58:47.913  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:47.921  1075  1271 D ImsResolver: maybeAddedImsService, packageName: com.google.android.apps.messaging
+10-15 07:58:47.922   556   661 I RoleService: Granting default roles...
+10-15 07:58:47.930   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:47.930   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:47.932  1459  1459 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.apps.messaging.
+10-15 07:58:47.933  1459  2373 I AiAiEcho: AppIndexer Package:[com.google.android.apps.messaging] UserProfile:[0] Enabled:[true].
+10-15 07:58:47.933  1459  2373 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.apps.messaging], userId:[0], reason:[package is updated.].
+10-15 07:58:47.938   556  1041 W Role    : Default holder doesn't have required signing certificate: com.google.android.retaildemo:6547c73dee150c103980bfdffe55cc9a011d785dd694a5f99afd8205bcaf1f80
+10-15 07:58:47.940  1181  1216 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.apps.messaging]
+10-15 07:58:47.942   556  1041 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION
+10-15 07:58:47.946   556  1041 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 07:58:47.959   556   868 E system_server: No package ID 7f found for resource ID 0x7f0803ff.
+10-15 07:58:47.960   556   868 E system_server: No package ID 7f found for resource ID 0x7f1510ad.
+10-15 07:58:47.961   556   868 E system_server: No package ID 7f found for resource ID 0x7f1510ad.
+10-15 07:58:47.961   556   868 E system_server: No package ID 7f found for resource ID 0x7f1510ac.
+10-15 07:58:47.963  1181  1181 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+10-15 07:58:47.989  1181  1600 D EGL_emulation: app_time_stats: avg=2997.44ms min=215.00ms max=5779.89ms count=2
+10-15 07:58:47.998   556  1041 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET
+10-15 07:58:48.008   556  1041 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.devicelockcontroller, role: android.app.role.SYSTEM_FINANCED_DEVICE_CONTROLLER
+10-15 07:58:48.027   556   587 I AppBindingService: Stopping: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 07:58:48.030  3673  3673 I CarrierServices: SystemBindingService onDestroy
+10-15 07:58:48.032  3673  3673 I CarrierServices: SystemBindingService onCreate
+10-15 07:58:48.033   556  1767 D ConnectivityService: requestNetwork for uid/pid:10138/3673 activeRequest: null callbackRequest: 126 [NetworkRequest [ TRACK_DEFAULT id=127, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ], NetworkRequest [ REQUEST id=128, [ Transports: SATELLITE Capabilities: INTERNET&TRUSTED&NOT_VCN_MANAGED Uid: 10138 RequestorUid: 10138 RequestorPkg: com.google.android.apps.messaging UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 07:58:48.036   556   826 D ConnectivityService: NetReassign [127 : null → 100] [c 0] [a 1] [i 0]
+10-15 07:58:48.045  3673  3721 I CarrierServices: SystemBindingService: Starting JibeService
+10-15 07:58:48.052   355   405 I netd    : tetherGetStats() -> {[]} <0.34ms>
+10-15 07:58:48.061  3673  3721 I BugleRcsEngine: Broadcasting provisioning intent rcs.intent.action.rcsSystemBinding to Bugle with extras redacted-pii:[null] from source SYSTEM_BINDING_SERVICE [CONTEXT log_prefix="EngineBroadcaster" thread_id=60 ]
+10-15 07:58:48.061   556   587 I AppBindingService: Connected: com.google.android.apps.messaging/com.google.android.ims.binding.SystemBindingService u0
+10-15 07:58:48.065  3673  3707 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=49 ]
+10-15 07:58:48.084  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@f4c6d4a
+10-15 07:58:48.091  3252  3427 I BugleTransport: onSystemBound: kicking off updateActiveTransport
+10-15 07:58:48.092  3252  3427 I BugleRcsProvisioning: RcsProvisioningTrigger: System bound to :rcs process. Schedule provisioning.
+10-15 07:58:48.092  3252  3427 I BugleRcsProvisioning: scheduleProvisioning using legacy code path
+10-15 07:58:48.092  3252  3427 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=68 ]
+10-15 07:58:48.092  3252  3427 I BugleRcsProvisioning: RcsProvisioningTrigger: DR is active, initializing DR provisioning. DUAL_REG
+10-15 07:58:48.093  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.rcsprovisioning.RcsProvisioningBroadcastReceiver@6368c43
+10-15 07:58:48.094  3252  3407 W BugleAction: Failed to get msisdn from Bugle
+10-15 07:58:48.094  3252  3407 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:48.095  3252  3407 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:48.100  3252  3406 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 07:58:48.100  3252  3392 I BugleRcsEngine: [SR]: Single Registration is disabled. Skipping Single Registration capability check for subId: 1, OS.isAtLeastS:[true], enableSingleRegistrationProvisioning:[false] [CONTEXT thread_id=54 ]
+10-15 07:58:48.103  3252  3392 I BugleRcsEngine: Skipping provisioning scheduling since RCS is disabled [CONTEXT thread_id=54 ]
+10-15 07:58:48.114  3252  3407 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 07:58:48.119  3252  3407 W BugleAction: No default number, returning empty msisdn
+10-15 07:58:48.119  3252  3407 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=57 ]
+10-15 07:58:48.119  3252  3392 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 07:58:48.120  3252  3392 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 07:58:48.121  3252  3407 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 07:58:48.122  3252  3407 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 07:58:48.122  3252  3407 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 07:58:48.128  3252  3392 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 07:58:48.138  3673  3706 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=48 ]
+10-15 07:58:48.139  3673  3722 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:48.139  3673  3722 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:48.139  3673  3722 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:48.139  3673  3722 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:48.139  3673  3722 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:48.140  3252  3387 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 07:58:48.142  3673  3722 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 07:58:48.202  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c8f350
+10-15 07:58:48.203  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c8f350
+10-15 07:58:48.203  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.204  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c8ee10
+10-15 07:58:48.204  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c8ee10
+10-15 07:58:48.205  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.206  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c7f910
+10-15 07:58:48.206  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c7f910
+10-15 07:58:48.209  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.219   556   676 E ReportEncoder: No watchlist hash
+10-15 07:58:48.296  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c935d0
+10-15 07:58:48.296  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c935d0
+10-15 07:58:48.296  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.296  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c8f350
+10-15 07:58:48.296  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c8f350
+10-15 07:58:48.310  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.310  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c91b90
+10-15 07:58:48.310  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c91b90
+10-15 07:58:48.345  3826  3896 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

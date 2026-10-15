@@ -1,0 +1,236 @@
+10-15 07:58:44.604  3826  3896 I TestRunner: started: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:44.606  1400  3115 I PeopleGalProvider: Method 1 finished successfully.
+10-15 07:58:44.609  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.614  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.617  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.764  1400  3892 I cr_CronetUrlRequestContext: destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@d1c2062
+10-15 07:58:44.795  1400  1787 I NotificationsModuleTask: Registered accounts to Chime successfully. registration reason = REGISTRATION_ID_CHANGED [CONTEXT service_id=358 ]
+10-15 07:58:44.804  1400  1400 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService.ACTION_TASK_READY dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalBoundBrokerService }
+10-15 07:58:44.822  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService finished executing. cause:7 result: 1 elapsed_millis: 881 uptime_millis: 881 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-15 07:58:44.864  3826  3935 D nativeloader: Load /data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!/lib/x86_64/libjpeg.so using ns clns-7 from class loader (caller=/data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!classes10.dex): ok
+10-15 07:58:44.867  3826  3935 D nativeloader: Load /data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!/lib/x86_64/libpngx.so using ns clns-7 from class loader (caller=/data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!classes10.dex): ok
+10-15 07:58:44.872  3826  3935 D nativeloader: Load /data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!/lib/x86_64/libleptonica.so using ns clns-7 from class loader (caller=/data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!classes10.dex): ok
+10-15 07:58:44.886  3826  3935 D nativeloader: Load /data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!/lib/x86_64/libtesseract.so using ns clns-7 from class loader (caller=/data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!classes10.dex): ok
+10-15 07:58:44.916  1214  2525 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService started execution. cause:5 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-15 07:58:44.946  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ads.social.GcmSchedulerWakeupService finished executing. cause:5 result: 1 elapsed_millis: 48 uptime_millis: 48 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-15 07:58:45.020  1214  2525 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-15 07:58:45.055  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 57 uptime_millis: 57 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-15 07:58:45.123   556  1837 I RemoteProvisionSysSvc: getRegistration(android.hardware.security.keymint.IRemotelyProvisionedComponent/default)
+10-15 07:58:45.126   556   556 I RegistrationProxy: onServiceConnected: com.android.rkpdapp.service.RemoteProvisioningService
+10-15 07:58:45.135   556   812 I RegistrationProxy: IGetRegistrationCallback.onSuccess
+10-15 07:58:45.137   556  1837 I RemoteProvisionSysSvc: Fetching key 10143 for client 89131939
+10-15 07:58:45.138   556  1837 I RegistrationProxy: getKeyAsync operation started with callback 162713248
+10-15 07:58:45.138  2945  3016 I RkpdRegistrationBinder: Key requested for : android.hardware.security.keymint.IRemotelyProvisionedComponent/default, clientUid: 1017, keyId: 10143, callback: 181612530
+10-15 07:58:45.142  2945  3016 I RkpdRegistrationBinder: Key successfully assigned to client
+10-15 07:58:45.142   556   556 I RemoteProvisionSysSvc: Successfully fetched key for client 89131939
+10-15 07:58:45.150   173   173 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 148: Using TAG_CERTIFICATE_NOT_BEFORE: 0
+10-15 07:58:45.150   173   173 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 154: Using TAG_CERTIFICATE_NOT_AFTER: 2461449600000
+10-15 07:58:45.150   173   173 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 159: Got certificate date params:  NotBefore = 0, NotAfter = 2461449600000
+10-15 07:58:45.150   173   173 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 273: Setting notBefore to 0
+10-15 07:58:45.150   173   173 D SoftKeymaster: system/keymaster/km_openssl/certificate_utils.cpp, Line 282: Setting notAfter to 2461449600
+10-15 07:58:45.167  1214  2525 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService started execution. cause:5 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-15 07:58:45.173  2381  2392 W libc    : Access denied finding property "persist.adb.tls_server.enable"
+10-15 07:58:45.173  2381  2392 W libc    : Access denied finding property "service.adb.tls.port"
+10-15 07:58:45.174  2381  2392 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-15 07:58:45.174  2381  2392 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 07:58:45.168  2381  2381 W binder:2381_1: type=1400 audit(0.0:199): avc:  denied  { read } for  name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=318 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 07:58:45.168  2381  2381 W binder:2381_1: type=1400 audit(0.0:200): avc:  denied  { read } for  name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=63 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+10-15 07:58:45.205  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 73 uptime_millis: 73 exec_start_elapsed_seconds: 104 [CONTEXT service_id=218 ]
+10-15 07:58:45.333  1214  2525 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.364  3826  3935 I Tesseract(native): Initialized Tesseract API with language=ara+eng+fra
+10-15 07:58:45.379  1400  1787 I Pay     : Device does not support HCE. [CONTEXT service_id=198 ]
+10-15 07:58:45.400   556  1837 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 07:58:45.401   355  3957 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10143 0}
+10-15 07:58:45.402  2381  2392 D TrafficStats: tagSocket(132) with statsTag=0x1809, statsUid=-1
+10-15 07:58:45.403  2381  2392 D TrafficStats: tagSocket(132) with statsTag=0x1809, statsUid=-1
+10-15 07:58:45.404  2381  2392 D TrafficStats: tagSocket(132) with statsTag=0x1809, statsUid=-1
+10-15 07:58:45.411  2381  2392 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 07:58:45.453  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 113 uptime_millis: 113 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.566  1214  1221 I .gms.persistent: Background concurrent mark compact GC freed 19MB AllocSpace bytes, 27(1180KB) LOS objects, 49% free, 15MB/31MB, paused 643us,4.309ms total 335.769ms
+10-15 07:58:45.572  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 07:58:45.572  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PartnerSetupPrebuilt/PartnerSetupPrebuilt.apk' with 1 weak references
+10-15 07:58:45.573  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Photos/Photos.apk' with 1 weak references
+10-15 07:58:45.575  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:45.576  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:45.579  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/AndroidAutoStubPrebuilt/AndroidAutoStubPrebuilt.apk' with 1 weak references
+10-15 07:58:45.582  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTubeMusicPrebuilt/YouTubeMusicPrebuilt.apk' with 1 weak references
+10-15 07:58:45.585  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:45.589  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleRestorePrebuilt-v526684/GoogleRestorePrebuilt-v526684.apk' with 1 weak references
+10-15 07:58:45.597  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 07:58:45.598  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 07:58:45.601  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.603  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 07:58:45.621  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 66 uptime_millis: 66 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.682  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.707  3826  3960 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 07:58:45.708  3826  3960 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 07:58:45.734  3826  3961 D nativeloader: Load /data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!/lib/x86_64/libbarhopper_v3.so using ns clns-7 from class loader (caller=/data/app/~~zPHJZjPw-d8PsnlZiyc7Qg==/com.abfilepro.app.p21mainttrial-eN2KIQKRLKzOZsm3L3kTQg==/base.apk!classes10.dex): ok
+10-15 07:58:45.738  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 40 uptime_millis: 40 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.760  3826  3831 W p.p21mainttrial: Suspending all threads took: 5.495ms
+10-15 07:58:45.782  3826  3831 I p.p21mainttrial: Background concurrent mark compact GC freed 1220KB AllocSpace bytes, 21(2588KB) LOS objects, 49% free, 4352KB/8705KB, paused 6.782ms,2.668ms total 57.837ms
+10-15 07:58:45.805  3826  3961 I tflite  : Initialized TensorFlow Lite runtime.
+10-15 07:58:45.820  3826  3961 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+10-15 07:58:45.822  3826  3961 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 07:58:45.824  3826  3961 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 07:58:45.825  3826  3961 I native  : I0000 00:00:1792051125.825876    3961 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 07:58:45.837  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.859  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 58 uptime_millis: 58 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.921  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:45.924  3826  3958 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-7984852 in 30000ms(Backend next call timestamp 0). Attempt 1
+10-15 07:58:45.926   556  1580 D ConnectivityService: requestNetwork for uid/pid:1000/556 asUid: 10209 activeRequest: null callbackRequest: 124 [NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 07:58:45.929   556   826 D ConnectivityService: NetReassign [125 : null → 100] [c 1] [a 0] [i 0]
+10-15 07:58:45.930   556   819 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 07:58:45.930   556   819 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 07:58:45.930   556   819 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 07:58:45.930   556   819 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=125, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 1000 RequestorPkg: android UnderlyingNetworks: Null] ]
+10-15 07:58:45.937  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:45.941  3826  3958 D TransportRuntime.JobInfoScheduler: Scheduling upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-3004115 in 86400000ms(Backend next call timestamp 0). Attempt 1
+10-15 07:58:45.967  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:45.970  1214  2214 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 07:58:45.976  1400  1787 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 07:58:45.976  1400  1787 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-15 07:58:45.989  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:45.990  3826  3958 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 07:58:45.991  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 58 uptime_millis: 58 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.024  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.041  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.059  3826  3831 I p.p21mainttrial: Background concurrent mark compact GC freed 2968KB AllocSpace bytes, 3(968KB) LOS objects, 49% free, 4437KB/8874KB, paused 145us,11.692ms total 84.414ms
+10-15 07:58:46.068  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.136  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 82 uptime_millis: 82 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: Failed to apply ContentProviderOperation(type=insert uri=content://media/internal/file values={instance_id=null, compilation=null, disc_number=null, duration=1000, is_ringtone=0, album_artist=null, resolution=null, orientation=null, artist=Unknown, author=null, height=null, is_drm=0, is_audiobook=0, date_modified=1737651906, writer=null, composer=null, _modifier=3, is_recording=0, datetaken=null, mime_type=audio/ogg, is_notification=1, bitrate=80000, cd_track_number=null, xmp=[], year=null, _data=/product/media/audio/notifications/Arcturus.ogg, _size=7933, album=notifications, genre=Unknown, is_alarm=0, title=Arcturus, track=null, width=null, is_music=0, document_id=null, is_podcast=0, capture_framerate=null, num_tracks=1, original_document_id=null, media_type=2} exceptionAllowed)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: android.database.sqlite.SQLiteConstraintException: UNIQUE constraint failed: files._data (code 2067 SQLITE_CONSTRAINT_UNIQUE)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:974)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:814)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:89)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.util.DatabaseUtils.executeInsert(DatabaseUtils.java:488)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:640)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.lambda$insert$1(SQLiteQueryBuilder.java:604)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.$r8$lambda$1_sr46pjM8wwFdSQpMjCTR4_wfk(SQLiteQueryBuilder.java:0)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder$$ExternalSyntheticLambda4.apply(R8$$SyntheticClass:0)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:891)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.util.SQLiteQueryBuilder.insert(SQLiteQueryBuilder.java:603)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.lambda$insertAllowingUpsert$22(MediaProvider.java:5196)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.$r8$lambda$mZGNBB-NL1wGl2XhivazUsuTbqM(MediaProvider.java:0)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider$$ExternalSyntheticLambda46.apply(R8$$SyntheticClass:0)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.DatabaseHelper.runWithTransaction(DatabaseHelper.java:891)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertAllowingUpsert(MediaProvider.java:5186)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertFile(MediaProvider.java:5168)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insertInternal(MediaProvider.java:5637)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.insert(MediaProvider.java:5330)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.content.ContentProviderOperation.applyInternal(ContentProviderOperation.java:375)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:347)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2678)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.applyBatch(MediaProvider.java:5689)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.content.ContentProvider.applyBatch(ContentProvider.java:2669)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.content.ContentResolver.applyBatch(ContentResolver.java:2246)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.applyPending(ModernMediaScanner.java:973)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.maybeApplyPending(ModernMediaScanner.java:963)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:868)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.visitFile(ModernMediaScanner.java:351)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at java.nio.file.Files.walkFileTree(Files.java:2670)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at java.nio.file.Files.walkFileTree(Files.java:2742)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.walkFileTree(ModernMediaScanner.java:467)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.runInternal(ModernMediaScanner.java:430)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner$Scan.run(ModernMediaScanner.java:419)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.scan.ModernMediaScanner.scanDirectory(ModernMediaScanner.java:265)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaProvider.scanDirectory(MediaProvider.java:2150)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onScanVolume(MediaService.java:204)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onScanVolume(MediaService.java:172)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at com.android.providers.media.MediaService.onHandleWork(MediaService.java:95)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:396)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at androidx.core.app.JobIntentService$CommandProcessor.doInBackground(JobIntentService.java:387)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at android.os.AsyncTask$3.call(AsyncTask.java:394)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:46.143  1447  2127 W ModernMediaScanner: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:46.176  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.187  1214  2214 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 07:58:46.189  1400  2745 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 07:58:46.196  1400  1400 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.audit.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 07:58:46.196  1400  1400 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.audit.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-15 07:58:46.205  1400  2745 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 07:58:46.208  1400  2745 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 07:58:46.208  1400  2745 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 07:58:46.209  1214  1441 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 41 uptime_millis: 41 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.225  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.229  1214  2214 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 07:58:46.235  1214  3514 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 16 uptime_millis: 16 exec_start_elapsed_seconds: 105 [CONTEXT service_id=218 ]
+10-15 07:58:46.261  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:46.267  3826  3958 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 07:58:46.273  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:46.282  3826  3958 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 07:58:46.285  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:46.292  3826  3958 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 07:58:46.317  3826  3961 I DynamiteModule: Considering local module com.google.mlkit.dynamite.barcode:10000 and remote module com.google.mlkit.dynamite.barcode:0
+10-15 07:58:46.317  3826  3961 I DynamiteModule: Selected local version of com.google.mlkit.dynamite.barcode
+10-15 07:58:46.326  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=DEFAULT, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:46.329  3826  3958 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 07:58:46.333  3826  3960 I tflite  : Replacing 43 out of 43 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for the whole graph.
+10-15 07:58:46.334  3826  3960 I tflite  : Replacing 35 out of 47 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 23 partitions for the whole graph.
+10-15 07:58:46.336  3826  3960 I native  : I0000 00:00:1792051126.335996    3960 oned_decoder_client.cc:696] barhopper::deep_learning::OnedDecoderClient is created successfully.
+10-15 07:58:46.562  1214  2361 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.mdi.sync#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:46.581  1214  1976 E czvx    : Phenotype API error. Event: # fozr@b512519, EventCode: COMMIT_CONFIG [CONTEXT service_id=51 ]
+10-15 07:58:46.581  1214  1976 E czvx    : czue: 29501: Stale snapshot (committed configuration changed) for com.google.android.partnersetup#com.google.android.partnersetup
+10-15 07:58:46.581  1214  1976 E czvx    : 	at czwc.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):817)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at czwb.i(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):18)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 07:58:46.581  1214  1976 E czvx    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29501 [CONTEXT service_id=51 ]
+10-15 07:58:46.591  1214  1976 W AsyncOperation: OperationException[Status{statusCode=Stale snapshot (committed configuration changed) for com.google.android.partnersetup#com.google.android.partnersetup, resolution=null}]
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):48)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 07:58:46.591  1214  1976 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:46.592  1214  2361 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 07:58:46.592  1860  1860 W PhenotypeFlagCommitter: Committing snapshot for com.google.android.partnersetup#com.google.android.partnersetup failed, retrying
+10-15 07:58:46.633  1512  3075 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:46.633  2453  2453 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.device#com.google.android.tts which doesn't use ProcessStable flags.
+10-15 07:58:46.683  1214  3609 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.common.config.PhenotypeUpdateOperation for action com.google.android.gms.phenotype.UPDATE (3420) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 6.372s
+10-15 07:58:46.689  1447  1603 I MediaApplication: PhotoPickerSettingsActivity is now disabled.
+10-15 07:58:46.695  1447  1680 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.695  1447  1680 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread fg]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.695  1447  1680 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.696  1447  1603 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.696  1447  1603 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.696  1447  1603 D PickerSyncController: Cloud-Media-in-Photo-Picker feature is disabled during PickerSyncController construction.
+10-15 07:58:46.696  1447  1680 D PickerDataLayer: Cloud provider allowlist was changed, and the current cloud provider is no longer on the allowlist. Allowlist: [] Current Provider: null
+10-15 07:58:46.696  1447  1680 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.699  1447  1603 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [Thread[fg,5,main]]
+10-15 07:58:46.699  1447  1603 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [Thread[fg,5,main]]
+10-15 07:58:46.699  1447  1603 D PickerSyncLockManager: Trying to acquire lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [Thread[fg,5,main]]
+10-15 07:58:46.699  1447  1603 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [Thread[fg,5,main]]
+10-15 07:58:46.699  1447  1603 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [Thread[fg,5,main]]
+10-15 07:58:46.700  1447  1603 D PickerSyncController: Updated cloud provider to: null
+10-15 07:58:46.700  1447  1603 D PickerSyncController: Ignoring cache media info for null authority with bundle: null
+10-15 07:58:46.702  1512  3068 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:46.702  1447  1603 D PickerNotificationSender: Sending a notification for available providers update
+10-15 07:58:46.708  1512  1512 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:46.708  1447  1603 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread com.android.providers.media.internal.modules.utils.BackgroundThread]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [Thread[fg,5,main]]
+10-15 07:58:46.708  1447  1603 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = [Thread[fg,5,main]]
+10-15 07:58:46.709  1447  1603 I TranscodeHelper: Empty transcode compat stale
+10-15 07:58:46.709  1447  1603 I TranscodeHelper: Parsed 0 packages from resource
+10-15 07:58:46.709  1447  1603 I TranscodeHelper: Parsed 8 packages from device config
+10-15 07:58:46.710  1447  1680 D CloseableReentrantLock: Successfully acquired lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Locked by thread fg]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.710  1447  1680 D CloseableReentrantLock: Successfully released lock com.android.providers.media.photopicker.sync.CloseableReentrantLock@8d62f28[Unlocked]. Lock Name = CLOUD_PROVIDER_LOCK. Threads that may be waiting to acquire this lock = []
+10-15 07:58:46.724   556   556 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10208, packageName = null, attributionTag = null, token = android.os.Binder@2926b27, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-15 07:58:46.749   356   356 D Zygote  : Forked child process 3964
+10-15 07:58:46.752   355   405 I netd    : tetherGetStats() -> {[]} <1.36ms>
+10-15 07:58:46.754  3826  3896 I TestRunner: finished: qrRedactionStillWorksWithPrivateOcrDrafts(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

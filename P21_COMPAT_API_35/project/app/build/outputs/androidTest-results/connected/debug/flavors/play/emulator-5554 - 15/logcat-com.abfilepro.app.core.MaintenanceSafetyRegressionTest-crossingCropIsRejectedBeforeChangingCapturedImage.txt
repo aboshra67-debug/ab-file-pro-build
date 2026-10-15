@@ -1,0 +1,11 @@
+10-15 07:58:50.733  3826  3896 I TestRunner: started: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:50.736  4012  4012 D nativeloader: InitLlndkLibrariesProduct: libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libRS.so:libandroid_net.so:libapexsupport.so:libbinder_ndk.so:libc.so:libcgrouprc.so:libclang_rt.asan-x86_64-android.so:libcom.android.tethering.connectivity_native.so:libdl.so:libft2.so:liblog.so:libm.so:libmediandk.so:libnativewindow.so:libneuralnetworks.so:libselinux.so:libsync.so:libvendorsupport.so:libvndksupport.so:libvulkan.so
+10-15 07:58:50.736  4012  4012 D nativeloader: Configuring product-clns-7 for unbundled product apk /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk. target_sdk_version=35, uses_libraries=, library_path=/product/priv-app/SettingsIntelligenceGooglePrebuilt/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.settings.intelligence:/product/lib64:/system/product/lib64
+10-15 07:58:50.737  4012  4012 D nativeloader: InitVndkspLibrariesProduct: VNDK is deprecated with product
+10-15 07:58:50.737  4012  4012 D CompatChangeReporter: Compat change id reported: 202956589; UID 10140; state: ENABLED
+10-15 07:58:50.742  4012  4012 V GraphicsEnvironment: Currently set values for:
+10-15 07:58:50.742  4012  4012 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 07:58:50.742  4012  4012 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 07:58:50.742  4012  4012 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 07:58:50.742  4012  4012 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 07:58:50.748  3826  3896 I TestRunner: finished: crossingCropIsRejectedBeforeChangingCapturedImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

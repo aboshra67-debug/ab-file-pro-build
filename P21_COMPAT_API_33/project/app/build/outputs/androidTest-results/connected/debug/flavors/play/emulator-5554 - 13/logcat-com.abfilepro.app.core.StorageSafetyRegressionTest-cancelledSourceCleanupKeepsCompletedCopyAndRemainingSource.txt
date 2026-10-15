@@ -1,0 +1,7 @@
+10-15 07:59:22.827  4834  5001 I TestRunner: started: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:59:22.831  1285  1285 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.service.START pkg=com.google.android.gms }
+10-15 07:59:22.845  1057  2675 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.device_performance#com.google.android.youtube) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:59:22.848  1057  2639 W .gms.persistent: Long monitor contention with owner lowpool[20] (5168) at long bwdg.a(bwdv)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):12) waiters=0 in void bwdg.b() for 1.540s
+10-15 07:59:22.851  1057  1347 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 07:59:22.852  1057  2675 I HeterodyneSyncer: Removed 0 invalid users [CONTEXT service_id=51 ]
+10-15 07:59:22.859  4834  5001 I TestRunner: finished: cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

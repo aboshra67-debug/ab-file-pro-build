@@ -1,0 +1,20 @@
+10-15 07:59:16.774  4834  5001 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:16.790  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:16.797  4934  4970 W AppSearchIndex: schedule indexing, force = true
+10-15 07:59:16.801  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:16.824  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService started execution. cause:7 exec_start_elapsed_seconds: 125 [CONTEXT service_id=218 ]
+10-15 07:59:16.860   284  5195 I resolv  : GetAddrInfoHandler::run: {100 786532 100 983140 10120 0}
+10-15 07:59:16.863  2605  3250 D TrafficStats: tagSocket(110) with statsTag=0x1809, statsUid=-1
+10-15 07:59:16.886  2605  3250 D TrafficStats: tagSocket(110) with statsTag=0x1809, statsUid=-1
+10-15 07:59:16.915  1285  2715 I LSRModuleInit: Attempting to change container components state to enabled: true [CONTEXT service_id=277 ]
+10-15 07:59:16.919  2605  3250 D TrafficStats: tagSocket(110) with statsTag=0x1809, statsUid=-1
+10-15 07:59:16.927  1057  3831 I LSR     : Handling LSR module init in persistent process [CONTEXT service_id=277 ]
+10-15 07:59:16.938  1057  5168 I LSR     : No upload requests, reporting should be disabled [CONTEXT service_id=277 ]
+10-15 07:59:16.940  1057  3831 I LSR     : Refreshing periodic location reporting state [CONTEXT service_id=277 ]
+10-15 07:59:16.958  1285  5160 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.magictether, using defaults.
+10-15 07:59:16.963  1057  5165 I LSR     : No upload requests, reporting should be disabled [CONTEXT service_id=277 ]
+10-15 07:59:16.965  1057  5168 I LSR     : Reporting should be enabled: false [CONTEXT service_id=277 ]
+10-15 07:59:16.966  1057  5168 I LSR     : Stopping periodic location reporting [CONTEXT service_id=277 ]
+10-15 07:59:16.971  2605  3250 W SystemServiceRegistry: No service published for: persistent_data_block
+10-15 07:59:16.979  1057  5168 I LSR     : Cancelling periodic location reporting maintenance task [CONTEXT service_id=277 ]
+10-15 07:59:16.983  4834  5001 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

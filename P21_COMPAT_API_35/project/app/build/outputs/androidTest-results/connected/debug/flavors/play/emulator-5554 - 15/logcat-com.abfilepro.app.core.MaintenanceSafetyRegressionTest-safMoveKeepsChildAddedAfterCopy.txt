@@ -1,0 +1,74 @@
+10-15 07:58:48.656  3826  3896 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:48.669   556   588 V GrammaticalInflectionUtils: AttributionSource: AttributionSource { uid = 10210, packageName = null, attributionTag = null, token = android.os.Binder@2926b27, deviceId = 0, next = null } does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-15 07:58:48.684   356   356 D Zygote  : Forked child process 3987
+10-15 07:58:48.700  3987  3987 I mainttrial.test: Late-enabling -Xcheck:jni
+10-15 07:58:48.724  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@816d94a
+10-15 07:58:48.727  3252  3252 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging.auto#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 07:58:48.745  3987  3987 I mainttrial.test: Using CollectorTypeCMC GC.
+10-15 07:58:48.746  3987  3987 W mainttrial.test: Unexpected CPU variant for x86: x86_64.
+10-15 07:58:48.746  3987  3987 W mainttrial.test: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-15 07:58:48.755   435   443 I adbd    : jdwp connection from 3987
+10-15 07:58:48.780  3987  3987 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-15 07:58:48.802  3103  3990 D CompatChangeReporter: Compat change id reported: 312399441; UID 10140; state: ENABLED
+10-15 07:58:48.815  3252  3407 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:48.819  3252  3423 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging#com.google.android.apps.messaging" ]
+10-15 07:58:48.821  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@8883bee
+10-15 07:58:48.822  3252  3252 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.messaging#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 07:58:48.825  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@8c028fa
+10-15 07:58:48.832  3252  3392 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.apps.messaging
+10-15 07:58:48.839  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@157dac6
+10-15 07:58:48.859  3252  3406 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:48.878  3252  3407 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.apps.messaging
+10-15 07:58:48.892  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@7f17c9e
+10-15 07:58:48.935   556   826 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 07:58:48.937   556   826 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 07:58:48.939   556   826 D InetDiagMessage: Destroyed live tcp sockets for uids={10095} in 9ms
+10-15 07:58:48.971   556   826 D ConnectivityService: NetReassign [no changes] [c 0] [a 6] [i 0]
+10-15 07:58:48.977  3987  3987 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 07:58:48.990  3987  3987 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~f_9xskICbcLXYFYgDjuhew==/com.abfilepro.app.p21mainttrial.test-7C-dIVpriGUSE5LM-JNQxA==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 07:58:49.001  3987  3987 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 07:58:49.015  3987  3987 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~f_9xskICbcLXYFYgDjuhew==/com.abfilepro.app.p21mainttrial.test-7C-dIVpriGUSE5LM-JNQxA==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 07:58:49.015  3987  3987 W ziparchive: Unable to open '/data/app/~~f_9xskICbcLXYFYgDjuhew==/com.abfilepro.app.p21mainttrial.test-7C-dIVpriGUSE5LM-JNQxA==/base.dm': No such file or directory
+10-15 07:58:49.015  3987  3987 W ziparchive: Unable to open '/data/app/~~f_9xskICbcLXYFYgDjuhew==/com.abfilepro.app.p21mainttrial.test-7C-dIVpriGUSE5LM-JNQxA==/base.dm': No such file or directory
+10-15 07:58:49.042  3987  3987 D nativeloader: Configuring clns-9 for other apk /data/app/~~f_9xskICbcLXYFYgDjuhew==/com.abfilepro.app.p21mainttrial.test-7C-dIVpriGUSE5LM-JNQxA==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~f_9xskICbcLXYFYgDjuhew==/com.abfilepro.app.p21mainttrial.test-7C-dIVpriGUSE5LM-JNQxA==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 07:58:49.043  1214  2214 E IPCThreadState: Process seems to be sending too many oneway calls.
+10-15 07:58:49.045  1214  2214 W IPCThreadState: CallStack::getCurrentInternal not linked, returning null
+10-15 07:58:49.045  1214  2214 W oneway spamming: CallStack::logStackInternal not linked
+10-15 07:58:49.045  1214  2214 W BpBinder: Large outgoing transaction of 418488 bytes, interface descriptor , code 4
+10-15 07:58:49.057  3987  3987 V GraphicsEnvironment: Currently set values for:
+10-15 07:58:49.058  3987  3987 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 07:58:49.058  3987  3987 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 07:58:49.058  3987  3987 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 07:58:49.058  3987  3987 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 07:58:49.073  3252  3406 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.apps.messaging
+10-15 07:58:49.082  3987  3987 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:58:49.084   355   405 I netd    : tetherGetStats() -> {[]} <0.65ms>
+10-15 07:58:49.086  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@1374377
+10-15 07:58:49.089  1512  1512 I PhenotypeBackgroundRecv: Skipping assistant_auto_tng_libraries_device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:49.189  3252  3259 I .apps.messaging: Background concurrent mark compact GC freed 8599KB AllocSpace bytes, 39(1768KB) LOS objects, 49% free, 12MB/25MB, paused 165us,966us total 110.731ms
+10-15 07:58:49.212  1214  2361 I PackageUpdateTaskChimer: Scheduling Phenotype config package catchup updates to be 86400 seconds from now (1792051129212) [CONTEXT service_id=51 ]
+10-15 07:58:49.238  1214  2361 I HeterodyneSyncScheduler: Scheduling a periodic sync task every 14400 seconds, with flex of 1800 seconds [CONTEXT service_id=51 ]
+10-15 07:58:49.239  1214  2361 I HeterodyneSyncScheduler: Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:49.280  1361  1449 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.surveys#com.google.android.apps.wellbeing
+10-15 07:58:49.292   556   567 I system_server: Background concurrent mark compact GC freed 32MB AllocSpace bytes, 89(2228KB) LOS objects, 45% free, 28MB/52MB, paused 862us,4.383ms total 568.335ms
+10-15 07:58:49.294   556   568 I BpBinder: onLastStrongRef automatically unlinking death recipients:
+10-15 07:58:49.300   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/app/AccessibilityMenu/AccessibilityMenu.apk' with 1 weak references
+10-15 07:58:49.301   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '/product/overlay/AccessibilityMenu__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 07:58:49.301   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:49.304   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 07:58:49.304   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 07:58:49.304   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-15 07:58:49.305   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-15 07:58:49.305   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 07:58:49.306   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 07:58:49.307   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 07:58:49.309   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/CalendarGooglePrebuilt/CalendarGooglePrebuilt.apk' with 1 weak references
+10-15 07:58:49.309   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 07:58:49.310   556   569 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 07:58:49.312  1512  3075 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:49.314  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:49.315  1512  1512 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:49.316   556  1834 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:49.325  1512  1512 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+10-15 07:58:49.335  1361  1449 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mdi.sync#com.google.android.apps.wellbeing
+10-15 07:58:49.376  3826  3896 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

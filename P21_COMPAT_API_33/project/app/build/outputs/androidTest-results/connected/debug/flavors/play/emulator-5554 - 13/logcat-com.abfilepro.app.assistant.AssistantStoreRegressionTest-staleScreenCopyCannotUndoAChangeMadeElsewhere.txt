@@ -1,0 +1,3 @@
+10-15 07:59:11.879  4834  5001 I TestRunner: started: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:59:11.901  1811  2367 W CronetNetworkRqstWrppr: Upload request without a content type.
+10-15 07:59:11.904  4834  5001 I TestRunner: finished: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

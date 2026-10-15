@@ -1,0 +1,7 @@
+10-15 07:58:39.010  3826  3896 I TestRunner: started: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:58:39.048  1400  2619 I HomeStub: Updating Home module request state at home stub init [CONTEXT service_id=336 ]
+10-15 07:58:39.055  1400  3573 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+10-15 07:58:39.057  1400  3573 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+10-15 07:58:39.070  1400  1746 I MobileDataHub: Scheduling periodic tasks
+10-15 07:58:39.071  1400  1746 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-15 07:58:39.077  3826  3896 I TestRunner: finished: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

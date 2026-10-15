@@ -1,0 +1,2 @@
+10-15 07:56:01.884  4931  4950 I TestRunner: started: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:56:01.896  4931  4950 I TestRunner: finished: copyIntoSelfRejectedWithoutChangingSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

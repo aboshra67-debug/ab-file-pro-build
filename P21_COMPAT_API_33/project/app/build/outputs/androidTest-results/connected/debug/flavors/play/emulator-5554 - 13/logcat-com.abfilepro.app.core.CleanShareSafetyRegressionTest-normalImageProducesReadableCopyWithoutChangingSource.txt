@@ -1,0 +1,7 @@
+10-15 07:59:17.059  4834  5001 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:17.072  1285  1285 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+10-15 07:59:17.072  1285  1285 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+10-15 07:59:17.072  1285  1285 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+10-15 07:59:17.064  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.checkin.CheckinService finished executing. cause:7 result: 3 elapsed_millis: 252 uptime_millis: 252 exec_start_elapsed_seconds: 125 [CONTEXT service_id=218 ]
+10-15 07:59:17.094  1285  5156 I MS_RegUtils: checking registration with Lighter
+10-15 07:59:17.101  4834  5001 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

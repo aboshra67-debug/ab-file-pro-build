@@ -1,0 +1,6 @@
+10-15 07:58:51.360  3826  3896 I TestRunner: started: fullBusinessContactFieldsStillParse(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:51.362  1331  1331 I InputMethodEntryManager: InputMethodEntryManager.updateInputMethodEntrySettingsLoadingTask():787 update loading task with resetImplicitlyEnabledEntries is false
+10-15 07:58:51.363  1331  1331 I InputMethodEntryManager: InputMethodEntryManager$4.onSuccess():806 Success load entries: [LanguageTagVariantTuple{languageTag=en-US, variant=qwerty}], resetImplicitlyEnabledEntries=false, initialized=true
+10-15 07:58:51.364  1331  1331 I SystemSubtypesReportModule: SystemSubtypesReportModule$2.onEnabledInputMethodEntriesChanged():122 1 entries
+10-15 07:58:51.365  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedMainSwitchPreferenceController
+10-15 07:58:51.373  3826  3896 I TestRunner: finished: fullBusinessContactFieldsStillParse(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

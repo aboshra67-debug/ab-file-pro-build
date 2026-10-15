@@ -1,0 +1,644 @@
+{
+  "api": "26",
+  "gradle_exit": 1,
+  "tests": 106,
+  "failed": 10,
+  "results": [
+    {
+      "name": "recordsAreNotDroppedAfterTwoThousand",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "familySyncAppliesOnlyChangedRecords",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "updatingARecordDeletedElsewhereDoesNotBringItBack",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "staleScreenCopyCannotUndoAChangeMadeElsewhere",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "backupImportAddsOnlyMissingRecordsAndChangesNothingElse",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "preP20RecordsAreMigratedAndTheOldCopyIsKept",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "leavingWhileNotLinkedClearsStateWithoutNetwork",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "preP17AutomaticRegistrationIsPausedUntilConfirmed",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "preP17CodeWithoutRegistrationIsDiscarded",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "freshInstallHasNoFamilyAndNoSession",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "documentWhoseReminderWindowStartedIsRemindedOnce",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "adhanSchedulesTomorrowAndKeepsTodaysFollowUp",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "medicineReceiverSchedulesTheNextDailyDose",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "calendarReminderWhoseLeadTimeAlreadyPassedStillFires",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "successfulBatchPublishesEveryPageInOrder",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancellationDuringSaveRemovesPublishedImages",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "retryAfterFailureDoesNotDuplicatePages",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "secondPageFailureRemovesOnlyThisAttemptsImages",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "imageChangedAfterPublishIsKeptOnRollback",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedCompressionKeepsValidCleanedPdf",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedHandoffPreservesOutputEditedAfterPublication",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "allBlankPagesAreRejectedWithoutChangingSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "compressionCandidateMissingPagesIsRejected",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "malformedPdfLeavesNoAttemptFiles",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "imageChosenFromShareFolderNeverReplacesItsSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "parallelImagesWithSameNameHaveIndependentOutputs",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "pdfChosenFromShareFolderNeverReplacesItsSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:123)\nat com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:28)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:59)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "largerCompressionCandidateIsNotReportedAsCompressed",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:123)\nat com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:28)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:59)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "failedWriterRemovesOnlyItsPartialDraft",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledReturnHandoffPreservesIdenticalReplacement",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalPdfPreservesAllRequestedPages",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:123)\nat com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:28)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:59)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "existingImageWithSameNameIsPreserved",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failureAfterPublicationRemovesUnchangedOutput",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalImageProducesReadableCopyWithoutChangingSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "qrRedactionStillWorksWithPrivateOcrDrafts",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "inputAndOcrDraftsRemainInAppPrivateCache",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledReturnHandoffRemovesUnchangedPublication",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "blankPageRemovalStillKeepsTheContentPage",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:123)\nat com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:28)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:59)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "cancellationBeforePublicationRemovesPartialDraft",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:123)\nat com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:28)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:59)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "jpegOutputStillPreservesTheOriginalPng",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "existingPdfWithSameNameIsPreserved",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareProcessor.cleanPdf(CleanShareProcessor.kt:123)\nat com.abfilepro.app.core.CleanShareProcessor.access$cleanPdf(CleanShareProcessor.kt:28)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invokeSuspend(CleanShareProcessor.kt:59)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareProcessor$clean$3.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "invalidCompressionCandidateKeepsValidCleanedPdf",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:109)\nat com.abfilepro.app.core.CleanShareOutput$Draft.preferSmallerPdf(CleanShareOutput.kt:81)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invokeSuspend(CleanShareSafetyRegressionTest.kt:281)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$invalidCompressionCandidateKeepsValidCleanedPdf$1$result$2.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "failedZipEnumerationCannotSucceedWithEmptyDirectory",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "persianDigitsAndArabicSeparatorsStayComplete",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "safMoveKeepsChildAddedAfterCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedSafListingCannotMoveAndDeleteUncopiedFolder",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "corruptZipRemovesPartialFileAndImplicitDirectories",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "concaveCropIsRejectedBeforeChangingCapturedImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "validPerspectiveCropStillProducesReadableImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "arabicDecimalAmountAndTaxStayComplete",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "zipCancellationKeepsFileEditedAfterExtraction",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalSafFallbackMovePreservesEveryChild",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "safMoveKeepsFileModifiedAfterCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "arabicThousandsAndDecimalStayComplete",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedRenameUndoStillRestoresOriginalName",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unreadableImageFailsEntirePdfWithoutPublishingMissingPages",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "crossingCropIsRejectedBeforeChangingCapturedImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "nonemptyUnreadableScannerImportCannotBecomeReplacement",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "validImagesProduceEverySelectedPdfPage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.CleanShareOutput.verifyPdf(CleanShareOutput.kt:109)\nat com.abfilepro.app.core.PdfTools$imagesToPdf$2$2.invokeSuspend(PdfTools.kt:51)\nat com.abfilepro.app.core.PdfTools$imagesToPdf$2$2.invoke(Unknown Source:8)\nat com.abfilepro.app.core.PdfTools$imagesToPdf$2$2.invoke(Unknown Source:4)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invokeSuspend(CleanShareOutput.kt:25)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invoke(Unknown Source:8)\nat com.abfilepro.app.core.CleanShareOutput$create$2.invoke(Unknown Source:4)\nat kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:42)\nat kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:164)\nat kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareOutput.create(CleanShareOutput.kt:24)\nat com.abfilepro.app.core.PdfTools$imagesToPdf$2.invokeSuspend(PdfTools.kt:31)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "businessNameSurvivesMissingEmail",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "businessNameSurvivesMissingPhone",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "multiplePdfPagesRenderInOrderAsLongImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.PdfTools$pdfToLongImage$2.invokeSuspend(PdfTools.kt:221)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "fullFrameCropDoesNotReencodeOrDeleteSource",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "nullSafCursorIsAnErrorRatherThanEmptyFolder",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "arabicNameSurvivesAllContactFieldsMissing",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "westernAmountsRemainSupported",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "safMoveRejectsIncompleteDestinationBeforeDeletingOriginal",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fullBusinessContactFieldsStillParse",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyFallbackDeleteFailureKeepsCompletedCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyFallbackNeverDeletesSourceModifiedAfterCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "renameUndoNeverMovesAReplacementFile",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "singlePdfPageRendersAsLongImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.IOException: file not in PDF format or corrupted\nat android.graphics.pdf.PdfRenderer.nativeCreate(Native Method)\nat android.graphics.pdf.PdfRenderer.<init>(PdfRenderer.java:166)\nat com.abfilepro.app.core.PdfTools$pdfToLongImage$2.invokeSuspend(PdfTools.kt:221)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:113)\nat kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)\nat kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:589)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:823)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:720)\nat kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:707)\n"
+    },
+    {
+      "name": "businessNameSurvivesMissingWebsite",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "moveUndoNeverMovesAReplacementFile",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyFallbackFailureKeepsReplacementAtDestination",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "playBuildDoesNotRequestInstallPackages",
+      "class": "com.abfilepro.app.core.PlayChannelPolicyTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "playChannelDisablesSelfUpdate",
+      "class": "com.abfilepro.app.core.PlayChannelPolicyTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalCopyPreservesBytesAndSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialFileMoveUndoRetainsConflictForRetry",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoReplacementAtSamePathPreservesReplacement",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unreadableDirectoryCannotBePublishedAsEmptyCopy",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoSelfRejectedWithoutChangingSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedFallbackMoveCopyDoesNotDeleteAnySource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalFolderCopyPreservesNestedAndEmptyFolders",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsSameLengthSameTimeEditAfterCopy",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoFolderWithNewUserFilePreservesWholeFolder",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "moveCancellationBeforeSourceCleanupPreservesSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyCancellationCleansAttemptAndKeepsSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoChangedSameLengthSameTimeFilePreservesNewData",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoDescendantRejectedWithoutWriting",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedOutputCanStillBeUndone",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsFileAddedAfterCopy",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalMovePreservesBytesAtDestination",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialUndoKeepsChangedOutputAndItsHistory",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveDeleteFailureKeepsCompleteDestination",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedFolderCanStillBeUndone",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "scannerPdfIsPublishedOnlyAfterVerification",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "reviewPagesRoundTripThroughSavedState",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "restoredReviewDropsPagesWhoseImageIsGone",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "invalidScannerResultFailsCleanlyWithoutLeavingFiles",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "recordingStoppedOutsideTheScreenIsRecovered",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+10-15 07:58:39.602  3826  3896 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 07:58:39.619  1400  2619 I NearbyDiscovery: Trigger rescan contextual cards [CONTEXT service_id=265 ]
+10-15 07:58:39.632  1512  3068 I A       : getLocaleToModelSpecsMap
+10-15 07:58:39.632  1512  3068 I A       : Fetching latest config from MDD...
+10-15 07:58:39.635  1400  2619 I NearbyDiscovery: FastPair: HeadsetPieceImage, grant permission files:0 [CONTEXT service_id=265 ]
+10-15 07:58:39.639  1400  2619 I NearbyFastPair: onInitRuntimeState isEnableWearableListener: false [CONTEXT service_id=265 ]
+10-15 07:58:39.641  1400  3802 W ChimeraUtils: Module com.google.android.gms.mobiledataplan missing resource null(0)
+10-15 07:58:39.642  1512  3068 E HotwordModelConfigFetcher: Hotword model config fetched from protodatastore is empty!
+10-15 07:58:39.642  1512  3068 I HotwordModelConfigFetcher: #refreshHotwordConfigCache
+10-15 07:58:39.644  1214  2361 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.apps.nexuslauncher
+10-15 07:58:39.645  1400  3802 W Glide   : Failed to find GeneratedAppGlideModule. You should include an annotationProcessor compile dependency on com.github.bumptech.glide:compiler in your application and a @GlideModule annotated AppGlideModule implementation or LibraryGlideModules will be silently ignored
+10-15 07:58:39.652  1400  2619 I NearbyFastPair: FastPairInitIntentOperation: check the Footprints sync tasks. [CONTEXT service_id=265 ]
+10-15 07:58:39.652  1512  3068 E A       : Failed to receive valid config from MDD.
+10-15 07:58:39.652  1512  3068 I A       : Proto config empty. Exit merge.
+10-15 07:58:39.654  1400  2619 I NearbyFastPair: TaskSchedulerUtils cancelTask TAG_FOOTPRINTS_PERIODIC_SCHEDULE success. [CONTEXT service_id=265 ]
+10-15 07:58:39.654  1400  2619 I NearbyFastPair: TSS scheduleFootprintsOneOffSync: not enable [CONTEXT service_id=265 ]
+10-15 07:58:39.658   556  1846 D ConnectivityService: requestNetwork for uid/pid:10143/1400 activeRequest: null callbackRequest: 122 [NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-15 07:58:39.661  1512  1780 E A       : (REDACTED) Missing client file group %s
+10-15 07:58:39.667  1512  3068 I HotwordModelPopulator: (REDACTED) #updateHotwordFileGroup group name: %s, raw locale: %s, locale: %s
+10-15 07:58:39.667   556   826 D ConnectivityService: NetReassign [123 : null → 100] [c 0] [a 0] [i 5]
+10-15 07:58:39.669   556   819 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 07:58:39.669   556   819 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 07:58:39.669   556   819 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 07:58:39.669   556   819 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=123, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10143 RequestorUid: 10143 RequestorPkg: com.google.android.gms UnderlyingNetworks: Null] ]
+10-15 07:58:39.688  1400  3808 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.networktransparency#com.google.android.gms, using defaults.
+10-15 07:58:39.703  1512  1780 E A       : (REDACTED) Missing client file group %s
+10-15 07:58:39.709  3826  3896 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

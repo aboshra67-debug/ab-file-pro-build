@@ -1,0 +1,42 @@
+10-15 07:58:46.757  3826  3896 I TestRunner: started: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:46.761  1447  1603 I MediaProvider: Changed PhotoPickerActivity component state to STATE_ENABLED ( 1 )
+10-15 07:58:46.765  3826  3958 D TransportRuntime.SQLiteEventStore: Storing event with priority=VERY_LOW, name=FIREBASE_ML_SDK for destination cct
+10-15 07:58:46.772  3826  3958 D TransportRuntime.JobInfoScheduler: Upload for context TransportContext(cct, VERY_LOW, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+10-15 07:58:46.773  1447  1603 I MediaProvider: Changed PhotoPickerGetContentActivity component state to STATE_ENABLED ( 1 )
+10-15 07:58:46.777  3964  3964 I id.ext.services: Using CollectorTypeCMC GC.
+10-15 07:58:46.778  3964  3964 W id.ext.services: Unexpected CPU variant for x86: x86_64.
+10-15 07:58:46.778  3964  3964 W id.ext.services: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-15 07:58:46.781  1447  1603 I MediaProvider: Changed PhotoPickerUserSelectActivity component state to STATE_ENABLED ( 1 )
+10-15 07:58:46.783  3964  3964 E id.ext.services: Not starting debugger since process cannot load the jdwp agent.
+10-15 07:58:46.792  3964  3964 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-15 07:58:46.808  1214  1976 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.ims.library) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:46.814  1214  1976 E czvx    : Phenotype API error. Event: # fozr@b0b07f73, EventCode: COMMIT_CONFIG [CONTEXT service_id=51 ]
+10-15 07:58:46.814  1214  1976 E czvx    : czue: 29500: Empty (package not registered?) or malformed snapshot token for null:
+10-15 07:58:46.814  1214  1976 E czvx    : 	at czwc.b(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1536)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at czwb.i(:com.google.android.gms@242335041@24.23.35 (190800-646585959):3)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):18)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 07:58:46.814  1214  1976 E czvx    : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: operation=CommitToConfigurationOperationCall, opStatusCode=29500 [CONTEXT service_id=51 ]
+10-15 07:58:46.814  1214  1976 W AsyncOperation: OperationException[Status{statusCode=Empty (package not registered?) or malformed snapshot token for null: , resolution=null}]
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at czvx.h(:com.google.android.gms@242335041@24.23.35 (190800-646585959):48)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at czvx.f(:com.google.android.gms@242335041@24.23.35 (190800-646585959):11)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at boey.hj(:com.google.android.gms@242335041@24.23.35 (190800-646585959):1)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at bofh.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at emsz.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):21)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at angs.c(:com.google.android.gms@242335041@24.23.35 (190800-646585959):50)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at angs.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):97)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at anmg.run(:com.google.android.gms@242335041@24.23.35 (190800-646585959):8)
+10-15 07:58:46.814  1214  1976 W AsyncOperation: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:46.816  1214  1961 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.lockbox) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:46.817  3826  3896 I TestRunner: finished: inputAndOcrDraftsRemainInAppPrivateCache(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

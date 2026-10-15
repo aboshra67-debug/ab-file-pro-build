@@ -1,0 +1,4 @@
+10-15 07:59:11.849  4834  5001 I TestRunner: started: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:59:11.850  1086  1106 I TetheringManager: registerTetheringEventCallback:com.android.settings
+10-15 07:59:11.865  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.RemoteVolumeGroupController
+10-15 07:59:11.875  4834  5001 I TestRunner: finished: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

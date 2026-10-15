@@ -1,0 +1,8 @@
+10-15 07:58:54.225  3826  3896 I TestRunner: started: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.281  3826  3831 I p.p21mainttrial: Background concurrent mark compact GC freed 2148KB AllocSpace bytes, 48(3424KB) LOS objects, 49% free, 4830KB/9661KB, paused 154us,12.147ms total 189.776ms
+10-15 07:58:54.322  1331  1687 I SP      : <==== Finishing job {m:b:u:l, fg}, 501 ms. elapsed since start
+10-15 07:58:54.322  1331  1687 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.finishJob():56 SuperpacksForegroundTaskService.finishJob()
+10-15 07:58:54.326  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.omnient.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:54.328  1331  1687 I SP      : Download stopped: handwriting_recognition:pack_mapping_v1_lstm_20231127, succeeded foreground, size: 125598
+10-15 07:58:54.333  1331  1687 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 2 candidates
+10-15 07:58:54.340  3826  3896 I TestRunner: finished: unchangedGeneratedOutputCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

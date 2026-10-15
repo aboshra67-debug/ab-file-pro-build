@@ -1,0 +1,11 @@
+10-15 07:58:54.085  3826  3896 I TestRunner: started: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.113  1331  1687 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/packmapping_release.20231127.pb to pack_mapping_v1_lstm_20231127.fetched (constraints: m:b:u:l)
+10-15 07:58:54.127   355  4083 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 07:58:54.129   355  4084 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 07:58:54.129   355  4084 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f858400130
+10-15 07:58:54.129   355  4084 I resolv  : doQuery: rcode=0, ancount=4, return value=143
+10-15 07:58:54.129   355  4085 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 07:58:54.129   355  4085 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f8483fba10
+10-15 07:58:54.129   355  4085 I resolv  : doQuery: rcode=0, ancount=4, return value=95
+10-15 07:58:54.135  1331  4082 D TrafficStats: tagSocket(169) with statsTag=0xffffffff, statsUid=-1
+10-15 07:58:54.161  3826  3896 I TestRunner: finished: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)

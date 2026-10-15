@@ -1,0 +1,2 @@
+10-15 07:59:12.237  4834  5001 I TestRunner: started: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:59:12.245  4834  5001 I TestRunner: finished: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

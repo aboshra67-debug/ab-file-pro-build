@@ -1,0 +1,4 @@
+10-15 07:59:17.025  4834  5001 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:17.042  1285  5156 I MS_RegisterService: Tachyon host: www.google.com, Tachyon port: 443
+10-15 07:59:17.051  1285  5163 I LSR     : Empty geofences. [CONTEXT service_id=277 ]
+10-15 07:59:17.052  4834  5001 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

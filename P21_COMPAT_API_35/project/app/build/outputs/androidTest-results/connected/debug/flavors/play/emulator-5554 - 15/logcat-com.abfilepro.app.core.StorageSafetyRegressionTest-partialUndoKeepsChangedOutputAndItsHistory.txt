@@ -1,0 +1,9 @@
+10-15 07:58:54.404  3826  3896 I TestRunner: started: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.412  1331  1687 I SP      : Scheduling: job start ({m:b:u:l, bg}), 2 started, 0 paused, 1 scheduled, 3 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, transformer_concept:2023011913_en @ * {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ * {m:b:u:l, bg}
+10-15 07:58:54.418  2943  4050 I ConfigUpdater: Update downloaded, starting installation
+10-15 07:58:54.423  1512  3075 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.subscriptions#com.google.android.googlequicksearchbox
+10-15 07:58:54.427  1331  1687 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/en.zip to 2023011913_en.zip.fetched (constraints: m:b:u:l)
+10-15 07:58:54.429  1331  1687 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/emoji/20240513200046/en_us.zip to 2ada3c9a4a17d6bb81b1fe8d51502d60.zip.fetched (constraints: m:b:u:l)
+10-15 07:58:54.432  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:54.433  1331  4088 D TrafficStats: tagSocket(170) with statsTag=0xffffffff, statsUid=-1
+10-15 07:58:54.464  3826  3896 I TestRunner: finished: partialUndoKeepsChangedOutputAndItsHistory(com.abfilepro.app.core.StorageSafetyRegressionTest)

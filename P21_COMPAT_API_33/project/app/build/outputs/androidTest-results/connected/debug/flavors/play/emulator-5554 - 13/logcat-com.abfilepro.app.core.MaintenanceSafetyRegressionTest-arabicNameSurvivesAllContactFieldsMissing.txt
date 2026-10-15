@@ -1,0 +1,8 @@
+10-15 07:59:22.456  4834  5001 I TestRunner: started: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:22.461  1086  1376 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.462  1086  1376 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/notification_volume
+10-15 07:59:22.464  1086  1376 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/notification_volume) in: 3
+10-15 07:59:22.473  1086  1370 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.474  1086  1370 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/alarm_volume
+10-15 07:59:22.474  1086  1370 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/alarm_volume) in: 1
+10-15 07:59:22.478  4834  5001 I TestRunner: finished: arabicNameSurvivesAllContactFieldsMissing(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

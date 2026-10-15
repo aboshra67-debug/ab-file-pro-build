@@ -1,0 +1,45 @@
+10-15 07:58:52.151  3826  3896 I TestRunner: started: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:52.156  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.ContentProtectionWorkSwitchController
+10-15 07:58:52.161  1866  4068 D TrafficStats: tagSocket(95) with statsTag=0xffffff01, statsUid=10136
+10-15 07:58:52.186  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.SecurityAdvancedSettingsController
+10-15 07:58:52.190  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 07:58:52.204  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.TopLevelNetworkEntryPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.communal.CommunalPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.TopLevelBatteryPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.TopLevelStoragePreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TopLevelDisplayPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TopLevelWallpaperPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.TopLevelAccessibilityPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.safetycenter.TopLevelSafetyCenterEntryPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.TopLevelSecurityEntryPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.privacy.TopLevelPrivacyEntryPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.TopLevelLocationPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accounts.TopLevelAccountEntryPreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController
+10-15 07:58:52.205  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.support.SupportPreferenceController
+10-15 07:58:52.217  1085  1144 V SettingsSearchProvider: com.android.settings.enterprise.EnterprisePrivacySettings$1@547d041 tried to add an empty non-indexable key
+10-15 07:58:52.217  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppHeaderController
+10-15 07:58:52.217  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppButtonsController
+10-15 07:58:52.217  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPolicyController
+10-15 07:58:52.217  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.trustagent.TrustAgentsPreferenceController
+10-15 07:58:52.217  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 07:58:52.217  1085  1144 W PrefCtrlListHelper: Controller requires key but it's not defined in xml: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 07:58:52.218  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.dream.DreamMainSwitchPreferenceController
+10-15 07:58:52.218  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.dream.DreamComplicationPreferenceController
+10-15 07:58:52.218  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.CallsDefaultSubscriptionController
+10-15 07:58:52.218  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.SmsDefaultSubscriptionController
+10-15 07:58:52.218  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController
+10-15 07:58:52.218  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.network.ConnectivityHelperCallQualityPreferenceController
+10-15 07:58:52.218  1085  1144 D ch_callQuality: isDeviceSupport: falsemIsChecked: true
+10-15 07:58:52.218  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.network.ConnectivityHelperDeviceToDevicePreferenceController
+10-15 07:58:52.218  1085  1144 D ch_d2d  : isDeviceSupport: falsemIsChecked: false
+10-15 07:58:52.221  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 07:58:52.222  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 07:58:52.222  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 07:58:52.229  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 07:58:52.231  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureScreenPreferenceController
+10-15 07:58:52.233  1331  1687 I SP      : Successfully got manifest for transformer_concept-manifest: manifests:transformer_concept-2023011913
+10-15 07:58:52.235  1400  1400 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+10-15 07:58:52.236  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkMobileProviderController
+10-15 07:58:52.253  3826  3896 I TestRunner: finished: moveUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

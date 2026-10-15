@@ -1,0 +1,10 @@
+10-15 07:59:16.986  4834  5001 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:16.994  1057  1057 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.magictether, using defaults.
+10-15 07:59:16.996  1285  5160 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.maps#com.google.android.gms, using defaults.
+10-15 07:59:16.996  1285  5160 I Google Maps Android API: Validating conditions for requesting maps_core feature. [CONTEXT service_id=71 ]
+10-15 07:59:16.998  1285  5160 I Google Maps Android API: Is maps_core feature installed? 1 [CONTEXT service_id=71 ]
+10-15 07:59:17.000  1285  5160 I Google Maps Android API: cutoffSize=2147483648, internalFreeBytes=5136285696
+10-15 07:59:17.001  1285  5160 I Google Maps Android API: Eligible to request maps_core feature. [CONTEXT service_id=71 ]
+10-15 07:59:17.008  1285  5160 I Google Maps Android API: maps_core feature request succeeded. [CONTEXT service_id=71 ]
+10-15 07:59:17.015  1285  2715 I GmsDebugLogger: [53] +maps_core:-1
+10-15 07:59:17.021  4834  5001 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

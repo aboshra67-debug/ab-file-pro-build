@@ -1,0 +1,4 @@
+10-15 07:58:39.096  3826  3896 I TestRunner: started: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:58:39.111  1214  1976 W GetConfigSnapshotOp: Succeeded but not registered: com.google.android.inputmethod.latin#com.google.android.inputmethod.latin [CONTEXT service_id=51 ]
+10-15 07:58:39.113  1331  1935 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():469 Get empty configurations.
+10-15 07:58:39.117  3826  3896 I TestRunner: finished: staleScreenCopyCannotUndoAChangeMadeElsewhere(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

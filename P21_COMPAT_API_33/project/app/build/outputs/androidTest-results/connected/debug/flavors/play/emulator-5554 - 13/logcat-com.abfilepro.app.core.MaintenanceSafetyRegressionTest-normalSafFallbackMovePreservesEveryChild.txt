@@ -1,0 +1,12 @@
+10-15 07:59:21.721  4834  5001 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:21.728  5302  5302 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:59:21.730  1057  5166 W .gms.persistent: Long monitor contention with owner netscheduler-queue-handler (3410) at int bytb.l(bysm, aphn)(:com.google.android.gms@231818047@23.18.18 (190800-535401451):59) waiters=0 in void bytb.u(byps, int) for 112ms
+10-15 07:59:21.765  1057  5167 I GCoreUlr: DispatchingService ignoring Intent { act=android.net.wifi.WIFI_STATE_CHANGED flg=0x44000010 (has extras) } because ULR inactive
+10-15 07:59:21.771  1057  1057 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.semanticlocation.service.START_ODLH pkg=com.google.android.gms }
+10-15 07:59:21.776  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+10-15 07:59:21.782  1057  1057 I GCoreUlr: Unbound from all signal providers.
+10-15 07:59:21.782  1057  1057 I GCoreUlr: Stopping handler for UlrDispSvcFast
+10-15 07:59:21.785  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 101 uptime_millis: 101 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+10-15 07:59:21.871  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+10-15 07:59:21.875  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 1 elapsed_millis: 39 uptime_millis: 39 exec_start_elapsed_seconds: 130 [CONTEXT service_id=218 ]
+10-15 07:59:21.894  4834  5001 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

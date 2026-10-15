@@ -1,0 +1,5 @@
+10-15 07:58:39.491  3826  3896 I TestRunner: started: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:58:39.504  1512  2003 I Ma      : #handleFlagUpdate()
+10-15 07:58:39.506  1512  1887 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-107' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:39.506   556  1580 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-107' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:39.512  3826  3896 I TestRunner: finished: freshInstallHasNoFamilyAndNoSession(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

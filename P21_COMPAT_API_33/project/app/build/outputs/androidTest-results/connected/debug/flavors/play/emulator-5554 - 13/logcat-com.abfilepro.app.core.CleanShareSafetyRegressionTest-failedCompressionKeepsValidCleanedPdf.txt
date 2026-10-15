@@ -1,0 +1,83 @@
+10-15 07:59:14.175  4834  5001 I TestRunner: started: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:14.187  1662  2459 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 07:59:14.187  1662  2459 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+10-15 07:59:14.191  5072  5072 D CompatibilityChangeReporter: Compat change id reported: 160794467; UID 10120; state: ENABLED
+10-15 07:59:14.246  5072  5072 W ProviderHelper: Unknown dynamite feature providerinstaller.dynamite
+10-15 07:59:14.255  5072  5103 I DynamiteModule: Considering local module com.google.android.gms.googlecertificates:7 and remote module com.google.android.gms.googlecertificates:7
+10-15 07:59:14.255  5072  5103 I DynamiteModule: Selected local version of com.google.android.gms.googlecertificates
+10-15 07:59:14.257  5072  5072 I DynamiteModule: Considering local module com.google.android.gms.providerinstaller.dynamite:1 and remote module com.google.android.gms.providerinstaller.dynamite:0
+10-15 07:59:14.257  5072  5072 I DynamiteModule: Selected local version of com.google.android.gms.providerinstaller.dynamite
+10-15 07:59:14.268  1662  2213 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 2 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}
+10-15 07:59:14.283  5072  5072 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 295 native methods...
+10-15 07:59:14.296  4934  5069 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.google.android.gms.accountsettings.content/settings/indexables_xml_res
+10-15 07:59:14.296  4934  5069 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.304  4934  5070 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.308  3936  3936 I ProvidersCache: Updating roots due to change on user 0at content://com.android.externalstorage.documents/
+10-15 07:59:14.311  4934  5069 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.320  4934  5069 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.322  4934  5069 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.342  5072  5072 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+10-15 07:59:14.374  1014  1014 D MainContentCaptureSession: Flushing 67 event(s) for act:com.google.android.apps.nexuslauncher/.NexusLauncherActivity [state=2 (ACTIVE), disabled=false], reason=TEXT_CHANGE
+10-15 07:59:14.379  1662  1662 W ContentCaptureService: writeSessionFlush(): no server callback
+10-15 07:59:14.384  5072  5072 D CompatibilityChangeReporter: Compat change id reported: 183155436; UID 10120; state: ENABLED
+10-15 07:59:14.384  5072  5072 I GmsApplication: [gms_startup_benchmark] Static start time (ms): 123020, Startup latency (ms): 361, Is system user: true
+10-15 07:59:14.388  5072  5072 I cuir    : Primes not initialized, returning default (no-op) Primes instance which will ignore all calls. Please call Primes.initialize(...) before using any Primes API.
+10-15 07:59:14.399  5072  5133 I GMS_MM_Logger: Start time: 63670
+10-15 07:59:14.400  3936  5124 I ProvidersCache: Provider returned no roots. Possibly naughty: com.google.android.apps.docs.storage
+10-15 07:59:14.403  5072  5133 I GMS_MM_Logger: Started.
+10-15 07:59:14.411  1662  2128 I SP.AiAi : Sync for kg_collections_table succeeded in 6039 ms: {added: [collections_table_main_21980965fbd997111d89f86c16e9e090], metadata: false
+10-15 07:59:14.451  1662  2128 I SP.AiAi : Sync for actions-ranking-table succeeded in 6076 ms: {added: [table_5f787033cc44fc7a8804e0030b2bf848], metadata: false
+10-15 07:59:14.482  1662  2128 I SP.AiAi : GC for 'kg_collections_table' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 07:59:14.482  1662  2128 I SP.AiAi : GC for 'actions-ranking-table' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 07:59:14.482  1662  2128 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 07:59:14.483  1662  2128 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 07:59:14.487  1662  3379 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'kg_collections_table', download version 21051103.
+10-15 07:59:14.488  1662  3379 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'actions-ranking-table', download version 211005.
+10-15 07:59:14.489  1662  2459 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 07:59:14.489  1662  2459 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 07:59:14.489  1662  2459 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+10-15 07:59:14.499  1662  2459 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+10-15 07:59:14.499  1662  2133 I AiAiTextClassifier: [KnowledgeGraphCollectionsTableDownloaderImpl] reading KnowledgeGraphCollectionsTable from path /data/user/0/com.google.android.as/files/superpacks/kg_collections_table/collections_table_main_21980965fbd997111d89f86c16e9e090/collections_table.
+10-15 07:59:14.514  5072  5140 D CompatibilityChangeReporter: Compat change id reported: 158482162; UID 10120; state: ENABLED
+10-15 07:59:14.528  5072  5140 I CAR.DRIVINGMODE: DrivingMode Settings Indexed from the location module
+10-15 07:59:14.540  5072  5143 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.dtdi#com.google.android.gms, using defaults.
+10-15 07:59:14.553  1811  2414 W NamedFutures: Timeout future task has been cancelled: 60000 milliseconds
+10-15 07:59:14.556  1811  1811 E A       : Task 255 failed or timed out. Client 7966654282695265 disconnecting from SearchService!
+10-15 07:59:14.556  1811  1811 E A       : java.util.concurrent.CancellationException: Task was cancelled.
+10-15 07:59:14.556  1811  1811 E A       : 	at com.google.common.util.concurrent.d.s(PG:3)
+10-15 07:59:14.556  1811  1811 E A       : 	at com.google.common.util.concurrent.d.get(PG:4)
+10-15 07:59:14.556  1811  1811 E A       : 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-15 07:59:14.556  1811  1811 E A       : 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-15 07:59:14.556  1811  1811 E A       : 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-15 07:59:14.556  1811  1811 E A       : 	at com.google.android.apps.gsa.shared.util.c.a.ba.run(PG:1)
+10-15 07:59:14.556  1811  1811 E A       : 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 07:59:14.556  1811  1811 E A       : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 07:59:14.556  1811  1811 E A       : 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 07:59:14.556  1811  1811 E A       : 	at android.os.Looper.loop(Looper.java:288)
+10-15 07:59:14.556  1811  1811 E A       : 	at android.app.ActivityThread.main(ActivityThread.java:7924)
+10-15 07:59:14.556  1811  1811 E A       : 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 07:59:14.556  1811  1811 E A       : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 07:59:14.556  1811  1811 E A       : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:936)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: EXCLUSIVE background task SEND_GSA_HOME_REQUEST was cancelled.
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: java.util.concurrent.CancellationException: Task was cancelled.
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.s(PG:3)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.d.get(PG:4)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.eb.a(PG:1)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.ci.r(PG:2)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.common.util.concurrent.cb.run(PG:4)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.cf.b(PG:1)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.android.apps.gsa.shared.util.c.a.ci.run(PG:1)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.ae.run(PG:1)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.i.run(PG:2)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at com.google.android.libraries.i.p.run(PG:4)
+10-15 07:59:14.561  1811  2705 E BgTaskExecutorImpl: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:59:14.579  1057  1057 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+10-15 07:59:14.579  1057  1057 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.instantapps.START pkg=com.google.android.gms }
+10-15 07:59:14.589  5072  5143 I Nearby  : is blocked device type false, isAuto=false, isIot=false, isLatchsky=false, isChinaWearable=false, isTv=false, isWearable=false (supportWearOs=false), isChromeOsDevice=false (supportChromeOs=false) [CONTEXT service_id=49 ]
+10-15 07:59:14.625  5072  5142 W SettingsIntentOperation: No accounts
+10-15 07:59:14.656   485   505 D WifiNl80211Manager: Scan result ready event
+10-15 07:59:14.656   485   505 D WifiNative: Scan result ready event
+10-15 07:59:14.663  5072  5139 I SnapshotHandler: Unable to retrieve flag snapshot for com.google.android.gms.personalsafety, using defaults.
+10-15 07:59:14.750  4834  5001 I TestRunner: finished: failedCompressionKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

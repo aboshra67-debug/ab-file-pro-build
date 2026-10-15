@@ -1,0 +1,14 @@
+10-15 07:58:49.607  3826  3896 I TestRunner: started: arabicDecimalAmountAndTaxStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.613  3826  3896 I TestRunner: finished: arabicDecimalAmountAndTaxStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

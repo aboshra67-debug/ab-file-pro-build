@@ -1,0 +1,3 @@
+10-15 07:58:51.083  3826  3896 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:51.090  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.soundsearch.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:51.102  3826  3896 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,30 @@
+10-15 07:58:41.819  3826  3896 I TestRunner: started: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 07:58:41.821  1475  2005 I A       : Subscribing to eligibility updates [IVR-C]
+10-15 07:58:41.829  1475  2005 I A       : Disconnecting from SysUi, flag disabled [IVR-C]
+10-15 07:58:41.829  1475  2005 I A       : Disconnecting from SysUi, eligibilityNotifier absent [IVR-C]
+10-15 07:58:41.829  1475  2005 I A       : Disconnecting from SysUi, VM not enabled [IVR-C]
+10-15 07:58:41.836  2381  2562 I EGL_emulation: Opening libGLESv2_emulation.so
+10-15 07:58:41.838  1214  1214 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 07:58:41.838  1214  1214 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.time.trustedtime.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 07:58:41.842  1475  2005 I A       : No binding to unbind [IVR-C]
+10-15 07:58:41.842  1475  2005 I A       : Disconnected from SysUi [IVR-C]
+10-15 07:58:41.853  1475  2005 I A       : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+10-15 07:58:41.890  1475  2005 I INV.SystemUI: setUiHints: finished successfully
+10-15 07:58:41.899  1214  3429 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 07:58:41.903  1214  1214 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+10-15 07:58:41.904  1459  2401 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_provider
+10-15 07:58:41.907  1459  1639 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 07:58:41.908  1214  1214 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentSingleUserInternalApiService }
+10-15 07:58:41.910   556   812 D FileUtils: Rounded bytes from 2593198080 to 4000000000
+10-15 07:58:41.925  3826  3896 D HWUI    : --- Failed to create image decoder with message 'unimplemented'
+10-15 07:58:41.927  1459  1639 I AiAiEcho: EchoTargets:
+10-15 07:58:41.927  1459  1639 I AiAiEcho: Filtered by AiAi flag check:
+10-15 07:58:41.927  1459  1639 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 07:58:41.928  1459  1639 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 07:58:41.928  1459  1639 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-15 07:58:41.928  1459  1639 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-15 07:58:41.929  1459  2401 I AiAiEcho: Settings changed for uri: content://settings/secure/active_unlock_target
+10-15 07:58:41.933  1459  1639 I AiAiEcho: EchoTargets:
+10-15 07:58:41.933  1459  1639 I AiAiEcho: Filtered by AiAi flag check:
+10-15 07:58:41.933  1459  1639 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-15 07:58:41.936  3826  3896 I TestRunner: finished: secondPageFailureRemovesOnlyThisAttemptsImages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

@@ -1,0 +1,48 @@
+10-15 07:58:51.681  3826  3896 I TestRunner: started: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:51.682  1512  3056 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:51.687  3254  3274 W .apps.safetyhub: Suspending all threads took: 7.607ms
+10-15 07:58:51.687  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.searchbox.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:51.689  1331  1687 I SP      : Scheduling: download registered, 0 started, 0 paused, 1 scheduled, 1 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}
+10-15 07:58:51.691  1214  1214 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-15 07:58:51.697   355  4056 I resolv  : GetAddrInfoHandler::run: {100 983140 100 983140 10095 0}
+10-15 07:58:51.697   355  4057 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 07:58:51.697   355  4057 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f8883f5bd0
+10-15 07:58:51.697   355  4057 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 07:58:51.698   355  4058 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 07:58:51.698   355  4058 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f8883f4010
+10-15 07:58:51.698   355  4058 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 07:58:51.700  1866  4051 D TrafficStats: tagSocket(97) with statsTag=0xffffff01, statsUid=10136
+10-15 07:58:51.705  1331  1932 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_manifest_delight__en-840 with size 467
+10-15 07:58:51.717  1214  2807 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.ipa.base.IpaGcmTaskService started execution. cause:9 exec_start_elapsed_seconds: 111 [CONTEXT service_id=218 ]
+10-15 07:58:51.718  1331  1687 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 07:58:51.718  1331  1687 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 07:58:51.718  1331  1687 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json to transformer_concept-2023011913.fetched (constraints: m:b:u:l)
+10-15 07:58:51.719  1331  1913 E HandwritingSuperpacksUtil: HandwritingSuperpacksUtil.getPackMappingPackName():40 No pack mapping pack found in []
+10-15 07:58:51.719  1331  1935 E HandwritingSuperpacksUtil: HandwritingSuperpacksUtil.getPackMappingPackName():40 No pack mapping pack found in []
+10-15 07:58:51.719  1331  1935 I HandwritingSuperpacks: HandwritingSuperpacks.lambda$reloadCache$0():237 updatePackMappingsCache(): pack mapping pack unavailable [OFFLINE]
+10-15 07:58:51.722  1331  1687 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json to dynamic_art-20220108.fetched (constraints: m:b:u:l)
+10-15 07:58:51.722  1331  1687 I SP      : Registering gboard-small-speech-packs.1327534105, url: https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json, constraints: m:b:*:*, flags: *, requested: 1327534105, current: 758538843
+10-15 07:58:51.722  1331  1687 I SP      : Registering handwriting_recognition.86, url: https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json, constraints: m:*:*:*, flags: fg, requested: 86, current: -1
+10-15 07:58:51.722  1331  1687 I SP      : Registering handwriting_recognition.86, url: https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json, constraints: m:*:*:*, flags: fg, requested: 86, current: -1
+10-15 07:58:51.724  1331  1913 I HandwritingSuperpacks: HandwritingSuperpacks.lambda$reloadCache$0():237 updatePackMappingsCache(): pack mapping pack unavailable [ONLINE]
+10-15 07:58:51.732  1512  3068 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:51.739  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:51.758  1866  4055 D TrafficStats: tagSocket(99) with statsTag=0xffffff01, statsUid=10136
+10-15 07:58:51.760  1331  1932 I DownloadManager: DownloadManager.downloadInternal():390 Download for __KLP_delight__en-840 scheduled with params DownloadParams{allowMetered=true, requireCharging=false, foreground=true, immediately=false, priority=500}
+10-15 07:58:51.768  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGesturePreferenceController
+10-15 07:58:51.768  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureSoundPreferenceController
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureNumberOverridePreferenceController
+10-15 07:58:51.769  1085  1144 V SettingsSearchProvider: com.android.settings.emergency.EmergencyGestureSettings$1@4ddd9ae tried to add an empty non-indexable key
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.regionalpreferences.TemperatureUnitCategoryController
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsPreferenceController
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsLockScreenPreferenceController
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsRecommendationController
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkToggleController
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.threadnetwork.ThreadNetworkFooterController
+10-15 07:58:51.769  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.premiumsms.PremiumSmsScreenPreferenceController
+10-15 07:58:51.775  1331  1909 I AbstractSyncResultCallback: AbstractSyncResultCallback.onFailure():38 onFailure(): handwriting_recognition.sync cancelled; expected if new request supersedes pending one.
+10-15 07:58:51.786  1331  1687 I SP      : Requesting download of URL https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json to gboard-small-speech-packs-1327534105.fetched (constraints: m:b:u:l)
+10-15 07:58:51.786  1331  1687 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 handwriting_recognition.registerManifest() cancelled
+10-15 07:58:51.786  1331  1687 I SP      : Requesting download of URL https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json to handwriting_recognition-86.fetched (constraints: m:b:u:l)
+10-15 07:58:51.792  1512  3056 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:51.798  3826  3896 I TestRunner: finished: renameUndoNeverMovesAReplacementFile(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

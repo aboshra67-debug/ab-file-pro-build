@@ -1,0 +1,6 @@
+10-15 07:59:11.906  4834  5001 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:59:11.926  1662  1697 I ogle.android.as: Background young concurrent copying GC freed 28888(3531KB) AllocSpace objects, 0(0B) LOS objects, 4% free, 47MB/49MB, paused 38us,21us total 191.973ms
+10-15 07:59:11.938   485   584 I RoleService: Granting default roles...
+10-15 07:59:11.947  1086  1106 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+10-15 07:59:11.948  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaOutputPreferenceController
+10-15 07:59:11.953  4834  5001 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

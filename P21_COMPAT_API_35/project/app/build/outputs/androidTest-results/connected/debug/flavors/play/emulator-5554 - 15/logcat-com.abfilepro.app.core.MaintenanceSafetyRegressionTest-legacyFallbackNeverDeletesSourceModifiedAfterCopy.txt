@@ -1,0 +1,63 @@
+10-15 07:58:51.494  3826  3896 I TestRunner: started: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019804, callback=cfr@c5259d0, lastModifier=2, keyCodes=[48], actions=[0]}
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132018371, callback=cfr@d4b42fc, lastModifier=2, keyCodes=[39], actions=[0]}
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019802, callback=cfr@7ec6d01, lastModifier=2, keyCodes=[37], actions=[0]}
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019803, callback=cfr@849d832, lastModifier=65536, keyCodes=[76], actions=[0]}
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():183 Unregister key sequence lnk{labelResId=2132019802, callback=cfr@7ec6d01, lastModifier=2, keyCodes=[37], actions=[0]}
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019802, callback=cfr@3203b8a, lastModifier=2, keyCodes=[37], actions=[0]}
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.unregisterKeySequence():183 Unregister key sequence lnk{labelResId=2132019803, callback=cfr@849d832, lastModifier=65536, keyCodes=[76], actions=[0]}
+10-15 07:58:51.505  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019803, callback=cfr@32e4aad, lastModifier=65536, keyCodes=[76], actions=[0]}
+10-15 07:58:51.506  1331  1331 I WidgetAccessPointsPanelHolderController: WidgetAccessPointsPanelHolderController.removeAccessPoint():188 The access point widget_space does not exist
+10-15 07:58:51.517  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019806, callback=null, lastModifier=2, keyCodes=[8], actions=[0]}
+10-15 07:58:51.517  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019808, callback=gnd@cd04a19, lastModifier=2, keyCodes=[62], actions=[0]}
+10-15 07:58:51.519  1331  1914 I DownloadManager: DownloadManager.downloadInternal():390 Download for __KLP_manifest_delight__en-840 scheduled with params DownloadParams{allowMetered=true, requireCharging=false, foreground=false, immediately=true, priority=0}
+10-15 07:58:51.519  1331  1914 I DownloadManager: DownloadManager.startDownload():484 start download of __KLP_manifest_delight__en-840
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadGoBackPreferenceController
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadGoHomePreferenceController
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadRecentAppsPreferenceController
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadNotificationsPreferenceController
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TrackpadSwitchAppsPreferenceController
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.inputmethod.TouchGesturesButtonPreferenceController
+10-15 07:58:51.520  1085  1144 V SettingsSearchProvider: com.android.settings.inputmethod.TrackpadTouchGestureSettings$1@21ec5f1 tried to add an empty non-indexable key
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationIllustrationPreferenceController
+10-15 07:58:51.520  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationPreferenceController
+10-15 07:58:51.521  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeActivationPreferenceController
+10-15 07:58:51.521  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TwilightLocationPreferenceController
+10-15 07:58:51.521  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeScheduleSelectorController
+10-15 07:58:51.521  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController
+10-15 07:58:51.522  3254  3394 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:51.525  1331  1331 I HardKeyTracker: HardKeyTracker.registerKeySequence():139 Register key sequence lnk{labelResId=2132019799, callback=cfr@5eaeb89, lastModifier=2, keyCodes=[50], actions=[0]}
+10-15 07:58:51.526  1331  1331 I SpeechPackManager: SpeechPackManager.refreshManifest():374 refreshManifest()
+10-15 07:58:51.526  1331  1331 I SpeechPackManager: SpeechPackManager.registerManifest():473 registerManifest() : https://dl.google.com/android/voice/gboard/terse/superpacks-manifest-20210519.json
+10-15 07:58:51.526  1331  1331 I AbstractOpenableExtension: AbstractOpenableExtension$3.onSuccess():552 KeyboardGroupManager destroyed in fvq.
+10-15 07:58:51.527  1331  1687 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoji.registerManifest() cancelled
+10-15 07:58:51.527  1331  1687 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/modelpack/emoji/20240513200046/superpacks_manifest.zip to emoji-2024051320.zip.fetched (constraints: m:b:u:l)
+10-15 07:58:51.527  1331  1687 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: -1
+10-15 07:58:51.528  1331  1687 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: -1
+10-15 07:58:51.528  1331  1687 I SP      : Registering emoticon_content_description.2022081613, url: https://www.gstatic.com/android/keyboard/emoticon_content_desc/202208161305/superpacks_manifest.json, constraints: W:*:*:*, flags: bg, requested: 2022081613, current: -1
+10-15 07:58:51.528  1331  1687 I SP      : Registering transformer_concept.2023011913, url: https://www.gstatic.com/android/keyboard/modelpack/transformer_concept/2023011913/superpacks_manifest.json, constraints: *:*:*:*, flags: *, requested: 2023011913, current: -1
+10-15 07:58:51.528  1331  1687 I SP      : Registering dynamic_art.20220108, url: https://www.gstatic.com/android/keyboard/dynamic_art/20220108002302/manifest.json, constraints: *:*:*:*, flags: *, requested: 20220108, current: -1
+10-15 07:58:51.533  3254  3273 W .apps.safetyhub: Missing inline cache for int oqh.a(java.lang.Object)
+10-15 07:58:51.533  1331  1331 I BaseClearcutAdapter: BaseClearcutAdapter.lambda$queryAndUpdateUserCheckboxOptIn$1():273 Checkbox = false
+10-15 07:58:51.536  1331  1932 I SpeechPackManager: SpeechPackManager.lambda$registerManifest$4():483 registerManifest() : Fetching hash 1327534105
+10-15 07:58:51.542  1331  1677 I HandwritingSuperpacks: HandwritingSuperpacks.register():273 register(): version '86', url 'https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json' [ONLINE]
+10-15 07:58:51.542  1331  1687 I SuperpacksManagerImpl: SuperpacksManagerImpl$3$1.onFailure():588 emoticon_content_description.registerManifest() cancelled
+10-15 07:58:51.550  1331  1677 I HandwritingOfflineSuperpacks: HandwritingOfflineSuperpacks.syncInternal():80 no bundled lm for handwriting.
+10-15 07:58:51.550  1331  1677 I HandwritingSuperpacks: HandwritingSuperpacks.register():273 register(): version '86', url 'https://dl.google.com/handwriting/models/handwriting_release.superpack_manifest.20231127.json' [ONLINE]
+10-15 07:58:51.550  1331  1677 I HandwritingOfflineSuperpacks: HandwritingOfflineSuperpacks.syncInternal():80 no bundled lm for handwriting.
+10-15 07:58:51.577  2943  4050 I ConfigUpdater: Update started
+10-15 07:58:51.585  1331  1687 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 07:58:51.594   355  4052 I resolv  : GetAddrInfoHandler::run: {100 100 100 983140 10152 0}
+10-15 07:58:51.596   355  4053 I resolv  : res_nmkquery: (QUERY, IN, AAAA)
+10-15 07:58:51.596   355  4053 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f8883f5bd0
+10-15 07:58:51.596   355  4053 I resolv  : doQuery: rcode=0, ancount=1, return value=61
+10-15 07:58:51.596   355  4054 I resolv  : res_nmkquery: (QUERY, IN, A)
+10-15 07:58:51.596   355  4054 I resolv  : resolv_cache_lookup: FOUND IN CACHE entry=0x75f8883f4010
+10-15 07:58:51.596   355  4054 I resolv  : doQuery: rcode=0, ancount=1, return value=49
+10-15 07:58:51.601  1866  4051 D DownloadManager: [7] Starting
+10-15 07:58:51.610  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController@17c2279
+10-15 07:58:51.625  2943  4050 I ConfigUpdater: Update started
+10-15 07:58:51.644  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.gsa.pcp.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:51.645  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.NetworkProviderSimListController
+10-15 07:58:51.649  1866  4055 D DownloadManager: [8] Starting
+10-15 07:58:51.671  3826  3896 I TestRunner: finished: legacyFallbackNeverDeletesSourceModifiedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

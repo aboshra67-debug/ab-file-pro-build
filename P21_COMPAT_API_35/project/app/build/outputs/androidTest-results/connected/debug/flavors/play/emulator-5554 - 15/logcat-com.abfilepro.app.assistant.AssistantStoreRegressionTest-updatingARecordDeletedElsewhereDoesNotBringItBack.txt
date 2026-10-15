@@ -1,0 +1,4 @@
+10-15 07:58:39.079  3826  3896 I TestRunner: started: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:58:39.089  1214  2361 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.gsf
+10-15 07:58:39.090  1214  2361 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.google.android.tag
+10-15 07:58:39.093  3826  3896 I TestRunner: finished: updatingARecordDeletedElsewhereDoesNotBringItBack(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

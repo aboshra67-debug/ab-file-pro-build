@@ -1,0 +1,3 @@
+10-15 07:59:23.322  4834  5001 I TestRunner: started: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 07:59:23.326  3046  3148 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:59:23.342  4834  5001 I TestRunner: finished: invalidScannerResultFailsCleanlyWithoutLeavingFiles(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

@@ -1,0 +1,16 @@
+10-15 07:58:50.968  3826  3896 I TestRunner: started: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:50.972  2395  2395 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.performance.primes#com.android.chrome which doesn't use ProcessStable flags.
+10-15 07:58:50.982  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@c8166f6
+10-15 07:58:50.986  2453  3852 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.tts
+10-15 07:58:50.992  3252  3436 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.mobileconfiguration#com.google.android.apps.messaging
+10-15 07:58:50.999  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:51.020  1331  1331 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 07:58:51.021  1331  1331 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():222 maybeFetchAndUpdate: start new task to fetch
+10-15 07:58:51.034  3252  3414 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:51.045  1447  2127 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/notifications/pixiedust.ogg)
+10-15 07:58:51.048  1447  2127 I MediaProvider: Open with lower FS for /product/media/audio/notifications/pixiedust.ogg. Uid: 1000
+10-15 07:58:51.066  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c8ee10
+10-15 07:58:51.069  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c8ee10
+10-15 07:58:51.073  3254  3391 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:51.074  1214  3429 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.inputmethod.latin#com.google.android.inputmethod.latin) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:51.080  3826  3896 I TestRunner: finished: multiplePdfPagesRenderInOrderAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

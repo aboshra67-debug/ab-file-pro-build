@@ -1,0 +1,2 @@
+10-15 07:55:59.789  4931  4950 I TestRunner: started: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:55:59.829  4931  4950 I TestRunner: finished: existingImageWithSameNameIsPreserved(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

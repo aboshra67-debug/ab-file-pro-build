@@ -1,0 +1,52 @@
+10-15 07:58:53.924  3826  3896 I TestRunner: started: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:53.927  1331  1331 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 3
+10-15 07:58:53.933  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController
+10-15 07:58:53.944  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController
+10-15 07:58:53.945  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController
+10-15 07:58:53.948  1331  1687 I SP      : Scheduling: download stopped, 0 started, 2 paused, 1 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 07:58:53.949  1331  1687 I SP      : Download for transformer_concept:2023011913_en was canceled
+10-15 07:58:53.949  1331  1687 I SP      : Download stopped: transformer_concept:2023011913_en, failed (retriable) paused, size: 44069
+10-15 07:58:53.950  1331  1687 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 07:58:53.957  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.BackupDataPreferenceController
+10-15 07:58:53.958  1331  1331 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 4
+10-15 07:58:53.961  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.ConfigureAccountPreferenceController
+10-15 07:58:53.962  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.DataManagementPreferenceController
+10-15 07:58:53.963  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.AutoRestorePreferenceController
+10-15 07:58:53.965  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.backup.BackupInactivePreferenceController
+10-15 07:58:53.966  1085  1144 V SettingsSearchProvider: com.android.settings.backup.PrivacySettings$1@517b390 tried to add an empty non-indexable key
+10-15 07:58:53.967  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingSwitchPreferenceController
+10-15 07:58:53.971  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingTopIntroController
+10-15 07:58:53.973  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingSeekBarController
+10-15 07:58:53.974  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.reversecharging.ReverseChargingAutoTurnOnSwitchPreferenceController
+10-15 07:58:53.981  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverSchedulePreferenceController
+10-15 07:58:53.985  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverStickyPreferenceController
+10-15 07:58:53.985  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverReminderPreferenceController
+10-15 07:58:53.987  1331  1687 I SP      : Scheduling: download stopped, 0 started, 1 paused, 1 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 07:58:53.988  1331  1687 I SP      : Download for emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 was canceled
+10-15 07:58:53.988  1331  1687 I SP      : <==== Finishing job {m:b:u:l, bg}, 1093 ms. elapsed since start
+10-15 07:58:53.989  1331  1687 I SP      : Download stopped: emoji:2ada3c9a4a17d6bb81b1fe8d51502d60, failed (retriable) paused, size: 0
+10-15 07:58:53.989  1331  1687 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 07:58:54.001  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.SecurityStatusPreferenceController
+10-15 07:58:54.006  1331  1331 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 5
+10-15 07:58:54.006  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.PrimarySecurityWarningPreferenceController
+10-15 07:58:54.006  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.FingerprintStatusGooglePreferenceController
+10-15 07:58:54.007  1866  4071 D DownloadManager: [11] Finished with status SUCCESS
+10-15 07:58:54.010  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.FaceStatusGooglePreferenceController
+10-15 07:58:54.011  1331  1932 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 6062080
+10-15 07:58:54.011  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.CombinedBiometricStatusGooglePreferenceController
+10-15 07:58:54.012  1085  1144 W PrefCtrlListHelper: security_show_more_warnings already has a controller
+10-15 07:58:54.012  1085  1144 V SettingsSearchProvider: com.google.android.settings.security.SecurityHubDashboard$1@c60e045 tried to add an empty non-indexable key
+10-15 07:58:54.013  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 07:58:54.013  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 07:58:54.013  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationFooterPreferenceController
+10-15 07:58:54.013  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTogglePreferenceController
+10-15 07:58:54.014  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTipsButtonPreferenceController
+10-15 07:58:54.014  1085  1144 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@de664a8 tried to add an empty non-indexable key
+10-15 07:58:54.014  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusEnabledPreferenceController
+10-15 07:58:54.014  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusActionsPreferenceController
+10-15 07:58:54.014  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController
+10-15 07:58:54.015  1085  1144 V SettingsSearchProvider: com.google.android.settings.gestures.columbus.ColumbusSettings$1@2386f66 tried to add an empty non-indexable key
+10-15 07:58:54.015  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.AdaptiveTouchSensitivityPreferenceController
+10-15 07:58:54.015  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.TouchSensitivityPreferenceController
+10-15 07:58:54.028  1331  1687 I SP      : Scheduling: download stopped, 0 started, 0 paused, 1 scheduled, 4 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, transformer_concept:2023011913_en {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 07:58:54.044  3826  3896 I TestRunner: finished: moveCancellationBeforeSourceCleanupPreservesSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

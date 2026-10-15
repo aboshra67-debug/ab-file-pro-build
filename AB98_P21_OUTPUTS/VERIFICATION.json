@@ -1,0 +1,51 @@
+{
+  "phase": "green",
+  "android_functions": 106,
+  "scanner_ui_cases": 19,
+  "jvm_tests": 43,
+  "qa_r8_monkey_events": 1500,
+  "all_passed": true,
+  "version_code": 173,
+  "version_name": "2.0.0-alpha98-p21-final-readiness",
+  "channel_checks": {
+    "debug": {
+      "package": "com.abfilepro.app.p21mainttrial",
+      "label": "AB File Pro P21",
+      "install_permission_absent": true
+    },
+    "qa": {
+      "package": "com.abfilepro.app.p21qa",
+      "label": "AB File Pro P21 QA",
+      "install_permission_absent": true
+    },
+    "direct": {
+      "install_permission_present": true
+    }
+  },
+  "outputs": {
+    "AB98_P21_PLAY_TEST.apk": {
+      "bytes": 132085280,
+      "sha256": "612368883779260838433f5ba17862f6fdea5bc21c18a03e1763926ca8a3e1c1"
+    },
+    "AB98_P21_PLAY_QA_R8.apk": {
+      "bytes": 108379454,
+      "sha256": "6e0b68cb51f45f5a8cdd9eecefccae4faaafc839ef0eb1f7f064f993b352c966"
+    },
+    "AB98_P21_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67836040,
+      "sha256": "62c04dbdabfc775cfa9389089cfe0c50dc9bdb649ac8cd8cc3f8249732c21ff3"
+    },
+    "AB98_P21_PLAY_RELEASE_mapping.txt": {
+      "bytes": 116009299,
+      "sha256": "a326cb622f220841aae48cced4d9c205d9bdb103873fc17bb6780de80b19c19f"
+    }
+  },
+  "commit": "0796968ebf037defe67c9518127e918e3eb89414",
+  "run_id": "38701184090",
+  "android_api_tested": "30",
+  "phone_abi": "arm64-v8a",
+  "physical_phone_tested": false,
+  "aab_signed": false,
+  "original_signing_key_available": false,
+  "play_release_ready": false
+}

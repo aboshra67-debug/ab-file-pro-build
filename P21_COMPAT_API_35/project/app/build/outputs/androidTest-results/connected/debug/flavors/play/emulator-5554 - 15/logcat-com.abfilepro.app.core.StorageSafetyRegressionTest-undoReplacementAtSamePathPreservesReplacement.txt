@@ -1,0 +1,124 @@
+10-15 07:58:52.770  3826  3896 I TestRunner: started: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: No service published for: ethernet
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:203)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$145.createService(SystemServiceRegistry.java:2120)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:2231)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1812)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2241)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:936)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.content.Context.getSystemService(Context.java:4503)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at com.android.settings.network.tether.TetherSettings$2.getNonIndexableKeys(TetherSettings.java:657)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.getNonIndexableKeysFromProvider(SettingsSearchIndexablesProvider.java:284)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryNonIndexableKeys(SettingsSearchIndexablesProvider.java:157)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.provider.SearchIndexablesProvider.query(SearchIndexablesProvider.java:127)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1620)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1716)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:295)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-15 07:58:52.815  1085  1144 E SystemServiceRegistry: 	at android.os.Binder.execTransact(Binder.java:1444)
+10-15 07:58:52.821  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.communal.GlanceableHubTogglePreferenceController
+10-15 07:58:52.823  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController
+10-15 07:58:52.824  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.AddUserWhenLockedPreferenceController
+10-15 07:58:52.824  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.WalletPrivacyPreferenceController
+10-15 07:58:52.825  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsPrivacyPreferenceController
+10-15 07:58:52.825  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.ControlsTrivialPrivacyPreferenceController
+10-15 07:58:52.825  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.CustomizableLockScreenQuickAffordancesPreferenceController
+10-15 07:58:52.825  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.LockscreenClockPreferenceController
+10-15 07:58:52.825  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayWhenToShowPreferenceController
+10-15 07:58:52.826  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayAlwaysOnPreferenceController
+10-15 07:58:52.826  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.TapScreenGesturePreferenceController
+10-15 07:58:52.826  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapScreenPreferenceController
+10-15 07:58:52.826  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 07:58:52.833  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.AmbientDisplayNotificationsPreferenceController
+10-15 07:58:52.833  1085  1144 W PrefControllerMixin: Skipping updateNonIndexableKeys due to empty key com.android.settings.notification.LockScreenNotificationPreferenceController@341a206
+10-15 07:58:52.834  1331  1338 I putmethod.latin: Background concurrent mark compact GC freed 6283KB AllocSpace bytes, 47(2356KB) LOS objects, 49% free, 11MB/22MB, paused 7.290ms,5.285ms total 327.377ms
+10-15 07:58:52.835  1331  1340 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024051500_1[2]
+10-15 07:58:52.835  1331  1340 W SP      : File ref is being finalized but wasn't closed, file: main_en_us_2024051500_1[2]
+10-15 07:58:52.838  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.biometrics.face.FaceSettingsLockscreenBypassPreferenceController@8f400c7
+10-15 07:58:52.839  1447  1729 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb.metadata
+10-15 07:58:52.849  1447  1729 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 10ms, 0 inserts 0 updates 0 deletes
+10-15 07:58:52.868  1331  1932 I DownloadManager: DownloadManager$3.onProgress():503 Downloading __KLP_delight__en-840 with size 2072576
+10-15 07:58:52.877  1331  1687 I SP      : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 07:58:52.889  1085  1144 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=1
+10-15 07:58:52.892  1331  1331 I SpBackgroundTask: SuperpacksBackgroundJobService.onStartJob():26 onStartJob: android.app.job.JobParameters@f656493
+10-15 07:58:52.894  1085  1144 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=1
+10-15 07:58:52.895  1331  1331 I SP      : ====> Starting job {m:b:u:l, bg}
+10-15 07:58:52.895  1331  1687 I SP      : Scheduling job with delay of 0s for {W:b:u:l, bg}, 1 candidates
+10-15 07:58:52.899  1085  1144 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=1
+10-15 07:58:52.907  1085  1144 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=1
+10-15 07:58:52.907  1866  3752 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/model.smfb via provider delete
+10-15 07:58:52.908  1331  1934 I DownloadManager: DownloadManager$4.onFailure():560 download for __KLP_delight__en-840 is cancelled
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: ForegroundDownloadTaskWorker$1.onFailure():73 onFailure
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: java.util.concurrent.CancellationException: Task was cancelled.
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.r(PG:33)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.get(PG:3)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at a.i(PG:2)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at npy.t(PG:10)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pvy.run(PG:88)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pvh.execute(PG:1)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.h(PG:1)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.k(PG:101)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.cancel(PG:53)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.m(PG:17)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at puk.a(PG:3)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.k(PG:30)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at pug.cancel(PG:53)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at oo.a(PG:388)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thb.b(PG:3)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at tfh.r(PG:1)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at tfh.j(PG:43)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at tfk.b(PG:63)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thk.I(PG:26)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thk.C(PG:174)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at tfm.b(PG:7)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thk.I(PG:26)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thk.e(PG:162)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thk.C(PG:41)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thk.y(PG:1)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at thk.o(PG:13)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at qyw.f(PG:2)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at beu.run(PG:248)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at bwf.execute(PG:6)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at aln.k(PG:1)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at aln.e(PG:89)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at aln.f(PG:14)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at alt.f(PG:2)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at als.cancel(PG:26)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at cdx.cancel(PG:59)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at bxr.f(PG:11)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at cde.run(PG:82)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at cdm.run(PG:209)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at jdg.run(PG:52)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:52.909  1331  1934 W ForegroundDownloadTaskWorker: 	at jcx.run(PG:8)
+10-15 07:58:52.912  1447  1729 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/model.smfb: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/model.smfb
+10-15 07:58:52.913  1447  1729 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 0ms, 0 inserts 0 updates 0 deletes
+10-15 07:58:52.915  1331  1932 E MDD     : DownloadListener: onFailure: java.util.concurrent.CancellationException: Task was cancelled.
+10-15 07:58:52.915  1331  1934 I ForegroundDownloadTaskWorker: ForegroundDownloadTaskWorker.onStopped():87 has pending foreground download, rescheduled
+10-15 07:58:52.917  1085  1144 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=1
+10-15 07:58:52.923  1085  1144 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=1
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: Work [ id=c9eb70b1-d0df-41c3-8f7c-0b5c79b0451f, tags={ com.google.android.libraries.inputmethod.mdd.ForegroundDownloadTaskWorker } ] was cancelled
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: java.util.concurrent.CancellationException: Task was cancelled.
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at cdx.j(PG:33)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at cdx.get(PG:3)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at byq.h(PG:8)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at avt.run(PG:229)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at cdm.run(PG:209)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at jdg.run(PG:52)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:52.924  1331  1913 I WM-WorkerWrapper: 	at jcx.run(PG:8)
+10-15 07:58:52.928  3826  3831 I p.p21mainttrial: Background concurrent mark compact GC freed 1592KB AllocSpace bytes, 45(3444KB) LOS objects, 49% free, 5026KB/10053KB, paused 154us,917us total 159.433ms
+10-15 07:58:52.930  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.TapScreenGesturePreferenceController@4561e1d
+10-15 07:58:52.930  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.DoubleTapScreenPreferenceController@d45d892
+10-15 07:58:52.930  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.PickupGesturePreferenceController@1a5e263
+10-15 07:58:52.932  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverTopIntroPreferenceController
+10-15 07:58:52.936  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverEnableForAllAppsPreferenceController
+10-15 07:58:52.937  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.graphicsdriver.GraphicsDriverAppPreferenceController
+10-15 07:58:52.943  1214  2367 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.auth.account.be.legacy.AuthCronService started execution. cause:5 exec_start_elapsed_seconds: 112 [CONTEXT service_id=218 ]
+10-15 07:58:52.954  3826  3896 I TestRunner: finished: undoReplacementAtSamePathPreservesReplacement(com.abfilepro.app.core.StorageSafetyRegressionTest)

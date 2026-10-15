@@ -1,0 +1,6 @@
+10-15 07:56:02.007  4931  4950 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:56:02.018  2130  4850 I Vision  : Requesting optional module download of ocr.
+10-15 07:56:02.020  2130  4850 I Vision  : Exceeded maximum feature download tries for ocr
+10-15 07:56:02.020  2130  4850 W Vision  : Request of optional module download of ocr failed.
+10-15 07:56:02.028  2130  4850 I Vision  : Checking for download completion for 106560 -- ocr
+10-15 07:56:02.096  4931  4950 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

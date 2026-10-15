@@ -1,0 +1,10 @@
+10-15 07:59:22.486  4834  5001 I TestRunner: started: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:22.490  1086  1370 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.495  1086  1370 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/gesture_double_tap_power) in: 5
+10-15 07:59:22.495  1086  1370 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.496  1086  1370 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/smart_battery) in: 1
+10-15 07:59:22.499  1086  1376 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/screen_magnification_gestures_preference_screen) in: 13
+10-15 07:59:22.499  1086  1370 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.500  1086  1370 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.hardwareinfo.DeviceModelPreferenceController
+10-15 07:59:22.507  1086  1370 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/hardware_info_device_model) in: 8
+10-15 07:59:22.508  4834  5001 I TestRunner: finished: westernAmountsRemainSupported(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,3 @@
+10-15 07:56:02.395  4931  4950 I TestRunner: started: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)
+10-15 07:56:02.408  1660  5010 I BackgroundDexOptService: Pinning optimized code {}
+10-15 07:56:02.412  4931  4950 I TestRunner: finished: scannerPdfIsPublishedOnlyAfterVerification(com.abfilepro.app.core.WorkInProgressSafetyRegressionTest)

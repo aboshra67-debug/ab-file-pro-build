@@ -1,0 +1,29 @@
+10-15 07:58:49.454  3826  3896 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:49.456  3252  3392 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 07:58:49.460  3252  3392 W BugleAction: No default number, returning empty msisdn
+10-15 07:58:49.461  3252  3392 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=54 ]
+10-15 07:58:49.461  3252  3427 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 07:58:49.461  3252  3427 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 07:58:49.466  3252  3436 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 07:58:49.466  3252  3427 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.apps.messaging.onboarding#com.google.android.apps.messaging
+10-15 07:58:49.467  3252  3436 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 07:58:49.467  3252  3436 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 07:58:49.472  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@6d79a0d
+10-15 07:58:49.472  1361  1361 I PhenotypeBackgroundRecv: Skipping com.google.android.gms.kids#com.google.android.apps.wellbeing which doesn't use ProcessStable flags.
+10-15 07:58:49.473  3252  3252 I PhenotypeBackgroundRecv: Skipping com.google.lighter.android#com.google.android.apps.messaging which doesn't use ProcessStable flags.
+10-15 07:58:49.474  3252  3427 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 07:58:49.479  3673  3706 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=48 ]
+10-15 07:58:49.480  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@270ca09
+10-15 07:58:49.482  3252  3387 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 07:58:49.485  3673  3722 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:49.490  3252  3406 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 07:58:49.491  3673  3722 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:49.496  3252  3436 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=05d66a8d-dcfd-474d-89ba-447d229fdf21, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 07:58:49.503  3673  3722 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:49.507  3673  3722 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:49.508  3673  3722 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:49.525  3673  3722 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 07:58:49.530  1361  1489 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:49.534  1512  1867 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:49.543  1361  1479 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:49.564  3826  3896 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

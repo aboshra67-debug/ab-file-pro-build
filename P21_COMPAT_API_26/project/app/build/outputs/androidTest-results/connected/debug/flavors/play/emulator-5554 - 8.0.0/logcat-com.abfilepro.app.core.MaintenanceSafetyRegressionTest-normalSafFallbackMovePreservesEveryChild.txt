@@ -1,0 +1,3 @@
+10-15 07:56:01.273  4931  4950 I TestRunner: started: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:56:01.278  4984  4984 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:56:01.390  4931  4950 I TestRunner: finished: normalSafFallbackMovePreservesEveryChild(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

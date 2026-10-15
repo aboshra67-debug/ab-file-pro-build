@@ -1,0 +1,5 @@
+10-15 07:59:23.044  4834  5001 I TestRunner: started: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:59:23.065  5332  5332 I MultiDex: VM with version 2.1.0 has multidex support
+10-15 07:59:23.065  5332  5332 I MultiDex: Installing application
+10-15 07:59:23.065  5332  5332 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+10-15 07:59:23.070  4834  5001 I TestRunner: finished: copyCancellationCleansAttemptAndKeepsSource(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,6 @@
+10-15 07:58:50.946  3826  3896 I TestRunner: started: businessNameSurvivesMissingPhone(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:50.950  1512  3075 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:50.957  3252  3414 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.onegoogle#com.google.android.apps.messaging
+10-15 07:58:50.960  2453  3852 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.tts#com.google.android.tts
+10-15 07:58:50.964  2395  4035 D PhClient: Application doesn't implement PhenotypeApplication interface, falling back to globally set context. See go/phenotype-flag#process-stable-init for more info.
+10-15 07:58:50.965  3826  3896 I TestRunner: finished: businessNameSurvivesMissingPhone(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

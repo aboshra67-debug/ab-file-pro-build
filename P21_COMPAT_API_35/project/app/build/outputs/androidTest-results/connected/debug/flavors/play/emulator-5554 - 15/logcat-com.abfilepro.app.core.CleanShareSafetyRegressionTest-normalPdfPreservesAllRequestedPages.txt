@@ -1,0 +1,27 @@
+10-15 07:58:44.036  3826  3896 I TestRunner: started: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:44.098  1075  1075 D CarrierSvcBindHelper: onPackageModified: com.google.android.gms
+10-15 07:58:44.100  1075  1075 D CarrierSvcBindHelper: No carrier app for: 0
+10-15 07:58:44.102   902   902 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 07:58:44.104   903  3454 I PermissionControllerServiceImpl: Updating user sensitive for uid 10143
+10-15 07:58:44.115  1075  1075 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+10-15 07:58:44.119  1075  1075 E CellBroadcastUtils: getDefaultCellBroadcastReceiverPackageName: no package found
+10-15 07:58:44.121  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 07:58:44.132  1075  1271 D ImsResolver: maybeAddedImsService, packageName: com.google.android.gms
+10-15 07:58:44.157   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:44.159   556   556 W IPCThreadState: Sending oneway calls to frozen process.
+10-15 07:58:44.182  1459  1459 I AiAiEcho: AppFetcherImpl onPackageChanged com.google.android.gms.
+10-15 07:58:44.186  1459  2347 I AiAiEcho: AppIndexer Package:[com.google.android.gms] UserProfile:[0] Enabled:[true].
+10-15 07:58:44.187  1459  2347 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.google.android.gms], userId:[0], reason:[package is updated.].
+10-15 07:58:44.189  1181  1216 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.google.android.gms]
+10-15 07:58:44.193  1181  1216 W AllAppsList: updatePromiseInstallInfo: no Activities matched updated package, removing all apps from package=com.google.android.gms
+10-15 07:58:44.282  1214  2497 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 07:58:44.298  1214  2497 W GLSUser : [DeviceKeyStore] Cannot load key: Device key file not found.
+10-15 07:58:44.322  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c82d90
+10-15 07:58:44.323  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c82d90
+10-15 07:58:44.326  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 07:58:44.326  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c91b90
+10-15 07:58:44.326  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c91b90
+10-15 07:58:44.383  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 6
+10-15 07:58:44.389  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c8fa50
+10-15 07:58:44.389  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c8fa50
+10-15 07:58:44.396  3826  3896 I TestRunner: finished: normalPdfPreservesAllRequestedPages(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

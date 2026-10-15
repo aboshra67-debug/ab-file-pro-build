@@ -1,0 +1,6 @@
+10-15 07:55:58.711  4931  4950 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 07:55:58.716  1806  1806 D StatusBar: disable<e i a s b h r c s q >
+10-15 07:55:58.722  1806  1806 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.NotificationStackScrollLayout.updateContentHeight() due to JIT inline cache
+10-15 07:55:58.739  1806  1806 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.StackScrollAlgorithm.updateClipping(com.android.systemui.statusbar.stack.StackScrollState, com.android.systemui.statusbar.stack.StackScrollAlgorithm$StackScrollAlgorithmState, com.android.systemui.statusbar.stack.AmbientState) due to JIT inline cache
+10-15 07:55:58.739  1806  1806 I zygote64: Deoptimizing void com.android.systemui.statusbar.stack.ExpandableViewState.applyToView(android.view.View) due to JIT same target
+10-15 07:55:58.772  4931  4950 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

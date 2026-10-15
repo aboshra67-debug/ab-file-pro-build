@@ -1,0 +1,11 @@
+10-15 07:58:51.111  3826  3896 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:51.117  1447  2127 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/alarms/Alarm_Classic.ogg)
+10-15 07:58:51.119  2395  4035 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.search.rendering.xuikit.device#com.android.chrome
+10-15 07:58:51.119  1447  2127 I MediaProvider: Open with lower FS for /product/media/audio/alarms/Alarm_Classic.ogg. Uid: 1000
+10-15 07:58:51.121  2395  2395 I PhenotypeBackgroundRecv: Skipping com.google.android.partnersetup#com.android.chrome which doesn't use ProcessStable flags.
+10-15 07:58:51.127  3987  3987 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:58:51.138  3734  3737 I AidlLazyServiceRegistrar: Process has 0 (of 1 available) client(s) in use after notification artd has clients: 0
+10-15 07:58:51.138  3734  3737 I AidlLazyServiceRegistrar: Trying to shut down the service. No clients in use for any service in process.
+10-15 07:58:51.145  2943  2943 D ConfigUpdater: PhenotypeBroadcastReceiver : com.google.android.gms.phenotype.UPDATE
+10-15 07:58:51.146  3734  3737 I AidlLazyServiceRegistrar: Unregistered all clients and exiting
+10-15 07:58:51.147  3826  3896 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

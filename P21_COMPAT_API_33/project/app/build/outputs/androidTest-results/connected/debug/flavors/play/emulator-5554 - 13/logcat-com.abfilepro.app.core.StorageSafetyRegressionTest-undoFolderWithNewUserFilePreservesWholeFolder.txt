@@ -1,0 +1,10 @@
+10-15 07:59:22.913  4834  5001 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:59:22.937   288   288 D Zygote  : Forked child process 5332
+10-15 07:59:22.945  1811  1811 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+10-15 07:59:22.954  5332  5332 I equicksearchbox: Using CollectorTypeCC GC.
+10-15 07:59:22.955  5332  5332 W equicksearchbox: Unexpected CPU variant for x86: x86_64.
+10-15 07:59:22.955  5332  5332 W equicksearchbox: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 07:59:22.957  1493  1493 I PhenotypeModule: PhenotypeModule.receiveBroadcast():373 onReceive() urgent = false
+10-15 07:59:22.963  1493  1493 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():166 maybeFetchAndUpdate: start new task to fetch
+10-15 07:59:22.969   373   385 I adbd    : jdwp connection from 5332
+10-15 07:59:23.002  4834  5001 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

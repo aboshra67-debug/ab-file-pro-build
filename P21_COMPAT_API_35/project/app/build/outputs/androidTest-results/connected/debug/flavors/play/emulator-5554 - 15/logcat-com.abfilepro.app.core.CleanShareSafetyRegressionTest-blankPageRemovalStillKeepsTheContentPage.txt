@@ -1,0 +1,104 @@
+10-15 07:58:46.908  3826  3896 I TestRunner: started: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:46.916  3964  3964 D CompatChangeReporter: Compat change id reported: 202956589; UID 10208; state: ENABLED
+10-15 07:58:46.935  3252  3371 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 07:58:46.942  3252  3427 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 07:58:46.946  3252  3371 W BugleAction: Failed to get msisdn from Bugle
+10-15 07:58:46.947  3252  3406 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 07:58:46.947  3252  3371 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:46.947  3252  3371 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:46.951  3252  3371 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 07:58:46.951  3252  3371 W BugleAction: No default number, returning empty msisdn
+10-15 07:58:46.956  3252  3371 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=48 ]
+10-15 07:58:46.959  3252  3418 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 07:58:46.960  3252  3418 I BugleTransport: Tachygram is disabled because the RCS Configuration is empty [CONTEXT ratelimit_period="5 SECONDS" skipped=1 ]
+10-15 07:58:46.967  3252  3418 I BugleTransport: Enabled chat transport is TRANSPORT_RCS [CONTEXT group_by="TRANSPORT_RCS" ratelimit_period="5 SECONDS" skipped=1 ]
+10-15 07:58:46.967  3252  3418 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 07:58:46.969  3964  3964 V GraphicsEnvironment: Currently set values for:
+10-15 07:58:46.969  3964  3964 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-15 07:58:46.969  3964  3964 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-15 07:58:46.969  3964  3964 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-15 07:58:46.969  3964  3964 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 07:58:46.971  3252  3392 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 07:58:46.975  3252  3392 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 07:58:46.975  3252  3392 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 07:58:46.979  1361  1479 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:46.981  3252  3427 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 07:58:46.984  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:46.985  3252  3407 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=0f24f154-3701-451e-9976-d53d371a0b81, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 07:58:46.985  3252  3407 I WM-WorkerWrapper: Setting status to enqueued for 737b0f2d-9de4-4d6c-a927-16feab32f41e
+10-15 07:58:47.004  3673  3683 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=36 ]
+10-15 07:58:47.012  3252  3407 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 07:58:47.019  3252  3407 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=737b0f2d-9de4-4d6c-a927-16feab32f41e, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 07:58:47.029  1214  1220 W .gms.persistent: Missing inline cache for void aktq.g()
+10-15 07:58:47.037  3252  3436 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 07:58:47.038  3252  3436 W BugleAction: No default number, returning empty msisdn
+10-15 07:58:47.039  3252  3436 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=69 ]
+10-15 07:58:47.040  3252  3387 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 07:58:47.040  3252  3407 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 07:58:47.042  3673  3722 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.042  3673  3722 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.042  3673  3722 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:47.043  3673  3722 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:47.043  3673  3722 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.043  3252  3407 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 07:58:47.045  3673  3722 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 07:58:47.047  3252  3427 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 07:58:47.047  3252  3427 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 07:58:47.048  3252  3427 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 07:58:47.055  3252  3407 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 07:58:47.067  3673  3683 I BugleRcsEngine: triggerStopRcsStack for msisdn:redacted-pii:phone_number[chars:0,last2:] [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=36 ]
+10-15 07:58:47.068  3252  3423 I RcsClientLib: Disconnecting RcsEngineLifecycleService
+10-15 07:58:47.068  3673  3722 I BugleRcsEngine: handleMessage processing message:[STOP_RCS_STACK] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.068  3673  3722 I BugleRcsEngine: RCS engine STOP RCS stack [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.069  3673  3722 I BugleRcsEngine: imsModule is null, shutdown not required [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:47.069  3673  3722 I BugleRcsEngine: skipping imsModule.stop [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]" thread_id=61 ]
+10-15 07:58:47.069  3673  3722 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[5028322a-3ac7]>Handler" thread_id=61 ]
+10-15 07:58:47.070  3673  3722 I BugleRcsEngine: RCS Configuration storage in Bugle is disabled by p/h flag, using ProvisioningEngineStateCacheUtil.getProvisioningConfigurationForGivenSimIfExist() [CONTEXT log_prefix="ProvisioningEngineDataRetriever" thread_id=61 ]
+10-15 07:58:47.127  1512  2255 W SearchServiceCore: Abort, client detached.
+10-15 07:58:47.133  1214  1961 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(16, com.google.android.gms.icing.mdd) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:47.142  1214  1976 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(7, com.google.lighter.android#com.google.android.gms) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:47.144  1400  1400 I LT_PhenotypeApiImplV12: Phenotype registration succeeded
+10-15 07:58:47.156  1214  1976 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.people) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:47.177  1214  1961 I HeterodyneSyncScheduler: Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.westworld) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-15 07:58:47.253  1512  3056 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:47.254  1214  1993 W .gms.persistent: Weak pointer dereference blocked for 19 milliseconds.
+10-15 07:58:47.255  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:47.268  3252  3407 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 07:58:47.270  1512  1512 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:47.271   556  1834 W JobInfo : Job 'com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService#-43' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:47.272  3252  3427 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=68 ]
+10-15 07:58:47.274  3252  3368 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=46 ]
+10-15 07:58:47.279  3252  3372 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=49 ]
+10-15 07:58:47.280  3252  3436 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=69 ]
+10-15 07:58:47.292  1512  1512 I BgTaskExecutorImpl: (REDACTED) Starting %s background task %s.
+10-15 07:58:47.293  3252  3407 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 07:58:47.305  3252  3427 W BugleAction: Failed to get msisdn from Bugle
+10-15 07:58:47.305  3252  3427 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:47.306  3252  3427 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:47.308  3252  3392 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 07:58:47.316  3252  3427 I Bugle   : getRawTelephonyPhoneNumber redacted-pii[0-chars] [CONTEXT sub_id=-1 ]
+10-15 07:58:47.319  3252  3427 W BugleAction: No default number, returning empty msisdn
+10-15 07:58:47.321  3252  3427 I BugleRcsEngine: isRcsAvailableForSubId called with an invalid sub id: -2 [CONTEXT log_prefix="RcsProvisioningManager" thread_id=68 ]
+10-15 07:58:47.323  3252  3414 I BugleTransport: updateActiveTransport: refreshing chat transport
+10-15 07:58:47.323  3252  3414 I BugleTransport: refreshChatTransport: isChatAvailable: false, enabledTransport: 1, configuration: <empty>
+10-15 07:58:47.328  3252  3427 I RcsClientLib: Connecting RcsEngineLifecycleService
+10-15 07:58:47.329  3252  3427 W RcsClientLib: No CS.apk RCS service found. Is RCS running in Bugle?
+10-15 07:58:47.331  3252  3427 I RcsClientLib: shouldUseCarrierServicesJibeService: false, CarrierServices rcs service found: false
+10-15 07:58:47.333  3252  3406 I RcsClientLib: com.google.android.rcs.client.lifecycle.RcsEngineLifecycleService connected
+10-15 07:58:47.346  3252  3353 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=42 ]
+10-15 07:58:47.346  3252  3372 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=49 ]
+10-15 07:58:47.363  3252  3392 D MddListenableWorkerFactory: createWorker for class: com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim
+10-15 07:58:47.374  3252  3392 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=03da3d84-5bc6-4b17-b5e7-824c6118b71f, tags={ com.google.android.apps.messaging.shared.datamodel.workqueue.WorkQueueWorkerShim,data_upgrade- } ]
+10-15 07:58:47.379  1214  3420 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] idle (3609) at void pkf.run()(:com.google.android.gms@242335041@24.23.35 (190800-646585959):73) waiters=0 in void pkf.run() for 686ms
+10-15 07:58:47.432  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c8f350
+10-15 07:58:47.432  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c8f350
+10-15 07:58:47.432  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:47.433  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c8ee10
+10-15 07:58:47.434  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c8ee10
+10-15 07:58:47.441  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:47.441  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c82d90
+10-15 07:58:47.441  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c82d90
+10-15 07:58:47.442  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:47.442  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c8fa50
+10-15 07:58:47.442  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c8fa50
+10-15 07:58:47.446  3826  3896 I TestRunner: finished: blankPageRemovalStillKeepsTheContentPage(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

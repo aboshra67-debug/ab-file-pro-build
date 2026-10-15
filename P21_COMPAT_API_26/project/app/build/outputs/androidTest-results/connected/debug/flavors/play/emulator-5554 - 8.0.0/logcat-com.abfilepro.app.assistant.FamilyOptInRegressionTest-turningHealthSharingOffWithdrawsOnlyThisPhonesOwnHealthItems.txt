@@ -1,0 +1,31 @@
+10-15 07:55:58.440  4931  4950 I TestRunner: started: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:55:58.443  2643  2643 I MicroDetectionWorker: onReady
+10-15 07:55:58.444  2643  2762 I MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.aa.c@2b9cbb1
+10-15 07:55:58.446  2643  2827 I MicroRecognitionRunner: Detection finished
+10-15 07:55:58.446  2643  2827 W ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+10-15 07:55:58.450  2643  2872 I MicroRecognitionRunner: Stopping hotword detection.
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: onFatalError, processing error from engine(4)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: com.google.android.apps.gsa.shared.speech.b.g: Error reading from input stream
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.a.a(SourceFile:28)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.staticplugins.recognizer.j.b.run(SourceFile:15)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:457)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:14)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.bl.run(SourceFile:4)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at java.lang.Thread.run(Thread.java:764)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.shared.util.concurrent.a.ai.run(SourceFile:6)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.Tee.f(SourceFile:103)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.au.read(SourceFile:2)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at java.io.InputStream.read(InputStream.java:101)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.ao.run(SourceFile:18)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	at com.google.android.apps.gsa.speech.audio.an.run(SourceFile:2)
+10-15 07:55:58.454  2643  2827 W ErrorProcessor: 	... 9 more
+10-15 07:55:58.454  2643  2827 I AudioController: internalShutdown
+10-15 07:55:58.458  2643  2643 I MicroDetector: Keeping mic open: false
+10-15 07:55:58.458  2643  2643 I MicroDetectionWorker: #onError(false)
+10-15 07:55:58.459  2643  2830 I DeviceStateChecker: DeviceStateChecker cancelled
+10-15 07:55:58.480  4931  4950 I TestRunner: finished: turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

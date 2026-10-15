@@ -1,0 +1,10 @@
+10-15 07:55:58.342  4931  4950 I TestRunner: started: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:55:58.368  1513  1513 I keystore: del USRPKEY_ab_file_pro_family_sync_token_v1 10077
+10-15 07:55:58.368  1513  1513 I keystore: del USRSKEY_ab_file_pro_family_sync_token_v1 10077
+10-15 07:55:58.368  1513  1513 I keystore: del USRCERT_ab_file_pro_family_sync_token_v1 10077
+10-15 07:55:58.369  1513  1513 I keystore: del CACERT_ab_file_pro_family_sync_token_v1 10077
+10-15 07:55:58.385  2643  2643 I MicroDetectionWorker: #updateMicroDetector [detectionMode: [mDetectionMode: [1]]]
+10-15 07:55:58.391  2643  2643 I MicroDetectionWorker: #startMicroDetector [speakerMode: 0]
+10-15 07:55:58.399  2643  2643 I AudioController: Using mInputStreamFactoryBuilder
+10-15 07:55:58.409  2643  2643 I MicroDetectionWorker: onReady
+10-15 07:55:58.416  4931  4950 I TestRunner: finished: preP17AutomaticRegistrationIsPausedUntilConfirmed(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

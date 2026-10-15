@@ -1,0 +1,3 @@
+10-15 07:59:23.071  4834  5001 I TestRunner: started: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:59:23.079  5332  5332 I DefaultInitializer: Initialized process com.google.android.googlequicksearchbox
+10-15 07:59:23.087  4834  5001 I TestRunner: finished: undoChangedSameLengthSameTimeFilePreservesNewData(com.abfilepro.app.core.StorageSafetyRegressionTest)

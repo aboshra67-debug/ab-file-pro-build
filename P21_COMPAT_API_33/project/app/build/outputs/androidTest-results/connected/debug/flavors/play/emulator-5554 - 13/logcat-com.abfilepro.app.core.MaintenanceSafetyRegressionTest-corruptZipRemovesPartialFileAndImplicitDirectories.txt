@@ -1,0 +1,3 @@
+10-15 07:59:21.571  4834  5001 I TestRunner: started: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:21.586  1285  5318 I Authzen : [AuthZenEventHandler] Handling event: com.google.android.gms.gcm.REGISTERED
+10-15 07:59:21.624  4834  5001 I TestRunner: finished: corruptZipRemovesPartialFileAndImplicitDirectories(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,48 @@
+10-15 07:59:13.862  4834  5001 I TestRunner: started: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 07:59:13.868  5072  5072 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10120; state: ENABLED
+10-15 07:59:13.868  5052  5052 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10156; state: ENABLED
+10-15 07:59:13.871  5073  5073 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10144; state: ENABLED
+10-15 07:59:13.878  4934  5067 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.884  4934  5067 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.884  4934  5067 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.890  1662  2213 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 07:59:13.890  5073  5073 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/app/talkback/lib/x86_64:/product/app/talkback/talkback.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.marvin.talkback
+10-15 07:59:13.897  5072  5072 D nativeloader: Configuring classloader-namespace for other apk /system/framework/org.apache.http.legacy.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 07:59:13.907  1662  2213 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 07:59:13.913  5073  5073 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=34, uses_libraries=ALL, library_path=/product/app/talkback/lib/x86_64:/product/app/talkback/talkback.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.marvin.talkback
+10-15 07:59:13.915  5072  5072 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.media.remotedisplay.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 07:59:13.920  5052  5052 D nativeloader: Configuring classloader-namespace-shared for other apk /system_ext/priv-app/EmergencyInfo/EmergencyInfo.apk. target_sdk_version=33, uses_libraries=, library_path=/system_ext/priv-app/EmergencyInfo/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user_de/0/com.android.emergency:/system_ext/priv-app/EmergencyInfo:/system/lib64:/system_ext/lib64
+10-15 07:59:13.920  5072  5072 D nativeloader: Configuring classloader-namespace for other apk /system/framework/com.android.location.provider.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 07:59:13.921  5072  5072 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.extensions.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 07:59:13.921  5072  5072 D nativeloader: Configuring classloader-namespace for other apk /system_ext/framework/androidx.window.sidecar.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms
+10-15 07:59:13.924  5073  5073 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/app/talkback/talkback.apk. target_sdk_version=34, uses_libraries=, library_path=/product/app/talkback/lib/x86_64:/product/app/talkback/talkback.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.marvin.talkback:/product/lib64:/system/product/lib64
+10-15 07:59:13.933   760   817 D EGL_emulation: app_time_stats: avg=1742.56ms min=1742.56ms max=1742.56ms count=1
+10-15 07:59:13.950  5072  5072 D nativeloader: Configuring vendor-classloader-namespace for unbundled product apk /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk. target_sdk_version=33, uses_libraries=, library_path=/product/priv-app/PrebuiltGmsCore/lib/x86_64:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86_64:/product/lib64:/system/product/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.gms:/product/lib64:/system/product/lib64
+10-15 07:59:13.971  4934  4973 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.976  4834  5001 D OpenGLRenderer: --- Failed to create image decoder with message 'unimplemented'
+10-15 07:59:13.992  4934  4973 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.993  4934  4973 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.003  5073  5073 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.marvin.talkback' set to: 'default'
+10-15 07:59:14.003  5052  5052 V GraphicsEnvironment: ANGLE Developer option for 'com.android.emergency' set to: 'default'
+10-15 07:59:14.003  5072  5072 V GraphicsEnvironment: ANGLE Developer option for 'com.google.android.gms' set to: 'default'
+10-15 07:59:14.005  5072  5072 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.gms: false
+10-15 07:59:14.005  5072  5072 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 07:59:14.005  5073  5073 V GraphicsEnvironment: ANGLE GameManagerService for com.google.android.marvin.talkback: false
+10-15 07:59:14.006  5073  5073 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 07:59:14.006  5052  5052 V GraphicsEnvironment: ANGLE GameManagerService for com.android.emergency: false
+10-15 07:59:14.007  5052  5052 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 07:59:14.010  5052  5052 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 07:59:14.010  5072  5072 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-15 07:59:14.011  5073  5073 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 07:59:14.011  5052  5052 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 07:59:14.012  5073  5073 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 07:59:14.014  5072  5072 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: false
+10-15 07:59:14.016  1662  2128 I SP.AiAi : Sync for text-classifier-langid succeeded in 6674 ms: {added: [tc_model_436dc3fd14049b93d75788a8c0cc8eea], metadata: false
+10-15 07:59:14.048  1285  1285 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-15 07:59:14.054  4934  5050 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.emergency/settings/indexables_xml_res
+10-15 07:59:14.054  4934  5050 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.057  4934  5050 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.emergency/settings/indexables_raw
+10-15 07:59:14.057  4934  5050 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.059  4934  5050 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.emergency/settings/non_indexables_key
+10-15 07:59:14.059  4934  5050 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:14.065  4834  5001 I TestRunner: finished: retryAfterFailureDoesNotDuplicatePages(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

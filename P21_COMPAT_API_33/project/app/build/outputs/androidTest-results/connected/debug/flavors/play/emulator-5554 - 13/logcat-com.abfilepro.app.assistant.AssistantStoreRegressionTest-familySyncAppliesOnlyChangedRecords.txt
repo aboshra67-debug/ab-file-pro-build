@@ -1,0 +1,17 @@
+10-15 07:59:11.782  4834  5001 I TestRunner: started: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:59:11.790  1086  1106 W Enable2gPreferenceController: Telephony manager not yet initialized
+10-15 07:59:11.800  1811  2498 W LocationOracle: getBestLocation(): no location is available
+10-15 07:59:11.801  1086  1106 D VoNrSettings: init:
+10-15 07:59:11.805  1086  1106 D VoNrSettings: mHas5gCapability: true,mIsNrEnabledFromCarrierConfig: true,mIsVonrEnabledFromCarrierConfig: false,mIsVonrVisibleFromCarrierConfig: true
+10-15 07:59:11.805  1086  1106 D VoNrSettings: init:
+10-15 07:59:11.805  1086  1106 D VoNrSettings: mHas5gCapability: true,mIsNrEnabledFromCarrierConfig: true,mIsVonrEnabledFromCarrierConfig: false,mIsVonrVisibleFromCarrierConfig: true
+10-15 07:59:11.828  1811  2705 I NetworkRecognitionRnr: Using pair HTTP connection
+10-15 07:59:11.828  4890  4956 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 07:59:11.829  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.DisableSimFooterPreferenceController@6a25f69
+10-15 07:59:11.829  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.NrDisabledInDsdsFooterPreferenceController@6acdee
+10-15 07:59:11.832  1086  1106 V SettingsSearchProvider: com.android.settings.connecteddevice.NfcAndPaymentFragment$1@c27b91c tried to add an empty non-indexable key
+10-15 07:59:11.833  1086  1106 W BaseSearchIndex: Error initial controller
+10-15 07:59:11.833  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AirplaneModePreferenceController
+10-15 07:59:11.842  1811  2904 I A       : [Upload] Connected
+10-15 07:59:11.845  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AllInOneTetherPreferenceController
+10-15 07:59:11.847  4834  5001 I TestRunner: finished: familySyncAppliesOnlyChangedRecords(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

@@ -1,0 +1,4 @@
+10-15 07:58:52.376  3826  3896 I TestRunner: started: playChannelDisablesSelfUpdate(com.abfilepro.app.core.PlayChannelPolicyTest)
+10-15 07:58:52.382  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.managedomainurls.InstantAppAccountPreferenceController
+10-15 07:58:52.386  1331  1687 I SP      : Successfully got manifest for gboard-small-speech-packs-manifest: manifests:gboard-small-speech-packs-1327534105
+10-15 07:58:52.387  3826  3896 I TestRunner: finished: playChannelDisablesSelfUpdate(com.abfilepro.app.core.PlayChannelPolicyTest)

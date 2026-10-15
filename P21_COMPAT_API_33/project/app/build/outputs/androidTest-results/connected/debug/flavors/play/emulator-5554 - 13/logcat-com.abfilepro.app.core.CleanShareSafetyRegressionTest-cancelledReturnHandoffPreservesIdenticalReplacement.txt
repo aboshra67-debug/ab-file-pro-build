@@ -1,0 +1,15 @@
+10-15 07:59:16.657  4834  5001 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:16.685  1057  3831 I Herrevad: [234] aqwl.a: updateListenState
+10-15 07:59:16.697  1057  5166 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_CONN_ALARM type: 2 triggerAtMillis: 155694]
+10-15 07:59:16.718  1285  5160 I MobileDataHub: Scheduling periodic tasks
+10-15 07:59:16.718  1285  5160 W MobileDataHub: [Service] appsupload-periodic periodic task disabled
+10-15 07:59:16.748  3446  3514 I RemoteProvisioningService: Notify key generated ping for secLevel: 1
+10-15 07:59:16.751  3446  3514 I RemoteProvisioner: Pool status 6, 5, 0, 6
+10-15 07:59:16.751  3446  3514 I RemoteProvisioningService: Pool status.
+10-15 07:59:16.751  3446  3514 I RemoteProvisioningService: Total: 6
+10-15 07:59:16.751  3446  3514 I RemoteProvisioningService: Attested: 6
+10-15 07:59:16.751  3446  3514 I RemoteProvisioningService: Unassigned: 5
+10-15 07:59:16.751  3446  3514 I RemoteProvisioningService: Expiring: 0
+10-15 07:59:16.751  3446  3514 I RemoteProvisioningService.KeyPoolStats: Sufficient keys are available, no CSR needed.
+10-15 07:59:16.751  3446  3514 I RemoteProvisioningService: No provisioning needed.
+10-15 07:59:16.771  4834  5001 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

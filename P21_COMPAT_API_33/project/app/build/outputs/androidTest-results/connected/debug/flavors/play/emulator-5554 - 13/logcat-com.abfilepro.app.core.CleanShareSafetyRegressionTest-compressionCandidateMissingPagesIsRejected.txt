@@ -1,0 +1,54 @@
+10-15 07:59:15.025  4834  5001 I TestRunner: started: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:15.035  1057  3066 I Auth    : [WorkAccountServiceImpl] init work authenticator
+10-15 07:59:15.063  1285  5154 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.BOOT_COMPLETED
+10-15 07:59:15.063  1285  5154 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-15 07:59:15.064  1285  5154 W Auth    : [PubsubPeriodicSyncherRuntimeInit] Initializing periodic tasks, IntentAction=android.intent.action.BOOT_COMPLETED, InitRuntimeState=2
+10-15 07:59:15.066  1285  5156 I Ads     : Initialized AdMob in container 23.18.18 (190800-535401451)
+10-15 07:59:15.077  1057  4333 W EasyUnlock: [EasyUnlockSupportReporterIntentOperation] Invalid account list. [CONTEXT service_id=234 ]
+10-15 07:59:15.079  1285  5156 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Initializing auth_folsom
+10-15 07:59:15.080  1285  5156 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.FolsomPublicKeyUpdateService is already enabled. Ignore.
+10-15 07:59:15.084  1285  5156 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] com.google.android.gms.auth.folsom.service.GcmReceiverService is already enabled. Ignore.
+10-15 07:59:15.086  1057  4354 W EasyUnlock: [HostValidator] Invalid account list. [CONTEXT service_id=234 ]
+10-15 07:59:15.093  1285  5154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+10-15 07:59:15.094  1285  5154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-15 07:59:15.096  1285  5154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-15 07:59:15.097  1285  5154 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.EmmActivity
+10-15 07:59:15.098  1285  5154 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] enabling com.google.android.gms.auth.managed.ui.PhoneskyDpcInstallActivity
+10-15 07:59:15.100  1285  5162 I Authzen : [AuthZenEventHandler] Handling event: android.intent.action.BOOT_COMPLETED
+10-15 07:59:15.106  1285  5154 W Auth    : [AuthManaged, SettingsSecurityDeviceOwnerChimeraActivity] device owner: n/a
+10-15 07:59:15.108  1285  5154 I Auth    : [AuthManaged, AuthManagedModuleInitIntentOperation] disabling com.google.android.gms.auth.managed.ui.SettingsSecurityDeviceOwnerActivity
+10-15 07:59:15.108  1285  5162 I Authzen : [TransactionCache] Clearing transaction cache
+10-15 07:59:15.113  1285  5154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Updating password complexity components state.
+10-15 07:59:15.113  1285  5154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+10-15 07:59:15.114  1285  5154 I Auth    : [AuthManaged, PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+10-15 07:59:15.116   485  1833 V RecoverableKeyStoreMgr: Not updating secret types - same as old value.
+10-15 07:59:15.117  1285  5156 I RecoverableKeyStoreGms: [RecoverableKeyStoreGmsInitOperation] Setting vault handle
+10-15 07:59:15.119   485  1833 V RecoverableKeyStoreMgr: Not updating server params - same as old value.
+10-15 07:59:15.123  1285  1285 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 07:59:15.123  1285  1285 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 07:59:15.125   485  1833 I RecoverySnapshotLstnrs: Registered listener for agent with uid 10120
+10-15 07:59:15.128  1285  5156 I RecoverableKeyStoreGms: [EnrollmentManager] Returning certificates list from cache [CONTEXT service_id=172 ]
+10-15 07:59:15.130  1285  1285 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+10-15 07:59:15.132  1285  2715 I AutofillModuleInitInten: AutofillModuleInitIntentOperation onInitRuntimeState(2) [CONTEXT service_id=177 ]
+10-15 07:59:15.136  1285  5154 V Backup  : [MigrateUtil] Clearing migrate temp dir: /data/user/0/com.google.android.gms/files/migrate_dir
+10-15 07:59:15.142  1285  4519 I SystemUpdate: [Execution,InstallationEventIntentOperation] Handling event of type 1.
+10-15 07:59:15.165  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.165  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.165  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.165  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.165  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.165  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.166  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.167  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.167  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:15.176  1285  1293 I gle.android.gms: Background young concurrent copying GC freed 124555(6069KB) AllocSpace objects, 55(2772KB) LOS objects, 30% free, 17MB/24MB, paused 283us,21us total 170.853ms
+10-15 07:59:15.189  4834  5001 I TestRunner: finished: compressionCandidateMissingPagesIsRejected(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

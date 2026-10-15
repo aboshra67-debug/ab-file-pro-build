@@ -1,0 +1,6 @@
+10-15 07:59:20.850  4834  5001 I TestRunner: started: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:20.855  1659  2556 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:59:20.856  1659  2556 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:59:20.857  1659  2556 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:59:20.859  1659  2556 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:59:20.885  4834  5001 I TestRunner: finished: jpegOutputStillPreservesTheOriginalPng(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,5 @@
+10-15 07:55:58.421  4931  4950 I TestRunner: started: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:55:58.424  2643  2827 I MicroRecognitionRunner: Starting detection.
+10-15 07:55:58.428  2643  2762 I MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.aa.c@2b9cbb1
+10-15 07:55:58.431  1509  4961 I AudioFlinger: AudioFlinger's thread 0xecb03300 tid=4961 ready to run
+10-15 07:55:58.436  4931  4950 I TestRunner: finished: preP17CodeWithoutRegistrationIsDiscarded(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

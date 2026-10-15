@@ -1,0 +1,7 @@
+10-15 07:58:50.642  3826  3896 I TestRunner: started: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:50.646  1512  3056 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:50.651  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of com.google.android.apps.messaging.shared.experiments.receiver.BuglePhenotypeBroadcastReceiver@548207
+10-15 07:58:50.658  4012  4012 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-15 07:58:50.660  1512  1512 I PhenotypeBackgroundRecv: Skipping googledata.experiments.mobile.assistant.client_packages.component.nlu_ff.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:50.661  1860  2329 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.consentverifier#com.google.android.partnersetup
+10-15 07:58:50.686  3826  3896 I TestRunner: finished: unchangedRenameUndoStillRestoresOriginalName(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

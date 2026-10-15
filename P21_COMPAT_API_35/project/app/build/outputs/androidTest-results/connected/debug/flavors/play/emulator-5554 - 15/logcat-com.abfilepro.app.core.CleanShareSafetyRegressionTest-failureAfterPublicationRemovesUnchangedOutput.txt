@@ -1,0 +1,4 @@
+10-15 07:58:44.488  3826  3896 I TestRunner: started: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:44.507  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.524  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.536  3826  3896 I TestRunner: finished: failureAfterPublicationRemovesUnchangedOutput(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

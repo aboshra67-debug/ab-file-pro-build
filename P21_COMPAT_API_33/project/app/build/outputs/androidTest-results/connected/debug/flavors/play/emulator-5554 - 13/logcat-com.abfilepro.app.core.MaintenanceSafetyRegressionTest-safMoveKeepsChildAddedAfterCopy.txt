@@ -1,0 +1,32 @@
+10-15 07:59:21.122  4834  5001 I TestRunner: started: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:21.139   288   288 D Zygote  : Forked child process 5302
+10-15 07:59:21.140  1057  3387 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (3271) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=0 in void hjm.run() for 52.812s
+10-15 07:59:21.142  1057  3112 W .gms.persistent: Long monitor contention with owner [com.google.android.gms.chimera.container.intentoperation.PersistentIntentOperationChimeraService-Executor] processing com.google.android.gms.platformconfigurator.PhenotypeConfigurationUpdateListener for action com.google.android.gms.chimera.container.CONTAINER_UPDATED (3271) at void hjm.run()(:com.google.android.gms@231818047@23.18.18 (190800-535401451):3) waiters=1 in void hjm.run() for 15.851s
+10-15 07:59:21.145  1057  3387 I NewModuleComplete: Received com.google.android.chimera.IntentOperation.NEW_MODULE(com.google.android.gms.chimera.PersistentIntentOperationService,2,true)
+10-15 07:59:21.155  1285  5157 I NewModuleHelper: Received com.google.android.chimera.container.NEW_MODULE_FINALIZE(2/0): com.google.android.gms.chimera.PersistentIntentOperationService,2,true
+10-15 07:59:21.156  5302  5302 I mainttrial.test: Late-enabling -Xcheck:jni
+10-15 07:59:21.247  5302  5302 I mainttrial.test: Using CollectorTypeCC GC.
+10-15 07:59:21.250  5302  5302 W mainttrial.test: Unexpected CPU variant for x86: x86_64.
+10-15 07:59:21.250  5302  5302 W mainttrial.test: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 07:59:21.266   373   385 I adbd    : jdwp connection from 5302
+10-15 07:59:21.292  1057  1064 I .gms.persistent: Compiler allocated 4994KB to compile void bwhy.C(java.util.Set, long, dmuh, dmui, java.util.List, java.util.LinkedHashMap, dzew, bwhx, boolean)
+10-15 07:59:21.300  5302  5302 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10175; state: ENABLED
+10-15 07:59:21.313  5302  5302 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 07:59:21.319  5302  5302 D nativeloader: Configuring classloader-namespace for other apk /system/framework/android.test.mock.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~yi1U3uZBDVtaVMzHngoJjg==/com.abfilepro.app.p21mainttrial.test-l_HrUQtY921kN48G4CH_fg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 07:59:21.321  5302  5302 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-15 07:59:21.323  5302  5302 W mainttrial.test: ClassLoaderContext shared library size mismatch. Expected=0, found=2 (PCL[] | PCL[]{PCL[/system/framework/android.test.base.jar*2876549756]#PCL[/system/framework/android.test.mock.jar*4109917914]})
+10-15 07:59:21.325  5302  5302 D nativeloader: Configuring classloader-namespace for other apk /system/framework/android.test.runner.jar. target_sdk_version=36, uses_libraries=ALL, library_path=/data/app/~~yi1U3uZBDVtaVMzHngoJjg==/com.abfilepro.app.p21mainttrial.test-l_HrUQtY921kN48G4CH_fg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 07:59:21.326  5302  5302 W ziparchive: Unable to open '/data/app/~~yi1U3uZBDVtaVMzHngoJjg==/com.abfilepro.app.p21mainttrial.test-l_HrUQtY921kN48G4CH_fg==/base.dm': No such file or directory
+10-15 07:59:21.326  5302  5302 W ziparchive: Unable to open '/data/app/~~yi1U3uZBDVtaVMzHngoJjg==/com.abfilepro.app.p21mainttrial.test-l_HrUQtY921kN48G4CH_fg==/base.dm': No such file or directory
+10-15 07:59:21.341  5302  5302 D nativeloader: Configuring classloader-namespace for other apk /data/app/~~yi1U3uZBDVtaVMzHngoJjg==/com.abfilepro.app.p21mainttrial.test-l_HrUQtY921kN48G4CH_fg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~yi1U3uZBDVtaVMzHngoJjg==/com.abfilepro.app.p21mainttrial.test-l_HrUQtY921kN48G4CH_fg==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.abfilepro.app.p21mainttrial.test
+10-15 07:59:21.350  5302  5302 V GraphicsEnvironment: ANGLE Developer option for 'com.abfilepro.app.p21mainttrial.test' set to: 'default'
+10-15 07:59:21.351  5302  5302 V GraphicsEnvironment: ANGLE GameManagerService for com.abfilepro.app.p21mainttrial.test: false
+10-15 07:59:21.351  5302  5302 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-15 07:59:21.354  5302  5302 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 07:59:21.357  5302  5302 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-15 07:59:21.373  5302  5302 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:59:21.415  1057  5166 E GmsTaskScheduler: sendWakeUpEvent called on SchedulerClientBroadcastStrategy
+10-15 07:59:21.443  1285  4777 I GCM-GMS : Got GMS registration
+10-15 07:59:21.452  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService finished executing. cause:5 result: 1 elapsed_millis: 784 uptime_millis: 784 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:21.483  1057  1057 I GCoreUlr: GCM registration ID changed: Intent { act=com.google.android.gms.gcm.REGISTERED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/com.google.android.location.reporting.service.GcmRegistrationReceiver (has extras) }
+10-15 07:59:21.525  4834  5001 I TestRunner: finished: safMoveKeepsChildAddedAfterCopy(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,10 @@
+10-15 07:58:48.528  3826  3896 I TestRunner: started: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:48.569  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.570  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c935d0
+10-15 07:58:48.570  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c935d0
+10-15 07:58:48.571  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.571  3826  3935 E document: Parse Document failed (err=3).
+10-15 07:58:48.581  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:48.581  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c8ec50
+10-15 07:58:48.581  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c8ec50
+10-15 07:58:48.584  3826  3896 I TestRunner: finished: invalidCompressionCandidateKeepsValidCleanedPdf(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

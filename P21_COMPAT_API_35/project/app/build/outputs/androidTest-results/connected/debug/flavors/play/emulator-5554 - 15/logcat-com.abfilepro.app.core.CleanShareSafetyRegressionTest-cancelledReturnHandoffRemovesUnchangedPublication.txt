@@ -1,0 +1,19 @@
+10-15 07:58:46.821  3826  3896 I TestRunner: started: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:46.831  3252  3427 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 07:58:46.832  3252  3392 I BugleRcsProvisioning: BugleSystemBindingManager: onBuglePhenotypeFlagChanged
+10-15 07:58:46.835  3252  3418 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=64 ]
+10-15 07:58:46.836  3252  3369 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=47 ]
+10-15 07:58:46.836  3252  3372 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=49 ]
+10-15 07:58:46.839  3252  3418 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=64 ]
+10-15 07:58:46.861  3252  3392 I BugleTransport: onBuglePhenotypeFlagChanged: kicking off updateActiveTransport
+10-15 07:58:46.866  3252  3436 W BugleAction: Failed to get msisdn from Bugle
+10-15 07:58:46.868  3252  3436 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:46.874  3252  3436 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:46.875  3252  3371 I BugleTransport: isChatAvailable: RcsAvailability is DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+10-15 07:58:46.879  3252  3436 W Bugle   : Bugle: SubscriptionMetadataUtils get: unexpected subId = -2, replacing with -1
+10-15 07:58:46.890  3252  3383 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=51 ]
+10-15 07:58:46.891  3252  3372 I BugleRcsEngine: SystemBinding enabled: true [CONTEXT log_prefix="SystemBindingManager" thread_id=49 ]
+10-15 07:58:46.892  3252  3371 W BugleRcsEngine: Unable to send diagnostic log [CONTEXT thread_id=48 ]
+10-15 07:58:46.893  3252  3368 I BugleRcsEngine: System Binding updated [CONTEXT thread_id=46 ]
+10-15 07:58:46.900  3964  3964 D nativeloader: Configuring clns-shared-7 for other apk /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk. target_sdk_version=35, uses_libraries=, library_path=/apex/com.android.extservices/priv-app/GoogleExtServices@350820300/lib/x86_64:/apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk!/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.ext.services:/apex/com.android.extservices/priv-app/GoogleExtServices@350820300:/system/lib64:/system_ext/lib64
+10-15 07:58:46.904  3826  3896 I TestRunner: finished: cancelledReturnHandoffRemovesUnchangedPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

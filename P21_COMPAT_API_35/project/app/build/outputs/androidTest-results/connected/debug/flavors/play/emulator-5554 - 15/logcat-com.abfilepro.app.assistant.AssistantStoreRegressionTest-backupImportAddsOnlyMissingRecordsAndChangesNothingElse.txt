@@ -1,0 +1,8 @@
+10-15 07:58:39.120  3826  3896 I TestRunner: started: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)
+10-15 07:58:39.125  1214  1214 I Fido    : [CableAuthenticatorChimeraService] Registering broadcast receiver.
+10-15 07:58:39.126  1400  2619 I HomeStubModuleLoader: Thread download is not enabled. [CONTEXT service_id=336 ]
+10-15 07:58:39.142  3254  3884 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:39.145  1214  1214 I Fido    : [AuthenticatorChimeraService] Unregistered the broadcast receiver [CONTEXT service_id=287 ]
+10-15 07:58:39.155  3252  3427 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:39.166  1400  3811 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.locationsharingreporter, using defaults.
+10-15 07:58:39.171  3826  3896 I TestRunner: finished: backupImportAddsOnlyMissingRecordsAndChangesNothingElse(com.abfilepro.app.assistant.AssistantStoreRegressionTest)

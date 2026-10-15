@@ -1,0 +1,73 @@
+10-15 07:58:51.182  3826  3896 I TestRunner: started: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:51.185  1331  1331 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 07:58:51.187  1331  1931 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.libraries.performance.primes#com.google.android.inputmethod.latin
+10-15 07:58:51.192  1331  1331 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 07:58:51.196   902   902 D ControlsListingControllerImpl: ServiceConfig reloaded, count: 0
+10-15 07:58:51.207  1447  2127 V MediaProvider: attachVolume() called for external_primary with state:null
+10-15 07:58:51.211  3987  3987 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:58:51.215  1085  1144 W Enable2gPreferenceController: Telephony manager not yet initialized
+10-15 07:58:51.218  3252  3387 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@f4c6d4a
+10-15 07:58:51.244  1085  1144 E ConvertToEsimPreference: Fail to check pSIM conversion supported carrier: Attempt to invoke virtual method 'boolean android.telephony.euicc.EuiccManager.isPsimConversionSupported(int)' on a null object reference
+10-15 07:58:51.248  1085  1144 E ConvertToEsimPreference: Fail to check pSIM conversion supported carrier: Attempt to invoke virtual method 'boolean android.telephony.euicc.EuiccManager.isPsimConversionSupported(int)' on a null object reference
+10-15 07:58:51.255  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.DisableSimFooterPreferenceController@7fa7237
+10-15 07:58:51.255  1085  1144 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.network.telephony.NrDisabledInDsdsFooterPreferenceController@1f993a4
+10-15 07:58:51.259  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningLocalePreferenceController
+10-15 07:58:51.261  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
+10-15 07:58:51.269  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batteryusage.BatteryChartPreferenceController
+10-15 07:58:51.269  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.fuelgauge.batteryusage.BatteryChartPreferenceController
+10-15 07:58:51.274  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batteryusage.BatteryUsageBreakdownController
+10-15 07:58:51.274  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.fuelgauge.batteryusage.BatteryUsageBreakdownController
+10-15 07:58:51.274  1085  1144 W PrefCtrlListHelper: battery_tips_category already has a controller
+10-15 07:58:51.274  1085  1144 W PrefCtrlListHelper: screen_on_time_category already has a controller
+10-15 07:58:51.281  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 07:58:51.281  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPreferenceController
+10-15 07:58:51.281  1085  1144 W PrefCtrlListHelper: encryption_and_credentials_encryption_status already has a controller
+10-15 07:58:51.298  3673  3712 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:51.306  1447  2127 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:58:51.307  1447  2127 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:58:51.308  1447  2127 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:58:51.310  1447  2127 W MediaProvider: isAppCloneUserPair for user 0: false
+10-15 07:58:51.311  1331  1931 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.learning#com.google.android.inputmethod.latin
+10-15 07:58:51.316  1331  1331 I PhenotypeModule: PhenotypeModule.receiveBroadcast():563 onReceive() urgent = false
+10-15 07:58:51.316  1331  1331 I PhenotypeBackgroundRecv: Skipping com.google.android.inputmethod.latin#com.google.android.inputmethod.latin which doesn't use ProcessStable flags.
+10-15 07:58:51.318  1447  1603 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android to set project id.: Operation not permitted
+10-15 07:58:51.319  1447  1603 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android
+10-15 07:58:51.319  1447  1603 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2598)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:976)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:951)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider$5.lambda$onInsert$0(MediaProvider.java:1010)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider$5.$r8$lambda$4KU7YPdO1inr9tOLVzprJ5YcfCE(MediaProvider.java:0)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider$5$$ExternalSyntheticLambda2.run(R8$$SyntheticClass:0)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at android.os.Looper.loop(Looper.java:317)
+10-15 07:58:51.319  1447  1603 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+10-15 07:58:51.320  1447  1603 E StorageManager: Failed to set extended attributes for /storage/emulated/0/Android/media to set project id.: Operation not permitted
+10-15 07:58:51.320  1447  1603 W MediaProvider: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 07:58:51.320  1447  1603 W MediaProvider: java.io.IOException: Failed to update quota type for /storage/emulated/0/Android/media
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at android.os.storage.StorageManager.updateExternalStorageFileQuotaType(StorageManager.java:2598)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForFileInternal(MediaProvider.java:976)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider.updateQuotaTypeForUri(MediaProvider.java:951)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider$5.lambda$onInsert$0(MediaProvider.java:1010)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider$5.$r8$lambda$4KU7YPdO1inr9tOLVzprJ5YcfCE(MediaProvider.java:0)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at com.android.providers.media.MediaProvider$5$$ExternalSyntheticLambda2.run(R8$$SyntheticClass:0)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at android.os.Looper.loop(Looper.java:317)
+10-15 07:58:51.320  1447  1603 W MediaProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+10-15 07:58:51.322  1447  2127 I MediaProvider: Scanned external_primary due to REASON_MOUNTED, found 17 items in 25ms, 4 inserts 0 updates 0 deletes
+10-15 07:58:51.325   355   405 I netd    : tetherGetStats() -> {[]} <2.12ms>
+10-15 07:58:51.328  1447  2127 I MediaProvider: End Intent { act=com.android.providers.media.action.SCAN_VOLUME (has extras) }
+10-15 07:58:51.337  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.credentials.CredentialManagerPreferenceController
+10-15 07:58:51.337  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.applications.credentials.CredentialManagerPreferenceController
+10-15 07:58:51.342  1331  1331 I DeviceModeMonitor2: DeviceModeMonitor2.calculateAndNotify():72 Window metrics is not available, fallback to app context.
+10-15 07:58:51.344  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.transcode.TranscodeUserControlPreferenceController
+10-15 07:58:51.344  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.transcode.TranscodeGlobalTogglePreferenceController
+10-15 07:58:51.344  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.transcode.TranscodeDefaultOptionPreferenceController
+10-15 07:58:51.344  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.transcode.TranscodeNotificationPreferenceController
+10-15 07:58:51.344  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.development.transcode.TranscodeDisableCachePreferenceController
+10-15 07:58:51.344  1085  1144 V SettingsSearchProvider: com.android.settings.development.transcode.TranscodeSettingsFragment$1@bc96726 tried to add an empty non-indexable key
+10-15 07:58:51.348  3826  3896 I TestRunner: finished: safMoveRejectsIncompleteDestinationBeforeDeletingOriginal(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

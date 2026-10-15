@@ -1,0 +1,8 @@
+10-15 07:58:43.980  3826  3896 I TestRunner: started: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:43.988  1214  2525 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.notifications.registration.service.NotificationsRegistrationTaskBoundService started execution. cause:7 exec_start_elapsed_seconds: 103 [CONTEXT service_id=218 ]
+10-15 07:58:44.012  1400  1400 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.ocr.service.internal.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsInternalApiService }
+10-15 07:58:44.023   556   826 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 07:58:44.026   556   826 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-15 07:58:44.027   556   826 D InetDiagMessage: Destroyed live tcp sockets for uids={10145} in 4ms
+10-15 07:58:44.028   556   826 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-15 07:58:44.028  3826  3896 I TestRunner: finished: cancelledReturnHandoffPreservesIdenticalReplacement(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

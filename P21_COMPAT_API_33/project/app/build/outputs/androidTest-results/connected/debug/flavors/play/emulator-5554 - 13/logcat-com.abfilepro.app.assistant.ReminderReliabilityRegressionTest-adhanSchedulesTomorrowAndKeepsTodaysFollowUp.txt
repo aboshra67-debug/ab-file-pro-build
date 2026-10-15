@@ -1,0 +1,8 @@
+10-15 07:59:12.585  4834  5001 I TestRunner: started: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 07:59:12.623  1086  1106 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 07:59:12.627  1086  1106 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 07:59:12.642  1086  1106 D CustomizableLockScreenUtils: is_custom_lock_screen_quick_affordances_feature_enabled=0
+10-15 07:59:12.648  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.TapScreenGesturePreferenceController@3eeb64f
+10-15 07:59:12.648  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.DoubleTapScreenPreferenceController@849e1dc
+10-15 07:59:12.648  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.PickupGesturePreferenceController@66e62e5
+10-15 07:59:12.665  4834  5001 I TestRunner: finished: adhanSchedulesTomorrowAndKeepsTodaysFollowUp(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

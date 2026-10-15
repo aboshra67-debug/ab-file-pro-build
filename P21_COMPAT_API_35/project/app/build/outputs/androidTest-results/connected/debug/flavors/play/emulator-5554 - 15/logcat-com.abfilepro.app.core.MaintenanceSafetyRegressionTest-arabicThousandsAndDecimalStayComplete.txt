@@ -1,0 +1,6 @@
+10-15 07:58:50.616  3826  3896 I TestRunner: started: arabicThousandsAndDecimalStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:50.629  4012  4012 I gs.intelligence: Using CollectorTypeCMC GC.
+10-15 07:58:50.630  4012  4012 W gs.intelligence: Unexpected CPU variant for x86: x86_64.
+10-15 07:58:50.630  4012  4012 W gs.intelligence: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-15 07:58:50.633  4012  4012 E gs.intelligence: Not starting debugger since process cannot load the jdwp agent.
+10-15 07:58:50.637  3826  3896 I TestRunner: finished: arabicThousandsAndDecimalStayComplete(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

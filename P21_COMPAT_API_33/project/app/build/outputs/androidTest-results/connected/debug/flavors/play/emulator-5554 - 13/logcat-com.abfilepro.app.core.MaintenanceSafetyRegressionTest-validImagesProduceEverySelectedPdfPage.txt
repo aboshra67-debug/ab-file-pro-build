@@ -1,0 +1,61 @@
+10-15 07:59:22.147  4834  5001 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: Get slice data from XML failed
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: java.lang.IllegalStateException: Invalid preference controller: com.android.settings.network.NetworkProviderSimsCategoryController
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:146)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceBuilderUtils.getPreferenceController(SliceBuilderUtils.java:362)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromXML(SliceDataConverter.java:204)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromProvider(SliceDataConverter.java:149)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceData(SliceDataConverter.java:119)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.getSliceData(SlicesIndexer.java:94)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.indexSliceData(SlicesIndexer.java:75)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesFeatureProviderImpl.indexSliceData(SlicesFeatureProviderImpl.java:63)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.verifyIndexing(SlicesDatabaseAccessor.java:194)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceUris(SlicesDatabaseAccessor.java:96)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SettingsSliceProvider.onGetSliceDescendants(SettingsSliceProvider.java:332)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.onGetSliceDescendants(SliceProviderWrapperContainer.java:165)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at android.app.slice.SliceProvider.handleGetDescendants(SliceProvider.java:425)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at android.app.slice.SliceProvider.call(SliceProvider.java:406)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.call(SliceProviderWrapperContainer.java:122)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: Caused by: java.lang.NoSuchMethodException: com.android.settings.network.NetworkProviderSimsCategoryController.<init> [class android.content.Context, class java.lang.String]
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at java.lang.Class.getConstructor0(Class.java:2363)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at java.lang.Class.getConstructor(Class.java:1759)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:141)
+10-15 07:59:22.152  1086  4981 W SliceDataConverter: 	... 19 more
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: Get slice data from XML failed
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: java.lang.IllegalStateException: Invalid preference controller: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:146)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceBuilderUtils.getPreferenceController(SliceBuilderUtils.java:362)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromXML(SliceDataConverter.java:204)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceDataFromProvider(SliceDataConverter.java:149)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SliceDataConverter.getSliceData(SliceDataConverter.java:119)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.getSliceData(SlicesIndexer.java:94)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesIndexer.indexSliceData(SlicesIndexer.java:75)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesFeatureProviderImpl.indexSliceData(SlicesFeatureProviderImpl.java:63)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.verifyIndexing(SlicesDatabaseAccessor.java:194)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SlicesDatabaseAccessor.getSliceUris(SlicesDatabaseAccessor.java:96)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.slices.SettingsSliceProvider.onGetSliceDescendants(SettingsSliceProvider.java:332)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.onGetSliceDescendants(SliceProviderWrapperContainer.java:165)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at android.app.slice.SliceProvider.handleGetDescendants(SliceProvider.java:425)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at android.app.slice.SliceProvider.call(SliceProvider.java:406)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at androidx.slice.compat.SliceProviderWrapperContainer$SliceProviderWrapper.call(SliceProviderWrapperContainer.java:122)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at android.content.ContentProvider.call(ContentProvider.java:2511)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at android.content.ContentProvider$Transport.call(ContentProvider.java:525)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:295)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: Caused by: java.lang.ClassNotFoundException: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at java.lang.Class.classForName(Native Method)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at java.lang.Class.forName(Class.java:454)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at java.lang.Class.forName(Class.java:379)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:139)
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	... 19 more
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: Caused by: java.lang.ClassNotFoundException: com.android.settings.applications.appinfo.ManageAppLocalePreferenceController
+10-15 07:59:22.163  1086  4981 W SliceDataConverter: 	... 23 more
+10-15 07:59:22.180  1086  4981 D RefreshRatePrefCtr: DEFAULT_REFRESH_RATE : 60.0 mPeakRefreshRate : 60.0
+10-15 07:59:22.196  1086  4981 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+10-15 07:59:22.217  4834  5001 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

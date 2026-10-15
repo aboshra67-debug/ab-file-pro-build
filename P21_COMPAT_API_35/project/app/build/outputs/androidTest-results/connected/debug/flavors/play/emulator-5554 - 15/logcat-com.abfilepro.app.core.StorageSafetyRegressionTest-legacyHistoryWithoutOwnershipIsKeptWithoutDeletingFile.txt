@@ -1,0 +1,4 @@
+10-15 07:58:54.556  3826  3896 I TestRunner: started: legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.569  1512  3068 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:54.597  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:54.622  3826  3896 I TestRunner: finished: legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile(com.abfilepro.app.core.StorageSafetyRegressionTest)

@@ -1,0 +1,2 @@
+10-15 07:59:21.639  4834  5001 I TestRunner: started: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:21.663  4834  5001 I TestRunner: finished: validPerspectiveCropStillProducesReadableImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

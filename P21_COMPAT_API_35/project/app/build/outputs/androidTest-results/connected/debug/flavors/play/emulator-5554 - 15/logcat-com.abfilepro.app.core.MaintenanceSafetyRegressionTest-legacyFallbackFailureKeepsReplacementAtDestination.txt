@@ -1,0 +1,15 @@
+10-15 07:58:52.256  3826  3896 I TestRunner: started: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:52.260  1331  1687 I SP      : Successfully got manifest for dynamic_art-manifest: manifests:dynamic_art-20220108
+10-15 07:58:52.280  1331  1687 I SP      : Successfully got manifest for emoji-manifest: manifests:emoji-2024051320
+10-15 07:58:52.291  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/ConfigUpdater/ConfigUpdater.apk' with 1 weak references
+10-15 07:58:52.292  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 07:58:52.292  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 07:58:52.292  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 07:58:52.293  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 07:58:52.293  1214  1223 W .gms.persistent: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 07:58:52.309  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingMainSwitchPreferenceController
+10-15 07:58:52.309  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.adaptivecharging.AdaptiveChargingFooterPreferenceController
+10-15 07:58:52.309  1085  1144 V SettingsSearchProvider: com.android.settings.display.ColorModePreferenceFragment$3@70fc73b tried to add an empty non-indexable key
+10-15 07:58:52.326  1866  4071 D DownloadManager: [11] Starting
+10-15 07:58:52.329  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.DoubleTapPowerPreferenceController
+10-15 07:58:52.335  3826  3896 I TestRunner: finished: legacyFallbackFailureKeepsReplacementAtDestination(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

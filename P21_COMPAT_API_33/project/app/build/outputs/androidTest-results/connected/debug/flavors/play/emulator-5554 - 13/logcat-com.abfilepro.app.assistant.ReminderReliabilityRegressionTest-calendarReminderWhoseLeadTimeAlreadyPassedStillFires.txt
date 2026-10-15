@@ -1,0 +1,104 @@
+10-15 07:59:12.885  4834  5001 I TestRunner: started: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)
+10-15 07:59:12.913  4890  4956 W Role    : Default holder doesn't have required signing certificate: com.google.android.apps.work.clouddpc:23962F4B43B9857638EA66F4D419518EAE282491ACDA4B94707BD59003C45E58
+10-15 07:59:12.943  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.SystemNavigationPreferenceController
+10-15 07:59:12.943  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.OneHandedEnablePreferenceController
+10-15 07:59:12.943  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.PowerButtonEndsCallPreferenceController
+10-15 07:59:12.943  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.LockScreenRotationPreferenceController
+10-15 07:59:12.943  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.DeviceStateAutoRotateOverviewController
+10-15 07:59:12.946  1662  2128 I SP.AiAi : Sync for text-classifier-actions succeeded in 6151 ms: {added: [tc_model_e202592534082c01f9642f709a627dd9], metadata: false
+10-15 07:59:12.948  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.gestures.OneHandedEnablePreferenceController@a66cca0
+10-15 07:59:12.959  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptionFooterPreferenceController
+10-15 07:59:12.976  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.NfcAndPaymentFragmentController
+10-15 07:59:12.976  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.wfd.WifiDisplayPreferenceController
+10-15 07:59:12.977  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.nfc.AndroidBeamPreferenceController
+10-15 07:59:12.979  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.uwb.UwbPreferenceController
+10-15 07:59:12.991  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.connecteddevice.NfcAndPaymentFragmentController@a1854ff
+10-15 07:59:12.994  1662  2836 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 335528 bytes from https://gstatic.com/matchmaker/tclib_models/langid/v1/tc_model_436dc3fd14049b93d75788a8c0cc8eea.zip.
+10-15 07:59:12.996  1086  1106 V SettingsSearchProvider: com.android.settings.wifi.WifiSettings$4@2565915 tried to add an empty non-indexable key
+10-15 07:59:12.998  1086  1106 V SettingsSearchProvider: com.android.settings.enterprise.EnterprisePrivacySettings$1@427421b tried to add an empty non-indexable key
+10-15 07:59:12.998  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.MagnificationModePreferenceController
+10-15 07:59:12.998  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationIllustrationPreferenceController
+10-15 07:59:12.998  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.notification.BubbleNotificationPreferenceController
+10-15 07:59:13.001  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.PrimaryMonoPreferenceController
+10-15 07:59:13.002  1086  1106 V SettingsSearchProvider: com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment$1@5969dd0 tried to add an empty non-indexable key
+10-15 07:59:13.002  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsPreferenceController
+10-15 07:59:13.002  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsLockScreenPreferenceController
+10-15 07:59:13.002  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.sound.MediaControlsRecommendationController
+10-15 07:59:13.003  1086  1106 V SettingsSearchProvider: com.google.android.settings.security.SecurityHubDashboard$1@ec0b185 tried to add an empty non-indexable key
+10-15 07:59:13.003  1086  1106 D FaceSettings: FaceManager is null
+10-15 07:59:13.003  1086  1106 D FaceSettings: FaceManager is null
+10-15 07:59:13.003  1086  1106 D FaceSettings: Get non indexable keys. isFaceHardwareDetected: false, size:12
+10-15 07:59:13.003  1086  1106 V SettingsSearchProvider: com.android.settings.biometrics.face.FaceSettings$1@bd8e80b tried to add an empty non-indexable key
+10-15 07:59:13.003  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.PickupGesturePreferenceController
+10-15 07:59:13.004  1086  1106 V SettingsSearchProvider: com.android.settings.emergency.EmergencyGestureSettings$1@f274ba6 tried to add an empty non-indexable key
+10-15 07:59:13.011  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.MultiUserTopIntroPreferenceController
+10-15 07:59:13.019  1662  2836 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip'
+10-15 07:59:13.021  1662  2836 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 613 bytes from https://gstatic.com/matchmaker/kg_collections_table/21051103/collections_table_main_21980965fbd997111d89f86c16e9e090.zip.
+10-15 07:59:13.022  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.TimeoutToDockUserPreferenceController
+10-15 07:59:13.022  1086  1106 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 07:59:13.022  1086  1106 V SettingsSearchProvider: com.google.android.settings.aware.AwareDisplaySettings$1@9688c3d tried to add an empty non-indexable key
+10-15 07:59:13.022  1086  1106 V SettingsSearchProvider: com.android.settings.display.NightDisplaySettings$1@cb44d83 tried to add an empty non-indexable key
+10-15 07:59:13.023  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.bluetooth.BluetoothDeviceRenamePreferenceController
+10-15 07:59:13.023  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.connecteddevice.AddDevicePreferenceController
+10-15 07:59:13.023  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 07:59:13.023  1086  1106 W PrefCtrlListHelper: Controller requires key but it's not defined in xml: com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesController
+10-15 07:59:13.093  1662  2213 I SP.AiAi : Download stopped: text-classifier-langid:tc_model_436dc3fd14049b93d75788a8c0cc8eea, succeeded, size: 335528
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: No service published for: ethernet
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:166)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$136.createService(SystemServiceRegistry.java:1809)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:1908)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1585)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2120)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:900)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.content.Context.getSystemService(Context.java:4168)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at com.android.settings.TetherSettings$2.getNonIndexableKeys(TetherSettings.java:612)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.getNonIndexableKeysFromProvider(SettingsSearchIndexablesProvider.java:284)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryNonIndexableKeys(SettingsSearchIndexablesProvider.java:157)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.provider.SearchIndexablesProvider.query(SearchIndexablesProvider.java:127)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1455)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1551)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:285)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.os.Binder.execTransactInternal(Binder.java:1280)
+10-15 07:59:13.130  1086  1106 E SystemServiceRegistry: 	at android.os.Binder.execTransact(Binder.java:1244)
+10-15 07:59:13.136  1662  2836 I AstreaHttpConnection: Started download from url='https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip'
+10-15 07:59:13.138  1662  2836 I AstreaHttpConnection: DOWNLOAD COMPLETE: Downloaded 309 bytes from https://gstatic.com/matchmaker/kg_actions_ranking_table/211005/table_5f787033cc44fc7a8804e0030b2bf848.zip.
+10-15 07:59:13.190  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.deviceadmin.DeviceAdminListPreferenceController
+10-15 07:59:13.191  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.CopyrightPreferenceController
+10-15 07:59:13.191  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.LicensePreferenceController
+10-15 07:59:13.191  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.TermsPreferenceController
+10-15 07:59:13.191  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.ModuleLicensesListPreferenceController
+10-15 07:59:13.191  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.WebViewLicensePreferenceController
+10-15 07:59:13.191  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.deviceinfo.legal.SourceCodeController
+10-15 07:59:13.191  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.WallpaperAttributionsPreferenceController
+10-15 07:59:13.223  1086  1106 V SettingsSearchProvider: com.android.settings.backup.PrivacySettings$1@66efc4 tried to add an empty non-indexable key
+10-15 07:59:13.224  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickCustomSeekbarController
+10-15 07:59:13.224  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.ToggleAutoclickFooterPreferenceController
+10-15 07:59:13.224  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreferenceController
+10-15 07:59:13.224  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityShortcutPreferenceController
+10-15 07:59:13.225  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.SelectLongPressTimeoutPreferenceController
+10-15 07:59:13.225  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityTimeoutPreferenceController
+10-15 07:59:13.225  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AutoclickPreferenceController
+10-15 07:59:13.227  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeActivationPreferenceController
+10-15 07:59:13.227  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.TwilightLocationPreferenceController
+10-15 07:59:13.227  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeScheduleSelectorController
+10-15 07:59:13.227  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController
+10-15 07:59:13.230  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.display.darkmode.DarkModeCustomBedtimePreferenceController@fe4d8a9
+10-15 07:59:13.231  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.location.RecentLocationAccessSeeAllPreferenceController
+10-15 07:59:13.231  1086  1106 V SettingsSearchProvider: com.android.settings.nfc.PaymentSettings$1@d72735c tried to add an empty non-indexable key
+10-15 07:59:13.231  1086  1106 W libc    : Access denied finding property "ro.vendor.aware_available"
+10-15 07:59:13.231  1086  1106 V SettingsSearchProvider: com.google.android.settings.aware.SilenceGestureSettings$1@96abf3a tried to add an empty non-indexable key
+10-15 07:59:13.231  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppHeaderController
+10-15 07:59:13.232  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppButtonsController
+10-15 07:59:13.232  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPolicyController
+10-15 07:59:13.235  1086  1106 V WifiManager: registerSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@33df3e1, executor=android.os.HandlerExecutor@2b59506
+10-15 07:59:13.237  1086  1098 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, newInfo: SoftApInfo{bandwidth= 0, frequency= 0, wifiStandard= 0, mApInstanceIdentifier= null, mIdleShutdownTimeoutMillis= 0}
+10-15 07:59:13.237  1086  1098 V WifiManager: SoftApCallbackProxy on mode 1, send InfoChanged, changedInfoList: []
+10-15 07:59:13.237  1086  1098 V WifiManager: SoftApCallbackProxy on mode 1, send onConnectedClientsChanged(clients): []
+10-15 07:59:13.238  1086  1086 I wifi_tether_security: WPA3 SAE is not supported on this device
+10-15 07:59:13.238  1086  1086 V WifiManager: unregisterSoftApCallback: callback=com.android.settings.wifi.tether.WifiTetherSecurityPreferenceController@33df3e1
+10-15 07:59:13.245   485  2088 D CompatibilityChangeReporter: Compat change id reported: 215656264; UID 1000; state: ENABLED
+10-15 07:59:13.245   485  2088 D CompatibilityChangeReporter: Compat change id reported: 213289672; UID 1000; state: ENABLED
+10-15 07:59:13.248   485   695 D WifiApConfigStore: Fallback to use default AP configuration
+10-15 07:59:13.263  4834  5001 I TestRunner: finished: calendarReminderWhoseLeadTimeAlreadyPassedStillFires(com.abfilepro.app.assistant.ReminderReliabilityRegressionTest)

@@ -1,0 +1,4 @@
+10-15 07:58:54.167  3826  3896 I TestRunner: started: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.197  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.readaloud#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:54.202  1866  4074 D DownloadManager: [12] Finished with status SUCCESS
+10-15 07:58:54.209  3826  3896 I TestRunner: finished: copyIntoDescendantRejectedWithoutWriting(com.abfilepro.app.core.StorageSafetyRegressionTest)

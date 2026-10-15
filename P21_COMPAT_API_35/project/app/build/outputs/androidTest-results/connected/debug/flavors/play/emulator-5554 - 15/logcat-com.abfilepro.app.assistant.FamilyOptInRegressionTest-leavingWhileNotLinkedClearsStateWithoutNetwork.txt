@@ -1,0 +1,34 @@
+10-15 07:58:39.226  3826  3896 I TestRunner: started: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.229  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.231  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.231  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.231  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.231  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.231  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.232  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.232  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.232  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.232  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.232  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.232  1512  3056 W A       : (REDACTED) Can't format flag %s to integer.
+10-15 07:58:39.246  1400  1746 I Google Maps Android API: Validating conditions for requesting maps_core feature. [CONTEXT service_id=71 ]
+10-15 07:58:39.247  1400  1746 I Google Maps Android API: Is maps_core feature installed? 1 [CONTEXT service_id=71 ]
+10-15 07:58:39.247  1400  1746 I Google Maps Android API: Eligible to request maps_core feature. [CONTEXT service_id=71 ]
+10-15 07:58:39.251  1400  1746 I Google Maps Android API: maps_core feature request succeeded. [CONTEXT service_id=71 ]
+10-15 07:58:39.255  1400  3811 I ebvk$a  : Unable to retrieve flag snapshot for com.google.android.gms.maps#com.google.android.gms, using defaults.
+10-15 07:58:39.264  1400  1746 I MS_Utils: version of com.google.android.apps.maps = 1067529190
+10-15 07:58:39.265  1400  1400 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safetynet.service.START pkg=com.google.android.gms }
+10-15 07:58:39.277  1400  2619 I GmsDebugLogger: [53] +maps_core:-1
+10-15 07:58:39.283  1214  1441 I TetheringManager: registerTetheringEventCallback:com.google.android.gms
+10-15 07:58:39.301  1400  2619 I MS_RegisterService: Tachyon host: www.google.com, Tachyon port: 443
+10-15 07:58:39.308  3826  3896 I TestRunner: finished: leavingWhileNotLinkedClearsStateWithoutNetwork(com.abfilepro.app.assistant.FamilyOptInRegressionTest)

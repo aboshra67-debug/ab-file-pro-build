@@ -1,0 +1,6 @@
+10-15 07:59:16.613  4834  5001 I TestRunner: started: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:16.624  1285  5160 I GCM-GMS : Scheduling task to register GMS
+10-15 07:59:16.629  3046  3125 W Bugle   : TextClassifierLibManagerImpl: Reclaiming memory at level: 40
+10-15 07:59:16.636  1285  5160 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+10-15 07:59:16.641  1285  5160 W ChimeraUtils: Module com.google.android.gms.growth missing resource growth_module_display_name(0)
+10-15 07:59:16.656  4834  5001 I TestRunner: finished: failedWriterRemovesOnlyItsPartialDraft(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

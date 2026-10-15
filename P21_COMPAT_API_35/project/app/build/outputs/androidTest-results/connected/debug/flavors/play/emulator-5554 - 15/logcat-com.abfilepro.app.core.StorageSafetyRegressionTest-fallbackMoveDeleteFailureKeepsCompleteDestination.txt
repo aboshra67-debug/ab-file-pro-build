@@ -1,0 +1,10 @@
+10-15 07:58:54.476  3826  3896 I TestRunner: started: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.502  2943  4050 I ConfigUpdater: doneInstall
+10-15 07:58:54.512  1331  1687 I SP      : Sync for dynamic_art succeeded in 2126 ms: {added: [305f81355a729e382ea9f374dd286d9f, b1f6f47a53f7820be91b9fe247728980], metadata: false
+10-15 07:58:54.514  1866  3752 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb.metadata via provider delete
+10-15 07:58:54.515  1447  1729 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.fb.metadata: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.fb.metadata
+10-15 07:58:54.516  1447  1729 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-15 07:58:54.525  1866  3752 V DownloadManager: Deleting /data/data/com.android.providers.downloads/cache/en.fb via provider delete
+10-15 07:58:54.531  1447  1729 W ModernMediaScanner: Failed to visit /data/data/com.android.providers.downloads/cache/en.fb: java.nio.file.NoSuchFileException: /data/data/com.android.providers.downloads/cache/en.fb
+10-15 07:58:54.532  1447  1729 I MediaProvider: Scanned internal due to REASON_DEMAND, found 0 items in 1ms, 0 inserts 0 updates 0 deletes
+10-15 07:58:54.553  3826  3896 I TestRunner: finished: fallbackMoveDeleteFailureKeepsCompleteDestination(com.abfilepro.app.core.StorageSafetyRegressionTest)

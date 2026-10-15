@@ -1,0 +1,140 @@
+10-15 07:58:50.781  3826  3896 I TestRunner: started: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:50.781   556   571 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:50.802   556   571 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:50.805  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.assistant.mobile.interactor.user#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:50.809   556   571 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:50.823   556  1229 E Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+10-15 07:58:50.823   556  1229 E Binder  : java.lang.Throwable
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.os.BinderProxy.transact(BinderProxy.java:543)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.content.ContentProviderProxy.openTypedAssetFile(ContentProviderNative.java:812)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.content.ContentResolver.openTypedAssetFileDescriptor(ContentResolver.java:2043)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:1858)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.content.ContentResolver.openInputStream(ContentResolver.java:1528)
+10-15 07:58:50.823   556  1229 E Binder  : 	at com.android.providers.settings.SettingsProvider.openRingtone(SettingsProvider.java:865)
+10-15 07:58:50.823   556  1229 E Binder  : 	at com.android.providers.settings.SettingsProvider.lambda$mutateSystemSetting$1(SettingsProvider.java:2041)
+10-15 07:58:50.823   556  1229 E Binder  : 	at com.android.providers.settings.SettingsProvider.$r8$lambda$GoSUyNcBSpTkjjY_Ryr8POnmkTA(SettingsProvider.java:0)
+10-15 07:58:50.823   556  1229 E Binder  : 	at com.android.providers.settings.SettingsProvider$$ExternalSyntheticLambda0.runOrThrow(R8$$SyntheticClass:0)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.os.Binder.withCleanCallingIdentity(Binder.java:550)
+10-15 07:58:50.823   556  1229 E Binder  : 	at com.android.providers.settings.SettingsProvider.mutateSystemSetting(SettingsProvider.java:2040)
+10-15 07:58:50.823   556  1229 E Binder  : 	at com.android.providers.settings.SettingsProvider.insertSystemSetting(SettingsProvider.java:1916)
+10-15 07:58:50.823   556  1229 E Binder  : 	at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:477)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.content.ContentProvider.call(ContentProvider.java:2704)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.content.ContentProvider$Transport.call(ContentProvider.java:633)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:307)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-15 07:58:50.823   556  1229 E Binder  : 	at android.os.Binder.execTransact(Binder.java:1444)
+10-15 07:58:50.838  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverSchedulePreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverSchedulePreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverStickyPreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverReminderPreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 07:58:50.839  1085  1095 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationFooterPreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTogglePreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTipsButtonPreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.AdaptiveTouchSensitivityPreferenceController
+10-15 07:58:50.839  1085  1095 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.TouchSensitivityPreferenceController
+10-15 07:58:50.842  1085  1095 I SettingsSearchProvider: Skip indexing category: com.android.settings.category.ia.privacy
+10-15 07:58:50.843  1085  1095 I SettingsSearchProvider: Skip indexing category: com.android.settings.category.ia.development
+10-15 07:58:50.843  1085  1095 I SettingsSearchProvider: Skip indexing category: com.android.settings.category.ia.security
+10-15 07:58:50.844  1085  1095 I SettingsSearchProvider: Skip indexing category: com.android.settings.category.ia.homepage
+10-15 07:58:50.844  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.fuelgauge.batterysaver.BatterySaverStickyPreferenceController
+10-15 07:58:50.844  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.fuelgauge.batterysaver.BatterySaverReminderPreferenceController
+10-15 07:58:50.845  1085  1095 E JavaBinder: *** Uncaught remote exception! Exceptions are not yet supported across processes. Client PID 3103 UID 10140.
+10-15 07:58:50.845  1085  1095 E JavaBinder: android.database.StaleDataException: Attempted to access a cursor after it has been closed.
+10-15 07:58:50.845  1085  1095 E JavaBinder: 	at android.database.CursorToBulkCursorAdaptor.throwIfCursorIsClosed(CursorToBulkCursorAdaptor.java:137)
+10-15 07:58:50.845  1085  1095 E JavaBinder: 	at android.database.CursorToBulkCursorAdaptor.getBulkCursorDescriptor(CursorToBulkCursorAdaptor.java:155)
+10-15 07:58:50.845  1085  1095 E JavaBinder: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:117)
+10-15 07:58:50.845  1085  1095 E JavaBinder: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-15 07:58:50.845  1085  1095 E JavaBinder: 	at android.os.Binder.execTransact(Binder.java:1444)
+10-15 07:58:50.849  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.SecurityStatusPreferenceController
+10-15 07:58:50.849  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-15 07:58:50.849  1447  2127 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/ringtones/Ring_Synth_04.ogg)
+10-15 07:58:50.851  1447  2127 I MediaProvider: Open with lower FS for /product/media/audio/ringtones/Ring_Synth_04.ogg. Uid: 1000
+10-15 07:58:50.851  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.PrimarySecurityWarningPreferenceController
+10-15 07:58:50.851  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.FingerprintStatusGooglePreferenceController
+10-15 07:58:50.852  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.FaceStatusGooglePreferenceController
+10-15 07:58:50.852  1512  3056 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:50.853  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.security.CombinedBiometricStatusGooglePreferenceController
+10-15 07:58:50.855  1085  1094 W PrefCtrlListHelper: security_show_more_warnings already has a controller
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 07:58:50.855  1085  1094 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.google.android.settings.accessibility.AdaptiveVibrationTogglePreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.accessibility.AdaptiveVibrationFooterPreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTogglePreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.notification.ClearCallingTipsButtonPreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusEnabledPreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusActionsPreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.gestures.columbus.ColumbusLowSensitivityPreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.AdaptiveTouchSensitivityPreferenceController
+10-15 07:58:50.855  1085  1094 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.google.android.settings.touch.TouchSensitivityPreferenceController
+10-15 07:58:50.857  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk' with 1 weak references
+10-15 07:58:50.860  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.libraries.search.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:50.863  3826  3935 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:50.864  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.extservices/priv-app/GoogleExtServices@350820300/GoogleExtServices.apk' with 1 weak references
+10-15 07:58:50.864  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk' with 1 weak references
+10-15 07:58:50.864  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/TelephonyProvider/TelephonyProvider.apk' with 1 weak references
+10-15 07:58:50.864  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/TelephonyProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 07:58:50.864  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk' with 1 weak references
+10-15 07:58:50.864  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-15 07:58:50.865  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/CalendarProvider/CalendarProvider.apk' with 1 weak references
+10-15 07:58:50.865  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk' with 1 weak references
+10-15 07:58:50.863  3826  3935 D pdf_document_jni: Deleting Document: 0x77a006c8f350
+10-15 07:58:50.866  3826  3935 D pdf_document_jni: Destroyed Document: 0x77a006c8f350
+10-15 07:58:50.874  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/GoogleExtShared/GoogleExtShared.apk' with 1 weak references
+10-15 07:58:50.875  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk' with 1 weak references
+10-15 07:58:50.879  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/HTMLViewer/HTMLViewer.apk' with 1 weak references
+10-15 07:58:50.879  1214  1214 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-15 07:58:50.881  2453  3851 I PhenotypeBackgroundRecv: Successfully updated snapshot for com.google.android.gms.icing.mdd#com.google.android.tts
+10-15 07:58:50.884  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:50.885  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CompanionDeviceManager/CompanionDeviceManager.apk' with 1 weak references
+10-15 07:58:50.885  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProvider/DownloadProvider.apk' with 1 weak references
+10-15 07:58:50.885  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltBugle/PrebuiltBugle.apk' with 1 weak references
+10-15 07:58:50.885  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/SoundPickerPrebuilt/SoundPickerPrebuilt.apk' with 1 weak references
+10-15 07:58:50.886  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c91b90
+10-15 07:58:50.886  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c91b90
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.mediaprovider/priv-app/MediaProviderGoogle@350820300/MediaProviderGoogle.apk' with 1 weak references
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SafetyHubPrebuilt/SafetyHubPrebuilt.apk' with 1 weak references
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/DownloadProviderUi/DownloadProviderUi.apk' with 1 weak references
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.wifi/app/OsuLoginGoogle@350820300/OsuLoginGoogle.apk' with 1 weak references
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PacProcessor/PacProcessor.apk' with 1 weak references
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/SimAppDialog/SimAppDialog.apk' with 1 weak references
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SimAppDialog__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 07:58:50.886  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/AdServicesApkGoogle.apk' with 1 weak references
+10-15 07:58:50.887  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk' with 1 weak references
+10-15 07:58:50.887  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk' with 1 weak references
+10-15 07:58:50.888  2453  2453 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.transcription.device#com.google.android.tts which doesn't use ProcessStable flags.
+10-15 07:58:50.889  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CertInstaller/CertInstaller.apk' with 1 weak references
+10-15 07:58:50.889  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/talkback/talkback.apk' with 1 weak references
+10-15 07:58:50.891  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/EmulatorTalkBackOverlay/EmulatorTalkBackOverlay.apk' with 1 weak references
+10-15 07:58:50.891  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk' with 1 weak references
+10-15 07:58:50.891  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Camera2/Camera2.apk' with 1 weak references
+10-15 07:58:50.892  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/EasterEgg/EasterEgg.apk' with 1 weak references
+10-15 07:58:50.895  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MtpService/MtpService.apk' with 1 weak references
+10-15 07:58:50.895  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.nfcservices/priv-app/NfcNciApexGoogle@AE3A.240806.043/NfcNciApexGoogle.apk' with 1 weak references
+10-15 07:58:50.895  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/Stk/Stk.apk' with 1 weak references
+10-15 07:58:50.895  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltDeskClockGoogle/PrebuiltDeskClockGoogle.apk' with 1 weak references
+10-15 07:58:50.895  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/NavigationBarMode2Button/NavigationBarMode2ButtonOverlay.apk' with 1 weak references
+10-15 07:58:50.895  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-15 07:58:50.895  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/PrebuiltGmail/PrebuiltGmail.apk' with 1 weak references
+10-15 07:58:50.896  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.permission/priv-app/GooglePermissionController@350820360/GooglePermissionController.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/GooglePermissionControllerOverlay.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.btservices/app/BluetoothGoogle@342010060/BluetoothGoogle.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/SettingsProvider/SettingsProvider.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/LargeScreenSettingsProviderOverlay.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsProvider__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/PrintSpooler/PrintSpooler.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/BasicDreams/BasicDreams.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02/DeviceIntelligenceNetworkPrebuilt-astrea_20240329.00_RC02.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/InputDevices/InputDevices.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /apex/com.android.devicelock/priv-app/DeviceLockControllerGoogle@AE3A.240806.043/DeviceLockControllerGoogle.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/GoogleDialer/GoogleDialer.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/BuiltInPrintService/BuiltInPrintService.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '/product/overlay/BuiltInPrintService__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-15 07:58:50.897  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk' with 1 weak references
+10-15 07:58:50.898  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system/priv-app/MusicFX/MusicFX.apk' with 1 weak references
+10-15 07:58:50.898  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Drive/Drive.apk' with 1 weak references
+10-15 07:58:50.898  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-15 07:58:50.898  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/ModuleMetadataGoogle/ModuleMetadataGoogle.apk' with 1 weak references
+10-15 07:58:50.898  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /product/overlay/DisplayCutoutEmulationEmu01/DisplayCutoutEmulationEmu01Overlay.apk' with 1 weak references
+10-15 07:58:50.898  1361  1367 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/AvatarPickerGoogle/AvatarPickerGoogle.apk' with 1 weak references
+10-15 07:58:50.900  3826  3896 I TestRunner: finished: validImagesProduceEverySelectedPdfPage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

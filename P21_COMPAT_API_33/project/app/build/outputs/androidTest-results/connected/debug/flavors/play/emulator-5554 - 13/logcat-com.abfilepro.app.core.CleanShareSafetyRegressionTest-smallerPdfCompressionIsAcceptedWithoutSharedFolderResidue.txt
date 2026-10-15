@@ -1,0 +1,52 @@
+10-15 07:59:20.179  4834  5001 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:20.317  1057  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gass.chimera.SchedulePeriodicTasksService finished executing. cause:5 result: 1 elapsed_millis: 876 uptime_millis: 876 exec_start_elapsed_seconds: 128 [CONTEXT service_id=218 ]
+10-15 07:59:20.341  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.345  1057  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 10 uptime_millis: 10 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.374  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.397  1057  5165 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 41 uptime_millis: 41 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.415  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.417  1057  5232 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 07:59:20.419  1285  5163 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 07:59:20.419  1285  5163 E Pay     : [Migration operation] Active tapandpay account not found! [CONTEXT service_id=198 ]
+10-15 07:59:20.442  1285  5163 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 07:59:20.461  1285  5163 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 07:59:20.494  1285  5163 I Pay     : Attempting migration; GP2 not installed. [CONTEXT service_id=198 ]
+10-15 07:59:20.506  1285  5163 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 07:59:20.506  1285  5163 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 07:59:20.507  1285  5163 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 07:59:20.507  1285  5163 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 07:59:20.508  1285  5163 I Pay     : [SeTosMigration] walletJpEligibility is not enabled [CONTEXT service_id=198 ]
+10-15 07:59:20.516  1285  5163 I Pay     : Wallet install state NOT_INSTALLED [CONTEXT service_id=198 ]
+10-15 07:59:20.526  1285  5163 I Pay     : Migration flag not enabled. [CONTEXT service_id=198 ]
+10-15 07:59:20.529  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 1 elapsed_millis: 120 uptime_millis: 120 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.559  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService started execution. cause:5 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.560  1057  5232 I TapAndPay: Disabling TapAndPay HCE service [CONTEXT service_id=79 ]
+10-15 07:59:20.561  1285  4777 W Pay     : Active account was null, notification task will be cancelled. [CONTEXT service_id=198 ]
+10-15 07:59:20.561  1285  4777 W Pay     : No account found on the task or the device. Notification task will not be rescheduled. [CONTEXT service_id=198 ]
+10-15 07:59:20.564  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.pay.gcmtask.PayGcmTaskService finished executing. cause:5 result: 2 elapsed_millis: 20 uptime_millis: 20 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.598  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService started execution. cause:5 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.622  1057  1057 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.nearby.exposurenotification.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+10-15 07:59:20.646  1057  5167 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.udc.service.UdcContextInitService finished executing. cause:5 result: 1 elapsed_millis: 63 uptime_millis: 63 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.669  1057  5166 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.gcm.gmsproc.GcmInGmsTaskService started execution. cause:5 exec_start_elapsed_seconds: 129 [CONTEXT service_id=218 ]
+10-15 07:59:20.669  1285  4777 I GCM-GMS : Registering GMS 745476177629
+10-15 07:59:20.757   485   584 E RoleControllerManager: Error calling grantDefaultRoles()
+10-15 07:59:20.757   485   584 E RoleControllerManager: java.util.concurrent.TimeoutException
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture.triggerTimeout(AndroidFuture.java:289)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at com.android.permission.jarjar.com.android.internal.infra.AndroidFuture$$ExternalSyntheticLambda2.run(Unknown Source:2)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at android.os.Looper.loop(Looper.java:288)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at com.android.server.SystemServer.run(SystemServer.java:962)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at com.android.server.SystemServer.main(SystemServer.java:647)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at java.lang.reflect.Method.invoke(Native Method)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:548)
+10-15 07:59:20.757   485   584 E RoleControllerManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:914)
+10-15 07:59:20.777  1659  2556 I MediaProvider: Scanned internal due to REASON_MOUNTED, found 227 items in 63384ms, 223 inserts 4 updates 0 deletes
+10-15 07:59:20.800  1659  2556 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/ringtones/Ring_Synth_04.ogg)
+10-15 07:59:20.801  1659  2556 I MediaProvider: Open with lower FS for /product/media/audio/ringtones/Ring_Synth_04.ogg. Uid: 10163
+10-15 07:59:20.810  1659  2556 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/notifications/pixiedust.ogg)
+10-15 07:59:20.811  1659  2556 I MediaProvider: Open with lower FS for /product/media/audio/notifications/pixiedust.ogg. Uid: 10163
+10-15 07:59:20.822  1659  2556 W MediaProvider: Didn't find any volume for getVolume(/product/media/audio/alarms/Alarm_Classic.ogg)
+10-15 07:59:20.823  1659  2556 I MediaProvider: Open with lower FS for /product/media/audio/alarms/Alarm_Classic.ogg. Uid: 10163
+10-15 07:59:20.849  4834  5001 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

@@ -1,0 +1,58 @@
+10-15 07:58:53.726  3826  3896 I TestRunner: started: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:53.737  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFaceStatusPreferenceController
+10-15 07:58:53.754  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricFingerprintStatusPreferenceController
+10-15 07:58:53.761  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.761  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.763  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.765  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.remoteauth.RemoteAuthStatusPreferenceController
+10-15 07:58:53.766  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsKeyguardPreferenceController
+10-15 07:58:53.766  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.biometrics.combination.BiometricSettingsAppPreferenceController
+10-15 07:58:53.769  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.778  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.786  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.791  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.795  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.795  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.797  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.799  1331  1331 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 1
+10-15 07:58:53.809  1085  1144 I ActiveUnlockStatusUtils: authority not set
+10-15 07:58:53.810  1512  3068 W TimedProcessReaper: Scheduling killing of process to refresh configuration
+10-15 07:58:53.812  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonPreviewPreferenceController
+10-15 07:58:53.812  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonLocationPreferenceController
+10-15 07:58:53.812  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonGesturePreferenceController
+10-15 07:58:53.812  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuSizePreferenceController
+10-15 07:58:53.812  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuFadePreferenceController
+10-15 07:58:53.812  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.FloatingMenuTransparencyPreferenceController
+10-15 07:58:53.813  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AccessibilityButtonFooterPreferenceController
+10-15 07:58:53.813  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.DaltonizerSaturationSeekbarPreferenceController
+10-15 07:58:53.818  1331  1687 I SP      : Scheduling: download registered, 0 started, 4 paused, 1 scheduled, 6 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 07:58:53.820  1331  1687 I SP      : Download stopped: dynamic_art:b1f6f47a53f7820be91b9fe247728980, succeeded paused, size: 557904
+10-15 07:58:53.821  1331  1331 I SP      : ====> Starting job {m:b:u:l, fg}
+10-15 07:58:53.830  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.MultiUserTopIntroPreferenceController
+10-15 07:58:53.831  1331  1687 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 07:58:53.836  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.users.TimeoutToDockUserPreferenceController
+10-15 07:58:53.840  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerIllustrationPreferenceController
+10-15 07:58:53.845  1331  1331 I SuperpacksForegroundTaskService: SuperpacksForegroundTaskService.onStartCommand():43 SuperpacksForegroundTaskService.onStartCommand(): 2
+10-15 07:58:53.846  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerForPowerMenuPreferenceController
+10-15 07:58:53.860  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerForAssistantPreferenceController
+10-15 07:58:53.857   556   984 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:53.862  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerSensitivityPreferenceController
+10-15 07:58:53.864  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.gestures.LongPressPowerFooterPreferenceController
+10-15 07:58:53.864  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.applications.specialaccess.vrlistener.VrListenerScreenPreferenceController
+10-15 07:58:53.869  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.network.AdaptiveConnectivityTogglePreferenceController
+10-15 07:58:53.870  1085  1144 V SettingsSearchProvider: com.android.settings.search.BaseSearchIndexProvider@4a13edb tried to add an empty non-indexable key
+10-15 07:58:53.871  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accounts.WorkModePreferenceController
+10-15 07:58:53.875  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accounts.ContactSearchPreferenceController
+10-15 07:58:53.876  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accounts.CrossProfileCalendarPreferenceController
+10-15 07:58:53.877  1085  1144 D BatterySettingsFeatureProviderGoogleImpl: isBatteryInfoEnabled = false
+10-15 07:58:53.878  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryManufactureDatePreferenceController
+10-15 07:58:53.883  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryFirstUseDatePreferenceController
+10-15 07:58:53.886  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.batteryinfo.BatteryCycleCountPreferenceController
+10-15 07:58:53.890  1085  1144 V SettingsSearchProvider: com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment$1@66aedb7 tried to add an empty non-indexable key
+10-15 07:58:53.902  1331  1687 I SP      : Scheduling: download stopped, 0 started, 3 paused, 1 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 {W:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ {m:b:u:l, bg}, handwriting_recognition:pack_mapping_v1_lstm_20231127 * {m:b:u:l, fg}
+10-15 07:58:53.902  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 07:58:53.903  1331  1687 I SP      : Download stopped: dynamic_art:305f81355a729e382ea9f374dd286d9f, succeeded paused, size: 30514
+10-15 07:58:53.909  1331  1687 I SP      : Scheduling job with delay of 0s for {m:b:u:l, fg}, 1 candidates
+10-15 07:58:53.912  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController
+10-15 07:58:53.915  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController
+10-15 07:58:53.917  3826  3896 I TestRunner: finished: undoFolderWithNewUserFilePreservesWholeFolder(com.abfilepro.app.core.StorageSafetyRegressionTest)

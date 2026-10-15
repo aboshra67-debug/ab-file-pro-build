@@ -1,0 +1,58 @@
+10-15 07:58:43.612  3826  3896 I TestRunner: started: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:43.617  1512  2647 I native  : I0000 00:00:1792051123.617342    2647 enrollment_manager_impl.cc:1193] Disabling TI-SID.
+10-15 07:58:43.617  1512  2647 W native  : W0000 00:00:1792051123.617412    2647 language_pack_utils.cc:210] Neither language pack directory nor config file path is set.
+10-15 07:58:43.620  1512  2647 W native  : W0000 00:00:1792051123.620475    2647 enrollment_manager_impl_utils.cc:86] No standalone TI-SID pipeline config found:INVALID_ARGUMENT: Could not determine LP directory.
+10-15 07:58:43.620  1512  2647 W native  : === Source Location Trace: ===
+10-15 07:58:43.620  1512  2647 W native  : speech/soda/utils/language_pack_utils.cc:357
+10-15 07:58:43.620  1512  2647 W native  : W0000 00:00:1792051123.620543    2647 enrollment_manager_impl.cc:1205] Unable to select ASR config path: INVALID_ARGUMENT: No provided LP directory.
+10-15 07:58:43.620  1512  2647 W native  : === Source Location Trace: ===
+10-15 07:58:43.620  1512  2647 W native  : speech/soda/utils/language_pack_utils.cc:295
+10-15 07:58:43.631  1512  2647 I native  : I0000 00:00:1792051123.631164    2647 enrollment_manager_impl.cc:919] Attempting to insert stored TD-SID profiles into config.
+10-15 07:58:43.631  1512  2647 I native  : I0000 00:00:1792051123.631371    2647 enrollment_manager_impl.cc:943] Found 0 speakers with existing TDSID models.
+10-15 07:58:43.631  1512  2647 W native  : W0000 00:00:1792051123.631852    2647 enrollment_manager_impl.cc:975] No valid TD-SID models found.
+10-15 07:58:43.631  1512  2647 I native  : I0000 00:00:1792051123.631864    2647 enrollment_manager_impl.cc:1274] Retrieved stored TDSID models. Speakers requiring re-training:0
+10-15 07:58:43.631  1512  2647 I native  : I0000 00:00:1792051123.631874    2647 enrollment_manager_impl.cc:992] Attempting to insert stored TI-SID profiles into config.
+10-15 07:58:43.632  1512  2647 I native  : I0000 00:00:1792051123.632096    2647 enrollment_manager_impl.cc:1008] TI-SID version is invalid. Returning early.
+10-15 07:58:43.632  1512  2647 I native  : I0000 00:00:1792051123.632126    2647 enrollment_manager_impl.cc:1287] Retrieved stored TISID models. Speakers requiring re-training:0
+10-15 07:58:43.632  1512  2647 I native  : I0000 00:00:1792051123.632153    2647 enrollment_manager_impl.cc:1297] Retrieved Server TISID models.
+10-15 07:58:43.633  1512  2647 I native  : I0000 00:00:1792051123.633353    2647 enrollment_manager_impl.cc:457] Invoking listeners with updated speaker profiles.
+10-15 07:58:43.633  1512  2003 I A       : (REDACTED) handleResponse for  %s user(s)
+10-15 07:58:43.633  1512  2003 I A       : (REDACTED) Found SodaVmmmClassicWriter. Preparing to propagate model update for status: %s
+10-15 07:58:43.633  1512  2003 I A       : Skipping model update propagation to SodaVmmmClassicWriter since speaker model did not change.
+10-15 07:58:43.634  1512  2003 I A       : #handleModelUpdate
+10-15 07:58:43.634  1512  2003 I A       : (REDACTED) # of TDSID models received: %s
+10-15 07:58:43.634  1512  2003 I A       : (REDACTED) Size of TI-SID model bytestring received: %s
+10-15 07:58:43.635  1512  2003 I A       : (REDACTED) # of Server TI-SID voiceprints received: %s
+10-15 07:58:43.635  1512  2003 I SodaEnrollmentClient: #getSpeakerIdModel
+10-15 07:58:43.640  1512  2003 I SodaEnrollmentClient: #initialize
+10-15 07:58:43.673  1512  1862 W A       : No system LP found. Offline SODA ASR is unavailable and SODA init may fail.
+10-15 07:58:43.676  3826  3936 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:43.679  1512  1862 I A       : (REDACTED) Resolved SODA resource dir for %s: %s
+10-15 07:58:43.680  1512  1512 W com.google.android.googlequicksearchbox:search: type=1400 audit(0.0:198): avc:  denied  { read } for  comm=424720546872656164202330 name="/" dev="vdd1" ino=2 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:metadata_file:s0 tclass=dir permissive=0 app=com.google.android.googlequicksearchbox
+10-15 07:58:43.694  1512  1868 E A       : Soda silent enrollment failed.
+10-15 07:58:43.694  1512  1868 E A       : java.lang.IllegalStateException: No account found.
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.android.apps.gsa.hotword.b.f.apply(PG:30)
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.apps.tiktok.tracing.ff.apply(PG:13)
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.common.util.concurrent.h.e(PG:3)
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.common.util.concurrent.j.run(PG:42)
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.android.libraries.k.x.run(PG:3)
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.common.n.c.c.run(PG:50)
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.android.libraries.k.e.run(PG:8)
+10-15 07:58:43.694  1512  1868 E A       : 	at java.lang.Thread.run(Thread.java:1012)
+10-15 07:58:43.694  1512  1868 E A       : 	at com.google.android.libraries.k.d.b.run(PG:74)
+10-15 07:58:43.701  1512  1868 I MicroModelsUtil: Notified HDM of new hotword model.
+10-15 07:58:43.703  1475  2005 W HDM.CfgUpdListnrAdapter: Receive a config update when there's no subscriber. Ignore the request!
+10-15 07:58:43.707  1512  1868 I SodaEnrollmentClient: Already has an initialized EnrollmentManager.
+10-15 07:58:43.708  1512  1780 I A       : getHotwordSpeakerIdModels
+10-15 07:58:43.709  1512  1780 I SodaEnrollmentClient: Returning empty SpeakerId model
+10-15 07:58:43.721  1512  1548 I earchbox:search: Background concurrent mark compact GC freed 12MB AllocSpace bytes, 42(4996KB) LOS objects, 50% free, 20MB/40MB, paused 1.282ms,2.051ms total 360.509ms
+10-15 07:58:43.740  1214  2525 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.usagereporting.service.UsageReportingChimeraService$CheckboxRestoringTaskBoundService started execution. cause:4 exec_start_elapsed_seconds: 102 [CONTEXT service_id=218 ]
+10-15 07:58:43.767  3826  3936 D pdf_document_jni: Deleting Document: 0x77a006c91b90
+10-15 07:58:43.767  3826  3936 D pdf_document_jni: Destroyed Document: 0x77a006c91b90
+10-15 07:58:43.768  3826  3936 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:43.769  3826  3936 D pdf_document_jni: Deleting Document: 0x77a006c8fa50
+10-15 07:58:43.769  3826  3936 D pdf_document_jni: Destroyed Document: 0x77a006c8fa50
+10-15 07:58:43.794  3826  3896 D pdf_document_jni: Creating FPDF_DOCUMENT from fd: 108
+10-15 07:58:43.795  3826  3896 D pdf_document_jni: Deleting Document: 0x77a006c90a10
+10-15 07:58:43.795  3826  3896 D pdf_document_jni: Destroyed Document: 0x77a006c90a10
+10-15 07:58:43.802  3826  3896 I TestRunner: finished: pdfChosenFromShareFolderNeverReplacesItsSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

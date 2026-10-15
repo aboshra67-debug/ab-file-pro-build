@@ -1,0 +1,6 @@
+10-15 07:58:44.540  3826  3896 I TestRunner: started: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:44.549  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.562  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.579  1400  3892 D TrafficStats: tagSocket(214) with statsTag=0x3c010301, statsUid=-1
+10-15 07:58:44.594  3252  3423 I Bugle   : BroadcastReceiverAsyncWorkTracker: Acknowledging broadcast of buoi@f4c6d4a
+10-15 07:58:44.600  3826  3896 I TestRunner: finished: normalImageProducesReadableCopyWithoutChangingSource(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

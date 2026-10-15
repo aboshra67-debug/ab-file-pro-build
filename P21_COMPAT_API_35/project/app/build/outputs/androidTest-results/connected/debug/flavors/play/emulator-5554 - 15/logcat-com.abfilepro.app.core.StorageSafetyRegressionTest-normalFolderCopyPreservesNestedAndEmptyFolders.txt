@@ -1,0 +1,32 @@
+10-15 07:58:53.515  3826  3896 I TestRunner: started: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:53.522  1512  1512 I PhenotypeBackgroundRecv: Skipping com.google.android.apps.search.hsi.device#com.google.android.googlequicksearchbox which doesn't use ProcessStable flags.
+10-15 07:58:53.524  1331  1687 I SP      : Scheduling: download registered, 1 started, 0 paused, 1 scheduled, 5 pending: manifests:emoticon_content_description-2022081613 * {W:b:u:l, bg}, dynamic_art:b1f6f47a53f7820be91b9fe247728980 @ {m:b:u:l, bg}, dynamic_art:305f81355a729e382ea9f374dd286d9f @ {m:b:u:l, bg}, transformer_concept:2023011913_en @ {m:b:u:l, bg}, emoji:2ada3c9a4a17d6bb81b1fe8d51502d60 @ * {m:b:u:l, bg}
+10-15 07:58:53.526  1331  1687 I SP      : Requesting download of URL https://www.gstatic.com/android/keyboard/emoji/20240513200046/en_us.zip to 2ada3c9a4a17d6bb81b1fe8d51502d60.zip.fetched (constraints: m:b:u:l)
+10-15 07:58:53.529  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.MoreSettingsPreferenceController
+10-15 07:58:53.533  1331  1687 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():44 getSlices(): handwriting_recognition.86 useForeground=true
+10-15 07:58:53.533  1331  1687 E HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():85 getSlices(): packMapping unavailable for en-US
+10-15 07:58:53.533  1331  1687 E HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():85 getSlices(): packMapping unavailable for en-US-x-gesture
+10-15 07:58:53.534  1331  1687 I HandwritingSlicingStrategy: HandwritingSlicingStrategy.getSlices():103 getSlices(): result {slices=[{handwriting_recognition:pack_mapping_v1_lstm_20231127, m:*:*:*, fg}], last batch=true, sync metadata=false}
+10-15 07:58:53.534  1331  1687 I SP      : Syncing handwriting_recognition (86) with slices: [{pack_mapping_v1_lstm_20231127, m:*:*:*, fg}], metadata: false
+10-15 07:58:53.536  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.emergency.EmergencyGestureEntrypointPreferenceController
+10-15 07:58:53.542  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningTogglePreferenceController
+10-15 07:58:53.542  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningAppearancePreferenceController
+10-15 07:58:53.542  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.CaptioningFooterPreferenceController
+10-15 07:58:53.542  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 07:58:53.542  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationMainSwitchPreferenceController
+10-15 07:58:53.542  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.RingVibrationTogglePreferenceController
+10-15 07:58:53.542  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.RingVibrationTogglePreferenceController
+10-15 07:58:53.542  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 07:58:53.542  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.VibrationRampingRingerTogglePreferenceController
+10-15 07:58:53.543  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.NotificationVibrationTogglePreferenceController
+10-15 07:58:53.565  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.NotificationVibrationTogglePreferenceController
+10-15 07:58:53.566  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.AlarmVibrationTogglePreferenceController
+10-15 07:58:53.572  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.AlarmVibrationTogglePreferenceController
+10-15 07:58:53.577  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.HapticFeedbackTogglePreferenceController
+10-15 07:58:53.578  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.HapticFeedbackTogglePreferenceController
+10-15 07:58:53.586  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.MediaVibrationTogglePreferenceController
+10-15 07:58:53.589  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.MediaVibrationTogglePreferenceController
+10-15 07:58:53.589  1085  1144 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.accessibility.KeyboardVibrationTogglePreferenceController
+10-15 07:58:53.589  1085  1144 W PrefCtrlListHelper: Cannot instantiate controller from reflection: com.android.settings.accessibility.KeyboardVibrationTogglePreferenceController
+10-15 07:58:53.589  1085  1144 V SettingsSearchProvider: com.android.settings.accessibility.VibrationSettings$1@c2248 tried to add an empty non-indexable key
+10-15 07:58:53.594  3826  3896 I TestRunner: finished: normalFolderCopyPreservesNestedAndEmptyFolders(com.abfilepro.app.core.StorageSafetyRegressionTest)

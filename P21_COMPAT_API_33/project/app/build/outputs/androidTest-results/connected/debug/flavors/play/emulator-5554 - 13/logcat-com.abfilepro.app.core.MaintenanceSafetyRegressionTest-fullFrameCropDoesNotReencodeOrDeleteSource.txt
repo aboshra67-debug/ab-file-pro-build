@@ -1,0 +1,5 @@
+10-15 07:59:22.394  4834  5001 I TestRunner: started: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:22.400  1285  1285 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.wallet.service.BIND pkg=com.google.android.gms }
+10-15 07:59:22.404  1086  4981 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.405  1086  4981 D SettingsSliceProvider: Allowlisting 5 uris to 3 pkgs.
+10-15 07:59:22.414  4834  5001 I TestRunner: finished: fullFrameCropDoesNotReencodeOrDeleteSource(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,6 @@
+10-15 07:58:42.711  3826  3896 I TestRunner: started: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:58:42.732  1214  2361 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.android.settings
+10-15 07:58:42.753  3826  3944 D ProfileInstaller: Installing profile for com.abfilepro.app.p21mainttrial
+10-15 07:58:42.758  1400  1400 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 07:58:42.759  1400  1400 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.pay.service.BIND dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-15 07:58:42.760  3826  3896 I TestRunner: finished: failedHandoffPreservesOutputEditedAfterPublication(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

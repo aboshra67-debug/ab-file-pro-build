@@ -1,0 +1,21 @@
+10-15 07:59:22.418  4834  5001 I TestRunner: started: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:22.421  1086  4981 D SettingsSliceProvider: onBindSlice start: content://com.android.settings.slices/action/os_firmware_version
+10-15 07:59:22.424  1086  1376 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.424  1086  1376 W SliceData: Highlight menu key res is empty: com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController
+10-15 07:59:22.425  1086  4981 V SettingsSliceProvider: onBindSlice end
+10-15 07:59:22.425  1086  1376 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/os_firmware_version) in: 1
+10-15 07:59:22.430  1086  1370 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.433  1086  1370 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/auto_rotate) in: 3
+10-15 07:59:22.434  1086  1376 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.435  1086  1376 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/media_volume
+10-15 07:59:22.435  1086  1376 D SliceBroadcastRelay: Registering Uri for broadcast relay: content://com.android.settings.slices/action/volume_slices
+10-15 07:59:22.436  1086  1086 D SettingsSliceProvider: Starting background worker for: content://com.android.settings.slices/action/media_volume
+10-15 07:59:22.436  1086  1086 D SliceBackgroundWorker: create instance: class com.android.settings.media.MediaOutputIndicatorWorker
+10-15 07:59:22.437  1086  1376 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/media_volume) in: 3
+10-15 07:59:22.439  1086  1370 W LocalMediaManager: BluetoothAdapter is null or muting expected device not exist
+10-15 07:59:22.440  5302  5302 I P14Fixture: Granted fixture tree to com.abfilepro.app.p21mainttrial
+10-15 07:59:22.442  1086  1376 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.449  1086  1370 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.449  1086  1370 D VolumeSliceHelper: Registering uri for broadcast relay: content://com.android.settings.slices/action/ring_volume
+10-15 07:59:22.451  1086  1370 D SettingsSliceProvider: Built slice (content://com.android.settings.slices/action/ring_volume) in: 2
+10-15 07:59:22.452  4834  5001 I TestRunner: finished: nullSafCursorIsAnErrorRatherThanEmptyFolder(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

@@ -1,0 +1,86 @@
+10-15 07:59:13.269  4834  5001 I TestRunner: started: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)
+10-15 07:59:13.351   485   695 W FileUtils: Failed to chmod(/data/misc/apexdata/com.android.wifi/WifiConfigStoreSoftAp.xml, 384):
+10-15 07:59:13.351   485   695 W FileUtils: android.system.ErrnoException: chmod failed: ENOENT (No such file or directory)
+10-15 07:59:13.351   485   695 W FileUtils: 	at libcore.io.Linux.chmod(Native Method)
+10-15 07:59:13.351   485   695 W FileUtils: 	at libcore.io.ForwardingOs.chmod(ForwardingOs.java:165)
+10-15 07:59:13.351   485   695 W FileUtils: 	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java:83)
+10-15 07:59:13.351   485   695 W FileUtils: 	at android.system.Os.chmod(Os.java:119)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.util.FileUtils.chmod(Unknown Source:0)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiConfigStore$StoreFile.writeBufferedRawData(Unknown Source:16)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiConfigStore.writeBufferedData(Unknown Source:27)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiConfigStore.write(Unknown Source:74)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiConfigManager.saveToStore(Unknown Source:197)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiApConfigStore.persistConfigAndTriggerBackupManagerProxy(Unknown Source:7)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiApConfigStore.getApConfiguration(Unknown Source:20)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiServiceImpl$$ExternalSyntheticLambda32.get(Unknown Source:2)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner.lambda$call$0(Unknown Source:0)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner.$r8$lambda$IBysPtKlrlExB9JJ-BwyCtiuSXA(Unknown Source:0)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner$$ExternalSyntheticLambda1.run(Unknown Source:4)
+10-15 07:59:13.351   485   695 W FileUtils: 	at com.android.server.wifi.WifiThreadRunner$BlockingRunnable.run(Unknown Source:3)
+10-15 07:59:13.351   485   695 W FileUtils: 	at android.os.Handler.handleCallback(Handler.java:942)
+10-15 07:59:13.351   485   695 W FileUtils: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-15 07:59:13.351   485   695 W FileUtils: 	at android.os.Looper.loopOnce(Looper.java:201)
+10-15 07:59:13.351   485   695 W FileUtils: 	at android.os.Looper.loop(Looper.java:288)
+10-15 07:59:13.351   485   695 W FileUtils: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-15 07:59:13.359  1662  2128 I SP.AiAi : GC for 'text-classifier-actions' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 07:59:13.360  1662  2128 I AiAiNowPlaying: Superpacks changed. Refreshing FA controller
+10-15 07:59:13.361  1662  2459 I AiAiFed : [Now Playing Recognitions FA] *** disabled *** [mode=FEDERATION population=aiai/sense/ambientmusic/]
+10-15 07:59:13.371  1662  3379 I AiAiTextClassifier: [ResourceDownloaderImpl]: downloadResource(): Successfully downloaded superpack 'text-classifier-actions', download version 1140547708.
+10-15 07:59:13.420  1662  2459 I TrainerClient: Preparing to schedule training for population:aiai/sense/ambientmusic/ session_name:ambientmusic
+10-15 07:59:13.424  1662  2213 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 07:59:13.431  1662  2213 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 07:59:13.433   485   695 D WifiConfigStore: Writing to stores completed in 96 ms.
+10-15 07:59:13.434  1086  1106 D WifiTetherMaximizeCompatibilityPref: getBand:1
+10-15 07:59:13.438  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.EncryptionStatusPreferenceController
+10-15 07:59:13.438  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.security.CredentialManagementAppPreferenceController
+10-15 07:59:13.438  1086  1106 W PrefCtrlListHelper: encryption_and_credentials_encryption_status already has a controller
+10-15 07:59:13.448  1662  2213 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 4 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090 @ {W:b:u:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 @ {W:b:u:l, bg}
+10-15 07:59:13.454  1662  2213 I SP.AiAi : Download stopped: kg_collections_table:collections_table_main_21980965fbd997111d89f86c16e9e090, succeeded, size: 613
+10-15 07:59:13.461  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.StorageSelectionPreferenceController
+10-15 07:59:13.466  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.StorageUsageProgressBarPreferenceController
+10-15 07:59:13.466  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.AutomaticStorageManagementSwitchPreferenceController
+10-15 07:59:13.466  1086  1106 D PrefCtrlListHelper: Could not find Context-only controller for pref: com.android.settings.deviceinfo.storage.ManageStoragePreferenceController
+10-15 07:59:13.466  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.deviceinfo.storage.StorageSelectionPreferenceController@b85fb92
+10-15 07:59:13.466  1086  1106 W SettingsPrefController: Skipping updateNonIndexableKeys, key already in list. com.android.settings.deviceinfo.storage.StorageUsageProgressBarPreferenceController@f9ec963
+10-15 07:59:13.478  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.479  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.479  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.479  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.479  4934  4970 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.514   288   288 D Zygote  : Forked child process 5052
+10-15 07:59:13.515  4934  5051 W RemoteCallableBase: Null cursor. Cannot add index data for Uri: content://com.android.traceur/settings/indexables_xml_res
+10-15 07:59:13.517  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.541  5052  5052 I droid.emergency: Using CollectorTypeCC GC.
+10-15 07:59:13.547  5052  5052 W droid.emergency: Unexpected CPU variant for x86: x86_64.
+10-15 07:59:13.547  5052  5052 W droid.emergency: Known variants: atom, sandybridge, silvermont, kabylake, default
+10-15 07:59:13.549  1662  2213 I SP.AiAi : Scheduling job with delay of 0s for {m:b:u:l, bg}, 1 candidates
+10-15 07:59:13.562  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.569  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.569  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.572  1662  2213 I SP.AiAi : Scheduling job with delay of 0s for {W:b:I:l, bg}, 1 candidates
+10-15 07:59:13.576  1662  2213 I SP.AiAi : Scheduling: download stopped, 0 started, 0 paused, 2 scheduled, 3 pending: manifests:webref-2-en-us-19071200 * {m:b:u:l, bg}, manifests:spelling_correction-21080420 * {W:b:I:l, bg}, actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848 @ {W:b:u:l, bg}
+10-15 07:59:13.576  1662  2213 I SP.AiAi : <==== Finishing job {W:b:u:l, bg}, 6118 ms. elapsed since start
+10-15 07:59:13.577  1662  2213 I SP.AiAi : Download stopped: actions-ranking-table:table_5f787033cc44fc7a8804e0030b2bf848, succeeded, size: 309
+10-15 07:59:13.578  1662  2133 I AiAiTextClassifier: [TcLibModelManagerImpl]: downloadNewModelRecursively: packSet downloaded successfully: https://gstatic.com/matchmaker/tclib_models/actions/v104/en-us/superpacks_manifest.zip
+10-15 07:59:13.583   373   385 I adbd    : jdwp connection from 5052
+10-15 07:59:13.588  1662  2133 I AiAiTextClassifier: [TcLibModelManagerImpl]: updateModelsInTextClassifierLib: Done executing updateModels() from path: /data/user/0/com.google.android.as/files/superpacks/text-classifier-actions/tc_model_e202592534082c01f9642f709a627dd9/en.model.
+10-15 07:59:13.606  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.606  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.606  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.607  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.608  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.608  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.608  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.608  4934  4977 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.609  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.610  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.611  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.611  4934  5051 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.618   288   288 D Zygote  : Forked child process 5072
+10-15 07:59:13.619  4934  5054 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.620  4934  5054 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.621  4934  5054 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.621  4934  5054 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.656  4934  5068 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.665  4934  4973 W MetricsFeatureProvider: Disabled westworld logs writing!!!
+10-15 07:59:13.668  4834  5001 I TestRunner: finished: successfulBatchPublishesEveryPageInOrder(com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest)

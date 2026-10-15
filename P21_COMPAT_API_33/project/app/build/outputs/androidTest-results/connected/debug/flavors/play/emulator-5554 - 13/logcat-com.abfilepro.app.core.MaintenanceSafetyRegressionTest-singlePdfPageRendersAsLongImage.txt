@@ -1,0 +1,8 @@
+10-15 07:59:22.633  4834  5001 I TestRunner: started: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:59:22.636  1086  4981 D WifiCallingSliceHelper: Wifi calling is either not provisioned or not enabled by Platform
+10-15 07:59:22.645  1086  1376 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.646  1086  1376 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/airplane_mode) in: 1
+10-15 07:59:22.650  1086  1370 D SlicesIndexer: Slices already indexed - returning.
+10-15 07:59:22.667  1086  1370 D SettingsSliceProvider: Built slice (content://android.settings.slices/action/battery_saver) in: 17
+10-15 07:59:22.684  1086  4981 D WifiSlice: calling uid name : com.google.android.settings.intelligence
+10-15 07:59:22.691  4834  5001 I TestRunner: finished: singlePdfPageRendersAsLongImage(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

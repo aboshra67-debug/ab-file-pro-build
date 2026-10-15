@@ -1,0 +1,7 @@
+10-15 07:58:54.624  3826  3896 I TestRunner: started: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)
+10-15 07:58:54.646  1331  1687 I SP      : GC for 'dynamic_art' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 07:58:54.646  1331  1687 I SP      : Sync for handwriting_recognition succeeded in 1113 ms: {added: [pack_mapping_v1_lstm_20231127], metadata: false
+10-15 07:58:54.684  1331  1687 I SP      : GC for 'handwriting_recognition' (10) with ttl of 0 ms took 0 ms (0/0/0)
+10-15 07:58:54.685  1331  1935 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$1():204 syncInternal(): syncing packs
+10-15 07:58:54.705  1331  1909 I HandwritingOnlineSuperpacks: HandwritingOnlineSuperpacks.lambda$syncInternal$0():228 syncInternal(): used {old=[], new=[pack_mapping_v1_lstm_20231127], metadata=false, last batch=true} to update cache, success=true
+10-15 07:58:54.714  3826  3896 I TestRunner: finished: unchangedGeneratedFolderCanStillBeUndone(com.abfilepro.app.core.StorageSafetyRegressionTest)

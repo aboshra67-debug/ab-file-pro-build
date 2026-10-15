@@ -1,0 +1,19 @@
+10-15 07:58:49.616  3826  3896 I TestRunner: started: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)
+10-15 07:58:49.631   556  1767 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:49.636  1214  2367 I NetworkScheduler.Stats: Task com.google.android.gms/com.google.android.gms.phenotype.service.sync.PhenotypeConfigurator finished executing. cause:9 result: 1 elapsed_millis: 33787 uptime_millis: 33787 exec_start_elapsed_seconds: 75 [CONTEXT service_id=218 ]
+10-15 07:58:49.648   556  1767 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:49.650   556  1767 W JobInfo : Job 'com.google.android.settings.intelligence/.modules.routines.impl.RoutinesJobIntentService#1728' has a deadline with no functional constraints. The deadline won't improve job execution latency. Consider removing the deadline.
+10-15 07:58:49.652  3103  3103 W CardCollectorJobService: refreshJob, cancel job.
+10-15 07:58:49.653  3103  3103 W BatteryWidgetPhenotypeCommitListener: Phenotype flag updated = true
+10-15 07:58:49.658  3103  3103 W BatteryPhenotypeCommitListener: pheotype flag is update success=true
+10-15 07:58:49.662  3103  3103 W BatteryPhenotypeCommitListener: dump configurations:
+10-15 07:58:49.662  3103  3103 W BatteryPhenotypeCommitListener: 	isFeatureEnabled:true
+10-15 07:58:49.662  3103  3103 W BatteryPhenotypeCommitListener: 	dataFetchInterval:60
+10-15 07:58:49.662  3103  3103 W BatteryPhenotypeCommitListener: 	dataRetentionDays:9
+10-15 07:58:49.662  3103  3103 W BatteryPhenotypeCommitListener: 	grantExactAlarmPermission:true
+10-15 07:58:49.662  3103  3103 W BatteryPhenotypeCommitListener: has 3 listeners
+10-15 07:58:49.662  3103  3103 W BatterySaverPhenotype: onCommitFinishedBatterySaver configuration:
+10-15 07:58:49.662  3103  3103 W BatterySaverPhenotype: 	isSchedulerOverrideEnabled: true
+10-15 07:58:49.662  3103  3103 W BatterySaverPhenotype: 	isSchedulerDefaultOnEnabled: false
+10-15 07:58:49.662  3103  3103 W BatterySaverPhenotype: 	isFlipendoConditionChecked:true
+10-15 07:58:49.666  3826  3896 I TestRunner: finished: zipCancellationKeepsFileEditedAfterExtraction(com.abfilepro.app.core.MaintenanceSafetyRegressionTest)

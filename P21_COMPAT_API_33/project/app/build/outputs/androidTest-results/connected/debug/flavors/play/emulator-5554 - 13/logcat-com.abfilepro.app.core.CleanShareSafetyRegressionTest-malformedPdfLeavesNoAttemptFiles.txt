@@ -1,0 +1,185 @@
+10-15 07:59:15.193  4834  5001 I TestRunner: started: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-15 07:59:15.200  1285  5158 I SystemUpdate: [Execution,InstallationIntentOperation] Received intent: Intent { act=com.google.android.gms.update.INSTALL_UPDATE cat=[targeted_intent_op_prefix:.update.execution.InstallationIntentOperation] cmp=com.google.android.gms/.chimera.GmsIntentOperationService }.
+10-15 07:59:15.202  1285  5158 I SystemUpdate: [Execution,ExecutionManager] Action finished-execution executed for 0.00 seconds.
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.android.cellbroadcastreceiver"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.android.emergency"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.android.permissioncontroller"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.android.permissioncontroller.role"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.android.permissioncontroller.safetycenter"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.android.settings"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.android.traceur"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.gsa.opa.AssistantSettingsProvider"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.messaging.settings.search"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.nexuslauncher"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.apps.wellbeing"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.gms"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.gms.accountsettings.content"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.inputmethod.latin"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.marvin.talkback.preference.search.TalkBackSearchIndexablesProvider"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.settings.intelligence.provider.search"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.settings.intelligence.routines.impl"
+10-15 07:59:15.238  4934  4970 W SQLiteLog: (28) double-quoted string literal: "com.google.android.settings.intelligence.smartringer.impl"
+10-15 07:59:15.240  1285  5154 D Backup  : [MigrateCleaner] D2D transport was not selected, not selecting cloud transport.
+10-15 07:59:15.240  1285  5154 V Backup  : [G1ModuleInitIntentOperation] BbG1 notifications disabled by flag
+10-15 07:59:15.240  1285  4519 V Backup  : [SettingsModuleInit] onInitRuntimeState
+10-15 07:59:15.240  1285  4519 V Backup  : [NoBackupNotification] Disabled, not scheduling
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.248  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.249  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.249  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.249  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.250  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.250  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.250  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.250  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.250  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.250  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.251  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.251  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.251  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.252  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.252  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.252  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.252  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.252  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.252  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.253  4934  4970 W IndexDataConverter: Skipping index for null-key item IndexData.Builder {title: null,package: com.google.android.googlequicksearchbox}
+10-15 07:59:15.255  4934  4970 W IndexDataConverter: Skipping null key for raw indexable com.google.android.apps.gsa.opa.AssistantSettingsProvider/
+10-15 07:59:15.267  1285  4519 V Backup  : [AccountChangedIO] Received intent, action = android.intent.action.BOOT_COMPLETED
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.292  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.294  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.294  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.295  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.295  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.295  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.295  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.295  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.295  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.295  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.296  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.297  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.298  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.309  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.309  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.309  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.312  4934  4970 W IndexDataConverter: Skipping null deep link for raw indexable com.google.android.gms/Find My Device
+10-15 07:59:15.313  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.313  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.313  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.313  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.313  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.313  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.313  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.314  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.314  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.314  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.314  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.314  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.314  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.315  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.315  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.315  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.315  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.315  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.315  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.315  4934  4970 W IndexDataConverter: Skipping index for null-key item IndexData.Builder {title: null,package: com.google.android.apps.nexuslauncher}
+10-15 07:59:15.317  1285  4519 I Backup  : [GmsBackupAccountManager] Backup account not found in gmscore.
+10-15 07:59:15.318  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.318  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.318  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.318  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.318  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.318  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.319  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.319  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.319  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.319  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.320  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.320  4934  4970 E gs.intelligence: No package ID ff found for ID 0xffffffff.
+10-15 07:59:15.320  4834  5001 I TestRunner: finished: malformedPdfLeavesNoAttemptFiles(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
