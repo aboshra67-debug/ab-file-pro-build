@@ -73,6 +73,7 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
     var online by remember { mutableStateOf(true) }
 
     LaunchedEffect(Unit) {
+        if (profile.syncState != com.abfilepro.app.assistant.FamilySyncState.ON) return@LaunchedEffect
         while (isActive) {
             val remote = withContext(Dispatchers.IO) { service.pull() }
             if (remote != null) {
@@ -95,7 +96,12 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
                     Column {
                         Text("شات العائلة", fontWeight = FontWeight.Black)
                         Text(
-                            if (online) "${profile.familyName} • متصل" else "${profile.familyName} • جارٍ إعادة الاتصال",
+                            when {
+                                // P17: chat needs an explicit family link; say so instead of "reconnecting" forever.
+                                profile.syncState != com.abfilepro.app.assistant.FamilySyncState.ON -> "فعّل العائلة من إعداد العائلة لاستخدام الشات"
+                                online -> "${profile.familyName} • متصل"
+                                else -> "${profile.familyName} • جارٍ إعادة الاتصال"
+                            },
                             fontSize = 11.sp,
                             color = if (online) Color(0xFF0DAA60) else Color(0xFF94A3B8),
                         )

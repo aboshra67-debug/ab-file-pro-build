@@ -1,5 +1,7 @@
 package com.abfilepro.app.ui.screens.assistant
 
+import android.widget.Toast
+
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.background
 import androidx.compose.foundation.rememberScrollState
@@ -77,6 +79,7 @@ import com.abfilepro.app.ui.i18n.LocalAppLanguage
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.time.LocalDate
 import java.time.ZonedDateTime
@@ -105,6 +108,46 @@ fun PersonalAssistantScreen(
     // Both states are deliberately remembered before the selectedModule branch.
     val arabicHomeScrollState = rememberScrollState()
     val nativeGridState = rememberLazyGridState()
+
+    // P17: a pre-P17 automatic family link stays paused until the user decides once.
+    var legacyFamilyPrompt by remember {
+        mutableStateOf(com.abfilepro.app.assistant.FamilyLinkStore.load(context).syncState ==
+            com.abfilepro.app.assistant.FamilySyncState.LEGACY_PAUSED)
+    }
+    var legacyBusy by remember { mutableStateOf(false) }
+    val legacyScope = androidx.compose.runtime.rememberCoroutineScope()
+    if (legacyFamilyPrompt) {
+        AlertDialog(
+            onDismissRequest = { if (!legacyBusy) legacyFamilyPrompt = false },
+            title = { Text(tr(language, "مزامنة العائلة", "Family sync", "Synchro famille"), fontWeight = FontWeight.Black) },
+            text = {
+                Text(tr(language,
+                    "النسخ القديمة كانت بتشغّل مزامنة العائلة لوحدها. وقفناها لحد ما تختار. لو بتشارك طلبات العائلة أو التسوق مع حد، اختار «تكمّل». مشاركة الأدوية بقت مقفولة إلا لو فعّلتها من إعداد العائلة.",
+                    "Older versions turned family sync on by themselves. It is paused until you choose. If you share family requests or shopping with someone, choose Keep. Sharing medicines is now off unless you turn it on in Family settings.",
+                    "Les anciennes versions activaient la synchro famille seules. Elle est en pause jusqu'à votre choix."))
+            },
+            confirmButton = {
+                Button(enabled = !legacyBusy, onClick = {
+                    legacyBusy = true
+                    legacyScope.launch {
+                        withContext(Dispatchers.IO) { familyCloudSync.confirmLegacyFamily(shareHealth = false) }
+                        legacyBusy = false; legacyFamilyPrompt = false
+                    }
+                }) { Text(tr(language, "تكمّل", "Keep", "Continuer")) }
+            },
+            dismissButton = {
+                TextButton(enabled = !legacyBusy, onClick = {
+                    legacyBusy = true
+                    legacyScope.launch {
+                        val ok = withContext(Dispatchers.IO) { runCatching { familyCloudSync.leaveFamily(deleteMyData = true) }.getOrDefault(false) }
+                        legacyBusy = false
+                        if (ok) legacyFamilyPrompt = false
+                        else Toast.makeText(context, tr(language, "تعذر الاتصال. حاول تاني من إعداد العائلة.", "Could not connect. Try again from Family settings.", "Connexion impossible."), Toast.LENGTH_LONG).show()
+                    }
+                }) { Text(tr(language, "مش بستخدمها - امسح بياناتي", "Not used - delete my data", "Non utilisée - supprimer")) }
+            },
+        )
+    }
 
     LaunchedEffect(Unit) {
         while (isActive) {
