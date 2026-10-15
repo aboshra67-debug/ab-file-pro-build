@@ -1,0 +1,59 @@
+{
+  "release": "AB98 P21",
+  "version_code": 173,
+  "version_name": "2.0.0-alpha98-p21-final-readiness",
+  "baseline": "AB98 P20 (VC172)",
+  "deleted_files": [],
+  "ci_run": "38712380245",
+  "ci_commit": "3f1ac27b12f6555656a8aa21eb065629359c201b",
+  "results": {
+    "android": "112/112",
+    "scanner_ui": "19/19",
+    "jvm": "43/43",
+    "qa_r8_monkey": "1500 events, no crash/ANR",
+    "server_pytest": "15/15",
+    "compat": {
+      "26": {
+        "passed": 102,
+        "skipped": 10,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      },
+      "33": {
+        "passed": 112,
+        "skipped": 0,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      },
+      "35": {
+        "passed": 112,
+        "skipped": 0,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      }
+    }
+  },
+  "outputs": {
+    "AB98_P21_PLAY_TEST.apk": {
+      "bytes": 132101664,
+      "sha256": "eb43839ef46474c3b4b4637966e6bf5f023ce112833bd5b42c775f6c806541a5"
+    },
+    "AB98_P21_PLAY_QA_R8.apk": {
+      "bytes": 108379454,
+      "sha256": "d74bbe0728af146385610b60c58596cc2ef9f952a58bcbd4468621cea1525f31"
+    },
+    "AB98_P21_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67839504,
+      "sha256": "9270aeea0366759e74e26a8091245ca25fafe1041f1c90e68fa6ffe47651cb26"
+    },
+    "AB98_P21_PLAY_RELEASE_mapping.txt": {
+      "bytes": 116030707,
+      "sha256": "1eab9cb463ed956b920bc17a55e990ca9897a1cf256463c8f7c5c7da8beab1c6"
+    }
+  },
+  "signing": "debug only (original key unavailable; no replacement key used)",
+  "physical_phone_tested": false
+}

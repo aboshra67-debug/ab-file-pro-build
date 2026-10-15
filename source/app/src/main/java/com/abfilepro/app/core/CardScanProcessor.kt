@@ -38,11 +38,14 @@ object CardScanProcessor {
         front: File,
         back: File,
         layout: CardPageLayout,
-        baseName: String
+        baseName: String,
+        destinationDir: File? = null
     ): File {
         require(front.exists() && back.exists()) { "صوّر وجهي البطاقة أولًا" }
         val safeName = baseName.trim().replace(Regex("[\\\\/:*?\"<>|]"), "_").ifBlank { "Card" }
-        val output = File(FileUtils.outputDir(context, "card_scans"), "${safeName}_${System.currentTimeMillis()}.pdf")
+        // P22: the scanner passes its one save folder; other callers keep "card_scans".
+        val folder = destinationDir?.takeIf { it.isDirectory || it.mkdirs() } ?: FileUtils.outputDir(context, "card_scans")
+        val output = File(folder, "${safeName}_${System.currentTimeMillis()}.pdf")
 
         val first = decodeScaled(front, 2200)
         val second = decodeScaled(back, 2200)

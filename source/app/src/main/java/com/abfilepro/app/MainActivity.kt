@@ -85,7 +85,16 @@ class MainActivity : ComponentActivity() {
                     val shortcutOpenWorkspace = remember {
                         intent?.getBooleanExtra(WorkspaceShortcutRules.EXTRA_OPEN_WORKSPACE, false) == true
                     }
-                    NavHost(navController = nav, startDestination = if (shortcutOpenWorkspace) "files" else "splash") {
+                    // P22: no cross-fade between screens. The default fade showed two screens
+                    // half-transparent on top of each other (camera over the file manager).
+                    NavHost(
+                        navController = nav,
+                        startDestination = if (shortcutOpenWorkspace) "files" else "splash",
+                        enterTransition = { androidx.compose.animation.EnterTransition.None },
+                        exitTransition = { androidx.compose.animation.ExitTransition.None },
+                        popEnterTransition = { androidx.compose.animation.EnterTransition.None },
+                        popExitTransition = { androidx.compose.animation.ExitTransition.None }
+                    ) {
                         composable("splash") {
                             SplashScreen {
                                 nav.navigate("home") { popUpTo("splash") { inclusive = true } }

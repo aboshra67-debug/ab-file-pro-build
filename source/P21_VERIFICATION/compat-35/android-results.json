@@ -1,0 +1,680 @@
+{
+  "api": "35",
+  "gradle_exit": 0,
+  "tests": 112,
+  "failed": 0,
+  "results": [
+    {
+      "name": "recordsAreNotDroppedAfterTwoThousand",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "familySyncAppliesOnlyChangedRecords",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "updatingARecordDeletedElsewhereDoesNotBringItBack",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "staleScreenCopyCannotUndoAChangeMadeElsewhere",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "backupImportAddsOnlyMissingRecordsAndChangesNothingElse",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "preP20RecordsAreMigratedAndTheOldCopyIsKept",
+      "class": "com.abfilepro.app.assistant.AssistantStoreRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "leavingWhileNotLinkedClearsStateWithoutNetwork",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "preP17AutomaticRegistrationIsPausedUntilConfirmed",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "preP17CodeWithoutRegistrationIsDiscarded",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "freshInstallHasNoFamilyAndNoSession",
+      "class": "com.abfilepro.app.assistant.FamilyOptInRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "documentWhoseReminderWindowStartedIsRemindedOnce",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "adhanSchedulesTomorrowAndKeepsTodaysFollowUp",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "medicineReceiverSchedulesTheNextDailyDose",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "calendarReminderWhoseLeadTimeAlreadyPassedStillFires",
+      "class": "com.abfilepro.app.assistant.ReminderReliabilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "successfulBatchPublishesEveryPageInOrder",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancellationDuringSaveRemovesPublishedImages",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "retryAfterFailureDoesNotDuplicatePages",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "secondPageFailureRemovesOnlyThisAttemptsImages",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "imageChangedAfterPublishIsKeptOnRollback",
+      "class": "com.abfilepro.app.core.BatchJpegSaveSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedCompressionKeepsValidCleanedPdf",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedHandoffPreservesOutputEditedAfterPublication",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "allBlankPagesAreRejectedWithoutChangingSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "compressionCandidateMissingPagesIsRejected",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "malformedPdfLeavesNoAttemptFiles",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "imageChosenFromShareFolderNeverReplacesItsSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "parallelImagesWithSameNameHaveIndependentOutputs",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "pdfChosenFromShareFolderNeverReplacesItsSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "largerCompressionCandidateIsNotReportedAsCompressed",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedWriterRemovesOnlyItsPartialDraft",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledReturnHandoffPreservesIdenticalReplacement",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalPdfPreservesAllRequestedPages",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "existingImageWithSameNameIsPreserved",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failureAfterPublicationRemovesUnchangedOutput",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalImageProducesReadableCopyWithoutChangingSource",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "qrRedactionStillWorksWithPrivateOcrDrafts",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "inputAndOcrDraftsRemainInAppPrivateCache",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledReturnHandoffRemovesUnchangedPublication",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "blankPageRemovalStillKeepsTheContentPage",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancellationBeforePublicationRemovesPartialDraft",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "jpegOutputStillPreservesTheOriginalPng",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "existingPdfWithSameNameIsPreserved",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "invalidCompressionCandidateKeepsValidCleanedPdf",
+      "class": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedZipEnumerationCannotSucceedWithEmptyDirectory",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "persianDigitsAndArabicSeparatorsStayComplete",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "safMoveKeepsChildAddedAfterCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedSafListingCannotMoveAndDeleteUncopiedFolder",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "corruptZipRemovesPartialFileAndImplicitDirectories",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "concaveCropIsRejectedBeforeChangingCapturedImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "validPerspectiveCropStillProducesReadableImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "arabicDecimalAmountAndTaxStayComplete",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "zipCancellationKeepsFileEditedAfterExtraction",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalSafFallbackMovePreservesEveryChild",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "safMoveKeepsFileModifiedAfterCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "arabicThousandsAndDecimalStayComplete",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedRenameUndoStillRestoresOriginalName",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unreadableImageFailsEntirePdfWithoutPublishingMissingPages",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "crossingCropIsRejectedBeforeChangingCapturedImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "nonemptyUnreadableScannerImportCannotBecomeReplacement",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "validImagesProduceEverySelectedPdfPage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "businessNameSurvivesMissingEmail",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "businessNameSurvivesMissingPhone",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "multiplePdfPagesRenderInOrderAsLongImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fullFrameCropDoesNotReencodeOrDeleteSource",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "nullSafCursorIsAnErrorRatherThanEmptyFolder",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "arabicNameSurvivesAllContactFieldsMissing",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "westernAmountsRemainSupported",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "safMoveRejectsIncompleteDestinationBeforeDeletingOriginal",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fullBusinessContactFieldsStillParse",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyFallbackDeleteFailureKeepsCompletedCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyFallbackNeverDeletesSourceModifiedAfterCopy",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "renameUndoNeverMovesAReplacementFile",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "singlePdfPageRendersAsLongImage",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "businessNameSurvivesMissingWebsite",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "moveUndoNeverMovesAReplacementFile",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyFallbackFailureKeepsReplacementAtDestination",
+      "class": "com.abfilepro.app.core.MaintenanceSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "pdfboxOnlyModeNeverProducesFilesFromItsRendering",
+      "class": "com.abfilepro.app.core.PdfCompatibilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "longImageIsProducedThroughTheRewrittenCopy",
+      "class": "com.abfilepro.app.core.PdfCompatibilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "systemRendererStaysThePrimaryPathOnCurrentAndroid",
+      "class": "com.abfilepro.app.core.PdfCompatibilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "brokenPdfIsStillRejectedWhenTheFallbackIsUsed",
+      "class": "com.abfilepro.app.core.PdfCompatibilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "androidWrittenPdfRendersItsRealContentOrIsRefusedSafely",
+      "class": "com.abfilepro.app.core.PdfCompatibilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards",
+      "class": "com.abfilepro.app.core.PdfCompatibilityRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "playBuildDoesNotRequestInstallPackages",
+      "class": "com.abfilepro.app.core.PlayChannelPolicyTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "playChannelDisablesSelfUpdate",
+      "class": "com.abfilepro.app.core.PlayChannelPolicyTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalCopyPreservesBytesAndSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialFileMoveUndoRetainsConflictForRetry",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoReplacementAtSamePathPreservesReplacement",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unreadableDirectoryCannotBePublishedAsEmptyCopy",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoSelfRejectedWithoutChangingSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedFallbackMoveCopyDoesNotDeleteAnySource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalFolderCopyPreservesNestedAndEmptyFolders",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsSameLengthSameTimeEditAfterCopy",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoFolderWithNewUserFilePreservesWholeFolder",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "moveCancellationBeforeSourceCleanupPreservesSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyCancellationCleansAttemptAndKeepsSource",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoChangedSameLengthSameTimeFilePreservesNewData",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoDescendantRejectedWithoutWriting",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedOutputCanStillBeUndone",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsFileAddedAfterCopy",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalMovePreservesBytesAtDestination",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialUndoKeepsChangedOutputAndItsHistory",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveDeleteFailureKeepsCompleteDestination",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedFolderCanStillBeUndone",
+      "class": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "scannerPdfIsPublishedOnlyAfterVerification",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "reviewPagesRoundTripThroughSavedState",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "restoredReviewDropsPagesWhoseImageIsGone",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "invalidScannerResultFailsCleanlyWithoutLeavingFiles",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "recordingStoppedOutsideTheScreenIsRecovered",
+      "class": "com.abfilepro.app.core.WorkInProgressSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    }
+  ]
+}

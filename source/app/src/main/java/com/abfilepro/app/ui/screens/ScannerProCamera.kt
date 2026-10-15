@@ -315,9 +315,6 @@ fun ScannerProCamera(
                             val previewResult = runCatching { loadCapturedDocumentPreview(output) }
                             mainExecutor.execute {
                                 previewResult.onSuccess { preview ->
-                                    runCatching { cameraProvider?.unbindAll() }
-                                    imageCapture = null
-                                    cameraControl = null
                                     capturedDocumentFile = output
                                     capturedDocumentPreview = preview
                                     busy = false
@@ -364,6 +361,8 @@ fun ScannerProCamera(
     LaunchedEffect(metrics?.stableFrames, autoCapture, busy, existingPageCount, mode, effectiveDocumentDetection) {
         val current = metrics ?: return@LaunchedEffect
         if (!autoCapture || !effectiveDocumentDetection || busy || !current.captureReady || remainingCapacity() <= 0) return@LaunchedEffect
+        // P22: the camera keeps running under the confirmation; never auto-capture behind it.
+        if (capturedDocumentPreview != null) return@LaunchedEffect
         val now = SystemClock.elapsedRealtime()
         if (now - lastAutoCaptureAt >= 2500L) {
             lastAutoCaptureAt = now
@@ -395,29 +394,10 @@ fun ScannerProCamera(
             Box(Modifier.fillMaxWidth().weight(1f).background(MaterialTheme.colorScheme.surfaceVariant)) {
                 if (permissionGranted) {
                     val capturedPreview = capturedDocumentPreview
-                    if (simpleDocumentCapture && capturedPreview != null) {
-                        Image(
-                            bitmap = capturedPreview.asImageBitmap(),
-                            contentDescription = context.uiText(language, "alpha24_capture_success"),
-                            modifier = Modifier.fillMaxSize().padding(12.dp),
-                            contentScale = ContentScale.Fit
-                        )
-                        Surface(
-                            modifier = Modifier.align(Alignment.TopCenter).padding(14.dp),
-                            shape = MaterialTheme.shapes.large,
-                            color = MaterialTheme.colorScheme.surface.copy(alpha = .94f),
-                            tonalElevation = 4.dp
-                        ) {
-                            Row(
-                                modifier = Modifier.padding(horizontal = 14.dp, vertical = 9.dp),
-                                verticalAlignment = Alignment.CenterVertically,
-                                horizontalArrangement = Arrangement.spacedBy(8.dp)
-                            ) {
-                                Icon(Icons.Default.CheckCircle, null, tint = MaterialTheme.colorScheme.primary)
-                                Text(context.uiText(language, "alpha24_capture_success"), style = MaterialTheme.typography.titleSmall)
-                            }
-                        }
-                    } else {
+                    // P22: the live camera stays composed (and bound) under the captured-page
+                    // confirmation, so "next page" shows the camera instantly instead of a black
+                    // screen while CameraX re-opens.
+
                     key(if (simpleDocumentCapture) documentAutoBounds else false) {
                     AndroidView(
                         factory = { ctx ->
@@ -624,6 +604,32 @@ fun ScannerProCamera(
                             Text(text, style = MaterialTheme.typography.bodySmall)
                         }
                     }
+                    
+                    if (simpleDocumentCapture && capturedPreview != null) {
+                        Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.surfaceVariant)) {
+                        Image(
+                            bitmap = capturedPreview.asImageBitmap(),
+                            contentDescription = context.uiText(language, "alpha24_capture_success"),
+                            modifier = Modifier.fillMaxSize().padding(12.dp),
+                            contentScale = ContentScale.Fit
+                        )
+                        Surface(
+                            modifier = Modifier.align(Alignment.TopCenter).padding(14.dp),
+                            shape = MaterialTheme.shapes.large,
+                            color = MaterialTheme.colorScheme.surface.copy(alpha = .94f),
+                            tonalElevation = 4.dp
+                        ) {
+                            Row(
+                                modifier = Modifier.padding(horizontal = 14.dp, vertical = 9.dp),
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.spacedBy(8.dp)
+                            ) {
+                                Icon(Icons.Default.CheckCircle, null, tint = MaterialTheme.colorScheme.primary)
+                                Text(context.uiText(language, "alpha24_capture_success"), style = MaterialTheme.typography.titleSmall)
+                            }
+                        }
+
+                        }
                     }
                 } else {
                     Column(

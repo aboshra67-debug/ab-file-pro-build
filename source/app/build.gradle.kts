@@ -38,9 +38,9 @@ android {
         applicationId = "com.abfilepro.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 173
+        versionCode = 174
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        versionName = "2.0.0-alpha98-p21-final-readiness"
+        versionName = "2.0.0-alpha98-p22-google-scanner"
 
         vectorDrawables { useSupportLibrary = true }
 
@@ -76,7 +76,7 @@ android {
     buildTypes {
         debug {
             // Isolated install so testing never requires uninstalling the production app.
-            applicationIdSuffix = ".p21mainttrial"
+            applicationIdSuffix = ".p22mainttrial"
             if (originalSigningReady) {
                 signingConfig = signingConfigs.getByName("original")
             }
@@ -95,7 +95,7 @@ android {
         // so the optimized build is exercised on the emulator before any store upload.
         create("qa") {
             initWith(getByName("release"))
-            applicationIdSuffix = ".p21qa"
+            applicationIdSuffix = ".p22qa"
             signingConfig = signingConfigs.getByName("debug")
             matchingFallbacks += listOf("release")
         }

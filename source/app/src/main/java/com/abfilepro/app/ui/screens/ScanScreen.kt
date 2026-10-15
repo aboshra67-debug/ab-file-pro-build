@@ -148,7 +148,22 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     var showSingleDocumentSaveOptions by remember { mutableStateOf(false) }
     var showSaveFolderPicker by remember { mutableStateOf(false) }
     var showMissingCardSide by remember { mutableStateOf(false) }
-    var selectedSaveDirectory by remember { mutableStateOf<File?>(null) }
+    // P22: every scanner save goes to one remembered folder (default "AB File Pro/scans").
+    var selectedSaveDirectory by remember { mutableStateOf<File?>(runCatching { ScannerEngineStore.saveDirectory(context) }.getOrNull()) }
+    // P22: Google's document scanner is the default capture engine; the app camera stays available.
+    var scannerEngine by remember { mutableStateOf(ScannerEngineStore.engine(context)) }
+    // Non-null while the pages in review came from Google's scanner (retake/add go back to it).
+    var googleSessionMode by rememberSaveable { mutableStateOf<ScanCaptureMode?>(null) }
+    var googleRetakeIndex by remember { mutableStateOf<Int?>(null) }
+    var googleAppend by remember { mutableStateOf(false) }
+    var showDiscardScan by remember { mutableStateOf(false) }
+    var saveErrorMessage by remember { mutableStateOf<String?>(null) }
+    var imagePreviewFile by remember { mutableStateOf<File?>(null) }
+    var googleBoundsIndex by remember { mutableStateOf<Int?>(null) }
+    var googleBoundsBackup by remember { mutableStateOf<ScanDraftPage?>(null) }
+    // Assigned further down (the app-camera starter is declared after this point).
+    var startBuiltInCamera: (ScanCaptureMode) -> Unit = {}
+    var startNewScan: (ScanCaptureMode) -> Unit = {}
 
     val singleDocumentOptions = remember {
         GmsDocumentScannerOptions.Builder()
@@ -703,6 +718,96 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         }
     }
 
+    // P22: Google's scanner returns cropped, cleaned pages. They go straight to the one review
+    // screen (no separate processing / corner / editor / save-options steps).
+    val googleLauncher = rememberLauncherForActivityResult(
+        ActivityResultContracts.StartIntentSenderForResult()
+    ) { result: ActivityResult ->
+        val retakeIndex = googleRetakeIndex
+        val append = googleAppend
+        googleRetakeIndex = null
+        googleAppend = false
+        val pages = if (result.resultCode == Activity.RESULT_OK) {
+            GmsDocumentScanningResult.fromActivityResultIntent(result.data)?.pages.orEmpty()
+        } else emptyList()
+        if (pages.isEmpty()) {
+            busy = false
+            flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
+            if (reviewPages.isEmpty()) googleSessionMode = null
+            return@rememberLauncherForActivityResult
+        }
+        scope.launch {
+            busy = true
+            try {
+                val cached = withContext(Dispatchers.IO) {
+                    ScanProcessor.cacheScannerPages(context, pages.map { it.imageUri })
+                        // Google already crops and cleans the page; keep its result as the source.
+                        .map { it.copy(filter = ScanFilter.ORIGINAL) }
+                }
+                if (cached.isEmpty()) {
+                    Toast.makeText(context, context.uiText(language, "scan_screen_005"), Toast.LENGTH_LONG).show()
+                } else {
+                    val (merged, retired) = ScannerEnginePolicy.merge(selectedMode, reviewPages, cached, retakeIndex, append)
+                    reviewPages = merged
+                    val live = merged.map { it.file.absolutePath }.toSet()
+                    val unused = retired.filter { it.file.absolutePath !in live }
+                    if (unused.isNotEmpty()) ScanProcessor.cleanup(unused)
+                    lastResult = context.uiText(language, "scan_screen_006", merged.size)
+                }
+            } catch (error: Throwable) {
+                if (error is kotlinx.coroutines.CancellationException) throw error
+                Toast.makeText(
+                    context,
+                    context.localizedOperationFailure(language, error, "scan_screen_005"),
+                    Toast.LENGTH_LONG
+                ).show()
+            } finally {
+                flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
+                if (reviewPages.isEmpty()) googleSessionMode = null
+                busy = false
+            }
+        }
+    }
+
+    fun launchGoogleScanner(mode: ScanCaptureMode, retakeIndex: Int? = null, append: Boolean = false) {
+        if (busy) return
+        val hostActivity = activity
+        if (hostActivity == null) {
+            startBuiltInCamera(mode)
+            return
+        }
+        val existing = if (retakeIndex != null || append) reviewPages.size else 0
+        if (append && !ScannerEnginePolicy.canAdd(mode, existing)) return
+        val scannerOptions = GmsDocumentScannerOptions.Builder()
+            .setGalleryImportAllowed(true)
+            .setPageLimit(ScannerEnginePolicy.pageLimit(mode, existing, retakeIndex != null))
+            .setResultFormats(GmsDocumentScannerOptions.RESULT_FORMAT_JPEG)
+            .setScannerMode(GmsDocumentScannerOptions.SCANNER_MODE_FULL)
+            .build()
+        selectedMode = mode
+        googleSessionMode = mode
+        googleRetakeIndex = retakeIndex
+        googleAppend = append
+        busy = true
+        GmsDocumentScanning.getClient(scannerOptions).getStartScanIntent(hostActivity)
+            .addOnSuccessListener { intentSender ->
+                googleLauncher.launch(IntentSenderRequest.Builder(intentSender).build())
+            }
+            .addOnFailureListener {
+                // Google's scanner is not available on this phone: continue with the app camera.
+                busy = false
+                googleRetakeIndex = null
+                googleAppend = false
+                Toast.makeText(context, context.uiText(language, "p22_google_scanner_unavailable"), Toast.LENGTH_LONG).show()
+                if (retakeIndex == null && !append) {
+                    googleSessionMode = null
+                    startBuiltInCamera(mode)
+                } else {
+                    flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
+                }
+            }
+    }
+
     fun launchProfessionalSinglePageScanner(mode: ScanCaptureMode, retakeIndex: Int? = null) {
         if (busy) return
         require(mode == ScanCaptureMode.DOCUMENT || mode == ScanCaptureMode.TRANSLATION) { "professional_single_page_mode_required" }
@@ -774,6 +879,10 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         // Alpha43: snapshot the capture mode too. The save coroutine must not depend on
         // recomposed UI state after the user presses Save Now.
         val requestedMode = selectedMode
+        // P22: one save folder for every scanner mode (default "AB File Pro/scans").
+        val targetDirectory = destinationDir
+            ?: selectedSaveDirectory?.takeIf { it.isDirectory }
+            ?: runCatching { ScannerEngineStore.saveDirectory(context) }.getOrNull()
         reviewPages = pagesSnapshot
         busy = true
         flowStage = ScanUiStage.SAVING
@@ -803,7 +912,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                                     front = front,
                                     back = back,
                                     layout = CardPageLayout.VERTICAL,
-                                    baseName = "Card"
+                                    baseName = safeBaseName(customName).takeIf { customName.isNotBlank() } ?: "Card",
+                                    destinationDir = targetDirectory
                                 )
                             } finally {
                                 runCatching { front.parentFile?.deleteRecursively() }
@@ -819,7 +929,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                                 page = pagesSnapshot.first(),
                                 baseName = safeBaseName(customName),
                                 quality = quality,
-                                destinationDir = destinationDir
+                                destinationDir = targetDirectory
                             )
                         } else if (
                             requestedMode == ScanCaptureMode.BATCH &&
@@ -832,7 +942,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                                 pages = pagesSnapshot,
                                 baseName = safeBaseName(customName),
                                 quality = quality,
-                                destinationDir = destinationDir
+                                destinationDir = targetDirectory
                             )
                             require(savedImages.isNotEmpty()) { "scan_save_output_invalid" }
                             savedImages.forEach { image ->
@@ -847,7 +957,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                                 quality,
                                 pageSize,
                                 preserveSourceDetail = requestedMode == ScanCaptureMode.DOCUMENT,
-                                destinationDir = destinationDir
+                                destinationDir = targetDirectory
                             )
                         }
                     }
@@ -860,21 +970,23 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     ScanProcessor.cleanup(pagesSnapshot)
                     reviewPages = emptyList()
                     lastResult = context.uiText(language, "scan_screen_010", pagesSnapshot.size, verifiedSaved.name)
-                    // P10 Batch flow fix: a multi-page scan must stay inside the scanner after
-                    // a successful save. Opening the saved location here made BATCH behave like
-                    // a single-document scan and kicked the user out of the multi-page flow.
-                    if (requestedMode != ScanCaptureMode.BATCH) {
-                        onOpenSavedLocation(verifiedSaved)
-                    }
+                    // P22: every mode stays on the success screen after saving; the user opens the
+                    // file (in-app viewer) or its folder from there. Jumping to the file manager
+                    // automatically left the scanner mid-task (P10 already did this for BATCH).
                 }
             } catch (error: Throwable) {
                 reviewPages = pagesSnapshot
                 flowStage = if (returnToEditorOnFailure) ScanUiStage.EDITOR else ScanUiStage.REVIEW
-                Toast.makeText(
-                    context,
-                    error.message?.takeIf { it.isNotBlank() } ?: context.localizedOperationFailure(language, error, "scan_screen_012"),
-                    Toast.LENGTH_LONG
-                ).show()
+                if (error is kotlinx.coroutines.CancellationException) {
+                    Toast.makeText(context, context.uiText(language, "p22_save_cancelled"), Toast.LENGTH_SHORT).show()
+                } else {
+                    // P22: a failure stays on screen until read (translation failures used to flash by).
+                    val reason = error.message?.takeIf { it.isNotBlank() && !it.startsWith("scan_") }
+                        ?: context.localizedOperationFailure(language, error, "scan_screen_012")
+                    saveErrorMessage = if (requestedMode == ScanCaptureMode.TRANSLATION) {
+                        context.uiText(language, "p22_translation_failed", reason)
+                    } else reason
+                }
             } finally {
                 busy = false
                 activeSaveJob = null
@@ -900,6 +1012,43 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         }
     }
 
+    saveErrorMessage?.let { message ->
+        AlertDialog(
+            onDismissRequest = { saveErrorMessage = null },
+            title = { Text(context.uiText(language, "p22_save_failed_title")) },
+            text = { Text(message) },
+            confirmButton = { TextButton(onClick = { saveErrorMessage = null }) { Text(context.uiText(language, "p22_ok")) } }
+        )
+    }
+
+    if (showDiscardScan) {
+        AlertDialog(
+            onDismissRequest = { showDiscardScan = false },
+            title = { Text(context.uiText(language, "p22_discard_title")) },
+            text = { Text(context.uiText(language, "p22_discard_message", reviewPages.size)) },
+            confirmButton = {
+                TextButton(onClick = {
+                    showDiscardScan = false
+                    ScanProcessor.cleanup(reviewPages)
+                    reviewPages = emptyList()
+                    googleSessionMode = null
+                    googleBoundsIndex = null
+                    googleBoundsBackup = null
+                    flowStage = ScanUiStage.HUB
+                    lastResult = context.uiText(language, "scan_screen_014")
+                }) { Text(context.uiText(language, "p22_discard_confirm")) }
+            },
+            dismissButton = {
+                TextButton(onClick = { showDiscardScan = false }) { Text(context.uiText(language, "p22_keep_editing")) }
+            }
+        )
+    }
+
+    imagePreviewFile?.let { file ->
+        ScanImageViewer(file = file, onClose = { imagePreviewFile = null })
+        return
+    }
+
     if (showMissingCardSide) {
         AlertDialog(
             onDismissRequest = { showMissingCardSide = false },
@@ -908,9 +1057,13 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             confirmButton = {
                 TextButton(onClick = {
                     showMissingCardSide = false
-                    cameraPages = reviewPages
-                    reviewPages = emptyList()
-                    flowStage = ScanUiStage.CAMERA
+                    if (googleSessionMode != null) {
+                        launchGoogleScanner(selectedMode, append = true)
+                    } else {
+                        cameraPages = reviewPages
+                        reviewPages = emptyList()
+                        flowStage = ScanUiStage.CAMERA
+                    }
                 }) { Text(context.uiText(language, "p11_card_capture_second_side")) }
             },
             dismissButton = {
@@ -969,7 +1122,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
 
     if (showSaveFolderPicker) {
         WorkspaceFolderPickerPane(
-            initialDirectory = selectedSaveDirectory ?: runCatching { FileUtils.defaultSaveDirectory(context) }.getOrNull(),
+            initialDirectory = selectedSaveDirectory ?: runCatching { ScannerEngineStore.saveDirectory(context) }.getOrNull(),
             onCancel = {
                 showSaveFolderPicker = false
                 if (pendingSingleDocumentSavePage != null) {
@@ -978,7 +1131,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 }
             },
             onFolderPicked = { folder ->
-                runCatching { FileUtils.setDefaultSaveDirectory(context, folder) }
+                runCatching { ScannerEngineStore.setSaveDirectory(context, folder) }
                     .onSuccess { selectedSaveDirectory = folder }
                     .onFailure {
                         Toast.makeText(context, it.message ?: context.uiText(language, "alpha37_workspace_unavailable"), Toast.LENGTH_LONG).show()
@@ -999,7 +1152,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             val persistentReady = DeviceStorageManager.hasAllFilesAccess()
             val currentSaveDirectory = selectedSaveDirectory
                 ?.takeIf { it.isDirectory && runCatching { FileUtils.isInsideRoot(context, it) }.getOrDefault(false) }
-                ?: runCatching { FileUtils.defaultSaveDirectory(context) }.getOrNull()
+                ?: runCatching { ScannerEngineStore.saveDirectory(context) }.getOrNull()
                 ?: FileUtils.outputDir(context, "scans")
 
             ScanSaveOptionsDialog(
@@ -1088,12 +1241,19 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             file = savedFile,
             onOpenSaved = { file ->
                 if (file.extension.equals("pdf", ignoreCase = true)) onOpenPdf(file)
-                else runCatching { FileUtils.openFile(context, file) }
+                else imagePreviewFile = file
             },
             onShareSaved = { file -> runCatching { FileUtils.shareFile(context, file) } },
             onWhatsApp = { file -> runCatching { FileUtils.shareFileToWhatsApp(context, file) } },
             onMessenger = { file -> runCatching { shareToMessenger(context, file) }.onFailure { FileUtils.shareFile(context, file) } },
-            onNewScan = {
+            onOpenFolder = { file -> onOpenSavedLocation(file) },
+            onNewScan = newScan@{
+                if (ScannerEnginePolicy.usesGoogle(selectedMode, scannerEngine)) {
+                    // P22: a new scan reopens Google's scanner in the same mode.
+                    saveSuccessFile = null
+                    startNewScan(selectedMode)
+                    return@newScan
+                }
                 val restartBatch = selectedMode == ScanCaptureMode.BATCH
                 saveSuccessFile = null
                 if (!restartBatch) {
@@ -1120,7 +1280,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         return
     }
 
-    fun launchMode(mode: ScanCaptureMode) {
+    fun launchBuiltInMode(mode: ScanCaptureMode) {
+        googleSessionMode = null
         selectedMode = mode
         reviewRetakeIndex = null
         cameraPages = emptyList()
@@ -1141,6 +1302,29 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         flowStage = ScanUiStage.CAMERA
         lastResult = context.uiText(language, "scan_screen_001")
     }
+    startBuiltInCamera = { mode -> launchBuiltInMode(mode) }
+
+    /** P22: every new scan starts clean, as PDF, on the chosen engine. */
+    fun launchMode(mode: ScanCaptureMode) {
+        if (busy) return
+        singleDocumentOutputFormat = ScanOutputFormat.PDF
+        if (ScannerEnginePolicy.usesGoogle(mode, scannerEngine)) {
+            if (reviewPages.isNotEmpty()) ScanProcessor.cleanup(reviewPages)
+            reviewPages = emptyList()
+            cameraPages = emptyList()
+            multiPageCapturedPages = emptyList()
+            multiPageFinalizedPages = emptyList()
+            multiPageReviewIndex = 0
+            multiPageRetakeIndex = null
+            reviewRetakeIndex = null
+            singleDocumentBoundsPage = null
+            lastResult = context.uiText(language, "scan_screen_001")
+            launchGoogleScanner(mode)
+        } else {
+            launchBuiltInMode(mode)
+        }
+    }
+    startNewScan = { mode -> launchMode(mode) }
 
     when (flowStage) {
         ScanUiStage.CAMERA -> {
@@ -1463,7 +1647,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             val persistentReady = DeviceStorageManager.hasAllFilesAccess()
             val currentSaveDirectory = selectedSaveDirectory
                 ?.takeIf { it.isDirectory && runCatching { FileUtils.isInsideRoot(context, it) }.getOrDefault(false) }
-                ?: runCatching { FileUtils.defaultSaveDirectory(context) }.getOrNull()
+                ?: runCatching { ScannerEngineStore.saveDirectory(context) }.getOrNull()
                 ?: FileUtils.outputDir(context, "scans")
 
             ScanSaveOptionsDialog(
@@ -1510,8 +1694,41 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
         ScanUiStage.REVIEW, ScanUiStage.SAVING -> {
             if (reviewPages.isEmpty()) {
                 LaunchedEffect(flowStage) {
-                    if (flowStage != ScanUiStage.SUCCESS) flowStage = ScanUiStage.CAMERA
+                    if (flowStage != ScanUiStage.SUCCESS) {
+                        flowStage = if (googleSessionMode != null) ScanUiStage.HUB else ScanUiStage.CAMERA
+                        googleSessionMode = null
+                    }
                 }
+                return
+            }
+
+            // P22: corner adjustment of a Google-scanned page edits that page in place and returns here.
+            val boundsIndex = googleBoundsIndex?.takeIf { googleSessionMode != null && it in reviewPages.indices }
+            if (boundsIndex != null) {
+                fun closeBounds(restore: Boolean) {
+                    val backup = googleBoundsBackup
+                    if (restore && backup != null && boundsIndex in reviewPages.indices) {
+                        reviewPages = reviewPages.toMutableList().also { it[boundsIndex] = backup }
+                    }
+                    googleBoundsIndex = null
+                    googleBoundsBackup = null
+                }
+                SingleDocumentBoundsContent(
+                    page = reviewPages[boundsIndex],
+                    detecting = false,
+                    onPageChange = { updated ->
+                        if (boundsIndex in reviewPages.indices) {
+                            reviewPages = reviewPages.toMutableList().also { it[boundsIndex] = updated }
+                        }
+                    },
+                    onDetectionFinished = { },
+                    onContinue = { closeBounds(restore = false) },
+                    onRetake = {
+                        closeBounds(restore = true)
+                        launchGoogleScanner(selectedMode, retakeIndex = boundsIndex)
+                    },
+                    onBack = { closeBounds(restore = true) }
+                )
                 return
             }
 
@@ -1543,7 +1760,9 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 },
                 onRetakePage = { index ->
                     val page = reviewPages.getOrNull(index)
-                    if (page != null) {
+                    if (page != null && googleSessionMode != null) {
+                        launchGoogleScanner(selectedMode, retakeIndex = index)
+                    } else if (page != null) {
                         if (selectedMode == ScanCaptureMode.BATCH) {
                             // Keep the prior draft as a backup until a new capture replaces it.
                             multiPageCapturedPages = reviewPages
@@ -1571,7 +1790,10 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 },
                 onEditBounds = { index ->
                     val page = reviewPages.getOrNull(index)
-                    if ((selectedMode == ScanCaptureMode.DOCUMENT || selectedMode == ScanCaptureMode.BATCH) && page != null) {
+                    if (googleSessionMode != null && page != null) {
+                        googleBoundsBackup = page
+                        googleBoundsIndex = index
+                    } else if ((selectedMode == ScanCaptureMode.DOCUMENT || selectedMode == ScanCaptureMode.BATCH) && page != null) {
                         if (selectedMode == ScanCaptureMode.BATCH) {
                             multiPageCapturedPages = reviewPages
                             multiPageFinalizedPages = reviewPages.filterNot { it.id == page.id }
@@ -1584,7 +1806,9 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     }
                 },
                 onAddPages = {
-                    if (!busy && reviewPages.size < selectedMode.maxPages) {
+                    if (googleSessionMode != null) {
+                        launchGoogleScanner(selectedMode, append = true)
+                    } else if (!busy && reviewPages.size < selectedMode.maxPages) {
                         if (selectedMode == ScanCaptureMode.BATCH) {
                             multiPageCapturedPages = reviewPages
                             multiPageFinalizedPages = reviewPages
@@ -1621,7 +1845,10 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     }
                 },
                 onBack = {
-                    if (selectedMode == ScanCaptureMode.DOCUMENT) {
+                    if (googleSessionMode != null) {
+                        // P22: pages scanned with Google have no camera/corner step to return to.
+                        showDiscardScan = true
+                    } else if (selectedMode == ScanCaptureMode.DOCUMENT) {
                         // Stepwise back navigation: editor/review -> corner adjustment -> camera.
                         documentProcessingRequestId += 1L
                         documentProcessingBusy = false
@@ -1677,9 +1904,14 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                 lastSavedFile = lastSavedFile,
                 onOpenSaved = { file ->
                     if (file.extension.equals("pdf", ignoreCase = true)) onOpenPdf(file)
-                    else runCatching { FileUtils.openFile(context, file) }
+                    else imagePreviewFile = file
                 },
-                onShareSaved = { file -> runCatching { FileUtils.shareFile(context, file) } }
+                onShareSaved = { file -> runCatching { FileUtils.shareFile(context, file) } },
+                engine = scannerEngine,
+                onEngineChange = { engine ->
+                    scannerEngine = engine
+                    ScannerEngineStore.setEngine(context, engine)
+                }
             )
         }
     }
@@ -1814,7 +2046,8 @@ private fun ScanSaveSuccessContent(
     onWhatsApp: (File) -> Unit,
     onMessenger: (File) -> Unit,
     onNewScan: () -> Unit,
-    onGoHome: () -> Unit
+    onGoHome: () -> Unit,
+    onOpenFolder: ((File) -> Unit)? = null
 ) {
     val context = LocalContext.current
     val language = LocalAppLanguage.current
@@ -1885,6 +2118,13 @@ private fun ScanSaveSuccessContent(
                 Icon(Icons.Default.Share, null)
                 Spacer(Modifier.width(8.dp))
                 Text(context.uiText(language, "alpha15_save_share"))
+            }
+            if (onOpenFolder != null) {
+                TextButton(onClick = { onOpenFolder(file) }, modifier = Modifier.fillMaxWidth()) {
+                    Icon(Icons.Default.FolderOpen, null)
+                    Spacer(Modifier.width(8.dp))
+                    Text(context.uiText(language, "p22_open_folder"))
+                }
             }
             Spacer(Modifier.height(10.dp))
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -2369,14 +2609,20 @@ private fun ScanReviewSaveBar(
                         strokeWidth = 2.dp,
                         color = MaterialTheme.colorScheme.onPrimary
                     )
+                } else if (singleDocument && outputFormat == ScanOutputFormat.JPG) {
+                    Icon(Icons.Default.Image, null)
                 } else {
                     Icon(Icons.Default.PictureAsPdf, null)
                 }
                 Spacer(Modifier.width(8.dp))
                 Text(
                     if (busy) {
-                        if (singleDocument && outputFormat == ScanOutputFormat.JPG) "جاري حفظ JPG..."
+                        if (primaryActionKey == "alpha11_translate_action") context.uiText(language, "p22_translating")
+                        else if (singleDocument && outputFormat == ScanOutputFormat.JPG) "جاري حفظ JPG..."
                         else context.uiText(language, "scan_screen_035")
+                    } else if (primaryActionKey == "scan_screen_036" && singleDocument && outputFormat == ScanOutputFormat.JPG) {
+                        // P22: the button names the format that will really be written.
+                        context.uiText(language, "p22_save_jpg")
                     } else context.uiText(language, primaryActionKey)
                 )
             }
@@ -2511,142 +2757,80 @@ private fun ScanPageReviewCard(
                 }
             }
 
-            Spacer(Modifier.height(8.dp))
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                OutlinedButton(onClick = { onUpdate(page.copy(rotation = page.rotation - 90)) }, enabled = enabled, modifier = Modifier.weight(1f)) {
-                    Icon(Icons.Default.RotateLeft, null); Spacer(Modifier.width(3.dp)); Text(context.uiText(language, "scan_screen_044"))
-                }
-                OutlinedButton(onClick = { onUpdate(page.copy(rotation = page.rotation + 90)) }, enabled = enabled, modifier = Modifier.weight(1f)) {
-                    Icon(Icons.Default.RotateRight, null); Spacer(Modifier.width(3.dp)); Text(context.uiText(language, "scan_screen_045"))
-                }
-                OutlinedButton(onClick = onRetake, enabled = enabled, modifier = Modifier.weight(1.2f)) {
-                    Icon(Icons.Default.Cameraswitch, null); Spacer(Modifier.width(3.dp)); Text(context.uiText(language, "scan_screen_046"))
-                }
-            }
-
-            if (singleDocument) {
-                Spacer(Modifier.height(8.dp))
-                OutlinedButton(
-                    onClick = onEditBounds,
-                    enabled = enabled,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Icon(Icons.Default.CropFree, null, Modifier.size(18.dp))
-                    Spacer(Modifier.width(6.dp))
-                    Text(context.uiText(language, "alpha20_bounds_title"))
-                }
-                Spacer(Modifier.height(8.dp))
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                    OutlinedButton(
-                        onClick = {
-                            onUpdate(
-                                page.copy(
-                                    filter = ScanFilter.DOCUMENT,
-                                    brightness = 4,
-                                    contrast = 1.08f,
-                                    sharpness = .16f
-                                )
-                            )
-                        },
-                        enabled = enabled,
-                        modifier = Modifier.weight(1f)
-                    ) {
-                        Icon(Icons.Default.AutoFixHigh, null, Modifier.size(18.dp))
-                        Spacer(Modifier.width(4.dp))
-                        Text(context.uiText(language, "alpha21_quick_enhance"))
-                    }
-                    OutlinedButton(
-                        onClick = {
-                            if (!smartCropBusy) {
-                                smartCropBusy = true
-                                scope.launch {
-                                    val quad = withContext(Dispatchers.IO) {
-                                        val bitmap = runCatching { ScanProcessor.renderSourcePreview(page, 1800) }.getOrNull()
-                                        if (bitmap == null) {
-                                            null
-                                        } else {
-                                            try {
-                                                runCatching { StaticDocumentDetector.detect(bitmap).quad }.getOrNull()
-                                            } finally {
-                                                bitmap.recycle()
-                                            }
-                                        }
-                                    }
-                                    if (quad != null) {
-                                        onUpdate(page.copy(perspective = quad))
-                                        Toast.makeText(
-                                            context,
-                                            context.uiText(language, "alpha21_smart_crop_done"),
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-                                    } else {
-                                        Toast.makeText(
-                                            context,
-                                            context.uiText(language, "alpha21_smart_crop_not_found"),
-                                            Toast.LENGTH_SHORT
-                                        ).show()
-                                    }
-                                    smartCropBusy = false
-                                }
-                            }
-                        },
-                        enabled = enabled && !smartCropBusy,
-                        modifier = Modifier.weight(1f)
-                    ) {
-                        if (smartCropBusy) {
-                            CircularProgressIndicator(Modifier.size(16.dp), strokeWidth = 2.dp)
+            // P22: one compact toolbar (icon over a one-line label) instead of rows of wide
+            // outlined buttons whose labels wrapped into broken words on phones.
+            fun runSmartCrop() {
+                if (smartCropBusy) return
+                smartCropBusy = true
+                scope.launch {
+                    val quad = withContext(Dispatchers.IO) {
+                        val bitmap = runCatching { ScanProcessor.renderSourcePreview(page, 1800) }.getOrNull()
+                        if (bitmap == null) {
+                            null
                         } else {
-                            Icon(Icons.Default.CropFree, null, Modifier.size(18.dp))
+                            try {
+                                runCatching { StaticDocumentDetector.detect(bitmap).quad }.getOrNull()
+                            } finally {
+                                bitmap.recycle()
+                            }
                         }
-                        Spacer(Modifier.width(4.dp))
-                        Text(context.uiText(language, "alpha21_smart_crop"))
                     }
-                    OutlinedButton(
-                        onClick = {
-                            onUpdate(
-                                page.copy(
-                                    rotation = 0,
-                                    filter = ScanFilter.ORIGINAL,
-                                    brightness = 0,
-                                    contrast = 1f,
-                                    sharpness = 0f,
-                                    cropLeft = 0f,
-                                    cropTop = 0f,
-                                    cropRight = 0f,
-                                    cropBottom = 0f,
-                                    perspective = null
-                                )
-                            )
-                        },
-                        enabled = enabled,
-                        modifier = Modifier.weight(1f)
-                    ) {
-                        Icon(Icons.Default.RestartAlt, null, Modifier.size(18.dp))
-                        Spacer(Modifier.width(4.dp))
-                        Text(context.uiText(language, "alpha21_original"))
+                    if (quad != null) {
+                        onUpdate(page.copy(perspective = quad))
+                        Toast.makeText(context, context.uiText(language, "alpha21_smart_crop_done"), Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(context, context.uiText(language, "alpha21_smart_crop_not_found"), Toast.LENGTH_SHORT).show()
                     }
+                    smartCropBusy = false
                 }
             }
-
             Spacer(Modifier.height(8.dp))
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                OutlinedButton(
-                    onClick = { showEditor = true },
-                    enabled = enabled,
-                    modifier = Modifier.weight(1f)
-                ) {
-                    Icon(Icons.Default.Tune, null)
-                    Spacer(Modifier.width(4.dp))
-                    Text(context.uiText(language, "scan_screen_047"))
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                ReviewToolButton(Icons.Default.RotateLeft, context.uiText(language, "scan_screen_044"), enabled, Modifier.weight(1f)) {
+                    onUpdate(page.copy(rotation = page.rotation - 90))
                 }
-                OutlinedButton(
-                    onClick = { onApplyEnhancementsToAll(page) },
-                    enabled = enabled && count > 1,
-                    modifier = Modifier.weight(1f)
-                ) {
+                ReviewToolButton(Icons.Default.RotateRight, context.uiText(language, "scan_screen_045"), enabled, Modifier.weight(1f)) {
+                    onUpdate(page.copy(rotation = page.rotation + 90))
+                }
+                if (singleDocument) {
+                    ReviewToolButton(Icons.Default.CropFree, context.uiText(language, "p22_tool_crop"), enabled, Modifier.weight(1f), onClick = onEditBounds)
+                }
+                ReviewToolButton(Icons.Default.Tune, context.uiText(language, "p22_tool_edit"), enabled, Modifier.weight(1f)) { showEditor = true }
+                ReviewToolButton(Icons.Default.Cameraswitch, context.uiText(language, "p22_tool_retake"), enabled, Modifier.weight(1f), onClick = onRetake)
+            }
+            if (singleDocument) {
+                Spacer(Modifier.height(4.dp))
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                    ReviewToolButton(Icons.Default.AutoFixHigh, context.uiText(language, "alpha21_quick_enhance"), enabled, Modifier.weight(1f)) {
+                        onUpdate(page.copy(filter = ScanFilter.DOCUMENT, brightness = 4, contrast = 1.08f, sharpness = .16f))
+                    }
+                    ReviewToolButton(
+                        Icons.Default.CropFree,
+                        context.uiText(language, "alpha21_smart_crop"),
+                        enabled && !smartCropBusy,
+                        Modifier.weight(1f),
+                        busy = smartCropBusy
+                    ) { runSmartCrop() }
+                    ReviewToolButton(Icons.Default.RestartAlt, context.uiText(language, "alpha21_original"), enabled, Modifier.weight(1f)) {
+                        onUpdate(
+                            page.copy(
+                                rotation = 0, filter = ScanFilter.ORIGINAL, brightness = 0, contrast = 1f, sharpness = 0f,
+                                cropLeft = 0f, cropTop = 0f, cropRight = 0f, cropBottom = 0f, perspective = null
+                            )
+                        )
+                    }
+                    if (count > 1) {
+                        ReviewToolButton(Icons.Default.AutoFixHigh, context.uiText(language, "p22_tool_apply_all"), enabled, Modifier.weight(1f)) {
+                            onApplyEnhancementsToAll(page)
+                        }
+                    }
+                }
+            } else if (count > 1) {
+                Spacer(Modifier.height(4.dp))
+                TextButton(onClick = { onApplyEnhancementsToAll(page) }, enabled = enabled, modifier = Modifier.fillMaxWidth()) {
                     Icon(Icons.Default.AutoFixHigh, null)
                     Spacer(Modifier.width(4.dp))
-                    Text(context.uiText(language, "scan_screen_048"))
+                    Text(context.uiText(language, "scan_screen_048"), maxLines = 1)
                 }
             }
             Text(
@@ -3290,6 +3474,40 @@ private fun ScanPageAdjustDialog(
                     }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun ReviewToolButton(
+    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    label: String,
+    enabled: Boolean,
+    modifier: Modifier = Modifier,
+    busy: Boolean = false,
+    onClick: () -> Unit
+) {
+    Surface(
+        onClick = onClick,
+        enabled = enabled,
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(12.dp),
+        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = if (enabled) .65f else .3f),
+        modifier = modifier.heightIn(min = 58.dp)
+    ) {
+        Column(
+            Modifier.padding(horizontal = 2.dp, vertical = 7.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(3.dp)
+        ) {
+            if (busy) CircularProgressIndicator(Modifier.size(20.dp), strokeWidth = 2.dp)
+            else Icon(icon, null, Modifier.size(22.dp))
+            Text(
+                label,
+                style = MaterialTheme.typography.labelSmall,
+                maxLines = 1,
+                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis,
+                textAlign = androidx.compose.ui.text.style.TextAlign.Center
+            )
         }
     }
 }

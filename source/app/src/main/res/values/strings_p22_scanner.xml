@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P22: Google-first scanner, unified save, in-app image viewer. -->
+<resources>
+    <string name="p22_engine_title_ar">محرك المسح</string>
+    <string name="p22_engine_title_en">Scanning engine</string>
+    <string name="p22_engine_title_fr">Moteur de numérisation</string>
+    <string name="p22_engine_google_ar">ماسح Google (موصى به)</string>
+    <string name="p22_engine_google_en">Google scanner (recommended)</string>
+    <string name="p22_engine_google_fr">Scanner Google (recommandé)</string>
+    <string name="p22_engine_builtin_ar">كاميرا البرنامج</string>
+    <string name="p22_engine_builtin_en">App camera</string>
+    <string name="p22_engine_builtin_fr">Caméra de l\'app</string>
+    <string name="p22_google_scanner_unavailable_ar">ماسح Google غير متاح على هذا الهاتف، سيتم استخدام كاميرا البرنامج</string>
+    <string name="p22_google_scanner_unavailable_en">Google scanner is not available on this phone; using the app camera</string>
+    <string name="p22_google_scanner_unavailable_fr">Le scanner Google n\'est pas disponible sur ce téléphone ; caméra de l\'app utilisée</string>
+    <string name="p22_save_failed_title_ar">تعذر إكمال العملية</string>
+    <string name="p22_save_failed_title_en">Could not finish</string>
+    <string name="p22_save_failed_title_fr">Opération impossible</string>
+    <string name="p22_save_cancelled_ar">تم إلغاء الحفظ ولم يتم حفظ ملف ناقص</string>
+    <string name="p22_save_cancelled_en">Saving was cancelled; no partial file was kept</string>
+    <string name="p22_save_cancelled_fr">Enregistrement annulé ; aucun fichier partiel conservé</string>
+    <string name="p22_translation_failed_ar" formatted="true">تعذرت الترجمة: %1$s\n\nأول ترجمة لكل لغة تحتاج اتصالًا بالإنترنت لتنزيل ملف اللغة مرة واحدة.</string>
+    <string name="p22_translation_failed_en" formatted="true">Translation failed: %1$s\n\nThe first translation for each language needs an internet connection to download the language file once.</string>
+    <string name="p22_translation_failed_fr" formatted="true">Traduction impossible : %1$s\n\nLa première traduction de chaque langue nécessite Internet pour télécharger le fichier de langue une fois.</string>
+    <string name="p22_translating_ar">جاري الترجمة… أول مرة يتم تنزيل ملف اللغة</string>
+    <string name="p22_translating_en">Translating… the language file downloads the first time</string>
+    <string name="p22_translating_fr">Traduction… le fichier de langue se télécharge la première fois</string>
+    <string name="p22_ok_ar">حسنًا</string>
+    <string name="p22_ok_en">OK</string>
+    <string name="p22_ok_fr">OK</string>
+    <string name="p22_discard_title_ar">إلغاء المسح؟</string>
+    <string name="p22_discard_title_en">Discard this scan?</string>
+    <string name="p22_discard_title_fr">Abandonner ce scan ?</string>
+    <string name="p22_discard_message_ar" formatted="true">سيتم حذف %1$d صفحة لم تُحفظ بعد.</string>
+    <string name="p22_discard_message_en" formatted="true">%1$d unsaved page(s) will be removed.</string>
+    <string name="p22_discard_message_fr" formatted="true">%1$d page(s) non enregistrée(s) seront supprimées.</string>
+    <string name="p22_discard_confirm_ar">حذف الصفحات</string>
+    <string name="p22_discard_confirm_en">Discard pages</string>
+    <string name="p22_discard_confirm_fr">Supprimer les pages</string>
+    <string name="p22_keep_editing_ar">متابعة المراجعة</string>
+    <string name="p22_keep_editing_en">Keep reviewing</string>
+    <string name="p22_keep_editing_fr">Continuer</string>
+    <string name="p22_open_folder_ar">فتح مكان الحفظ</string>
+    <string name="p22_open_folder_en">Open folder</string>
+    <string name="p22_open_folder_fr">Ouvrir le dossier</string>
+    <string name="p22_image_open_failed_ar">تعذر عرض الصورة</string>
+    <string name="p22_image_open_failed_en">Could not display the image</string>
+    <string name="p22_image_open_failed_fr">Impossible d\'afficher l\'image</string>
+    <string name="p22_close_ar">إغلاق</string>
+    <string name="p22_close_en">Close</string>
+    <string name="p22_close_fr">Fermer</string>
+    <string name="p22_tool_crop_ar">الحدود</string>
+    <string name="p22_tool_crop_en">Corners</string>
+    <string name="p22_tool_crop_fr">Coins</string>
+    <string name="p22_tool_retake_ar">إعادة</string>
+    <string name="p22_tool_retake_en">Retake</string>
+    <string name="p22_tool_retake_fr">Reprendre</string>
+    <string name="p22_tool_apply_all_ar">للكل</string>
+    <string name="p22_tool_apply_all_en">Apply all</string>
+    <string name="p22_tool_apply_all_fr">Tout</string>
+    <string name="p22_save_jpg_ar">حفظ كصور JPG</string>
+    <string name="p22_save_jpg_en">Save as JPG images</string>
+    <string name="p22_save_jpg_fr">Enregistrer en images JPG</string>
+    <string name="p22_tool_edit_ar">تعديل</string>
+    <string name="p22_tool_edit_en">Edit</string>
+    <string name="p22_tool_edit_fr">Modifier</string>
+</resources>

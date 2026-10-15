@@ -158,6 +158,12 @@ def start_mode(mode):
     else:
         snapshot('startup_failed')
         raise TimeoutError('Scanner home entry unavailable')
+    # P22: Google's document scanner is the default engine but cannot be driven on the
+    # emulator; these regression cases exercise the app camera, which stays selectable.
+    engine = find(t('p22_engine_builtin'))
+    if engine is not None:
+        d.click(*center(engine))
+        time.sleep(.5)
     click(t('alpha11_scan_' + mode), timeout=25)
     wait('Scanner Pro', partial=True)
     for n in nodes():

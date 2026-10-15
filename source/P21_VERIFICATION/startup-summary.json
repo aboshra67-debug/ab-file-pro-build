@@ -1,0 +1,16 @@
+{
+  "debug": {
+    "launch_status": "ok",
+    "target_ui_visible": true,
+    "target_crash": false,
+    "package": "com.abfilepro.app.p21mainttrial",
+    "apk_sha256": "eb43839ef46474c3b4b4637966e6bf5f023ce112833bd5b42c775f6c806541a5"
+  },
+  "qa": {
+    "launch_status": "ok",
+    "target_ui_visible": true,
+    "target_crash": false,
+    "package": "com.abfilepro.app.p21qa",
+    "apk_sha256": "d74bbe0728af146385610b60c58596cc2ef9f952a58bcbd4468621cea1525f31"
+  }
+}

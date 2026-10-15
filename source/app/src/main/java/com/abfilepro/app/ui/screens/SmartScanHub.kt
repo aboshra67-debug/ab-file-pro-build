@@ -23,6 +23,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.abfilepro.app.R
+import com.abfilepro.app.core.ScannerEngine
 import com.abfilepro.app.ui.components.ScreenTopBar
 import com.abfilepro.app.ui.i18n.LocalAppLanguage
 import com.abfilepro.app.ui.i18n.uiText
@@ -52,7 +53,9 @@ fun SmartScanHub(
     onBack: () -> Unit,
     lastSavedFile: File? = null,
     onOpenSaved: (File) -> Unit = {},
-    onShareSaved: (File) -> Unit = {}
+    onShareSaved: (File) -> Unit = {},
+    engine: ScannerEngine = ScannerEngine.GOOGLE,
+    onEngineChange: (ScannerEngine) -> Unit = {}
 ) {
     val context = LocalContext.current
     val language = LocalAppLanguage.current
@@ -87,6 +90,31 @@ fun SmartScanHub(
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                }
+            }
+
+            // P22: capture engine. Google's scanner is the default; the app camera stays one tap away.
+            item(span = { GridItemSpan(maxLineSpan) }) {
+                Column(Modifier.fillMaxWidth(), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    Text(
+                        context.uiText(language, "p22_engine_title"),
+                        style = MaterialTheme.typography.labelLarge,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                        FilterChip(
+                            selected = engine == ScannerEngine.GOOGLE,
+                            onClick = { onEngineChange(ScannerEngine.GOOGLE) },
+                            label = { Text(context.uiText(language, "p22_engine_google"), maxLines = 1) },
+                            modifier = Modifier.weight(1f)
+                        )
+                        FilterChip(
+                            selected = engine == ScannerEngine.BUILT_IN,
+                            onClick = { onEngineChange(ScannerEngine.BUILT_IN) },
+                            label = { Text(context.uiText(language, "p22_engine_builtin"), maxLines = 1) },
+                            modifier = Modifier.weight(1f)
+                        )
+                    }
                 }
             }
 
