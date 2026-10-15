@@ -1,0 +1,29 @@
+AB File Pro V2 - Alpha87 Documents UI & Types Safe Patch
+Baseline: Alpha86 Documents & Renewals
+Version Code: 148
+Version Name: 2.0.0-alpha87-documents-ui-types
+
+Changed safely:
+- Reworked the Add/Edit Document dialog into a cleaner scrollable professional layout.
+- Replaced cramped document-type chips with a single dropdown selector.
+- Added document types: car license, rental contract, visa, and custom other type.
+- Rental contract supports contract start date and expiry date.
+- Visa supports country, issue date, expiry date, and renewal reminder.
+- Other document type supports a custom type name.
+- Improved validation for reminder days and date order.
+- Search now includes custom document type and visa country.
+- Saved document cards now show the document type and visa country when available.
+
+Preserved:
+- Alpha86 local-only document storage.
+- Existing document entries remain readable (backward-compatible metadata parsing).
+- Exact local renewal alarms and notification scheduling.
+- Alpha85 health and medication.
+- Alpha84 family chat.
+- Alpha83 secure family pairing.
+- Family requests and shopping linkage.
+- OCR and all existing modules.
+
+Privacy / safety:
+- Documents remain local-only and are not added to FamilyCloudSync.
+- No working module, family data, or user data was removed.

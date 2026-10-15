@@ -1,0 +1,466 @@
+{
+  "baseline": "P13 comprehensive assessment",
+  "ci_commit": "ea1c2b9ffd94d69761e816f6b71ba8660b39706b",
+  "closed_with_p14_checks": [
+    {
+      "id": "ST-04",
+      "title": "فك ZIP يترك ملفات ناقصة"
+    },
+    {
+      "id": "ST-13",
+      "title": "اختبار اسم اختصار الملفات قديم"
+    },
+    {
+      "id": "DOC-03",
+      "title": "استخراج اسم البطاقة مع حقل اتصال فارغ"
+    },
+    {
+      "id": "DOC-04",
+      "title": "المبالغ ذات الفاصلة العربية"
+    },
+    {
+      "id": "DOC-12",
+      "title": "تجاوز صورة تالفة في PDF دون بيان"
+    },
+    {
+      "id": "SCAN-01",
+      "title": "إعادة تصوير وجه البطاقة تغير الترتيب"
+    },
+    {
+      "id": "SCAN-05",
+      "title": "القص اليدوي يقبل شكلًا غير صالح"
+    },
+    {
+      "id": "SCAN-07",
+      "title": "إعادة تأكيد حدود Document تقص الحواف مجددًا"
+    },
+    {
+      "id": "ST-N01",
+      "title": "قائمة SAF فارغة عند فشل الاستعلام قد تؤدي لحذف مصدر غير منسوخ"
+    },
+    {
+      "id": "ST-N02",
+      "title": "إنشاء ZIP قد ينجح مع إسقاط محتوى لم يُقرأ"
+    },
+    {
+      "id": "ST-N03",
+      "title": "تراجع النقل أو التسمية القديم قد يحرك ملفًا بديلًا"
+    },
+    {
+      "id": "ST-N04",
+      "title": "تغير المصدر بعد نسخه غير محمي في النقل البديل لـSAF والمسار القديم"
+    },
+    {
+      "id": "DOC-N01",
+      "title": "PDF إلى صورة طويلة يستخدم صيغة لا يقبلها محرك الرسم"
+    },
+    {
+      "id": "SCAN-N01",
+      "title": "الرجوع من محرر Batch قد يعيد قص حواف صفحة مسواة"
+    }
+  ],
+  "other_findings_require_separate_assessment": [
+    {
+      "id": "ST-01",
+      "title": "فقد بيانات عند فشل النقل الجزئي",
+      "p13_status": "resolved_verified"
+    },
+    {
+      "id": "ST-02",
+      "title": "نسخ مجلد داخل نفسه",
+      "p13_status": "resolved_verified"
+    },
+    {
+      "id": "ST-03",
+      "title": "التراجع يحذف محتوى تغير بعد العملية",
+      "p13_status": "resolved_verified"
+    },
+    {
+      "id": "ST-05",
+      "title": "قراءة مسار العمل تكتب الإعدادات",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "ST-06",
+      "title": "نتائج العمليات الجزئية غير دقيقة",
+      "p13_status": "partial"
+    },
+    {
+      "id": "ST-07",
+      "title": "فقد سجل التراجع بعد استعادة جزئية",
+      "p13_status": "resolved_verified"
+    },
+    {
+      "id": "ST-08",
+      "title": "قدرة التخزين على Android 8–10",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "ST-09",
+      "title": "تغيير الصلاحية يغير جذر الملفات",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "ST-10",
+      "title": "اختيار متعدد يُنفذ على أول ملف",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "ST-11",
+      "title": "فشل تحميل مصغرة غير معالج",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "ST-12",
+      "title": "روابط المفضلة لا تتبع بعض النقل",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "DOC-01",
+      "title": "Clean Share قد يستبدل المصدر",
+      "p13_status": "resolved_verified"
+    },
+    {
+      "id": "DOC-02",
+      "title": "إحداثيات تحرير PDF لا تراعي الدوران",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-05",
+      "title": "Word → PDF يختزل تنسيق الفقرة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-06",
+      "title": "حاجز تعقيد Word يعتمد على بادئة XML",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-07",
+      "title": "Excel → PDF يفقد تنسيق القيم",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-08",
+      "title": "PDF → Excel يلصق الكلمات",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-09",
+      "title": "صفحات متجاوزة دون بيان",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-10",
+      "title": "طبقة البحث في PDF قد تكون ناقصة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-11",
+      "title": "Stitch يقبل تطابق مساحات بيضاء",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-13",
+      "title": "ميزانيات PDF والصور غير مكتملة",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "DOC-14",
+      "title": "نواتج جزئية عند فشل التحويل أو الإلغاء",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-15",
+      "title": "حفظ PDF يعمل على الواجهة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-16",
+      "title": "عرض سمك الخط يختلف عن تصديره",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-17",
+      "title": "قراءة مدخل كبير بالكامل في المحرر",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "DOC-18",
+      "title": "Smart Pack يقرأ أكثر من العينة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-19",
+      "title": "Smart Scan وتصنيف العربية",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "DOC-20",
+      "title": "اكتشاف البيانات الحساسة ليس كاملًا",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-21",
+      "title": "نتيجة الضغط ومسارها لا يثبتان النجاح",
+      "p13_status": "partial"
+    },
+    {
+      "id": "DOC-22",
+      "title": "النص الطويل يتجاوز حقل Smart Form",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-23",
+      "title": "تغيير لغة الترجمة المطلوبة تلقائيًا",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "DOC-24",
+      "title": "نطاق تنظيف PDF يحتاج تحققًا شاملًا",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "AS-01",
+      "title": "تكرار الدواء بعد رفض الإشعار أو فوات الموعد",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-02",
+      "title": "حفظ قائمة قديمة فوق تحديثات أحدث",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-03",
+      "title": "اختفاء مهام متأخرة غير منجزة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-04",
+      "title": "أزرار الرئيسية لا تطبق منطق الصحة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-05",
+      "title": "موعد قادم بلا تنبيه إذا مضت نافذته",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-06",
+      "title": "التكرار الصحي لا يتكيف مع المنطقة الزمنية",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-07",
+      "title": "تاريخ المستند المدني قد يتغير",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-08",
+      "title": "إحداثيات صلاة خارج النطاق المدعوم",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "AS-09",
+      "title": "استعادة منبه الصلاة بعد منح الصلاحية",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-10",
+      "title": "إعادة الجدولة تمحو متابعة الصلاة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-11",
+      "title": "فشل الصورة في الكاميرا الذكية بلا استعادة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-12",
+      "title": "الخروج من التسجيل يحذف الملف الجاري",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-13",
+      "title": "ربط مرفق الاجتماع مؤقت",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "AS-14",
+      "title": "استيراد وتحضير صوت وحفظ JSON على الواجهة",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "AS-15",
+      "title": "السعة القصوى تسقط بيانات بصمت",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "AS-16",
+      "title": "أزرار ومسارات ولغات غير مكتملة",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "FAM-01",
+      "title": "اختلاط بيانات عائلتين بعد التبديل",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "FAM-02",
+      "title": "حد 500 دون صفحات يحجب الجديد",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "FAM-03",
+      "title": "دمج المزامنة يستبدل تغييرًا أحدث",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "FAM-04",
+      "title": "إعادة ربط معرف جهاز قد تستبدل مفتاحه",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "NET-01",
+      "title": "JSON تالف يتجاوز استرجاع الشبكة",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "MKT-01",
+      "title": "تنبيه السعر يُستهلك دون تسليمه",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "PRC-01",
+      "title": "هوية منتج قد ترتبط بسعر آخر",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "FAM-05",
+      "title": "ساعة جهاز مستقبلية تتغلب على تعديل أحدث",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "SEC-UPD-01",
+      "title": "التحديث الإلزامي قد يمنع الاستعادة",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SEC-QR-01",
+      "title": "كاميرا QR تحتاج فصلًا عند تبديل التبويب",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "SEC-UPD-02",
+      "title": "فشل تحديث قد يترك ملف part كبيرًا",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SEC-UPD-03",
+      "title": "قناة التحديث الافتراضية لا تستهدف P11",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SEC-UI-01",
+      "title": "الرئيسية العربية لا تتبع الثيم",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "SEC-UI-02",
+      "title": "تسميات ثابتة ونقص فرنسي محدود",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "SCAN-02",
+      "title": "إعادة صفحة Book تضيف صفحتين بدل خانتها",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SCAN-03",
+      "title": "الصورة الكبيرة تُفك كاملة قبل التصغير",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SCAN-04",
+      "title": "حفظ Batch كصور يترك جزءًا منشورًا عند الفشل",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "SCAN-06",
+      "title": "إلغاء قص المستند الفردي له سباق حذف",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SCAN-08",
+      "title": "Smart Crop المتأخر يعيد حالة قديمة",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SCAN-09",
+      "title": "تهيئة الكاميرا قد تصل بعد الخروج",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SCAN-10",
+      "title": "مصغرة المراجعة لا تتبع تعديل التعليق وحده",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "ST-N05",
+      "title": "إعادة محاولة التراجع داخل مجلد بعد حذف جزئي قد تتعذر",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "AS-N01",
+      "title": "فشل استيراد صوت اجتماع يترك ملفًا جزئيًا غير مفهرس",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "FAM-N01",
+      "title": "المزامنة قد تقصر تفاصيل قديمة أو مستوردة إلى 1200 حرف",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "FAM-N02",
+      "title": "إدراج الصحة تلقائيًا في المزامنة دون خيار مشاركة صريح في المسار المراجع",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "FAM-N03",
+      "title": "مسار المزامنة القديم يعمل بمفتاح عام عند تفعيله",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "FAM-N04",
+      "title": "فقد اعتماد الجهاز مع نافذة ربط مغلقة يحتاج مسار استرداد",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "FAM-N05",
+      "title": "فحص الصحة لا يثبت جاهزية PostgreSQL",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "FAM-N06",
+      "title": "إلغاء اعتماد جهاز وحذف بيانات الخدمة غير مكتملين في الخادم المرفق",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "SEC-N01",
+      "title": "فحص توافق تحديث APK يسبق المثبت جزئيًا فقط",
+      "p13_status": "open_confirmed"
+    },
+    {
+      "id": "SEC-N02",
+      "title": "منح قراءة مباشر لملف مشارك يحتاج دورة سحب محددة",
+      "p13_status": "conditional"
+    },
+    {
+      "id": "CMD-N01",
+      "title": "فشل إعادة التسمية قد يُعرض ضمن خطوات ناجحة",
+      "p13_status": "open_confirmed"
+    }
+  ],
+  "new_program_wide_score": null,
+  "play_release_ready": false
+}

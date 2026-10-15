@@ -1,0 +1,36 @@
+{
+  "repository": "aboshra67-debug/ab-file-pro-build",
+  "branch": "fix/p12-file-safety-20261009",
+  "P11_baseline_commit": "d64bda6ef41e0ae609195da2f9a939581a705fa7",
+  "original_red": {
+    "run_id": 37969322668,
+    "commit": "9627a3a031e4fd8dc2c1b15aec99c444a57ca813",
+    "tests": 16,
+    "pass": 3,
+    "fail": 13,
+    "note": "One intended deleted-file regression raised FileNotFoundException before the explicit exists assertion was added. The original runner assertion-type gate rejected it; all 13 failure reasons were inspected and the raw XML is retained."
+  },
+  "first_green": {
+    "run_id": 37971052177,
+    "commit": "8ee27cffe6cb1cea56cfd2a6b4fa9898c2bffc51",
+    "tests": 20,
+    "pass": 20
+  },
+  "source_mutation_red": {
+    "run_id": 37971598524,
+    "commit": "f437f9d2dfe0710fd1c7ca6ae279f2df4ec01408",
+    "tests": 22,
+    "pass": 20,
+    "fail": 2
+  },
+  "final_green": {
+    "run_id": 37975727149,
+    "commit": "a7e80a13e3620283f8ac656e99fafeb1913bf5fb",
+    "tests": 22,
+    "pass": 22,
+    "url": "https://github.com/aboshra67-debug/ab-file-pro-build/actions/runs/37975727149"
+  },
+  "runtime": "Android 11 API30 google_apis x86_64 emulator, ARM64 application APK",
+  "APK_SHA256": "ceaff5704d4a4462f7c4467d9839d335341512ab3d8aa13249bd3d3021381516",
+  "scope": "File copy/move/undo only; no full-program or physical-phone certification"
+}

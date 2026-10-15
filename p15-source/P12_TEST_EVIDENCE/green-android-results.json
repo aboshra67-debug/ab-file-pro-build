@@ -1,0 +1,141 @@
+{
+  "phase": "green",
+  "tests": 22,
+  "passed": 22,
+  "failed": 0,
+  "gradle_exit": 0,
+  "results": [
+    {
+      "name": "normalCopyPreservesBytesAndSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialFileMoveUndoRetainsConflictForRetry",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoReplacementAtSamePathPreservesReplacement",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unreadableDirectoryCannotBePublishedAsEmptyCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoSelfRejectedWithoutChangingSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedFallbackMoveCopyDoesNotDeleteAnySource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalFolderCopyPreservesNestedAndEmptyFolders",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsSameLengthSameTimeEditAfterCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoFolderWithNewUserFilePreservesWholeFolder",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "moveCancellationBeforeSourceCleanupPreservesSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyCancellationCleansAttemptAndKeepsSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoChangedSameLengthSameTimeFilePreservesNewData",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoDescendantRejectedWithoutWriting",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedOutputCanStillBeUndone",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsFileAddedAfterCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalMovePreservesBytesAtDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialUndoKeepsChangedOutputAndItsHistory",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveDeleteFailureKeepsCompleteDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedFolderCanStillBeUndone",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    }
+  ]
+}

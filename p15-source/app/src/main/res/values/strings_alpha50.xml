@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alpha50_batch_page_number_ar">الصفحة %1$d</string>
+    <string name="alpha50_batch_page_number_en">Page %1$d</string>
+    <string name="alpha50_next_page_ar">التالي</string>
+    <string name="alpha50_next_page_en">Next</string>
+    <string name="alpha50_save_review_ar">حفظ ومراجعة (%1$d)</string>
+    <string name="alpha50_save_review_en">Save &amp; Review (%1$d)</string>
+</resources>

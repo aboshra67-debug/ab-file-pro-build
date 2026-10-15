@@ -1,0 +1,19 @@
+AB File Pro V2 - Alpha92 Remove Empty Next Label Safe Patch
+Baseline: Alpha91 Assistant Top Coordinate Fix
+Version Code: 153
+Version Name: 2.0.0-alpha92-remove-empty-next-label
+
+Changed:
+- Removed the visible Arabic empty-state text "لا توجد مواعيد قريبة" from the classic assistant home summary strip.
+- Preserved the strip/layout dimensions to avoid shifting the classic design.
+
+Preserved:
+- Alpha91 classic assistant visual layout.
+- Live all/personal/work filters.
+- Live daily summary and prayer overlay.
+- Scroll-position restore when returning from a module.
+- Family sync/chat, health, documents, shopping, OCR and all existing modules.
+
+Safety:
+- No working module or user data removed.
+- Safe patch only.

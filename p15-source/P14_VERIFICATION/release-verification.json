@@ -1,0 +1,20 @@
+{
+  "phase": "green",
+  "android_functions": 79,
+  "scanner_ui_cases": 19,
+  "jvm_tests": 29,
+  "all_passed": true,
+  "package": "com.abfilepro.app.p14mainttrial",
+  "version_code": 166,
+  "version_name": "2.0.0-alpha98-p14-safe-maintenance",
+  "apk": "AB98_P14_SAFE_MAINTENANCE_TEST.apk",
+  "apk_bytes": 131992320,
+  "apk_sha256": "70423e77bfdf1421f93c34aa84ebaa6808f9edf5080c7112bdc8338aacd31dc0",
+  "commit": "ea1c2b9ffd94d69761e816f6b71ba8660b39706b",
+  "run_id": "38648631013",
+  "android_api_tested": "30",
+  "phone_abi": "arm64-v8a",
+  "physical_phone_tested": false,
+  "original_signing_key_available": false,
+  "play_release_ready": false
+}

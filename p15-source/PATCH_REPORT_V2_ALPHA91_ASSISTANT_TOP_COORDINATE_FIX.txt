@@ -1,0 +1,22 @@
+AB File Pro V2 - Alpha91 Assistant Top Coordinate Fix
+Baseline: Alpha90 Assistant Top Fix
+Version Code: 152
+Version Name: 2.0.0-alpha91-assistant-top-coordinate-fix
+
+Issue confirmed from the user screenshot:
+- Alpha90 visual shell stayed unchanged because the live overlays were positioned by an RTL parent canvas.
+- This caused duplicated/shifted Work / Personal / All tabs and left the fixed reference date/prayer values visible.
+
+Fixed:
+- The whole top reference canvas is now created under LTR coordinates, matching the raster reference's physical-left origin.
+- Work / Personal / All live strip now covers the original strip exactly.
+- Live date and summary counters now land over the fixed reference values.
+- Live nearest-item strip keeps working in the same coordinates.
+- Live prayer name/time/countdown/alert status now lands over the fixed reference prayer values.
+- Arabic text inside prayer/appointment live content remains RTL.
+- Existing classic artwork, module cards, scroll restoration, Alpha90 logic and all modules are preserved.
+
+Safety:
+- No data schema changes.
+- No working module removed.
+- Safe Patch only.

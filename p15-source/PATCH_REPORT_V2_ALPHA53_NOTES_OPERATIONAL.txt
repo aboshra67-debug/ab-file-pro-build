@@ -1,0 +1,25 @@
+AB File Pro V2 — Alpha53 Notes Operational Safe Patch
+
+Base: Alpha52 Personal Assistant Visual Match.
+Scope: Personal Assistant > Notes only.
+
+Implemented:
+- Replaced the Arabic Notes static reference screen with a real operational Compose screen based on page 9 of the approved PDF.
+- Search by note title/details.
+- Filters: All / Personal / Work.
+- Pinned section with Show all / Show less.
+- Add note with title, details and category.
+- Edit existing notes.
+- Pin / unpin from the three-dot menu.
+- Delete with confirmation.
+- Local offline persistence through the existing AssistantRepository.
+- Added backward-compatible `pinned` field to assistant JSON records.
+- Added note artwork crops from the user-approved PDF reference for dynamic cards.
+
+Safety:
+- No changes to MainActivity.kt.
+- No changes to FilesScreen.kt.
+- No changes to FileUtils.kt.
+- No changes to scan/save flows.
+- No database migration; assistant storage remains SharedPreferences JSON.
+- No working code deleted.

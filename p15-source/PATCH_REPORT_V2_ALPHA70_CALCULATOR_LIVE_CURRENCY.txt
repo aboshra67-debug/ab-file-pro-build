@@ -1,0 +1,10 @@
+AB File Pro V2 — Alpha70 Calculator Live Currency
+
+Safe Patch scope:
+- Added an in-calculator Currencies mode; no separate browser workflow is required for conversion.
+- Added ExchangeRate-API open HTTPS feed client with one-hour local cache and offline fallback.
+- Added EGP, USD, EUR, SAR, AED, GBP, KWD, QAR, CNY, JPY, CHF and CAD quick currency selection.
+- Added amount input, swap action, explicit refresh, provider update timestamp and reference-rate disclaimer.
+- Added Arabic digit normalization.
+- Preserved the existing calculator keypad/evaluator unchanged.
+- No changes to MainActivity.kt, FilesScreen.kt or FileUtils.kt.

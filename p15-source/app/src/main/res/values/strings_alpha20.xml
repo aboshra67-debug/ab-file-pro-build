@@ -1,0 +1,25 @@
+<resources>
+    <string name="alpha20_bounds_title_ar">ضبط حدود المستند</string>
+    <string name="alpha20_bounds_title_en">Adjust document edges</string>
+    <string name="alpha20_bounds_title_fr">Ajuster les bords du document</string>
+
+    <string name="alpha20_bounds_hint_ar">تم التقاط الصورة. اضبط النقاط الأربع على أركان الورقة قبل المتابعة.</string>
+    <string name="alpha20_bounds_hint_en">Photo captured. Place the four points on the document corners before continuing.</string>
+    <string name="alpha20_bounds_hint_fr">Photo capturée. Placez les quatre points sur les coins du document avant de continuer.</string>
+
+    <string name="alpha20_detecting_ar">جارٍ اكتشاف حدود الورقة من الصورة الأصلية…</string>
+    <string name="alpha20_detecting_en">Detecting document edges from the captured image…</string>
+    <string name="alpha20_detecting_fr">Détection des bords du document à partir de l’image capturée…</string>
+
+    <string name="alpha20_bounds_manual_ar">يمكنك سحب أي نقطة يدويًا حتى تطابق ركن الورقة بدقة.</string>
+    <string name="alpha20_bounds_manual_en">Drag any point manually until it matches the document corner precisely.</string>
+    <string name="alpha20_bounds_manual_fr">Faites glisser chaque point pour le placer précisément sur le coin du document.</string>
+
+    <string name="alpha20_retake_ar">إعادة التصوير</string>
+    <string name="alpha20_retake_en">Retake</string>
+    <string name="alpha20_retake_fr">Reprendre</string>
+
+    <string name="alpha20_continue_ar">متابعة</string>
+    <string name="alpha20_continue_en">Continue</string>
+    <string name="alpha20_continue_fr">Continuer</string>
+</resources>

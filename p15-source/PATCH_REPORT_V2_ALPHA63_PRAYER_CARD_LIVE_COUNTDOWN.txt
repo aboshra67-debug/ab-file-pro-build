@@ -1,0 +1,16 @@
+AB File Pro V2 - Alpha63 Prayer Card Live Countdown
+
+Scope:
+- Keep the approved mosque artwork on the Arabic assistant home screen.
+- Replace only the baked prayer text area with live next-prayer information.
+- Show next prayer name, prayer time, and HH:MM:SS countdown updated every second.
+- At prayer time show "حان الآن موعد صلاة" briefly, then move automatically to the next prayer.
+- Exclude sunrise from "next prayer" rotation.
+- Reverse-geocode live GPS coordinates to a real city/locality name and persist it in PrayerSettings.
+- Show resolved GPS city name on the operational prayer screen and live home prayer card.
+
+Protected files verified unchanged from Alpha62:
+- MainActivity.kt
+- FilesScreen.kt
+- FileUtils.kt
+- AssistantNotesScreen.kt

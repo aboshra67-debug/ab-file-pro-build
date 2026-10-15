@@ -1,0 +1,35 @@
+AB File Pro V2 — Alpha98 Prayer UI Reference Polish
+Baseline: Alpha97 Personal Assistant Final Hardening
+Package: com.abfilepro.app
+Version Code: 159
+Version Name: 2.0.0-alpha98-prayer-ui-reference-polish
+
+CHANGESET
+- Restyled only the Prayer Times & Alerts page to match the provided visual reference.
+- Added green illustrated next-prayer card using artwork cropped exclusively from the user's reference image, real city and date, live remaining-time indicator and GPS button.
+- Added a 3x2 city selector with selection indicators, preserved GPS permission/location actions, and turned off auto-GPS when a city preset is explicitly selected to honor user choice.
+- Improved GPS, sound, Egyptian/MWL calculation, daily prayer time, reminder and follow-up card layouts.
+- Kept all six solar times (Fajr, Sunrise, Dhuhr, Asr, Maghrib, Isha), per-prayer alert toggles and +/-minute calibration buttons.
+- Improved accessible text for Arabic, English and French in the restyled sections.
+- Display updates every 30 seconds while the prayer page is open only, without a global background loop.
+
+PRESERVED
+- All other assistant modules, existing prayer calculator, scheduling, database and persisted settings formats, notification/permission logic, network, family server, shopping/chat, security, OCR trained data.
+- No business Kotlin file deleted. No working code outside the prayer page or import list changed.
+
+MODIFIED
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantModuleScreens.kt (prayer screen visual rewrite + imports, new local section heading)
+- app/build.gradle.kts (version code/name only)
+- VERSION (version string)
+
+ADDED
+- app/src/main/res/drawable-nodpi/prayer_mosque_banner.png
+- tools/test_alpha98_prayer_ui_contract.py
+- PATCH_REPORT_V2_ALPHA98_PRAYER_UI_REFERENCE_POLISH.txt
+
+VERIFICATION
+- New Alpha98 source integrity static contract: 37/37 PASS.
+- Python server py_compile: PASS (unchanged backend).
+- Kotlin parser: no syntax-parse diagnostics observed, but Android dependencies were unavailable in local container.
+- Android Gradle assembleDebug, APK install test and device UI tap tests: NOT RUN in current local environment (Android SDK/Gradle unavailable).
+- This is an unbuilt, source-only Alpha98 candidate; do NOT treat original Alpha97 APK as updated.

@@ -1,0 +1,25 @@
+AB File Pro V2 - Alpha64 Meeting Minutes Camera
+
+Baseline: Alpha63 Prayer Card Live Countdown FIX1
+Patch type: SAFE PATCH
+
+Implemented:
+- Meetings module now opens an operational Compose screen instead of the static reference interaction.
+- Meetings are split automatically into upcoming meetings and previous minutes by due date.
+- Add Meeting remains backed by the existing AssistantRepository; no database migration.
+- Added an internal "تصوير المحضر" action on every meeting card.
+- Camera capture uses Android TakePicture + existing FileProvider.
+- Captured JPEGs are stored privately under files/meeting_minutes/<meeting-id>/.
+- Each captured page is linked to its meeting using a small private SharedPreferences index.
+- Multiple pages are supported (up to 40 per meeting).
+- Latest captured page can be opened from the meeting card.
+- Existing scanner/document flow was not modified.
+
+Protected files not modified:
+- MainActivity.kt
+- FilesScreen.kt
+- FileUtils.kt
+
+Version:
+- versionCode 125
+- versionName 2.0.0-alpha64-meeting-minutes-camera

@@ -1,0 +1,1081 @@
+--- P11/VERSION
++++ P12/VERSION
+@@ -1 +1 @@
+-2.0.0-alpha98-p11-scanner-safe-fix
++2.0.0-alpha98-p12-file-safety
+--- P11/app/build.gradle.kts
++++ P12/app/build.gradle.kts
+@@ -38,8 +38,9 @@
+         applicationId = "com.abfilepro.app"
+         minSdk = 26
+         targetSdk = 36
+-        versionCode = 163
+-        versionName = "2.0.0-alpha98-p11-scanner-safe-fix"
++        versionCode = 164
++        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
++        versionName = "2.0.0-alpha98-p12-file-safety"
+ 
+         vectorDrawables { useSupportLibrary = true }
+ 
+@@ -55,7 +56,7 @@
+     buildTypes {
+         debug {
+             // Isolated install so testing never requires uninstalling the production app.
+-            applicationIdSuffix = ".p11scannertrial"
++            applicationIdSuffix = ".p12filestrial"
+             if (originalSigningReady) {
+                 signingConfig = signingConfigs.getByName("original")
+             }
+@@ -95,6 +96,8 @@
+ 
+ dependencies {
+     testImplementation("junit:junit:4.13.2")
++    androidTestImplementation("androidx.test.ext:junit:1.2.1")
++    androidTestImplementation("androidx.test:runner:1.6.2")
+     val composeBom = platform("androidx.compose:compose-bom:2025.01.00")
+     implementation(composeBom)
+     androidTestImplementation(composeBom)
+--- P11/app/src/androidTest/java/com/abfilepro/app/core/StorageSafetyRegressionTest.kt
++++ P12/app/src/androidTest/java/com/abfilepro/app/core/StorageSafetyRegressionTest.kt
+@@ -0,0 +1,322 @@
++package com.abfilepro.app.core
++
++import android.content.Context
++import android.util.Base64
++import androidx.test.core.app.ApplicationProvider
++import androidx.test.ext.junit.runners.AndroidJUnit4
++import kotlinx.coroutines.CancellationException
++import kotlinx.coroutines.Dispatchers
++import kotlinx.coroutines.Job
++import kotlinx.coroutines.runBlocking
++import kotlinx.coroutines.withContext
++import kotlinx.coroutines.withTimeout
++import org.junit.After
++import org.junit.Assert.*
++import org.junit.Before
++import org.junit.Test
++import org.junit.runner.RunWith
++import java.io.File
++import java.nio.file.Files
++import java.util.Comparator
++import java.util.UUID
++
++/** Tests the app's real storage methods on actual Android files. Failure fixtures
++ * override only rename/delete/listing outcomes, never copying or stored bytes. */
++@RunWith(AndroidJUnit4::class)
++class StorageSafetyRegressionTest {
++    private lateinit var context: Context
++    private lateinit var directRoot: File
++    private lateinit var workspaceRoot: File
++
++    @Before fun createFixtures() {
++        context = ApplicationProvider.getApplicationContext()
++        directRoot = File(context.getExternalFilesDir(null), "p12_test_${UUID.randomUUID()}")
++        assertTrue(directRoot.mkdirs())
++        workspaceRoot = File(FileUtils.rootDir(context), "P12_TEST_${UUID.randomUUID()}")
++        assertTrue(workspaceRoot.mkdirs())
++    }
++
++    @After fun removeOnlyFixtures() {
++        for (root in listOf(directRoot, workspaceRoot)) {
++            if (root.exists()) Files.walk(root.toPath()).use { paths ->
++                paths.sorted(Comparator.reverseOrder()).forEach { Files.deleteIfExists(it) }
++            }
++        }
++    }
++
++    private fun folder(name: String): File = File(directRoot, name).apply { check(mkdirs()) }
++    private fun file(parent: File, name: String, value: String): File = File(parent, name).apply { writeText(value) }
++    private fun output(name: String, value: String): File = file(workspaceRoot, name, value)
++
++    private class ControlledFile(
++        original: File,
++        private val children: (() -> Array<File>?)? = null,
++        private val cannotRename: Boolean = false,
++        private val cannotDelete: Boolean = false,
++        private val onLastModified: (() -> Unit)? = null,
++        private val afterDelete: (() -> Unit)? = null
++    ) : File(original.path) {
++        override fun listFiles(): Array<File>? = children?.invoke() ?: if (children == null) super.listFiles() else null
++        override fun renameTo(dest: File): Boolean = if (cannotRename) false else super.renameTo(dest)
++        override fun delete(): Boolean {
++            val deleted = if (cannotDelete) false else super.delete()
++            if (deleted) afterDelete?.invoke()
++            return deleted
++        }
++        override fun lastModified(): Long { onLastModified?.invoke(); return super.lastModified() }
++    }
++
++    @Test fun copyIntoSelfRejectedWithoutChangingSource() = runBlocking {
++        val source = folder("source")
++        val original = file(source, "keep.txt", "original")
++        val result = runCatching { withTimeout(1200) { DeviceStorageManager.copy(DeviceStorageManager.Entry(source), source) } }
++        assertTrue("Self-copy must be rejected before writing", result.exceptionOrNull() is IllegalArgumentException)
++        assertEquals("original", original.readText())
++        assertEquals(listOf("keep.txt"), source.listFiles()!!.map { it.name }.sorted())
++    }
++
++    @Test fun copyIntoDescendantRejectedWithoutWriting() = runBlocking {
++        val source = folder("source")
++        val destination = File(source, "child").apply { mkdirs() }
++        file(source, "keep.txt", "original")
++        val result = runCatching { withTimeout(1200) { DeviceStorageManager.copy(DeviceStorageManager.Entry(source), destination) } }
++        assertTrue("Descendant-copy must be rejected", result.exceptionOrNull() is IllegalArgumentException)
++        assertTrue(destination.listFiles()!!.isEmpty())
++    }
++
++    @Test fun copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination() = runBlocking {
++        val source = folder("source")
++        val first = file(source, "first.txt", "first bytes")
++        val second = File(source, "missing.txt")
++        val controlled = ControlledFile(source, children = { arrayOf(first, second) })
++        val destination = folder("destination")
++        val existing = File(destination, "source").apply { mkdirs() }
++        val existingFile = file(existing, "old.txt", "existing")
++        assertTrue(runCatching { DeviceStorageManager.copy(DeviceStorageManager.Entry(controlled), destination) }.isFailure)
++        assertEquals("first bytes", first.readText())
++        assertEquals("existing", existingFile.readText())
++        assertEquals(listOf("source"), destination.listFiles()!!.map { it.name }.sorted())
++    }
++
++    @Test fun copyCancellationCleansAttemptAndKeepsSource() = runBlocking {
++        val source = folder("source")
++        val seed = file(source, "keep.txt", "original")
++        val destination = folder("destination")
++        val operation = Job()
++        val controlled = ControlledFile(source, children = { operation.cancel(); arrayOf(seed) })
++        val result = runCatching { withContext(Dispatchers.IO + operation) { DeviceStorageManager.copy(DeviceStorageManager.Entry(controlled), destination) } }
++        assertTrue(result.exceptionOrNull() is CancellationException)
++        assertEquals("original", seed.readText())
++        assertTrue("Cancelled copy left an output", destination.listFiles()!!.isEmpty())
++    }
++
++    @Test fun unreadableDirectoryCannotBePublishedAsEmptyCopy() = runBlocking {
++        val source = folder("source")
++        val seed = file(source, "keep.txt", "original")
++        val destination = folder("destination")
++        val controlled = ControlledFile(source, children = { null })
++        assertTrue("A failed directory listing must fail the copy", runCatching { DeviceStorageManager.copy(DeviceStorageManager.Entry(controlled), destination) }.isFailure)
++        assertEquals("original", seed.readText())
++        assertTrue(destination.listFiles()!!.isEmpty())
++    }
++
++    @Test fun fallbackMoveDeleteFailureKeepsCompleteDestination() = runBlocking {
++        val source = folder("source")
++        val first = file(source, "first.txt", "FIRST")
++        val second = file(source, "second.txt", "SECOND")
++        val blocked = ControlledFile(second, cannotDelete = true)
++        val controlled = ControlledFile(source, children = { arrayOf(first, blocked) }, cannotRename = true)
++        val destination = folder("destination")
++        assertTrue(runCatching { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) }.isFailure)
++        val saved = File(destination, "source")
++        assertTrue("The only complete copy was deleted", saved.isDirectory)
++        assertEquals("FIRST", File(saved, "first.txt").readText())
++        assertEquals("SECOND", File(saved, "second.txt").readText())
++        assertEquals("SECOND", second.readText())
++    }
++
++    @Test fun moveCancellationBeforeSourceCleanupPreservesSource() = runBlocking {
++        val source = file(directRoot, "source.txt", "SOURCE")
++        val destination = folder("destination")
++        val operation = Job()
++        val controlled = ControlledFile(source, cannotRename = true, onLastModified = { operation.cancel() })
++        val result = runCatching { withContext(Dispatchers.IO + operation) { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) } }
++        assertTrue(result.exceptionOrNull() is CancellationException)
++        assertTrue("Cancellation still deleted the source", source.exists())
++        assertEquals("SOURCE", source.readText())
++    }
++
++    @Test fun normalCopyPreservesBytesAndSource() = runBlocking {
++        val source = file(directRoot, "source.txt", "source-data")
++        val destination = folder("destination")
++        val saved = DeviceStorageManager.copy(DeviceStorageManager.Entry(source), destination)
++        assertEquals("source-data", source.readText())
++        assertEquals("source-data", saved.file.readText())
++        assertEquals(listOf("source.txt"), destination.listFiles()!!.map { it.name })
++    }
++
++    @Test fun normalMovePreservesBytesAtDestination() = runBlocking {
++        val source = file(directRoot, "source.txt", "source-data")
++        val destination = folder("destination")
++        val saved = DeviceStorageManager.move(DeviceStorageManager.Entry(source), destination)
++        assertFalse(source.exists())
++        assertEquals("source-data", saved.file.readText())
++    }
++
++    @Test fun undoChangedSameLengthSameTimeFilePreservesNewData() = runBlocking {
++        val saved = output("edited.txt", "ORIGINAL")
++        val entry = OperationHistoryStore.record(context, "test", "test", listOf(saved))
++        val time = saved.lastModified()
++        saved.writeText("MODIFIED")
++        saved.setLastModified(time)
++        assertFalse(OperationHistoryStore.undo(context, entry.id))
++        assertEquals("MODIFIED", saved.readText())
++    }
++
++    @Test fun undoReplacementAtSamePathPreservesReplacement() = runBlocking {
++        val saved = output("replaced.txt", "original")
++        val entry = OperationHistoryStore.record(context, "test", "test", listOf(saved))
++        assertTrue(saved.delete())
++        saved.writeText("new user file")
++        assertFalse(OperationHistoryStore.undo(context, entry.id))
++        assertEquals("new user file", saved.readText())
++    }
++
++    @Test fun undoFolderWithNewUserFilePreservesWholeFolder() = runBlocking {
++        val directory = File(workspaceRoot, "generated").apply { mkdirs() }
++        val original = file(directory, "generated.txt", "generated")
++        val entry = OperationHistoryStore.record(context, "test", "test", listOf(directory))
++        val added = file(directory, "user.txt", "user-added")
++        assertFalse(OperationHistoryStore.undo(context, entry.id))
++        assertEquals("generated", original.readText())
++        assertEquals("user-added", added.readText())
++    }
++
++    @Test fun unchangedGeneratedOutputCanStillBeUndone() = runBlocking {
++        val saved = output("unchanged.txt", "generated")
++        val entry = OperationHistoryStore.record(context, "test", "test", listOf(saved))
++        assertTrue(entry.canUndo(context))
++        assertTrue(OperationHistoryStore.undo(context, entry.id))
++        assertFalse(saved.exists())
++    }
++
++    @Test fun partialUndoKeepsChangedOutputAndItsHistory() = runBlocking {
++        val unchanged = output("unchanged.txt", "generated")
++        val changed = output("changed.txt", "original")
++        val entry = OperationHistoryStore.record(context, "test", "test", listOf(unchanged, changed))
++        changed.writeText("user-edited")
++        assertTrue(OperationHistoryStore.undo(context, entry.id))
++        assertFalse(unchanged.exists())
++        assertTrue("Changed output was deleted", changed.exists())
++        assertEquals("user-edited", changed.readText())
++        assertTrue("Unresolved output history was discarded", OperationHistoryStore.list(context, 100).any { it.id == entry.id && changed.canonicalPath in it.outputs })
++    }
++
++    @Test fun legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile() = runBlocking {
++        val saved = output("legacy.txt", "user data")
++        fun encode(s: String) = Base64.encodeToString(s.toByteArray(), Base64.NO_WRAP)
++        File(context.filesDir, "ab_smart_history.tsv").writeText(listOf(encode("legacy"), encode("test"), encode("legacy"), encode(saved.canonicalPath), "1").joinToString("\t") + "\n")
++        assertFalse(OperationHistoryStore.undo(context, "legacy"))
++        assertEquals("user data", saved.readText())
++        assertTrue(OperationHistoryStore.list(context, 100).any { it.id == "legacy" })
++    }
++
++    @Test fun partialFileMoveUndoRetainsConflictForRetry() {
++        val oldA = File(workspaceRoot, "old-a.txt")
++        val oldB = output("old-b.txt", "name conflict")
++        val movedA = output("moved-a.txt", "A")
++        val movedB = output("moved-b.txt", "B")
++        FileUndoStore.recordMoves(context, linkedMapOf(oldA.absolutePath to movedA.absolutePath, oldB.absolutePath to movedB.absolutePath))
++        assertEquals(1, FileUndoStore.undo(context).getOrThrow())
++        assertEquals("A", oldA.readText())
++        assertEquals("name conflict", oldB.readText())
++        assertEquals("B", movedB.readText())
++        assertTrue("Remaining undo was discarded", FileUndoStore.canUndo(context))
++        assertTrue(oldB.delete())
++        assertEquals(1, FileUndoStore.undo(context).getOrThrow())
++        assertEquals("B", oldB.readText())
++    }
++
++    @Test fun normalFolderCopyPreservesNestedAndEmptyFolders() = runBlocking {
++        val source = folder("source")
++        val nested = File(source, "nested").apply { mkdirs() }
++        File(source, "empty").mkdirs()
++        val original = file(nested, "keep.txt", "nested bytes")
++        val destination = folder("destination")
++        val saved = DeviceStorageManager.copy(DeviceStorageManager.Entry(source), destination).file
++        assertEquals("nested bytes", original.readText())
++        assertEquals("nested bytes", File(saved, "nested/keep.txt").readText())
++        assertTrue(File(saved, "empty").isDirectory)
++        assertEquals(listOf("source"), destination.listFiles()!!.map { it.name })
++    }
++
++    @Test fun unchangedGeneratedFolderCanStillBeUndone() = runBlocking {
++        val generated = File(workspaceRoot, "generated").apply { mkdirs() }
++        val nested = File(generated, "nested").apply { mkdirs() }
++        file(nested, "keep.txt", "generated bytes")
++        File(generated, "empty").mkdirs()
++        val entry = OperationHistoryStore.record(context, "test", "folder", listOf(generated))
++        assertTrue(entry.canUndo(context))
++        assertTrue(OperationHistoryStore.undo(context, entry.id))
++        assertFalse(generated.exists())
++        assertFalse(OperationHistoryStore.hasPending(context, entry.id))
++    }
++
++    @Test fun failedFallbackMoveCopyDoesNotDeleteAnySource() = runBlocking {
++        val source = folder("source")
++        val original = file(source, "keep.txt", "original")
++        val controlled = ControlledFile(source, cannotRename = true, children = { arrayOf(original, File(source, "missing.txt")) })
++        val destination = folder("destination")
++        assertTrue(runCatching { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) }.isFailure)
++        assertEquals("original", original.readText())
++        assertTrue(destination.listFiles()!!.isEmpty())
++    }
++
++    @Test fun cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource() = runBlocking {
++        val source = folder("source")
++        val first = file(source, "first.txt", "FIRST")
++        val second = file(source, "second.txt", "SECOND")
++        val operation = Job()
++        val cancelAfterFirst = ControlledFile(first, afterDelete = { operation.cancel() })
++        val controlled = ControlledFile(source, cannotRename = true, children = { arrayOf(cancelAfterFirst, second) })
++        val destination = folder("destination")
++        val result = runCatching { withContext(Dispatchers.IO + operation) { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) } }
++        assertTrue(result.exceptionOrNull() is CancellationException)
++        assertEquals("SECOND", second.readText())
++        val saved = File(destination, "source")
++        assertEquals("FIRST", File(saved, "first.txt").readText())
++        assertEquals("SECOND", File(saved, "second.txt").readText())
++    }
++
++    @Test fun fallbackMoveKeepsFileAddedAfterCopy() = runBlocking {
++        val source = folder("source")
++        val first = file(source, "first.txt", "ORIGINAL")
++        val late = File(source, "late.txt")
++        val controlledFirst = ControlledFile(first, onLastModified = { late.writeText("USER-ADDED") })
++        val controlled = ControlledFile(source, cannotRename = true, children = {
++            source.listFiles()!!.map { if (it.name == first.name) controlledFirst else it }.toTypedArray()
++        })
++        val destination = folder("destination")
++        val result = runCatching { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) }
++        assertTrue("A source addition must prevent destructive cleanup", result.isFailure)
++        assertEquals("USER-ADDED", late.readText())
++        assertEquals("ORIGINAL", first.readText())
++        assertEquals("ORIGINAL", File(destination, "source/first.txt").readText())
++    }
++
++    @Test fun fallbackMoveKeepsSameLengthSameTimeEditAfterCopy() = runBlocking {
++        val source = folder("source")
++        val first = file(source, "first.txt", "ORIGINAL")
++        val originalTime = first.lastModified()
++        val controlledFirst = ControlledFile(first, onLastModified = {
++            first.writeText("MODIFIED")
++            first.setLastModified(originalTime)
++        })
++        val controlled = ControlledFile(source, cannotRename = true, children = { arrayOf(controlledFirst) })
++        val destination = folder("destination")
++        val result = runCatching { DeviceStorageManager.move(DeviceStorageManager.Entry(controlled), destination) }
++        assertTrue("A changed source must prevent destructive cleanup", result.isFailure)
++        assertEquals("MODIFIED", first.readText())
++        assertEquals("ORIGINAL", File(destination, "source/first.txt").readText())
++    }
++}
+--- P11/app/src/debug/AndroidManifest.xml
++++ P12/app/src/debug/AndroidManifest.xml
+@@ -0,0 +1,4 @@
++<manifest xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools">
++    <application android:label="AB File Pro P12" tools:replace="android:label" />
++</manifest>
+--- P11/app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt
++++ P12/app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt
+@@ -15,6 +15,8 @@
+ import java.io.File
+ import java.io.FileInputStream
+ import java.io.FileOutputStream
++import java.nio.file.Files
++import java.util.UUID
+ import java.util.zip.ZipEntry
+ import java.util.zip.ZipInputStream
+ import java.util.zip.ZipOutputStream
+@@ -113,27 +115,50 @@
+     suspend fun copy(entry: Entry, destination: File): Entry {
+         requireInsideRoot(entry.file); requireInsideRoot(destination)
+         require(destination.isDirectory) { "مجلد الوجهة غير صالح" }
+-        val target = uniqueTarget(destination, entry.name)
+-        copyRecursively(entry.file, target)
+-        return Entry(target)
++        requireOutsideSource(entry, destination)
++        currentCoroutineContext().ensureActive()
++        // Publish only a complete copy. Cleanup belongs solely to this attempt.
++        val staging = File(destination, ".abfilepro_copy_${UUID.randomUUID()}")
++        require(staging.mkdir()) { "تعذر إنشاء مساحة النسخ المؤقتة" }
++        try {
++            val staged = File(staging, entry.name)
++            copyRecursively(entry.file, staged)
++            currentCoroutineContext().ensureActive()
++            val target = uniqueTarget(destination, entry.name)
++            // No REPLACE_EXISTING: an existing destination is never overwritten.
++            Files.move(staged.toPath(), target.toPath())
++            return Entry(target)
++        } finally {
++            deleteRecursivelySafe(staging)
++        }
+     }
+ 
+     suspend fun move(entry: Entry, destination: File): Entry {
+         requireInsideRoot(entry.file); requireInsideRoot(destination)
+         require(destination.isDirectory) { "مجلد الوجهة غير صالح" }
+-        val sourceCanonical = entry.file.canonicalFile
+-        val destCanonical = destination.canonicalFile
+-        require(!(entry.isDirectory && (destCanonical == sourceCanonical || destCanonical.path.startsWith(sourceCanonical.path + File.separator)))) {
+-            "لا يمكن نقل مجلد إلى داخله"
+-        }
++        requireOutsideSource(entry, destination)
++        currentCoroutineContext().ensureActive()
+         val target = uniqueTarget(destination, entry.name)
+         if (entry.file.renameTo(target)) return Entry(target)
+-        copyRecursively(entry.file, target)
+-        if (!deleteRecursivelySafe(entry.file)) {
+-            deleteRecursivelySafe(target)
+-            error("تعذر إكمال النقل بأمان")
+-        }
+-        return Entry(target)
++        // Capture before copying: later additions or edits do not belong to the
++        // completed destination and must never be removed as source cleanup.
++        val copiedSource = OwnedOutputSnapshot.capture(entry.file).token
++        val copied = copy(entry, destination)
++        currentCoroutineContext().ensureActive()
++        if (!OwnedOutputSnapshot.deleteIfUnchanged(entry.file, copiedSource).complete) {
++            // Source cleanup can fail after removing some children. The complete
++            // destination is then the only copy of those children: keep it.
++            error("تم الاحتفاظ بالنسخة المكتملة في ${copied.path}؛ تعذر حذف بقية المصدر")
++        }
++        return copied
++    }
++
++    private fun requireOutsideSource(entry: Entry, destination: File) {
++        val source = entry.file.canonicalFile
++        val dest = destination.canonicalFile
++        require(!(entry.isDirectory && (dest == source || dest.path.startsWith(source.path + File.separator)))) {
++            "لا يمكن نسخ أو نقل مجلد إلى داخله"
++        }
+     }
+ 
+     private suspend fun copyRecursively(source: File, target: File) {
+@@ -141,7 +166,8 @@
+         requireInsideRoot(source); requireInsideRoot(target)
+         if (source.isDirectory) {
+             require(target.mkdirs() || target.isDirectory) { "تعذر إنشاء مجلد الوجهة" }
+-            source.listFiles().orEmpty().forEach { child -> copyRecursively(child, File(target, child.name)) }
++            val children = requireNotNull(source.listFiles()) { "تعذر قراءة مجلد المصدر" }
++            children.forEach { child -> copyRecursively(child, File(target, child.name)) }
+         } else {
+             target.parentFile?.mkdirs()
+             FileInputStream(source).use { input ->
+--- P11/app/src/main/java/com/abfilepro/app/core/FileUndoStore.kt
++++ P12/app/src/main/java/com/abfilepro/app/core/FileUndoStore.kt
+@@ -34,29 +34,38 @@
+                 val old = File(dec(p[0]))
+                 val current = File(dec(p[1]))
+                 require(current.exists() && FileUtils.isInsideRoot(context, current)) { "الملف الحالي غير موجود" }
++                require(FileUtils.isInsideRoot(context, old)) { "المسار الأصلي خارج مساحة العمل" }
+                 require(!old.exists()) { "الاسم الأصلي مستخدم حاليًا" }
+                 require(current.renameTo(old)) { "تعذر التراجع عن إعادة التسمية" }
+                 FileTagStore.movePath(context, current, old)
+                 remapSavedPaths(context, mapOf(current.absolutePath to old.absolutePath))
+                 restored = 1
+             }
+-            "move" -> payload.split(';').filter { it.isNotBlank() }.forEach { pair ->
+-                val p = pair.split(',', limit = 2)
+-                if (p.size != 2) return@forEach
+-                val old = File(dec(p[0]))
+-                val current = File(dec(p[1]))
+-                if (!current.exists() || !FileUtils.isInsideRoot(context, current) || old.exists()) return@forEach
+-                old.parentFile?.mkdirs()
+-                if (current.renameTo(old)) {
+-                    FileTagStore.movePath(context, current, old)
+-                    remapSavedPaths(context, mapOf(current.absolutePath to old.absolutePath))
+-                    restored++
++            "move" -> {
++                val pending = payload.split(';').filter { it.isNotBlank() }.toMutableList()
++                pending.toList().forEach { pair ->
++                    val p = pair.split(',', limit = 2)
++                    if (p.size != 2) return@forEach
++                    val old = File(dec(p[0]))
++                    val current = File(dec(p[1]))
++                    if (!current.exists() || !FileUtils.isInsideRoot(context, current) ||
++                        !FileUtils.isInsideRoot(context, old) || old.exists()) return@forEach
++                    old.parentFile?.mkdirs()
++                    if (current.renameTo(old)) {
++                        restored++
++                        pending.remove(pair)
++                        // Persist each successful restoration before ancillary path
++                        // remapping. Conflicts remain available for a later retry.
++                        if (pending.isEmpty()) clear(context) else save(context, "move|" + pending.joinToString(";"))
++                        FileTagStore.movePath(context, current, old)
++                        remapSavedPaths(context, mapOf(current.absolutePath to old.absolutePath))
++                    }
+                 }
+             }
+             else -> error("نوع عملية غير معروف")
+         }
+         require(restored > 0) { "تعذر التراجع لأن الملفات تغيرت بعد العملية" }
+-        clear(context)
++        if (type == "rename") clear(context)
+         restored
+     }
+ 
+--- P11/app/src/main/java/com/abfilepro/app/core/OperationHistoryStore.kt
++++ P12/app/src/main/java/com/abfilepro/app/core/OperationHistoryStore.kt
+@@ -2,7 +2,18 @@
+ 
+ import android.content.Context
+ import android.util.Base64
++import kotlinx.coroutines.CancellationException
++import kotlinx.coroutines.Dispatchers
++import kotlinx.coroutines.currentCoroutineContext
++import kotlinx.coroutines.ensureActive
++import kotlinx.coroutines.sync.Mutex
++import kotlinx.coroutines.sync.withLock
++import kotlinx.coroutines.withContext
++import org.json.JSONObject
+ import java.io.File
++import java.io.FileOutputStream
++import java.nio.file.Files
++import java.nio.file.StandardCopyOption
+ 
+ /**
+  * Small local audit trail for AB smart tools.
+@@ -14,20 +25,23 @@
+         val tool: String,
+         val title: String,
+         val outputs: List<String>,
+-        val createdAt: Long
++        val createdAt: Long,
++        val outputSnapshots: Map<String, String> = emptyMap()
+     ) {
+         fun canUndo(context: Context): Boolean = outputs.any { path ->
+             runCatching {
+                 val file = File(path)
+-                file.exists() && FileUtils.isInsideRoot(context, file) && file.canonicalFile != FileUtils.rootDir(context).canonicalFile
++                outputSnapshots[path]?.startsWith("v1:") == true && file.exists() &&
++                    FileUtils.isInsideRoot(context, file) && file.canonicalFile != FileUtils.rootDir(context).canonicalFile
+             }.getOrDefault(false)
+         }
+     }
+ 
+     private const val MAX_ENTRIES = 100
+     private val lock = Any()
++    private val undoMutex = Mutex()
+ 
+-    fun record(context: Context, tool: String, title: String, outputs: List<File>): Entry {
++    suspend fun record(context: Context, tool: String, title: String, outputs: List<File>): Entry = withContext(Dispatchers.IO) {
+         val safeOutputs = outputs.mapNotNull { file ->
+             runCatching {
+                 if (file.exists() && FileUtils.isInsideRoot(context, file) && file.canonicalFile != FileUtils.rootDir(context).canonicalFile) {
+@@ -36,40 +50,80 @@
+             }.getOrNull()
+         }.distinct()
+         require(safeOutputs.isNotEmpty()) { "لا توجد نتائج قابلة للتسجيل" }
++        val snapshots = LinkedHashMap<String, String>()
++        for (path in safeOutputs) {
++            currentCoroutineContext().ensureActive()
++            try {
++                snapshots[path] = OwnedOutputSnapshot.capture(File(path)).token
++            } catch (cancelled: CancellationException) {
++                throw cancelled
++            } catch (_: Exception) {
++                // Keep the generated result and its history. An unreadable or
++                // changing output simply has no destructive undo permission.
++            }
++        }
+ 
+         val entry = Entry(
+             id = "${System.currentTimeMillis()}_${(1000..9999).random()}",
+             tool = tool.take(60),
+             title = title.take(120),
+             outputs = safeOutputs,
+-            createdAt = System.currentTimeMillis()
++            createdAt = System.currentTimeMillis(),
++            outputSnapshots = snapshots
+         )
+         synchronized(lock) {
+             val all = (listOf(entry) + readUnlocked(context)).distinctBy { it.id }.take(MAX_ENTRIES)
+             writeUnlocked(context, all)
+         }
+-        return entry
++        entry
+     }
+ 
+     fun list(context: Context, limit: Int = 30): List<Entry> = synchronized(lock) {
+         readUnlocked(context).take(limit.coerceIn(1, MAX_ENTRIES))
+     }
+ 
+-    fun undo(context: Context, id: String): Boolean = synchronized(lock) {
+-        val entries = readUnlocked(context)
+-        val entry = entries.firstOrNull { it.id == id } ?: return@synchronized false
+-        val root = FileUtils.rootDir(context).canonicalFile
+-        var changed = false
+-        entry.outputs.forEach { rawPath ->
+-            val target = runCatching { File(rawPath).canonicalFile }.getOrNull() ?: return@forEach
+-            val inside = target != root && target.path.startsWith(root.path + File.separator)
+-            if (!inside || !target.exists()) return@forEach
+-            changed = runCatching {
+-                if (target.isDirectory) target.deleteRecursively() else target.delete()
+-            }.getOrDefault(false) || changed
++    suspend fun hasPending(context: Context, id: String): Boolean = withContext(Dispatchers.IO) {
++        synchronized(lock) { readUnlocked(context).any { it.id == id } }
++    }
++
++    suspend fun undo(context: Context, id: String): Boolean = withContext(Dispatchers.IO) {
++        undoMutex.withLock {
++            val entry = synchronized(lock) { readUnlocked(context).firstOrNull { it.id == id } }
++                ?: return@withLock false
++            val root = FileUtils.rootDir(context).canonicalFile
++            val completed = HashSet<String>()
++            var changed = false
++            try {
++                for (rawPath in entry.outputs) {
++                    currentCoroutineContext().ensureActive()
++                    // Five-column legacy entries never acquire ownership merely
++                    // because a new file happens to occupy the same old path.
++                    val expected = entry.outputSnapshots[rawPath]?.takeIf { it.startsWith("v1:") } ?: continue
++                    val target = File(rawPath)
++                    val canonical = runCatching { target.canonicalFile }.getOrNull() ?: continue
++                    if (canonical == root || !canonical.path.startsWith(root.path + File.separator) || !target.exists()) continue
++                    val result = OwnedOutputSnapshot.deleteIfUnchanged(target, expected)
++                    changed = result.changed || changed
++                    if (result.complete) completed += rawPath
++                }
++            } finally {
++                if (completed.isNotEmpty()) synchronized(lock) {
++                    // Read again so concurrent records are preserved. Retain
++                    // every output that could not be completely undone.
++                    val entries = readUnlocked(context).mapNotNull { current ->
++                        if (current.id != id) current else {
++                            val remaining = current.outputs.filterNot { it in completed }
++                            if (remaining.isEmpty()) null else current.copy(
++                                outputs = remaining,
++                                outputSnapshots = current.outputSnapshots.filterKeys { it in remaining }
++                            )
++                        }
++                    }
++                    writeUnlocked(context, entries)
++                }
++            }
++            changed
+         }
+-        if (changed) writeUnlocked(context, entries.filterNot { it.id == id })
+-        changed
+     }
+ 
+     private fun historyFile(context: Context): File = File(context.filesDir, "ab_smart_history.tsv")
+@@ -81,12 +135,24 @@
+             runCatching {
+                 val p = line.split('\t')
+                 if (p.size < 5) return@runCatching null
++                val proof = if (p.size >= 6 && p[5].isNotBlank()) JSONObject(decode(p[5])) else null
++                val snapshots = LinkedHashMap<String, String>()
++                val recordedOutputs = if (proof != null) {
++                    val items = proof.getJSONArray("outputs")
++                    (0 until items.length()).map { index ->
++                        val item = items.getJSONObject(index)
++                        val path = item.getString("path")
++                        item.optString("snapshot").takeIf { it.startsWith("v1:") }?.let { snapshots[path] = it }
++                        path
++                    }
++                } else decode(p[3]).split('|').filter { it.isNotBlank() }
+                 Entry(
+                     id = decode(p[0]),
+                     tool = decode(p[1]),
+                     title = decode(p[2]),
+-                    outputs = decode(p[3]).split('|').filter { it.isNotBlank() },
+-                    createdAt = p[4].toLong()
++                    outputs = recordedOutputs,
++                    createdAt = p[4].toLong(),
++                    outputSnapshots = snapshots
+                 )
+             }.getOrNull()
+         }.sortedByDescending { it.createdAt }
+@@ -95,17 +161,24 @@
+     private fun writeUnlocked(context: Context, entries: List<Entry>) {
+         val file = historyFile(context)
+         val temp = File(file.parentFile, file.name + ".tmp")
+-        temp.bufferedWriter(Charsets.UTF_8).use { writer ->
++        FileOutputStream(temp).use { stream ->
++            val writer = stream.bufferedWriter(Charsets.UTF_8)
+             entries.take(MAX_ENTRIES).forEach { entry ->
++                val proof = JSONObject().put("outputs", org.json.JSONArray().apply {
++                    entry.outputs.forEach { path -> put(JSONObject().put("path", path).put("snapshot", entry.outputSnapshots[path].orEmpty())) }
++                })
+                 writer.append(encode(entry.id)).append('\t')
+                     .append(encode(entry.tool)).append('\t')
+                     .append(encode(entry.title)).append('\t')
+                     .append(encode(entry.outputs.joinToString("|"))).append('\t')
+-                    .append(entry.createdAt.toString()).appendLine()
++                    .append(entry.createdAt.toString()).append('\t')
++                    .append(encode(proof.toString())).appendLine()
+             }
++            writer.flush()
++            stream.fd.sync()
+         }
+-        if (file.exists()) file.delete()
+-        check(temp.renameTo(file)) { "تعذر تحديث سجل العمليات" }
++        // Atomic replacement keeps the previous history if publishing fails.
++        Files.move(temp.toPath(), file.toPath(), StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING)
+     }
+ 
+     private fun encode(value: String): String = Base64.encodeToString(value.toByteArray(Charsets.UTF_8), Base64.NO_WRAP)
+--- P11/app/src/main/java/com/abfilepro/app/core/OwnedOutputSnapshot.kt
++++ P12/app/src/main/java/com/abfilepro/app/core/OwnedOutputSnapshot.kt
+@@ -0,0 +1,115 @@
++package com.abfilepro.app.core
++
++import kotlinx.coroutines.CancellationException
++import kotlinx.coroutines.currentCoroutineContext
++import kotlinx.coroutines.ensureActive
++import java.io.DataOutputStream
++import java.io.File
++import java.io.OutputStream
++import java.nio.file.Files
++import java.nio.file.LinkOption
++import java.nio.file.attribute.BasicFileAttributes
++import java.security.DigestOutputStream
++import java.security.MessageDigest
++
++/** Content and identity proof for generated outputs. Never follows links. */
++internal object OwnedOutputSnapshot {
++    data class Node(val relative: String, val signature: String, val directory: Boolean, val identity: String, val file: File)
++    data class Snapshot(val token: String, val nodes: List<Node>)
++    data class DeleteResult(val changed: Boolean, val complete: Boolean)
++
++    suspend fun capture(root: File): Snapshot {
++        val nodes = ArrayList<Node>()
++        suspend fun visit(file: File, relative: String) {
++            currentCoroutineContext().ensureActive()
++            val node = readNode(file, relative)
++            nodes += node
++            if (node.directory) {
++                val children = checkNotNull(file.listFiles()) { "تعذر قراءة ناتج العملية" }
++                for (child in children.sortedBy { it.name }) {
++                    visit(child, if (relative.isEmpty()) child.name else "$relative/${child.name}")
++                }
++                check(readNode(file, relative).signature == node.signature) { "تغير ناتج العملية أثناء التحقق" }
++            }
++        }
++        visit(root, "")
++        val digest = MessageDigest.getInstance("SHA-256")
++        val sink = object : OutputStream() {
++            override fun write(value: Int) = Unit
++            override fun write(bytes: ByteArray, offset: Int, length: Int) = Unit
++        }
++        DataOutputStream(DigestOutputStream(sink, digest)).use { out ->
++            for (node in nodes) {
++                val path = node.relative.toByteArray(Charsets.UTF_8)
++                val signature = node.signature.toByteArray(Charsets.UTF_8)
++                out.writeInt(path.size); out.write(path)
++                out.writeInt(signature.size); out.write(signature)
++            }
++        }
++        return Snapshot("v1:" + hex(digest.digest()), nodes)
++    }
++
++    suspend fun deleteIfUnchanged(root: File, expected: String): DeleteResult {
++        var changed = false
++        try {
++            val snapshot = capture(root)
++            if (snapshot.token != expected) return DeleteResult(false, false)
++            // Children precede parents; stable sibling order also makes partial
++            // failures deterministic without re-enumerating new source files.
++            for (node in snapshot.nodes.sortedByDescending { if (it.relative.isEmpty()) 0 else it.relative.count { character -> character == '/' } + 1 }) {
++                currentCoroutineContext().ensureActive()
++                val file = node.file
++                val current = readNode(file, node.relative)
++                if (node.directory) {
++                    // Own removals change directory timestamps. The OS refuses
++                    // deletion of a nonempty directory, preserving late additions.
++                    if (!current.directory || current.identity != node.identity) return DeleteResult(changed, false)
++                } else if (current.signature != node.signature) return DeleteResult(changed, false)
++                currentCoroutineContext().ensureActive()
++                if (!file.delete()) return DeleteResult(changed, false)
++                changed = true
++            }
++            return DeleteResult(changed, true)
++        } catch (cancelled: CancellationException) {
++            throw cancelled
++        } catch (_: Exception) {
++            return DeleteResult(changed, false)
++        }
++    }
++
++    private suspend fun readNode(file: File, relative: String): Node {
++        val path = file.toPath().toAbsolutePath().normalize()
++        check(file.canonicalFile.toPath() == path) { "مسار مرتبط غير قابل للتراجع" }
++        val before = Files.readAttributes(path, BasicFileAttributes::class.java, LinkOption.NOFOLLOW_LINKS)
++        check(!before.isSymbolicLink && (before.isDirectory || before.isRegularFile)) { "نوع ناتج غير قابل للتراجع" }
++        val content = if (before.isRegularFile) {
++            val digest = MessageDigest.getInstance("SHA-256")
++            Files.newInputStream(path, LinkOption.NOFOLLOW_LINKS).use { input ->
++                val buffer = ByteArray(128 * 1024)
++                while (true) {
++                    currentCoroutineContext().ensureActive()
++                    val count = input.read(buffer)
++                    if (count < 0) break
++                    if (count > 0) digest.update(buffer, 0, count)
++                }
++            }
++            hex(digest.digest())
++        } else "directory"
++        val after = Files.readAttributes(path, BasicFileAttributes::class.java, LinkOption.NOFOLLOW_LINKS)
++        check(metadata(before) == metadata(after)) { "تغير ناتج العملية أثناء التحقق" }
++        return Node(relative, metadata(before) + ":" + content, before.isDirectory, before.fileKey()?.toString().orEmpty(), file)
++    }
++
++    private fun metadata(attributes: BasicFileAttributes): String =
++        "${attributes.fileKey()}:${attributes.isDirectory}:${attributes.isRegularFile}:${attributes.isSymbolicLink}:${attributes.size()}:${attributes.lastModifiedTime().toMillis()}"
++
++    private fun hex(bytes: ByteArray): String {
++        val digits = "0123456789abcdef"
++        return buildString(bytes.size * 2) {
++            for (byte in bytes) {
++                val value = byte.toInt() and 255
++                append(digits[value ushr 4]); append(digits[value and 15])
++            }
++        }
++    }
++}
+--- P11/app/src/main/java/com/abfilepro/app/ui/screens/CleanShareScreen.kt
++++ P12/app/src/main/java/com/abfilepro/app/ui/screens/CleanShareScreen.kt
+@@ -169,9 +169,21 @@
+                 historyId?.let { id ->
+                     OutlinedButton(
+                         onClick = {
+-                            if (OperationHistoryStore.undo(context, id)) {
+-                                result = null; historyId = null
+-                                Toast.makeText(context, context.uiText(appLanguage, "b2_clean_undone"), Toast.LENGTH_SHORT).show()
++                            if (!busy) {
++                                busy = true
++                                activeJob = scope.launch {
++                                    try {
++                                        if (OperationHistoryStore.undo(context, id)) {
++                                            val partial = OperationHistoryStore.hasPending(context, id)
++                                            result = null; historyId = null
++                                            Toast.makeText(context, context.uiText(appLanguage, if (partial) "p12_undo_partial" else "b2_clean_undone"), Toast.LENGTH_SHORT).show()
++                                        } else Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                    } catch (cancelled: kotlinx.coroutines.CancellationException) {
++                                        throw cancelled
++                                    } catch (_: Exception) {
++                                        Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                    } finally { busy = false; activeJob = null }
++                                }
+                             }
+                         },
+                         modifier = Modifier.fillMaxWidth()
+--- P11/app/src/main/java/com/abfilepro/app/ui/screens/CommandScreen.kt
++++ P12/app/src/main/java/com/abfilepro/app/ui/screens/CommandScreen.kt
+@@ -147,10 +147,22 @@
+                         historyId?.let { id ->
+                             OutlinedButton(
+                                 onClick = {
+-                                    if (OperationHistoryStore.undo(context, id)) {
+-                                        output = null; historyId = null; historyVersion++
+-                                        Toast.makeText(context, context.uiText(language, "command_screen_017"), Toast.LENGTH_SHORT).show()
+-                                    } else Toast.makeText(context, context.uiText(language, "command_screen_018"), Toast.LENGTH_SHORT).show()
++                                    if (!busy) {
++                                        busy = true
++                                        activeJob = scope.launch {
++                                            try {
++                                                if (OperationHistoryStore.undo(context, id)) {
++                                                    val partial = OperationHistoryStore.hasPending(context, id)
++                                                    output = null; historyId = null; historyVersion++
++                                                    Toast.makeText(context, context.uiText(language, if (partial) "p12_undo_partial" else "command_screen_017"), Toast.LENGTH_SHORT).show()
++                                                } else Toast.makeText(context, context.uiText(language, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                            } catch (cancelled: kotlinx.coroutines.CancellationException) {
++                                                throw cancelled
++                                            } catch (_: Exception) {
++                                                Toast.makeText(context, context.uiText(language, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                            } finally { busy = false; activeJob = null }
++                                        }
++                                    }
+                                 },
+                                 modifier = Modifier.fillMaxWidth()
+                             ) { Icon(Icons.Default.Undo, null); Spacer(Modifier.width(6.dp)); Text(context.uiText(language, "command_screen_019")) }
+@@ -163,11 +175,23 @@
+                 Text(context.uiText(language, "command_screen_020"), fontWeight = FontWeight.Bold)
+                 recentHistory.forEach { entry ->
+                     Card(
+-                        Modifier.fillMaxWidth().clickable(enabled = entry.canUndo(context)) {
+-                            if (OperationHistoryStore.undo(context, entry.id)) {
+-                                historyVersion++
+-                                if (historyId == entry.id) { output = null; historyId = null }
+-                                Toast.makeText(context, context.uiText(language, "command_screen_021"), Toast.LENGTH_SHORT).show()
++                        Modifier.fillMaxWidth().clickable(enabled = !busy && entry.canUndo(context)) {
++                            if (!busy) {
++                                busy = true
++                                activeJob = scope.launch {
++                                    try {
++                                        if (OperationHistoryStore.undo(context, entry.id)) {
++                                            val partial = OperationHistoryStore.hasPending(context, entry.id)
++                                            historyVersion++
++                                            if (historyId == entry.id) { output = null; historyId = null }
++                                            Toast.makeText(context, context.uiText(language, if (partial) "p12_undo_partial" else "command_screen_021"), Toast.LENGTH_SHORT).show()
++                                        } else Toast.makeText(context, context.uiText(language, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                    } catch (cancelled: kotlinx.coroutines.CancellationException) {
++                                        throw cancelled
++                                    } catch (_: Exception) {
++                                        Toast.makeText(context, context.uiText(language, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                    } finally { busy = false; activeJob = null }
++                                }
+                             }
+                         }
+                     ) {
+--- P11/app/src/main/java/com/abfilepro/app/ui/screens/DirectFileExplorerPane.kt
++++ P12/app/src/main/java/com/abfilepro/app/ui/screens/DirectFileExplorerPane.kt
+@@ -47,6 +47,7 @@
+ import com.abfilepro.app.ui.i18n.uiText
+ import kotlinx.coroutines.CancellationException
+ import kotlinx.coroutines.Dispatchers
++import kotlinx.coroutines.NonCancellable
+ import kotlinx.coroutines.launch
+ import kotlinx.coroutines.withContext
+ import java.io.File
+@@ -198,10 +199,10 @@
+         if (busy) return
+         scope.launch {
+             busy = true
+-            try { withContext(Dispatchers.IO) { block() }; reload() }
++            try { withContext(Dispatchers.IO) { block() } }
+             catch (_: CancellationException) { }
+             catch (e: Throwable) { toast(e.message ?: context.uiText(language, "saf_operation_failed"), true) }
+-            finally { busy = false }
++            finally { reload(); busy = false }
+         }
+     }
+ 
+@@ -434,9 +435,18 @@
+         val clip = clipboard ?: return
+         val target = destination.takeIf { it.isDirectory && WorkspaceStorageManager.isInsideWorkspace(root, it) } ?: currentDir
+         runOperation {
+-            clip.entries.forEach { if (clip.mode == DirectClipboardMode.COPY) DeviceStorageManager.copy(it, target) else DeviceStorageManager.move(it, target) }
++            val remaining = clip.entries.toMutableList()
++            try {
++                clip.entries.forEach {
++                    if (clip.mode == DirectClipboardMode.COPY) DeviceStorageManager.copy(it, target) else DeviceStorageManager.move(it, target)
++                    remaining.remove(it)
++                }
++            } finally {
++                if (clip.mode == DirectClipboardMode.CUT) withContext(NonCancellable + Dispatchers.Main) {
++                    if (clipboard == clip) clipboard = if (remaining.isEmpty()) null else DirectClipboard(clip.mode, remaining.toList())
++                }
++            }
+             withContext(Dispatchers.Main) {
+-                if (clip.mode == DirectClipboardMode.CUT) clipboard = null
+                 toast(context.uiText(language, "workspace_paste_done", clip.entries.size))
+             }
+         }
+--- P11/app/src/main/java/com/abfilepro/app/ui/screens/MagicFlowScreen.kt
++++ P12/app/src/main/java/com/abfilepro/app/ui/screens/MagicFlowScreen.kt
+@@ -236,11 +236,22 @@
+                         }
+                         OutlinedButton(
+                             onClick = {
+-                                val undone = OperationHistoryStore.undo(context, r.historyId)
+-                                if (undone) {
+-                                    result = null; proposal = null
+-                                    Toast.makeText(context, context.uiText(language, "magic_flow_screen_032"), Toast.LENGTH_SHORT).show()
+-                                } else Toast.makeText(context, context.uiText(language, "magic_flow_screen_033"), Toast.LENGTH_SHORT).show()
++                                if (!busy) {
++                                    busy = true
++                                    activeJob = scope.launch {
++                                        try {
++                                            if (OperationHistoryStore.undo(context, r.historyId)) {
++                                                val partial = OperationHistoryStore.hasPending(context, r.historyId)
++                                                result = null; proposal = null
++                                                Toast.makeText(context, context.uiText(language, if (partial) "p12_undo_partial" else "magic_flow_screen_032"), Toast.LENGTH_SHORT).show()
++                                            } else Toast.makeText(context, context.uiText(language, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                        } catch (cancelled: kotlinx.coroutines.CancellationException) {
++                                            throw cancelled
++                                        } catch (_: Exception) {
++                                            Toast.makeText(context, context.uiText(language, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                        } finally { busy = false; activeJob = null }
++                                    }
++                                }
+                             },
+                             modifier = Modifier.fillMaxWidth(),
+                             enabled = !busy
+--- P11/app/src/main/java/com/abfilepro/app/ui/screens/SmartFormScreen.kt
++++ P12/app/src/main/java/com/abfilepro/app/ui/screens/SmartFormScreen.kt
+@@ -255,9 +255,21 @@
+                 historyId?.let { id ->
+                     OutlinedButton(
+                         onClick = {
+-                            if (OperationHistoryStore.undo(context, id)) {
+-                                filled = null; historyId = null
+-                                Toast.makeText(context, context.uiText(appLanguage, "b2_form_undone"), Toast.LENGTH_SHORT).show()
++                            if (!busy) {
++                                busy = true
++                                activeJob = scope.launch {
++                                    try {
++                                        if (OperationHistoryStore.undo(context, id)) {
++                                            val partial = OperationHistoryStore.hasPending(context, id)
++                                            filled = null; historyId = null
++                                            Toast.makeText(context, context.uiText(appLanguage, if (partial) "p12_undo_partial" else "b2_form_undone"), Toast.LENGTH_SHORT).show()
++                                        } else Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                    } catch (cancelled: kotlinx.coroutines.CancellationException) {
++                                        throw cancelled
++                                    } catch (_: Exception) {
++                                        Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                    } finally { busy = false; activeJob = null }
++                                }
+                             }
+                         },
+                         modifier = Modifier.fillMaxWidth()
+--- P11/app/src/main/java/com/abfilepro/app/ui/screens/SmartPackScreen.kt
++++ P12/app/src/main/java/com/abfilepro/app/ui/screens/SmartPackScreen.kt
+@@ -150,10 +150,22 @@
+                         }
+                         OutlinedButton(
+                             onClick = {
+-                                if (OperationHistoryStore.undo(context, r.historyId)) {
+-                                    result = null; plan = null
+-                                    Toast.makeText(context, context.uiText(appLanguage, "b2_pack_undone"), Toast.LENGTH_SHORT).show()
+-                                } else Toast.makeText(context, context.uiText(appLanguage, "b2_pack_error_undo"), Toast.LENGTH_SHORT).show()
++                                if (!busy) {
++                                    busy = true
++                                    activeJob = scope.launch {
++                                        try {
++                                            if (OperationHistoryStore.undo(context, r.historyId)) {
++                                                val partial = OperationHistoryStore.hasPending(context, r.historyId)
++                                                result = null; plan = null
++                                                Toast.makeText(context, context.uiText(appLanguage, if (partial) "p12_undo_partial" else "b2_pack_undone"), Toast.LENGTH_SHORT).show()
++                                            } else Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                        } catch (cancelled: kotlinx.coroutines.CancellationException) {
++                                            throw cancelled
++                                        } catch (_: Exception) {
++                                            Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                        } finally { busy = false; activeJob = null }
++                                    }
++                                }
+                             },
+                             modifier = Modifier.fillMaxWidth()
+                         ) { Icon(Icons.Default.Undo, null); Spacer(Modifier.width(6.dp)); Text(context.uiText(appLanguage, "b2_pack_undo")) }
+--- P11/app/src/main/java/com/abfilepro/app/ui/screens/StitchScreen.kt
++++ P12/app/src/main/java/com/abfilepro/app/ui/screens/StitchScreen.kt
+@@ -224,9 +224,21 @@
+                     historyId?.let { id ->
+                         OutlinedButton(
+                             onClick = {
+-                                if (OperationHistoryStore.undo(context, id)) {
+-                                    result = null; historyId = null; selectedUris = emptyList()
+-                                    Toast.makeText(context, context.uiText(appLanguage, "b2_stitch_undone"), Toast.LENGTH_SHORT).show()
++                                if (!busy) {
++                                    busy = true
++                                    activeJob = scope.launch {
++                                        try {
++                                            if (OperationHistoryStore.undo(context, id)) {
++                                                val partial = OperationHistoryStore.hasPending(context, id)
++                                                result = null; historyId = null; selectedUris = emptyList()
++                                                Toast.makeText(context, context.uiText(appLanguage, if (partial) "p12_undo_partial" else "b2_stitch_undone"), Toast.LENGTH_SHORT).show()
++                                            } else Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                        } catch (cancelled: kotlinx.coroutines.CancellationException) {
++                                            throw cancelled
++                                        } catch (_: Exception) {
++                                            Toast.makeText(context, context.uiText(appLanguage, "p12_undo_protected"), Toast.LENGTH_LONG).show()
++                                        } finally { busy = false; activeJob = null }
++                                    }
+                                 }
+                             },
+                             modifier = Modifier.fillMaxWidth()
+--- P11/app/src/main/res/values/strings_alpha98_p12_files.xml
++++ P12/app/src/main/res/values/strings_alpha98_p12_files.xml
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <string name="p12_undo_protected_ar">تعذر التراجع بأمان. تم الاحتفاظ بالملفات التي تغيرت أو تعذر التحقق منها.</string>
++    <string name="p12_undo_protected_en">Could not undo safely. Changed or unverifiable files were kept.</string>
++    <string name="p12_undo_protected_fr">Annulation impossible en toute sécurité. Les fichiers modifiés ou non vérifiables ont été conservés.</string>
++    <string name="p12_undo_partial_ar">تم التراجع عن النتائج الآمنة فقط، والاحتفاظ بالباقي وسجله.</string>
++    <string name="p12_undo_partial_en">Safe outputs were undone. Remaining files and their history were kept.</string>
++    <string name="p12_undo_partial_fr">Les résultats vérifiés ont été annulés. Les autres fichiers et leur historique ont été conservés.</string>
++</resources>

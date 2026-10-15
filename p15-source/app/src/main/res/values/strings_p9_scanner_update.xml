@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p9_scanner_cancel_processing_ar">إلغاء المعالجة</string>
+    <string name="p9_scanner_cancel_processing_en">Cancel processing</string>
+    <string name="p9_scanner_cancel_processing_fr">Annuler le traitement</string>
+
+    <string name="p9_update_title_ar">يتوفر تحديث جديد</string>
+    <string name="p9_update_title_en">New update available</string>
+    <string name="p9_update_title_fr">Nouvelle mise à jour disponible</string>
+    <string name="p9_update_now_ar">تحديث الآن</string>
+    <string name="p9_update_now_en">Update now</string>
+    <string name="p9_update_now_fr">Mettre à jour</string>
+    <string name="p9_update_later_ar">لاحقًا</string>
+    <string name="p9_update_later_en">Later</string>
+    <string name="p9_update_later_fr">Plus tard</string>
+    <string name="p9_update_downloading_ar">جارٍ تنزيل التحديث… %1$d%%</string>
+    <string name="p9_update_downloading_en">Downloading update… %1$d%%</string>
+    <string name="p9_update_downloading_fr">Téléchargement… %1$d%%</string>
+    <string name="p9_update_failed_ar">تعذر تنزيل التحديث. حاول مرة أخرى.</string>
+    <string name="p9_update_failed_en">The update could not be downloaded. Please try again.</string>
+    <string name="p9_update_failed_fr">Impossible de télécharger la mise à jour. Réessayez.</string>
+    <string name="p9_update_install_permission_ar">اسمح للتطبيق بتثبيت التحديث، ثم ارجع وسيكمل التثبيت تلقائيًا.</string>
+    <string name="p9_update_install_permission_en">Allow the app to install the update, then return and installation will continue automatically.</string>
+    <string name="p9_update_install_permission_fr">Autorisez l’installation, puis revenez pour continuer automatiquement.</string>
+</resources>

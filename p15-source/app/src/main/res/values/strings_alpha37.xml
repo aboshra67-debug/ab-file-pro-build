@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alpha37_choose_folder_ar">اختيار مجلد الحفظ</string>
+    <string name="alpha37_choose_folder_en">Choose save folder</string>
+    <string name="alpha37_choose_folder_fr">Choisir le dossier d’enregistrement</string>
+    <string name="alpha37_workspace_unavailable_ar">تعذر الوصول إلى مساحة ملفات AB برو</string>
+    <string name="alpha37_workspace_unavailable_en">AB Pro file workspace is unavailable</string>
+    <string name="alpha37_workspace_unavailable_fr">L’espace de fichiers AB Pro est indisponible</string>
+    <string name="alpha37_new_folder_ar">مجلد جديد</string>
+    <string name="alpha37_new_folder_en">New folder</string>
+    <string name="alpha37_new_folder_fr">Nouveau dossier</string>
+    <string name="alpha37_folder_name_ar">اسم المجلد</string>
+    <string name="alpha37_folder_name_en">Folder name</string>
+    <string name="alpha37_folder_name_fr">Nom du dossier</string>
+    <string name="alpha37_create_ar">إنشاء</string>
+    <string name="alpha37_create_en">Create</string>
+    <string name="alpha37_create_fr">Créer</string>
+    <string name="alpha37_selected_folder_ar">المجلد المحدد: %1$s</string>
+    <string name="alpha37_selected_folder_en">Selected folder: %1$s</string>
+    <string name="alpha37_selected_folder_fr">Dossier sélectionné : %1$s</string>
+    <string name="alpha37_use_folder_ar">استخدام هذا المجلد</string>
+    <string name="alpha37_use_folder_en">Use this folder</string>
+    <string name="alpha37_use_folder_fr">Utiliser ce dossier</string>
+    <string name="alpha37_no_subfolders_ar">لا توجد مجلدات فرعية هنا</string>
+    <string name="alpha37_no_subfolders_en">No subfolders here</string>
+    <string name="alpha37_no_subfolders_fr">Aucun sous-dossier ici</string>
+    <string name="alpha37_change_save_location_ar">تغيير مكان الحفظ من مدير ملفات AB</string>
+    <string name="alpha37_change_save_location_en">Change location with AB File Manager</string>
+    <string name="alpha37_change_save_location_fr">Changer l’emplacement avec le gestionnaire AB</string>
+    <string name="alpha37_storage_permission_required_ar">يلزم السماح بالوصول للملفات حتى يظل المستند محفوظًا بعد حذف التطبيق.</string>
+    <string name="alpha37_storage_permission_required_en">File access is required so documents remain after uninstalling the app.</string>
+    <string name="alpha37_storage_permission_required_fr">L’accès aux fichiers est requis pour conserver les documents après désinstallation.</string>
+    <string name="alpha37_persistent_storage_note_ar">الحفظ دائم على ذاكرة الجهاز ويظل موجودًا بعد حذف التطبيق.</string>
+    <string name="alpha37_persistent_storage_note_en">Saved permanently on device storage and remains after uninstall.</string>
+    <string name="alpha37_persistent_storage_note_fr">Enregistré durablement sur l’appareil et conservé après désinstallation.</string>
+</resources>

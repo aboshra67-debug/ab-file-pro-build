@@ -1,0 +1,20 @@
+<resources>
+    <string name="alpha25_camera_save_only_hint_ar">المرحلة 2: التقط الصورة ثم احفظها. لا تعديل ولا مشاركة الآن.</string>
+    <string name="alpha25_camera_save_only_hint_en">Stage 2: capture, then save. Editing and sharing are still disabled.</string>
+    <string name="alpha25_camera_save_only_hint_fr">Étape 2 : capturez puis enregistrez. La modification et le partage restent désactivés.</string>
+    <string name="alpha25_capture_save_hint_ar">الصورة اتصورت بنجاح. احفظها الآن داخل مدير ملفات AB File Pro أو أعد التصوير.</string>
+    <string name="alpha25_capture_save_hint_en">Photo captured successfully. Save it now in AB File Pro or retake it.</string>
+    <string name="alpha25_capture_save_hint_fr">Photo capturée avec succès. Enregistrez-la maintenant dans AB File Pro ou reprenez-la.</string>
+    <string name="alpha25_save_image_ar">حفظ الصورة</string>
+    <string name="alpha25_save_image_en">Save image</string>
+    <string name="alpha25_save_image_fr">Enregistrer l’image</string>
+    <string name="alpha25_save_success_ar">تم الحفظ بنجاح</string>
+    <string name="alpha25_save_success_en">Saved successfully</string>
+    <string name="alpha25_save_success_fr">Enregistrée avec succès</string>
+    <string name="alpha25_save_failed_ar">تعذر حفظ الصورة. حاول مرة أخرى.</string>
+    <string name="alpha25_save_failed_en">Could not save the image. Please try again.</string>
+    <string name="alpha25_save_failed_fr">Impossible d’enregistrer l’image. Réessayez.</string>
+    <string name="alpha25_saved_location_ar">محفوظة في مدير الملفات / %1$s</string>
+    <string name="alpha25_saved_location_en">Saved in File Manager / %1$s</string>
+    <string name="alpha25_saved_location_fr">Enregistrée dans le gestionnaire de fichiers / %1$s</string>
+</resources>

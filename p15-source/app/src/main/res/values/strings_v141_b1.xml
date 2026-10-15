@@ -1,0 +1,1063 @@
+<resources>
+    <string name="scanner_pro_camera_001_ar" formatted="true">يمكنك الاستيراد من الصور أو استخدام الماسح المتوافق</string>
+    <string name="scanner_pro_camera_001_en" formatted="true">You can import from photos or use the compatible scanner</string>
+    <string name="scanner_pro_camera_001_fr" formatted="true">Vous pouvez importer des photos ou utiliser le scanner compatible</string>
+    <string name="scanner_pro_camera_002_ar" formatted="true">تعذر تجهيز الصورة</string>
+    <string name="scanner_pro_camera_002_en" formatted="true">Could not prepare the image</string>
+    <string name="scanner_pro_camera_002_fr" formatted="true">Impossible de préparer l’image</string>
+    <string name="scanner_pro_camera_003_ar" formatted="true">فشل التقاط الصورة</string>
+    <string name="scanner_pro_camera_003_en" formatted="true">Image capture failed</string>
+    <string name="scanner_pro_camera_003_fr" formatted="true">Échec de la capture de l’image</string>
+    <string name="scanner_pro_camera_004_ar" formatted="true">إغلاق</string>
+    <string name="scanner_pro_camera_004_en" formatted="true">Close</string>
+    <string name="scanner_pro_camera_004_fr" formatted="true">Fermer</string>
+    <string name="scanner_pro_camera_005_ar" formatted="true">تعذر تشغيل الكاميرا</string>
+    <string name="scanner_pro_camera_005_en" formatted="true">Could not start the camera</string>
+    <string name="scanner_pro_camera_005_fr" formatted="true">Impossible de démarrer la caméra</string>
+    <string name="scanner_pro_camera_006_ar" formatted="true">وضع صورة عادية • الالتقاط يدوي</string>
+    <string name="scanner_pro_camera_006_en" formatted="true">Photo mode • manual capture</string>
+    <string name="scanner_pro_camera_006_fr" formatted="true">Mode photo • capture manuelle</string>
+    <string name="scanner_pro_camera_007_ar" formatted="true">المستند ثابت • جاهز للالتقاط</string>
+    <string name="scanner_pro_camera_007_en" formatted="true">Document is stable • ready to capture</string>
+    <string name="scanner_pro_camera_007_fr" formatted="true">Document stable • prêt à capturer</string>
+    <string name="scanner_pro_camera_008_ar" formatted="true">ابحث عن مستند...</string>
+    <string name="scanner_pro_camera_008_en" formatted="true">Looking for a document...</string>
+    <string name="scanner_pro_camera_008_fr" formatted="true">Recherche d’un document...</string>
+    <string name="scanner_pro_camera_009_ar" formatted="true">يلزم إذن الكاميرا للتصوير</string>
+    <string name="scanner_pro_camera_009_en" formatted="true">Camera permission is required to capture</string>
+    <string name="scanner_pro_camera_009_fr" formatted="true">L’autorisation de la caméra est requise</string>
+    <string name="scanner_pro_camera_010_ar" formatted="true">السماح بالكاميرا</string>
+    <string name="scanner_pro_camera_010_en" formatted="true">Allow camera</string>
+    <string name="scanner_pro_camera_010_fr" formatted="true">Autoriser la caméra</string>
+    <string name="scanner_pro_camera_011_ar" formatted="true">استيراد صور بدلًا من ذلك</string>
+    <string name="scanner_pro_camera_011_en" formatted="true">Import photos instead</string>
+    <string name="scanner_pro_camera_011_fr" formatted="true">Importer des photos à la place</string>
+    <string name="scanner_pro_camera_012_ar" formatted="true">الصفحات %1$s/%2$s</string>
+    <string name="scanner_pro_camera_012_en" formatted="true">Pages %1$s/%2$s</string>
+    <string name="scanner_pro_camera_012_fr" formatted="true">Pages %1$s/%2$s</string>
+    <string name="scanner_pro_camera_013_ar" formatted="true">تلقائي</string>
+    <string name="scanner_pro_camera_013_en" formatted="true">Auto</string>
+    <string name="scanner_pro_camera_013_fr" formatted="true">Auto</string>
+    <string name="scanner_pro_camera_014_ar" formatted="true">الفلاش</string>
+    <string name="scanner_pro_camera_014_en" formatted="true">Flash</string>
+    <string name="scanner_pro_camera_014_fr" formatted="true">Flash</string>
+    <string name="scanner_pro_camera_015_ar" formatted="true">الصور</string>
+    <string name="scanner_pro_camera_015_en" formatted="true">Photos</string>
+    <string name="scanner_pro_camera_015_fr" formatted="true">Photos</string>
+    <string name="scanner_pro_camera_016_ar" formatted="true">التقاط</string>
+    <string name="scanner_pro_camera_016_en" formatted="true">Capture</string>
+    <string name="scanner_pro_camera_016_fr" formatted="true">Capturer</string>
+    <string name="scanner_pro_camera_017_ar" formatted="true">بديل</string>
+    <string name="scanner_pro_camera_017_en" formatted="true">Fallback</string>
+    <string name="scanner_pro_camera_017_fr" formatted="true">Alternative</string>
+    <string name="scanner_pro_camera_018_ar" formatted="true">مراجعة الصفحات</string>
+    <string name="scanner_pro_camera_018_en" formatted="true">Review pages</string>
+    <string name="scanner_pro_camera_018_fr" formatted="true">Vérifier les pages</string>
+    <string name="scanner_pro_camera_019_ar" formatted="true">مراجعة وحفظ (%1$s)</string>
+    <string name="scanner_pro_camera_019_en" formatted="true">Review and save (%1$s)</string>
+    <string name="scanner_pro_camera_019_fr" formatted="true">Vérifier et enregistrer (%1$s)</string>
+    <string name="scanner_pro_camera_020_ar" formatted="true">ثقة المستند %1$s%% • الثبات %2$s/10</string>
+    <string name="scanner_pro_camera_020_en" formatted="true">Document confidence %1$s%% • stability %2$s/10</string>
+    <string name="scanner_pro_camera_020_fr" formatted="true">Confiance document %1$s%% • stabilité %2$s/10</string>
+    <string name="scan_screen_001_ar" formatted="true">جاهز لمسح أول مستند</string>
+    <string name="scan_screen_001_en" formatted="true">Ready to scan the first document</string>
+    <string name="scan_screen_001_fr" formatted="true">Prêt à numériser le premier document</string>
+    <string name="scan_screen_002_ar" formatted="true">تعذر استيراد الصور</string>
+    <string name="scan_screen_002_en" formatted="true">Could not import photos</string>
+    <string name="scan_screen_002_fr" formatted="true">Impossible d’importer les photos</string>
+    <string name="scan_screen_003_ar" formatted="true">تمت إضافة %1$s صورة إلى جلسة التصوير</string>
+    <string name="scan_screen_003_en" formatted="true">Added %1$s photos to the scan session</string>
+    <string name="scan_screen_003_fr" formatted="true">%1$s photos ajoutées à la session</string>
+    <string name="scan_screen_004_ar" formatted="true">تم تجهيز %1$s صفحة للمراجعة</string>
+    <string name="scan_screen_004_en" formatted="true">Prepared %1$s pages for review</string>
+    <string name="scan_screen_004_fr" formatted="true">%1$s pages préparées pour vérification</string>
+    <string name="scan_screen_005_ar" formatted="true">تعذر تجهيز صفحات المعاينة</string>
+    <string name="scan_screen_005_en" formatted="true">Could not prepare preview pages</string>
+    <string name="scan_screen_005_fr" formatted="true">Impossible de préparer les pages d’aperçu</string>
+    <string name="scan_screen_006_ar" formatted="true">تم تجهيز %1$s صفحة للمراجعة قبل الحفظ</string>
+    <string name="scan_screen_006_en" formatted="true">Prepared %1$s pages for review before saving</string>
+    <string name="scan_screen_006_fr" formatted="true">%1$s pages préparées avant l’enregistrement</string>
+    <string name="scan_screen_007_ar" formatted="true">تم حفظ %1$s</string>
+    <string name="scan_screen_007_en" formatted="true">Saved %1$s</string>
+    <string name="scan_screen_007_fr" formatted="true">%1$s enregistré</string>
+    <string name="scan_screen_008_ar" formatted="true">تعذر فتح الكاميرا</string>
+    <string name="scan_screen_008_en" formatted="true">Could not open the camera</string>
+    <string name="scan_screen_008_fr" formatted="true">Impossible d’ouvrir la caméra</string>
+    <string name="scan_screen_009_ar" formatted="true">تعذر تشغيل الماسح</string>
+    <string name="scan_screen_009_en" formatted="true">Could not start the scanner</string>
+    <string name="scan_screen_009_fr" formatted="true">Impossible de démarrer le scanner</string>
+    <string name="scan_screen_010_ar" formatted="true">تم حفظ PDF من %1$s صفحة: %2$s</string>
+    <string name="scan_screen_010_en" formatted="true">Saved a %1$s-page PDF: %2$s</string>
+    <string name="scan_screen_010_fr" formatted="true">PDF de %1$s pages enregistré : %2$s</string>
+    <string name="scan_screen_011_ar" formatted="true">
+تم حفظ %1$s صورة معالجة</string>
+    <string name="scan_screen_011_en" formatted="true">
+Saved %1$s processed images</string>
+    <string name="scan_screen_011_fr" formatted="true">
+%1$s images traitées enregistrées</string>
+    <string name="scan_screen_012_ar" formatted="true">فشل حفظ المستند</string>
+    <string name="scan_screen_012_en" formatted="true">Failed to save the document</string>
+    <string name="scan_screen_012_fr" formatted="true">Échec de l’enregistrement du document</string>
+    <string name="scan_screen_013_ar" formatted="true">تم التقاط %1$s صفحة</string>
+    <string name="scan_screen_013_en" formatted="true">%1$s pages captured</string>
+    <string name="scan_screen_013_fr" formatted="true">%1$s pages capturées</string>
+    <string name="scan_screen_014_ar" formatted="true">تم إلغاء المعاينة</string>
+    <string name="scan_screen_014_en" formatted="true">Preview cancelled</string>
+    <string name="scan_screen_014_fr" formatted="true">Aperçu annulé</string>
+    <string name="scan_screen_015_ar" formatted="true">المسح الذكي</string>
+    <string name="scan_screen_015_en" formatted="true">Smart scan</string>
+    <string name="scan_screen_015_fr" formatted="true">Scan intelligent</string>
+    <string name="scan_screen_016_ar" formatted="true">ماسح مستندات احترافي</string>
+    <string name="scan_screen_016_en" formatted="true">Professional document scanner</string>
+    <string name="scan_screen_016_fr" formatted="true">Scanner de documents professionnel</string>
+    <string name="scan_screen_017_ar" formatted="true">كاميرا داخلية • تلقائي/يدوي • ثبات وإضاءة • مراجعة وفلاتر قبل الحفظ</string>
+    <string name="scan_screen_017_en" formatted="true">Built-in camera • auto/manual • stability and lighting • review and filters before saving</string>
+    <string name="scan_screen_017_fr" formatted="true">Caméra intégrée • auto/manuel • stabilité et éclairage • vérification et filtres avant enregistrement</string>
+    <string name="scan_screen_018_ar" formatted="true">اسم الملف - اختياري</string>
+    <string name="scan_screen_018_en" formatted="true">File name - optional</string>
+    <string name="scan_screen_018_fr" formatted="true">Nom du fichier - facultatif</string>
+    <string name="scan_screen_019_ar" formatted="true">مثال: عقد أو فاتورة</string>
+    <string name="scan_screen_019_en" formatted="true">Example: contract or invoice</string>
+    <string name="scan_screen_019_fr" formatted="true">Exemple : contrat ou facture</string>
+    <string name="scan_screen_020_ar" formatted="true">فتح PDF بعد الحفظ</string>
+    <string name="scan_screen_020_en" formatted="true">Open PDF after saving</string>
+    <string name="scan_screen_020_fr" formatted="true">Ouvrir le PDF après enregistrement</string>
+    <string name="scan_screen_021_ar" formatted="true">يعرض الملف فورًا داخل AB File Pro</string>
+    <string name="scan_screen_021_en" formatted="true">Opens the file immediately in AB File Pro</string>
+    <string name="scan_screen_021_fr" formatted="true">Ouvre immédiatement le fichier dans AB File Pro</string>
+    <string name="scan_screen_022_ar" formatted="true">حفظ صور الصفحات أيضًا</string>
+    <string name="scan_screen_022_en" formatted="true">Also save page images</string>
+    <string name="scan_screen_022_fr" formatted="true">Enregistrer aussi les images des pages</string>
+    <string name="scan_screen_023_ar" formatted="true">يحفظ الصور بعد الفلاتر والتدوير</string>
+    <string name="scan_screen_023_en" formatted="true">Saves images after filters and rotation</string>
+    <string name="scan_screen_023_fr" formatted="true">Enregistre les images après filtres et rotation</string>
+    <string name="scan_screen_024_ar" formatted="true">وضع التصوير</string>
+    <string name="scan_screen_024_en" formatted="true">Capture mode</string>
+    <string name="scan_screen_024_fr" formatted="true">Mode de capture</string>
+    <string name="scan_screen_025_ar" formatted="true">QR وباركود</string>
+    <string name="scan_screen_025_en" formatted="true">QR &amp; barcode</string>
+    <string name="scan_screen_025_fr" formatted="true">QR et code-barres</string>
+    <string name="scan_screen_026_ar" formatted="true">فتح Scanner Pro</string>
+    <string name="scan_screen_026_en" formatted="true">Open Scanner Pro</string>
+    <string name="scan_screen_026_fr" formatted="true">Ouvrir Scanner Pro</string>
+    <string name="scan_screen_027_ar" formatted="true">استيراد صور من المعرض</string>
+    <string name="scan_screen_027_en" formatted="true">Import photos from gallery</string>
+    <string name="scan_screen_027_fr" formatted="true">Importer des photos de la galerie</string>
+    <string name="scan_screen_028_ar" formatted="true">استخدام الماسح المتوافق القديم</string>
+    <string name="scan_screen_028_en" formatted="true">Use legacy compatible scanner</string>
+    <string name="scan_screen_028_fr" formatted="true">Utiliser l’ancien scanner compatible</string>
+    <string name="scan_screen_029_ar" formatted="true">مراجعة الصفحات</string>
+    <string name="scan_screen_029_en" formatted="true">Review pages</string>
+    <string name="scan_screen_029_fr" formatted="true">Vérifier les pages</string>
+    <string name="scan_screen_030_ar" formatted="true">%1$s صفحة</string>
+    <string name="scan_screen_030_en" formatted="true">%1$s pages</string>
+    <string name="scan_screen_030_fr" formatted="true">%1$s pages</string>
+    <string name="scan_screen_031_ar" formatted="true">جودة الحفظ: %1$s%%</string>
+    <string name="scan_screen_031_en" formatted="true">Save quality: %1$s%%</string>
+    <string name="scan_screen_031_fr" formatted="true">Qualité d’enregistrement : %1$s%%</string>
+    <string name="scan_screen_032_ar" formatted="true">مقاس صفحات PDF</string>
+    <string name="scan_screen_032_en" formatted="true">PDF page size</string>
+    <string name="scan_screen_032_fr" formatted="true">Taille des pages PDF</string>
+    <string name="scan_screen_033_ar" formatted="true">اسحب مقبض الصفحة لتغيير ترتيبها، وعدّل نقاط المنظور الأربع أو القص والسطوع والتباين والحدة قبل إنشاء PDF.</string>
+    <string name="scan_screen_033_en" formatted="true">Drag the page handle to reorder it, then adjust the four perspective points, crop, brightness, contrast and sharpness before creating the PDF.</string>
+    <string name="scan_screen_033_fr" formatted="true">Faites glisser la poignée pour réorganiser la page, puis ajustez les quatre points de perspective, le recadrage, la luminosité, le contraste et la netteté avant de créer le PDF.</string>
+    <string name="scan_screen_034_ar" formatted="true">إضافة صفحات أخرى</string>
+    <string name="scan_screen_034_en" formatted="true">Add more pages</string>
+    <string name="scan_screen_034_fr" formatted="true">Ajouter des pages</string>
+    <string name="scan_screen_035_ar" formatted="true">جاري إنشاء PDF...</string>
+    <string name="scan_screen_035_en" formatted="true">Creating PDF...</string>
+    <string name="scan_screen_035_fr" formatted="true">Création du PDF...</string>
+    <string name="scan_screen_036_ar" formatted="true">حفظ PDF النهائي</string>
+    <string name="scan_screen_036_en" formatted="true">Save final PDF</string>
+    <string name="scan_screen_036_fr" formatted="true">Enregistrer le PDF final</string>
+    <string name="scan_screen_037_ar" formatted="true">إلغاء المراجعة</string>
+    <string name="scan_screen_037_en" formatted="true">Cancel review</string>
+    <string name="scan_screen_037_fr" formatted="true">Annuler la vérification</string>
+    <string name="scan_screen_038_ar" formatted="true">الصفحة %1$s من %2$s</string>
+    <string name="scan_screen_038_en" formatted="true">Page %1$s of %2$s</string>
+    <string name="scan_screen_038_fr" formatted="true">Page %1$s sur %2$s</string>
+    <string name="scan_screen_039_ar" formatted="true">اسحب لترتيب الصفحة</string>
+    <string name="scan_screen_039_en" formatted="true">Drag to reorder page</string>
+    <string name="scan_screen_039_fr" formatted="true">Faites glisser pour réorganiser la page</string>
+    <string name="scan_screen_040_ar" formatted="true">تحريك لأعلى</string>
+    <string name="scan_screen_040_en" formatted="true">Move up</string>
+    <string name="scan_screen_040_fr" formatted="true">Monter</string>
+    <string name="scan_screen_041_ar" formatted="true">تحريك لأسفل</string>
+    <string name="scan_screen_041_en" formatted="true">Move down</string>
+    <string name="scan_screen_041_fr" formatted="true">Descendre</string>
+    <string name="scan_screen_042_ar" formatted="true">حذف</string>
+    <string name="scan_screen_042_en" formatted="true">Delete</string>
+    <string name="scan_screen_042_fr" formatted="true">Supprimer</string>
+    <string name="scan_screen_043_ar" formatted="true">معاينة الصفحة %1$s</string>
+    <string name="scan_screen_043_en" formatted="true">Preview page %1$s</string>
+    <string name="scan_screen_043_fr" formatted="true">Aperçu de la page %1$s</string>
+    <string name="scan_screen_044_ar" formatted="true">يسار</string>
+    <string name="scan_screen_044_en" formatted="true">Left</string>
+    <string name="scan_screen_044_fr" formatted="true">Gauche</string>
+    <string name="scan_screen_045_ar" formatted="true">يمين</string>
+    <string name="scan_screen_045_en" formatted="true">Right</string>
+    <string name="scan_screen_045_fr" formatted="true">Droite</string>
+    <string name="scan_screen_046_ar" formatted="true">إعادة تصوير</string>
+    <string name="scan_screen_046_en" formatted="true">Retake</string>
+    <string name="scan_screen_046_fr" formatted="true">Reprendre</string>
+    <string name="scan_screen_047_ar" formatted="true">منظور وقص</string>
+    <string name="scan_screen_047_en" formatted="true">Perspective &amp; crop</string>
+    <string name="scan_screen_047_fr" formatted="true">Perspective et recadrage</string>
+    <string name="scan_screen_048_ar" formatted="true">للجميع</string>
+    <string name="scan_screen_048_en" formatted="true">Apply to all</string>
+    <string name="scan_screen_048_fr" formatted="true">Appliquer à toutes</string>
+    <string name="scan_screen_049_ar" formatted="true">زر للجميع ينسخ الفلتر والسطوع والتباين والحدة فقط؛ القص والتدوير يظلان لكل صفحة.</string>
+    <string name="scan_screen_049_en" formatted="true">Apply to all copies only the filter, brightness, contrast and sharpness; crop and rotation remain page-specific.</string>
+    <string name="scan_screen_049_fr" formatted="true">Appliquer à toutes copie uniquement le filtre, la luminosité, le contraste et la netteté ; le recadrage et la rotation restent propres à chaque page.</string>
+    <string name="scan_screen_050_ar" formatted="true">حذف الصفحة؟</string>
+    <string name="scan_screen_050_en" formatted="true">Delete page?</string>
+    <string name="scan_screen_050_fr" formatted="true">Supprimer la page ?</string>
+    <string name="scan_screen_051_ar" formatted="true">سيتم حذف هذه الصفحة من جلسة المسح الحالية فقط. لن يتم لمس أي ملف أصلي محفوظ.</string>
+    <string name="scan_screen_051_en" formatted="true">This page will be removed only from the current scan session. No saved original file will be changed.</string>
+    <string name="scan_screen_051_fr" formatted="true">Cette page sera supprimée uniquement de la session actuelle. Aucun fichier original enregistré ne sera modifié.</string>
+    <string name="scan_screen_052_ar" formatted="true">إلغاء</string>
+    <string name="scan_screen_052_en" formatted="true">Cancel</string>
+    <string name="scan_screen_052_fr" formatted="true">Annuler</string>
+    <string name="scan_screen_053_ar" formatted="true">تصحيح المنظور والصفحة</string>
+    <string name="scan_screen_053_en" formatted="true">Perspective and page correction</string>
+    <string name="scan_screen_053_fr" formatted="true">Correction de perspective et de page</string>
+    <string name="scan_screen_054_ar" formatted="true">تصحيح المنظور بأربع نقاط</string>
+    <string name="scan_screen_054_en" formatted="true">Four-point perspective correction</string>
+    <string name="scan_screen_054_fr" formatted="true">Correction de perspective à quatre points</string>
+    <string name="scan_screen_055_ar" formatted="true">حرّك كل نقطة إلى ركن الورقة الحقيقي. الأصل لا يتغير.</string>
+    <string name="scan_screen_055_en" formatted="true">Move each point to the actual paper corner. The original is unchanged.</string>
+    <string name="scan_screen_055_fr" formatted="true">Déplacez chaque point vers le coin réel de la feuille. L’original reste inchangé.</string>
+    <string name="scan_screen_056_ar" formatted="true">إطار افتراضي</string>
+    <string name="scan_screen_056_en" formatted="true">Default frame</string>
+    <string name="scan_screen_056_fr" formatted="true">Cadre par défaut</string>
+    <string name="scan_screen_057_ar" formatted="true">اكتشاف الكاميرا</string>
+    <string name="scan_screen_057_en" formatted="true">Camera detection</string>
+    <string name="scan_screen_057_fr" formatted="true">Détection de la caméra</string>
+    <string name="scan_screen_058_ar" formatted="true">معاينة النتيجة</string>
+    <string name="scan_screen_058_en" formatted="true">Preview result</string>
+    <string name="scan_screen_058_fr" formatted="true">Aperçu du résultat</string>
+    <string name="scan_screen_059_ar" formatted="true">معاينة الضبط</string>
+    <string name="scan_screen_059_en" formatted="true">Preview adjustments</string>
+    <string name="scan_screen_059_fr" formatted="true">Aperçu des réglages</string>
+    <string name="scan_screen_060_ar" formatted="true">السطوع</string>
+    <string name="scan_screen_060_en" formatted="true">Brightness</string>
+    <string name="scan_screen_060_fr" formatted="true">Luminosité</string>
+    <string name="scan_screen_061_ar" formatted="true">التباين</string>
+    <string name="scan_screen_061_en" formatted="true">Contrast</string>
+    <string name="scan_screen_061_fr" formatted="true">Contraste</string>
+    <string name="scan_screen_062_ar" formatted="true">الحدة</string>
+    <string name="scan_screen_062_en" formatted="true">Sharpness</string>
+    <string name="scan_screen_062_fr" formatted="true">Netteté</string>
+    <string name="scan_screen_063_ar" formatted="true">قص إضافي بعد تصحيح المنظور</string>
+    <string name="scan_screen_063_en" formatted="true">Extra crop after perspective correction</string>
+    <string name="scan_screen_063_fr" formatted="true">Recadrage supplémentaire après correction de perspective</string>
+    <string name="scan_screen_064_ar" formatted="true">استخدمه فقط لإزالة حافة صغيرة بعد ضبط نقاط الورقة.</string>
+    <string name="scan_screen_064_en" formatted="true">Use it only to remove a small edge after setting the paper corners.</string>
+    <string name="scan_screen_064_fr" formatted="true">Utilisez-le uniquement pour enlever une petite bordure après avoir réglé les coins de la feuille.</string>
+    <string name="scan_screen_065_ar" formatted="true">من اليسار</string>
+    <string name="scan_screen_065_en" formatted="true">From left</string>
+    <string name="scan_screen_065_fr" formatted="true">Depuis la gauche</string>
+    <string name="scan_screen_066_ar" formatted="true">من اليمين</string>
+    <string name="scan_screen_066_en" formatted="true">From right</string>
+    <string name="scan_screen_066_fr" formatted="true">Depuis la droite</string>
+    <string name="scan_screen_067_ar" formatted="true">من أعلى</string>
+    <string name="scan_screen_067_en" formatted="true">From top</string>
+    <string name="scan_screen_067_fr" formatted="true">Depuis le haut</string>
+    <string name="scan_screen_068_ar" formatted="true">من أسفل</string>
+    <string name="scan_screen_068_en" formatted="true">From bottom</string>
+    <string name="scan_screen_068_fr" formatted="true">Depuis le bas</string>
+    <string name="scan_screen_069_ar" formatted="true">إعادة الضبط</string>
+    <string name="scan_screen_069_en" formatted="true">Reset</string>
+    <string name="scan_screen_069_fr" formatted="true">Réinitialiser</string>
+    <string name="scan_screen_070_ar" formatted="true">تطبيق</string>
+    <string name="scan_screen_070_en" formatted="true">Apply</string>
+    <string name="scan_screen_070_fr" formatted="true">Appliquer</string>
+    <string name="scan_screen_071_ar" formatted="true">الصورة الأصلية لتحديد المنظور</string>
+    <string name="scan_screen_071_en" formatted="true">Original image for perspective points</string>
+    <string name="scan_screen_071_fr" formatted="true">Image originale pour définir la perspective</string>
+    <string name="scan_screen_072_ar" formatted="true">اسحب الدوائر الذهبية إلى أركان المستند.</string>
+    <string name="scan_screen_072_en" formatted="true">Drag the gold circles to the document corners.</string>
+    <string name="scan_screen_072_fr" formatted="true">Faites glisser les cercles dorés vers les coins du document.</string>
+    <string name="ocr_screen_001_ar" formatted="true">لم يتم العثور على نص داخل الصفحات</string>
+    <string name="ocr_screen_001_en" formatted="true">No text was found in the pages</string>
+    <string name="ocr_screen_001_fr" formatted="true">Aucun texte trouvé dans les pages</string>
+    <string name="ocr_screen_002_ar" formatted="true">تم إنشاء PDF قابل للبحث من %1$s صفحة</string>
+    <string name="ocr_screen_002_en" formatted="true">Created a searchable PDF from %1$s pages</string>
+    <string name="ocr_screen_002_fr" formatted="true">PDF indexable créé à partir de %1$s pages</string>
+    <string name="ocr_screen_003_ar" formatted="true">فشل OCR لملف PDF</string>
+    <string name="ocr_screen_003_en" formatted="true">PDF OCR failed</string>
+    <string name="ocr_screen_003_fr" formatted="true">Échec de l’OCR du PDF</string>
+    <string name="ocr_screen_004_ar" formatted="true">لم يتم العثور على نص داخل الصور</string>
+    <string name="ocr_screen_004_en" formatted="true">No text was found in the images</string>
+    <string name="ocr_screen_004_fr" formatted="true">Aucun texte trouvé dans les images</string>
+    <string name="ocr_screen_005_ar" formatted="true">تم إنشاء PDF قابل للبحث من %1$s صورة</string>
+    <string name="ocr_screen_005_en" formatted="true">Created a searchable PDF from %1$s images</string>
+    <string name="ocr_screen_005_fr" formatted="true">PDF indexable créé à partir de %1$s images</string>
+    <string name="ocr_screen_006_ar" formatted="true">فشل إنشاء PDF قابل للبحث</string>
+    <string name="ocr_screen_006_en" formatted="true">Failed to create searchable PDF</string>
+    <string name="ocr_screen_006_fr" formatted="true">Échec de la création du PDF indexable</string>
+    <string name="ocr_screen_007_ar" formatted="true">لم يتم العثور على نص</string>
+    <string name="ocr_screen_007_en" formatted="true">No text found</string>
+    <string name="ocr_screen_007_fr" formatted="true">Aucun texte trouvé</string>
+    <string name="ocr_screen_008_ar" formatted="true">فشل OCR</string>
+    <string name="ocr_screen_008_en" formatted="true">OCR failed</string>
+    <string name="ocr_screen_008_fr" formatted="true">Échec de l’OCR</string>
+    <string name="ocr_screen_009_ar" formatted="true">OCR الاحترافي</string>
+    <string name="ocr_screen_009_en" formatted="true">Professional OCR</string>
+    <string name="ocr_screen_009_fr" formatted="true">OCR professionnel</string>
+    <string name="ocr_screen_010_ar" formatted="true">لغة المستند</string>
+    <string name="ocr_screen_010_en" formatted="true">Document language</string>
+    <string name="ocr_screen_010_fr" formatted="true">Langue du document</string>
+    <string name="ocr_screen_011_ar" formatted="true">OCR من صورة</string>
+    <string name="ocr_screen_011_en" formatted="true">OCR from image</string>
+    <string name="ocr_screen_011_fr" formatted="true">OCR depuis une image</string>
+    <string name="ocr_screen_012_ar" formatted="true">اختر الصورة كاملة أو قص الجزء المطلوب فقط</string>
+    <string name="ocr_screen_012_en" formatted="true">Use the full image or crop only the required area</string>
+    <string name="ocr_screen_012_fr" formatted="true">Utilisez l’image complète ou recadrez uniquement la zone voulue</string>
+    <string name="ocr_screen_013_ar" formatted="true">اختيار صورة</string>
+    <string name="ocr_screen_013_en" formatted="true">Choose image</string>
+    <string name="ocr_screen_013_fr" formatted="true">Choisir une image</string>
+    <string name="ocr_screen_014_ar" formatted="true">معاينة OCR</string>
+    <string name="ocr_screen_014_en" formatted="true">OCR preview</string>
+    <string name="ocr_screen_014_fr" formatted="true">Aperçu OCR</string>
+    <string name="ocr_screen_015_ar" formatted="true">إخفاء القص</string>
+    <string name="ocr_screen_015_en" formatted="true">Hide crop</string>
+    <string name="ocr_screen_015_fr" formatted="true">Masquer le recadrage</string>
+    <string name="ocr_screen_016_ar" formatted="true">تحديد جزء</string>
+    <string name="ocr_screen_016_en" formatted="true">Select area</string>
+    <string name="ocr_screen_016_fr" formatted="true">Sélectionner une zone</string>
+    <string name="ocr_screen_017_ar" formatted="true">استخراج النص</string>
+    <string name="ocr_screen_017_en" formatted="true">Extract text</string>
+    <string name="ocr_screen_017_fr" formatted="true">Extraire le texte</string>
+    <string name="ocr_screen_018_ar" formatted="true">PDF قابل للبحث</string>
+    <string name="ocr_screen_018_en" formatted="true">Searchable PDF</string>
+    <string name="ocr_screen_018_fr" formatted="true">PDF indexable</string>
+    <string name="ocr_screen_019_ar" formatted="true">يضيف طبقة OCR مع الحفاظ على صفحات PDF الأصلية</string>
+    <string name="ocr_screen_019_en" formatted="true">Adds an OCR layer while preserving the original PDF pages</string>
+    <string name="ocr_screen_019_fr" formatted="true">Ajoute une couche OCR tout en conservant les pages PDF originales</string>
+    <string name="ocr_screen_020_ar" formatted="true">اختيار PDF وتشغيل OCR</string>
+    <string name="ocr_screen_020_en" formatted="true">Choose PDF and run OCR</string>
+    <string name="ocr_screen_020_fr" formatted="true">Choisir un PDF et lancer l’OCR</string>
+    <string name="ocr_screen_021_ar" formatted="true">صور → PDF قابل للبحث</string>
+    <string name="ocr_screen_021_en" formatted="true">Images → searchable PDF</string>
+    <string name="ocr_screen_021_fr" formatted="true">Images → PDF indexable</string>
+    <string name="ocr_screen_022_ar" formatted="true">معالجة الصفحة %1$s من %2$s</string>
+    <string name="ocr_screen_022_en" formatted="true">Processing page %1$s of %2$s</string>
+    <string name="ocr_screen_022_fr" formatted="true">Traitement de la page %1$s sur %2$s</string>
+    <string name="ocr_screen_023_ar" formatted="true">تجهيز ملف PDF...</string>
+    <string name="ocr_screen_023_en" formatted="true">Preparing PDF...</string>
+    <string name="ocr_screen_023_fr" formatted="true">Préparation du PDF...</string>
+    <string name="ocr_screen_024_ar" formatted="true">فتح PDF</string>
+    <string name="ocr_screen_024_en" formatted="true">Open PDF</string>
+    <string name="ocr_screen_024_fr" formatted="true">Ouvrir le PDF</string>
+    <string name="ocr_screen_025_ar" formatted="true">مشاركة</string>
+    <string name="ocr_screen_025_en" formatted="true">Share</string>
+    <string name="ocr_screen_025_fr" formatted="true">Partager</string>
+    <string name="ocr_screen_026_ar" formatted="true">النص المستخرج</string>
+    <string name="ocr_screen_026_en" formatted="true">Extracted text</string>
+    <string name="ocr_screen_026_fr" formatted="true">Texte extrait</string>
+    <string name="ocr_screen_027_ar" formatted="true">سيظهر النص هنا، ويمكنك تعديله قبل الحفظ أو المشاركة.</string>
+    <string name="ocr_screen_027_en" formatted="true">The text will appear here and can be edited before saving or sharing.</string>
+    <string name="ocr_screen_027_fr" formatted="true">Le texte apparaîtra ici et pourra être modifié avant l’enregistrement ou le partage.</string>
+    <string name="ocr_screen_028_ar" formatted="true">بحث داخل النص</string>
+    <string name="ocr_screen_028_en" formatted="true">Search in text</string>
+    <string name="ocr_screen_028_fr" formatted="true">Rechercher dans le texte</string>
+    <string name="ocr_screen_029_ar" formatted="true">عدد النتائج: %1$s</string>
+    <string name="ocr_screen_029_en" formatted="true">Matches: %1$s</string>
+    <string name="ocr_screen_029_fr" formatted="true">Résultats : %1$s</string>
+    <string name="ocr_screen_030_ar" formatted="true">اسم مقترح للحفظ</string>
+    <string name="ocr_screen_030_en" formatted="true">Suggested file name</string>
+    <string name="ocr_screen_030_fr" formatted="true">Nom de fichier suggéré</string>
+    <string name="ocr_screen_031_ar" formatted="true">مأخوذ من أول سطر واضح ويمكنك تعديله</string>
+    <string name="ocr_screen_031_en" formatted="true">Based on the first clear line; you can edit it</string>
+    <string name="ocr_screen_031_fr" formatted="true">Basé sur la première ligne claire ; vous pouvez le modifier</string>
+    <string name="ocr_screen_032_ar" formatted="true">التصنيف المقترح: %1$s</string>
+    <string name="ocr_screen_032_en" formatted="true">Suggested category: %1$s</string>
+    <string name="ocr_screen_032_fr" formatted="true">Catégorie suggérée : %1$s</string>
+    <string name="ocr_screen_033_ar" formatted="true">تم النسخ</string>
+    <string name="ocr_screen_033_en" formatted="true">Copied</string>
+    <string name="ocr_screen_033_fr" formatted="true">Copié</string>
+    <string name="ocr_screen_034_ar" formatted="true">نسخ</string>
+    <string name="ocr_screen_034_en" formatted="true">Copy</string>
+    <string name="ocr_screen_034_fr" formatted="true">Copier</string>
+    <string name="ocr_screen_035_ar" formatted="true">مشاركة النص</string>
+    <string name="ocr_screen_035_en" formatted="true">Share text</string>
+    <string name="ocr_screen_035_fr" formatted="true">Partager le texte</string>
+    <string name="ocr_screen_036_ar" formatted="true">تم حفظ %1$s</string>
+    <string name="ocr_screen_036_en" formatted="true">Saved %1$s</string>
+    <string name="ocr_screen_036_fr" formatted="true">%1$s enregistré</string>
+    <string name="ocr_screen_037_ar" formatted="true">تعذر الحفظ</string>
+    <string name="ocr_screen_037_en" formatted="true">Could not save</string>
+    <string name="ocr_screen_037_fr" formatted="true">Impossible d’enregistrer</string>
+    <string name="ocr_screen_038_ar" formatted="true">حفظ</string>
+    <string name="ocr_screen_038_en" formatted="true">Save</string>
+    <string name="ocr_screen_038_fr" formatted="true">Enregistrer</string>
+    <string name="ocr_screen_039_ar" formatted="true">آخر ملف نصي: %1$s</string>
+    <string name="ocr_screen_039_en" formatted="true">Latest text file: %1$s</string>
+    <string name="ocr_screen_039_fr" formatted="true">Dernier fichier texte : %1$s</string>
+    <string name="ocr_screen_040_ar" formatted="true">إدارة لغات OCR</string>
+    <string name="ocr_screen_040_en" formatted="true">Manage OCR languages</string>
+    <string name="ocr_screen_040_fr" formatted="true">Gérer les langues OCR</string>
+    <string name="ocr_screen_041_ar" formatted="true">اللغة المختارة جاهزة وتعمل محليًا على الهاتف.</string>
+    <string name="ocr_screen_041_en" formatted="true">The selected language is ready and works locally on the phone.</string>
+    <string name="ocr_screen_041_fr" formatted="true">La langue sélectionnée est prête et fonctionne localement sur le téléphone.</string>
+    <string name="ocr_screen_042_ar" formatted="true">في أول استخدام فقط يحتاج التطبيق الإنترنت لتنزيل نموذج اللغة، وبعدها يعمل OCR محليًا.</string>
+    <string name="ocr_screen_042_en" formatted="true">Only the first use needs internet to download the language model; OCR then works locally.</string>
+    <string name="ocr_screen_042_fr" formatted="true">Seule la première utilisation nécessite Internet pour télécharger le modèle de langue ; ensuite l’OCR fonctionne localement.</string>
+    <string name="ocr_screen_043_ar" formatted="true">تحديد منطقة OCR</string>
+    <string name="ocr_screen_043_en" formatted="true">Select OCR area</string>
+    <string name="ocr_screen_043_fr" formatted="true">Sélectionner la zone OCR</string>
+    <string name="ocr_screen_044_ar" formatted="true">حرّك الحدود لإزالة الأجزاء غير المطلوبة من الصورة.</string>
+    <string name="ocr_screen_044_en" formatted="true">Move the boundaries to exclude unwanted parts of the image.</string>
+    <string name="ocr_screen_044_fr" formatted="true">Déplacez les limites pour exclure les parties inutiles de l’image.</string>
+    <string name="ocr_screen_045_ar" formatted="true">من اليسار</string>
+    <string name="ocr_screen_045_en" formatted="true">From left</string>
+    <string name="ocr_screen_045_fr" formatted="true">Depuis la gauche</string>
+    <string name="ocr_screen_046_ar" formatted="true">من اليمين</string>
+    <string name="ocr_screen_046_en" formatted="true">From right</string>
+    <string name="ocr_screen_046_fr" formatted="true">Depuis la droite</string>
+    <string name="ocr_screen_047_ar" formatted="true">من أعلى</string>
+    <string name="ocr_screen_047_en" formatted="true">From top</string>
+    <string name="ocr_screen_047_fr" formatted="true">Depuis le haut</string>
+    <string name="ocr_screen_048_ar" formatted="true">من أسفل</string>
+    <string name="ocr_screen_048_en" formatted="true">From bottom</string>
+    <string name="ocr_screen_048_fr" formatted="true">Depuis le bas</string>
+    <string name="ocr_screen_049_ar" formatted="true">إعادة المنطقة كاملة</string>
+    <string name="ocr_screen_049_en" formatted="true">Reset to full area</string>
+    <string name="ocr_screen_049_fr" formatted="true">Rétablir toute la zone</string>
+    <string name="ocr_screen_050_ar" formatted="true">جاهز على الهاتف</string>
+    <string name="ocr_screen_050_en" formatted="true">Ready on device</string>
+    <string name="ocr_screen_050_fr" formatted="true">Prêt sur le téléphone</string>
+    <string name="ocr_screen_051_ar" formatted="true">غير محمّل</string>
+    <string name="ocr_screen_051_en" formatted="true">Not downloaded</string>
+    <string name="ocr_screen_051_fr" formatted="true">Non téléchargé</string>
+    <string name="ocr_screen_052_ar" formatted="true">تم تنزيل %1$s</string>
+    <string name="ocr_screen_052_en" formatted="true">Downloaded %1$s</string>
+    <string name="ocr_screen_052_fr" formatted="true">%1$s téléchargé</string>
+    <string name="ocr_screen_053_ar" formatted="true">تعذر التنزيل</string>
+    <string name="ocr_screen_053_en" formatted="true">Download failed</string>
+    <string name="ocr_screen_053_fr" formatted="true">Échec du téléchargement</string>
+    <string name="ocr_screen_054_ar" formatted="true">تنزيل</string>
+    <string name="ocr_screen_054_en" formatted="true">Download</string>
+    <string name="ocr_screen_054_fr" formatted="true">Télécharger</string>
+    <string name="ocr_screen_055_ar" formatted="true">تم حذف نموذج %1$s</string>
+    <string name="ocr_screen_055_en" formatted="true">Deleted %1$s model</string>
+    <string name="ocr_screen_055_fr" formatted="true">Modèle %1$s supprimé</string>
+    <string name="ocr_screen_056_ar" formatted="true">حذف</string>
+    <string name="ocr_screen_056_en" formatted="true">Delete</string>
+    <string name="ocr_screen_056_fr" formatted="true">Supprimer</string>
+    <string name="magic_flow_screen_001_ar" formatted="true">رجوع</string>
+    <string name="magic_flow_screen_001_en" formatted="true">Back</string>
+    <string name="magic_flow_screen_001_fr" formatted="true">Retour</string>
+    <string name="magic_flow_screen_002_ar" formatted="true">صوّر مرة… والباقي على AB.</string>
+    <string name="magic_flow_screen_002_en" formatted="true">Scan once… AB handles the rest.</string>
+    <string name="magic_flow_screen_002_fr" formatted="true">Scannez une fois… AB s’occupe du reste.</string>
+    <string name="magic_flow_screen_003_ar" formatted="true">يحلل المستند، يستخرج النص، يقترح الاسم والمجلد، ثم ينشئ PDF قابلًا للبحث بعد موافقتك. المستندات لا تُرفع للسحابة.</string>
+    <string name="magic_flow_screen_003_en" formatted="true">Analyzes the document, extracts text, suggests a name and folder, then creates a searchable PDF after your approval. Documents are not uploaded to the cloud.</string>
+    <string name="magic_flow_screen_003_fr" formatted="true">Analyse le document, extrait le texte, suggère un nom et un dossier, puis crée un PDF indexable après votre validation. Les documents ne sont pas envoyés vers le cloud.</string>
+    <string name="magic_flow_screen_004_ar" formatted="true">المعالجة محلية • OCR عربي / English / Français</string>
+    <string name="magic_flow_screen_004_en" formatted="true">Local processing • Arabic / English / French OCR</string>
+    <string name="magic_flow_screen_004_fr" formatted="true">Traitement local • OCR arabe / anglais / français</string>
+    <string name="magic_flow_screen_005_ar" formatted="true">تعذر تجهيز الكاميرا</string>
+    <string name="magic_flow_screen_005_en" formatted="true">Could not prepare the camera</string>
+    <string name="magic_flow_screen_005_fr" formatted="true">Impossible de préparer la caméra</string>
+    <string name="magic_flow_screen_006_ar" formatted="true">صوّر الآن</string>
+    <string name="magic_flow_screen_006_en" formatted="true">Scan now</string>
+    <string name="magic_flow_screen_006_fr" formatted="true">Scanner maintenant</string>
+    <string name="magic_flow_screen_007_ar" formatted="true">صور موجودة</string>
+    <string name="magic_flow_screen_007_en" formatted="true">Existing photos</string>
+    <string name="magic_flow_screen_007_fr" formatted="true">Photos existantes</string>
+    <string name="magic_flow_screen_008_ar" formatted="true">الصفحات المختارة: %1$s</string>
+    <string name="magic_flow_screen_008_en" formatted="true">Selected pages: %1$s</string>
+    <string name="magic_flow_screen_008_fr" formatted="true">Pages sélectionnées : %1$s</string>
+    <string name="magic_flow_screen_009_ar" formatted="true">معاينة الصفحة الأولى</string>
+    <string name="magic_flow_screen_009_en" formatted="true">Preview first page</string>
+    <string name="magic_flow_screen_009_fr" formatted="true">Aperçu de la première page</string>
+    <string name="magic_flow_screen_010_ar" formatted="true">بدء التحليل…</string>
+    <string name="magic_flow_screen_010_en" formatted="true">Starting analysis…</string>
+    <string name="magic_flow_screen_010_fr" formatted="true">Démarrage de l’analyse…</string>
+    <string name="magic_flow_screen_011_ar" formatted="true">تعذر تحليل المستند</string>
+    <string name="magic_flow_screen_011_en" formatted="true">Could not analyze the document</string>
+    <string name="magic_flow_screen_011_fr" formatted="true">Impossible d’analyser le document</string>
+    <string name="magic_flow_screen_012_ar" formatted="true">حلّل واقترح المسار</string>
+    <string name="magic_flow_screen_012_en" formatted="true">Analyze and suggest flow</string>
+    <string name="magic_flow_screen_012_fr" formatted="true">Analyser et suggérer le flux</string>
+    <string name="magic_flow_screen_013_ar" formatted="true">خطة AB Magic Flow</string>
+    <string name="magic_flow_screen_013_en" formatted="true">AB Magic Flow plan</string>
+    <string name="magic_flow_screen_013_fr" formatted="true">Plan AB Magic Flow</string>
+    <string name="magic_flow_screen_014_ar" formatted="true">نوع المستند: %1$s • ثقة %2$s%%</string>
+    <string name="magic_flow_screen_014_en" formatted="true">Document type: %1$s • confidence %2$s%%</string>
+    <string name="magic_flow_screen_014_fr" formatted="true">Type de document : %1$s • confiance %2$s%%</string>
+    <string name="magic_flow_screen_015_ar" formatted="true">الاسم المقترح</string>
+    <string name="magic_flow_screen_015_en" formatted="true">Suggested name</string>
+    <string name="magic_flow_screen_015_fr" formatted="true">Nom suggéré</string>
+    <string name="magic_flow_screen_016_ar" formatted="true">المجلد المقترح</string>
+    <string name="magic_flow_screen_016_en" formatted="true">Suggested folder</string>
+    <string name="magic_flow_screen_016_fr" formatted="true">Dossier suggéré</string>
+    <string name="magic_flow_screen_017_ar" formatted="true">الاسم: %1$s</string>
+    <string name="magic_flow_screen_017_en" formatted="true">Name: %1$s</string>
+    <string name="magic_flow_screen_017_fr" formatted="true">Nom : %1$s</string>
+    <string name="magic_flow_screen_018_ar" formatted="true">المجلد: %1$s</string>
+    <string name="magic_flow_screen_018_en" formatted="true">Folder: %1$s</string>
+    <string name="magic_flow_screen_018_fr" formatted="true">Dossier : %1$s</string>
+    <string name="magic_flow_screen_019_ar" formatted="true">الإجراء: %1$s</string>
+    <string name="magic_flow_screen_019_en" formatted="true">Action: %1$s</string>
+    <string name="magic_flow_screen_019_fr" formatted="true">Action : %1$s</string>
+    <string name="magic_flow_screen_020_ar" formatted="true">معاينة OCR</string>
+    <string name="magic_flow_screen_020_en" formatted="true">OCR preview</string>
+    <string name="magic_flow_screen_020_fr" formatted="true">Aperçu OCR</string>
+    <string name="magic_flow_screen_021_ar" formatted="true">تم</string>
+    <string name="magic_flow_screen_021_en" formatted="true">Done</string>
+    <string name="magic_flow_screen_021_fr" formatted="true">Terminé</string>
+    <string name="magic_flow_screen_022_ar" formatted="true">تعديل</string>
+    <string name="magic_flow_screen_022_en" formatted="true">Edit</string>
+    <string name="magic_flow_screen_022_fr" formatted="true">Modifier</string>
+    <string name="magic_flow_screen_023_ar" formatted="true">تنفيذ الخطة…</string>
+    <string name="magic_flow_screen_023_en" formatted="true">Executing plan…</string>
+    <string name="magic_flow_screen_023_fr" formatted="true">Exécution du plan…</string>
+    <string name="magic_flow_screen_024_ar" formatted="true">تم تنفيذ AB Magic Flow</string>
+    <string name="magic_flow_screen_024_en" formatted="true">AB Magic Flow completed</string>
+    <string name="magic_flow_screen_024_fr" formatted="true">AB Magic Flow terminé</string>
+    <string name="magic_flow_screen_025_ar" formatted="true">تعذر تنفيذ الخطة</string>
+    <string name="magic_flow_screen_025_en" formatted="true">Could not execute the plan</string>
+    <string name="magic_flow_screen_025_fr" formatted="true">Impossible d’exécuter le plan</string>
+    <string name="magic_flow_screen_026_ar" formatted="true">اعتماد</string>
+    <string name="magic_flow_screen_026_en" formatted="true">Approve</string>
+    <string name="magic_flow_screen_026_fr" formatted="true">Valider</string>
+    <string name="magic_flow_screen_027_ar" formatted="true">تراجع عن الاقتراح</string>
+    <string name="magic_flow_screen_027_en" formatted="true">Discard suggestion</string>
+    <string name="magic_flow_screen_027_fr" formatted="true">Annuler la suggestion</string>
+    <string name="magic_flow_screen_028_ar" formatted="true">تم الحفظ</string>
+    <string name="magic_flow_screen_028_en" formatted="true">Saved</string>
+    <string name="magic_flow_screen_028_fr" formatted="true">Enregistré</string>
+    <string name="magic_flow_screen_029_ar" formatted="true">%1$s صفحة • تصحيح منظور %2$s صفحة • مجلد %3$s</string>
+    <string name="magic_flow_screen_029_en" formatted="true">%1$s pages • perspective corrected on %2$s pages • folder %3$s</string>
+    <string name="magic_flow_screen_029_fr" formatted="true">%1$s pages • perspective corrigée sur %2$s pages • dossier %3$s</string>
+    <string name="magic_flow_screen_030_ar" formatted="true">فتح PDF</string>
+    <string name="magic_flow_screen_030_en" formatted="true">Open PDF</string>
+    <string name="magic_flow_screen_030_fr" formatted="true">Ouvrir le PDF</string>
+    <string name="magic_flow_screen_031_ar" formatted="true">مشاركة</string>
+    <string name="magic_flow_screen_031_en" formatted="true">Share</string>
+    <string name="magic_flow_screen_031_fr" formatted="true">Partager</string>
+    <string name="magic_flow_screen_032_ar" formatted="true">تم التراجع وحذف النتائج التي أنشأها AB فقط</string>
+    <string name="magic_flow_screen_032_en" formatted="true">Undo completed; only results created by AB were deleted</string>
+    <string name="magic_flow_screen_032_fr" formatted="true">Annulation effectuée ; seuls les résultats créés par AB ont été supprimés</string>
+    <string name="magic_flow_screen_033_ar" formatted="true">لا توجد نتيجة قابلة للتراجع</string>
+    <string name="magic_flow_screen_033_en" formatted="true">No result is available to undo</string>
+    <string name="magic_flow_screen_033_fr" formatted="true">Aucun résultat à annuler</string>
+    <string name="magic_flow_screen_034_ar" formatted="true">تراجع عن العملية</string>
+    <string name="magic_flow_screen_034_en" formatted="true">Undo operation</string>
+    <string name="magic_flow_screen_034_fr" formatted="true">Annuler l’opération</string>
+    <string name="command_screen_001_ar" formatted="true">رجوع</string>
+    <string name="command_screen_001_en" formatted="true">Back</string>
+    <string name="command_screen_001_fr" formatted="true">Retour</string>
+    <string name="command_screen_002_ar" formatted="true">اكتب المطلوب بدل التنقل بين الأدوات</string>
+    <string name="command_screen_002_en" formatted="true">Describe the task instead of switching between tools</string>
+    <string name="command_screen_002_fr" formatted="true">Décrivez la tâche au lieu de passer d’un outil à l’autre</string>
+    <string name="command_screen_003_ar" formatted="true">يفهم أوامر عربية وEnglish وFrançais للتحويل والدمج والضغط وOCR وAB Stitch والتسمية والتنظيم والمشاركة.</string>
+    <string name="command_screen_003_en" formatted="true">Understands Arabic, English and French commands for conversion, merging, compression, OCR, AB Stitch, naming, organization and sharing.</string>
+    <string name="command_screen_003_fr" formatted="true">Comprend les commandes en arabe, anglais et français pour la conversion, la fusion, la compression, l’OCR, AB Stitch, le renommage, l’organisation et le partage.</string>
+    <string name="command_screen_004_ar" formatted="true">يعرض الخطة قبل التنفيذ ولا يحذف أو يعدل الملفات الأصلية.</string>
+    <string name="command_screen_004_en" formatted="true">Shows the plan before execution and never deletes or modifies original files.</string>
+    <string name="command_screen_004_fr" formatted="true">Affiche le plan avant exécution et ne supprime ni ne modifie les fichiers originaux.</string>
+    <string name="command_screen_005_ar" formatted="true">أوامر جاهزة</string>
+    <string name="command_screen_005_en" formatted="true">Quick commands</string>
+    <string name="command_screen_005_fr" formatted="true">Commandes rapides</string>
+    <string name="command_screen_006_ar" formatted="true">اختر الملفات</string>
+    <string name="command_screen_006_en" formatted="true">Choose files</string>
+    <string name="command_screen_006_fr" formatted="true">Choisir les fichiers</string>
+    <string name="command_screen_007_ar" formatted="true">تم اختيار %1$s ملف/صورة</string>
+    <string name="command_screen_007_en" formatted="true">%1$s files/images selected</string>
+    <string name="command_screen_007_fr" formatted="true">%1$s fichiers/images sélectionnés</string>
+    <string name="command_screen_008_ar" formatted="true">اكتب الأمر</string>
+    <string name="command_screen_008_en" formatted="true">Enter command</string>
+    <string name="command_screen_008_fr" formatted="true">Saisir la commande</string>
+    <string name="command_screen_009_ar" formatted="true">الخطة قبل التنفيذ</string>
+    <string name="command_screen_009_en" formatted="true">Plan before execution</string>
+    <string name="command_screen_009_fr" formatted="true">Plan avant exécution</string>
+    <string name="command_screen_010_ar" formatted="true">بدء التنفيذ…</string>
+    <string name="command_screen_010_en" formatted="true">Starting execution…</string>
+    <string name="command_screen_010_fr" formatted="true">Démarrage de l’exécution…</string>
+    <string name="command_screen_011_ar" formatted="true">تم تنفيذ الأمر بنجاح</string>
+    <string name="command_screen_011_en" formatted="true">Command completed successfully</string>
+    <string name="command_screen_011_fr" formatted="true">Commande exécutée avec succès</string>
+    <string name="command_screen_012_ar" formatted="true">تعذر تنفيذ الأمر</string>
+    <string name="command_screen_012_en" formatted="true">Could not execute the command</string>
+    <string name="command_screen_012_fr" formatted="true">Impossible d’exécuter la commande</string>
+    <string name="command_screen_013_ar" formatted="true">اعتماد وتنفيذ الخطة</string>
+    <string name="command_screen_013_en" formatted="true">Approve and execute plan</string>
+    <string name="command_screen_013_fr" formatted="true">Valider et exécuter le plan</string>
+    <string name="command_screen_014_ar" formatted="true">الناتج: %1$s</string>
+    <string name="command_screen_014_en" formatted="true">Output: %1$s</string>
+    <string name="command_screen_014_fr" formatted="true">Résultat : %1$s</string>
+    <string name="command_screen_015_ar" formatted="true">فتح</string>
+    <string name="command_screen_015_en" formatted="true">Open</string>
+    <string name="command_screen_015_fr" formatted="true">Ouvrir</string>
+    <string name="command_screen_016_ar" formatted="true">واتساب</string>
+    <string name="command_screen_016_en" formatted="true">WhatsApp</string>
+    <string name="command_screen_016_fr" formatted="true">WhatsApp</string>
+    <string name="command_screen_017_ar" formatted="true">تم التراجع عن النتيجة التي أنشأها AB</string>
+    <string name="command_screen_017_en" formatted="true">Undid the result created by AB</string>
+    <string name="command_screen_017_fr" formatted="true">Résultat créé par AB annulé</string>
+    <string name="command_screen_018_ar" formatted="true">تعذر التراجع أو تم حذف النتيجة مسبقًا</string>
+    <string name="command_screen_018_en" formatted="true">Could not undo, or the result was already deleted</string>
+    <string name="command_screen_018_fr" formatted="true">Impossible d’annuler, ou le résultat a déjà été supprimé</string>
+    <string name="command_screen_019_ar" formatted="true">تراجع عن العملية</string>
+    <string name="command_screen_019_en" formatted="true">Undo operation</string>
+    <string name="command_screen_019_fr" formatted="true">Annuler l’opération</string>
+    <string name="command_screen_020_ar" formatted="true">سجل العمليات</string>
+    <string name="command_screen_020_en" formatted="true">Operation history</string>
+    <string name="command_screen_020_fr" formatted="true">Historique des opérations</string>
+    <string name="command_screen_021_ar" formatted="true">تم التراجع عن العملية</string>
+    <string name="command_screen_021_en" formatted="true">Operation undone</string>
+    <string name="command_screen_021_fr" formatted="true">Opération annulée</string>
+    <string name="command_screen_022_ar" formatted="true">اضغط للتراجع</string>
+    <string name="command_screen_022_en" formatted="true">Tap to undo</string>
+    <string name="command_screen_022_fr" formatted="true">Appuyez pour annuler</string>
+    <string name="command_screen_023_ar" formatted="true">النتيجة غير موجودة</string>
+    <string name="command_screen_023_en" formatted="true">Result not found</string>
+    <string name="command_screen_023_fr" formatted="true">Résultat introuvable</string>
+    <string name="convert_screen_001_ar" formatted="true">فشل التحويل</string>
+    <string name="convert_screen_001_en" formatted="true">Conversion failed</string>
+    <string name="convert_screen_001_fr" formatted="true">Échec de la conversion</string>
+    <string name="convert_screen_002_ar" formatted="true">التحويل</string>
+    <string name="convert_screen_002_en" formatted="true">Convert</string>
+    <string name="convert_screen_002_fr" formatted="true">Conversion</string>
+    <string name="convert_screen_003_ar" formatted="true">لغة OCR للتحويل من الصور</string>
+    <string name="convert_screen_003_en" formatted="true">OCR language for image conversion</string>
+    <string name="convert_screen_003_fr" formatted="true">Langue OCR pour la conversion d’images</string>
+    <string name="convert_screen_004_ar" formatted="true">عربي</string>
+    <string name="convert_screen_004_en" formatted="true">Arabic</string>
+    <string name="convert_screen_004_fr" formatted="true">Arabe</string>
+    <string name="convert_screen_005_ar" formatted="true">3 لغات</string>
+    <string name="convert_screen_005_en" formatted="true">3 languages</string>
+    <string name="convert_screen_005_fr" formatted="true">3 langues</string>
+    <string name="convert_screen_006_ar" formatted="true">صور إلى PDF</string>
+    <string name="convert_screen_006_en" formatted="true">Images to PDF</string>
+    <string name="convert_screen_006_fr" formatted="true">Images vers PDF</string>
+    <string name="convert_screen_007_ar" formatted="true">ادمج صورة أو عدة صور في PDF</string>
+    <string name="convert_screen_007_en" formatted="true">Combine one or more images into a PDF</string>
+    <string name="convert_screen_007_fr" formatted="true">Combinez une ou plusieurs images dans un PDF</string>
+    <string name="convert_screen_008_ar" formatted="true">PDF إلى صور</string>
+    <string name="convert_screen_008_en" formatted="true">PDF to images</string>
+    <string name="convert_screen_008_fr" formatted="true">PDF vers images</string>
+    <string name="convert_screen_009_ar" formatted="true">استخراج كل صفحات PDF بصيغة PNG</string>
+    <string name="convert_screen_009_en" formatted="true">Extract all PDF pages as PNG</string>
+    <string name="convert_screen_009_fr" formatted="true">Extraire toutes les pages PDF en PNG</string>
+    <string name="convert_screen_010_ar" formatted="true">صورة إلى Word</string>
+    <string name="convert_screen_010_en" formatted="true">Image to Word</string>
+    <string name="convert_screen_010_fr" formatted="true">Image vers Word</string>
+    <string name="convert_screen_011_ar" formatted="true">OCR للصورة وإنشاء DOCX قابل للتحرير</string>
+    <string name="convert_screen_011_en" formatted="true">Run OCR on an image and create an editable DOCX</string>
+    <string name="convert_screen_011_fr" formatted="true">Effectuer un OCR sur une image et créer un DOCX modifiable</string>
+    <string name="convert_screen_012_ar" formatted="true">صورة جدول إلى Excel</string>
+    <string name="convert_screen_012_en" formatted="true">Table image to Excel</string>
+    <string name="convert_screen_012_fr" formatted="true">Image de tableau vers Excel</string>
+    <string name="convert_screen_013_ar" formatted="true">اكتشاف مواقع الكلمات والصفوف والأعمدة وإنشاء XLSX منسق</string>
+    <string name="convert_screen_013_en" formatted="true">Detect word, row and column positions and create a formatted XLSX</string>
+    <string name="convert_screen_013_fr" formatted="true">Détecter les positions des mots, lignes et colonnes et créer un XLSX structuré</string>
+    <string name="convert_screen_014_ar" formatted="true">Word إلى PDF</string>
+    <string name="convert_screen_014_en" formatted="true">Word to PDF</string>
+    <string name="convert_screen_014_fr" formatted="true">Word vers PDF</string>
+    <string name="convert_screen_015_ar" formatted="true">للمستندات النصية البسيطة؛ يفحص العناصر المعقدة ويرفضها بدل فقد التنسيق</string>
+    <string name="convert_screen_015_en" formatted="true">For simple text documents; checks complex elements and rejects them instead of losing formatting</string>
+    <string name="convert_screen_015_fr" formatted="true">Pour les documents texte simples ; vérifie les éléments complexes et les refuse plutôt que de perdre la mise en forme</string>
+    <string name="convert_screen_016_ar" formatted="true">Excel إلى PDF</string>
+    <string name="convert_screen_016_en" formatted="true">Excel to PDF</string>
+    <string name="convert_screen_016_fr" formatted="true">Excel vers PDF</string>
+    <string name="convert_screen_017_ar" formatted="true">للجداول البسيطة؛ يحافظ على القيم ويرفض الرسومات والدمج المعقد</string>
+    <string name="convert_screen_017_en" formatted="true">For simple sheets; preserves values and rejects charts and complex merges</string>
+    <string name="convert_screen_017_fr" formatted="true">Pour les feuilles simples ; conserve les valeurs et refuse les graphiques et fusions complexes</string>
+    <string name="convert_screen_018_ar" formatted="true">PDF إلى Word</string>
+    <string name="convert_screen_018_en" formatted="true">PDF to Word</string>
+    <string name="convert_screen_018_fr" formatted="true">PDF vers Word</string>
+    <string name="convert_screen_019_ar" formatted="true">استخراج النص القابل للتحرير إلى DOCX مع فواصل الصفحات</string>
+    <string name="convert_screen_019_en" formatted="true">Extract editable text to DOCX with page breaks</string>
+    <string name="convert_screen_019_fr" formatted="true">Extraire le texte modifiable vers DOCX avec sauts de page</string>
+    <string name="convert_screen_020_ar" formatted="true">استخراج PDF إلى Excel</string>
+    <string name="convert_screen_020_en" formatted="true">Extract PDF to Excel</string>
+    <string name="convert_screen_020_fr" formatted="true">Extraire le PDF vers Excel</string>
+    <string name="convert_screen_021_ar" formatted="true">كل صفحة نصية في Sheet مستقل مع محاولة اكتشاف الأعمدة</string>
+    <string name="convert_screen_021_en" formatted="true">Put each text page in a separate sheet while attempting column detection</string>
+    <string name="convert_screen_021_fr" formatted="true">Placer chaque page texte dans une feuille séparée avec tentative de détection des colonnes</string>
+    <string name="convert_screen_022_ar" formatted="true">كل التحويلات هنا محلية. النتائج الفردية تدخل أولًا إلى معاينة مؤقتة ولا تُحفظ إلا بعد اعتمادك. Word وExcel المعقدان يُرفضان بدل إخراج نتيجة تفقد تنسيقًا مهمًا. PowerPoint غير ظاهر حاليًا لأن التحويل المحلي الموجود لم يصل بعد إلى جودة تحفظ الشرائح بصورة مقبولة.</string>
+    <string name="convert_screen_022_en" formatted="true">All conversions here are local. Single outputs first go to a temporary preview and are saved only after your approval. Complex Word and Excel files are rejected instead of producing results that lose important formatting. PowerPoint is currently hidden because the available local conversion does not yet preserve slides reliably.</string>
+    <string name="convert_screen_022_fr" formatted="true">Toutes les conversions sont locales. Les résultats individuels passent d’abord par un aperçu temporaire et ne sont enregistrés qu’après votre validation. Les fichiers Word et Excel complexes sont refusés plutôt que de produire un résultat qui perd une mise en forme importante. PowerPoint reste masqué car la conversion locale disponible ne préserve pas encore les diapositives de façon fiable.</string>
+    <string name="convert_screen_023_ar" formatted="true">تم الحفظ: %1$s</string>
+    <string name="convert_screen_023_en" formatted="true">Saved: %1$s</string>
+    <string name="convert_screen_023_fr" formatted="true">Enregistré : %1$s</string>
+    <string name="convert_screen_024_ar" formatted="true">تعذر اعتماد الحفظ</string>
+    <string name="convert_screen_024_en" formatted="true">Could not approve the save</string>
+    <string name="convert_screen_024_fr" formatted="true">Impossible de valider l’enregistrement</string>
+    <string name="convert_screen_025_ar" formatted="true">تم إلغاء النتيجة دون المساس بالملف الأصلي</string>
+    <string name="convert_screen_025_en" formatted="true">Result cancelled without changing the original file</string>
+    <string name="convert_screen_025_fr" formatted="true">Résultat annulé sans modifier le fichier original</string>
+    <string name="convert_screen_026_ar" formatted="true">تم حفظ %1$s صورة</string>
+    <string name="convert_screen_026_en" formatted="true">Saved %1$s images</string>
+    <string name="convert_screen_026_fr" formatted="true">%1$s images enregistrées</string>
+    <string name="convert_screen_027_ar" formatted="true">تعذر اعتماد الصور</string>
+    <string name="convert_screen_027_en" formatted="true">Could not approve the images</string>
+    <string name="convert_screen_027_fr" formatted="true">Impossible de valider les images</string>
+    <string name="convert_screen_028_ar" formatted="true">تم إلغاء الصور المؤقتة</string>
+    <string name="convert_screen_028_en" formatted="true">Temporary images cancelled</string>
+    <string name="convert_screen_028_fr" formatted="true">Images temporaires annulées</string>
+
+    <string name="scan_mode_document_ar" formatted="true">مستند فردي</string>
+    <string name="scan_mode_document_en" formatted="true">Single document</string>
+    <string name="scan_mode_document_fr" formatted="true">Document unique</string>
+    <string name="scan_mode_batch_ar" formatted="true">دفعة متعددة</string>
+    <string name="scan_mode_batch_en" formatted="true">Multi-page batch</string>
+    <string name="scan_mode_batch_fr" formatted="true">Lot multipage</string>
+    <string name="scan_mode_book_ar" formatted="true">كتاب - صفحتان</string>
+    <string name="scan_mode_book_en" formatted="true">Book - two pages</string>
+    <string name="scan_mode_book_fr" formatted="true">Livre - deux pages</string>
+    <string name="scan_mode_id_card_ar" formatted="true">بطاقة هوية</string>
+    <string name="scan_mode_id_card_en" formatted="true">ID card</string>
+    <string name="scan_mode_id_card_fr" formatted="true">Pièce d’identité</string>
+    <string name="scan_mode_passport_ar" formatted="true">جواز سفر</string>
+    <string name="scan_mode_passport_en" formatted="true">Passport</string>
+    <string name="scan_mode_passport_fr" formatted="true">Passeport</string>
+    <string name="scan_mode_receipt_ar" formatted="true">فاتورة / إيصال</string>
+    <string name="scan_mode_receipt_en" formatted="true">Invoice / receipt</string>
+    <string name="scan_mode_receipt_fr" formatted="true">Facture / reçu</string>
+    <string name="scan_mode_whiteboard_ar" formatted="true">سبورة بيضاء</string>
+    <string name="scan_mode_whiteboard_en" formatted="true">Whiteboard</string>
+    <string name="scan_mode_whiteboard_fr" formatted="true">Tableau blanc</string>
+    <string name="scan_mode_photo_ar" formatted="true">صورة عادية</string>
+    <string name="scan_mode_photo_en" formatted="true">Photo</string>
+    <string name="scan_mode_photo_fr" formatted="true">Photo</string>
+    <string name="scan_filter_original_ar" formatted="true">أصلي</string>
+    <string name="scan_filter_original_en" formatted="true">Original</string>
+    <string name="scan_filter_original_fr" formatted="true">Original</string>
+    <string name="scan_filter_document_ar" formatted="true">مستند</string>
+    <string name="scan_filter_document_en" formatted="true">Document</string>
+    <string name="scan_filter_document_fr" formatted="true">Document</string>
+    <string name="scan_filter_color_ar" formatted="true">ألوان</string>
+    <string name="scan_filter_color_en" formatted="true">Color</string>
+    <string name="scan_filter_color_fr" formatted="true">Couleur</string>
+    <string name="scan_filter_grayscale_ar" formatted="true">رمادي</string>
+    <string name="scan_filter_grayscale_en" formatted="true">Grayscale</string>
+    <string name="scan_filter_grayscale_fr" formatted="true">Niveaux de gris</string>
+    <string name="scan_filter_bw_ar" formatted="true">أبيض وأسود</string>
+    <string name="scan_filter_bw_en" formatted="true">Black &amp; White</string>
+    <string name="scan_filter_bw_fr" formatted="true">Noir et blanc</string>
+    <string name="scan_filter_photo_ar" formatted="true">صورة</string>
+    <string name="scan_filter_photo_en" formatted="true">Photo</string>
+    <string name="scan_filter_photo_fr" formatted="true">Photo</string>
+    <string name="scan_filter_shadow_remove_ar" formatted="true">إزالة الظلال</string>
+    <string name="scan_filter_shadow_remove_en" formatted="true">Remove shadows</string>
+    <string name="scan_filter_shadow_remove_fr" formatted="true">Supprimer les ombres</string>
+    <string name="scan_filter_faded_text_ar" formatted="true">نص باهت</string>
+    <string name="scan_filter_faded_text_en" formatted="true">Faded text</string>
+    <string name="scan_filter_faded_text_fr" formatted="true">Texte pâle</string>
+    <string name="scan_page_auto_ar" formatted="true">تلقائي</string>
+    <string name="scan_page_auto_en" formatted="true">Auto</string>
+    <string name="scan_page_auto_fr" formatted="true">Auto</string>
+    <string name="scan_page_a4_ar" formatted="true">A4</string>
+    <string name="scan_page_a4_en" formatted="true">A4</string>
+    <string name="scan_page_a4_fr" formatted="true">A4</string>
+    <string name="scan_page_letter_ar" formatted="true">Letter</string>
+    <string name="scan_page_letter_en" formatted="true">Letter</string>
+    <string name="scan_page_letter_fr" formatted="true">Letter</string>
+    <string name="ocr_lang_ar_ar" formatted="true">العربية</string>
+    <string name="ocr_lang_ar_en" formatted="true">Arabic</string>
+    <string name="ocr_lang_ar_fr" formatted="true">Arabe</string>
+    <string name="ocr_lang_en_ar" formatted="true">English</string>
+    <string name="ocr_lang_en_en" formatted="true">English</string>
+    <string name="ocr_lang_en_fr" formatted="true">Anglais</string>
+    <string name="ocr_lang_fr_ar" formatted="true">Français</string>
+    <string name="ocr_lang_fr_en" formatted="true">French</string>
+    <string name="ocr_lang_fr_fr" formatted="true">Français</string>
+    <string name="ocr_lang_ar_en_ar" formatted="true">العربية + English</string>
+    <string name="ocr_lang_ar_en_en" formatted="true">Arabic + English</string>
+    <string name="ocr_lang_ar_en_fr" formatted="true">Arabe + anglais</string>
+    <string name="ocr_lang_en_fr_ar" formatted="true">English + Français</string>
+    <string name="ocr_lang_en_fr_en" formatted="true">English + French</string>
+    <string name="ocr_lang_en_fr_fr" formatted="true">Anglais + français</string>
+    <string name="ocr_lang_all_ar" formatted="true">العربية + English + Français</string>
+    <string name="ocr_lang_all_en" formatted="true">Arabic + English + French</string>
+    <string name="ocr_lang_all_fr" formatted="true">Arabe + anglais + français</string>
+    <string name="ocr_model_ar_ar" formatted="true">العربية</string>
+    <string name="ocr_model_ar_en" formatted="true">Arabic</string>
+    <string name="ocr_model_ar_fr" formatted="true">Arabe</string>
+    <string name="ocr_model_en_ar" formatted="true">English</string>
+    <string name="ocr_model_en_en" formatted="true">English</string>
+    <string name="ocr_model_en_fr" formatted="true">Anglais</string>
+    <string name="ocr_model_fr_ar" formatted="true">Français</string>
+    <string name="ocr_model_fr_en" formatted="true">French</string>
+    <string name="ocr_model_fr_fr" formatted="true">Français</string>
+    <string name="command_warning_select_ar" formatted="true">اختر ملفًا أو صورًا أولًا</string>
+    <string name="command_warning_select_en" formatted="true">Choose a file or images first</string>
+    <string name="command_warning_select_fr" formatted="true">Choisissez d’abord un fichier ou des images</string>
+    <string name="command_warning_enter_ar" formatted="true">اكتب الأمر المطلوب</string>
+    <string name="command_warning_enter_en" formatted="true">Enter the command you want</string>
+    <string name="command_warning_enter_fr" formatted="true">Saisissez la commande souhaitée</string>
+    <string name="command_warning_unknown_ar" formatted="true">لم أفهم أمرًا قابلًا للتنفيذ بعد</string>
+    <string name="command_warning_unknown_en" formatted="true">No executable command was recognized yet</string>
+    <string name="command_warning_unknown_fr" formatted="true">Aucune commande exécutable n’a encore été reconnue</string>
+    <string name="command_warning_unclear_ar" formatted="true">الأمر غير واضح</string>
+    <string name="command_warning_unclear_en" formatted="true">The command is unclear</string>
+    <string name="command_warning_unclear_fr" formatted="true">La commande n’est pas claire</string>
+    <string name="command_step_stitch_ar" formatted="true">AB Stitch: ترتيب الصور وحذف التداخل</string>
+    <string name="command_step_stitch_en" formatted="true">AB Stitch: order images and remove overlap</string>
+    <string name="command_step_stitch_fr" formatted="true">AB Stitch : ordonner les images et supprimer les chevauchements</string>
+    <string name="command_step_merge_ar" formatted="true">دمج ملفات PDF</string>
+    <string name="command_step_merge_en" formatted="true">Merge PDF files</string>
+    <string name="command_step_merge_fr" formatted="true">Fusionner les fichiers PDF</string>
+    <string name="command_step_to_pdf_ar" formatted="true">تحويل الصور إلى PDF</string>
+    <string name="command_step_to_pdf_en" formatted="true">Convert images to PDF</string>
+    <string name="command_step_to_pdf_fr" formatted="true">Convertir les images en PDF</string>
+    <string name="command_step_ocr_ar" formatted="true">استخراج النص OCR</string>
+    <string name="command_step_ocr_en" formatted="true">Extract text with OCR</string>
+    <string name="command_step_ocr_fr" formatted="true">Extraire le texte avec OCR</string>
+    <string name="command_step_compress_ar" formatted="true">ضغط ملف PDF الناتج</string>
+    <string name="command_step_compress_en" formatted="true">Compress the resulting PDF</string>
+    <string name="command_step_compress_fr" formatted="true">Compresser le PDF obtenu</string>
+    <string name="command_step_rename_ar" formatted="true">إعادة تسمية الناتج إلى: %1$s</string>
+    <string name="command_step_rename_en" formatted="true">Rename output to: %1$s</string>
+    <string name="command_step_rename_fr" formatted="true">Renommer le résultat en : %1$s</string>
+    <string name="command_step_folder_ar" formatted="true">حفظ نسخة الناتج داخل مجلد: %1$s</string>
+    <string name="command_step_folder_en" formatted="true">Save a copy in folder: %1$s</string>
+    <string name="command_step_folder_fr" formatted="true">Enregistrer une copie dans le dossier : %1$s</string>
+    <string name="command_step_whatsapp_ar" formatted="true">فتح المشاركة مباشرة على واتساب</string>
+    <string name="command_step_whatsapp_en" formatted="true">Open sharing directly in WhatsApp</string>
+    <string name="command_step_whatsapp_fr" formatted="true">Ouvrir le partage directement dans WhatsApp</string>
+    <string name="command_step_safe_import_ar" formatted="true">استيراد نسخة آمنة من الملف المحدد</string>
+    <string name="command_step_safe_import_en" formatted="true">Import a safe copy of the selected file</string>
+    <string name="command_step_safe_import_fr" formatted="true">Importer une copie sûre du fichier sélectionné</string>
+    <string name="command_error_stitch_min_ar" formatted="true">AB Stitch يحتاج صورتين على الأقل</string>
+    <string name="command_error_stitch_min_en" formatted="true">AB Stitch needs at least two images</string>
+    <string name="command_error_stitch_min_fr" formatted="true">AB Stitch nécessite au moins deux images</string>
+    <string name="command_error_merge_min_ar" formatted="true">دمج PDF يحتاج ملفين PDF على الأقل</string>
+    <string name="command_error_merge_min_en" formatted="true">PDF merge needs at least two PDF files</string>
+    <string name="command_error_merge_min_fr" formatted="true">La fusion PDF nécessite au moins deux fichiers PDF</string>
+    <string name="command_error_pdf_compress_ar" formatted="true">الضغط الحالي متاح لملفات PDF</string>
+    <string name="command_error_pdf_compress_en" formatted="true">Current compression is available for PDF files</string>
+    <string name="command_error_pdf_compress_fr" formatted="true">La compression actuelle est disponible pour les fichiers PDF</string>
+    <string name="command_progress_stitch_ar" formatted="true">تشغيل AB Stitch…</string>
+    <string name="command_progress_stitch_en" formatted="true">Running AB Stitch…</string>
+    <string name="command_progress_stitch_fr" formatted="true">Exécution de AB Stitch…</string>
+    <string name="command_progress_merge_ar" formatted="true">دمج ملفات PDF…</string>
+    <string name="command_progress_merge_en" formatted="true">Merging PDF files…</string>
+    <string name="command_progress_merge_fr" formatted="true">Fusion des fichiers PDF…</string>
+    <string name="command_progress_to_pdf_ar" formatted="true">تحويل الصور إلى PDF…</string>
+    <string name="command_progress_to_pdf_en" formatted="true">Converting images to PDF…</string>
+    <string name="command_progress_to_pdf_fr" formatted="true">Conversion des images en PDF…</string>
+    <string name="command_progress_ocr_ar" formatted="true">استخراج النص OCR…</string>
+    <string name="command_progress_ocr_en" formatted="true">Extracting text with OCR…</string>
+    <string name="command_progress_ocr_fr" formatted="true">Extraction du texte par OCR…</string>
+    <string name="command_progress_searchable_ar" formatted="true">إنشاء PDF قابل للبحث…</string>
+    <string name="command_progress_searchable_en" formatted="true">Creating searchable PDF…</string>
+    <string name="command_progress_searchable_fr" formatted="true">Création du PDF indexable…</string>
+    <string name="command_progress_ocr_page_ar" formatted="true">OCR صفحة %1$s من %2$s…</string>
+    <string name="command_progress_ocr_page_en" formatted="true">OCR page %1$s of %2$s…</string>
+    <string name="command_progress_ocr_page_fr" formatted="true">OCR page %1$s sur %2$s…</string>
+    <string name="command_progress_import_ar" formatted="true">استيراد الملف بأمان…</string>
+    <string name="command_progress_import_en" formatted="true">Importing file safely…</string>
+    <string name="command_progress_import_fr" formatted="true">Importation sûre du fichier…</string>
+    <string name="command_progress_compress_ar" formatted="true">ضغط PDF…</string>
+    <string name="command_progress_compress_en" formatted="true">Compressing PDF…</string>
+    <string name="command_progress_compress_fr" formatted="true">Compression du PDF…</string>
+    <string name="command_progress_rename_ar" formatted="true">تسمية الملف…</string>
+    <string name="command_progress_rename_en" formatted="true">Renaming file…</string>
+    <string name="command_progress_rename_fr" formatted="true">Renommage du fichier…</string>
+    <string name="command_progress_organize_ar" formatted="true">تنظيم الناتج…</string>
+    <string name="command_progress_organize_en" formatted="true">Organizing output…</string>
+    <string name="command_progress_organize_fr" formatted="true">Organisation du résultat…</string>
+    <string name="command_progress_whatsapp_ar" formatted="true">فتح واتساب…</string>
+    <string name="command_progress_whatsapp_en" formatted="true">Opening WhatsApp…</string>
+    <string name="command_progress_whatsapp_fr" formatted="true">Ouverture de WhatsApp…</string>
+    <string name="magic_error_select_ar" formatted="true">التقط أو اختر مستندًا أولًا</string>
+    <string name="magic_error_select_en" formatted="true">Capture or choose a document first</string>
+    <string name="magic_error_select_fr" formatted="true">Capturez ou choisissez d’abord un document</string>
+    <string name="magic_error_limit_ar" formatted="true">AB Magic Flow يدعم حتى 30 صفحة في العملية الواحدة</string>
+    <string name="magic_error_limit_en" formatted="true">AB Magic Flow supports up to 30 pages per operation</string>
+    <string name="magic_error_limit_fr" formatted="true">AB Magic Flow prend en charge jusqu’à 30 pages par opération</string>
+    <string name="magic_error_analyze_ar" formatted="true">تعذر تحليل المستند</string>
+    <string name="magic_error_analyze_en" formatted="true">Could not analyze the document</string>
+    <string name="magic_error_analyze_fr" formatted="true">Impossible d’analyser le document</string>
+    <string name="magic_error_no_pages_ar" formatted="true">لا توجد صفحات للتنفيذ</string>
+    <string name="magic_error_no_pages_en" formatted="true">No pages to process</string>
+    <string name="magic_error_no_pages_fr" formatted="true">Aucune page à traiter</string>
+    <string name="magic_error_prepare_ar" formatted="true">تعذر تجهيز إحدى الصفحات</string>
+    <string name="magic_error_prepare_en" formatted="true">Could not prepare one of the pages</string>
+    <string name="magic_error_prepare_fr" formatted="true">Impossible de préparer une des pages</string>
+    <string name="magic_progress_type_ar" formatted="true">تحليل نوع الصفحة %1$s من %2$s…</string>
+    <string name="magic_progress_type_en" formatted="true">Analyzing page type %1$s of %2$s…</string>
+    <string name="magic_progress_type_fr" formatted="true">Analyse du type de page %1$s sur %2$s…</string>
+    <string name="magic_progress_ocr_sample_ar" formatted="true">OCR محلي %1$s من %2$s…</string>
+    <string name="magic_progress_ocr_sample_en" formatted="true">Local OCR %1$s of %2$s…</string>
+    <string name="magic_progress_ocr_sample_fr" formatted="true">OCR local %1$s sur %2$s…</string>
+    <string name="magic_progress_prepare_ar" formatted="true">تجهيز الصفحات وتحسين المستند…</string>
+    <string name="magic_progress_prepare_en" formatted="true">Preparing pages and enhancing document…</string>
+    <string name="magic_progress_prepare_fr" formatted="true">Préparation des pages et amélioration du document…</string>
+    <string name="magic_progress_detect_ar" formatted="true">اكتشاف حدود الصفحة %1$s من %2$s…</string>
+    <string name="magic_progress_detect_en" formatted="true">Detecting page bounds %1$s of %2$s…</string>
+    <string name="magic_progress_detect_fr" formatted="true">Détection des limites de page %1$s sur %2$s…</string>
+    <string name="magic_progress_searchable_ar" formatted="true">إنشاء PDF قابل للبحث محليًا…</string>
+    <string name="magic_progress_searchable_en" formatted="true">Creating searchable PDF locally…</string>
+    <string name="magic_progress_searchable_fr" formatted="true">Création locale du PDF indexable…</string>
+    <string name="magic_progress_page_ar" formatted="true">OCR وإنشاء الصفحة %1$s من %2$s…</string>
+    <string name="magic_progress_page_en" formatted="true">OCR and creating page %1$s of %2$s…</string>
+    <string name="magic_progress_page_fr" formatted="true">OCR et création de la page %1$s sur %2$s…</string>
+    <string name="magic_action_full_ar" formatted="true">اكتشاف الورقة + تصحيح المنظور عند الثقة + تحسين المستند + OCR + PDF قابل للبحث + تنظيم</string>
+    <string name="magic_action_full_en" formatted="true">Detect paper + correct perspective when confident + enhance document + OCR + searchable PDF + organize</string>
+    <string name="magic_action_full_fr" formatted="true">Détecter la feuille + corriger la perspective si fiable + améliorer le document + OCR + PDF indexable + organiser</string>
+    <string name="magic_kind_document_ar" formatted="true">مستند</string>
+    <string name="magic_kind_document_en" formatted="true">Document</string>
+    <string name="magic_kind_document_fr" formatted="true">Document</string>
+    <string name="magic_kind_card_ar" formatted="true">بطاقة</string>
+    <string name="magic_kind_card_en" formatted="true">Card</string>
+    <string name="magic_kind_card_fr" formatted="true">Carte</string>
+    <string name="magic_kind_invoice_ar" formatted="true">فاتورة</string>
+    <string name="magic_kind_invoice_en" formatted="true">Invoice</string>
+    <string name="magic_kind_invoice_fr" formatted="true">Facture</string>
+    <string name="magic_kind_receipt_ar" formatted="true">إيصال</string>
+    <string name="magic_kind_receipt_en" formatted="true">Receipt</string>
+    <string name="magic_kind_receipt_fr" formatted="true">Reçu</string>
+    <string name="magic_kind_table_ar" formatted="true">جدول</string>
+    <string name="magic_kind_table_en" formatted="true">Table</string>
+    <string name="magic_kind_table_fr" formatted="true">Tableau</string>
+    <string name="magic_kind_business_ar" formatted="true">بطاقة أعمال</string>
+    <string name="magic_kind_business_en" formatted="true">Business card</string>
+    <string name="magic_kind_business_fr" formatted="true">Carte de visite</string>
+    <string name="magic_name_invoice_ar" formatted="true">فاتورة</string>
+    <string name="magic_name_invoice_en" formatted="true">Invoice</string>
+    <string name="magic_name_invoice_fr" formatted="true">Facture</string>
+    <string name="magic_name_receipt_ar" formatted="true">إيصال</string>
+    <string name="magic_name_receipt_en" formatted="true">Receipt</string>
+    <string name="magic_name_receipt_fr" formatted="true">Reçu</string>
+    <string name="magic_name_card_ar" formatted="true">بطاقة</string>
+    <string name="magic_name_card_en" formatted="true">Card</string>
+    <string name="magic_name_card_fr" formatted="true">Carte</string>
+    <string name="magic_name_business_ar" formatted="true">بطاقة_أعمال</string>
+    <string name="magic_name_business_en" formatted="true">Business_Card</string>
+    <string name="magic_name_business_fr" formatted="true">Carte_Visite</string>
+    <string name="magic_name_table_ar" formatted="true">جدول</string>
+    <string name="magic_name_table_en" formatted="true">Table</string>
+    <string name="magic_name_table_fr" formatted="true">Tableau</string>
+    <string name="magic_name_document_ar" formatted="true">مستند</string>
+    <string name="magic_name_document_en" formatted="true">Document</string>
+    <string name="magic_name_document_fr" formatted="true">Document</string>
+    <string name="magic_folder_invoices_ar" formatted="true">الفواتير</string>
+    <string name="magic_folder_invoices_en" formatted="true">Invoices</string>
+    <string name="magic_folder_invoices_fr" formatted="true">Factures</string>
+    <string name="magic_folder_receipts_ar" formatted="true">الإيصالات</string>
+    <string name="magic_folder_receipts_en" formatted="true">Receipts</string>
+    <string name="magic_folder_receipts_fr" formatted="true">Reçus</string>
+    <string name="magic_folder_cards_ar" formatted="true">الهوية والبطاقات</string>
+    <string name="magic_folder_cards_en" formatted="true">Identity &amp; cards</string>
+    <string name="magic_folder_cards_fr" formatted="true">Identité et cartes</string>
+    <string name="magic_folder_documents_ar" formatted="true">المستندات</string>
+    <string name="magic_folder_documents_en" formatted="true">Documents</string>
+    <string name="magic_folder_documents_fr" formatted="true">Documents</string>
+
+    <string name="command_example_1_ar">حوّل هذه الصور إلى PDF، سمّه فاتورة سبتمبر واحفظه في مجلد الفواتير</string>
+    <string name="command_example_1_en">Convert these images to PDF, name it September Invoice and save it in the Invoices folder</string>
+    <string name="command_example_1_fr">Convertis ces images en PDF, nomme-le Facture Septembre et enregistre-le dans le dossier Factures</string>
+    <string name="command_example_2_ar">ادمج ملفات PDF هذه واضغطها وسمّها التقرير الشهري</string>
+    <string name="command_example_2_en">Merge these PDF files, compress them and name it Monthly Report</string>
+    <string name="command_example_2_fr">Fusionne ces fichiers PDF, compresse-les et nomme le résultat Rapport Mensuel</string>
+    <string name="command_example_3_ar">ادمج لقطات الشاشة باستخدام AB Stitch وسمّ النتيجة محادثة</string>
+    <string name="command_example_3_en">Assemble these screenshots with AB Stitch and name the result Conversation</string>
+    <string name="command_example_3_fr">Assemble ces captures avec AB Stitch et nomme le résultat Conversation</string>
+
+    <string name="magic_folder_contracts_ar">العقود</string>
+    <string name="magic_folder_contracts_en">Contracts</string>
+    <string name="magic_folder_contracts_fr">Contrats</string>
+    <string name="magic_folder_personal_ar">الهوية والمستندات الشخصية</string>
+    <string name="magic_folder_personal_en">Identity &amp; personal documents</string>
+    <string name="magic_folder_personal_fr">Identité et documents personnels</string>
+    <string name="magic_folder_correspondence_ar">المراسلات</string>
+    <string name="magic_folder_correspondence_en">Correspondence</string>
+    <string name="magic_folder_correspondence_fr">Correspondance</string>
+
+    <string name="scanner_warn_low_light_ar">الإضاءة منخفضة</string>
+    <string name="scanner_warn_low_light_en">Lighting is too low</string>
+    <string name="scanner_warn_low_light_fr">Éclairage trop faible</string>
+    <string name="scanner_warn_glare_ar">الإضاءة قوية أو يوجد انعكاس</string>
+    <string name="scanner_warn_glare_en">Lighting is too strong or there is glare</string>
+    <string name="scanner_warn_glare_fr">Éclairage trop fort ou reflet détecté</string>
+    <string name="scanner_warn_blur_ar">الصورة غير واضحة أو بها اهتزاز</string>
+    <string name="scanner_warn_blur_en">Image is blurry or the phone is moving</string>
+    <string name="scanner_warn_blur_fr">Image floue ou téléphone en mouvement</string>
+    <string name="scanner_warn_no_document_ar">وجّه الكاميرا نحو ورقة واضحة</string>
+    <string name="scanner_warn_no_document_en">Point the camera at a clear document</string>
+    <string name="scanner_warn_no_document_fr">Orientez la caméra vers un document bien visible</string>
+    <string name="scanner_warn_move_closer_ar">قرّب المستند وثبّت الهاتف</string>
+    <string name="scanner_warn_move_closer_en">Move closer to the document and hold the phone steady</string>
+    <string name="scanner_warn_move_closer_fr">Rapprochez-vous du document et stabilisez le téléphone</string>
+    <string name="scanner_warn_hold_still_ar">ثبّت الهاتف للحظات</string>
+    <string name="scanner_warn_hold_still_en">Hold the phone steady for a moment</string>
+    <string name="scanner_warn_hold_still_fr">Gardez le téléphone stable un instant</string>
+
+    <!-- Alpha05 Scanner Stage 1: task-based scanner entry -->
+    <string name="scan_mode_duplex_ar" formatted="true">وجهين</string>
+    <string name="scan_mode_duplex_en" formatted="true">Two-sided</string>
+    <string name="scan_mode_duplex_fr" formatted="true">Recto verso</string>
+    <string name="scan_mode_translation_ar" formatted="true">ترجمة بالكاميرا</string>
+    <string name="scan_mode_translation_en" formatted="true">Camera translation</string>
+    <string name="scan_mode_translation_fr" formatted="true">Traduction caméra</string>
+
+    <string name="scanner_stage1_title_ar" formatted="true">التصوير والمسح</string>
+    <string name="scanner_stage1_title_en" formatted="true">Capture &amp; scan</string>
+    <string name="scanner_stage1_title_fr" formatted="true">Capture et scan</string>
+    <string name="scanner_stage1_subtitle_ar" formatted="true">اختر ما تريد تصويره، وسنضبط الكاميرا تلقائيًا للمهمة.</string>
+    <string name="scanner_stage1_subtitle_en" formatted="true">Choose what you want to capture and the camera will adapt to the task.</string>
+    <string name="scanner_stage1_subtitle_fr" formatted="true">Choisissez ce que vous voulez capturer et la caméra s’adaptera à la tâche.</string>
+
+    <string name="scanner_stage1_document_desc_ar" formatted="true">ورقة واحدة مع اكتشاف الحواف والقص والمنظور</string>
+    <string name="scanner_stage1_document_desc_en" formatted="true">One page with edge detection, crop and perspective</string>
+    <string name="scanner_stage1_document_desc_fr" formatted="true">Une page avec détection des bords, recadrage et perspective</string>
+    <string name="scanner_stage2_document_auto_status_ar" formatted="true">تلقائي: اكتشاف الحواف + القص + تصحيح المنظور</string>
+    <string name="scanner_stage2_document_auto_status_en" formatted="true">Automatic: edge detection + crop + perspective correction</string>
+    <string name="scanner_stage2_document_auto_status_fr" formatted="true">Automatique : détection des bords + recadrage + correction de perspective</string>
+    <string name="scanner_stage1_batch_desc_ar" formatted="true">التقط صفحات متتالية ثم راجعها ورتبها</string>
+    <string name="scanner_stage1_batch_desc_en" formatted="true">Capture consecutive pages, then review and reorder them</string>
+    <string name="scanner_stage1_batch_desc_fr" formatted="true">Capturez plusieurs pages puis vérifiez-les et réorganisez-les</string>
+    <string name="scanner_stage1_book_desc_ar" formatted="true">كتاب مفتوح مع فصل الصفحتين بعد الالتقاط</string>
+    <string name="scanner_stage1_book_desc_en" formatted="true">Open book with two-page split after capture</string>
+    <string name="scanner_stage1_book_desc_fr" formatted="true">Livre ouvert avec séparation des deux pages après capture</string>
+    <string name="scanner_stage1_card_desc_ar" formatted="true">وجه أمامي ثم خلفي للهوية أو الرخصة أو الكارت</string>
+    <string name="scanner_stage1_card_desc_en" formatted="true">Front then back for an ID, licence or card</string>
+    <string name="scanner_stage1_card_desc_fr" formatted="true">Recto puis verso pour une pièce, licence ou carte</string>
+    <string name="scanner_stage1_receipt_desc_ar" formatted="true">قص ذكي مناسب للإيصالات والفواتير الطويلة</string>
+    <string name="scanner_stage1_receipt_desc_en" formatted="true">Smart crop for receipts and long invoices</string>
+    <string name="scanner_stage1_receipt_desc_fr" formatted="true">Recadrage intelligent pour reçus et longues factures</string>
+    <string name="scanner_stage1_duplex_desc_ar" formatted="true">أي مستند له وجه أول ووجه ثانٍ مرتبطان معًا</string>
+    <string name="scanner_stage1_duplex_desc_en" formatted="true">Any document with a linked first and second side</string>
+    <string name="scanner_stage1_duplex_desc_fr" formatted="true">Tout document avec un premier et un second côté liés</string>
+    <string name="scanner_stage1_translation_desc_ar" formatted="true">التقط النص الآن؛ استخراج النص والترجمة يكتملان في مرحلة الترجمة</string>
+    <string name="scanner_stage1_translation_desc_en" formatted="true">Capture text now; OCR and translation are completed in the translation stage</string>
+    <string name="scanner_stage1_translation_desc_fr" formatted="true">Capturez le texte maintenant ; OCR et traduction seront finalisés à l’étape traduction</string>
+    <string name="scanner_stage1_secondary_ar" formatted="true">خيارات سريعة</string>
+    <string name="scanner_stage1_secondary_en" formatted="true">Quick options</string>
+    <string name="scanner_stage1_secondary_fr" formatted="true">Options rapides</string>
+    <string name="scanner_stage1_translation_stage_ar" formatted="true">وضع الالتقاط جاهز • الترجمة نفسها ضمن الجزء السابع</string>
+    <string name="scanner_stage1_translation_stage_en" formatted="true">Capture mode is ready • translation itself is part of Stage 7</string>
+    <string name="scanner_stage1_translation_stage_fr" formatted="true">Le mode capture est prêt • la traduction elle-même fait partie de l’étape 7</string>
+
+
+    <string name="scanner_stage1_hint_document_ar" formatted="true">ضع الورقة كاملة داخل الإطار</string>
+    <string name="scanner_stage1_hint_document_en" formatted="true">Keep the full page inside the frame</string>
+    <string name="scanner_stage1_hint_document_fr" formatted="true">Gardez toute la page dans le cadre</string>
+    <string name="scanner_stage1_hint_batch_ar" formatted="true">صوّر الصفحات بالتتابع ثم اضغط مراجعة</string>
+    <string name="scanner_stage1_hint_batch_en" formatted="true">Capture pages in sequence, then tap Review</string>
+    <string name="scanner_stage1_hint_batch_fr" formatted="true">Capturez les pages à la suite puis appuyez sur Vérifier</string>
+    <string name="scanner_stage1_hint_book_ar" formatted="true">أظهر صفحتي الكتاب كاملتين في الصورة</string>
+    <string name="scanner_stage1_hint_book_en" formatted="true">Keep both open-book pages fully visible</string>
+    <string name="scanner_stage1_hint_book_fr" formatted="true">Gardez les deux pages du livre entièrement visibles</string>
+    <string name="scanner_stage1_hint_front_ar" formatted="true">صوّر الوجه الأمامي أولًا</string>
+    <string name="scanner_stage1_hint_front_en" formatted="true">Capture the front side first</string>
+    <string name="scanner_stage1_hint_front_fr" formatted="true">Capturez d’abord le recto</string>
+    <string name="scanner_stage1_hint_back_ar" formatted="true">الآن صوّر الخلف</string>
+    <string name="scanner_stage1_hint_back_en" formatted="true">Now capture the back side</string>
+    <string name="scanner_stage1_hint_back_fr" formatted="true">Capturez maintenant le verso</string>
+    <string name="scanner_stage1_hint_receipt_ar" formatted="true">ضع الإيصال مستقيمًا واترك هامشًا صغيرًا حوله</string>
+    <string name="scanner_stage1_hint_receipt_en" formatted="true">Keep the receipt straight with a small margin around it</string>
+    <string name="scanner_stage1_hint_receipt_fr" formatted="true">Gardez le reçu droit avec une petite marge autour</string>
+    <string name="scanner_stage1_hint_translation_ar" formatted="true">حدّد النص بوضوح داخل الإطار ثم التقط الصورة</string>
+    <string name="scanner_stage1_hint_translation_en" formatted="true">Frame the text clearly, then capture the image</string>
+    <string name="scanner_stage1_hint_translation_fr" formatted="true">Cadrez clairement le texte puis capturez l’image</string>
+
+</resources>

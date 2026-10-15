@@ -1,0 +1,11 @@
+AB File Pro Alpha98 P8 — Word→PDF / PDF→Excel Safe Patch
+Baseline: AB98_P7_ARABIC_OCR_AUTO_CROP_SAFE_SOURCE.zip
+Patch only (no deletions):
+1) core/SimpleDocxPdfRenderer.kt (new): local Word text layout (section page size/margins, paragraph alignment, font size, spacing, page breaks). Not full DOCX fidelity; complex content continues to fail safely.
+2) core/PdfTableLayoutExtractor.kt (new): parse PDF text bounding coordinates, find repeated aligned multi-column rows, decline plain prose rather than create junk XLSX.
+3) core/OfficeTools.kt: reroute docxToPdf/pdfToXlsx only. Keep XLSX→PDF, image OCR, PDF→DOCX paths intact.
+4) ui/screens/ConversionPreviewDialog.kt: optional magnified horizontal-scroll PDF preview to inspect text without changing resulting file.
+5) ui/screens/ConvertScreen.kt: clarify that PDF→Excel is for structured tables.
+6) app/build.gradle.kts: isolated debug suffix .ocrpreviewp8, original package com.abfilepro.app unchanged. No changes to production release identity.
+7) tools/test_alpha98_p8_office_safe_patch.py: 22 static safety assertions.
+Notes: Verification on real Android/PDF samples is required; text extraction fidelity and complex DOCX layouts are not guaranteed. No changes to user data, database, or unrelated modules.

@@ -1,0 +1,23 @@
+AB File Pro V2 - Alpha94 Summary Card Polish
+
+Baseline: Alpha93
+Version Code: 155
+Version Name: 2.0.0-alpha94-summary-card-polish
+
+Scope: Personal Assistant > Today Summary card only.
+
+Changed:
+- Preserved the current classic visual style and illustration.
+- Tightened date chip spacing and alignment.
+- Rebalanced the three metric tiles without changing their meaning or colors.
+- Changed metric content to a cleaner vertical layout: icon, count, label.
+- Improved zero-value readability and centered alignment.
+
+Preserved:
+- Category filters.
+- Prayer card and live prayer logic.
+- Home button.
+- Empty next-appointment collapse behavior.
+- Scroll-position restoration.
+- All Alpha93 modules, data, family sync, health, documents, OCR and other features.
+- No working feature or user data removed.

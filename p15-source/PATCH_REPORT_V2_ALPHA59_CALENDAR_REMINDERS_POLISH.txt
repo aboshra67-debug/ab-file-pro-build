@@ -1,0 +1,23 @@
+AB File Pro V2 - Alpha59 Calendar Reminders Polish
+
+Scope:
+- Added dedicated calendar and appointments screen for AssistantModule.CALENDAR.
+- Improved calendar UI layout for Arabic assistant flow.
+- Linked calendar appointments to the same local reminder/alarm engine.
+- Added reminder offset for calendar entries: at time / 5m / 15m / 30m / 60m before.
+- Preserved MainActivity.kt, FilesScreen.kt, FileUtils.kt, and Notes module.
+
+Modified files:
+- VERSION
+- app/build.gradle.kts
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantModuleScreens.kt
+- app/src/main/java/com/abfilepro/app/assistant/TaskAlarmScheduler.kt
+- app/src/main/java/com/abfilepro/app/assistant/TaskAlarmReceiver.kt
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantCalendarScreen.kt (new)
+
+Safe patch notes:
+- No deletion of protected files or core scan/save/file-manager flow.
+- Scheduling logic expanded only for TASKS + CALENDAR modules.
+- Calendar reminder lead minutes stored in amount field.
+- Calendar event end time stored in secondary field.

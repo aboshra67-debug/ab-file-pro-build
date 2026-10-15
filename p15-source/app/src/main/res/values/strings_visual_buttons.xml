@@ -1,0 +1,8 @@
+<resources>
+    <string name="scanner_modes_more_ar">المزيد من أوضاع المسح</string>
+    <string name="scanner_modes_more_en">More scan modes</string>
+    <string name="scanner_modes_more_fr">Plus de modes de scan</string>
+    <string name="scanner_modes_less_ar">إخفاء الأوضاع الإضافية</string>
+    <string name="scanner_modes_less_en">Hide extra modes</string>
+    <string name="scanner_modes_less_fr">Masquer les modes supplémentaires</string>
+</resources>

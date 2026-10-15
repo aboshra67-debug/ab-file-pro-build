@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="single_doc_scanner_unavailable_title_ar">تعذر تشغيل ماسح المستند الاحترافي</string>
+    <string name="single_doc_scanner_unavailable_title_en">Professional document scanner unavailable</string>
+    <string name="single_doc_scanner_unavailable_title_fr">Scanner de documents professionnel indisponible</string>
+
+    <string name="single_doc_scanner_unavailable_message_ar">تعذر بدء ماسح المستندات الاحترافي. يمكنك استخدام كاميرا AB File Pro اليدوية بدلًا منه، ولن يتم حذف الصورة الحالية.</string>
+    <string name="single_doc_scanner_unavailable_message_en">The professional document scanner could not start. You can use the AB File Pro camera instead, and the current image will not be deleted.</string>
+    <string name="single_doc_scanner_unavailable_message_fr">Le scanner de documents professionnel n’a pas pu démarrer. Vous pouvez utiliser la caméra AB File Pro à la place, sans supprimer l’image actuelle.</string>
+
+    <string name="single_doc_use_camera_ar">استخدام كاميرا AB File Pro</string>
+    <string name="single_doc_use_camera_en">Use AB File Pro camera</string>
+    <string name="single_doc_use_camera_fr">Utiliser la caméra AB File Pro</string>
+
+    <string name="single_doc_cancel_ar">إلغاء</string>
+    <string name="single_doc_cancel_en">Cancel</string>
+    <string name="single_doc_cancel_fr">Annuler</string>
+</resources>

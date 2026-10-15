@@ -1,0 +1,274 @@
+{
+  "baseline_source_sha256": "a3e2b125bba5a9ac90a64dbb1f9a077c099277ff08b6f54b2c9162ceed18d501",
+  "baseline_file_count": 393,
+  "changed_files": [
+    {
+      "path": "app/build.gradle.kts",
+      "before_sha256": "86fa3b0bfafcee806576da62accc09ac2bc6bf0e9e252374a38ad74895601bcb",
+      "after_sha256": "0b43d0b4bd6fd292fc2317711d376ee5354a4c148ebbba7be5c57bca354a5073"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+      "before_sha256": "0534398a6a8b2f3af610a6f55e97015a638cf7ffeacfdb6149b16805ae3d7f60",
+      "after_sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94"
+    },
+    {
+      "path": "VERSION",
+      "before_sha256": "14da8ff24a04adc44636abfc6864623a090b1a6cc0c7b2dbb9733a6a768b8225",
+      "after_sha256": "d9d67e5135a339230efe0d442346b1716385ec557e6bde91a37286ed5e7028db"
+    }
+  ],
+  "added_files": [
+    "PATCH_REPORT_AB98_P11_SCANNER_SAFE_FIX_AR.txt",
+    "app/src/main/res/values/strings_alpha98_p11_scanner.xml",
+    "tools/p11_jdwp_crop_gate.py",
+    "tools/test_alpha98_p11_scanner_runtime.py"
+  ],
+  "deleted_files": [],
+  "compiled_apk": {
+    "file_name": "AB98_P11_SCANNER_SAFE_FIX_TEST.apk",
+    "sha256": "b2ab680131045babace88e5211d6d41c706687ee2d73576012224011651ea759",
+    "version_code": 163,
+    "package": "com.abfilepro.app.p11scannertrial",
+    "source_commit": "d64bda6ef41e0ae609195da2f9a939581a705fa7",
+    "build_run_url": "https://github.com/aboshra67-debug/ab-file-pro-build/actions/runs/37838297785"
+  },
+  "functional_validation": {
+    "device": "Android 11 (API 30) disposable emulator",
+    "passed": 14,
+    "failed": 0,
+    "blocked": 0,
+    "results": [
+      {
+        "name": "add_after_review5",
+        "status": "PASS",
+        "observations": {
+          "camera_pages": 6,
+          "pdf_pages": 6,
+          "stages": [
+            "bounds",
+            "editor"
+          ]
+        },
+        "seconds": 107.07,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "batch_bounds_button",
+        "status": "PASS",
+        "observations": {
+          "bounds_opened": true,
+          "pdf_pages": 2
+        },
+        "seconds": 42.66,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "batch_crop_cancel_keeps_page",
+        "status": "PASS",
+        "observations": {
+          "cancel_at_destructive_commit": true,
+          "page_recovered": true,
+          "pdf_pages": 1
+        },
+        "seconds": 50.44,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "batch_retake_replace",
+        "status": "PASS",
+        "observations": {
+          "camera_pages": 2,
+          "pdf_pages": 2,
+          "stages": [
+            "bounds",
+            "editor"
+          ]
+        },
+        "seconds": 48.98,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "capture3_save_restart",
+        "status": "PASS",
+        "observations": {
+          "review_pages": 3,
+          "pdf_pages": 3,
+          "restart_mode": "BATCH",
+          "stages": [
+            "bounds",
+            "editor",
+            "bounds",
+            "editor",
+            "bounds",
+            "editor"
+          ]
+        },
+        "seconds": 50.84,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "card_missing_back_guard",
+        "status": "PASS",
+        "observations": {
+          "missing_side_prompt": true,
+          "first_side_preserved": true,
+          "completed_pdf_pages": 1
+        },
+        "seconds": 36.93,
+        "workflow_run_id": 37844293389,
+        "driver_commit": "6cd152aaf2805b1a458d61f56fdbba204e958139"
+      },
+      {
+        "name": "card_two_sides_save",
+        "status": "PASS",
+        "observations": {
+          "captured_sides": 2,
+          "pdf_pages": 1
+        },
+        "seconds": 22.4,
+        "workflow_run_id": 37844293389,
+        "driver_commit": "6cd152aaf2805b1a458d61f56fdbba204e958139"
+      },
+      {
+        "name": "document_save_pdf",
+        "status": "PASS",
+        "observations": {
+          "pdf_pages": 1,
+          "save_options_available": true
+        },
+        "seconds": 27.48,
+        "workflow_run_id": 37844293389,
+        "driver_commit": "6cd152aaf2805b1a458d61f56fdbba204e958139"
+      },
+      {
+        "name": "gallery_add_limit10_retake",
+        "status": "PASS",
+        "observations": {
+          "pdf_pages": 10,
+          "page_order": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "retake_at_capacity": true
+        },
+        "seconds": 132.07,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "gallery_bounds_no_change",
+        "status": "PASS",
+        "observations": {
+          "before_dimensions": [
+            [
+              858,
+              1057
+            ]
+          ],
+          "after_dimensions": [
+            [
+              858,
+              1057
+            ]
+          ],
+          "pdf_pages": 1
+        },
+        "seconds": 51.74,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "gallery_bounds_retake_keep_pages",
+        "status": "PASS",
+        "observations": {
+          "pdf_pages": 3,
+          "stages": [
+            "bounds",
+            "editor"
+          ]
+        },
+        "seconds": 72.93,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "gallery_import10_save",
+        "status": "PASS",
+        "observations": {
+          "review_pages": 10,
+          "pdf_pages": 10,
+          "page_order": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        "seconds": 43.52,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "gallery_import3_save",
+        "status": "PASS",
+        "observations": {
+          "review_pages": 3,
+          "pdf_pages": 3
+        },
+        "seconds": 51.89,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      },
+      {
+        "name": "gallery_reorder_delete_add",
+        "status": "PASS",
+        "observations": {
+          "pdf_pages": 3,
+          "page_order": [
+            1,
+            3,
+            4
+          ]
+        },
+        "seconds": 95.37,
+        "workflow_run_id": 37841805489,
+        "driver_commit": "7246e0cd3c8db948a75be0f634e1d1ff6dc3d951"
+      }
+    ]
+  },
+  "jvm_validation": {
+    "total": 29,
+    "passed": 28,
+    "skipped": 0,
+    "new_failures": 0,
+    "unchanged_baseline_failure": "com.abfilepro.app.core.WorkspaceShortcutRulesTest.shortcutLabelIsTrimmedAndStable",
+    "baseline_and_patch_results_identical": true
+  },
+  "delivery_metadata_note": "Only the added runtime test driver and patch report were finalized after the APK build; every compiled Android input is byte-identical to the built source.",
+  "added_file_sha256": {
+    "PATCH_REPORT_AB98_P11_SCANNER_SAFE_FIX_AR.txt": "f96789af3d551a7b09e4431a55b7c9538ba9a1fcbc0da5ad7a0ecd458bf1fb08",
+    "app/src/main/res/values/strings_alpha98_p11_scanner.xml": "b49e54aff12755dff4f01dba7e1c97b5d9ccde57a792cb69158403267adf26cb",
+    "tools/p11_jdwp_crop_gate.py": "64cac92fe757e2790d6622dd90cf23929a0d5e2c6119641d99d76a1ea105fbe9",
+    "tools/test_alpha98_p11_scanner_runtime.py": "ba6c2c40d1b7cb4f43227b19c6409018f37038f2801e7b401e8131d856862941"
+  }
+}

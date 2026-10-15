@@ -1,0 +1,5 @@
+AB File Pro V2 Alpha62 - Prayer Live GPS Fix
+- Real live GPS/network location request with listener and current-location fallback.
+- Keeps device GPS identity after app reopen.
+- Confirms successful live location binding to user.
+- No changes to MainActivity, FilesScreen, FileUtils, Notes, camera, save.

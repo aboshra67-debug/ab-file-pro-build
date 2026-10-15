@@ -1,0 +1,157 @@
+{
+  "passed": 28,
+  "known_baseline_failure": [
+    {
+      "name": "com.abfilepro.app.core.WorkspaceShortcutRulesTest.shortcutLabelIsTrimmedAndStable",
+      "status": "FAIL",
+      "message": "org.junit.ComparisonFailure: expected:<[احمد]> but was:<[إدارة ملفات AB برو]>"
+    }
+  ],
+  "results": [
+    {
+      "name": "com.abfilepro.app.assistant.AssistantDomainTest.calculatorHonoursPrecedenceAndUnaryMinus",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.assistant.AssistantDomainTest.exposesAllSixteenModules",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.assistant.AssistantDomainTest.calculatorRejectsUnsafeCharacters",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.assistant.AssistantDomainTest.categoryFilteringKeepsSharedModulesVisible",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.assistant.PrayerTimesCalculatorTest.perPrayerAdjustmentIsAppliedExactly",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.assistant.PrayerTimesCalculatorTest.cairoTimesRemainChronological",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerActionRulesTest.directory_doesNotOfferShareOrImagesToPdf",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerActionRulesTest.regularFile_longPressActions_includeDesktopBasics",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerActionRulesTest.image_longPressActions_offerImagesToPdf",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerActionRulesTest.noClipboard_hidesPaste",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerActionRulesTest.zip_longPressActions_offerBothExtractModes",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerPremiumRulesTest.visualKind_classifiesPremiumCardTypes",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerPremiumRulesTest.renameWithDifferentExtension_stillPreservesOriginalFileExtension",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerPremiumRulesTest.renameWithoutNewExtension_keepsOriginalFileExtension",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerPremiumRulesTest.directoryRename_doesNotAppendExtension",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ExplorerPremiumRulesTest.textFileName_addsTxtOnlyWhenMissing",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.FileManagerRulesTest.quickFolderKind_recognizesAndroidStandardFolders",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.FileManagerRulesTest.sortEntries_keepsFoldersFirstAndSortsByRequestedKey",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.FileManagerRulesTest.previewSampleSize_boundsHugeImagesWithPowerOfTwoSampling",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.FileManagerRulesTest.zipPathSafety_rejectsTraversalAndAbsolutePaths",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.FileManagerRulesTest.previewKind_usesMimeThenSafeFileExtensions",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.FileManagerRulesTest.safeName_removesProviderUnsafeCharacters",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.FileManagerRulesTest.uniqueName_preservesExtensionAndSkipsExistingSuffixes",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ScanInteractionRulesTest.reviewBackReturnsToHub",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ScanInteractionRulesTest.cameraBackReturnsToReviewWhenPagesExist",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ScanInteractionRulesTest.cameraBackReturnsToHubWhenNoPagesExist",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.ScanInteractionRulesTest.pinchZoomIsClampedToCameraRange",
+      "status": "PASS",
+      "message": ""
+    },
+    {
+      "name": "com.abfilepro.app.core.WorkspaceShortcutRulesTest.shortcutLabelIsTrimmedAndStable",
+      "status": "FAIL",
+      "message": "org.junit.ComparisonFailure: expected:<[احمد]> but was:<[إدارة ملفات AB برو]>"
+    },
+    {
+      "name": "com.abfilepro.app.core.WorkspaceShortcutRulesTest.explorerAppearanceFallsBackSafely",
+      "status": "PASS",
+      "message": ""
+    }
+  ]
+}

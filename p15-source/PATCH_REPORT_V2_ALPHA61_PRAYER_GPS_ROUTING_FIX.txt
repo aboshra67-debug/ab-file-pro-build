@@ -1,0 +1,7 @@
+AB File Pro V2 - Alpha61 Prayer GPS Routing Fix
+
+- Prayer module now opens the live operational prayer screen directly.
+- Removed dependency on raster reference hit areas for prayer interactions.
+- Use My Location continues to request device GPS permission and refresh current coordinates.
+- When device location services are disabled, opens Android location settings.
+- Protected MainActivity.kt, FilesScreen.kt, FileUtils.kt, notes/camera/save flows unchanged.

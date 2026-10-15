@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.abfilepro.app.core.StorageSafetyRegressionTest" tests="22" failures="2" errors="0" skipped="0" time="1.409" timestamp="2026-10-09T18:16:52" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="normalCopyPreservesBytesAndSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.011" />
+  <testcase name="partialFileMoveUndoRetainsConflictForRetry" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="undoReplacementAtSamePathPreservesReplacement" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.013" />
+  <testcase name="copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="unreadableDirectoryCannotBePublishedAsEmptyCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.037" />
+  <testcase name="copyIntoSelfRejectedWithoutChangingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.002" />
+  <testcase name="failedFallbackMoveCopyDoesNotDeleteAnySource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.029" />
+  <testcase name="normalFolderCopyPreservesNestedAndEmptyFolders" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.003" />
+  <testcase name="fallbackMoveKeepsSameLengthSameTimeEditAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.006">
+    <failure>java.lang.AssertionError: A changed source must prevent destructive cleanup
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.abfilepro.app.core.StorageSafetyRegressionTest$fallbackMoveKeepsSameLengthSameTimeEditAfterCopy$1.invokeSuspend(StorageSafetyRegressionTest.kt:318)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)
+at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
+at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)
+at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)
+at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)
+at com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(StorageSafetyRegressionTest.kt:307)
+</failure>
+  </testcase>
+  <testcase name="undoFolderWithNewUserFilePreservesWholeFolder" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.03" />
+  <testcase name="moveCancellationBeforeSourceCleanupPreservesSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.004" />
+  <testcase name="copyCancellationCleansAttemptAndKeepsSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.002" />
+  <testcase name="undoChangedSameLengthSameTimeFilePreservesNewData" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.009" />
+  <testcase name="copyIntoDescendantRejectedWithoutWriting" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="unchangedGeneratedOutputCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.029" />
+  <testcase name="fallbackMoveKeepsFileAddedAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.03">
+    <failure>java.lang.AssertionError: A source addition must prevent destructive cleanup
+at org.junit.Assert.fail(Assert.java:89)
+at org.junit.Assert.assertTrue(Assert.java:42)
+at com.abfilepro.app.core.StorageSafetyRegressionTest$fallbackMoveKeepsFileAddedAfterCopy$1.invokeSuspend(StorageSafetyRegressionTest.kt:301)
+at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)
+at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)
+at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)
+at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)
+at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)
+at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)
+at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)
+at com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveKeepsFileAddedAfterCopy(StorageSafetyRegressionTest.kt:291)
+</failure>
+  </testcase>
+  <testcase name="normalMovePreservesBytesAtDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.002" />
+  <testcase name="partialUndoKeepsChangedOutputAndItsHistory" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.028" />
+  <testcase name="fallbackMoveDeleteFailureKeepsCompleteDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.022" />
+  <testcase name="legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.004" />
+  <testcase name="unchangedGeneratedFolderCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.028" />
+</testsuite>

@@ -1,0 +1,8 @@
+AB File Pro Alpha98 P4 — Safe UI status-bar inset correction
+Base: Alpha98 P3 button polish. No Alpha99 files.
+Cause: Assistant module-navigation host started at screen y=0 while Android status icons also draw there.
+Fix: Apply Compose statusBarsPadding() once to module-host Column (consumes the inset for nested screens).
+Correct navigation: back => Personal Assistant modules; home => main AB File Pro screen.
+Modified working source: PersonalAssistantScreen.kt only. New static regression test: test_alpha98_p4_statusbar_nav.py
+No working code deleted. No business logic, data storage, package ID, permissions, version code or network behavior changed.
+Build/test: External GitHub Actions, APK signature check; device runtime testing still needed.

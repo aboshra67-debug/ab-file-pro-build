@@ -1,0 +1,38 @@
+AB FILE PRO V2 — ALPHA51 PERSONAL ASSISTANT SAFE PATCH
+Date: 2026-09-21
+
+Scope
+-----
+- Replaces the assistant preview sheet with a full-page offline-first assistant.
+- Adds the 16 approved modules: prayer, notes, tasks, calendar, meetings, voice,
+  camera/gallery, calculator, money, currency/gold, bills, price comparison,
+  shopping, two-person family requests, documents/renewals, and health/medication.
+- Adds local JSON persistence, Personal/Work categorisation, and Today summary.
+- Adds offline astronomical prayer calculations, city/location choice, method/Asr
+  settings, per-prayer adjustments, notification toggles, pre-alerts, and resilient
+  alarm rescheduling after boot/time/timezone changes.
+- Reuses the existing scanner/camera route; no scanner or save implementation changed.
+- Payment and price comparison integrations leave authentication, payment approval,
+  final price, shipping, and availability inside the provider/store app or website.
+
+Safety boundary
+---------------
+- MainActivity.kt: unchanged.
+- FilesScreen.kt: unchanged.
+- FileUtils.kt: unchanged.
+- No payment credentials are collected or stored.
+- Private assistant records remain on-device.
+- Exact alarms are optional and used only when the user enables them and Android permits them.
+
+Version
+-------
+versionCode: 112
+versionName: 2.0.0-alpha51-personal-assistant
+
+Verification
+------------
+- tools/test_alpha51_personal_assistant_contract.py
+- AssistantDomainTest
+- PrayerTimesCalculatorTest
+- :app:testDebugUnitTest
+- :app:assembleDebug

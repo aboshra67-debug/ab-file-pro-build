@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alpha46_camera_manual_ar">يدوي</string>
+    <string name="alpha46_camera_manual_en">Manual</string>
+    <string name="alpha46_camera_manual_fr">Manuel</string>
+    <string name="alpha46_camera_auto_ar">تلقائي</string>
+    <string name="alpha46_camera_auto_en">Auto</string>
+    <string name="alpha46_camera_auto_fr">Auto</string>
+</resources>

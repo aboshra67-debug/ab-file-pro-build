@@ -1,0 +1,28 @@
+AB File Pro Alpha98 P6 - Arabic OCR Word review safe patch
+Date 2026-09-29
+Baseline: AB98_P5_CONVERSION_INSTALL_ALONGSIDE_SAFE_SOURCE.zip
+Reason: OCR read screenshot containing modal plus dimmed background using PSM_AUTO; lost lines of Arabic.
+Measured on supplied 27842.jpg with bundled traineddata:
+- Full image PSM_AUTO omitted significant middle paragraphs.
+- Manual dialog crop + 2x enlargement + PSM_SINGLE_BLOCK recovered most Arabic, though title and Latin URL still showed a few errors.
+
+Scope:
+- OCR Word: optional 4-side manual crop to exclude background. OCR only selected region; bounded upscaling for small screenshots; block segmentation when cropped.
+- Arabic+English language option is explicit and the default for new conversion preferences; saved user language remains respected.
+- Review and edit extracted text before generating actual DOCX; no automatic "success" for nonblank inaccurate text.
+- Keep previous OCR method, PDF/Image other converters, database, app package and release signing settings unchanged.
+- The debug ONLY suffix becomes .ocrpreview to install alongside both production and prior .preview builds. Production package remains com.abfilepro.app.
+- Keep existing draft preview/save verification and no double execution changes from P5.
+
+Changed source:
+app/src/main/java/com/abfilepro/app/core/OcrProcessor.kt (new recognizeForWord)
+app/src/main/java/com/abfilepro/app/core/OfficeTools.kt (new reviewedTextToDocx)
+app/src/main/java/com/abfilepro/app/ui/screens/ConvertScreen.kt (route to review flow)
+app/build.gradle.kts (debug-only suffix)
+tools/test_alpha98_p5_conversion_center_contract.py (updated route assertion)
+Added source:
+app/src/main/java/com/abfilepro/app/ui/screens/ImageWordReviewDialog.kt
+tools/test_alpha98_p6_arabic_word_review_contract.py
+PATCH_REPORT_AB98_P6_ARABIC_OCR_WORD_REVIEW_AR.txt
+
+Limitations: OCR is not 100% accurate for every document; word correction is user-controlled. Android build + actual device tests still required before acceptance.

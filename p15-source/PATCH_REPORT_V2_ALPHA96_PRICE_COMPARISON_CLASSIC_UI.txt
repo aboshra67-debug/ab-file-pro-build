@@ -1,0 +1,19 @@
+AB File Pro V2 — Alpha96 Price Comparison Classic UI
+Baseline: Alpha95 Price Comparison Live
+Package: com.abfilepro.app
+Version Code: 157
+Version Name: 2.0.0-alpha96-price-comparison-classic-ui
+
+Safe Patch scope:
+- Restyled the operational Price Comparison module to match the previous classic visual design.
+- Kept live product search, voice search, barcode scan, Amazon Egypt/noon/Jumia checks, sorting, store opening and price alerts fully operational.
+- Search area now follows the old rounded white card with red voice/barcode actions.
+- Added classic green product summary card, segmented sort controls, pastel store cards, bottom information card and red price-alert button.
+- Store cards keep live prices only when readable; no fake or illustrative price fallback was added.
+- No existing data, family sync, health, documents, shopping, OCR or other assistant modules were removed or changed.
+
+Safety:
+- Safe Patch only.
+- No database schema changes.
+- No user data deleted.
+- Alpha95 functional price-comparison logic preserved.

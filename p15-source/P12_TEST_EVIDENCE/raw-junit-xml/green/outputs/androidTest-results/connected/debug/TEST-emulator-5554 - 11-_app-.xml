@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.abfilepro.app.core.StorageSafetyRegressionTest" tests="22" failures="0" errors="0" skipped="0" time="2.799" timestamp="2026-10-09T18:53:01" hostname="localhost">
+  <properties>
+    <property name="device" value="emulator-5554 - 11" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="normalCopyPreservesBytesAndSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.016" />
+  <testcase name="partialFileMoveUndoRetainsConflictForRetry" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="undoReplacementAtSamePathPreservesReplacement" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.016" />
+  <testcase name="unreadableDirectoryCannotBePublishedAsEmptyCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.004" />
+  <testcase name="copyIntoSelfRejectedWithoutChangingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.0" />
+  <testcase name="cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.033" />
+  <testcase name="failedFallbackMoveCopyDoesNotDeleteAnySource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.002" />
+  <testcase name="normalFolderCopyPreservesNestedAndEmptyFolders" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.035" />
+  <testcase name="fallbackMoveKeepsSameLengthSameTimeEditAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.025" />
+  <testcase name="undoFolderWithNewUserFilePreservesWholeFolder" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.023" />
+  <testcase name="moveCancellationBeforeSourceCleanupPreservesSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.037" />
+  <testcase name="copyCancellationCleansAttemptAndKeepsSource" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="undoChangedSameLengthSameTimeFilePreservesNewData" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.026" />
+  <testcase name="copyIntoDescendantRejectedWithoutWriting" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.034" />
+  <testcase name="unchangedGeneratedOutputCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.104" />
+  <testcase name="fallbackMoveKeepsFileAddedAfterCopy" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.015" />
+  <testcase name="normalMovePreservesBytesAtDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.003" />
+  <testcase name="partialUndoKeepsChangedOutputAndItsHistory" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.112" />
+  <testcase name="fallbackMoveDeleteFailureKeepsCompleteDestination" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.001" />
+  <testcase name="legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.022" />
+  <testcase name="unchangedGeneratedFolderCanStillBeUndone" classname="com.abfilepro.app.core.StorageSafetyRegressionTest" time="0.078" />
+</testsuite>

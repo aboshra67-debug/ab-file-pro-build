@@ -1,0 +1,25 @@
+AB File Pro V2 — Alpha98 Assistant Buttons P3
+
+Baseline: Alpha98 Navigation P2 Safe Source
+Scope: Safe Patch only for Personal Assistant button styling and navigation visual polish.
+
+What changed
+- Unified the top in-module navigation strip buttons (Back to Assistant / App Home).
+- Upgraded notes header action buttons (back / settings) to a consistent professional style.
+- Unified note category filter pills for clearer selected/unselected states.
+- Replaced task module circular add button with extended professional add button.
+- Replaced task segmented tabs with polished pill tabs matching the assistant visual system.
+- Added shared reusable assistant button composables in AssistantButtonStyles.kt.
+
+What did NOT change
+- No deletion of working code or user data logic.
+- No change to storage schema, package id, version code, or business logic.
+- Navigation destinations remain: Back => Assistant modules, Home => app root.
+
+Files touched
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantButtonStyles.kt (new)
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantNotesScreen.kt
+- app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantTasksScreen.kt
+
+Deleted files: none

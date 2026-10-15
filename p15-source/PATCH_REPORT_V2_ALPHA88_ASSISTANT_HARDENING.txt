@@ -1,0 +1,30 @@
+AB File Pro V2 - Alpha88 Personal Assistant Hardening Safe Patch
+Baseline: Alpha87 Documents UI & Types
+Version Code: 149
+Version Name: 2.0.0-alpha88-assistant-hardening
+
+Implemented:
+- Replaced the Arabic raster/hit-area assistant home with the responsive native Compose home already used by other languages.
+- Today's summary and category filters are now real native UI in Arabic.
+- Added operational Quick Add for tasks and notes.
+- Relaxed assistant family-sync polling from 3 seconds to 15 seconds.
+- Relaxed family chat polling from 1.5 seconds to 5 seconds.
+- Currency cards now show one truthful reference price instead of duplicate fake buy/sell values.
+- Renamed Price Comparison to Store Search because the feature opens external store search results.
+- Shopping list now starts empty for new users.
+- Only the untouched legacy demo seed is removed during one-time migration; modified/user lists are preserved.
+- Shopping list and list name now synchronize between securely paired family devices through the existing v2 family sync endpoint.
+- Meetings now support editing and deleting. Deleting a meeting also removes its private meeting attachments.
+- Every saved meeting recording and minutes photo can be opened individually.
+- Added consolidated Alpha88 Personal Assistant hardening contract test.
+
+Preserved:
+- Family secure pairing and family requests.
+- Family chat.
+- Health and medication behavior and reminders.
+- Documents and renewals remain local-only.
+- OCR, camera, voice recorder, calculator, money, bills and all other existing modules.
+
+Not claimed in this patch:
+- End-to-end encryption for health/chat cloud content. This requires a separate compatible key-exchange migration and was deliberately not faked or weakened.
+- Real licensed Minshawi/Abdul Basit adhan audio files; the existing UI continues to state that system alarm audio is used until those assets are supplied.

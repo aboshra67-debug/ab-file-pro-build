@@ -1,0 +1,37 @@
+AB File Pro V2 - Alpha82 Family Cloud Sync
+=========================================
+Baseline: 2.0.0-alpha81-family-shopping-linked / versionCode 142
+New:      2.0.0-alpha82-family-cloud-sync / versionCode 143
+
+Safe Patch scope
+----------------
+- Preserved the existing local Family Requests <-> Shopping List linkage.
+- Added real HTTPS family cloud sync through Railway.
+- Added dedicated PostgreSQL-backed Family Sync API.
+- Added editable six-digit family code so the second phone can join the same family.
+- Added secure random generation for new family codes.
+- Added per-entry sync timestamps and deletion tombstones for offline-first conflict handling.
+- Family request add/update/delete/status changes are synchronized.
+- Family request comments are synchronized.
+- Sync runs immediately when Personal Assistant opens and repeats every 3 seconds while it is active.
+- Network failure does not block local storage or local Family/Shopping functions.
+
+Cloud endpoint
+--------------
+https://family-sync-api-production.up.railway.app
+Health endpoint: /health
+Sync endpoint:   POST /v1/families/{6-digit-code}/sync
+Database: Railway PostgreSQL with persistent volume.
+
+Validation
+----------
+- Alpha82 contract: 16/16 PASS.
+- Backend Python syntax compile: PASS.
+- Railway family-sync-api deployment: SUCCESS.
+- Railway /health check: HTTP 200.
+- PostgreSQL service: online with persistent volume.
+
+Deletion statement
+------------------
+No working Alpha81 feature code or user data migration logic was intentionally removed.
+The old local-only FamilyCommentStore implementation was moved into the assistant package so comments can participate in cloud synchronization.

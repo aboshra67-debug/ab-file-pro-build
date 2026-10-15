@@ -1,0 +1,26 @@
+AB File Pro V2 - Alpha86 Documents & Renewals Safe Patch
+Baseline: Alpha85 Health & Medication
+Version Code: 147
+Version Name: 2.0.0-alpha86-documents-renewals
+
+Added:
+- Native Documents & Renewals screen.
+- Local-only document metadata storage using existing AssistantRepository.
+- Search and filters: all / soon / expired.
+- Expiry status and next-renewal warning.
+- National ID, driver license, passport, car insurance and other document types.
+- Add, edit and delete documents.
+- Configurable renewal reminder lead days.
+- Exact local renewal alarm and notification receiver.
+- Boot/time/package rescheduling.
+
+Preserved:
+- Alpha85 health and medication.
+- Alpha84 family chat.
+- Alpha83 secure family pairing.
+- Family requests and shopping linkage.
+- OCR and all existing modules.
+
+Privacy:
+- Documents are intentionally local-only and are not added to FamilyCloudSync.
+- No working code or user data was removed.

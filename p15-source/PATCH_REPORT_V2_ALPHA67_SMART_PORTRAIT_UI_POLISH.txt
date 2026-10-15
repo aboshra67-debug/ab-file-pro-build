@@ -1,0 +1,20 @@
+AB File Pro V2 - Alpha67 Smart Portrait UI Polish
+
+Base: Alpha66 Smart Portrait Camera
+Version: 2.0.0-alpha67-smart-portrait-ui-polish
+Version code: 128
+
+Safe Patch scope:
+- SmartPortraitCamera.kt UI/layout only.
+- app/build.gradle.kts identity only.
+- VERSION + Alpha67 contract/report.
+
+UI changes:
+- Safe status/navigation bar spacing.
+- Compact professional top bar with mode title, flash and camera switch.
+- Short portrait mode chips: Selfie / Close / Half / Full / Formal / Group.
+- Combined live guidance + mode tip card.
+- Guide/grid constrained to the live camera safe area so controls are not crossed.
+- Human head/shoulder visual guide and corner-only live face markers.
+- Structured bottom control sheet with filter chips, compact zoom, centered shutter, Auto Capture pill, timer and grid controls.
+- No changes to capture logic, ML Kit analysis, save/share/editor logic, notes, prayer, file manager, MainActivity, FilesScreen or FileUtils.

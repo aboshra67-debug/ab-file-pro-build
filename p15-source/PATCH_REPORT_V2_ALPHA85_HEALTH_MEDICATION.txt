@@ -1,0 +1,16 @@
+AB File Pro V2 - Alpha85 Health & Medication
+
+Baseline: Alpha84 Family Chat
+Version Code: 146
+Version Name: 2.0.0-alpha85-health-medication
+
+Safe Patch:
+- Added operational Health & Medication screen based on approved reference image.
+- Added Self/Partner tabs using existing family profile names.
+- Added medication name, dose, daily time, next dose card, and daily taken status.
+- Added health appointments with date/time/details and completion status.
+- Added local exact reminders for medication and appointments.
+- Daily medication reminders automatically schedule the next dose.
+- Added cloud sync for HEALTH entries using the existing secure family Device Token + PostgreSQL sync channel.
+- Existing family requests, shopping, chat, OCR and other modules retained.
+- No working feature intentionally deleted.

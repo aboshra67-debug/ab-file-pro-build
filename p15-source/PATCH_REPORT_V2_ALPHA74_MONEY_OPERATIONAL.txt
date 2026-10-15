@@ -1,0 +1,18 @@
+AB File Pro V2 Alpha74 - Operational Money & Budget
+
+Base: Alpha73 Calculator Layout + Currency Tab
+Version: 2.0.0-alpha74-money-operational
+VersionCode: 135
+
+Safe Patch scope:
+- Kept Alpha73 as the only baseline.
+- Replaced only the Arabic Money module's static full-page interaction with a real Compose screen while preserving the approved visual hierarchy and look.
+- Added persistent monthly budgets stored privately on-device in the existing AssistantRepository SharedPreferences store.
+- Added real expense creation with amount, category, optional note and date.
+- Added month navigation, monthly totals, remaining budget and a live remaining-percentage ring.
+- Added today's/latest expenses, delete actions, monthly "show all", and category detail totals.
+- Added live category percentages/bars for Home, Transport, Food & Drinks, Pharmacy and Other.
+- Reused the existing approved pa_ref_money.webp asset at runtime for the wallet illustration; no replacement artwork was introduced.
+- No existing AssistantEntry schema fields were removed or changed; expenses use the existing amount/dueAt/details/secondary fields.
+- MainActivity.kt, FilesScreen.kt and FileUtils.kt unchanged.
+- No working code or user data deleted.

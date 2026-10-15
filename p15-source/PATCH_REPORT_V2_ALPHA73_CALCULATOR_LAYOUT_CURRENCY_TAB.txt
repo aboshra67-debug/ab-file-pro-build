@@ -1,0 +1,14 @@
+AB File Pro V2 Alpha73 - Calculator Layout + Visible Currency Tab
+
+Base: Alpha72 Operational Reference Calculator
+Version: 2.0.0-alpha73-calculator-layout-currency-tab
+VersionCode: 134
+
+Safe Patch scope:
+- Rebuilt the operational calculator UI responsively in Compose instead of stretching the full-page raster reference.
+- Kept the calculator as the first/direct screen; no second calculator route.
+- Added an explicit visible "تحويل العملات" tab next to "حاسبة".
+- Preserved Alpha71 currency conversion logic, hourly rates, fallback provider, cache and refresh.
+- Restored readable western digits and adaptive expression/result typography.
+- Preserved history, clear history and copy result.
+- MainActivity.kt, FilesScreen.kt and FileUtils.kt unchanged.

@@ -1,0 +1,86 @@
+{
+  "commit": "a7e80a13e3620283f8ac656e99fafeb1913bf5fb",
+  "tree": "0c4cd05957f2e5529e5ccc123ec11fcd5770973c",
+  "files": [
+    {
+      "path": "VERSION",
+      "git_blob_sha": "77ecc03f3b195da4d56c7e0f6e1298cbe9e0c195",
+      "sha256": "cfb3ccd2a66bc2f98fc4f4dd75d52c8634c3f9dba64a17184a99b16785419fe9"
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "git_blob_sha": "fd4c193b44f8ce240aa6e838ec33ad78870487d6",
+      "sha256": "cefff77159e32b8936d1f2da6582bbcd530635b048fc68fabc03174a7f29dbca"
+    },
+    {
+      "path": "app/src/androidTest/java/com/abfilepro/app/core/StorageSafetyRegressionTest.kt",
+      "git_blob_sha": "9de35dca64aea187bb92d01d591ce906e1923476",
+      "sha256": "574355dd79e31c7739d02b6efee1dba2a11f8846a62f8ca74b7af2dc24d18d7a"
+    },
+    {
+      "path": "app/src/debug/AndroidManifest.xml",
+      "git_blob_sha": "fd0e677f9cb02b01687610b123710c4b0bb73423",
+      "sha256": "aed045b875a21d7cacbd3e0b38da2cccb6db9d7f7b7849d7947ad951077d903e"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt",
+      "git_blob_sha": "19ea601c75f2d0d606f02f89a354ce246628a30d",
+      "sha256": "bd6cae8b5aed9959d73113524521d6e6491baf971adb00c2b2a2a5826861721c"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/core/FileUndoStore.kt",
+      "git_blob_sha": "98b99201470c064b6ea6d7ee01319a19c0f86c2e",
+      "sha256": "81c0800013e9f679937b30b858f831e5cf232cadc3be8f9fced0617bc1e19e5a"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/core/OperationHistoryStore.kt",
+      "git_blob_sha": "82b44f9418ba3afe7ef7d2c407b8831794f96c8b",
+      "sha256": "16d43e8286c07b58834089bec6729b9369920ec6eca189ec2e0dd4d61ad12863"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/core/OwnedOutputSnapshot.kt",
+      "git_blob_sha": "6e16c01aef11a88ff5bcb54b7b69f6dd594af64d",
+      "sha256": "8db28763a42cd35531e6995529d4bbf990ca6c23d11ba8f2902f721f0200586e"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/CleanShareScreen.kt",
+      "git_blob_sha": "c004e742043ea1d67ec675eaf0192e7468f7ff02",
+      "sha256": "33bf594375c41da208112fb1923edd68a02b45ffd9cafb3dda210c32b32286bf"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/CommandScreen.kt",
+      "git_blob_sha": "154b41ec4af13c8ce5a3a363c61511a85ed05ad9",
+      "sha256": "ea11d7a226e00bc54a984981d705c73600b694eaaecacfcf84d941fd796e97d2"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/DirectFileExplorerPane.kt",
+      "git_blob_sha": "b81966b21af2d7c1e285a5076a1543d1ec5d01db",
+      "sha256": "62c1d0a388b2d354206eecd7b7b1e0ff0dd1885cbba5a989fbff5c70fe08f49a"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/MagicFlowScreen.kt",
+      "git_blob_sha": "b42a4c47746520a79ce4e343f601ed55906cdcf2",
+      "sha256": "4ea0c9430ac662af9ef32c86a82627285ef82099acfc77925fe0e687096af6be"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/SmartFormScreen.kt",
+      "git_blob_sha": "6767734172af117f294887f6c615bc45e52fea7c",
+      "sha256": "8e85a9391dfe75285f13238535a6dc1b576268b0bd79966743dbacf707c23575"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/SmartPackScreen.kt",
+      "git_blob_sha": "7dde641c3b21f42bdcdb783030867c29a337a2e0",
+      "sha256": "5cac9a9c223bee29997789af904241168ea367e60907c5cd886a5893277ec092"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/ui/screens/StitchScreen.kt",
+      "git_blob_sha": "41342113a8131143500484b5b840c712ec6f9880",
+      "sha256": "fd71a8b582de0d05fa947d266282badbdfca35ddedac6483c06cc125485ed5cc"
+    },
+    {
+      "path": "app/src/main/res/values/strings_alpha98_p12_files.xml",
+      "git_blob_sha": "0bb3c5d5f8fc452f50c855cb9629adc7d028b796",
+      "sha256": "0790fd6ab15dbdf38ebcee9e03bd4ea9ac66f13315a2f7c12a0deb3806766804"
+    }
+  ]
+}

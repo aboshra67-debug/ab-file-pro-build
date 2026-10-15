@@ -1,0 +1,19 @@
+AB File Pro V2 — Alpha98 Assistant Navigation P2 (Safe Patch)
+Baseline: Alpha98 Calculator/Currency Safe Patch P1, built on original Alpha98 Prayer UI Reference Polish.
+
+User-approved routing:
+* Back inside any personal-assistant module -> assistant modules hub (preserves hub scroll/category).
+* Home inside any personal-assistant module -> AB File Pro first/root home screen.
+* Android system Back on a module -> assistant modules hub; Android system Back at hub -> app home.
+
+Implementation: one shared small top navigation strip around the module screen.
+Changed existing source file ONLY:
+  app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt
+Added:
+  tools/test_alpha98_navigation_safe_patch.py
+  PATCH_REPORT_ALPHA98_ASSISTANT_NAV_P2.txt
+
+Unaffected: other modules; database/repository/persistence; AndroidManifest; app package; current internal version/versionCode; scanner, OCR, prayer, calculator and currency business logic.
+No deletion. No signing keys bundled inside Safe Source.
+Build variant may use a unique suffix for a separate-install test APK where original signing key is unavailable; never uninstall original for preview.
+Required human phone test: actual back/home taps, open/close all 16 modules, check original installation data remains untouched.

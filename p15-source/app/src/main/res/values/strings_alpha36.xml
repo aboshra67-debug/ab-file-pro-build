@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alpha36_save_options_title_ar">حفظ المستند</string>
+    <string name="alpha36_save_options_title_en">Save document</string>
+    <string name="alpha36_save_options_title_fr">Enregistrer le document</string>
+    <string name="alpha36_file_name_ar">اسم الملف</string>
+    <string name="alpha36_file_name_en">File name</string>
+    <string name="alpha36_file_name_fr">Nom du fichier</string>
+    <string name="alpha36_format_ar">الصيغة</string>
+    <string name="alpha36_format_en">Format</string>
+    <string name="alpha36_format_fr">Format</string>
+    <string name="alpha36_save_location_ar">مكان الحفظ</string>
+    <string name="alpha36_save_location_en">Save location</string>
+    <string name="alpha36_save_location_fr">Emplacement d’enregistrement</string>
+    <string name="alpha36_save_now_ar">حفظ الآن</string>
+    <string name="alpha36_save_now_en">Save now</string>
+    <string name="alpha36_save_now_fr">Enregistrer</string>
+    <string name="alpha36_cancel_ar">إلغاء</string>
+    <string name="alpha36_cancel_en">Cancel</string>
+    <string name="alpha36_cancel_fr">Annuler</string>
+    <string name="alpha36_back_to_scan_home_ar">الرجوع للمسح الذكي</string>
+    <string name="alpha36_back_to_scan_home_en">Back to Smart Scan</string>
+    <string name="alpha36_back_to_scan_home_fr">Retour au scan intelligent</string>
+</resources>

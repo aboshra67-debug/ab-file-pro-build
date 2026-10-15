@@ -1,0 +1,108 @@
+<resources>
+    <string name="alpha11_scan_title_ar">المسح الذكي</string>
+    <string name="alpha11_scan_title_en">Smart Scan</string>
+    <string name="alpha11_scan_title_fr">Scan intelligent</string>
+    <string name="alpha11_scan_choose_ar">اختر المهمة</string>
+    <string name="alpha11_scan_choose_en">Choose a task</string>
+    <string name="alpha11_scan_choose_fr">Choisissez une tâche</string>
+    <string name="alpha11_scan_choose_desc_ar">اضغط على أي وظيفة، وستفتح الكاميرا المخصصة لها مباشرة</string>
+    <string name="alpha11_scan_choose_desc_en">Tap a task to open its dedicated camera immediately</string>
+    <string name="alpha11_scan_choose_desc_fr">Touchez une tâche pour ouvrir directement son mode caméra</string>
+
+    <string name="alpha11_scan_document_ar">مستند فردي</string>
+    <string name="alpha11_scan_document_en">Single document</string>
+    <string name="alpha11_scan_document_fr">Document unique</string>
+    <string name="alpha11_scan_document_desc_ar">ورقة واحدة مع اكتشاف الحواف والقص التلقائي</string>
+    <string name="alpha11_scan_document_desc_en">One page with edge detection and automatic crop</string>
+    <string name="alpha11_scan_document_desc_fr">Une page avec détection des bords et recadrage</string>
+
+    <string name="alpha11_scan_batch_ar">متعدد الصفحات</string>
+    <string name="alpha11_scan_batch_en">Multi-page</string>
+    <string name="alpha11_scan_batch_fr">Multipages</string>
+    <string name="alpha11_scan_batch_desc_ar">تصوير حتى 10 صفحات متتالية وتجميعها في PDF واحد</string>
+    <string name="alpha11_scan_batch_desc_en">Capture up to 10 pages into one PDF</string>
+    <string name="alpha11_scan_batch_desc_fr">Capturez jusqu’à 10 pages dans un seul PDF</string>
+
+    <string name="alpha11_scan_id_ar">بطاقة وجهين</string>
+    <string name="alpha11_scan_id_en">Two-sided card</string>
+    <string name="alpha11_scan_id_fr">Carte recto verso</string>
+    <string name="alpha11_scan_id_desc_ar">الوجه أولًا ثم الظهر وحفظهما في صفحة مرتبة</string>
+    <string name="alpha11_scan_id_desc_en">Front then back, saved together on one page</string>
+    <string name="alpha11_scan_id_desc_fr">Recto puis verso, enregistrés sur une seule page</string>
+
+    <string name="alpha11_scan_receipt_ar">إيصال</string>
+    <string name="alpha11_scan_receipt_en">Receipt</string>
+    <string name="alpha11_scan_receipt_fr">Reçu</string>
+    <string name="alpha11_scan_receipt_desc_ar">تصوير إيصال واحد مع تحسين وضوح النص</string>
+    <string name="alpha11_scan_receipt_desc_en">Capture one receipt with text-friendly enhancement</string>
+    <string name="alpha11_scan_receipt_desc_fr">Capturez un reçu avec amélioration du texte</string>
+
+    <string name="alpha11_scan_barcode_ar">QR / باركود</string>
+    <string name="alpha11_scan_barcode_en">QR / Barcode</string>
+    <string name="alpha11_scan_barcode_fr">QR / Code-barres</string>
+    <string name="alpha11_scan_barcode_desc_ar">قراءة مباشرة من الكاميرا بدون التقاط صورة</string>
+    <string name="alpha11_scan_barcode_desc_en">Live camera reading with no still capture</string>
+    <string name="alpha11_scan_barcode_desc_fr">Lecture caméra en direct sans photo</string>
+
+    <string name="alpha11_scan_translation_ar">الترجمة</string>
+    <string name="alpha11_scan_translation_en">Translation</string>
+    <string name="alpha11_scan_translation_fr">Traduction</string>
+    <string name="alpha11_scan_translation_desc_ar">صوّر النص، عدّل الصورة، ثم ترجمه تلقائيًا</string>
+    <string name="alpha11_scan_translation_desc_en">Capture text, edit the image, then translate it</string>
+    <string name="alpha11_scan_translation_desc_fr">Photographiez le texte, modifiez l’image, puis traduisez</string>
+
+    <string name="alpha11_scan_images_pdf_ar">صور إلى PDF</string>
+    <string name="alpha11_scan_images_pdf_en">Images to PDF</string>
+    <string name="alpha11_scan_images_pdf_fr">Images vers PDF</string>
+    <string name="alpha11_scan_images_pdf_desc_ar">صوّر أو اختر حتى 10 صور، رتّبها وعدّلها ثم احفظها PDF</string>
+    <string name="alpha11_scan_images_pdf_desc_en">Capture or choose up to 10 images, edit and save as PDF</string>
+    <string name="alpha11_scan_images_pdf_desc_fr">Capturez ou choisissez jusqu’à 10 images puis créez un PDF</string>
+
+    <string name="alpha11_scan_direct_camera_ar">يفتح الكاميرا مباشرة</string>
+    <string name="alpha11_scan_direct_camera_en">Opens camera directly</string>
+    <string name="alpha11_scan_direct_camera_fr">Ouvre directement la caméra</string>
+    <string name="alpha11_scan_direct_live_ar">قراءة مباشرة</string>
+    <string name="alpha11_scan_direct_live_en">Live reading</string>
+    <string name="alpha11_scan_direct_live_fr">Lecture en direct</string>
+
+    <string name="alpha11_saved_title_ar">تم الحفظ</string>
+    <string name="alpha11_saved_title_en">Saved</string>
+    <string name="alpha11_saved_title_fr">Enregistré</string>
+    <string name="alpha11_saved_manager_ar">الملف موجود الآن داخل مدير ملفات AB File Pro</string>
+    <string name="alpha11_saved_manager_en">The file is now available in AB File Pro file manager</string>
+    <string name="alpha11_saved_manager_fr">Le fichier est maintenant dans le gestionnaire AB File Pro</string>
+    <string name="alpha11_saved_open_ar">فتح</string>
+    <string name="alpha11_saved_open_en">Open</string>
+    <string name="alpha11_saved_open_fr">Ouvrir</string>
+    <string name="alpha11_saved_share_ar">مشاركة</string>
+    <string name="alpha11_saved_share_en">Share</string>
+    <string name="alpha11_saved_share_fr">Partager</string>
+
+    <string name="alpha11_translation_processing_ar">جارٍ قراءة النص وترجمته…</string>
+    <string name="alpha11_translation_processing_en">Reading and translating text…</string>
+    <string name="alpha11_translation_processing_fr">Lecture et traduction du texte…</string>
+    <string name="alpha11_translation_title_ar">الترجمة</string>
+    <string name="alpha11_translation_title_en">Translation</string>
+    <string name="alpha11_translation_title_fr">Traduction</string>
+    <string name="alpha11_translation_source_ar">النص الأصلي</string>
+    <string name="alpha11_translation_source_en">Original text</string>
+    <string name="alpha11_translation_source_fr">Texte original</string>
+    <string name="alpha11_translation_result_ar">النص المترجم</string>
+    <string name="alpha11_translation_result_en">Translated text</string>
+    <string name="alpha11_translation_result_fr">Texte traduit</string>
+    <string name="alpha11_translation_saved_ar">حُفظت الترجمة داخل مدير الملفات</string>
+    <string name="alpha11_translation_saved_en">Translation saved in file manager</string>
+    <string name="alpha11_translation_saved_fr">Traduction enregistrée dans le gestionnaire</string>
+    <string name="alpha11_translation_copy_ar">نسخ</string>
+    <string name="alpha11_translation_copy_en">Copy</string>
+    <string name="alpha11_translation_copy_fr">Copier</string>
+    <string name="alpha11_translation_share_ar">مشاركة</string>
+    <string name="alpha11_translation_share_en">Share</string>
+    <string name="alpha11_translation_share_fr">Partager</string>
+    <string name="alpha11_translation_done_ar">تم</string>
+    <string name="alpha11_translation_done_en">Done</string>
+    <string name="alpha11_translation_done_fr">Terminé</string>
+    <string name="alpha11_translate_action_ar">ترجمة النص</string>
+    <string name="alpha11_translate_action_en">Translate text</string>
+    <string name="alpha11_translate_action_fr">Traduire le texte</string>
+</resources>

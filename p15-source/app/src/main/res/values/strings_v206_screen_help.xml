@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_scanner_title_ar">شرح Scanner | المسح الضوئي</string>
+    <string name="help_scanner_title_en">Scanner help</string>
+    <string name="help_scanner_title_fr">Aide du scanner</string>
+
+    <string name="help_scanner_body_ar">هذه الشاشة مخصصة لتحويل الورق أو الصور إلى مستندات رقمية منظمة.\n\n1) اكتب اسمًا للمستند إذا أردت اسمًا مخصصًا.\n2) اختر نوع المسح المناسب: مستند، دفعة متعددة، كتاب أو بطاقة هوية. ستجد الأنواع الإضافية تحت «المزيد».\n3) يمكنك الاستيراد من الصور أو استخدام ماسح المستندات، كما يمكنك فتح قارئ الباركود من الزر المخصص.\n4) عند التصوير يمكنك مراجعة الصفحات وترتيبها وتحسينها قبل إنشاء PDF.\n5) خيارات الحفظ تحدد هل يفتح الملف بعد الحفظ وهل تُحفظ صور الصفحات أيضًا.\n\nالروبوت للشرح فقط ولا يغيّر أي ملف أو إعداد أو عملية مسح.</string>
+    <string name="help_scanner_body_en">This screen turns paper or images into organized digital documents.\n\n1) Enter a custom document name if needed.\n2) Choose the scan mode: Document, Batch, Book or ID Card. Extra modes are under “More”.\n3) You can import images, use the document scanner, or open the barcode reader.\n4) Captured pages can be reviewed, reordered and enhanced before creating the PDF.\n5) Save options control whether the result opens automatically and whether page images are also kept.\n\nThe helper only explains the screen; it never changes files, settings or scan operations.</string>
+    <string name="help_scanner_body_fr">Cet écran transforme des documents papier ou des images en fichiers numériques organisés.\n\n1) Saisissez un nom personnalisé si nécessaire.\n2) Choisissez le mode : Document, Lot, Livre ou Carte d’identité. Les modes supplémentaires sont sous « Plus ».\n3) Vous pouvez importer des images, utiliser le scanner de documents ou ouvrir le lecteur de codes-barres.\n4) Les pages capturées peuvent être vérifiées, réorganisées et améliorées avant la création du PDF.\n5) Les options d’enregistrement déterminent l’ouverture automatique du résultat et la conservation des images de pages.\n\nL’assistant explique uniquement l’écran et ne modifie ni fichiers, ni réglages, ni opérations de scan.</string>
+
+    <string name="help_convert_title_ar">شرح تحويل الملفات</string>
+    <string name="help_convert_title_en">File Converter help</string>
+    <string name="help_convert_title_fr">Aide du convertisseur</string>
+
+    <string name="help_convert_body_ar">هذه الشاشة تجمع أدوات التحويل الرئيسية في مكان واحد.\n\n• صور → PDF: يجمع عدة صور في ملف PDF.\n• PDF → صور: يستخرج صفحات PDF كصور منفصلة.\n• صورة → Word: يستخدم OCR لاستخراج النص ووضعه في DOCX.\n• جدول صورة → Excel: يحاول قراءة الجدول وتحويله إلى XLSX.\n• Word أو Excel → PDF: يحول ملفات Office إلى PDF.\n• PDF → Word أو Excel: ينشئ نسخة قابلة للتحرير حسب محتوى الملف.\n\nاختر لغة OCR قبل العمليات التي تعتمد على قراءة النص. بعد التحويل تظهر معاينة قبل اعتماد الناتج، ويمكنك إلغاء العملية أثناء المعالجة. الملف الأصلي لا يتم تعديله.</string>
+    <string name="help_convert_body_en">This screen brings the main conversion tools together.\n\n• Images → PDF: combines multiple images into one PDF.\n• PDF → Images: extracts PDF pages as separate images.\n• Image → Word: uses OCR to extract text into DOCX.\n• Image table → Excel: reads a table and creates XLSX.\n• Word or Excel → PDF: converts Office files to PDF.\n• PDF → Word or Excel: creates an editable version when possible.\n\nSelect the OCR language before text-recognition conversions. A preview is shown before accepting generated output, processing can be cancelled, and the original file is not modified.</string>
+    <string name="help_convert_body_fr">Cet écran regroupe les principaux outils de conversion.\n\n• Images → PDF : combine plusieurs images dans un PDF.\n• PDF → Images : extrait les pages du PDF en images séparées.\n• Image → Word : utilise l’OCR pour extraire le texte vers DOCX.\n• Tableau en image → Excel : lit le tableau et crée un XLSX.\n• Word ou Excel → PDF : convertit les fichiers Office en PDF.\n• PDF → Word ou Excel : crée une version modifiable lorsque c’est possible.\n\nChoisissez la langue OCR avant les conversions qui lisent du texte. Un aperçu est affiché avant validation, le traitement peut être annulé et le fichier original n’est pas modifié.</string>
+
+    <string name="screen_help_close_ar">فهمت، إغلاق</string>
+    <string name="screen_help_close_en">Got it, close</string>
+    <string name="screen_help_close_fr">Compris, fermer</string>
+</resources>

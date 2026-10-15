@@ -1,0 +1,36 @@
+AB File Pro V2 — Alpha75 Markets Operational Safe Patch
+========================================================
+Baseline: Alpha74 Money Operational only.
+Version: 2.0.0-alpha75-markets-operational
+versionCode: 136
+
+Scope
+-----
+- Converts the approved Arabic currencies & gold reference page into an operational screen.
+- Keeps pa_ref_currency.webp as the visual/layout source.
+- Live reference FX via the existing CurrencyRateService.
+- Live XAU/USD spot via keyless Gold API, cached locally.
+- Gold 24/21/18 EGP-per-gram values are derived from live XAU/USD + live USD/EGP.
+- Manual refresh + automatic 15-minute refresh while the page is open.
+- Currency / gold selector remains in the approved location.
+- Local favorites for USD, SAR and gold karats.
+- Price-alert dialog with local persistence.
+- WorkManager checks enabled price alerts every 15 minutes with network constraints and posts a notification when a threshold is crossed.
+- Alerts re-arm after the price leaves the threshold condition.
+
+Accuracy / disclosure
+---------------------
+- The free exchange-rate source supplies a reference mid-rate, not a named Egyptian bank bid/ask quote.
+- The two visual buy/sell cells therefore show the same honest reference rate rather than fabricating a spread.
+- Gold values are indicative international spot-derived values; local retail price and workmanship can differ.
+- The approved reference page already contains an explanatory disclaimer and the operational info dialog makes the source semantics explicit.
+
+Safety
+------
+- Safe Patch only.
+- No working code or user data deleted.
+- MainActivity.kt NOT modified.
+- FileUtils.kt NOT modified.
+- FilesScreen.kt NOT modified.
+- Existing Alpha74 Money screen retained.
+- Existing calculator/currency-converter behavior retained.

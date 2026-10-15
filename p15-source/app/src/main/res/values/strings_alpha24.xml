@@ -1,0 +1,17 @@
+<resources>
+    <string name="alpha24_camera_capture_only_hint_ar">المرحلة 1: التقط صورة فقط. لن ننتقل للتعديل أو الحفظ الآن.</string>
+    <string name="alpha24_camera_capture_only_hint_en">Stage 1: capture only. Editing and saving are disabled for now.</string>
+    <string name="alpha24_camera_capture_only_hint_fr">Étape 1 : capture uniquement. La modification et l’enregistrement sont désactivés pour le moment.</string>
+    <string name="alpha24_capture_success_ar">تم التقاط الصورة بنجاح</string>
+    <string name="alpha24_capture_success_en">Photo captured successfully</string>
+    <string name="alpha24_capture_success_fr">Photo capturée avec succès</string>
+    <string name="alpha24_capture_success_hint_ar">هذه هي الصورة الخام التي التقطتها الكاميرا. لم يتم تعديلها أو حفظها نهائيًا بعد.</string>
+    <string name="alpha24_capture_success_hint_en">This is the raw camera capture. It has not been edited or permanently saved yet.</string>
+    <string name="alpha24_capture_success_hint_fr">Voici la capture brute de la caméra. Elle n’a pas encore été modifiée ni enregistrée définitivement.</string>
+    <string name="alpha24_retake_ar">إعادة التصوير</string>
+    <string name="alpha24_retake_en">Retake</string>
+    <string name="alpha24_retake_fr">Reprendre</string>
+    <string name="alpha24_capture_failed_ar">لم يتم إنشاء ملف صورة صالح. جرّب التصوير مرة أخرى.</string>
+    <string name="alpha24_capture_failed_en">A valid image file was not created. Please try again.</string>
+    <string name="alpha24_capture_failed_fr">Aucun fichier image valide n’a été créé. Réessayez.</string>
+</resources>

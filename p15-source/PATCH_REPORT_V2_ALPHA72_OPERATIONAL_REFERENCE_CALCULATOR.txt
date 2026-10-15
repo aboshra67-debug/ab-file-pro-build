@@ -1,0 +1,9 @@
+AB File Pro V2 Alpha72 - Operational Reference Calculator
+
+Safe Patch scope:
+- Calculator module opens directly to the approved reference-style calculator in Arabic.
+- The reference calculator itself is operational; it no longer opens a second calculator inside it.
+- Added live equation/result overlay, working keypad, equals, history, clear-history and copy-result actions.
+- Existing currency converter remains preserved and can be opened from the calculator illustration.
+- Currency service from Alpha71 remains unchanged.
+- MainActivity.kt, FilesScreen.kt and FileUtils.kt were not modified.

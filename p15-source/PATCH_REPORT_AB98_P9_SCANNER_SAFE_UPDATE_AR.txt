@@ -1,0 +1,23 @@
+AB File Pro V2 - Alpha98 P9 Scanner Safe Update
+Baseline: AB98_P8_WORD_PDF_PDF_EXCEL_SAFE_SOURCE.zip
+
+نطاق التعديل فقط:
+1) إصلاح دورة Batch Scan بعد اعتماد الصفحة بحيث تعود الكاميرا للصفحة التالية بدل بقاء المعاينة السابقة.
+2) إصلاح مطابقة إطار اكتشاف المستند مع PreviewView.ScaleType.FIT_CENTER.
+3) نقل تجهيز أوضاع Book / ID / Receipt / Whiteboard وغيرها خارج Main Thread لتقليل التهنيج.
+4) إعطاء أوضاع المسح أولوية جودة الالتقاط، مع إبقاء Photo على وضع السرعة.
+5) تدوير/تحرير Bitmap المعاينة بين صفحات Batch لتقليل ضغط الذاكرة.
+6) تفعيل preserveSourceDetail فعليًا في PDF للمستند المفرد مع حد آمن 3200px لتجنب OOM.
+7) إضافة إلغاء آمن أثناء Processing مع الحفاظ على الصورة والرجوع لضبط الحدود.
+8) إضافة App Update Manager آمن: فحص إصدار، تنزيل HTTPS، تحقق SHA-256، تحقق package/version، ثم فتح Android installer.
+9) إضافة endpoint قراءة فقط /app-update في family-sync-server دون تغيير جداول PostgreSQL أو منطق مزامنة العائلة.
+
+الثوابت:
+- لم يتم حذف أي موديول أو بيانات.
+- لم يتم تعديل OCR/Convert/PDF/Assistant business logic خارج نقطة تحديث التطبيق العامة.
+- applicationIdSuffix للـdebug بقي .ocrpreviewp8 حتى تكون النسخة الجديدة Update-compatible مع P8 من ناحية package name.
+- versionCode: 161
+- versionName: 2.0.0-alpha98-p9-scanner-safe-update
+
+مهم:
+Android لا يسمح للتطبيق العادي بتثبيت APK بصمت كاملًا. التطبيق يحمل ويتحقق من التحديث تلقائيًا ثم يفتح شاشة تثبيت Android للموافقة النهائية. نجاح التحديث فوق النسخة الحالية يتطلب نفس شهادة التوقيع.

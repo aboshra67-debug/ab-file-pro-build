@@ -1,0 +1,34 @@
+<resources>
+    <string name="v15_cancel_operation_ar">إلغاء العملية</string>
+    <string name="v15_cancel_operation_en">Cancel operation</string>
+    <string name="v15_cancel_operation_fr">Annuler l’opération</string>
+
+    <string name="v15_cancelled_ar">تم إلغاء العملية بأمان ولم يتم حذف الأصل.</string>
+    <string name="v15_cancelled_en">The operation was cancelled safely. The original was not deleted.</string>
+    <string name="v15_cancelled_fr">L’opération a été annulée en toute sécurité. L’original n’a pas été supprimé.</string>
+
+    <string name="v15_storage_low_ar">المساحة المتاحة منخفضة. حرّر مساحة على الجهاز ثم أعد المحاولة؛ لم يتم تعديل الملف الأصلي.</string>
+    <string name="v15_storage_low_en">Available storage is low. Free some device space and try again; the original file was not changed.</string>
+    <string name="v15_storage_low_fr">L’espace disponible est insuffisant. Libérez de l’espace puis réessayez ; le fichier original n’a pas été modifié.</string>
+
+    <string name="v15_processing_progress_ar">المعالجة تعمل في الخلفية ويمكن إلغاؤها بأمان.</string>
+    <string name="v15_processing_progress_en">Processing runs in the background and can be cancelled safely.</string>
+    <string name="v15_processing_progress_fr">Le traitement s’exécute en arrière-plan et peut être annulé en toute sécurité.</string>
+
+    <string name="v15_secure_values_ar">القيم المتكررة التي تختار حفظها تُشفّر بمفتاح Android Keystore على هذا الجهاز.</string>
+    <string name="v15_secure_values_en">Repeated values you choose to remember are encrypted with Android Keystore on this device.</string>
+    <string name="v15_secure_values_fr">Les valeurs répétées que vous choisissez de mémoriser sont chiffrées avec Android Keystore sur cet appareil.</string>
+
+    <string name="v15_form_detected_ar">تم اكتشاف %1$d حقلًا. القالب مؤقت حتى تختار حفظه.</string>
+    <string name="v15_form_detected_en">Detected %1$d fields. The template stays temporary until you choose to save it.</string>
+    <string name="v15_form_detected_fr">%1$d champs détectés. Le modèle reste temporaire jusqu’à ce que vous choisissiez de l’enregistrer.</string>
+
+    <string name="v15_form_save_template_ar">حفظ القالب على الجهاز</string>
+    <string name="v15_form_save_template_en">Save template on device</string>
+    <string name="v15_form_save_template_fr">Enregistrer le modèle sur l’appareil</string>
+
+    <string name="v15_form_template_saved_ar">تم حفظ القالب بموافقتك.</string>
+    <string name="v15_form_template_saved_en">The template was saved with your approval.</string>
+    <string name="v15_form_template_saved_fr">Le modèle a été enregistré avec votre accord.</string>
+
+</resources>

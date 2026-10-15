@@ -1,0 +1,11 @@
+AB File Pro V2 Alpha66 safe patch — Smart Portrait Camera
+- Replaced the assistant camera module's scanner-only handoff with a dedicated Smart Portrait Camera while retaining an explicit document-scanner fallback.
+- Added portrait modes: Selfie, Close Portrait, Half Body, Full Body, Formal, Group.
+- Added bundled on-device ML Kit face detection with lightweight CameraX KEEP_ONLY_LATEST live analysis.
+- Added live framing guide, face centering/size/stability/low-light guidance, and auto-capture readiness.
+- Added grid, 0/3/5/10-second timer, flash modes, zoom, front/back camera switching and front screen-fill flash support.
+- Added portrait filters: Natural, Soft, Warm, Cool, Cinematic, B&W, Professional.
+- Added post-capture and gallery editing: auto enhance, face-light boost, brightness, crop presets, rotation, retake/back, save and share.
+- Saved final photos to Pictures/AB File Pro/Portraits on Android 10+ with a safe app-private fallback for older Android versions.
+- Existing document scanner remains available and was not modified.
+- MainActivity.kt, FilesScreen.kt and FileUtils.kt were not modified.

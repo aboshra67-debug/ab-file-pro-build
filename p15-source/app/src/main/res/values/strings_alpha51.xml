@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alpha51_assistant_title_ar">المساعد الشخصي</string>
+    <string name="alpha51_assistant_title_en">Personal Assistant</string>
+    <string name="alpha51_assistant_title_fr">Assistant personnel</string>
+    <string name="alpha51_prayer_channel">مواقيت الصلاة</string>
+</resources>

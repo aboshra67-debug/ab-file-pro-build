@@ -1,0 +1,25 @@
+<resources>
+    <string name="alpha21_camera_simple_hint_ar">صوّر المستند بشكل طبيعي؛ القص الذكي والتحسين يتمان بعد الالتقاط.</string>
+    <string name="alpha21_camera_simple_hint_en">Capture normally; smart crop and enhancement run after the photo.</string>
+    <string name="alpha21_camera_simple_hint_fr">Photographiez normalement ; le recadrage intelligent et l’amélioration se font après la prise.</string>
+
+    <string name="alpha21_quick_enhance_ar">تحسين</string>
+    <string name="alpha21_quick_enhance_en">Enhance</string>
+    <string name="alpha21_quick_enhance_fr">Améliorer</string>
+
+    <string name="alpha21_smart_crop_ar">قص ذكي</string>
+    <string name="alpha21_smart_crop_en">Smart crop</string>
+    <string name="alpha21_smart_crop_fr">Recadrage auto</string>
+
+    <string name="alpha21_original_ar">الأصل</string>
+    <string name="alpha21_original_en">Original</string>
+    <string name="alpha21_original_fr">Original</string>
+
+    <string name="alpha21_smart_crop_done_ar">تم ضبط حدود الورقة من الصورة.</string>
+    <string name="alpha21_smart_crop_done_en">Document edges were adjusted from the image.</string>
+    <string name="alpha21_smart_crop_done_fr">Les bords du document ont été ajustés depuis l’image.</string>
+
+    <string name="alpha21_smart_crop_not_found_ar">لم يتم العثور على حدود موثوقة؛ تم الاحتفاظ بالصورة كاملة.</string>
+    <string name="alpha21_smart_crop_not_found_en">No reliable document edges found; the full image was kept.</string>
+    <string name="alpha21_smart_crop_not_found_fr">Aucun bord fiable détecté ; l’image complète a été conservée.</string>
+</resources>

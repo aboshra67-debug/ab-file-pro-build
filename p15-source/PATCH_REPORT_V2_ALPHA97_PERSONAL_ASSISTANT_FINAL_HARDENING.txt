@@ -1,0 +1,31 @@
+AB File Pro V2 — Alpha97 Personal Assistant Final Hardening
+Baseline: Alpha96 Price Comparison Classic UI
+Package: com.abfilepro.app
+Version Code: 158
+Version Name: 2.0.0-alpha97-personal-assistant-final-hardening
+
+Scope: final hardening only. No new assistant module was added.
+
+Implemented:
+- Synced the Safe Source family-sync-server snapshot to the current deployed Railway/GitHub backend generation (FastAPI 3.0.0 with secure family auth v2 + family chat).
+- Added Android Keystore AES/GCM protection for the family device bearer token at rest.
+- Added one-time migration from the Alpha83-Alpha96 plaintext token key; plaintext is removed after successful encryption.
+- Hardened assistant reschedule broadcast receivers to android:exported=false while retaining system boot/time/package rescheduling intents.
+- Removed the non-compiled AssistantModuleScreens.kt.tmp editor backup from Safe Source.
+- Removed misleading Minshawi/Abdul Basit selectable labels because no reciter audio files were bundled; prayer alerts now truthfully state/use the phone alarm sound.
+- Added one unified Alpha97 final assistant contract covering all 16 assistant modules, family backend v2, chat, shopping sync, health, documents, alarms, price comparison, secure manifest settings and Keystore token storage.
+- Preserved Alpha96 classic price-comparison UI and all existing working assistant functions.
+
+Preserved:
+- Family pairing, sync and chat.
+- Shopping + family requests linkage.
+- Health and medication reminders.
+- Documents and renewal alarms.
+- Notes, tasks, calendar, meetings, voice recorder, camera, calculator, money, markets, bills, price comparison, prayer and dashboard behavior.
+- Existing user data formats; no database/schema migration in the Android app.
+
+Safety:
+- No working production Kotlin file was deleted.
+- No user record or database was deleted.
+- Only the unused .tmp editor backup was removed.
+- No change to Package/Application ID.

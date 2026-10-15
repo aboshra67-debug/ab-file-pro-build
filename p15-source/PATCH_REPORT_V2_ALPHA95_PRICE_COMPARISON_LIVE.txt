@@ -1,0 +1,22 @@
+AB File Pro V2 — Alpha95 Price Comparison Live
+Baseline: Alpha94 Summary Card Polish
+Package: com.abfilepro.app
+Version Code: 156
+Version Name: 2.0.0-alpha95-price-comparison-live
+
+Safe Patch scope:
+- Activated the Price Comparison module directly in Arabic instead of stopping on the static reference screen.
+- Added native product search UI for Amazon Egypt, noon and Jumia.
+- Added best-effort live retailer price extraction. No illustrative/fake price is displayed when a live price cannot be read.
+- Added direct official-store result links for every retailer even when price extraction is unavailable.
+- Added sorting by lowest readable price and by fastest readable delivery information.
+- Added voice product search using Android speech recognition.
+- Added in-module barcode scanning using the existing ML Kit barcode camera.
+- Added local price alerts with WorkManager background checks and Android notifications.
+- Restored module presentation name to “مقارنة الأسعار” because the module is now operational.
+- Preserved all Alpha94 assistant modules, family sync/chat, health, documents, shopping, OCR, prayer and summary-card behavior.
+
+Safety:
+- No existing database or user data deleted.
+- No working module removed.
+- Retailer markup can change; failure to read a price falls back to the official store search result instead of inventing a value.

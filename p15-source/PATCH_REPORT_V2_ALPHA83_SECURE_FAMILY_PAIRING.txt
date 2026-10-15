@@ -1,0 +1,28 @@
+AB File Pro V2 — Alpha83 Secure Family Pairing
+===============================================
+Version: 2.0.0-alpha83-secure-family-pairing
+Version Code: 144
+Package: com.abfilepro.app
+Baseline: Alpha82 Family Cloud Sync
+
+Safe Patch
+----------
+- Existing local Shopping List <-> Family Requests link preserved.
+- Existing offline-first request/comment/update/delete synchronization preserved.
+- Removed the shared FAMILY_SYNC_APP_KEY from the Android APK.
+- Migrated Android family sync from legacy /v1 to authenticated /v2 endpoints.
+- Each phone now receives its own high-entropy device token after register/join.
+- Device token is bound locally to the selected 6-digit family code.
+- Changing family code clears the old device token safely.
+- First phone registers a new family code automatically.
+- Second phone with the same code joins the existing family while pairing is open.
+- Saving Family Settings on an already-linked phone reopens the pairing window for a new phone.
+- All sync requests use HTTPS + Bearer device authorization.
+- Backend PostgreSQL remains the shared persistent store.
+- Legacy /v1 remains server-side only for migration/testing; Alpha83 no longer calls it.
+
+Verification
+------------
+- Alpha83 secure pairing contract: 16/16 PASS.
+- No working Family Requests / Shopping List runtime code deleted.
+- Alpha82 historical contract is expected to fail on version + legacy /v1/App-Key assertions because Alpha83 intentionally replaces those requirements.

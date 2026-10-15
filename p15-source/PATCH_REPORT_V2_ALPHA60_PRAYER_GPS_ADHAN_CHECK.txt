@@ -1,0 +1,18 @@
+AB File Pro V2 - Alpha60 Prayer GPS + Adhan + Prayer Check
+
+Implemented:
+- Automatic GPS refresh when prayer screen opens (with user-granted location permission).
+- Prayer times recalculate from current coordinates using existing offline calculator.
+- 10-minute pre-prayer reminder (configurable existing setting).
+- Audible prayer-time alarm channel and vibration.
+- Muezzin preference: Al-Minshawi / Abdul Basit. Original audio files are not bundled yet; system alarm sound is used until licensed audio files are supplied.
+- Post-prayer required-response notification: Yes / No.
+- Ongoing notification repeats after configured interval until Yes is selected.
+- Daily response persistence per prayer/date.
+- Boot/date/time rescheduling remains supported.
+
+Protected files not modified:
+- MainActivity.kt
+- FilesScreen.kt
+- FileUtils.kt
+- AssistantNotesScreen.kt

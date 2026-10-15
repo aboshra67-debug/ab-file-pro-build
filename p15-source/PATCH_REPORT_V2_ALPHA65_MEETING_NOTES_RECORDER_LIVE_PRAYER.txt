@@ -1,0 +1,7 @@
+AB File Pro V2 Alpha65 safe patch
+- Added per-meeting written notes with local private persistence.
+- Added per-meeting voice recording handoff using installed recorder and private import.
+- Preserved photographed meeting minutes.
+- Expanded Arabic home live prayer overlay to replace the old static prayer title/data area while preserving the mosque artwork.
+- Live next prayer, real prayer time, city and second-by-second countdown remain active.
+- MainActivity.kt, FilesScreen.kt and FileUtils.kt were not modified.

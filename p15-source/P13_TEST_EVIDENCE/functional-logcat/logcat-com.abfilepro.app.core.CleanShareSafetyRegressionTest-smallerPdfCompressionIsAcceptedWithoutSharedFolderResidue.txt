@@ -1,0 +1,3 @@
+10-09 20:07:14.383  5585  5655 I TestRunner: started: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)
+10-09 20:07:14.815   493   595 E ReportEncoder: No watchlist hash
+10-09 20:07:14.947  5585  5655 I TestRunner: finished: smallerPdfCompressionIsAcceptedWithoutSharedFolderResidue(com.abfilepro.app.core.CleanShareSafetyRegressionTest)

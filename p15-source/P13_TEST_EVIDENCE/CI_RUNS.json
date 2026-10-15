@@ -1,0 +1,17 @@
+{
+  "repository": "aboshra67-debug/ab-file-pro-build",
+  "branch": "fix/p13-clean-share-safety-20261009",
+  "baseline_P12_commit": "a7e80a13e3620283f8ac656e99fafeb1913bf5fb",
+  "red": {
+    "run_id": 37981339252,
+    "commit": "3f61265a49e7ba37cdaaa021f8beb0f95a39bfdd"
+  },
+  "green": {
+    "run_id": 37984206277,
+    "commit": "b623d915c4f9e1251ceb93ff3c41aa7d176e3036"
+  },
+  "functional_runtime": "Android 11 API30 google_apis x86_64 emulator, dual-ABI APK using native x86_64 libraries",
+  "delivered_APK": "Default ARM64-only phone APK; all 662 common payload entries including ARM libraries byte-identical to tested APK; exact phone APK launcher smoke check passed",
+  "APK_SHA256": "4deb7bc086e3042252b7b72b655298d6495b2caf09a6cdf1e13dc9680222cca0",
+  "scope": "Clean Share output safety and PDF compression selection; no full-program or physical-phone certification"
+}

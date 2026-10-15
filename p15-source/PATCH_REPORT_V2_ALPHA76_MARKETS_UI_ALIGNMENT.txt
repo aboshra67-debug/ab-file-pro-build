@@ -1,0 +1,19 @@
+AB File Pro V2 — Alpha76 Markets UI Alignment
+
+Baseline: Alpha75 Markets Operational
+Version: 2.0.0-alpha76-markets-ui-alignment
+Version Code: 137
+
+Safe Patch scope:
+- MarketsOperationalScreen.kt only for runtime UI alignment.
+- app/build.gradle.kts + VERSION for release identity.
+- Added Alpha76 contract test and this patch report.
+
+Fixes:
+1. Uses absoluteOffset for reference-image overlay coordinates so RTL layout direction cannot mirror dynamic prices, favorites, tabs, refresh/back/settings hit areas.
+2. Adds statusBarsPadding so the approved title/header no longer collides with Android status icons/camera cutout.
+3. Keeps Alpha75 currency/gold data, refresh, favorites and alerts logic unchanged.
+4. Keeps pa_ref_currency.webp unchanged as the visual reference.
+
+No working feature was deleted.
+MainActivity.kt, FileUtils.kt and FilesScreen.kt were not modified.

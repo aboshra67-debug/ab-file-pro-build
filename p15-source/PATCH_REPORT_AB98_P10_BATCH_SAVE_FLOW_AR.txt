@@ -1,0 +1,18 @@
+AB File Pro V2 - Alpha98 P10 Batch Save Flow Safe Patch
+Baseline: Alpha98 P9 Scanner Safe Update
+
+المشكلة:
+- وضع متعدد الصفحات BATCH كان ينفذ نفس أمر فتح مكان الملف بعد الحفظ المستخدم مع المستند الفردي.
+- النتيجة: بعد نجاح الحفظ يخرج المستخدم من مسار المسح متعدد الصفحات فوراً.
+- زر "مسح جديد" بعد النجاح كان يعيد الوضع إلى DOCUMENT بدلاً من الحفاظ على BATCH.
+
+الإصلاح:
+1) منع onOpenSavedLocation بعد نجاح حفظ BATCH فقط.
+2) إبقاء شاشة نجاح الحفظ داخل Scanner في BATCH.
+3) زر "مسح جديد" بعد BATCH يعيد فتح BATCH مع تصفير جلسة الصفحات السابقة.
+4) المستند الفردي وباقي الأوضاع لم يتغير سلوك الحفظ الخاص بها.
+5) لا حذف بيانات ولا حذف وظائف شغالة.
+
+Version Code: 162
+Version Name: 2.0.0-alpha98-p10-batch-save-flow
+Test package: com.abfilepro.app.p10batchtrial

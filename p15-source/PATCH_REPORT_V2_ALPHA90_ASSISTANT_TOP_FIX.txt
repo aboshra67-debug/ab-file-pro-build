@@ -1,0 +1,27 @@
+AB File Pro V2 - Alpha90 Assistant Top Fix Safe Patch
+Baseline: Alpha89 Classic Assistant Live
+Version Code: 151
+Version Name: 2.0.0-alpha90-assistant-top-fix
+
+Scope: Arabic Personal Assistant top section only.
+
+Changed:
+- Kept the user-approved classic Personal Assistant artwork and card layout.
+- Rebuilt the All / Personal / Work filter strip as one clean live control so old raster labels cannot overlap or duplicate.
+- Category filters remain operational and affect the live summary/nearest item.
+- Rebuilt Today's Summary dynamic date and counters over the classic artwork.
+- Rebuilt the nearest-item action strip with live Complete and Postpone actions.
+- Rebuilt the prayer dynamic area while preserving the classic mosque artwork and prayer card shell.
+- Prayer overlay now shows the next prayer, live time/countdown and notification status without stale duplicated text.
+- Added status-bar-safe top spacing so the classic header does not collide with Android status icons.
+- Preserved Arabic home scroll position when entering a module and returning.
+
+Preserved:
+- Alpha89 classic assistant visual identity and all existing module cards.
+- Alpha88 shopping family sync and reduced sync cadence.
+- Family pairing/chat, health/medication, documents/renewals, OCR, markets and all other modules.
+- Documents remain local-only and are not added to FamilyCloudSync.
+- No user data was removed.
+
+Validation:
+- Alpha90 assistant top-fix contract: 19/19 PASS.

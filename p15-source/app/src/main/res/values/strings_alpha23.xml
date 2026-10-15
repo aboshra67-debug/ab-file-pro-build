@@ -1,0 +1,8 @@
+<resources>
+    <string name="alpha23_processing_capture_ar">جارٍ معالجة الصورة…</string>
+    <string name="alpha23_processing_capture_en">Processing image…</string>
+    <string name="alpha23_processing_capture_fr">Traitement de l’image…</string>
+    <string name="alpha23_processing_capture_hint_ar">يتم ضبط الصورة والتحسين التلقائي قبل المراجعة.</string>
+    <string name="alpha23_processing_capture_hint_en">Preparing the capture and automatic enhancement before review.</string>
+    <string name="alpha23_processing_capture_hint_fr">Préparation de la capture et amélioration automatique avant la révision.</string>
+</resources>

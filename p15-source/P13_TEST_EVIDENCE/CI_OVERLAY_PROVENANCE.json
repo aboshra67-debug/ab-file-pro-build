@@ -1,0 +1,41 @@
+{
+  "commit": "b623d915c4f9e1251ceb93ff3c41aa7d176e3036",
+  "tree": "b8ca8e47df151a55950e1fcb92ce364b3bf5c502",
+  "files": [
+    {
+      "path": "VERSION",
+      "sha256": "a661a75ead87997f893367295dfd591a185cb614df3e654d67333643b6e93342",
+      "git_blob_sha": "963f9e2d08d7277eb1112f29c01a63d4ce35425e"
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "sha256": "f9bf85ef413bca1d2fcf5d29594cf25e9248cba47ab4a192647a8e8417d3405d",
+      "git_blob_sha": "b0fa294b0047675a3df063c69c2b71cbb47a770d"
+    },
+    {
+      "path": "app/src/androidTest/java/com/abfilepro/app/core/CleanShareSafetyRegressionTest.kt",
+      "sha256": "8483cacb9efc4099b89c7e82a6c3e2171292d643662cbec8a30a54ef26954547",
+      "git_blob_sha": "b8875dafca8b5e1a2781171aa0ddea99e7566237"
+    },
+    {
+      "path": "app/src/debug/AndroidManifest.xml",
+      "sha256": "eb0ca88e7fb5ad5594ebf99e51051d8a0709e25f6725dc07cea171a3737e8eb4",
+      "git_blob_sha": "6bef1571a976987a4ad77015c5a6cb4659e5924b"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/core/CleanShareOutput.kt",
+      "sha256": "f1022a62a3eed25652fc7aae156f05f222d22462a1df37b10d5d7cc114add5eb",
+      "git_blob_sha": "b9a0c49428d1221a8c47628d4f2f24f788007bf7"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/core/CleanShareProcessor.kt",
+      "sha256": "a2ff2c32061db539f6fe4594a2d505e25fec1c2ea7546e80d75144b5ab4b76ea",
+      "git_blob_sha": "6881ac7e2050925fe4deb2ba07714f12339d6fe0"
+    },
+    {
+      "path": "app/src/main/java/com/abfilepro/app/core/PdfTools.kt",
+      "sha256": "403e4ea9ffe1f3dedf1671e1fe431f9fc5afa3aed8dcaab742c14e216fdb239e",
+      "git_blob_sha": "7f28db60034012e45382fae4e584de3b5f541ba4"
+    }
+  ]
+}

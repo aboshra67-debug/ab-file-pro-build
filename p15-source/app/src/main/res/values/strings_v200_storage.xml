@@ -1,0 +1,179 @@
+<resources>
+    <string name="saf_title_ar">تخزين الجهاز</string><string name="saf_title_en">Device storage</string><string name="saf_title_fr">Stockage de l’appareil</string>
+    <string name="saf_device_storage_ar">تخزين الجهاز</string><string name="saf_device_storage_en">Device storage</string><string name="saf_device_storage_fr">Stockage appareil</string>
+    <string name="saf_choose_folder_ar">اختيار مجلد</string><string name="saf_choose_folder_en">Choose folder</string><string name="saf_choose_folder_fr">Choisir un dossier</string>
+    <string name="saf_choose_desc_ar">اختر مجلدًا تملكه ليصبح مساحة العمل الدائمة. سيطلب أندرويد الإذن مرة واحدة ويمكنك تغييره لاحقًا.</string><string name="saf_choose_desc_en">Choose a folder you own as the persistent working area. Android will ask once and you can change it later.</string><string name="saf_choose_desc_fr">Choisissez un dossier que vous possédez comme espace de travail persistant. Android demandera l’autorisation une fois et vous pourrez le modifier plus tard.</string>
+    <string name="saf_privacy_note_ar">لا يستخدم التطبيق صلاحية الوصول الشامل للتخزين، ولا يحاول تحويل روابط content:// إلى مسارات ملفات.</string><string name="saf_privacy_note_en">The app does not use broad storage access and never converts content:// URIs into filesystem paths.</string><string name="saf_privacy_note_fr">L’application n’utilise pas l’accès global au stockage et ne convertit jamais les URI content:// en chemins de fichiers.</string>
+    <string name="saf_change_folder_ar">تغيير المجلد</string><string name="saf_change_folder_en">Change folder</string><string name="saf_change_folder_fr">Changer de dossier</string>
+    <string name="saf_permission_lost_ar">فُقد إذن الوصول للمجلد أو لم يعد مزود التخزين متاحًا. اختر المجلد مرة أخرى لاستعادة الوصول بأمان.</string><string name="saf_permission_lost_en">Folder access was revoked or the storage provider is unavailable. Choose the folder again to restore access safely.</string><string name="saf_permission_lost_fr">L’accès au dossier a été révoqué ou le fournisseur n’est plus disponible. Choisissez de nouveau le dossier pour rétablir l’accès.</string>
+    <string name="saf_permission_failed_ar">تعذر حفظ إذن المجلد</string><string name="saf_permission_failed_en">Could not persist folder access</string><string name="saf_permission_failed_fr">Impossible de conserver l’accès au dossier</string>
+    <string name="saf_readonly_note_ar">المجلد مفتوح للقراءة فقط؛ يمكنك التصفح والفتح والمشاركة، لكن التعديل يحتاج إذن كتابة.</string><string name="saf_readonly_note_en">This folder is read-only. You can browse, open and share, but changes require write access.</string><string name="saf_readonly_note_fr">Ce dossier est en lecture seule. Vous pouvez parcourir, ouvrir et partager, mais les modifications nécessitent l’écriture.</string>
+    <string name="saf_list_ar">قائمة</string><string name="saf_list_en">List</string><string name="saf_list_fr">Liste</string>
+    <string name="saf_grid_ar">شبكة</string><string name="saf_grid_en">Grid</string><string name="saf_grid_fr">Grille</string>
+    <string name="saf_new_folder_ar">مجلد جديد</string><string name="saf_new_folder_en">New folder</string><string name="saf_new_folder_fr">Nouveau dossier</string>
+    <string name="saf_create_ar">إنشاء</string><string name="saf_create_en">Create</string><string name="saf_create_fr">Créer</string>
+    <string name="saf_favorites_ar">المفضلة</string><string name="saf_favorites_en">Favorites</string><string name="saf_favorites_fr">Favoris</string>
+    <string name="saf_recent_ar">الحديثة</string><string name="saf_recent_en">Recent</string><string name="saf_recent_fr">Récents</string>
+    <string name="saf_analyzer_ar">محلل التخزين</string><string name="saf_analyzer_en">Storage analyzer</string><string name="saf_analyzer_fr">Analyseur de stockage</string>
+    <string name="saf_analyzer_ready_ar">ابدأ التحليل لعرض أكبر الملفات والملفات المكررة.</string><string name="saf_analyzer_ready_en">Run analysis to show large files and duplicates.</string><string name="saf_analyzer_ready_fr">Lancez l’analyse pour afficher les gros fichiers et les doublons.</string>
+    <string name="saf_analyzing_ar">جارٍ تحليل الملفات والتحقق من التكرارات باستخدام SHA-256…</string><string name="saf_analyzing_en">Analyzing files and verifying duplicates with SHA-256…</string><string name="saf_analyzing_fr">Analyse des fichiers et vérification des doublons avec SHA-256…</string>
+    <string name="saf_search_ar">بحث داخل العرض الحالي</string><string name="saf_search_en">Search current view</string><string name="saf_search_fr">Rechercher dans la vue actuelle</string>
+    <string name="saf_sort_ar">ترتيب</string><string name="saf_sort_en">Sort</string><string name="saf_sort_fr">Trier</string>
+    <string name="saf_sort_name_ar">الاسم</string><string name="saf_sort_name_en">Name</string><string name="saf_sort_name_fr">Nom</string>
+    <string name="saf_sort_date_ar">التاريخ</string><string name="saf_sort_date_en">Date</string><string name="saf_sort_date_fr">Date</string>
+    <string name="saf_sort_size_ar">الحجم</string><string name="saf_sort_size_en">Size</string><string name="saf_sort_size_fr">Taille</string>
+    <string name="saf_sort_type_ar">النوع</string><string name="saf_sort_type_en">Type</string><string name="saf_sort_type_fr">Type</string>
+    <string name="saf_ascending_ar">تصاعدي</string><string name="saf_ascending_en">Ascending</string><string name="saf_ascending_fr">Croissant</string>
+    <string name="saf_descending_ar">تنازلي</string><string name="saf_descending_en">Descending</string><string name="saf_descending_fr">Décroissant</string>
+    <string name="saf_quick_view_ar">عرض سريع</string><string name="saf_quick_view_en">Quick view</string><string name="saf_quick_view_fr">Vue rapide</string>
+    <string name="saf_empty_ar">لا توجد عناصر هنا</string><string name="saf_empty_en">Nothing here</string><string name="saf_empty_fr">Aucun élément ici</string>
+    <string name="saf_counts_ar">%1$d مجلد • %2$d ملف</string><string name="saf_counts_en">%1$d folders • %2$d files</string><string name="saf_counts_fr">%1$d dossiers • %2$d fichiers</string>
+    <string name="saf_select_ar">تحديد</string><string name="saf_select_en">Select</string><string name="saf_select_fr">Sélectionner</string>
+    <string name="saf_selection_cancel_ar">إلغاء التحديد</string><string name="saf_selection_cancel_en">Cancel selection</string><string name="saf_selection_cancel_fr">Annuler la sélection</string>
+    <string name="saf_selected_count_ar">محدد: %1$d</string><string name="saf_selected_count_en">Selected: %1$d</string><string name="saf_selected_count_fr">Sélectionnés : %1$d</string>
+    <string name="saf_select_all_ar">تحديد الكل</string><string name="saf_select_all_en">Select all</string><string name="saf_select_all_fr">Tout sélectionner</string>
+    <string name="saf_share_ar">مشاركة</string><string name="saf_share_en">Share</string><string name="saf_share_fr">Partager</string>
+    <string name="saf_share_failed_ar">تعذرت المشاركة</string><string name="saf_share_failed_en">Could not share</string><string name="saf_share_failed_fr">Partage impossible</string>
+    <string name="saf_copy_ar">نسخ</string><string name="saf_copy_en">Copy</string><string name="saf_copy_fr">Copier</string>
+    <string name="saf_move_ar">نقل</string><string name="saf_move_en">Move</string><string name="saf_move_fr">Déplacer</string>
+    <string name="saf_zip_ar">ضغط ZIP</string><string name="saf_zip_en">Create ZIP</string><string name="saf_zip_fr">Créer ZIP</string>
+    <string name="saf_zip_create_ar">إنشاء ملف ZIP</string><string name="saf_zip_create_en">Create ZIP</string><string name="saf_zip_create_fr">Créer un ZIP</string>
+    <string name="saf_zip_name_ar">اسم الملف</string><string name="saf_zip_name_en">Archive name</string><string name="saf_zip_name_fr">Nom de l’archive</string>
+    <string name="saf_zip_created_ar">تم إنشاء ملف ZIP</string><string name="saf_zip_created_en">ZIP created</string><string name="saf_zip_created_fr">ZIP créé</string>
+    <string name="saf_extract_ar">فك الضغط</string><string name="saf_extract_en">Extract</string><string name="saf_extract_fr">Extraire</string>
+    <string name="saf_extract_done_ar">تم فك الضغط بأمان</string><string name="saf_extract_done_en">Archive extracted safely</string><string name="saf_extract_done_fr">Archive extraite en toute sécurité</string>
+    <string name="saf_delete_ar">حذف</string><string name="saf_delete_en">Delete</string><string name="saf_delete_fr">Supprimer</string>
+    <string name="saf_delete_title_ar">حذف نهائي من تخزين الجهاز</string><string name="saf_delete_title_en">Permanent device-storage delete</string><string name="saf_delete_title_fr">Suppression définitive du stockage</string>
+    <string name="saf_delete_warning_ar">سيتم حذف %1$d عنصر نهائيًا من مزود التخزين. لا توجد سلة محذوفات عامة موحدة في SAF، لذلك لا يعد التطبيق بإمكانية الاسترجاع بعد التأكيد.</string><string name="saf_delete_warning_en">%1$d item(s) will be deleted permanently from the storage provider. SAF has no portable universal recycle bin, so recovery is not promised after confirmation.</string><string name="saf_delete_warning_fr">%1$d élément(s) seront supprimés définitivement du fournisseur de stockage. SAF n’offre pas de corbeille universelle portable, donc la récupération n’est pas garantie après confirmation.</string>
+    <string name="saf_delete_permanent_ar">حذف نهائي</string><string name="saf_delete_permanent_en">Delete permanently</string><string name="saf_delete_permanent_fr">Supprimer définitivement</string>
+    <string name="saf_deleted_count_ar">تم حذف %1$d عنصر</string><string name="saf_deleted_count_en">Deleted %1$d item(s)</string><string name="saf_deleted_count_fr">%1$d élément(s) supprimé(s)</string>
+    <string name="saf_rename_ar">إعادة تسمية</string><string name="saf_rename_en">Rename</string><string name="saf_rename_fr">Renommer</string>
+    <string name="saf_save_ar">حفظ</string><string name="saf_save_en">Save</string><string name="saf_save_fr">Enregistrer</string>
+    <string name="saf_open_ar">فتح</string><string name="saf_open_en">Open</string><string name="saf_open_fr">Ouvrir</string>
+    <string name="saf_open_failed_ar">تعذر فتح الملف</string><string name="saf_open_failed_en">Could not open file</string><string name="saf_open_failed_fr">Impossible d’ouvrir le fichier</string>
+    <string name="saf_destination_ar">اختر المجلد الهدف</string><string name="saf_destination_en">Choose destination folder</string><string name="saf_destination_fr">Choisir le dossier de destination</string>
+    <string name="saf_transfer_result_ar">اكتمل: %1$d • فشل: %2$d</string><string name="saf_transfer_result_en">Completed: %1$d • Failed: %2$d</string><string name="saf_transfer_result_fr">Terminés : %1$d • Échecs : %2$d</string>
+    <string name="saf_cancel_ar">إلغاء</string><string name="saf_cancel_en">Cancel</string><string name="saf_cancel_fr">Annuler</string>
+    <string name="saf_cancel_operation_ar">إلغاء العملية</string><string name="saf_cancel_operation_en">Cancel operation</string><string name="saf_cancel_operation_fr">Annuler l’opération</string>
+    <string name="saf_cancelled_ar">تم إلغاء العملية بأمان</string><string name="saf_cancelled_en">Operation cancelled safely</string><string name="saf_cancelled_fr">Opération annulée en toute sécurité</string>
+    <string name="saf_refresh_ar">تحديث</string><string name="saf_refresh_en">Refresh</string><string name="saf_refresh_fr">Actualiser</string>
+    <string name="saf_operation_failed_ar">تعذر إكمال العملية</string><string name="saf_operation_failed_en">Operation could not be completed</string><string name="saf_operation_failed_fr">Impossible de terminer l’opération</string>
+    <string name="saf_folder_ar">مجلد</string><string name="saf_folder_en">Folder</string><string name="saf_folder_fr">Dossier</string>
+    <string name="saf_total_size_ar">إجمالي الحجم</string><string name="saf_total_size_en">Total size</string><string name="saf_total_size_fr">Taille totale</string>
+    <string name="saf_files_count_ar">عدد الملفات</string><string name="saf_files_count_en">Files</string><string name="saf_files_count_fr">Fichiers</string>
+    <string name="saf_folders_count_ar">عدد المجلدات</string><string name="saf_folders_count_en">Folders</string><string name="saf_folders_count_fr">Dossiers</string>
+    <string name="saf_large_files_ar">الملفات الكبيرة (50 MB فأكثر)</string><string name="saf_large_files_en">Large files (50 MB+)</string><string name="saf_large_files_fr">Gros fichiers (50 Mo+)</string>
+    <string name="saf_no_large_files_ar">لا توجد ملفات بحجم 50 MB أو أكثر</string><string name="saf_no_large_files_en">No files are 50 MB or larger</string><string name="saf_no_large_files_fr">Aucun fichier de 50 Mo ou plus</string>
+    <string name="saf_duplicates_ar">الملفات المكررة</string><string name="saf_duplicates_en">Duplicates</string><string name="saf_duplicates_fr">Doublons</string>
+    <string name="saf_no_duplicates_ar">لم يتم العثور على ملفات مكررة مؤكدة</string><string name="saf_no_duplicates_en">No confirmed duplicates found</string><string name="saf_no_duplicates_fr">Aucun doublon confirmé trouvé</string>
+    <string name="saf_duplicate_group_ar">%1$d ملفات متطابقة • %2$s لكل ملف</string><string name="saf_duplicate_group_en">%1$d identical files • %2$s each</string><string name="saf_duplicate_group_fr">%1$d fichiers identiques • %2$s chacun</string>
+    <string name="saf_close_ar">إغلاق</string><string name="saf_close_en">Close</string><string name="saf_close_fr">Fermer</string>
+    <string name="saf_delete_result_ar">تم حذف %1$d • تعذر: %2$d</string>
+    <string name="saf_delete_result_en">Deleted: %1$d • Failed: %2$d</string>
+    <string name="saf_delete_result_fr">Supprimés : %1$d • Échecs : %2$d</string>
+
+    <string name="explorer_title_ar">ملفاتي</string><string name="explorer_title_en">My Files</string><string name="explorer_title_fr">Mes fichiers</string>
+    <string name="explorer_this_device_ar">هذا الجهاز</string><string name="explorer_this_device_en">This device</string><string name="explorer_this_device_fr">Cet appareil</string>
+    <string name="explorer_ab_workspace_ar">مساحة AB</string><string name="explorer_ab_workspace_en">AB Workspace</string><string name="explorer_ab_workspace_fr">Espace AB</string>
+    <string name="explorer_choose_desc_ar">اختر مجلدًا رئيسيًا ليظهر داخل «ملفاتي» مثل مستكشف الملفات في الكمبيوتر. سيحفظ أندرويد الإذن للمجلد حتى تغيّره.</string><string name="explorer_choose_desc_en">Choose a main folder to browse in My Files like a desktop file explorer. Android will keep access until you change it.</string><string name="explorer_choose_desc_fr">Choisissez un dossier principal à parcourir comme dans un explorateur de fichiers. Android conservera l’accès jusqu’à sa modification.</string>
+    <string name="explorer_windows_mode_ar">مستكشف ملفات</string><string name="explorer_windows_mode_en">File Explorer</string><string name="explorer_windows_mode_fr">Explorateur de fichiers</string>
+    <string name="explorer_menu_ar">القائمة الجانبية</string><string name="explorer_menu_en">Navigation menu</string><string name="explorer_menu_fr">Menu de navigation</string>
+    <string name="explorer_details_ar">تفاصيل</string><string name="explorer_details_en">Details</string><string name="explorer_details_fr">Détails</string>
+    <string name="explorer_cut_ar">قص</string><string name="explorer_cut_en">Cut</string><string name="explorer_cut_fr">Couper</string>
+    <string name="explorer_paste_ar">لصق</string><string name="explorer_paste_en">Paste</string><string name="explorer_paste_fr">Coller</string>
+    <string name="explorer_clipboard_count_ar">الحافظة: %1$d</string><string name="explorer_clipboard_count_en">Clipboard: %1$d</string><string name="explorer_clipboard_count_fr">Presse-papiers : %1$d</string>
+    <string name="explorer_copied_count_ar">تم نسخ %1$d عنصر إلى الحافظة</string><string name="explorer_copied_count_en">Copied %1$d item(s) to clipboard</string><string name="explorer_copied_count_fr">%1$d élément(s) copié(s) dans le presse-papiers</string>
+    <string name="explorer_cut_count_ar">تم قص %1$d عنصر إلى الحافظة</string><string name="explorer_cut_count_en">Cut %1$d item(s) to clipboard</string><string name="explorer_cut_count_fr">%1$d élément(s) coupé(s) dans le presse-papiers</string>
+    <string name="explorer_open_external_ar">فتح بتطبيق آخر</string><string name="explorer_open_external_en">Open with another app</string><string name="explorer_open_external_fr">Ouvrir avec une autre application</string>
+    <string name="explorer_preview_error_ar">تعذر عرض معاينة آمنة لهذا الملف</string><string name="explorer_preview_error_en">Could not show a safe preview for this file</string><string name="explorer_preview_error_fr">Impossible d’afficher un aperçu sécurisé de ce fichier</string>
+    <string name="explorer_file_ar">ملف</string><string name="explorer_file_en">File</string><string name="explorer_file_fr">Fichier</string>
+
+    <string name="explorer_internal_storage_ar">التخزين الداخلي المتاح</string><string name="explorer_internal_storage_en">Available internal storage</string><string name="explorer_internal_storage_fr">Stockage interne disponible</string>
+    <string name="explorer_storage_root_ar">جذر التخزين</string><string name="explorer_storage_root_en">Storage root</string><string name="explorer_storage_root_fr">Racine du stockage</string>
+    <string name="explorer_access_read_write_ar">قراءة وكتابة</string><string name="explorer_access_read_write_en">Read and write</string><string name="explorer_access_read_write_fr">Lecture et écriture</string>
+    <string name="explorer_access_read_only_ar">قراءة فقط</string><string name="explorer_access_read_only_en">Read only</string><string name="explorer_access_read_only_fr">Lecture seule</string>
+    <string name="explorer_choose_internal_root_ar">اختيار جذر ذاكرة الهاتف</string><string name="explorer_choose_internal_root_en">Choose phone storage root</string><string name="explorer_choose_internal_root_fr">Choisir la racine du stockage du téléphone</string>
+    <string name="explorer_root_hint_ar">الوصول الحالي لا يبدو جذر ذاكرة الهاتف. اختر «التخزين الداخلي» من شاشة أندرويد ثم اضغط «استخدام هذا المجلد» لعرض التنزيلات والصور والفيديو والمستندات من مكان واحد.</string><string name="explorer_root_hint_en">The current access does not look like the phone storage root. Choose Internal storage in Android, then Use this folder to expose Downloads, Pictures, Videos and Documents in one place.</string><string name="explorer_root_hint_fr">L’accès actuel ne semble pas être la racine du téléphone. Choisissez Stockage interne dans Android puis Utiliser ce dossier pour afficher Téléchargements, Images, Vidéos et Documents.</string>
+    <string name="explorer_quick_access_ar">الوصول السريع</string><string name="explorer_quick_access_en">Quick access</string><string name="explorer_quick_access_fr">Accès rapide</string>
+    <string name="explorer_navigation_ar">التنقل</string><string name="explorer_navigation_en">Navigation</string><string name="explorer_navigation_fr">Navigation</string>
+    <string name="explorer_downloads_ar">التنزيلات</string><string name="explorer_downloads_en">Downloads</string><string name="explorer_downloads_fr">Téléchargements</string>
+    <string name="explorer_pictures_ar">الصور</string><string name="explorer_pictures_en">Pictures</string><string name="explorer_pictures_fr">Images</string>
+    <string name="explorer_videos_ar">الفيديو</string><string name="explorer_videos_en">Videos</string><string name="explorer_videos_fr">Vidéos</string>
+    <string name="explorer_documents_ar">المستندات</string><string name="explorer_documents_en">Documents</string><string name="explorer_documents_fr">Documents</string>
+    <string name="explorer_camera_ar">الكاميرا</string><string name="explorer_camera_en">Camera</string><string name="explorer_camera_fr">Caméra</string>
+    <string name="explorer_music_ar">الموسيقى</string><string name="explorer_music_en">Music</string><string name="explorer_music_fr">Musique</string>
+    <string name="explorer_location_unavailable_ar">هذا المجلد غير موجود داخل الوصول الحالي. اختر جذر ذاكرة الهاتف أولًا.</string><string name="explorer_location_unavailable_en">This folder is not available in the current access. Choose the phone storage root first.</string><string name="explorer_location_unavailable_fr">Ce dossier n’est pas disponible dans l’accès actuel. Choisissez d’abord la racine du stockage.</string>
+    <string name="explorer_zip_ready_ar">ZIP جاهز من داخل ملفاتي</string><string name="explorer_zip_ready_en">ZIP is built into My Files</string><string name="explorer_zip_ready_fr">ZIP est intégré à Mes fichiers</string>
+    <string name="explorer_zip_hint_ar">اضغط تحديد أو اضغط مطولًا على ملف، اختر العناصر ثم «ضغط ZIP». واضغط على أي ZIP لاختيار فك هنا أو فك داخل مجلد جديد.</string><string name="explorer_zip_hint_en">Tap Select or long-press a file, choose items, then Create ZIP. Tap any ZIP to extract here or into a new folder.</string><string name="explorer_zip_hint_fr">Touchez Sélectionner ou maintenez un fichier, choisissez les éléments puis Créer ZIP. Touchez un ZIP pour extraire ici ou dans un nouveau dossier.</string>
+    <string name="explorer_zip_actions_ar">خيارات ZIP</string><string name="explorer_zip_actions_en">ZIP options</string><string name="explorer_zip_actions_fr">Options ZIP</string>
+    <string name="explorer_extract_here_ar">فك هنا</string><string name="explorer_extract_here_en">Extract here</string><string name="explorer_extract_here_fr">Extraire ici</string>
+    <string name="explorer_extract_folder_ar">فك داخل مجلد جديد</string><string name="explorer_extract_folder_en">Extract to new folder</string><string name="explorer_extract_folder_fr">Extraire dans un nouveau dossier</string>
+    <string name="explorer_extract_here_done_ar">تم فك %1$d ملف بأمان داخل المجلد الحالي</string><string name="explorer_extract_here_done_en">Safely extracted %1$d file(s) into the current folder</string><string name="explorer_extract_here_done_fr">%1$d fichier(s) extraits en toute sécurité dans le dossier actuel</string>
+    <string name="explorer_extract_folder_done_ar">تم فك الضغط داخل المجلد: %1$s</string><string name="explorer_extract_folder_done_en">Extracted into folder: %1$s</string><string name="explorer_extract_folder_done_fr">Extrait dans le dossier : %1$s</string>
+
+    <string name="explorer_all_files_title_ar">وصول مدير الملفات</string><string name="explorer_all_files_title_en">File manager access</string><string name="explorer_all_files_title_fr">Accès au gestionnaire de fichiers</string>
+    <string name="explorer_all_files_desc_ar">لإظهار ذاكرة الهاتف والمجلدات الحقيقية مثل مستكشف الملفات في الكمبيوتر، اسمح لـ AB File Pro بإدارة كل الملفات. لا يتم رفع ملفاتك لأي خادم.</string><string name="explorer_all_files_desc_en">To show real phone storage and folders like a desktop file explorer, allow AB File Pro to manage all files. Your files are not uploaded to a server.</string><string name="explorer_all_files_desc_fr">Pour afficher le stockage réel du téléphone comme un explorateur de bureau, autorisez AB File Pro à gérer tous les fichiers. Vos fichiers ne sont envoyés vers aucun serveur.</string>
+    <string name="explorer_all_files_grant_ar">السماح بالوصول للملفات</string><string name="explorer_all_files_grant_en">Allow file access</string><string name="explorer_all_files_grant_fr">Autoriser l’accès aux fichiers</string>
+
+
+    <string name="workspace_setup_title_ar">أنشئ مجلدك الخاص</string><string name="workspace_setup_title_en">Create your workspace folder</string><string name="workspace_setup_title_fr">Créer votre dossier de travail</string>
+    <string name="workspace_setup_desc_ar">اختر اسمًا لمجلد حقيقي سيظهر في الذاكرة الداخلية للهاتف. كل ملفات AB File Pro التي تديرها هنا ستكون داخل هذا المجلد.</string><string name="workspace_setup_desc_en">Choose a name for a real folder in Internal Storage. Files managed here by AB File Pro stay inside this folder.</string><string name="workspace_setup_desc_fr">Choisissez un nom pour un vrai dossier dans le stockage interne. Les fichiers gérés ici restent dans ce dossier.</string>
+    <string name="workspace_name_ar">اسم المجلد</string><string name="workspace_name_en">Folder name</string><string name="workspace_name_fr">Nom du dossier</string>
+    <string name="workspace_create_ar">إنشاء وفتح</string><string name="workspace_create_en">Create and open</string><string name="workspace_create_fr">Créer et ouvrir</string>
+    <string name="workspace_import_ar">استيراد ملفات</string><string name="workspace_import_en">Import files</string><string name="workspace_import_fr">Importer des fichiers</string>
+    <string name="workspace_import_done_ar">تم استيراد %1$d ملف</string><string name="workspace_import_done_en">Imported %1$d file(s)</string><string name="workspace_import_done_fr">%1$d fichier(s) importé(s)</string>
+    <string name="workspace_images_pdf_ar">صور → PDF</string><string name="workspace_images_pdf_en">Images → PDF</string><string name="workspace_images_pdf_fr">Images → PDF</string>
+    <string name="workspace_pdf_name_ar">اسم ملف PDF</string><string name="workspace_pdf_name_en">PDF file name</string><string name="workspace_pdf_name_fr">Nom du PDF</string>
+    <string name="workspace_pdf_created_ar">تم إنشاء %1$s</string><string name="workspace_pdf_created_en">Created %1$s</string><string name="workspace_pdf_created_fr">%1$s créé</string>
+
+
+    <string name="workspace_appearance_ar">الثيم والشكل</string><string name="workspace_appearance_en">Theme &amp; layout</string><string name="workspace_appearance_fr">Thème et disposition</string>
+    <string name="workspace_theme_ar">الثيم</string><string name="workspace_theme_en">Theme</string><string name="workspace_theme_fr">Thème</string>
+    <string name="workspace_theme_default_ar">افتراضي</string><string name="workspace_theme_default_en">Default</string><string name="workspace_theme_default_fr">Par défaut</string>
+    <string name="workspace_theme_light_ar">فاتح</string><string name="workspace_theme_light_en">Light</string><string name="workspace_theme_light_fr">Clair</string>
+    <string name="workspace_theme_dark_ar">داكن</string><string name="workspace_theme_dark_en">Dark</string><string name="workspace_theme_dark_fr">Sombre</string>
+    <string name="workspace_theme_blue_ar">أزرق</string><string name="workspace_theme_blue_en">Blue</string><string name="workspace_theme_blue_fr">Bleu</string>
+    <string name="workspace_style_ar">شكل الملفات</string><string name="workspace_style_en">File layout</string><string name="workspace_style_fr">Disposition des fichiers</string>
+    <string name="workspace_style_windows_ar">ويندوز</string><string name="workspace_style_windows_en">Windows</string><string name="workspace_style_windows_fr">Windows</string>
+    <string name="workspace_style_cards_ar">بطاقات</string><string name="workspace_style_cards_en">Cards</string><string name="workspace_style_cards_fr">Cartes</string>
+    <string name="workspace_style_compact_ar">مضغوط</string><string name="workspace_style_compact_en">Compact</string><string name="workspace_style_compact_fr">Compact</string>
+    <string name="workspace_add_shortcut_ar">إضافة المجلد للشاشة الرئيسية</string><string name="workspace_add_shortcut_en">Add folder to Home screen</string><string name="workspace_add_shortcut_fr">Ajouter le dossier à l’écran d’accueil</string>
+    <string name="workspace_shortcut_requested_ar">تم إرسال طلب إضافة الاختصار للشاشة الرئيسية</string><string name="workspace_shortcut_requested_en">Home-screen shortcut request sent</string><string name="workspace_shortcut_requested_fr">Demande de raccourci envoyée</string>
+    <string name="workspace_shortcut_unavailable_ar">المشغّل الحالي لا يدعم إضافة الاختصار تلقائيًا</string><string name="workspace_shortcut_unavailable_en">This launcher cannot pin the shortcut automatically</string><string name="workspace_shortcut_unavailable_fr">Ce lanceur ne peut pas épingler le raccourci automatiquement</string>
+
+    <string name="workspace_actions_ar">إجراءات الملف</string><string name="workspace_actions_en">File actions</string><string name="workspace_actions_fr">Actions du fichier</string>
+    <string name="workspace_properties_ar">خصائص</string><string name="workspace_properties_en">Properties</string><string name="workspace_properties_fr">Propriétés</string>
+    <string name="workspace_property_name_ar">الاسم</string><string name="workspace_property_name_en">Name</string><string name="workspace_property_name_fr">Nom</string>
+    <string name="workspace_property_type_ar">النوع</string><string name="workspace_property_type_en">Type</string><string name="workspace_property_type_fr">Type</string>
+    <string name="workspace_property_size_ar">الحجم</string><string name="workspace_property_size_en">Size</string><string name="workspace_property_size_fr">Taille</string>
+    <string name="workspace_property_date_ar">آخر تعديل</string><string name="workspace_property_date_en">Modified</string><string name="workspace_property_date_fr">Modifié</string>
+    <string name="workspace_property_path_ar">المسار</string><string name="workspace_property_path_en">Path</string><string name="workspace_property_path_fr">Chemin</string>
+    <string name="workspace_file_ar">ملف</string><string name="workspace_file_en">File</string><string name="workspace_file_fr">Fichier</string>
+
+
+    <string name="workspace_new_ar">+ جديد</string><string name="workspace_new_en">+ New</string><string name="workspace_new_fr">+ Nouveau</string>
+    <string name="workspace_premium_explorer_ar">مستكشف ملفات Premium</string><string name="workspace_premium_explorer_en">Premium file explorer</string><string name="workspace_premium_explorer_fr">Explorateur Premium</string>
+    <string name="workspace_new_folder_hint_ar">إنشاء مجلد داخل المكان الحالي</string><string name="workspace_new_folder_hint_en">Create a folder in the current location</string><string name="workspace_new_folder_hint_fr">Créer un dossier ici</string>
+    <string name="workspace_new_text_file_ar">ملف نصي جديد</string><string name="workspace_new_text_file_en">New text file</string><string name="workspace_new_text_file_fr">Nouveau fichier texte</string>
+    <string name="workspace_new_text_hint_ar">اكتب الاسم والمحتوى واحفظه كملف TXT</string><string name="workspace_new_text_hint_en">Name it, write content, and save as TXT</string><string name="workspace_new_text_hint_fr">Nommez-le et enregistrez-le en TXT</string>
+    <string name="workspace_text_file_name_ar">اسم الملف</string><string name="workspace_text_file_name_en">File name</string><string name="workspace_text_file_name_fr">Nom du fichier</string>
+    <string name="workspace_text_content_ar">محتوى الملف</string><string name="workspace_text_content_en">File content</string><string name="workspace_text_content_fr">Contenu du fichier</string>
+    <string name="workspace_text_created_ar">تم إنشاء %1$s</string><string name="workspace_text_created_en">Created %1$s</string><string name="workspace_text_created_fr">%1$s créé</string>
+    <string name="workspace_import_hint_ar">إضافة ملفات من الهاتف إلى المجلد الحالي</string><string name="workspace_import_hint_en">Add files from the phone to this folder</string><string name="workspace_import_hint_fr">Ajouter des fichiers du téléphone ici</string>
+    <string name="workspace_rename_extension_kept_ar">سيتم الحفاظ على الامتداد %1$s تلقائيًا</string><string name="workspace_rename_extension_kept_en">The %1$s extension is kept automatically</string><string name="workspace_rename_extension_kept_fr">L’extension %1$s est conservée automatiquement</string>
+    <string name="workspace_duplicate_ar">إنشاء نسخة</string><string name="workspace_duplicate_en">Duplicate</string><string name="workspace_duplicate_fr">Dupliquer</string>
+    <string name="workspace_duplicated_ar">تم إنشاء نسخة: %1$s</string><string name="workspace_duplicated_en">Duplicated: %1$s</string><string name="workspace_duplicated_fr">Dupliqué : %1$s</string>
+    <string name="workspace_open_with_ar">فتح بواسطة…</string><string name="workspace_open_with_en">Open with…</string><string name="workspace_open_with_fr">Ouvrir avec…</string>
+    <string name="workspace_favorite_ar">المفضلة</string><string name="workspace_favorite_en">Favorite</string><string name="workspace_favorite_fr">Favori</string>
+    <string name="workspace_add_favorite_ar">إضافة للمفضلة</string><string name="workspace_add_favorite_en">Add to favorites</string><string name="workspace_add_favorite_fr">Ajouter aux favoris</string>
+    <string name="workspace_remove_favorite_ar">إزالة من المفضلة</string><string name="workspace_remove_favorite_en">Remove from favorites</string><string name="workspace_remove_favorite_fr">Retirer des favoris</string>
+    <string name="workspace_favorite_added_ar">تمت الإضافة للمفضلة</string><string name="workspace_favorite_added_en">Added to favorites</string><string name="workspace_favorite_added_fr">Ajouté aux favoris</string>
+    <string name="workspace_favorite_removed_ar">تمت الإزالة من المفضلة</string><string name="workspace_favorite_removed_en">Removed from favorites</string><string name="workspace_favorite_removed_fr">Retiré des favoris</string>
+    <string name="workspace_copied_count_ar">تم نسخ %1$d عنصر للحافظة</string><string name="workspace_copied_count_en">Copied %1$d item(s)</string><string name="workspace_copied_count_fr">%1$d élément(s) copié(s)</string>
+    <string name="workspace_cut_count_ar">تم قص %1$d عنصر للنقل</string><string name="workspace_cut_count_en">Cut %1$d item(s) for moving</string><string name="workspace_cut_count_fr">%1$d élément(s) coupé(s)</string>
+    <string name="workspace_clipboard_copy_ar">جاهز للصق: %1$d عنصر منسوخ</string><string name="workspace_clipboard_copy_en">Ready to paste: %1$d copied item(s)</string><string name="workspace_clipboard_copy_fr">Prêt à coller : %1$d élément(s)</string>
+    <string name="workspace_clipboard_cut_ar">جاهز للنقل: %1$d عنصر</string><string name="workspace_clipboard_cut_en">Ready to move: %1$d item(s)</string><string name="workspace_clipboard_cut_fr">Prêt à déplacer : %1$d élément(s)</string>
+    <string name="workspace_paste_here_ar">لصق هنا</string><string name="workspace_paste_here_en">Paste here</string><string name="workspace_paste_here_fr">Coller ici</string>
+    <string name="workspace_paste_done_ar">تم لصق %1$d عنصر</string><string name="workspace_paste_done_en">Pasted %1$d item(s)</string><string name="workspace_paste_done_fr">%1$d élément(s) collé(s)</string>
+
+</resources>

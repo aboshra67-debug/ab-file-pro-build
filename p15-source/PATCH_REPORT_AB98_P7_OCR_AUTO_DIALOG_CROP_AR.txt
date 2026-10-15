@@ -1,0 +1,8 @@
+AB File Pro - Alpha98 P7 Auto OCR Region Safe Patch
+Baseline: AB98_P6_ARABIC_OCR_WORD_REVIEW_SAFE_SOURCE.zip
+Scope: Only optional smart crop of bright foreground dialogs from dimmed mobile screenshots in Image -> Word review.
+Added: OcrProcessor.suggestDialogCrop / detectLightDialog, guarded by relative contrast and geometry.
+The new button in ImageWordReviewDialog explicitly requests suggestion; users may adjust sliders, reset, and review text before creating Word.
+Debug APK uses a separate .ocrpreviewp7 package so it does not replace the production app or P6 debug preview.
+Preserved: original OCR, original Word conversion, other conversion tools, PostgreSQL/sync modules, version code, release settings and all user data.
+No production APK signing key is included. Actual OCR accuracy varies: auto-selection is a convenience, not guaranteed exact transcription.

@@ -1,0 +1,17 @@
+<resources>
+    <string name="alpha34_editor_subtitle_ar">عدّل صورتك قبل الحفظ</string>
+    <string name="alpha34_editor_subtitle_en">Adjust your image before saving</string>
+    <string name="alpha34_editor_subtitle_fr">Ajustez votre image avant l’enregistrement</string>
+
+    <string name="alpha34_save_continue_ar">حفظ ومتابعة</string>
+    <string name="alpha34_save_continue_en">Save &amp; continue</string>
+    <string name="alpha34_save_continue_fr">Enregistrer et continuer</string>
+
+    <string name="alpha34_reset_short_ar">إعادة</string>
+    <string name="alpha34_reset_short_en">Reset</string>
+    <string name="alpha34_reset_short_fr">Réinitialiser</string>
+
+    <string name="alpha34_rotate_ar">تدوير</string>
+    <string name="alpha34_rotate_en">Rotate</string>
+    <string name="alpha34_rotate_fr">Rotation</string>
+</resources>

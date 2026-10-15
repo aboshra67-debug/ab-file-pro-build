@@ -1,0 +1,207 @@
+{
+  "phase": "red",
+  "tests": 33,
+  "passed": 26,
+  "failed": 7,
+  "gradle_exit": 1,
+  "results": [
+    {
+      "name": "allBlankPagesAreRejectedWithoutChangingSource",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "malformedPdfLeavesNoAttemptFiles",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: A failed PDF left its source copy in cache expected:<[]> but was:<[clean_share/1791574913747/source.pdf]>\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.failNotEquals(Assert.java:835)\nat org.junit.Assert.assertEquals(Assert.java:120)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$malformedPdfLeavesNoAttemptFiles$1.invokeSuspend(CleanShareSafetyRegressionTest.kt:142)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:99)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest.malformedPdfLeavesNoAttemptFiles(CleanShareSafetyRegressionTest.kt:138)\n"
+    },
+    {
+      "name": "imageChosenFromShareFolderNeverReplacesItsSource",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Clean Share wrote to its source path. Actual: /storage/emulated/0/Android/data/com.abfilepro.app.p13sharetrial/files/P13_TEST_bbf7d978-8b6c-4e7c-8bc4-1810c7c0863b/AB Clean Share/original.png\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.failEquals(Assert.java:187)\nat org.junit.Assert.assertNotEquals(Assert.java:163)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$imageChosenFromShareFolderNeverReplacesItsSource$1.invokeSuspend(CleanShareSafetyRegressionTest.kt:94)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest.imageChosenFromShareFolderNeverReplacesItsSource(CleanShareSafetyRegressionTest.kt:90)\n"
+    },
+    {
+      "name": "parallelImagesWithSameNameHaveIndependentOutputs",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Parallel operations shared a destination expected:<2> but was:<1>\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.failNotEquals(Assert.java:835)\nat org.junit.Assert.assertEquals(Assert.java:120)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$parallelImagesWithSameNameHaveIndependentOutputs$1.invokeSuspend(CleanShareSafetyRegressionTest.kt:133)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:28)\nat kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:100)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:46)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest.parallelImagesWithSameNameHaveIndependentOutputs(CleanShareSafetyRegressionTest.kt:124)\n"
+    },
+    {
+      "name": "pdfChosenFromShareFolderNeverReplacesItsSource",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Clean Share wrote to its source path. Actual: /storage/emulated/0/Android/data/com.abfilepro.app.p13sharetrial/files/P13_TEST_209bbee1-f544-48f6-a079-dc9b017d32ff/AB Clean Share/original.pdf\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.failEquals(Assert.java:187)\nat org.junit.Assert.assertNotEquals(Assert.java:163)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$pdfChosenFromShareFolderNeverReplacesItsSource$1.invokeSuspend(CleanShareSafetyRegressionTest.kt:103)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest.pdfChosenFromShareFolderNeverReplacesItsSource(CleanShareSafetyRegressionTest.kt:99)\n"
+    },
+    {
+      "name": "largerCompressionCandidateIsNotReportedAsCompressed",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Compression was reported even though the file grew: 12262 -> 12262\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$largerCompressionCandidateIsNotReportedAsCompressed$1.invokeSuspend(CleanShareSafetyRegressionTest.kt:152)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest.largerCompressionCandidateIsNotReportedAsCompressed(CleanShareSafetyRegressionTest.kt:147)\n"
+    },
+    {
+      "name": "normalPdfPreservesAllRequestedPages",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "existingImageWithSameNameIsPreserved",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "array lengths differed, expected.length=19 actual.length=3176; arrays first differed at element [0]; expected:<85> but was:<-119>\nat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)\nat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)\nat org.junit.Assert.internalArrayEquals(Assert.java:534)\nat org.junit.Assert.assertArrayEquals(Assert.java:343)\nat org.junit.Assert.assertArrayEquals(Assert.java:354)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$existingImageWithSameNameIsPreserved$1.invokeSuspend(CleanShareSafetyRegressionTest.kt:112)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest.existingImageWithSameNameIsPreserved(CleanShareSafetyRegressionTest.kt:108)\n... 34 trimmed\nCaused by: java.lang.AssertionError: expected:<85> but was:<-119>\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.failNotEquals(Assert.java:835)\nat org.junit.Assert.assertEquals(Assert.java:120)\nat org.junit.Assert.assertEquals(Assert.java:146)\nat org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)\nat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)\n... 49 more\n"
+    },
+    {
+      "name": "normalImageProducesReadableCopyWithoutChangingSource",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "blankPageRemovalStillKeepsTheContentPage",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "existingPdfWithSameNameIsPreserved",
+      "classname": "com.abfilepro.app.core.CleanShareSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "array lengths differed, expected.length=18 actual.length=697093; arrays first differed at element [0]; expected:<85> but was:<37>\nat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:78)\nat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:28)\nat org.junit.Assert.internalArrayEquals(Assert.java:534)\nat org.junit.Assert.assertArrayEquals(Assert.java:343)\nat org.junit.Assert.assertArrayEquals(Assert.java:354)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest$existingPdfWithSameNameIsPreserved$1.invokeSuspend(CleanShareSafetyRegressionTest.kt:120)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.CleanShareSafetyRegressionTest.existingPdfWithSameNameIsPreserved(CleanShareSafetyRegressionTest.kt:116)\n... 34 trimmed\nCaused by: java.lang.AssertionError: expected:<85> but was:<37>\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.failNotEquals(Assert.java:835)\nat org.junit.Assert.assertEquals(Assert.java:120)\nat org.junit.Assert.assertEquals(Assert.java:146)\nat org.junit.internal.ExactComparisonCriteria.assertElementsEqual(ExactComparisonCriteria.java:8)\nat org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:76)\n... 49 more\n"
+    },
+    {
+      "name": "normalCopyPreservesBytesAndSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialFileMoveUndoRetainsConflictForRetry",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoReplacementAtSamePathPreservesReplacement",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unreadableDirectoryCannotBePublishedAsEmptyCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoSelfRejectedWithoutChangingSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedFallbackMoveCopyDoesNotDeleteAnySource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalFolderCopyPreservesNestedAndEmptyFolders",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsSameLengthSameTimeEditAfterCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoFolderWithNewUserFilePreservesWholeFolder",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "moveCancellationBeforeSourceCleanupPreservesSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyCancellationCleansAttemptAndKeepsSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoChangedSameLengthSameTimeFilePreservesNewData",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoDescendantRejectedWithoutWriting",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedOutputCanStillBeUndone",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsFileAddedAfterCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalMovePreservesBytesAtDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialUndoKeepsChangedOutputAndItsHistory",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveDeleteFailureKeepsCompleteDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedFolderCanStillBeUndone",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    }
+  ]
+}

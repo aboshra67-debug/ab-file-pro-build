@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1]
+checks=[]
+def check(name, cond): checks.append((name,bool(cond)))
+version=(ROOT/'VERSION').read_text(encoding='utf-8')
+gradle=(ROOT/'app/build.gradle.kts').read_text(encoding='utf-8')
+home=(ROOT/'app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt').read_text(encoding='utf-8')
+ref=(ROOT/'app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantReferenceVisuals.kt').read_text(encoding='utf-8')
+cloud=(ROOT/'app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt').read_text(encoding='utf-8')
+shopping=(ROOT/'app/src/main/java/com/abfilepro/app/assistant/ShoppingListSyncStore.kt').read_text(encoding='utf-8')
+chat=(ROOT/'app/src/main/java/com/abfilepro/app/ui/screens/assistant/FamilyChatScreen.kt').read_text(encoding='utf-8')
+markets=(ROOT/'app/src/main/java/com/abfilepro/app/ui/screens/assistant/MarketsOperationalScreen.kt').read_text(encoding='utf-8')
+check('version name','2.0.0-alpha89-classic-assistant-live' in version and 'versionName = "2.0.0-alpha89-classic-assistant-live"' in gradle)
+check('version code','versionCode = 150' in gradle)
+check('classic Arabic home restored','if (language.code == "ar") {' in home and 'AssistantReferenceHome(' in home)
+check('classic approved artwork used','R.drawable.pa_ref_home_top' in ref and 'R.drawable.pa_ref_home_more' in ref)
+check('home scroll state hoisted','val arabicHomeScrollState = rememberScrollState()' in home and 'scrollState = arabicHomeScrollState' in home)
+check('native grid state hoisted','val nativeGridState = rememberLazyGridState()' in home and 'state = nativeGridState' in home)
+check('live category filters','onCategoryChange' in ref and 'AssistantCategory.WORK to "عمل"' in ref and 'AssistantCategory.ALL to "الكل"' in ref)
+check('live summary counters','HomeSummaryCounter' in ref and 'AssistantDomain.summary(visibleEntries)' in ref)
+check('next item complete action','onUpdateEntry(nextEntry.copy(completed = true))' in ref)
+check('next item postpone action','due + 30 * 60 * 1000L' in ref)
+check('quick add wired','RefHit(326f, 814f, 300f, 240f, onQuickAdd)' in ref and 'showQuickAdd = true' in home)
+check('prayer overlay retained','PrayerHomeLiveOverlay' in ref)
+check('Alpha88 sync cadence retained','delay(15_000)' in home and 'delay(5_000)' in chat)
+check('Alpha88 shopping cloud retained','ITEM_PREFIX = "shopping:item:"' in shopping and 'shoppingStore.applyRemote' in cloud)
+check('Alpha88 truthful markets retained','label = "سعر مرجعي"' in markets)
+check('documents remain local only','AssistantModule.DOCUMENTS' not in cloud)
+failed=[n for n,o in checks if not o]
+for n,o in checks: print(('PASS' if o else 'FAIL')+' - '+n)
+print(f'RESULT: {len(checks)-len(failed)}/{len(checks)} PASS')
+if failed: raise SystemExit(1)

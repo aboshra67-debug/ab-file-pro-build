@@ -1,0 +1,40 @@
+AB File Pro V2 — Alpha98 Calculator + Currency Safe Patch P1
+Baseline: user-uploaded Alpha98 source ZIP and Alpha98 APK.
+Original application identity preserved: com.abfilepro.app / 159 / 2.0.0-alpha98-prayer-ui-reference-polish.
+Alpha99 was NOT used. NO version bump until a new APK can be built and installation verified.
+
+Changes only in 2 Kotlin files:
+1. app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantReferenceVisuals.kt
+   - Added a visible Arabic clear-all key «مسح» and a separate last-character backspace key «⌫».
+   - Kept history, copy result, operator math, same calculator entry route and existing sizing.
+2. app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantModuleScreens.kt
+   - Made the existing currency page vertically scrollable so no controls fall outside small screens.
+   - Matched currency/calculator tabs and grouped amount/from/to in clear, styled cards.
+   - Made long conversion results shrink for readable 1-line display.
+   - Added currency names in Arabic/English/French to existing ISO-code selector chips.
+   - Displayed per-unit conversion from the existing rate snapshot.
+   - Existing refresh, fallback, hourly provider, cache, currencies, swap, math and financial sources unchanged.
+
+NOT touched:
+- Version identity, AndroidManifest, Gradle build, MainActivity, FileUtils, FilesScreen.
+- All family/cloud/auth data, OCR, scans, prayer, shopping, healthcare, storage.
+- All original Alpha98 source files were retained. No original project file removed.
+- Original user-uploaded APK left unchanged (not patched/repacked/re-signed).
+
+VALIDATION:
+- Original APK: APK v2 cryptographic signature AND full content digest verified offline. ZIP CRC verified.
+- Original APK signing certificate SHA-256: 141147c9487e3e31ba80cbf57c59dd43024cf919ed2edef1cc6e057e23d944fa.
+- Original APK AndroidManifest includes 2.0.0-alpha98-prayer-ui-reference-polish.
+- Exact source baseline comparison: 363/363 original files present; only 2 existing Kotlin files modified.
+- Kotlin compiler PSI syntax parser: both modified Kotlin files PASS.
+- Existing Alpha98 prayer-screen source contract: 37/37 PASS.
+- New calculator/currency safe-patch source contract: 20/20 PASS.
+- Real JVM execution of unmodified calculator expression parser: 14/14 PASS.
+- Backend Python compilation: PASS.
+
+NOT VERIFIED (IMPORTANT):
+- No Android SDK, Gradle executable or original Android signing keystore in this container.
+- No current newly-built APK; no install/update compatibility or on-device UI interaction test.
+- Therefore source is a patch CANDIDATE only. Do not call the uploaded baseline APK a patched APK.
+- Before release: build with Android 36/Gradle 8.11.1/Kotlin 2.0.21, sign with the existing update-compatible key,
+  compare cert SHA-256 to baseline, then install/update and test both tabs on a real Android device.

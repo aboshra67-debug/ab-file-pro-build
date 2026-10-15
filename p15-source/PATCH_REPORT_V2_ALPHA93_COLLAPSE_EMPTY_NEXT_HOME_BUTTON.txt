@@ -1,0 +1,12 @@
+AB File Pro V2 - Alpha93 Collapse Empty Next + Home Button Safe Patch
+Baseline: Alpha92 Remove Empty Next Label
+Version Code: 154
+Version Name: 2.0.0-alpha93-collapse-empty-next-home-button
+
+Implemented:
+- When there is no upcoming item, the empty appointment strip is removed completely, not left blank.
+- Prayer card and all assistant cards move upward automatically to close the gap.
+- When an upcoming item exists, the classic appointment row remains visible and functional.
+- Added a visible Home button in the assistant header that returns to the app home using the existing safe back route.
+- Preserved classic visual identity, filters, live summary, live prayer data, scroll restoration, family sync, health, documents, shopping, OCR and all current modules.
+- No user data or working module code removed.

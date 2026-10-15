@@ -1,0 +1,23 @@
+AB File Pro V2 - Alpha68 Operational Voice Recorder
+
+Safe Patch scope:
+- Activated the built-in voice recorder screen; it no longer depends on an external phone recorder app.
+- Added RECORD_AUDIO permission with runtime request.
+- Start / Pause / Resume / Stop & Save recording.
+- AAC/M4A recording with Normal 96 kbps and High 192 kbps quality presets.
+- Live elapsed timer and recording waveform state.
+- Saves recordings in app-owned voice_recordings storage and registers a FileProvider URI in Assistant entries.
+- In-app playback for recent recordings.
+- Share and delete actions for recordings.
+- Import existing audio files through Android document picker.
+- Updated recorder UI to match the requested hero / quality / recent recordings / import layout.
+
+Safety:
+- MainActivity.kt unchanged.
+- FilesScreen.kt unchanged.
+- FileUtils.kt unchanged.
+- Camera, scanner, prayer, notes, tasks and storage flows not modified.
+
+Identity:
+versionCode = 129
+versionName = 2.0.0-alpha68-operational-voice-recorder

@@ -1,0 +1,32 @@
+AB File Pro V2 — Alpha52 Personal Assistant Visual Match
+Version: 2.0.0-alpha52-visual-match-pdf
+VersionCode: 113
+Baseline: exact Alpha51 source used by GitHub Actions run 35614458383
+
+GOAL
+- Match the Arabic Personal Assistant visuals to the user-approved PDF guide v1.1.
+- Do not approximate the artwork or layout from memory.
+- Keep Alpha51 operational logic and protected scanner/storage files intact.
+
+IMPLEMENTATION
+1. Added 18 approved visual reference assets derived directly from PDF pages 6-23.
+2. Arabic assistant home uses the exact approved page-6/page-7 visual crops with invisible navigation hit areas.
+3. Arabic module screens use the exact approved page-8..page-23 visual crops.
+4. Existing Alpha51 repository, prayer alarms, scanner handoff, entry persistence and operational module screens remain present.
+5. Add/edit actions for notes/tasks/calendar/meetings/money/shopping/family/documents/health keep using the existing Alpha51 editor logic.
+6. Scanner capture continues to call the existing scanner path.
+7. Operational screens remain available when a reference action requires the Alpha51 implementation.
+8. Arabic labels were aligned to the approved PDF wording: الملاحظات، التقويم والمواعيد، الاجتماعات والمحاضر، التسجيل الصوتي، قائمة التسوق، etc.
+9. The PDF does not define a destination for the red «إضافة سريعة» tile; no invented destination was added.
+
+PROTECTED FILES — UNCHANGED
+- app/src/main/java/com/abfilepro/app/MainActivity.kt
+- app/src/main/java/com/abfilepro/app/ui/screens/FilesScreen.kt
+- app/src/main/java/com/abfilepro/app/core/FileUtils.kt
+
+NO WORKING CODE WAS DELETED.
+The Alpha51 operational implementations remain in place as the fallback interaction layer.
+
+PRECHECK
+- tools/test_alpha52_personal_assistant_visual_contract.py = PASS
+- 18 visual assets are SHA-256 pinned by the contract test.

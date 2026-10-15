@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alpha12_editor_auto_ar">تحسين تلقائي</string>
+    <string name="alpha12_editor_auto_en">Auto enhance</string>
+    <string name="alpha12_editor_auto_fr">Amélioration auto</string>
+
+    <string name="alpha12_editor_filters_ar">الفلاتر</string>
+    <string name="alpha12_editor_filters_en">Filters</string>
+    <string name="alpha12_editor_filters_fr">Filtres</string>
+
+    <string name="alpha12_editor_adjust_ar">الضبط</string>
+    <string name="alpha12_editor_adjust_en">Adjust</string>
+    <string name="alpha12_editor_adjust_fr">Réglages</string>
+
+    <string name="alpha12_editor_crop_ar">القص</string>
+    <string name="alpha12_editor_crop_en">Crop</string>
+    <string name="alpha12_editor_crop_fr">Recadrer</string>
+
+    <string name="alpha12_camera_gesture_hint_ar">اضغط للتركيز • قرّب بإصبعين للتكبير</string>
+    <string name="alpha12_camera_gesture_hint_en">Tap to focus • pinch to zoom</string>
+    <string name="alpha12_camera_gesture_hint_fr">Touchez pour la mise au point • pincez pour zoomer</string>
+</resources>

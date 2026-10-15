@@ -1,0 +1,108 @@
+{
+  "phase": "red",
+  "tests": 16,
+  "passed": 3,
+  "failed": 13,
+  "gradle_exit": 1,
+  "results": [
+    {
+      "name": "normalCopyPreservesBytesAndSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialFileMoveUndoRetainsConflictForRetry",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Remaining undo was discarded\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.partialFileMoveUndoRetainsConflictForRetry(StorageSafetyRegressionTest.kt:228)\n"
+    },
+    {
+      "name": "undoReplacementAtSamePathPreservesReplacement",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError\nat org.junit.Assert.fail(Assert.java:87)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat org.junit.Assert.assertFalse(Assert.java:65)\nat org.junit.Assert.assertFalse(Assert.java:75)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$undoReplacementAtSamePathPreservesReplacement$1.invokeSuspend(StorageSafetyRegressionTest.kt:176)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.undoReplacementAtSamePathPreservesReplacement(StorageSafetyRegressionTest.kt:171)\n"
+    },
+    {
+      "name": "copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: expected:<[source]> but was:<[source, source (2)]>\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.failNotEquals(Assert.java:835)\nat org.junit.Assert.assertEquals(Assert.java:120)\nat org.junit.Assert.assertEquals(Assert.java:146)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination$1.invokeSuspend(StorageSafetyRegressionTest.kt:93)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination(StorageSafetyRegressionTest.kt:82)\n"
+    },
+    {
+      "name": "unreadableDirectoryCannotBePublishedAsEmptyCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: A failed directory listing must fail the copy\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$unreadableDirectoryCannotBePublishedAsEmptyCopy$1.invokeSuspend(StorageSafetyRegressionTest.kt:113)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.unreadableDirectoryCannotBePublishedAsEmptyCopy(StorageSafetyRegressionTest.kt:108)\n"
+    },
+    {
+      "name": "copyIntoSelfRejectedWithoutChangingSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Self-copy must be rejected before writing\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$copyIntoSelfRejectedWithoutChangingSource$1.invokeSuspend(StorageSafetyRegressionTest.kt:68)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.copyIntoSelfRejectedWithoutChangingSource(StorageSafetyRegressionTest.kt:64)\n"
+    },
+    {
+      "name": "undoFolderWithNewUserFilePreservesWholeFolder",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError\nat org.junit.Assert.fail(Assert.java:87)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat org.junit.Assert.assertFalse(Assert.java:65)\nat org.junit.Assert.assertFalse(Assert.java:75)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$undoFolderWithNewUserFilePreservesWholeFolder$1.invokeSuspend(StorageSafetyRegressionTest.kt:185)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.undoFolderWithNewUserFilePreservesWholeFolder(StorageSafetyRegressionTest.kt:180)\n"
+    },
+    {
+      "name": "moveCancellationBeforeSourceCleanupPreservesSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Cancellation still deleted the source\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$moveCancellationBeforeSourceCleanupPreservesSource$1.invokeSuspend(StorageSafetyRegressionTest.kt:140)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:99)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.moveCancellationBeforeSourceCleanupPreservesSource(StorageSafetyRegressionTest.kt:133)\n"
+    },
+    {
+      "name": "copyCancellationCleansAttemptAndKeepsSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Cancelled copy left an output\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$copyCancellationCleansAttemptAndKeepsSource$1.invokeSuspend(StorageSafetyRegressionTest.kt:105)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:99)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.copyCancellationCleansAttemptAndKeepsSource(StorageSafetyRegressionTest.kt:96)\n"
+    },
+    {
+      "name": "undoChangedSameLengthSameTimeFilePreservesNewData",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError\nat org.junit.Assert.fail(Assert.java:87)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat org.junit.Assert.assertFalse(Assert.java:65)\nat org.junit.Assert.assertFalse(Assert.java:75)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$undoChangedSameLengthSameTimeFilePreservesNewData$1.invokeSuspend(StorageSafetyRegressionTest.kt:167)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.undoChangedSameLengthSameTimeFilePreservesNewData(StorageSafetyRegressionTest.kt:161)\n"
+    },
+    {
+      "name": "copyIntoDescendantRejectedWithoutWriting",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: Descendant-copy must be rejected\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$copyIntoDescendantRejectedWithoutWriting$1.invokeSuspend(StorageSafetyRegressionTest.kt:78)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.copyIntoDescendantRejectedWithoutWriting(StorageSafetyRegressionTest.kt:73)\n"
+    },
+    {
+      "name": "unchangedGeneratedOutputCanStillBeUndone",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalMovePreservesBytesAtDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialUndoKeepsChangedOutputAndItsHistory",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.abfilepro.app.p11scannertrial/files/P12_TEST_1eab3475-1384-48dc-9f96-526dbfa7d876/changed.txt: open failed: ENOENT (No such file or directory)\nat libcore.io.IoBridge.open(IoBridge.java:492)\nat java.io.FileInputStream.<init>(FileInputStream.java:160)\nat kotlin.io.FilesKt__FileReadWriteKt.readText(FileReadWrite.kt:131)\nat kotlin.io.FilesKt__FileReadWriteKt.readText$default(FileReadWrite.kt:131)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$partialUndoKeepsChangedOutputAndItsHistory$1.invokeSuspend(StorageSafetyRegressionTest.kt:205)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.partialUndoKeepsChangedOutputAndItsHistory(StorageSafetyRegressionTest.kt:198)\n... 34 trimmed\nCaused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)\nat libcore.io.Linux.open(Native Method)\nat libcore.io.ForwardingOs.open(ForwardingOs.java:166)\nat libcore.io.BlockGuardOs.open(BlockGuardOs.java:254)\nat libcore.io.ForwardingOs.open(ForwardingOs.java:166)\nat android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7542)\nat libcore.io.IoBridge.open(IoBridge.java:478)\n... 48 more\n"
+    },
+    {
+      "name": "fallbackMoveDeleteFailureKeepsCompleteDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: The only complete copy was deleted\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$fallbackMoveDeleteFailureKeepsCompleteDestination$1.invokeSuspend(StorageSafetyRegressionTest.kt:127)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveDeleteFailureKeepsCompleteDestination(StorageSafetyRegressionTest.kt:118)\n"
+    },
+    {
+      "name": "legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError\nat org.junit.Assert.fail(Assert.java:87)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat org.junit.Assert.assertFalse(Assert.java:65)\nat org.junit.Assert.assertFalse(Assert.java:75)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile$1.invokeSuspend(StorageSafetyRegressionTest.kt:213)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile(StorageSafetyRegressionTest.kt:209)\n"
+    }
+  ],
+  "run_id": 37969322668,
+  "commit": "9627a3a031e4fd8dc2c1b15aec99c444a57ca813",
+  "ci_gate_note": "The regression runner required AssertionError for every failure. One expected deletion regression raised FileNotFoundException when reading the removed changed.txt. Actual cases: 13 expected failures, 3 passes; no skipped cases. The final test adds an explicit exists assertion before reading."
+}

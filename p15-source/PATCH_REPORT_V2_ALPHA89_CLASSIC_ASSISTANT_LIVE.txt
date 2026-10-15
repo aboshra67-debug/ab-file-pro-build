@@ -1,0 +1,29 @@
+AB File Pro V2 - Alpha89 Classic Assistant Live Safe Patch
+Baseline: Alpha88 Assistant Hardening
+Version Code: 150
+Version Name: 2.0.0-alpha89-classic-assistant-live
+
+Implemented:
+- Restored the user-approved classic Arabic Personal Assistant home visual.
+- Preserved Alpha88 operational modules and hardening work.
+- Live category controls (All / Personal / Work) over the classic visual.
+- Live daily summary counters instead of fixed reference numbers.
+- Live nearest dated item row with Complete and +30 minute Postpone actions.
+- Live prayer overlay remains operational.
+- Quick Add card now opens the real Alpha88 quick-add dialog.
+- All classic module cards remain wired to their real modules.
+- Home scroll position is retained after opening a module and returning, including when the user was at the last cards.
+- Native non-Arabic grid position is retained as well.
+
+Preserved:
+- Family pairing and family chat.
+- Health and medication.
+- Documents and renewals.
+- Shopping/family requests and cloud sync improvements from Alpha88.
+- OCR and all existing modules.
+- No working code or user data removed.
+
+Safety:
+- Safe Patch only.
+- No database schema change.
+- No destructive migration.

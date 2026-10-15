@@ -1,0 +1,141 @@
+{
+  "phase": "red-followup",
+  "tests": 22,
+  "passed": 20,
+  "failed": 2,
+  "gradle_exit": 1,
+  "results": [
+    {
+      "name": "normalCopyPreservesBytesAndSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialFileMoveUndoRetainsConflictForRetry",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoReplacementAtSamePathPreservesReplacement",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyReadFailureCleansOnlyAttemptAndPreservesExistingDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unreadableDirectoryCannotBePublishedAsEmptyCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoSelfRejectedWithoutChangingSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "cancelledSourceCleanupKeepsCompletedCopyAndRemainingSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "failedFallbackMoveCopyDoesNotDeleteAnySource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "normalFolderCopyPreservesNestedAndEmptyFolders",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsSameLengthSameTimeEditAfterCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: A changed source must prevent destructive cleanup\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$fallbackMoveKeepsSameLengthSameTimeEditAfterCopy$1.invokeSuspend(StorageSafetyRegressionTest.kt:318)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveKeepsSameLengthSameTimeEditAfterCopy(StorageSafetyRegressionTest.kt:307)\n"
+    },
+    {
+      "name": "undoFolderWithNewUserFilePreservesWholeFolder",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "moveCancellationBeforeSourceCleanupPreservesSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyCancellationCleansAttemptAndKeepsSource",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "undoChangedSameLengthSameTimeFilePreservesNewData",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "copyIntoDescendantRejectedWithoutWriting",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedOutputCanStillBeUndone",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveKeepsFileAddedAfterCopy",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "FAIL",
+      "details": "java.lang.AssertionError: A source addition must prevent destructive cleanup\nat org.junit.Assert.fail(Assert.java:89)\nat org.junit.Assert.assertTrue(Assert.java:42)\nat com.abfilepro.app.core.StorageSafetyRegressionTest$fallbackMoveKeepsFileAddedAfterCopy$1.invokeSuspend(StorageSafetyRegressionTest.kt:301)\nat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)\nat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:101)\nat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:263)\nat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:95)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:69)\nat kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)\nat kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:47)\nat kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)\nat com.abfilepro.app.core.StorageSafetyRegressionTest.fallbackMoveKeepsFileAddedAfterCopy(StorageSafetyRegressionTest.kt:291)\n"
+    },
+    {
+      "name": "normalMovePreservesBytesAtDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "partialUndoKeepsChangedOutputAndItsHistory",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "fallbackMoveDeleteFailureKeepsCompleteDestination",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "legacyHistoryWithoutOwnershipIsKeptWithoutDeletingFile",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    },
+    {
+      "name": "unchangedGeneratedFolderCanStillBeUndone",
+      "classname": "com.abfilepro.app.core.StorageSafetyRegressionTest",
+      "status": "PASS",
+      "details": ""
+    }
+  ]
+}

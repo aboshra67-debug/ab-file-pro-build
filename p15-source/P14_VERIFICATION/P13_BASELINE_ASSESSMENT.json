@@ -1,0 +1,2838 @@
+{
+  "audit_date": "2026-10-14",
+  "baseline": "AB98 P13 vc165",
+  "verdict": "غير جاهز للنشر العام على Google Play",
+  "modules": [
+    {
+      "number": 1,
+      "module": "الرئيسية والتنقل والإعدادات",
+      "readiness": "تحتاج توحيدًا",
+      "reason": "الثيم وبعض الأزرار واللغات تحتاج ضبطًا.",
+      "findings": [
+        "SEC-UI-01",
+        "SEC-UI-02",
+        "AS-16"
+      ]
+    },
+    {
+      "number": 2,
+      "module": "إدارة الملفات المباشرة",
+      "readiness": "تحسن مثبت؛ صيانة باقية",
+      "reason": "حماية النسخ والنقل المباشر ناجحة في 14 حالة محفوظة. ZIP والصلاحيات والمسارات القديمة والنتائج الجزئية تحتاج صيانة.",
+      "findings": [
+        "ST-01",
+        "ST-02",
+        "ST-06",
+        "ST-08",
+        "ST-N02",
+        "ST-N04"
+      ]
+    },
+    {
+      "number": 3,
+      "module": "الوصول عبر SAF",
+      "readiness": "إصلاح قبل النقل الحساس",
+      "reason": "أساس URI والمنح موجود؛ خطر null في تعداد المجلد وغياب إثبات المصدر قبل حذفه لم يُختبرا على مزود فعلي.",
+      "findings": [
+        "ST-N01",
+        "ST-N04",
+        "ST-12"
+      ]
+    },
+    {
+      "number": 4,
+      "module": "السلة والتراجع والسجل",
+      "readiness": "تحسن مثبت؛ تحقق استكمال باقٍ",
+      "reason": "7 حالات حماية نواتج وحالة استكمال تراجع نقل ناجحة. السلة القديمة والجذر المتغير وتراجع المسار والحذف الجزئي داخل مجلد تحتاج قبولًا.",
+      "findings": [
+        "ST-03",
+        "ST-07",
+        "ST-09",
+        "ST-N03",
+        "ST-N05"
+      ]
+    },
+    {
+      "number": 5,
+      "module": "البحث والمفضلة وZIP",
+      "readiness": "صيانة قبل الاعتماد الكامل",
+      "reason": "البحث محدود عمدًا ولا يثبت اكتمال كل الملفات. روابط SAF والضغط والاستخراج الجزئي تحتاج بيانًا واختبارًا.",
+      "findings": [
+        "ST-04",
+        "ST-11",
+        "ST-12",
+        "ST-N02"
+      ]
+    },
+    {
+      "number": 6,
+      "module": "Batch Scanner",
+      "readiness": "تحقق أساسي سابق؛ صيانة تدفقات باقية",
+      "reason": "11 حالة Batch محفوظة من P11. تدفق PDF ومسح جديد محفوظان؛ JPG الجزئي ورجوع المحرر للحدود يحتاجان إصلاحًا.",
+      "findings": [
+        "SCAN-04",
+        "SCAN-N01"
+      ]
+    },
+    {
+      "number": 7,
+      "module": "بطاقة وجهين",
+      "readiness": "المسار الأساسي تحقق؛ الإعادة تحتاج إصلاحًا",
+      "reason": "حالتا حفظ سابقتان ناجحتان؛ مكان وجه البطاقة عند الإعادة يتغير.",
+      "findings": [
+        "SCAN-01"
+      ]
+    },
+    {
+      "number": 8,
+      "module": "المستند الفردي",
+      "readiness": "حفظ أساسي ناجح؛ الإلغاء يحتاج اختبارًا",
+      "reason": "حالة PDF سابقة ناجحة؛ خطر سباق عند إلغاء القص.",
+      "findings": [
+        "SCAN-06",
+        "SCAN-07"
+      ]
+    },
+    {
+      "number": 9,
+      "module": "Smart Scan والتصنيف",
+      "readiness": "تجريبي",
+      "reason": "قواعد ودرجات غير معايرة؛ المتعرف اللاتيني يحد التصنيف العربي.",
+      "findings": [
+        "DOC-19"
+      ]
+    },
+    {
+      "number": 10,
+      "module": "صورة عربية → Word",
+      "readiness": "مرشح بعد مراجعة النص",
+      "reason": "OCR مدمج؛ الدقة لم تُقَس بعينة مستقلة في هذه الجولة.",
+      "findings": []
+    },
+    {
+      "number": 11,
+      "module": "OCR وPDF قابل للبحث",
+      "readiness": "إصلاح اكتمال البحث",
+      "reason": "حدود النص والخطوط قد تنقص طبقة البحث دون إعلان.",
+      "findings": [
+        "DOC-10"
+      ]
+    },
+    {
+      "number": 12,
+      "module": "Word → PDF",
+      "readiness": "استخدام محدود",
+      "reason": "تنسيق الأجزاء والميزات المعقدة لا يحفظ بالكامل.",
+      "findings": [
+        "DOC-05",
+        "DOC-06"
+      ]
+    },
+    {
+      "number": 13,
+      "module": "PDF → Word",
+      "readiness": "استخدام محدود",
+      "reason": "نص قابل للتحرير؛ مطابقة التخطيط والجداول والصور غير مضمونة.",
+      "findings": [
+        "DOC-13"
+      ]
+    },
+    {
+      "number": 14,
+      "module": "PDF وصورة جدول → Excel",
+      "readiness": "إصلاح قبل الاعتماد",
+      "reason": "مسافات وصفحات متجاوزة واستدلال جدول تحتاج تحققًا.",
+      "findings": [
+        "DOC-08",
+        "DOC-09"
+      ]
+    },
+    {
+      "number": 15,
+      "module": "Excel → PDF",
+      "readiness": "إصلاح صحة القيم",
+      "reason": "التاريخ والعملة والنص المركب وترتيب الأوراق.",
+      "findings": [
+        "DOC-07"
+      ]
+    },
+    {
+      "number": 16,
+      "module": "أدوات PDF والمعاينة",
+      "readiness": "إصلاح وظيفة + قبول ملفات كبيرة",
+      "reason": "وظيفة PDF إلى صورة طويلة بها تعارض مع صيغة الرسم. ضغط Clean Share محسّن؛ بقية الأدوات تحتاج تحقق نواتج وموارد.",
+      "findings": [
+        "DOC-N01",
+        "DOC-12",
+        "DOC-13",
+        "DOC-14"
+      ]
+    },
+    {
+      "number": 17,
+      "module": "محرر PDF والحجب",
+      "readiness": "إصلاح قبل الاستخدام الحساس",
+      "reason": "تحويل إحداثيات الدوران وCropBox وفحص محتوى المستند.",
+      "findings": [
+        "DOC-02",
+        "DOC-16",
+        "DOC-24"
+      ]
+    },
+    {
+      "number": 18,
+      "module": "كروت الأعمال",
+      "readiness": "إصلاح الاستخراج",
+      "reason": "غياب وسيلة اتصال قد يستبعد الاسم.",
+      "findings": [
+        "DOC-03"
+      ]
+    },
+    {
+      "number": 19,
+      "module": "الإيصالات والفواتير",
+      "readiness": "إصلاح الأرقام العربية",
+      "reason": "الفاصل العربي قد يغير المبلغ المقترح.",
+      "findings": [
+        "DOC-04"
+      ]
+    },
+    {
+      "number": 20,
+      "module": "QR والباركود",
+      "readiness": "أساس جيد؛ دورة حياة ناقصة",
+      "reason": "قراءة وتوليد وسجل محمي؛ فصل الكاميرا يحتاج ضبطًا.",
+      "findings": [
+        "SEC-QR-01"
+      ]
+    },
+    {
+      "number": 21,
+      "module": "Clean Share",
+      "readiness": "حفظ آمن مثبت؛ الكشف الحساس غير كافٍ",
+      "reason": "24 حالة Clean Share ناجحة: النشر والإلغاء والضغط المفيد وحماية المصدر. كشف بيانات مقسمة وفحص المحتوى غير المرئي ما زالا مفتوحين.",
+      "findings": [
+        "DOC-01",
+        "DOC-20",
+        "DOC-21",
+        "DOC-24"
+      ]
+    },
+    {
+      "number": 22,
+      "module": "Stitch",
+      "readiness": "إصلاح قبل القص التلقائي",
+      "reason": "رفض المطابقة البيضاء ومراجعة التداخل؛ الأصول محفوظة.",
+      "findings": [
+        "DOC-11"
+      ]
+    },
+    {
+      "number": 23,
+      "module": "Smart Form",
+      "readiness": "استخدام يدوي محدود",
+      "reason": "النص الطويل قد يتجاوز الحقل.",
+      "findings": [
+        "DOC-22"
+      ]
+    },
+    {
+      "number": 24,
+      "module": "Smart Pack والتنظيم",
+      "readiness": "مرشح بعد ضبط المدخلات",
+      "reason": "حماية عينات القراءة وPDF من التحميل الكامل.",
+      "findings": [
+        "DOC-18"
+      ]
+    },
+    {
+      "number": 25,
+      "module": "Magic Flow والأوامر",
+      "readiness": "صيانة صحة التنفيذ",
+      "reason": "تراجع النواتج تحسن. عدد المدخلات المنفذ وخطوة تسمية فاشلة قد يخالفان ما تعرضه الخطة.",
+      "findings": [
+        "ST-10",
+        "CMD-N01"
+      ]
+    },
+    {
+      "number": 26,
+      "module": "الترجمة",
+      "readiness": "مرشح بعد مراجعة النص",
+      "reason": "تنزيل النموذج واختيار اللغة والإلغاء يحتاج قبولًا وظيفيًا.",
+      "findings": [
+        "DOC-23"
+      ]
+    },
+    {
+      "number": 27,
+      "module": "الملاحظات",
+      "readiness": "متوسط",
+      "reason": "تعارض الحفظ وحد السعة يؤثران على المخازن المشتركة.",
+      "findings": [
+        "AS-02",
+        "AS-15"
+      ]
+    },
+    {
+      "number": 28,
+      "module": "المهام",
+      "readiness": "إصلاح قبل الاعتماد",
+      "reason": "المتأخرات غير المنجزة تحتاج عرضًا واضحًا.",
+      "findings": [
+        "AS-03"
+      ]
+    },
+    {
+      "number": 29,
+      "module": "التقويم",
+      "readiness": "إصلاح التذكيرات",
+      "reason": "نافذة التنبيه المسبق قد تقع في الماضي.",
+      "findings": [
+        "AS-05"
+      ]
+    },
+    {
+      "number": 30,
+      "module": "الاجتماعات والمرفقات",
+      "readiness": "استعادة وحماية استيراد مطلوبة",
+      "reason": "حالة ارتباط المرفق غير دائمة، والاستيراد المتزامن قد يترك ملفًا جزئيًا عند الفشل.",
+      "findings": [
+        "AS-13",
+        "AS-14",
+        "AS-N01"
+      ]
+    },
+    {
+      "number": 31,
+      "module": "التسجيل الصوتي",
+      "readiness": "إصلاح حماية المسودة",
+      "reason": "الخروج أثناء التسجيل يحذف الملف الجاري.",
+      "findings": [
+        "AS-12"
+      ]
+    },
+    {
+      "number": 32,
+      "module": "الكاميرا الذكية",
+      "readiness": "متوسط",
+      "reason": "حالة خطأ واستعادة للصورة غير المتاحة.",
+      "findings": [
+        "AS-11",
+        "SCAN-09"
+      ]
+    },
+    {
+      "number": 33,
+      "module": "الحاسبة والعملات",
+      "readiness": "حساب أساسي جيد؛ شبكة ناقصة",
+      "reason": "تحقق حساب سابق؛ JSON التالف واسترجاع قيمة مؤرخة.",
+      "findings": [
+        "NET-01"
+      ]
+    },
+    {
+      "number": 34,
+      "module": "الأموال والميزانية",
+      "readiness": "متوسط؛ إدارة يدوية",
+      "reason": "دخل ومصروف وميزانية؛ لا تكامل بنكي في هذا التقييم.",
+      "findings": [
+        "AS-15"
+      ]
+    },
+    {
+      "number": 35,
+      "module": "الأسواق وتنبيهات الأسعار",
+      "readiness": "إصلاح قبل الاعتماد",
+      "reason": "تسليم التنبيه وتاريخ المصدر وتحليل الردود.",
+      "findings": [
+        "MKT-01",
+        "NET-01"
+      ]
+    },
+    {
+      "number": 36,
+      "module": "مقارنة المنتجات",
+      "readiness": "إصلاح ربط العرض",
+      "reason": "قد ترتبط هوية منتج بسعر منتج مجاور.",
+      "findings": [
+        "PRC-01"
+      ]
+    },
+    {
+      "number": 37,
+      "module": "الفواتير",
+      "readiness": "اختصار خدمات ومواعيد داخل الشاشة",
+      "reason": "فتح تطبيق أو متجر؛ لا جدولة إشعار داخل هذا الموديول.",
+      "findings": []
+    },
+    {
+      "number": 38,
+      "module": "العائلة والشات والتسوق والطلبات",
+      "readiness": "إصلاح قبل التوسع أو مشاركة الصحة",
+      "reason": "V2 يربط التوكن بالعائلة والجهاز. عزل التبديل والتعارض والصفحات والموافقة ودورة حياة الأجهزة والبيانات تحتاج معالجة.",
+      "findings": [
+        "FAM-01",
+        "FAM-02",
+        "FAM-03",
+        "FAM-N02",
+        "FAM-N06"
+      ]
+    },
+    {
+      "number": 39,
+      "module": "الصحة والأدوية",
+      "readiness": "إصلاح التكرار",
+      "reason": "رفض إشعار أو فوات موعد وإجراءات الرئيسية.",
+      "findings": [
+        "AS-01",
+        "AS-02",
+        "AS-04",
+        "AS-06"
+      ]
+    },
+    {
+      "number": 40,
+      "module": "المستندات والتجديدات",
+      "readiness": "إصلاح التواريخ والتذكيرات",
+      "reason": "تاريخ مدني ومنطقة زمنية ونافذة تنبيه.",
+      "findings": [
+        "AS-05",
+        "AS-07",
+        "AS-16"
+      ]
+    },
+    {
+      "number": 41,
+      "module": "الصلاة والأذان والمتابعة",
+      "readiness": "متوسط؛ استعادة ناقصة",
+      "reason": "حساب أساسي تحقق سابقًا؛ نطاق GPS والصلاحيات والمتابعة.",
+      "findings": [
+        "AS-08",
+        "AS-09",
+        "AS-10"
+      ]
+    },
+    {
+      "number": 42,
+      "module": "التحديث والتوزيع",
+      "readiness": "نسخة اختبار؛ إصدار متجر ناقص",
+      "reason": "APK الحالي debug بحزمة تجربة مستقلة. AAB موقّع للإنتاج وقناة تحديث Play وفحوص التوافق والاستعادة غير مكتملة.",
+      "findings": [
+        "SEC-UPD-01",
+        "SEC-UPD-02",
+        "SEC-UPD-03",
+        "SEC-N01"
+      ]
+    }
+  ],
+  "finding_updates": [
+    {
+      "id": "ST-01",
+      "title": "فقد بيانات عند فشل النقل الجزئي",
+      "status": "resolved_verified",
+      "priority": "high",
+      "problem": "بعد اكتمال النسخ، قد يحذف النقل بعض عناصر المصدر ثم يفشل حذف عنصر آخر؛ مسار الفشل يحذف نسخة الوجهة المكتملة أيضًا.",
+      "note": "أُصلح محرك النقل المباشر في P12: تبقى نسخة الوجهة المكتملة عند فشل حذف المصدر أو الإلغاء، ويتحقق من المصدر قبل الحذف. أعيد التحقق من 7 حالات نقل محفوظة ناجحة في P13. لا يشمل الإغلاق مسارات SAF أو FileUtils القديمة الواردة في الملاحظات الجديدة.",
+      "fix": "الاحتفاظ بالنسخة المكتملة وتسجيل النتيجة لكل عنصر؛ اختبار فشل حذف العنصر الثاني.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt",
+          "sha256": "bd6cae8b5aed9959d73113524521d6e6491baf971adb00c2b2a2a5826861721c",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "أدلة Android المحفوظة المرتبطة بالإصلاح؛ راجع نطاق الاختبارات."
+    },
+    {
+      "id": "ST-02",
+      "title": "نسخ مجلد داخل نفسه",
+      "status": "resolved_verified",
+      "priority": "high",
+      "problem": "إنشاء الوجهة قبل تعداد المصدر دون منع نسخ المجلد إلى نفسه أو أحد فروعه يسمح بتكرار متداخل حتى الفشل.",
+      "note": "أُصلح النسخ المباشر: يرفض المصدر نفسه وأي مجلد تابع قبل الكتابة، ويستخدم مساحة مؤقتة ونشرًا لا يستبدل ملفًا قائمًا. 7 حالات نسخ محفوظة ناجحة. مزود SAF يحتاج اختبارات مستقلة.",
+      "fix": "فحص العلاقة بين المسارين قبل الكتابة، وتنظيف نواتج المحاولة الخاصة بها فقط.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt",
+          "sha256": "bd6cae8b5aed9959d73113524521d6e6491baf971adb00c2b2a2a5826861721c",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "أدلة Android المحفوظة المرتبطة بالإصلاح؛ راجع نطاق الاختبارات."
+    },
+    {
+      "id": "ST-03",
+      "title": "التراجع يحذف محتوى تغير بعد العملية",
+      "status": "resolved_verified",
+      "priority": "high",
+      "problem": "سجل التراجع يعتمد على المسار؛ ملف بديل بنفس الاسم أو إضافات داخل مجلد الناتج قد تُحذف.",
+      "note": "أُصلح التراجع عن النواتج المسجلة بإثبات محتوى وهوية الملف أو المجلد؛ المحتوى المعدل والبدائل والإضافات محفوظة. 7 حالات تراجع عن النواتج ناجحة. لا يعادل ذلك إثبات ملكية لتراجع النقل القديم المعتمد على المسار.",
+      "fix": "إثبات ملكية وبصمة نواتج العملية قبل حذفها؛ الحفاظ على البدائل والإضافات.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OperationHistoryStore.kt",
+          "sha256": "16d43e8286c07b58834089bec6729b9369920ec6eca189ec2e0dd4d61ad12863",
+          "unchanged_since_p11": false
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OwnedOutputSnapshot.kt",
+          "sha256": "8db28763a42cd35531e6995529d4bbf990ca6c23d11ba8f2902f721f0200586e",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "أدلة Android المحفوظة المرتبطة بالإصلاح؛ راجع نطاق الاختبارات."
+    },
+    {
+      "id": "ST-04",
+      "title": "فك ZIP يترك ملفات ناقصة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "في Extract Here لا يُسجل الملف الجاري للتنظيف إلا بعد اكتمال كتابته؛ الفشل قد يترك ملفًا جزئيًا ومجلدات ضمنية.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تسجيل المسارات الجديدة قبل الكتابة، ثم تنظيفها عند الإلغاء أو الفشل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt",
+          "sha256": "bd6cae8b5aed9959d73113524521d6e6491baf971adb00c2b2a2a5826861721c",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-05",
+      "title": "قراءة مسار العمل تكتب الإعدادات",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "التحقق من الاحتواء يصل إلى كتابة ملف تعريف مساحة العمل؛ توجد عمليات حذف وتراجع وIO على مسار الواجهة. لا يوجد قياس ANR جديد.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "فصل القراءة عن الحفظ، واعتماد كتابة ذرية وعمل ثقيل على IO؛ قياس StrictMode.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUtils.kt",
+          "sha256": "8e4dfb3057ccb7effbf7ce7e63a5fa761c38e2c6f883ac9dab7819fb59e21d5e",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/WorkspaceStorageManager.kt",
+          "sha256": "1f96bea48bffb5e9714306f5e53cc2d9e080d2e3115bc873b2a34ebe4e2f8c8f",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-06",
+      "title": "نتائج العمليات الجزئية غير دقيقة",
+      "status": "partial",
+      "priority": "medium",
+      "problem": "الدفعة قد تتوقف عند أول خطأ وتترك القائمة والحافظة قديمتين؛ نتيجة الحذف المنطقية تُهمل في بعض المسارات.",
+      "note": "تحسنت إدارة التحديث والحافظة في المستكشف المباشر، لكن بعض نتائج الحذف المنطقية تُهمل، ولا تكتمل سياسة النجاح والفشل لكل عنصر في SAF. الملاحظة مغلقة جزئيًا.",
+      "fix": "تحديث القوائم بعد المحاولة وتسجيل نجاح وفشل كل عنصر وإبقاء المتعذر لإعادة المحاولة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/DirectFileExplorerPane.kt",
+          "sha256": "62c1d0a388b2d354206eecd7b7b1e0ff0dd1885cbba5a989fbff5c70fe08f49a",
+          "unchanged_since_p11": false
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/SafFileManagerPane.kt",
+          "sha256": "c07732da37a678084e1e459e58f73f0f91358c10613c0c367823ab988970fd37",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-07",
+      "title": "فقد سجل التراجع بعد استعادة جزئية",
+      "status": "resolved_verified",
+      "priority": "medium",
+      "problem": "استعادة عنصر من دفعة نقل قد تمسح سجل الدفعة رغم وجود عناصر لم تُستعد بسبب تعارض الأسماء.",
+      "note": "التراجع عن دفعة النقل يحتفظ بالأزواج غير المستعادة بسبب التعارض ويتيح إعادة المحاولة. حالة Android محفوظة تثبت الاستكمال بعد إزالة التعارض.",
+      "fix": "حفظ الأزواج المتبقية وإظهار ملخص جزئي قابل للاستكمال.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUndoStore.kt",
+          "sha256": "81c0800013e9f679937b30b858f831e5cf232cadc3be8f9fced0617bc1e19e5a",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "أدلة Android المحفوظة المرتبطة بالإصلاح؛ راجع نطاق الاختبارات."
+    },
+    {
+      "id": "ST-08",
+      "title": "قدرة التخزين على Android 8–10",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "فحص الوصول يعيد متاحًا قبل Android 11، بينما إنشاء مجلد عام قد يفشل دون معالجة مناسبة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "اختبار التثبيت الجديد ورفض الصلاحيات على API 26/28/29، وإتاحة SAF أو مساحة التطبيق.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt",
+          "sha256": "bd6cae8b5aed9959d73113524521d6e6491baf971adb00c2b2a2a5826861721c",
+          "unchanged_since_p11": false
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/WorkspaceFolderPickerPane.kt",
+          "sha256": "03238cb9520df4c7bcb1b4de832ea931a439a96ecc7c94010ea31a69a36f2df4",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-09",
+      "title": "تغيير الصلاحية يغير جذر الملفات",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "يتبدل الجذر بين الخاص والعام حسب الصلاحية؛ الملفات القديمة تبقى على القرص لكن قد تختفي من قوائم الجذر الجديد.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تثبيت هوية أماكن الحفظ وإظهار المواقع السابقة أو ترحيل متحقق يحافظ على الأصل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUtils.kt",
+          "sha256": "8e4dfb3057ccb7effbf7ce7e63a5fa761c38e2c6f883ac9dab7819fb59e21d5e",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/WorkspaceStorageManager.kt",
+          "sha256": "1f96bea48bffb5e9714306f5e53cc2d9e080d2e3115bc873b2a34ebe4e2f8c8f",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/TrashStore.kt",
+          "sha256": "64abf09f120b1b038dc1433a68283584dcc9e3b1ab687446e7c39518eb569877",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-10",
+      "title": "اختيار متعدد يُنفذ على أول ملف",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "بعض الأوامر تقبل عدة URIs ثم تستخدم الأول فقط؛ طلب OCR غير مدعوم قد يتحول لاستيراد.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "توحيد عدد المدخلات بين المعاينة والتنفيذ ومعالجة كل مدخل مقبول أو رفضه قبل الكتابة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CommandEngine.kt",
+          "sha256": "36d53b5523989aa90d9f62a456e0430f16a4d28b57978f95d72d8f3fa90cbe38",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-11",
+      "title": "فشل تحميل مصغرة غير معالج",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "حذف صورة بعد ظهورها أو تعذر قراءتها قد يخرج من معالجة تحميل الصورة في المستكشف المباشر.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "حالة عنصر غير متاح وتحديث القائمة مع معالجة الاستثناء والحفاظ على الإلغاء.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/DirectFileExplorerPane.kt",
+          "sha256": "62c1d0a388b2d354206eecd7b7b1e0ff0dd1885cbba5a989fbff5c70fe08f49a",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-12",
+      "title": "روابط المفضلة لا تتبع بعض النقل",
+      "status": "conditional",
+      "priority": "low",
+      "problem": "المفضلة مرتبطة بالمسارات؛ نقل عنصر أو تسمية مجلده قد يبقي رابطًا قديمًا.",
+      "note": "توجد بالفعل إعادة ربط لبعض مسارات المفضلة عند التراجع القديم؛ لا تُغلق هذه الملاحظة لكل المحركات. تغيير معرفات المستندات التابعة بعد نقل أو تسمية مجلد SAF يظل معتمدًا على سلوك المزود ولم يُختبر.",
+      "fix": "تحديث مسارات العناصر والفروع بعد نجاح العملية، وتنظيف الروابط بعد حذف مؤكد.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ExplorerFavoriteStore.kt",
+          "sha256": "f23de6b350cdc7c139f6e13609c1b9f6423db15ca1a411715503924cbe1a12d0",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SafStorageManager.kt",
+          "sha256": "0fcecffc2f28a33e17857d49fd5907d7fb14cb892baf11cc871930bed4ec9d8b",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUndoStore.kt",
+          "sha256": "81c0800013e9f679937b30b858f831e5cf232cadc3be8f9fced0617bc1e19e5a",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "ST-13",
+      "title": "اختبار اسم اختصار الملفات قديم",
+      "status": "open_confirmed",
+      "priority": "low",
+      "problem": "توقع اسم مساحة العمل يختلف عن عنوان مدير الملفات الثابت؛ الفشل نفسه قائم في P10 وP11.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "اعتماد السلوك المطلوب ثم تحديث التوقع مع الحفاظ على اختبار معرف الاختصار.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/WorkspaceShortcutRules.kt",
+          "sha256": "4e174df6bdaf405e230bb343af79b843473e95004eeaec5fdc8feb3f6ca47f31",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/test/java/com/abfilepro/app/core/WorkspaceShortcutRulesTest.kt",
+          "sha256": "f89cded839726af31dccd5fe05966af6132f47971d3d7b74b83e78c4c4d985c1",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-01",
+      "title": "Clean Share قد يستبدل المصدر",
+      "status": "resolved_verified",
+      "priority": "high",
+      "problem": "مع تعطيل تنظيف الاسم، يُكتب الناتج بنفس الاسم والامتداد داخل AB Clean Share. إعادة اختيار ناتج سابق قد تكتب فوقه.",
+      "note": "أُصلحت حماية المصدر والنواتج السابقة في P13: ملفات وسيطة خاصة، اسم نشر مستقل، تحقق من اكتمال الكتابة، وحماية عند الإلغاء وفشل إعادة النتيجة. يشملها نطاق اختبارات Clean Share المحفوظة، 24 من 24 ناجحة.",
+      "fix": "اسم مؤقت فريد، منع تطابق المصدر والوجهة، والتحقق قبل الاعتماد.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CleanShareProcessor.kt",
+          "sha256": "a2ff2c32061db539f6fe4594a2d505e25fec1c2ea7546e80d75144b5ab4b76ea",
+          "unchanged_since_p11": false
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CleanShareOutput.kt",
+          "sha256": "f1022a62a3eed25652fc7aae156f05f222d22462a1df37b10d5d7cc114add5eb",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "أدلة Android المحفوظة المرتبطة بالإصلاح؛ راجع نطاق الاختبارات."
+    },
+    {
+      "id": "DOC-02",
+      "title": "إحداثيات تحرير PDF لا تراعي الدوران",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "المعاينة تستخدم اتجاه عرض الصفحة، بينما الحفظ لا يعكس الدوران وإزاحة CropBox إلى إحداثيات PDF؛ الحجب والعلامات قد تتغير مواضعها.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تحويل إحداثيات موحد؛ اختبار 0/90/180/270 درجة وCropBox غير صفري.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfEditorEngine.kt",
+          "sha256": "a55fe2ecbfc7767ce0c2816f0e025d400a7dab9f2ad361ebf99de97238121ec5",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfViewerUtils.kt",
+          "sha256": "6d4c6c237f776e5353bd69e38ecb9b3190275834cf7259cdac51252dc8cd8e67",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/PdfEditorScreen.kt",
+          "sha256": "15b490a2ff8af39c64ba19a982d07b2c094f7c3cfe22fd7ad504e4f661bbf980",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-03",
+      "title": "استخراج اسم البطاقة مع حقل اتصال فارغ",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "استخدام contains على بريد أو موقع أو هاتف فارغ يستبعد كل مرشحي الاسم وبعض الشركة.",
+      "note": "أعيد التحقق بمنطق محلي في Java: contains على حقل اتصال فارغ يعيد true ويستبعد الاسم. هذا فحص سلوك الحروف، وليس تشغيل OCR كاملًا على Android.",
+      "fix": "التحقق من عدم فراغ الحقل قبل المقارنة واختبار غياب كل حقل منفردًا.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/BusinessCardProcessor.kt",
+          "sha256": "e34d2f1b701c67ef10a5320900e35448e9337e268b8356e947f30ce7be78e471",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-04",
+      "title": "المبالغ ذات الفاصلة العربية",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "المثال «الإجمالي ١٠٠٫٥٠» قد يصل إلى «50»: تُحول الأرقام دون الفاصل العربي ثم يؤخذ آخر جزء مطابق.",
+      "note": "فحص Java محلي استخدم التعبير النمطي المستخرج من المصدر وخريطة تحويل أرقامه: ١٠٠٫٥٠ أعطى 50، و١٬٠٠٠ أعطى 000؛ الصيغ 100.50 و١٠٠.٥٠ و1,000 عملت كحالات ضابطة. يبقى إصلاح فواصل الأرقام العربية مطلوبًا.",
+      "fix": "توحيد الفاصل العشري وفاصل الآلاف العربيين ثم اختبار الإجمالي والضريبة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ReceiptInvoiceProcessor.kt",
+          "sha256": "b5dda38b6c7c5ba828bff9338f6d7f61af51e1799d43cdaefaf920d887f83038",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-05",
+      "title": "Word → PDF يختزل تنسيق الفقرة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "أجزاء الفقرة ذات الأحجام والتغليظ المختلفة تُجمع في نص بتنسيق واحد.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "رسم تنسيق كل run أو بيان حدود التحويل بوضوح واختبار ملف متعدد التنسيقات.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SimpleDocxPdfRenderer.kt",
+          "sha256": "947239496756963254b86e28fdc9a71f068b353a15d558e1976ebc4a26aa4776",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-06",
+      "title": "حاجز تعقيد Word يعتمد على بادئة XML",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "فحص w:tbl حرفيًا قد يفوّت بادئة مختلفة للمساحة نفسها؛ خصائص أخرى معقدة لا يعيدها المحول.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تحليل بالمساحة والاسم المحلي وتحديد الميزات المدعومة واختبارها.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OfficeTools.kt",
+          "sha256": "545ccd78958469ef439befb21e1dd5fe8d3467edb6e6264c91514fcf33d7df13",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-07",
+      "title": "Excel → PDF يفقد تنسيق القيم",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "التواريخ والعملات والمنطقية تظهر بالقيم الخام؛ النص المركب وترتيب الأوراق والحالة المخفية لا تُحفظ بالكامل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "قراءة styles وnumber formats وworkbook وتركيب أجزاء النص قبل الرسم.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OfficeTools.kt",
+          "sha256": "545ccd78958469ef439befb21e1dd5fe8d3467edb6e6264c91514fcf33d7df13",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-08",
+      "title": "PDF → Excel يلصق الكلمات",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "جمع الحروف دون إعادة المسافات الهندسية قد يعطي مثال JaneDoe بدل كلمتين.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "إعادة المسافات وفق هندسة النص وخطوط الأساس واختبار خلايا متعددة الكلمات.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfTableLayoutExtractor.kt",
+          "sha256": "0c80ae63493990253596f8493acf4c0b612ae893a8c418d3e8ea53772a60d6dd",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-09",
+      "title": "صفحات متجاوزة دون بيان",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "وجود جدول واحد يكفي لنجاح تحويل PDF إلى Excel، بينما قد لا تُنشأ أوراق لبقية الصفحات.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "عرض الصفحات المحولة والمتجاوزة والأسباب قبل اعتماد الناتج.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfTableLayoutExtractor.kt",
+          "sha256": "0c80ae63493990253596f8493acf4c0b612ae893a8c418d3e8ea53772a60d6dd",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OfficeTools.kt",
+          "sha256": "545ccd78958469ef439befb21e1dd5fe8d3467edb6e6264c91514fcf33d7df13",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-10",
+      "title": "طبقة البحث في PDF قد تكون ناقصة",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "حدود 2500 كلمة و140 سطرًا وبعض أخطاء الخطوط قد تقلل النص القابل للبحث بصمت؛ TXT قد يكون أكمل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "إعلان التجاوز ومعالجة الخطوط والتحقق من أول وآخر النص الناتج.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OcrProcessor.kt",
+          "sha256": "11a2e2ac075491694d865b391f0c7d211a578b225c71b43f6946c331a810bd1d",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-11",
+      "title": "Stitch يقبل تطابق مساحات بيضاء",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "المطابقة الموحدة قد تتجاوز العتبة فتقترح قص تداخل خاطئ. النسخ الأصلية محفوظة، ولا يعني ذلك فقد نص في كل صورة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "رفض المطابقة منخفضة المعلومات وطلب مراجعة قبل قص كبير.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/StitchProcessor.kt",
+          "sha256": "ca6445199ff973d25389b5d60a2480a061ae100d399d84dee152273111b11205",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-12",
+      "title": "تجاوز صورة تالفة في PDF دون بيان",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "imagesToPDF قد يتجاوز صورة لا تُفك دون التحقق من عدد صفحات الناتج.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "عد المدخلات المقبولة والصفحات وإعلان الناقص قبل الحفظ.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfTools.kt",
+          "sha256": "403e4ea9ffe1f3dedf1671e1fe431f9fc5afa3aed8dcaab742c14e216fdb239e",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-13",
+      "title": "ميزانيات PDF والصور غير مكتملة",
+      "status": "conditional",
+      "priority": "high",
+      "problem": "قد يُحمّل PDF كاملًا قبل حد الصفحات؛ بعض أبعاد الصور الطويلة وتقسيم الملفات قد تستهلك ذاكرة كبيرة. لم يُقَس الانهيار على هاتف.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "حد للبكسلات والبايتات قبل التحميل وتدفق لكل صفحة وقياس ذاكرة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfTools.kt",
+          "sha256": "403e4ea9ffe1f3dedf1671e1fe431f9fc5afa3aed8dcaab742c14e216fdb239e",
+          "unchanged_since_p11": false
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OcrProcessor.kt",
+          "sha256": "11a2e2ac075491694d865b391f0c7d211a578b225c71b43f6946c331a810bd1d",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-14",
+      "title": "نواتج جزئية عند فشل التحويل أو الإلغاء",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "بعض تحويلات PDF وOffice تنشئ نواتج تدريجيًا دون تنظيف كامل أو ملخص استكمال.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "مسارات مؤقتة خاصة بالمحاولة واعتماد واضح وتنظيف عند الإلغاء.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfTools.kt",
+          "sha256": "403e4ea9ffe1f3dedf1671e1fe431f9fc5afa3aed8dcaab742c14e216fdb239e",
+          "unchanged_since_p11": false
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OfficeTools.kt",
+          "sha256": "545ccd78958469ef439befb21e1dd5fe8d3467edb6e6264c91514fcf33d7df13",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-15",
+      "title": "حفظ PDF يعمل على الواجهة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "نسخ واعتماد بعض ملفات التحرير على مسار الواجهة مع غياب حراسة حفظ كافية.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "عمل IO خارج الواجهة وحراسة عملية الحفظ وقياس ملف كبير.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/PdfEditorScreen.kt",
+          "sha256": "15b490a2ff8af39c64ba19a982d07b2c094f7c3cfe22fd7ad504e4f661bbf980",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-16",
+      "title": "عرض سمك الخط يختلف عن تصديره",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "سمك ثابت بالبكسل في المعاينة لا يتناسب مع الرسم على صورة تصدير ذات عرض مختلف.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تعريف السمك بوحدة مرتبطة بالصفحة والتحقق بمقارنة المعاينة والناتج.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-17",
+      "title": "قراءة مدخل كبير بالكامل في المحرر",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "بعض مسارات readBytes والتنظيف لا تضع ميزانية كافية لمدخل مضغوط أو كبير.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تحديد حجم مقبول قبل القراءة وتنظيف الملفات المؤقتة مع حماية المصدر.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfEditorEngine.kt",
+          "sha256": "a55fe2ecbfc7767ce0c2816f0e025d400a7dab9f2ad361ebf99de97238121ec5",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-18",
+      "title": "Smart Pack يقرأ أكثر من العينة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "readText().take(10000) يقرأ الملف كله أولًا، وPDF يُحمّل قبل قصر المعاينة على أول ثلاث صفحات.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "قراءة محدودة متدفقة وميزانية فعلية لعينة PDF.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SmartPackProcessor.kt",
+          "sha256": "476ff83f947089c942d0c97f83f61b1e7c4e8c37dd8b125b39ee76b311662b09",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-19",
+      "title": "Smart Scan وتصنيف العربية",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "المتعرف اللاتيني يحد تطبيق القواعد العربية؛ درجة الثقة استدلال وليست احتمالًا معايرًا.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "اختبار عينة عربية مستقلة وتوضيح معنى الدرجة واستخدام تعرف مناسب.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SmartScanClassifier.kt",
+          "sha256": "598fbfeda32d95fe96020192855dd7c9d1ca73ac0800bb2603271d0b333ae815",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-20",
+      "title": "اكتشاف البيانات الحساسة ليس كاملًا",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "Clean Share يفحص كلمات وقد يفوّت رقم بطاقة أو IBAN أو هاتف مقسم وبعض الأرقام العربية؛ مراجعة الحجب في PDF محدودة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تجميع السياق وتوحيد الأرقام ومعاينة مواضع الحجب قبل المشاركة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CleanShareProcessor.kt",
+          "sha256": "a2ff2c32061db539f6fe4594a2d505e25fec1c2ea7546e80d75144b5ab4b76ea",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-21",
+      "title": "نتيجة الضغط ومسارها لا يثبتان النجاح",
+      "status": "partial",
+      "priority": "medium",
+      "problem": "علامة compressed قد تعكس الطلب؛ بعد حذف ملف سابق وفشل نقل البديل قد يرجع مسار مفقود.",
+      "note": "أُصلح اختيار PDF المضغوط: لا يُقبل إلا ملف صالح بعدد الصفحات المطلوب وأصغر حجمًا؛ الفشل يبقي PDF المنظف. نتيجة الصور ما زالت تضع compressed=options.compress، فلا تثبت تقليل الحجم الفعلي.",
+      "fix": "الاحتفاظ بالأصل حتى اعتماد البديل وقياس الحجم الفعلي والتحقق من وجوده.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CleanShareProcessor.kt",
+          "sha256": "a2ff2c32061db539f6fe4594a2d505e25fec1c2ea7546e80d75144b5ab4b76ea",
+          "unchanged_since_p11": false
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CleanShareOutput.kt",
+          "sha256": "f1022a62a3eed25652fc7aae156f05f222d22462a1df37b10d5d7cc114add5eb",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-22",
+      "title": "النص الطويل يتجاوز حقل Smart Form",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "حد حجم الخط الأدنى لا يضمن احتواء قيمة طويلة داخل الحقل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "التفاف أو قص معلن أو منع الاعتماد حتى مراجعة النص الطويل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SmartFormProcessor.kt",
+          "sha256": "3cadab09c4b1954fa20ca89a7d4461b1d581ad2a491bd3453b1878e1288bb212",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-23",
+      "title": "تغيير لغة الترجمة المطلوبة تلقائيًا",
+      "status": "open_confirmed",
+      "priority": "low",
+      "problem": "إذا تساوت اللغة المختارة والمصدر قد يبدل المسار الهدف إلى لغة أخرى.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "الحفاظ على اختيار المستخدم أو طلب قرار واضح بدل تغييره.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/TranslationProcessor.kt",
+          "sha256": "3cc3b5e624f1a3b0820b762a107fdbefdbf6d8a86ca55e3868fd78c00c0789af",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "DOC-24",
+      "title": "نطاق تنظيف PDF يحتاج تحققًا شاملًا",
+      "status": "conditional",
+      "priority": "high",
+      "problem": "الحجب يستبدل الصفحة بصورة، وهو أقوى من مستطيل تجميلي، لكن metadata والنماذج والمرفقات وActualText تحتاج فحصًا. لم يثبت استرجاع نص صفحة محجوبة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "اختبار محتوى المستند كاملًا بأدوات مستقلة قبل ضمان إزالة البيانات الحساسة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CleanShareProcessor.kt",
+          "sha256": "a2ff2c32061db539f6fe4594a2d505e25fec1c2ea7546e80d75144b5ab4b76ea",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-01",
+      "title": "تكرار الدواء بعد رفض الإشعار أو فوات الموعد",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "رفض POST_NOTIFICATIONS يعود قبل جدولة اليوم التالي؛ مواعيد ماضية قد تُستبعد عند الاستعادة دون إنشاء الموعد القادم.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "فصل تقدم التكرار عن تسليم الإشعار ومعالجة الجرعة الفائتة؛ اختبار رفض الإشعار وإغلاق الهاتف.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/HealthAlarmReceiver.kt",
+          "sha256": "ad9f7d7518b60c70491b940804961455b1954231d7f35d5820fa7fbdd1c6a2aa",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/HealthAlarmScheduler.kt",
+          "sha256": "14a31d30d2c89af29e8b9b1bd7c06387030941c3a25b9c24fc03f03b88055496",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-02",
+      "title": "حفظ قائمة قديمة فوق تحديثات أحدث",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "الشاشة تحتفظ بالقائمة؛ تحديث Receiver لموعد الدواء قد يُستبدل عند حفظ نسخة الشاشة القديمة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تحديث ذري للعنصر بإصدار حديث ودمج التغييرات في المخزن الحالي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/AssistantRepository.kt",
+          "sha256": "d6a5a3f0510476cc83b2f531f3ad5899652042150fd1ab249f84669a19dd1d29",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/HealthAlarmReceiver.kt",
+          "sha256": "ad9f7d7518b60c70491b940804961455b1954231d7f35d5820fa7fbdd1c6a2aa",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt",
+          "sha256": "b01fa3da30075aad27b0caa588cabfee8b05e381eb46624b44abc117686df4a6",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-03",
+      "title": "اختفاء مهام متأخرة غير منجزة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "المهمة المتأخرة قد لا تظهر ضمن اليوم أو القادم أو المكتمل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "قسم متأخرات واضح مع الإبقاء عليها قابلة للتنفيذ والتعديل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantTasksScreen.kt",
+          "sha256": "2eb5037ec9e89c521db0381b28843fba95b919825f1ea361c71a4a3017f70641",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-04",
+      "title": "أزرار الرئيسية لا تطبق منطق الصحة",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "الإكمال العام قد يجعل الدواء مكتملًا نهائيًا؛ التأجيل يربط المهام ولا يحدث موعد الصحة بالطريقة المطلوبة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "توجيه الإجراء إلى نوع العنصر وتطبيق سياسة الجرعة والتكرار والتأجيل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt",
+          "sha256": "b01fa3da30075aad27b0caa588cabfee8b05e381eb46624b44abc117686df4a6",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/HealthMedicationScreen.kt",
+          "sha256": "10542a58b1faf676a13003203efe2e92ed4209cc27be8464a953709e39430e6c",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-05",
+      "title": "موعد قادم بلا تنبيه إذا مضت نافذته",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "اختيار موعد بعد خمس دقائق مع تنبيه قبله بخمس عشرة دقيقة يترك وقت المنبه في الماضي. الأمر يشمل المستندات.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "سياسة تنبيه فوري أو أقرب وقت صالح وإظهار الوقت الفعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/TaskAlarmScheduler.kt",
+          "sha256": "49a30387c5b7f9fb7e77a1b07a8ee36d2bc08f98c788f2e6f98f9a9fb0d7f425",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalAlarmScheduler.kt",
+          "sha256": "002174a399de4c29387aa933f6efbf193b5e7c7fa91b16f7f265eabd69dad4ba",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantCalendarScreen.kt",
+          "sha256": "fca3f0a5c67128ba123b050209645690a84573d3d15887621a0db4e816e89721",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-06",
+      "title": "التكرار الصحي لا يتكيف مع المنطقة الزمنية",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "الاعتماد على epoch سابق قد لا يحافظ على الساعة اليومية التي اختارها المستخدم بعد تغيير المنطقة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تخزين الوقت المدني ومنطقة أو سياسة واضحة وإعادة حساب الموعد التالي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/HealthEntryCodec.kt",
+          "sha256": "af2f23bc4403d6f0377e3f72ac94be2ebde0ffb2c74fecfee877f585f4ebf102",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/HealthAlarmScheduler.kt",
+          "sha256": "14a31d30d2c89af29e8b9b1bd7c06387030941c3a25b9c24fc03f03b88055496",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-07",
+      "title": "تاريخ المستند المدني قد يتغير",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "تخزين التاريخ كوقت التاسعة صباحًا epoch قد يعرض يومًا مختلفًا في منطقة أخرى.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تخزين LocalDate وتوليد توقيت التنبيه منفصلًا.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/DocumentRenewalCodec.kt",
+          "sha256": "b705db3c82912e8966fcc7659a40a591f2ee3250e1dbc66dd661ed9b89b1df3d",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt",
+          "sha256": "325cecad826a0192cb720a8f79acaec1a3b8a2885058fc602f985cd07d528552",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-08",
+      "title": "إحداثيات صلاة خارج النطاق المدعوم",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "GPS يقبل latitude 69.65، بينما الحساب يشترط حدًا 66 دون معالجة مناسبة. لا يعني ذلك فشل الحساب في القاهرة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "التحقق من النطاق وإتاحة طريقة معتمدة للمناطق العالية أو رسالة قابلة للاستعادة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/PrayerTimesCalculator.kt",
+          "sha256": "367c2053715790fd489809bc0efcd93e5fbc17978d1f68cfb14e5844ae14d7d4",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantModuleScreens.kt",
+          "sha256": "0f0140db7019df9b439c32625355ead96b8907cdeace3ba48cf92d628b2599b4",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-09",
+      "title": "استعادة منبه الصلاة بعد منح الصلاحية",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "استعادة صلاحية المنبه الدقيق لا تعيد جدولة الصلاة في بعض مسارات البث.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "توحيد الاستعادة واختبار منح وسحب الصلاحية ثم إعادة التشغيل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/PrayerRescheduleReceiver.kt",
+          "sha256": "2ca4a28b8a6e86e34e4a4efa64e628fb8a7dc7798223cf0547e517f63cf8964c",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/AndroidManifest.xml",
+          "sha256": "23aea76d9a799bfa12817f6871aa593a8eced15359fb0aaf8288e61c80520944",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-10",
+      "title": "إعادة الجدولة تمحو متابعة الصلاة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "إعادة الجدولة بعد الصلاة وقبل موعد المتابعة قد تلغي متابعة لم يُنشأ بديلها.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "حفظ حالة المتابعة وجدولتها مستقلًا قبل تنظيف المنبهات.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/PrayerAlarmScheduler.kt",
+          "sha256": "b636035e5bf50f5a6abe7cff01088ba1d33b11b12c3fe3462603c793fa491342",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-11",
+      "title": "فشل الصورة في الكاميرا الذكية بلا استعادة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "خطأ تحميل الصورة قد يترك انتظارًا أو فشلًا دون حالة خطأ مفيدة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "معالجة الصورة غير المتاحة وإتاحة إعادة الاختيار والمحاولة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/SmartPortraitCamera.kt",
+          "sha256": "5199defb18c623bd1f03c7895665133c9da976a040d44237ef95706983f61c44",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-12",
+      "title": "الخروج من التسجيل يحذف الملف الجاري",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "التخلص من الشاشة ينظف التسجيل النشط دون حفظ تلقائي أو قرار حفظ أو تجاهل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "حماية المسودة وإجراء خروج واضح أو استعادة لاحقة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/OperationalVoiceRecorder.kt",
+          "sha256": "97b305b6a25029ffd03d9e32f1e252bb32e51d3105c786fcf21381b40961a323",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-13",
+      "title": "ربط مرفق الاجتماع مؤقت",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "الملف المعلق والهدف قد يفقدان الارتباط عند إعادة إنشاء الشاشة.",
+      "note": "الارتباط بالمرفق في حالة remember غير دائمة. الأثر مشروط بإعادة إنشاء الشاشة أو العملية؛ لم يُجر اختبار استعادة Android في هذه الجولة.",
+      "fix": "حالة قابلة للاستعادة بمعرف الاجتماع والملف والتحقق قبل الإضافة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantMeetingsScreen.kt",
+          "sha256": "9ddbfd3a5312730a342dc7cdd9980edd7e2f994aa9a271ff3a7907961c2f90fa",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-14",
+      "title": "استيراد وتحضير صوت وحفظ JSON على الواجهة",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "أعمال متزامنة ثقيلة قد تؤخر الصفحة؛ لم يُقَس ANR جديد.",
+      "note": "مسارات IO متزامنة موجودة في الصوت وحفظ المخزن. البطء المحتمل يعتمد على حجم المدخل والجهاز؛ لا يوجد قياس جديد لزمن الصفحة أو ANR.",
+      "fix": "نقل العمل الثقيل إلى IO مع تقدم وإلغاء وقياس على جهاز متوسط.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/MeetingMinutesStore.kt",
+          "sha256": "a8a7e5154cf63b4dfbf4f9a5381c9702e63834b34b9e91b207dd6e0a347787c1",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/OperationalVoiceRecorder.kt",
+          "sha256": "97b305b6a25029ffd03d9e32f1e252bb32e51d3105c786fcf21381b40961a323",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/AssistantRepository.kt",
+          "sha256": "d6a5a3f0510476cc83b2f531f3ad5899652042150fd1ab249f84669a19dd1d29",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-15",
+      "title": "السعة القصوى تسقط بيانات بصمت",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "take(2000) في مخازن مشتركة قد يُسقط الأقدم عند العنصر 2001 دون قرار أو أرشفة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "منع الإسقاط الصامت، وتقسيم التخزين أو بيان السعة وترحيل محافظ على البيانات.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/AssistantRepository.kt",
+          "sha256": "d6a5a3f0510476cc83b2f531f3ad5899652042150fd1ab249f84669a19dd1d29",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "AS-16",
+      "title": "أزرار ومسارات ولغات غير مكتملة",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "بعض الإعدادات فارغة؛ إضافة تذكير مستند تقتصر على طلب صلاحية؛ الملاحظات الكاملة وبعض التسميات غير موحدة لغويًا.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "ربط كل زر بوظيفته أو بيان حالته وتوحيد الموارد والتحقق بلغات التطبيق.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantCalendarScreen.kt",
+          "sha256": "fca3f0a5c67128ba123b050209645690a84573d3d15887621a0db4e816e89721",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantNotesScreen.kt",
+          "sha256": "238f87f752e02b373f5834a5ff9001d6ff3917beff684fafba2b620a21741194",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt",
+          "sha256": "325cecad826a0192cb720a8f79acaec1a3b8a2885058fc602f985cd07d528552",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "FAM-01",
+      "title": "اختلاط بيانات عائلتين بعد التبديل",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "تغيير الكود يمسح التوكن فقط؛ البيانات المحلية المشتركة قد تُرفع للعائلة الجديدة، وقد تُطبَّق استجابة قديمة بعد التبديل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تقسيم المخازن بحسب العائلة وحراسة الطلبات بهوية الجلسة دون حذف بيانات العائلة الأصلية.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyLinkStore.kt",
+          "sha256": "d5b2cc89d8482a910ba91bc136a9ce8f0242c64072b36a6ef16d7d11331bf724",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/ShoppingListSyncStore.kt",
+          "sha256": "5ae405dc251b0e1687d360d928e4448478b1455ae556b104c07690f72bb24da0",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "FAM-02",
+      "title": "حد 500 دون صفحات يحجب الجديد",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "الخادم يعيد أقدم 500، والعميل يحد القائمة دون pagination؛ الجديد أو سجلات الحذف قد لا تصل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "Cursor وترتيب محدد وتمرير كل التغييرات؛ اختبار العنصر 501 والتزامن بعد انقطاع.",
+      "evidence": [
+        {
+          "path": "family-sync-server/main.py",
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "FAM-03",
+      "title": "دمج المزامنة يستبدل تغييرًا أحدث",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "قراءة ثم دمج ثم كتابة القائمة كلها في الخلفية قد تطغى على تعديل واجهة حدث بين القراءة والكتابة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "معاملة تحديث ودمج داخل أحدث مخزن مع إصدار لكل عنصر.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/AssistantRepository.kt",
+          "sha256": "d6a5a3f0510476cc83b2f531f3ad5899652042150fd1ab249f84669a19dd1d29",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "FAM-04",
+      "title": "إعادة ربط معرف جهاز قد تستبدل مفتاحه",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "أثناء نافذة الربط المفتوحة، معرفة Device ID قد تتيح استبدال اعتماد الجهاز. مفتاح عائلة أخرى لا يُقبل عمومًا؛ ليست دعوى تسريب مفتوح لكل الإنترنت.",
+      "note": "الخطر مشروط بمعرفة Device ID وبقاء نافذة الربط مفتوحة. V2 يتحقق من العائلة وبصمة التوكن والجهاز؛ الفحص المحلي رفض العائلة والتوكن والجهاز الخاطئ. لا توجد دعوى وصول عام لعائلات أخرى.",
+      "fix": "إثبات ملكية الجهاز القديم أو موافقة صاحب الصلاحية قبل استبدال المفتاح.",
+      "evidence": [
+        {
+          "path": "family-sync-server/main.py",
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "NET-01",
+      "title": "JSON تالف يتجاوز استرجاع الشبكة",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "HTTP 200 مع JSON غير صالح قد يفشل بعد الخروج من نطاق fallback والكاش.",
+      "note": "الاسترجاع يغطي فشل الطلب، بينما تحليل JSON يتم لاحقًا في بعض المسارات. الأثر مشروط باستجابة HTTP ناجحة ذات محتوى غير صالح؛ لم تُستخدم خدمة أسعار حيّة.",
+      "fix": "احتواء التحقق والتحليل ضمن مسار الاسترجاع مع بيان عمر القيمة المخزنة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/CurrencyRateService.kt",
+          "sha256": "eb2dda2fabc77a45843aa19dd8d0825755990f501e6aafb02c69f3c3e9634fe0",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/GoldPriceService.kt",
+          "sha256": "27a8775e05b95a68f18a1e838c128dd6ecd32d7c96bd27d1e0aee8734375d2bf",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "MKT-01",
+      "title": "تنبيه السعر يُستهلك دون تسليمه",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "رفض صلاحية الإشعارات قد يسجل التنبيه triggered؛ منحها لاحقًا لا يعيد تسليمه.",
+      "note": "المشكلة ما زالت في MarketAlertWorker، وثبت نفس النمط في ProductPriceAlertWorker: notify قد يعود عند رفض الصلاحية ثم تُحفظ triggered=true. أُضيفت هذه الحالة إلى نفس الملاحظة دون عدها مشكلة جديدة.",
+      "fix": "فصل تحقق الشرط عن نجاح التسليم وإعادة المحاولة دون تكرار.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/MarketAlertWorker.kt",
+          "sha256": "f12b6633d4118fbb4f064c5ef3a9298a8c2173442d91cba29c1ff14a682f49f5",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/ProductPriceAlerts.kt",
+          "sha256": "09f963e5f11f9eabe1fae4800881d2b36369ac01969c0aaed52e6424de559141",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "PRC-01",
+      "title": "هوية منتج قد ترتبط بسعر آخر",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "نافذة استخراج HTML واسعة قد تجمع اسم أو رابط منتج مع سعر جار مختلف؛ ثبت المنطق بعينة محلية، لا بمراقبة أسعار حية.",
+      "note": "آلية نافذة HTML الواسعة ما زالت قائمة. صحة هوية المنتج مع سعره تحتاج عينة عروض منظَّمة؛ لا توجد مراقبة أسعار حية ضمن هذه الجولة.",
+      "fix": "ربط الاسم والرابط والسعر بنفس عنصر العرض والتحقق من التاريخ والمصدر.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/ProductPriceComparisonService.kt",
+          "sha256": "a05481c1ed4660f506442f8c156377063c64ef1cb7be1e5d79441fd6da761585",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "FAM-05",
+      "title": "ساعة جهاز مستقبلية تتغلب على تعديل أحدث",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "ترتيب LWW بساعة الجهاز قد يعطي تعديلًا من ساعة خاطئة الأفضلية على تعديل لاحق بجهاز آخر. ليس قفلًا دائمًا بعد قبول الطابع الزمني.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "إصدار خادم أو ترتيب منطقي وسياسة تعارض؛ اختبار اختلاف الساعات والعمل دون اتصال.",
+      "evidence": [
+        {
+          "path": "family-sync-server/main.py",
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SEC-UPD-01",
+      "title": "التحديث الإلزامي قد يمنع الاستعادة",
+      "status": "conditional",
+      "priority": "high",
+      "problem": "واجهة إلزامية بلا خروج قد تعيق التطبيق عند فشل الشبكة أو الهاش أو الصلاحية أو التوافق مع التوقيع؛ الحالة مرتبطة بإعداد التحديث.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "وضع قابل للاستعادة، إعادة محاولة واضحة وفحص توافق الحزمة والتوقيع.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/MainActivity.kt",
+          "sha256": "f2f5020aba9fc58601fe14017bb9cb83a7d743c055ca9eab46c66d929f55fb84",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/AppUpdateManager.kt",
+          "sha256": "cc817225625da8f4d438a27e8805cd0a6cf6016f10517867c2b4ddf6cf065084",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SEC-QR-01",
+      "title": "كاميرا QR تحتاج فصلًا عند تبديل التبويب",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "إغلاق المحلل والمنفذ لا يكفي إذا بقي الربط بعمر Activity حيًا بعد ترك التبويب.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "فصل الاستخدامات المملوكة للشاشة وحراسة callbacks واختبار التبديل السريع.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/BarcodeScreen.kt",
+          "sha256": "09490e063781a8380e06359155a3df08ec502f8555d1f4aecfd189245784b0dd",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SEC-UPD-02",
+      "title": "فشل تحديث قد يترك ملف part كبيرًا",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "بعض استثناءات التنزيل والتحقق تترك ملفًا جزئيًا؛ الحد 350 MiB.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تنظيف نواتج المحاولة الفاشلة مع الاحتفاظ بملف APK المتحقق.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/AppUpdateManager.kt",
+          "sha256": "cc817225625da8f4d438a27e8805cd0a6cf6016f10517867c2b4ddf6cf065084",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SEC-UPD-03",
+      "title": "قناة التحديث الافتراضية لا تستهدف P11",
+      "status": "conditional",
+      "priority": "medium",
+      "problem": "مصدر الخادم يحدد افتراضيًا حزمة تجربة P8؛ حزمة P11 والإنتاج تحتاج إعدادًا صريحًا. الإعداد الحي لم يُقرأ.",
+      "note": "المصدر المرفق للقناة الافتراضية يستهدف حزمة P8؛ P13 التجريبية لها حزمة مستقلة. إعداد الخادم المنشور لم يُقرأ، لذا تبقى الملاحظة خاصة بالإعداد والتحقق من القنوات.",
+      "fix": "فصل قنوات الحزمة والتوقيع والإصدار واختبار التجربة والإنتاج.",
+      "evidence": [
+        {
+          "path": "family-sync-server/main.py",
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/build.gradle.kts",
+          "sha256": "f9bf85ef413bca1d2fcf5d29594cf25e9248cba47ab4a192647a8e8417d3405d",
+          "unchanged_since_p11": false
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SEC-UI-01",
+      "title": "الرئيسية العربية لا تتبع الثيم",
+      "status": "open_confirmed",
+      "priority": "medium",
+      "problem": "المسار المصور الافتراضي له ألوان ثابتة؛ لا يتبع الوضع الداكن وتكبير الخط مثل عناصر واجهة فعلية.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "الحفاظ على الشكل مع نسخة مناسبة للثيم أو عناصر حقيقية واختبار الوصول.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt",
+          "sha256": "b01fa3da30075aad27b0caa588cabfee8b05e381eb46624b44abc117686df4a6",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/AssistantReferenceVisuals.kt",
+          "sha256": "fbbd1ca9382658e08e92a55671e24f7b3cec0f1bdd2044d256041dc792ffb8e1",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SEC-UI-02",
+      "title": "تسميات ثابتة ونقص فرنسي محدود",
+      "status": "open_confirmed",
+      "priority": "low",
+      "problem": "توجد تسميات خارج الموارد وثلاثة مفاتيح فرنسية قديمة ترجع للإنجليزية. المفاتيح الحرفية العربية والإنجليزية متاحة.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "توحيد الموارد وإكمال الفرنسية واختبار المفاتيح الديناميكية.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/BarcodeScreen.kt",
+          "sha256": "09490e063781a8380e06359155a3df08ec502f8555d1f4aecfd189245784b0dd",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScannerProCamera.kt",
+          "sha256": "b81ff898f33e871d18bb4e55471968600f2f941da2c333aeb329dd726d282c53",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-01",
+      "title": "إعادة تصوير وجه البطاقة تغير الترتيب",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "إعادة الأمام تحذف العنصر الأول ثم تضيف البديل في النهاية: [أمام، خلف] تصبح [خلف، أمام جديد]. الإلغاء يأتي بعد حذف الأصل؛ Photo غير الأخير يتأثر بالترتيب أيضًا.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "الاحتفاظ بالأصل ومكانه حتى نجاح البديل؛ اختبار الأمام والخلف والإلغاء والفشل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-02",
+      "title": "إعادة صفحة Book تضيف صفحتين بدل خانتها",
+      "status": "conditional",
+      "priority": "low",
+      "problem": "الكود غير المستخدم يحذف صفحة ويضيف نصفين في النهاية: أربع صفحات قد تصبح خمسًا. Book غير متاح ضمن SmartScanHub المسلّم.",
+      "note": "مسار Book موجود في الكود لكنه غير متاح في واجهة SmartScanHub الحالية. تُحفظ الملاحظة كقيد قبل إتاحته، ولا تُحسب عطلًا يواجه المستخدم في المسارات الحالية.",
+      "fix": "قبل إتاحته، تعريف الإعادة للنصف أو الصورة الأصلية واستبدال الخانات المناسبة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-03",
+      "title": "الصورة الكبيرة تُفك كاملة قبل التصغير",
+      "status": "conditional",
+      "priority": "high",
+      "problem": "صورة 8000×6000 قد تُحمّل كاملة مع نسخة 4608×3456؛ نموذج ARGB يقدر النسختين بنحو 244 MiB دون مخازن إضافية. هذا تقدير وليس قياس تعطل هاتف.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "عينة فك وميزانية بكسلات قبل التحميل وقياس ذاكرة على أجهزة متعددة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-04",
+      "title": "حفظ Batch كصور يترك جزءًا منشورًا عند الفشل",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "كل JPG يُعتمد قبل التالي؛ الفشل أو الإلغاء يعيد المراجعة كاملة دون إزالة الصور المكتملة، وإعادة المحاولة قد تكررها.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "تجهيز الدفعة قبل اعتمادها أو استكمال جزئي واضح دون تكرار؛ اختبار فشل الصفحة الثانية.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-05",
+      "title": "القص اليدوي يقبل شكلًا غير صالح",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "قيود الزوايا لا تتحقق من التحدب والمساحة؛ قبول شكل مقعر ثبت بنموذج منطقي. كتابة JPEG لا تثبت صحة المنظور قبل حذف المصدر.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "فحص الشكل عند الاعتماد ورفضه مع الحفاظ على الأصل؛ اختبار تقاطع الزوايا.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/DocumentCropGeometry.kt",
+          "sha256": "c3ec11c48495c541e31efd4d138e2748562b920f5913ca599c8b805bd5b9746b",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-06",
+      "title": "إلغاء قص المستند الفردي له سباق حذف",
+      "status": "conditional",
+      "priority": "high",
+      "problem": "العزل في P11 يخص Batch؛ Document قد يستعيد أصل المسودة عند الإلغاء ثم يحذفه المعالج المتأخر ويرفض اعتماد البديل.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "حماية الأصل وحراسة اعتماد النتيجة بهوية الطلب في Patch منفصل.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-07",
+      "title": "إعادة تأكيد حدود Document تقص الحواف مجددًا",
+      "status": "open_confirmed",
+      "priority": "high",
+      "problem": "الحد الافتراضي 5.5% من كل طرف يُطبق عند إعادة الفتح بعد تسوية المنظور؛ التأكيد دون تغيير يقص نحو 11% من العرض والطول. إصلاح Batch لا يشمل هذا الوضع.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "فتح الصفحة المسواة بإطار كامل واختبار تكرار التأكيد دون تغيير.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-08",
+      "title": "Smart Crop المتأخر يعيد حالة قديمة",
+      "status": "conditional",
+      "priority": "high",
+      "problem": "العملية تلتقط صفحة وقائمة قديمتين بينما يظل الحذف والترتيب والتعديل متاحًا؛ النتيجة قد تطغى على الأحدث أو تعيد صفحة حُذف ملفها.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "دمج نتيجة الصفحة بمعرف وإصدار داخل أحدث قائمة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-09",
+      "title": "تهيئة الكاميرا قد تصل بعد الخروج",
+      "status": "conditional",
+      "priority": "high",
+      "problem": "listener متأخر قد يربط الكاميرا بعمر Activity بعد التخلص من الشاشة؛ الفصل السابق يشمل المزود الذي وصل بالفعل فقط.",
+      "note": "يشمل خطر وصول تهيئة CameraX بعد التخلص من الشاشة ScannerProCamera وSmartPortraitCamera. الفصل يخص المزود الذي وصل بالفعل؛ listener المتأخر يحتاج حراسة للجلسة. لم يُجر اختبار توقيت على هاتف.",
+      "fix": "حراسة الجلسة والتخلص وفصل الاستخدامات المملوكة للشاشة.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScannerProCamera.kt",
+          "sha256": "b81ff898f33e871d18bb4e55471968600f2f941da2c333aeb329dd726d282c53",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/SmartPortraitCamera.kt",
+          "sha256": "5199defb18c623bd1f03c7895665133c9da976a040d44237ef95706983f61c44",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    },
+    {
+      "id": "SCAN-10",
+      "title": "مصغرة المراجعة لا تتبع تعديل التعليق وحده",
+      "status": "open_confirmed",
+      "priority": "low",
+      "problem": "مفاتيح تصيير المصغرة لا تشمل annotations؛ تعديل النص أو اللون أو المكان قد لا يظهر في المصغرة بينما يظهر في الناتج.",
+      "note": "الملاحظة باقية في P13 ضمن المسار المحدد. تحقق المصدر ومطابقته يثبتان بقاء المنطق؛ ظهور الأثر على الهاتف يحتاج اختبار السيناريو الوظيفي.",
+      "fix": "إضافة بيانات التعليق لمفتاح التصيير ومقارنة المصغرة والتصدير.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94",
+          "unchanged_since_p11": true
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/ScanProcessor.kt",
+          "sha256": "c23870c5ec2be6e5915734e75bfd745157112f69f115bbce5ab851813b4c6f7a",
+          "unchanged_since_p11": true
+        }
+      ],
+      "origin": "P11",
+      "verification": "اختبار وظيفي مقترح وفق السيناريو المذكور، مع التحقق من المدخل والناتج وبيانات المصدر."
+    }
+  ],
+  "new_findings": [
+    {
+      "id": "ST-N01",
+      "title": "قائمة SAF فارغة عند فشل الاستعلام قد تؤدي لحذف مصدر غير منسوخ",
+      "priority": "high",
+      "status": "conditional",
+      "problem": "listChildren يعامل Cursor=null كقائمة فارغة. عند مسار النقل البديل لمجلد يمكن إنشاء وجهة فارغة واعتمادها ثم حذف المصدر. Android يسمح بإرجاع null عند تعذر مزود البيانات؛ تحقق ذلك يعتمد على المزود ومسار التنفيذ.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SafStorageManager.kt",
+          "lines": [
+            160,
+            191
+          ],
+          "sha256": "0fcecffc2f28a33e17857d49fd5907d7fb14cb892baf11cc871930bed4ec9d8b"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SafStorageManager.kt",
+          "lines": [
+            275,
+            280
+          ],
+          "sha256": "0fcecffc2f28a33e17857d49fd5907d7fb14cb892baf11cc871930bed4ec9d8b"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SafStorageManager.kt",
+          "lines": [
+            309,
+            326
+          ],
+          "sha256": "0fcecffc2f28a33e17857d49fd5907d7fb14cb892baf11cc871930bed4ec9d8b"
+        }
+      ],
+      "fix": "تمييز فشل التعداد عن مجلد فارغ، وإيقاف النقل قبل الحذف إلى أن يثبت اكتمال النسخ.",
+      "verification": "مزود اختبار يعيد null لتعداد مجلد غير فارغ: يجب فشل النقل وبقاء الأصل ومحتواه كاملين.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "ST-N02",
+      "title": "إنشاء ZIP قد ينجح مع إسقاط محتوى لم يُقرأ",
+      "priority": "medium",
+      "status": "conditional",
+      "problem": "استخدام listFiles().orEmpty أثناء إضافة المجلد إلى ZIP يحول فشل التعداد إلى نجاح بمجلد فارغ دون بيان محتوى ناقص.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/DeviceStorageManager.kt",
+          "lines": [
+            212,
+            220
+          ],
+          "sha256": "bd6cae8b5aed9959d73113524521d6e6491baf971adb00c2b2a2a5826861721c"
+        }
+      ],
+      "fix": "فشل صريح عند تعذر تعداد المصدر وملخص اكتمال الأرشيف.",
+      "verification": "تعداد مجلد يفشل أثناء الضغط؛ لا يُعرض الناتج بوصفه نسخة كاملة.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "ST-N03",
+      "title": "تراجع النقل أو التسمية القديم قد يحرك ملفًا بديلًا",
+      "priority": "medium",
+      "status": "conditional",
+      "problem": "FileUndoStore يسجل المسارات فقط. إذا استُبدل ملف المسار الحالي بعد العملية فقد يعيد التراجع نقل البديل. إصلاح ملكية OperationHistoryStore لا يغطي هذا النوع من السجلات.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUndoStore.kt",
+          "lines": [
+            14,
+            18
+          ],
+          "sha256": "81c0800013e9f679937b30b858f831e5cf232cadc3be8f9fced0617bc1e19e5a"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUndoStore.kt",
+          "lines": [
+            35,
+            65
+          ],
+          "sha256": "81c0800013e9f679937b30b858f831e5cf232cadc3be8f9fced0617bc1e19e5a"
+        }
+      ],
+      "fix": "إثبات هوية العنصر قبل التراجع مع إبقاء سجل متعذر قابل للمراجعة.",
+      "verification": "استبدال العنصر بملف آخر قبل Undo؛ يبقى الملف البديل في مكانه.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "ST-N04",
+      "title": "تغير المصدر بعد نسخه غير محمي في النقل البديل لـSAF والمسار القديم",
+      "priority": "high",
+      "status": "conditional",
+      "problem": "النقل البديل يحذف المصدر بعد النسخ دون التحقق من أن محتواه وهويته لم يتغيرا. تعديل ملف أو إضافة عنصر في هذه النافذة قد يفقد النسخة الأحدث. محرك DeviceStorageManager المصحح مستقل عن هذين المسارين.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/SafStorageManager.kt",
+          "lines": [
+            275,
+            283
+          ],
+          "sha256": "0fcecffc2f28a33e17857d49fd5907d7fb14cb892baf11cc871930bed4ec9d8b"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUtils.kt",
+          "lines": [
+            335,
+            356
+          ],
+          "sha256": "8e4dfb3057ccb7effbf7ce7e63a5fa761c38e2c6f883ac9dab7819fb59e21d5e"
+        }
+      ],
+      "fix": "اعتماد إثبات اكتمال النسخ وثبات المصدر قبل الحذف، مع حفظ النسخة المكتملة عند الفشل.",
+      "verification": "تعديل المصدر أو إضافة ملف بعد نسخه وقبل الحذف؛ الحفاظ على المحتوى الجديد والإبلاغ عن نقل جزئي.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "ST-N05",
+      "title": "إعادة محاولة التراجع داخل مجلد بعد حذف جزئي قد تتعذر",
+      "priority": "medium",
+      "status": "conditional",
+      "problem": "إذا حُذف ابن واحد ثم تعذر حذف ابن آخر داخل الناتج نفسه، تبقى بصمة المجلد الأصلية. إعادة المحاولة ترى شجرة مختلفة بسبب حذف العملية نفسها وترفضها. اختبار التراجع الجزئي المحفوظ يغطي نواتج منفصلة.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OwnedOutputSnapshot.kt",
+          "lines": [
+            52,
+            76
+          ],
+          "sha256": "8db28763a42cd35531e6995529d4bbf990ca6c23d11ba8f2902f721f0200586e"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/OperationHistoryStore.kt",
+          "lines": [
+            105,
+            122
+          ],
+          "sha256": "16d43e8286c07b58834089bec6729b9369920ec6eca189ec2e0dd4d61ad12863"
+        }
+      ],
+      "fix": "تسجيل تقدم آمن لكل عنصر دون منح ملكية لأي ملف جديد، أو إظهار إكمال يدوي واضح.",
+      "verification": "إفشال حذف الابن الثاني ثم إعادة المحاولة؛ استكمال أبناء العملية فقط وحفظ أي إضافة جديدة.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "DOC-N01",
+      "title": "PDF إلى صورة طويلة يستخدم صيغة لا يقبلها محرك الرسم",
+      "priority": "high",
+      "status": "open_confirmed",
+      "problem": "صفحة الرسم تُنشأ بصيغة RGB_565 ثم تُمرر إلى PdfRenderer.Page.render، الذي يشترط ARGB_8888. المصدر الرسمي لـAndroid يرفض الصيغة الأخرى. إصلاح compressPdf في P13 لا يشمل pdfToLongImage.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/PdfTools.kt",
+          "lines": [
+            243,
+            257
+          ],
+          "sha256": "403e4ea9ffe1f3dedf1671e1fe431f9fc5afa3aed8dcaab742c14e216fdb239e"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/PdfToolsScreen.kt",
+          "lines": [
+            188,
+            200
+          ],
+          "sha256": "9d71942b983197a3e920c9b6e0199e06b4153994439ea33a33b2479a04c55c0a"
+        }
+      ],
+      "fix": "تصحيح صيغة صفحة الرسم مع الحفاظ على ميزانية الذاكرة والمقاس وتحرير الموارد.",
+      "verification": "تشغيل الزر على PDF من صفحة ثم عدة صفحات على Android، وفتح JPG الناتج والتحقق من اكتماله.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "SCAN-N01",
+      "title": "الرجوع من محرر Batch قد يعيد قص حواف صفحة مسواة",
+      "priority": "high",
+      "status": "open_confirmed",
+      "problem": "بعد نجاح تسوية الصفحة تُمسح حالة الحدود، والرجوع من EDITOR إلى BOUNDS قد يعيد حد .055 الافتراضي للصورة المسواة. التأكيد دون تغيير يقص الحواف مجددًا. مسار Review → Edit Bounds له إطار كامل في Batch ويحافظ على اختبار P11 السابق.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "lines": [
+            308,
+            314
+          ],
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "lines": [
+            343,
+            353
+          ],
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "lines": [
+            1331,
+            1337
+          ],
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "lines": [
+            1489,
+            1492
+          ],
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "lines": [
+            2036,
+            2039
+          ],
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94"
+        }
+      ],
+      "fix": "تمييز الصفحة المسواة وفتحها بإطار كامل في كل رجوع إلى الحدود.",
+      "verification": "Batch: قص → محرر → رجوع → متابعة دون تعديل؛ مقارنة الصورة وحواف النص قبل وبعد، مع إعادة اختبار Review → Edit Bounds.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "AS-N01",
+      "title": "فشل استيراد صوت اجتماع يترك ملفًا جزئيًا غير مفهرس",
+      "priority": "medium",
+      "status": "conditional",
+      "problem": "importAudio ينشئ الملف ثم ينسخ المحتوى داخل runCatching. فشل النسخ يعيد null دون تنظيف الملف الجاري، وقائمة المرفقات لا تُحدَّث.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/MeetingMinutesStore.kt",
+          "lines": [
+            67,
+            79
+          ],
+          "sha256": "a8a7e5154cf63b4dfbf4f9a5381c9702e63834b34b9e91b207dd6e0a347787c1"
+        }
+      ],
+      "fix": "مسودة خاصة بالمحاولة وتنظيفها عند الفشل قبل إضافتها لسجل الاجتماع.",
+      "verification": "إفشال قراءة الصوت في منتصف النقل؛ لا يبقى ملف جزئي أو رابط مرفق مفقود.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "FAM-N01",
+      "title": "المزامنة قد تقصر تفاصيل قديمة أو مستوردة إلى 1200 حرف",
+      "priority": "medium",
+      "status": "conditional",
+      "problem": "المخزن يقبل تفاصيل حتى 4000 حرف، بينما decodeEntry يقصرها إلى 1200. استجابة بنفس الطابع الزمني يمكن أن تستبدل النص الأطول. حوارات الإدخال الحالية تقصر النص عادة إلى 180 حرفًا، لذا الأثر هنا على بيانات قديمة أو مستوردة أو مدخلات API.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "lines": [
+            207,
+            228
+          ],
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "lines": [
+            388,
+            394
+          ],
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/AssistantRepository.kt",
+          "lines": [
+            200,
+            208
+          ],
+          "sha256": "d6a5a3f0510476cc83b2f531f3ad5899652042150fd1ab249f84669a19dd1d29"
+        }
+      ],
+      "fix": "توحيد عقد طول التفاصيل وترحيل محافظ على النص مع منع الاستبدال الناقص.",
+      "verification": "مزامنة سجل مستورد بتفاصيل 3000 حرف؛ يبقى النص كاملًا بعد الاستجابة المكررة.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "FAM-N02",
+      "title": "إدراج الصحة تلقائيًا في المزامنة دون خيار مشاركة صريح في المسار المراجع",
+      "priority": "high",
+      "status": "open_confirmed",
+      "problem": "دخول المساعد يبدأ مزامنة دورية؛ ملف العائلة قد يُولد تلقائيًا، وسجل HEALTH يُضم إلى البيانات المرسلة. لم يوجد في هذا المسار قرار مشاركة منفصل لكل نوع بيانات. هذا تتبع لمسار الإرسال، وليس رصدًا لتسريب فعلي على الخادم.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt",
+          "lines": [
+            109,
+            116
+          ],
+          "sha256": "b01fa3da30075aad27b0caa588cabfee8b05e381eb46624b44abc117686df4a6"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyLinkStore.kt",
+          "lines": [
+            28,
+            40
+          ],
+          "sha256": "d5b2cc89d8482a910ba91bc136a9ce8f0242c64072b36a6ef16d7d11331bf724"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "lines": [
+            153,
+            186
+          ],
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "lines": [
+            248,
+            266
+          ],
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0"
+        }
+      ],
+      "fix": "تعريف المزامنة التي يوافق عليها المستخدم وتحديد مشاركة الصحة صراحة، ثم مطابقة ذلك مع الإفصاح والخصوصية.",
+      "verification": "حساب جديد قبل الموافقة: مراقبة الطلبات وعدم إرسال HEALTH؛ بعد الموافقة اختبار الأنواع المختارة وسحب الموافقة.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "FAM-N03",
+      "title": "مسار المزامنة القديم يعمل بمفتاح عام عند تفعيله",
+      "priority": "high",
+      "status": "conditional",
+      "problem": "V1 يستخدم APP_KEY العام بدل اعتماد جهاز مرتبط بعائلة. المسار موجود، لكنه معطل إذا كان APP_KEY فارغًا. تفعيله قد يجعل حماية V2 غير شاملة لكل واجهات الخدمة. إعداد النشر الحي غير متحقق.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "family-sync-server/main.py",
+          "lines": [
+            86,
+            91
+          ],
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6"
+        },
+        {
+          "path": "family-sync-server/main.py",
+          "lines": [
+            485,
+            499
+          ],
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6"
+        }
+      ],
+      "fix": "إغلاق القناة القديمة في الإنتاج أو ترحيلها إلى نفس العزل والتحقق دون فقد بيانات.",
+      "verification": "فحص إعداد النشر ثم اختبار رفض الطلبات القديمة غير المرتبطة بعائلة وجهاز معتمد.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "FAM-N04",
+      "title": "فقد اعتماد الجهاز مع نافذة ربط مغلقة يحتاج مسار استرداد",
+      "priority": "medium",
+      "status": "conditional",
+      "problem": "مع فقد التوكن يعود العميل إلى register ثم join، ويمكن رفضهما للعائلة الموجودة والنافذة المغلقة. فتح النافذة ذاته يتطلب توكنًا. التأثير أكبر إذا لم يبق جهاز آخر معتمد.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyCloudSync.kt",
+          "lines": [
+            232,
+            266
+          ],
+          "sha256": "adbcf6ada3246e961d5acce515b52dd4166d8daf5e86e25f98f72753c97d65a0"
+        },
+        {
+          "path": "family-sync-server/main.py",
+          "lines": [
+            333,
+            376
+          ],
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6"
+        }
+      ],
+      "fix": "آلية استرداد تحقق ملكية العائلة أو اعتماد من جهاز مخول مع حفظ البيانات.",
+      "verification": "فقد اعتماد آخر جهاز ثم محاولة العودة؛ لا يلزم إنشاء عائلة جديدة أو إسقاط بيانات القديمة.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "FAM-N05",
+      "title": "فحص الصحة لا يثبت جاهزية PostgreSQL",
+      "priority": "medium",
+      "status": "conditional",
+      "problem": "/health يعيد ok:true ويعرض databaseConfigured، دون فتح اتصال أو اختبار DB. الفحص المحلي أثبت الرد عند غياب DATABASE_URL. إذا استُخدم هذا المسار كشرط جاهزية تشغيل فقد تُقبل خدمة لا تستطيع المزامنة.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "family-sync-server/main.py",
+          "lines": [
+            72,
+            80
+          ],
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6"
+        },
+        {
+          "path": "family-sync-server/main.py",
+          "lines": [
+            229,
+            231
+          ],
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6"
+        },
+        {
+          "path": "family-sync-server/main.py",
+          "lines": [
+            292,
+            300
+          ],
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6"
+        }
+      ],
+      "fix": "فصل liveness عن readiness، وفحص PostgreSQL فعليًا في شرط الجاهزية.",
+      "verification": "قاعدة غائبة ثم قاعدة معطلة: يفشل شرط readiness وتبقى استجابة liveness محددة بوضوح.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "FAM-N06",
+      "title": "إلغاء اعتماد جهاز وحذف بيانات الخدمة غير مكتملين في الخادم المرفق",
+      "priority": "high",
+      "status": "conditional",
+      "problem": "واجهات الخادم المرفق تشمل التسجيل والربط والمزامنة والشات، ولم تتضمن مسارًا لإلغاء جهاز أو حذف مساحة العائلة والبيانات المرتبطة. تكامل نشر مختلف لم يُراجع. تطبيق متطلبات حذف الحساب مرتبط بنموذج الحساب المعلن للمتجر.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "family-sync-server/main.py",
+          "lines": [
+            332,
+            499
+          ],
+          "sha256": "9b760d09f315d13f44a59f91e28ec025c760c57a8bfb2f8c2e9e3174911424d6"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/assistant/FamilyLinkStore.kt",
+          "lines": [
+            43,
+            54
+          ],
+          "sha256": "d5b2cc89d8482a910ba91bc136a9ce8f0242c64072b36a6ef16d7d11331bf724"
+        }
+      ],
+      "fix": "تعريف ملكية الحذف وإلغاء الأجهزة وسياسة الاحتفاظ وربطها بالواجهة وصفحة الخصوصية.",
+      "verification": "إلغاء جهاز: تُرفض توكناته؛ طلب حذف مصرح: تُحذف البيانات المقصودة ويظهر أثره لكل أجهزة العائلة.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "SEC-N01",
+      "title": "فحص توافق تحديث APK يسبق المثبت جزئيًا فقط",
+      "priority": "medium",
+      "status": "open_confirmed",
+      "problem": "التحقق الحالي يثبت الحزمة ورقم الإصدار والهاش، لكنه لا يفحص شهادة التحديث أو متطلبات النظام قبل فتح المثبت. Android يتحقق من توقيع التحديث ويمنع التحديث غير الموافق؛ الملاحظة عن الاستعادة وتجربة التحديث، وليست تجاوزًا لتوقيع النظام.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/AppUpdateManager.kt",
+          "lines": [
+            130,
+            165
+          ],
+          "sha256": "cc817225625da8f4d438a27e8805cd0a6cf6016f10517867c2b4ddf6cf065084"
+        }
+      ],
+      "fix": "في القناة خارج Play فحص شهادة وخط التوقيع وتوافق النظام، وفي قناة Play اعتماد تحديث المتجر.",
+      "verification": "APK بنفس الحزمة وإصدار أعلى لكن توقيع مختلف أو minSdk غير مناسب؛ رسالة قابلة للاستعادة دون حجب التطبيق.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "SEC-N02",
+      "title": "منح قراءة مباشر لملف مشارك يحتاج دورة سحب محددة",
+      "priority": "low",
+      "status": "conditional",
+      "problem": "توجد منح grantUriPermission صريحة لتطبيقات مشاركة، ولا يوجد revokeUriPermission في الكود. الوثائق تميزها عن منح Intent التي تنتهي بعمر النشاط. الوصول هنا لملف ووجهة مشاركة محددين؛ FileProvider غير مصدّر ولا يثبت ذلك قارئًا عامًا للملفات.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/FileUtils.kt",
+          "lines": [
+            396,
+            410
+          ],
+          "sha256": "8e4dfb3057ccb7effbf7ce7e63a5fa761c38e2c6f883ac9dab7819fb59e21d5e"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt",
+          "lines": [
+            3630,
+            3640
+          ],
+          "sha256": "6b4c5a1d5e949f40176d44a65ca24b86c08045fae971aaafaf8fd4d5f3664e94"
+        }
+      ],
+      "fix": "استخدام منح مؤقتة بعمر المشاركة أو سياسة سحب واضحة مع نطاق مزود محدود.",
+      "verification": "بعد نهاية المشاركة وبقاء الجهاز دون إعادة تشغيل، التحقق من انتهاء القراءة وفق السياسة المقصودة.",
+      "origin": "P13 audit"
+    },
+    {
+      "id": "CMD-N01",
+      "title": "فشل إعادة التسمية قد يُعرض ضمن خطوات ناجحة",
+      "priority": "medium",
+      "status": "open_confirmed",
+      "problem": "خطأ FileUtils.renameFile يُبتلع وتبقى النسخة باسمها القديم، ثم تعيد النتيجة خطوات الخطة بدل نتيجة تنفيذ كل خطوة.",
+      "note": "ملاحظة إضافية من تتبع المصدر الحالي؛ لم تُختبر على هاتف فعلي.",
+      "evidence": [
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CommandEngine.kt",
+          "lines": [
+            177,
+            180
+          ],
+          "sha256": "36d53b5523989aa90d9f62a456e0430f16a4d28b57978f95d72d8f3fa90cbe38"
+        },
+        {
+          "path": "app/src/main/java/com/abfilepro/app/core/CommandEngine.kt",
+          "lines": [
+            191,
+            209
+          ],
+          "sha256": "36d53b5523989aa90d9f62a456e0430f16a4d28b57978f95d72d8f3fa90cbe38"
+        }
+      ],
+      "fix": "نتيجة لكل خطوة تميز النجاح والتجاوز والفشل وتحافظ على الناتج المكتمل.",
+      "verification": "طلب اسم يتعارض مع ملف موجود؛ حفظ الملفين وعرض أن خطوة التسمية لم تنفذ.",
+      "origin": "P13 audit"
+    }
+  ],
+  "old_status_counts": {
+    "resolved_verified": 5,
+    "open_confirmed": 52,
+    "partial": 2,
+    "conditional": 18
+  },
+  "new_status_counts": {
+    "conditional": 12,
+    "open_confirmed": 5
+  },
+  "evidence": {
+    "date": "2026-10-14",
+    "baseline": "P13 vc165",
+    "commit": "b623d915c4f9e1251ceb93ff3c41aa7d176e3036",
+    "source_files": 469,
+    "identity_hashes": 468,
+    "source_modified": false,
+    "source_archive": {
+      "path": "/workspace/scratch/1e80a058832a/work/p13_audit/release/AB_FILE_PRO_V2_ALPHA98_P13_CLEAN_SHARE_SAFETY_SAFE_SOURCE.zip",
+      "size": 17159633,
+      "sha256": "3bb23ee76ed8919ebbc2312db987220f96323d26fc36e4df5158054d482d16ce",
+      "crc_ok": true,
+      "repacked_only": true,
+      "content_identical": true,
+      "previous_saved_size": 12781492,
+      "previous_saved_sha256": "4413870e1c27b1a34a51d5d71cd2c72a4a8c17e71f0e260542f315e1c1839f9f",
+      "previous_saved_zip_valid": false,
+      "library_replacement_pending": true
+    },
+    "apk": {
+      "path": "/workspace/scratch/1e80a058832a/work/p13_audit/recovered/AB98_P13_CLEAN_SHARE_SAFETY_TEST.apk",
+      "size": 131959560,
+      "sha256": "4deb7bc086e3042252b7b72b655298d6495b2caf09a6cdf1e13dc9680222cca0",
+      "crc_ok": true,
+      "shared_payload_entries_identical": 662
+    },
+    "android": {
+      "tests": 46,
+      "passed": 46,
+      "failed": 0,
+      "groups": {
+        "CleanShareSafetyRegressionTest": 24,
+        "StorageSafetyRegressionTest": 22
+      },
+      "runtime": "Android11/API30/x86_64 native",
+      "evidence_date": "2026-10-09",
+      "fresh_runtime_in_this_audit": false
+    },
+    "jvm": {
+      "tests": 29,
+      "passed": 28,
+      "failed": 1,
+      "known_failure": [
+        {
+          "name": "com.abfilepro.app.core.WorkspaceShortcutRulesTest.shortcutLabelIsTrimmedAndStable",
+          "status": "FAIL",
+          "message": "org.junit.ComparisonFailure: expected:<[احمد]> but was:<[إدارة ملفات AB برو]>"
+        }
+      ],
+      "fresh_runtime_in_this_audit": false
+    },
+    "syntax": {
+      "python": 104,
+      "xml": 71,
+      "errors": []
+    },
+    "kotlin": {
+      "main_files": 137,
+      "main_lines": 45548,
+      "jvm_test_files": 7,
+      "android_test_files": 2
+    },
+    "native": {
+      "libraries": 14,
+      "all_elf_zip_static_16k_pass": true,
+      "actual_16k_runtime": false,
+      "results": [
+        {
+          "path": "lib/arm64-v8a/libandroidx.graphics.path.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libbarhopper_v3.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libc++_shared.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libface_detector_v2_jni.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libimage_processing_util_jni.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libjpeg.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/liblanguage_id_l2c_jni.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libleptonica.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libopencv_java4.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libpngx.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libsurface_util_jni.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libtesseract.so",
+          "elf_16k": true,
+          "zip_16k": true
+        },
+        {
+          "path": "lib/arm64-v8a/libtranslate_jni.so",
+          "elf_16k": true,
+          "zip_16k": true
+        }
+      ]
+    },
+    "limitations": [
+      "No full physical ARM phone test",
+      "No API36 runtime test",
+      "No 16KiB runtime test",
+      "No live PostgreSQL or HTTP test",
+      "No OCR accuracy corpus",
+      "No measured ANR/RAM/speed/battery test"
+    ]
+  },
+  "source_logic_probes": {
+    "date": "2026-10-14",
+    "java_source_logic": {
+      "cases": 6,
+      "passed": 6,
+      "exit_code": 0,
+      "stdout": "receipt|100.50|100.50\nreceipt|١٠٠.٥٠|100.50\nreceipt|١٠٠٫٥٠|50\nreceipt|١٬٠٠٠|000\nreceipt|1,000|1,000\ncard_empty_contact|Ahmed Hassan|excluded\n",
+      "stderr": "",
+      "scope": "Java17 regex extracted unchanged from Kotlin and source-derived digit mapping; one empty-string contains control; not full Kotlin/Android OCR runtime"
+    },
+    "python_source_logic": {
+      "cases": 6,
+      "passed": 6,
+      "fixtures": [
+        {
+          "case": "valid scoped token",
+          "actual": "accepted",
+          "expected": "accepted",
+          "pass": true
+        },
+        {
+          "case": "wrong family",
+          "actual": 401,
+          "expected": 401,
+          "pass": true
+        },
+        {
+          "case": "wrong token",
+          "actual": 401,
+          "expected": 401,
+          "pass": true
+        },
+        {
+          "case": "wrong body device",
+          "actual": 401,
+          "expected": 401,
+          "pass": true
+        },
+        {
+          "case": "missing bearer",
+          "actual": 401,
+          "expected": 401,
+          "pass": true
+        },
+        {
+          "case": "health without DATABASE_URL",
+          "actual": {
+            "ok": true,
+            "databaseConfigured": false,
+            "legacyAppKeyConfigured": false,
+            "familyAuthVersion": 2,
+            "familyChatVersion": 1
+          },
+          "pass": true,
+          "meaning": "Liveness returns ok:true with explicit databaseConfigured:false; no DB readiness probe"
+        }
+      ],
+      "scope": "Actual AST-extracted Python function bodies with deterministic fake connection/exception; no FastAPI/HTTP/PostgreSQL runtime"
+    },
+    "not_android_tests": true,
+    "not_live_service_tests": true
+  },
+  "scope": "مراجعة الوظائف والكود وتسوية سجل P11؛ أدلة Android وJVM مؤرخة 2026-10-09 ولم تُعد تشغيلًا في هذه الجولة"
+}
