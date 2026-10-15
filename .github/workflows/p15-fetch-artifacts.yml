@@ -1,0 +1,37 @@
+name: P15 copy verified artifacts to branch
+on:
+  push:
+    branches: ["artifacts/p15-fetch-20261015"]
+    paths: [".github/workflows/p15-fetch-artifacts.yml"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 38687817811
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Commit artifacts (APK split under GitHub's 100 MB file limit)
+        shell: bash
+        run: |
+          set -euo pipefail
+          ls -laR dl
+          mkdir -p out/apk out/evidence
+          cp -a dl/AB98_P15_SAFE_MAINTENANCE_APK/. out/apk/
+          (cd dl/P15_SAFE_MAINTENANCE_EVIDENCE && zip -qr -X ../../out/evidence/P15_SAFE_MAINTENANCE_EVIDENCE.zip .)
+          cd out/apk
+          sha256sum AB98_P15_SAFE_MAINTENANCE_TEST.apk > FULL_APK_SHA256.txt
+          split -b 60m -d AB98_P15_SAFE_MAINTENANCE_TEST.apk AB98_P15_SAFE_MAINTENANCE_TEST.apk.part
+          rm AB98_P15_SAFE_MAINTENANCE_TEST.apk
+          cd ../..
+          git init -q pub && cd pub
+          git checkout -q -b artifacts/p15-verified-20261015
+          cp -a ../out/. .
+          git add -A
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -qm "P15 verified APK and evidence from run 38687817811"
+          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:artifacts/p15-verified-20261015
