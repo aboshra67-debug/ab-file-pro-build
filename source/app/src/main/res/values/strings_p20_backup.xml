@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="p20_backup_section_ar">النسخ الاحتياطي</string>
+    <string name="p20_backup_section_en">Backup</string>
+    <string name="p20_backup_section_fr">Sauvegarde</string>
+    <string name="p20_backup_export_ar">تصدير بيانات المساعد</string>
+    <string name="p20_backup_export_en">Export assistant data</string>
+    <string name="p20_backup_export_fr">Exporter les données de l\'assistant</string>
+    <string name="p20_backup_export_desc_ar">الملاحظات والمهام والمصروفات والصحة والمستندات والتسوق في ملف تحفظه أنت. الملف فيه بيانات شخصية، احفظه في مكان آمن.</string>
+    <string name="p20_backup_export_desc_en">Notes, tasks, expenses, health, documents and shopping in a file you keep. It contains personal data; store it safely.</string>
+    <string name="p20_backup_export_desc_fr">Notes, tâches, dépenses, santé, documents et courses dans un fichier que vous gardez. Il contient des données personnelles.</string>
+    <string name="p20_backup_import_ar">استيراد نسخة احتياطية</string>
+    <string name="p20_backup_import_en">Import a backup</string>
+    <string name="p20_backup_import_fr">Importer une sauvegarde</string>
+    <string name="p20_backup_import_desc_ar">بيضيف العناصر الناقصة بس، ومش بيمسح أو يغيّر أي حاجة موجودة.</string>
+    <string name="p20_backup_import_desc_en">Adds only missing items; nothing already on this phone is deleted or changed.</string>
+    <string name="p20_backup_import_desc_fr">Ajoute seulement les éléments manquants ; rien n\'est supprimé ni modifié.</string>
+    <string name="p20_backup_exported_ar">تم تصدير %1$d عنصر</string>
+    <string name="p20_backup_exported_en">%1$d items exported</string>
+    <string name="p20_backup_exported_fr">%1$d éléments exportés</string>
+    <string name="p20_backup_imported_ar">تمت إضافة %1$d، وكان موجود %2$d</string>
+    <string name="p20_backup_imported_en">%1$d added, %2$d already present</string>
+    <string name="p20_backup_imported_fr">%1$d ajoutés, %2$d déjà présents</string>
+    <string name="p20_backup_failed_ar">تعذر إتمام العملية. اتأكد إن الملف نسخة احتياطية من AB File Pro.</string>
+    <string name="p20_backup_failed_en">The operation failed. Make sure the file is an AB File Pro backup.</string>
+    <string name="p20_backup_failed_fr">Échec. Vérifiez qu\'il s\'agit d\'une sauvegarde AB File Pro.</string>
+</resources>

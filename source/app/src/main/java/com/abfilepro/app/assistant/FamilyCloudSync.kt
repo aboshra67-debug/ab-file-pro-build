@@ -6,6 +6,7 @@ import org.json.JSONArray
 import org.json.JSONObject
 import java.net.HttpURLConnection
 import java.net.URL
+import java.security.SecureRandom
 import java.util.UUID
 
 
@@ -33,6 +34,12 @@ object FamilySyncStateStore {
     private const val KEY_TOKEN_FAMILY_CODE = "token_family_code"
     private const val PREFIX_TS = "ts:"
     private const val PREFIX_DELETE = "del:"
+    // P17
+    private const val PREFIX_REMOTE = "remote:"
+    private const val KEY_PUSHED_UP_TO = "pushed_up_to_v17"
+    private const val KEY_CURSOR_TS = "cursor_ts_v17"
+    private const val KEY_CURSOR_ID = "cursor_id_v17"
+    private const val KEY_EXCLUDED = "excluded_ids_v17"
 
     private fun prefs(context: Context) =
         context.applicationContext.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
@@ -118,11 +125,61 @@ object FamilySyncStateStore {
     fun acceptRemote(context: Context, id: String, updatedAt: Long, deleted: Boolean) {
         val edit = prefs(context).edit()
         if (deleted) {
-            edit.remove(PREFIX_TS + id).remove(PREFIX_DELETE + id)
+            edit.remove(PREFIX_TS + id).remove(PREFIX_DELETE + id).remove(PREFIX_REMOTE + id)
         } else {
             edit.putLong(PREFIX_TS + id, updatedAt).remove(PREFIX_DELETE + id)
         }
         edit.apply()
+    }
+
+    // ---- P17 ----------------------------------------------------------------------------
+
+    internal fun markRemoteOrigin(context: Context, id: String) {
+        prefs(context).edit().putBoolean(PREFIX_REMOTE + id, true).apply()
+    }
+
+    internal fun isRemoteOrigin(context: Context, id: String): Boolean =
+        prefs(context).getBoolean(PREFIX_REMOTE + id, false)
+
+    internal fun pushedUpTo(context: Context): Long = prefs(context).getLong(KEY_PUSHED_UP_TO, 0L)
+
+    internal fun setPushedUpTo(context: Context, value: Long) {
+        val p = prefs(context)
+        if (value > p.getLong(KEY_PUSHED_UP_TO, 0L)) p.edit().putLong(KEY_PUSHED_UP_TO, value).apply()
+    }
+
+    internal fun cursor(context: Context): Pair<Long, String> =
+        prefs(context).getLong(KEY_CURSOR_TS, 0L) to prefs(context).getString(KEY_CURSOR_ID, "").orEmpty()
+
+    internal fun setCursor(context: Context, updatedAt: Long, id: String) {
+        prefs(context).edit().putLong(KEY_CURSOR_TS, updatedAt).putString(KEY_CURSOR_ID, id).apply()
+    }
+
+    internal fun excludedIds(context: Context): Set<String> =
+        prefs(context).getStringSet(KEY_EXCLUDED, emptySet()).orEmpty().toSet()
+
+    /**
+     * Starts a clean sync relationship with a family.
+     * [excludeIds]: items that already exist on this phone and must stay local (joining someone
+     * else's family). Old tombstones and cursors of a previous family are dropped.
+     */
+    internal fun startFamily(context: Context, excludeIds: Set<String>) {
+        val p = prefs(context)
+        val edit = p.edit()
+        p.all.keys.filter { it.startsWith(PREFIX_DELETE) }.forEach { edit.remove(it) }
+        edit.remove(KEY_PUSHED_UP_TO).remove(KEY_CURSOR_TS).remove(KEY_CURSOR_ID)
+            .putStringSet(KEY_EXCLUDED, excludeIds.toSet())
+            .apply()
+    }
+
+    /** Forgets everything about the current family (device id is kept). */
+    internal fun clearFamily(context: Context) {
+        val p = prefs(context)
+        val edit = p.edit()
+        p.all.keys.filter { it.startsWith(PREFIX_DELETE) || it.startsWith(PREFIX_REMOTE) }.forEach { edit.remove(it) }
+        edit.remove(KEY_PUSHED_UP_TO).remove(KEY_CURSOR_TS).remove(KEY_CURSOR_ID).remove(KEY_EXCLUDED)
+            .remove(KEY_TOKEN_FAMILY_CODE).remove(KEY_DEVICE_TOKEN_ENCRYPTED).remove(KEY_DEVICE_TOKEN)
+            .apply()
     }
 }
 
@@ -132,34 +189,157 @@ class FamilyCloudSyncManager(
 ) {
     private val appContext = context.applicationContext
 
+    enum class Failure { NOT_CONFIGURED, NETWORK, INVALID_INVITE, PAIRING_CLOSED, NOT_FOUND, FAMILY_FULL, TOO_MANY_ATTEMPTS, UNAUTHORIZED, SERVER }
+
+    sealed class LinkResult {
+        /** [invite] is shown on this phone and typed on the other phone (valid until [validUntil]). */
+        data class Linked(val familyCode: String, val invite: String?, val validUntil: String?) : LinkResult()
+        data class Failed(val reason: Failure) : LinkResult()
+    }
+
+    /** Session only for a family the user explicitly created/joined/confirmed. Never registers. */
     fun session(): FamilyCloudSession? {
         val baseUrl = baseUrl() ?: return null
         val profile = FamilyLinkStore.load(appContext)
-        val familyCode = profile.inviteCode.filter(Char::isDigit)
-        if (familyCode.length != 6) return null
+        if (profile.syncState != FamilySyncState.ON || !profile.isLinked) return null
         val deviceId = FamilySyncStateStore.deviceId(appContext)
-        val token = ensureDeviceToken(baseUrl, familyCode, deviceId) ?: return null
-        return FamilyCloudSession(baseUrl, familyCode, deviceId, token)
+        val token = FamilySyncStateStore.deviceToken(appContext, profile.inviteCode) ?: return null
+        return FamilyCloudSession(baseUrl, profile.inviteCode, deviceId, token)
+    }
+
+    /** Creates a new family on the server; this phone's existing family items may be shared. */
+    fun createFamily(): LinkResult {
+        val baseUrl = baseUrl() ?: return LinkResult.Failed(Failure.NOT_CONFIGURED)
+        val deviceId = FamilySyncStateStore.deviceId(appContext)
+        val random = SecureRandom()
+        repeat(5) {
+            val code = (random.nextInt(900_000) + 100_000).toString()
+            val (status, body) = post("$baseUrl/v2/families/$code/register", JSONObject().put("deviceId", deviceId))
+            when (status) {
+                in 200..299 -> {
+                    val json = runCatching { JSONObject(body) }.getOrNull() ?: return LinkResult.Failed(Failure.SERVER)
+                    val token = json.optString("deviceToken")
+                    val secret = json.optString("pairingSecret")
+                    if (token.length < 32) return LinkResult.Failed(Failure.SERVER)
+                    FamilySyncStateStore.clearFamily(appContext)
+                    FamilySyncStateStore.saveDeviceToken(appContext, code, token)
+                    FamilySyncStateStore.startFamily(appContext, excludeIds = emptySet())
+                    FamilyLinkStore.link(appContext, code)
+                    val invite = secret.takeIf { it.isNotBlank() }?.let { FamilySyncPolicy.Invite(code, it).toString() }
+                    return LinkResult.Linked(code, invite, json.optString("pairingOpenUntil").takeIf { it.isNotBlank() })
+                }
+                409 -> Unit // code already taken; try another
+                else -> return LinkResult.Failed(failureFor(status))
+            }
+        }
+        return LinkResult.Failed(Failure.SERVER)
+    }
+
+    /** Joins with the invite shown on an already linked phone. Existing local items stay local. */
+    fun joinFamily(rawInvite: String): LinkResult {
+        val baseUrl = baseUrl() ?: return LinkResult.Failed(Failure.NOT_CONFIGURED)
+        val invite = FamilySyncPolicy.parseInvite(rawInvite) ?: return LinkResult.Failed(Failure.INVALID_INVITE)
+        val deviceId = FamilySyncStateStore.deviceId(appContext)
+        val (status, body) = post(
+            "$baseUrl/v2/families/${invite.code}/join",
+            JSONObject().put("deviceId", deviceId).put("pairingSecret", invite.secret),
+        )
+        if (status !in 200..299) return LinkResult.Failed(failureFor(status))
+        val token = runCatching { JSONObject(body).optString("deviceToken") }.getOrDefault("")
+        if (token.length < 32) return LinkResult.Failed(Failure.SERVER)
+        val keepLocal = buildSet {
+            repository.loadEntries().filter { it.module in CLOUD_MODULES }.forEach { add(it.id) }
+            ShoppingListSyncStore(appContext).load().forEach { add(ShoppingListSyncStore.cloudId(it.id)) }
+            add(ShoppingListSyncStore.META_ID)
+        }
+        FamilySyncStateStore.clearFamily(appContext)
+        FamilySyncStateStore.saveDeviceToken(appContext, invite.code, token)
+        FamilySyncStateStore.startFamily(appContext, excludeIds = keepLocal)
+        FamilyLinkStore.link(appContext, invite.code)
+        return LinkResult.Linked(invite.code, null, null)
+    }
+
+    /** Opens a 10-minute pairing window and returns a fresh invite for one new phone. */
+    fun openPairingWindow(): LinkResult {
+        val session = session() ?: return LinkResult.Failed(Failure.UNAUTHORIZED)
+        val (status, body) = post(
+            "${session.baseUrl}/v2/families/${session.familyCode}/pairing/open",
+            JSONObject().put("deviceId", session.deviceId),
+            bearer = session.deviceToken,
+        )
+        if (status !in 200..299) return LinkResult.Failed(failureFor(status))
+        val json = runCatching { JSONObject(body) }.getOrNull() ?: return LinkResult.Failed(Failure.SERVER)
+        val secret = json.optString("pairingSecret")
+        if (secret.isBlank()) return LinkResult.Failed(Failure.SERVER)
+        return LinkResult.Linked(
+            session.familyCode,
+            FamilySyncPolicy.Invite(session.familyCode, secret).toString(),
+            json.optString("pairingOpenUntil").takeIf { it.isNotBlank() },
+        )
+    }
+
+    /** Keeps a pre-P17 automatic link after the user confirmed it. */
+    fun confirmLegacyFamily(shareHealth: Boolean) {
+        FamilyLinkStore.confirmLegacy(appContext)
+        setShareHealth(shareHealth)
+    }
+
+    /**
+     * Turns health sharing on/off. Turning it off withdraws this phone's own health items from the
+     * family (tombstones) while every local health record stays on the phone.
+     */
+    fun setShareHealth(enabled: Boolean) {
+        // Tombstones only ever remove *received* copies on other phones (see sync()), so
+        // withdrawing can never delete another member's own records.
+        FamilyLinkStore.setShareHealth(appContext, enabled)
+        val ownHealth = repository.loadEntries()
+            .filter { it.module == AssistantModule.HEALTH && !FamilySyncStateStore.isRemoteOrigin(appContext, it.id) }
+        ownHealth.forEach { entry ->
+            if (enabled) FamilySyncStateStore.markChanged(appContext, entry.id)
+            else FamilySyncStateStore.markDeleted(appContext, entry.id)
+        }
+    }
+
+    /**
+     * Leaves the family on the server first; local state is cleared only when the server confirmed,
+     * so a failed request can be retried and never leaves shared data behind silently.
+     */
+    fun leaveFamily(deleteMyData: Boolean): Boolean {
+        val profile = FamilyLinkStore.load(appContext)
+        val baseUrl = baseUrl()
+        val code = profile.inviteCode
+        val token = if (profile.isLinked) FamilySyncStateStore.deviceToken(appContext, code) else null
+        if (baseUrl != null && token != null) {
+            val (status, _) = post(
+                "$baseUrl/v2/families/$code/devices/leave",
+                JSONObject().put("deviceId", FamilySyncStateStore.deviceId(appContext)).put("deleteMyData", deleteMyData),
+                bearer = token,
+            )
+            // 401: this device is no longer known to the server, nothing left to remove there.
+            if (status !in 200..299 && status != 401) return false
+        }
+        FamilySyncStateStore.clearFamily(appContext)
+        FamilyLinkStore.unlink(appContext)
+        return true
     }
 
     fun sync(): List<AssistantEntry>? {
-        val baseUrl = baseUrl() ?: return null
+        val session = session() ?: return null
         val profile = FamilyLinkStore.load(appContext)
-        val familyCode = profile.inviteCode.filter(Char::isDigit)
-        if (familyCode.length != 6) return null
-        val deviceId = FamilySyncStateStore.deviceId(appContext)
-        val token = ensureDeviceToken(baseUrl, familyCode, deviceId) ?: return null
+        val shareHealth = profile.shareHealth
+        val excluded = FamilySyncStateStore.excludedIds(appContext)
+        val pushedUpTo = FamilySyncStateStore.pushedUpTo(appContext)
 
         val localSnapshot = repository.loadEntries()
-        val cloudModules = setOf(AssistantModule.FAMILY_REQUESTS, AssistantModule.HEALTH)
-        val localCloudEntries = localSnapshot.filter { it.module in cloudModules }
         val shoppingStore = ShoppingListSyncStore(appContext)
         val outbound = buildList {
-            localCloudEntries.forEach { entry ->
+            localSnapshot.filter { it.module in CLOUD_MODULES }.forEach { entry ->
+                val changedAt = FamilySyncStateStore.timestampFor(appContext, entry.id, entry.createdAt)
+                if (!FamilySyncPolicy.shouldUpload(entry.id, entry.module == AssistantModule.HEALTH, shareHealth, excluded, changedAt, pushedUpTo)) return@forEach
                 add(
                     FamilyCloudItem(
                         id = entry.id,
-                        updatedAt = FamilySyncStateStore.timestampFor(appContext, entry.id, entry.createdAt),
+                        updatedAt = changedAt,
                         deleted = false,
                         payload = encodeEntry(entry),
                         comment = if (entry.module == AssistantModule.FAMILY_REQUESTS) FamilyCommentStore.load(appContext, entry.id) else "",
@@ -168,38 +348,55 @@ class FamilyCloudSyncManager(
             }
             shoppingStore.load().forEach { item ->
                 val cloudId = ShoppingListSyncStore.cloudId(item.id)
-                add(
-                    FamilyCloudItem(
-                        id = cloudId,
-                        updatedAt = FamilySyncStateStore.timestampFor(appContext, cloudId, item.id.coerceAtLeast(1L)),
-                        deleted = false,
-                        payload = shoppingStore.itemPayload(item),
-                        comment = "",
-                    )
-                )
+                val changedAt = FamilySyncStateStore.timestampFor(appContext, cloudId, item.id.coerceAtLeast(1L))
+                if (!FamilySyncPolicy.shouldUpload(cloudId, false, shareHealth, excluded, changedAt, pushedUpTo)) return@forEach
+                add(FamilyCloudItem(cloudId, changedAt, false, shoppingStore.itemPayload(item), ""))
             }
             shoppingStore.metaForCloud()?.let { (updatedAt, payload) ->
-                add(FamilyCloudItem(ShoppingListSyncStore.META_ID, updatedAt, false, payload, ""))
+                if (FamilySyncPolicy.shouldUpload(ShoppingListSyncStore.META_ID, false, shareHealth, excluded, updatedAt, pushedUpTo)) {
+                    add(FamilyCloudItem(ShoppingListSyncStore.META_ID, updatedAt, false, payload, ""))
+                }
             }
             FamilySyncStateStore.tombstones(appContext).forEach { (id, deletedAt) ->
-                add(FamilyCloudItem(id, deletedAt, true, JSONObject(), ""))
+                if (id !in excluded && deletedAt > pushedUpTo) add(FamilyCloudItem(id, deletedAt, true, JSONObject(), ""))
             }
+        }.sortedBy { it.updatedAt }
+
+        // Push in bounded chunks (no item is ever dropped by a 500 cap), confirming each chunk.
+        for (chunk in FamilySyncPolicy.chunks(outbound)) {
+            if (!stillSameFamily(session.familyCode)) return null
+            postSync(session, chunk, cursor = null) ?: return null
+            FamilySyncStateStore.setPushedUpTo(appContext, chunk.maxOf { it.updatedAt })
         }
 
-        val remote = postSync(baseUrl, familyCode, deviceId, token, outbound) ?: return null
-        if (remote.isEmpty() && outbound.isEmpty()) return null
+        // Pull every page newer than the stored cursor.
+        val remote = ArrayList<FamilyCloudItem>()
+        var cursor = FamilySyncStateStore.cursor(appContext)
+        for (page in 0 until MAX_PULL_PAGES) {
+            if (!stillSameFamily(session.familyCode)) return null
+            val response = postSync(session, emptyList(), cursor) ?: return null
+            remote += response.items
+            cursor = response.nextCursor ?: cursor
+            if (!response.hasMore) break
+        }
+        if (!stillSameFamily(session.familyCode)) return null
 
         val latest = repository.loadEntries()
-        val others = latest.filterNot { it.module in cloudModules }.toMutableList()
-        val cloudEntries = latest.filter { it.module in cloudModules }.associateBy { it.id }.toMutableMap()
+        val cloudEntries = latest.filter { it.module in CLOUD_MODULES }.associateBy { it.id }.toMutableMap()
+        // P20: only the changed records are applied to the latest store, never a whole stale list.
+        val upserts = LinkedHashMap<String, AssistantEntry>()
+        val removed = HashSet<String>()
         var changed = false
 
         remote.forEach { item ->
+            if (item.id in excluded) return@forEach
             if (ShoppingListSyncStore.isShoppingCloudId(item.id)) {
-                shoppingStore.applyRemote(item.id, item.payload, item.updatedAt, item.deleted)
+                if (shoppingStore.applyRemote(item.id, item.payload, item.updatedAt, item.deleted)) changed = true
                 return@forEach
             }
             val local = cloudEntries[item.id]
+            val localIsOwnHealth = local?.module == AssistantModule.HEALTH && !FamilySyncStateStore.isRemoteOrigin(appContext, item.id)
+            if (!FamilySyncPolicy.acceptRemoteForLocalHealth(localIsOwnHealth, shareHealth)) return@forEach
             val localChangedAt = maxOf(
                 local?.let { FamilySyncStateStore.timestampFor(appContext, item.id, it.createdAt) } ?: 0L,
                 FamilySyncStateStore.deletedAt(appContext, item.id),
@@ -207,13 +404,19 @@ class FamilyCloudSyncManager(
             if (item.updatedAt < localChangedAt) return@forEach
 
             if (item.deleted) {
-                if (cloudEntries.remove(item.id) != null) changed = true
+                // A remote tombstone never removes a health record this phone created itself;
+                // it only removes copies that were received from another family member.
+                if (localIsOwnHealth) return@forEach
+                if (cloudEntries.remove(item.id) != null) { removed += item.id; upserts.remove(item.id); changed = true }
                 FamilyCommentStore.deleteFromCloud(appContext, item.id)
                 FamilySyncStateStore.acceptRemote(appContext, item.id, item.updatedAt, deleted = true)
             } else {
                 val decoded = decodeEntry(item.payload, item.id) ?: return@forEach
+                if (local == null) FamilySyncStateStore.markRemoteOrigin(appContext, item.id)
                 if (local != decoded) {
                     cloudEntries[item.id] = decoded
+                    upserts[item.id] = decoded
+                    removed -= item.id
                     changed = true
                 }
                 if (decoded.module == AssistantModule.FAMILY_REQUESTS && FamilyCommentStore.load(appContext, item.id) != item.comment) {
@@ -223,73 +426,43 @@ class FamilyCloudSyncManager(
                 FamilySyncStateStore.acceptRemote(appContext, item.id, item.updatedAt, deleted = false)
             }
         }
+        FamilySyncStateStore.setCursor(appContext, cursor.first, cursor.second)
 
-        val merged = others + cloudEntries.values.sortedByDescending { it.createdAt }
-        if (changed) repository.replaceEntries(merged)
-        return if (changed) merged else null
+        if (!changed) return null
+        return repository.applyRemote(upserts.values.toList(), removed)
     }
 
-    fun openPairingWindow(): Boolean {
-        val baseUrl = baseUrl() ?: return false
-        val code = FamilyLinkStore.load(appContext).inviteCode.filter(Char::isDigit)
-        if (code.length != 6) return false
-        val deviceId = FamilySyncStateStore.deviceId(appContext)
-        val token = FamilySyncStateStore.deviceToken(appContext, code) ?: return false
-        return postDeviceRequest(
-            url = "$baseUrl/v2/families/$code/pairing/open",
-            deviceId = deviceId,
-            bearer = token,
-        ).first in 200..299
+    private fun stillSameFamily(code: String): Boolean {
+        val now = FamilyLinkStore.load(appContext)
+        return now.syncState == FamilySyncState.ON && now.inviteCode == code
+    }
+
+    private fun failureFor(status: Int): Failure = when (status) {
+        -1 -> Failure.NETWORK
+        401 -> Failure.UNAUTHORIZED
+        403 -> Failure.INVALID_INVITE
+        404 -> Failure.NOT_FOUND
+        409 -> Failure.FAMILY_FULL
+        423 -> Failure.PAIRING_CLOSED
+        429 -> Failure.TOO_MANY_ATTEMPTS
+        else -> Failure.SERVER
     }
 
     private fun baseUrl(): String? = BuildConfig.FAMILY_SYNC_BASE_URL.trim().trimEnd('/')
         .takeIf { it.startsWith("https://") }
 
-    private fun ensureDeviceToken(baseUrl: String, familyCode: String, deviceId: String): String? {
-        FamilySyncStateStore.deviceToken(appContext, familyCode)?.let { return it }
-
-        val register = postDeviceRequest(
-            url = "$baseUrl/v2/families/$familyCode/register",
-            deviceId = deviceId,
-        )
-        if (register.first in 200..299) {
-            return parseAndStoreToken(familyCode, register.second)
-        }
-
-        if (register.first != 409) return null
-
-        val join = postDeviceRequest(
-            url = "$baseUrl/v2/families/$familyCode/join",
-            deviceId = deviceId,
-        )
-        if (join.first !in 200..299) return null
-        return parseAndStoreToken(familyCode, join.second)
-    }
-
-    private fun parseAndStoreToken(familyCode: String, response: String): String? {
-        val token = runCatching { JSONObject(response).optString("deviceToken") }.getOrDefault("")
-        if (token.length < 32) return null
-        FamilySyncStateStore.saveDeviceToken(appContext, familyCode, token)
-        return token
-    }
-
-    private fun postDeviceRequest(
-        url: String,
-        deviceId: String,
-        bearer: String? = null,
-    ): Pair<Int, String> {
+    private fun post(url: String, body: JSONObject, bearer: String? = null): Pair<Int, String> {
         val connection = (URL(url).openConnection() as HttpURLConnection).apply {
             requestMethod = "POST"
             connectTimeout = 7_000
-            readTimeout = 7_000
+            readTimeout = 10_000
             doOutput = true
             setRequestProperty("Content-Type", "application/json; charset=utf-8")
             setRequestProperty("Accept", "application/json")
             if (!bearer.isNullOrBlank()) setRequestProperty("Authorization", "Bearer $bearer")
         }
         return try {
-            val body = JSONObject().put("deviceId", deviceId).toString()
-            connection.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
+            connection.outputStream.use { it.write(body.toString().toByteArray(Charsets.UTF_8)) }
             val code = connection.responseCode
             val stream = if (code in 200..299) connection.inputStream else connection.errorStream
             val text = stream?.bufferedReader()?.use { it.readText() }.orEmpty()
@@ -301,46 +474,34 @@ class FamilyCloudSyncManager(
         }
     }
 
-    private fun postSync(
-        baseUrl: String,
-        familyCode: String,
-        deviceId: String,
-        deviceToken: String,
-        items: List<FamilyCloudItem>,
-    ): List<FamilyCloudItem>? {
-        val connection = (URL("$baseUrl/v2/families/$familyCode/sync").openConnection() as HttpURLConnection).apply {
-            requestMethod = "POST"
-            connectTimeout = 7_000
-            readTimeout = 7_000
-            doOutput = true
-            setRequestProperty("Content-Type", "application/json; charset=utf-8")
-            setRequestProperty("Accept", "application/json")
-            setRequestProperty("Authorization", "Bearer $deviceToken")
+    private class SyncResponse(val items: List<FamilyCloudItem>, val nextCursor: Pair<Long, String>?, val hasMore: Boolean)
+
+    private fun postSync(session: FamilyCloudSession, items: List<FamilyCloudItem>, cursor: Pair<Long, String>?): SyncResponse? {
+        val body = JSONObject()
+            .put("deviceId", session.deviceId)
+            .put("items", JSONArray().apply {
+                items.forEach { item ->
+                    put(JSONObject()
+                        .put("id", item.id)
+                        .put("updatedAt", item.updatedAt)
+                        .put("deleted", item.deleted)
+                        .put("payload", item.payload)
+                        .put("comment", item.comment.take(500)))
+                }
+            })
+        // Always send a cursor: a P17 server then pages; the push-only calls ask from "now" (empty page).
+        val since = cursor ?: (Long.MAX_VALUE / 4 to "")
+        body.put("since", JSONObject().put("updatedAt", since.first).put("id", since.second))
+        val (status, text) = post("${session.baseUrl}/v2/families/${session.familyCode}/sync", body, bearer = session.deviceToken)
+        if (status == 401) {
+            FamilySyncStateStore.clearDeviceToken(appContext)
+            return null
         }
-        return try {
-            val body = JSONObject()
-                .put("deviceId", deviceId)
-                .put("items", JSONArray().apply {
-                    items.take(500).forEach { item ->
-                        put(JSONObject()
-                            .put("id", item.id)
-                            .put("updatedAt", item.updatedAt)
-                            .put("deleted", item.deleted)
-                            .put("payload", item.payload)
-                            .put("comment", item.comment.take(500)))
-                    }
-                })
-                .toString()
-            connection.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
-            val code = connection.responseCode
-            if (code == 401) {
-                FamilySyncStateStore.clearDeviceToken(appContext)
-                return null
-            }
-            if (code !in 200..299) return null
-            val text = connection.inputStream.bufferedReader().use { it.readText() }
-            val array = JSONObject(text).optJSONArray("items") ?: return emptyList()
-            buildList {
+        if (status !in 200..299) return null
+        return runCatching {
+            val json = JSONObject(text)
+            val array = json.optJSONArray("items") ?: JSONArray()
+            val parsed = buildList {
                 for (index in 0 until array.length()) {
                     val obj = array.optJSONObject(index) ?: continue
                     val id = obj.optString("id").trim()
@@ -356,11 +517,9 @@ class FamilyCloudSyncManager(
                     )
                 }
             }
-        } catch (_: Exception) {
-            null
-        } finally {
-            connection.disconnect()
-        }
+            val next = json.optJSONObject("nextCursor")?.let { it.optLong("updatedAt", 0L) to it.optString("id") }
+            SyncResponse(parsed, next, json.optBoolean("hasMore", false))
+        }.getOrNull()
     }
 
     private fun encodeEntry(entry: AssistantEntry): JSONObject = JSONObject()
@@ -389,7 +548,8 @@ class FamilyCloudSyncManager(
             id = id,
             module = decodedModule,
             title = title,
-            details = value.optString("details").take(1200),
+            // P17 (FAM-N01): same limit as the local store, so sync never shortens details.
+            details = value.optString("details").take(4000),
             category = AssistantDomain.sanitizeCategory(decodedModule, category),
             createdAt = value.optLong("createdAt", System.currentTimeMillis()),
             dueAt = value.optLongOrNullCompat("dueAt"),
@@ -400,6 +560,11 @@ class FamilyCloudSyncManager(
             pinned = value.optBoolean("pinned", false),
         )
     }.getOrNull()
+
+    private companion object {
+        val CLOUD_MODULES = setOf(AssistantModule.FAMILY_REQUESTS, AssistantModule.HEALTH)
+        const val MAX_PULL_PAGES = 20
+    }
 }
 
 private fun JSONObject.optLongOrNullCompat(key: String): Long? =

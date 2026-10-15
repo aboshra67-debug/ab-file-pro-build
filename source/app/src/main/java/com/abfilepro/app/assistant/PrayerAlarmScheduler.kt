@@ -31,7 +31,48 @@ object PrayerAlarmScheduler {
                 val check = occurrence.plusMinutes(settings.prayerCheckMinutes.toLong())
                 if (check.isAfter(now)) schedule(context, prayer, check, EVENT_CHECK, settings.exactAlarms)
             }
+            // P18 (AS-10): a reschedule (boot, time change, settings) between the adhan and its
+            // follow-up must keep today's "did you pray?" question instead of silently dropping it.
+            todayOccurrence(now, prayer, settings)?.let { today ->
+                val check = today.plusMinutes(settings.prayerCheckMinutes.toLong())
+                if (!today.isAfter(now) && check.isAfter(now) && PrayerCompletionStore(context).answer(today.toLocalDate(), prayer) != true) {
+                    schedule(context, prayer, check, EVENT_CHECK, settings.exactAlarms)
+                }
+            }
         }
+    }
+
+    /**
+     * P18: called when an adhan fires. Before P18 nothing scheduled the next day's alarm unless the
+     * app was opened (DATE_CHANGED is not delivered to manifest receivers), so the adhan stopped.
+     * Only the next occurrence of this prayer is added; today's follow-up question is kept.
+     */
+    fun scheduleFollowing(context: Context, prayer: PrayerName) {
+        val settings = AssistantRepository(context).loadPrayerSettings()
+        if (prayer !in settings.enabledAlerts || prayer == PrayerName.SUNRISE) return
+        val zone = runCatching { ZoneId.of(settings.zoneId) }.getOrDefault(ZoneId.systemDefault())
+        val now = ZonedDateTime.now(zone)
+        val occurrence = nextOccurrence(now.plusMinutes(1), prayer, settings) ?: return
+        schedule(context, prayer, occurrence, EVENT_ADHAN, settings.exactAlarms)
+        if (settings.preAlertMinutes > 0) {
+            val pre = occurrence.minusMinutes(settings.preAlertMinutes.toLong())
+            if (pre.isAfter(now)) schedule(context, prayer, pre, EVENT_PRE, settings.exactAlarms)
+        }
+        schedule(context, prayer, occurrence.plusMinutes(settings.prayerCheckMinutes.toLong()), EVENT_CHECK, settings.exactAlarms)
+    }
+
+    /** Test/diagnostic hook: is an alarm pending for this prayer event on [date]? */
+    internal fun isScheduled(context: Context, prayer: PrayerName, event: String, date: LocalDate): Boolean =
+        pendingIntent(context, prayer, event, date, PendingIntent.FLAG_NO_CREATE) != null
+
+    private fun todayOccurrence(now: ZonedDateTime, prayer: PrayerName, settings: PrayerSettings): ZonedDateTime? {
+        val date = now.toLocalDate()
+        val offsetHours = now.zone.rules.getOffset(date.atStartOfDay(now.zone).toInstant()).totalSeconds / 3600.0
+        val time = PrayerTimesCalculator.calculate(
+            date, settings.latitude, settings.longitude, offsetHours,
+            settings.method, settings.asrSchool, settings.adjustmentsMinutes,
+        )[prayer] ?: return null
+        return date.atTime(time).atZone(now.zone)
     }
 
     fun scheduleNudge(context: Context, prayer: PrayerName, date: LocalDate, delayMinutes: Int) {

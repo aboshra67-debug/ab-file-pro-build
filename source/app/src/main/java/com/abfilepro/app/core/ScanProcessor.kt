@@ -577,6 +577,44 @@ object ScanProcessor {
         }
     }
 
+    /**
+     * P19: copies the PDF returned by Google's document scanner into the scans folder safely:
+     * storage check, hidden part file + fsync, %PDF header check, then publish under a unique name.
+     * Nothing is left behind on failure or cancellation, and an existing file is never replaced.
+     */
+    suspend fun importScannerPdf(context: Context, source: Uri, baseName: String): File {
+        val declared = runCatching {
+            context.contentResolver.openAssetFileDescriptor(source, "r")?.use { it.length }
+        }.getOrNull()?.takeIf { it > 0L } ?: 0L
+        RuntimeSafety.ensureStorage(context, estimatedOutputBytes = declared)
+        val dir = FileUtils.outputDir(context, "scans")
+        require(dir.isDirectory && dir.canWrite()) { "مجلد الحفظ غير قابل للكتابة" }
+        val safe = baseName.trim().replace(Regex("[\\\\/:*?\"<>|]"), "_").ifBlank { "Scan" }
+        var out = File(dir, "${safe}_${System.currentTimeMillis()}.pdf")
+        var index = 2
+        while (out.exists()) { out = File(dir, "${safe}_${System.currentTimeMillis()}_${index++}.pdf") }
+        val pending = File(dir, ".${out.name}.part")
+        try {
+            val input = requireNotNull(context.contentResolver.openInputStream(source)) { "تعذر قراءة ملف الماسح" }
+            input.use { stream ->
+                FileOutputStream(pending, false).use { output ->
+                    RuntimeSafety.copyCancellable(stream, output)
+                    output.flush()
+                    output.fd.sync()
+                }
+            }
+            currentCoroutineContext().ensureActive()
+            val header = ByteArray(5)
+            val read = FileInputStream(pending).use { it.read(header) }
+            require(read == 5 && String(header, Charsets.US_ASCII) == "%PDF-") { "scan_save_output_invalid" }
+            require(!out.exists() && pending.renameTo(out)) { "تعذر تثبيت الملف في مجلد الحفظ" }
+            return out
+        } catch (error: Throwable) {
+            runCatching { pending.delete() }
+            throw error
+        }
+    }
+
     /** Identity of a JPG published by one Batch save attempt (P15 SCAN-04 ownership proof). */
     private data class PublishedBatchImage(val file: File, val length: Long, val lastModified: Long)
 

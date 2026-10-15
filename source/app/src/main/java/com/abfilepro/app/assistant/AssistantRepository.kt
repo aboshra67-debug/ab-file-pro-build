@@ -1,24 +1,118 @@
 package com.abfilepro.app.assistant
 
 import android.content.Context
+import android.util.AtomicFile
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import org.json.JSONArray
 import org.json.JSONObject
+import java.io.File
 import java.util.UUID
 
 /**
- * Private offline-first store for assistant content.
+ * P20: one process-wide store for assistant records.
  *
- * SharedPreferences is deliberate here: the feature stores small text records only and needs no
- * new database dependency. Writes replace one compact, versioned JSON document atomically.
+ * Before P20 every screen and alarm receiver kept its own copy of the list and wrote the whole
+ * list back (a newer change made elsewhere could be overwritten — AS-02/FAM-03), the list was
+ * silently cut at 2,000 records (AS-15), and everything lived in one large SharedPreferences string.
+ * Now records are kept in memory once, every change is applied to the latest data under a lock and
+ * written atomically to app-private storage, and nothing is dropped. The pre-P20 SharedPreferences
+ * copy is migrated once and left untouched as a fallback.
  */
-class AssistantRepository(context: Context) {
-    private val appContext = context.applicationContext
-    private val prefs = appContext.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+internal object AssistantStore {
+    private const val FILE_NAME = "assistant/entries_v2.json"
+    private const val MIGRATED_KEY = "assistant_store_v2_migrated"
+    private val lock = Any()
+    @Volatile private var cache: List<AssistantEntry>? = null
+    private val mutableRevision = MutableStateFlow(0L)
+    val revision: StateFlow<Long> = mutableRevision.asStateFlow()
 
-    fun loadEntries(): List<AssistantEntry> = runCatching {
-        val root = JSONObject(prefs.getString(KEY_DATA, null) ?: return emptyList())
+    private fun file(context: Context) = AtomicFile(File(context.applicationContext.filesDir, FILE_NAME).apply { parentFile?.mkdirs() })
+
+    fun entries(context: Context): List<AssistantEntry> {
+        cache?.let { return it }
+        synchronized(lock) {
+            cache?.let { return it }
+            val loaded = readFile(context) ?: migrateFromPreferences(context)
+            cache = loaded
+            return loaded
+        }
+    }
+
+    fun mutate(context: Context, change: (List<AssistantEntry>) -> List<AssistantEntry>): List<AssistantEntry> {
+        synchronized(lock) {
+            val current = entries(context)
+            val next = change(current)
+            if (next !== current) {
+                write(context, next)
+                cache = next
+                mutableRevision.value = mutableRevision.value + 1
+            }
+            return next
+        }
+    }
+
+    /** Test hook: forget the in-memory copy (the file stays). */
+    internal fun resetCacheForTests() { synchronized(lock) { cache = null } }
+
+    private fun readFile(context: Context): List<AssistantEntry>? {
+        val atomic = file(context)
+        if (!atomic.baseFile.exists() && !File(atomic.baseFile.path + ".bak").exists()) return null
+        return runCatching { decode(String(atomic.readFully(), Charsets.UTF_8)) }.getOrElse {
+            // Never overwrite an unreadable store: keep it aside for recovery, then fall back to the
+            // last pre-P20 copy instead of starting empty.
+            runCatching { atomic.baseFile.copyTo(File(atomic.baseFile.parentFile, "entries_v2.unreadable-${System.currentTimeMillis()}.json")) }
+            null
+        }
+    }
+
+    private fun migrateFromPreferences(context: Context): List<AssistantEntry> {
+        val prefs = context.applicationContext.getSharedPreferences(AssistantRepository.PREFS_NAME, Context.MODE_PRIVATE)
+        val legacy = runCatching { decode(prefs.getString(AssistantRepository.KEY_DATA, null) ?: "") }.getOrDefault(emptyList())
+        write(context, legacy)
+        prefs.edit().putBoolean(MIGRATED_KEY, true).apply()
+        return legacy
+    }
+
+    private fun write(context: Context, entries: List<AssistantEntry>) {
+        val atomic = file(context)
+        val stream = atomic.startWrite()
+        try {
+            stream.write(encode(entries).toByteArray(Charsets.UTF_8))
+            atomic.finishWrite(stream)
+        } catch (error: Throwable) {
+            atomic.failWrite(stream)
+            throw error
+        }
+    }
+
+    fun encode(entries: List<AssistantEntry>): String {
+        val array = JSONArray()
+        entries.forEach { entry ->
+            array.put(JSONObject().apply {
+                put("id", entry.id)
+                put("module", entry.module.storageId)
+                put("title", entry.title.take(AssistantRepository.MAX_TEXT))
+                put("details", entry.details.take(AssistantRepository.MAX_DETAILS))
+                put("category", entry.category.name)
+                put("createdAt", entry.createdAt)
+                entry.dueAt?.let { put("dueAt", it) }
+                put("completed", entry.completed)
+                entry.amount?.let { put("amount", it) }
+                put("secondary", entry.secondary.take(AssistantRepository.MAX_SECONDARY))
+                put("enabled", entry.enabled)
+                put("pinned", entry.pinned)
+            })
+        }
+        return JSONObject().put("schema", 2).put("entries", array).toString()
+    }
+
+    fun decode(raw: String): List<AssistantEntry> {
+        if (raw.isBlank()) return emptyList()
+        val root = JSONObject(raw)
         val items = root.optJSONArray("entries") ?: return emptyList()
-        buildList {
+        return buildList {
             for (index in 0 until items.length()) {
                 val value = items.optJSONObject(index) ?: continue
                 val module = AssistantModule.fromStorageId(value.optString("module")) ?: continue
@@ -43,30 +137,27 @@ class AssistantRepository(context: Context) {
                 )
             }
         }
-    }.getOrElse { emptyList() }
+    }
+}
+
+class AssistantRepository(context: Context) {
+    private val appContext = context.applicationContext
+    private val prefs = appContext.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+
+    /** Changes whenever any screen, alarm or sync changed the records. */
+    val revision: StateFlow<Long> get() = AssistantStore.revision
+
+    fun loadEntries(): List<AssistantEntry> = AssistantStore.entries(appContext)
 
     fun replaceEntries(entries: List<AssistantEntry>) {
-        val array = JSONArray()
-        entries.take(MAX_ENTRIES).forEach { entry ->
-            array.put(JSONObject().apply {
-                put("id", entry.id)
-                put("module", entry.module.storageId)
-                put("title", entry.title.take(MAX_TEXT))
-                put("details", entry.details.take(MAX_DETAILS))
-                put("category", entry.category.name)
-                put("createdAt", entry.createdAt)
-                entry.dueAt?.let { put("dueAt", it) }
-                put("completed", entry.completed)
-                entry.amount?.let { put("amount", it) }
-                put("secondary", entry.secondary.take(MAX_TEXT))
-                put("enabled", entry.enabled)
-                put("pinned", entry.pinned)
-            })
-        }
-        val root = JSONObject().put("schema", SCHEMA_VERSION).put("entries", array)
-        prefs.edit().putString(KEY_DATA, root.toString()).apply()
+        AssistantStore.mutate(appContext) { entries.distinctBy { it.id } }
     }
 
+    /**
+     * Adds a record. [current] is accepted for source compatibility only: the change is applied to
+     * the latest stored list, which is returned, so a stale screen copy can never undo other changes.
+     */
+    @Suppress("UNUSED_PARAMETER")
     fun add(
         current: List<AssistantEntry>,
         module: AssistantModule,
@@ -88,34 +179,52 @@ class AssistantRepository(context: Context) {
             category = AssistantDomain.sanitizeCategory(module, category),
             dueAt = dueAt,
             amount = amount,
-            secondary = secondary.trim().take(MAX_TEXT),
+            secondary = secondary.trim().take(MAX_SECONDARY),
             enabled = enabled,
         )
-        val updated = listOf(created) + current
-        replaceEntries(updated)
+        val updated = AssistantStore.mutate(appContext) { listOf(created) + it }
         if (module == AssistantModule.FAMILY_REQUESTS || module == AssistantModule.HEALTH) {
             FamilySyncStateStore.markChanged(appContext, created.id)
         }
-        return updated.take(MAX_ENTRIES)
+        return updated
     }
 
+    /** Updates one record in the latest list (a record deleted meanwhile is not resurrected). */
+    @Suppress("UNUSED_PARAMETER")
     fun update(current: List<AssistantEntry>, entry: AssistantEntry): List<AssistantEntry> {
-        val updated = current.map { if (it.id == entry.id) entry else it }
-        replaceEntries(updated)
-        if (entry.module == AssistantModule.FAMILY_REQUESTS || entry.module == AssistantModule.HEALTH) {
+        var found = false
+        val updated = AssistantStore.mutate(appContext) { list ->
+            if (list.none { it.id == entry.id }) list
+            else list.map { if (it.id == entry.id) { found = true; entry } else it }
+        }
+        if (found && (entry.module == AssistantModule.FAMILY_REQUESTS || entry.module == AssistantModule.HEALTH)) {
             FamilySyncStateStore.markChanged(appContext, entry.id)
         }
         return updated
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun delete(current: List<AssistantEntry>, id: String): List<AssistantEntry> {
-        val removed = current.firstOrNull { it.id == id }
-        val updated = current.filterNot { it.id == id }
-        replaceEntries(updated)
+        var removed: AssistantEntry? = null
+        val updated = AssistantStore.mutate(appContext) { list ->
+            removed = list.firstOrNull { it.id == id }
+            if (removed == null) list else list.filterNot { it.id == id }
+        }
         if (removed?.module == AssistantModule.FAMILY_REQUESTS || removed?.module == AssistantModule.HEALTH) {
             FamilySyncStateStore.markDeleted(appContext, id)
         }
         return updated
+    }
+
+    /** Family sync: applies only the changed records to the latest list. */
+    internal fun applyRemote(upserts: List<AssistantEntry>, removedIds: Set<String>): List<AssistantEntry> {
+        if (upserts.isEmpty() && removedIds.isEmpty()) return loadEntries()
+        val byId = upserts.associateBy { it.id }
+        return AssistantStore.mutate(appContext) { list ->
+            val kept = list.filterNot { it.id in removedIds }.map { byId[it.id] ?: it }
+            val existing = kept.map { it.id }.toSet()
+            byId.values.filter { it.id !in existing }.sortedByDescending { it.createdAt } + kept
+        }
     }
 
     fun loadPrayerSettings(): PrayerSettings = runCatching {
@@ -196,14 +305,14 @@ class AssistantRepository(context: Context) {
     }
 
     companion object {
-        private const val PREFS_NAME = "ab_personal_assistant"
-        private const val KEY_DATA = "assistant_data_v1"
+        internal const val PREFS_NAME = "ab_personal_assistant"
+        internal const val KEY_DATA = "assistant_data_v1"
         private const val KEY_PRAYER = "prayer_settings_v1"
         private const val KEY_MONEY_BUDGETS = "money_budgets_v1"
-        private const val SCHEMA_VERSION = 1
-        private const val MAX_ENTRIES = 2_000
-        private const val MAX_TEXT = 240
-        private const val MAX_DETAILS = 4_000
+        internal const val MAX_TEXT = 240
+        // P20: links (recording/attachment URIs) are not cut at 240 characters any more.
+        internal const val MAX_SECONDARY = 2_000
+        internal const val MAX_DETAILS = 4_000
     }
 }
 

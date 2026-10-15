@@ -1,14 +1,26 @@
 package com.abfilepro.app.assistant
 
 import android.content.Context
-import java.security.SecureRandom
+
+/**
+ * P17: family sharing is opt-in.
+ *  - OFF: nothing is registered or sent (default for every new install).
+ *  - ON: the user created or joined a family from Family settings.
+ *  - LEGACY_PAUSED: an install from before P17 that was registered automatically. Sync stays
+ *    paused until the user confirms (keep, or leave and delete) from Family settings.
+ */
+enum class FamilySyncState { OFF, ON, LEGACY_PAUSED }
 
 data class FamilyProfile(
     val familyName: String = "عائلتي",
     val selfName: String = "أنا",
     val partnerName: String = "زوجتي",
     val inviteCode: String = "",
-)
+    val syncState: FamilySyncState = FamilySyncState.OFF,
+    val shareHealth: Boolean = false,
+) {
+    val isLinked: Boolean get() = inviteCode.length == 6 && inviteCode.all(Char::isDigit)
+}
 
 data class FamilyRequestMeta(
     val status: String = "new",
@@ -24,33 +36,72 @@ object FamilyLinkStore {
     private const val KEY_SELF_NAME = "self_name"
     private const val KEY_PARTNER_NAME = "partner_name"
     private const val KEY_INVITE_CODE = "invite_code"
+    private const val KEY_SYNC_STATE = "sync_state_v17"
+    private const val KEY_SHARE_HEALTH = "share_health_v17"
+
+    private fun prefs(context: Context) = context.applicationContext.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
 
     fun load(context: Context): FamilyProfile {
-        val prefs = context.getSharedPreferences(PREFS, Context.MODE_PRIVATE)
-        var code = prefs.getString(KEY_INVITE_CODE, "").orEmpty()
-        if (code.length != 6 || code.any { !it.isDigit() }) {
-            code = (SecureRandom().nextInt(900_000) + 100_000).toString()
-            prefs.edit().putString(KEY_INVITE_CODE, code).apply()
+        val prefs = prefs(context)
+        val storedCode = prefs.getString(KEY_INVITE_CODE, "").orEmpty()
+            .takeIf { it.length == 6 && it.all(Char::isDigit) }.orEmpty()
+        val state = if (prefs.contains(KEY_SYNC_STATE)) {
+            runCatching { FamilySyncState.valueOf(prefs.getString(KEY_SYNC_STATE, "OFF").orEmpty()) }
+                .getOrDefault(FamilySyncState.OFF)
+        } else {
+            // One-time migration. Before P17 every install generated a code and registered on the
+            // first open of the assistant, so a stored code + device token only means "was registered".
+            val migrated = if (storedCode.isNotEmpty() && FamilySyncStateStore.deviceToken(context, storedCode) != null) {
+                FamilySyncState.LEGACY_PAUSED
+            } else FamilySyncState.OFF
+            val edit = prefs.edit().putString(KEY_SYNC_STATE, migrated.name)
+            if (migrated == FamilySyncState.OFF) edit.remove(KEY_INVITE_CODE)
+            edit.apply()
+            migrated
         }
         return FamilyProfile(
             familyName = prefs.getString(KEY_FAMILY_NAME, "عائلتي")?.ifBlank { "عائلتي" } ?: "عائلتي",
             selfName = prefs.getString(KEY_SELF_NAME, "أنا")?.ifBlank { "أنا" } ?: "أنا",
             partnerName = prefs.getString(KEY_PARTNER_NAME, "زوجتي")?.ifBlank { "زوجتي" } ?: "زوجتي",
-            inviteCode = code,
+            inviteCode = if (state == FamilySyncState.OFF) "" else storedCode,
+            syncState = state,
+            shareHealth = prefs.getBoolean(KEY_SHARE_HEALTH, false),
         )
     }
 
+    /** Saves display names only. Linking happens in [link] / [unlink] after the server agreed. */
     fun save(context: Context, profile: FamilyProfile) {
-        val previousCode = load(context).inviteCode
-        val normalizedCode = profile.inviteCode.filter(Char::isDigit).take(6).takeIf { it.length == 6 }
-            ?: previousCode
-        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit()
+        prefs(context).edit()
             .putString(KEY_FAMILY_NAME, profile.familyName.trim().ifBlank { "عائلتي" })
             .putString(KEY_SELF_NAME, profile.selfName.trim().ifBlank { "أنا" })
             .putString(KEY_PARTNER_NAME, profile.partnerName.trim().ifBlank { "زوجتي" })
-            .putString(KEY_INVITE_CODE, normalizedCode)
             .apply()
-        FamilySyncStateStore.clearDeviceTokenIfFamilyChanged(context, previousCode, normalizedCode)
+    }
+
+    internal fun link(context: Context, familyCode: String) {
+        require(familyCode.length == 6 && familyCode.all(Char::isDigit)) { "invalid family code" }
+        prefs(context).edit()
+            .putString(KEY_INVITE_CODE, familyCode)
+            .putString(KEY_SYNC_STATE, FamilySyncState.ON.name)
+            .apply()
+    }
+
+    internal fun confirmLegacy(context: Context) {
+        if (load(context).syncState == FamilySyncState.LEGACY_PAUSED) {
+            prefs(context).edit().putString(KEY_SYNC_STATE, FamilySyncState.ON.name).apply()
+        }
+    }
+
+    internal fun unlink(context: Context) {
+        prefs(context).edit()
+            .remove(KEY_INVITE_CODE)
+            .putString(KEY_SYNC_STATE, FamilySyncState.OFF.name)
+            .putBoolean(KEY_SHARE_HEALTH, false)
+            .apply()
+    }
+
+    internal fun setShareHealth(context: Context, enabled: Boolean) {
+        prefs(context).edit().putBoolean(KEY_SHARE_HEALTH, enabled).apply()
     }
 
     fun encode(meta: FamilyRequestMeta): String = listOf(

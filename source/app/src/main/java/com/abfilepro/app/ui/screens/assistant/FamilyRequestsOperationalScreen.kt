@@ -63,6 +63,14 @@ import com.abfilepro.app.assistant.FamilyCloudSyncManager
 import com.abfilepro.app.assistant.FamilyProfile
 import com.abfilepro.app.assistant.AssistantRepository
 import com.abfilepro.app.assistant.FamilyRequestMeta
+import com.abfilepro.app.assistant.FamilySyncState
+import com.abfilepro.app.ui.i18n.AppLanguage
+import com.abfilepro.app.ui.i18n.LocalAppLanguage
+import androidx.compose.material3.Switch
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.ui.text.font.FontFamily
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -107,15 +115,16 @@ internal fun FamilyRequestsOperationalScreen(
     }
 
     if (showFamilySettings) {
+        // P17: names are saved locally; creating, joining, pairing and leaving are explicit actions.
         FamilySettingsDialog(
             profile = familyProfile,
-            onDismiss = { showFamilySettings = false },
-            onSave = {
+            manager = pairingManager,
+            onDismiss = { showFamilySettings = false; familyRevision++ },
+            onSaveNames = {
                 FamilyLinkStore.save(context, it)
-                pairingScope.launch(Dispatchers.IO) { pairingManager.openPairingWindow() }
                 familyRevision++
-                showFamilySettings = false
             },
+            onChanged = { familyRevision++ },
         )
     }
 
@@ -193,7 +202,14 @@ internal fun FamilyRequestsOperationalScreen(
                     Text(familyProfile.familyName, fontWeight = FontWeight.Black, fontSize = 24.sp)
                     Text("${familyProfile.selfName} و ${familyProfile.partnerName}", color = Color(0xFF6B7280), fontSize = 14.sp)
                     Text("طلبات العائلة مرتبطة الآن بقائمة التسوق", color = Color(0xFF0DAA60), fontSize = 12.sp, fontWeight = FontWeight.Bold)
-                    Text("كود العائلة: ${familyProfile.inviteCode}", color = Color(0xFF9CA3AF), fontSize = 11.sp)
+                    Text(
+                        when (familyProfile.syncState) {
+                            FamilySyncState.ON -> "كود العائلة: ${familyProfile.inviteCode}"
+                            FamilySyncState.LEGACY_PAUSED -> "المزامنة متوقفة - افتح الإعدادات للتأكيد"
+                            FamilySyncState.OFF -> "المزامنة غير مفعلة - البيانات على هذا الهاتف فقط"
+                        },
+                        color = Color(0xFF9CA3AF), fontSize = 11.sp,
+                    )
                 }
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     IconButton(onClick = { showChat = true }) {
@@ -477,49 +493,176 @@ private fun AddFamilyRequestDialog(
 }
 
 @Composable
-private fun FamilySettingsDialog(profile: FamilyProfile, onDismiss: () -> Unit, onSave: (FamilyProfile) -> Unit) {
+private fun FamilySettingsDialog(
+    profile: FamilyProfile,
+    manager: FamilyCloudSyncManager,
+    onDismiss: () -> Unit,
+    onSaveNames: (FamilyProfile) -> Unit,
+    onChanged: () -> Unit,
+) {
+    val language = LocalAppLanguage.current
+    val scope = rememberCoroutineScope()
     var familyName by remember { mutableStateOf(profile.familyName) }
     var selfName by remember { mutableStateOf(profile.selfName) }
     var partnerName by remember { mutableStateOf(profile.partnerName) }
-    var inviteCode by remember { mutableStateOf(profile.inviteCode) }
-    val validCode = inviteCode.length == 6 && inviteCode.all(Char::isDigit)
+    var state by remember { mutableStateOf(profile.syncState) }
+    var linkedCode by remember { mutableStateOf(profile.inviteCode) }
+    var shareHealth by remember { mutableStateOf(profile.shareHealth) }
+    var joinInput by remember { mutableStateOf("") }
+    var invite by remember { mutableStateOf<String?>(null) }
+    var message by remember { mutableStateOf<String?>(null) }
+    var busy by remember { mutableStateOf(false) }
+    var confirmLeave by remember { mutableStateOf(false) }
+
+    fun launchAction(action: () -> FamilyCloudSyncManager.LinkResult) {
+        if (busy) return
+        busy = true; message = null
+        scope.launch {
+            val result = withContext(Dispatchers.IO) { runCatching(action).getOrElse { FamilyCloudSyncManager.LinkResult.Failed(FamilyCloudSyncManager.Failure.NETWORK) } }
+            busy = false
+            when (result) {
+                is FamilyCloudSyncManager.LinkResult.Linked -> {
+                    state = FamilySyncState.ON; linkedCode = result.familyCode
+                    invite = result.invite
+                    message = if (result.invite != null) tr(language, "اكتب كود الدعوة ده على الهاتف التاني خلال 10 دقائق", "Enter this invite on the other phone within 10 minutes", "Saisissez cette invitation sur l'autre téléphone sous 10 minutes")
+                        else tr(language, "تم الربط بالعائلة", "Linked to the family", "Famille liée")
+                    onChanged()
+                }
+                is FamilyCloudSyncManager.LinkResult.Failed -> message = failureText(language, result.reason)
+            }
+        }
+    }
+
+    if (confirmLeave) {
+        AlertDialog(
+            onDismissRequest = { if (!busy) confirmLeave = false },
+            title = { Text(tr(language, "مغادرة العائلة وحذف بياناتي", "Leave family and delete my data", "Quitter la famille et supprimer mes données"), fontWeight = FontWeight.Black) },
+            text = { Text(tr(language,
+                "هيتشال ربط الهاتف ده، وكل اللي شاركته من الهاتف ده ورسائلك هيتمسحوا من الخدمة ومن أجهزة العائلة. بياناتك على الهاتف ده هتفضل زي ما هي.",
+                "This phone will be unlinked. Everything it shared and your chat messages are removed from the service and from the family's phones. Your data on this phone stays.",
+                "Ce téléphone sera dissocié. Tout ce qu'il a partagé et vos messages sont supprimés du service et des téléphones de la famille. Vos données restent sur ce téléphone.")) },
+            confirmButton = {
+                Button(enabled = !busy, onClick = {
+                    busy = true
+                    scope.launch {
+                        val ok = withContext(Dispatchers.IO) { runCatching { manager.leaveFamily(deleteMyData = true) }.getOrDefault(false) }
+                        busy = false; confirmLeave = false
+                        if (ok) { state = FamilySyncState.OFF; linkedCode = ""; shareHealth = false; invite = null
+                            message = tr(language, "تمت مغادرة العائلة وحذف بياناتك منها", "You left the family and your shared data was deleted", "Vous avez quitté la famille ; vos données partagées ont été supprimées")
+                            onChanged()
+                        } else message = tr(language, "تعذر الاتصال بالخدمة. ما اتغيرش حاجة، حاول تاني.", "Could not reach the service. Nothing changed; try again.", "Service injoignable. Rien n'a changé ; réessayez.")
+                    }
+                }, colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFDC2626))) { Text(tr(language, "مغادرة وحذف", "Leave and delete", "Quitter et supprimer")) }
+            },
+            dismissButton = { TextButton(enabled = !busy, onClick = { confirmLeave = false }) { Text(tr(language, "إلغاء", "Cancel", "Annuler")) } },
+        )
+    }
+
     AlertDialog(
-        onDismissRequest = onDismiss,
-        title = { Text("إعداد العائلة", fontWeight = FontWeight.Black) },
+        onDismissRequest = { if (!busy) onDismiss() },
+        title = { Text(tr(language, "إعداد العائلة", "Family settings", "Paramètres famille"), fontWeight = FontWeight.Black) },
         text = {
-            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                OutlinedTextField(familyName, { familyName = it.take(40) }, label = { Text("اسم العائلة") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                OutlinedTextField(selfName, { selfName = it.take(30) }, label = { Text("اسمي") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                OutlinedTextField(partnerName, { partnerName = it.take(30) }, label = { Text("اسم الطرف الآخر") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                OutlinedTextField(
-                    value = inviteCode,
-                    onValueChange = { inviteCode = it.filter(Char::isDigit).take(6) },
-                    label = { Text("كود العائلة - 6 أرقام") },
-                    supportingText = { Text("على الهاتف الأول اضغط حفظ وربط لفتح الربط، ثم أدخل نفس الكود على الهاتف الآخر") },
-                    isError = inviteCode.isNotEmpty() && !validCode,
-                    singleLine = true,
-                    modifier = Modifier.fillMaxWidth(),
-                )
+            Column(Modifier.verticalScroll(rememberScrollState()), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                OutlinedTextField(familyName, { familyName = it.take(40) }, label = { Text(tr(language, "اسم العائلة", "Family name", "Nom de famille")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                OutlinedTextField(selfName, { selfName = it.take(30) }, label = { Text(tr(language, "اسمي", "My name", "Mon nom")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                OutlinedTextField(partnerName, { partnerName = it.take(30) }, label = { Text(tr(language, "اسم الطرف الآخر", "Other member", "Autre membre")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                HorizontalDivider()
+                when (state) {
+                    FamilySyncState.OFF -> {
+                        Text(tr(language,
+                            "المزامنة مش مفعلة. طلبات العائلة وقائمة التسوق محفوظة على الهاتف ده بس. فعّلها لو عايز تشارك مع حد من عيلتك.",
+                            "Sync is off. Family requests and the shopping list stay on this phone only. Turn it on to share with a family member.",
+                            "La synchronisation est désactivée. Les demandes et la liste de courses restent sur ce téléphone."), fontSize = 13.sp)
+                        Button(enabled = !busy, onClick = { launchAction { manager.createFamily() } }, modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635))) {
+                            Text(tr(language, "إنشاء عائلة جديدة", "Create a new family", "Créer une famille"))
+                        }
+                        OutlinedTextField(
+                            value = joinInput,
+                            onValueChange = { joinInput = it.take(24) },
+                            label = { Text(tr(language, "كود الدعوة من الهاتف التاني", "Invite from the other phone", "Invitation de l'autre téléphone")) },
+                            placeholder = { Text("123456-ABCD234567") },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth(),
+                        )
+                        Button(enabled = !busy && joinInput.isNotBlank(), onClick = { launchAction { manager.joinFamily(joinInput) } }, modifier = Modifier.fillMaxWidth()) {
+                            Text(tr(language, "انضمام للعائلة", "Join family", "Rejoindre"))
+                        }
+                    }
+                    FamilySyncState.LEGACY_PAUSED -> {
+                        Text(tr(language,
+                            "النسخ القديمة كانت بتفعّل المزامنة تلقائيًا. وقفناها لحد ما تختار. لو بتستخدمها مع حد من عيلتك اضغط «تكمّل المزامنة».",
+                            "Older versions turned sync on automatically. It is paused until you choose. If you share with a family member, tap Keep syncing.",
+                            "Les anciennes versions activaient la synchro automatiquement. Elle est en pause jusqu'à votre choix."), fontSize = 13.sp)
+                        ShareHealthRow(language, shareHealth) { shareHealth = it }
+                        Button(enabled = !busy, onClick = {
+                            busy = true
+                            scope.launch {
+                                withContext(Dispatchers.IO) { manager.confirmLegacyFamily(shareHealth) }
+                                busy = false; state = FamilySyncState.ON; onChanged()
+                                message = tr(language, "المزامنة شغالة", "Sync is on", "Synchro activée")
+                            }
+                        }, modifier = Modifier.fillMaxWidth(), colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635))) {
+                            Text(tr(language, "تكمّل المزامنة", "Keep syncing", "Continuer la synchro"))
+                        }
+                        TextButton(enabled = !busy, onClick = { confirmLeave = true }, modifier = Modifier.fillMaxWidth()) {
+                            Text(tr(language, "مش بستخدمها - امسح بياناتي من الخدمة", "I don't use it - delete my data from the service", "Je ne l'utilise pas - supprimer mes données"), color = Color(0xFFDC2626))
+                        }
+                    }
+                    FamilySyncState.ON -> {
+                        Text(tr(language, "مرتبط بعائلة كود $linkedCode", "Linked to family $linkedCode", "Famille liée $linkedCode"), fontWeight = FontWeight.Bold)
+                        ShareHealthRow(language, shareHealth) { enabled ->
+                            shareHealth = enabled
+                            scope.launch { withContext(Dispatchers.IO) { manager.setShareHealth(enabled) } }
+                        }
+                        Button(enabled = !busy, onClick = { launchAction { manager.openPairingWindow() } }, modifier = Modifier.fillMaxWidth()) {
+                            Text(tr(language, "إضافة هاتف تاني للعائلة", "Add another phone", "Ajouter un téléphone"))
+                        }
+                        TextButton(enabled = !busy, onClick = { confirmLeave = true }, modifier = Modifier.fillMaxWidth()) {
+                            Text(tr(language, "مغادرة العائلة وحذف بياناتي", "Leave family and delete my data", "Quitter la famille et supprimer mes données"), color = Color(0xFFDC2626))
+                        }
+                    }
+                }
+                invite?.let {
+                    Surface(shape = RoundedCornerShape(14.dp), color = Color(0xFFFFF3F5), modifier = Modifier.fillMaxWidth()) {
+                        Text(it, modifier = Modifier.padding(12.dp), fontSize = 22.sp, fontWeight = FontWeight.Black,
+                            fontFamily = FontFamily.Monospace, textAlign = TextAlign.Center)
+                    }
+                }
+                if (busy) CircularProgressIndicator(Modifier.align(Alignment.CenterHorizontally))
+                message?.let { Text(it, fontSize = 13.sp, color = Color(0xFF475569)) }
             }
         },
         confirmButton = {
-            Button(
-                enabled = validCode,
-                onClick = {
-                    onSave(
-                        profile.copy(
-                            familyName = familyName,
-                            selfName = selfName,
-                            partnerName = partnerName,
-                            inviteCode = inviteCode,
-                        )
-                    )
-                },
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635)),
-            ) { Text("حفظ وربط") }
+            Button(enabled = !busy, onClick = {
+                onSaveNames(profile.copy(familyName = familyName, selfName = selfName, partnerName = partnerName))
+                onDismiss()
+            }, colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635))) { Text(tr(language, "حفظ", "Save", "Enregistrer")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        dismissButton = { TextButton(enabled = !busy, onClick = onDismiss) { Text(tr(language, "إغلاق", "Close", "Fermer")) } },
     )
+}
+
+@Composable
+private fun ShareHealthRow(language: AppLanguage, checked: Boolean, onChange: (Boolean) -> Unit) {
+    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+        Column(Modifier.weight(1f)) {
+            Text(tr(language, "مشاركة الأدوية والمواعيد الصحية", "Share medicines and health appointments", "Partager médicaments et rendez-vous"), fontWeight = FontWeight.Bold, fontSize = 13.sp)
+            Text(tr(language, "مقفولة افتراضيًا. لو قفلتها، اللي شاركته قبل كده بيتشال من أجهزة العائلة.", "Off by default. Turning it off withdraws what you shared before.", "Désactivé par défaut. Le désactiver retire ce qui a été partagé."), fontSize = 11.sp, color = Color(0xFF6B7280))
+        }
+        Switch(checked = checked, onCheckedChange = onChange)
+    }
+}
+
+private fun failureText(language: AppLanguage, reason: FamilyCloudSyncManager.Failure): String = when (reason) {
+    FamilyCloudSyncManager.Failure.INVALID_INVITE -> tr(language, "كود الدعوة غلط أو انتهى. اطلب كود جديد من الهاتف التاني.", "The invite is wrong or expired. Ask the other phone for a new one.", "Invitation invalide ou expirée.")
+    FamilyCloudSyncManager.Failure.PAIRING_CLOSED -> tr(language, "وقت الربط خلص. من الهاتف المرتبط اضغط «إضافة هاتف تاني».", "Pairing has closed. On the linked phone tap Add another phone.", "L'appairage est fermé.")
+    FamilyCloudSyncManager.Failure.NOT_FOUND -> tr(language, "مفيش عائلة بالكود ده.", "No family has this code.", "Aucune famille avec ce code.")
+    FamilyCloudSyncManager.Failure.FAMILY_FULL -> tr(language, "العائلة وصلت للحد الأقصى من الأجهزة.", "This family has reached its device limit.", "Limite d'appareils atteinte.")
+    FamilyCloudSyncManager.Failure.TOO_MANY_ATTEMPTS -> tr(language, "محاولات كتير. استنى دقيقة وجرب تاني.", "Too many attempts. Wait a minute and try again.", "Trop d'essais. Réessayez dans une minute.")
+    FamilyCloudSyncManager.Failure.UNAUTHORIZED -> tr(language, "الهاتف ده مبقاش مرتبط. انضم تاني بكود دعوة جديد.", "This phone is no longer linked. Join again with a new invite.", "Ce téléphone n'est plus lié.")
+    FamilyCloudSyncManager.Failure.NETWORK -> tr(language, "مفيش اتصال بالخدمة. اتأكد من الإنترنت.", "No connection to the service. Check the internet.", "Pas de connexion au service.")
+    FamilyCloudSyncManager.Failure.NOT_CONFIGURED, FamilyCloudSyncManager.Failure.SERVER -> tr(language, "الخدمة مش متاحة دلوقتي. جرب بعدين.", "The service is unavailable. Try later.", "Service indisponible.")
 }
 
 private fun shareFamilyRequest(context: Context, entry: AssistantEntry, meta: FamilyRequestMeta, comment: String) {

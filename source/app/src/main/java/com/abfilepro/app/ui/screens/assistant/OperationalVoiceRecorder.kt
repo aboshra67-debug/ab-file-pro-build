@@ -71,6 +71,10 @@ import com.abfilepro.app.assistant.AssistantEntry
 import com.abfilepro.app.assistant.AssistantModule
 import com.abfilepro.app.ui.i18n.LocalAppLanguage
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.withContext
+import kotlinx.coroutines.Dispatchers
+import androidx.compose.runtime.collectAsState
+import com.abfilepro.app.assistant.VoiceRecordingController
 import java.io.File
 import java.util.concurrent.TimeUnit
 
@@ -92,11 +96,13 @@ internal fun OperationalVoiceRecorderScreen(
     val context = LocalContext.current
     val language = LocalAppLanguage.current
     var quality by remember { mutableStateOf(VoiceQuality.NORMAL) }
-    var phase by remember { mutableStateOf(RecorderPhase.IDLE) }
-    var recorder by remember { mutableStateOf<MediaRecorder?>(null) }
-    var currentFile by remember { mutableStateOf<File?>(null) }
-    var elapsedMs by remember { mutableLongStateOf(0L) }
-    var runningSince by remember { mutableLongStateOf(0L) }
+    // P19 (AS-12): the recorder is process-wide; this screen only shows and controls it.
+    val recState by VoiceRecordingController.state.collectAsState()
+    val phase = when (recState.phase) {
+        VoiceRecordingController.Phase.IDLE -> RecorderPhase.IDLE
+        VoiceRecordingController.Phase.RECORDING -> RecorderPhase.RECORDING
+        VoiceRecordingController.Phase.PAUSED -> RecorderPhase.PAUSED
+    }
     var liveElapsedMs by remember { mutableLongStateOf(0L) }
     var player by remember { mutableStateOf<MediaPlayer?>(null) }
     var playingEntryId by remember { mutableStateOf<String?>(null) }
@@ -106,36 +112,29 @@ internal fun OperationalVoiceRecorderScreen(
         else -> q.labelEn
     }
 
-    fun releaseRecorder() {
-        runCatching { recorder?.release() }
-        recorder = null
+    fun addRecording(finished: VoiceRecordingController.Finished, recovered: Boolean) {
+        val uri = FileProvider.getUriForFile(context, "${context.packageName}.files", finished.file)
+        val label = if (recovered) tr(language, "تسجيل مستعاد", "Recovered recording", "Enregistrement récupéré")
+            else tr(language, "تسجيل صوتي", "Voice recording", "Enregistrement vocal")
+        val title = label + " " + formatDateTime(finished.file.lastModified(), language.code)
+        onAdd(title, "durationMs=${finished.durationMs};quality=${finished.quality}", defaultCategory, null, null, uri.toString())
+        VoiceRecordingController.forgetSidecar(finished.file)
+    }
+
+    // Recordings that were stopped from the notification, or whose app was closed before saving,
+    // are added back to the list instead of being lost or left as hidden files.
+    LaunchedEffect(Unit) {
+        val referenced = entries.mapNotNull { runCatching { Uri.parse(it.secondary).lastPathSegment }.getOrNull() }.toSet()
+        val orphans = withContext(Dispatchers.IO) { VoiceRecordingController.unsavedRecordings(context, referenced) }
+        orphans.forEach { addRecording(it, recovered = true) }
+        if (orphans.isNotEmpty()) {
+            Toast.makeText(context, tr(language, "تم استرجاع ${orphans.size} تسجيل", "${orphans.size} recording(s) recovered", "${orphans.size} enregistrement(s) récupéré(s)"), Toast.LENGTH_LONG).show()
+        }
     }
 
     fun startRecording() {
         if (phase != RecorderPhase.IDLE) return
-        val dir = File(context.getExternalFilesDir(null), "voice_recordings").apply { mkdirs() }
-        val file = File(dir, "AB_VOICE_${System.currentTimeMillis()}.m4a")
-        val newRecorder = MediaRecorder().apply {
-            setAudioSource(MediaRecorder.AudioSource.MIC)
-            setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
-            setAudioEncoder(MediaRecorder.AudioEncoder.AAC)
-            setAudioEncodingBitRate(quality.bitrate)
-            setAudioSamplingRate(quality.sampleRate)
-            setOutputFile(file.absolutePath)
-        }
-        runCatching {
-            newRecorder.prepare()
-            newRecorder.start()
-        }.onSuccess {
-            recorder = newRecorder
-            currentFile = file
-            elapsedMs = 0L
-            liveElapsedMs = 0L
-            runningSince = SystemClock.elapsedRealtime()
-            phase = RecorderPhase.RECORDING
-        }.onFailure {
-            runCatching { newRecorder.release() }
-            file.delete()
+        if (!VoiceRecordingController.start(context, quality.bitrate, quality.sampleRate, quality.name.lowercase())) {
             Toast.makeText(context, tr(language, "تعذر بدء التسجيل", "Could not start recording", "Impossible de démarrer"), Toast.LENGTH_LONG).show()
         }
     }
@@ -154,53 +153,29 @@ internal fun OperationalVoiceRecorderScreen(
     }
 
     fun pauseRecording() {
-        if (phase != RecorderPhase.RECORDING) return
-        runCatching {
-            recorder?.pause()
-            elapsedMs += SystemClock.elapsedRealtime() - runningSince
-            liveElapsedMs = elapsedMs
-            phase = RecorderPhase.PAUSED
-        }.onFailure {
+        if (!VoiceRecordingController.pause()) {
             Toast.makeText(context, tr(language, "تعذر إيقاف التسجيل مؤقتًا", "Could not pause", "Pause impossible"), Toast.LENGTH_SHORT).show()
         }
     }
 
     fun resumeRecording() {
-        if (phase != RecorderPhase.PAUSED) return
-        runCatching {
-            recorder?.resume()
-            runningSince = SystemClock.elapsedRealtime()
-            phase = RecorderPhase.RECORDING
-        }.onFailure {
+        if (!VoiceRecordingController.resume()) {
             Toast.makeText(context, tr(language, "تعذر استكمال التسجيل", "Could not resume", "Reprise impossible"), Toast.LENGTH_SHORT).show()
         }
     }
 
     fun stopRecording(save: Boolean = true) {
         if (phase == RecorderPhase.IDLE) return
-        val total = elapsedMs + if (phase == RecorderPhase.RECORDING) SystemClock.elapsedRealtime() - runningSince else 0L
-        val file = currentFile
-        val stopped = runCatching { recorder?.stop() }.isSuccess
-        releaseRecorder()
-        phase = RecorderPhase.IDLE
-        elapsedMs = 0L
-        liveElapsedMs = 0L
-        runningSince = 0L
-        currentFile = null
-
-        if (!stopped || file == null || !file.exists() || file.length() == 0L) {
-            file?.delete()
+        if (!save) {
+            VoiceRecordingController.discard(context)
+            return
+        }
+        val finished = VoiceRecordingController.stop(context)
+        if (finished == null) {
             Toast.makeText(context, tr(language, "لم يتم حفظ التسجيل", "Recording was not saved", "Enregistrement non sauvegardé"), Toast.LENGTH_SHORT).show()
             return
         }
-        if (!save) {
-            file.delete()
-            return
-        }
-        val uri = FileProvider.getUriForFile(context, "${context.packageName}.files", file)
-        val title = tr(language, "تسجيل صوتي", "Voice recording", "Enregistrement vocal") + " " + formatDateTime(System.currentTimeMillis(), language.code)
-        val details = "durationMs=$total;quality=${quality.name.lowercase()}"
-        onAdd(title, details, defaultCategory, null, null, uri.toString())
+        addRecording(finished, recovered = false)
         Toast.makeText(context, tr(language, "تم حفظ التسجيل", "Recording saved", "Enregistrement sauvegardé"), Toast.LENGTH_SHORT).show()
     }
 
@@ -247,20 +222,18 @@ internal fun OperationalVoiceRecorderScreen(
         )
     }
 
-    LaunchedEffect(phase, runningSince) {
-        while (phase == RecorderPhase.RECORDING) {
-            liveElapsedMs = elapsedMs + (SystemClock.elapsedRealtime() - runningSince)
+    LaunchedEffect(recState) {
+        liveElapsedMs = recState.elapsedMs()
+        while (recState.phase == VoiceRecordingController.Phase.RECORDING) {
+            liveElapsedMs = recState.elapsedMs()
             delay(200)
         }
-        if (phase == RecorderPhase.PAUSED) liveElapsedMs = elapsedMs
     }
 
     DisposableEffect(Unit) {
         onDispose {
-            runCatching { recorder?.stop() }
-            releaseRecorder()
-            currentFile?.delete()
-            currentFile = null
+            // P19: leaving the screen never deletes a recording; it continues in the background
+            // with its notification (Stop and save), or stays saved if it was already stopped.
             stopPlayback()
         }
     }

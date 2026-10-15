@@ -32,11 +32,13 @@ class TaskAlarmReceiver : BroadcastReceiver() {
         val isCalendar = task.module == AssistantModule.CALENDAR
         val lead = if (isCalendar) (task.amount ?: 0.0).toInt().coerceAtLeast(0) else 0
         val title = if (isCalendar) {
-            if (lead > 0) "تذكير بموعد: ${task.title}" else "حان الآن موعد: ${task.title}"
+            if (lead > 0) ReminderText.pick(context, "تذكير بموعد: ${task.title}", "Upcoming: ${task.title}", "Rappel : ${task.title}")
+            else ReminderText.pick(context, "حان الآن موعد: ${task.title}", "Now: ${task.title}", "Maintenant : ${task.title}")
         } else {
-            "تذكير بمهمة: ${task.title}"
+            ReminderText.pick(context, "تذكير بمهمة: ${task.title}", "Task reminder: ${task.title}", "Rappel de tâche : ${task.title}")
         }
-        val fallback = if (isCalendar) buildCalendarMessage(task, lead) else "حان موعد المهمة"
+        val fallback = if (isCalendar) buildCalendarMessage(context, task, lead)
+            else ReminderText.pick(context, "حان موعد المهمة", "Your task is due", "Votre tâche est prévue")
         val body = if (isCalendar) fallback else task.details.ifBlank { fallback }
         val notification = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.ab_logo_icon)
@@ -53,12 +55,15 @@ class TaskAlarmReceiver : BroadcastReceiver() {
             .setContentIntent(openApp)
             .build()
         NotificationManagerCompat.from(context).notify(id.hashCode(), notification)
+        task.dueAt?.let { ReminderLedger.markNotified(context, id, it) }
     }
 
-    private fun buildCalendarMessage(task: AssistantEntry, lead: Int): String {
+    private fun buildCalendarMessage(context: Context, task: AssistantEntry, lead: Int): String {
         val start = task.dueAt?.let { DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(Date(it)) }.orEmpty()
         val location = task.details.takeIf { it.isNotBlank() }?.let { " • $it" }.orEmpty()
-        return if (lead > 0) "بعد $lead دقيقة: $start$location" else "حان الآن موعدك: $start$location"
+        val minutesLeft = task.dueAt?.let { ((it - System.currentTimeMillis()) / 60_000L).coerceAtLeast(0L) } ?: lead.toLong()
+        return if (minutesLeft > 0) ReminderText.pick(context, "بعد $minutesLeft دقيقة: $start$location", "In $minutesLeft min: $start$location", "Dans $minutesLeft min : $start$location")
+            else ReminderText.pick(context, "حان الآن موعدك: $start$location", "Starting now: $start$location", "Maintenant : $start$location")
     }
 
     private fun createChannel(context: Context) {
@@ -69,8 +74,8 @@ class TaskAlarmReceiver : BroadcastReceiver() {
                 .setUsage(AudioAttributes.USAGE_ALARM)
                 .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
                 .build()
-            manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, "منبّه المهام والمواعيد", NotificationManager.IMPORTANCE_HIGH).apply {
-                description = "منبّه صوتي واهتزاز للمهام والمواعيد"
+            manager.createNotificationChannel(NotificationChannel(CHANNEL_ID, ReminderText.pick(context, "منبّه المهام والمواعيد", "Task and event alarms", "Alarmes tâches et rendez-vous"), NotificationManager.IMPORTANCE_HIGH).apply {
+                description = ReminderText.pick(context, "منبّه صوتي واهتزاز للمهام والمواعيد", "Sound and vibration for tasks and events", "Son et vibration pour tâches et rendez-vous")
                 enableVibration(true)
                 vibrationPattern = longArrayOf(0, 700, 350, 700, 350, 1000)
                 setSound(alarmSound, audio)

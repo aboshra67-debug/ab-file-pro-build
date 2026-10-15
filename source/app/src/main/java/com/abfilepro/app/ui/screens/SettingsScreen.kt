@@ -10,6 +10,12 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import android.widget.Toast
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
@@ -45,6 +51,26 @@ fun SettingsScreen(
     var selectedTheme by remember { mutableStateOf(prefs.getString("theme_preset", "blue").orEmpty().ifBlank { "blue" }) }
     var showIntro by remember { mutableStateOf(!prefs.getBoolean("intro_disabled", false)) }
     var showAiHelp by remember { mutableStateOf(prefs.getBoolean("show_ai_help", true)) }
+
+    val backupScope = rememberCoroutineScope()
+    val exportLauncher = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
+        if (uri != null) backupScope.launch {
+            val message = withContext(Dispatchers.IO) {
+                runCatching { com.abfilepro.app.assistant.AssistantBackup.export(context, uri) }
+                    .fold({ context.uiText(language, "p20_backup_exported", it) }, { context.uiText(language, "p20_backup_failed") })
+            }
+            Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+        }
+    }
+    val importLauncher = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null) backupScope.launch {
+            val message = withContext(Dispatchers.IO) {
+                runCatching { com.abfilepro.app.assistant.AssistantBackup.import(context, uri) }
+                    .fold({ context.uiText(language, "p20_backup_imported", it.added, it.alreadyPresent) }, { context.uiText(language, "p20_backup_failed") })
+            }
+            Toast.makeText(context, message, Toast.LENGTH_LONG).show()
+        }
+    }
 
     val versionName = remember(context) {
         runCatching { context.packageManager.getPackageInfo(context.packageName, 0).versionName }
@@ -213,6 +239,21 @@ fun SettingsScreen(
                     showAiHelp = it
                     prefs.edit().putBoolean("show_ai_help", it).apply()
                 }
+            )
+
+            // P20: user-controlled backup of the personal assistant (allowBackup stays off).
+            SettingsSectionTitle(Icons.Default.Backup, context.uiText(language, "p20_backup_section"))
+            PremiumSettingsCard(
+                icon = Icons.Default.Upload,
+                title = context.uiText(language, "p20_backup_export"),
+                subtitle = context.uiText(language, "p20_backup_export_desc"),
+                onClick = { exportLauncher.launch("AB_File_Pro_backup_${java.time.LocalDate.now()}.json") }
+            )
+            PremiumSettingsCard(
+                icon = Icons.Default.Download,
+                title = context.uiText(language, "p20_backup_import"),
+                subtitle = context.uiText(language, "p20_backup_import_desc"),
+                onClick = { importLauncher.launch(arrayOf("application/json", "text/plain", "application/octet-stream")) }
             )
 
             SettingsSectionTitle(Icons.Default.Info, context.uiText(language, "settings_section_about"))

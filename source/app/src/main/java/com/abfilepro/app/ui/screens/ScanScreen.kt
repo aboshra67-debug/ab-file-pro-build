@@ -27,6 +27,8 @@ import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import com.abfilepro.app.core.findActivity
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
@@ -61,6 +63,11 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.io.File
 
+private val ScanDraftPagesSaver = androidx.compose.runtime.saveable.Saver<List<ScanDraftPage>, String>(
+    save = { com.abfilepro.app.core.ScanDraftPageCodec.encode(it) },
+    restore = { com.abfilepro.app.core.ScanDraftPageCodec.decode(it) },
+)
+
 private enum class ScanUiStage { HUB, CAMERA, PROCESSING, BOUNDS, EDITOR, SAVE_OPTIONS, REVIEW, SAVING, SUCCESS }
 private enum class ScanOutputFormat { PDF, JPG }
 
@@ -80,11 +87,12 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     var busy by remember { mutableStateOf(false) }
     var savePageImages by remember { mutableStateOf(false) }
     var openAfterSave by remember { mutableStateOf(true) }
-    var customName by remember { mutableStateOf("") }
-    var singleDocumentOutputFormat by remember { mutableStateOf(ScanOutputFormat.PDF) }
-    var quality by remember { mutableIntStateOf(82) }
-    var pageSize by remember { mutableStateOf(ScanPdfPageSize.AUTO) }
-    var reviewPages by remember { mutableStateOf<List<ScanDraftPage>>(emptyList()) }
+    // P19: survives activity recreation (theme/font/size change, split screen, process restore).
+    var customName by rememberSaveable { mutableStateOf("") }
+    var singleDocumentOutputFormat by rememberSaveable { mutableStateOf(ScanOutputFormat.PDF) }
+    var quality by rememberSaveable { mutableIntStateOf(82) }
+    var pageSize by rememberSaveable { mutableStateOf(ScanPdfPageSize.AUTO) }
+    var reviewPages by rememberSaveable(stateSaver = ScanDraftPagesSaver) { mutableStateOf<List<ScanDraftPage>>(emptyList()) }
     var cameraPages by remember { mutableStateOf<List<ScanDraftPage>>(emptyList()) }
     // Alpha49: capture all BATCH pages first, then review/process them page by page.
     var multiPageCapturedPages by remember { mutableStateOf<List<ScanDraftPage>>(emptyList()) }
@@ -92,8 +100,18 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     var multiPageReviewIndex by remember { mutableIntStateOf(0) }
     var multiPageRetakeIndex by remember { mutableStateOf<Int?>(null) }
     var reviewRetakeIndex by remember { mutableStateOf<Int?>(null) }
-    var flowStage by remember { mutableStateOf(ScanUiStage.HUB) }
-    var selectedMode by remember { mutableStateOf(ScanCaptureMode.DOCUMENT) }
+    var flowStage by rememberSaveable { mutableStateOf(ScanUiStage.HUB) }
+    var selectedMode by rememberSaveable { mutableStateOf(ScanCaptureMode.DOCUMENT) }
+    // P19: after a recreation only the review list is trustworthy (camera/editor sessions are not),
+    // so a restored transient stage falls back to Review (or the hub when there are no pages).
+    var restoredScannerState by rememberSaveable { mutableStateOf(false) }
+    LaunchedEffect(Unit) {
+        if (restoredScannerState && flowStage != ScanUiStage.HUB && flowStage != ScanUiStage.SUCCESS &&
+            (flowStage != ScanUiStage.REVIEW || reviewPages.isEmpty())) {
+            flowStage = if (reviewPages.isNotEmpty()) ScanUiStage.REVIEW else ScanUiStage.HUB
+        }
+        restoredScannerState = true
+    }
     var singleDocumentRetakeIndex by remember { mutableStateOf<Int?>(null) }
     var professionalScanMode by remember { mutableStateOf(ScanCaptureMode.DOCUMENT) }
     var showSingleDocumentFallback by remember { mutableStateOf(false) }
@@ -587,17 +605,25 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             } else if (pdfUri != null) {
                 scope.launch {
                     busy = true
-                    val saved = withContext(Dispatchers.IO) {
-                        FileUtils.copyUriToOutput(
+                    // P19: a failed copy (storage full, revoked access, corrupt result) used to crash
+                    // the app. It is now written to a hidden part file, verified, then published.
+                    try {
+                        val saved = withContext(Dispatchers.IO) {
+                            ScanProcessor.importScannerPdf(context, pdfUri, safeBaseName(customName))
+                        }
+                        val verified = FileUtils.confirmSavedFile(context, saved)
+                        lastResult = context.uiText(language, "scan_screen_007", verified.name)
+                        if (openAfterSave) onOpenPdf(verified)
+                    } catch (error: Throwable) {
+                        if (error is kotlinx.coroutines.CancellationException) throw error
+                        Toast.makeText(
                             context,
-                            pdfUri,
-                            "scans",
-                            "${safeBaseName(customName)}_${System.currentTimeMillis()}.pdf"
-                        )
+                            context.localizedOperationFailure(language, error, "scan_screen_012"),
+                            Toast.LENGTH_LONG
+                        ).show()
+                    } finally {
+                        busy = false
                     }
-                    busy = false
-                    lastResult = context.uiText(language, "scan_screen_007", saved.name)
-                    if (openAfterSave) onOpenPdf(saved)
                 }
             }
         } else {
@@ -860,9 +886,13 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     val latestCameraPages by rememberUpdatedState(cameraPages)
     val latestSingleDocumentBoundsPage by rememberUpdatedState(singleDocumentBoundsPage)
     val latestDocumentFallbackBackup by rememberUpdatedState(singleDocumentFallbackBackup)
+    val hostActivity = remember(context) { context.findActivity() }
     DisposableEffect(Unit) {
         onDispose {
             activeSaveJob?.cancel()
+            // P19: a configuration change recreates the screen with the saved review list; the page
+            // images must survive it. They are still cleaned when the user really leaves.
+            if (hostActivity?.isChangingConfigurations == true) return@onDispose
             val ownedPages = (latestReviewPages + latestCameraPages + listOfNotNull(latestSingleDocumentBoundsPage))
                 .distinctBy { it.file.absolutePath }
             if (ownedPages.isNotEmpty()) ScanProcessor.cleanup(ownedPages)
