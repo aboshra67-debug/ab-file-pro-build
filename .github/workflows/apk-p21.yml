@@ -1,0 +1,31 @@
+name: Publish P21 test APKs as a release
+on:
+  push:
+    branches: ["apk/p21-test-20261015"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P21_OUTPUTS
+          run-id: 38712380245
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p21-test-apk-vc173 AB98_P21_PLAY_TEST.apk AB98_P21_PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p21-test-20261015 --prerelease \
+            --title "AB File Pro P21 (VC173) - test APKs (debug-signed)" \
+            --notes "Debug-signed test builds from verified run 38712380245. PLAY_TEST = com.abfilepro.app.p21mainttrial (debug). PLAY_QA_R8 = com.abfilepro.app.p21qa (release code, R8). Both install side by side with older versions."
