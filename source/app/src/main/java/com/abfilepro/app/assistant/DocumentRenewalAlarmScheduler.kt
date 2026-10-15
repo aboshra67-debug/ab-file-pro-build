@@ -24,7 +24,8 @@ object DocumentRenewalAlarmScheduler {
 
     fun cancel(context: Context, entryId: String) {
         val alarms = context.getSystemService(AlarmManager::class.java) ?: return
-        pendingIntent(context, entryId, PendingIntent.FLAG_NO_CREATE)?.let(alarms::cancel)
+        // P18: cancel the PendingIntent too, so a cancelled reminder is really gone (not just its alarm).
+        pendingIntent(context, entryId, PendingIntent.FLAG_NO_CREATE)?.let { alarms.cancel(it); it.cancel() }
     }
 
     /** P18 (AS-05): if the lead time already passed but the expiry is still ahead, remind once now. */
