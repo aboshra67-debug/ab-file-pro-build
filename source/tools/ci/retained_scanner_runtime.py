@@ -324,6 +324,16 @@ def scroll_click(value):
         time.sleep(.4)
     raise TimeoutError('Scroll control not found: ' + value)
 
+def scroll_click_exact(value):
+    # P22: review tools are short one-word labels; match them exactly.
+    for _ in range(16):
+        if find(value) is not None:
+            click(value)
+            return
+        d.swipe_ext('up', scale=.65)
+        time.sleep(.4)
+    raise TimeoutError('Scroll control not found: ' + value)
+
 def run_case(name, fn):
     global CASE
     CASE = name
@@ -418,7 +428,7 @@ def retake_replaces_page():
     capture(2)
     actual, _ = process_review()
     assert actual == 2
-    scroll_click(t('scan_screen_046'))
+    scroll_click_exact(t('p22_tool_retake'))
     wait('Scanner Pro', partial=True)
     capture(1)
     actual = count_camera()
@@ -450,7 +460,7 @@ def edit_bounds_batch():
     capture(2)
     actual, _ = process_review()
     assert actual == 2
-    scroll_click(t('alpha20_bounds_title'))
+    scroll_click_exact(t('p22_tool_crop'))
     time.sleep(1)
     snapshot('edit_bounds_batch_clicked')
     assert find(t('scan_screen_029')) is None, 'Bounds button leaves BATCH in review without opening adjustment'
@@ -529,7 +539,7 @@ def gallery_retake_preserves_siblings():
     import_images([1, 2, 3])
     actual, _ = process_review()
     assert actual == 3
-    scroll_click(t('alpha20_bounds_title'))
+    scroll_click_exact(t('p22_tool_crop'))
     assert find(t('scan_screen_029')) is None, 'Gallery batch bounds button did not open adjustment'
     wait(t('alpha20_bounds_title'))
     time.sleep(1)
@@ -554,7 +564,7 @@ def gallery_add_to_limit_and_retake():
     import_images([6, 7, 8, 9, 10])
     wait(t('scan_screen_029'))
     assert count_review() == 10, 'Gallery append did not fill available five batch slots'
-    scroll_click(t('scan_screen_046'))
+    scroll_click_exact(t('p22_tool_retake'))
     wait('Scanner Pro', partial=True)
     assert count_camera() == 9, 'A full batch did not free its retake slot'
     import_images([1])
@@ -608,7 +618,7 @@ def bounds_without_changes():
     assert actual == 1
     before = cached_gallery_dimensions()
     assert len(before) == 1, before
-    scroll_click(t('alpha20_bounds_title'))
+    scroll_click_exact(t('p22_tool_crop'))
     assert find(t('scan_screen_029')) is None
     click(t('alpha20_continue'))
     wait(t('alpha34_save_continue'))

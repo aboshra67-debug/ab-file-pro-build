@@ -139,7 +139,7 @@ def document_review_bounds_same_frame_twice():
     import_images([1])
     screen = wait_any([t("scan_screen_029"), t("alpha20_bounds_title")])
     if screen == t("scan_screen_029"):
-        scroll_click(t("alpha20_bounds_title"))
+        scroll_click_exact(t("p22_tool_crop"))
     wait(t("alpha20_bounds_title"))
     click(t("alpha20_continue"))
     wait(t("alpha34_save_continue"))
@@ -148,7 +148,7 @@ def document_review_bounds_same_frame_twice():
     wait(t("scan_screen_029"))
     observations = []
     for repeat in range(2):
-        scroll_click(t("alpha20_bounds_title"))
+        scroll_click_exact(t("p22_tool_crop"))
         wait(t("alpha20_bounds_title"))
         snapshot("document_bounds_repeat_%s" % (repeat + 1))
         click(t("alpha20_continue"))
@@ -169,7 +169,7 @@ def click_card_retake(side_index):
         d.swipe_ext("down", scale=.65)
         time.sleep(.2)
     expected_header = "الصفحة %s من 2" % (side_index + 1)
-    retake_text = t("scan_screen_046").translate(DIGITS)
+    retake_text = t("p22_tool_retake").translate(DIGITS)
     seen_requested_header = False
     for _ in range(28):
         root = ET.fromstring(dump())
