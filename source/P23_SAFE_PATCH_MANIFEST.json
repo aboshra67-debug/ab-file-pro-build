@@ -1,0 +1,59 @@
+{
+  "release": "AB98 P23",
+  "version_code": 175,
+  "version_name": "2.0.0-alpha98-p23-smart-camera",
+  "baseline": "AB98 P22 (VC174)",
+  "deleted_files": [],
+  "ci_run": "38775261409",
+  "ci_commit": "b7ebd4b29911f0b2c6308ca20928010ac143c697",
+  "results": {
+    "android": "122/122",
+    "scanner_ui": "19/19",
+    "jvm": "62/62",
+    "qa_r8_monkey": "1500 events, no crash/ANR",
+    "server_pytest": "15/15",
+    "compat": {
+      "26": {
+        "passed": 112,
+        "skipped": 10,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      },
+      "33": {
+        "passed": 122,
+        "skipped": 0,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      },
+      "35": {
+        "passed": 122,
+        "skipped": 0,
+        "failed": 0,
+        "qa_launch_ok": true,
+        "qa_crash_or_anr": false
+      }
+    }
+  },
+  "outputs": {
+    "AB98_P23_PLAY_TEST.apk": {
+      "bytes": 132282716,
+      "sha256": "c966e22ef3901e50c4580831700e8422753757263d651675149b30a42986d03e"
+    },
+    "AB98_P23_PLAY_QA_R8.apk": {
+      "bytes": 108494974,
+      "sha256": "602171e0f733cae5b25b1a2aaaa67d981f5721cbf79069519ab1577041037c97"
+    },
+    "AB98_P23_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67943351,
+      "sha256": "aa72212651cc53b6209ab9244e22b7fb9ce61f541ded3f7a80c316b6d61b402a"
+    },
+    "AB98_P23_PLAY_RELEASE_mapping.txt": {
+      "bytes": 117142057,
+      "sha256": "6bd1ee5058f97863acbc5f874228f4d840353e6f9bbb9fdc34ef1f02439779ca"
+    }
+  },
+  "signing": "debug only (original key unavailable; no replacement key used)",
+  "physical_phone_tested": false
+}

@@ -1072,6 +1072,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     smartCameraRequest?.let { request ->
         SmartScannerCamera(
             initialMode = request.mode,
+            rightToLeft = language.code == "ar",
             existingPageCount = if (request.retakeIndex != null || request.append) reviewPages.size else 0,
             singlePageOnly = request.retakeIndex != null,
             onDone = { captured, capturedMode ->
@@ -2904,7 +2905,43 @@ private fun ScanPageReviewCard(
                         }
                     }
                 }
-            } else if (count > 1) {
+            }
+            // P24: one-tap cleanups (on-device): fingers on the page edges, photos of screens.
+            var cleanupBusy by remember(page.id) { mutableStateOf<PageCleanup.Operation?>(null) }
+            fun runCleanup(op: PageCleanup.Operation) {
+                if (cleanupBusy != null) return
+                cleanupBusy = op
+                scope.launch {
+                    try {
+                        val outcome = PageCleanup.apply(context, page, op)
+                        if (outcome.changed) {
+                            onUpdate(outcome.page)
+                            Toast.makeText(context, context.uiText(language, "p24_cleanup_done"), Toast.LENGTH_SHORT).show()
+                        } else {
+                            Toast.makeText(context, context.uiText(language, "p24_no_fingers_found"), Toast.LENGTH_SHORT).show()
+                        }
+                    } catch (error: Throwable) {
+                        if (error is kotlinx.coroutines.CancellationException) throw error
+                        Toast.makeText(context, context.uiText(language, "p24_cleanup_failed"), Toast.LENGTH_LONG).show()
+                    } finally {
+                        cleanupBusy = null
+                    }
+                }
+            }
+            Spacer(Modifier.height(4.dp))
+            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                ReviewToolButton(
+                    Icons.Default.PanTool, context.uiText(language, "p24_tool_fingers"),
+                    enabled && cleanupBusy == null, Modifier.weight(1f),
+                    busy = cleanupBusy == PageCleanup.Operation.REMOVE_FINGERS
+                ) { runCleanup(PageCleanup.Operation.REMOVE_FINGERS) }
+                ReviewToolButton(
+                    Icons.Default.DesktopWindows, context.uiText(language, "p24_tool_screen"),
+                    enabled && cleanupBusy == null, Modifier.weight(1f),
+                    busy = cleanupBusy == PageCleanup.Operation.CLEAN_SCREEN
+                ) { runCleanup(PageCleanup.Operation.CLEAN_SCREEN) }
+            }
+            if (!singleDocument && count > 1) {
                 Spacer(Modifier.height(4.dp))
                 TextButton(onClick = { onApplyEnhancementsToAll(page) }, enabled = enabled, modifier = Modifier.fillMaxWidth()) {
                     Icon(Icons.Default.AutoFixHigh, null)

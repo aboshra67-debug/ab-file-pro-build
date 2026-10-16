@@ -53,9 +53,18 @@ import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import com.abfilepro.app.core.AutoCaptureTracker
+import com.abfilepro.app.core.LiveTranslatedBlock
+import com.abfilepro.app.core.LiveTranslationGeometry
+import com.abfilepro.app.core.LiveTranslationStatus
+import com.abfilepro.app.core.LiveTranslator
+import com.google.mlkit.vision.common.InputImage
+import com.google.mlkit.vision.text.TextRecognition
+import com.google.mlkit.vision.text.latin.TextRecognizerOptions
+import java.util.concurrent.atomic.AtomicBoolean
 import com.abfilepro.app.core.DocumentKind
 import com.abfilepro.app.core.LiveDocumentDetector
 import com.abfilepro.app.core.ScanCaptureMode
@@ -83,11 +92,13 @@ import java.util.concurrent.TimeUnit
  *    Batch, Card, Receipt, Several sheets, Translation, QR;
  *  - several sheets in one shot become separate pages.
  */
+@androidx.annotation.OptIn(androidx.camera.core.ExperimentalGetImage::class)
 @Composable
 fun SmartScannerCamera(
     initialMode: SmartCaptureMode,
     existingPageCount: Int,
     singlePageOnly: Boolean,
+    rightToLeft: Boolean = true,
     onDone: (pages: List<ScanDraftPage>, mode: ScanCaptureMode) -> Unit,
     onClose: () -> Unit,
     onOpenQr: () -> Unit,
@@ -124,6 +135,15 @@ fun SmartScannerCamera(
     var cameraProvider by remember { mutableStateOf<ProcessCameraProvider?>(null) }
     val tracker = remember { AutoCaptureTracker() }
     val modeRef = rememberUpdatedState(mode)
+    // P24: live translation over the preview (Translation mode).
+    var liveTranslate by remember { mutableStateOf(true) }
+    val liveTranslateRef = rememberUpdatedState(liveTranslate)
+    var translatedBlocks by remember { mutableStateOf<List<LiveTranslatedBlock>>(emptyList()) }
+    var translationStatus by remember { mutableStateOf(LiveTranslationStatus.IDLE) }
+    var translationAspect by remember { mutableFloatStateOf(.75f) }
+    val recognizer = remember { TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS) }
+    val liveTranslator = remember(language.code) { LiveTranslator(language.code) }
+    val recognizing = remember { AtomicBoolean(false) }
 
     val effectiveMode: SmartCaptureMode = if (mode == SmartCaptureMode.AUTO && autoBecameCard) SmartCaptureMode.ID_CARD else mode
     val maxPages = (if (singlePageOnly) 1 else effectiveMode.captureMode.maxPages - existingPageCount).coerceAtLeast(1)
@@ -178,6 +198,8 @@ fun SmartScannerCamera(
                     scope.launch {
                         val newPages = withContext(Dispatchers.IO) {
                             runCatching { SmartCaptureFiles.pagesFor(file, quads, effectiveMode.captureMode) }.getOrNull()
+                        }?.let { produced ->
+                            if (effectiveMode == SmartCaptureMode.BOOK) SmartCapturePolicy.bookReadingOrder(produced, rightToLeft) else produced
                         }
                         busy = false
                         if (newPages.isNullOrEmpty()) {
@@ -260,6 +282,8 @@ fun SmartScannerCamera(
         onDispose {
             runCatching { cameraProvider?.unbindAll() }
             analysisExecutor.shutdown()
+            runCatching { recognizer.close() }
+            liveTranslator.close()
             thumbnail?.takeIf { !it.isRecycled }?.recycle()
         }
     }
@@ -280,6 +304,19 @@ fun SmartScannerCamera(
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.weight(1f)
             )
+            if (mode == SmartCaptureMode.TRANSLATION) {
+                FilterChip(
+                    selected = liveTranslate,
+                    onClick = { liveTranslate = !liveTranslate; if (!liveTranslate) translatedBlocks = emptyList() },
+                    label = { Text(context.uiText(language, "p24_live_translate")) },
+                    colors = FilterChipDefaults.filterChipColors(
+                        labelColor = Color.White,
+                        selectedContainerColor = SmartGreen.copy(alpha = .3f),
+                        selectedLabelColor = Color.White
+                    ),
+                    modifier = Modifier.padding(end = 4.dp)
+                )
+            }
             FilterChip(
                 selected = autoCapture,
                 onClick = { autoCapture = !autoCapture; tracker.reset() },
@@ -326,9 +363,44 @@ fun SmartScannerCamera(
                                         .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                                         .build()
                                     var lastRun = 0L
+                                    var lastText = 0L
                                     analysis.setAnalyzer(analysisExecutor) { image ->
+                                        var handedOff = false
                                         try {
                                             val now = System.currentTimeMillis()
+                                            // P24: every ~0.7 s in Translation mode the frame also goes to text
+                                            // recognition; the frame is closed when recognition finishes.
+                                            if (modeRef.value == SmartCaptureMode.TRANSLATION && liveTranslateRef.value &&
+                                                now - lastText >= LIVE_TEXT_INTERVAL_MS && recognizing.compareAndSet(false, true)) {
+                                                val media = image.image
+                                                if (media == null) {
+                                                    recognizing.set(false)
+                                                } else {
+                                                    lastText = now
+                                                    handedOff = true
+                                                    val rotation = image.imageInfo.rotationDegrees
+                                                    val (uw, uh) = LiveTranslationGeometry.uprightSize(image.width, image.height, rotation)
+                                                    recognizer.process(InputImage.fromMediaImage(media, rotation))
+                                                        .addOnSuccessListener { text ->
+                                                            val blocks = text.textBlocks.mapNotNull { block ->
+                                                                block.boundingBox?.let { box ->
+                                                                    LiveTranslationGeometry.normalize(block.text, box.left, box.top, box.right, box.bottom, uw, uh)
+                                                                }
+                                                            }.take(MAX_LIVE_BLOCKS)
+                                                            scope.launch {
+                                                                val translated = runCatching { liveTranslator.translate(blocks) }.getOrDefault(emptyList())
+                                                                translationAspect = uw.toFloat() / uh.toFloat()
+                                                                translatedBlocks = translated
+                                                                translationStatus = liveTranslator.status
+                                                            }
+                                                        }
+                                                        .addOnCompleteListener {
+                                                            recognizing.set(false)
+                                                            image.close()
+                                                        }
+                                                    return@setAnalyzer
+                                                }
+                                            }
                                             if (now - lastRun < ANALYSIS_INTERVAL_MS) return@setAnalyzer
                                             lastRun = now
                                             val plane = image.planes.firstOrNull() ?: return@setAnalyzer
@@ -346,7 +418,7 @@ fun SmartScannerCamera(
                                             }.getOrNull()
                                             mainExecutor.execute { detection = result }
                                         } finally {
-                                            image.close()
+                                            if (!handedOff) image.close()
                                         }
                                     }
                                     provider.unbindAll()
@@ -391,9 +463,55 @@ fun SmartScannerCamera(
                     }
                 }
 
+                // P24: translated text drawn over the original lines.
+                if (mode == SmartCaptureMode.TRANSLATION && liveTranslate && translatedBlocks.isNotEmpty()) {
+                    BoxWithConstraints(Modifier.fillMaxSize()) {
+                        val boxW = constraints.maxWidth.toFloat()
+                        val boxH = constraints.maxHeight.toFloat()
+                        val aspect = translationAspect.coerceIn(.2f, 5f)
+                        val dw: Float; val dh: Float
+                        if (boxW / boxH > aspect) { dh = boxH; dw = dh * aspect } else { dw = boxW; dh = dw / aspect }
+                        val ox = (boxW - dw) / 2f
+                        val oy = (boxH - dh) / 2f
+                        val density = androidx.compose.ui.platform.LocalDensity.current
+                        translatedBlocks.forEach { item ->
+                            val b = item.block
+                            val leftPx = ox + b.left * dw
+                            val topPx = oy + b.top * dh
+                            val widthPx = ((b.right - b.left) * dw).coerceAtLeast(24f)
+                            val heightPx = ((b.bottom - b.top) * dh).coerceAtLeast(16f)
+                            with(density) {
+                                val lines = item.block.text.count { it == '\n' } + 1
+                                val fontPx = (heightPx / lines * .62f).coerceIn(10.sp.toPx(), 22.sp.toPx())
+                                Surface(
+                                    color = Color.White.copy(alpha = .93f),
+                                    shape = RoundedCornerShape(4.dp),
+                                    modifier = Modifier
+                                        .offset(leftPx.toDp(), topPx.toDp())
+                                        .widthIn(min = widthPx.toDp())
+                                        .heightIn(min = heightPx.toDp())
+                                ) {
+                                    Text(
+                                        item.translated,
+                                        color = Color(0xFF111827),
+                                        fontSize = fontPx.toSp(),
+                                        lineHeight = (fontPx * 1.15f).toSp(),
+                                        modifier = Modifier.padding(horizontal = 3.dp, vertical = 1.dp)
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+
                 // Hint pill
                 val hintKey = when {
                     busy -> "p23_hint_saving"
+                    mode == SmartCaptureMode.TRANSLATION && liveTranslate && translationStatus == LiveTranslationStatus.DOWNLOADING -> "p24_translate_downloading"
+                    mode == SmartCaptureMode.TRANSLATION && liveTranslate && translationStatus == LiveTranslationStatus.NEEDS_INTERNET -> "p24_translate_needs_internet"
+                    mode == SmartCaptureMode.TRANSLATION && liveTranslate && translationStatus == LiveTranslationStatus.SAME_LANGUAGE -> "p24_translate_same_language"
+                    mode == SmartCaptureMode.TRANSLATION && liveTranslate && translatedBlocks.isNotEmpty() -> "p24_translate_live"
+                    mode == SmartCaptureMode.BOOK -> "p24_hint_book"
                     current == null || current.candidates.isEmpty() -> "p23_hint_point"
                     current.brightness < 40.0 -> "p23_hint_dark"
                     current.sharpness < SHARP_ENOUGH -> "p23_hint_steady"
@@ -453,7 +571,7 @@ fun SmartScannerCamera(
         val modes = remember(singlePageOnly) {
             if (singlePageOnly) emptyList() else listOf(
                 SmartCaptureMode.AUTO, SmartCaptureMode.DOCUMENT, SmartCaptureMode.BATCH, SmartCaptureMode.ID_CARD,
-                SmartCaptureMode.RECEIPT, SmartCaptureMode.MULTI, SmartCaptureMode.TRANSLATION
+                SmartCaptureMode.RECEIPT, SmartCaptureMode.MULTI, SmartCaptureMode.BOOK, SmartCaptureMode.TRANSLATION
             )
         }
         if (modes.isNotEmpty()) {
@@ -582,6 +700,8 @@ fun SmartScannerCamera(
 private val SmartGreen = Color(0xFF16A34A)
 private const val SHARP_ENOUGH = 40.0
 private const val ANALYSIS_INTERVAL_MS = 90L
+private const val LIVE_TEXT_INTERVAL_MS = 700L
+private const val MAX_LIVE_BLOCKS = 24
 
 private fun modeLabelKey(mode: SmartCaptureMode) = when (mode) {
     SmartCaptureMode.AUTO -> "p23_mode_auto"
@@ -591,4 +711,5 @@ private fun modeLabelKey(mode: SmartCaptureMode) = when (mode) {
     SmartCaptureMode.RECEIPT -> "p23_mode_receipt"
     SmartCaptureMode.MULTI -> "p23_mode_multi"
     SmartCaptureMode.TRANSLATION -> "p23_mode_translation"
+    SmartCaptureMode.BOOK -> "p24_mode_book"
 }

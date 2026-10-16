@@ -1,0 +1,51 @@
+{
+  "phase": "green",
+  "android_functions": 122,
+  "scanner_ui_cases": 19,
+  "jvm_tests": 62,
+  "qa_r8_monkey_events": 1500,
+  "all_passed": true,
+  "version_code": 175,
+  "version_name": "2.0.0-alpha98-p23-smart-camera",
+  "channel_checks": {
+    "debug": {
+      "package": "com.abfilepro.app.p23mainttrial",
+      "label": "AB File Pro P23",
+      "install_permission_absent": true
+    },
+    "qa": {
+      "package": "com.abfilepro.app.p23qa",
+      "label": "AB File Pro P23 QA",
+      "install_permission_absent": true
+    },
+    "direct": {
+      "install_permission_present": true
+    }
+  },
+  "outputs": {
+    "AB98_P23_PLAY_TEST.apk": {
+      "bytes": 132282716,
+      "sha256": "c966e22ef3901e50c4580831700e8422753757263d651675149b30a42986d03e"
+    },
+    "AB98_P23_PLAY_QA_R8.apk": {
+      "bytes": 108494974,
+      "sha256": "602171e0f733cae5b25b1a2aaaa67d981f5721cbf79069519ab1577041037c97"
+    },
+    "AB98_P23_PLAY_RELEASE_UNSIGNED.aab": {
+      "bytes": 67943351,
+      "sha256": "aa72212651cc53b6209ab9244e22b7fb9ce61f541ded3f7a80c316b6d61b402a"
+    },
+    "AB98_P23_PLAY_RELEASE_mapping.txt": {
+      "bytes": 117142057,
+      "sha256": "6bd1ee5058f97863acbc5f874228f4d840353e6f9bbb9fdc34ef1f02439779ca"
+    }
+  },
+  "commit": "b7ebd4b29911f0b2c6308ca20928010ac143c697",
+  "run_id": "38775261409",
+  "android_api_tested": "30",
+  "phone_abi": "arm64-v8a",
+  "physical_phone_tested": false,
+  "aab_signed": false,
+  "original_signing_key_available": false,
+  "play_release_ready": false
+}

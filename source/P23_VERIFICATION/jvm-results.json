@@ -1,0 +1,317 @@
+{
+  "tests": 62,
+  "passed": 62,
+  "failed": 0,
+  "results": [
+    {
+      "class": "com.abfilepro.app.assistant.AssistantDomainTest",
+      "name": "calculatorHonoursPrecedenceAndUnaryMinus",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.AssistantDomainTest",
+      "name": "exposesAllSixteenModules",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.AssistantDomainTest",
+      "name": "calculatorRejectsUnsafeCharacters",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.AssistantDomainTest",
+      "name": "categoryFilteringKeepsSharedModulesVisible",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "inviteParsesCodeAndSecret",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "healthStaysOnThePhoneUntilSharingIsTurnedOn",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "itemsThatExistedBeforeJoiningAnotherFamilyStayLocal",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "uploadsAreChunkedSoNothingIsDroppedByTheServerLimit",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "onlyChangesNewerThanTheLastConfirmedUploadAreSent",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "inviteRejectsAmbiguousSecretCharactersAndNonNumericCode",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "codeAloneIsNotAnInvite",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "ownHealthIsProtectedFromRemoteChangesWhileSharingIsOff",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.FamilySyncPolicyTest",
+      "name": "inviteAcceptsSpacesLowerCaseAndArabicDigits",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.PrayerTimesCalculatorTest",
+      "name": "perPrayerAdjustmentIsAppliedExactly",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.PrayerTimesCalculatorTest",
+      "name": "cairoTimesRemainChronological",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.ReminderPolicyTest",
+      "name": "passedLeadTimeIsNotRepeatedAfterItWasShown",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.ReminderPolicyTest",
+      "name": "pastEventsAreNotScheduled",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.ReminderPolicyTest",
+      "name": "normalLeadTimeIsKept",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.ReminderPolicyTest",
+      "name": "passedLeadTimeFiresRightAwayWhileTheEventIsStillAhead",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.assistant.ReminderPolicyTest",
+      "name": "movedEventIsRemindedAgain",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerActionRulesTest",
+      "name": "directory_doesNotOfferShareOrImagesToPdf",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerActionRulesTest",
+      "name": "regularFile_longPressActions_includeDesktopBasics",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerActionRulesTest",
+      "name": "image_longPressActions_offerImagesToPdf",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerActionRulesTest",
+      "name": "noClipboard_hidesPaste",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerActionRulesTest",
+      "name": "zip_longPressActions_offerBothExtractModes",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerPremiumRulesTest",
+      "name": "visualKind_classifiesPremiumCardTypes",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerPremiumRulesTest",
+      "name": "renameWithDifferentExtension_stillPreservesOriginalFileExtension",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerPremiumRulesTest",
+      "name": "renameWithoutNewExtension_keepsOriginalFileExtension",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerPremiumRulesTest",
+      "name": "directoryRename_doesNotAppendExtension",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ExplorerPremiumRulesTest",
+      "name": "textFileName_addsTxtOnlyWhenMissing",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.FileManagerRulesTest",
+      "name": "quickFolderKind_recognizesAndroidStandardFolders",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.FileManagerRulesTest",
+      "name": "sortEntries_keepsFoldersFirstAndSortsByRequestedKey",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.FileManagerRulesTest",
+      "name": "previewSampleSize_boundsHugeImagesWithPowerOfTwoSampling",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.FileManagerRulesTest",
+      "name": "zipPathSafety_rejectsTraversalAndAbsolutePaths",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.FileManagerRulesTest",
+      "name": "previewKind_usesMimeThenSafeFileExtensions",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.FileManagerRulesTest",
+      "name": "safeName_removesProviderUnsafeCharacters",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.FileManagerRulesTest",
+      "name": "uniqueName_preservesExtensionAndSkipsExistingSuffixes",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScanInteractionRulesTest",
+      "name": "reviewBackReturnsToHub",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScanInteractionRulesTest",
+      "name": "cameraBackReturnsToReviewWhenPagesExist",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScanInteractionRulesTest",
+      "name": "cameraBackReturnsToHubWhenNoPagesExist",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScanInteractionRulesTest",
+      "name": "pinchZoomIsClampedToCameraRange",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "pageLimitFollowsTheModeAndWhatIsAlreadyScanned",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "retakeReplacesOnlyItsSlotAndKeepsTheOrder",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "bookSplitAndImagesToPdfStayOnTheAppCamera",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "addingPagesAppendsUpToTheLimitAndRetiresTheOverflow",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "anEmptyResultChangesNothing",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "aStaleRetakeSlotAddsThePageInsteadOfWipingTheList",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "documentModesUseGoogleOnlyWhenItIsTheChosenEngine",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.ScannerEnginePolicyTest",
+      "name": "aNewScanReplacesThePreviousReviewList",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "aLongNarrowSheetIsAReceipt",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "theSameSheetIsNotCapturedTwiceButTheNextOneIs",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "selectionRespectsTheMaximumNumberOfSheets",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "duplicateOutlinesOfOneSheetCollapseToOne",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "sheetsAreOrderedTopToBottomThenRightToLeft",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "modesMapToReviewModesAndTheSmartEngineCoversDocumentModes",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "autoCaptureFiresOnlyAfterTheSheetIsHeldStill",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "aLargeA4SheetIsADocument",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "aSmallCardShapedSheetIsACard",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "movementBlurOrLosingTheSheetRestartsTheCount",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.SmartCapturePolicyTest",
+      "name": "twoSeparateSheetsAreSeveralSheetsAndNothingIsNone",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.WorkspaceShortcutRulesTest",
+      "name": "shortcutLabelIsTrimmedAndStable",
+      "status": "PASS"
+    },
+    {
+      "class": "com.abfilepro.app.core.WorkspaceShortcutRulesTest",
+      "name": "explorerAppearanceFallsBackSafely",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P24: live translation, book mode, page cleanups. -->
+<resources>
+    <string name="p24_live_translate_ar">ترجمة لايف</string>
+    <string name="p24_live_translate_en">Live translate</string>
+    <string name="p24_live_translate_fr">Traduction en direct</string>
+    <string name="p24_translate_downloading_ar">جاري تنزيل ملف الترجمة (مرة واحدة)…</string>
+    <string name="p24_translate_downloading_en">Downloading the language file (once)…</string>
+    <string name="p24_translate_downloading_fr">Téléchargement du fichier de langue (une fois)…</string>
+    <string name="p24_translate_needs_internet_ar">الترجمة اللايف محتاجة نت أول مرة لتنزيل ملف اللغة</string>
+    <string name="p24_translate_needs_internet_en">Live translation needs internet once to download the language file</string>
+    <string name="p24_translate_needs_internet_fr">La traduction en direct nécessite Internet une fois</string>
+    <string name="p24_translate_same_language_ar">الكلام بنفس لغتك، مفيش ترجمة</string>
+    <string name="p24_translate_same_language_en">The text is already in your language</string>
+    <string name="p24_translate_same_language_fr">Le texte est déjà dans votre langue</string>
+    <string name="p24_translate_live_ar">الترجمة ظاهرة على الكلام · صوّر لحفظ الترجمة كاملة</string>
+    <string name="p24_translate_live_en">Translation shown over the text · capture to save the full translation</string>
+    <string name="p24_translate_live_fr">Traduction affichée · capturez pour l\'enregistrer</string>
+    <string name="p24_hint_book_ar">حط الكتاب مفتوح، وكل لقطة هتطلع صفحتين</string>
+    <string name="p24_hint_book_en">Place the open book; each shot gives two pages</string>
+    <string name="p24_hint_book_fr">Livre ouvert : chaque prise donne deux pages</string>
+    <string name="p24_mode_book_ar">كتاب</string>
+    <string name="p24_mode_book_en">Book</string>
+    <string name="p24_mode_book_fr">Livre</string>
+    <string name="p24_tool_fingers_ar">الصوابع</string>
+    <string name="p24_tool_fingers_en">Fingers</string>
+    <string name="p24_tool_fingers_fr">Doigts</string>
+    <string name="p24_tool_screen_ar">صورة شاشة</string>
+    <string name="p24_tool_screen_en">Screen photo</string>
+    <string name="p24_tool_screen_fr">Photo d\'écran</string>
+    <string name="p24_cleanup_done_ar">تم التنظيف</string>
+    <string name="p24_cleanup_done_en">Cleaned</string>
+    <string name="p24_cleanup_done_fr">Nettoyé</string>
+    <string name="p24_no_fingers_found_ar">ملقتش صوابع على حروف الصفحة</string>
+    <string name="p24_no_fingers_found_en">No fingers found on the page edges</string>
+    <string name="p24_no_fingers_found_fr">Aucun doigt trouvé sur les bords</string>
+    <string name="p24_cleanup_failed_ar">تعذر تنظيف الصفحة، والصفحة زي ما هي</string>
+    <string name="p24_cleanup_failed_en">Could not clean the page; it is unchanged</string>
+    <string name="p24_cleanup_failed_fr">Nettoyage impossible ; page inchangée</string>
+</resources>

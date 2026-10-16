@@ -1,0 +1,185 @@
+name: P24 Safe Maintenance, R8 QA and APK (repo)
+on:
+  workflow_dispatch:
+  push:
+    branches: ["fix/p24-camera-extras-20261016"]
+    paths: ["source/**", ".github/workflows/p24-safe-maintenance.yml"]
+permissions:
+  contents: read
+  actions: read
+jobs:
+  family-server:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: family
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: checkout
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Family sync server tests (real PostgreSQL)
+        working-directory: checkout/source/family-sync-server
+        env:
+          DATABASE_URL: postgresql://postgres:ci@localhost:5432/family
+        run: |
+          set -euo pipefail
+          python -m pip install -r requirements-dev.txt
+          python -m pytest -q tests --junitxml=server-results.xml
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: P24_SERVER_RESULTS
+          path: checkout/source/family-sync-server/server-results.xml
+          if-no-files-found: warn
+  compat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [26, 33, 35]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: checkout
+      - name: Link tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          ln -s checkout/source project
+          ln -s project/tools/ci release-ci
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Android SDK 36
+        run: |
+          set -euo pipefail
+          SDK_ROOT=/usr/local/lib/android/sdk
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+      - name: Build Play test, test APK and R8 QA (x86_64 included)
+        working-directory: project
+        run: gradle --no-daemon --stacktrace -PAB_FILE_PRO_NATIVE_TEST=true :app:assemblePlayDebug :app:assemblePlayDebugAndroidTest :app:assemblePlayQa
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Android ${{ matrix.api }} compatibility
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api }}
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          emulator-boot-timeout: 900
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
+          script: python3 release-ci/compat_checks.py ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: P24_COMPAT_API_${{ matrix.api }}
+          path: |
+            compat-${{ matrix.api }}/
+            project/app/build/outputs/androidTest-results/
+          if-no-files-found: warn
+          retention-days: 14
+  maintenance-safety:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: checkout
+      - name: Verify complete Safe Source inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          ln -s checkout/source project
+          ln -s project/tools tools
+          ln -s project/tools/ci release-ci
+          cd project
+          sha256sum -c tools/ci/inputs.sha256
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+      - name: Android SDK 36
+        run: |
+          set -euo pipefail
+          SDK_ROOT=/usr/local/lib/android/sdk
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0"
+      - name: Build R8 Play QA first (fails fast on shrinker problems)
+        working-directory: project
+        run: gradle --no-daemon --stacktrace -PAB_FILE_PRO_NATIVE_TEST=true :app:assemblePlayQa
+      - name: Build Play test APK, test APK and direct channel
+        working-directory: project
+        run: gradle --no-daemon --stacktrace -PAB_FILE_PRO_NATIVE_TEST=true :app:assemblePlayDebug :app:assemblePlayDebugAndroidTest :app:assembleDirectDebug
+      - name: Install Scanner host test dependencies
+        run: python3 -m pip install --break-system-packages uiautomator2 Pillow pypdf
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Run Android, Scanner UI and R8 QA checks
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          target: google_apis
+          arch: x86_64
+          profile: pixel_2
+          emulator-boot-timeout: 600
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back emulated -camera-front none -no-snapshot
+          script: |
+            python3 release-ci/run_checks.py
+            python3 release-ci/finalize.py
+      - name: Upload execution evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: P24_EVIDENCE
+          path: |
+            p24-evidence/
+            runtime-evidence/
+            project/app/build/outputs/androidTest-results/
+            project/app/build/reports/androidTests/
+            project/app/build/test-results/
+            project/app/build/outputs/mapping/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Upload verified P24 outputs
+        if: ${{ success() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: AB98_P24_OUTPUTS
+          path: p24-release/*
+          if-no-files-found: ignore
+          retention-days: 14
+          compression-level: 0

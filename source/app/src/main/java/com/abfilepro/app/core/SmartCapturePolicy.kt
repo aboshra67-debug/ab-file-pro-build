@@ -13,12 +13,15 @@ enum class SmartCaptureMode(val captureMode: ScanCaptureMode) {
     ID_CARD(ScanCaptureMode.ID_CARD),
     RECEIPT(ScanCaptureMode.RECEIPT),
     MULTI(ScanCaptureMode.BATCH),
-    TRANSLATION(ScanCaptureMode.TRANSLATION);
+    TRANSLATION(ScanCaptureMode.TRANSLATION),
+    /** P24: an open book; each shot becomes two pages (right page first for Arabic books). */
+    BOOK(ScanCaptureMode.BOOK);
 
     companion object {
         fun from(mode: ScanCaptureMode): SmartCaptureMode = when (mode) {
             ScanCaptureMode.DOCUMENT, ScanCaptureMode.PASSPORT -> DOCUMENT
-            ScanCaptureMode.BATCH, ScanCaptureMode.WHITEBOARD, ScanCaptureMode.BOOK, ScanCaptureMode.PHOTO -> BATCH
+            ScanCaptureMode.BATCH, ScanCaptureMode.WHITEBOARD, ScanCaptureMode.PHOTO -> BATCH
+            ScanCaptureMode.BOOK -> BOOK
             ScanCaptureMode.ID_CARD, ScanCaptureMode.DUPLEX -> ID_CARD
             ScanCaptureMode.RECEIPT -> RECEIPT
             ScanCaptureMode.TRANSLATION -> TRANSLATION
@@ -120,6 +123,10 @@ object SmartCapturePolicy {
     ).max().toFloat()
 
     const val MIN_MULTI_AREA = .03f
+
+    /** P24: a book shot yields [left, right]; Arabic books are read right page first. */
+    fun <T> bookReadingOrder(leftThenRight: List<T>, rightToLeft: Boolean): List<T> =
+        if (rightToLeft && leftThenRight.size == 2) leftThenRight.reversed() else leftThenRight
 }
 
 /**

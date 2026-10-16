@@ -9,9 +9,10 @@ import java.io.File
  */
 object SmartCaptureFiles {
     fun pagesFor(shot: File, quads: List<ScanQuad>, mode: ScanCaptureMode): List<ScanDraftPage> {
-        val first = ScanProcessor.prepareCameraCapture(shot, mode, detectedQuad = quads.firstOrNull())
-            .firstOrNull() ?: return emptyList()
-        if (quads.size <= 1) return listOf(first)
+        val prepared = ScanProcessor.prepareCameraCapture(shot, mode, detectedQuad = quads.firstOrNull())
+        // P24: book mode returns two pages (left/right) from one shot.
+        if (quads.size <= 1 || prepared.size != 1) return prepared
+        val first = prepared.first()
         val parent = shot.parentFile ?: return listOf(first)
         val pages = mutableListOf(first)
         try {

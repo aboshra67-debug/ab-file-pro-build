@@ -2,7 +2,37 @@
 
 إصدار مبني على P22. Version Code: 175. Version Name: `2.0.0-alpha98-p23-smart-camera`.
 
-{{RESULTS}}
+## نتيجة الاختبار الفعلي (GitHub Actions)
+
+- Run: https://github.com/aboshra67-debug/ab-file-pro-build/actions/runs/38775261409
+- Commit: `b7ebd4b29911f0b2c6308ca20928010ac143c697`
+
+| الفحص | النتيجة |
+|---|---|
+| اختبارات Android على المحاكي (API 30) | 122/122 ناجحة |
+| اختبارات واجهة الماسح | 19/19 ناجحة |
+| اختبارات JVM | 62/62 ناجحة |
+| نسخة QA بـ R8 + Monkey | 1500 حدث بدون Crash أو ANR |
+| اختبارات السيرفر (pytest + PostgreSQL) | 15/15 ناجحة |
+| Android 8.0 (API 26): Android + QA R8 + Monkey 800 | 112 ناجحة، 10 متخطاة (رسم PDF)، 0 فاشلة، والتشغيل بدون Crash |
+| Android 13 (API 33): Android + QA R8 + Monkey 800 | 122 ناجحة، 0 فاشلة، والتشغيل بدون Crash |
+| Android 15 (API 35): Android + QA R8 + Monkey 800 | 122 ناجحة، 0 فاشلة، والتشغيل بدون Crash |
+
+### الملفات الناتجة
+
+| الملف | الحجم (bytes) | SHA-256 |
+|---|---|---|
+| `AB98_P23_PLAY_TEST.apk` | 132,282,716 | `c966e22ef3901e50c4580831700e8422753757263d651675149b30a42986d03e` |
+| `AB98_P23_PLAY_QA_R8.apk` | 108,494,974 | `602171e0f733cae5b25b1a2aaaa67d981f5721cbf79069519ab1577041037c97` |
+| `AB98_P23_PLAY_RELEASE_UNSIGNED.aab` | 67,943,351 | `aa72212651cc53b6209ab9244e22b7fb9ce61f541ded3f7a80c316b6d61b402a` |
+| `AB98_P23_PLAY_RELEASE_mapping.txt` | 117,142,057 | `6bd1ee5058f97863acbc5f874228f4d840353e6f9bbb9fdc34ef1f02439779ca` |
+
+- رابط التنزيل المباشر: https://github.com/aboshra67-debug/ab-file-pro-build/releases/tag/p23-test-apk-vc175
+- `PLAY_TEST.apk` بتوقيع Debug وباسم حزمة `com.abfilepro.app.p23mainttrial` بيتثبت جنب النسخة القديمة.
+- `PLAY_QA_R8.apk` نفس كود الـ Release (R8) بتوقيع Debug وحزمة `com.abfilepro.app.p23qa`.
+- الـ AAB غير موقّع، المفتاح الأصلي غير متاح، ومتعملش أي مفتاح بديل.
+- اتجرّب على محاكي فقط؛ لسه محتاج تجربة على موبايل حقيقي.
+
 
 ## الجديد: كاميرا AB الذكية
 
