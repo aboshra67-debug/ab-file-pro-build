@@ -278,9 +278,15 @@ def card_retake_preserves_order(side_index):
     pdf, count = save_pdf("card_retake_%s_saved" % ("front" if side_index == 0 else "back"))
     markers = card_pdf_image_markers(pdf)
     expected = [3, 2] if side_index == 0 else [1, 3]
+    # P24 diagnostic: which source file carries which marker count, before and after.
+    diagnostic = {
+        "before": [(os.path.basename(k), image_markers(v["image"]), v["sha256"][:8]) for k, v in before.items()],
+        "after": [(os.path.basename(k), image_markers(v["image"]), v["sha256"][:8]) for k, v in after.items()],
+    }
+    print("RETAKE_DIAGNOSTIC side=%d %s" % (side_index, diagnostic), flush=True)
     assert count == 1 and markers == expected, (
-        "Card %s retake appended/reordered saved sides: expected=%s actual=%s"
-        % ("front" if side_index == 0 else "back", expected, markers)
+        "Card %s retake appended/reordered saved sides: expected=%s actual=%s diagnostic=%s"
+        % ("front" if side_index == 0 else "back", expected, markers, diagnostic)
     )
     return {"review_sides": actual, "untouched_source_preserved": True, "pdf_pages": count, "image_order": markers}
 
