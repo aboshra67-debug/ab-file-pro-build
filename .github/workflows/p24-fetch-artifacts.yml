@@ -21,7 +21,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          ls -laR dl | head -80
+          ls -laR dl > /dev/null
           mkdir -p out
           (cd dl && zip -qr -X ../out/P24_EVIDENCE.zip .)
           git init -q pub && cd pub
