@@ -1,0 +1,32 @@
+name: P24 copy evidence to branch
+on:
+  push:
+    branches: ["artifacts/p24-fetch-20261022"]
+    paths: [".github/workflows/p24-fetch-artifacts.yml"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 39040299672
+          name: P24_EVIDENCE
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Commit evidence
+        shell: bash
+        run: |
+          set -euo pipefail
+          ls -laR dl | head -80
+          mkdir -p out
+          (cd dl && zip -qr -X ../out/P24_EVIDENCE.zip .)
+          git init -q pub && cd pub
+          git checkout -q -b artifacts/p24-verified-20261022
+          cp -a ../out/. .
+          git add -A
+          git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -qm "P24 evidence from run 39040299672"
+          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:artifacts/p24-verified-20261022
