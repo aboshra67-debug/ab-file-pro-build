@@ -25,8 +25,9 @@ jobs:
           mkdir -p out
           (cd dl && zip -qr -X ../out/P24_EVIDENCE.zip .)
           git init -q pub && cd pub
-          git checkout -q -b artifacts/p24-verified-20261022
+          git checkout -q -b artifacts/p24-verified-20261022b
           cp -a ../out/. .
           git add -A
           git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -qm "P24 evidence from run 39040299672"
-          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:artifacts/p24-verified-20261022
+          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:artifacts/p24-verified-20261022b
+# rerun attempt 2
