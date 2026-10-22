@@ -63,6 +63,7 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
+import com.abfilepro.app.assistant.BillAlarmScheduler
 
 internal data class BillProvider(
     val title: String,
@@ -232,6 +233,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
                 providerName = providers.firstOrNull { it.packageName == upcoming.providerPackage }?.title,
                 onDelete = {
                     BillReminderStore.delete(context, upcoming.id)
+                    BillAlarmScheduler.cancel(context, upcoming.id)
                     reminderRevision++
                     Toast.makeText(context, "تم حذف التذكير", Toast.LENGTH_SHORT).show()
                 },
@@ -257,6 +259,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
             onDismiss = { showDialog = false },
             onSave = { item ->
                 BillReminderStore.upsert(context, item)
+                BillAlarmScheduler.sync(context, item.id, item.dueAtMillis)
                 reminderRevision++
                 showDialog = false
                 Toast.makeText(context, "تم حفظ التذكير", Toast.LENGTH_SHORT).show()

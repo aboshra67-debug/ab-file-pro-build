@@ -59,6 +59,10 @@
             android:exported="false" />
 
         <receiver
+            android:name=".assistant.BillAlarmReceiver"
+            android:exported="false" />
+
+        <receiver
             android:name=".assistant.TaskRescheduleReceiver"
             android:enabled="true"
             android:exported="false">

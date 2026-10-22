@@ -16,6 +16,8 @@ object AssistantBackup {
     private val settingPrefs = listOf(
         "ab_personal_assistant" to listOf("prayer_settings_v1", "money_budgets_v1"),
         "ab_file_pro_shopping_list" to listOf("items_v2", "list_name_v1"),
+        // P25: bill reminders (due dates, accounts) are part of the backup.
+        BillReminderRecords.PREFS to listOf(BillReminderRecords.KEY),
     )
 
     data class ImportResult(val added: Int, val alreadyPresent: Int, val settingsRestored: Int)
@@ -77,6 +79,7 @@ object AssistantBackup {
             }
         }
         if (restored > 0) runCatching { PrayerAlarmScheduler.reschedule(context) }
+        if (restored > 0) runCatching { BillAlarmScheduler.rescheduleAll(context) }
         return ImportResult(added, present, restored)
     }
 }

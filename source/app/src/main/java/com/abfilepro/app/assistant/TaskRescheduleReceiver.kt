@@ -9,5 +9,6 @@ class TaskRescheduleReceiver : BroadcastReceiver() {
         TaskAlarmScheduler.rescheduleAll(context)
         HealthAlarmScheduler.rescheduleAll(context)
         DocumentRenewalAlarmScheduler.rescheduleAll(context)
+        BillAlarmScheduler.rescheduleAll(context)
     }
 }
