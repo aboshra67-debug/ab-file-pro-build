@@ -14,7 +14,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           run-id: 39745454370
-          name: P24_COMPAT_API_26
+          pattern: P24_*
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: dl
       - name: Commit evidence
@@ -23,12 +23,13 @@ jobs:
           set -euo pipefail
           ls -laR dl > /dev/null
           mkdir -p out
-          (cd dl && zip -qr -X ../out/P24_COMPAT26.zip .)
+          (cd dl && zip -qr -X ../out/P24_ALL.zip .)
           git init -q pub && cd pub
-          git checkout -q -b artifacts/p24-verified-20261022c
+          git checkout -q -b artifacts/p24-verified-20261022d
           cp -a ../out/. .
           git add -A
           git -c user.name="github-actions" -c user.email="github-actions@users.noreply.github.com" commit -qm "P24 evidence from run 39040299672"
-          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:artifacts/p24-verified-20261022c
+          git push -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" HEAD:artifacts/p24-verified-20261022d
 # rerun attempt 2
 # compat26
+# all small artifacts
