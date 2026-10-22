@@ -143,7 +143,7 @@ deb2251b8769ea53147fb3a2344c9ec81f1c06a03723474f5d03654cf3a75413  app/src/main/j
 6f89d736609e96d5d92400b6c6bb2d39b008fd0c83dcd097c8fc8de457d63595  app/src/main/java/com/abfilepro/app/ui/screens/ReceiptInvoiceScreen.kt
 c07732da37a678084e1e459e58f73f0f91358c10613c0c367823ab988970fd37  app/src/main/java/com/abfilepro/app/ui/screens/SafFileManagerPane.kt
 5288ee0b6e615c6a857be8f033df704f01083b8da0a0cb7794d1797c5ae812f0  app/src/main/java/com/abfilepro/app/ui/screens/ScanImageViewer.kt
-181c66ef6675c352d69ee5587b7d4b2c0b7c9c9fac46326b89e240fd40ab717d  app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt
+a6161738b883f5357dbb59517b57be86ab64b5ff1cb7732274398519a5350f7f  app/src/main/java/com/abfilepro/app/ui/screens/ScanScreen.kt
 594290e52dc899a5f98c1d62eca6cc882bc82fed797ba2fc3fb2768318d3f33b  app/src/main/java/com/abfilepro/app/ui/screens/ScanTranslationResult.kt
 ff0a6a23c209c560d00ba537da65587eb34112f0b3169257c0cdea484857936f  app/src/main/java/com/abfilepro/app/ui/screens/ScannerProCamera.kt
 f58320719b79dc71ef58817cdd09851255f42baee81bfb931df11ee401884c15  app/src/main/java/com/abfilepro/app/ui/screens/SettingsScreen.kt
@@ -254,7 +254,7 @@ b49e54aff12755dff4f01dba7e1c97b5d9ccde57a792cb69158403267adf26cb  app/src/main/r
 0e732c89c39ebcaaa12da71bc4e9ffe08d2235e4c2465d8e37e7891840c88d9e  app/src/main/res/values/strings_p20_backup.xml
 b837d6a9630cff57d5e55f4452db23dc60311fed0ae8d2ff06cbcb709d732c81  app/src/main/res/values/strings_p22_scanner.xml
 d20046984c908b3415e0ffc4370ced435bc80f6f3a78ff36ab6889233637d155  app/src/main/res/values/strings_p23_camera.xml
-0f6367ebfc21993e56565df3e686c39279dcef4a197325b88cc7763203b688ea  app/src/main/res/values/strings_p24_camera.xml
+8868b823f7278f385bfda71b54618ab3cf68e15b4accff30768c766fc324b3a7  app/src/main/res/values/strings_p24_camera.xml
 a49497a493e72886ba5f1e9ddd567f3e77bad51d8372eb5811fc7f5a788c6798  app/src/main/res/values/strings_p9_scanner_update.xml
 5d2efe078de8cddf847630ac928e169e94a040037d73d6f640aefbfa8dd4b8ef  app/src/main/res/values/strings_single_document_professional.xml
 9bf129675440e57ea628f62c0e189dda9d54f40a8f5ba1a76c5c1a1da8d70da4  app/src/main/res/values/strings_v141_b1.xml

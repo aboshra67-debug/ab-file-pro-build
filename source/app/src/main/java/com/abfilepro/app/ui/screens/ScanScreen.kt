@@ -2756,6 +2756,29 @@ private fun ScanPageReviewCard(
     }
     var confirmDelete by remember { mutableStateOf(false) }
     var smartCropBusy by remember(page.id) { mutableStateOf(false) }
+    // P24: one-tap cleanups (on-device) live behind the "more" tool so the card keeps its size.
+    var cleanupBusy by remember(page.id) { mutableStateOf<PageCleanup.Operation?>(null) }
+    fun runCleanup(op: PageCleanup.Operation) {
+        if (cleanupBusy != null) return
+        cleanupBusy = op
+        scope.launch {
+            try {
+                val outcome = PageCleanup.apply(context, page, op)
+                if (outcome.changed) {
+                    onUpdate(outcome.page)
+                    Toast.makeText(context, context.uiText(language, "p24_cleanup_done"), Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(context, context.uiText(language, "p24_no_fingers_found"), Toast.LENGTH_SHORT).show()
+                }
+            } catch (error: Throwable) {
+                if (error is kotlinx.coroutines.CancellationException) throw error
+                Toast.makeText(context, context.uiText(language, "p24_cleanup_failed"), Toast.LENGTH_LONG).show()
+            } finally {
+                cleanupBusy = null
+            }
+        }
+    }
+    var showCleanup by remember(page.id) { mutableStateOf(false) }
     var preview by remember(
         page.file.absolutePath, page.rotation, page.filter, page.brightness, page.contrast, page.sharpness,
         page.cropLeft, page.cropTop, page.cropRight, page.cropBottom, page.perspective
@@ -2877,6 +2900,7 @@ private fun ScanPageReviewCard(
                 }
                 ReviewToolButton(Icons.Default.Tune, context.uiText(language, "p22_tool_edit"), enabled, Modifier.weight(1f)) { showEditor = true }
                 ReviewToolButton(Icons.Default.Cameraswitch, context.uiText(language, "p22_tool_retake"), enabled, Modifier.weight(1f), onClick = onRetake)
+                ReviewToolButton(Icons.Default.MoreHoriz, context.uiText(language, "p24_tool_more"), enabled, Modifier.weight(1f)) { showCleanup = true }
             }
             if (singleDocument) {
                 Spacer(Modifier.height(4.dp))
@@ -2905,41 +2929,6 @@ private fun ScanPageReviewCard(
                         }
                     }
                 }
-            }
-            // P24: one-tap cleanups (on-device): fingers on the page edges, photos of screens.
-            var cleanupBusy by remember(page.id) { mutableStateOf<PageCleanup.Operation?>(null) }
-            fun runCleanup(op: PageCleanup.Operation) {
-                if (cleanupBusy != null) return
-                cleanupBusy = op
-                scope.launch {
-                    try {
-                        val outcome = PageCleanup.apply(context, page, op)
-                        if (outcome.changed) {
-                            onUpdate(outcome.page)
-                            Toast.makeText(context, context.uiText(language, "p24_cleanup_done"), Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(context, context.uiText(language, "p24_no_fingers_found"), Toast.LENGTH_SHORT).show()
-                        }
-                    } catch (error: Throwable) {
-                        if (error is kotlinx.coroutines.CancellationException) throw error
-                        Toast.makeText(context, context.uiText(language, "p24_cleanup_failed"), Toast.LENGTH_LONG).show()
-                    } finally {
-                        cleanupBusy = null
-                    }
-                }
-            }
-            Spacer(Modifier.height(4.dp))
-            Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                ReviewToolButton(
-                    Icons.Default.PanTool, context.uiText(language, "p24_tool_fingers"),
-                    enabled && cleanupBusy == null, Modifier.weight(1f),
-                    busy = cleanupBusy == PageCleanup.Operation.REMOVE_FINGERS
-                ) { runCleanup(PageCleanup.Operation.REMOVE_FINGERS) }
-                ReviewToolButton(
-                    Icons.Default.DesktopWindows, context.uiText(language, "p24_tool_screen"),
-                    enabled && cleanupBusy == null, Modifier.weight(1f),
-                    busy = cleanupBusy == PageCleanup.Operation.CLEAN_SCREEN
-                ) { runCleanup(PageCleanup.Operation.CLEAN_SCREEN) }
             }
             if (!singleDocument && count > 1) {
                 Spacer(Modifier.height(4.dp))
@@ -2970,6 +2959,37 @@ private fun ScanPageReviewCard(
                 }) { Text(context.uiText(language, "scan_screen_042")) }
             },
             dismissButton = { TextButton(onClick = { confirmDelete = false }) { Text(context.uiText(language, "scan_screen_052")) } }
+        )
+    }
+
+    if (showCleanup) {
+        AlertDialog(
+            onDismissRequest = { showCleanup = false },
+            title = { Text(context.uiText(language, "p24_cleanup_title")) },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    OutlinedButton(
+                        onClick = { showCleanup = false; runCleanup(PageCleanup.Operation.REMOVE_FINGERS) },
+                        enabled = enabled && cleanupBusy == null,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Icon(Icons.Default.PanTool, null)
+                        Spacer(Modifier.width(8.dp))
+                        Text(context.uiText(language, "p24_tool_fingers"))
+                    }
+                    OutlinedButton(
+                        onClick = { showCleanup = false; runCleanup(PageCleanup.Operation.CLEAN_SCREEN) },
+                        enabled = enabled && cleanupBusy == null,
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Icon(Icons.Default.DesktopWindows, null)
+                        Spacer(Modifier.width(8.dp))
+                        Text(context.uiText(language, "p24_tool_screen"))
+                    }
+                }
+            },
+            confirmButton = {},
+            dismissButton = { TextButton(onClick = { showCleanup = false }) { Text(context.uiText(language, "scan_screen_052")) } }
         )
     }
 

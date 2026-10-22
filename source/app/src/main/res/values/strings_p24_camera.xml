@@ -37,4 +37,10 @@
     <string name="p24_cleanup_failed_ar">تعذر تنظيف الصفحة، والصفحة زي ما هي</string>
     <string name="p24_cleanup_failed_en">Could not clean the page; it is unchanged</string>
     <string name="p24_cleanup_failed_fr">Nettoyage impossible ; page inchangée</string>
+    <string name="p24_tool_more_ar">المزيد</string>
+    <string name="p24_tool_more_en">More</string>
+    <string name="p24_tool_more_fr">Plus</string>
+    <string name="p24_cleanup_title_ar">تنظيف الصفحة</string>
+    <string name="p24_cleanup_title_en">Clean up the page</string>
+    <string name="p24_cleanup_title_fr">Nettoyer la page</string>
 </resources>
