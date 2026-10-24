@@ -1,0 +1,23 @@
+name: fetch p26 evidence
+on:
+  push:
+    branches: ["artifacts/p26-fetch-20261025"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  f:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 40130047482
+          pattern: P26_*
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Publish small files
+        run: |
+          mkdir out
+          find dl -type f -size -3M ! -name "*.apk" ! -name "*.aab" ! -name "*.png" ! -name "*.mp4" -print0 | tar --null -czf out/ev.tgz --files-from=-
+          ls -la out
+          cd out && git init -q && git checkout -q -b artifacts/p26-verified-20261025 && git add . && git -c user.name=ci -c user.email=ci@example.invalid commit -q -m ev && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/artifacts/p26-verified-20261025
