@@ -168,6 +168,8 @@ dependencies {
     // P26: ads exist only in the Play channel.
     add("playImplementation", "com.google.android.gms:play-services-ads:23.6.0")
     add("playImplementation", "com.google.android.ump:user-messaging-platform:3.1.0")
+    // The ads SDK pulls the empty "9999.0" listenablefuture stub, which hides ListenableFuture from CameraX callers.
+    add("playImplementation", "com.google.guava:guava:33.3.1-android")
 
     implementation("com.tom-roush:pdfbox-android:2.0.27.0")
     implementation("com.github.adaptech-cz.Tesseract4Android:tesseract4android:4.9.0")
