@@ -38,9 +38,9 @@ android {
         applicationId = "com.abfilepro.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 177
+        versionCode = 178
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        versionName = "2.0.0-alpha98-p25-assistant-fixes"
+        versionName = "2.0.0-alpha98-p26-ads-framework"
 
         vectorDrawables { useSupportLibrary = true }
 
@@ -65,6 +65,10 @@ android {
             dimension = "channel"
             buildConfigField("boolean", "SELF_UPDATE_ENABLED", "false")
             buildConfigField("String", "DISTRIBUTION_CHANNEL", "\"play\"")
+            // P26: AdMob ids. Defaults are Google's public TEST ids; real ids are passed at release time
+            // (-PadmobAppId=... -PadmobBannerId=...) and are never stored in the source.
+            manifestPlaceholders["admobAppId"] = providers.gradleProperty("admobAppId").getOrElse("ca-app-pub-3940256099942544~3347511713")
+            buildConfigField("String", "ADMOB_BANNER_ID", "\"" + providers.gradleProperty("admobBannerId").getOrElse("ca-app-pub-3940256099942544/9214589741") + "\"")
         }
         create("direct") {
             dimension = "channel"
@@ -76,7 +80,7 @@ android {
     buildTypes {
         debug {
             // Isolated install so testing never requires uninstalling the production app.
-            applicationIdSuffix = ".p25mainttrial"
+            applicationIdSuffix = ".p26mainttrial"
             if (originalSigningReady) {
                 signingConfig = signingConfigs.getByName("original")
             }
@@ -95,7 +99,7 @@ android {
         // so the optimized build is exercised on the emulator before any store upload.
         create("qa") {
             initWith(getByName("release"))
-            applicationIdSuffix = ".p25qa"
+            applicationIdSuffix = ".p26qa"
             signingConfig = signingConfigs.getByName("debug")
             matchingFallbacks += listOf("release")
         }
@@ -161,6 +165,9 @@ dependencies {
     implementation("com.google.zxing:core:3.5.4")
     implementation("com.google.android.gms:play-services-mlkit-document-scanner:16.0.0")
     implementation("org.opencv:opencv:4.14.0")
+    // P26: ads exist only in the Play channel.
+    add("playImplementation", "com.google.android.gms:play-services-ads:23.6.0")
+    add("playImplementation", "com.google.android.ump:user-messaging-platform:3.1.0")
 
     implementation("com.tom-roush:pdfbox-android:2.0.27.0")
     implementation("com.github.adaptech-cz.Tesseract4Android:tesseract4android:4.9.0")

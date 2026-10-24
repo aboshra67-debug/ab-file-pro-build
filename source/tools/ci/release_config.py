@@ -1,14 +1,14 @@
-"""Single source of the values P25 verification pins (version, packages, expected counts)."""
-TAG = 'P25'
-EVIDENCE = 'p25-evidence'
-RELEASE = 'p25-release'
-VERSION_CODE = 177
-VERSION_NAME = '2.0.0-alpha98-p25-assistant-fixes'
-TEST_PACKAGE = 'com.abfilepro.app.p25mainttrial'
-QA_PACKAGE = 'com.abfilepro.app.p25qa'
-TEST_LABEL = 'AB File Pro P25'
-QA_LABEL = 'AB File Pro P25 QA'
-SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial', 'com.abfilepro.app.p23mainttrial', 'com.abfilepro.app.p24mainttrial', 'com.abfilepro.app.p25mainttrial']
+"""Single source of the values P26 verification pins (version, packages, expected counts)."""
+TAG = 'P26'
+EVIDENCE = 'p26-evidence'
+RELEASE = 'p26-release'
+VERSION_CODE = 178
+VERSION_NAME = '2.0.0-alpha98-p26-ads-framework'
+TEST_PACKAGE = 'com.abfilepro.app.p26mainttrial'
+QA_PACKAGE = 'com.abfilepro.app.p26qa'
+TEST_LABEL = 'AB File Pro P26'
+QA_LABEL = 'AB File Pro P26 QA'
+SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial', 'com.abfilepro.app.p23mainttrial', 'com.abfilepro.app.p24mainttrial', 'com.abfilepro.app.p25mainttrial', 'com.abfilepro.app.p26mainttrial']
 DEBUG_APK = 'project/app/build/outputs/apk/play/debug/app-play-debug.apk'
 QA_APK = 'project/app/build/outputs/apk/play/qa/app-play-qa.apk'
 DIRECT_APK = 'project/app/build/outputs/apk/direct/debug/app-direct-debug.apk'
@@ -16,5 +16,5 @@ AAB = 'project/app/build/outputs/bundle/playRelease/app-play-release.aab'
 MAPPING = 'project/app/build/outputs/mapping/playRelease/mapping.txt'
 ANDROID_TESTS = 129
 SCANNER_CASES = 19
-JVM_TESTS = 73
+JVM_TESTS = 77
 REQUIRED_TESTS = {k: set(v) for k, v in {'P15': ['successfulBatchPublishesEveryPageInOrder', 'secondPageFailureRemovesOnlyThisAttemptsImages', 'retryAfterFailureDoesNotDuplicatePages', 'cancellationDuringSaveRemovesPublishedImages', 'imageChangedAfterPublishIsKeptOnRollback'], 'P16': ['playChannelDisablesSelfUpdate', 'playBuildDoesNotRequestInstallPackages'], 'P17': ['freshInstallHasNoFamilyAndNoSession', 'preP17AutomaticRegistrationIsPausedUntilConfirmed', 'preP17CodeWithoutRegistrationIsDiscarded', 'turningHealthSharingOffWithdrawsOnlyThisPhonesOwnHealthItems', 'leavingWhileNotLinkedClearsStateWithoutNetwork'], 'P18': ['calendarReminderWhoseLeadTimeAlreadyPassedStillFires', 'medicineReceiverSchedulesTheNextDailyDose', 'documentWhoseReminderWindowStartedIsRemindedOnce', 'adhanSchedulesTomorrowAndKeepsTodaysFollowUp'], 'P19': ['reviewPagesRoundTripThroughSavedState', 'restoredReviewDropsPagesWhoseImageIsGone', 'scannerPdfIsPublishedOnlyAfterVerification', 'invalidScannerResultFailsCleanlyWithoutLeavingFiles', 'recordingStoppedOutsideTheScreenIsRecovered'], 'P20': ['recordsAreNotDroppedAfterTwoThousand', 'staleScreenCopyCannotUndoAChangeMadeElsewhere', 'updatingARecordDeletedElsewhereDoesNotBringItBack', 'preP20RecordsAreMigratedAndTheOldCopyIsKept', 'backupImportAddsOnlyMissingRecordsAndChangesNothingElse', 'familySyncAppliesOnlyChangedRecords'], 'P21': ['androidWrittenPdfRendersItsRealContentOrIsRefusedSafely', 'rewrittenCopyKeepsEveryPageAndIsRemovedAfterwards', 'pdfboxOnlyModeNeverProducesFilesFromItsRendering', 'brokenPdfIsStillRejectedWhenTheFallbackIsUsed', 'longImageIsProducedThroughTheRewrittenCopy'], 'P22': ['googleScannerIsTheDefaultEngineAndTheChoiceIsRemembered', 'everyScannerModeSavesIntoTheScansFolderByDefault', 'aFolderPickedInTheScannerIsRememberedAndOutsideFoldersAreRefused', 'twoSidedCardIsSavedIntoTheScannerFolder'], 'P23': ['oneSheetIsOutlinedAtItsCorners', 'severalSheetsInOneShotAreFoundSeparatelyInReadingOrder', 'anEmptyDeskHasNoOutline', 'cameraLuminanceIsRotatedToTheUprightScreen', 'severalSheetsBecomeIndependentPagesThatCanBeRetiredOneByOne'], 'P24': ['aFingerOnThePageEdgeIsPaintedOverAndTheTextStays', 'skinInsideThePageLikeAnIdPhotoIsLeftAlone', 'screenPhotoCleanupFlattensMoireStripes', 'cleaningAPageKeepsItsOriginalImageAndPointsAtTheNewOne', 'aBookShotBecomesTwoPagesRightPageFirstForArabic'], 'P25': ['aBillGetsBothAlarmsAndDeletingItRemovesThem', 'backupCarriesBillRemindersAndRestoringThemRearmsTheAlarms']}.items()}

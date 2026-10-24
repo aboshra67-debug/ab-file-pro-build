@@ -7,7 +7,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.*
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.navigationBarsPadding
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.CircularProgressIndicator
@@ -21,6 +24,11 @@ import androidx.navigation.NavType
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.compose.currentBackStackEntryAsState
+import com.abfilepro.app.ads.AdSlot
+import com.abfilepro.app.ads.AdsHost
+import com.abfilepro.app.ads.AdsPolicy
+import com.abfilepro.app.ads.AdsSettings
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.abfilepro.app.core.FileUtils
@@ -43,6 +51,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         PDFBoxResourceLoader.init(applicationContext)
         com.abfilepro.app.core.SafePdfRenderer.init(applicationContext)
+        AdsHost.start(this)
         lifecycleScope.launch(Dispatchers.IO) { RuntimeSafety.cleanupTemporaryFiles(applicationContext) }
 
         setContent {
@@ -87,6 +96,10 @@ class MainActivity : ComponentActivity() {
                     }
                     // P22: no cross-fade between screens. The default fade showed two screens
                     // half-transparent on top of each other (camera over the file manager).
+                    val currentRoute = nav.currentBackStackEntryAsState().value?.destination?.route
+                    val showAd = AdsPolicy.canShowOn(currentRoute, AdsSettings.removed(this@MainActivity))
+                    Column(Modifier.fillMaxSize()) {
+                    Box(Modifier.weight(1f)) {
                     NavHost(
                         navController = nav,
                         startDestination = if (shortcutOpenWorkspace) "files" else "splash",
@@ -198,6 +211,9 @@ class MainActivity : ComponentActivity() {
                                 }
                             )
                         }
+                    }
+                    }
+                    if (showAd) AdSlot(Modifier.navigationBarsPadding())
                     }
 
                     availableUpdate?.let { update ->
