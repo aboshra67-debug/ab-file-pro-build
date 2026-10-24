@@ -72,6 +72,8 @@ import com.abfilepro.app.assistant.HealthEntryCodec
 import com.abfilepro.app.assistant.HealthEntryMeta
 import com.abfilepro.app.assistant.HealthEntryType
 import com.abfilepro.app.assistant.FamilyMembersStore
+import com.abfilepro.app.billing.ProFeature
+import com.abfilepro.app.billing.ProState
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
@@ -306,7 +308,7 @@ private fun OwnerTabs(
             }
             if (members.size < FamilyMembersStore.MAX_MEMBERS) {
                 Surface(
-                    modifier = Modifier.padding(horizontal = 2.dp).clickable(onClick = onAddMember),
+                    modifier = Modifier.padding(horizontal = 2.dp).clickable { if (ProState.allowOrAsk(ProFeature.FAMILY_MEMBERS, members.size)) onAddMember() },
                     shape = RoundedCornerShape(24.dp),
                     color = Color.Transparent,
                 ) {
@@ -473,9 +475,11 @@ private fun AddMedicineDialog(ownerLabel: String, onDismiss: () -> Unit, onSave:
                         FilterChip(
                             selected = times.size == count,
                             onClick = {
-                                times = when {
-                                    count < times.size -> times.take(count)
-                                    else -> times + (times.size until count).map { index -> LocalTime.of((8 + index * 6) % 24, 0) }
+                                if (ProState.allowValueOrAsk(ProFeature.DOSES_PER_MEDICINE, count)) {
+                                    times = when {
+                                        count < times.size -> times.take(count)
+                                        else -> times + (times.size until count).map { index -> LocalTime.of((8 + index * 6) % 24, 0) }
+                                    }
                                 }
                             },
                             label = { Text(count.toString()) },

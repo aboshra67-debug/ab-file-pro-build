@@ -168,6 +168,8 @@ dependencies {
     // P26: ads exist only in the Play channel.
     add("playImplementation", "com.google.android.gms:play-services-ads:23.6.0")
     add("playImplementation", "com.google.android.ump:user-messaging-platform:3.1.0")
+    // P28: Play Billing 8 (Play requires version 8 or newer for updates).
+    add("playImplementation", "com.android.billingclient:billing:8.3.0")
     // The ads SDK pulls the empty "9999.0" listenablefuture stub, which hides ListenableFuture from CameraX callers.
     add("playImplementation", "com.google.guava:guava:33.3.1-android")
 

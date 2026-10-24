@@ -244,6 +244,8 @@ fun PersonalAssistantScreen(
     val addFromSentence: (QuickAddParser.Result) -> Unit = { r ->
         val category = selectedCategory.takeUnless { it == AssistantCategory.ALL } ?: AssistantCategory.PERSONAL
         val due = r.dueAt
+        // A repeat beyond the free limit is not applied; the item is still added once and the Pro screen opens.
+        val repeatRule = if (r.recurrence != Recurrence.NONE && !com.abfilepro.app.billing.ProState.allowOrAsk(com.abfilepro.app.billing.ProFeature.REPEATING_ITEMS, RecurrenceStore.ids(context).size)) Recurrence.NONE else r.recurrence
         entries = if (r.calendar && due != null) {
             repository.add(entries, AssistantModule.CALENDAR, r.title, "", category, due, 15.0, (due + 3_600_000L).toString(), enabled = true)
         } else {
@@ -251,8 +253,8 @@ fun PersonalAssistantScreen(
         }
         entries.firstOrNull()?.let { created ->
             com.abfilepro.app.assistant.TaskAlarmScheduler.sync(context, created)
-            if (r.recurrence != Recurrence.NONE) {
-                RecurrenceStore.set(context, created.id, r.recurrence)
+            if (repeatRule != Recurrence.NONE) {
+                RecurrenceStore.set(context, created.id, repeatRule)
                 RecurrenceEngine.scheduleNextAdvance(context)
             }
         }

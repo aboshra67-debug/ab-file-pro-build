@@ -7,6 +7,8 @@ import androidx.compose.ui.Modifier
 /** P26: the direct (APK) channel has no ads at all. */
 object AdsHost {
     fun start(activity: Activity) = Unit
+    fun privacyOptionsRequired(context: android.content.Context): Boolean = false
+    fun showPrivacyOptions(activity: Activity) = Unit
 }
 
 @Composable

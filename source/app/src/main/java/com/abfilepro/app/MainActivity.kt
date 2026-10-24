@@ -29,6 +29,8 @@ import com.abfilepro.app.ads.AdSlot
 import com.abfilepro.app.ads.AdsHost
 import com.abfilepro.app.ads.AdsPolicy
 import com.abfilepro.app.ads.AdsSettings
+import com.abfilepro.app.billing.BillingBackend
+import com.abfilepro.app.billing.ProState
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.abfilepro.app.core.FileUtils
@@ -51,6 +53,9 @@ import kotlinx.coroutines.delay
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // P28: the saved Pro state first, then Google Play's current answer (Play channel only).
+        ProState.load(this)
+        BillingBackend.start(this)
         PDFBoxResourceLoader.init(applicationContext)
         com.abfilepro.app.core.SafePdfRenderer.init(applicationContext)
         lifecycleScope.launch(Dispatchers.IO) { RuntimeSafety.cleanupTemporaryFiles(applicationContext) }
@@ -77,6 +82,10 @@ class MainActivity : ComponentActivity() {
                         if (android.os.Build.VERSION.SDK_INT < 35) window.navigationBarColor = if (darkMode) 0xFF101418.toInt() else 0xFFFFFFFF.toInt()
                     }
                     val nav = rememberNavController()
+                    // P28: a limit that stopped the person opens the Pro screen.
+                    LaunchedEffect(ProState.paywallRequests) {
+                        if (ProState.paywallRequests > 0 && nav.currentDestination?.route != "pro") nav.navigate("pro")
+                    }
                     val updateScope = rememberCoroutineScope()
                     var availableUpdate by remember { mutableStateOf<AppUpdateManager.UpdateInfo?>(null) }
                     var updateDownloading by remember { mutableStateOf(false) }
@@ -100,7 +109,7 @@ class MainActivity : ComponentActivity() {
                     // P22: no cross-fade between screens. The default fade showed two screens
                     // half-transparent on top of each other (camera over the file manager).
                     val currentRoute = nav.currentBackStackEntryAsState().value?.destination?.route
-                    val showAd = AdsPolicy.canShowOn(currentRoute, AdsSettings.removed(this@MainActivity))
+                    val showAd = AdsPolicy.canShowOn(currentRoute, ProState.adsRemoved)
                     Column(Modifier.fillMaxSize()) {
                     Box(Modifier.weight(1f)) {
                     NavHost(
@@ -199,8 +208,10 @@ class MainActivity : ComponentActivity() {
                             val uriText = Uri.decode(entry.arguments?.getString("uri").orEmpty())
                             PdfEditorScreen(uriText = uriText, onBack = { nav.popBackStack() }, onOpenPdf = openPdf)
                         }
+                        composable("pro") { ProScreen(onBack = { nav.popBackStack() }) }
                         composable("settings") {
                             SettingsScreen(
+                                onOpenPro = { nav.navigate("pro") },
                                 onBack = { nav.popBackStack() },
                                 darkMode = darkMode,
                                 onDarkModeChange = {

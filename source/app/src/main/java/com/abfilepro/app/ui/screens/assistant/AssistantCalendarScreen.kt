@@ -421,7 +421,7 @@ private fun CalendarEventDialog(
                     Spacer(Modifier.size(6.dp))
                     Text(L("نهاية الموعد: ${formatDateTime(endAt)}"))
                 }
-                RecurrenceChips(repeat) { repeat = it }
+                RecurrenceChips(repeat, initial?.id) { repeat = it }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Default.NotificationsActive, null, tint = adaptInk(Color(0xFFF44336)))
                     Spacer(Modifier.size(8.dp))

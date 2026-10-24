@@ -86,6 +86,8 @@ import java.util.Locale
 import kotlin.math.max
 import com.abfilepro.app.assistant.MoneyRecurringRule
 import com.abfilepro.app.assistant.MoneyRecurringStore
+import com.abfilepro.app.billing.ProFeature
+import com.abfilepro.app.billing.ProState
 
 /**
  * Alpha74 operational Money screen.
@@ -653,7 +655,7 @@ private fun AddExpenseDialog(
                 }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                     Text(L("مصروف شهري ثابت (يتكرر كل شهر)"), Modifier.weight(1f), fontSize = 13.sp)
-                    Switch(checked = repeatMonthly, onCheckedChange = { repeatMonthly = it })
+                    Switch(checked = repeatMonthly, onCheckedChange = { on -> repeatMonthly = on && ProState.allowOrAsk(ProFeature.MONEY_RECURRING, MoneyRecurringStore.load(context).size) })
                 }
                 Text(
                     if (defaultCategory == AssistantCategory.WORK) "سيُحفظ المصروف ضمن قسم العمل" else "سيُحفظ المصروف على جهازك فقط",

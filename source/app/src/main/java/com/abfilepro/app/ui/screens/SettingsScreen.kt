@@ -37,6 +37,7 @@ private data class ThemeChoice(val id: String, val labelKey: String, val color: 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SettingsScreen(
+    onOpenPro: () -> Unit = {},
     onBack: () -> Unit,
     darkMode: Boolean,
     onDarkModeChange: (Boolean) -> Unit,
@@ -239,6 +240,18 @@ fun SettingsScreen(
                     showAiHelp = it
                     prefs.edit().putBoolean("show_ai_help", it).apply()
                 }
+            )
+
+            // P28: Pro (Play channel: plans and restore; direct channel: explains it is fully unlocked).
+            PremiumSettingsCard(
+                icon = Icons.Default.WorkspacePremium,
+                title = "AB Pro",
+                subtitle = when (language) {
+                    AppLanguage.ARABIC -> if (com.abfilepro.app.billing.ProState.pro) "مفعّل" else "ميزات بلا حدود وبدون إعلانات"
+                    AppLanguage.FRENCH -> if (com.abfilepro.app.billing.ProState.pro) "Activé" else "Sans limites et sans publicité"
+                    else -> if (com.abfilepro.app.billing.ProState.pro) "Active" else "No limits and no ads"
+                },
+                onClick = onOpenPro
             )
 
             // P20: user-controlled backup of the personal assistant (allowBackup stays off).

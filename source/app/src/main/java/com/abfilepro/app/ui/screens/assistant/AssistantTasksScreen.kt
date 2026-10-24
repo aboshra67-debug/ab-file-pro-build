@@ -276,7 +276,7 @@ private fun TaskEditorDialog(
                     Spacer(Modifier.width(6.dp))
                     Text(DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(Date(dueAt)))
                 }
-                RecurrenceChips(repeat) { repeat = it }
+                RecurrenceChips(repeat, initial?.id) { repeat = it }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Default.NotificationsActive, null, tint = adaptInk(Color(0xFFEF5350)))
                     Spacer(Modifier.width(8.dp))

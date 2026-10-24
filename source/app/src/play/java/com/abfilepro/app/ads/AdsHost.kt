@@ -50,6 +50,15 @@ object AdsHost {
         )
     }
 
+    /** Google requires a way to reopen the consent choices where the person's region asks for it. */
+    fun privacyOptionsRequired(context: android.content.Context): Boolean =
+        UserMessagingPlatform.getConsentInformation(context).privacyOptionsRequirementStatus ==
+            com.google.android.ump.ConsentInformation.PrivacyOptionsRequirementStatus.REQUIRED
+
+    fun showPrivacyOptions(activity: Activity) {
+        UserMessagingPlatform.showPrivacyOptionsForm(activity) { }
+    }
+
     private fun startSdk(activity: Activity) {
         if (!sdkStarted.compareAndSet(false, true)) return
         MobileAds.initialize(activity.applicationContext) { ready = true }
