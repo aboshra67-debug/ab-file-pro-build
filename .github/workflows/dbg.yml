@@ -1,0 +1,39 @@
+name: dbg p26 build
+on:
+  push:
+    branches: ["dbg/p26-build-20261024"]
+permissions:
+  contents: write
+jobs:
+  b:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/p26-ads-20261024
+          path: checkout
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: 8.11.1
+      - name: Build
+        working-directory: checkout/source
+        run: |
+          SDK_ROOT=/usr/local/lib/android/sdk
+          SDKMANAGER=$(find "$SDK_ROOT/cmdline-tools" -type f -name sdkmanager | sort -V | tail -n 1)
+          yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+          "$SDKMANAGER" "platform-tools" "platforms;android-36" "build-tools;36.0.0" >/dev/null
+          set +e
+          gradle --no-daemon --stacktrace -PAB_FILE_PRO_NATIVE_TEST=true :app:assemblePlayQa > ../../build.log 2>&1
+          echo "exit=$?" >> ../../build.log
+      - name: Publish log excerpt
+        if: always()
+        run: |
+          mkdir out
+          grep -n -E "^e: |What went wrong|error:|ERROR|Caused by|Missing class|exit=|Could not|FAILED" build.log | head -80 > out/excerpt.txt || true
+          tail -60 build.log > out/tail.txt
+          cd out && git init -q && git checkout -q -b artifacts/p26-buildlog && git add . && git -c user.name=ci -c user.email=ci@example.invalid commit -q -m log && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/artifacts/p26-buildlog
