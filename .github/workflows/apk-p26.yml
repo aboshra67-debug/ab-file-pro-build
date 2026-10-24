@@ -1,0 +1,30 @@
+name: Publish P26 test APKs as a release
+on:
+  push:
+    branches: ["apk/p26-test-20261024"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P26_OUTPUTS
+          run-id: 40132470885
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          sha256sum -c SHA256SUMS.txt
+          gh release create p26-test-apk-vc178 *PLAY_TEST.apk *PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p26-test-20261024 --prerelease \
+            --title "AB File Pro P26 (VC178) - test APKs with test ads (debug-signed)" \
+            --notes "Debug-signed test builds from verified run 40132470885. Contains Google TEST ads on the home screen only. PLAY_TEST = com.abfilepro.app.p26mainttrial. PLAY_QA_R8 = com.abfilepro.app.p26qa."
