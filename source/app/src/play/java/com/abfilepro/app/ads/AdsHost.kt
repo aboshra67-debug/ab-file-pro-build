@@ -29,11 +29,13 @@ import java.util.concurrent.atomic.AtomicBoolean
  */
 object AdsHost {
     private val sdkStarted = AtomicBoolean(false)
+    private val consentAsked = AtomicBoolean(false)
     internal var ready by mutableStateOf(false)
         private set
 
     fun start(activity: Activity) {
         if (AdsSettings.removed(activity)) return
+        if (!consentAsked.compareAndSet(false, true)) return
         val consent = UserMessagingPlatform.getConsentInformation(activity)
         if (consent.canRequestAds()) startSdk(activity)
         consent.requestConsentInfoUpdate(

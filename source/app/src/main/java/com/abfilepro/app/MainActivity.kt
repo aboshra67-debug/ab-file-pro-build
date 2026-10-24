@@ -51,7 +51,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         PDFBoxResourceLoader.init(applicationContext)
         com.abfilepro.app.core.SafePdfRenderer.init(applicationContext)
-        AdsHost.start(this)
         lifecycleScope.launch(Dispatchers.IO) { RuntimeSafety.cleanupTemporaryFiles(applicationContext) }
 
         setContent {
@@ -270,6 +269,12 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+    override fun onStart() {
+        super.onStart()
+        // After setContent: Google's consent code needs the window content to exist.
+        AdsHost.start(this)
+    }
+
     override fun onResume() {
         super.onResume()
         AppUpdateManager.resumePendingInstall(this)

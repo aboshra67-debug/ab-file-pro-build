@@ -25,7 +25,7 @@ da4d7ef604e4b3098df394d970aa7607412272e0a50c3c4164715b521a0a5407  app/src/main/A
 e3206d3dc87fd50c24a0fb9f01838615911d25168f4e64415244b67d2bb3e729  app/src/main/assets/tessdata/ara.traineddata
 7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2  app/src/main/assets/tessdata/eng.traineddata
 ced037562e8c80c13122dece28dd477d399af80911a28791a66a63ac1e3445ca  app/src/main/assets/tessdata/fra.traineddata
-991dd4820ca254cc940ae7a78f5e6e5458d33119ce9f5229bc3944fe5056233c  app/src/main/java/com/abfilepro/app/MainActivity.kt
+e297e2ee061c8db3fb3a3aceb2eea398ebb4d6c39d02c0e5c3b143c22be60ed7  app/src/main/java/com/abfilepro/app/MainActivity.kt
 612a621c89b6cb099f72bb23b48fa3f1436e938c472867387f024143f89bfe4f  app/src/main/java/com/abfilepro/app/ads/AdsPolicy.kt
 7da200c509b50e93902f35786ce605caf2b2e8c01cffff1cca7c7b9ce63986a6  app/src/main/java/com/abfilepro/app/assistant/AssistantBackup.kt
 272d1cb43a4ff3fa40bde8db7c9be96a207ca4d868f63da022c6ec1b71140101  app/src/main/java/com/abfilepro/app/assistant/AssistantDomain.kt
@@ -271,7 +271,7 @@ f4df275b0db112055c767b19e8e76a913595c04d0f5146c98eac16262a5b80f1  app/src/main/r
 b7814c82d24904e7a68e80398e4bbef4de7739fe6c98a3a17d53e2951c769b6d  app/src/main/res/values/themes.xml
 424bed1fcd923bc92909dd1e1cd9243fe3b0ba07d9b9f21b29f64935c9d8fde6  app/src/main/res/xml/file_paths.xml
 8c6d2c4fed4d678ceb2f37a14f6700960eee7656daf957d1a09dde9edb625b84  app/src/play/AndroidManifest.xml
-488dbe17ec6d2fd70b8ca7ac029bbaf72c8cf69f9ea62dda8a69288c2e3e6ba6  app/src/play/java/com/abfilepro/app/ads/AdsHost.kt
+6ae35629f2a42e78bccb887b9fbb2c314b280d3128e7303fc7437d9998919700  app/src/play/java/com/abfilepro/app/ads/AdsHost.kt
 cc985d71a10d15e2ebce45e0efb2c62c0467591990d77e98a7c7aae385d59b9e  app/src/qa/AndroidManifest.xml
 0bebf1e4900e31d5a2c8df202c9a9268afc3e15606deaae527f8ffd1a6939dbd  app/src/test/java/com/abfilepro/app/ads/AdsPolicyTest.kt
 e320c83f4786b91621df9745179252967bd2420c28acb26d3cb21435f78cc60d  app/src/test/java/com/abfilepro/app/assistant/AssistantDomainTest.kt
