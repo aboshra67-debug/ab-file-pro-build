@@ -333,13 +333,13 @@ internal fun ModuleScaffold(
     val language = LocalAppLanguage.current
     val p = module.presentation(language)
     Scaffold(
-        containerColor = Color(0xFFF7F9FC),
+        containerColor = adaptSurface(Color(0xFFF7F9FC)),
         topBar = {
             TopAppBar(
                 title = {
                     Column {
                         Text(p.title, fontWeight = FontWeight.Black, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                        Text(p.subtitle, color = Color(0xFF64748B), fontSize = 11.sp, maxLines = 1)
+                        Text(p.subtitle, color = adaptInk(Color(0xFF64748B)), fontSize = 11.sp, maxLines = 1)
                     }
                 },
                 navigationIcon = {
@@ -352,7 +352,7 @@ internal fun ModuleScaffold(
                         Icon(p.icon, null, tint = p.color, modifier = Modifier.padding(9.dp).size(23.dp))
                     }
                 },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color.White)),
             )
         },
         floatingActionButton = floatingActionButton,
@@ -461,7 +461,7 @@ private fun EntryCard(
     val language = LocalAppLanguage.current
     val date = entry.dueAt?.let { formatDateTime(it, language.code) }
     Card(
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         shape = RoundedCornerShape(20.dp),
         elevation = CardDefaults.cardElevation(1.dp),
     ) {
@@ -471,7 +471,7 @@ private fun EntryCard(
                     Icon(
                         if (entry.completed) Icons.Default.CheckCircle else Icons.Default.RadioButtonUnchecked,
                         null,
-                        tint = if (entry.completed) Color(0xFF0F9D72) else Color(0xFF94A3B8),
+                        tint = if (entry.completed) adaptInk(Color(0xFF0F9D72)) else adaptInk(Color(0xFF94A3B8)),
                     )
                 }
             } else if (toggleEnabled) {
@@ -482,24 +482,24 @@ private fun EntryCard(
                 Text(
                     entry.title,
                     fontWeight = FontWeight.Bold,
-                    color = if (entry.completed) Color(0xFF94A3B8) else MaterialTheme.colorScheme.onSurface,
+                    color = if (entry.completed) adaptInk(Color(0xFF94A3B8)) else MaterialTheme.colorScheme.onSurface,
                 )
-                if (entry.details.isNotBlank()) Text(entry.details, color = Color(0xFF64748B), fontSize = 13.sp, lineHeight = 18.sp)
-                if (date != null) Text(date, color = Color(0xFF3F7AE0), fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
+                if (entry.details.isNotBlank()) Text(entry.details, color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp, lineHeight = 18.sp)
+                if (date != null) Text(date, color = adaptInk(Color(0xFF3F7AE0)), fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
                 if (showMoney && entry.amount != null) {
                     val income = entry.secondary == "income"
                     Text(
                         "${if (income) "+" else "-"}${formatAmount(entry.amount)}",
-                        color = if (income) Color(0xFF0F9D72) else Color(0xFFE53935),
+                        color = if (income) adaptInk(Color(0xFF0F9D72)) else adaptInk(Color(0xFFE53935)),
                         fontWeight = FontWeight.Black,
                     )
                 }
-                Text(categoryLabel(entry.category, language), color = Color(0xFF94A3B8), fontSize = 10.sp)
+                Text(categoryLabel(entry.category, language), color = adaptInk(Color(0xFF94A3B8)), fontSize = 10.sp)
             }
             Column {
-                onShare?.let { IconButton(onClick = it) { Icon(Icons.Default.Share, tr(language, "مشاركة", "Share", "Partager"), tint = Color(0xFF6C5CE7)) } }
-                onCalendar?.let { IconButton(onClick = it) { Icon(Icons.Default.Launch, tr(language, "إضافة للتقويم", "Add to calendar", "Ajouter au calendrier"), tint = Color(0xFF3F7AE0)) } }
-                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, tr(language, "حذف", "Delete", "Supprimer"), tint = Color(0xFFE57373)) }
+                onShare?.let { IconButton(onClick = it) { Icon(Icons.Default.Share, tr(language, "مشاركة", "Share", "Partager"), tint = adaptInk(Color(0xFF6C5CE7))) } }
+                onCalendar?.let { IconButton(onClick = it) { Icon(Icons.Default.Launch, tr(language, "إضافة للتقويم", "Add to calendar", "Ajouter au calendrier"), tint = adaptInk(Color(0xFF3F7AE0))) } }
+                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, tr(language, "حذف", "Delete", "Supprimer"), tint = adaptInk(Color(0xFFE57373))) }
             }
         }
     }
@@ -516,7 +516,7 @@ private fun MoneySummary(entries: List<AssistantEntry>) {
             Text(formatAmount(income - expense), color = Color.White, fontSize = 28.sp, fontWeight = FontWeight.Black)
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceEvenly) {
                 Text("+ ${formatAmount(income)}", color = Color(0xFF6EE7B7), fontWeight = FontWeight.Bold)
-                Text("- ${formatAmount(expense)}", color = Color(0xFFFCA5A5), fontWeight = FontWeight.Bold)
+                Text("- ${formatAmount(expense)}", color = adaptInk(Color(0xFFFCA5A5)), fontWeight = FontWeight.Bold)
             }
         }
     }
@@ -609,16 +609,16 @@ private fun EmptyModuleState(module: AssistantModule) {
             Icon(p.icon, null, tint = p.color, modifier = Modifier.padding(18.dp).size(34.dp))
         }
         Text(tr(language, "لا توجد عناصر بعد", "Nothing here yet", "Aucun élément"), fontWeight = FontWeight.Bold)
-        Text(tr(language, "اضغط + لإضافة أول عنصر", "Tap + to add the first item", "Touchez + pour ajouter"), color = Color(0xFF64748B), fontSize = 13.sp)
+        Text(tr(language, "اضغط + لإضافة أول عنصر", "Tap + to add the first item", "Touchez + pour ajouter"), color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp)
     }
 }
 
 @Composable
 private fun InfoCard(title: String, body: String) {
-    Card(colors = CardDefaults.cardColors(containerColor = Color(0xFFEFF6FF)), shape = RoundedCornerShape(18.dp)) {
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFEFF6FF))), shape = RoundedCornerShape(18.dp)) {
         Column(Modifier.fillMaxWidth().padding(15.dp)) {
-            Text(title, fontWeight = FontWeight.Bold, color = Color(0xFF173B65))
-            Text(body, color = Color(0xFF475569), fontSize = 13.sp, lineHeight = 18.sp)
+            Text(title, fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF173B65)))
+            Text(body, color = adaptInk(Color(0xFF475569)), fontSize = 13.sp, lineHeight = 18.sp)
         }
     }
 }
@@ -714,14 +714,14 @@ private fun CameraGalleryScreen(
 @Composable
 private fun MediaReferenceCard(entry: AssistantEntry, onOpen: () -> Unit, onDelete: () -> Unit) {
     val language = LocalAppLanguage.current
-    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(18.dp)) {
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(18.dp)) {
         Row(Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f)) {
                 Text(entry.title, fontWeight = FontWeight.Bold, maxLines = 2)
-                Text(tr(language, "محفوظ داخل جهازك", "Stored on your device", "Stocké sur votre appareil"), color = Color(0xFF64748B), fontSize = 11.sp)
+                Text(tr(language, "محفوظ داخل جهازك", "Stored on your device", "Stocké sur votre appareil"), color = adaptInk(Color(0xFF64748B)), fontSize = 11.sp)
             }
-            IconButton(onClick = onOpen) { Icon(Icons.Default.OpenInNew, tr(language, "فتح", "Open", "Ouvrir"), tint = Color(0xFF3F7AE0)) }
-            IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, tr(language, "حذف", "Delete", "Supprimer"), tint = Color(0xFFE57373)) }
+            IconButton(onClick = onOpen) { Icon(Icons.Default.OpenInNew, tr(language, "فتح", "Open", "Ouvrir"), tint = adaptInk(Color(0xFF3F7AE0))) }
+            IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, tr(language, "حذف", "Delete", "Supprimer"), tint = adaptInk(Color(0xFFE57373))) }
         }
     }
 }
@@ -778,25 +778,25 @@ private fun CalculatorModuleScreen(onBack: () -> Unit) {
             // Match the native calculator's mode tabs, without introducing a new route.
             Row(
                 Modifier.fillMaxWidth()
-                    .background(Color.White, RoundedCornerShape(22.dp))
-                    .border(1.dp, Color(0xFFE3E8EF), RoundedCornerShape(22.dp))
+                    .background(adaptSurface(Color.White), RoundedCornerShape(22.dp))
+                    .border(1.dp, adaptSurface(Color(0xFFE3E8EF)), RoundedCornerShape(22.dp))
                     .padding(4.dp),
                 horizontalArrangement = Arrangement.spacedBy(6.dp),
             ) {
                 Box(
                     Modifier.weight(1f).height(48.dp)
-                        .background(Color(0xFFF9FAFB), RoundedCornerShape(18.dp))
+                        .background(adaptSurface(Color(0xFFF9FAFB)), RoundedCornerShape(18.dp))
                         .clickable { mode = "calculator" },
                     contentAlignment = Alignment.Center,
                 ) {
-                    Text(tr(language, "حاسبة", "Calculator", "Calculatrice"), color = Color(0xFF334155), fontWeight = FontWeight.Bold)
+                    Text(tr(language, "حاسبة", "Calculator", "Calculatrice"), color = adaptInk(Color(0xFF334155)), fontWeight = FontWeight.Bold)
                 }
                 Box(
                     Modifier.weight(1f).height(48.dp)
-                        .background(Color(0xFFE9DDF8), RoundedCornerShape(18.dp)),
+                        .background(adaptSurface(Color(0xFFE9DDF8)), RoundedCornerShape(18.dp)),
                     contentAlignment = Alignment.Center,
                 ) {
-                    Text(tr(language, "تحويل العملات", "Convert", "Convertir"), color = Color(0xFF101827), fontWeight = FontWeight.Black)
+                    Text(tr(language, "تحويل العملات", "Convert", "Convertir"), color = adaptInk(Color(0xFF101827)), fontWeight = FontWeight.Black)
                 }
             }
 
@@ -906,24 +906,24 @@ private fun CurrencyConverterPanel(
         }
     }
 
-    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(20.dp)) {
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(20.dp)) {
         Column(Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-            Text(tr(language, "المبلغ المطلوب تحويله", "Amount to convert", "Montant à convertir"), fontWeight = FontWeight.Bold, color = Color(0xFF173B65))
+            Text(tr(language, "المبلغ المطلوب تحويله", "Amount to convert", "Montant à convertir"), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF173B65)))
             OutlinedTextField(
                 value = amountText,
                 onValueChange = onAmountChange,
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text(tr(language, "المبلغ", "Amount", "Montant")) },
-                trailingIcon = { Text(fromCurrency, color = Color(0xFF475569), fontWeight = FontWeight.Bold) },
+                trailingIcon = { Text(fromCurrency, color = adaptInk(Color(0xFF475569)), fontWeight = FontWeight.Bold) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
             )
         }
     }
 
-    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(20.dp)) {
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(20.dp)) {
         Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Text(tr(language, "من عملة", "From currency", "Devise source"), fontWeight = FontWeight.Bold, color = Color(0xFF173B65))
+            Text(tr(language, "من عملة", "From currency", "Devise source"), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF173B65)))
             CurrencyCodeRow(currencies, fromCurrency, onFromCurrency, language)
         }
     }
@@ -934,14 +934,14 @@ private fun CurrencyConverterPanel(
         }
     }
 
-    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(20.dp)) {
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(20.dp)) {
         Column(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Text(tr(language, "إلى عملة", "To currency", "Devise cible"), fontWeight = FontWeight.Bold, color = Color(0xFF173B65))
+            Text(tr(language, "إلى عملة", "To currency", "Devise cible"), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF173B65)))
             CurrencyCodeRow(currencies, toCurrency, onToCurrency, language)
         }
     }
 
-    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(18.dp)) {
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(18.dp)) {
         Column(Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 Column(Modifier.weight(1f)) {
@@ -962,26 +962,26 @@ private fun CurrencyConverterPanel(
                                 tr(language, "المصدر: ${rates.providerName} • آخر تحديث: $providerTime", "Source: ${rates.providerName} • provider update: $providerTime", "Source : ${rates.providerName} • mise à jour : $providerTime")
                             else -> tr(language, "المصدر: ${rates.providerName}", "Source: ${rates.providerName}", "Source : ${rates.providerName}")
                         }
-                        Text(freshnessText, color = Color(0xFF64748B), fontSize = 12.sp)
+                        Text(freshnessText, color = adaptInk(Color(0xFF64748B)), fontSize = 12.sp)
                         if (checkedTime != null) Text(
                             tr(language, "آخر فحص من التطبيق: $checkedTime", "App last checked: $checkedTime", "Dernière vérification : $checkedTime"),
-                            color = Color(0xFF64748B),
+                            color = adaptInk(Color(0xFF64748B)),
                             fontSize = 11.sp,
                         )
                         if (rates.usedFallbackProvider) Text(
                             tr(language, "تم استخدام المصدر الاحتياطي مؤقتًا", "Backup rate source is being used temporarily", "Source de secours utilisée temporairement"),
-                            color = Color(0xFFB45309),
+                            color = adaptInk(Color(0xFFB45309)),
                             fontSize = 11.sp,
                         )
                     }
                 }
                 IconButton(onClick = onRefresh, enabled = !isLoading) {
-                    Icon(Icons.Default.Refresh, tr(language, "تحديث", "Refresh", "Actualiser"), tint = Color(0xFF2563EB))
+                    Icon(Icons.Default.Refresh, tr(language, "تحديث", "Refresh", "Actualiser"), tint = adaptInk(Color(0xFF2563EB)))
                 }
             }
             Text(
                 tr(language, "للاسترشاد فقط؛ قد يختلف سعر البنك أو شركة الصرافة.", "Reference rate only; bank or exchange-office rates may differ.", "Taux indicatif; le taux bancaire peut différer."),
-                color = Color(0xFF64748B), fontSize = 11.sp,
+                color = adaptInk(Color(0xFF64748B)), fontSize = 11.sp,
             )
             TextButton(onClick = { openWeb(context, "https://www.exchangerate.fun") }, contentPadding = PaddingValues(0.dp)) {
                 Text("Hourly rates by ExchangeRate.fun", fontSize = 11.sp)
@@ -1004,8 +1004,8 @@ private fun CurrencyCodeRow(
                 onClick = { onSelected(code) },
                 label = { Text("$code · ${currencyDisplayName(code, language)}", fontWeight = FontWeight.Bold, maxLines = 1) },
                 colors = FilterChipDefaults.filterChipColors(
-                    selectedContainerColor = Color(0xFFE9DDF8),
-                    selectedLabelColor = Color(0xFF3B236B),
+                    selectedContainerColor = adaptSurface(Color(0xFFE9DDF8)),
+                    selectedLabelColor = adaptInk(Color(0xFF3B236B)),
                 ),
             )
         }
@@ -1015,7 +1015,7 @@ private fun CurrencyCodeRow(
 // Immutable labels are initialized once rather than allocated per displayed chip.
 private val currencyNamesEnglish = mapOf("EGP" to "Egyptian pound", "USD" to "US dollar", "EUR" to "Euro", "SAR" to "Saudi riyal", "AED" to "UAE dirham", "GBP" to "British pound", "KWD" to "Kuwaiti dinar", "QAR" to "Qatari riyal", "CNY" to "Chinese yuan", "JPY" to "Japanese yen", "CHF" to "Swiss franc", "CAD" to "Canadian dollar")
 private val currencyNamesFrench = mapOf("EGP" to "Livre égyptienne", "USD" to "Dollar américain", "EUR" to "Euro", "SAR" to "Riyal saoudien", "AED" to "Dirham émirati", "GBP" to "Livre sterling", "KWD" to "Dinar koweïtien", "QAR" to "Riyal qatari", "CNY" to "Yuan chinois", "JPY" to "Yen japonais", "CHF" to "Franc suisse", "CAD" to "Dollar canadien")
-private val currencyNamesArabic = mapOf("EGP" to "جنيه مصري", "USD" to "دولار أمريكي", "EUR" to "يورو", "SAR" to "ريال سعودي", "AED" to "درهم إماراتي", "GBP" to "جنيه إسترليني", "KWD" to "دينار كويتي", "QAR" to "ريال قطري", "CNY" to "يوان صيني", "JPY" to "ين ياباني", "CHF" to "فرنك سويسري", "CAD" to "دولار كندي")
+private val currencyNamesArabic = mapOf("EGP" to L("جنيه مصري"), "USD" to L("دولار أمريكي"), "EUR" to L("يورو"), "SAR" to L("ريال سعودي"), "AED" to L("درهم إماراتي"), "GBP" to L("جنيه إسترليني"), "KWD" to L("دينار كويتي"), "QAR" to L("ريال قطري"), "CNY" to L("يوان صيني"), "JPY" to L("ين ياباني"), "CHF" to L("فرنك سويسري"), "CAD" to L("دولار كندي"))
 
 private fun currencyDisplayName(code: String, language: com.abfilepro.app.ui.i18n.AppLanguage): String {
     val names = when (language.code) {
@@ -1157,7 +1157,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
 
     if (showBarcodeDialog) {
         Dialog(onDismissRequest = { showBarcodeDialog = false }) {
-            Card(shape = RoundedCornerShape(24.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+            Card(shape = RoundedCornerShape(24.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
                 Column(Modifier.fillMaxWidth().padding(14.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(tr(language, "امسح باركود المنتج", "Scan product barcode", "Scanner le code-barres"), fontWeight = FontWeight.Black, fontSize = 20.sp)
                     Spacer(Modifier.height(10.dp))
@@ -1174,7 +1174,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                         )
                     } else {
                         Column(Modifier.fillMaxWidth().height(250.dp), horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center) {
-                            Icon(Icons.Default.QrCodeScanner, null, modifier = Modifier.size(72.dp), tint = Color(0xFFEF3340))
+                            Icon(Icons.Default.QrCodeScanner, null, modifier = Modifier.size(72.dp), tint = adaptInk(Color(0xFFEF3340)))
                             Spacer(Modifier.height(12.dp))
                             Button(onClick = { cameraPermission.launch(Manifest.permission.CAMERA) }) {
                                 Text(tr(language, "السماح بالكاميرا", "Allow camera", "Autoriser la caméra"))
@@ -1204,7 +1204,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                     Text(
                         tr(language, "سيتم الفحص دوريًا في الخلفية عند توفر الإنترنت، ولن يصلك تنبيه إلا عند وجود سعر مقروء يحقق الهدف.", "The app checks periodically when online and alerts only when a readable price meets your target.", "L’application vérifie périodiquement en ligne."),
                         fontSize = 12.sp,
-                        color = Color(0xFF64748B),
+                        color = adaptInk(Color(0xFF64748B)),
                     )
                 }
             },
@@ -1230,7 +1230,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
     }
 
     Scaffold(
-        containerColor = Color(0xFFFDFDFE),
+        containerColor = adaptSurface(Color(0xFFFDFDFE)),
         topBar = {
             Surface(
                 color = Color.White,
@@ -1253,7 +1253,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                         modifier = Modifier.align(Alignment.Center),
                         fontWeight = FontWeight.Black,
                         fontSize = 30.sp,
-                        color = Color(0xFF0F172A),
+                        color = adaptInk(Color(0xFF0F172A)),
                     )
                 }
             }
@@ -1268,7 +1268,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(24.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 3.dp),
                 ) {
                     Row(
@@ -1284,14 +1284,14 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                             trailingIcon = {
                                 IconButton(onClick = { startSearch() }, enabled = query.isNotBlank() && !loading) {
                                     if (loading) CircularProgressIndicator(modifier = Modifier.size(22.dp), strokeWidth = 2.dp)
-                                    else Icon(Icons.Default.Search, null, tint = Color(0xFF64748B))
+                                    else Icon(Icons.Default.Search, null, tint = adaptInk(Color(0xFF64748B)))
                                 }
                             },
                             singleLine = true,
                             shape = RoundedCornerShape(20.dp),
                             colors = OutlinedTextFieldDefaults.colors(
-                                focusedContainerColor = Color(0xFFF9FAFF),
-                                unfocusedContainerColor = Color(0xFFF9FAFF),
+                                focusedContainerColor = adaptSurface(Color(0xFFF9FAFF)),
+                                unfocusedContainerColor = adaptSurface(Color(0xFFF9FAFF)),
                                 focusedBorderColor = Color.Transparent,
                                 unfocusedBorderColor = Color.Transparent,
                             ),
@@ -1301,10 +1301,10 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                                 if (hasCameraPermission) showBarcodeDialog = true else cameraPermission.launch(Manifest.permission.CAMERA)
                             },
                             shape = RoundedCornerShape(17.dp),
-                            color = Color(0xFFFFF1F3),
+                            color = adaptSurface(Color(0xFFFFF1F3)),
                         ) {
                             Box(contentAlignment = Alignment.Center) {
-                                Icon(Icons.Default.QrCodeScanner, null, tint = Color(0xFFEF3340), modifier = Modifier.size(30.dp))
+                                Icon(Icons.Default.QrCodeScanner, null, tint = adaptInk(Color(0xFFEF3340)), modifier = Modifier.size(30.dp))
                             }
                         }
                         Surface(
@@ -1319,10 +1319,10 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                                 }
                             },
                             shape = RoundedCornerShape(17.dp),
-                            color = Color(0xFFFFF1F3),
+                            color = adaptSurface(Color(0xFFFFF1F3)),
                         ) {
                             Box(contentAlignment = Alignment.Center) {
-                                Icon(Icons.Default.Mic, null, tint = Color(0xFFEF3340), modifier = Modifier.size(31.dp))
+                                Icon(Icons.Default.Mic, null, tint = adaptInk(Color(0xFFEF3340)), modifier = Modifier.size(31.dp))
                             }
                         }
                     }
@@ -1333,7 +1333,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(26.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color(0xFFECFFF8)),
+                    colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFECFFF8))),
                     elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
                 ) {
                     Row(
@@ -1348,7 +1348,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                                 searchedQuery.ifBlank { tr(language, "ابحث عن أي منتج", "Search for any product", "Rechercher un produit") },
                                 fontWeight = FontWeight.Black,
                                 fontSize = 27.sp,
-                                color = Color(0xFF0F172A),
+                                color = adaptInk(Color(0xFF0F172A)),
                                 maxLines = 2,
                                 overflow = TextOverflow.Ellipsis,
                             )
@@ -1356,7 +1356,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                                 if (searchedQuery.isNotBlank() && cheapest?.priceEgp != null)
                                     tr(language, "أفضل سعر حالي: ${formatCurrencyValue(cheapest.priceEgp)} ج.م", "Best current price: EGP ${formatCurrencyValue(cheapest.priceEgp)}", "Meilleur prix: ${formatCurrencyValue(cheapest.priceEgp)} EGP")
                                 else tr(language, "Amazon مصر • noon • Jumia", "Amazon Egypt • noon • Jumia", "Amazon Égypte • noon • Jumia"),
-                                color = Color(0xFF667085),
+                                color = adaptInk(Color(0xFF667085)),
                                 fontSize = 14.sp,
                             )
                             FilledTonalButton(
@@ -1375,7 +1375,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                         Surface(
                             modifier = Modifier.size(158.dp),
                             shape = CircleShape,
-                            color = Color(0xFFDDFBF0),
+                            color = adaptSurface(Color(0xFFDDFBF0)),
                         ) {
                             Box(contentAlignment = Alignment.Center) {
                                 Text("📱", fontSize = 88.sp)
@@ -1396,33 +1396,33 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                             tr(language, "ترتيب النتائج:", "Sort results:", "Trier:"),
                             fontWeight = FontWeight.Black,
                             fontSize = 18.sp,
-                            color = Color(0xFF111827),
+                            color = adaptInk(Color(0xFF111827)),
                         )
                         Surface(
                             modifier = Modifier.weight(1f).height(54.dp).clickable { sortMode = PriceSortMode.CHEAPEST },
                             shape = RoundedCornerShape(24.dp),
-                            color = if (sortMode == PriceSortMode.CHEAPEST) Color(0xFFFA3443) else Color.White,
+                            color = if (sortMode == PriceSortMode.CHEAPEST) adaptInk(Color(0xFFFA3443)) else Color.White,
                             shadowElevation = 2.dp,
                         ) {
                             Box(contentAlignment = Alignment.Center) {
                                 Text(
                                     tr(language, "الأقل سعرًا", "Lowest price", "Prix le plus bas"),
                                     fontWeight = FontWeight.Bold,
-                                    color = if (sortMode == PriceSortMode.CHEAPEST) Color.White else Color(0xFF111827),
+                                    color = if (sortMode == PriceSortMode.CHEAPEST) Color.White else adaptInk(Color(0xFF111827)),
                                 )
                             }
                         }
                         Surface(
                             modifier = Modifier.weight(1f).height(54.dp).clickable { sortMode = PriceSortMode.FASTEST },
                             shape = RoundedCornerShape(24.dp),
-                            color = if (sortMode == PriceSortMode.FASTEST) Color(0xFFFA3443) else Color.White,
+                            color = if (sortMode == PriceSortMode.FASTEST) adaptInk(Color(0xFFFA3443)) else Color.White,
                             shadowElevation = 2.dp,
                         ) {
                             Box(contentAlignment = Alignment.Center) {
                                 Text(
                                     tr(language, "الأسرع توصيلًا", "Fastest delivery", "Livraison rapide"),
                                     fontWeight = FontWeight.Bold,
-                                    color = if (sortMode == PriceSortMode.FASTEST) Color.White else Color(0xFF111827),
+                                    color = if (sortMode == PriceSortMode.FASTEST) Color.White else adaptInk(Color(0xFF111827)),
                                 )
                             }
                         }
@@ -1440,14 +1440,14 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                 Card(
                     modifier = Modifier.fillMaxWidth(),
                     shape = RoundedCornerShape(22.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color(0xFFF5F7FB)),
+                    colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFF5F7FB))),
                 ) {
                     Row(
                         modifier = Modifier.fillMaxWidth().padding(16.dp),
                         verticalAlignment = Alignment.CenterVertically,
                         horizontalArrangement = Arrangement.spacedBy(12.dp),
                     ) {
-                        Text("ⓘ", color = Color(0xFF2584FF), fontWeight = FontWeight.Black, fontSize = 31.sp)
+                        Text("ⓘ", color = adaptInk(Color(0xFF2584FF)), fontWeight = FontWeight.Black, fontSize = 31.sp)
                         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
                             Text(tr(language, "أسعار مباشرة", "Live prices", "Prix en direct"), fontWeight = FontWeight.Black, fontSize = 17.sp)
                             Text(
@@ -1457,7 +1457,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                                     "Prices and availability can change; check the official store before buying.",
                                     "Les prix et la disponibilité peuvent changer; vérifiez la boutique officielle.",
                                 ),
-                                color = Color(0xFF667085),
+                                color = adaptInk(Color(0xFF667085)),
                                 fontSize = 13.sp,
                             )
                         }
@@ -1487,7 +1487,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
                     Card(
                         modifier = Modifier.fillMaxWidth(),
                         shape = RoundedCornerShape(18.dp),
-                        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF3F4)),
+                        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF3F4))),
                     ) {
                         Row(Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
                             Text(
@@ -1518,9 +1518,9 @@ private fun ClassicPriceStoreResultCard(
     onOpen: () -> Unit,
 ) {
     val bg = when (result.store) {
-        com.abfilepro.app.assistant.RetailStore.AMAZON -> Color(0xFFFFF8E9)
-        com.abfilepro.app.assistant.RetailStore.NOON -> Color(0xFFEDFFF8)
-        com.abfilepro.app.assistant.RetailStore.JUMIA -> Color(0xFFEEF8FF)
+        com.abfilepro.app.assistant.RetailStore.AMAZON -> adaptSurface(Color(0xFFFFF8E9))
+        com.abfilepro.app.assistant.RetailStore.NOON -> adaptSurface(Color(0xFFEDFFF8))
+        com.abfilepro.app.assistant.RetailStore.JUMIA -> adaptSurface(Color(0xFFEEF8FF))
     }
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -1534,24 +1534,24 @@ private fun ClassicPriceStoreResultCard(
             horizontalArrangement = Arrangement.spacedBy(10.dp),
         ) {
             Column(modifier = Modifier.weight(.8f), horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(result.store.arabicName, fontWeight = FontWeight.Black, fontSize = 23.sp, color = Color(0xFF111827))
-                Text("›", fontWeight = FontWeight.Black, fontSize = 28.sp, color = Color(0xFF111827))
+                Text(result.store.arabicName, fontWeight = FontWeight.Black, fontSize = 23.sp, color = adaptInk(Color(0xFF111827)))
+                Text("›", fontWeight = FontWeight.Black, fontSize = 28.sp, color = adaptInk(Color(0xFF111827)))
             }
             Column(modifier = Modifier.weight(1.15f), horizontalAlignment = Alignment.CenterHorizontally) {
                 if (result.priceEgp != null) {
-                    Text("${formatCurrencyValue(result.priceEgp)} ج.م", color = Color(0xFFF52D3C), fontWeight = FontWeight.Black, fontSize = 24.sp)
+                    Text("${formatCurrencyValue(result.priceEgp)} ج.م", color = adaptInk(Color(0xFFF52D3C)), fontWeight = FontWeight.Black, fontSize = 24.sp)
                 } else {
-                    Text(tr(language, "السعر غير متاح", "Price unavailable", "Prix indisponible"), color = Color(0xFF667085), fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    Text(tr(language, "السعر غير متاح", "Price unavailable", "Prix indisponible"), color = adaptInk(Color(0xFF667085)), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 }
                 Text(
                     result.deliveryText ?: tr(language, "راجع التوصيل في المتجر", "Check delivery in store", "Vérifiez la livraison"),
                     fontSize = 12.sp,
-                    color = Color(0xFF344054),
+                    color = adaptInk(Color(0xFF344054)),
                     maxLines = 2,
                     overflow = TextOverflow.Ellipsis,
                     textAlign = TextAlign.Center,
                 )
-                Text(tr(language, "السعر والتوفر من المتجر", "Price & availability from store", "Prix et disponibilité en boutique"), fontSize = 10.sp, color = Color(0xFF667085))
+                Text(tr(language, "السعر والتوفر من المتجر", "Price & availability from store", "Prix et disponibilité en boutique"), fontSize = 10.sp, color = adaptInk(Color(0xFF667085)))
             }
             Button(
                 onClick = onOpen,
@@ -1570,10 +1570,10 @@ private fun ClassicPriceStoreResultCard(
 
 @Composable
 private fun ExternalActionCard(title: String, subtitle: String, onClick: () -> Unit) {
-    Card(modifier = Modifier.fillMaxWidth().clickable(onClick = onClick), colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(20.dp)) {
+    Card(modifier = Modifier.fillMaxWidth().clickable(onClick = onClick), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(20.dp)) {
         Row(Modifier.fillMaxWidth().padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
-            Column(Modifier.weight(1f)) { Text(title, fontWeight = FontWeight.Bold); Text(subtitle, color = Color(0xFF64748B), fontSize = 12.sp) }
-            Icon(Icons.Default.OpenInNew, null, tint = Color(0xFF3F7AE0))
+            Column(Modifier.weight(1f)) { Text(title, fontWeight = FontWeight.Bold); Text(subtitle, color = adaptInk(Color(0xFF64748B)), fontSize = 12.sp) }
+            Icon(Icons.Default.OpenInNew, null, tint = adaptInk(Color(0xFF3F7AE0)))
         }
     }
 }
@@ -1588,9 +1588,9 @@ private fun PrayerModuleScreen(
     val context = LocalContext.current
     val language = LocalAppLanguage.current
     val deepGreen = Color(0xFF075E54)
-    val ink = Color(0xFF14213B)
-    val muted = Color(0xFF687585)
-    val softGreen = Color(0xFFE4F7F2)
+    val ink = adaptInk(Color(0xFF14213B))
+    val muted = adaptInk(Color(0xFF687585))
+    val softGreen = adaptSurface(Color(0xFFE4F7F2))
     val notificationPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
     val applyGpsLocation: (Location) -> Unit = { location ->
         resolvePrayerCityName(context, location) { resolvedCity ->
@@ -1662,7 +1662,7 @@ private fun PrayerModuleScreen(
     val shape = RoundedCornerShape(22.dp)
 
     Scaffold(
-        containerColor = Color(0xFFF6F8FE),
+        containerColor = adaptSurface(Color(0xFFF6F8FE)),
         topBar = {
             TopAppBar(
                 title = {
@@ -1684,7 +1684,7 @@ private fun PrayerModuleScreen(
                             modifier = Modifier.padding(10.dp).size(24.dp))
                     }
                 },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color(0xFFFBFEFF)),
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color(0xFFFBFEFF))),
             )
         },
     ) { padding ->
@@ -1724,7 +1724,7 @@ private fun PrayerModuleScreen(
                         Button(
                             onClick = useMyLocation,
                             shape = RoundedCornerShape(30.dp),
-                            colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = deepGreen),
+                            colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color.White), contentColor = deepGreen),
                             contentPadding = PaddingValues(horizontal = 14.dp, vertical = 1.dp),
                             modifier = Modifier.height(41.dp),
                         ) {
@@ -1736,7 +1736,7 @@ private fun PrayerModuleScreen(
                 }
             }
             item {
-                Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = shape) {
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = shape) {
                     Column(Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
                         PrayerUiSectionHeading(tr(language, "اختر المدينة", "Choose city", "Choisir une ville"), Icons.Default.LocationOn, deepGreen)
                         CityPreset.ALL.chunked(3).forEach { rowCities ->
@@ -1751,8 +1751,8 @@ private fun PrayerModuleScreen(
                                         )) },
                                         modifier = Modifier.weight(1f).height(46.dp),
                                         shape = RoundedCornerShape(13.dp),
-                                        color = if (selected) softGreen else Color(0xFFF9FBFE),
-                                        border = BorderStroke(1.dp, if (selected) deepGreen else Color(0xFFD5DCE3)),
+                                        color = if (selected) softGreen else adaptSurface(Color(0xFFF9FBFE)),
+                                        border = BorderStroke(1.dp, if (selected) deepGreen else adaptSurface(Color(0xFFD5DCE3))),
                                     ) {
                                         Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                                             Text(cityLabel(preset.id, language), fontSize = 13.sp, fontWeight = if (selected) FontWeight.Black else FontWeight.Medium,
@@ -1767,7 +1767,7 @@ private fun PrayerModuleScreen(
                 }
             }
             item {
-                Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = shape) {
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = shape) {
                     Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(7.dp)) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Default.LocationOn, null, tint = deepGreen, modifier = Modifier.size(22.dp))
@@ -1786,7 +1786,7 @@ private fun PrayerModuleScreen(
                 }
             }
             item {
-                Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = shape) {
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = shape) {
                     Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Default.Notifications, null, tint = deepGreen, modifier = Modifier.size(22.dp))
@@ -1795,7 +1795,7 @@ private fun PrayerModuleScreen(
                                 modifier = Modifier.weight(1f), color = ink, fontWeight = FontWeight.Black)
                             listOf(10, 20, 28, 16, 24, 12, 19).forEach { tall ->
                                 Box(Modifier.padding(horizontal = 1.dp).width(3.dp).height(tall.dp)
-                                    .background(Color(0xFFB8DBDE), RoundedCornerShape(3.dp)))
+                                    .background(adaptSurface(Color(0xFFB8DBDE)), RoundedCornerShape(3.dp)))
                             }
                         }
                         Text(tr(language,
@@ -1807,7 +1807,7 @@ private fun PrayerModuleScreen(
                 }
             }
             item {
-                Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = shape) {
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = shape) {
                     Column(Modifier.fillMaxWidth().padding(15.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         PrayerUiSectionHeading(tr(language, "طريقة الحساب", "Calculation method", "Méthode de calcul"), Icons.Default.CheckCircle, deepGreen)
                         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(9.dp)) {
@@ -1815,8 +1815,8 @@ private fun PrayerModuleScreen(
                                 val selected = settings.method == method
                                 Surface(onClick = { onSettings(settings.copy(method = method)) },
                                     modifier = Modifier.weight(1f).height(43.dp), shape = RoundedCornerShape(22.dp),
-                                    color = if (selected) deepGreen else Color(0xFFF9FBFE),
-                                    border = BorderStroke(1.dp, if (selected) deepGreen else Color(0xFFD4DDE4))) {
+                                    color = if (selected) deepGreen else adaptSurface(Color(0xFFF9FBFE)),
+                                    border = BorderStroke(1.dp, if (selected) deepGreen else adaptSurface(Color(0xFFD4DDE4)))) {
                                     Row(Modifier.fillMaxSize(), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center) {
                                         if (selected) {
                                             Icon(Icons.Default.CheckCircle, null, tint = Color.White, modifier = Modifier.size(17.dp))
@@ -1903,7 +1903,7 @@ private fun PrayerModuleScreen(
                 }
             }
             item {
-                Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = shape) {
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = shape) {
                     Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(9.dp)) {
                         PrayerUiSectionHeading(tr(language, "إعدادات تنبيهات الصلاة", "Prayer alert settings", "Réglages des rappels"), Icons.Default.Notifications, deepGreen)
                         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -1935,7 +1935,7 @@ private fun PrayerModuleScreen(
                 }
             }
             item {
-                Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = shape) {
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = shape) {
                     Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         PrayerUiSectionHeading(tr(language, "متابعة الصلاة بعد الموعد", "Prayer follow-up", "Suivi de la prière"), Icons.Default.CheckCircle, deepGreen)
                         Text(tr(language, "بعد الصلاة يسألك التطبيق: هل صليت؟ نعم / لا. لو لم ترد أو اخترت لا يعيد التذكير.",
@@ -1973,7 +1973,7 @@ private fun PrayerUiSectionHeading(title: String, icon: androidx.compose.ui.grap
     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
         Icon(icon, null, tint = accent, modifier = Modifier.size(22.dp))
         Spacer(Modifier.width(8.dp))
-        Text(title, color = Color(0xFF14213B), fontSize = 17.sp, fontWeight = FontWeight.Black)
+        Text(title, color = adaptInk(Color(0xFF14213B)), fontSize = 17.sp, fontWeight = FontWeight.Black)
     }
 }
 

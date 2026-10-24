@@ -258,7 +258,7 @@ internal fun OperationalVoiceRecorderScreen(
             item {
                 Card(
                     shape = RoundedCornerShape(22.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
                     elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
                 ) {
                     Row(
@@ -268,7 +268,7 @@ internal fun OperationalVoiceRecorderScreen(
                     ) {
                         Column(Modifier.weight(1f)) {
                             Text(tr(language, "جودة التسجيل", "Recording quality", "Qualité d’enregistrement"), fontWeight = FontWeight.ExtraBold, fontSize = 16.sp)
-                            Text(tr(language, "اختر جودة الصوت المناسبة", "Choose the right audio quality", "Choisissez la qualité audio"), color = Color(0xFF8A94A6), fontSize = 12.sp)
+                            Text(tr(language, "اختر جودة الصوت المناسبة", "Choose the right audio quality", "Choisissez la qualité audio"), color = adaptInk(Color(0xFF8A94A6)), fontSize = 12.sp)
                         }
                         VoiceQualityPill(
                             text = qualityLabel(VoiceQuality.NORMAL),
@@ -289,15 +289,15 @@ internal fun OperationalVoiceRecorderScreen(
             item {
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                     Text(tr(language, "التسجيلات الأخيرة", "Recent recordings", "Enregistrements récents"), fontSize = 21.sp, fontWeight = FontWeight.Black, modifier = Modifier.weight(1f))
-                    Text("${entries.size}", color = Color(0xFF7C3AED), fontWeight = FontWeight.Bold)
+                    Text("${entries.size}", color = adaptInk(Color(0xFF7C3AED)), fontWeight = FontWeight.Bold)
                 }
             }
 
             if (entries.isEmpty()) {
                 item {
-                    Card(colors = CardDefaults.cardColors(containerColor = Color(0xFFF8FAFC)), shape = RoundedCornerShape(20.dp)) {
+                    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFF8FAFC))), shape = RoundedCornerShape(20.dp)) {
                         Column(Modifier.fillMaxWidth().padding(28.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                            Icon(Icons.Default.Mic, null, tint = Color(0xFF7C3AED), modifier = Modifier.size(42.dp))
+                            Icon(Icons.Default.Mic, null, tint = adaptInk(Color(0xFF7C3AED)), modifier = Modifier.size(42.dp))
                             Spacer(Modifier.height(8.dp))
                             Text(tr(language, "ابدأ أول تسجيل صوتي", "Create your first recording", "Créez votre premier enregistrement"), fontWeight = FontWeight.Bold)
                         }
@@ -325,11 +325,11 @@ internal fun OperationalVoiceRecorderScreen(
                     modifier = Modifier.fillMaxWidth().height(66.dp),
                     shape = RoundedCornerShape(20.dp),
                 ) {
-                    Icon(Icons.Default.FileUpload, null, tint = Color(0xFFEF4444))
+                    Icon(Icons.Default.FileUpload, null, tint = adaptInk(Color(0xFFEF4444)))
                     Spacer(Modifier.width(10.dp))
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text(tr(language, "استيراد تسجيل", "Import recording", "Importer un enregistrement"), fontWeight = FontWeight.ExtraBold, color = Color(0xFF182033))
-                        Text(tr(language, "من ملفات الجهاز", "From device files", "Depuis les fichiers"), fontSize = 11.sp, color = Color(0xFF8A94A6))
+                        Text(tr(language, "استيراد تسجيل", "Import recording", "Importer un enregistrement"), fontWeight = FontWeight.ExtraBold, color = adaptInk(Color(0xFF182033)))
+                        Text(tr(language, "من ملفات الجهاز", "From device files", "Depuis les fichiers"), fontSize = 11.sp, color = adaptInk(Color(0xFF8A94A6)))
                     }
                 }
             }
@@ -354,20 +354,20 @@ private fun VoiceHeroCard(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(Brush.verticalGradient(listOf(Color(0xFFFFF6FA), Color(0xFFFFFBFD))))
+                .background(Brush.verticalGradient(listOf(adaptSurface(Color(0xFFFFF6FA)), adaptSurface(Color(0xFFFFFBFD)))))
                 .padding(22.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             Box(
-                modifier = Modifier.size(122.dp).clip(CircleShape).background(Color(0xFFF1E7FF)),
+                modifier = Modifier.size(122.dp).clip(CircleShape).background(adaptSurface(Color(0xFFF1E7FF))),
                 contentAlignment = Alignment.Center,
             ) {
-                Icon(Icons.Default.Mic, null, tint = Color(0xFF7C3AED), modifier = Modifier.size(70.dp))
+                Icon(Icons.Default.Mic, null, tint = adaptInk(Color(0xFF7C3AED)), modifier = Modifier.size(70.dp))
             }
             VoiceWaveform(active = phase == RecorderPhase.RECORDING)
             if (phase != RecorderPhase.IDLE) {
-                Text(formatDuration(elapsedMs), fontSize = 28.sp, fontWeight = FontWeight.Black, color = Color(0xFF111827))
+                Text(formatDuration(elapsedMs), fontSize = 28.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)))
             }
             when (phase) {
                 RecorderPhase.IDLE -> {
@@ -440,7 +440,7 @@ private fun VoiceQualityPill(text: String, selected: Boolean, enabled: Boolean, 
             enabled = enabled,
             shape = RoundedCornerShape(18.dp),
             contentPadding = PaddingValues(horizontal = 18.dp, vertical = 9.dp),
-        ) { Text(text, fontWeight = FontWeight.Bold, color = Color(0xFF344054)) }
+        ) { Text(text, fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF344054))) }
     }
 }
 
@@ -466,17 +466,17 @@ private fun VoiceRecordingCard(
             horizontalArrangement = Arrangement.spacedBy(10.dp),
         ) {
             Surface(shape = RoundedCornerShape(14.dp), color = Color.White.copy(alpha = .75f)) {
-                Icon(Icons.Default.Mic, null, tint = Color(0xFF7C3AED), modifier = Modifier.padding(10.dp).size(26.dp))
+                Icon(Icons.Default.Mic, null, tint = adaptInk(Color(0xFF7C3AED)), modifier = Modifier.padding(10.dp).size(26.dp))
             }
             Column(Modifier.weight(1f)) {
                 Text(entry.title, fontWeight = FontWeight.ExtraBold, maxLines = 1, overflow = TextOverflow.Ellipsis)
-                if (duration != null) Text(formatDuration(duration), fontSize = 12.sp, color = Color(0xFF667085))
+                if (duration != null) Text(formatDuration(duration), fontSize = 12.sp, color = adaptInk(Color(0xFF667085)))
             }
-            FilledIconButton(onClick = onPlay, colors = androidx.compose.material3.IconButtonDefaults.filledIconButtonColors(containerColor = Color.White.copy(alpha = .82f))) {
-                Icon(if (isPlaying) Icons.Default.Stop else Icons.Default.PlayArrow, null, tint = Color(0xFF101828))
+            FilledIconButton(onClick = onPlay, colors = androidx.compose.material3.IconButtonDefaults.filledIconButtonColors(containerColor = adaptSurface(Color.White).copy(alpha = .82f))) {
+                Icon(if (isPlaying) Icons.Default.Stop else Icons.Default.PlayArrow, null, tint = adaptInk(Color(0xFF101828)))
             }
-            IconButton(onClick = onShare) { Icon(Icons.Default.Share, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Share), tint = Color(0xFF344054)) }
-            IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.DeleteOutline), tint = Color(0xFFB42318)) }
+            IconButton(onClick = onShare) { Icon(Icons.Default.Share, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Share), tint = adaptInk(Color(0xFF344054))) }
+            IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.DeleteOutline), tint = adaptInk(Color(0xFFB42318))) }
         }
     }
 }

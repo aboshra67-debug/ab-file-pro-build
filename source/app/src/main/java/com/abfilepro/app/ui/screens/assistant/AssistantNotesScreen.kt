@@ -84,14 +84,14 @@ import java.time.format.DateTimeFormatter
 import java.util.Locale
 
 private val NotesRed = Color(0xFFFF3B35)
-private val NotesText = Color(0xFF071124)
-private val NotesSubText = Color(0xFF667085)
-private val NotesCanvas = Color(0xFFFCFCFD)
-private val NotesMint = Color(0xFFEAFBF4)
-private val NotesPink = Color(0xFFFFF0F3)
-private val NotesBlue = Color(0xFFF0F7FF)
-private val NotesPurple = Color(0xFFF5F0FF)
-private val NotesCream = Color(0xFFFFF8E8)
+private val NotesText get() = adaptInk(Color(0xFF071124))
+private val NotesSubText get() = adaptInk(Color(0xFF667085))
+private val NotesCanvas get() = adaptSurface(Color(0xFFFCFCFD))
+private val NotesMint get() = adaptSurface(Color(0xFFEAFBF4))
+private val NotesPink get() = adaptSurface(Color(0xFFFFF0F3))
+private val NotesBlue get() = adaptSurface(Color(0xFFF0F7FF))
+private val NotesPurple get() = adaptSurface(Color(0xFFF5F0FF))
+private val NotesCream get() = adaptSurface(Color(0xFFFFF8E8))
 
 /**
  * Alpha54: operational Notes screen with full editor formatting based on page 9 of the approved visual guide.
@@ -156,15 +156,15 @@ internal fun AssistantNotesScreen(
     deleting?.let { note ->
         AlertDialog(
             onDismissRequest = { deleting = null },
-            title = { Text("حذف الملاحظة", fontWeight = FontWeight.Black) },
-            text = { Text("هل تريد حذف «${note.title}»؟") },
+            title = { Text(L("حذف الملاحظة"), fontWeight = FontWeight.Black) },
+            text = { Text(L("هل تريد حذف «${note.title}»؟")) },
             confirmButton = {
                 TextButton(onClick = {
                     onDelete(note.id)
                     deleting = null
-                }) { Text("حذف", color = Color(0xFFD92D20), fontWeight = FontWeight.Bold) }
+                }) { Text(L("حذف"), color = adaptInk(Color(0xFFD92D20)), fontWeight = FontWeight.Bold) }
             },
-            dismissButton = { TextButton(onClick = { deleting = null }) { Text("إلغاء") } },
+            dismissButton = { TextButton(onClick = { deleting = null }) { Text(L("إلغاء")) } },
         )
     }
 
@@ -172,7 +172,7 @@ internal fun AssistantNotesScreen(
         containerColor = NotesCanvas,
         floatingActionButton = {
             AssistantExtendedFabButton(
-                text = "إضافة ملاحظة",
+                text = L("إضافة ملاحظة"),
                 icon = Icons.Default.Add,
                 onClick = { adding = true },
                 containerColor = NotesRed,
@@ -201,7 +201,7 @@ internal fun AssistantNotesScreen(
                         fontWeight = FontWeight.SemiBold,
                         fontSize = 14.sp,
                     )
-                    Text("📌 المثبتة", color = NotesText, fontWeight = FontWeight.Black, fontSize = 23.sp)
+                    Text(L("📌 المثبتة"), color = NotesText, fontWeight = FontWeight.Black, fontSize = 23.sp)
                 }
             }
 
@@ -266,7 +266,7 @@ private fun NotesHeader(onBack: () -> Unit) {
     Box(modifier = Modifier.fillMaxWidth().height(66.dp)) {
         AssistantHeaderCircleButton(
             icon = Icons.Default.Settings,
-            contentDescription = "الإعدادات",
+            contentDescription = L("الإعدادات"),
             onClick = {},
             modifier = Modifier.align(Alignment.CenterStart),
             accent = true,
@@ -280,7 +280,7 @@ private fun NotesHeader(onBack: () -> Unit) {
         )
         AssistantHeaderCircleButton(
             icon = Icons.Default.ArrowBackIosNew,
-            contentDescription = "رجوع",
+            contentDescription = L("رجوع"),
             onClick = onBack,
             modifier = Modifier.align(Alignment.CenterEnd),
             accent = false,
@@ -296,8 +296,8 @@ private fun NotesSearch(query: String, onQueryChange: (String) -> Unit) {
         onValueChange = { onQueryChange(it.take(120)) },
         modifier = Modifier.fillMaxWidth(),
         singleLine = true,
-        placeholder = { Text("ابحث في الملاحظات", color = Color(0xFF737780), fontSize = 16.sp) },
-        trailingIcon = { Icon(Icons.Default.Search, null, tint = Color(0xFF475467), modifier = Modifier.size(27.dp)) },
+        placeholder = { Text(L("ابحث في الملاحظات"), color = adaptInk(Color(0xFF737780)), fontSize = 16.sp) },
+        trailingIcon = { Icon(Icons.Default.Search, null, tint = adaptInk(Color(0xFF475467)), modifier = Modifier.size(27.dp)) },
         shape = RoundedCornerShape(28.dp),
         keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
         keyboardActions = KeyboardActions(onSearch = { focus.clearFocus() }),
@@ -311,9 +311,9 @@ private fun NotesCategoryTabs(selected: AssistantCategory, onSelect: (AssistantC
         horizontalArrangement = Arrangement.spacedBy(10.dp),
     ) {
         listOf(
-            AssistantCategory.WORK to "عمل",
-            AssistantCategory.PERSONAL to "شخصي",
-            AssistantCategory.ALL to "الكل",
+            AssistantCategory.WORK to L("عمل"),
+            AssistantCategory.PERSONAL to L("شخصي"),
+            AssistantCategory.ALL to L("الكل"),
         ).forEach { (value, label) ->
             AssistantPillTabButton(
                 label = label,
@@ -322,7 +322,7 @@ private fun NotesCategoryTabs(selected: AssistantCategory, onSelect: (AssistantC
                 modifier = Modifier.weight(1f),
                 selectedContainerColor = NotesRed,
                 selectedContentColor = Color.White,
-                unselectedContainerColor = Color.White,
+                unselectedContainerColor = adaptSurface(Color.White),
                 unselectedContentColor = NotesText,
             )
         }
@@ -333,7 +333,7 @@ private fun NotesCategoryTabs(selected: AssistantCategory, onSelect: (AssistantC
 private fun EmptyPinnedCard() {
     Card(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF5F5)),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF5F5))),
         shape = RoundedCornerShape(22.dp),
         elevation = CardDefaults.cardElevation(1.dp),
     ) {
@@ -361,7 +361,7 @@ private fun PinnedNoteCard(
         modifier = modifier.height(246.dp).clickable(onClick = onEdit),
         colors = CardDefaults.cardColors(containerColor = tint),
         shape = RoundedCornerShape(22.dp),
-        border = androidx.compose.foundation.BorderStroke(1.dp, Color(0xFFF1D8DA)),
+        border = androidx.compose.foundation.BorderStroke(1.dp, adaptSurface(Color(0xFFF1D8DA))),
         elevation = CardDefaults.cardElevation(1.dp),
     ) {
         Box(Modifier.fillMaxSize().padding(12.dp)) {
@@ -398,7 +398,7 @@ private fun PinnedNoteCard(
                     )
                 }
                 Spacer(Modifier.height(5.dp))
-                Text(formatNoteDate(note.createdAt), color = Color(0xFF7D8491), fontSize = 12.sp)
+                Text(formatNoteDate(note.createdAt), color = adaptInk(Color(0xFF7D8491)), fontSize = 12.sp)
             }
         }
     }
@@ -421,7 +421,7 @@ private fun NoteListCard(
     val tints = listOf(NotesBlue, NotesCream, NotesMint, NotesPurple)
     Card(
         modifier = Modifier.fillMaxWidth().height(126.dp).clickable(onClick = onEdit),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         shape = RoundedCornerShape(22.dp),
         elevation = CardDefaults.cardElevation(2.dp),
     ) {
@@ -455,7 +455,7 @@ private fun NoteListCard(
                     )
                 }
                 Spacer(Modifier.height(4.dp))
-                Text(formatNoteDate(note.createdAt), color = Color(0xFF8A909A), fontSize = 12.sp)
+                Text(formatNoteDate(note.createdAt), color = adaptInk(Color(0xFF8A909A)), fontSize = 12.sp)
             }
             Spacer(Modifier.width(10.dp))
             Surface(shape = RoundedCornerShape(18.dp), color = tints[index % tints.size]) {
@@ -482,12 +482,12 @@ private fun NoteMenu(
     Box(modifier = modifier) {
         Surface(shape = CircleShape, color = Color.White.copy(alpha = .78f)) {
             IconButton(onClick = { expanded = true }, modifier = Modifier.size(38.dp)) {
-                Icon(Icons.Default.MoreVert, contentDescription = "خيارات", tint = NotesText)
+                Icon(Icons.Default.MoreVert, contentDescription = L("خيارات"), tint = NotesText)
             }
         }
         DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
             DropdownMenuItem(
-                text = { Text("تعديل") },
+                text = { Text(L("تعديل")) },
                 leadingIcon = { Icon(Icons.Default.Edit, null) },
                 onClick = { expanded = false; onEdit() },
             )
@@ -497,8 +497,8 @@ private fun NoteMenu(
                 onClick = { expanded = false; onTogglePin() },
             )
             DropdownMenuItem(
-                text = { Text("حذف", color = Color(0xFFD92D20)) },
-                leadingIcon = { Icon(Icons.Default.DeleteOutline, null, tint = Color(0xFFD92D20)) },
+                text = { Text(L("حذف"), color = adaptInk(Color(0xFFD92D20))) },
+                leadingIcon = { Icon(Icons.Default.DeleteOutline, null, tint = adaptInk(Color(0xFFD92D20))) },
                 onClick = { expanded = false; onDelete() },
             )
         }
@@ -515,7 +515,7 @@ private fun EmptyNotesCard(query: String, category: AssistantCategory) {
     }
     Card(
         modifier = Modifier.fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         shape = RoundedCornerShape(22.dp),
         elevation = CardDefaults.cardElevation(1.dp),
     ) {
@@ -565,7 +565,7 @@ private fun NoteEditorDialog(
                     horizontalArrangement = Arrangement.SpaceBetween,
                 ) {
                     TextButton(onClick = onDismiss) {
-                        Text("إلغاء", color = NotesSubText, fontWeight = FontWeight.Bold)
+                        Text(L("إلغاء"), color = NotesSubText, fontWeight = FontWeight.Bold)
                     }
                     Text(
                         if (initial == null) "ملاحظة جديدة" else "تعديل الملاحظة",
@@ -578,25 +578,25 @@ private fun NoteEditorDialog(
                         enabled = title.isNotBlank(),
                         colors = ButtonDefaults.buttonColors(containerColor = NotesRed),
                         shape = RoundedCornerShape(18.dp),
-                    ) { Text("حفظ", fontWeight = FontWeight.Bold) }
+                    ) { Text(L("حفظ"), fontWeight = FontWeight.Bold) }
                 }
 
                 OutlinedTextField(
                     value = title,
                     onValueChange = { title = it.take(240) },
-                    label = { Text("عنوان الملاحظة") },
+                    label = { Text(L("عنوان الملاحظة")) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth(),
                 )
 
                 Card(
                     modifier = Modifier.fillMaxWidth(),
-                    colors = CardDefaults.cardColors(containerColor = Color.White),
+                    colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
                     shape = RoundedCornerShape(20.dp),
                     elevation = CardDefaults.cardElevation(1.dp),
                 ) {
                     Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                        Text("تنسيق الكتابة", color = NotesText, fontWeight = FontWeight.Black, fontSize = 15.sp)
+                        Text(L("تنسيق الكتابة"), color = NotesText, fontWeight = FontWeight.Black, fontSize = 15.sp)
 
                         Row(
                             modifier = Modifier.fillMaxWidth(),
@@ -608,7 +608,7 @@ private fun NoteEditorDialog(
                                     style = style.copy(sizeSp = (style.sizeSp - 2).coerceAtLeast(14))
                                 },
                                 shape = RoundedCornerShape(14.dp),
-                                color = Color(0xFFF2F4F7),
+                                color = adaptSurface(Color(0xFFF2F4F7)),
                             ) {
                                 Box(Modifier.width(44.dp), contentAlignment = Alignment.Center) {
                                     Text("−", fontSize = 23.sp, fontWeight = FontWeight.Bold)
@@ -628,7 +628,7 @@ private fun NoteEditorDialog(
                                     style = style.copy(sizeSp = (style.sizeSp + 2).coerceAtMost(30))
                                 },
                                 shape = RoundedCornerShape(14.dp),
-                                color = Color(0xFFF2F4F7),
+                                color = adaptSurface(Color(0xFFF2F4F7)),
                             ) {
                                 Box(Modifier.width(44.dp), contentAlignment = Alignment.Center) {
                                     Text("+", fontSize = 22.sp, fontWeight = FontWeight.Bold)
@@ -664,7 +664,7 @@ private fun NoteEditorDialog(
                             verticalAlignment = Alignment.CenterVertically,
                             horizontalArrangement = Arrangement.spacedBy(10.dp),
                         ) {
-                            Text("اللون", color = NotesSubText, fontWeight = FontWeight.Bold)
+                            Text(L("اللون"), color = NotesSubText, fontWeight = FontWeight.Bold)
                             noteColorOptions.forEach { (key, color) ->
                                 Surface(
                                     modifier = Modifier.size(32.dp).clickable { style = style.copy(colorKey = key) },
@@ -672,7 +672,7 @@ private fun NoteEditorDialog(
                                     color = color,
                                     border = BorderStroke(
                                         width = if (style.colorKey == key) 3.dp else 1.dp,
-                                        color = if (style.colorKey == key) NotesRed else Color(0xFFD0D5DD),
+                                        color = if (style.colorKey == key) NotesRed else adaptSurface(Color(0xFFD0D5DD)),
                                     ),
                                 ) {}
                             }
@@ -683,7 +683,7 @@ private fun NoteEditorDialog(
                 OutlinedTextField(
                     value = details,
                     onValueChange = { details = it.take(4000) },
-                    label = { Text("اكتب ملاحظتك هنا") },
+                    label = { Text(L("اكتب ملاحظتك هنا")) },
                     modifier = Modifier.fillMaxWidth().weight(1f),
                     textStyle = TextStyle(
                         color = noteTextColor(style.colorKey),
@@ -718,8 +718,8 @@ private data class NoteEditorStyle(
     val colorKey: String = "dark",
 )
 
-private val noteColorOptions = listOf(
-    "dark" to Color(0xFF071124),
+private val noteColorOptions get() = listOf(
+    "dark" to adaptInk(Color(0xFF071124)),
     "red" to Color(0xFFD92D20),
     "blue" to Color(0xFF175CD3),
     "green" to Color(0xFF067647),
@@ -765,7 +765,7 @@ private fun NoteCategoryChoice(label: String, selected: Boolean, modifier: Modif
     Surface(
         modifier = modifier.height(42.dp).clickable(onClick = onClick),
         shape = RoundedCornerShape(22.dp),
-        color = if (selected) NotesRed else Color(0xFFF2F4F7),
+        color = if (selected) NotesRed else adaptSurface(Color(0xFFF2F4F7)),
     ) {
         Box(contentAlignment = Alignment.Center) {
             Text(label, color = if (selected) Color.White else NotesText, fontWeight = FontWeight.Bold)

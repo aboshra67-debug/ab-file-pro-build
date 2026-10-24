@@ -18,7 +18,14 @@ object AssistantBackup {
         "ab_file_pro_shopping_list" to listOf("items_v2", "list_name_v1"),
         // P25: bill reminders (due dates, accounts) are part of the backup.
         BillReminderRecords.PREFS to listOf(BillReminderRecords.KEY),
+        // P25: price alerts and favourite markets used to be lost when the phone changed.
+        "ab_file_pro_market_alerts" to listOf("alerts_v1", "favorites_v1"),
+        "ab_product_price_alerts" to listOf("items"),
+        FamilyMembersStore.PREFS to listOf(FamilyMembersStore.KEY),
     )
+
+    /** P25: stores whose keys are dated (one per day/prayer); every text entry is carried over. */
+    private val wholePrefs = listOf("ab_prayer_completion_v1")
 
     data class ImportResult(val added: Int, val alreadyPresent: Int, val settingsRestored: Int)
 
@@ -29,12 +36,21 @@ object AssistantBackup {
             val prefs = context.getSharedPreferences(prefsName, Context.MODE_PRIVATE)
             keys.forEach { key -> prefs.getString(key, null)?.let { settings.put("$prefsName/$key", it) } }
         }
+        val whole = JSONObject()
+        wholePrefs.forEach { name ->
+            val values = JSONObject()
+            context.getSharedPreferences(name, Context.MODE_PRIVATE).all.forEach { (key, value) ->
+                if (value is String) values.put(key, value)
+            }
+            whole.put(name, values)
+        }
         val root = JSONObject()
             .put("format", FORMAT)
             .put("version", VERSION)
             .put("createdAt", System.currentTimeMillis())
             .put("store", JSONObject(AssistantStore.encode(entries)))
             .put("settings", settings)
+            .put("wholePrefs", whole)
         val bytes = root.toString(2).toByteArray(Charsets.UTF_8)
         val output = requireNotNull(context.contentResolver.openOutputStream(target, "wt")) { "backup_target_unavailable" }
         output.use { it.write(bytes); it.flush() }
@@ -77,6 +93,19 @@ object AssistantBackup {
                     restored++
                 }
             }
+        }
+        // Dated stores: add only the days that are not on this phone yet.
+        val wholeIncoming = root.optJSONObject("wholePrefs") ?: JSONObject()
+        wholePrefs.forEach { name ->
+            val values = wholeIncoming.optJSONObject(name) ?: return@forEach
+            val prefs = context.getSharedPreferences(name, Context.MODE_PRIVATE)
+            val editor = prefs.edit()
+            var count = 0
+            values.keys().forEach { key ->
+                if (!prefs.contains(key)) { editor.putString(key, values.optString(key)); count++ }
+            }
+            editor.apply()
+            restored += count
         }
         if (restored > 0) runCatching { PrayerAlarmScheduler.reschedule(context) }
         if (restored > 0) runCatching { BillAlarmScheduler.rescheduleAll(context) }

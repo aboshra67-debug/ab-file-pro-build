@@ -36,6 +36,8 @@ import com.abfilepro.app.core.AppUpdateManager
 import com.abfilepro.app.core.RuntimeSafety
 import com.abfilepro.app.core.WorkspaceShortcutRules
 import com.abfilepro.app.ui.screens.*
+import com.abfilepro.app.ui.screens.assistant.AssistantDark
+import com.abfilepro.app.ui.screens.assistant.AssistantLang
 import com.abfilepro.app.ui.theme.ABFileProTheme
 import com.abfilepro.app.ui.i18n.AppLanguage
 import com.abfilepro.app.ui.i18n.LocalAppLanguage
@@ -66,6 +68,8 @@ class MainActivity : ComponentActivity() {
                 ABFileProTheme(darkTheme = darkMode) {
                     // P21: status/navigation bar icons follow the app's dark mode (were always dark).
                     SideEffect {
+                        AssistantDark.on = darkMode
+                        AssistantLang.language = appLanguage
                         val controller = androidx.core.view.WindowCompat.getInsetsController(window, window.decorView)
                         controller.isAppearanceLightStatusBars = !darkMode
                         controller.isAppearanceLightNavigationBars = !darkMode

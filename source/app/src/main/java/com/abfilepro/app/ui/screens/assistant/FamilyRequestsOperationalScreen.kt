@@ -149,13 +149,13 @@ internal fun FamilyRequestsOperationalScreen(
     commentTarget?.let { target ->
         AlertDialog(
             onDismissRequest = { commentTarget = null },
-            title = { Text("رسالة على الطلب", fontWeight = FontWeight.Black) },
+            title = { Text(L("رسالة على الطلب"), fontWeight = FontWeight.Black) },
             text = {
                 OutlinedTextField(
                     value = commentText,
                     onValueChange = { commentText = it.take(220) },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("مثال: هات النوع الكبير") },
+                    label = { Text(L("مثال: هات النوع الكبير")) },
                     minLines = 3,
                 )
             },
@@ -163,23 +163,23 @@ internal fun FamilyRequestsOperationalScreen(
                 Button(onClick = {
                     FamilyCommentStore.save(context, target.id, commentText.trim())
                     commentTarget = null
-                }, colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635))) { Text("حفظ") }
+                }, colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635))) { Text(L("حفظ")) }
             },
-            dismissButton = { TextButton(onClick = { commentTarget = null }) { Text("إلغاء") } },
+            dismissButton = { TextButton(onClick = { commentTarget = null }) { Text(L("إلغاء")) } },
         )
     }
 
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFFFFCFC))
+            .background(adaptSurface(Color(0xFFFFFCFC)))
             .statusBarsPadding()
             .verticalScroll(rememberScrollState())
             .padding(horizontal = 16.dp, vertical = 10.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp),
     ) {
         Box(Modifier.fillMaxWidth()) {
-            Text("طلبات العائلة", modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
+            Text(L("طلبات العائلة"), modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
             Surface(
                 modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
                 shape = CircleShape,
@@ -189,7 +189,7 @@ internal fun FamilyRequestsOperationalScreen(
 
         Card(
             shape = RoundedCornerShape(22.dp),
-            colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF3F5)),
+            colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF3F5))),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         ) {
             Row(
@@ -200,23 +200,23 @@ internal fun FamilyRequestsOperationalScreen(
                 Text("👩‍❤️‍👨", fontSize = 56.sp)
                 Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                     Text(familyProfile.familyName, fontWeight = FontWeight.Black, fontSize = 24.sp)
-                    Text("${familyProfile.selfName} و ${familyProfile.partnerName}", color = Color(0xFF6B7280), fontSize = 14.sp)
-                    Text("طلبات العائلة مرتبطة الآن بقائمة التسوق", color = Color(0xFF0DAA60), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                    Text("${familyProfile.selfName} و ${familyProfile.partnerName}", color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp)
+                    Text(L("طلبات العائلة مرتبطة الآن بقائمة التسوق"), color = adaptInk(Color(0xFF0DAA60)), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                     Text(
                         when (familyProfile.syncState) {
                             FamilySyncState.ON -> "كود العائلة: ${familyProfile.inviteCode}"
                             FamilySyncState.LEGACY_PAUSED -> "المزامنة متوقفة - افتح الإعدادات للتأكيد"
                             FamilySyncState.OFF -> "المزامنة غير مفعلة - البيانات على هذا الهاتف فقط"
                         },
-                        color = Color(0xFF9CA3AF), fontSize = 11.sp,
+                        color = adaptInk(Color(0xFF9CA3AF)), fontSize = 11.sp,
                     )
                 }
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     IconButton(onClick = { showChat = true }) {
-                        Icon(Icons.Default.Chat, contentDescription = "شات العائلة", tint = Color(0xFFFF2635))
+                        Icon(Icons.Default.Chat, contentDescription = L("شات العائلة"), tint = adaptInk(Color(0xFFFF2635)))
                     }
                     IconButton(onClick = { showFamilySettings = true }) {
-                        Icon(Icons.Default.Settings, contentDescription = "إعداد العائلة", tint = Color(0xFF475569))
+                        Icon(Icons.Default.Settings, contentDescription = L("إعداد العائلة"), tint = adaptInk(Color(0xFF475569)))
                     }
                 }
             }
@@ -227,19 +227,19 @@ internal fun FamilyRequestsOperationalScreen(
                 Surface(
                     modifier = Modifier.weight(1f).height(46.dp).clickable { filter = item },
                     shape = RoundedCornerShape(18.dp),
-                    color = if (filter == item) Color(0xFFFF2635) else Color(0xFFF8FAFC),
+                    color = if (filter == item) adaptInk(Color(0xFFFF2635)) else Color(0xFFF8FAFC),
                 ) {
                     Box(contentAlignment = Alignment.Center) {
-                        Text(item.label, color = if (filter == item) Color.White else Color(0xFF111827), fontWeight = FontWeight.Bold, fontSize = 12.sp, textAlign = TextAlign.Center)
+                        Text(item.label, color = if (filter == item) Color.White else adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold, fontSize = 12.sp, textAlign = TextAlign.Center)
                     }
                 }
             }
         }
 
         if (filtered.isEmpty()) {
-            Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+            Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
                 Column(Modifier.fillMaxWidth().padding(28.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("لا توجد طلبات في هذا القسم", color = Color(0xFF94A3B8))
+                    Text(L("لا توجد طلبات في هذا القسم"), color = adaptInk(Color(0xFF94A3B8)))
                 }
             }
         } else {
@@ -285,18 +285,18 @@ internal fun FamilyRequestsOperationalScreen(
         ) {
             Icon(Icons.Default.Add, null)
             Spacer(Modifier.width(8.dp))
-            Text("إضافة طلب", fontWeight = FontWeight.Black, fontSize = 20.sp)
+            Text(L("إضافة طلب"), fontWeight = FontWeight.Black, fontSize = 20.sp)
         }
         Text(
             "عند الضغط على «سأشتريها» ينتقل الطلب تلقائيًا لقائمة التسوق. إكماله من أي من الشاشتين يحدّث حالته في الأخرى.",
-            color = Color(0xFF64748B),
+            color = adaptInk(Color(0xFF64748B)),
             fontSize = 11.sp,
             textAlign = TextAlign.Center,
             modifier = Modifier.fillMaxWidth(),
         )
         Text(
             "المزامنة السحابية مفعلة. على الهاتف الثاني أدخل نفس كود العائلة، وسيتم تبادل الطلبات تلقائيًا عند توفر الإنترنت.",
-            color = Color(0xFF9CA3AF),
+            color = adaptInk(Color(0xFF9CA3AF)),
             fontSize = 10.sp,
             textAlign = TextAlign.Center,
             modifier = Modifier.fillMaxWidth(),
@@ -337,9 +337,9 @@ private fun FamilyRequestCard(
                 Spacer(Modifier.width(10.dp))
                 Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                     Text(entry.title, fontWeight = FontWeight.Black, fontSize = 22.sp, textAlign = TextAlign.End)
-                    Text("الكمية: ${meta.quantity} • من ${meta.fromName} إلى ${meta.toName}", color = Color(0xFF6B7280), fontSize = 13.sp, textAlign = TextAlign.End)
-                    if (entry.details.isNotBlank()) Text(entry.details, color = Color(0xFF6B7280), fontSize = 13.sp, textAlign = TextAlign.End)
-                    Text(status, color = if (entry.completed || meta.status == "done") Color(0xFF0DAA60) else Color(0xFF2563EB), fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                    Text(L("الكمية: ${meta.quantity} • من ${meta.fromName} إلى ${meta.toName}"), color = adaptInk(Color(0xFF6B7280)), fontSize = 13.sp, textAlign = TextAlign.End)
+                    if (entry.details.isNotBlank()) Text(entry.details, color = adaptInk(Color(0xFF6B7280)), fontSize = 13.sp, textAlign = TextAlign.End)
+                    Text(status, color = if (entry.completed || meta.status == "done") adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF2563EB)), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 }
             }
             if (comment.isNotBlank()) {
@@ -351,15 +351,15 @@ private fun FamilyRequestCard(
                 Button(
                     onClick = onShare,
                     modifier = Modifier.weight(1f),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color(0xFFD7192D)),
+                    colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color.White), contentColor = adaptInk(Color(0xFFD7192D))),
                     shape = RoundedCornerShape(16.dp),
-                ) { Icon(Icons.Default.Share, null); Spacer(Modifier.width(4.dp)); Text("إرسال") }
+                ) { Icon(Icons.Default.Share, null); Spacer(Modifier.width(4.dp)); Text(L("إرسال")) }
                 Button(
                     onClick = onComment,
                     modifier = Modifier.weight(1f),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color(0xFF334155)),
+                    colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color.White), contentColor = adaptInk(Color(0xFF334155))),
                     shape = RoundedCornerShape(16.dp),
-                ) { Text("رسالة") }
+                ) { Text(L("رسالة")) }
             }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
                 if (!entry.completed && meta.status != "done") {
@@ -368,15 +368,15 @@ private fun FamilyRequestCard(
                         modifier = Modifier.weight(1f),
                         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635)),
                         shape = RoundedCornerShape(16.dp),
-                    ) { Icon(Icons.Default.Send, null); Spacer(Modifier.width(4.dp)); Text("سأشتريها") }
+                    ) { Icon(Icons.Default.Send, null); Spacer(Modifier.width(4.dp)); Text(L("سأشتريها")) }
                     Button(
                         onClick = onDone,
                         modifier = Modifier.weight(1f),
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEFFFF8), contentColor = Color(0xFF0DAA60)),
+                        colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFEFFFF8)), contentColor = adaptInk(Color(0xFF0DAA60))),
                         shape = RoundedCornerShape(16.dp),
-                    ) { Icon(Icons.Default.Check, null); Spacer(Modifier.width(4.dp)); Text("تم") }
+                    ) { Icon(Icons.Default.Check, null); Spacer(Modifier.width(4.dp)); Text(L("تم")) }
                 }
-                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.DeleteOutline), tint = Color(0xFFB91C1C)) }
+                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.DeleteOutline), tint = adaptInk(Color(0xFFB91C1C))) }
             }
         }
     }
@@ -397,7 +397,7 @@ private fun AddFamilyRequestDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("اختيار طلب للعائلة", fontWeight = FontWeight.Black) },
+        title = { Text(L("اختيار طلب للعائلة"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
@@ -442,27 +442,27 @@ private fun AddFamilyRequestDialog(
                     value = customName,
                     onValueChange = { customName = it.take(70) },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("أو إضافة صنف جديد") },
+                    label = { Text(L("أو إضافة صنف جديد")) },
                     singleLine = true,
                 )
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center, modifier = Modifier.fillMaxWidth()) {
                     IconButton(onClick = { quantity = (quantity - 1).coerceAtLeast(1) }) { Icon(Icons.Default.Remove, null) }
                     Text("$quantity", fontWeight = FontWeight.Black, fontSize = 20.sp, modifier = Modifier.width(44.dp), textAlign = TextAlign.Center)
-                    IconButton(onClick = { quantity = (quantity + 1).coerceAtMost(99) }) { Icon(Icons.Default.Add, null, tint = Color(0xFFE11D2E)) }
+                    IconButton(onClick = { quantity = (quantity + 1).coerceAtMost(99) }) { Icon(Icons.Default.Add, null, tint = adaptInk(Color(0xFFE11D2E))) }
                     Spacer(Modifier.width(8.dp))
-                    Text("الكمية", fontWeight = FontWeight.Bold)
+                    Text(L("الكمية"), fontWeight = FontWeight.Bold)
                 }
                 Row(horizontalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.fillMaxWidth()) {
                     FilterChip(
                         selected = !senderIsPartner,
                         onClick = { senderIsPartner = false },
-                        label = { Text("من ${profile.selfName}") },
+                        label = { Text(L("من ${profile.selfName}")) },
                         modifier = Modifier.weight(1f),
                     )
                     FilterChip(
                         selected = senderIsPartner,
                         onClick = { senderIsPartner = true },
-                        label = { Text("من ${profile.partnerName}") },
+                        label = { Text(L("من ${profile.partnerName}")) },
                         modifier = Modifier.weight(1f),
                     )
                 }
@@ -470,7 +470,7 @@ private fun AddFamilyRequestDialog(
                     value = details,
                     onValueChange = { details = it.take(180) },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("تفاصيل أو ملاحظة اختيارية") },
+                    label = { Text(L("تفاصيل أو ملاحظة اختيارية")) },
                     minLines = 2,
                 )
             }
@@ -486,9 +486,9 @@ private fun AddFamilyRequestDialog(
                     }
                 },
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635)),
-            ) { Text("إرسال الطلب") }
+            ) { Text(L("إرسال الطلب")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 
@@ -606,7 +606,7 @@ private fun FamilySettingsDialog(
                             Text(tr(language, "تكمّل المزامنة", "Keep syncing", "Continuer la synchro"))
                         }
                         TextButton(enabled = !busy, onClick = { confirmLeave = true }, modifier = Modifier.fillMaxWidth()) {
-                            Text(tr(language, "مش بستخدمها - امسح بياناتي من الخدمة", "I don't use it - delete my data from the service", "Je ne l'utilise pas - supprimer mes données"), color = Color(0xFFDC2626))
+                            Text(tr(language, "مش بستخدمها - امسح بياناتي من الخدمة", "I don't use it - delete my data from the service", "Je ne l'utilise pas - supprimer mes données"), color = adaptInk(Color(0xFFDC2626)))
                         }
                     }
                     FamilySyncState.ON -> {
@@ -619,18 +619,18 @@ private fun FamilySettingsDialog(
                             Text(tr(language, "إضافة هاتف تاني للعائلة", "Add another phone", "Ajouter un téléphone"))
                         }
                         TextButton(enabled = !busy, onClick = { confirmLeave = true }, modifier = Modifier.fillMaxWidth()) {
-                            Text(tr(language, "مغادرة العائلة وحذف بياناتي", "Leave family and delete my data", "Quitter la famille et supprimer mes données"), color = Color(0xFFDC2626))
+                            Text(tr(language, "مغادرة العائلة وحذف بياناتي", "Leave family and delete my data", "Quitter la famille et supprimer mes données"), color = adaptInk(Color(0xFFDC2626)))
                         }
                     }
                 }
                 invite?.let {
-                    Surface(shape = RoundedCornerShape(14.dp), color = Color(0xFFFFF3F5), modifier = Modifier.fillMaxWidth()) {
+                    Surface(shape = RoundedCornerShape(14.dp), color = adaptSurface(Color(0xFFFFF3F5)), modifier = Modifier.fillMaxWidth()) {
                         Text(it, modifier = Modifier.padding(12.dp), fontSize = 22.sp, fontWeight = FontWeight.Black,
                             fontFamily = FontFamily.Monospace, textAlign = TextAlign.Center)
                     }
                 }
                 if (busy) CircularProgressIndicator(Modifier.align(Alignment.CenterHorizontally))
-                message?.let { Text(it, fontSize = 13.sp, color = Color(0xFF475569)) }
+                message?.let { Text(it, fontSize = 13.sp, color = adaptInk(Color(0xFF475569))) }
             }
         },
         confirmButton = {
@@ -648,7 +648,7 @@ private fun ShareHealthRow(language: AppLanguage, checked: Boolean, onChange: (B
     Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
         Column(Modifier.weight(1f)) {
             Text(tr(language, "مشاركة الأدوية والمواعيد الصحية", "Share medicines and health appointments", "Partager médicaments et rendez-vous"), fontWeight = FontWeight.Bold, fontSize = 13.sp)
-            Text(tr(language, "مقفولة افتراضيًا. لو قفلتها، اللي شاركته قبل كده بيتشال من أجهزة العائلة.", "Off by default. Turning it off withdraws what you shared before.", "Désactivé par défaut. Le désactiver retire ce qui a été partagé."), fontSize = 11.sp, color = Color(0xFF6B7280))
+            Text(tr(language, "مقفولة افتراضيًا. لو قفلتها، اللي شاركته قبل كده بيتشال من أجهزة العائلة.", "Off by default. Turning it off withdraws what you shared before.", "Désactivé par défaut. Le désactiver retire ce qui a été partagé."), fontSize = 11.sp, color = adaptInk(Color(0xFF6B7280)))
         }
         Switch(checked = checked, onCheckedChange = onChange)
     }

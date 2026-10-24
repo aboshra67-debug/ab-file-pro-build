@@ -1,8 +1,9 @@
-name: P26 Safe Maintenance, R8 QA and APK
+name: P27 Safe Maintenance, R8 QA and APK (repo)
 on:
   workflow_dispatch:
   push:
-    paths: ["app/**", "tools/**", "family-sync-server/**", "*.kts", "gradle.properties", "VERSION", ".github/workflows/p26-standalone.yml"]
+    branches: ["feature/p27-assistant-20261025"]
+    paths: ["source/**", ".github/workflows/p27-safe-maintenance.yml"]
 permissions:
   contents: read
   actions: read
@@ -22,12 +23,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: project
+          path: checkout
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Family sync server tests (real PostgreSQL)
-        working-directory: family-sync-server
+        working-directory: checkout/source/family-sync-server
         env:
           DATABASE_URL: postgresql://postgres:ci@localhost:5432/family
         run: |
@@ -37,8 +38,8 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: P26_SERVER_RESULTS
-          path: family-sync-server/server-results.xml
+          name: P27_SERVER_RESULTS
+          path: checkout/source/family-sync-server/server-results.xml
           if-no-files-found: warn
   compat:
     runs-on: ubuntu-latest
@@ -50,11 +51,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: project
+          path: checkout
       - name: Link tools
         shell: bash
         run: |
           set -euo pipefail
+          ln -s checkout/source project
           ln -s project/tools/ci release-ci
       - uses: actions/setup-java@v4
         with:
@@ -94,7 +96,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: P26_COMPAT_API_${{ matrix.api }}
+          name: P27_COMPAT_API_${{ matrix.api }}
           path: |
             compat-${{ matrix.api }}/
             project/app/build/outputs/androidTest-results/
@@ -106,11 +108,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          path: project
+          path: checkout
       - name: Verify complete Safe Source inputs
         shell: bash
         run: |
           set -euo pipefail
+          ln -s checkout/source project
           ln -s project/tools tools
           ln -s project/tools/ci release-ci
           cd project
@@ -161,9 +164,9 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: P26_EVIDENCE
+          name: P27_EVIDENCE
           path: |
-            p26-evidence/
+            p27-evidence/
             runtime-evidence/
             project/app/build/outputs/androidTest-results/
             project/app/build/reports/androidTests/
@@ -171,12 +174,12 @@ jobs:
             project/app/build/outputs/mapping/
           if-no-files-found: warn
           retention-days: 14
-      - name: Upload verified P26 outputs
+      - name: Upload verified P27 outputs
         if: ${{ success() }}
         uses: actions/upload-artifact@v4
         with:
-          name: AB98_P26_OUTPUTS
-          path: p26-release/*
+          name: AB98_P27_OUTPUTS
+          path: p27-release/*
           if-no-files-found: ignore
           retention-days: 14
           compression-level: 0

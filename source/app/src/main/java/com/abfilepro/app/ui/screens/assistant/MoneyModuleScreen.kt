@@ -167,7 +167,7 @@ internal fun MoneyModuleScreen(
 
     if (showAllExpenses) {
         ExpensesDialog(
-            title = "كل مصروفات ${monthLabel(selectedMonth, arabicLocale)}",
+            title = L("كل مصروفات ${monthLabel(selectedMonth, arabicLocale)}"),
             entries = monthExpenses,
             onDismiss = { showAllExpenses = false },
             onDelete = onDelete,
@@ -183,7 +183,7 @@ internal fun MoneyModuleScreen(
         )
     }
 
-    Scaffold(containerColor = Color(0xFFF8FAFC)) { padding ->
+    Scaffold(containerColor = adaptSurface(Color(0xFFF8FAFC))) { padding ->
         LazyColumn(
             modifier = Modifier.fillMaxSize().padding(padding),
             contentPadding = androidx.compose.foundation.layout.PaddingValues(horizontal = 14.dp, vertical = 10.dp),
@@ -237,9 +237,9 @@ internal fun MoneyModuleScreen(
                         modifier = Modifier.weight(1f).height(62.dp),
                         shape = RoundedCornerShape(20.dp),
                     ) {
-                        Icon(Icons.Default.CalendarMonth, null, tint = Color(0xFFFF2D35))
+                        Icon(Icons.Default.CalendarMonth, null, tint = adaptInk(Color(0xFFFF2D35)))
                         Spacer(Modifier.width(8.dp))
-                        Text("تحديد الميزانية", fontWeight = FontWeight.ExtraBold, color = Color(0xFF111827))
+                        Text(L("تحديد الميزانية"), fontWeight = FontWeight.ExtraBold, color = adaptInk(Color(0xFF111827)))
                     }
                     Button(
                         onClick = { showExpenseDialog = true },
@@ -247,10 +247,10 @@ internal fun MoneyModuleScreen(
                         colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2D35)),
                         shape = RoundedCornerShape(20.dp),
                     ) {
-                        Text("إضافة مصروف", fontWeight = FontWeight.ExtraBold, fontSize = 17.sp)
+                        Text(L("إضافة مصروف"), fontWeight = FontWeight.ExtraBold, fontSize = 17.sp)
                         Spacer(Modifier.width(8.dp))
                         Surface(shape = CircleShape, color = Color.White) {
-                            Icon(Icons.Default.Add, null, tint = Color(0xFFFF2D35), modifier = Modifier.padding(5.dp))
+                            Icon(Icons.Default.Add, null, tint = adaptInk(Color(0xFFFF2D35)), modifier = Modifier.padding(5.dp))
                         }
                     }
                 }
@@ -271,12 +271,12 @@ private fun MoneyHeader(onBack: () -> Unit, onSettings: () -> Unit) {
                 shadowElevation = 3.dp,
             ) {
                 Box(contentAlignment = Alignment.Center) {
-                    Icon(Icons.Default.Settings, "إعدادات", tint = Color(0xFFB70F1B))
+                    Icon(Icons.Default.Settings, L("إعدادات"), tint = adaptInk(Color(0xFFB70F1B)))
                 }
             }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
-                Text("المال والميزانية", fontSize = 28.sp, fontWeight = FontWeight.Black, color = Color(0xFF111827))
-                Text("دفتر مصروفاتك الشخصي", fontSize = 13.sp, color = Color(0xFF64748B))
+                Text(L("المال والميزانية"), fontSize = 28.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)))
+                Text(L("دفتر مصروفاتك الشخصي"), fontSize = 13.sp, color = adaptInk(Color(0xFF64748B)))
             }
             Surface(
                 modifier = Modifier.size(48.dp).clickable(onClick = onBack),
@@ -285,19 +285,19 @@ private fun MoneyHeader(onBack: () -> Unit, onSettings: () -> Unit) {
                 shadowElevation = 4.dp,
             ) {
                 Box(contentAlignment = Alignment.Center) {
-                    Icon(Icons.Default.ArrowForward, "رجوع", tint = Color(0xFF111827))
+                    Icon(Icons.Default.ArrowForward, L("رجوع"), tint = adaptInk(Color(0xFF111827)))
                 }
             }
         }
         Spacer(Modifier.height(8.dp))
-        Surface(shape = RoundedCornerShape(20.dp), color = Color(0xFFE3F8EF)) {
+        Surface(shape = RoundedCornerShape(20.dp), color = adaptSurface(Color(0xFFE3F8EF))) {
             Row(
                 Modifier.padding(horizontal = 16.dp, vertical = 7.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(6.dp),
             ) {
-                Icon(Icons.Default.Lock, null, modifier = Modifier.size(16.dp), tint = Color(0xFF0A9569))
-                Text("بياناتك خاصة ومحفوظة على جهازك", color = Color(0xFF0A9569), fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                Icon(Icons.Default.Lock, null, modifier = Modifier.size(16.dp), tint = adaptInk(Color(0xFF0A9569)))
+                Text(L("بياناتك خاصة ومحفوظة على جهازك"), color = adaptInk(Color(0xFF0A9569)), fontSize = 12.sp, fontWeight = FontWeight.Bold)
             }
         }
     }
@@ -315,16 +315,16 @@ private fun MonthSelector(month: YearMonth, onPrevious: () -> Unit, onNext: () -
             modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 4.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            IconButton(onClick = onPrevious) { Icon(Icons.Default.KeyboardArrowRight, "الشهر السابق") }
+            IconButton(onClick = onPrevious) { Icon(Icons.Default.KeyboardArrowRight, L("الشهر السابق")) }
             Text(
                 monthLabel(month, Locale("ar", "EG")),
                 modifier = Modifier.weight(1f),
                 textAlign = TextAlign.Center,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Black,
-                color = Color(0xFF111827),
+                color = adaptInk(Color(0xFF111827)),
             )
-            IconButton(onClick = onNext) { Icon(Icons.Default.KeyboardArrowLeft, "الشهر التالي") }
+            IconButton(onClick = onNext) { Icon(Icons.Default.KeyboardArrowLeft, L("الشهر التالي")) }
         }
     }
 }
@@ -332,7 +332,7 @@ private fun MonthSelector(month: YearMonth, onPrevious: () -> Unit, onNext: () -
 @Composable
 private fun BudgetHeroCard(budget: Double, spent: Double, remaining: Double, remainingRatio: Float) {
     Card(
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFECFCF6)),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFECFCF6))),
         shape = RoundedCornerShape(24.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
@@ -354,16 +354,16 @@ private fun BudgetHeroCard(budget: Double, spent: Double, remaining: Double, rem
                     CircularProgressIndicator(
                         progress = { remainingRatio },
                         modifier = Modifier.size(142.dp),
-                        color = Color(0xFF08B889),
+                        color = adaptInk(Color(0xFF08B889)),
                         trackColor = Color(0xFFE3E8EE),
                         strokeWidth = 13.dp,
                     )
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                        Text("المتبقي", fontWeight = FontWeight.Black, fontSize = 16.sp, color = Color(0xFF111827))
-                        Text(formatMoney(remaining), fontWeight = FontWeight.Black, fontSize = 27.sp, color = Color(0xFF04966E))
-                        Text("ج.م", color = Color(0xFF04966E), fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                        Text(L("المتبقي"), fontWeight = FontWeight.Black, fontSize = 16.sp, color = adaptInk(Color(0xFF111827)))
+                        Text(formatMoney(remaining), fontWeight = FontWeight.Black, fontSize = 27.sp, color = adaptInk(Color(0xFF04966E)))
+                        Text(L("ج.م"), color = adaptInk(Color(0xFF04966E)), fontWeight = FontWeight.Bold, fontSize = 12.sp)
                         Spacer(Modifier.height(2.dp))
-                        Text("${(remainingRatio * 100).toInt()}٪", fontWeight = FontWeight.Bold, color = Color(0xFF111827))
+                        Text("${(remainingRatio * 100).toInt()}٪", fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF111827)))
                     }
                 }
             }
@@ -396,10 +396,10 @@ private fun MoneyMiniCard(label: String, value: Double, background: Color, accen
         Column(Modifier.padding(horizontal = 8.dp, vertical = 10.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(5.dp)) {
                 Box(Modifier.size(8.dp).background(accent, CircleShape))
-                Text(label, fontWeight = FontWeight.Bold, fontSize = 12.sp, color = Color(0xFF1F2937))
+                Text(label, fontWeight = FontWeight.Bold, fontSize = 12.sp, color = adaptInk(Color(0xFF1F2937)))
             }
             Text(formatMoney(value), color = accent, fontWeight = FontWeight.Black, fontSize = 19.sp, maxLines = 1)
-            Text("ج.م", color = accent, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+            Text(L("ج.م"), color = accent, fontSize = 10.sp, fontWeight = FontWeight.Bold)
         }
     }
 }
@@ -414,16 +414,16 @@ private fun RecentExpensesCard(
     onDelete: (String) -> Unit,
 ) {
     Card(
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         shape = RoundedCornerShape(22.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
         Column(Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 TextButton(onClick = onShowAll) {
-                    Icon(Icons.Default.ArrowBack, null, tint = Color(0xFFFF2D35), modifier = Modifier.size(17.dp))
+                    Icon(Icons.Default.ArrowBack, null, tint = adaptInk(Color(0xFFFF2D35)), modifier = Modifier.size(17.dp))
                     Spacer(Modifier.width(4.dp))
-                    Text("عرض الكل", color = Color(0xFFFF2D35), fontWeight = FontWeight.Bold)
+                    Text(L("عرض الكل"), color = adaptInk(Color(0xFFFF2D35)), fontWeight = FontWeight.Bold)
                 }
                 Spacer(Modifier.weight(1f))
                 Column(horizontalAlignment = Alignment.End) {
@@ -434,14 +434,14 @@ private fun RecentExpensesCard(
                     )
                     Text(
                         if (selectedMonth == YearMonth.from(currentDate)) dateLabel(currentDate) else monthLabel(selectedMonth, Locale("ar", "EG")),
-                        color = Color(0xFF64748B),
+                        color = adaptInk(Color(0xFF64748B)),
                         fontSize = 11.sp,
                     )
                 }
             }
             if (entries.isEmpty()) {
-                Surface(shape = RoundedCornerShape(16.dp), color = Color(0xFFF8FAFC)) {
-                    Text("لا توجد مصروفات مسجلة هنا", modifier = Modifier.fillMaxWidth().padding(16.dp), textAlign = TextAlign.Center, color = Color(0xFF64748B))
+                Surface(shape = RoundedCornerShape(16.dp), color = adaptSurface(Color(0xFFF8FAFC))) {
+                    Text(L("لا توجد مصروفات مسجلة هنا"), modifier = Modifier.fillMaxWidth().padding(16.dp), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF64748B)))
                 }
             } else {
                 entries.forEach { entry -> ExpenseRow(entry, zone, onDelete) }
@@ -453,23 +453,23 @@ private fun RecentExpensesCard(
 @Composable
 private fun ExpenseRow(entry: AssistantEntry, zone: ZoneId, onDelete: (String) -> Unit) {
     val category = MoneyCategory.fromEntry(entry)
-    Surface(shape = RoundedCornerShape(15.dp), color = Color(0xFFFDFEFE)) {
+    Surface(shape = RoundedCornerShape(15.dp), color = adaptSurface(Color(0xFFFDFEFE))) {
         Row(
             modifier = Modifier.fillMaxWidth().padding(horizontal = 6.dp, vertical = 7.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            Text(formatMoney(entry.amount ?: 0.0) + " ج.م", color = Color(0xFFFF2D35), fontWeight = FontWeight.Black, fontSize = 16.sp)
+            Text(formatMoney(entry.amount ?: 0.0) + " ج.م", color = adaptInk(Color(0xFFFF2D35)), fontWeight = FontWeight.Black, fontSize = 16.sp)
             Spacer(Modifier.weight(1f))
             Column(horizontalAlignment = Alignment.End) {
                 Text(category.arabic, fontWeight = FontWeight.ExtraBold, fontSize = 15.sp)
-                Text(timeLabel(entry, zone), color = Color(0xFF7C8797), fontSize = 10.sp)
+                Text(timeLabel(entry, zone), color = adaptInk(Color(0xFF7C8797)), fontSize = 10.sp)
             }
             Spacer(Modifier.width(8.dp))
             Surface(shape = RoundedCornerShape(12.dp), color = category.tint) {
                 Icon(category.icon, category.arabic, tint = category.color, modifier = Modifier.padding(9.dp).size(22.dp))
             }
             IconButton(onClick = { onDelete(entry.id) }, modifier = Modifier.size(38.dp)) {
-                Icon(Icons.Default.DeleteOutline, "حذف", tint = Color(0xFFFF5A63), modifier = Modifier.size(20.dp))
+                Icon(Icons.Default.DeleteOutline, L("حذف"), tint = adaptInk(Color(0xFFFF5A63)), modifier = Modifier.size(20.dp))
             }
         }
     }
@@ -482,7 +482,7 @@ private fun CategoryBreakdownCard(
     onShowDetails: () -> Unit,
 ) {
     Card(
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF8E8)),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF8E8))),
         shape = RoundedCornerShape(22.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
@@ -490,12 +490,12 @@ private fun CategoryBreakdownCard(
             Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                 OutlinedButton(onClick = onShowDetails, shape = RoundedCornerShape(18.dp)) {
                     Icon(Icons.Default.KeyboardArrowRight, null, modifier = Modifier.size(18.dp))
-                    Text("عرض التفاصيل", fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                    Text(L("عرض التفاصيل"), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                 }
                 Spacer(Modifier.weight(1f))
                 Column(horizontalAlignment = Alignment.End) {
-                    Text("المصروفات حسب الفئات", fontWeight = FontWeight.Black, fontSize = 21.sp)
-                    Text("هذا الشهر", color = Color(0xFF7C8797), fontSize = 11.sp)
+                    Text(L("المصروفات حسب الفئات"), fontWeight = FontWeight.Black, fontSize = 21.sp)
+                    Text(L("هذا الشهر"), color = adaptInk(Color(0xFF7C8797)), fontSize = 11.sp)
                 }
             }
             MoneyCategory.entries.forEach { category ->
@@ -510,10 +510,10 @@ private fun CategoryBreakdownCard(
 @Composable
 private fun CategoryBarRow(category: MoneyCategory, amount: Double, fraction: Float) {
     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-        Text("${(fraction * 100).toInt()}٪", modifier = Modifier.width(42.dp), fontWeight = FontWeight.Bold, color = Color(0xFF334155), fontSize = 12.sp)
-        Text(formatMoney(amount) + " ج.م", modifier = Modifier.width(80.dp), color = Color(0xFFE43A42), fontWeight = FontWeight.Bold, fontSize = 12.sp)
+        Text("${(fraction * 100).toInt()}٪", modifier = Modifier.width(42.dp), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF334155)), fontSize = 12.sp)
+        Text(formatMoney(amount) + " ج.م", modifier = Modifier.width(80.dp), color = adaptInk(Color(0xFFE43A42)), fontWeight = FontWeight.Bold, fontSize = 12.sp)
         Box(
-            modifier = Modifier.weight(1f).height(10.dp).clip(CircleShape).background(Color(0xFFE7EBEF)),
+            modifier = Modifier.weight(1f).height(10.dp).clip(CircleShape).background(adaptSurface(Color(0xFFE7EBEF))),
         ) {
             if (fraction > 0f) {
                 Box(Modifier.fillMaxWidth(fraction.coerceAtLeast(0.03f)).height(10.dp).background(category.color, CircleShape))
@@ -538,17 +538,17 @@ private fun BudgetDialog(month: YearMonth, currentBudget: Double, onDismiss: () 
             OutlinedTextField(
                 value = text,
                 onValueChange = { raw -> text = sanitizeMoneyInput(raw) },
-                label = { Text("قيمة الميزانية بالجنيه") },
+                label = { Text(L("قيمة الميزانية بالجنيه")) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
             )
         },
         confirmButton = {
             Button(onClick = { value?.let(onSave) }, enabled = value != null, colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2D35))) {
-                Text("حفظ")
+                Text(L("حفظ"))
             }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 
@@ -572,18 +572,18 @@ private fun AddExpenseDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("إضافة مصروف", fontWeight = FontWeight.Black) },
+        title = { Text(L("إضافة مصروف"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 OutlinedTextField(
                     value = amountText,
                     onValueChange = { amountText = sanitizeMoneyInput(it) },
-                    label = { Text("المبلغ") },
+                    label = { Text(L("المبلغ")) },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth(),
                 )
-                Text("الفئة", fontWeight = FontWeight.Bold)
+                Text(L("الفئة"), fontWeight = FontWeight.Bold)
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(5.dp)) {
                     MoneyCategory.entries.forEach { item ->
                         FilterChip(
@@ -596,7 +596,7 @@ private fun AddExpenseDialog(
                 OutlinedTextField(
                     value = note,
                     onValueChange = { note = it.take(160) },
-                    label = { Text("ملاحظة اختيارية") },
+                    label = { Text(L("ملاحظة اختيارية")) },
                     modifier = Modifier.fillMaxWidth(),
                 )
                 OutlinedButton(
@@ -617,7 +617,7 @@ private fun AddExpenseDialog(
                 }
                 Text(
                     if (defaultCategory == AssistantCategory.WORK) "سيُحفظ المصروف ضمن قسم العمل" else "سيُحفظ المصروف على جهازك فقط",
-                    color = Color(0xFF64748B),
+                    color = adaptInk(Color(0xFF64748B)),
                     fontSize = 10.sp,
                 )
             }
@@ -627,9 +627,9 @@ private fun AddExpenseDialog(
                 onClick = { amount?.let { onSave(category, it, note.trim(), date) } },
                 enabled = amount != null,
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2D35)),
-            ) { Text("إضافة") }
+            ) { Text(L("إضافة")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 
@@ -646,14 +646,14 @@ private fun ExpensesDialog(
         title = { Text(title, fontWeight = FontWeight.Black) },
         text = {
             if (entries.isEmpty()) {
-                Text("لا توجد مصروفات في هذا الشهر")
+                Text(L("لا توجد مصروفات في هذا الشهر"))
             } else {
                 LazyColumn(modifier = Modifier.height(360.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     items(entries, key = { it.id }) { entry -> ExpenseRow(entry, zone, onDelete) }
                 }
             }
         },
-        confirmButton = { TextButton(onClick = onDismiss) { Text("إغلاق") } },
+        confirmButton = { TextButton(onClick = onDismiss) { Text(L("إغلاق")) } },
     )
 }
 
@@ -665,7 +665,7 @@ private fun CategoryDetailsDialog(
 ) {
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("تفاصيل المصروفات حسب الفئات", fontWeight = FontWeight.Black) },
+        title = { Text(L("تفاصيل المصروفات حسب الفئات"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 MoneyCategory.entries.forEach { category ->
@@ -682,7 +682,7 @@ private fun CategoryDetailsDialog(
                 }
             }
         },
-        confirmButton = { TextButton(onClick = onDismiss) { Text("إغلاق") } },
+        confirmButton = { TextButton(onClick = onDismiss) { Text(L("إغلاق")) } },
     )
 }
 

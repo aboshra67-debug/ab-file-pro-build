@@ -112,7 +112,7 @@ private fun ReferenceImage(
     // to LTR so every invisible hit area uses the same left-origin coordinate
     // system as the approved PDF image. The Arabic artwork remains unchanged.
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Ltr) {
-        BoxWithConstraints(modifier = modifier.background(Color.White)) {
+        BoxWithConstraints(modifier = modifier.background(adaptSurface(Color.White))) {
             Image(
                 painter = painterResource(drawable),
                 contentDescription = null,
@@ -171,7 +171,7 @@ internal fun AssistantReferenceHome(
     Column(
         Modifier
             .fillMaxSize()
-            .background(Color.White)
+            .background(adaptSurface(Color.White))
             .statusBarsPadding()
             .verticalScroll(scrollState)
     ) {
@@ -245,13 +245,13 @@ internal fun AssistantReferenceHome(
                             width = maxWidth * (196f / REF_W),
                             height = maxHeight * (36f / activeRefHeight),
                         )
-                        .background(Color(0xFFEAFBF5).copy(alpha = .94f), RoundedCornerShape(11.dp)),
+                        .background(adaptSurface(Color(0xFFEAFBF5)).copy(alpha = .94f), RoundedCornerShape(11.dp)),
                     contentAlignment = Alignment.CenterEnd,
                 ) {
                     Text(
                         text = LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE، d MMMM", Locale("ar"))),
                         modifier = Modifier.padding(horizontal = 8.dp),
-                        color = Color(0xFF243247),
+                        color = adaptInk(Color(0xFF243247)),
                         fontSize = 12.sp,
                         fontWeight = FontWeight.Bold,
                         maxLines = 1,
@@ -264,9 +264,9 @@ internal fun AssistantReferenceHome(
                     w = maxWidth * (114f / REF_W),
                     h = maxHeight * (92f / activeRefHeight),
                     count = summary.openTasks,
-                    label = "مهام",
+                    label = L("مهام"),
                     symbol = "✓",
-                    background = Color(0xFFDFF8E9),
+                    background = adaptSurface(Color(0xFFDFF8E9)),
                     symbolColor = Color(0xFF16A879),
                 )
                 ClassicSummaryMetric(
@@ -275,9 +275,9 @@ internal fun AssistantReferenceHome(
                     w = maxWidth * (110f / REF_W),
                     h = maxHeight * (92f / activeRefHeight),
                     count = summary.appointmentsToday,
-                    label = "مواعيد",
+                    label = L("مواعيد"),
                     symbol = "▣",
-                    background = Color(0xFFE4F1FF),
+                    background = adaptSurface(Color(0xFFE4F1FF)),
                     symbolColor = Color(0xFF2C7BE5),
                 )
                 ClassicSummaryMetric(
@@ -286,9 +286,9 @@ internal fun AssistantReferenceHome(
                     w = maxWidth * (110f / REF_W),
                     h = maxHeight * (92f / activeRefHeight),
                     count = summary.pendingFamilyRequests + summary.activeMedicationReminders,
-                    label = "تنبيهات",
+                    label = L("تنبيهات"),
                     symbol = "●",
-                    background = Color(0xFFFFE6E8),
+                    background = adaptSurface(Color(0xFFFFE6E8)),
                     symbolColor = Color(0xFFE93046),
                 )
 
@@ -352,8 +352,8 @@ private fun ClassicHomeButton(
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
         Row(
             modifier = modifier
-                .background(Color(0xFFFFFFFF), RoundedCornerShape(18.dp))
-                .border(1.dp, Color(0xFFE7EAF0), RoundedCornerShape(18.dp))
+                .background(adaptSurface(Color(0xFFFFFFFF)), RoundedCornerShape(18.dp))
+                .border(1.dp, adaptSurface(Color(0xFFE7EAF0)), RoundedCornerShape(18.dp))
                 .clickable(onClick = onClick)
                 .padding(horizontal = 7.dp),
             verticalAlignment = Alignment.CenterVertically,
@@ -361,14 +361,14 @@ private fun ClassicHomeButton(
         ) {
             Icon(
                 imageVector = Icons.Default.Home,
-                contentDescription = "الرئيسية",
-                tint = Color(0xFF0B1D3A),
+                contentDescription = L("الرئيسية"),
+                tint = adaptInk(Color(0xFF0B1D3A)),
                 modifier = Modifier.size(18.dp),
             )
             Spacer(Modifier.width(4.dp))
             Text(
-                text = "الرئيسية",
-                color = Color(0xFF0B1D3A),
+                text = L("الرئيسية"),
+                color = adaptInk(Color(0xFF0B1D3A)),
                 fontSize = 11.sp,
                 fontWeight = FontWeight.Black,
                 maxLines = 1,
@@ -385,16 +385,16 @@ private fun ClassicCategoryStrip(
 ) {
     Row(
         modifier = modifier
-            .background(Color(0xFFFCFCFC), RoundedCornerShape(31.dp))
-            .border(1.dp, Color(0xFFE8E8E8), RoundedCornerShape(31.dp))
+            .background(adaptSurface(Color(0xFFFCFCFC)), RoundedCornerShape(31.dp))
+            .border(1.dp, adaptSurface(Color(0xFFE8E8E8)), RoundedCornerShape(31.dp))
             .padding(3.dp),
         horizontalArrangement = Arrangement.spacedBy(3.dp),
         verticalAlignment = Alignment.CenterVertically,
     ) {
         listOf(
-            AssistantCategory.WORK to "عمل",
-            AssistantCategory.PERSONAL to "شخصي",
-            AssistantCategory.ALL to "الكل",
+            AssistantCategory.WORK to L("عمل"),
+            AssistantCategory.PERSONAL to L("شخصي"),
+            AssistantCategory.ALL to L("الكل"),
         ).forEach { (category, label) ->
             val active = selectedCategory == category
             Box(
@@ -410,7 +410,7 @@ private fun ClassicCategoryStrip(
             ) {
                 Text(
                     text = label,
-                    color = if (active) Color.White else Color(0xFF0B132B),
+                    color = if (active) Color.White else adaptInk(Color(0xFF0B132B)),
                     fontSize = 17.sp,
                     fontWeight = FontWeight.Black,
                     maxLines = 1,
@@ -451,7 +451,7 @@ private fun ClassicSummaryMetric(
         )
         Text(
             text = count.toString(),
-            color = Color(0xFF0F172A),
+            color = adaptInk(Color(0xFF0F172A)),
             fontSize = 19.sp,
             lineHeight = 20.sp,
             fontWeight = FontWeight.Black,
@@ -459,7 +459,7 @@ private fun ClassicSummaryMetric(
         )
         Text(
             text = label,
-            color = Color(0xFF334155),
+            color = adaptInk(Color(0xFF334155)),
             fontSize = 10.sp,
             lineHeight = 11.sp,
             fontWeight = FontWeight.Bold,
@@ -476,8 +476,8 @@ private fun ClassicNextItemStrip(
 ) {
     Box(
         modifier = modifier
-            .background(Color.White, RoundedCornerShape(16.dp))
-            .border(1.dp, Color(0xFFF0F1F3), RoundedCornerShape(16.dp))
+            .background(adaptSurface(Color.White), RoundedCornerShape(16.dp))
+            .border(1.dp, adaptSurface(Color(0xFFF0F1F3)), RoundedCornerShape(16.dp))
             .padding(horizontal = 8.dp, vertical = 7.dp),
     ) {
         if (entry == null) {
@@ -498,7 +498,7 @@ private fun ClassicNextItemStrip(
                 Text(
                     text = "${entry.title}  —  $dueText",
                     modifier = Modifier.weight(1f).padding(horizontal = 8.dp),
-                    color = Color(0xFF111827),
+                    color = adaptInk(Color(0xFF111827)),
                     fontSize = 12.sp,
                     fontWeight = FontWeight.Black,
                     maxLines = 1,
@@ -506,14 +506,14 @@ private fun ClassicNextItemStrip(
                 Box(
                     modifier = Modifier
                         .size(width = 70.dp, height = 36.dp)
-                        .background(Color(0xFFF4F4F6), RoundedCornerShape(10.dp))
+                        .background(adaptSurface(Color(0xFFF4F4F6)), RoundedCornerShape(10.dp))
                         .clickable {
                             val due = entry.dueAt ?: return@clickable
                             onUpdateEntry(entry.copy(dueAt = due + 30 * 60 * 1000L))
                         },
                     contentAlignment = Alignment.Center,
                 ) {
-                    Text("تأجيل", color = Color(0xFF111827), fontSize = 12.sp, fontWeight = FontWeight.Black)
+                    Text(L("تأجيل"), color = adaptInk(Color(0xFF111827)), fontSize = 12.sp, fontWeight = FontWeight.Black)
                 }
                 Spacer(Modifier.width(6.dp))
                 Box(
@@ -523,7 +523,7 @@ private fun ClassicNextItemStrip(
                         .clickable { onUpdateEntry(entry.copy(completed = true)) },
                     contentAlignment = Alignment.Center,
                 ) {
-                    Text("تم", color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Black)
+                    Text(L("تم"), color = Color.White, fontSize = 12.sp, fontWeight = FontWeight.Black)
                 }
             }
         }
@@ -556,7 +556,7 @@ private fun PrayerHomeLiveOverlay(settings: PrayerSettings, modifier: Modifier =
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
         Column(
             modifier = modifier
-                .background(Color(0xFFFFF5EC).copy(alpha = .99f), RoundedCornerShape(15.dp))
+                .background(adaptSurface(Color(0xFFFFF5EC)).copy(alpha = .99f), RoundedCornerShape(15.dp))
                 .padding(horizontal = 8.dp, vertical = 5.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center,
@@ -564,33 +564,33 @@ private fun PrayerHomeLiveOverlay(settings: PrayerSettings, modifier: Modifier =
             Text(
                 if (justStarted) "حان الآن موعد صلاة" else "الصلاة القادمة",
                 fontSize = 12.sp,
-                color = Color(0xFF334155),
+                color = adaptInk(Color(0xFF334155)),
                 fontWeight = FontWeight.Bold,
             )
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.Center) {
-                Text(prayerName, fontSize = 22.sp, color = Color(0xFF111827), fontWeight = FontWeight.Black)
+                Text(prayerName, fontSize = 22.sp, color = adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Black)
                 Spacer(Modifier.width(7.dp))
-                Text(timeText, fontSize = 18.sp, color = Color(0xFFE53935), fontWeight = FontWeight.Black)
+                Text(timeText, fontSize = 18.sp, color = adaptInk(Color(0xFFE53935)), fontWeight = FontWeight.Black)
             }
             if (!justStarted) {
                 Text(
                     "متبقي $countdown",
                     fontSize = 11.sp,
-                    color = Color(0xFFE53935),
+                    color = adaptInk(Color(0xFFE53935)),
                     fontWeight = FontWeight.Bold,
                 )
             }
             Box(
                 Modifier
                     .padding(top = 3.dp)
-                    .background(Color(0xFFD8F8E8), RoundedCornerShape(16.dp))
+                    .background(adaptSurface(Color(0xFFD8F8E8)), RoundedCornerShape(16.dp))
                     .padding(horizontal = 12.dp, vertical = 4.dp),
                 contentAlignment = Alignment.Center,
             ) {
                 Text(
                     if (occurrence.first in settings.enabledAlerts) "🔔 التنبيه مفعل" else "التنبيه غير مفعل",
                     fontSize = 10.sp,
-                    color = if (occurrence.first in settings.enabledAlerts) Color(0xFF087F5B) else Color(0xFF64748B),
+                    color = if (occurrence.first in settings.enabledAlerts) adaptInk(Color(0xFF087F5B)) else adaptInk(Color(0xFF64748B)),
                     fontWeight = FontWeight.Black,
                 )
             }
@@ -715,7 +715,7 @@ internal fun OperationalReferenceCalculator(
         Column(
             Modifier
                 .fillMaxSize()
-                .background(Color(0xFFF8FAFD))
+                .background(adaptSurface(Color(0xFFF8FAFD)))
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = 16.dp, vertical = 10.dp),
             verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(12.dp),
@@ -728,58 +728,58 @@ internal fun OperationalReferenceCalculator(
                 Box(
                     Modifier
                         .size(52.dp)
-                        .background(Color(0xFFECE4FF), RoundedCornerShape(18.dp)),
+                        .background(adaptSurface(Color(0xFFECE4FF)), RoundedCornerShape(18.dp)),
                     contentAlignment = Alignment.Center,
                 ) {
-                    Text("+ −\n× ÷", color = Color(0xFF5540B8), fontWeight = FontWeight.Black, fontSize = 14.sp, textAlign = TextAlign.Center)
+                    Text("+ −\n× ÷", color = adaptInk(Color(0xFF5540B8)), fontWeight = FontWeight.Black, fontSize = 14.sp, textAlign = TextAlign.Center)
                 }
                 Spacer(Modifier.width(12.dp))
                 Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                    Text("الآلة الحاسبة", color = Color(0xFF07122F), fontWeight = FontWeight.Black, fontSize = 28.sp)
-                    Text("حاسبة سريعة مع سجل ونسخ النتيجة", color = Color(0xFF7A8493), fontSize = 13.sp)
+                    Text(L("الآلة الحاسبة"), color = adaptInk(Color(0xFF07122F)), fontWeight = FontWeight.Black, fontSize = 28.sp)
+                    Text(L("حاسبة سريعة مع سجل ونسخ النتيجة"), color = adaptInk(Color(0xFF7A8493)), fontSize = 13.sp)
                 }
                 Spacer(Modifier.width(10.dp))
                 Box(
                     Modifier
                         .size(52.dp)
-                        .background(Color(0xFFF0E8FF), RoundedCornerShape(26.dp))
+                        .background(adaptSurface(Color(0xFFF0E8FF)), RoundedCornerShape(26.dp))
                         .clickable(onClick = onBack),
                     contentAlignment = Alignment.Center,
-                ) { Text("←", color = Color(0xFF111827), fontSize = 30.sp, fontWeight = FontWeight.Bold) }
+                ) { Text("←", color = adaptInk(Color(0xFF111827)), fontSize = 30.sp, fontWeight = FontWeight.Bold) }
             }
 
             // Explicit mode switch. Currency is no longer hidden behind the illustration.
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White, RoundedCornerShape(22.dp))
-                    .border(1.dp, Color(0xFFE3E8EF), RoundedCornerShape(22.dp))
+                    .background(adaptSurface(Color.White), RoundedCornerShape(22.dp))
+                    .border(1.dp, adaptSurface(Color(0xFFE3E8EF)), RoundedCornerShape(22.dp))
                     .padding(4.dp),
             ) {
                 Box(
                     Modifier
                         .weight(1f)
                         .height(48.dp)
-                        .background(Color(0xFFE9DDF8), RoundedCornerShape(18.dp)),
+                        .background(adaptSurface(Color(0xFFE9DDF8)), RoundedCornerShape(18.dp)),
                     contentAlignment = Alignment.Center,
-                ) { Text("حاسبة", color = Color(0xFF101827), fontWeight = FontWeight.Black, fontSize = 18.sp) }
+                ) { Text(L("حاسبة"), color = adaptInk(Color(0xFF101827)), fontWeight = FontWeight.Black, fontSize = 18.sp) }
                 Spacer(Modifier.width(6.dp))
                 Box(
                     Modifier
                         .weight(1f)
                         .height(48.dp)
-                        .background(Color(0xFFF9FAFB), RoundedCornerShape(18.dp))
+                        .background(adaptSurface(Color(0xFFF9FAFB)), RoundedCornerShape(18.dp))
                         .clickable(onClick = onOpenCurrency),
                     contentAlignment = Alignment.Center,
-                ) { Text("تحويل العملات", color = Color(0xFF334155), fontWeight = FontWeight.Bold, fontSize = 17.sp) }
+                ) { Text(L("تحويل العملات"), color = adaptInk(Color(0xFF334155)), fontWeight = FontWeight.Bold, fontSize = 17.sp) }
             }
 
             // Display card.
             Column(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color.White, RoundedCornerShape(26.dp))
-                    .border(1.dp, Color(0xFFDDE7F0), RoundedCornerShape(26.dp))
+                    .background(adaptSurface(Color.White), RoundedCornerShape(26.dp))
+                    .border(1.dp, adaptSurface(Color(0xFFDDE7F0)), RoundedCornerShape(26.dp))
                     .padding(horizontal = 22.dp, vertical = 16.dp),
                 horizontalAlignment = Alignment.End,
             ) {
@@ -787,7 +787,7 @@ internal fun OperationalReferenceCalculator(
                     visual(expression.ifBlank { "0" }),
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.End,
-                    color = Color(0xFF657080),
+                    color = adaptInk(Color(0xFF657080)),
                     fontSize = if (expression.length > 18) 17.sp else 22.sp,
                     maxLines = 1,
                 )
@@ -798,7 +798,7 @@ internal fun OperationalReferenceCalculator(
                     result,
                     modifier = Modifier.fillMaxWidth(),
                     textAlign = TextAlign.End,
-                    color = Color(0xFF07122F),
+                    color = adaptInk(Color(0xFF07122F)),
                     fontSize = when {
                         result.length > 15 -> 28.sp
                         result.length > 10 -> 36.sp
@@ -840,20 +840,20 @@ internal fun OperationalReferenceCalculator(
             Column(
                 Modifier
                     .fillMaxWidth()
-                    .background(Color(0xFFF0FFF8), RoundedCornerShape(24.dp))
-                    .border(1.dp, Color(0xFFDDF5E8), RoundedCornerShape(24.dp))
+                    .background(adaptSurface(Color(0xFFF0FFF8)), RoundedCornerShape(24.dp))
+                    .border(1.dp, adaptSurface(Color(0xFFDDF5E8)), RoundedCornerShape(24.dp))
                     .padding(16.dp),
             ) {
-                Text("السجل", color = Color(0xFF07122F), fontWeight = FontWeight.Black, fontSize = 21.sp)
+                Text(L("السجل"), color = adaptInk(Color(0xFF07122F)), fontWeight = FontWeight.Black, fontSize = 21.sp)
                 Spacer(Modifier.height(8.dp))
                 if (history.isEmpty()) {
-                    Text("لا توجد عمليات بعد", color = Color(0xFF7C8796), fontSize = 14.sp)
+                    Text(L("لا توجد عمليات بعد"), color = adaptInk(Color(0xFF7C8796)), fontSize = 14.sp)
                 } else {
                     history.forEachIndexed { index, row ->
                         Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                            Text(row.result, color = Color(0xFF07122F), fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                            Text(row.result, color = adaptInk(Color(0xFF07122F)), fontWeight = FontWeight.Bold, fontSize = 16.sp)
                             Spacer(Modifier.weight(1f))
-                            Text(visual(row.expression), color = Color(0xFF64748B), fontSize = 15.sp, maxLines = 1)
+                            Text(visual(row.expression), color = adaptInk(Color(0xFF64748B)), fontSize = 15.sp, maxLines = 1)
                         }
                         if (index != history.lastIndex) HorizontalDivider(color = Color(0xFFE5F0EA), modifier = Modifier.padding(vertical = 6.dp))
                     }
@@ -881,7 +881,7 @@ private fun CalculatorKey(
         modifier
             .height(66.dp)
             .background(background, RoundedCornerShape(20.dp))
-            .border(1.dp, Color(0xFFE2E8F0), RoundedCornerShape(20.dp))
+            .border(1.dp, adaptSurface(Color(0xFFE2E8F0)), RoundedCornerShape(20.dp))
             .clickable(onClick = onClick),
         contentAlignment = Alignment.Center,
     ) {

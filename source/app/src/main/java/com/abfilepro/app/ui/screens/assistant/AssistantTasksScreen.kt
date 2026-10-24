@@ -95,22 +95,22 @@ internal fun AssistantTasksScreen(
     }
 
     Scaffold(
-        containerColor = Color(0xFFF7F8FC),
+        containerColor = adaptSurface(Color(0xFFF7F8FC)),
         topBar = {
             TopAppBar(
                 title = {
                     Column {
-                        Text("المهام والتنبيهات", fontWeight = FontWeight.Black)
-                        Text("نظّم يومك ولا تنسَ موعدًا", fontSize = 12.sp, color = Color(0xFF64748B))
+                        Text(L("المهام والتنبيهات"), fontWeight = FontWeight.Black)
+                        Text(L("نظّم يومك ولا تنسَ موعدًا"), fontSize = 12.sp, color = adaptInk(Color(0xFF64748B)))
                     }
                 },
-                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, "رجوع") } },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, L("رجوع")) } },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color.White)),
             )
         },
         floatingActionButton = {
             AssistantExtendedFabButton(
-                text = "إضافة مهمة",
+                text = L("إضافة مهمة"),
                 icon = Icons.Default.Add,
                 onClick = { adding = true },
                 containerColor = Color(0xFFEF5350),
@@ -126,7 +126,7 @@ internal fun AssistantTasksScreen(
                 Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text(
                         if (tab == TaskTab.COMPLETED) "لا توجد مهام مكتملة" else "لا توجد مهام هنا\nاضغط + لإضافة مهمة",
-                        color = Color(0xFF64748B),
+                        color = adaptInk(Color(0xFF64748B)),
                     )
                 }
             } else {
@@ -135,36 +135,36 @@ internal fun AssistantTasksScreen(
                     verticalArrangement = Arrangement.spacedBy(10.dp),
                 ) {
                     items(visible, key = { it.id }) { task ->
-                        Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(20.dp)) {
+                        Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(20.dp)) {
                             Row(Modifier.fillMaxWidth().padding(10.dp), verticalAlignment = Alignment.Top) {
                                 IconButton(onClick = { onUpdate(task.copy(completed = !task.completed)) }) {
                                     Icon(
                                         if (task.completed) Icons.Default.CheckCircle else Icons.Default.RadioButtonUnchecked,
                                         "الحالة",
-                                        tint = if (task.completed) Color(0xFF0F9D72) else Color(0xFF94A3B8),
+                                        tint = if (task.completed) adaptInk(Color(0xFF0F9D72)) else adaptInk(Color(0xFF94A3B8)),
                                     )
                                 }
                                 Column(Modifier.weight(1f).padding(vertical = 6.dp)) {
-                                    Text(task.title, fontWeight = FontWeight.Bold, color = if (task.completed) Color(0xFF94A3B8) else Color(0xFF1E293B))
-                                    if (task.details.isNotBlank()) Text(task.details, fontSize = 13.sp, color = Color(0xFF64748B))
+                                    Text(task.title, fontWeight = FontWeight.Bold, color = if (task.completed) adaptInk(Color(0xFF94A3B8)) else adaptInk(Color(0xFF1E293B)))
+                                    if (task.details.isNotBlank()) Text(task.details, fontSize = 13.sp, color = adaptInk(Color(0xFF64748B)))
                                     task.dueAt?.let {
                                         Text(
                                             DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(Date(it)),
                                             fontSize = 12.sp,
-                                            color = Color(0xFF3F7AE0),
+                                            color = adaptInk(Color(0xFF3F7AE0)),
                                         )
                                     }
                                     if (!task.completed && task.enabled && task.dueAt != null) {
                                         Row(verticalAlignment = Alignment.CenterVertically) {
-                                            Icon(Icons.Default.NotificationsActive, null, Modifier.size(15.dp), tint = Color(0xFFEF5350))
+                                            Icon(Icons.Default.NotificationsActive, null, Modifier.size(15.dp), tint = adaptInk(Color(0xFFEF5350)))
                                             Spacer(Modifier.width(4.dp))
-                                            Text("التنبيه مفعّل", fontSize = 11.sp, color = Color(0xFFEF5350))
+                                            Text(L("التنبيه مفعّل"), fontSize = 11.sp, color = adaptInk(Color(0xFFEF5350)))
                                         }
                                     }
                                 }
                                 Column {
-                                    IconButton(onClick = { editing = task }) { Icon(Icons.Default.Edit, "تعديل", tint = Color(0xFF3F7AE0)) }
-                                    IconButton(onClick = { onDelete(task.id) }) { Icon(Icons.Default.DeleteOutline, "حذف", tint = Color(0xFFE57373)) }
+                                    IconButton(onClick = { editing = task }) { Icon(Icons.Default.Edit, L("تعديل"), tint = adaptInk(Color(0xFF3F7AE0))) }
+                                    IconButton(onClick = { onDelete(task.id) }) { Icon(Icons.Default.DeleteOutline, L("حذف"), tint = adaptInk(Color(0xFFE57373))) }
                                 }
                             }
                         }
@@ -186,19 +186,19 @@ private fun TaskSegmentTabs(
         horizontalArrangement = Arrangement.spacedBy(10.dp),
     ) {
         listOf(
-            TaskTab.TODAY to "اليوم",
-            TaskTab.UPCOMING to "القادمة",
-            TaskTab.COMPLETED to "المكتملة",
+            TaskTab.TODAY to L("اليوم"),
+            TaskTab.UPCOMING to L("القادمة"),
+            TaskTab.COMPLETED to L("المكتملة"),
         ).forEach { (tab, label) ->
             AssistantPillTabButton(
                 label = label,
                 selected = current == tab,
                 onClick = { onSelect(tab) },
                 modifier = Modifier.weight(1f),
-                selectedContainerColor = Color(0xFFECE7F6),
-                selectedContentColor = Color(0xFF071124),
-                unselectedContainerColor = Color.White,
-                unselectedContentColor = Color(0xFF071124),
+                selectedContainerColor = adaptSurface(Color(0xFFECE7F6)),
+                selectedContentColor = adaptInk(Color(0xFF071124)),
+                unselectedContainerColor = adaptSurface(Color.White),
+                unselectedContentColor = adaptInk(Color(0xFF071124)),
                 showCheckmark = true,
             )
         }
@@ -236,7 +236,7 @@ private fun TaskEditorDialog(
             data = Uri.parse("package:${context.packageName}")
         }
         runCatching { exactAlarmLauncher.launch(intent) }.onFailure {
-            permissionMessage = "افتح إعدادات التطبيق واسمح بالمنبهات والتذكيرات الدقيقة."
+            permissionMessage = L("افتح إعدادات التطبيق واسمح بالمنبهات والتذكيرات الدقيقة.")
             context.startActivity(
                 Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply {
                     data = Uri.parse("package:${context.packageName}")
@@ -249,7 +249,7 @@ private fun TaskEditorDialog(
         if (granted) requestExactAlarmAccess()
         else {
             reminder = false
-            permissionMessage = "لا يمكن تشغيل التنبيه بدون السماح بالإشعارات."
+            permissionMessage = L("لا يمكن تشغيل التنبيه بدون السماح بالإشعارات.")
         }
     }
 
@@ -258,11 +258,11 @@ private fun TaskEditorDialog(
         title = { Text(if (initial == null) "إضافة مهمة" else "تعديل المهمة", fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                OutlinedTextField(title, { title = it.take(240) }, label = { Text("اسم المهمة") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                OutlinedTextField(details, { details = it.take(4000) }, label = { Text("تفاصيل (اختياري)") }, minLines = 2, maxLines = 4, modifier = Modifier.fillMaxWidth())
+                OutlinedTextField(title, { title = it.take(240) }, label = { Text(L("اسم المهمة")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                OutlinedTextField(details, { details = it.take(4000) }, label = { Text(L("تفاصيل (اختياري)")) }, minLines = 2, maxLines = 4, modifier = Modifier.fillMaxWidth())
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    FilterChip(category == AssistantCategory.PERSONAL, { category = AssistantCategory.PERSONAL }, { Text("شخصي") })
-                    FilterChip(category == AssistantCategory.WORK, { category = AssistantCategory.WORK }, { Text("عمل") })
+                    FilterChip(category == AssistantCategory.PERSONAL, { category = AssistantCategory.PERSONAL }, { Text(L("شخصي")) })
+                    FilterChip(category == AssistantCategory.WORK, { category = AssistantCategory.WORK }, { Text(L("عمل")) })
                 }
                 OutlinedButton(onClick = { pickTaskDateTime(context, dueAt) { dueAt = it } }, modifier = Modifier.fillMaxWidth()) {
                     Icon(Icons.Default.Schedule, null)
@@ -270,9 +270,9 @@ private fun TaskEditorDialog(
                     Text(DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(Date(dueAt)))
                 }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.NotificationsActive, null, tint = Color(0xFFEF5350))
+                    Icon(Icons.Default.NotificationsActive, null, tint = adaptInk(Color(0xFFEF5350)))
                     Spacer(Modifier.width(8.dp))
-                    Text("تنبيه في موعد المهمة", Modifier.weight(1f))
+                    Text(L("تنبيه في موعد المهمة"), Modifier.weight(1f))
                     Switch(
                         reminder,
                         { checked ->
@@ -300,9 +300,9 @@ private fun TaskEditorDialog(
                     onSave(title, details, category, dueAt, usableReminder)
                 },
                 enabled = title.isNotBlank(),
-            ) { Text("حفظ") }
+            ) { Text(L("حفظ")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 

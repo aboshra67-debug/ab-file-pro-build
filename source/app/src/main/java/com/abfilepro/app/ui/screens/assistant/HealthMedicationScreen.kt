@@ -71,6 +71,11 @@ import com.abfilepro.app.assistant.HealthAlarmScheduler
 import com.abfilepro.app.assistant.HealthEntryCodec
 import com.abfilepro.app.assistant.HealthEntryMeta
 import com.abfilepro.app.assistant.HealthEntryType
+import com.abfilepro.app.assistant.FamilyMembersStore
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.material3.FilterChip
 import com.abfilepro.app.assistant.HealthOwner
 import java.time.Instant
 import java.time.LocalDate
@@ -82,10 +87,10 @@ import java.util.Locale
 
 private val HealthRed = Color(0xFFFF2D3D)
 private val HealthGreen = Color(0xFF17B978)
-private val HealthSoftGreen = Color(0xFFE9FFF5)
-private val HealthSoftRed = Color(0xFFFFF1F2)
-private val HealthInk = Color(0xFF111827)
-private val HealthMuted = Color(0xFF667085)
+private val HealthSoftGreen get() = adaptSurface(Color(0xFFE9FFF5))
+private val HealthSoftRed get() = adaptSurface(Color(0xFFFFF1F2))
+private val HealthInk get() = adaptInk(Color(0xFF111827))
+private val HealthMuted get() = adaptInk(Color(0xFF667085))
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -100,12 +105,23 @@ internal fun HealthMedicationScreen(
 ) {
     val context = LocalContext.current
     var owner by remember { mutableStateOf(HealthOwner.SELF) }
+    var memberName by remember { mutableStateOf("") }
+    var members by remember { mutableStateOf(FamilyMembersStore.load(context)) }
+    var showMemberDialog by remember { mutableStateOf(false) }
     var showMedicineDialog by remember { mutableStateOf(false) }
     var showAppointmentDialog by remember { mutableStateOf(false) }
     val permissionLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { }
 
     val healthEntries = entries.filter { it.module.storageId == "health" }
-    val ownerEntries = healthEntries.filter { HealthEntryCodec.parse(it.secondary).owner == owner }
+    val ownerEntries = healthEntries.filter {
+        val meta = HealthEntryCodec.parse(it.secondary)
+        meta.owner == owner && (owner != HealthOwner.MEMBER || meta.member == memberName)
+    }
+    val ownerLabel = when (owner) {
+        HealthOwner.SELF -> selfName.ifBlank { "أنا" }
+        HealthOwner.PARTNER -> partnerName.ifBlank { "زوجتي" }
+        HealthOwner.MEMBER -> memberName
+    }
     val medicines = ownerEntries.filter { HealthEntryCodec.parse(it.secondary).type == HealthEntryType.MEDICATION }
     val appointments = ownerEntries.filter { HealthEntryCodec.parse(it.secondary).type == HealthEntryType.APPOINTMENT }
         .sortedBy { it.dueAt ?: Long.MAX_VALUE }
@@ -121,12 +137,12 @@ internal fun HealthMedicationScreen(
     }
 
     Scaffold(
-        containerColor = Color(0xFFFCFCFD),
+        containerColor = adaptSurface(Color(0xFFFCFCFD)),
         topBar = {
             TopAppBar(
-                title = { Text("الصحة والأدوية", fontWeight = FontWeight.Black, fontSize = 28.sp) },
-                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, "رجوع") } },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+                title = { Text(L("الصحة والأدوية"), fontWeight = FontWeight.Black, fontSize = 28.sp) },
+                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, L("رجوع")) } },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color.White)),
             )
         },
     ) { padding ->
@@ -137,17 +153,20 @@ internal fun HealthMedicationScreen(
             item {
                 OwnerTabs(
                     selected = owner,
+                    selectedMember = memberName,
                     selfName = selfName.ifBlank { "أنا" },
                     partnerName = partnerName.ifBlank { "زوجتي" },
-                    onSelect = { owner = it },
+                    members = members,
+                    onSelect = { value, member -> owner = value; memberName = member },
+                    onAddMember = { showMemberDialog = true },
                 )
             }
             item { NextDoseCard(nextMedication, onUpdate) }
             item {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween, verticalAlignment = Alignment.CenterVertically) {
                     Column(horizontalAlignment = Alignment.End) {
-                        Text("جدول اليوم", fontSize = 24.sp, fontWeight = FontWeight.Black, color = HealthInk)
-                        Text("أدويتك لليوم", color = HealthMuted)
+                        Text(L("جدول اليوم"), fontSize = 24.sp, fontWeight = FontWeight.Black, color = HealthInk)
+                        Text(L("أدويتك لليوم"), color = HealthMuted)
                     }
                     Surface(shape = RoundedCornerShape(16.dp), color = HealthSoftRed) {
                         Row(Modifier.padding(horizontal = 13.dp, vertical = 9.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -167,8 +186,8 @@ internal fun HealthMedicationScreen(
             }
             item {
                 Column(horizontalAlignment = Alignment.End, modifier = Modifier.fillMaxWidth()) {
-                    Text("مواعيد صحية", fontSize = 24.sp, fontWeight = FontWeight.Black, color = HealthInk)
-                    Text("مواعيد الطبيب والفحوصات", color = HealthMuted)
+                    Text(L("مواعيد صحية"), fontSize = 24.sp, fontWeight = FontWeight.Black, color = HealthInk)
+                    Text(L("مواعيد الطبيب والفحوصات"), color = HealthMuted)
                 }
             }
             if (appointments.isEmpty()) {
@@ -188,29 +207,29 @@ internal fun HealthMedicationScreen(
                     ) {
                         Icon(Icons.Default.Add, null)
                         Spacer(Modifier.size(7.dp))
-                        Text("إضافة دواء", fontWeight = FontWeight.Black, fontSize = 16.sp)
+                        Text(L("إضافة دواء"), fontWeight = FontWeight.Black, fontSize = 16.sp)
                     }
                     Button(
                         onClick = { ensureNotifications(); showAppointmentDialog = true },
                         modifier = Modifier.weight(1f).height(62.dp),
                         shape = RoundedCornerShape(17.dp),
-                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE9D7FF), contentColor = Color(0xFF5B21B6)),
+                        colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFE9D7FF)), contentColor = adaptInk(Color(0xFF5B21B6))),
                     ) {
                         Icon(Icons.Default.CalendarMonth, null)
                         Spacer(Modifier.size(7.dp))
-                        Text("إضافة موعد صحي", fontWeight = FontWeight.Black, fontSize = 14.sp)
+                        Text(L("إضافة موعد صحي"), fontWeight = FontWeight.Black, fontSize = 14.sp)
                     }
                 }
             }
             item {
-                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = Color(0xFFEAF5FF))) {
+                Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFEAF5FF)))) {
                     Row(Modifier.fillMaxWidth().padding(15.dp), verticalAlignment = Alignment.Top, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                         Surface(shape = CircleShape, color = Color(0xFF0D66D0)) {
                             Icon(Icons.Default.HealthAndSafety, null, tint = Color.White, modifier = Modifier.padding(8.dp).size(20.dp))
                         }
                         Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                            Text("تنبيه مهم", fontWeight = FontWeight.Black, color = Color(0xFF0D66D0))
-                            Text("هذا القسم للتذكير ومتابعة أدويتك ومواعيدك فقط، ولا يقدم تشخيصًا أو علاجًا طبيًا.", color = Color(0xFF476078), fontSize = 12.sp, textAlign = TextAlign.Right)
+                            Text(L("تنبيه مهم"), fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF0D66D0)))
+                            Text(L("هذا القسم للتذكير ومتابعة أدويتك ومواعيدك فقط، ولا يقدم تشخيصًا أو علاجًا طبيًا."), color = adaptInk(Color(0xFF476078)), fontSize = 12.sp, textAlign = TextAlign.Right)
                         }
                     }
                 }
@@ -221,21 +240,36 @@ internal fun HealthMedicationScreen(
 
     if (showMedicineDialog) {
         AddMedicineDialog(
-            owner = owner,
+            ownerLabel = ownerLabel,
             onDismiss = { showMedicineDialog = false },
-            onSave = { name, dose, time ->
-                val meta = HealthEntryMeta(HealthEntryType.MEDICATION, owner, time.toString(), "")
-                onAdd(name, dose, AssistantCategory.PERSONAL, HealthEntryCodec.nextMedicationTrigger(time), null, HealthEntryCodec.encode(meta))
+            onSave = { name, dose, times ->
+                val sorted = times.sorted()
+                val meta = HealthEntryMeta(
+                    HealthEntryType.MEDICATION, owner, sorted.first().toString(), "",
+                    moreTimes = sorted.drop(1).map { it.toString() }, member = memberName,
+                )
+                onAdd(name, dose, AssistantCategory.PERSONAL, HealthEntryCodec.nextMedicationTrigger(meta), null, HealthEntryCodec.encode(meta))
                 showMedicineDialog = false
+            },
+        )
+    }
+    if (showMemberDialog) {
+        AddMemberDialog(
+            onDismiss = { showMemberDialog = false },
+            onSave = { name ->
+                members = FamilyMembersStore.add(context, name)
+                val clean = HealthEntryCodec.cleanName(name)
+                if (members.any { it == clean }) { owner = HealthOwner.MEMBER; memberName = clean }
+                showMemberDialog = false
             },
         )
     }
     if (showAppointmentDialog) {
         AddAppointmentDialog(
-            owner = owner,
+            ownerLabel = ownerLabel,
             onDismiss = { showAppointmentDialog = false },
             onSave = { title, details, at ->
-                val meta = HealthEntryMeta(HealthEntryType.APPOINTMENT, owner)
+                val meta = HealthEntryMeta(HealthEntryType.APPOINTMENT, owner, member = memberName)
                 onAdd(title, details, AssistantCategory.PERSONAL, at, null, HealthEntryCodec.encode(meta))
                 showAppointmentDialog = false
             },
@@ -244,21 +278,58 @@ internal fun HealthMedicationScreen(
 }
 
 @Composable
-private fun OwnerTabs(selected: HealthOwner, selfName: String, partnerName: String, onSelect: (HealthOwner) -> Unit) {
-    Surface(shape = RoundedCornerShape(28.dp), color = Color(0xFFF4F4F5), modifier = Modifier.fillMaxWidth()) {
-        Row(Modifier.padding(4.dp)) {
-            listOf(HealthOwner.PARTNER to partnerName, HealthOwner.SELF to selfName).forEach { (value, label) ->
-                val active = value == selected
+private fun OwnerTabs(
+    selected: HealthOwner,
+    selectedMember: String,
+    selfName: String,
+    partnerName: String,
+    members: List<String>,
+    onSelect: (HealthOwner, String) -> Unit,
+    onAddMember: () -> Unit,
+) {
+    val tabs = buildList {
+        add(Triple(HealthOwner.PARTNER, "", partnerName))
+        add(Triple(HealthOwner.SELF, "", selfName))
+        members.forEach { add(Triple(HealthOwner.MEMBER, it, it)) }
+    }
+    Surface(shape = RoundedCornerShape(28.dp), color = adaptSurface(Color(0xFFF4F4F5)), modifier = Modifier.fillMaxWidth()) {
+        Row(Modifier.padding(4.dp).horizontalScroll(rememberScrollState())) {
+            tabs.forEach { (value, member, label) ->
+                val active = value == selected && (value != HealthOwner.MEMBER || member == selectedMember)
                 Surface(
-                    modifier = Modifier.weight(1f).clickable { onSelect(value) },
+                    modifier = Modifier.padding(horizontal = 2.dp).clickable { onSelect(value, member) },
                     shape = RoundedCornerShape(24.dp),
                     color = if (active) HealthRed else Color.Transparent,
                 ) {
-                    Text(label, modifier = Modifier.padding(vertical = 12.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Black, color = if (active) Color.White else HealthInk)
+                    Text(label, modifier = Modifier.padding(horizontal = 22.dp, vertical = 12.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Black, color = if (active) Color.White else HealthInk, maxLines = 1)
+                }
+            }
+            if (members.size < FamilyMembersStore.MAX_MEMBERS) {
+                Surface(
+                    modifier = Modifier.padding(horizontal = 2.dp).clickable(onClick = onAddMember),
+                    shape = RoundedCornerShape(24.dp),
+                    color = Color.Transparent,
+                ) {
+                    Row(Modifier.padding(horizontal = 16.dp, vertical = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Icon(Icons.Default.Add, null, tint = HealthRed, modifier = Modifier.size(18.dp))
+                        Text(L("إضافة فرد"), fontWeight = FontWeight.Black, color = HealthRed, maxLines = 1)
+                    }
                 }
             }
         }
     }
+}
+
+@Composable
+private fun AddMemberDialog(onDismiss: () -> Unit, onSave: (String) -> Unit) {
+    var name by remember { mutableStateOf("") }
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text(L("إضافة فرد"), fontWeight = FontWeight.Black) },
+        text = { OutlinedTextField(name, { name = it.take(30) }, label = { Text(L("اسم الفرد")) }, singleLine = true) },
+        confirmButton = { Button(onClick = { if (name.isNotBlank()) onSave(name) }, enabled = name.isNotBlank()) { Text(L("حفظ")) } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
+    )
 }
 
 @Composable
@@ -267,7 +338,7 @@ private fun NextDoseCard(entry: AssistantEntry?, onUpdate: (AssistantEntry) -> U
     val taken = meta?.let { HealthEntryCodec.takenToday(it) } == true
     Card(shape = RoundedCornerShape(24.dp), elevation = CardDefaults.cardElevation(2.dp)) {
         Row(
-            Modifier.background(Brush.horizontalGradient(listOf(Color(0xFFE9FFF5), Color(0xFFF4FFF9)))).fillMaxWidth().padding(18.dp),
+            Modifier.background(Brush.horizontalGradient(listOf(adaptSurface(Color(0xFFE9FFF5)), adaptSurface(Color(0xFFF4FFF9))))).fillMaxWidth().padding(18.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(14.dp),
         ) {
@@ -275,9 +346,9 @@ private fun NextDoseCard(entry: AssistantEntry?, onUpdate: (AssistantEntry) -> U
                 Icon(Icons.Default.Medication, null, tint = HealthRed, modifier = Modifier.padding(20.dp).size(54.dp))
             }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                Text("جرعة الدواء القادمة", fontSize = 20.sp, fontWeight = FontWeight.Black, color = HealthInk)
+                Text(L("جرعة الدواء القادمة"), fontSize = 20.sp, fontWeight = FontWeight.Black, color = HealthInk)
                 if (entry == null) {
-                    Text("لا توجد جرعة مسجلة", color = HealthMuted)
+                    Text(L("لا توجد جرعة مسجلة"), color = HealthMuted)
                 } else {
                     Text(entry.title, fontSize = 17.sp, fontWeight = FontWeight.Bold)
                     Text(formatClock(entry.dueAt), fontSize = 24.sp, fontWeight = FontWeight.Black, color = HealthRed)
@@ -294,7 +365,10 @@ private fun NextDoseCard(entry: AssistantEntry?, onUpdate: (AssistantEntry) -> U
                     ) {
                         Icon(Icons.Default.CheckCircle, null)
                         Spacer(Modifier.size(6.dp))
-                        Text(if (taken) "تم تناولها" else "تأكيد تناولها", fontWeight = FontWeight.Black)
+                        Text(
+                            if (taken) L("تم تناولها") else if (meta != null && meta.doseTimes.size > 1) L("تأكيد تناول جرعة") + " (${dosesDoneToday(meta)}/${meta.doseTimes.size})" else L("تأكيد تناولها"),
+                            fontWeight = FontWeight.Black,
+                        )
                     }
                 }
             }
@@ -315,7 +389,7 @@ private fun MedicationRow(entry: AssistantEntry, onUpdate: (AssistantEntry) -> U
             }
         },
         shape = RoundedCornerShape(19.dp),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         elevation = CardDefaults.cardElevation(1.dp),
     ) {
         Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -324,17 +398,23 @@ private fun MedicationRow(entry: AssistantEntry, onUpdate: (AssistantEntry) -> U
             }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                 Text(entry.title, fontSize = 17.sp, fontWeight = FontWeight.Black)
-                Text(entry.details.ifBlank { "جرعة مسجلة" }, color = HealthMuted, fontSize = 12.sp)
+                Text(entry.details.ifBlank { L("جرعة مسجلة") }, color = HealthMuted, fontSize = 12.sp)
+                if (meta.doseTimes.size > 1) {
+                    Text(
+                        meta.doseTimes.joinToString(" • ") + "  (${dosesDoneToday(meta)}/${meta.doseTimes.size})",
+                        color = HealthMuted, fontSize = 12.sp,
+                    )
+                }
                 Text(
-                    if (taken) "✓ تم تناوله اليوم" else if (overdue) "لم يتم تناوله بعد" else "بانتظار موعد الجرعة",
-                    color = if (taken) HealthGreen else if (overdue) HealthRed else Color(0xFFB7791F),
+                    if (taken) L("✓ تم تناوله اليوم") else if (overdue) L("لم يتم تناوله بعد") else L("بانتظار موعد الجرعة"),
+                    color = if (taken) HealthGreen else if (overdue) HealthRed else adaptInk(Color(0xFFB7791F)),
                     fontWeight = FontWeight.Bold,
                     fontSize = 12.sp,
                 )
             }
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(formatClock(entry.dueAt), fontWeight = FontWeight.Black, fontSize = 17.sp)
-                TextButton(onClick = { onDelete(entry.id) }) { Text("حذف", color = HealthMuted, fontSize = 11.sp) }
+                TextButton(onClick = { onDelete(entry.id) }) { Text(L("حذف"), color = HealthMuted, fontSize = 11.sp) }
             }
         }
     }
@@ -342,25 +422,25 @@ private fun MedicationRow(entry: AssistantEntry, onUpdate: (AssistantEntry) -> U
 
 @Composable
 private fun AppointmentCard(entry: AssistantEntry, onUpdate: (AssistantEntry) -> Unit, onDelete: (String) -> Unit) {
-    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White), elevation = CardDefaults.cardElevation(1.dp)) {
+    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), elevation = CardDefaults.cardElevation(1.dp)) {
         Row(Modifier.fillMaxWidth().padding(15.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            Surface(shape = RoundedCornerShape(18.dp), color = Color(0xFFE8F3FF)) {
-                Icon(Icons.Default.HealthAndSafety, null, tint = Color(0xFF2563EB), modifier = Modifier.padding(14.dp).size(36.dp))
+            Surface(shape = RoundedCornerShape(18.dp), color = adaptSurface(Color(0xFFE8F3FF))) {
+                Icon(Icons.Default.HealthAndSafety, null, tint = adaptInk(Color(0xFF2563EB)), modifier = Modifier.padding(14.dp).size(36.dp))
             }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                 Text(entry.title, fontSize = 18.sp, fontWeight = FontWeight.Black)
                 if (entry.details.isNotBlank()) Text(entry.details, color = HealthMuted, fontSize = 12.sp)
                 Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.CalendarMonth, null, tint = Color(0xFF2563EB), modifier = Modifier.size(16.dp))
+                    Icon(Icons.Default.CalendarMonth, null, tint = adaptInk(Color(0xFF2563EB)), modifier = Modifier.size(16.dp))
                     Text(formatDateTime(entry.dueAt), fontWeight = FontWeight.Bold, fontSize = 12.sp)
                 }
-                if (entry.completed) Text("✓ تم الموعد", color = HealthGreen, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                if (entry.completed) Text(L("✓ تم الموعد"), color = HealthGreen, fontWeight = FontWeight.Bold, fontSize = 12.sp)
             }
             Column {
                 OutlinedButton(onClick = { onUpdate(entry.copy(completed = !entry.completed, enabled = entry.completed)) }) {
                     Text(if (entry.completed) "إعادة" else "تم")
                 }
-                TextButton(onClick = { onDelete(entry.id) }) { Text("حذف", color = HealthMuted, fontSize = 11.sp) }
+                TextButton(onClick = { onDelete(entry.id) }) { Text(L("حذف"), color = HealthMuted, fontSize = 11.sp) }
             }
         }
     }
@@ -368,41 +448,58 @@ private fun AppointmentCard(entry: AssistantEntry, onUpdate: (AssistantEntry) ->
 
 @Composable
 private fun EmptyHealthCard(text: String) {
-    Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+    Card(shape = RoundedCornerShape(18.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
         Text(text, modifier = Modifier.fillMaxWidth().padding(24.dp), textAlign = TextAlign.Center, color = HealthMuted)
     }
 }
 
 @Composable
-private fun AddMedicineDialog(owner: HealthOwner, onDismiss: () -> Unit, onSave: (String, String, LocalTime) -> Unit) {
+private fun AddMedicineDialog(ownerLabel: String, onDismiss: () -> Unit, onSave: (String, String, List<LocalTime>) -> Unit) {
     val context = LocalContext.current
     var name by remember { mutableStateOf("") }
     var dose by remember { mutableStateOf("") }
-    var time by remember { mutableStateOf(LocalTime.now().plusHours(1).withMinute(0).withSecond(0).withNano(0)) }
+    var times by remember { mutableStateOf(listOf(LocalTime.now().plusHours(1).withMinute(0).withSecond(0).withNano(0))) }
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("إضافة دواء", fontWeight = FontWeight.Black) },
+        title = { Text(L("إضافة دواء"), fontWeight = FontWeight.Black) },
         text = {
-            Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Text(if (owner == HealthOwner.SELF) "لـ: أنا" else "لـ: زوجتي", color = HealthMuted)
-                OutlinedTextField(name, { name = it.take(100) }, label = { Text("اسم الدواء") }, singleLine = true)
-                OutlinedTextField(dose, { dose = it.take(120) }, label = { Text("الجرعة – مثال: قرص واحد") }, singleLine = true)
-                OutlinedButton(onClick = {
-                    TimePickerDialog(context, { _, h, m -> time = LocalTime.of(h, m) }, time.hour, time.minute, false).show()
-                }, modifier = Modifier.fillMaxWidth()) {
-                    Icon(Icons.Default.Schedule, null)
-                    Spacer(Modifier.size(7.dp))
-                    Text("موعد الجرعة: ${time.format(DateTimeFormatter.ofPattern("hh:mm a", Locale("ar")))}")
+            Column(verticalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.verticalScroll(rememberScrollState())) {
+                Text(L("لـ: ") + ownerLabel, color = HealthMuted)
+                OutlinedTextField(name, { name = it.take(100) }, label = { Text(L("اسم الدواء")) }, singleLine = true)
+                OutlinedTextField(dose, { dose = it.take(120) }, label = { Text(L("الجرعة – مثال: قرص واحد")) }, singleLine = true)
+                Text(L("عدد الجرعات في اليوم"), fontWeight = FontWeight.Bold, color = HealthInk)
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    (1..4).forEach { count ->
+                        FilterChip(
+                            selected = times.size == count,
+                            onClick = {
+                                times = when {
+                                    count < times.size -> times.take(count)
+                                    else -> times + (times.size until count).map { index -> LocalTime.of((8 + index * 6) % 24, 0) }
+                                }
+                            },
+                            label = { Text(count.toString()) },
+                        )
+                    }
+                }
+                times.forEachIndexed { index, time ->
+                    OutlinedButton(onClick = {
+                        TimePickerDialog(context, { _, h, m -> times = times.toMutableList().also { list -> list[index] = LocalTime.of(h, m) } }, time.hour, time.minute, false).show()
+                    }, modifier = Modifier.fillMaxWidth()) {
+                        Icon(Icons.Default.Schedule, null)
+                        Spacer(Modifier.size(7.dp))
+                        Text(L("موعد الجرعة") + " ${index + 1}: " + time.format(DateTimeFormatter.ofPattern("hh:mm a", Locale("ar"))))
+                    }
                 }
             }
         },
-        confirmButton = { Button(onClick = { if (name.isNotBlank()) onSave(name.trim(), dose.trim(), time) }, enabled = name.isNotBlank()) { Text("حفظ") } },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        confirmButton = { Button(onClick = { if (name.isNotBlank()) onSave(name.trim(), dose.trim(), times) }, enabled = name.isNotBlank()) { Text(L("حفظ")) } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 
 @Composable
-private fun AddAppointmentDialog(owner: HealthOwner, onDismiss: () -> Unit, onSave: (String, String, Long) -> Unit) {
+private fun AddAppointmentDialog(ownerLabel: String, onDismiss: () -> Unit, onSave: (String, String, Long) -> Unit) {
     val context = LocalContext.current
     var title by remember { mutableStateOf("") }
     var details by remember { mutableStateOf("") }
@@ -411,12 +508,12 @@ private fun AddAppointmentDialog(owner: HealthOwner, onDismiss: () -> Unit, onSa
     val at = date.atTime(time).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli()
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("إضافة موعد صحي", fontWeight = FontWeight.Black) },
+        title = { Text(L("إضافة موعد صحي"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Text(if (owner == HealthOwner.SELF) "لـ: أنا" else "لـ: زوجتي", color = HealthMuted)
-                OutlinedTextField(title, { title = it.take(100) }, label = { Text("نوع الموعد – مثال: موعد الطبيب") }, singleLine = true)
-                OutlinedTextField(details, { details = it.take(180) }, label = { Text("المكان أو ملاحظات") }, singleLine = true)
+                Text(L("لـ: ") + ownerLabel, color = HealthMuted)
+                OutlinedTextField(title, { title = it.take(100) }, label = { Text(L("نوع الموعد – مثال: موعد الطبيب")) }, singleLine = true)
+                OutlinedTextField(details, { details = it.take(180) }, label = { Text(L("المكان أو ملاحظات")) }, singleLine = true)
                 OutlinedButton(onClick = {
                     DatePickerDialog(context, { _, y, m, d -> date = LocalDate.of(y, m + 1, d) }, date.year, date.monthValue - 1, date.dayOfMonth).show()
                 }, modifier = Modifier.fillMaxWidth()) { Icon(Icons.Default.CalendarMonth, null); Spacer(Modifier.size(7.dp)); Text(date.toString()) }
@@ -425,8 +522,8 @@ private fun AddAppointmentDialog(owner: HealthOwner, onDismiss: () -> Unit, onSa
                 }, modifier = Modifier.fillMaxWidth()) { Icon(Icons.Default.Schedule, null); Spacer(Modifier.size(7.dp)); Text(time.format(DateTimeFormatter.ofPattern("hh:mm a", Locale("ar")))) }
             }
         },
-        confirmButton = { Button(onClick = { if (title.isNotBlank()) onSave(title.trim(), details.trim(), at) }, enabled = title.isNotBlank()) { Text("حفظ") } },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        confirmButton = { Button(onClick = { if (title.isNotBlank()) onSave(title.trim(), details.trim(), at) }, enabled = title.isNotBlank()) { Text(L("حفظ")) } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 
@@ -442,3 +539,6 @@ private fun formatTodayArabic(): String {
     val now = LocalDate.now()
     return now.format(DateTimeFormatter.ofPattern("EEEE، d MMMM", Locale("ar")))
 }
+
+private fun dosesDoneToday(meta: HealthEntryMeta): Int =
+    if (meta.lastTakenDate == HealthEntryCodec.todayString()) meta.takenCount else 0

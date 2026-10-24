@@ -166,7 +166,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
+            .background(adaptSurface(Color.White))
             .verticalScroll(rememberScrollState())
             .padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp),
@@ -175,7 +175,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
 
         Card(
             shape = RoundedCornerShape(24.dp),
-            colors = CardDefaults.cardColors(containerColor = Color(0xFFEFFFF8)),
+            colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFEFFFF8))),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         ) {
             Row(
@@ -189,13 +189,13 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
                     }
                 }
                 Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                    Text("اختر نوع الفاتورة ثم افتح تطبيق الدفع المثبت لديك", fontWeight = FontWeight.Black, fontSize = 24.sp, lineHeight = 28.sp, textAlign = TextAlign.End)
+                    Text(L("اختر نوع الفاتورة ثم افتح تطبيق الدفع المثبت لديك"), fontWeight = FontWeight.Black, fontSize = 24.sp, lineHeight = 28.sp, textAlign = TextAlign.End)
                     Spacer(Modifier.height(6.dp))
-                    Text("سيتم توجيهك إلى تطبيق الدفع الموجود على هاتفك لإتمام عملية الدفع.", color = Color(0xFF6B7280), fontSize = 14.sp, textAlign = TextAlign.End)
+                    Text(L("سيتم توجيهك إلى تطبيق الدفع الموجود على هاتفك لإتمام عملية الدفع."), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp, textAlign = TextAlign.End)
                 }
-                Surface(shape = CircleShape, color = Color(0xFFDDF9E9)) {
+                Surface(shape = CircleShape, color = adaptSurface(Color(0xFFDDF9E9))) {
                     Box(modifier = Modifier.size(34.dp), contentAlignment = Alignment.Center) {
-                        Icon(Icons.Default.Info, null, tint = Color(0xFF0DAA60))
+                        Icon(Icons.Default.Info, null, tint = adaptInk(Color(0xFF0DAA60)))
                     }
                 }
             }
@@ -214,8 +214,8 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
         }
 
         Column(verticalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
-            Text("تطبيقات الدفع المتاحة", fontWeight = FontWeight.Black, fontSize = 24.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
-            Text("اختر أحد التطبيقات المثبتة على هاتفك", color = Color(0xFF6B7280), fontSize = 14.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
+            Text(L("تطبيقات الدفع المتاحة"), fontWeight = FontWeight.Black, fontSize = 24.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
+            Text(L("اختر أحد التطبيقات المثبتة على هاتفك"), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
         }
 
         Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -248,7 +248,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
         ) {
             Icon(Icons.Default.Add, null, modifier = Modifier.size(24.dp))
             Spacer(Modifier.width(8.dp))
-            Text("إضافة تذكير فاتورة", fontWeight = FontWeight.Black, fontSize = 20.sp)
+            Text(L("إضافة تذكير فاتورة"), fontWeight = FontWeight.Black, fontSize = 20.sp)
         }
     }
 
@@ -276,7 +276,7 @@ private fun HeaderBills(onBack: () -> Unit) {
             shape = CircleShape,
             color = Color(0xFFF9FAFB),
         ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("⋮", fontSize = 28.sp) } }
-        Text("دفع الفواتير", modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
+        Text(L("دفع الفواتير"), modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
         Surface(
             modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
             shape = CircleShape,
@@ -320,7 +320,7 @@ private fun ProviderCard(provider: BillProvider, selected: Boolean, onClick: () 
     Card(
         modifier = Modifier.fillMaxWidth().clickable(onClick = onClick),
         shape = RoundedCornerShape(18.dp),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         elevation = CardDefaults.cardElevation(defaultElevation = if (selected) 3.dp else 1.dp),
     ) {
         Row(
@@ -328,17 +328,17 @@ private fun ProviderCard(provider: BillProvider, selected: Boolean, onClick: () 
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            Surface(shape = CircleShape, color = Color(0xFFF3F7FF)) {
+            Surface(shape = CircleShape, color = adaptSurface(Color(0xFFF3F7FF))) {
                 Box(modifier = Modifier.size(28.dp), contentAlignment = Alignment.Center) { Text("›", fontSize = 20.sp, fontWeight = FontWeight.Bold) }
             }
-            Surface(shape = RoundedCornerShape(14.dp), color = Color(0xFFF8FAFC)) {
+            Surface(shape = RoundedCornerShape(14.dp), color = adaptSurface(Color(0xFFF8FAFC))) {
                 Box(modifier = Modifier.size(width = 72.dp, height = 48.dp), contentAlignment = Alignment.Center) {
-                    Text(provider.title, fontWeight = FontWeight.Black, color = Color(0xFF111827), textAlign = TextAlign.Center)
+                    Text(provider.title, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)), textAlign = TextAlign.Center)
                 }
             }
             Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                 Text(provider.title, fontWeight = FontWeight.Black, fontSize = 18.sp)
-                Text(if (installed) "مثبت على الجهاز" else "غير مثبت — سيتم فتح المتجر", color = if (installed) Color(0xFF0DAA60) else Color(0xFF6B7280), fontSize = 12.sp)
+                Text(if (installed) "مثبت على الجهاز" else "غير مثبت — سيتم فتح المتجر", color = if (installed) adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF6B7280)), fontSize = 12.sp)
             }
         }
     }
@@ -349,7 +349,7 @@ private fun UpcomingReminderCard(reminder: BillReminder, providerName: String?, 
     val days = daysUntil(reminder.dueAtMillis)
     Card(
         shape = RoundedCornerShape(22.dp),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF9E9)),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF9E9))),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
         Row(
@@ -357,13 +357,13 @@ private fun UpcomingReminderCard(reminder: BillReminder, providerName: String?, 
             horizontalArrangement = Arrangement.spacedBy(14.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            Surface(shape = CircleShape, color = Color(0xFFFFF1C7)) {
+            Surface(shape = CircleShape, color = adaptSurface(Color(0xFFFFF1C7))) {
                 Box(modifier = Modifier.size(84.dp), contentAlignment = Alignment.Center) {
                     Icon(reminder.type.icon, null, tint = reminder.type.tint, modifier = Modifier.size(44.dp))
                 }
             }
             Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                Text("التذكيرات القادمة", color = Color(0xFF6B7280), fontSize = 14.sp)
+                Text(L("التذكيرات القادمة"), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp)
                 Text("فاتورة ${reminder.type.arabicLabel}", fontWeight = FontWeight.Black, fontSize = 24.sp)
                 Text(
                     when {
@@ -371,13 +371,13 @@ private fun UpcomingReminderCard(reminder: BillReminder, providerName: String?, 
                         days == 0L -> "تستحق اليوم"
                         else -> "تستحق خلال $days أيام"
                     },
-                    color = Color(0xFFFF3B3B),
+                    color = adaptInk(Color(0xFFFF3B3B)),
                     fontWeight = FontWeight.Black,
                     fontSize = 16.sp,
                 )
-                Text(formatDate(reminder.dueAtMillis) + (providerName?.let { " • $it" } ?: ""), color = Color(0xFF6B7280), fontSize = 12.sp)
+                Text(formatDate(reminder.dueAtMillis) + (providerName?.let { " • $it" } ?: ""), color = adaptInk(Color(0xFF6B7280)), fontSize = 12.sp)
             }
-            IconButton(onClick = onDelete) { Text("×", fontSize = 22.sp, color = Color(0xFFB91C1C)) }
+            IconButton(onClick = onDelete) { Text("×", fontSize = 22.sp, color = adaptInk(Color(0xFFB91C1C))) }
         }
     }
 }
@@ -397,7 +397,7 @@ private fun AddBillReminderDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("إضافة تذكير فاتورة", fontWeight = FontWeight.Black) },
+        title = { Text(L("إضافة تذكير فاتورة"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
@@ -418,7 +418,7 @@ private fun AddBillReminderDialog(
                     value = accountHint,
                     onValueChange = { accountHint = it.take(50) },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("رقم الحساب / الاشتراك (اختياري)") },
+                    label = { Text(L("رقم الحساب / الاشتراك (اختياري)")) },
                     singleLine = true,
                 )
                 Button(
@@ -442,9 +442,9 @@ private fun AddBillReminderDialog(
                         ).show()
                     },
                     modifier = Modifier.fillMaxWidth(),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFF3F7FF), contentColor = Color(0xFF173B65)),
-                ) { Text("تاريخ الاستحقاق: ${formatDate(dueAtMillis)}") }
-                Text("تطبيق الدفع (اختياري)", fontWeight = FontWeight.Bold)
+                    colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFF3F7FF)), contentColor = adaptInk(Color(0xFF173B65))),
+                ) { Text(L("تاريخ الاستحقاق: ${formatDate(dueAtMillis)}")) }
+                Text(L("تطبيق الدفع (اختياري)"), fontWeight = FontWeight.Bold)
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                     providers.chunked(3).forEach { group ->
                         Row(horizontalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.fillMaxWidth()) {
@@ -464,9 +464,9 @@ private fun AddBillReminderDialog(
         confirmButton = {
             Button(onClick = {
                 onSave(BillReminder(System.currentTimeMillis(), type, dueAtMillis, accountHint.trim(), providerPackage))
-            }, colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635))) { Text("حفظ") }
+            }, colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635))) { Text(L("حفظ")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 

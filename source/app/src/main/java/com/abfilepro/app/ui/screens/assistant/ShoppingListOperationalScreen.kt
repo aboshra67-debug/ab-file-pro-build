@@ -176,13 +176,13 @@ internal fun ShoppingListOperationalScreen(
     if (showCustomItemDialog) {
         AlertDialog(
             onDismissRequest = { showCustomItemDialog = false },
-            title = { Text("إضافة صنف إلى ${selectedCatalogCategory.arabicLabel}", fontWeight = FontWeight.Black) },
+            title = { Text(L("إضافة صنف إلى ${selectedCatalogCategory.arabicLabel}"), fontWeight = FontWeight.Black) },
             text = {
                 OutlinedTextField(
                     value = newItem,
                     onValueChange = { newItem = it.take(60) },
                     modifier = Modifier.fillMaxWidth(),
-                    label = { Text("اسم الصنف") },
+                    label = { Text(L("اسم الصنف")) },
                     singleLine = true,
                 )
             },
@@ -197,16 +197,16 @@ internal fun ShoppingListOperationalScreen(
                         }
                     },
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635)),
-                ) { Text("إضافة") }
+                ) { Text(L("إضافة")) }
             },
-            dismissButton = { TextButton(onClick = { showCustomItemDialog = false }) { Text("إلغاء") } },
+            dismissButton = { TextButton(onClick = { showCustomItemDialog = false }) { Text(L("إلغاء")) } },
         )
     }
 
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color(0xFFFDFDFD))
+            .background(adaptSurface(Color(0xFFFDFDFD)))
             .statusBarsPadding()
             .verticalScroll(rememberScrollState())
             .padding(horizontal = 16.dp, vertical = 10.dp),
@@ -216,7 +216,7 @@ internal fun ShoppingListOperationalScreen(
 
         Card(
             shape = RoundedCornerShape(20.dp),
-            colors = CardDefaults.cardColors(containerColor = Color.White),
+            colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         ) {
             Row(
@@ -224,9 +224,9 @@ internal fun ShoppingListOperationalScreen(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(12.dp),
             ) {
-                Surface(shape = CircleShape, color = Color(0xFFF4F7FA)) {
+                Surface(shape = CircleShape, color = adaptSurface(Color(0xFFF4F7FA))) {
                     Box(modifier = Modifier.size(42.dp), contentAlignment = Alignment.Center) {
-                        Icon(Icons.Default.KeyboardArrowDown, null, tint = Color(0xFF111827))
+                        Icon(Icons.Default.KeyboardArrowDown, null, tint = adaptInk(Color(0xFF111827)))
                     }
                 }
                 OutlinedTextField(
@@ -245,7 +245,7 @@ internal fun ShoppingListOperationalScreen(
 
         Card(
             shape = RoundedCornerShape(22.dp),
-            colors = CardDefaults.cardColors(containerColor = Color(0xFFEFFFF8)),
+            colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFEFFFF8))),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         ) {
             Row(
@@ -255,14 +255,14 @@ internal fun ShoppingListOperationalScreen(
             ) {
                 Text("🛒🥬🍅🥛", fontSize = 44.sp)
                 Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text("$completed من $total تم شراؤها", fontWeight = FontWeight.Black, fontSize = 23.sp, textAlign = TextAlign.End)
+                    Text(L("$completed من $total تم شراؤها"), fontWeight = FontWeight.Black, fontSize = 23.sp, textAlign = TextAlign.End)
                     LinearProgressIndicator(
                         progress = { progress },
                         modifier = Modifier.fillMaxWidth().height(10.dp),
-                        color = Color(0xFF10B981),
+                        color = adaptInk(Color(0xFF10B981)),
                         trackColor = Color(0xFFE2E8F0),
                     )
-                    Text("${(progress * 100).toInt()}٪ مكتمل", color = Color(0xFF475569), fontSize = 14.sp)
+                    Text(L("${(progress * 100).toInt()}٪ مكتمل"), color = adaptInk(Color(0xFF475569)), fontSize = 14.sp)
                 }
             }
         }
@@ -271,13 +271,13 @@ internal fun ShoppingListOperationalScreen(
             it.module == com.abfilepro.app.assistant.AssistantModule.FAMILY_REQUESTS && !it.completed
         }
         if (linkedFamilyRequests > 0) {
-            Surface(shape = RoundedCornerShape(18.dp), color = Color(0xFFFFF3F5)) {
+            Surface(shape = RoundedCornerShape(18.dp), color = adaptSurface(Color(0xFFFFF3F5))) {
                 Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
                     Text("👩‍❤️‍👨", fontSize = 28.sp)
                     Spacer(Modifier.width(8.dp))
                     Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                        Text("مرتبطة بطلبات العائلة", fontWeight = FontWeight.Black)
-                        Text("$linkedFamilyRequests طلبات عائلية معلقة", color = Color(0xFF6B7280), fontSize = 12.sp)
+                        Text(L("مرتبطة بطلبات العائلة"), fontWeight = FontWeight.Black)
+                        Text(L("$linkedFamilyRequests طلبات عائلية معلقة"), color = adaptInk(Color(0xFF6B7280)), fontSize = 12.sp)
                     }
                 }
             }
@@ -285,11 +285,11 @@ internal fun ShoppingListOperationalScreen(
 
         Card(
             shape = RoundedCornerShape(22.dp),
-            colors = CardDefaults.cardColors(containerColor = Color.White),
+            colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         ) {
             Column(modifier = Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Text("إضافة سريعة من الفئات", fontWeight = FontWeight.Black, fontSize = 20.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
+                Text(L("إضافة سريعة من الفئات"), fontWeight = FontWeight.Black, fontSize = 20.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
                 Row(
                     modifier = Modifier.fillMaxWidth().height(286.dp),
                     horizontalArrangement = Arrangement.spacedBy(10.dp),
@@ -329,7 +329,7 @@ internal fun ShoppingListOperationalScreen(
                                     IconButton(
                                         onClick = { save(items + ShoppingItem(System.currentTimeMillis(), name, 1, false, selectedCatalogCategory)) },
                                         modifier = Modifier.size(36.dp),
-                                    ) { Icon(Icons.Default.Add, null, tint = Color(0xFFE11D2E)) }
+                                    ) { Icon(Icons.Default.Add, null, tint = adaptInk(Color(0xFFE11D2E))) }
                                     Spacer(Modifier.weight(1f))
                                     Text(name, fontWeight = FontWeight.Bold, fontSize = 14.sp, textAlign = TextAlign.End)
                                     Spacer(Modifier.width(5.dp))
@@ -340,12 +340,12 @@ internal fun ShoppingListOperationalScreen(
                         Button(
                             onClick = { newItem = ""; showCustomItemDialog = true },
                             modifier = Modifier.fillMaxWidth().height(44.dp),
-                            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFFEEF0), contentColor = Color(0xFFD7192D)),
+                            colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFFFEEF0)), contentColor = adaptInk(Color(0xFFD7192D))),
                             shape = RoundedCornerShape(14.dp),
                         ) {
                             Icon(Icons.Default.Add, null)
                             Spacer(Modifier.width(5.dp))
-                            Text("إضافة صنف", fontWeight = FontWeight.Black)
+                            Text(L("إضافة صنف"), fontWeight = FontWeight.Black)
                         }
                     }
                 }
@@ -375,23 +375,23 @@ internal fun ShoppingListOperationalScreen(
                     }, "مشاركة القائمة"))
                 },
                 modifier = Modifier.weight(1f).height(58.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFFF2F3), contentColor = Color(0xFFD7192D)),
+                colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFFFF2F3)), contentColor = adaptInk(Color(0xFFD7192D))),
                 shape = RoundedCornerShape(18.dp),
             ) {
                 Icon(Icons.Default.Share, null)
                 Spacer(Modifier.width(7.dp))
-                Text("مشاركة القائمة", fontWeight = FontWeight.Black, fontSize = 16.sp)
+                Text(L("مشاركة القائمة"), fontWeight = FontWeight.Black, fontSize = 16.sp)
             }
 
             Button(
                 onClick = { save(items.filterNot { it.completed }) },
                 modifier = Modifier.weight(1f).height(58.dp),
-                colors = ButtonDefaults.buttonColors(containerColor = Color.White, contentColor = Color(0xFF111827)),
+                colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color.White), contentColor = adaptInk(Color(0xFF111827))),
                 shape = RoundedCornerShape(18.dp),
             ) {
                 Icon(Icons.Default.DeleteOutline, null)
                 Spacer(Modifier.width(7.dp))
-                Text("مسح المكتمل", fontWeight = FontWeight.Black, fontSize = 16.sp)
+                Text(L("مسح المكتمل"), fontWeight = FontWeight.Black, fontSize = 16.sp)
             }
         }
         Spacer(Modifier.height(8.dp))
@@ -401,7 +401,7 @@ internal fun ShoppingListOperationalScreen(
 @Composable
 private fun ShoppingHeader(onBack: () -> Unit) {
     Box(modifier = Modifier.fillMaxWidth()) {
-        Text("قائمة التسوق", modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
+        Text(L("قائمة التسوق"), modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
         Surface(
             modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
             shape = CircleShape,
@@ -443,7 +443,7 @@ private fun ShoppingCategoryCard(
                 Surface(shape = CircleShape, color = category.badge) {
                     Text("${items.size}", modifier = Modifier.padding(horizontal = 11.dp, vertical = 6.dp), fontWeight = FontWeight.Black)
                 }
-                Text("أصناف", fontWeight = FontWeight.Bold, color = Color(0xFF475569))
+                Text(L("أصناف"), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF475569)))
                 Spacer(Modifier.weight(1f))
                 Text(category.arabicLabel, fontWeight = FontWeight.Black, fontSize = 21.sp)
                 Text(category.emoji, fontSize = 28.sp)
@@ -465,7 +465,7 @@ private fun ShoppingCategoryCard(
                     )
                 }
                 if (items.isEmpty()) {
-                    Text("لا توجد أصناف في هذا القسم", modifier = Modifier.fillMaxWidth().padding(12.dp), textAlign = TextAlign.Center, color = Color(0xFF94A3B8))
+                    Text(L("لا توجد أصناف في هذا القسم"), modifier = Modifier.fillMaxWidth().padding(12.dp), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF94A3B8)))
                 }
             }
         }
@@ -485,12 +485,12 @@ private fun ShoppingItemRow(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp),
         ) {
-            Surface(shape = CircleShape, color = Color(0xFFF5F7FA)) {
-                IconButton(onClick = onMinus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Remove, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Remove), tint = Color(0xFF475569)) }
+            Surface(shape = CircleShape, color = adaptSurface(Color(0xFFF5F7FA))) {
+                IconButton(onClick = onMinus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Remove, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Remove), tint = adaptInk(Color(0xFF475569))) }
             }
             Text("${item.quantity}", fontWeight = FontWeight.Black, fontSize = 18.sp, modifier = Modifier.width(28.dp), textAlign = TextAlign.Center)
-            Surface(shape = CircleShape, color = Color(0xFFFFEEF0)) {
-                IconButton(onClick = onPlus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Add, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Add), tint = Color(0xFFE11D2E)) }
+            Surface(shape = CircleShape, color = adaptSurface(Color(0xFFFFEEF0))) {
+                IconButton(onClick = onPlus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Add, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Add), tint = adaptInk(Color(0xFFE11D2E))) }
             }
             Spacer(Modifier.weight(1f))
             Text(item.name, fontWeight = FontWeight.Bold, fontSize = 18.sp, textAlign = TextAlign.End)
@@ -498,7 +498,7 @@ private fun ShoppingItemRow(
             Surface(
                 modifier = Modifier.size(38.dp).clickable(onClick = onToggle),
                 shape = CircleShape,
-                color = if (item.completed) Color(0xFF10B981) else Color.White,
+                color = if (item.completed) adaptInk(Color(0xFF10B981)) else Color.White,
                 border = androidx.compose.foundation.BorderStroke(2.dp, if (item.completed) Color(0xFF10B981) else Color(0xFFD5DBE3)),
             ) {
                 Box(contentAlignment = Alignment.Center) {

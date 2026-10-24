@@ -30,8 +30,8 @@ import androidx.compose.ui.unit.sp
 
 internal val AssistantPrimaryNavy = Color(0xFF173B65)
 internal val AssistantAccentRed = Color(0xFFFF4D4F)
-internal val AssistantBorderGray = Color(0xFFD9E2EC)
-internal val AssistantTextDark = Color(0xFF071124)
+internal val AssistantBorderGray get() = adaptSurface(Color(0xFFD9E2EC))
+internal val AssistantTextDark get() = adaptInk(Color(0xFF071124))
 
 @Composable
 internal fun AssistantTopStripButton(
@@ -87,14 +87,14 @@ internal fun AssistantHeaderCircleButton(
             .clickable(onClick = onClick),
         shape = CircleShape,
         color = Color.White,
-        border = BorderStroke(1.dp, if (accent) Color(0xFFF4D9DC) else AssistantBorderGray),
+        border = BorderStroke(1.dp, if (accent) adaptSurface(Color(0xFFF4D9DC)) else AssistantBorderGray),
         shadowElevation = 5.dp,
     ) {
         Box(contentAlignment = Alignment.Center) {
             Icon(
                 icon,
                 contentDescription = contentDescription,
-                tint = if (accent) Color(0xFF9B1C1C) else AssistantTextDark,
+                tint = if (accent) adaptInk(Color(0xFF9B1C1C)) else AssistantTextDark,
                 modifier = Modifier.size(24.dp),
             )
         }
@@ -107,7 +107,7 @@ internal fun AssistantPillTabButton(
     selected: Boolean,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    selectedContainerColor: Color = Color(0xFFECE7F6),
+    selectedContainerColor: Color = adaptSurface(Color(0xFFECE7F6)),
     selectedContentColor: Color = AssistantTextDark,
     unselectedContainerColor: Color = Color.White,
     unselectedContentColor: Color = AssistantTextDark,

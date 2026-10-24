@@ -127,16 +127,16 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
     if (showInfoDialog) {
         AlertDialog(
             onDismissRequest = { showInfoDialog = false },
-            title = { Text("بيانات توضيحية", fontWeight = FontWeight.Black) },
+            title = { Text(L("بيانات توضيحية"), fontWeight = FontWeight.Black) },
             text = {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text("العملات: سعر صرف مرجعي مباشر مقابل الجنيه المصري.")
-                    Text("الذهب: سعر عالمي مرجعي يتم تحويله إلى الجنيه المصري حسب العيار.")
-                    Text("الأسعار استرشادية وقد تختلف عن السوق المحلي. التحديث التلقائي يتم كل 15 دقيقة.", color = Color(0xFF64748B), fontSize = 12.sp)
-                    Text("عدد التنبيهات المحفوظة: ${alerts.size}", fontWeight = FontWeight.Bold)
+                    Text(L("العملات: سعر صرف مرجعي مباشر مقابل الجنيه المصري."))
+                    Text(L("الذهب: سعر عالمي مرجعي يتم تحويله إلى الجنيه المصري حسب العيار."))
+                    Text(L("الأسعار استرشادية وقد تختلف عن السوق المحلي. التحديث التلقائي يتم كل 15 دقيقة."), color = adaptInk(Color(0xFF64748B)), fontSize = 12.sp)
+                    Text(L("عدد التنبيهات المحفوظة: ${alerts.size}"), fontWeight = FontWeight.Bold)
                 }
             },
-            confirmButton = { TextButton(onClick = { showInfoDialog = false }) { Text("إغلاق") } },
+            confirmButton = { TextButton(onClick = { showInfoDialog = false }) { Text(L("إغلاق")) } },
         )
     }
 
@@ -171,7 +171,7 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White)
+            .background(adaptSurface(Color.White))
             .statusBarsPadding()
             .verticalScroll(scrollState)
             .padding(horizontal = 16.dp, vertical = 12.dp),
@@ -196,13 +196,13 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
                     color = Color(0xFFFFF0F1),
                 ) {
                     Box(contentAlignment = Alignment.Center) {
-                        Icon(Icons.Default.Refresh, contentDescription = "تحديث", tint = Color(0xFFE11D2E), modifier = Modifier.size(28.dp))
+                        Icon(Icons.Default.Refresh, contentDescription = L("تحديث"), tint = adaptInk(Color(0xFFE11D2E)), modifier = Modifier.size(28.dp))
                     }
                 }
                 Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                    Text(updateLabel(currency, gold, loading, lastError), color = Color(0xFF475569), fontWeight = FontWeight.Medium, fontSize = 15.sp, textAlign = TextAlign.End)
+                    Text(updateLabel(currency, gold, loading, lastError), color = adaptInk(Color(0xFF475569)), fontWeight = FontWeight.Medium, fontSize = 15.sp, textAlign = TextAlign.End)
                     if (lastError) {
-                        Text("تم الاحتفاظ بآخر بيانات متاحة", color = Color(0xFF94A3B8), fontSize = 11.sp)
+                        Text(L("تم الاحتفاظ بآخر بيانات متاحة"), color = adaptInk(Color(0xFF94A3B8)), fontSize = 11.sp)
                     }
                 }
             }
@@ -238,7 +238,7 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2635)),
             shape = RoundedCornerShape(18.dp),
         ) {
-            Text("إنشاء تنبيه سعر", fontWeight = FontWeight.Black, fontSize = 20.sp)
+            Text(L("إنشاء تنبيه سعر"), fontWeight = FontWeight.Black, fontSize = 20.sp)
         }
 
         Spacer(Modifier.height(10.dp))
@@ -254,15 +254,15 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
             color = Color(0xFFF8FAFC),
         ) {
             Box(contentAlignment = Alignment.Center) {
-                Icon(Icons.Default.Info, contentDescription = "معلومات", tint = Color(0xFF475569))
+                Icon(Icons.Default.Info, contentDescription = L("معلومات"), tint = adaptInk(Color(0xFF475569)))
             }
         }
         Text(
-            text = "العملات والذهب",
+            text = L("العملات والذهب"),
             modifier = Modifier.align(Alignment.Center),
             fontWeight = FontWeight.Black,
             fontSize = 24.sp,
-            color = Color(0xFF111827),
+            color = adaptInk(Color(0xFF111827)),
         )
         Surface(
             modifier = Modifier.align(Alignment.CenterEnd).size(44.dp).clickable(onClick = onBack),
@@ -270,7 +270,7 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
             color = Color(0xFFF8FAFC),
         ) {
             Box(contentAlignment = Alignment.Center) {
-                Text("›", fontSize = 28.sp, color = Color(0xFF111827), fontWeight = FontWeight.Bold)
+                Text("›", fontSize = 28.sp, color = adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold)
             }
         }
     }
@@ -278,7 +278,7 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
 
 @Composable
 private fun SegmentedTabs(selectedTab: MarketTab, onSelect: (MarketTab) -> Unit) {
-    Surface(shape = RoundedCornerShape(22.dp), color = Color(0xFFF8FAFC), shadowElevation = 1.dp) {
+    Surface(shape = RoundedCornerShape(22.dp), color = adaptSurface(Color(0xFFF8FAFC)), shadowElevation = 1.dp) {
         Row(modifier = Modifier.fillMaxWidth().padding(4.dp)) {
             SegTab("الذهب", selectedTab == MarketTab.GOLD, Modifier.weight(1f)) { onSelect(MarketTab.GOLD) }
             SegTab("العملات", selectedTab == MarketTab.CURRENCIES, Modifier.weight(1f)) { onSelect(MarketTab.CURRENCIES) }
@@ -291,10 +291,10 @@ private fun SegTab(title: String, selected: Boolean, modifier: Modifier = Modifi
     Surface(
         modifier = modifier.height(52.dp).clip(RoundedCornerShape(18.dp)).clickable(onClick = onClick),
         shape = RoundedCornerShape(18.dp),
-        color = if (selected) Color(0xFFFF2635) else Color.Transparent,
+        color = if (selected) adaptInk(Color(0xFFFF2635)) else Color.Transparent,
     ) {
         Box(contentAlignment = Alignment.Center) {
-            Text(title, color = if (selected) Color.White else Color(0xFF111827), fontWeight = FontWeight.Black, fontSize = 18.sp)
+            Text(title, color = if (selected) Color.White else adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Black, fontSize = 18.sp)
         }
     }
 }
@@ -308,7 +308,7 @@ private fun MarketsCurrencySection(
 ) {
     SectionTitle("أسعار العملات")
     CurrencyCard(
-        title = "الدولار الأمريكي",
+        title = L("الدولار الأمريكي"),
         code = "USD",
         asset = MarketAsset.USD,
         referenceValue = usd,
@@ -318,7 +318,7 @@ private fun MarketsCurrencySection(
         onToggleFavorite = onToggleFavorite,
     )
     CurrencyCard(
-        title = "الريال السعودي",
+        title = L("الريال السعودي"),
         code = "SAR",
         asset = MarketAsset.SAR,
         referenceValue = sar,
@@ -351,7 +351,7 @@ private fun CurrencyCard(
                     modifier = Modifier.size(104.dp).clip(RoundedCornerShape(18.dp)).background(circle),
                     contentAlignment = Alignment.Center,
                 ) {
-                    Text(code, fontSize = 28.sp, fontWeight = FontWeight.Black, color = Color(0xFF0F172A))
+                    Text(code, fontSize = 28.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF0F172A)))
                 }
                 Spacer(Modifier.width(12.dp))
                 Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
@@ -359,16 +359,16 @@ private fun CurrencyCard(
                         IconButton(onClick = { onToggleFavorite(asset) }, modifier = Modifier.size(36.dp)) {
                             Icon(
                                 imageVector = if (asset in favorites) Icons.Default.Star else Icons.Outlined.StarOutline,
-                                contentDescription = "مفضلة",
-                                tint = if (asset in favorites) Color(0xFFF8B400) else Color(0xFF94A3B8),
+                                contentDescription = L("مفضلة"),
+                                tint = if (asset in favorites) adaptInk(Color(0xFFF8B400)) else adaptInk(Color(0xFF94A3B8)),
                             )
                         }
-                        Text(title, fontSize = 24.sp, fontWeight = FontWeight.Black, color = Color(0xFF111827), textAlign = TextAlign.End)
+                        Text(title, fontSize = 24.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)), textAlign = TextAlign.End)
                     }
                 }
             }
             PriceBox(
-                label = "سعر مرجعي",
+                label = L("سعر مرجعي"),
                 value = referenceValue,
                 modifier = Modifier.fillMaxWidth(),
                 tint = Color(0xFFEFF6FF),
@@ -384,7 +384,7 @@ private fun PriceBox(label: String, value: Double?, modifier: Modifier, tint: Co
         Column(modifier = Modifier.fillMaxWidth().padding(vertical = 14.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(label, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = valueColor)
             Text(formatMarketNumber(value, 2), fontWeight = FontWeight.Black, fontSize = 22.sp, color = valueColor)
-            Text("ج.م", color = Color(0xFF64748B), fontSize = 12.sp)
+            Text(L("ج.م"), color = adaptInk(Color(0xFF64748B)), fontSize = 12.sp)
         }
     }
 }
@@ -417,7 +417,7 @@ private fun GoldCard(
     Card(
         modifier = modifier,
         shape = RoundedCornerShape(18.dp),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFFFFBEE)),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFFBEE))),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
         Column(
@@ -429,23 +429,23 @@ private fun GoldCard(
                 IconButton(onClick = { onToggleFavorite(asset) }, modifier = Modifier.size(28.dp)) {
                     Icon(
                         imageVector = if (asset in favorites) Icons.Default.Star else Icons.Outlined.StarOutline,
-                        contentDescription = "مفضلة",
-                        tint = if (asset in favorites) Color(0xFFF8B400) else Color(0xFF94A3B8),
+                        contentDescription = L("مفضلة"),
+                        tint = if (asset in favorites) adaptInk(Color(0xFFF8B400)) else adaptInk(Color(0xFF94A3B8)),
                         modifier = Modifier.size(20.dp),
                     )
                 }
             }
             Box(
                 modifier = Modifier.size(62.dp).clip(RoundedCornerShape(16.dp)).background(
-                    Brush.verticalGradient(listOf(Color(0xFFFFE69B), Color(0xFFF7C948)))
+                    Brush.verticalGradient(listOf(adaptSurface(Color(0xFFFFE69B)), adaptSurface(Color(0xFFF7C948))))
                 ),
                 contentAlignment = Alignment.Center,
             ) {
-                Text("Au", color = Color(0xFF7A4D00), fontWeight = FontWeight.Black, fontSize = 22.sp)
+                Text("Au", color = adaptInk(Color(0xFF7A4D00)), fontWeight = FontWeight.Black, fontSize = 22.sp)
             }
-            Text(title, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = Color(0xFF1F2937))
-            Text(formatMarketNumber(value, 0), fontWeight = FontWeight.Black, fontSize = 22.sp, color = Color(0xFF6E3F00))
-            Text("ج.م للجرام", fontSize = 11.sp, color = Color(0xFF64748B), textAlign = TextAlign.Center)
+            Text(title, fontWeight = FontWeight.Bold, fontSize = 16.sp, color = adaptInk(Color(0xFF1F2937)))
+            Text(formatMarketNumber(value, 0), fontWeight = FontWeight.Black, fontSize = 22.sp, color = adaptInk(Color(0xFF6E3F00)))
+            Text(L("ج.م للجرام"), fontSize = 11.sp, color = adaptInk(Color(0xFF64748B)), textAlign = TextAlign.Center)
         }
     }
 }
@@ -453,7 +453,7 @@ private fun GoldCard(
 @Composable
 private fun SectionTitle(title: String) {
     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-        Text(title, fontWeight = FontWeight.Black, fontSize = 20.sp, color = Color(0xFF111827))
+        Text(title, fontWeight = FontWeight.Black, fontSize = 20.sp, color = adaptInk(Color(0xFF111827)))
     }
 }
 
@@ -461,20 +461,20 @@ private fun SectionTitle(title: String) {
 private fun InfoPanel() {
     Card(
         shape = RoundedCornerShape(18.dp),
-        colors = CardDefaults.cardColors(containerColor = Color(0xFFF8FAFC)),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFF8FAFC))),
     ) {
         Column(modifier = Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
                 Surface(shape = CircleShape, color = Color.White) {
                     Box(modifier = Modifier.size(28.dp), contentAlignment = Alignment.Center) {
-                        Icon(Icons.Default.Info, contentDescription = null, tint = Color(0xFF64748B), modifier = Modifier.size(18.dp))
+                        Icon(Icons.Default.Info, contentDescription = null, tint = adaptInk(Color(0xFF64748B)), modifier = Modifier.size(18.dp))
                     }
                 }
-                Text("بيانات توضيحية", fontWeight = FontWeight.Black, fontSize = 18.sp, color = Color(0xFF111827))
+                Text(L("بيانات توضيحية"), fontWeight = FontWeight.Black, fontSize = 18.sp, color = adaptInk(Color(0xFF111827)))
             }
             Text(
                 "الأسعار المعروضة مرجعية واسترشادية وقد تختلف عن أسعار البنوك والصرافة والسوق المحلي.",
-                color = Color(0xFF6B7280),
+                color = adaptInk(Color(0xFF6B7280)),
                 fontSize = 13.sp,
                 textAlign = TextAlign.End,
                 modifier = Modifier.fillMaxWidth(),
@@ -500,10 +500,10 @@ private fun MarketAlertDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("إنشاء تنبيه سعر", fontWeight = FontWeight.Black) },
+        title = { Text(L("إنشاء تنبيه سعر"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Text("اختر الأصل والسعر الذي تريد متابعته", color = Color(0xFF64748B), fontSize = 12.sp)
+                Text(L("اختر الأصل والسعر الذي تريد متابعته"), color = adaptInk(Color(0xFF64748B)), fontSize = 12.sp)
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(5.dp)) {
                     listOf(MarketAsset.USD, MarketAsset.SAR).forEach { item ->
                         FilterChip(
@@ -541,16 +541,16 @@ private fun MarketAlertDialog(
                 OutlinedTextField(
                     value = targetText,
                     onValueChange = { targetText = normalizeMarketInput(it) },
-                    label = { Text("السعر المستهدف بالجنيه") },
+                    label = { Text(L("السعر المستهدف بالجنيه")) },
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth(),
                 )
                 if (alerts.isNotEmpty()) {
-                    Text("التنبيهات المحفوظة", fontWeight = FontWeight.ExtraBold)
+                    Text(L("التنبيهات المحفوظة"), fontWeight = FontWeight.ExtraBold)
                     Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
                         alerts.take(4).forEach { alert ->
-                            Card(colors = CardDefaults.cardColors(containerColor = Color(0xFFF8FAFC)), shape = RoundedCornerShape(12.dp)) {
+                            Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFF8FAFC))), shape = RoundedCornerShape(12.dp)) {
                                 Row(
                                     Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 6.dp),
                                     verticalAlignment = Alignment.CenterVertically,
@@ -560,11 +560,11 @@ private fun MarketAlertDialog(
                                         Text(
                                             "${if (alert.direction == MarketAlertDirection.ABOVE) "≥" else "≤"} ${formatMarketNumber(alert.targetEgp, 2)} ج.م",
                                             fontSize = 11.sp,
-                                            color = Color(0xFF64748B),
+                                            color = adaptInk(Color(0xFF64748B)),
                                         )
                                     }
                                     IconButton(onClick = { onDelete(alert.id) }, modifier = Modifier.size(34.dp)) {
-                                        Icon(Icons.Default.DeleteOutline, contentDescription = "حذف", tint = Color(0xFFE53935))
+                                        Icon(Icons.Default.DeleteOutline, contentDescription = L("حذف"), tint = adaptInk(Color(0xFFE53935)))
                                     }
                                 }
                             }
@@ -583,9 +583,9 @@ private fun MarketAlertDialog(
                 },
                 enabled = target != null && current != null,
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2D35)),
-            ) { Text("حفظ التنبيه") }
+            ) { Text(L("حفظ التنبيه")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إغلاق") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إغلاق")) } },
     )
 }
 

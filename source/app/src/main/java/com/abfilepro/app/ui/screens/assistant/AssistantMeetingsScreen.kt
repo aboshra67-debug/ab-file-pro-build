@@ -179,13 +179,13 @@ internal fun AssistantMeetingsScreen(
             item {
                 Card(
                     shape = RoundedCornerShape(24.dp),
-                    colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF1F3)),
+                    colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF1F3))),
                 ) {
                     Column(Modifier.fillMaxWidth().padding(18.dp)) {
                         Text(if (language.code == "ar") "الاجتماعات والمحاضر" else "Meetings & minutes", fontSize = 24.sp, fontWeight = FontWeight.Black)
                         Text(
                             if (language.code == "ar") "أضف اجتماعًا، ثم صوّر المحضر من داخل الاجتماع واحفظه مرتبطًا به." else "Add a meeting, then photograph and keep its minutes attached.",
-                            color = Color(0xFF64748B), fontSize = 13.sp,
+                            color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp,
                         )
                         Spacer(Modifier.height(12.dp))
                         Button(
@@ -217,14 +217,14 @@ internal fun AssistantMeetingsScreen(
 private fun SectionTitle(title: String, count: Int) {
     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
         Text(title, modifier = Modifier.weight(1f), fontSize = 20.sp, fontWeight = FontWeight.Black)
-        Text(count.toString(), color = Color(0xFF64748B), fontWeight = FontWeight.Bold)
+        Text(count.toString(), color = adaptInk(Color(0xFF64748B)), fontWeight = FontWeight.Bold)
     }
 }
 
 @Composable
 private fun EmptyMeetingCard(text: String) {
-    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(18.dp)) {
-        Text(text, modifier = Modifier.fillMaxWidth().padding(18.dp), color = Color(0xFF64748B))
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(18.dp)) {
+        Text(text, modifier = Modifier.fillMaxWidth().padding(18.dp), color = adaptInk(Color(0xFF64748B)))
     }
 }
 
@@ -243,21 +243,21 @@ private fun MeetingOperationalCard(
     val attachments = remember(meeting.id, refresh) { store.loadPaths(meeting.id) }
     val recordings = remember(meeting.id, refresh) { store.loadAudioPaths(meeting.id) }
     var note by remember(meeting.id, refresh) { mutableStateOf(store.loadNote(meeting.id)) }
-    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(20.dp)) {
+    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(20.dp)) {
         Column(Modifier.fillMaxWidth().padding(15.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Default.Event, null, tint = Color(0xFF3F7AE0))
+                Icon(Icons.Default.Event, null, tint = adaptInk(Color(0xFF3F7AE0)))
                 Spacer(Modifier.width(8.dp))
                 Column(Modifier.weight(1f)) {
                     Text(meeting.title, fontWeight = FontWeight.Black, fontSize = 17.sp)
-                    meeting.dueAt?.let { Text(formatDateTime(it, languageCode), color = Color(0xFF3F7AE0), fontSize = 12.sp, fontWeight = FontWeight.SemiBold) }
+                    meeting.dueAt?.let { Text(formatDateTime(it, languageCode), color = adaptInk(Color(0xFF3F7AE0)), fontSize = 12.sp, fontWeight = FontWeight.SemiBold) }
                 }
             }
-            if (meeting.details.isNotBlank()) Text(meeting.details, color = Color(0xFF64748B), fontSize = 13.sp)
+            if (meeting.details.isNotBlank()) Text(meeting.details, color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp)
 
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-                IconButton(onClick = onEdit) { Icon(Icons.Default.Edit, if (languageCode == "ar") "تعديل الاجتماع" else "Edit meeting", tint = Color(0xFF3F7AE0)) }
-                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, if (languageCode == "ar") "حذف الاجتماع" else "Delete meeting", tint = Color(0xFFE62E3B)) }
+                IconButton(onClick = onEdit) { Icon(Icons.Default.Edit, if (languageCode == "ar") "تعديل الاجتماع" else "Edit meeting", tint = adaptInk(Color(0xFF3F7AE0))) }
+                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, if (languageCode == "ar") "حذف الاجتماع" else "Delete meeting", tint = adaptInk(Color(0xFFE62E3B))) }
             }
 
             OutlinedTextField(
@@ -308,17 +308,17 @@ private fun MeetingOperationalCard(
                 Button(
                     onClick = { openImage(context, store.uriForPath(path)) },
                     modifier = Modifier.fillMaxWidth(),
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFEEF7FF), contentColor = Color(0xFF173B65)),
+                    colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFEEF7FF)), contentColor = adaptInk(Color(0xFF173B65))),
                 ) {
                     Icon(Icons.Default.OpenInNew, null); Spacer(Modifier.width(6.dp)); Text(if (languageCode == "ar") "فتح صورة المحضر ${index + 1}" else "Open minutes photo ${index + 1}")
                 }
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Icon(Icons.Default.Description, null, tint = Color(0xFF0F9D72))
+                Icon(Icons.Default.Description, null, tint = adaptInk(Color(0xFF0F9D72)))
                 Spacer(Modifier.width(6.dp))
                 Text(
                     if (languageCode == "ar") "صور المحضر: ${attachments.size}" else "Minutes photos: ${attachments.size}",
-                    color = Color(0xFF475569), fontSize = 12.sp, fontWeight = FontWeight.SemiBold,
+                    color = adaptInk(Color(0xFF475569)), fontSize = 12.sp, fontWeight = FontWeight.SemiBold,
                 )
             }
         }

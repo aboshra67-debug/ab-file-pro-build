@@ -150,18 +150,18 @@ fun AssistantCalendarScreen(
     }
 
     Scaffold(
-        containerColor = Color(0xFFF6F7FB),
+        containerColor = adaptSurface(Color(0xFFF6F7FB)),
         topBar = {
             TopAppBar(
                 title = {
                     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxWidth()) {
-                        Text("التقويم والمواعيد", fontWeight = FontWeight.Black)
-                        Text("رتّب يومك واربط مواعيدك بالتنبيهات", fontSize = 12.sp, color = Color(0xFF64748B))
+                        Text(L("التقويم والمواعيد"), fontWeight = FontWeight.Black)
+                        Text(L("رتّب يومك واربط مواعيدك بالتنبيهات"), fontSize = 12.sp, color = adaptInk(Color(0xFF64748B)))
                     }
                 },
-                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, "رجوع") } },
-                actions = { IconButton(onClick = {}) { Icon(Icons.Default.Settings, "إعدادات") } },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.AutoMirrored.Filled.ArrowBack, L("رجوع")) } },
+                actions = { IconButton(onClick = {}) { Icon(Icons.Default.Settings, L("إعدادات")) } },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color.White)),
             )
         },
         floatingActionButton = {
@@ -170,7 +170,7 @@ fun AssistantCalendarScreen(
                 containerColor = Color(0xFFF44336),
                 contentColor = Color.White,
                 modifier = Modifier.navigationBarsPadding(),
-            ) { Icon(Icons.Default.Add, "إضافة موعد") }
+            ) { Icon(Icons.Default.Add, L("إضافة موعد")) }
         },
     ) { padding ->
         LazyColumn(
@@ -179,7 +179,7 @@ fun AssistantCalendarScreen(
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
             item {
-                Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(28.dp)) {
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(28.dp)) {
                     Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
                         MonthHeader(visibleMonth, onPrevious = { visibleMonth = visibleMonth.minusMonths(1) }, onNext = { visibleMonth = visibleMonth.plusMonths(1) })
                         CalendarGrid(visibleMonth, selectedDate, monthEntries, onSelect = { selectedDate = it })
@@ -188,15 +188,15 @@ fun AssistantCalendarScreen(
             }
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    Text("مواعيد اليوم", fontSize = 18.sp, fontWeight = FontWeight.Black, color = Color(0xFF0F172A))
-                    Text(arabicDate(selectedDate), color = Color(0xFF64748B), fontSize = 13.sp)
+                    Text(L("مواعيد اليوم"), fontSize = 18.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF0F172A)))
+                    Text(arabicDate(selectedDate), color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp)
                 }
             }
             if (selectedEvents.isEmpty()) {
                 item {
-                    Card(colors = CardDefaults.cardColors(containerColor = Color.White), shape = RoundedCornerShape(24.dp)) {
+                    Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)), shape = RoundedCornerShape(24.dp)) {
                         Box(Modifier.fillMaxWidth().padding(24.dp), contentAlignment = Alignment.Center) {
-                            Text("لا توجد مواعيد في هذا اليوم\nاضغط + لإضافة موعد", textAlign = TextAlign.Center, color = Color(0xFF64748B))
+                            Text(L("لا توجد مواعيد في هذا اليوم\nاضغط + لإضافة موعد"), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF64748B)))
                         }
                     }
                 }
@@ -218,7 +218,7 @@ private fun MonthHeader(month: YearMonth, onPrevious: () -> Unit, onNext: () -> 
             text = monthName(month),
             fontWeight = FontWeight.Black,
             fontSize = 22.sp,
-            color = Color(0xFF111827),
+            color = adaptInk(Color(0xFF111827)),
         )
         MonthNavButton(text = "›", onClick = onPrevious)
     }
@@ -228,8 +228,8 @@ private fun MonthHeader(month: YearMonth, onPrevious: () -> Unit, onNext: () -> 
 private fun MonthNavButton(text: String, onClick: () -> Unit) {
     Surface(
         modifier = Modifier.size(44.dp).clip(CircleShape).clickable(onClick = onClick),
-        color = Color(0xFFF6F6F8),
-    ) { Box(contentAlignment = Alignment.Center) { Text(text, fontSize = 26.sp, color = Color(0xFF111827)) } }
+        color = adaptSurface(Color(0xFFF6F6F8)),
+    ) { Box(contentAlignment = Alignment.Center) { Text(text, fontSize = 26.sp, color = adaptInk(Color(0xFF111827))) } }
 }
 
 @Composable
@@ -243,7 +243,7 @@ private fun CalendarGrid(month: YearMonth, selectedDate: LocalDate, entries: Lis
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             weekdayLabels.forEach { day ->
-                Text(day, modifier = Modifier.weight(1f), textAlign = TextAlign.Center, color = Color(0xFF475569), fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                Text(day, modifier = Modifier.weight(1f), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF475569)), fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
             }
         }
         var index = 0
@@ -278,8 +278,8 @@ private fun DayCell(
 ) {
     val background = when {
         isSelected -> Brush.linearGradient(listOf(Color(0xFFFF6A3D), Color(0xFFF44336)))
-        isToday -> Brush.linearGradient(listOf(Color(0xFFFFF1EE), Color(0xFFFFE0DA)))
-        else -> Brush.linearGradient(listOf(Color(0xFFF8F9FB), Color(0xFFF8F9FB)))
+        isToday -> Brush.linearGradient(listOf(adaptSurface(Color(0xFFFFF1EE)), adaptSurface(Color(0xFFFFE0DA))))
+        else -> Brush.linearGradient(listOf(adaptSurface(Color(0xFFF8F9FB)), adaptSurface(Color(0xFFF8F9FB))))
     }
     Box(
         modifier = modifier.height(56.dp).clip(RoundedCornerShape(16.dp)).background(background).clickable(enabled = date != null, onClick = onClick),
@@ -287,7 +287,7 @@ private fun DayCell(
     ) {
         if (date != null) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                Text(date.dayOfMonth.toString(), color = if (isSelected) Color.White else Color(0xFF111827), fontWeight = FontWeight.Bold, fontSize = 22.sp)
+                Text(date.dayOfMonth.toString(), color = if (isSelected) Color.White else adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold, fontSize = 22.sp)
                 if (hasEvent) {
                     Spacer(Modifier.height(2.dp))
                     Box(Modifier.size(6.dp).clip(CircleShape).background(if (isSelected) Color.White else Color(0xFFF44336)))
@@ -304,13 +304,13 @@ private fun CalendarEventCard(event: AssistantEntry, onEdit: () -> Unit, onDelet
     val startCal = Calendar.getInstance().apply { timeInMillis = startAt }
     val endAt = event.secondary.toLongOrNull() ?: (startAt + 60*60*1000)
     val endCal = Calendar.getInstance().apply { timeInMillis = endAt }
-    val chipColor = if (event.category == AssistantCategory.WORK) Color(0xFFFFE6E6) else Color(0xFFE8FFF2)
-    val chipText = if (event.category == AssistantCategory.WORK) Color(0xFFD32F2F) else Color(0xFF148F5A)
-    val cardTint = if (event.category == AssistantCategory.WORK) Color(0xFFFFF6F5) else Color(0xFFF4FFF8)
+    val chipColor = if (event.category == AssistantCategory.WORK) adaptSurface(Color(0xFFFFE6E6)) else adaptSurface(Color(0xFFE8FFF2))
+    val chipText = if (event.category == AssistantCategory.WORK) adaptInk(Color(0xFFD32F2F)) else adaptInk(Color(0xFF148F5A))
+    val cardTint = if (event.category == AssistantCategory.WORK) adaptSurface(Color(0xFFFFF6F5)) else adaptSurface(Color(0xFFF4FFF8))
     Card(colors = CardDefaults.cardColors(containerColor = cardTint), shape = RoundedCornerShape(26.dp)) {
         Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
-            Box(Modifier.size(width = 98.dp, height = 88.dp).clip(RoundedCornerShape(20.dp)).background(if (event.category == AssistantCategory.WORK) Color(0xFFEAF2FF) else Color(0xFFEAFBF4)), contentAlignment = Alignment.Center) {
-                Icon(if (event.category == AssistantCategory.WORK) Icons.Default.BusinessCenter else Icons.Default.Person, null, tint = if (event.category == AssistantCategory.WORK) Color(0xFF3973D6) else Color(0xFF19A566), modifier = Modifier.size(42.dp))
+            Box(Modifier.size(width = 98.dp, height = 88.dp).clip(RoundedCornerShape(20.dp)).background(if (event.category == AssistantCategory.WORK) adaptSurface(Color(0xFFEAF2FF)) else adaptSurface(Color(0xFFEAFBF4))), contentAlignment = Alignment.Center) {
+                Icon(if (event.category == AssistantCategory.WORK) Icons.Default.BusinessCenter else Icons.Default.Person, null, tint = if (event.category == AssistantCategory.WORK) adaptInk(Color(0xFF3973D6)) else adaptInk(Color(0xFF19A566)), modifier = Modifier.size(42.dp))
             }
             Column(Modifier.weight(1f).padding(horizontal = 12.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
                 Surface(color = chipColor, shape = RoundedCornerShape(999.dp)) {
@@ -319,31 +319,31 @@ private fun CalendarEventCard(event: AssistantEntry, onEdit: () -> Unit, onDelet
                         Text(if (event.category == AssistantCategory.WORK) "عمل" else "شخصي", color = chipText, fontSize = 12.sp, fontWeight = FontWeight.Bold)
                     }
                 }
-                Text(event.title, fontWeight = FontWeight.Black, fontSize = 18.sp, color = Color(0xFF111827))
+                Text(event.title, fontWeight = FontWeight.Black, fontSize = 18.sp, color = adaptInk(Color(0xFF111827)))
                 if (event.details.isNotBlank()) {
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                        Icon(Icons.Default.LocationOn, null, tint = Color(0xFF64748B), modifier = Modifier.size(16.dp))
-                        Text(event.details, color = Color(0xFF64748B), fontSize = 13.sp)
+                        Icon(Icons.Default.LocationOn, null, tint = adaptInk(Color(0xFF64748B)), modifier = Modifier.size(16.dp))
+                        Text(event.details, color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp)
                     }
                 }
                 if (event.enabled) {
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                        Icon(Icons.Default.NotificationsActive, null, tint = Color(0xFFF44336), modifier = Modifier.size(16.dp))
-                        Text(reminderCaption((event.amount ?: 0.0).toInt()), color = Color(0xFFF44336), fontSize = 12.sp)
+                        Icon(Icons.Default.NotificationsActive, null, tint = adaptInk(Color(0xFFF44336)), modifier = Modifier.size(16.dp))
+                        Text(reminderCaption((event.amount ?: 0.0).toInt()), color = adaptInk(Color(0xFFF44336)), fontSize = 12.sp)
                     }
                 }
             }
             Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(4.dp)) {
                 Box(Modifier.size(34.dp).clip(CircleShape).clickable { expanded = true }, contentAlignment = Alignment.Center) {
-                    Icon(Icons.Default.MoreVert, null, tint = Color(0xFF111827))
+                    Icon(Icons.Default.MoreVert, null, tint = adaptInk(Color(0xFF111827)))
                 }
-                Icon(Icons.Default.AccessTime, null, tint = Color(0xFFF44336), modifier = Modifier.size(20.dp))
-                Text(formatTime(startCal), fontWeight = FontWeight.Bold, color = Color(0xFF111827), fontSize = 14.sp)
-                Text("—", color = Color(0xFFF44336))
-                Text(formatTime(endCal), fontWeight = FontWeight.Bold, color = Color(0xFF111827), fontSize = 14.sp)
+                Icon(Icons.Default.AccessTime, null, tint = adaptInk(Color(0xFFF44336)), modifier = Modifier.size(20.dp))
+                Text(formatTime(startCal), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF111827)), fontSize = 14.sp)
+                Text("—", color = adaptInk(Color(0xFFF44336)))
+                Text(formatTime(endCal), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF111827)), fontSize = 14.sp)
                 DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
-                    DropdownMenuItem(text = { Text("تعديل") }, onClick = { expanded = false; onEdit() }, leadingIcon = { Icon(Icons.Default.Edit, null) })
-                    DropdownMenuItem(text = { Text("حذف") }, onClick = { expanded = false; onDelete() }, leadingIcon = { Icon(Icons.Default.DeleteOutline, null) })
+                    DropdownMenuItem(text = { Text(L("تعديل")) }, onClick = { expanded = false; onEdit() }, leadingIcon = { Icon(Icons.Default.Edit, null) })
+                    DropdownMenuItem(text = { Text(L("حذف")) }, onClick = { expanded = false; onDelete() }, leadingIcon = { Icon(Icons.Default.DeleteOutline, null) })
                 }
             }
         }
@@ -382,14 +382,14 @@ private fun CalendarEventDialog(
         }
         val intent = Intent(Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM).apply { data = Uri.parse("package:${context.packageName}") }
         runCatching { exactAlarmLauncher.launch(intent) }.onFailure {
-            permissionMessage = "افتح إعدادات التطبيق واسمح بالمنبهات الدقيقة."
+            permissionMessage = L("افتح إعدادات التطبيق واسمح بالمنبهات الدقيقة.")
             context.startActivity(Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS).apply { data = Uri.parse("package:${context.packageName}") })
         }
     }
     val notificationPermissionLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
         if (granted) requestExactAlarmAccess() else {
             reminderEnabled = false
-            permissionMessage = "لا يمكن تشغيل التنبيه بدون السماح بالإشعارات."
+            permissionMessage = L("لا يمكن تشغيل التنبيه بدون السماح بالإشعارات.")
         }
     }
 
@@ -398,26 +398,26 @@ private fun CalendarEventDialog(
         title = { Text(if (initial == null) "إضافة موعد" else "تعديل الموعد", fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                OutlinedTextField(title, { title = it.take(240) }, label = { Text("عنوان الموعد") }, singleLine = true, modifier = Modifier.fillMaxWidth())
-                OutlinedTextField(location, { location = it.take(240) }, label = { Text("المكان") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                OutlinedTextField(title, { title = it.take(240) }, label = { Text(L("عنوان الموعد")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
+                OutlinedTextField(location, { location = it.take(240) }, label = { Text(L("المكان")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    FilterChip(category == AssistantCategory.PERSONAL, { category = AssistantCategory.PERSONAL }, { Text("شخصي") })
-                    FilterChip(category == AssistantCategory.WORK, { category = AssistantCategory.WORK }, { Text("عمل") })
+                    FilterChip(category == AssistantCategory.PERSONAL, { category = AssistantCategory.PERSONAL }, { Text(L("شخصي")) })
+                    FilterChip(category == AssistantCategory.WORK, { category = AssistantCategory.WORK }, { Text(L("عمل")) })
                 }
                 OutlinedButton(onClick = { pickDateTime(context, startAt) { startAt = it; if (endAt <= startAt) endAt = startAt + 60*60*1000 } }, modifier = Modifier.fillMaxWidth()) {
                     Icon(Icons.Default.DateRange, null)
                     Spacer(Modifier.size(6.dp))
-                    Text("بداية الموعد: ${formatDateTime(startAt)}")
+                    Text(L("بداية الموعد: ${formatDateTime(startAt)}"))
                 }
                 OutlinedButton(onClick = { pickDateTime(context, endAt) { endAt = it } }, modifier = Modifier.fillMaxWidth()) {
                     Icon(Icons.Default.AccessTime, null)
                     Spacer(Modifier.size(6.dp))
-                    Text("نهاية الموعد: ${formatDateTime(endAt)}")
+                    Text(L("نهاية الموعد: ${formatDateTime(endAt)}"))
                 }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                    Icon(Icons.Default.NotificationsActive, null, tint = Color(0xFFF44336))
+                    Icon(Icons.Default.NotificationsActive, null, tint = adaptInk(Color(0xFFF44336)))
                     Spacer(Modifier.size(8.dp))
-                    Text("تنبيه للموعد", Modifier.weight(1f))
+                    Text(L("تنبيه للموعد"), Modifier.weight(1f))
                     Switch(checked = reminderEnabled, onCheckedChange = { checked ->
                         if (!checked) {
                             reminderEnabled = false
@@ -450,9 +450,9 @@ private fun CalendarEventDialog(
             Button(onClick = {
                 val usableReminder = reminderEnabled && hasNotificationPermission(context) && TaskAlarmScheduler.hasExactAlarmAccess(context)
                 onSave(title, location, category, startAt, endAt, usableReminder, if (usableReminder) reminderOffset.minutes else 0)
-            }, enabled = title.isNotBlank() && endAt > startAt) { Text("حفظ") }
+            }, enabled = title.isNotBlank() && endAt > startAt) { Text(L("حفظ")) }
         },
-        dismissButton = { TextButton(onClick = onDismiss) { Text("إلغاء") } },
+        dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },
     )
 }
 

@@ -89,12 +89,12 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
     }
 
     Scaffold(
-        containerColor = Color(0xFFF8FAFC),
+        containerColor = adaptSurface(Color(0xFFF8FAFC)),
         topBar = {
             TopAppBar(
                 title = {
                     Column {
-                        Text("شات العائلة", fontWeight = FontWeight.Black)
+                        Text(L("شات العائلة"), fontWeight = FontWeight.Black)
                         Text(
                             when {
                                 // P17: chat needs an explicit family link; say so instead of "reconnecting" forever.
@@ -103,19 +103,19 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
                                 else -> "${profile.familyName} • جارٍ إعادة الاتصال"
                             },
                             fontSize = 11.sp,
-                            color = if (online) Color(0xFF0DAA60) else Color(0xFF94A3B8),
+                            color = if (online) adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF94A3B8)),
                         )
                     }
                 },
                 navigationIcon = {
-                    IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, "رجوع") }
+                    IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, L("رجوع")) }
                 },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color.White)),
             )
         },
         bottomBar = {
             Row(
-                modifier = Modifier.fillMaxWidth().background(Color.White).imePadding().padding(10.dp),
+                modifier = Modifier.fillMaxWidth().background(adaptSurface(Color.White)).imePadding().padding(10.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
@@ -123,7 +123,7 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
                     value = draft,
                     onValueChange = { draft = it.take(2000) },
                     modifier = Modifier.weight(1f),
-                    placeholder = { Text("اكتب رسالة...") },
+                    placeholder = { Text(L("اكتب رسالة...")) },
                     maxLines = 4,
                     shape = RoundedCornerShape(22.dp),
                 )
@@ -150,7 +150,7 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
                     shape = CircleShape,
                 ) {
                     if (sending) CircularProgressIndicator(modifier = Modifier.size(22.dp), strokeWidth = 2.dp)
-                    else Icon(Icons.Default.Send, "إرسال")
+                    else Icon(Icons.Default.Send, L("إرسال"))
                 }
             }
         },
@@ -164,7 +164,7 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
             if (messages.isEmpty()) {
                 item {
                     Box(Modifier.fillParentMaxSize().padding(top = 120.dp), contentAlignment = Alignment.TopCenter) {
-                        Text("ابدأ أول رسالة بين الأجهزة المرتبطة 👋", color = Color(0xFF94A3B8))
+                        Text(L("ابدأ أول رسالة بين الأجهزة المرتبطة 👋"), color = adaptInk(Color(0xFF94A3B8)))
                     }
                 }
             } else {
@@ -186,12 +186,12 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
                             shadowElevation = 1.dp,
                         ) {
                             Column(Modifier.padding(horizontal = 13.dp, vertical = 9.dp)) {
-                                if (!mine) Text(message.senderName, fontSize = 11.sp, fontWeight = FontWeight.Bold, color = Color(0xFFFF2635))
-                                Text(message.body, fontSize = 16.sp, color = Color(0xFF111827))
+                                if (!mine) Text(message.senderName, fontSize = 11.sp, fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFFFF2635)))
+                                Text(message.body, fontSize = 16.sp, color = adaptInk(Color(0xFF111827)))
                                 Text(
                                     formatChatTime(message.createdAt),
                                     fontSize = 10.sp,
-                                    color = Color(0xFF94A3B8),
+                                    color = adaptInk(Color(0xFF94A3B8)),
                                     modifier = Modifier.align(Alignment.End),
                                 )
                             }

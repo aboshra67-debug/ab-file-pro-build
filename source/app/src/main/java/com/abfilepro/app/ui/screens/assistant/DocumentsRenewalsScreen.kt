@@ -34,8 +34,8 @@ import java.util.Locale
 private val DocsRed = Color(0xFFFF2D32)
 private val DocsGreen = Color(0xFF12A86B)
 private val DocsAmber = Color(0xFFF2A800)
-private val DocsInk = Color(0xFF111827)
-private val DocsMuted = Color(0xFF667085)
+private val DocsInk get() = adaptInk(Color(0xFF111827))
+private val DocsMuted get() = adaptInk(Color(0xFF667085))
 private enum class DocumentFilter { ALL, SOON, EXPIRED }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -77,12 +77,12 @@ internal fun DocumentsRenewalsScreen(
     val near = docs.firstOrNull { DocumentRenewalCodec.status(it) == DocumentExpiryStatus.SOON }
 
     Scaffold(
-        containerColor = Color(0xFFFCFCFD),
+        containerColor = adaptSurface(Color(0xFFFCFCFD)),
         topBar = {
             TopAppBar(
-                title = { Text("المستندات والتجديدات", fontWeight = FontWeight.Black, fontSize = 26.sp) },
-                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, "رجوع") } },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+                title = { Text(L("المستندات والتجديدات"), fontWeight = FontWeight.Black, fontSize = 26.sp) },
+                navigationIcon = { IconButton(onClick = onBack) { Icon(Icons.Default.ArrowBack, L("رجوع")) } },
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color.White)),
             )
         },
     ) { padding ->
@@ -91,13 +91,13 @@ internal fun DocumentsRenewalsScreen(
             verticalArrangement = Arrangement.spacedBy(12.dp),
         ) {
             item {
-                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = Color(0xFFE9FFF5))) {
+                Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFE9FFF5)))) {
                     Row(Modifier.fillMaxWidth().padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
                         Icon(Icons.Default.Security, null, tint = DocsGreen, modifier = Modifier.size(46.dp))
                         Spacer(Modifier.width(14.dp))
                         Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                            Text("محفوظة بأمان على جهازك", fontWeight = FontWeight.Black, fontSize = 20.sp, color = DocsInk)
-                            Text("بياناتك تبقى في جهازك فقط ولا يتم مشاركتها مع أي جهة.", color = DocsMuted, textAlign = TextAlign.Right)
+                            Text(L("محفوظة بأمان على جهازك"), fontWeight = FontWeight.Black, fontSize = 20.sp, color = DocsInk)
+                            Text(L("بياناتك تبقى في جهازك فقط ولا يتم مشاركتها مع أي جهة."), color = DocsMuted, textAlign = TextAlign.Right)
                         }
                     }
                 }
@@ -108,14 +108,14 @@ internal fun DocumentsRenewalsScreen(
                     onValueChange = { query = it.take(80) },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true,
-                    placeholder = { Text("ابحث عن مستند...") },
+                    placeholder = { Text(L("ابحث عن مستند...")) },
                     leadingIcon = { Icon(Icons.Default.Search, null) },
                     shape = RoundedCornerShape(28.dp),
                 )
             }
             item {
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    listOf(DocumentFilter.EXPIRED to "منتهي", DocumentFilter.SOON to "قريب", DocumentFilter.ALL to "الكل").forEach { (value, label) ->
+                    listOf(DocumentFilter.EXPIRED to L("منتهي"), DocumentFilter.SOON to L("قريب"), DocumentFilter.ALL to L("الكل")).forEach { (value, label) ->
                         val active = value == filter
                         Surface(
                             modifier = Modifier.weight(1f).clickable { filter = value },
@@ -129,15 +129,15 @@ internal fun DocumentsRenewalsScreen(
             }
             near?.let { entry ->
                 item {
-                    Card(modifier = Modifier.fillMaxWidth().clickable { editing = entry }, shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = Color(0xFFFFF0F0))) {
+                    Card(modifier = Modifier.fillMaxWidth().clickable { editing = entry }, shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF0F0)))) {
                         Row(Modifier.fillMaxWidth().padding(18.dp), verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Default.NotificationsActive, null, tint = DocsRed, modifier = Modifier.size(46.dp))
                             Spacer(Modifier.width(14.dp))
                             Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                                 val days = DocumentRenewalCodec.daysUntilExpiry(entry) ?: 0
-                                Text("تجديد قريب خلال $days يومًا", fontWeight = FontWeight.Black, fontSize = 20.sp, color = DocsRed)
+                                Text(L("تجديد قريب خلال $days يومًا"), fontWeight = FontWeight.Black, fontSize = 20.sp, color = DocsRed)
                                 Text(entry.title, fontWeight = FontWeight.Bold, color = DocsInk)
-                                Text("يرجى التجديد في الوقت المناسب.", color = DocsMuted)
+                                Text(L("يرجى التجديد في الوقت المناسب."), color = DocsMuted)
                             }
                         }
                     }
@@ -145,7 +145,7 @@ internal fun DocumentsRenewalsScreen(
             }
             if (visible.isEmpty()) {
                 item {
-                    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+                    Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
                         Text(if (docs.isEmpty()) "لا توجد مستندات محفوظة" else "لا توجد نتائج مطابقة", modifier = Modifier.fillMaxWidth().padding(34.dp), textAlign = TextAlign.Center, color = DocsMuted)
                     }
                 }
@@ -155,7 +155,7 @@ internal fun DocumentsRenewalsScreen(
                     val status = DocumentRenewalCodec.status(entry)
                     val statusText = when (status) { DocumentExpiryStatus.VALID -> "ساري"; DocumentExpiryStatus.SOON -> "قريب"; DocumentExpiryStatus.EXPIRED -> "منتهي" }
                     val statusColor = when (status) { DocumentExpiryStatus.VALID -> DocsGreen; DocumentExpiryStatus.SOON -> DocsAmber; DocumentExpiryStatus.EXPIRED -> DocsRed }
-                    Card(modifier = Modifier.fillMaxWidth().clickable { editing = entry }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = Color.White)) {
+                    Card(modifier = Modifier.fillMaxWidth().clickable { editing = entry }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
                         Row(Modifier.fillMaxWidth().padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Default.Description, null, tint = statusColor, modifier = Modifier.size(40.dp))
                             Spacer(Modifier.width(12.dp))
@@ -167,7 +167,7 @@ internal fun DocumentsRenewalsScreen(
                                 }
                                 Text(kindLine, color = DocsMuted, fontSize = 12.sp)
                                 val date = DocumentRenewalCodec.expiryDate(entry)?.format(DateTimeFormatter.ofPattern("d MMMM yyyy", Locale("ar"))).orEmpty()
-                                if (date.isNotBlank()) Text("تاريخ الانتهاء: $date", color = DocsMuted, fontSize = 12.sp)
+                                if (date.isNotBlank()) Text(L("تاريخ الانتهاء: $date"), color = DocsMuted, fontSize = 12.sp)
                                 Text(statusText, color = statusColor, fontWeight = FontWeight.Black)
                             }
                             Icon(Icons.Default.ChevronLeft, null, tint = DocsInk)
@@ -182,13 +182,13 @@ internal fun DocumentsRenewalsScreen(
                         modifier = Modifier.weight(1f).height(60.dp),
                         shape = RoundedCornerShape(18.dp),
                         colors = ButtonDefaults.buttonColors(containerColor = DocsRed),
-                    ) { Icon(Icons.Default.Add, null); Spacer(Modifier.width(6.dp)); Text("إضافة مستند", fontWeight = FontWeight.Black) }
+                    ) { Icon(Icons.Default.Add, null); Spacer(Modifier.width(6.dp)); Text(L("إضافة مستند"), fontWeight = FontWeight.Black) }
                     OutlinedButton(
                         onClick = { ensureReminderAccess() },
                         enabled = docs.isNotEmpty(),
                         modifier = Modifier.weight(1f).height(60.dp),
                         shape = RoundedCornerShape(18.dp),
-                    ) { Icon(Icons.Default.Alarm, null); Spacer(Modifier.width(6.dp)); Text("إضافة تنبيه تجديد", fontWeight = FontWeight.Black) }
+                    ) { Icon(Icons.Default.Alarm, null); Spacer(Modifier.width(6.dp)); Text(L("إضافة تنبيه تجديد"), fontWeight = FontWeight.Black) }
                 }
                 Spacer(Modifier.height(24.dp))
             }
@@ -257,11 +257,11 @@ private fun DocumentEditorDialog(
                     modifier = Modifier.fillMaxWidth().padding(start = 12.dp, end = 20.dp, top = 14.dp, bottom = 10.dp),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
-                    IconButton(onClick = onDismiss) { Icon(Icons.Default.Close, "إغلاق", tint = DocsMuted) }
+                    IconButton(onClick = onDismiss) { Icon(Icons.Default.Close, L("إغلاق"), tint = DocsMuted) }
                     Spacer(Modifier.weight(1f))
                     Column(horizontalAlignment = Alignment.End) {
                         Text(if (existing == null) "إضافة مستند" else "تعديل المستند", fontWeight = FontWeight.Black, fontSize = 22.sp, color = DocsInk)
-                        Text("احفظ بيانات المستند وحدد موعد التجديد", color = DocsMuted, fontSize = 12.sp)
+                        Text(L("احفظ بيانات المستند وحدد موعد التجديد"), color = DocsMuted, fontSize = 12.sp)
                     }
                 }
                 HorizontalDivider(color = Color(0xFFEAECF0))
@@ -272,14 +272,14 @@ private fun DocumentEditorDialog(
                     contentPadding = PaddingValues(vertical = 16.dp),
                 ) {
                     item {
-                        Text("البيانات الأساسية", fontWeight = FontWeight.Black, color = DocsInk, fontSize = 15.sp)
+                        Text(L("البيانات الأساسية"), fontWeight = FontWeight.Black, color = DocsInk, fontSize = 15.sp)
                     }
                     item {
                         OutlinedTextField(
                             value = title,
                             onValueChange = { title = it.take(80) },
-                            label = { Text("اسم المستند") },
-                            placeholder = { Text("مثال: عقد إيجار الشقة") },
+                            label = { Text(L("اسم المستند")) },
+                            placeholder = { Text(L("مثال: عقد إيجار الشقة")) },
                             singleLine = true,
                             modifier = Modifier.fillMaxWidth(),
                             shape = RoundedCornerShape(16.dp),
@@ -294,7 +294,7 @@ private fun DocumentEditorDialog(
                                 value = kind.arabicName,
                                 onValueChange = {},
                                 readOnly = true,
-                                label = { Text("نوع المستند") },
+                                label = { Text(L("نوع المستند")) },
                                 trailingIcon = { ExposedDropdownMenuDefaults.TrailingIcon(expanded = kindMenuExpanded) },
                                 modifier = Modifier.fillMaxWidth().menuAnchor(),
                                 shape = RoundedCornerShape(16.dp),
@@ -334,8 +334,8 @@ private fun DocumentEditorDialog(
                             OutlinedTextField(
                                 value = customType,
                                 onValueChange = { customType = it.take(60) },
-                                label = { Text("اسم نوع المستند") },
-                                placeholder = { Text("مثال: شهادة أو تصريح") },
+                                label = { Text(L("اسم نوع المستند")) },
+                                placeholder = { Text(L("مثال: شهادة أو تصريح")) },
                                 singleLine = true,
                                 modifier = Modifier.fillMaxWidth(),
                                 shape = RoundedCornerShape(16.dp),
@@ -348,8 +348,8 @@ private fun DocumentEditorDialog(
                             OutlinedTextField(
                                 value = country,
                                 onValueChange = { country = it.take(60) },
-                                label = { Text("الدولة") },
-                                placeholder = { Text("مثال: السعودية") },
+                                label = { Text(L("الدولة")) },
+                                placeholder = { Text(L("مثال: السعودية")) },
                                 singleLine = true,
                                 modifier = Modifier.fillMaxWidth(),
                                 shape = RoundedCornerShape(16.dp),
@@ -404,15 +404,15 @@ private fun DocumentEditorDialog(
                         }
                     }
                     if (!dateOrderValid) {
-                        item { Text("تاريخ البداية أو الإصدار يجب أن يسبق تاريخ الانتهاء.", color = DocsRed, fontSize = 12.sp) }
+                        item { Text(L("تاريخ البداية أو الإصدار يجب أن يسبق تاريخ الانتهاء."), color = DocsRed, fontSize = 12.sp) }
                     }
                     item {
                         OutlinedTextField(
                             value = leadText,
                             onValueChange = { leadText = it.filter(Char::isDigit).take(3) },
-                            label = { Text("التنبيه قبل الانتهاء") },
-                            suffix = { Text("يوم") },
-                            supportingText = { Text("من 0 إلى 365 يومًا") },
+                            label = { Text(L("التنبيه قبل الانتهاء")) },
+                            suffix = { Text(L("يوم")) },
+                            supportingText = { Text(L("من 0 إلى 365 يومًا")) },
                             singleLine = true,
                             modifier = Modifier.fillMaxWidth(),
                             shape = RoundedCornerShape(16.dp),
@@ -423,8 +423,8 @@ private fun DocumentEditorDialog(
                         OutlinedTextField(
                             value = details,
                             onValueChange = { details = it.take(240) },
-                            label = { Text("ملاحظات") },
-                            placeholder = { Text("أي بيانات إضافية عن المستند") },
+                            label = { Text(L("ملاحظات")) },
+                            placeholder = { Text(L("أي بيانات إضافية عن المستند")) },
                             minLines = 2,
                             maxLines = 4,
                             modifier = Modifier.fillMaxWidth(),
@@ -440,10 +440,10 @@ private fun DocumentEditorDialog(
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
                     if (onDelete != null) {
-                        TextButton(onClick = onDelete) { Text("حذف", color = DocsRed, fontWeight = FontWeight.Bold) }
+                        TextButton(onClick = onDelete) { Text(L("حذف"), color = DocsRed, fontWeight = FontWeight.Bold) }
                     }
                     Spacer(Modifier.weight(1f))
-                    OutlinedButton(onClick = onDismiss, shape = RoundedCornerShape(14.dp)) { Text("إلغاء") }
+                    OutlinedButton(onClick = onDismiss, shape = RoundedCornerShape(14.dp)) { Text(L("إلغاء")) }
                     Button(
                         enabled = valid,
                         onClick = {
@@ -465,7 +465,7 @@ private fun DocumentEditorDialog(
                     ) {
                         Icon(Icons.Default.Check, null)
                         Spacer(Modifier.width(6.dp))
-                        Text("حفظ", fontWeight = FontWeight.Black)
+                        Text(L("حفظ"), fontWeight = FontWeight.Black)
                     }
                 }
             }

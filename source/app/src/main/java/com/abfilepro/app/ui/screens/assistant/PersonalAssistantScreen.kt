@@ -178,7 +178,7 @@ fun PersonalAssistantScreen(
                                 onClick = { quickModule = module },
                                 label = { Text(module.presentation(language).title, maxLines = 1) },
                                 colors = AssistChipDefaults.assistChipColors(
-                                    containerColor = if (active) Color(0xFF173B65) else Color(0xFFF1F5F9),
+                                    containerColor = if (active) Color(0xFF173B65) else adaptSurface(Color(0xFFF1F5F9)),
                                     labelColor = if (active) Color.White else Color(0xFF334155),
                                 ),
                                 border = null,
@@ -218,7 +218,7 @@ fun PersonalAssistantScreen(
         // Keeps BOTH top navigation buttons fully below the phone's clock/camera cutout,
         // and prevents child screens using statusBarsPadding from adding it twice.
         // This is visual-only: navigation destinations and module data stay unchanged.
-        Column(Modifier.fillMaxSize().background(Color(0xFFF7F9FC)).statusBarsPadding()) {
+        Column(Modifier.fillMaxSize().background(adaptSurface(Color(0xFFF7F9FC))).statusBarsPadding()) {
             AssistantModuleNavigationStrip(
                 onBackToModules = { selectedModule = null },
                 onAppHome = onBack,
@@ -325,7 +325,7 @@ fun PersonalAssistantScreen(
 
 
     Scaffold(
-        containerColor = Color(0xFFF7F9FC),
+        containerColor = adaptSurface(Color(0xFFF7F9FC)),
         topBar = {
             TopAppBar(
                 title = {
@@ -343,7 +343,7 @@ fun PersonalAssistantScreen(
                         Icon(Icons.Default.ArrowBack, tr(language, "رجوع", "Back", "Retour"))
                     }
                 },
-                colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White),
+                colors = TopAppBarDefaults.topAppBarColors(containerColor = adaptSurface(Color.White)),
             )
         },
         floatingActionButton = {
@@ -426,7 +426,7 @@ private fun TodaySummaryCard(tasks: Int, appointments: Int, family: Int, medicat
     )
     Card(
         shape = RoundedCornerShape(24.dp),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         elevation = CardDefaults.cardElevation(2.dp),
     ) {
         Row(
@@ -435,8 +435,8 @@ private fun TodaySummaryCard(tasks: Int, appointments: Int, family: Int, medicat
         ) {
             metrics.forEach { (value, label) ->
                 Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.weight(1f)) {
-                    Text(value.toString(), fontSize = 22.sp, fontWeight = FontWeight.Black, color = Color(0xFF173B65))
-                    Text(label, fontSize = 11.sp, color = Color(0xFF64748B), maxLines = 1)
+                    Text(value.toString(), fontSize = 22.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF173B65)))
+                    Text(label, fontSize = 11.sp, color = adaptInk(Color(0xFF64748B)), maxLines = 1)
                 }
             }
         }
@@ -491,7 +491,7 @@ private fun AssistantModuleCard(module: AssistantModule, onClick: () -> Unit) {
     Card(
         modifier = Modifier.fillMaxWidth().height(154.dp).clickable(onClick = onClick),
         shape = RoundedCornerShape(23.dp),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
         Column(Modifier.fillMaxSize().padding(15.dp), verticalArrangement = Arrangement.SpaceBetween) {
@@ -501,7 +501,7 @@ private fun AssistantModuleCard(module: AssistantModule, onClick: () -> Unit) {
             Column {
                 Text(presentation.title, fontWeight = FontWeight.ExtraBold, maxLines = 2, overflow = TextOverflow.Ellipsis, lineHeight = 19.sp)
                 Spacer(Modifier.height(4.dp))
-                Text(presentation.subtitle, color = Color(0xFF64748B), fontSize = 11.sp, maxLines = 2, overflow = TextOverflow.Ellipsis, lineHeight = 15.sp)
+                Text(presentation.subtitle, color = adaptInk(Color(0xFF64748B)), fontSize = 11.sp, maxLines = 2, overflow = TextOverflow.Ellipsis, lineHeight = 15.sp)
             }
         }
     }
@@ -514,7 +514,7 @@ private fun AssistantModuleNavigationStrip(
     onAppHome: () -> Unit,
 ) {
     val language = LocalAppLanguage.current
-    Surface(color = Color(0xFFF7F9FC), shadowElevation = 2.dp) {
+    Surface(color = adaptSurface(Color(0xFFF7F9FC)), shadowElevation = 2.dp) {
         Row(
             modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
             horizontalArrangement = Arrangement.spacedBy(10.dp),
