@@ -34,6 +34,9 @@ import com.abfilepro.app.assistant.TaskAlarmScheduler
 import java.text.DateFormat
 import java.util.Calendar
 import java.util.Date
+import com.abfilepro.app.assistant.Recurrence
+import com.abfilepro.app.assistant.RecurrencePending
+import com.abfilepro.app.assistant.RecurrenceStore
 
 private enum class TaskTab { TODAY, UPCOMING, COMPLETED }
 
@@ -50,6 +53,7 @@ internal fun AssistantTasksScreen(
     var tab by remember { mutableStateOf(TaskTab.TODAY) }
     var editing by remember { mutableStateOf<AssistantEntry?>(null) }
     var adding by remember { mutableStateOf(false) }
+    val taskContext = LocalContext.current
     val now = System.currentTimeMillis()
     val day = Calendar.getInstance().apply {
         timeInMillis = now
@@ -73,11 +77,13 @@ internal fun AssistantTasksScreen(
             initial = editing,
             defaultCategory = editing?.category ?: defaultCategory,
             onDismiss = { adding = false; editing = null },
-            onSave = { title, details, category, dueAt, reminder ->
+            onSave = { title, details, category, dueAt, reminder, repeat ->
                 val old = editing
                 if (old == null) {
+                    RecurrencePending.put(repeat)
                     onAddTask(title, details, category, dueAt, reminder)
                 } else {
+                    RecurrenceStore.set(taskContext, old.id, repeat)
                     onUpdate(
                         old.copy(
                             title = title.trim(),
@@ -210,9 +216,10 @@ private fun TaskEditorDialog(
     initial: AssistantEntry?,
     defaultCategory: AssistantCategory,
     onDismiss: () -> Unit,
-    onSave: (String, String, AssistantCategory, Long?, Boolean) -> Unit,
+    onSave: (String, String, AssistantCategory, Long?, Boolean, Recurrence) -> Unit,
 ) {
     val context = LocalContext.current
+    var repeat by remember(initial) { mutableStateOf(initial?.let { RecurrenceStore.get(context, it.id) } ?: Recurrence.NONE) }
     var title by remember(initial) { mutableStateOf(initial?.title.orEmpty()) }
     var details by remember(initial) { mutableStateOf(initial?.details.orEmpty()) }
     var category by remember(initial) { mutableStateOf(initial?.category ?: defaultCategory) }
@@ -269,6 +276,7 @@ private fun TaskEditorDialog(
                     Spacer(Modifier.width(6.dp))
                     Text(DateFormat.getDateTimeInstance(DateFormat.MEDIUM, DateFormat.SHORT).format(Date(dueAt)))
                 }
+                RecurrenceChips(repeat) { repeat = it }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Default.NotificationsActive, null, tint = adaptInk(Color(0xFFEF5350)))
                     Spacer(Modifier.width(8.dp))
@@ -297,7 +305,7 @@ private fun TaskEditorDialog(
             Button(
                 onClick = {
                     val usableReminder = reminder && hasNotificationPermission(context) && TaskAlarmScheduler.hasExactAlarmAccess(context)
-                    onSave(title, details, category, dueAt, usableReminder)
+                    onSave(title, details, category, dueAt, usableReminder, repeat)
                 },
                 enabled = title.isNotBlank(),
             ) { Text(L("حفظ")) }

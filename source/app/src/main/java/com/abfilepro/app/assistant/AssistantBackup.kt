@@ -22,6 +22,9 @@ object AssistantBackup {
         "ab_file_pro_market_alerts" to listOf("alerts_v1", "favorites_v1"),
         "ab_product_price_alerts" to listOf("items"),
         FamilyMembersStore.PREFS to listOf(FamilyMembersStore.KEY),
+        // P27: which tasks and appointments repeat.
+        RecurrenceStore.PREFS to listOf(RecurrenceStore.KEY),
+        MoneyRecurringStore.PREFS to listOf(MoneyRecurringStore.KEY),
     )
 
     /** P25: stores whose keys are dated (one per day/prayer); every text entry is carried over. */

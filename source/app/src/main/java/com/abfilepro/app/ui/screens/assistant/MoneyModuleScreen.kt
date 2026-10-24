@@ -49,6 +49,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.Switch
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -83,6 +84,8 @@ import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 import java.util.Locale
 import kotlin.math.max
+import com.abfilepro.app.assistant.MoneyRecurringRule
+import com.abfilepro.app.assistant.MoneyRecurringStore
 
 /**
  * Alpha74 operational Money screen.
@@ -109,6 +112,8 @@ internal fun MoneyModuleScreen(
     var showExpenseDialog by remember { mutableStateOf(false) }
     var showAllExpenses by remember { mutableStateOf(false) }
     var showCategoryDetails by remember { mutableStateOf(false) }
+    var recurringRevision by remember { mutableStateOf(0) }
+    val recurringRules = remember(recurringRevision) { MoneyRecurringStore.load(context) }
 
     val monthKey = selectedMonth.toString()
     val budget = remember(monthKey, budgetRevision) { repository.loadMonthlyBudget(monthKey) }
@@ -151,7 +156,19 @@ internal fun MoneyModuleScreen(
             month = selectedMonth,
             defaultCategory = defaultCategory,
             onDismiss = { showExpenseDialog = false },
-            onSave = { category, amount, note, date ->
+            onSave = { category, amount, note, date, repeatMonthly ->
+                if (repeatMonthly) {
+                    // The month recorded now counts; the rule adds the following months by itself.
+                    MoneyRecurringStore.add(
+                        context,
+                        MoneyRecurringRule(
+                            id = java.util.UUID.randomUUID().toString(), categoryKey = category.key, categoryArabic = category.arabic,
+                            amount = amount, note = note, day = date.dayOfMonth, lastMonth = YearMonth.from(date).toString(),
+                            work = defaultCategory == AssistantCategory.WORK,
+                        ),
+                    )
+                    recurringRevision++
+                }
                 onAdd(
                     category.arabic,
                     note,
@@ -251,6 +268,24 @@ internal fun MoneyModuleScreen(
                         Spacer(Modifier.width(8.dp))
                         Surface(shape = CircleShape, color = Color.White) {
                             Icon(Icons.Default.Add, null, tint = adaptInk(Color(0xFFFF2D35)), modifier = Modifier.padding(5.dp))
+                        }
+                    }
+                }
+            }
+            if (recurringRules.isNotEmpty()) {
+                item {
+                    Card(shape = RoundedCornerShape(22.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
+                        Column(Modifier.padding(14.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                            Text(L("مصروفات شهرية ثابتة"), fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)))
+                            recurringRules.forEach { rule ->
+                                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                                    Text(
+                                        L(rule.categoryArabic) + (if (rule.note.isNotBlank()) " • " + rule.note else "") + " • " + "%.0f".format(rule.amount) + " • " + rule.day,
+                                        Modifier.weight(1f), fontSize = 13.sp, maxLines = 2,
+                                    )
+                                    TextButton(onClick = { MoneyRecurringStore.remove(context, rule.id); recurringRevision++ }) { Text(L("إيقاف")) }
+                                }
+                            }
                         }
                     }
                 }
@@ -557,9 +592,10 @@ private fun AddExpenseDialog(
     month: YearMonth,
     defaultCategory: AssistantCategory,
     onDismiss: () -> Unit,
-    onSave: (MoneyCategory, Double, String, LocalDate) -> Unit,
+    onSave: (MoneyCategory, Double, String, LocalDate, Boolean) -> Unit,
 ) {
     val context = LocalContext.current
+    var repeatMonthly by remember { mutableStateOf(false) }
     var amountText by remember { mutableStateOf("") }
     var note by remember { mutableStateOf("") }
     var category by remember { mutableStateOf(MoneyCategory.HOME) }
@@ -615,6 +651,10 @@ private fun AddExpenseDialog(
                     Spacer(Modifier.width(6.dp))
                     Text(dateLabel(date))
                 }
+                Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                    Text(L("مصروف شهري ثابت (يتكرر كل شهر)"), Modifier.weight(1f), fontSize = 13.sp)
+                    Switch(checked = repeatMonthly, onCheckedChange = { repeatMonthly = it })
+                }
                 Text(
                     if (defaultCategory == AssistantCategory.WORK) "سيُحفظ المصروف ضمن قسم العمل" else "سيُحفظ المصروف على جهازك فقط",
                     color = adaptInk(Color(0xFF64748B)),
@@ -624,7 +664,7 @@ private fun AddExpenseDialog(
         },
         confirmButton = {
             Button(
-                onClick = { amount?.let { onSave(category, it, note.trim(), date) } },
+                onClick = { amount?.let { onSave(category, it, note.trim(), date, repeatMonthly) } },
                 enabled = amount != null,
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFF2D35)),
             ) { Text(L("إضافة")) }

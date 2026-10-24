@@ -73,6 +73,12 @@ import com.abfilepro.app.assistant.AssistantEntry
 import com.abfilepro.app.assistant.AssistantModule
 import com.abfilepro.app.assistant.AssistantRepository
 import com.abfilepro.app.assistant.FamilyCloudSyncManager
+import com.abfilepro.app.assistant.QuickAddParser
+import com.abfilepro.app.assistant.Recurrence
+import com.abfilepro.app.assistant.RecurrenceEngine
+import com.abfilepro.app.assistant.RecurrencePending
+import com.abfilepro.app.assistant.RecurrenceStore
+import com.abfilepro.app.assistant.TodayBriefingScheduler
 import com.abfilepro.app.assistant.PrayerName
 import com.abfilepro.app.assistant.PrayerSettings
 import com.abfilepro.app.assistant.PrayerTimesCalculator
@@ -103,9 +109,20 @@ fun PersonalAssistantScreen(
     val storeRevision by repository.revision.collectAsState()
     LaunchedEffect(storeRevision) { entries = repository.loadEntries() }
     var prayerSettings by remember { mutableStateOf(repository.loadPrayerSettings()) }
+    // P27: repeating tasks move to their next day, and the morning alarm is kept alive, every time the assistant opens.
+    LaunchedEffect(Unit) {
+        kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+            runCatching { RecurrenceEngine.advanceOverdue(context) }
+            runCatching { com.abfilepro.app.assistant.MoneyRecurringEngine.run(context) }
+            runCatching { TodayBriefingScheduler.sync(context) }
+            com.abfilepro.app.assistant.TodayWidget.refresh(context)
+        }
+        entries = repository.loadEntries()
+    }
     var selectedModule by remember { mutableStateOf<AssistantModule?>(null) }
     var selectedCategory by remember { mutableStateOf(AssistantCategory.ALL) }
     var showQuickAdd by remember { mutableStateOf(false) }
+    var showToday by remember { mutableStateOf(false) }
     var quickTitle by remember { mutableStateOf("") }
     var quickModule by remember { mutableStateOf(AssistantModule.TASKS) }
     // Alpha89: keep the home position when a module is opened and the user returns.
@@ -209,8 +226,44 @@ fun PersonalAssistantScreen(
         )
     }
 
+    // P27: one save path for every edit, so a ticked repeating task comes back instead of closing.
+    val applyUpdate: (AssistantEntry) -> Unit = { raw ->
+        val entry = RecurrenceEngine.beforeSave(context, raw)
+        entries = repository.update(entries, entry)
+        RecurrenceEngine.scheduleNextAdvance(context)
+        if (entry.module == AssistantModule.TASKS || entry.module == AssistantModule.CALENDAR) {
+            com.abfilepro.app.assistant.TaskAlarmScheduler.sync(context, entry)
+        }
+        if (entry.module == AssistantModule.HEALTH) {
+            com.abfilepro.app.assistant.HealthAlarmScheduler.sync(context, entry)
+        }
+        if (entry.module == AssistantModule.DOCUMENTS) {
+            com.abfilepro.app.assistant.DocumentRenewalAlarmScheduler.sync(context, entry)
+        }
+    }
+    val addFromSentence: (QuickAddParser.Result) -> Unit = { r ->
+        val category = selectedCategory.takeUnless { it == AssistantCategory.ALL } ?: AssistantCategory.PERSONAL
+        val due = r.dueAt
+        entries = if (r.calendar && due != null) {
+            repository.add(entries, AssistantModule.CALENDAR, r.title, "", category, due, 15.0, (due + 3_600_000L).toString(), enabled = true)
+        } else {
+            repository.add(entries, AssistantModule.TASKS, r.title, "", category, due, null, "", enabled = due != null)
+        }
+        entries.firstOrNull()?.let { created ->
+            com.abfilepro.app.assistant.TaskAlarmScheduler.sync(context, created)
+            if (r.recurrence != Recurrence.NONE) {
+                RecurrenceStore.set(context, created.id, r.recurrence)
+                RecurrenceEngine.scheduleNextAdvance(context)
+            }
+        }
+    }
+
     BackHandler {
-        if (selectedModule != null) selectedModule = null else onBack()
+        when {
+            selectedModule != null -> selectedModule = null
+            showToday -> showToday = false
+            else -> onBack()
+        }
     }
 
     selectedModule?.let { module ->
@@ -232,7 +285,12 @@ fun PersonalAssistantScreen(
                     onBack = { selectedModule = null },
                     onOpenScanner = onOpenScanner,
                     onAdd = { title, details, category, dueAt, amount, secondary ->
+                        val repeatRule = RecurrencePending.take()
                         entries = repository.add(entries, module, title, details, category, dueAt, amount, secondary)
+                        if (module == AssistantModule.CALENDAR && repeatRule != Recurrence.NONE) {
+                            entries.firstOrNull()?.let { RecurrenceStore.set(context, it.id, repeatRule) }
+                            RecurrenceEngine.scheduleNextAdvance(context)
+                        }
                         if (module == AssistantModule.HEALTH) {
                             entries.firstOrNull()?.let { com.abfilepro.app.assistant.HealthAlarmScheduler.sync(context, it) }
                         }
@@ -251,22 +309,17 @@ fun PersonalAssistantScreen(
                         }
                     },
                     onAddTask = { title, details, category, dueAt, reminder ->
+                        val repeatRule = RecurrencePending.take()
                         entries = repository.add(entries, AssistantModule.TASKS, title, details, category, dueAt, null, "", enabled = reminder)
+                        if (repeatRule != Recurrence.NONE) {
+                            entries.firstOrNull()?.let { RecurrenceStore.set(context, it.id, repeatRule) }
+                            RecurrenceEngine.scheduleNextAdvance(context)
+                        }
                         entries.firstOrNull()?.let { com.abfilepro.app.assistant.TaskAlarmScheduler.sync(context, it) }
                     },
-                    onUpdate = { entry ->
-                        entries = repository.update(entries, entry)
-                        if (entry.module == AssistantModule.TASKS || entry.module == AssistantModule.CALENDAR) {
-                            com.abfilepro.app.assistant.TaskAlarmScheduler.sync(context, entry)
-                        }
-                        if (entry.module == AssistantModule.HEALTH) {
-                            com.abfilepro.app.assistant.HealthAlarmScheduler.sync(context, entry)
-                        }
-                        if (entry.module == AssistantModule.DOCUMENTS) {
-                            com.abfilepro.app.assistant.DocumentRenewalAlarmScheduler.sync(context, entry)
-                        }
-                    },
+                    onUpdate = applyUpdate,
                     onDelete = { id ->
+                        if (module == AssistantModule.TASKS || module == AssistantModule.CALENDAR) RecurrenceStore.remove(context, id)
                         if (module == AssistantModule.TASKS || module == AssistantModule.CALENDAR) {
                             com.abfilepro.app.assistant.TaskAlarmScheduler.cancel(context, id)
                         }
@@ -289,6 +342,17 @@ fun PersonalAssistantScreen(
         return
     }
 
+    if (showToday) {
+        AssistantTodayScreen(
+            entries = entries,
+            onBack = { showToday = false },
+            onQuickAdd = addFromSentence,
+            onUpdate = applyUpdate,
+            onOpenModule = { selectedModule = it },
+        )
+        return
+    }
+
     // Alpha89: restore the user-approved Arabic visual identity while keeping Alpha88 logic live.
     // The reference artwork is only the visual shell; filters, summary, prayer, quick-add and cards are operational.
     if (language.code == "ar") {
@@ -301,12 +365,8 @@ fun PersonalAssistantScreen(
             onBack = onBack,
             onOpenModule = { selectedModule = it },
             onQuickAdd = { showQuickAdd = true },
-            onUpdateEntry = { entry ->
-                entries = repository.update(entries, entry)
-                if (entry.module == AssistantModule.TASKS || entry.module == AssistantModule.CALENDAR) {
-                    com.abfilepro.app.assistant.TaskAlarmScheduler.sync(context, entry)
-                }
-            },
+            onOpenToday = { showToday = true },
+            onUpdateEntry = applyUpdate,
         )
         return
     }
@@ -385,6 +445,9 @@ fun PersonalAssistantScreen(
                         settings = prayerSettings,
                         onClick = { selectedModule = AssistantModule.PRAYER },
                     )
+                    Button(onClick = { showToday = true }, modifier = Modifier.fillMaxWidth()) {
+                        Text(L("يومي"), fontWeight = FontWeight.Black)
+                    }
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         AssistantCategory.entries.forEach { category ->
                             val selected = selectedCategory == category

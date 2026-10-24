@@ -80,6 +80,9 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.ContextCompat
 import com.abfilepro.app.assistant.AssistantCategory
+import com.abfilepro.app.assistant.Recurrence
+import com.abfilepro.app.assistant.RecurrencePending
+import com.abfilepro.app.assistant.RecurrenceStore
 import com.abfilepro.app.assistant.AssistantEntry
 import com.abfilepro.app.assistant.AssistantModule
 import com.abfilepro.app.assistant.TaskAlarmScheduler
@@ -116,6 +119,7 @@ fun AssistantCalendarScreen(
     var selectedDate by remember { mutableStateOf(today) }
     var editing by remember { mutableStateOf<AssistantEntry?>(null) }
     var adding by remember { mutableStateOf(false) }
+    val calendarContext = LocalContext.current
     val monthEntries = entries.filter { it.module == AssistantModule.CALENDAR }
     val selectedEvents = monthEntries.filter { entryDate(it) == selectedDate }.sortedBy { it.dueAt ?: Long.MAX_VALUE }
 
@@ -125,9 +129,11 @@ fun AssistantCalendarScreen(
             defaultCategory = editing?.category ?: defaultCategory,
             presetDate = selectedDate,
             onDismiss = { adding = false; editing = null },
-            onSave = { title, location, category, startAt, endAt, reminder, leadMinutes ->
+            onSave = { title, location, category, startAt, endAt, reminder, leadMinutes, repeat ->
                 val old = editing
+                if (old != null) RecurrenceStore.set(calendarContext, old.id, repeat)
                 if (old == null) {
+                    RecurrencePending.put(repeat)
                     val encodedLead = if (reminder) leadMinutes.toDouble() else -(leadMinutes.toDouble()) - 1000.0
                     onAdd(title, location, category, startAt, encodedLead, endAt?.toString().orEmpty())
                 } else {
@@ -356,9 +362,10 @@ private fun CalendarEventDialog(
     defaultCategory: AssistantCategory,
     presetDate: LocalDate,
     onDismiss: () -> Unit,
-    onSave: (String, String, AssistantCategory, Long?, Long?, Boolean, Int) -> Unit,
+    onSave: (String, String, AssistantCategory, Long?, Long?, Boolean, Int, Recurrence) -> Unit,
 ) {
     val context = LocalContext.current
+    var repeat by remember(initial) { mutableStateOf(initial?.let { RecurrenceStore.get(context, it.id) } ?: Recurrence.NONE) }
     var title by remember(initial) { mutableStateOf(initial?.title.orEmpty()) }
     var location by remember(initial) { mutableStateOf(initial?.details.orEmpty()) }
     var category by remember(initial) { mutableStateOf(initial?.category ?: defaultCategory) }
@@ -414,6 +421,7 @@ private fun CalendarEventDialog(
                     Spacer(Modifier.size(6.dp))
                     Text(L("نهاية الموعد: ${formatDateTime(endAt)}"))
                 }
+                RecurrenceChips(repeat) { repeat = it }
                 Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
                     Icon(Icons.Default.NotificationsActive, null, tint = adaptInk(Color(0xFFF44336)))
                     Spacer(Modifier.size(8.dp))
@@ -449,7 +457,7 @@ private fun CalendarEventDialog(
         confirmButton = {
             Button(onClick = {
                 val usableReminder = reminderEnabled && hasNotificationPermission(context) && TaskAlarmScheduler.hasExactAlarmAccess(context)
-                onSave(title, location, category, startAt, endAt, usableReminder, if (usableReminder) reminderOffset.minutes else 0)
+                onSave(title, location, category, startAt, endAt, usableReminder, if (usableReminder) reminderOffset.minutes else 0, repeat)
             }, enabled = title.isNotBlank() && endAt > startAt) { Text(L("حفظ")) }
         },
         dismissButton = { TextButton(onClick = onDismiss) { Text(L("إلغاء")) } },

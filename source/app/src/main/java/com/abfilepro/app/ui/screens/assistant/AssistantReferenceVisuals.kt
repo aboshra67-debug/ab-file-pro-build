@@ -152,6 +152,7 @@ internal fun AssistantReferenceHome(
     onBack: () -> Unit,
     onOpenModule: (AssistantModule) -> Unit,
     onQuickAdd: () -> Unit,
+    onOpenToday: () -> Unit,
     onUpdateEntry: (AssistantEntry) -> Unit,
 ) {
     val visibleEntries = remember(entries, selectedCategory) {
@@ -175,6 +176,8 @@ internal fun AssistantReferenceHome(
             .statusBarsPadding()
             .verticalScroll(scrollState)
     ) {
+        // P27: «يومي» (today agenda, quick sentence add, search) sits above the approved artwork so its hit areas stay exact.
+        TodayEntryBar(onOpenToday)
         // Alpha91: make the TOP CANVAS itself LTR so reference-image coordinates and
         // live overlays share the exact same physical-left origin. In Alpha90 only the
         // overlay children were switched to LTR while their parent Box remained RTL,
@@ -1034,4 +1037,29 @@ internal fun AssistantReferenceModuleScreen(
         modifier = Modifier.fillMaxSize(),
         hits = listOf(backHit) + actionHits,
     )
+}
+
+
+@Composable
+private fun TodayEntryBar(onClick: () -> Unit) {
+    CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp, vertical = 6.dp)
+                .background(Color(0xFF173B65), RoundedCornerShape(16.dp))
+                .clickable(onClick = onClick)
+                .padding(horizontal = 16.dp, vertical = 12.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center,
+        ) {
+            Text(
+                text = L("يومي") + " — " + L("مهامك ومواعيدك وأدويتك النهارده"),
+                color = Color.White,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Black,
+                maxLines = 1,
+            )
+        }
+    }
 }
