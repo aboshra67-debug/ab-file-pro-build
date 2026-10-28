@@ -204,9 +204,9 @@ internal fun FamilyRequestsOperationalScreen(
                     Text(L("طلبات العائلة مرتبطة الآن بقائمة التسوق"), color = adaptInk(Color(0xFF0DAA60)), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                     Text(
                         when (familyProfile.syncState) {
-                            FamilySyncState.ON -> "كود العائلة: ${familyProfile.inviteCode}"
-                            FamilySyncState.LEGACY_PAUSED -> "المزامنة متوقفة - افتح الإعدادات للتأكيد"
-                            FamilySyncState.OFF -> "المزامنة غير مفعلة - البيانات على هذا الهاتف فقط"
+                            FamilySyncState.ON -> L("كود العائلة: ${familyProfile.inviteCode}")
+                            FamilySyncState.LEGACY_PAUSED -> L("المزامنة متوقفة - افتح الإعدادات للتأكيد")
+                            FamilySyncState.OFF -> L("المزامنة غير مفعلة - البيانات على هذا الهاتف فقط")
                         },
                         color = adaptInk(Color(0xFF9CA3AF)), fontSize = 11.sp,
                     )
@@ -230,7 +230,7 @@ internal fun FamilyRequestsOperationalScreen(
                     color = if (filter == item) adaptInk(Color(0xFFFF2635)) else Color(0xFFF8FAFC),
                 ) {
                     Box(contentAlignment = Alignment.Center) {
-                        Text(item.label, color = if (filter == item) Color.White else adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold, fontSize = 12.sp, textAlign = TextAlign.Center)
+                        Text(L(item.label), color = if (filter == item) Color.White else adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold, fontSize = 12.sp, textAlign = TextAlign.Center)
                     }
                 }
             }
@@ -288,14 +288,14 @@ internal fun FamilyRequestsOperationalScreen(
             Text(L("إضافة طلب"), fontWeight = FontWeight.Black, fontSize = 20.sp)
         }
         Text(
-            "عند الضغط على «سأشتريها» ينتقل الطلب تلقائيًا لقائمة التسوق. إكماله من أي من الشاشتين يحدّث حالته في الأخرى.",
+            L("عند الضغط على «سأشتريها» ينتقل الطلب تلقائيًا لقائمة التسوق. إكماله من أي من الشاشتين يحدّث حالته في الأخرى."),
             color = adaptInk(Color(0xFF64748B)),
             fontSize = 11.sp,
             textAlign = TextAlign.Center,
             modifier = Modifier.fillMaxWidth(),
         )
         Text(
-            "المزامنة السحابية مفعلة. على الهاتف الثاني أدخل نفس كود العائلة، وسيتم تبادل الطلبات تلقائيًا عند توفر الإنترنت.",
+            L("المزامنة السحابية مفعلة. على الهاتف الثاني أدخل نفس كود العائلة، وسيتم تبادل الطلبات تلقائيًا عند توفر الإنترنت."),
             color = adaptInk(Color(0xFF9CA3AF)),
             fontSize = 10.sp,
             textAlign = TextAlign.Center,
@@ -317,9 +317,9 @@ private fun FamilyRequestCard(
     onDelete: () -> Unit,
 ) {
     val status = when {
-        entry.completed || meta.status == "done" -> "تم الشراء"
-        meta.status == "in_progress" -> "قيد التنفيذ"
-        else -> "طلب جديد"
+        entry.completed || meta.status == "done" -> L("تم الشراء")
+        meta.status == "in_progress" -> L("قيد التنفيذ")
+        else -> L("طلب جديد")
     }
     val cardColor = when {
         entry.completed || meta.status == "done" -> Color(0xFFEFFFF8)
@@ -415,7 +415,7 @@ private fun AddFamilyRequestDialog(
                                 shape = RoundedCornerShape(12.dp),
                                 color = if (category == item) item.badge else Color(0xFFF8FAFC),
                             ) {
-                                Text(item.arabicLabel, modifier = Modifier.padding(9.dp), textAlign = TextAlign.End, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                                Text(L(item.arabicLabel), modifier = Modifier.padding(9.dp), textAlign = TextAlign.End, fontWeight = FontWeight.Bold, fontSize = 12.sp)
                             }
                         }
                     }
@@ -675,5 +675,5 @@ private fun shareFamilyRequest(context: Context, entry: AssistantEntry, meta: Fa
     context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
         type = "text/plain"
         putExtra(Intent.EXTRA_TEXT, text)
-    }, "إرسال الطلب"))
+    }, L("إرسال الطلب")))
 }

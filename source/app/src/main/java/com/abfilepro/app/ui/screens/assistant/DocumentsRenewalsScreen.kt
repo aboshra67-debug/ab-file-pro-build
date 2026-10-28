@@ -146,14 +146,14 @@ internal fun DocumentsRenewalsScreen(
             if (visible.isEmpty()) {
                 item {
                     Card(shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
-                        Text(if (docs.isEmpty()) "لا توجد مستندات محفوظة" else "لا توجد نتائج مطابقة", modifier = Modifier.fillMaxWidth().padding(34.dp), textAlign = TextAlign.Center, color = DocsMuted)
+                        Text(L(if (docs.isEmpty()) "لا توجد مستندات محفوظة" else "لا توجد نتائج مطابقة"), modifier = Modifier.fillMaxWidth().padding(34.dp), textAlign = TextAlign.Center, color = DocsMuted)
                     }
                 }
             } else {
                 items(visible, key = { it.id }) { entry ->
                     val meta = DocumentRenewalCodec.parse(entry.secondary)
                     val status = DocumentRenewalCodec.status(entry)
-                    val statusText = when (status) { DocumentExpiryStatus.VALID -> "ساري"; DocumentExpiryStatus.SOON -> "قريب"; DocumentExpiryStatus.EXPIRED -> "منتهي" }
+                    val statusText = when (status) { DocumentExpiryStatus.VALID -> L("ساري"); DocumentExpiryStatus.SOON -> L("قريب"); DocumentExpiryStatus.EXPIRED -> L("منتهي") }
                     val statusColor = when (status) { DocumentExpiryStatus.VALID -> DocsGreen; DocumentExpiryStatus.SOON -> DocsAmber; DocumentExpiryStatus.EXPIRED -> DocsRed }
                     Card(modifier = Modifier.fillMaxWidth().clickable { editing = entry }, shape = RoundedCornerShape(20.dp), colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White))) {
                         Row(Modifier.fillMaxWidth().padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
@@ -166,7 +166,7 @@ internal fun DocumentsRenewalsScreen(
                                     if (meta.country.isNotBlank()) append(" • ").append(meta.country)
                                 }
                                 Text(kindLine, color = DocsMuted, fontSize = 12.sp)
-                                val date = DocumentRenewalCodec.expiryDate(entry)?.format(DateTimeFormatter.ofPattern("d MMMM yyyy", Locale("ar"))).orEmpty()
+                                val date = DocumentRenewalCodec.expiryDate(entry)?.format(DateTimeFormatter.ofPattern("d MMMM yyyy", assistantLocale())).orEmpty()
                                 if (date.isNotBlank()) Text(L("تاريخ الانتهاء: $date"), color = DocsMuted, fontSize = 12.sp)
                                 Text(statusText, color = statusColor, fontWeight = FontWeight.Black)
                             }
@@ -260,7 +260,7 @@ private fun DocumentEditorDialog(
                     IconButton(onClick = onDismiss) { Icon(Icons.Default.Close, L("إغلاق"), tint = DocsMuted) }
                     Spacer(Modifier.weight(1f))
                     Column(horizontalAlignment = Alignment.End) {
-                        Text(if (existing == null) "إضافة مستند" else "تعديل المستند", fontWeight = FontWeight.Black, fontSize = 22.sp, color = DocsInk)
+                        Text(L(if (existing == null) "إضافة مستند" else "تعديل المستند"), fontWeight = FontWeight.Black, fontSize = 22.sp, color = DocsInk)
                         Text(L("احفظ بيانات المستند وحدد موعد التجديد"), color = DocsMuted, fontSize = 12.sp)
                     }
                 }
@@ -360,9 +360,9 @@ private fun DocumentEditorDialog(
                     item {
                         Text(
                             when (kind) {
-                                DocumentKind.RENTAL_CONTRACT -> "مدة العقد"
-                                DocumentKind.VISA -> "تواريخ التأشيرة"
-                                else -> "التجديد والانتهاء"
+                                DocumentKind.RENTAL_CONTRACT -> L("مدة العقد")
+                                DocumentKind.VISA -> L("تواريخ التأشيرة")
+                                else -> L("التجديد والانتهاء")
                             },
                             fontWeight = FontWeight.Black,
                             color = DocsInk,
@@ -373,9 +373,9 @@ private fun DocumentEditorDialog(
                     if (kind == DocumentKind.RENTAL_CONTRACT || kind == DocumentKind.VISA) {
                         item {
                             DocumentDateButton(
-                                label = if (kind == DocumentKind.RENTAL_CONTRACT) "تاريخ بداية العقد" else "تاريخ الإصدار",
+                                label = L(if (kind == DocumentKind.RENTAL_CONTRACT) "تاريخ بداية العقد" else "تاريخ الإصدار"),
                                 date = issuedDate,
-                                emptyLabel = "اختر التاريخ",
+                                emptyLabel = L("اختر التاريخ"),
                             ) {
                                 val base = issuedDate ?: LocalDate.now()
                                 DatePickerDialog(
@@ -390,9 +390,9 @@ private fun DocumentEditorDialog(
                     }
                     item {
                         DocumentDateButton(
-                            label = if (kind == DocumentKind.RENTAL_CONTRACT) "تاريخ انتهاء العقد" else "تاريخ الانتهاء",
+                            label = L(if (kind == DocumentKind.RENTAL_CONTRACT) "تاريخ انتهاء العقد" else "تاريخ الانتهاء"),
                             date = expiry,
-                            emptyLabel = "اختر التاريخ",
+                            emptyLabel = L("اختر التاريخ"),
                         ) {
                             DatePickerDialog(
                                 context,
@@ -480,7 +480,7 @@ private fun DocumentDateButton(
     emptyLabel: String,
     onClick: () -> Unit,
 ) {
-    val shown = date?.format(DateTimeFormatter.ofPattern("dd-MM-yyyy", Locale("ar"))) ?: emptyLabel
+    val shown = date?.format(DateTimeFormatter.ofPattern("dd-MM-yyyy", assistantLocale())) ?: emptyLabel
     OutlinedButton(
         onClick = onClick,
         modifier = Modifier.fillMaxWidth().height(58.dp),

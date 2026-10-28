@@ -38,9 +38,9 @@ android {
         applicationId = "com.abfilepro.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 179
+        versionCode = 180
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        versionName = "2.0.0-alpha98-p27-assistant-complete"
+        versionName = "2.0.0-alpha98-p28-translation-dark-check"
 
         vectorDrawables { useSupportLibrary = true }
 
@@ -54,6 +54,12 @@ android {
                 abiFilters += "x86_64"
             }
         }
+    }
+
+    // P28: dark-mode screenshot test, compiled only for the dedicated CI step (-PAB_DARK_SHOTS=true),
+    // so it never changes the 129-test regression run or the shipped APKs.
+    if (providers.gradleProperty("AB_DARK_SHOTS").orNull == "true") {
+        sourceSets.getByName("androidTest").java.srcDir("src/darkShots/java")
     }
 
     // P16: two distribution channels from one source.
@@ -80,7 +86,7 @@ android {
     buildTypes {
         debug {
             // Isolated install so testing never requires uninstalling the production app.
-            applicationIdSuffix = ".p27mainttrial"
+            applicationIdSuffix = ".p28mainttrial"
             if (originalSigningReady) {
                 signingConfig = signingConfigs.getByName("original")
             }
@@ -99,7 +105,7 @@ android {
         // so the optimized build is exercised on the emulator before any store upload.
         create("qa") {
             initWith(getByName("release"))
-            applicationIdSuffix = ".p27qa"
+            applicationIdSuffix = ".p28qa"
             signingConfig = signingConfigs.getByName("debug")
             matchingFallbacks += listOf("release")
         }

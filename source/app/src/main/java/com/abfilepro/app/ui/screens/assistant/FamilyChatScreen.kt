@@ -98,9 +98,9 @@ internal fun FamilyChatScreen(onBack: () -> Unit) {
                         Text(
                             when {
                                 // P17: chat needs an explicit family link; say so instead of "reconnecting" forever.
-                                profile.syncState != com.abfilepro.app.assistant.FamilySyncState.ON -> "فعّل العائلة من إعداد العائلة لاستخدام الشات"
-                                online -> "${profile.familyName} • متصل"
-                                else -> "${profile.familyName} • جارٍ إعادة الاتصال"
+                                profile.syncState != com.abfilepro.app.assistant.FamilySyncState.ON -> L("فعّل العائلة من إعداد العائلة لاستخدام الشات")
+                                online -> "${profile.familyName} • ${L("متصل")}"
+                                else -> "${profile.familyName} • ${L("جارٍ إعادة الاتصال")}"
                             },
                             fontSize = 11.sp,
                             color = if (online) adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF94A3B8)),

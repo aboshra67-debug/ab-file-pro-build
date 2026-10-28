@@ -252,7 +252,7 @@ internal fun AssistantReferenceHome(
                     contentAlignment = Alignment.CenterEnd,
                 ) {
                     Text(
-                        text = LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE، d MMMM", Locale("ar"))),
+                        text = LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE، d MMMM", assistantLocale())),
                         modifier = Modifier.padding(horizontal = 8.dp),
                         color = adaptInk(Color(0xFF243247)),
                         fontSize = 12.sp,
@@ -490,7 +490,7 @@ private fun ClassicNextItemStrip(
         val dueText = entry.dueAt?.let {
             Instant.ofEpochMilli(it)
                 .atZone(ZoneId.systemDefault())
-                .format(DateTimeFormatter.ofPattern("h:mm a", Locale("ar")))
+                .format(DateTimeFormatter.ofPattern("h:mm a", assistantLocale()))
         }.orEmpty()
 
         CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
@@ -554,7 +554,7 @@ private fun PrayerHomeLiveOverlay(settings: PrayerSettings, modifier: Modifier =
     val ss = seconds % 60
     val countdown = "%02d:%02d:%02d".format(hh, mm, ss)
     val prayerName = prayerArabicName(occurrence.first)
-    val timeText = occurrence.second.format(DateTimeFormatter.ofPattern("h:mm a", Locale("ar")))
+    val timeText = occurrence.second.format(DateTimeFormatter.ofPattern("h:mm a", assistantLocale()))
 
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
         Column(
@@ -565,7 +565,7 @@ private fun PrayerHomeLiveOverlay(settings: PrayerSettings, modifier: Modifier =
             verticalArrangement = Arrangement.Center,
         ) {
             Text(
-                if (justStarted) "حان الآن موعد صلاة" else "الصلاة القادمة",
+                L(if (justStarted) "حان الآن موعد صلاة" else "الصلاة القادمة"),
                 fontSize = 12.sp,
                 color = adaptInk(Color(0xFF334155)),
                 fontWeight = FontWeight.Bold,
@@ -577,7 +577,7 @@ private fun PrayerHomeLiveOverlay(settings: PrayerSettings, modifier: Modifier =
             }
             if (!justStarted) {
                 Text(
-                    "متبقي $countdown",
+                    L("متبقي $countdown"),
                     fontSize = 11.sp,
                     color = adaptInk(Color(0xFFE53935)),
                     fontWeight = FontWeight.Bold,
@@ -591,7 +591,7 @@ private fun PrayerHomeLiveOverlay(settings: PrayerSettings, modifier: Modifier =
                 contentAlignment = Alignment.Center,
             ) {
                 Text(
-                    if (occurrence.first in settings.enabledAlerts) "🔔 التنبيه مفعل" else "التنبيه غير مفعل",
+                    L(if (occurrence.first in settings.enabledAlerts) "🔔 التنبيه مفعل" else "التنبيه غير مفعل"),
                     fontSize = 10.sp,
                     color = if (occurrence.first in settings.enabledAlerts) adaptInk(Color(0xFF087F5B)) else adaptInk(Color(0xFF64748B)),
                     fontWeight = FontWeight.Black,
@@ -624,12 +624,12 @@ private fun nextPrayerOccurrence(
 }
 
 private fun prayerArabicName(prayer: PrayerName): String = when (prayer) {
-    PrayerName.FAJR -> "الفجر"
-    PrayerName.DHUHR -> "الظهر"
-    PrayerName.ASR -> "العصر"
-    PrayerName.MAGHRIB -> "المغرب"
-    PrayerName.ISHA -> "العشاء"
-    PrayerName.SUNRISE -> "الشروق"
+    PrayerName.FAJR -> L("الفجر")
+    PrayerName.DHUHR -> L("الظهر")
+    PrayerName.ASR -> L("العصر")
+    PrayerName.MAGHRIB -> L("المغرب")
+    PrayerName.ISHA -> L("العشاء")
+    PrayerName.SUNRISE -> L("الشروق")
 }
 
 
@@ -705,13 +705,13 @@ internal fun OperationalReferenceCalculator(
                 result = formatted
                 history = (listOf(CalculatorHistoryRow(expression, formatted)) + history).take(3)
             }
-            .onFailure { Toast.makeText(context, "عملية غير صحيحة", Toast.LENGTH_SHORT).show() }
+            .onFailure { Toast.makeText(context, L("عملية غير صحيحة"), Toast.LENGTH_SHORT).show() }
     }
 
     fun copyResult() {
         val clipboard = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         clipboard.setPrimaryClip(ClipData.newPlainText("AB File Pro calculator result", result))
-        Toast.makeText(context, "تم نسخ النتيجة", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, L("تم نسخ النتيجة"), Toast.LENGTH_SHORT).show()
     }
 
     CompositionLocalProvider(LocalLayoutDirection provides LayoutDirection.Rtl) {
@@ -814,7 +814,7 @@ internal fun OperationalReferenceCalculator(
 
             // Controls: reference layout, but responsive and readable on every width.
             Row(Modifier.fillMaxWidth(), horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(8.dp)) {
-                CalculatorKey("مسح", Modifier.weight(1f), Color(0xFFFFECEF), Color(0xFFC91D2E), ::clearAll)
+                CalculatorKey(L("مسح"), Modifier.weight(1f), Color(0xFFFFECEF), Color(0xFFC91D2E), ::clearAll)
                 CalculatorKey("⌫", Modifier.weight(1f), Color(0xFFFFF4E4), Color(0xFF9A500A), ::removeLastCharacter)
                 CalculatorKey("%", Modifier.weight(1f), Color(0xFFF2EAFE), Color(0xFF171827), ::percent)
                 CalculatorKey("÷", Modifier.weight(1f), Color(0xFFEAF3FB), Color(0xFF0F172A)) { appendToken("/") }
@@ -864,8 +864,8 @@ internal fun OperationalReferenceCalculator(
             }
 
             Row(Modifier.fillMaxWidth(), horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(10.dp)) {
-                CalculatorAction("مسح السجل", Color(0xFFFFF1F2), Color(0xFFB91C1C), Modifier.weight(1f)) { history = emptyList() }
-                CalculatorAction("نسخ النتيجة", Color(0xFFECFDF5), Color(0xFF059669), Modifier.weight(1f), ::copyResult)
+                CalculatorAction(L("مسح السجل"), Color(0xFFFFF1F2), Color(0xFFB91C1C), Modifier.weight(1f)) { history = emptyList() }
+                CalculatorAction(L("نسخ النتيجة"), Color(0xFFECFDF5), Color(0xFF059669), Modifier.weight(1f), ::copyResult)
             }
             Spacer(Modifier.height(8.dp))
         }

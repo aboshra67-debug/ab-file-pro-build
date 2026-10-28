@@ -106,7 +106,7 @@ internal fun MoneyModuleScreen(
     val context = LocalContext.current
     val repository = remember(context) { AssistantRepository(context) }
     val zone = remember { ZoneId.systemDefault() }
-    val arabicLocale = remember { Locale("ar", "EG") }
+    val arabicLocale = assistantLocale(true)
 
     var selectedMonth by remember { mutableStateOf(YearMonth.now()) }
     var budgetRevision by remember { mutableStateOf(0) }
@@ -354,7 +354,7 @@ private fun MonthSelector(month: YearMonth, onPrevious: () -> Unit, onNext: () -
         ) {
             IconButton(onClick = onPrevious) { Icon(Icons.Default.KeyboardArrowRight, L("الشهر السابق")) }
             Text(
-                monthLabel(month, Locale("ar", "EG")),
+                monthLabel(month, assistantLocale(true)),
                 modifier = Modifier.weight(1f),
                 textAlign = TextAlign.Center,
                 fontSize = 20.sp,
@@ -400,14 +400,14 @@ private fun BudgetHeroCard(budget: Double, spent: Double, remaining: Double, rem
                         Text(formatMoney(remaining), fontWeight = FontWeight.Black, fontSize = 27.sp, color = adaptInk(Color(0xFF04966E)))
                         Text(L("ج.م"), color = adaptInk(Color(0xFF04966E)), fontWeight = FontWeight.Bold, fontSize = 12.sp)
                         Spacer(Modifier.height(2.dp))
-                        Text("${(remainingRatio * 100).toInt()}٪", fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF111827)))
+                        Text(L("${(remainingRatio * 100).toInt()}٪"), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF111827)))
                     }
                 }
             }
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                MoneyMiniCard("المتبقي", remaining, Color(0xFFE1F8EE), Color(0xFF059669), Modifier.weight(1f))
-                MoneyMiniCard("المصروفات", spent, Color(0xFFE6F2FF), Color(0xFF1677E8), Modifier.weight(1f))
-                MoneyMiniCard("الميزانية", budget, Color(0xFFFFE8E9), Color(0xFFFF2D35), Modifier.weight(1f))
+                MoneyMiniCard(L("المتبقي"), remaining, Color(0xFFE1F8EE), Color(0xFF059669), Modifier.weight(1f))
+                MoneyMiniCard(L("المصروفات"), spent, Color(0xFFE6F2FF), Color(0xFF1677E8), Modifier.weight(1f))
+                MoneyMiniCard(L("الميزانية"), budget, Color(0xFFFFE8E9), Color(0xFFFF2D35), Modifier.weight(1f))
             }
         }
     }
@@ -465,12 +465,12 @@ private fun RecentExpensesCard(
                 Spacer(Modifier.weight(1f))
                 Column(horizontalAlignment = Alignment.End) {
                     Text(
-                        if (selectedMonth == YearMonth.from(currentDate)) "مصروفات اليوم" else "أحدث مصروفات الشهر",
+                        L(if (selectedMonth == YearMonth.from(currentDate)) "مصروفات اليوم" else "أحدث مصروفات الشهر"),
                         fontWeight = FontWeight.Black,
                         fontSize = 21.sp,
                     )
                     Text(
-                        if (selectedMonth == YearMonth.from(currentDate)) dateLabel(currentDate) else monthLabel(selectedMonth, Locale("ar", "EG")),
+                        if (selectedMonth == YearMonth.from(currentDate)) dateLabel(currentDate) else monthLabel(selectedMonth, assistantLocale(true)),
                         color = adaptInk(Color(0xFF64748B)),
                         fontSize = 11.sp,
                     )
@@ -495,15 +495,15 @@ private fun ExpenseRow(entry: AssistantEntry, zone: ZoneId, onDelete: (String) -
             modifier = Modifier.fillMaxWidth().padding(horizontal = 6.dp, vertical = 7.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            Text(formatMoney(entry.amount ?: 0.0) + " ج.م", color = adaptInk(Color(0xFFFF2D35)), fontWeight = FontWeight.Black, fontSize = 16.sp)
+            Text(L(formatMoney(entry.amount ?: 0.0) + " ج.م"), color = adaptInk(Color(0xFFFF2D35)), fontWeight = FontWeight.Black, fontSize = 16.sp)
             Spacer(Modifier.weight(1f))
             Column(horizontalAlignment = Alignment.End) {
-                Text(category.arabic, fontWeight = FontWeight.ExtraBold, fontSize = 15.sp)
+                Text(L(category.arabic), fontWeight = FontWeight.ExtraBold, fontSize = 15.sp)
                 Text(timeLabel(entry, zone), color = adaptInk(Color(0xFF7C8797)), fontSize = 10.sp)
             }
             Spacer(Modifier.width(8.dp))
             Surface(shape = RoundedCornerShape(12.dp), color = category.tint) {
-                Icon(category.icon, category.arabic, tint = category.color, modifier = Modifier.padding(9.dp).size(22.dp))
+                Icon(category.icon, L(category.arabic), tint = category.color, modifier = Modifier.padding(9.dp).size(22.dp))
             }
             IconButton(onClick = { onDelete(entry.id) }, modifier = Modifier.size(38.dp)) {
                 Icon(Icons.Default.DeleteOutline, L("حذف"), tint = adaptInk(Color(0xFFFF5A63)), modifier = Modifier.size(20.dp))
@@ -547,8 +547,8 @@ private fun CategoryBreakdownCard(
 @Composable
 private fun CategoryBarRow(category: MoneyCategory, amount: Double, fraction: Float) {
     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-        Text("${(fraction * 100).toInt()}٪", modifier = Modifier.width(42.dp), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF334155)), fontSize = 12.sp)
-        Text(formatMoney(amount) + " ج.م", modifier = Modifier.width(80.dp), color = adaptInk(Color(0xFFE43A42)), fontWeight = FontWeight.Bold, fontSize = 12.sp)
+        Text(L("${(fraction * 100).toInt()}٪"), modifier = Modifier.width(42.dp), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF334155)), fontSize = 12.sp)
+        Text(L(formatMoney(amount) + " ج.م"), modifier = Modifier.width(80.dp), color = adaptInk(Color(0xFFE43A42)), fontWeight = FontWeight.Bold, fontSize = 12.sp)
         Box(
             modifier = Modifier.weight(1f).height(10.dp).clip(CircleShape).background(adaptSurface(Color(0xFFE7EBEF))),
         ) {
@@ -557,7 +557,7 @@ private fun CategoryBarRow(category: MoneyCategory, amount: Double, fraction: Fl
             }
         }
         Spacer(Modifier.width(8.dp))
-        Text(category.arabic, modifier = Modifier.width(92.dp), textAlign = TextAlign.End, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+        Text(L(category.arabic), modifier = Modifier.width(92.dp), textAlign = TextAlign.End, fontSize = 12.sp, fontWeight = FontWeight.Bold)
         Surface(shape = RoundedCornerShape(10.dp), color = category.tint) {
             Icon(category.icon, null, tint = category.color, modifier = Modifier.padding(6.dp).size(18.dp))
         }
@@ -570,7 +570,7 @@ private fun BudgetDialog(month: YearMonth, currentBudget: Double, onDismiss: () 
     val value = text.toDoubleOrNull()?.takeIf { it.isFinite() && it >= 0.0 }
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text("تحديد ميزانية ${monthLabel(month, Locale("ar", "EG"))}", fontWeight = FontWeight.Black) },
+        title = { Text(L("تحديد ميزانية ${monthLabel(month, assistantLocale(true))}"), fontWeight = FontWeight.Black) },
         text = {
             OutlinedTextField(
                 value = text,
@@ -627,7 +627,7 @@ private fun AddExpenseDialog(
                         FilterChip(
                             selected = category == item,
                             onClick = { category = item },
-                            label = { Text(item.shortArabic, fontSize = 10.sp) },
+                            label = { Text(L(item.shortArabic), fontSize = 10.sp) },
                         )
                     }
                 }
@@ -658,7 +658,7 @@ private fun AddExpenseDialog(
                     Switch(checked = repeatMonthly, onCheckedChange = { on -> repeatMonthly = on && ProState.allowOrAsk(ProFeature.MONEY_RECURRING, MoneyRecurringStore.load(context).size) })
                 }
                 Text(
-                    if (defaultCategory == AssistantCategory.WORK) "سيُحفظ المصروف ضمن قسم العمل" else "سيُحفظ المصروف على جهازك فقط",
+                    L(if (defaultCategory == AssistantCategory.WORK) "سيُحفظ المصروف ضمن قسم العمل" else "سيُحفظ المصروف على جهازك فقط"),
                     color = adaptInk(Color(0xFF64748B)),
                     fontSize = 10.sp,
                 )
@@ -718,8 +718,8 @@ private fun CategoryDetailsDialog(
                             Icon(category.icon, null, tint = category.color, modifier = Modifier.padding(7.dp).size(20.dp))
                         }
                         Spacer(Modifier.width(8.dp))
-                        Text(category.arabic, modifier = Modifier.weight(1f), fontWeight = FontWeight.Bold)
-                        Text("${formatMoney(amount)} ج.م  •  ${percent.toInt()}٪", color = category.color, fontWeight = FontWeight.Bold)
+                        Text(L(category.arabic), modifier = Modifier.weight(1f), fontWeight = FontWeight.Bold)
+                        Text(L("${formatMoney(amount)} ج.م  •  ${percent.toInt()}٪"), color = category.color, fontWeight = FontWeight.Bold)
                     }
                 }
             }
@@ -761,16 +761,16 @@ private fun entryMonth(entry: AssistantEntry, zone: ZoneId): YearMonth = YearMon
 
 private fun timeLabel(entry: AssistantEntry, zone: ZoneId): String {
     val instant = Instant.ofEpochMilli(entry.dueAt ?: entry.createdAt).atZone(zone)
-    return instant.format(DateTimeFormatter.ofPattern("h:mm a", Locale("ar", "EG")))
+    return instant.format(DateTimeFormatter.ofPattern("h:mm a", assistantLocale(true)))
 }
 
 private fun monthLabel(month: YearMonth, locale: Locale): String =
     month.atDay(1).format(DateTimeFormatter.ofPattern("MMMM yyyy", locale))
 
 private fun dateLabel(date: LocalDate): String =
-    date.format(DateTimeFormatter.ofPattern("EEEE، d MMMM yyyy", Locale("ar", "EG")))
+    date.format(DateTimeFormatter.ofPattern("EEEE، d MMMM yyyy", assistantLocale(true)))
 
-private fun formatMoney(value: Double): String = NumberFormat.getNumberInstance(Locale("ar", "EG")).apply {
+private fun formatMoney(value: Double): String = NumberFormat.getNumberInstance(assistantLocale(true)).apply {
     maximumFractionDigits = if (value % 1.0 == 0.0) 0 else 2
     minimumFractionDigits = 0
 }.format(value.coerceAtLeast(0.0))

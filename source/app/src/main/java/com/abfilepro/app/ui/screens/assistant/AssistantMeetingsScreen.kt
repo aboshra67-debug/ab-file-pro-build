@@ -83,7 +83,7 @@ internal fun AssistantMeetingsScreen(
         val uri = result.data?.data
         if (meeting != null && uri != null && store.importAudio(meeting.id, uri) != null) {
             attachmentRefresh++
-            Toast.makeText(context, if (language.code == "ar") "تم حفظ التسجيل داخل الاجتماع" else "Recording saved to meeting", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, L("تم حفظ التسجيل داخل الاجتماع"), Toast.LENGTH_SHORT).show()
         }
         targetMeeting = null
     }
@@ -92,7 +92,7 @@ internal fun AssistantMeetingsScreen(
         val meeting = targetMeeting
         if (success && meeting != null && store.commitCapture(meeting.id) != null) {
             attachmentRefresh++
-            Toast.makeText(context, if (language.code == "ar") "تم حفظ صورة المحضر" else "Minutes photo saved", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, L("تم حفظ صورة المحضر"), Toast.LENGTH_SHORT).show()
         } else {
             store.discardPending()
         }
@@ -105,7 +105,7 @@ internal fun AssistantMeetingsScreen(
             .onFailure {
                 store.discardPending()
                 targetMeeting = null
-                Toast.makeText(context, if (language.code == "ar") "تعذر فتح الكاميرا" else "Could not open camera", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, L("تعذر فتح الكاميرا"), Toast.LENGTH_SHORT).show()
             }
     }
 
@@ -114,7 +114,7 @@ internal fun AssistantMeetingsScreen(
         if (granted && meeting != null) launchCamera(meeting)
         else if (!granted) {
             targetMeeting = null
-            Toast.makeText(context, if (language.code == "ar") "اسمح للكاميرا لتصوير المحضر" else "Camera permission is required", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, L("اسمح للكاميرا لتصوير المحضر"), Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -133,7 +133,7 @@ internal fun AssistantMeetingsScreen(
             targetMeeting = meeting
             recordAudio.launch(intent)
         } else {
-            Toast.makeText(context, if (language.code == "ar") "لا يوجد مسجل صوت مثبت" else "No recorder app is installed", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, L("لا يوجد مسجل صوت مثبت"), Toast.LENGTH_LONG).show()
         }
     }
 
@@ -182,9 +182,9 @@ internal fun AssistantMeetingsScreen(
                     colors = CardDefaults.cardColors(containerColor = adaptSurface(Color(0xFFFFF1F3))),
                 ) {
                     Column(Modifier.fillMaxWidth().padding(18.dp)) {
-                        Text(if (language.code == "ar") "الاجتماعات والمحاضر" else "Meetings & minutes", fontSize = 24.sp, fontWeight = FontWeight.Black)
+                        Text(L("الاجتماعات والمحاضر"), fontSize = 24.sp, fontWeight = FontWeight.Black)
                         Text(
-                            if (language.code == "ar") "أضف اجتماعًا، ثم صوّر المحضر من داخل الاجتماع واحفظه مرتبطًا به." else "Add a meeting, then photograph and keep its minutes attached.",
+                            L("أضف اجتماعًا، ثم صوّر المحضر من داخل الاجتماع واحفظه مرتبطًا به."),
                             color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp,
                         )
                         Spacer(Modifier.height(12.dp))
@@ -192,19 +192,19 @@ internal fun AssistantMeetingsScreen(
                             onClick = { editingMeeting = null; showEditor = true },
                             modifier = Modifier.fillMaxWidth(),
                             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE62E3B)),
-                        ) { Icon(Icons.Default.Add, null); Spacer(Modifier.width(8.dp)); Text(if (language.code == "ar") "إضافة اجتماع" else "Add meeting") }
+                        ) { Icon(Icons.Default.Add, null); Spacer(Modifier.width(8.dp)); Text(L("إضافة اجتماع")) }
                     }
                 }
             }
 
-            item { SectionTitle(if (language.code == "ar") "الاجتماعات القادمة" else "Upcoming meetings", upcoming.size) }
-            if (upcoming.isEmpty()) item { EmptyMeetingCard(if (language.code == "ar") "لا توجد اجتماعات قادمة" else "No upcoming meetings") }
+            item { SectionTitle(L("الاجتماعات القادمة"), upcoming.size) }
+            if (upcoming.isEmpty()) item { EmptyMeetingCard(L("لا توجد اجتماعات قادمة")) }
             items(upcoming, key = { "u_${it.id}" }) { meeting ->
                 MeetingOperationalCard(meeting, store, attachmentRefresh, { captureMinutes(meeting) }, { recordMeeting(meeting) }, { editingMeeting = meeting; showEditor = true }, { store.deleteMeeting(meeting.id); onDelete(meeting.id) }, language.code)
             }
 
-            item { SectionTitle(if (language.code == "ar") "محاضر سابقة" else "Previous minutes", previous.size) }
-            if (previous.isEmpty()) item { EmptyMeetingCard(if (language.code == "ar") "لا توجد محاضر سابقة" else "No previous minutes") }
+            item { SectionTitle(L("محاضر سابقة"), previous.size) }
+            if (previous.isEmpty()) item { EmptyMeetingCard(L("لا توجد محاضر سابقة")) }
             items(previous, key = { "p_${it.id}" }) { meeting ->
                 MeetingOperationalCard(meeting, store, attachmentRefresh, { captureMinutes(meeting) }, { recordMeeting(meeting) }, { editingMeeting = meeting; showEditor = true }, { store.deleteMeeting(meeting.id); onDelete(meeting.id) }, language.code)
             }
@@ -256,8 +256,8 @@ private fun MeetingOperationalCard(
             if (meeting.details.isNotBlank()) Text(meeting.details, color = adaptInk(Color(0xFF64748B)), fontSize = 13.sp)
 
             Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-                IconButton(onClick = onEdit) { Icon(Icons.Default.Edit, if (languageCode == "ar") "تعديل الاجتماع" else "Edit meeting", tint = adaptInk(Color(0xFF3F7AE0))) }
-                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, if (languageCode == "ar") "حذف الاجتماع" else "Delete meeting", tint = adaptInk(Color(0xFFE62E3B))) }
+                IconButton(onClick = onEdit) { Icon(Icons.Default.Edit, L("تعديل الاجتماع"), tint = adaptInk(Color(0xFF3F7AE0))) }
+                IconButton(onClick = onDelete) { Icon(Icons.Default.DeleteOutline, L("حذف الاجتماع"), tint = adaptInk(Color(0xFFE62E3B))) }
             }
 
             OutlinedTextField(
@@ -266,18 +266,18 @@ private fun MeetingOperationalCard(
                 modifier = Modifier.fillMaxWidth(),
                 minLines = 3,
                 maxLines = 7,
-                label = { Text(if (languageCode == "ar") "نوّتة / محضر الاجتماع" else "Meeting notes") },
-                placeholder = { Text(if (languageCode == "ar") "اكتب ملاحظات الاجتماع هنا..." else "Write meeting notes here...") },
+                label = { Text(L("نوّتة / محضر الاجتماع")) },
+                placeholder = { Text(L("اكتب ملاحظات الاجتماع هنا...")) },
             )
             Button(
                 onClick = {
                     store.saveNote(meeting.id, note)
-                    Toast.makeText(context, if (languageCode == "ar") "تم حفظ النوّتة" else "Notes saved", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, L("تم حفظ النوّتة"), Toast.LENGTH_SHORT).show()
                 },
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF173B65)),
             ) {
-                Icon(Icons.Default.Save, null); Spacer(Modifier.width(6.dp)); Text(if (languageCode == "ar") "حفظ النوّتة" else "Save notes")
+                Icon(Icons.Default.Save, null); Spacer(Modifier.width(6.dp)); Text(L("حفظ النوّتة"))
             }
 
             Button(
@@ -285,7 +285,7 @@ private fun MeetingOperationalCard(
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF7C3AED)),
             ) {
-                Icon(Icons.Default.Mic, null); Spacer(Modifier.width(6.dp)); Text(if (languageCode == "ar") "بدء تسجيل الاجتماع" else "Record meeting")
+                Icon(Icons.Default.Mic, null); Spacer(Modifier.width(6.dp)); Text(L("بدء تسجيل الاجتماع"))
             }
             recordings.forEachIndexed { index, path ->
                 Button(
@@ -293,7 +293,7 @@ private fun MeetingOperationalCard(
                     modifier = Modifier.fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF0F9D72)),
                 ) {
-                    Icon(Icons.Default.PlayArrow, null); Spacer(Modifier.width(6.dp)); Text(if (languageCode == "ar") "تشغيل تسجيل ${index + 1}" else "Play recording ${index + 1}")
+                    Icon(Icons.Default.PlayArrow, null); Spacer(Modifier.width(6.dp)); Text(L("تشغيل تسجيل ${index + 1}"))
                 }
             }
 
@@ -301,7 +301,7 @@ private fun MeetingOperationalCard(
                 Button(onClick = onCapture, modifier = Modifier.weight(1f), colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE62E3B))) {
                     Icon(Icons.Default.CameraAlt, null)
                     Spacer(Modifier.width(6.dp))
-                    Text(if (languageCode == "ar") "تصوير المحضر" else "Photograph minutes")
+                    Text(L("تصوير المحضر"))
                 }
             }
             attachments.forEachIndexed { index, path ->
@@ -310,14 +310,14 @@ private fun MeetingOperationalCard(
                     modifier = Modifier.fillMaxWidth(),
                     colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFEEF7FF)), contentColor = adaptInk(Color(0xFF173B65))),
                 ) {
-                    Icon(Icons.Default.OpenInNew, null); Spacer(Modifier.width(6.dp)); Text(if (languageCode == "ar") "فتح صورة المحضر ${index + 1}" else "Open minutes photo ${index + 1}")
+                    Icon(Icons.Default.OpenInNew, null); Spacer(Modifier.width(6.dp)); Text(L("فتح صورة المحضر ${index + 1}"))
                 }
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(Icons.Default.Description, null, tint = adaptInk(Color(0xFF0F9D72)))
                 Spacer(Modifier.width(6.dp))
                 Text(
-                    if (languageCode == "ar") "صور المحضر: ${attachments.size}" else "Minutes photos: ${attachments.size}",
+                    L("صور المحضر: ${attachments.size}"),
                     color = adaptInk(Color(0xFF475569)), fontSize = 12.sp, fontWeight = FontWeight.SemiBold,
                 )
             }
@@ -332,7 +332,7 @@ private fun openImage(context: android.content.Context, uri: Uri) {
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         })
     }.onFailure {
-        Toast.makeText(context, "تعذر فتح صورة المحضر", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, L("تعذر فتح صورة المحضر"), Toast.LENGTH_SHORT).show()
     }
 }
 
@@ -344,6 +344,6 @@ private fun openAudio(context: android.content.Context, uri: Uri) {
             addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
         })
     }.onFailure {
-        Toast.makeText(context, "تعذر تشغيل التسجيل", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, L("تعذر تشغيل التسجيل"), Toast.LENGTH_SHORT).show()
     }
 }

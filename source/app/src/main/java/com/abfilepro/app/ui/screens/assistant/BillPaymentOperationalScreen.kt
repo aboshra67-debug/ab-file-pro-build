@@ -235,7 +235,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
                     BillReminderStore.delete(context, upcoming.id)
                     BillAlarmScheduler.cancel(context, upcoming.id)
                     reminderRevision++
-                    Toast.makeText(context, "تم حذف التذكير", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, L("تم حذف التذكير"), Toast.LENGTH_SHORT).show()
                 },
             )
         }
@@ -262,7 +262,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
                 BillAlarmScheduler.sync(context, item.id, item.dueAtMillis)
                 reminderRevision++
                 showDialog = false
-                Toast.makeText(context, "تم حفظ التذكير", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, L("تم حفظ التذكير"), Toast.LENGTH_SHORT).show()
             },
         )
     }
@@ -308,7 +308,7 @@ private fun BillTypeCard(type: BillType, selected: Boolean, modifier: Modifier =
                     Icon(type.icon, null, tint = type.tint, modifier = Modifier.size(48.dp))
                 }
             }
-            Text(type.arabicLabel, fontWeight = FontWeight.Black, fontSize = 18.sp)
+            Text(L(type.arabicLabel), fontWeight = FontWeight.Black, fontSize = 18.sp)
         }
     }
 }
@@ -338,7 +338,7 @@ private fun ProviderCard(provider: BillProvider, selected: Boolean, onClick: () 
             }
             Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                 Text(provider.title, fontWeight = FontWeight.Black, fontSize = 18.sp)
-                Text(if (installed) "مثبت على الجهاز" else "غير مثبت — سيتم فتح المتجر", color = if (installed) adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF6B7280)), fontSize = 12.sp)
+                Text(L(if (installed) "مثبت على الجهاز" else "غير مثبت — سيتم فتح المتجر"), color = if (installed) adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF6B7280)), fontSize = 12.sp)
             }
         }
     }
@@ -364,12 +364,12 @@ private fun UpcomingReminderCard(reminder: BillReminder, providerName: String?, 
             }
             Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                 Text(L("التذكيرات القادمة"), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp)
-                Text("فاتورة ${reminder.type.arabicLabel}", fontWeight = FontWeight.Black, fontSize = 24.sp)
+                Text(L("فاتورة ${L(reminder.type.arabicLabel)}"), fontWeight = FontWeight.Black, fontSize = 24.sp)
                 Text(
                     when {
-                        days < 0 -> "متأخرة منذ ${-days} يوم"
-                        days == 0L -> "تستحق اليوم"
-                        else -> "تستحق خلال $days أيام"
+                        days < 0 -> L("متأخرة منذ ${-days} يوم")
+                        days == 0L -> L("تستحق اليوم")
+                        else -> L("تستحق خلال $days أيام")
                     },
                     color = adaptInk(Color(0xFFFF3B3B)),
                     fontWeight = FontWeight.Black,
@@ -407,7 +407,7 @@ private fun AddBillReminderDialog(
                                 FilterChip(
                                     selected = type == item,
                                     onClick = { type = item },
-                                    label = { Text(item.arabicLabel) },
+                                    label = { Text(L(item.arabicLabel)) },
                                     modifier = Modifier.weight(1f),
                                 )
                             }
@@ -470,7 +470,7 @@ private fun AddBillReminderDialog(
     )
 }
 
-private fun formatDate(millis: Long): String = SimpleDateFormat("yyyy/MM/dd", Locale("ar", "EG")).format(Date(millis))
+private fun formatDate(millis: Long): String = SimpleDateFormat("yyyy/MM/dd", assistantLocale(true)).format(Date(millis))
 
 private fun startOfToday(): Long = Calendar.getInstance().apply {
     set(Calendar.HOUR_OF_DAY, 0)

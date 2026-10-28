@@ -180,7 +180,7 @@ internal fun HealthMedicationScreen(
                 }
             }
             if (medicines.isEmpty()) {
-                item { EmptyHealthCard("لا توجد أدوية مسجلة لهذا الشخص") }
+                item { EmptyHealthCard(L("لا توجد أدوية مسجلة لهذا الشخص")) }
             } else {
                 items(medicines.sortedBy { it.dueAt ?: Long.MAX_VALUE }, key = { it.id }) { entry ->
                     MedicationRow(entry = entry, onUpdate = onUpdate, onDelete = onDelete)
@@ -193,7 +193,7 @@ internal fun HealthMedicationScreen(
                 }
             }
             if (appointments.isEmpty()) {
-                item { EmptyHealthCard("لا توجد مواعيد صحية قادمة") }
+                item { EmptyHealthCard(L("لا توجد مواعيد صحية قادمة")) }
             } else {
                 items(appointments, key = { it.id }) { entry ->
                     AppointmentCard(entry = entry, onUpdate = onUpdate, onDelete = onDelete)
@@ -440,7 +440,7 @@ private fun AppointmentCard(entry: AssistantEntry, onUpdate: (AssistantEntry) ->
             }
             Column {
                 OutlinedButton(onClick = { onUpdate(entry.copy(completed = !entry.completed, enabled = entry.completed)) }) {
-                    Text(if (entry.completed) "إعادة" else "تم")
+                    Text(L(if (entry.completed) "إعادة" else "تم"))
                 }
                 TextButton(onClick = { onDelete(entry.id) }) { Text(L("حذف"), color = HealthMuted, fontSize = 11.sp) }
             }
@@ -492,7 +492,7 @@ private fun AddMedicineDialog(ownerLabel: String, onDismiss: () -> Unit, onSave:
                     }, modifier = Modifier.fillMaxWidth()) {
                         Icon(Icons.Default.Schedule, null)
                         Spacer(Modifier.size(7.dp))
-                        Text(L("موعد الجرعة") + " ${index + 1}: " + time.format(DateTimeFormatter.ofPattern("hh:mm a", Locale("ar"))))
+                        Text(L("موعد الجرعة") + " ${index + 1}: " + time.format(DateTimeFormatter.ofPattern("hh:mm a", assistantLocale())))
                     }
                 }
             }
@@ -523,7 +523,7 @@ private fun AddAppointmentDialog(ownerLabel: String, onDismiss: () -> Unit, onSa
                 }, modifier = Modifier.fillMaxWidth()) { Icon(Icons.Default.CalendarMonth, null); Spacer(Modifier.size(7.dp)); Text(date.toString()) }
                 OutlinedButton(onClick = {
                     TimePickerDialog(context, { _, h, m -> time = LocalTime.of(h, m) }, time.hour, time.minute, false).show()
-                }, modifier = Modifier.fillMaxWidth()) { Icon(Icons.Default.Schedule, null); Spacer(Modifier.size(7.dp)); Text(time.format(DateTimeFormatter.ofPattern("hh:mm a", Locale("ar")))) }
+                }, modifier = Modifier.fillMaxWidth()) { Icon(Icons.Default.Schedule, null); Spacer(Modifier.size(7.dp)); Text(time.format(DateTimeFormatter.ofPattern("hh:mm a", assistantLocale()))) }
             }
         },
         confirmButton = { Button(onClick = { if (title.isNotBlank()) onSave(title.trim(), details.trim(), at) }, enabled = title.isNotBlank()) { Text(L("حفظ")) } },
@@ -532,16 +532,16 @@ private fun AddAppointmentDialog(ownerLabel: String, onDismiss: () -> Unit, onSa
 }
 
 private fun formatClock(value: Long?): String = value?.let {
-    Instant.ofEpochMilli(it).atZone(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("hh:mm a", Locale("ar")))
+    Instant.ofEpochMilli(it).atZone(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("hh:mm a", assistantLocale()))
 } ?: "--:--"
 
 private fun formatDateTime(value: Long?): String = value?.let {
-    Instant.ofEpochMilli(it).atZone(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("d MMMM، hh:mm a", Locale("ar")))
-} ?: "بدون موعد"
+    Instant.ofEpochMilli(it).atZone(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("d MMMM، hh:mm a", assistantLocale()))
+} ?: L("بدون موعد")
 
 private fun formatTodayArabic(): String {
     val now = LocalDate.now()
-    return now.format(DateTimeFormatter.ofPattern("EEEE، d MMMM", Locale("ar")))
+    return now.format(DateTimeFormatter.ofPattern("EEEE، d MMMM", assistantLocale()))
 }
 
 private fun dosesDoneToday(meta: HealthEntryMeta): Int =

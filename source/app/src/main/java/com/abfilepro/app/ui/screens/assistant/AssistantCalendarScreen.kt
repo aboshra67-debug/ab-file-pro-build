@@ -249,7 +249,7 @@ private fun CalendarGrid(month: YearMonth, selectedDate: LocalDate, entries: Lis
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             weekdayLabels.forEach { day ->
-                Text(day, modifier = Modifier.weight(1f), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF475569)), fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                Text(L(day), modifier = Modifier.weight(1f), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF475569)), fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
             }
         }
         var index = 0
@@ -322,7 +322,7 @@ private fun CalendarEventCard(event: AssistantEntry, onEdit: () -> Unit, onDelet
                 Surface(color = chipColor, shape = RoundedCornerShape(999.dp)) {
                     Row(Modifier.padding(horizontal = 12.dp, vertical = 5.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                         Icon(if (event.category == AssistantCategory.WORK) Icons.Default.BusinessCenter else Icons.Default.Person, null, tint = chipText, modifier = Modifier.size(14.dp))
-                        Text(if (event.category == AssistantCategory.WORK) "عمل" else "شخصي", color = chipText, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                        Text(L(if (event.category == AssistantCategory.WORK) "عمل" else "شخصي"), color = chipText, fontSize = 12.sp, fontWeight = FontWeight.Bold)
                     }
                 }
                 Text(event.title, fontWeight = FontWeight.Black, fontSize = 18.sp, color = adaptInk(Color(0xFF111827)))
@@ -379,7 +379,7 @@ private fun CalendarEventDialog(
     val exactAlarmLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         val exactGranted = TaskAlarmScheduler.hasExactAlarmAccess(context)
         reminderEnabled = exactGranted && hasNotificationPermission(context)
-        permissionMessage = if (reminderEnabled) "" else "فعّل السماح بالمنبهات الدقيقة لتشغيل تنبيه الموعد."
+        permissionMessage = if (reminderEnabled) "" else L("فعّل السماح بالمنبهات الدقيقة لتشغيل تنبيه الموعد.")
     }
     fun requestExactAlarmAccess() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S || TaskAlarmScheduler.hasExactAlarmAccess(context)) {
@@ -402,7 +402,7 @@ private fun CalendarEventDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text(if (initial == null) "إضافة موعد" else "تعديل الموعد", fontWeight = FontWeight.Black) },
+        title = { Text(L(if (initial == null) "إضافة موعد" else "تعديل الموعد"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 OutlinedTextField(title, { title = it.take(240) }, label = { Text(L("عنوان الموعد")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
@@ -440,11 +440,11 @@ private fun CalendarEventDialog(
                 if (reminderEnabled) {
                     Box {
                         OutlinedButton(onClick = { showReminderMenu = true }, modifier = Modifier.fillMaxWidth()) {
-                            Text(reminderOffset.label)
+                            Text(L(reminderOffset.label))
                         }
                         DropdownMenu(expanded = showReminderMenu, onDismissRequest = { showReminderMenu = false }) {
                             ReminderOffset.entries.forEach { option ->
-                                DropdownMenuItem(text = { Text(option.label) }, onClick = { reminderOffset = option; showReminderMenu = false })
+                                DropdownMenuItem(text = { Text(L(option.label)) }, onClick = { reminderOffset = option; showReminderMenu = false })
                             }
                         }
                     }
@@ -499,7 +499,7 @@ private fun formatTime(calendar: Calendar): String {
     val hour = calendar.get(Calendar.HOUR)
     val minute = calendar.get(Calendar.MINUTE)
     val displayHour = if (hour == 0) 12 else hour
-    val amPm = if (calendar.get(Calendar.AM_PM) == Calendar.AM) "ص" else "م"
+    val amPm = L(if (calendar.get(Calendar.AM_PM) == Calendar.AM) "ص" else "م")
     return "%d:%02d %s".format(displayHour, minute, amPm)
 }
 
@@ -509,14 +509,14 @@ private fun formatDateTime(millis: Long): String {
 }
 
 private fun arabicDate(date: LocalDate): String {
-    val names = DateFormatSymbols(Locale("ar")).weekdays
+    val names = DateFormatSymbols(assistantLocale()).weekdays
     val dayName = names[(date.dayOfWeek.value % 7) + 1]
-    val monthName = DateFormatSymbols(Locale("ar")).months[date.monthValue - 1]
+    val monthName = DateFormatSymbols(assistantLocale()).months[date.monthValue - 1]
     return "$dayName، ${date.dayOfMonth} $monthName ${date.year}"
 }
 
 private fun monthName(month: YearMonth): String {
-    val monthName = DateFormatSymbols(Locale("ar")).months[month.monthValue - 1]
+    val monthName = DateFormatSymbols(assistantLocale()).months[month.monthValue - 1]
     return "$monthName ${month.year}"
 }
 
@@ -527,9 +527,9 @@ private fun localDateToMillis(date: LocalDate, hour: Int, minute: Int): Long =
     }.timeInMillis
 
 private fun reminderCaption(minutes: Int): String = when (minutes) {
-    60 -> "التنبيه قبل ساعة"
-    30 -> "التنبيه قبل 30 دقيقة"
-    15 -> "التنبيه قبل 15 دقيقة"
-    5 -> "التنبيه قبل 5 دقائق"
-    else -> "التنبيه في وقت الموعد"
+    60 -> L("التنبيه قبل ساعة")
+    30 -> L("التنبيه قبل 30 دقيقة")
+    15 -> L("التنبيه قبل 15 دقيقة")
+    5 -> L("التنبيه قبل 5 دقائق")
+    else -> L("التنبيه في وقت الموعد")
 }

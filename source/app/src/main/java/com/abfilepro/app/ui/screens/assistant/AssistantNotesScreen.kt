@@ -195,7 +195,7 @@ internal fun AssistantNotesScreen(
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Text(
-                        if (showAllPinned) "عرض أقل  ‹" else "عرض الكل  ‹",
+                        L(if (showAllPinned) "عرض أقل  ‹" else "عرض الكل  ‹"),
                         modifier = Modifier.clickable(enabled = pinned.size > 2) { showAllPinned = !showAllPinned },
                         color = if (pinned.size > 2) NotesText else NotesSubText,
                         fontWeight = FontWeight.SemiBold,
@@ -235,7 +235,7 @@ internal fun AssistantNotesScreen(
 
             item {
                 Text(
-                    "كل الملاحظات",
+                    L("كل الملاحظات"),
                     modifier = Modifier.fillMaxWidth().padding(top = 6.dp),
                     color = NotesText,
                     fontSize = 25.sp,
@@ -272,7 +272,7 @@ private fun NotesHeader(onBack: () -> Unit) {
             accent = true,
         )
         Text(
-            "الملاحظات",
+            L("الملاحظات"),
             modifier = Modifier.align(Alignment.Center),
             color = NotesText,
             fontSize = 29.sp,
@@ -338,7 +338,7 @@ private fun EmptyPinnedCard() {
         elevation = CardDefaults.cardElevation(1.dp),
     ) {
         Text(
-            "يمكنك تثبيت أي ملاحظة من قائمة ⋮ لتظهر هنا.",
+            L("يمكنك تثبيت أي ملاحظة من قائمة ⋮ لتظهر هنا."),
             modifier = Modifier.fillMaxWidth().padding(18.dp),
             color = NotesSubText,
             textAlign = TextAlign.End,
@@ -492,7 +492,7 @@ private fun NoteMenu(
                 onClick = { expanded = false; onEdit() },
             )
             DropdownMenuItem(
-                text = { Text(if (pinned) "إلغاء التثبيت" else "تثبيت") },
+                text = { Text(L(if (pinned) "إلغاء التثبيت" else "تثبيت")) },
                 leadingIcon = { Icon(Icons.Default.PushPin, null) },
                 onClick = { expanded = false; onTogglePin() },
             )
@@ -508,10 +508,10 @@ private fun NoteMenu(
 @Composable
 private fun EmptyNotesCard(query: String, category: AssistantCategory) {
     val message = when {
-        query.isNotBlank() -> "لا توجد نتائج مطابقة للبحث."
-        category == AssistantCategory.PERSONAL -> "لا توجد ملاحظات شخصية بعد."
-        category == AssistantCategory.WORK -> "لا توجد ملاحظات عمل بعد."
-        else -> "لا توجد ملاحظات بعد. اضغط «إضافة ملاحظة» للبدء."
+        query.isNotBlank() -> L("لا توجد نتائج مطابقة للبحث.")
+        category == AssistantCategory.PERSONAL -> L("لا توجد ملاحظات شخصية بعد.")
+        category == AssistantCategory.WORK -> L("لا توجد ملاحظات عمل بعد.")
+        else -> L("لا توجد ملاحظات بعد. اضغط «إضافة ملاحظة» للبدء.")
     }
     Card(
         modifier = Modifier.fillMaxWidth(),
@@ -568,7 +568,7 @@ private fun NoteEditorDialog(
                         Text(L("إلغاء"), color = NotesSubText, fontWeight = FontWeight.Bold)
                     }
                     Text(
-                        if (initial == null) "ملاحظة جديدة" else "تعديل الملاحظة",
+                        L(if (initial == null) "ملاحظة جديدة" else "تعديل الملاحظة"),
                         color = NotesText,
                         fontSize = 21.sp,
                         fontWeight = FontWeight.Black,
@@ -697,12 +697,12 @@ private fun NoteEditorDialog(
 
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     NoteCategoryChoice(
-                        "شخصي",
+                        L("شخصي"),
                         category == AssistantCategory.PERSONAL,
                         Modifier.weight(1f),
                     ) { category = AssistantCategory.PERSONAL }
                     NoteCategoryChoice(
-                        "عمل",
+                        L("عمل"),
                         category == AssistantCategory.WORK,
                         Modifier.weight(1f),
                     ) { category = AssistantCategory.WORK }
@@ -736,9 +736,9 @@ private fun noteFontFamily(key: String): FontFamily = when (key) {
 }
 
 private fun noteFontLabel(key: String): String = when (key) {
-    "serif" -> "كلاسيكي"
-    "mono" -> "ثابت"
-    else -> "عادي"
+    "serif" -> L("كلاسيكي")
+    "mono" -> L("ثابت")
+    else -> L("عادي")
 }
 
 private fun encodeNoteStyle(style: NoteEditorStyle): String =
@@ -777,5 +777,5 @@ private fun formatNoteDate(epochMillis: Long): String = runCatching {
     Instant.ofEpochMilli(epochMillis)
         .atZone(ZoneId.systemDefault())
         .toLocalDate()
-        .format(DateTimeFormatter.ofPattern("d MMMM yyyy", Locale("ar")))
+        .format(DateTimeFormatter.ofPattern("d MMMM yyyy", assistantLocale()))
 }.getOrElse { "" }

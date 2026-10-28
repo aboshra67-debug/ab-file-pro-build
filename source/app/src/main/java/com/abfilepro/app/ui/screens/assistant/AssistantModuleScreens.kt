@@ -1539,7 +1539,7 @@ private fun ClassicPriceStoreResultCard(
             }
             Column(modifier = Modifier.weight(1.15f), horizontalAlignment = Alignment.CenterHorizontally) {
                 if (result.priceEgp != null) {
-                    Text("${formatCurrencyValue(result.priceEgp)} ج.م", color = adaptInk(Color(0xFFF52D3C)), fontWeight = FontWeight.Black, fontSize = 24.sp)
+                    Text(L("${formatCurrencyValue(result.priceEgp)} ج.م"), color = adaptInk(Color(0xFFF52D3C)), fontWeight = FontWeight.Black, fontSize = 24.sp)
                 } else {
                     Text(tr(language, "السعر غير متاح", "Price unavailable", "Prix indisponible"), color = adaptInk(Color(0xFF667085)), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 }
@@ -1603,13 +1603,13 @@ private fun PrayerModuleScreen(
                 useDeviceLocation = true,
                 autoGps = true,
             ))
-            Toast.makeText(context, "تم ربط موقعك: ${resolvedCity.ifBlank { "موقعي الحالي" }}", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, L("تم ربط موقعك: ${resolvedCity.ifBlank { "موقعي الحالي" }}"), Toast.LENGTH_SHORT).show()
         }
     }
     val locationPermission = rememberLauncherForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { grants ->
         if (grants.values.any { it }) {
             refreshPrayerGpsLocation(context, applyGpsLocation) {
-                Toast.makeText(context, "فعّل خدمة الموقع ثم اضغط «استخدم موقعي» مرة أخرى", Toast.LENGTH_LONG).show()
+                Toast.makeText(context, L("فعّل خدمة الموقع ثم اضغط «استخدم موقعي» مرة أخرى"), Toast.LENGTH_LONG).show()
                 runCatching { context.startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)) }
             }
         }
@@ -1618,7 +1618,7 @@ private fun PrayerModuleScreen(
         val fine = ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
         val coarse = ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
         if (fine || coarse) refreshPrayerGpsLocation(context, applyGpsLocation) {
-            Toast.makeText(context, "فعّل خدمة الموقع ثم أعد المحاولة", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, L("فعّل خدمة الموقع ثم أعد المحاولة"), Toast.LENGTH_LONG).show()
             runCatching { context.startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)) }
         } else locationPermission.launch(arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION))
     }
@@ -2011,12 +2011,12 @@ private fun insertCalendarEvent(context: Context, entry: AssistantEntry) {
 private fun openUri(context: Context, value: String, mime: String) {
     val uri = runCatching { Uri.parse(value) }.getOrNull() ?: return
     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW).setDataAndType(uri, mime).addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)) }
-        .onFailure { Toast.makeText(context, "تعذر فتح الملف", Toast.LENGTH_SHORT).show() }
+        .onFailure { Toast.makeText(context, L("تعذر فتح الملف"), Toast.LENGTH_SHORT).show() }
 }
 
 private fun openWeb(context: Context, url: String) {
     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) }
-        .onFailure { Toast.makeText(context, "تعذر فتح الرابط", Toast.LENGTH_SHORT).show() }
+        .onFailure { Toast.makeText(context, L("تعذر فتح الرابط"), Toast.LENGTH_SHORT).show() }
 }
 
 private fun launchPackageOrStore(context: Context, packageName: String, search: String) {

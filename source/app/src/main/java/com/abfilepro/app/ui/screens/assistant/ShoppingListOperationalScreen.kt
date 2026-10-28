@@ -176,7 +176,7 @@ internal fun ShoppingListOperationalScreen(
     if (showCustomItemDialog) {
         AlertDialog(
             onDismissRequest = { showCustomItemDialog = false },
-            title = { Text(L("إضافة صنف إلى ${selectedCatalogCategory.arabicLabel}"), fontWeight = FontWeight.Black) },
+            title = { Text(L("إضافة صنف إلى ${L(selectedCatalogCategory.arabicLabel)}"), fontWeight = FontWeight.Black) },
             text = {
                 OutlinedTextField(
                     value = newItem,
@@ -309,7 +309,7 @@ internal fun ShoppingListOperationalScreen(
                                     verticalAlignment = Alignment.CenterVertically,
                                     horizontalArrangement = Arrangement.End,
                                 ) {
-                                    Text(category.arabicLabel, modifier = Modifier.weight(1f), textAlign = TextAlign.End, fontWeight = if (selectedCatalogCategory == category) FontWeight.Black else FontWeight.Bold, fontSize = 13.sp)
+                                    Text(L(category.arabicLabel), modifier = Modifier.weight(1f), textAlign = TextAlign.End, fontWeight = if (selectedCatalogCategory == category) FontWeight.Black else FontWeight.Bold, fontSize = 13.sp)
                                     Spacer(Modifier.width(5.dp))
                                     Text(category.emoji.take(2), fontSize = 18.sp)
                                 }
@@ -372,7 +372,7 @@ internal fun ShoppingListOperationalScreen(
                     context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND).apply {
                         type = "text/plain"
                         putExtra(Intent.EXTRA_TEXT, share)
-                    }, "مشاركة القائمة"))
+                    }, L("مشاركة القائمة")))
                 },
                 modifier = Modifier.weight(1f).height(58.dp),
                 colors = ButtonDefaults.buttonColors(containerColor = adaptSurface(Color(0xFFFFF2F3)), contentColor = adaptInk(Color(0xFFD7192D))),
@@ -445,7 +445,7 @@ private fun ShoppingCategoryCard(
                 }
                 Text(L("أصناف"), fontWeight = FontWeight.Bold, color = adaptInk(Color(0xFF475569)))
                 Spacer(Modifier.weight(1f))
-                Text(category.arabicLabel, fontWeight = FontWeight.Black, fontSize = 21.sp)
+                Text(L(category.arabicLabel), fontWeight = FontWeight.Black, fontSize = 21.sp)
                 Text(category.emoji, fontSize = 28.sp)
             }
 

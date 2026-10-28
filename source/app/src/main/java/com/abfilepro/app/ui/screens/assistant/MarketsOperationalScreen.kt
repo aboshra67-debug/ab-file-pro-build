@@ -113,7 +113,7 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
         goldResult.getOrNull()?.let { gold = it }
         lastError = currency == null || gold == null
         loading = false
-        if (force && lastError) Toast.makeText(context, "تعذر تحديث أحد المصادر — تم الاحتفاظ بآخر بيانات متاحة", Toast.LENGTH_SHORT).show()
+        if (force && lastError) Toast.makeText(context, L("تعذر تحديث أحد المصادر — تم الاحتفاظ بآخر بيانات متاحة"), Toast.LENGTH_SHORT).show()
     }
 
     LaunchedEffect(Unit) {
@@ -280,8 +280,8 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
 private fun SegmentedTabs(selectedTab: MarketTab, onSelect: (MarketTab) -> Unit) {
     Surface(shape = RoundedCornerShape(22.dp), color = adaptSurface(Color(0xFFF8FAFC)), shadowElevation = 1.dp) {
         Row(modifier = Modifier.fillMaxWidth().padding(4.dp)) {
-            SegTab("الذهب", selectedTab == MarketTab.GOLD, Modifier.weight(1f)) { onSelect(MarketTab.GOLD) }
-            SegTab("العملات", selectedTab == MarketTab.CURRENCIES, Modifier.weight(1f)) { onSelect(MarketTab.CURRENCIES) }
+            SegTab(L("الذهب"), selectedTab == MarketTab.GOLD, Modifier.weight(1f)) { onSelect(MarketTab.GOLD) }
+            SegTab(L("العملات"), selectedTab == MarketTab.CURRENCIES, Modifier.weight(1f)) { onSelect(MarketTab.CURRENCIES) }
         }
     }
 }
@@ -306,7 +306,7 @@ private fun MarketsCurrencySection(
     favorites: Set<MarketAsset>,
     onToggleFavorite: (MarketAsset) -> Unit,
 ) {
-    SectionTitle("أسعار العملات")
+    SectionTitle(L("أسعار العملات"))
     CurrencyCard(
         title = L("الدولار الأمريكي"),
         code = "USD",
@@ -397,11 +397,11 @@ private fun MarketsGoldSection(
     favorites: Set<MarketAsset>,
     onToggleFavorite: (MarketAsset) -> Unit,
 ) {
-    SectionTitle("أسعار الذهب")
+    SectionTitle(L("أسعار الذهب"))
     Row(horizontalArrangement = Arrangement.spacedBy(10.dp), modifier = Modifier.fillMaxWidth()) {
-        GoldCard("عيار 24", gold24, MarketAsset.GOLD24, favorites, Modifier.weight(1f), onToggleFavorite)
-        GoldCard("عيار 21", gold21, MarketAsset.GOLD21, favorites, Modifier.weight(1f), onToggleFavorite)
-        GoldCard("عيار 18", gold18, MarketAsset.GOLD18, favorites, Modifier.weight(1f), onToggleFavorite)
+        GoldCard(L("عيار 24"), gold24, MarketAsset.GOLD24, favorites, Modifier.weight(1f), onToggleFavorite)
+        GoldCard(L("عيار 21"), gold21, MarketAsset.GOLD21, favorites, Modifier.weight(1f), onToggleFavorite)
+        GoldCard(L("عيار 18"), gold18, MarketAsset.GOLD18, favorites, Modifier.weight(1f), onToggleFavorite)
     }
 }
 
@@ -473,7 +473,7 @@ private fun InfoPanel() {
                 Text(L("بيانات توضيحية"), fontWeight = FontWeight.Black, fontSize = 18.sp, color = adaptInk(Color(0xFF111827)))
             }
             Text(
-                "الأسعار المعروضة مرجعية واسترشادية وقد تختلف عن أسعار البنوك والصرافة والسوق المحلي.",
+                L("الأسعار المعروضة مرجعية واسترشادية وقد تختلف عن أسعار البنوك والصرافة والسوق المحلي."),
                 color = adaptInk(Color(0xFF6B7280)),
                 fontSize = 13.sp,
                 textAlign = TextAlign.End,
@@ -509,7 +509,7 @@ private fun MarketAlertDialog(
                         FilterChip(
                             selected = asset == item,
                             onClick = { asset = item },
-                            label = { Text(if (item == MarketAsset.USD) "دولار" else "ريال") },
+                            label = { Text(L(if (item == MarketAsset.USD) "دولار" else "ريال")) },
                             modifier = Modifier.weight(1f),
                         )
                     }
@@ -519,13 +519,13 @@ private fun MarketAlertDialog(
                         FilterChip(
                             selected = asset == item,
                             onClick = { asset = item },
-                            label = { Text(item.arabicName.substringAfter("عيار ")) },
+                            label = { Text(L(item.arabicName.substringAfter("عيار "))) },
                             modifier = Modifier.weight(1f),
                         )
                     }
                 }
                 Text(
-                    "السعر الحالي: ${formatMarketNumber(current, if (asset == MarketAsset.USD || asset == MarketAsset.SAR) 2 else 0)} ج.م",
+                    L("السعر الحالي: ${formatMarketNumber(current, if (asset == MarketAsset.USD || asset == MarketAsset.SAR) 2 else 0)} ج.م"),
                     fontWeight = FontWeight.Bold,
                 )
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(5.dp)) {
@@ -533,7 +533,7 @@ private fun MarketAlertDialog(
                         FilterChip(
                             selected = direction == item,
                             onClick = { direction = item },
-                            label = { Text(if (item == MarketAlertDirection.ABOVE) "أعلى من" else "أقل من") },
+                            label = { Text(L(if (item == MarketAlertDirection.ABOVE) "أعلى من" else "أقل من")) },
                             modifier = Modifier.weight(1f),
                         )
                     }
@@ -558,7 +558,7 @@ private fun MarketAlertDialog(
                                     Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
                                         Text(alert.asset.arabicName, fontSize = 12.sp, fontWeight = FontWeight.Bold)
                                         Text(
-                                            "${if (alert.direction == MarketAlertDirection.ABOVE) "≥" else "≤"} ${formatMarketNumber(alert.targetEgp, 2)} ج.م",
+                                            L("${if (alert.direction == MarketAlertDirection.ABOVE) "≥" else "≤"} ${formatMarketNumber(alert.targetEgp, 2)} ج.م"),
                                             fontSize = 11.sp,
                                             color = adaptInk(Color(0xFF64748B)),
                                         )
@@ -595,17 +595,17 @@ private fun updateLabel(
     loading: Boolean,
     hasError: Boolean,
 ): String {
-    if (loading) return "جارِ تحديث الأسعار…"
+    if (loading) return L("جارِ تحديث الأسعار…")
     val ts = maxOf(currency?.fetchedAtMillis ?: 0L, gold?.fetchedAtMillis ?: 0L)
-    if (ts <= 0L) return if (hasError) "تعذر التحديث" else "في انتظار أول تحديث"
-    val time = Instant.ofEpochMilli(ts).atZone(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("h:mm a", Locale("ar", "EG")))
+    if (ts <= 0L) return L(if (hasError) "تعذر التحديث" else "في انتظار أول تحديث")
+    val time = Instant.ofEpochMilli(ts).atZone(ZoneId.systemDefault()).format(DateTimeFormatter.ofPattern("h:mm a", assistantLocale(true)))
     val cached = currency?.fromCache == true || gold?.fromCache == true
-    return "آخر تحديث $time${if (cached) " • محفوظ" else ""}"
+    return L("آخر تحديث $time${if (cached) " • محفوظ" else ""}")
 }
 
 private fun formatMarketNumber(value: Double?, decimals: Int): String {
     if (value == null || !value.isFinite()) return "—"
-    return NumberFormat.getNumberInstance(Locale("ar", "EG")).apply {
+    return NumberFormat.getNumberInstance(assistantLocale(true)).apply {
         maximumFractionDigits = decimals
         minimumFractionDigits = decimals
     }.format(value)

@@ -131,7 +131,7 @@ internal fun AssistantTasksScreen(
             if (visible.isEmpty()) {
                 Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                     Text(
-                        if (tab == TaskTab.COMPLETED) "لا توجد مهام مكتملة" else "لا توجد مهام هنا\nاضغط + لإضافة مهمة",
+                        L(if (tab == TaskTab.COMPLETED) "لا توجد مهام مكتملة" else "لا توجد مهام هنا\nاضغط + لإضافة مهمة"),
                         color = adaptInk(Color(0xFF64748B)),
                     )
                 }
@@ -146,7 +146,7 @@ internal fun AssistantTasksScreen(
                                 IconButton(onClick = { onUpdate(task.copy(completed = !task.completed)) }) {
                                     Icon(
                                         if (task.completed) Icons.Default.CheckCircle else Icons.Default.RadioButtonUnchecked,
-                                        "الحالة",
+                                        L("الحالة"),
                                         tint = if (task.completed) adaptInk(Color(0xFF0F9D72)) else adaptInk(Color(0xFF94A3B8)),
                                     )
                                 }
@@ -230,7 +230,7 @@ private fun TaskEditorDialog(
     val exactAlarmLauncher = rememberLauncherForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         val exactGranted = TaskAlarmScheduler.hasExactAlarmAccess(context)
         reminder = exactGranted && hasNotificationPermission(context)
-        permissionMessage = if (reminder) "" else "فعّل السماح بالمنبهات والتذكيرات الدقيقة لتشغيل التنبيه."
+        permissionMessage = if (reminder) "" else L("فعّل السماح بالمنبهات والتذكيرات الدقيقة لتشغيل التنبيه.")
     }
 
     fun requestExactAlarmAccess() {
@@ -262,7 +262,7 @@ private fun TaskEditorDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text(if (initial == null) "إضافة مهمة" else "تعديل المهمة", fontWeight = FontWeight.Black) },
+        title = { Text(L(if (initial == null) "إضافة مهمة" else "تعديل المهمة"), fontWeight = FontWeight.Black) },
         text = {
             Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                 OutlinedTextField(title, { title = it.take(240) }, label = { Text(L("اسم المهمة")) }, singleLine = true, modifier = Modifier.fillMaxWidth())
