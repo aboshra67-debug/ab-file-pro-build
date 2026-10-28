@@ -12,7 +12,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           run-id: 40751403348
-          pattern: P28_EVIDENCE
+          pattern: P29_EVIDENCE
           github-token: ${{ secrets.GITHUB_TOKEN }}
           path: dl
       - name: Publish dark shots
