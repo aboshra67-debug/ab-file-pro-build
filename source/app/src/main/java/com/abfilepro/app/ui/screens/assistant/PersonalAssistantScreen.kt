@@ -100,6 +100,16 @@ fun PersonalAssistantScreen(
     onBack: () -> Unit,
     onOpenScanner: () -> Unit,
 ) {
+    // P30: in dark mode the theme's blue is lifted a little inside the assistant so outlined buttons are readable.
+    AssistantThemeBridge { PersonalAssistantScreenContent(onBack = onBack, onOpenScanner = onOpenScanner) }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun PersonalAssistantScreenContent(
+    onBack: () -> Unit,
+    onOpenScanner: () -> Unit,
+) {
     val context = LocalContext.current
     val language = LocalAppLanguage.current
     val repository = remember(context) { AssistantRepository(context) }

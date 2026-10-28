@@ -188,10 +188,10 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
                         Icon(selectedType.icon, null, tint = selectedType.tint, modifier = Modifier.size(52.dp))
                     }
                 }
-                Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                    Text(L("اختر نوع الفاتورة ثم افتح تطبيق الدفع المثبت لديك"), fontWeight = FontWeight.Black, fontSize = 24.sp, lineHeight = 28.sp, textAlign = TextAlign.End)
+                Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign) {
+                    Text(L("اختر نوع الفاتورة ثم افتح تطبيق الدفع المثبت لديك"), fontWeight = FontWeight.Black, fontSize = 24.sp, lineHeight = 28.sp, textAlign = endText)
                     Spacer(Modifier.height(6.dp))
-                    Text(L("سيتم توجيهك إلى تطبيق الدفع الموجود على هاتفك لإتمام عملية الدفع."), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp, textAlign = TextAlign.End)
+                    Text(L("سيتم توجيهك إلى تطبيق الدفع الموجود على هاتفك لإتمام عملية الدفع."), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp, textAlign = endText)
                 }
                 Surface(shape = CircleShape, color = adaptSurface(Color(0xFFDDF9E9))) {
                     Box(modifier = Modifier.size(34.dp), contentAlignment = Alignment.Center) {
@@ -214,8 +214,8 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
         }
 
         Column(verticalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
-            Text(L("تطبيقات الدفع المتاحة"), fontWeight = FontWeight.Black, fontSize = 24.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
-            Text(L("اختر أحد التطبيقات المثبتة على هاتفك"), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
+            Text(L("تطبيقات الدفع المتاحة"), fontWeight = FontWeight.Black, fontSize = 24.sp, modifier = Modifier.fillMaxWidth(), textAlign = endText)
+            Text(L("اختر أحد التطبيقات المثبتة على هاتفك"), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp, modifier = Modifier.fillMaxWidth(), textAlign = endText)
         }
 
         Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -270,7 +270,7 @@ internal fun BillPaymentOperationalScreen(onBack: () -> Unit) {
 
 @Composable
 private fun HeaderBills(onBack: () -> Unit) {
-    Box(modifier = Modifier.fillMaxWidth()) {
+    HeaderMirror { Box(modifier = Modifier.fillMaxWidth()) {
         Surface(
             modifier = Modifier.align(Alignment.CenterStart).size(46.dp),
             shape = CircleShape,
@@ -282,7 +282,7 @@ private fun HeaderBills(onBack: () -> Unit) {
             shape = CircleShape,
             color = adaptSurface(Color(0xFFF9FAFB)),
         ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("≡", fontSize = 24.sp, fontWeight = FontWeight.Bold) } }
-    }
+    } }
 }
 
 @Composable
@@ -336,7 +336,7 @@ private fun ProviderCard(provider: BillProvider, selected: Boolean, onClick: () 
                     Text(provider.title, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)), textAlign = TextAlign.Center)
                 }
             }
-            Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+            Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign) {
                 Text(provider.title, fontWeight = FontWeight.Black, fontSize = 18.sp)
                 Text(L(if (installed) "مثبت على الجهاز" else "غير مثبت — سيتم فتح المتجر"), color = if (installed) adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF6B7280)), fontSize = 12.sp)
             }
@@ -362,7 +362,7 @@ private fun UpcomingReminderCard(reminder: BillReminder, providerName: String?, 
                     Icon(reminder.type.icon, null, tint = reminder.type.tint, modifier = Modifier.size(44.dp))
                 }
             }
-            Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+            Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign) {
                 Text(L("التذكيرات القادمة"), color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp)
                 Text(L("فاتورة ${L(reminder.type.arabicLabel)}"), fontWeight = FontWeight.Black, fontSize = 24.sp)
                 Text(

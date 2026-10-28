@@ -4,6 +4,7 @@ import java.time.DayOfWeek
 import java.time.Instant
 import java.time.LocalDate
 import java.time.LocalTime
+import java.time.YearMonth
 import java.time.ZoneId
 import java.time.ZonedDateTime
 
@@ -27,6 +28,13 @@ object QuickAddParser {
         "الخميس" to DayOfWeek.THURSDAY, "الجمعه" to DayOfWeek.FRIDAY, "الجمعة" to DayOfWeek.FRIDAY,
         "saturday" to DayOfWeek.SATURDAY, "sunday" to DayOfWeek.SUNDAY, "monday" to DayOfWeek.MONDAY, "tuesday" to DayOfWeek.TUESDAY,
         "wednesday" to DayOfWeek.WEDNESDAY, "thursday" to DayOfWeek.THURSDAY, "friday" to DayOfWeek.FRIDAY,
+    )
+    /** Normalized (see [normalize]) month names, Arabic and English. */
+    private val months = mapOf(
+        "يناير" to 1, "فبراير" to 2, "مارس" to 3, "ابريل" to 4, "مايو" to 5, "يونيو" to 6,
+        "يوليو" to 7, "اغسطس" to 8, "سبتمبر" to 9, "اكتوبر" to 10, "نوفمبر" to 11, "ديسمبر" to 12,
+        "january" to 1, "february" to 2, "march" to 3, "april" to 4, "may" to 5, "june" to 6,
+        "july" to 7, "august" to 8, "september" to 9, "october" to 10, "november" to 11, "december" to 12,
     )
     private val morningWords = setOf("الصبح", "صباحا", "الفجر", "am")
     private val eveningWords = setOf("العصر", "المغرب", "العشا", "العشاء", "بالليل", "الليل", "مساء", "المسا", "pm")
@@ -70,6 +78,8 @@ object QuickAddParser {
         var hour: Int? = null
         var minute = 0
         var period: String? = null // "am", "pm", "noon"
+        var explicitDate: LocalDate? = null
+        val today0 = now.toLocalDate()
 
         // 1) repetition: كل يوم / كل أسبوع / كل شهر / كل خميس
         var i = 0
@@ -110,6 +120,57 @@ object QuickAddParser {
                     a == "يومين" -> { dayOffset = 2; mark(i, 2) }
                     a == "اسبوع" -> { dayOffset = 7; mark(i, 2) }
                     a == "اسبوعين" -> { dayOffset = 14; mark(i, 2) }
+                }
+            }
+            i++
+        }
+
+        // 3a) explicit dates: "15 نوفمبر", "20/11", "يوم 20" (the day is never guessed, only read)
+        fun dayOfMonth(i: Int): Int? = number(i)?.takeIf { it in 1..31 }
+        fun nextWithDay(day: Int): LocalDate? {
+            var ym = YearMonth.from(today0)
+            repeat(13) {
+                if (day <= ym.lengthOfMonth()) {
+                    val d = ym.atDay(day)
+                    if (!d.isBefore(today0)) return d
+                }
+                ym = ym.plusMonths(1)
+            }
+            return null
+        }
+        i = 0
+        while (i < norm.size && explicitDate == null) {
+            if (used[i]) { i++; continue }
+            val w = norm[i]
+            val slash = Regex("^(\\d{1,2})/(\\d{1,2})(?:/(\\d{2,4}))?$").matchEntire(w)
+            val monthAfter = months[norm.getOrNull(i + 1) ?: ""]
+            when {
+                slash != null -> {
+                    val d = slash.groupValues[1].toInt(); val m = slash.groupValues[2].toInt()
+                    val yRaw = slash.groupValues[3]
+                    val explicitYear = yRaw.isNotEmpty()
+                    val y = if (!explicitYear) today0.year else yRaw.toInt().let { if (it < 100) 2000 + it else it }
+                    explicitDate = runCatching { LocalDate.of(y, m, d) }.getOrNull()?.let {
+                        if (!explicitYear && it.isBefore(today0)) it.plusYears(1) else it
+                    }
+                    if (explicitDate != null) mark(i)
+                }
+                dayOfMonth(i) != null && monthAfter != null -> {
+                    val d = dayOfMonth(i)!!
+                    val yearTok = norm.getOrNull(i + 2)?.takeIf { it.matches(Regex("\\d{4}")) }?.toInt()
+                    val y = yearTok ?: today0.year
+                    explicitDate = runCatching { LocalDate.of(y, monthAfter, d) }.getOrNull()?.let {
+                        if (yearTok == null && it.isBefore(today0)) it.plusYears(1) else it
+                    }
+                    if (explicitDate != null) {
+                        mark(i, 2)
+                        if (yearTok != null) mark(i + 2)
+                        if (i > 0 && !used[i - 1] && norm[i - 1] == "يوم") mark(i - 1)
+                    }
+                }
+                w == "يوم" && dayOfMonth(i + 1) != null && months[norm.getOrNull(i + 2) ?: ""] == null && norm.getOrNull(i + 2)?.let { it.startsWith("ايام") || it == "يوم" || it.startsWith("اسبوع") || it.startsWith("ساع") || it.startsWith("دقيق") } != true -> {
+                    val d = nextWithDay(dayOfMonth(i + 1)!!)
+                    if (d != null) { explicitDate = d; mark(i, 2) }
                 }
             }
             i++
@@ -204,11 +265,12 @@ object QuickAddParser {
         }
         when {
             relativeMinutes != null -> due = nowMillis + relativeMinutes * 60_000L
-            dayOffset != null || weekday != null || hour != null || recurrence != Recurrence.NONE -> {
+            explicitDate != null || dayOffset != null || weekday != null || hour != null || recurrence != Recurrence.NONE -> {
                 val h = hour
                 val candidates = if (h != null) resolveHours(h) else listOf(9)
                 val m = if (h != null) minute else 0
                 val date: LocalDate = when {
+                    explicitDate != null -> explicitDate
                     weekday != null -> {
                         var ahead = ((weekday.value - today.dayOfWeek.value) + 7) % 7
                         val sameDay = ahead == 0
@@ -219,7 +281,7 @@ object QuickAddParser {
                     dayOffset != null -> today.plusDays(dayOffset.toLong())
                     else -> today
                 }
-                val explicitDay = weekday != null || dayOffset != null
+                val explicitDay = explicitDate != null || weekday != null || dayOffset != null
                 var picked: ZonedDateTime? = candidates.map { at(date, it, m) }.firstOrNull { it.toInstant().toEpochMilli() > nowMillis }
                 if (picked == null) {
                     picked = if (explicitDay) at(date, candidates.first(), m) else at(date.plusDays(1), candidates.first(), m)

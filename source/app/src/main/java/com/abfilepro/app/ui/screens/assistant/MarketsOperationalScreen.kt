@@ -199,8 +199,8 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
                         Icon(Icons.Default.Refresh, contentDescription = L("تحديث"), tint = adaptInk(Color(0xFFE11D2E)), modifier = Modifier.size(28.dp))
                     }
                 }
-                Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                    Text(updateLabel(currency, gold, loading, lastError), color = adaptInk(Color(0xFF475569)), fontWeight = FontWeight.Medium, fontSize = 15.sp, textAlign = TextAlign.End)
+                Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign) {
+                    Text(updateLabel(currency, gold, loading, lastError), color = adaptInk(Color(0xFF475569)), fontWeight = FontWeight.Medium, fontSize = 15.sp, textAlign = endText)
                     if (lastError) {
                         Text(L("تم الاحتفاظ بآخر بيانات متاحة"), color = adaptInk(Color(0xFF94A3B8)), fontSize = 11.sp)
                     }
@@ -247,7 +247,7 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
 
 @Composable
 private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
-    Box(modifier = Modifier.fillMaxWidth()) {
+    HeaderMirror { Box(modifier = Modifier.fillMaxWidth()) {
         Surface(
             modifier = Modifier.align(Alignment.CenterStart).size(44.dp).clickable(onClick = onInfo),
             shape = CircleShape,
@@ -270,10 +270,10 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
             color = adaptSurface(Color(0xFFF8FAFC)),
         ) {
             Box(contentAlignment = Alignment.Center) {
-                Text("›", fontSize = 28.sp, color = adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold)
+                Text(if (isLtrUi) "‹" else "›", fontSize = 28.sp, color = adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold)
             }
         }
-    }
+    } }
 }
 
 @Composable
@@ -354,7 +354,7 @@ private fun CurrencyCard(
                     Text(code, fontSize = 28.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF0F172A)))
                 }
                 Spacer(Modifier.width(12.dp))
-                Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign) {
                     Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         IconButton(onClick = { onToggleFavorite(asset) }, modifier = Modifier.size(36.dp)) {
                             Icon(
@@ -363,7 +363,7 @@ private fun CurrencyCard(
                                 tint = if (asset in favorites) adaptInk(Color(0xFFF8B400)) else adaptInk(Color(0xFF94A3B8)),
                             )
                         }
-                        Text(title, fontSize = 24.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)), textAlign = TextAlign.End)
+                        Text(title, fontSize = 24.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF111827)), textAlign = endText)
                     }
                 }
             }
@@ -452,7 +452,7 @@ private fun GoldCard(
 
 @Composable
 private fun SectionTitle(title: String) {
-    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
+    Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = endArrange) {
         Text(title, fontWeight = FontWeight.Black, fontSize = 20.sp, color = adaptInk(Color(0xFF111827)))
     }
 }
@@ -476,7 +476,7 @@ private fun InfoPanel() {
                 L("الأسعار المعروضة مرجعية واسترشادية وقد تختلف عن أسعار البنوك والصرافة والسوق المحلي."),
                 color = adaptInk(Color(0xFF6B7280)),
                 fontSize = 13.sp,
-                textAlign = TextAlign.End,
+                textAlign = endText,
                 modifier = Modifier.fillMaxWidth(),
             )
         }
@@ -555,7 +555,7 @@ private fun MarketAlertDialog(
                                     Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 6.dp),
                                     verticalAlignment = Alignment.CenterVertically,
                                 ) {
-                                    Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                                    Column(Modifier.weight(1f), horizontalAlignment = endAlign) {
                                         Text(alert.asset.arabicName, fontSize = 12.sp, fontWeight = FontWeight.Bold)
                                         Text(
                                             L("${if (alert.direction == MarketAlertDirection.ABOVE) "≥" else "≤"} ${formatMarketNumber(alert.targetEgp, 2)} ج.م"),

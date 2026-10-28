@@ -70,6 +70,7 @@ private val L10N_RULES = listOf(
     L10nRule(Regex("""^آخر تحديث (.+)$"""), "Last updated {1}", "Dernière mise à jour {1}"),
     L10nRule(Regex("""^(.+)٪$"""), "{1}%", "{1} %"),
     L10nRule(Regex("""^تحديد ميزانية (.+)$"""), "Set budget for {1}", "Définir le budget de {1}"),
+    L10nRule(Regex("""^تحديد دخل (.+)$"""), "Set income for {1}", "Définir le revenu de {1}"),
     L10nRule(Regex("""^(.+)  •  (.+)٪$"""), "{1}  •  {2}%", "{1}  •  {2} %"),
 )
 
@@ -197,6 +198,11 @@ internal val L10N_TABLE: Map<String, Pair<String, String>> = mapOf(
     "تاريخ البداية أو الإصدار يجب أن يسبق تاريخ الانتهاء." to ("The start or issue date must be before the end date." to "La date de début ou d'émission doit précéder la date de fin."),
     "تحديث" to ("Refresh" to "Actualiser"),
     "تحديد الميزانية" to ("Set budget" to "Définir le budget"),
+    "الدخل الشهري" to ("Monthly income" to "Revenu mensuel"),
+    "تحديد الدخل" to ("Set income" to "Définir le revenu"),
+    "قيمة الدخل بالجنيه" to ("Income amount in EGP" to "Montant du revenu en EGP"),
+    "الصافي بعد المصروفات" to ("Net after expenses" to "Net après dépenses"),
+    "لم يُسجَّل دخل لهذا الشهر" to ("No income recorded for this month" to "Aucun revenu enregistré ce mois-ci"),
     "تحويل العملات" to ("Convert currencies" to "Convertir des devises"),
     "تطبيق الدفع (اختياري)" to ("Payment app (optional)" to "Application de paiement (facultatif)"),
     "تطبيقات الدفع المتاحة" to ("Available payment apps" to "Applications de paiement disponibles"),

@@ -41,16 +41,35 @@ internal object AssistantStore {
     }
 
     fun mutate(context: Context, change: (List<AssistantEntry>) -> List<AssistantEntry>): List<AssistantEntry> {
-        synchronized(lock) {
+        var changed = false
+        val result = synchronized(lock) {
             val current = entries(context)
             val next = change(current)
             if (next !== current) {
                 write(context, next)
                 cache = next
                 mutableRevision.value = mutableRevision.value + 1
+                changed = true
             }
-            return next
+            next
         }
+        if (changed) scheduleWidgetRefresh(context)
+        return result
+    }
+
+    // P30: the home-screen widget follows any change (an alarm, the recorder, sync, a screen) within a couple of seconds.
+    private val widgetPool = java.util.concurrent.Executors.newSingleThreadScheduledExecutor { r -> Thread(r, "today-widget").apply { isDaemon = true } }
+    @Volatile private var widgetRefreshPending = false
+    private fun scheduleWidgetRefresh(context: Context) {
+        if (widgetRefreshPending) return
+        widgetRefreshPending = true
+        val app = context.applicationContext
+        runCatching {
+            widgetPool.schedule({
+                widgetRefreshPending = false
+                TodayWidget.refresh(app)
+            }, 1500, java.util.concurrent.TimeUnit.MILLISECONDS)
+        }.onFailure { widgetRefreshPending = false }
     }
 
     /** Test hook: forget the in-memory copy (the file stays). */
@@ -267,6 +286,22 @@ class AssistantRepository(context: Context) {
         root.optDouble(monthKey, 0.0).takeIf { it.isFinite() && it >= 0.0 } ?: 0.0
     }.getOrDefault(0.0)
 
+    /** P30: the month's income, kept next to the budget in its own key (nothing existing is touched). */
+    fun loadMonthlyIncome(monthKey: String): Double = runCatching {
+        val root = JSONObject(prefs.getString(KEY_MONEY_INCOME, null) ?: return 0.0)
+        root.optDouble(monthKey, 0.0).takeIf { it.isFinite() && it >= 0.0 } ?: 0.0
+    }.getOrDefault(0.0)
+
+    fun saveMonthlyIncome(monthKey: String, amount: Double) {
+        require(monthKey.matches(Regex("\\d{4}-\\d{2}"))) { "Invalid month key" }
+        require(amount.isFinite() && amount >= 0.0) { "Invalid income amount" }
+        val root = runCatching {
+            JSONObject(prefs.getString(KEY_MONEY_INCOME, null) ?: "{}")
+        }.getOrElse { JSONObject() }
+        root.put(monthKey, amount)
+        prefs.edit().putString(KEY_MONEY_INCOME, root.toString()).apply()
+    }
+
     fun saveMonthlyBudget(monthKey: String, amount: Double) {
         require(monthKey.matches(Regex("\\d{4}-\\d{2}"))) { "Invalid month key" }
         require(amount.isFinite() && amount >= 0.0) { "Invalid budget amount" }
@@ -309,6 +344,7 @@ class AssistantRepository(context: Context) {
         internal const val KEY_DATA = "assistant_data_v1"
         private const val KEY_PRAYER = "prayer_settings_v1"
         private const val KEY_MONEY_BUDGETS = "money_budgets_v1"
+        private const val KEY_MONEY_INCOME = "money_income_v1"
         internal const val MAX_TEXT = 240
         // P20: links (recording/attachment URIs) are not cut at 240 characters any more.
         internal const val MAX_SECONDARY = 2_000

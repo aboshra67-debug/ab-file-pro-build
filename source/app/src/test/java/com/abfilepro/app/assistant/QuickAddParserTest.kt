@@ -69,4 +69,55 @@ class QuickAddParserTest {
         assertEquals("", r.title)
         assertNull(r.dueAt)
     }
+
+    // P30: explicit dates are read, never guessed.
+    private fun on(y: Int, m: Int, d: Int, h: Int, min: Int = 0) =
+        ZonedDateTime.of(LocalDate.of(y, m, d), LocalTime.of(h, min), zone).toInstant().toEpochMilli()
+
+    @Test fun monthNameDateWithAnHour() {
+        val r = parse("ذكرني يوم 15 نوفمبر الساعة 3 العصر أدفع الإيجار")
+        assertEquals(on(2026, 11, 15, 15), r.dueAt)
+        assertEquals("أدفع الإيجار", r.title)
+    }
+
+    @Test fun monthNameDateWithoutAnHourUsesNineAm() {
+        val r = parse("موعد الدكتور 3 ديسمبر")
+        assertEquals(on(2026, 12, 3, 9), r.dueAt)
+        assertEquals("موعد الدكتور", r.title)
+    }
+
+    @Test fun aPastMonthDayMeansNextYear() {
+        val r = parse("عيد ميلاد ماما 10 مارس")
+        assertEquals(on(2027, 3, 10, 9), r.dueAt)
+    }
+
+    @Test fun anExplicitYearIsKept() {
+        val r = parse("تجديد الرخصة 5 يناير 2028")
+        assertEquals(on(2028, 1, 5, 9), r.dueAt)
+        assertEquals("تجديد الرخصة", r.title)
+    }
+
+    @Test fun slashDates() {
+        assertEquals(on(2026, 11, 20, 9), parse("سداد القسط 20/11").dueAt)
+        assertEquals(on(2027, 2, 1, 9), parse("اجتماع 1/2/2027").dueAt)
+    }
+
+    @Test fun dayOfMonthAloneMeansTheNextTimeItComes() {
+        assertEquals(on(2026, 10, 28, 9), parse("ادفع الكهرباء يوم 28").dueAt)
+        assertEquals(on(2026, 11, 5, 9), parse("ادفع الايجار يوم 5").dueAt)
+    }
+
+    @Test fun relativeAndRepeatPhrasesAreNotTakenAsDates() {
+        val after = parse("بعد 3 ايام اتصل بالمصلح")
+        assertEquals(on(2026, 10, 28, 9), after.dueAt)
+        assertEquals("اتصل بالمصلح", after.title)
+        val daily = parse("كل يوم 2 اشرب مية")
+        assertEquals(Recurrence.DAILY, daily.recurrence)
+        assertEquals(on(2026, 10, 26, 9), daily.dueAt)
+    }
+
+    @Test fun anImpossibleDateIsLeftInTheTitle() {
+        val r = parse("اشتري 31 نوفمبر")
+        assertNull(r.dueAt)
+    }
 }

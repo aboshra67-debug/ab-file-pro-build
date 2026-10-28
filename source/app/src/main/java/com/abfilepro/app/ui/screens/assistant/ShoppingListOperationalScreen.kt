@@ -237,7 +237,7 @@ internal fun ShoppingListOperationalScreen(
                     },
                     modifier = Modifier.weight(1f),
                     singleLine = true,
-                    textStyle = androidx.compose.ui.text.TextStyle(fontWeight = FontWeight.Black, fontSize = 21.sp, textAlign = TextAlign.End),
+                    textStyle = androidx.compose.ui.text.TextStyle(fontWeight = FontWeight.Black, fontSize = 21.sp, textAlign = endText),
                 )
                 Text("🏠", fontSize = 34.sp)
             }
@@ -254,8 +254,8 @@ internal fun ShoppingListOperationalScreen(
                 horizontalArrangement = Arrangement.spacedBy(14.dp),
             ) {
                 Text("🛒🥬🍅🥛", fontSize = 44.sp)
-                Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text(L("$completed من $total تم شراؤها"), fontWeight = FontWeight.Black, fontSize = 23.sp, textAlign = TextAlign.End)
+                Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign, verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text(L("$completed من $total تم شراؤها"), fontWeight = FontWeight.Black, fontSize = 23.sp, textAlign = endText)
                     LinearProgressIndicator(
                         progress = { progress },
                         modifier = Modifier.fillMaxWidth().height(10.dp),
@@ -275,7 +275,7 @@ internal fun ShoppingListOperationalScreen(
                 Row(Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
                     Text("👩‍❤️‍👨", fontSize = 28.sp)
                     Spacer(Modifier.width(8.dp))
-                    Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                    Column(Modifier.weight(1f), horizontalAlignment = endAlign) {
                         Text(L("مرتبطة بطلبات العائلة"), fontWeight = FontWeight.Black)
                         Text(L("$linkedFamilyRequests طلبات عائلية معلقة"), color = adaptInk(Color(0xFF6B7280)), fontSize = 12.sp)
                     }
@@ -289,7 +289,7 @@ internal fun ShoppingListOperationalScreen(
             elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         ) {
             Column(modifier = Modifier.fillMaxWidth().padding(12.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
-                Text(L("إضافة سريعة من الفئات"), fontWeight = FontWeight.Black, fontSize = 20.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.End)
+                Text(L("إضافة سريعة من الفئات"), fontWeight = FontWeight.Black, fontSize = 20.sp, modifier = Modifier.fillMaxWidth(), textAlign = endText)
                 Row(
                     modifier = Modifier.fillMaxWidth().height(286.dp),
                     horizontalArrangement = Arrangement.spacedBy(10.dp),
@@ -307,9 +307,9 @@ internal fun ShoppingListOperationalScreen(
                                 Row(
                                     modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = 10.dp),
                                     verticalAlignment = Alignment.CenterVertically,
-                                    horizontalArrangement = Arrangement.End,
+                                    horizontalArrangement = endArrange,
                                 ) {
-                                    Text(L(category.arabicLabel), modifier = Modifier.weight(1f), textAlign = TextAlign.End, fontWeight = if (selectedCatalogCategory == category) FontWeight.Black else FontWeight.Bold, fontSize = 13.sp)
+                                    Text(L(category.arabicLabel), modifier = Modifier.weight(1f), textAlign = endText, fontWeight = if (selectedCatalogCategory == category) FontWeight.Black else FontWeight.Bold, fontSize = 13.sp)
                                     Spacer(Modifier.width(5.dp))
                                     Text(category.emoji.take(2), fontSize = 18.sp)
                                 }
@@ -331,7 +331,7 @@ internal fun ShoppingListOperationalScreen(
                                         modifier = Modifier.size(36.dp),
                                     ) { Icon(Icons.Default.Add, null, tint = adaptInk(Color(0xFFE11D2E))) }
                                     Spacer(Modifier.weight(1f))
-                                    Text(name, fontWeight = FontWeight.Bold, fontSize = 14.sp, textAlign = TextAlign.End)
+                                    Text(name, fontWeight = FontWeight.Bold, fontSize = 14.sp, textAlign = endText)
                                     Spacer(Modifier.width(5.dp))
                                     Text(itemEmoji(name, selectedCatalogCategory), fontSize = 22.sp)
                                 }
@@ -400,16 +400,16 @@ internal fun ShoppingListOperationalScreen(
 
 @Composable
 private fun ShoppingHeader(onBack: () -> Unit) {
-    Box(modifier = Modifier.fillMaxWidth()) {
+    HeaderMirror { Box(modifier = Modifier.fillMaxWidth()) {
         Text(L("قائمة التسوق"), modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
         Surface(
             modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
             shape = CircleShape,
             color = adaptSurface(Color(0xFFF9FAFB)),
         ) {
-            Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("›", fontSize = 30.sp, fontWeight = FontWeight.Bold) }
+            Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text(if (isLtrUi) "‹" else "›", fontSize = 30.sp, fontWeight = FontWeight.Bold) }
         }
-    }
+    } }
 }
 
 @Composable
@@ -493,7 +493,7 @@ private fun ShoppingItemRow(
                 IconButton(onClick = onPlus, modifier = Modifier.size(40.dp)) { Icon(Icons.Default.Add, com.abfilepro.app.ui.i18n.a11yLabel(Icons.Default.Add), tint = adaptInk(Color(0xFFE11D2E))) }
             }
             Spacer(Modifier.weight(1f))
-            Text(item.name, fontWeight = FontWeight.Bold, fontSize = 18.sp, textAlign = TextAlign.End)
+            Text(item.name, fontWeight = FontWeight.Bold, fontSize = 18.sp, textAlign = endText)
             Text(itemEmoji(item.name, item.category), fontSize = 27.sp)
             Surface(
                 modifier = Modifier.size(38.dp).clickable(onClick = onToggle),

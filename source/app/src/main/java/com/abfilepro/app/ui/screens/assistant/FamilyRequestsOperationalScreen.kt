@@ -178,14 +178,14 @@ internal fun FamilyRequestsOperationalScreen(
             .padding(horizontal = 16.dp, vertical = 10.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp),
     ) {
-        Box(Modifier.fillMaxWidth()) {
+        HeaderMirror { Box(Modifier.fillMaxWidth()) {
             Text(L("طلبات العائلة"), modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
             Surface(
                 modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
                 shape = CircleShape,
                 color = adaptSurface(Color(0xFFF9FAFB)),
-            ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("›", fontSize = 30.sp, fontWeight = FontWeight.Bold) } }
-        }
+            ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text(if (isLtrUi) "‹" else "›", fontSize = 30.sp, fontWeight = FontWeight.Bold) } }
+        } }
 
         Card(
             shape = RoundedCornerShape(22.dp),
@@ -198,7 +198,7 @@ internal fun FamilyRequestsOperationalScreen(
                 horizontalArrangement = Arrangement.spacedBy(14.dp),
             ) {
                 Text("👩‍❤️‍👨", fontSize = 56.sp)
-                Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
+                Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign) {
                     Text(familyProfile.familyName, fontWeight = FontWeight.Black, fontSize = 24.sp)
                     Text("${familyProfile.selfName} و ${familyProfile.partnerName}", color = adaptInk(Color(0xFF6B7280)), fontSize = 14.sp)
                     Text(L("طلبات العائلة مرتبطة الآن بقائمة التسوق"), color = adaptInk(Color(0xFF0DAA60)), fontSize = 12.sp, fontWeight = FontWeight.Bold)
@@ -335,16 +335,16 @@ private fun FamilyRequestCard(
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Text(itemEmoji(entry.title, ShoppingCategory.entries.firstOrNull { it.name == meta.category } ?: inferCategory(entry.title)), fontSize = 46.sp)
                 Spacer(Modifier.width(10.dp))
-                Column(modifier = Modifier.weight(1f), horizontalAlignment = Alignment.End) {
-                    Text(entry.title, fontWeight = FontWeight.Black, fontSize = 22.sp, textAlign = TextAlign.End)
-                    Text(L("الكمية: ${meta.quantity} • من ${meta.fromName} إلى ${meta.toName}"), color = adaptInk(Color(0xFF6B7280)), fontSize = 13.sp, textAlign = TextAlign.End)
-                    if (entry.details.isNotBlank()) Text(entry.details, color = adaptInk(Color(0xFF6B7280)), fontSize = 13.sp, textAlign = TextAlign.End)
+                Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign) {
+                    Text(entry.title, fontWeight = FontWeight.Black, fontSize = 22.sp, textAlign = endText)
+                    Text(L("الكمية: ${meta.quantity} • من ${meta.fromName} إلى ${meta.toName}"), color = adaptInk(Color(0xFF6B7280)), fontSize = 13.sp, textAlign = endText)
+                    if (entry.details.isNotBlank()) Text(entry.details, color = adaptInk(Color(0xFF6B7280)), fontSize = 13.sp, textAlign = endText)
                     Text(status, color = if (entry.completed || meta.status == "done") adaptInk(Color(0xFF0DAA60)) else adaptInk(Color(0xFF2563EB)), fontWeight = FontWeight.Bold, fontSize = 13.sp)
                 }
             }
             if (comment.isNotBlank()) {
                 Surface(shape = RoundedCornerShape(14.dp), color = Color.White.copy(alpha = .75f)) {
-                    Text("💬 $comment", modifier = Modifier.fillMaxWidth().padding(10.dp), textAlign = TextAlign.End, fontSize = 13.sp)
+                    Text("💬 $comment", modifier = Modifier.fillMaxWidth().padding(10.dp), textAlign = endText, fontSize = 13.sp)
                 }
             }
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
@@ -415,7 +415,7 @@ private fun AddFamilyRequestDialog(
                                 shape = RoundedCornerShape(12.dp),
                                 color = if (category == item) item.badge else adaptSurface(Color(0xFFF8FAFC)),
                             ) {
-                                Text(L(item.arabicLabel), modifier = Modifier.padding(9.dp), textAlign = TextAlign.End, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                                Text(L(item.arabicLabel), modifier = Modifier.padding(9.dp), textAlign = endText, fontWeight = FontWeight.Bold, fontSize = 12.sp)
                             }
                         }
                     }
@@ -432,7 +432,7 @@ private fun AddFamilyRequestDialog(
                                 Row(Modifier.fillMaxWidth().padding(8.dp), verticalAlignment = Alignment.CenterVertically) {
                                     Text(itemEmoji(name, category), fontSize = 20.sp)
                                     Spacer(Modifier.width(6.dp))
-                                    Text(name, modifier = Modifier.weight(1f), textAlign = TextAlign.End, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                                    Text(name, modifier = Modifier.weight(1f), textAlign = endText, fontWeight = FontWeight.Bold, fontSize = 13.sp)
                                 }
                             }
                         }

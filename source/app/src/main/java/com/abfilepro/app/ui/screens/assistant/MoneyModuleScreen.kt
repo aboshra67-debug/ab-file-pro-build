@@ -111,6 +111,8 @@ internal fun MoneyModuleScreen(
     var selectedMonth by remember { mutableStateOf(YearMonth.now()) }
     var budgetRevision by remember { mutableStateOf(0) }
     var showBudgetDialog by remember { mutableStateOf(false) }
+    var showIncomeDialog by remember { mutableStateOf(false) }
+    var incomeRevision by remember { mutableStateOf(0) }
     var showExpenseDialog by remember { mutableStateOf(false) }
     var showAllExpenses by remember { mutableStateOf(false) }
     var showCategoryDetails by remember { mutableStateOf(false) }
@@ -125,6 +127,7 @@ internal fun MoneyModuleScreen(
             .filter { entryMonth(it, zone) == selectedMonth }
             .sortedByDescending { it.dueAt ?: it.createdAt }
     }
+    val income = remember(monthKey, incomeRevision) { repository.loadMonthlyIncome(monthKey) }
     val spent = monthExpenses.sumOf { it.amount ?: 0.0 }
     val remaining = max(0.0, budget - spent)
     val remainingRatio = if (budget > 0.0) (remaining / budget).coerceIn(0.0, 1.0).toFloat() else 0f
@@ -150,6 +153,21 @@ internal fun MoneyModuleScreen(
                 budgetRevision++
                 showBudgetDialog = false
             },
+        )
+    }
+
+    if (showIncomeDialog) {
+        BudgetDialog(
+            month = selectedMonth,
+            currentBudget = income,
+            onDismiss = { showIncomeDialog = false },
+            onSave = { value ->
+                repository.saveMonthlyIncome(monthKey, value)
+                incomeRevision++
+                showIncomeDialog = false
+            },
+            title = L("تحديد دخل ${monthLabel(selectedMonth, assistantLocale(true))}"),
+            label = L("قيمة الدخل بالجنيه"),
         )
     }
 
@@ -230,6 +248,9 @@ internal fun MoneyModuleScreen(
                 )
             }
             item {
+                IncomeCard(income = income, spent = spent, onEdit = { showIncomeDialog = true })
+            }
+            item {
                 RecentExpensesCard(
                     entries = todayExpenses,
                     selectedMonth = selectedMonth,
@@ -300,7 +321,7 @@ internal fun MoneyModuleScreen(
 @Composable
 private fun MoneyHeader(onBack: () -> Unit, onSettings: () -> Unit) {
     Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.fillMaxWidth()) {
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+        HeaderMirror { Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
             Surface(
                 modifier = Modifier.size(48.dp).clickable(onClick = onSettings),
                 shape = CircleShape,
@@ -322,10 +343,10 @@ private fun MoneyHeader(onBack: () -> Unit, onSettings: () -> Unit) {
                 shadowElevation = 4.dp,
             ) {
                 Box(contentAlignment = Alignment.Center) {
-                    Icon(Icons.Default.ArrowForward, L("رجوع"), tint = adaptInk(Color(0xFF111827)))
+                    Icon(if (isLtrUi) Icons.Default.ArrowBack else Icons.Default.ArrowForward, L("رجوع"), tint = adaptInk(Color(0xFF111827)))
                 }
             }
-        }
+        } }
         Spacer(Modifier.height(8.dp))
         Surface(shape = RoundedCornerShape(20.dp), color = adaptSurface(Color(0xFFE3F8EF))) {
             Row(
@@ -362,6 +383,37 @@ private fun MonthSelector(month: YearMonth, onPrevious: () -> Unit, onNext: () -
                 color = adaptInk(Color(0xFF111827)),
             )
             IconButton(onClick = onNext) { Icon(Icons.Default.KeyboardArrowLeft, L("الشهر التالي")) }
+        }
+    }
+}
+
+/** P30: what came in this month and what is left of it after the expenses. */
+@Composable
+private fun IncomeCard(income: Double, spent: Double, onEdit: () -> Unit) {
+    val net = income - spent
+    Card(
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(Color.White)),
+        shape = RoundedCornerShape(22.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+    ) {
+        Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+                Text(L("الدخل الشهري"), fontWeight = FontWeight.Black, fontSize = 16.sp, color = adaptInk(Color(0xFF111827)))
+                if (income > 0.0) {
+                    Text(formatMoney(income) + " " + L("ج.م"), fontWeight = FontWeight.Black, fontSize = 20.sp, color = adaptInk(Color(0xFF04966E)))
+                    Text(
+                        L("الصافي بعد المصروفات") + ": " + formatMoney(net) + " " + L("ج.م"),
+                        fontSize = 13.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = if (net >= 0.0) adaptInk(Color(0xFF04966E)) else Color(0xFFFF6B6B),
+                    )
+                } else {
+                    Text(L("لم يُسجَّل دخل لهذا الشهر"), fontSize = 13.sp, color = adaptInk(Color(0xFF64748B)))
+                }
+            }
+            OutlinedButton(onClick = onEdit, shape = RoundedCornerShape(16.dp)) {
+                Text(L(if (income > 0.0) "تعديل" else "تحديد الدخل"), fontWeight = FontWeight.Bold)
+            }
         }
     }
 }
@@ -463,7 +515,7 @@ private fun RecentExpensesCard(
                     Text(L("عرض الكل"), color = adaptInk(Color(0xFFFF2D35)), fontWeight = FontWeight.Bold)
                 }
                 Spacer(Modifier.weight(1f))
-                Column(horizontalAlignment = Alignment.End) {
+                Column(horizontalAlignment = endAlign) {
                     Text(
                         L(if (selectedMonth == YearMonth.from(currentDate)) "مصروفات اليوم" else "أحدث مصروفات الشهر"),
                         fontWeight = FontWeight.Black,
@@ -497,7 +549,7 @@ private fun ExpenseRow(entry: AssistantEntry, zone: ZoneId, onDelete: (String) -
         ) {
             Text(L(formatMoney(entry.amount ?: 0.0) + " ج.م"), color = adaptInk(Color(0xFFFF2D35)), fontWeight = FontWeight.Black, fontSize = 16.sp)
             Spacer(Modifier.weight(1f))
-            Column(horizontalAlignment = Alignment.End) {
+            Column(horizontalAlignment = endAlign) {
                 Text(L(category.arabic), fontWeight = FontWeight.ExtraBold, fontSize = 15.sp)
                 Text(timeLabel(entry, zone), color = adaptInk(Color(0xFF7C8797)), fontSize = 10.sp)
             }
@@ -530,7 +582,7 @@ private fun CategoryBreakdownCard(
                     Text(L("عرض التفاصيل"), fontSize = 12.sp, fontWeight = FontWeight.Bold)
                 }
                 Spacer(Modifier.weight(1f))
-                Column(horizontalAlignment = Alignment.End) {
+                Column(horizontalAlignment = endAlign) {
                     Text(L("المصروفات حسب الفئات"), fontWeight = FontWeight.Black, fontSize = 21.sp)
                     Text(L("هذا الشهر"), color = adaptInk(Color(0xFF7C8797)), fontSize = 11.sp)
                 }
@@ -557,7 +609,7 @@ private fun CategoryBarRow(category: MoneyCategory, amount: Double, fraction: Fl
             }
         }
         Spacer(Modifier.width(8.dp))
-        Text(L(category.arabic), modifier = Modifier.width(92.dp), textAlign = TextAlign.End, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+        Text(L(category.arabic), modifier = Modifier.width(92.dp), textAlign = endText, fontSize = 12.sp, fontWeight = FontWeight.Bold)
         Surface(shape = RoundedCornerShape(10.dp), color = adaptSurface(category.tint)) {
             Icon(category.icon, null, tint = category.color, modifier = Modifier.padding(6.dp).size(18.dp))
         }
@@ -565,17 +617,24 @@ private fun CategoryBarRow(category: MoneyCategory, amount: Double, fraction: Fl
 }
 
 @Composable
-private fun BudgetDialog(month: YearMonth, currentBudget: Double, onDismiss: () -> Unit, onSave: (Double) -> Unit) {
+private fun BudgetDialog(
+    month: YearMonth,
+    currentBudget: Double,
+    onDismiss: () -> Unit,
+    onSave: (Double) -> Unit,
+    title: String = L("تحديد ميزانية ${monthLabel(month, assistantLocale(true))}"),
+    label: String = L("قيمة الميزانية بالجنيه"),
+) {
     var text by remember(month, currentBudget) { mutableStateOf(if (currentBudget > 0.0) currentBudget.toString().trimEnd('0').trimEnd('.') else "") }
     val value = text.toDoubleOrNull()?.takeIf { it.isFinite() && it >= 0.0 }
     AlertDialog(
         onDismissRequest = onDismiss,
-        title = { Text(L("تحديد ميزانية ${monthLabel(month, assistantLocale(true))}"), fontWeight = FontWeight.Black) },
+        title = { Text(title, fontWeight = FontWeight.Black) },
         text = {
             OutlinedTextField(
                 value = text,
                 onValueChange = { raw -> text = sanitizeMoneyInput(raw) },
-                label = { Text(L("قيمة الميزانية بالجنيه")) },
+                label = { Text(label) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Decimal),
                 singleLine = true,
             )
