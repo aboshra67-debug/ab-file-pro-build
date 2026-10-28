@@ -183,7 +183,7 @@ internal fun FamilyRequestsOperationalScreen(
             Surface(
                 modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
                 shape = CircleShape,
-                color = Color(0xFFF9FAFB),
+                color = adaptSurface(Color(0xFFF9FAFB)),
             ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("›", fontSize = 30.sp, fontWeight = FontWeight.Bold) } }
         }
 
@@ -227,10 +227,10 @@ internal fun FamilyRequestsOperationalScreen(
                 Surface(
                     modifier = Modifier.weight(1f).height(46.dp).clickable { filter = item },
                     shape = RoundedCornerShape(18.dp),
-                    color = if (filter == item) adaptInk(Color(0xFFFF2635)) else Color(0xFFF8FAFC),
+                    color = if (filter == item) adaptInk(Color(0xFFFF2635)) else adaptSurface(Color(0xFFF8FAFC)),
                 ) {
                     Box(contentAlignment = Alignment.Center) {
-                        Text(L(item.label), color = if (filter == item) Color.White else adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold, fontSize = 12.sp, textAlign = TextAlign.Center)
+                        Text(L(item.label), color = if (filter == item) Color.White else adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold, fontSize = 11.sp, maxLines = 2, textAlign = TextAlign.Center, modifier = Modifier.padding(horizontal = 4.dp))
                     }
                 }
             }
@@ -413,7 +413,7 @@ private fun AddFamilyRequestDialog(
                                     customName = ""
                                 },
                                 shape = RoundedCornerShape(12.dp),
-                                color = if (category == item) item.badge else Color(0xFFF8FAFC),
+                                color = if (category == item) item.badge else adaptSurface(Color(0xFFF8FAFC)),
                             ) {
                                 Text(L(item.arabicLabel), modifier = Modifier.padding(9.dp), textAlign = TextAlign.End, fontWeight = FontWeight.Bold, fontSize = 12.sp)
                             }

@@ -120,7 +120,7 @@ internal fun DocumentsRenewalsScreen(
                         Surface(
                             modifier = Modifier.weight(1f).clickable { filter = value },
                             shape = RoundedCornerShape(22.dp),
-                            color = if (active) DocsRed else Color(0xFFF5F5F6),
+                            color = if (active) DocsRed else adaptSurface(Color(0xFFF5F5F6)),
                         ) {
                             Text(label, modifier = Modifier.padding(vertical = 12.dp), textAlign = TextAlign.Center, fontWeight = FontWeight.Bold, color = if (active) Color.White else DocsInk)
                         }
@@ -248,7 +248,7 @@ private fun DocumentEditorDialog(
         Surface(
             modifier = Modifier.fillMaxWidth().heightIn(max = 720.dp),
             shape = RoundedCornerShape(28.dp),
-            color = Color.White,
+            color = adaptSurface(Color.White),
             tonalElevation = 8.dp,
             shadowElevation = 14.dp,
         ) {

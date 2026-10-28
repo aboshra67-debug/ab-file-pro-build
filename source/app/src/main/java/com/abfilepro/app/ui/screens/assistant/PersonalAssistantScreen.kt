@@ -457,8 +457,8 @@ fun PersonalAssistantScreen(
                                 onClick = { selectedCategory = category },
                                 label = { Text(categoryLabel(category, language), fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium) },
                                 colors = AssistChipDefaults.assistChipColors(
-                                    containerColor = if (selected) Color(0xFF173B65) else Color.White,
-                                    labelColor = if (selected) Color.White else Color(0xFF334155),
+                                    containerColor = if (selected) Color(0xFF173B65) else adaptSurface(Color.White),
+                                    labelColor = if (selected) Color.White else adaptInk(Color(0xFF334155)),
                                 ),
                                 border = null,
                                 modifier = Modifier.weight(1f),

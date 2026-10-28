@@ -1233,7 +1233,7 @@ private fun PriceComparisonScreen(onBack: () -> Unit) {
         containerColor = adaptSurface(Color(0xFFFDFDFE)),
         topBar = {
             Surface(
-                color = Color.White,
+                color = adaptSurface(Color.White),
                 shadowElevation = 2.dp,
             ) {
                 Box(
@@ -1525,7 +1525,7 @@ private fun ClassicPriceStoreResultCard(
     Card(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(22.dp),
-        colors = CardDefaults.cardColors(containerColor = bg),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(bg)),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
         Row(
@@ -1851,7 +1851,7 @@ private fun PrayerModuleScreen(
                 val enabled = prayer in settings.enabledAlerts
                 val isNext = prayer == nextPrayer && !tomorrow
                 val adjustment = settings.adjustmentsMinutes[prayer] ?: 0
-                Card(colors = CardDefaults.cardColors(containerColor = if (isNext) softGreen else Color.White),
+                Card(colors = CardDefaults.cardColors(containerColor = adaptSurface(if (isNext) softGreen else Color.White)),
                     shape = RoundedCornerShape(18.dp)) {
                     Column(Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 10.dp),
                         verticalArrangement = Arrangement.spacedBy(5.dp)) {

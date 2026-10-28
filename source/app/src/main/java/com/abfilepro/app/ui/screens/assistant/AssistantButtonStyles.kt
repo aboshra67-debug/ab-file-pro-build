@@ -109,7 +109,7 @@ internal fun AssistantPillTabButton(
     modifier: Modifier = Modifier,
     selectedContainerColor: Color = adaptSurface(Color(0xFFECE7F6)),
     selectedContentColor: Color = AssistantTextDark,
-    unselectedContainerColor: Color = Color.White,
+    unselectedContainerColor: Color = adaptSurface(Color.White),
     unselectedContentColor: Color = AssistantTextDark,
     showCheckmark: Boolean = false,
 ) {
@@ -123,7 +123,7 @@ internal fun AssistantPillTabButton(
         shadowElevation = if (selected) 3.dp else 1.dp,
     ) {
         Row(
-            modifier = Modifier.padding(horizontal = 18.dp),
+            modifier = Modifier.padding(horizontal = 8.dp),
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Center,
         ) {
@@ -139,9 +139,10 @@ internal fun AssistantPillTabButton(
             Text(
                 label,
                 color = if (selected) selectedContentColor else unselectedContentColor,
-                fontSize = 16.sp,
+                fontSize = 14.sp,
                 fontWeight = FontWeight.Bold,
                 maxLines = 1,
+                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis,
             )
         }
     }

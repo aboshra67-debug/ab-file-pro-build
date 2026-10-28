@@ -268,7 +268,7 @@ internal fun MoneyModuleScreen(
                     ) {
                         Text(L("إضافة مصروف"), fontWeight = FontWeight.ExtraBold, fontSize = 17.sp)
                         Spacer(Modifier.width(8.dp))
-                        Surface(shape = CircleShape, color = Color.White) {
+                        Surface(shape = CircleShape, color = adaptSurface(Color.White)) {
                             Icon(Icons.Default.Add, null, tint = adaptInk(Color(0xFFFF2D35)), modifier = Modifier.padding(5.dp))
                         }
                     }
@@ -304,7 +304,7 @@ private fun MoneyHeader(onBack: () -> Unit, onSettings: () -> Unit) {
             Surface(
                 modifier = Modifier.size(48.dp).clickable(onClick = onSettings),
                 shape = CircleShape,
-                color = Color(0xFFFFF0F0),
+                color = adaptSurface(Color(0xFFFFF0F0)),
                 shadowElevation = 3.dp,
             ) {
                 Box(contentAlignment = Alignment.Center) {
@@ -318,7 +318,7 @@ private fun MoneyHeader(onBack: () -> Unit, onSettings: () -> Unit) {
             Surface(
                 modifier = Modifier.size(48.dp).clickable(onClick = onBack),
                 shape = CircleShape,
-                color = Color.White,
+                color = adaptSurface(Color.White),
                 shadowElevation = 4.dp,
             ) {
                 Box(contentAlignment = Alignment.Center) {
@@ -345,7 +345,7 @@ private fun MonthSelector(month: YearMonth, onPrevious: () -> Unit, onNext: () -
     Surface(
         modifier = Modifier.fillMaxWidth(),
         shape = RoundedCornerShape(22.dp),
-        color = Color.White,
+        color = adaptSurface(Color.White),
         shadowElevation = 2.dp,
     ) {
         Row(
@@ -429,7 +429,7 @@ private fun MoneyWalletIllustration(modifier: Modifier = Modifier) {
 
 @Composable
 private fun MoneyMiniCard(label: String, value: Double, background: Color, accent: Color, modifier: Modifier) {
-    Surface(modifier = modifier, shape = RoundedCornerShape(17.dp), color = background) {
+    Surface(modifier = modifier, shape = RoundedCornerShape(17.dp), color = adaptSurface(background)) {
         Column(Modifier.padding(horizontal = 8.dp, vertical = 10.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(5.dp)) {
                 Box(Modifier.size(8.dp).background(accent, CircleShape))
@@ -502,7 +502,7 @@ private fun ExpenseRow(entry: AssistantEntry, zone: ZoneId, onDelete: (String) -
                 Text(timeLabel(entry, zone), color = adaptInk(Color(0xFF7C8797)), fontSize = 10.sp)
             }
             Spacer(Modifier.width(8.dp))
-            Surface(shape = RoundedCornerShape(12.dp), color = category.tint) {
+            Surface(shape = RoundedCornerShape(12.dp), color = adaptSurface(category.tint)) {
                 Icon(category.icon, L(category.arabic), tint = category.color, modifier = Modifier.padding(9.dp).size(22.dp))
             }
             IconButton(onClick = { onDelete(entry.id) }, modifier = Modifier.size(38.dp)) {
@@ -558,7 +558,7 @@ private fun CategoryBarRow(category: MoneyCategory, amount: Double, fraction: Fl
         }
         Spacer(Modifier.width(8.dp))
         Text(L(category.arabic), modifier = Modifier.width(92.dp), textAlign = TextAlign.End, fontSize = 12.sp, fontWeight = FontWeight.Bold)
-        Surface(shape = RoundedCornerShape(10.dp), color = category.tint) {
+        Surface(shape = RoundedCornerShape(10.dp), color = adaptSurface(category.tint)) {
             Icon(category.icon, null, tint = category.color, modifier = Modifier.padding(6.dp).size(18.dp))
         }
     }
@@ -714,7 +714,7 @@ private fun CategoryDetailsDialog(
                     val amount = totals[category] ?: 0.0
                     val percent = if (totalSpent > 0.0) amount / totalSpent * 100.0 else 0.0
                     Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-                        Surface(shape = RoundedCornerShape(10.dp), color = category.tint) {
+                        Surface(shape = RoundedCornerShape(10.dp), color = adaptSurface(category.tint)) {
                             Icon(category.icon, null, tint = category.color, modifier = Modifier.padding(7.dp).size(20.dp))
                         }
                         Spacer(Modifier.width(8.dp))

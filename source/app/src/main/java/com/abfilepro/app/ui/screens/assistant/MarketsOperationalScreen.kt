@@ -181,7 +181,7 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
 
         Surface(
             shape = RoundedCornerShape(18.dp),
-            color = Color.White,
+            color = adaptSurface(Color.White),
             tonalElevation = 1.dp,
             shadowElevation = 2.dp,
         ) {
@@ -193,7 +193,7 @@ internal fun MarketsOperationalScreen(onBack: () -> Unit) {
                 Surface(
                     modifier = Modifier.size(54.dp).clickable { scope.launch { refresh(force = true) } },
                     shape = RoundedCornerShape(14.dp),
-                    color = Color(0xFFFFF0F1),
+                    color = adaptSurface(Color(0xFFFFF0F1)),
                 ) {
                     Box(contentAlignment = Alignment.Center) {
                         Icon(Icons.Default.Refresh, contentDescription = L("تحديث"), tint = adaptInk(Color(0xFFE11D2E)), modifier = Modifier.size(28.dp))
@@ -251,7 +251,7 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
         Surface(
             modifier = Modifier.align(Alignment.CenterStart).size(44.dp).clickable(onClick = onInfo),
             shape = CircleShape,
-            color = Color(0xFFF8FAFC),
+            color = adaptSurface(Color(0xFFF8FAFC)),
         ) {
             Box(contentAlignment = Alignment.Center) {
                 Icon(Icons.Default.Info, contentDescription = L("معلومات"), tint = adaptInk(Color(0xFF475569)))
@@ -267,7 +267,7 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
         Surface(
             modifier = Modifier.align(Alignment.CenterEnd).size(44.dp).clickable(onClick = onBack),
             shape = CircleShape,
-            color = Color(0xFFF8FAFC),
+            color = adaptSurface(Color(0xFFF8FAFC)),
         ) {
             Box(contentAlignment = Alignment.Center) {
                 Text("›", fontSize = 28.sp, color = adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold)
@@ -342,7 +342,7 @@ private fun CurrencyCard(
 ) {
     Card(
         shape = RoundedCornerShape(22.dp),
-        colors = CardDefaults.cardColors(containerColor = accent),
+        colors = CardDefaults.cardColors(containerColor = adaptSurface(accent)),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
     ) {
         Column(modifier = Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
@@ -380,7 +380,7 @@ private fun CurrencyCard(
 
 @Composable
 private fun PriceBox(label: String, value: Double?, modifier: Modifier, tint: Color, valueColor: Color) {
-    Surface(modifier = modifier, shape = RoundedCornerShape(18.dp), color = tint) {
+    Surface(modifier = modifier, shape = RoundedCornerShape(18.dp), color = adaptSurface(tint)) {
         Column(modifier = Modifier.fillMaxWidth().padding(vertical = 14.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(label, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = valueColor)
             Text(formatMarketNumber(value, 2), fontWeight = FontWeight.Black, fontSize = 22.sp, color = valueColor)
@@ -465,7 +465,7 @@ private fun InfoPanel() {
     ) {
         Column(modifier = Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
-                Surface(shape = CircleShape, color = Color.White) {
+                Surface(shape = CircleShape, color = adaptSurface(Color.White)) {
                     Box(modifier = Modifier.size(28.dp), contentAlignment = Alignment.Center) {
                         Icon(Icons.Default.Info, contentDescription = null, tint = adaptInk(Color(0xFF64748B)), modifier = Modifier.size(18.dp))
                     }

@@ -344,7 +344,7 @@ private fun NextDoseCard(entry: AssistantEntry?, onUpdate: (AssistantEntry) -> U
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(14.dp),
         ) {
-            Surface(shape = RoundedCornerShape(22.dp), color = Color.White) {
+            Surface(shape = RoundedCornerShape(22.dp), color = adaptSurface(Color.White)) {
                 Icon(Icons.Default.Medication, null, tint = HealthRed, modifier = Modifier.padding(20.dp).size(54.dp))
             }
             Column(Modifier.weight(1f), horizontalAlignment = Alignment.End) {

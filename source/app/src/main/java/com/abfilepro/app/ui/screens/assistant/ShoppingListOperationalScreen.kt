@@ -405,7 +405,7 @@ private fun ShoppingHeader(onBack: () -> Unit) {
         Surface(
             modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
             shape = CircleShape,
-            color = Color(0xFFF9FAFB),
+            color = adaptSurface(Color(0xFFF9FAFB)),
         ) {
             Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("›", fontSize = 30.sp, fontWeight = FontWeight.Bold) }
         }
@@ -479,7 +479,7 @@ private fun ShoppingItemRow(
     onPlus: () -> Unit,
     onToggle: () -> Unit,
 ) {
-    Surface(shape = RoundedCornerShape(18.dp), color = Color.White, shadowElevation = 1.dp) {
+    Surface(shape = RoundedCornerShape(18.dp), color = adaptSurface(Color.White), shadowElevation = 1.dp) {
         Row(
             modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically,

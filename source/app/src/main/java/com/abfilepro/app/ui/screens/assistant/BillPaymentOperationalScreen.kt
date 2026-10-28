@@ -274,13 +274,13 @@ private fun HeaderBills(onBack: () -> Unit) {
         Surface(
             modifier = Modifier.align(Alignment.CenterStart).size(46.dp),
             shape = CircleShape,
-            color = Color(0xFFF9FAFB),
+            color = adaptSurface(Color(0xFFF9FAFB)),
         ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("⋮", fontSize = 28.sp) } }
         Text(L("دفع الفواتير"), modifier = Modifier.align(Alignment.Center), fontSize = 28.sp, fontWeight = FontWeight.Black)
         Surface(
             modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
             shape = CircleShape,
-            color = Color(0xFFF9FAFB),
+            color = adaptSurface(Color(0xFFF9FAFB)),
         ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text("≡", fontSize = 24.sp, fontWeight = FontWeight.Bold) } }
     }
 }
@@ -308,7 +308,7 @@ private fun BillTypeCard(type: BillType, selected: Boolean, modifier: Modifier =
                     Icon(type.icon, null, tint = type.tint, modifier = Modifier.size(48.dp))
                 }
             }
-            Text(L(type.arabicLabel), fontWeight = FontWeight.Black, fontSize = 18.sp)
+            Text(L(type.arabicLabel), fontWeight = FontWeight.Black, fontSize = if (AssistantLang.language == com.abfilepro.app.ui.i18n.AppLanguage.ARABIC) 18.sp else 14.sp, maxLines = 1)
         }
     }
 }

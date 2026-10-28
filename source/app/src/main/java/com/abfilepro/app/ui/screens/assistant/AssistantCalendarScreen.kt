@@ -249,7 +249,7 @@ private fun CalendarGrid(month: YearMonth, selectedDate: LocalDate, entries: Lis
     Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             weekdayLabels.forEach { day ->
-                Text(L(day), modifier = Modifier.weight(1f), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF475569)), fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                Text(L(day), modifier = Modifier.weight(1f), textAlign = TextAlign.Center, color = adaptInk(Color(0xFF475569)), fontSize = 11.sp, maxLines = 1, softWrap = false, fontWeight = FontWeight.SemiBold)
             }
         }
         var index = 0
