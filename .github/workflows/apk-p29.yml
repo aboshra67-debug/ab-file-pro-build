@@ -1,0 +1,31 @@
+name: Publish P29 test APKs as a release
+on:
+  push:
+    branches: ["apk/p29-test-20261028"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P29_OUTPUTS
+          run-id: 40751403348
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p29-test-apk-vc181 *PLAY_TEST.apk *PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p29-test-20261028 --prerelease \
+            --title "AB File Pro P29 (VC181) - dark mode for home and file manager (debug-signed test)" \
+            --notes "Debug-signed test builds from verified run 40751403348 (green). PLAY_TEST = com.abfilepro.app.p29mainttrial. PLAY_QA_R8 = com.abfilepro.app.p29qa. Test ads only; Pro products need Play Console."
