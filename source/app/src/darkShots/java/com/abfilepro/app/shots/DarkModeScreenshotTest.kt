@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.platform.LocalLayoutDirection
@@ -74,6 +75,11 @@ class DarkModeScreenshotTest {
             AssistantLang.language = language
             activity.setContent {
                 val direction = if (language == AppLanguage.ARABIC) LayoutDirection.Rtl else LayoutDirection.Ltr
+                // MainActivity's own first composition can still reset these flags after launch, so set them from inside ours too.
+                SideEffect {
+                    AssistantDark.on = true
+                    AssistantLang.language = language
+                }
                 CompositionLocalProvider(LocalLayoutDirection provides direction, LocalAppLanguage provides language) {
                     ABFileProTheme(darkTheme = true) {
                         Box(Modifier.fillMaxSize().background(MaterialTheme.colorScheme.background)) { content() }
@@ -83,26 +89,11 @@ class DarkModeScreenshotTest {
         }
     }
 
-    /** Fraction of pixels that are almost white: a dark screen with a large share of them has a light card left over. */
-    private fun whiteShare(): Double {
-        val bitmap = instrumentation.uiAutomation.takeScreenshot() ?: return -1.0
-        var white = 0
-        val step = 4
-        var total = 0
-        for (y in 0 until bitmap.height step step) for (x in 0 until bitmap.width step step) {
-            val p = bitmap.getPixel(x, y)
-            val r = (p shr 16) and 0xFF; val g = (p shr 8) and 0xFF; val b = p and 0xFF
-            if (r > 235 && g > 235 && b > 235) white++
-            total++
-        }
-        return white.toDouble() / total
-    }
-
     private fun capture(scenario: ActivityScenario<MainActivity>, language: AppLanguage, name: String, content: @Composable () -> Unit) {
         show(scenario, language, content)
         Thread.sleep(2600)
         shell("screencap -p /data/local/tmp/ab_dark/${language.code}_$name.png")
-        Log.i("DARKSHOT", "${language.code}_$name whiteShare=${"%.3f".format(whiteShare())}")
+        Log.i("DARKSHOT", "${language.code}_$name captured")
     }
 
     @Test
@@ -110,6 +101,11 @@ class DarkModeScreenshotTest {
         shell("rm -rf /data/local/tmp/ab_dark")
         shell("mkdir -p /data/local/tmp/ab_dark")
         val context = instrumentation.targetContext
+        // A system permission dialog on top of the screen hides it in the screenshot, so grant them first.
+        for (permission in listOf(
+            "android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION",
+            "android.permission.POST_NOTIFICATIONS", "android.permission.RECORD_AUDIO", "android.permission.CAMERA",
+        )) runCatching { instrumentation.uiAutomation.grantRuntimePermission(context.packageName, permission) }
         val repository = com.abfilepro.app.assistant.AssistantRepository(context)
         var current = repository.loadEntries()
         for (s in sample()) {
@@ -117,6 +113,7 @@ class DarkModeScreenshotTest {
         }
         val entries = repository.loadEntries()
         ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            Thread.sleep(2000)
             for (language in listOf(AppLanguage.ARABIC, AppLanguage.ENGLISH)) {
                 capture(scenario, language, "home") { PersonalAssistantScreen(onBack = {}, onOpenScanner = {}) }
                 capture(scenario, language, "today") {
