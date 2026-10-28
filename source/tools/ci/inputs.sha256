@@ -192,7 +192,7 @@ ea5841cdc4c03ac04888e7b57a1d0e42699de77650662a0f9177d58db9cc3241  app/src/main/j
 88abf7887ae0e44405d76afe74cf17c08ad24d9649f756325283dc0287148dff  app/src/main/java/com/abfilepro/app/ui/screens/assistant/FamilyChatScreen.kt
 16b2f0824a324086955c2049708d6580321f7a7c105e52a6bec209e2ff43fc2f  app/src/main/java/com/abfilepro/app/ui/screens/assistant/FamilyRequestsOperationalScreen.kt
 da84ba06b02cd453a4880d41f36e87a23491d30a9016ad35b24754f5d57fa723  app/src/main/java/com/abfilepro/app/ui/screens/assistant/HealthMedicationScreen.kt
-fa7b872b607e09fbb290f81dc01e9fc80c3c59b1dc1213467a3aee9825c7fcbc  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MarketsOperationalScreen.kt
+3f6fe6a56c1bc1a43df559a8ab268372029c44e57aba85a070de1d52d1ff2751  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MarketsOperationalScreen.kt
 4321ad77aa042f51600856306ce0a59059320bf6752fca0576a49dc4213e4756  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MoneyModuleScreen.kt
 f81a7f7d1ca7804a8d10a828e43b7bb8adae03f31a8e55f43dac8b4e19753b38  app/src/main/java/com/abfilepro/app/ui/screens/assistant/OperationalVoiceRecorder.kt
 ca3b7af51190db66b1c89f7a842a812a5d34f0943cb523f96b92aa93a145302f  app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt

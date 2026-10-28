@@ -348,7 +348,7 @@ private fun CurrencyCard(
         Column(modifier = Modifier.fillMaxWidth().padding(14.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Box(
-                    modifier = Modifier.size(104.dp).clip(RoundedCornerShape(18.dp)).background(circle),
+                    modifier = Modifier.size(104.dp).clip(RoundedCornerShape(18.dp)).background(adaptSurface(circle)),
                     contentAlignment = Alignment.Center,
                 ) {
                     Text(code, fontSize = 28.sp, fontWeight = FontWeight.Black, color = adaptInk(Color(0xFF0F172A)))
@@ -382,8 +382,8 @@ private fun CurrencyCard(
 private fun PriceBox(label: String, value: Double?, modifier: Modifier, tint: Color, valueColor: Color) {
     Surface(modifier = modifier, shape = RoundedCornerShape(18.dp), color = adaptSurface(tint)) {
         Column(modifier = Modifier.fillMaxWidth().padding(vertical = 14.dp), horizontalAlignment = Alignment.CenterHorizontally) {
-            Text(label, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = valueColor)
-            Text(formatMarketNumber(value, 2), fontWeight = FontWeight.Black, fontSize = 22.sp, color = valueColor)
+            Text(label, fontWeight = FontWeight.Bold, fontSize = 18.sp, color = adaptInk(valueColor))
+            Text(formatMarketNumber(value, 2), fontWeight = FontWeight.Black, fontSize = 22.sp, color = adaptInk(valueColor))
             Text(L("ج.م"), color = adaptInk(Color(0xFF64748B)), fontSize = 12.sp)
         }
     }
