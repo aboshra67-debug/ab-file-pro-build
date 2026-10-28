@@ -1,0 +1,23 @@
+name: fetch p27 evidence
+on:
+  push:
+    branches: ["artifacts/p27-fetch-20261028"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  f:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 40139113487
+          pattern: P27_EVIDENCE
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Publish small files
+        run: |
+          mkdir out
+          find dl -type f -size -3M ! -name "*.apk" ! -name "*.aab" ! -name "*.png" ! -name "*.mp4" -print0 | tar --null -czf out/ev.tgz --files-from=-
+          ls -la out dl
+          cd out && git init -q && git checkout -q -b artifacts/p27-verified-20261028 && git add . && git -c user.name=ci -c user.email=ci@example.invalid commit -q -m ev && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/artifacts/p27-verified-20261028
