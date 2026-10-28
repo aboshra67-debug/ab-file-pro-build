@@ -1,0 +1,24 @@
+name: fetch p28 dark shots
+on:
+  push:
+    branches: ["artifacts/p28-fetch-20261028"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  f:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 40661611106
+          pattern: P28_EVIDENCE
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Publish dark shots
+        run: |
+          mkdir out
+          find dl -path "*dark-shots*" -type f -print0 | tar --null -czf out/dark.tgz --files-from=-
+          find dl -type f -size -3M ! -name "*.apk" ! -name "*.png" ! -path "*dark-shots*" -print0 | tar --null -czf out/ev.tgz --files-from=-
+          ls -la out
+          cd out && git init -q && git checkout -q -b artifacts/p28-verified-20261028 && git add . && git -c user.name=ci -c user.email=ci@example.invalid commit -q -m ev && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/artifacts/p28-verified-20261028
