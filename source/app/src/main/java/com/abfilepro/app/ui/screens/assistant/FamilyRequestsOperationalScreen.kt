@@ -21,6 +21,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material.icons.filled.Chat
@@ -184,7 +185,7 @@ internal fun FamilyRequestsOperationalScreen(
                 modifier = Modifier.align(Alignment.CenterEnd).size(46.dp).clickable(onClick = onBack),
                 shape = CircleShape,
                 color = adaptSurface(Color(0xFFF9FAFB)),
-            ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { Text(if (isLtrUi) "‹" else "›", fontSize = 30.sp, fontWeight = FontWeight.Bold) } }
+            ) { Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) { if (isLtrUi) Icon(Icons.Default.ArrowBack, null) else Text("›", fontSize = 30.sp, fontWeight = FontWeight.Bold) } }
         } }
 
         Card(

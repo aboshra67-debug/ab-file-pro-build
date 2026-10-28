@@ -26,6 +26,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.DeleteOutline
 import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Refresh
@@ -270,7 +271,7 @@ private fun HeaderBar(onBack: () -> Unit, onInfo: () -> Unit) {
             color = adaptSurface(Color(0xFFF8FAFC)),
         ) {
             Box(contentAlignment = Alignment.Center) {
-                Text(if (isLtrUi) "‹" else "›", fontSize = 28.sp, color = adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold)
+                if (isLtrUi) Icon(Icons.Default.ArrowBack, null, tint = adaptInk(Color(0xFF111827))) else Text("›", fontSize = 28.sp, color = adaptInk(Color(0xFF111827)), fontWeight = FontWeight.Bold)
             }
         }
     } }

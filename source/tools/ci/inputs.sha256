@@ -190,14 +190,14 @@ ea5841cdc4c03ac04888e7b57a1d0e42699de77650662a0f9177d58db9cc3241  app/src/main/j
 351d8dd187102f09b396866f001f76001562b2c34cfe49554e6f7be087130215  app/src/main/java/com/abfilepro/app/ui/screens/assistant/BillPaymentOperationalScreen.kt
 4c689d423778de4c6bba50f4495ec8fd00544c76514507f0233672593860c126  app/src/main/java/com/abfilepro/app/ui/screens/assistant/DocumentsRenewalsScreen.kt
 88abf7887ae0e44405d76afe74cf17c08ad24d9649f756325283dc0287148dff  app/src/main/java/com/abfilepro/app/ui/screens/assistant/FamilyChatScreen.kt
-5d03409ffbf4e0cb350b181a47be9b2f819b135037c9088b0131cf5028b7e4ea  app/src/main/java/com/abfilepro/app/ui/screens/assistant/FamilyRequestsOperationalScreen.kt
+32954a927f63a01cc8effa95737d0ce7419c4c262812349064decc4791e423a5  app/src/main/java/com/abfilepro/app/ui/screens/assistant/FamilyRequestsOperationalScreen.kt
 da84ba06b02cd453a4880d41f36e87a23491d30a9016ad35b24754f5d57fa723  app/src/main/java/com/abfilepro/app/ui/screens/assistant/HealthMedicationScreen.kt
-4eb0ff43d359d1036b56786267664dab38b8aec68f583d1d5658850b6622d0f0  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MarketsOperationalScreen.kt
+e805770d57c0f3c8db30e99931bee22b2c2f04fba4937a8e286e6d5384ffda5a  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MarketsOperationalScreen.kt
 c38cc76633b35795188bb17c039d649f52b2985fd024f764132190ba0254a425  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MoneyModuleScreen.kt
 f81a7f7d1ca7804a8d10a828e43b7bb8adae03f31a8e55f43dac8b4e19753b38  app/src/main/java/com/abfilepro/app/ui/screens/assistant/OperationalVoiceRecorder.kt
 02a4a51892370b5810dfcf7cd7dba3f0b8b1bf6084a4b5aa37b766d99a33e7f8  app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt
 4ec4e440f209d06dc59e9c67694953e887488ffe7b9ad9f5face58d5d1cae43d  app/src/main/java/com/abfilepro/app/ui/screens/assistant/RecurrenceChips.kt
-d889bd0d4d431798954086344ce195d124537abbf708d89b872cb7b577fbda2c  app/src/main/java/com/abfilepro/app/ui/screens/assistant/ShoppingListOperationalScreen.kt
+2c1fd8ec66bb0afe837eb9362494246aa03fadc3ef8a79418bc1609f9d0a0c2b  app/src/main/java/com/abfilepro/app/ui/screens/assistant/ShoppingListOperationalScreen.kt
 25c0cc9af054944e2cd84646dcae0dde0b24a9572b39aced729cd7847f5777bc  app/src/main/java/com/abfilepro/app/ui/screens/assistant/SmartPortraitCamera.kt
 20a7525d4869b087fe451afbec1c52536cbe08cfb8f3c2f05f8e52774e4866fd  app/src/main/java/com/abfilepro/app/ui/theme/Color.kt
 71626536218cb55f21d25e360538954a60c84f5e0e227180c101103526627aaa  app/src/main/java/com/abfilepro/app/ui/theme/Theme.kt
