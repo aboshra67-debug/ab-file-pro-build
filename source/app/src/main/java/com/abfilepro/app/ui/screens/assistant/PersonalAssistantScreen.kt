@@ -357,7 +357,8 @@ fun PersonalAssistantScreen(
 
     // Alpha89: restore the user-approved Arabic visual identity while keeping Alpha88 logic live.
     // The reference artwork is only the visual shell; filters, summary, prayer, quick-add and cards are operational.
-    if (language.code == "ar") {
+    // P29: the Arabic reference home is a light raster artwork; in dark mode the live themed home below is used.
+    if (language.code == "ar" && !AssistantDark.on) {
         AssistantReferenceHome(
             prayerSettings = prayerSettings,
             entries = entries,

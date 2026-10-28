@@ -1,14 +1,14 @@
 """Single source of the values P26 verification pins (version, packages, expected counts)."""
-TAG = 'P28'
-EVIDENCE = 'p28-evidence'
-RELEASE = 'p28-release'
-VERSION_CODE = 180
-VERSION_NAME = '2.0.0-alpha98-p28-translation-dark-check'
-TEST_PACKAGE = 'com.abfilepro.app.p28mainttrial'
-QA_PACKAGE = 'com.abfilepro.app.p28qa'
-TEST_LABEL = 'AB File Pro P28'
-QA_LABEL = 'AB File Pro P28 QA'
-SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial', 'com.abfilepro.app.p23mainttrial', 'com.abfilepro.app.p24mainttrial', 'com.abfilepro.app.p25mainttrial', 'com.abfilepro.app.p26mainttrial', 'com.abfilepro.app.p27mainttrial', 'com.abfilepro.app.p28mainttrial']
+TAG = 'P29'
+EVIDENCE = 'p29-evidence'
+RELEASE = 'p29-release'
+VERSION_CODE = 181
+VERSION_NAME = '2.0.0-alpha98-p29-dark-home-files'
+TEST_PACKAGE = 'com.abfilepro.app.p29mainttrial'
+QA_PACKAGE = 'com.abfilepro.app.p29qa'
+TEST_LABEL = 'AB File Pro P29'
+QA_LABEL = 'AB File Pro P29 QA'
+SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial', 'com.abfilepro.app.p23mainttrial', 'com.abfilepro.app.p24mainttrial', 'com.abfilepro.app.p25mainttrial', 'com.abfilepro.app.p26mainttrial', 'com.abfilepro.app.p27mainttrial', 'com.abfilepro.app.p28mainttrial', 'com.abfilepro.app.p29mainttrial']
 DEBUG_APK = 'project/app/build/outputs/apk/play/debug/app-play-debug.apk'
 QA_APK = 'project/app/build/outputs/apk/play/qa/app-play-qa.apk'
 DIRECT_APK = 'project/app/build/outputs/apk/direct/debug/app-direct-debug.apk'

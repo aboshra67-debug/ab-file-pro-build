@@ -25,6 +25,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -198,7 +199,9 @@ fun HomeScreen(onNavigate: (String) -> Unit, onOpenPdf: (File) -> Unit) {
     }
 
     Box(Modifier.fillMaxSize()) {
-        if (language == AppLanguage.ARABIC && showRobot) {
+        // P29: the Arabic home is a light raster artwork; in dark mode the live themed home (same one English/French use) is shown instead.
+        val appIsDark = MaterialTheme.colorScheme.background.luminance() < 0.5f
+        if (language == AppLanguage.ARABIC && showRobot && !appIsDark) {
             ReferenceArtworkHome(
                 onSettings = { onNavigate("settings") },
                 onLanguage = { languageDialog = true },

@@ -1,5 +1,5 @@
-dcf5df98f74cb47c8173c034bf756828eef5d9c610acb5629798569a0fc7aa09  VERSION
-beb05f446d99008748941df5f6d6c14d2b86e3f5c51b93a7ec0cd3bb8d7a9639  app/build.gradle.kts
+a06a7a3da56b1764e1e34fece60cabfecb5e311b2c9a1916fdb10b66bc9900f1  VERSION
+233b9983eea8e940bc0e0aa9bd87d1af3352cfef43da12da667f5af117908e97  app/build.gradle.kts
 1f4ba1a8538fe404b574b74d1633a32fba972a99de34ce6116518d2ccdd4fe3e  app/proguard-rules.pro
 f3bbc14e03761943416d7c265f015ed2f14ade0552153c48f4d9547d6f11ead9  app/src/androidTest/AndroidManifest.xml
 81f49a70dd0c4da44c814a608737e2c691ed60eed50951c60d25b57c9e04f119  app/src/androidTest/java/com/abfilepro/app/assistant/AssistantStoreRegressionTest.kt
@@ -9,7 +9,7 @@ f082fa9746c81723e021fe085a24444a4311e7d33b680517a398930d7c5d5ef5  app/src/androi
 c1e45879388626f14a95a3103389e36e6176dbfa914b8704c4ea28ee33d5139f  app/src/androidTest/java/com/abfilepro/app/core/BatchJpegSaveSafetyRegressionTest.kt
 5a1a7520afdef45ab3cfa27436d5c09f324a5a8a660565cd1653a121b82b6212  app/src/androidTest/java/com/abfilepro/app/core/CleanShareSafetyRegressionTest.kt
 41717819fbced97697bfe65b3a179deb811435543fc4be2e869f64bb53821c26  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceDocumentsProvider.java
-291ba621398e1a33cc639ad67f64021c00e843d326f8d91091b03941eebfc535  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceGrantReceiver.java
+92e8d837fe8d361b87c81ad4930ca65b46d90bc50e39ce46ba83a5289e395f54  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceGrantReceiver.java
 48da4bd0cbee8e947a21f54897cc7d5245d9d8e73cedd2f26916261a9cfa99d9  app/src/androidTest/java/com/abfilepro/app/core/MaintenanceSafetyRegressionTest.kt
 051085ffcb29b46126fd072c5aa6d2244227701131d0e32946916dbdac55dbab  app/src/androidTest/java/com/abfilepro/app/core/PageCleanupRegressionTest.kt
 7802d78fb3e576e791eefae34bc404f89e31e2acb1c7b66debb7d7671284c584  app/src/androidTest/java/com/abfilepro/app/core/PdfCompatibilityRegressionTest.kt
@@ -19,8 +19,8 @@ aaf6b07d7cdf936aefac39edec7350ee867b5b7552864e1852ce08224aa48f97  app/src/androi
 12279f42e5ea79cc722de2a7113cfd8ff9420c04edbc5d4ab3dc03db9251f3e0  app/src/androidTest/java/com/abfilepro/app/core/StorageSafetyRegressionTest.kt
 ee442d7e258f1b3c2c09af9b498df0a78a429c0c34286e2cf576d4579713e214  app/src/androidTest/java/com/abfilepro/app/core/WorkInProgressSafetyRegressionTest.kt
 fb3e29d48f1478ad9d2cad8972d5254b3ae7f906004442dca86e8793e2e518ae  app/src/androidTestPlay/java/com/abfilepro/app/core/PlayChannelPolicyTest.kt
-03646d7d294109234e99a6d7d8f4c567ba0dac528a2f5dfdf3a202069b15ea5b  app/src/darkShots/java/com/abfilepro/app/shots/DarkModeScreenshotTest.kt
-adc2bdbe82e0b58472557328e84739ab8ae9c2fd83c4d6f1aefc2c57a0360135  app/src/debug/AndroidManifest.xml
+1c847fbc4745eaa0dae88d0bd542f95e849a5c1184ddf233146ae70aaab4460b  app/src/darkShots/java/com/abfilepro/app/shots/DarkModeScreenshotTest.kt
+285b3cefd2a534006b17cb56dbaf55f9a67893fe1b32289997fd917935474bef  app/src/debug/AndroidManifest.xml
 aa9ee1622e650d4549725aa4b08c9067be17cabf2492f328dbbe39d82237761d  app/src/direct/java/com/abfilepro/app/ads/AdsHost.kt
 88d59490ed20a1ac6bf35058d764f9fc713979150ddf67a8e3e46406a0486a2b  app/src/direct/java/com/abfilepro/app/billing/BillingBackend.kt
 a7f9d9cc8a7d54dad2b75c3d6907a369cbcfee49f2ae2db82d07b20b00f30b47  app/src/main/AndroidManifest.xml
@@ -149,9 +149,9 @@ b72f756ead765fd76348ef2e0bf72601f2063371488a1a7628e18bddf1af246a  app/src/main/j
 ea11d7a226e00bc54a984981d705c73600b694eaaecacfcf84d941fd796e97d2  app/src/main/java/com/abfilepro/app/ui/screens/CommandScreen.kt
 0816103fb21513323f37438bba0478bed8c167004c06fc4fca3cfffd98fc2542  app/src/main/java/com/abfilepro/app/ui/screens/ConversionPreviewDialog.kt
 4f0d617c7e63fd279595899be64b31b7f478705ebf20564e91c3ae4b8f36772a  app/src/main/java/com/abfilepro/app/ui/screens/ConvertScreen.kt
-89fed03ad4fe0cba864c1eebd71b3d5a45036da66986bc0054f6c29b7b1bebee  app/src/main/java/com/abfilepro/app/ui/screens/DirectFileExplorerPane.kt
+e1e8f52a821af0a9528ec5585f84250d5ccf5ba3366e1ac3fa3bbdabd59cb3b5  app/src/main/java/com/abfilepro/app/ui/screens/DirectFileExplorerPane.kt
 fb9e8d858330bd77370e06ebd45880e8f9910a71083e97a88503b03fe4a06fad  app/src/main/java/com/abfilepro/app/ui/screens/FilesScreen.kt
-57282a07953948ff8c89ff57d848856327e882f559b00950ea440300fff45bf3  app/src/main/java/com/abfilepro/app/ui/screens/HomeScreen.kt
+a0a3b6cf93c8c84aec7c16bef15fc4caa1185e044a370d7dfd4e33dcf9f6bc38  app/src/main/java/com/abfilepro/app/ui/screens/HomeScreen.kt
 d52ddfac87758215463f30fe5392ee38aea4cf00ffbff64b8c6035e9e4288f2a  app/src/main/java/com/abfilepro/app/ui/screens/ImageWordReviewDialog.kt
 4ea0c9430ac662af9ef32c86a82627285ef82099acfc77925fe0e687096af6be  app/src/main/java/com/abfilepro/app/ui/screens/MagicFlowScreen.kt
 3b5bbba55febd9a2fa85b76b3b7d271756bdbd1ca6d347eeccbb7dda465f10d6  app/src/main/java/com/abfilepro/app/ui/screens/OcrScreen.kt
@@ -195,7 +195,7 @@ da84ba06b02cd453a4880d41f36e87a23491d30a9016ad35b24754f5d57fa723  app/src/main/j
 3f6fe6a56c1bc1a43df559a8ab268372029c44e57aba85a070de1d52d1ff2751  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MarketsOperationalScreen.kt
 4321ad77aa042f51600856306ce0a59059320bf6752fca0576a49dc4213e4756  app/src/main/java/com/abfilepro/app/ui/screens/assistant/MoneyModuleScreen.kt
 f81a7f7d1ca7804a8d10a828e43b7bb8adae03f31a8e55f43dac8b4e19753b38  app/src/main/java/com/abfilepro/app/ui/screens/assistant/OperationalVoiceRecorder.kt
-ca3b7af51190db66b1c89f7a842a812a5d34f0943cb523f96b92aa93a145302f  app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt
+1389a89eca51f04af634ca59cb60659be97e87c34774b2e023c5eb5dba079e6e  app/src/main/java/com/abfilepro/app/ui/screens/assistant/PersonalAssistantScreen.kt
 4ec4e440f209d06dc59e9c67694953e887488ffe7b9ad9f5face58d5d1cae43d  app/src/main/java/com/abfilepro/app/ui/screens/assistant/RecurrenceChips.kt
 0b956ae1fd8e5da633764c7077b2afa75aa98b5507ae36d4e9bb207b8561ec66  app/src/main/java/com/abfilepro/app/ui/screens/assistant/ShoppingListOperationalScreen.kt
 25c0cc9af054944e2cd84646dcae0dde0b24a9572b39aced729cd7847f5777bc  app/src/main/java/com/abfilepro/app/ui/screens/assistant/SmartPortraitCamera.kt
@@ -296,7 +296,7 @@ e36676e803538d049e6e584d054648acee2a81b5582832f03810126882fac0d9  app/src/main/r
 8c6d2c4fed4d678ceb2f37a14f6700960eee7656daf957d1a09dde9edb625b84  app/src/play/AndroidManifest.xml
 28af9502321fc62bf8ecd75ebc2d8dfd260ec445ec48b40cf9900816dc9846d4  app/src/play/java/com/abfilepro/app/ads/AdsHost.kt
 5301c6abe751ba2f9efbb94a908a5e4493ce8c15a2a5e89477eff851a49f3642  app/src/play/java/com/abfilepro/app/billing/BillingBackend.kt
-7751ab0fa401e4268bb59488be12da2e1be2cff0dfb4bd060db9e9bba96adf21  app/src/qa/AndroidManifest.xml
+8209b1f6b7a7177b82123f9fb19973b42423a7f3c104e3b3423a2f858d5016d1  app/src/qa/AndroidManifest.xml
 0bebf1e4900e31d5a2c8df202c9a9268afc3e15606deaae527f8ffd1a6939dbd  app/src/test/java/com/abfilepro/app/ads/AdsPolicyTest.kt
 e320c83f4786b91621df9745179252967bd2420c28acb26d3cb21435f78cc60d  app/src/test/java/com/abfilepro/app/assistant/AssistantDomainTest.kt
 f6c71e6fcb059752858e6a7d1841ce6584757edb690d6b780f7ca32a30d9f3ba  app/src/test/java/com/abfilepro/app/assistant/AssistantL10nTest.kt

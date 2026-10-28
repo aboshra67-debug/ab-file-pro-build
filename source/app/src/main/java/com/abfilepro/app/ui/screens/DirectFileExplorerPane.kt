@@ -29,6 +29,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
@@ -500,11 +501,15 @@ fun DirectFileExplorerPane(initialDirectoryPath: String? = null, onBack: () -> U
         secondaryContainer = Color(0xFFFFE5DD),
         tertiaryContainer = Color(0xFFFFF0BE)
     )
+    val explorerDarkScheme = darkColorScheme(primary = Color(0xFF8DB4FF), secondary = Color(0xFFFF9C86), tertiary = Color(0xFFFFD166), background = Color(0xFF0B1220), surface = Color(0xFF111827))
+    // P29: with the explorer theme left on "default", follow the app's dark mode (it stayed light before).
+    // A person who explicitly picked "light", "dark" or "blue" keeps that choice.
+    val appIsDark = inheritedScheme.background.luminance() < 0.5f
     val explorerScheme = when (explorerTheme) {
         "light" -> premiumScheme
-        "dark" -> darkColorScheme(primary = Color(0xFF8DB4FF), secondary = Color(0xFFFF9C86), tertiary = Color(0xFFFFD166), background = Color(0xFF0B1220), surface = Color(0xFF111827))
+        "dark" -> explorerDarkScheme
         "blue" -> lightColorScheme(primary = Color(0xFF0B57D0), secondary = Color(0xFFFF7358), tertiary = Color(0xFFF4B52A), background = Color(0xFFEFF6FF), surface = Color(0xFFF8FBFF), surfaceVariant = Color(0xFFDCEBFF))
-        "default" -> premiumScheme
+        "default" -> if (appIsDark) explorerDarkScheme else premiumScheme
         else -> inheritedScheme
     }
 

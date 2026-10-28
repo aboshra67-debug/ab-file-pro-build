@@ -28,6 +28,8 @@ import com.abfilepro.app.ui.screens.assistant.AssistantLang
 import com.abfilepro.app.ui.screens.assistant.AssistantModuleScreen
 import com.abfilepro.app.ui.screens.assistant.AssistantTodayScreen
 import com.abfilepro.app.ui.screens.assistant.PersonalAssistantScreen
+import com.abfilepro.app.ui.screens.FilesScreen
+import com.abfilepro.app.ui.screens.HomeScreen
 import com.abfilepro.app.ui.theme.ABFileProTheme
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -135,6 +137,16 @@ class DarkModeScreenshotTest {
                             onPrayerSettings = {},
                         )
                     }
+                }
+            }
+        }
+        // Extras last: a problem in these must not hide the assistant screenshots above.
+        ActivityScenario.launch(MainActivity::class.java).use { scenario ->
+            Thread.sleep(1500)
+            for (language in listOf(AppLanguage.ARABIC, AppLanguage.ENGLISH)) {
+                capture(scenario, language, "mainhome") { HomeScreen(onNavigate = {}, onOpenPdf = {}) }
+                capture(scenario, language, "files") {
+                    FilesScreen(onBack = {}, onOpenPdf = {}, onEditPdf = {}, onCleanShare = {}, onOpenSmartPack = {})
                 }
             }
         }
