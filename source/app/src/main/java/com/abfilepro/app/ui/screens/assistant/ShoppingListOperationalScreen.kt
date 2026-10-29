@@ -254,7 +254,7 @@ internal fun ShoppingListOperationalScreen(
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(14.dp),
             ) {
-                Text("🛒🥬🍅🥛", fontSize = 44.sp)
+                Text("🛒🥬🍅🥛", fontSize = if (isLtrUi) 28.sp else 44.sp)
                 Column(modifier = Modifier.weight(1f), horizontalAlignment = endAlign, verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     Text(L("$completed من $total تم شراؤها"), fontWeight = FontWeight.Black, fontSize = if (isLtrUi) 17.sp else 23.sp, textAlign = endText)
                     LinearProgressIndicator(
