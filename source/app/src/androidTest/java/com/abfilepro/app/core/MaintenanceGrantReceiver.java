@@ -20,7 +20,7 @@ public final class MaintenanceGrantReceiver extends BroadcastReceiver {
                 && !"com.abfilepro.app.p22mainttrial".equals(target)
                 && !"com.abfilepro.app.p23mainttrial".equals(target)
                 && !"com.abfilepro.app.p24mainttrial".equals(target)
-                && !"com.abfilepro.app.p30mainttrial".equals(target)) {
+                && !"com.abfilepro.app.p31mainttrial".equals(target)) {
             throw new IllegalArgumentException("Only isolated trial apps may read test fixtures");
         }
         Uri tree = DocumentsContract.buildTreeDocumentUri("com.abfilepro.app.maintenance.test.documents", "root");
