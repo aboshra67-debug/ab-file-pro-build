@@ -1,0 +1,31 @@
+name: Publish P31 test APKs as a release
+on:
+  push:
+    branches: ["apk/p31-test-20261029"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P31_OUTPUTS
+          run-id: 40829053765
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p31-test-apk-vc183 *PLAY_TEST.apk *PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p31-test-20261029 --prerelease \
+            --title "AB File Pro P31 (VC183) - shopping counter fix (debug-signed test)" \
+            --notes "Debug-signed test builds from verified run 40829053765 (green). PLAY_TEST = com.abfilepro.app.p31mainttrial. PLAY_QA_R8 = com.abfilepro.app.p31qa. Test ads only; Pro products need Play Console."
