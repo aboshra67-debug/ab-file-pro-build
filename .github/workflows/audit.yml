@@ -1,0 +1,45 @@
+name: Play APK audit (read-only)
+on:
+  push:
+    branches: ["audit/play-apk-20261107"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P31_OUTPUTS
+          run-id: 40829053765
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Inspect
+        shell: bash
+        run: |
+          set +e
+          mkdir -p out x
+          APK=$(ls dl/*PLAY_QA_R8.apk | head -1)
+          BT=$(ls -d $ANDROID_HOME/build-tools/* | sort -V | tail -1)
+          {
+          echo "== apk: $APK size: $(stat -c %s $APK)"; echo "== build-tools: $BT"
+          echo "== aapt2 badging"; $BT/aapt2 dump badging $APK | grep -E "^(package|sdkVersion|targetSdkVersion|uses-permission|uses-feature|native-code|application-label:|application-icon|launchable|supports-screens|compileSdk)" 
+          echo "== aapt2 permissions"; $BT/aapt2 dump permissions $APK
+          echo "== zipalign 16KB check"; $BT/zipalign -c -P 16 -v 4 $APK | grep -E "\.so|Verification" | head -40
+          echo "== apksigner"; $BT/apksigner verify --print-certs -v $APK | head -12
+          } > out/badging.txt 2>&1
+          cd x && unzip -q ../$APK && cd ..
+          {
+          echo "== lib files"; find x/lib -name '*.so' -printf '%s %p\n' | sort -n | tail -40
+          echo "== ELF LOAD segment alignment (needs >= 0x4000 for 16KB devices)"
+          for f in $(find x/lib/arm64-v8a -name '*.so'); do a=$(readelf -lW $f 2>/dev/null | awk '/LOAD/{print $NF}' | sort -u | tr '\n' ' '); echo "$(basename $f): $a"; done
+          echo "== dex"; ls -la x/*.dex
+          echo "== biggest entries"; unzip -l $APK | sort -k1 -n | tail -25
+          echo "== assets"; find x/assets -type f -printf '%s %p\n' | sort -n | tail -20
+          echo "== META-INF"; ls x/META-INF | head
+          echo "== manifest strings"; strings -n 6 x/AndroidManifest.xml | grep -i -E 'permission|BILLING|AD_ID|ads|exported|backup' | head -60
+          } > out/contents.txt 2>&1
+          cat out/badging.txt | head -80
+          cd out && git init -q && git checkout -q -b artifacts/audit-report-20261107 && git add . && git -c user.name=ci -c user.email=ci@example.invalid commit -q -m audit && git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:refs/heads/artifacts/audit-report-20261107
