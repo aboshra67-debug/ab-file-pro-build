@@ -180,5 +180,5 @@ dependencies {
     add("playImplementation", "com.google.guava:guava:33.3.1-android")
 
     implementation("com.tom-roush:pdfbox-android:2.0.27.0")
-    implementation("com.github.adaptech-cz.Tesseract4Android:tesseract4android:4.9.0")
+    implementation("cz.adaptech.tesseract4android:tesseract4android:4.9.0")
 }
