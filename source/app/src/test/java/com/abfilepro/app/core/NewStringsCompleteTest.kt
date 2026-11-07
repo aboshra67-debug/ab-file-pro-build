@@ -6,7 +6,7 @@ import org.junit.Test
 
 /** P34: the strings added in P32-P34 exist in Arabic, English and French (uiText falls back to English otherwise). */
 class NewStringsCompleteTest {
-    private val files = listOf("strings_p32_scanner.xml", "strings_p33_points.xml", "strings_p34_settings.xml")
+    private val files = listOf("strings_p32_scanner.xml", "strings_p33_points.xml", "strings_p34_settings.xml", "strings_p35_cards.xml")
 
     private fun names(file: String): Set<String> {
         val xml = File("src/main/res/values/$file").readText()

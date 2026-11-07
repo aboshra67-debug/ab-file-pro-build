@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P35: ad label and the redesigned points card. -->
+<resources>
+    <string name="p35_ad_label_ar">إعلان</string>
+    <string name="p35_ad_label_en">Ad</string>
+    <string name="p35_ad_label_fr">Annonce</string>
+    <string name="p35_balance_label_ar">رصيدك</string>
+    <string name="p35_balance_label_en">Your balance</string>
+    <string name="p35_balance_label_fr">Votre solde</string>
+    <string name="p35_points_unit_ar">نقطة</string>
+    <string name="p35_points_unit_en">points</string>
+    <string name="p35_points_unit_fr">points</string>
+    <string name="p35_number_ar" formatted="true">%1$d</string>
+    <string name="p35_number_en" formatted="true">%1$d</string>
+    <string name="p35_number_fr" formatted="true">%1$d</string>
+    <string name="p35_watch_short_ar">شاهد فيديو</string>
+    <string name="p35_watch_short_en">Watch a video</string>
+    <string name="p35_watch_short_fr">Regarder une vidéo</string>
+    <string name="p35_video_reward_ar" formatted="true">تكسب %1$d نقاط</string>
+    <string name="p35_video_reward_en" formatted="true">Earn %1$d points</string>
+    <string name="p35_video_reward_fr" formatted="true">Gagnez %1$d points</string>
+</resources>

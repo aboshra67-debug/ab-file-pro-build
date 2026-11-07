@@ -80,6 +80,9 @@ fun SmartScanHub(
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             verticalArrangement = Arrangement.spacedBy(12.dp)
         ) {
+            // P33/P35: points balance, now first on the page (shown only when points apply to this person).
+            item(span = { GridItemSpan(maxLineSpan) }) { PointsBalanceCard() }
+
             item(span = { GridItemSpan(maxLineSpan) }) {
                 Column(Modifier.fillMaxWidth().padding(horizontal = 2.dp, vertical = 2.dp)) {
                     Text(
@@ -126,9 +129,6 @@ fun SmartScanHub(
                     }
                 }
             }
-
-            // P33: points balance (shown only when points apply to this person).
-            item(span = { GridItemSpan(maxLineSpan) }) { PointsBalanceCard() }
 
             items(entries, key = { it.action.name }, span = { entry ->
                 if (entry.action == SmartScanAction.MULTI_DOCUMENT) GridItemSpan(maxLineSpan) else GridItemSpan(1)
