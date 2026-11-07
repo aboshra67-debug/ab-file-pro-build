@@ -84,6 +84,11 @@ fun HomeScreen(onNavigate: (String) -> Unit, onOpenPdf: (File) -> Unit) {
     var languageDialog by remember { mutableStateOf(false) }
     var activeSheet by remember { mutableStateOf<HomeSheet?>(null) }
     var showPersonalAssistant by remember { mutableStateOf(false) }
+    // P32: the assistant opens over the home route; its money/health/family screens must never carry an ad.
+    DisposableEffect(showPersonalAssistant) {
+        com.abfilepro.app.ads.AdsOverlayState.privateOverlayOpen = showPersonalAssistant
+        onDispose { com.abfilepro.app.ads.AdsOverlayState.privateOverlayOpen = false }
+    }
 
     val now = remember { System.currentTimeMillis() }
     val firstLaunchAt = remember {

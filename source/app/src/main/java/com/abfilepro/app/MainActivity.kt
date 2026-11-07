@@ -26,6 +26,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.abfilepro.app.ads.AdSlot
+import com.abfilepro.app.ads.AdsOverlayState
 import com.abfilepro.app.ads.AdsHost
 import com.abfilepro.app.ads.AdsPolicy
 import com.abfilepro.app.ads.AdsSettings
@@ -109,7 +110,7 @@ class MainActivity : ComponentActivity() {
                     // P22: no cross-fade between screens. The default fade showed two screens
                     // half-transparent on top of each other (camera over the file manager).
                     val currentRoute = nav.currentBackStackEntryAsState().value?.destination?.route
-                    val showAd = AdsPolicy.canShowOn(currentRoute, ProState.adsRemoved)
+                    val showAd = AdsPolicy.canShowOn(currentRoute, ProState.adsRemoved, AdsOverlayState.privateOverlayOpen)
                     Column(Modifier.fillMaxSize()) {
                     Box(Modifier.weight(1f)) {
                     NavHost(

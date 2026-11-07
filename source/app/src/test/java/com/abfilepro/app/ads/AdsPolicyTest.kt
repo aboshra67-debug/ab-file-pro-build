@@ -22,4 +22,13 @@ class AdsPolicyTest {
         assertFalse(AdsPolicy.canShowOn(null, adsRemoved = false))
         assertFalse(AdsPolicy.canShowOn("something_new", adsRemoved = false))
     }
+
+    @Test fun assistantOverlayOnHomeNeverShowsAds() {
+        assertFalse(AdsPolicy.canShowOn("home", adsRemoved = false, privateOverlayOpen = true))
+        assertTrue(AdsPolicy.canShowOn("home", adsRemoved = false, privateOverlayOpen = false))
+    }
+
+    @Test fun overlayFlagDefaultsToClosedSoOldCallersKeepWorking() {
+        assertTrue(AdsPolicy.canShowOn("home", adsRemoved = false))
+    }
 }

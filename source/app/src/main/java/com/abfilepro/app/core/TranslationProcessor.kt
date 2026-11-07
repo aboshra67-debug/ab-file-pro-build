@@ -93,7 +93,9 @@ object TranslationProcessor {
                 .build()
         )
         val translated = try {
-            translator.downloadModelIfNeeded(DownloadConditions.Builder().build()).await()
+            ModelDownloadGuard.within(ModelDownloadGuard.MANUAL_TIMEOUT_MS) {
+                translator.downloadModelIfNeeded(DownloadConditions.Builder().build()).await()
+            }
             translator.translate(sourceText).await().trim()
         } finally {
             translator.close()

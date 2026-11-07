@@ -84,7 +84,11 @@ class LiveTranslator(private val appLanguage: String) : AutoCloseable {
         }
         if (key !in ready) {
             status = LiveTranslationStatus.DOWNLOADING
-            val downloaded = runCatching { translator.downloadModelIfNeeded(DownloadConditions.Builder().build()).await() }
+            val downloaded = runCatching {
+                ModelDownloadGuard.within(ModelDownloadGuard.LIVE_TIMEOUT_MS) {
+                    translator.downloadModelIfNeeded(DownloadConditions.Builder().build()).await()
+                }
+            }
             if (downloaded.isFailure) {
                 status = LiveTranslationStatus.NEEDS_INTERNET
                 return emptyList()

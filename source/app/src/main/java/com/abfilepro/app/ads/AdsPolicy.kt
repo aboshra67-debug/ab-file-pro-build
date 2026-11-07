@@ -1,6 +1,9 @@
 package com.abfilepro.app.ads
 
 import android.content.Context
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 
 /**
  * P26: where ads may appear. Only the home screen carries a banner. Every screen that handles
@@ -10,10 +13,20 @@ import android.content.Context
 object AdsPolicy {
     private val SHOW_ON = setOf("home")
 
-    fun canShowOn(route: String?, adsRemoved: Boolean): Boolean {
-        if (adsRemoved || route == null) return false
+    /**
+     * [privateOverlayOpen] is true while a private surface (the personal assistant: money, health,
+     * family, reminders) is drawn on top of an allowed route. The route name does not change then,
+     * so the overlay has to say so itself.
+     */
+    fun canShowOn(route: String?, adsRemoved: Boolean, privateOverlayOpen: Boolean = false): Boolean {
+        if (adsRemoved || privateOverlayOpen || route == null) return false
         return route.substringBefore('?') in SHOW_ON
     }
+}
+
+/** P32: set by a screen that opens a private overlay on the home route, read by the ad host. */
+object AdsOverlayState {
+    var privateOverlayOpen by mutableStateOf(false)
 }
 
 /** "Ads removed" is a local entitlement; a later Play Billing purchase will set it. */

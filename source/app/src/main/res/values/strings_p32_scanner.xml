@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P32: scanner polish. -->
+<resources>
+    <string name="p32_translation_timeout_ar">ملف اللغة لسه ما نزلش (النت بطيء أو مقطوع). التنزيل بيكمل في الخلفية، فاضغط «ترجمة النص» تاني بعد شوية.</string>
+    <string name="p32_translation_timeout_en">The language file has not finished downloading (slow or no connection). It keeps downloading in the background, so tap Translate text again in a moment.</string>
+    <string name="p32_translation_timeout_fr">Le fichier de langue n’est pas encore téléchargé (connexion lente ou absente). Le téléchargement continue en arrière-plan : réessayez dans un instant.</string>
+</resources>

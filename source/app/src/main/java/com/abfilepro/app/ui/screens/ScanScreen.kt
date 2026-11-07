@@ -1002,9 +1002,14 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     // P22: a failure stays on screen until read (translation failures used to flash by).
                     val reason = error.message?.takeIf { it.isNotBlank() && !it.startsWith("scan_") }
                         ?: context.localizedOperationFailure(language, error, "scan_screen_012")
-                    saveErrorMessage = if (requestedMode == ScanCaptureMode.TRANSLATION) {
-                        context.uiText(language, "p22_translation_failed", reason)
-                    } else reason
+                    saveErrorMessage = when {
+                        // P32: a stalled language-file download gets its own retryable message.
+                        error is com.abfilepro.app.core.TranslationModelTimeoutException ->
+                            context.uiText(language, "p32_translation_timeout")
+                        requestedMode == ScanCaptureMode.TRANSLATION ->
+                            context.uiText(language, "p22_translation_failed", reason)
+                        else -> reason
+                    }
                 }
             } finally {
                 busy = false
