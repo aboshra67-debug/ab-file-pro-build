@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P34: subscription section in Settings. -->
+<resources>
+    <string name="p34_sub_section_ar">الاشتراك والتفعيل</string>
+    <string name="p34_sub_section_en">Subscription and activation</string>
+    <string name="p34_sub_section_fr">Abonnement et activation</string>
+    <string name="p34_sub_active_ar">مفعّل — كل المميزات بلا حدود</string>
+    <string name="p34_sub_active_en">Active — every feature without limits</string>
+    <string name="p34_sub_active_fr">Activé — toutes les fonctions sans limites</string>
+    <string name="p34_sub_free_ar">الباقة المجانية — اعرض الباقات</string>
+    <string name="p34_sub_free_en">Free plan — see the plans</string>
+    <string name="p34_sub_free_fr">Offre gratuite — voir les offres</string>
+    <string name="p34_sub_free_points_ar" formatted="true">الباقة المجانية · رصيدك %1$d نقطة — اعرض الباقات</string>
+    <string name="p34_sub_free_points_en" formatted="true">Free plan · %1$d points — see the plans</string>
+    <string name="p34_sub_free_points_fr" formatted="true">Offre gratuite · %1$d points — voir les offres</string>
+    <string name="p34_sub_restore_ar">استرجاع مشترياتي</string>
+    <string name="p34_sub_restore_en">Restore purchases</string>
+    <string name="p34_sub_restore_fr">Restaurer mes achats</string>
+    <string name="p34_sub_restore_desc_ar">لو اشتركت قبل كده أو غيّرت الموبايل</string>
+    <string name="p34_sub_restore_desc_en">If you subscribed before or changed phones</string>
+    <string name="p34_sub_restore_desc_fr">Si vous avez déjà souscrit ou changé de téléphone</string>
+    <string name="p34_sub_manage_ar">إدارة الاشتراك أو إلغاؤه</string>
+    <string name="p34_sub_manage_en">Manage or cancel subscription</string>
+    <string name="p34_sub_manage_fr">Gérer ou résilier l’abonnement</string>
+    <string name="p34_sub_manage_desc_ar">يفتح صفحة الاشتراكات في Google Play</string>
+    <string name="p34_sub_manage_desc_en">Opens your subscriptions in Google Play</string>
+    <string name="p34_sub_manage_desc_fr">Ouvre vos abonnements dans Google Play</string>
+</resources>

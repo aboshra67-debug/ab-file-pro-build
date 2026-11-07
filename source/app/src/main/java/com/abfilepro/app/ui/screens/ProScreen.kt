@@ -84,15 +84,15 @@ fun ProScreen(onBack: () -> Unit) {
                             fontWeight = FontWeight.Black, fontSize = 18.sp,
                         )
                         Text(
-                            tr(language, "كل مميزات المساعد الشخصي بلا حدود وبدون إعلانات", "Every assistant feature without limits, and no ads", "Toutes les fonctions de l'assistant sans limites, sans publicité"),
+                            tr(language, "كل المميزات بلا حدود وبدون إعلانات أو نقاط", "Every feature without limits, ads or points", "Toutes les fonctions sans limites, sans publicité ni points"),
                             fontSize = 13.sp,
                         )
                     }
                 }
             }
 
-            Card(shape = RoundedCornerShape(20.dp)) {
-                Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+            Card(modifier = Modifier.fillMaxWidth(), shape = RoundedCornerShape(20.dp)) {
+                Column(Modifier.fillMaxWidth().padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     Text(tr(language, "مع Pro", "With Pro", "Avec Pro"), fontWeight = FontWeight.Black)
                     listOf(
                         tr(language, "مهام ومواعيد متكررة بلا حد (المجاني: 3)", "Unlimited repeating tasks and appointments (free: 3)", "Tâches et rendez-vous récurrents illimités (gratuit : 3)"),
@@ -100,6 +100,7 @@ fun ProScreen(onBack: () -> Unit) {
                         tr(language, "حتى 4 جرعات يوميًا للدواء (المجاني: 2)", "Up to 4 doses a day per medicine (free: 2)", "Jusqu'à 4 doses par jour (gratuit : 2)"),
                         tr(language, "مصروفات شهرية ثابتة بلا حد (المجاني: 2)", "Unlimited fixed monthly expenses (free: 2)", "Dépenses mensuelles fixes illimitées (gratuit : 2)"),
                         tr(language, "بدون إعلانات", "No ads", "Sans publicité"),
+                        tr(language, "بدون نقاط في السكانر (الدفعة والكتاب والترجمة)", "No points in the scanner (batch, book, translation)", "Sans points dans le scanner (lot, livre, traduction)"),
                     ).forEach { line ->
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             Icon(Icons.Default.CheckCircle, null, tint = MaterialTheme.colorScheme.primary)
@@ -107,7 +108,12 @@ fun ProScreen(onBack: () -> Unit) {
                         }
                     }
                     Text(
-                        tr(language, "كل ما كان يعمل قبل كده يفضل يعمل مجانًا.", "Everything that worked before stays free.", "Tout ce qui fonctionnait avant reste gratuit."),
+                        tr(
+                            language,
+                            "مسح مستند واحد وبطاقة وإيصال، ومدير الملفات والمساعد الأساسي مجانًا. الدفعة والكتاب وحفظ الترجمة بنقاط في الباقة المجانية.",
+                            "Scanning a single document, a card or a receipt, the file manager and the core assistant stay free. Batch, book and saving a translation use points on the free plan.",
+                            "Un document, une carte ou un reçu seul, le gestionnaire de fichiers et l'assistant de base restent gratuits. Lot, livre et enregistrement d'une traduction utilisent des points avec l'offre gratuite.",
+                        ),
                         fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurface.copy(alpha = .6f),
                     )
                 }

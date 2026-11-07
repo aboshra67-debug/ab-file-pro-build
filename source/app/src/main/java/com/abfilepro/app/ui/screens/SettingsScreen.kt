@@ -242,17 +242,44 @@ fun SettingsScreen(
                 }
             )
 
-            // P28: Pro (Play channel: plans and restore; direct channel: explains it is fully unlocked).
+            // P34: subscription and activation in one place (P28: Play channel has plans and restore;
+            // the direct channel explains it is fully unlocked).
+            SettingsSectionTitle(Icons.Default.WorkspacePremium, context.uiText(language, "p34_sub_section"))
+            val proActive = com.abfilepro.app.billing.ProState.pro
             PremiumSettingsCard(
                 icon = Icons.Default.WorkspacePremium,
                 title = "AB Pro",
-                subtitle = when (language) {
-                    AppLanguage.ARABIC -> if (com.abfilepro.app.billing.ProState.pro) "مفعّل" else "ميزات بلا حدود وبدون إعلانات"
-                    AppLanguage.FRENCH -> if (com.abfilepro.app.billing.ProState.pro) "Activé" else "Sans limites et sans publicité"
-                    else -> if (com.abfilepro.app.billing.ProState.pro) "Active" else "No limits and no ads"
+                subtitle = when {
+                    proActive -> context.uiText(language, "p34_sub_active")
+                    com.abfilepro.app.billing.PointsState.active ->
+                        context.uiText(language, "p34_sub_free_points", com.abfilepro.app.billing.PointsState.balance)
+                    else -> context.uiText(language, "p34_sub_free")
                 },
                 onClick = onOpenPro
             )
+            if (com.abfilepro.app.billing.BillingBackend.available) {
+                PremiumSettingsCard(
+                    icon = Icons.Default.Restore,
+                    title = context.uiText(language, "p34_sub_restore"),
+                    subtitle = context.uiText(language, "p34_sub_restore_desc"),
+                    onClick = { com.abfilepro.app.billing.BillingBackend.restore() }
+                )
+                PremiumSettingsCard(
+                    icon = Icons.Default.ManageAccounts,
+                    title = context.uiText(language, "p34_sub_manage"),
+                    subtitle = context.uiText(language, "p34_sub_manage_desc"),
+                    onClick = {
+                        runCatching {
+                            context.startActivity(
+                                android.content.Intent(
+                                    android.content.Intent.ACTION_VIEW,
+                                    android.net.Uri.parse("https://play.google.com/store/account/subscriptions?package=${context.packageName}")
+                                ).addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
+                            )
+                        }
+                    }
+                )
+            }
 
             // P20: user-controlled backup of the personal assistant (allowBackup stays off).
             SettingsSectionTitle(Icons.Default.Backup, context.uiText(language, "p20_backup_section"))
