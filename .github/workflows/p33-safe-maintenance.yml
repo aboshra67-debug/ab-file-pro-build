@@ -1,9 +1,9 @@
-name: P32 Safe Maintenance, R8 QA and APK (repo)
+name: P33 Safe Maintenance, R8 QA and APK (repo)
 on:
   workflow_dispatch:
   push:
-    branches: ["feature/p32-scanner-translation-20261107"]
-    paths: ["source/**", ".github/workflows/p32-safe-maintenance.yml"]
+    branches: ["feature/p33-points-rewarded-20261107"]
+    paths: ["source/**", ".github/workflows/p33-safe-maintenance.yml"]
 permissions:
   contents: read
   actions: read
@@ -38,7 +38,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: P32_SERVER_RESULTS
+          name: P33_SERVER_RESULTS
           path: checkout/source/family-sync-server/server-results.xml
           if-no-files-found: warn
   compat:
@@ -96,7 +96,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: P32_COMPAT_API_${{ matrix.api }}
+          name: P33_COMPAT_API_${{ matrix.api }}
           path: |
             compat-${{ matrix.api }}/
             project/app/build/outputs/androidTest-results/
@@ -165,9 +165,9 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: P32_EVIDENCE
+          name: P33_EVIDENCE
           path: |
-            p32-evidence/
+            p33-evidence/
             runtime-evidence/
             project/app/build/outputs/androidTest-results/
             project/app/build/reports/androidTests/
@@ -175,12 +175,12 @@ jobs:
             project/app/build/outputs/mapping/
           if-no-files-found: warn
           retention-days: 14
-      - name: Upload verified P32 outputs
+      - name: Upload verified P33 outputs
         if: ${{ success() }}
         uses: actions/upload-artifact@v4
         with:
-          name: AB98_P32_OUTPUTS
-          path: p32-release/*
+          name: AB98_P33_OUTPUTS
+          path: p33-release/*
           if-no-files-found: ignore
           retention-days: 14
           compression-level: 0

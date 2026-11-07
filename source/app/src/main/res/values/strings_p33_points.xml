@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P33: points for the free tier (Play build) and the optional rewarded video. -->
+<resources>
+    <string name="p33_balance_ar" formatted="true">رصيدك: %1$d نقطة</string>
+    <string name="p33_balance_en" formatted="true">Your balance: %1$d points</string>
+    <string name="p33_balance_fr" formatted="true">Votre solde : %1$d points</string>
+    <string name="p33_rules_ar" formatted="true">كل ورقة في الدفعة أو الكتاب = %1$d نقطة، وحفظ الترجمة = %2$d نقطة. مسح مستند واحد وبطاقة وإيصال مجانًا.</string>
+    <string name="p33_rules_en" formatted="true">Each page in a batch or book = %1$d point; saving a translation = %2$d points. A single document, card or receipt is free.</string>
+    <string name="p33_rules_fr" formatted="true">Chaque page d’un lot ou d’un livre = %1$d point ; enregistrer une traduction = %2$d points. Un document, une carte ou un reçu seul est gratuit.</string>
+    <string name="p33_watch_video_ar" formatted="true">شاهد فيديو +%1$d نقاط</string>
+    <string name="p33_watch_video_en" formatted="true">Watch a video +%1$d points</string>
+    <string name="p33_watch_video_fr" formatted="true">Regarder une vidéo +%1$d points</string>
+    <string name="p33_video_loading_ar">الفيديو بيجهز…</string>
+    <string name="p33_video_loading_en">Video is loading…</string>
+    <string name="p33_video_loading_fr">La vidéo se charge…</string>
+    <string name="p33_no_videos_left_ar">خلصت فيديوهات النهاردة</string>
+    <string name="p33_no_videos_left_en">No more videos today</string>
+    <string name="p33_no_videos_left_fr">Plus de vidéos aujourd’hui</string>
+    <string name="p33_video_not_ready_ar">الفيديو مش جاهز دلوقتي، جرّب بعد شوية</string>
+    <string name="p33_video_not_ready_en">The video is not ready yet, try again in a moment</string>
+    <string name="p33_video_not_ready_fr">La vidéo n’est pas prête, réessayez dans un instant</string>
+    <string name="p33_earned_ar" formatted="true">اتضافت %1$d نقاط</string>
+    <string name="p33_earned_en" formatted="true">%1$d points added</string>
+    <string name="p33_earned_fr" formatted="true">%1$d points ajoutés</string>
+    <string name="p33_go_pro_ar">Pro بلا نقاط</string>
+    <string name="p33_go_pro_en">Pro, no points</string>
+    <string name="p33_go_pro_fr">Pro, sans points</string>
+    <string name="p33_gate_title_ar">رصيدك مش كفاية</string>
+    <string name="p33_gate_title_en">Not enough points</string>
+    <string name="p33_gate_title_fr">Points insuffisants</string>
+    <string name="p33_gate_text_ar" formatted="true">الحفظ ده محتاج %1$d نقطة ورصيدك %2$d. شاهد فيديو علشان تزوّد رصيدك، أو اشترك في Pro من غير نقاط.</string>
+    <string name="p33_gate_text_en" formatted="true">This save needs %1$d points and you have %2$d. Watch a video to earn more, or get Pro with no points.</string>
+    <string name="p33_gate_text_fr" formatted="true">Cet enregistrement demande %1$d points et vous en avez %2$d. Regardez une vidéo ou passez à Pro.</string>
+    <string name="p33_daily_ar" formatted="true">هدية النهاردة: +%1$d نقطة</string>
+    <string name="p33_daily_en" formatted="true">Today’s gift: +%1$d points</string>
+    <string name="p33_daily_fr" formatted="true">Cadeau du jour : +%1$d points</string>
+</resources>

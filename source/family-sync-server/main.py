@@ -655,7 +655,7 @@ the whole family space is deleted.</p>
 </body></html>"""
 
 
-PRIVACY_UPDATED = "2026-10-15"
+PRIVACY_UPDATED = "2026-11-07"
 
 
 @app.get("/privacy", response_class=HTMLResponse)
@@ -685,7 +685,14 @@ you compare (Amazon Egypt, Noon, Jumia).</li>
 <li><b>Google services on the device.</b> Google's document scanner and ML Kit run on your phone; translation language
 models may be downloaded from Google.</li>
 </ul>
-<p>We do not show ads, we do not use analytics or tracking, and we do not sell or rent any data.</p>
+<p>We do not use analytics or tracking of our own, and we do not sell or rent any data.</p>
+<h2>Ads (Google Play version only)</h2>
+<p>The Google Play version shows one banner ad on the home screen and offers optional rewarded videos that give you
+points for the free plan. Ads come from Google AdMob. To show ads, Google and its partners may use your advertising ID,
+IP address and basic device and usage information; where the law requires it, the app first shows Google's consent form
+and you can change your choice later in the Pro screen. Ads are never shown inside your documents, scans, money, health
+or family screens. Buying Pro or "remove ads" turns ads and points off. The direct APK version contains no ads. Your
+points balance is stored on your phone only.</p>
 <h2>Permissions</h2>
 <p>Camera (scanning, QR, smart camera), microphone (voice recordings and meeting notes), location (prayer times),
 notifications (reminders), all-files access (the file manager), alarms (reminders on time) and a foreground service
@@ -708,7 +715,11 @@ leaves, the whole family space is deleted. See also <a href="/delete-account">/d
 طلبات العائلة وقائمة التسوق ورسائل الشات اللي بتشاركها، والأسماء اللي بتكتبها، والأدوية والمواعيد الصحية لو فعّلت
 مشاركة الصحة بنفسك، ومعرّف عشوائي للجهاز. أسعار العملات والذهب بتتنزل من مصادر عامة من غير أي بيانات شخصية، وكلمات
 البحث في مقارنة الأسعار بتتبعت لصفحات البحث في المتاجر.</p>
-<p>مفيش إعلانات، ولا تحليلات أو تتبع، ولا بيع لأي بيانات. لحذف بيانات العائلة: المساعد الشخصي ← طلبات العائلة ←
+<p>مفيش تحليلات أو تتبع من عندنا، ولا بيع لأي بيانات. نسخة Google Play فيها بانر إعلاني واحد في الشاشة الرئيسية
+وفيديوهات اختيارية بتدّيك نقاط في الباقة المجانية، والإعلانات من Google AdMob اللي ممكن تستخدم معرّف الإعلانات والـ IP
+وبيانات الجهاز، وبنعرض نموذج موافقة Google لما القانون يطلب ده وتقدر تغيّر اختيارك من شاشة Pro. مفيش إعلانات داخل
+المستندات أو المسح أو المال أو الصحة أو العائلة. شراء Pro أو «إزالة الإعلانات» بيقفل الإعلانات والنقاط، ونسخة الـ APK
+المباشرة من غير إعلانات. رصيد النقاط محفوظ على هاتفك بس. لحذف بيانات العائلة: المساعد الشخصي ← طلبات العائلة ←
 الإعدادات ← <b>مغادرة العائلة وحذف بياناتي</b>.</p>
 </div>
 </body></html>"""

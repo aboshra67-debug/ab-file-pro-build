@@ -190,3 +190,9 @@ def test_privacy_policy_is_public_and_bilingual():
     r = client.get("/privacy")
     assert r.status_code == 200
     assert "Privacy policy" in r.text and "سياسة الخصوصية" in r.text and "/delete-account" in r.text
+
+
+def test_privacy_policy_discloses_ads_and_points():
+    r = client.get("/privacy")
+    assert "Google AdMob" in r.text and "rewarded videos" in r.text and "points balance is stored on your phone only" in r.text
+    assert "We do not show ads" not in r.text and "مفيش إعلانات، ولا" not in r.text

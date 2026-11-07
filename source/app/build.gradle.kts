@@ -38,9 +38,9 @@ android {
         applicationId = "com.abfilepro.app"
         minSdk = 26
         targetSdk = 36
-        versionCode = 184
+        versionCode = 185
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        versionName = "2.0.0-alpha98-p32-scanner-translation"
+        versionName = "2.0.0-alpha98-p33-points-rewarded"
 
         vectorDrawables { useSupportLibrary = true }
 
@@ -75,6 +75,8 @@ android {
             // (-PadmobAppId=... -PadmobBannerId=...) and are never stored in the source.
             manifestPlaceholders["admobAppId"] = providers.gradleProperty("admobAppId").getOrElse("ca-app-pub-3940256099942544~3347511713")
             buildConfigField("String", "ADMOB_BANNER_ID", "\"" + providers.gradleProperty("admobBannerId").getOrElse("ca-app-pub-3940256099942544/9214589741") + "\"")
+            // P33: rewarded video (points). Same rule: Google's public TEST id by default.
+            buildConfigField("String", "ADMOB_REWARDED_ID", "\"" + providers.gradleProperty("admobRewardedId").getOrElse("ca-app-pub-3940256099942544/5224354917") + "\"")
         }
         create("direct") {
             dimension = "channel"
@@ -86,7 +88,7 @@ android {
     buildTypes {
         debug {
             // Isolated install so testing never requires uninstalling the production app.
-            applicationIdSuffix = ".p32mainttrial"
+            applicationIdSuffix = ".p33mainttrial"
             if (originalSigningReady) {
                 signingConfig = signingConfigs.getByName("original")
             }
@@ -105,7 +107,7 @@ android {
         // so the optimized build is exercised on the emulator before any store upload.
         create("qa") {
             initWith(getByName("release"))
-            applicationIdSuffix = ".p32qa"
+            applicationIdSuffix = ".p33qa"
             signingConfig = signingConfigs.getByName("debug")
             matchingFallbacks += listOf("release")
         }

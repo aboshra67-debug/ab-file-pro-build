@@ -27,6 +27,7 @@ import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import com.abfilepro.app.billing.PointsState
 import com.abfilepro.app.core.findActivity
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
@@ -163,6 +164,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
     var googleAppend by remember { mutableStateOf(false) }
     var showDiscardScan by remember { mutableStateOf(false) }
     var saveErrorMessage by remember { mutableStateOf<String?>(null) }
+    // P33: points a blocked save needs (0 = no dialog).
+    var pointsNeeded by remember { mutableIntStateOf(0) }
     var imagePreviewFile by remember { mutableStateOf<File?>(null) }
     var googleBoundsIndex by remember { mutableStateOf<Int?>(null) }
     var googleBoundsBackup by remember { mutableStateOf<ScanDraftPage?>(null) }
@@ -892,6 +895,12 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             showMissingCardSide = true
             return
         }
+        // P33: batch/book pages and saved translations cost points for the free tier (Play build only).
+        val pointsCost = PointsState.costOf(selectedMode, pagesSnapshot.size)
+        if (!PointsState.canSpend(pointsCost)) {
+            pointsNeeded = pointsCost
+            return
+        }
         // Alpha42: snapshot the requested format at click time. Compose state updates are asynchronous;
         // reading singleDocumentOutputFormat later could still see the previous PDF value after JPG was tapped.
         val requestedOutputFormat = outputFormatOverride ?: singleDocumentOutputFormat
@@ -920,6 +929,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     ScanProcessor.cleanup(pagesSnapshot)
                     reviewPages = emptyList()
                     lastResult = translated.file.name
+                    PointsState.spend(context, pointsCost)
                 } else {
                     val saved = withContext(Dispatchers.IO) {
                         if (requestedMode == ScanCaptureMode.ID_CARD && pagesSnapshot.size >= 2) {
@@ -989,6 +999,7 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
                     ScanProcessor.cleanup(pagesSnapshot)
                     reviewPages = emptyList()
                     lastResult = context.uiText(language, "scan_screen_010", pagesSnapshot.size, verifiedSaved.name)
+                    PointsState.spend(context, pointsCost)
                     // P22: every mode stays on the success screen after saving; the user opens the
                     // file (in-app viewer) or its folder from there. Jumping to the file manager
                     // automatically left the scanner mid-task (P10 already did this for BATCH).
@@ -1035,6 +1046,8 @@ fun ScanScreen(onBack: () -> Unit, onOpenPdf: (File) -> Unit, onOpenBarcode: () 
             latestDocumentFallbackBackup?.file?.delete()
         }
     }
+
+    if (pointsNeeded > 0) PointsGateDialog(need = pointsNeeded, onDismiss = { pointsNeeded = 0 })
 
     saveErrorMessage?.let { message ->
         AlertDialog(

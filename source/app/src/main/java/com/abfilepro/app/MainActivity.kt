@@ -56,6 +56,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         // P28: the saved Pro state first, then Google Play's current answer (Play channel only).
         ProState.load(this)
+        // P33: the free-tier points (Play channel only).
+        com.abfilepro.app.billing.PointsState.load(this)
         BillingBackend.start(this)
         PDFBoxResourceLoader.init(applicationContext)
         com.abfilepro.app.core.SafePdfRenderer.init(applicationContext)
@@ -83,6 +85,16 @@ class MainActivity : ComponentActivity() {
                         if (android.os.Build.VERSION.SDK_INT < 35) window.navigationBarColor = if (darkMode) 0xFF101418.toInt() else 0xFFFFFFFF.toInt()
                     }
                     val nav = rememberNavController()
+                    // P33: once a day, the gift of points (only when points apply to this person).
+                    LaunchedEffect(Unit) {
+                        if (com.abfilepro.app.billing.PointsState.claimDailyBonus(this@MainActivity)) {
+                            android.widget.Toast.makeText(
+                                this@MainActivity,
+                                this@MainActivity.uiText(appLanguage, "p33_daily", com.abfilepro.app.core.PointsPolicy.DAILY_BONUS),
+                                android.widget.Toast.LENGTH_SHORT
+                            ).show()
+                        }
+                    }
                     // P28: a limit that stopped the person opens the Pro screen.
                     LaunchedEffect(ProState.paywallRequests) {
                         if (ProState.paywallRequests > 0 && nav.currentDestination?.route != "pro") nav.navigate("pro")
