@@ -1,0 +1,92 @@
+== apk: dl/AB98_P31_PLAY_QA_R8.apk size: 110214072
+== build-tools: /usr/local/lib/android/sdk/build-tools/37.0.0
+== aapt2 badging
+package: name='com.abfilepro.app.p31qa' versionCode='183' versionName='2.0.0-alpha98-p31-shopping-counter' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+targetSdkVersion:'36'
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.RECORD_AUDIO'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_MICROPHONE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.MANAGE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'
+uses-permission: name='android.permission.SCHEDULE_EXACT_ALARM'
+uses-permission: name='android.permission.ACCESS_COARSE_LOCATION'
+uses-permission: name='android.permission.ACCESS_FINE_LOCATION'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='com.google.android.gms.permission.AD_ID'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_AD_ID'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_ATTRIBUTION'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_TOPICS'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='com.android.vending.BILLING'
+uses-permission: name='com.abfilepro.app.p31qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'AB File Pro P31 QA'
+application-icon-160:'res/wf.png'
+application-icon-240:'res/wf.png'
+application-icon-320:'res/wf.png'
+application-icon-480:'res/wf.png'
+application-icon-640:'res/wf.png'
+application-icon-65535:'res/wf.png'
+launchable-activity: name='com.abfilepro.app.MainActivity'  label='' icon=''
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+native-code: 'arm64-v8a'
+== aapt2 permissions
+package: com.abfilepro.app.p31qa
+uses-permission: name='android.permission.CAMERA'
+uses-permission: name='android.permission.RECORD_AUDIO'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_MICROPHONE'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.MANAGE_EXTERNAL_STORAGE'
+uses-permission: name='android.permission.POST_NOTIFICATIONS'
+uses-permission: name='android.permission.VIBRATE'
+uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'
+uses-permission: name='android.permission.SCHEDULE_EXACT_ALARM'
+uses-permission: name='android.permission.ACCESS_COARSE_LOCATION'
+uses-permission: name='android.permission.ACCESS_FINE_LOCATION'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+uses-permission: name='com.google.android.gms.permission.AD_ID'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_AD_ID'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_ATTRIBUTION'
+uses-permission: name='android.permission.ACCESS_ADSERVICES_TOPICS'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='com.android.vending.BILLING'
+permission: com.abfilepro.app.p31qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='com.abfilepro.app.p31qa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+== zipalign 16KB check
+ 6078464 lib/arm64-v8a/libandroidx.graphics.path.so (OK)
+ 6094848 lib/arm64-v8a/libbarhopper_v3.so (OK)
+11042816 lib/arm64-v8a/libc++_shared.so (OK)
+12337152 lib/arm64-v8a/libface_detector_v2_jni.so (OK)
+20873216 lib/arm64-v8a/libimage_processing_util_jni.so (OK)
+20905984 lib/arm64-v8a/libjpeg.so (OK)
+21168128 lib/arm64-v8a/liblanguage_id_l2c_jni.so (OK)
+22200320 lib/arm64-v8a/libleptonica.so (OK)
+25083904 lib/arm64-v8a/libmlkit_google_ocr_pipeline.so (OK)
+36159488 lib/arm64-v8a/libopencv_java4.so (OK)
+60817408 lib/arm64-v8a/libpngx.so (OK)
+61046784 lib/arm64-v8a/libsurface_util_jni.so (OK)
+61063168 lib/arm64-v8a/libtesseract.so (OK)
+65241088 lib/arm64-v8a/libtranslate_jni.so (OK)
+Verification successful
+== apksigner
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/usr/local/lib/android/sdk/build-tools/37.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v3.2 scheme (APK Signature Scheme v3.2): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+V2 Signer: certificate DN: C=US, O=Android, CN=Android Debug
+V2 Signer: certificate SHA-256 digest: fe6b6edb4fe5e1d1016bbab0d6cb6099bc4f570b0daf77a2b4c90011a7fb603e
+V2 Signer: certificate SHA-1 digest: 209c2dc9d9ab823969bd362ce21d120b877e04be

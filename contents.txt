@@ -1,0 +1,92 @@
+== lib files
+4832 x/lib/arm64-v8a/libsurface_util_jni.so
+10096 x/lib/arm64-v8a/libandroidx.graphics.path.so
+29008 x/lib/arm64-v8a/libimage_processing_util_jni.so
+219880 x/lib/arm64-v8a/libpngx.so
+251888 x/lib/arm64-v8a/libjpeg.so
+1019560 x/lib/arm64-v8a/liblanguage_id_l2c_jni.so
+1292904 x/lib/arm64-v8a/libc++_shared.so
+2878240 x/lib/arm64-v8a/libleptonica.so
+4164360 x/lib/arm64-v8a/libtesseract.so
+4946720 x/lib/arm64-v8a/libbarhopper_v3.so
+8520960 x/lib/arm64-v8a/libface_detector_v2_jni.so
+11064544 x/lib/arm64-v8a/libmlkit_google_ocr_pipeline.so
+16361048 x/lib/arm64-v8a/libtranslate_jni.so
+24657160 x/lib/arm64-v8a/libopencv_java4.so
+== ELF LOAD segment alignment (needs >= 0x4000 for 16KB devices)
+liblanguage_id_l2c_jni.so: 0x4000 
+libmlkit_google_ocr_pipeline.so: 0x4000 
+libleptonica.so: 0x4000 
+libsurface_util_jni.so: 0x4000 
+libimage_processing_util_jni.so: 0x4000 
+libc++_shared.so: 0x4000 
+libtesseract.so: 0x4000 
+libbarhopper_v3.so: 0x4000 
+libandroidx.graphics.path.so: 0x4000 
+libpngx.so: 0x4000 
+libface_detector_v2_jni.so: 0x4000 
+libjpeg.so: 0x4000 
+libtranslate_jni.so: 0x4000 
+libopencv_java4.so: 0x4000 
+== dex
+-rw-r--r-- 1 runner runner 12491712 Jan  1  1981 x/classes.dex
+-rw-r--r-- 1 runner runner  1079412 Jan  1  1981 x/classes2.dex
+== biggest entries
+   613352  1981-01-01 01:01   assets/models_bundled/fssd_medium_8bit_v5.tflite
+   663990  1981-01-01 01:01   org/bouncycastle/pqc/crypto/sike/p434.properties
+   758680  1981-01-01 01:01   res/Gf.webp
+   765399  1981-01-01 01:01   org/bouncycastle/pqc/crypto/sike/p503.properties
+  1019560  1981-01-01 01:01   lib/arm64-v8a/liblanguage_id_l2c_jni.so
+  1078354  1981-01-01 01:01   assets/models_bundled/LMprec_600.emd
+  1079412  1981-01-01 01:01   classes2.dex
+  1124144  1981-01-01 01:01   assets/models_bundled/contours.tfl
+  1130365  1981-01-01 01:01   assets/tessdata/fra.traineddata
+  1154869  1981-01-01 01:01   org/bouncycastle/pqc/crypto/sike/p610.properties
+  1292904  1981-01-01 01:01   lib/arm64-v8a/libc++_shared.so
+  1432056  1981-01-01 01:01   assets/tessdata/ara.traineddata
+  1939925  1981-01-01 01:01   org/bouncycastle/pqc/crypto/sike/p751.properties
+  2878240  1981-01-01 01:01   lib/arm64-v8a/libleptonica.so
+  2913520  1981-01-01 01:01   resources.arsc
+  3640348  1981-01-01 01:01   org/bouncycastle/pqc/crypto/picnic/lowmc.properties
+  4113088  1981-01-01 01:01   assets/tessdata/eng.traineddata
+  4164360  1981-01-01 01:01   lib/arm64-v8a/libtesseract.so
+  4946720  1981-01-01 01:01   lib/arm64-v8a/libbarhopper_v3.so
+  8520960  1981-01-01 01:01   lib/arm64-v8a/libface_detector_v2_jni.so
+ 11064544  1981-01-01 01:01   lib/arm64-v8a/libmlkit_google_ocr_pipeline.so
+ 12491712  1981-01-01 01:01   classes.dex
+ 16361048  1981-01-01 01:01   lib/arm64-v8a/libtranslate_jni.so
+ 24657160  1981-01-01 01:01   lib/arm64-v8a/libopencv_java4.so
+128840605                     772 files
+== assets
+252742 x/assets/com/tom_roush/fontbox/resources/cmap/UniCNS-UTF16-H
+265146 x/assets/com/tom_roush/fontbox/resources/cmap/Adobe-CNS1-UCS2
+274452 x/assets/com/tom_roush/fontbox/resources/cmap/UniGB-UCS2-H
+276552 x/assets/mlkit_barcode_models/oned_feature_extractor_mobile.tflite
+284124 x/assets/com/tom_roush/fontbox/resources/cmap/Adobe-Japan1-UCS2
+309568 x/assets/mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/Latn_ctc/optical/lstm_model.fb
+315520 x/assets/mlkit-google-ocr-models/gocr/gocr_models/line_recognition_legacy_mobile/tflite_langid.tflite
+315520 x/assets/tflite_langid.tflite.jpg
+326418 x/assets/com/tom_roush/fontbox/resources/cmap/UniCNS-UCS2-H
+340760 x/assets/mlkit-google-ocr-models/taser/detector/rpn_text_detector_mobile_space_to_depth_quantized_mbv2_v1.tflite
+347928 x/assets/models_bundled/blazeface.tfl
+390456 x/assets/mlkit_barcode_models/barcode_ssd_mobilenet_v1_dmp25_quant.tflite
+410712 x/assets/com/tom_roush/pdfbox/resources/ttf/LiberationSans-Regular.ttf
+613080 x/assets/models_bundled/fssd_medium_8bit_gray_v5.tflite
+613352 x/assets/models_bundled/fssd_medium_8bit_v5.tflite
+1078354 x/assets/models_bundled/LMprec_600.emd
+1124144 x/assets/models_bundled/contours.tfl
+1130365 x/assets/tessdata/fra.traineddata
+1432056 x/assets/tessdata/ara.traineddata
+4113088 x/assets/tessdata/eng.traineddata
+== META-INF
+androidx.activity_activity-compose.version
+androidx.activity_activity-ktx.version
+androidx.activity_activity.version
+androidx.annotation_annotation-experimental.version
+androidx.appcompat_appcompat-resources.version
+androidx.appcompat_appcompat.version
+androidx.arch.core_core-runtime.version
+androidx.autofill_autofill.version
+androidx.browser_browser.version
+androidx.camera_camera-camera2.version
+== manifest strings
