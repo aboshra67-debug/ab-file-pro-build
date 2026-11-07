@@ -1,0 +1,31 @@
+name: Publish P35 test APKs as a release
+on:
+  push:
+    branches: ["apk/p35-test-20261108"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P35_OUTPUTS
+          run-id: 42420525955
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p35-test-apk-vc187 *PLAY_TEST.apk *PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p35-test-20261108 --prerelease \
+            --title "AB File Pro P35 (VC187) - framed ad banner with margins + redesigned points card on top (debug-signed test)" \
+            --notes "Debug-signed test builds from verified run 42420525955 (green). PLAY_TEST = com.abfilepro.app.p35mainttrial. PLAY_QA_R8 = com.abfilepro.app.p35qa. Test ads only; Pro products need Play Console."
