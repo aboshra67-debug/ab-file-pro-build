@@ -1,0 +1,31 @@
+name: Publish P32 test APKs as a release
+on:
+  push:
+    branches: ["apk/p32-test-20261107"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P32_OUTPUTS
+          run-id: 42369742193
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p32-test-apk-vc184 *PLAY_TEST.apk *PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p32-test-20261107 --prerelease \
+            --title "AB File Pro P32 (VC184) - scanner translation timeout + no ad over assistant (debug-signed test)" \
+            --notes "Debug-signed test builds from verified run 42369742193 (green). PLAY_TEST = com.abfilepro.app.p32mainttrial. PLAY_QA_R8 = com.abfilepro.app.p32qa. Test ads only; Pro products need Play Console."
