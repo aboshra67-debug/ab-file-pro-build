@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P36: points live in Settings, only a small balance chip stays on screens. -->
+<resources>
+    <string name="p36_section_ar">النقاط والمكافآت</string>
+    <string name="p36_section_en">Points and rewards</string>
+    <string name="p36_section_fr">Points et récompenses</string>
+    <string name="p36_cost_points_ar" formatted="true">%1$d نقطة</string>
+    <string name="p36_cost_points_en" formatted="true">%1$d points</string>
+    <string name="p36_cost_points_fr" formatted="true">%1$d points</string>
+    <string name="p36_videos_left_ar" formatted="true">باقي %1$d من %2$d النهاردة</string>
+    <string name="p36_videos_left_en" formatted="true">%1$d of %2$d left today</string>
+    <string name="p36_videos_left_fr" formatted="true">%1$d sur %2$d restantes aujourd’hui</string>
+    <string name="p36_rules_title_ar">إزاي النقاط بتشتغل</string>
+    <string name="p36_rules_title_en">How points work</string>
+    <string name="p36_rules_title_fr">Comment fonctionnent les points</string>
+    <string name="p36_rule_page_ar">ورقة في الدفعة أو الكتاب</string>
+    <string name="p36_rule_page_en">Each page in a batch or book</string>
+    <string name="p36_rule_page_fr">Chaque page d’un lot ou d’un livre</string>
+    <string name="p36_rule_translate_ar">حفظ ترجمة</string>
+    <string name="p36_rule_translate_en">Saving a translation</string>
+    <string name="p36_rule_translate_fr">Enregistrer une traduction</string>
+    <string name="p36_rule_daily_ar">هدية أول فتحة كل يوم</string>
+    <string name="p36_rule_daily_en">Gift on the first open each day</string>
+    <string name="p36_rule_daily_fr">Cadeau à la première ouverture du jour</string>
+    <string name="p36_free_always_ar">مجاني دايمًا: مسح مستند واحد أو بطاقة أو إيصال، ومدير الملفات والمساعد الأساسي.</string>
+    <string name="p36_free_always_en">Always free: scanning one document, card or receipt, the file manager and the basic assistant.</string>
+    <string name="p36_free_always_fr">Toujours gratuit : un document, une carte ou un reçu, le gestionnaire de fichiers et l’assistant de base.</string>
+    <string name="p36_chip_desc_ar">رصيد النقاط، اضغط لفتح الإعدادات</string>
+    <string name="p36_chip_desc_en">Points balance, tap to open Settings</string>
+    <string name="p36_chip_desc_fr">Solde de points, touchez pour ouvrir les réglages</string>
+</resources>

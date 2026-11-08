@@ -6,12 +6,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 
 /**
- * P26: where ads may appear. Only the home screen carries a banner. Every screen that handles
- * the person's documents, scans, health, money, family or reminders is deliberately NOT on the list,
- * and a new screen is ad-free until it is added here on purpose.
+ * P26: where banner ads may appear. P36: nowhere. The home banner was removed on purpose; the only ad
+ * left in the app is the optional rewarded video that earns points. Every screen that handles the
+ * person's documents, scans, health, money, family or reminders stays ad-free, and a new screen is
+ * ad-free until it is added here on purpose.
  */
 object AdsPolicy {
-    private val SHOW_ON = setOf("home")
+    private val SHOW_ON = emptySet<String>()
 
     /**
      * [privateOverlayOpen] is true while a private surface (the personal assistant: money, health,

@@ -1,12 +1,12 @@
 package com.abfilepro.app.ads
 
 import org.junit.Assert.assertFalse
-import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class AdsPolicyTest {
-    @Test fun homeShowsTheBanner() {
-        assertTrue(AdsPolicy.canShowOn("home", adsRemoved = false))
+    // P36: the home banner was removed on purpose; the only ad left is the optional rewarded video.
+    @Test fun homeHasNoBannerAnymore() {
+        assertFalse(AdsPolicy.canShowOn("home", adsRemoved = false))
     }
 
     @Test fun privateScreensNeverShowAds() {
@@ -25,10 +25,10 @@ class AdsPolicyTest {
 
     @Test fun assistantOverlayOnHomeNeverShowsAds() {
         assertFalse(AdsPolicy.canShowOn("home", adsRemoved = false, privateOverlayOpen = true))
-        assertTrue(AdsPolicy.canShowOn("home", adsRemoved = false, privateOverlayOpen = false))
+        assertFalse(AdsPolicy.canShowOn("home", adsRemoved = false, privateOverlayOpen = false))
     }
 
     @Test fun overlayFlagDefaultsToClosedSoOldCallersKeepWorking() {
-        assertTrue(AdsPolicy.canShowOn("home", adsRemoved = false))
+        assertFalse(AdsPolicy.canShowOn("home", adsRemoved = false))
     }
 }

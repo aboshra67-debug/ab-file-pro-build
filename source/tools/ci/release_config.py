@@ -1,14 +1,14 @@
 """Single source of the values P26 verification pins (version, packages, expected counts)."""
-TAG = 'P35'
-EVIDENCE = 'p35-evidence'
-RELEASE = 'p35-release'
-VERSION_CODE = 187
-VERSION_NAME = '2.0.0-alpha98-p35-ad-placement'
-TEST_PACKAGE = 'com.abfilepro.app.p35mainttrial'
-QA_PACKAGE = 'com.abfilepro.app.p35qa'
-TEST_LABEL = 'AB File Pro P35'
-QA_LABEL = 'AB File Pro P35 QA'
-SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial', 'com.abfilepro.app.p23mainttrial', 'com.abfilepro.app.p24mainttrial', 'com.abfilepro.app.p25mainttrial', 'com.abfilepro.app.p26mainttrial', 'com.abfilepro.app.p27mainttrial', 'com.abfilepro.app.p28mainttrial', 'com.abfilepro.app.p29mainttrial', 'com.abfilepro.app.p30mainttrial', 'com.abfilepro.app.p31mainttrial', 'com.abfilepro.app.p32mainttrial', 'com.abfilepro.app.p33mainttrial', 'com.abfilepro.app.p34mainttrial', 'com.abfilepro.app.p35mainttrial']
+TAG = 'P36'
+EVIDENCE = 'p36-evidence'
+RELEASE = 'p36-release'
+VERSION_CODE = 188
+VERSION_NAME = '2.0.0-alpha98-p36-points-settings'
+TEST_PACKAGE = 'com.abfilepro.app.p36mainttrial'
+QA_PACKAGE = 'com.abfilepro.app.p36qa'
+TEST_LABEL = 'AB File Pro P36'
+QA_LABEL = 'AB File Pro P36 QA'
+SCANNER_ALLOWED_PACKAGES = ['com.abfilepro.app.p13mainttrial', 'com.abfilepro.app.p14mainttrial', 'com.abfilepro.app.p15mainttrial', 'com.abfilepro.app.p16mainttrial', 'com.abfilepro.app.p17mainttrial', 'com.abfilepro.app.p18mainttrial', 'com.abfilepro.app.p19mainttrial', 'com.abfilepro.app.p20mainttrial', 'com.abfilepro.app.p21mainttrial', 'com.abfilepro.app.p22mainttrial', 'com.abfilepro.app.p23mainttrial', 'com.abfilepro.app.p24mainttrial', 'com.abfilepro.app.p25mainttrial', 'com.abfilepro.app.p26mainttrial', 'com.abfilepro.app.p27mainttrial', 'com.abfilepro.app.p28mainttrial', 'com.abfilepro.app.p29mainttrial', 'com.abfilepro.app.p30mainttrial', 'com.abfilepro.app.p31mainttrial', 'com.abfilepro.app.p32mainttrial', 'com.abfilepro.app.p33mainttrial', 'com.abfilepro.app.p34mainttrial', 'com.abfilepro.app.p35mainttrial', 'com.abfilepro.app.p36mainttrial']
 DEBUG_APK = 'project/app/build/outputs/apk/play/debug/app-play-debug.apk'
 QA_APK = 'project/app/build/outputs/apk/play/qa/app-play-qa.apk'
 DIRECT_APK = 'project/app/build/outputs/apk/direct/debug/app-direct-debug.apk'

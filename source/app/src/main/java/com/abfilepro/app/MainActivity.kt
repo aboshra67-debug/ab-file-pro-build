@@ -239,6 +239,11 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                     }
+                    // P36: the small points chip on every screen; it opens Settings, where points live.
+                    com.abfilepro.app.ui.screens.PointsChip(
+                        onClick = { if (currentRoute != "settings") nav.navigate("settings") },
+                        modifier = Modifier.align(androidx.compose.ui.Alignment.TopCenter)
+                    )
                     }
                     if (showAd) AdSlot(Modifier.navigationBarsPadding())
                     }

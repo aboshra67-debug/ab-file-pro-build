@@ -162,6 +162,12 @@ fun SettingsScreen(
         ) {
             Spacer(Modifier.height(2.dp))
 
+            // P36: points and rewards first (only people the points apply to see it).
+            if (com.abfilepro.app.billing.PointsState.active) {
+                SettingsSectionTitle(Icons.Default.Stars, context.uiText(language, "p36_section"))
+                PointsSettingsSection()
+            }
+
             SettingsSectionTitle(Icons.Default.Language, context.uiText(language, "settings_section_language"))
             PremiumSettingsCard(
                 icon = Icons.Default.Language,
