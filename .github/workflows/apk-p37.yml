@@ -1,0 +1,31 @@
+name: Publish P37 test APKs as a release
+on:
+  push:
+    branches: ["apk/p37-test-20261112"]
+permissions:
+  contents: write
+  actions: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: AB98_P37_OUTPUTS
+          run-id: 43277774823
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: dl
+      - name: Verify and publish
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd dl
+          ls -la
+          sha256sum -c SHA256SUMS.txt
+          gh release create p37-test-apk-vc189 *PLAY_TEST.apk *PLAY_QA_R8.apk SHA256SUMS.txt \
+            --repo "$GITHUB_REPOSITORY" --target apk/p37-test-20261112 --prerelease \
+            --title "AB File Pro P37 (VC189) - accounts server and admin site (server-side only; debug-signed test)" \
+            --notes "Debug-signed test builds from verified run 43277774823 (green). PLAY_TEST = com.abfilepro.app.p37mainttrial. PLAY_QA_R8 = com.abfilepro.app.p37qa. Server-only phase: the app does not use accounts yet."
