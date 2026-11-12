@@ -36,6 +36,19 @@ MAX_SPEND = 20
 DAY_MS = 86_400_000
 EGYPT_OFFSET_SECONDS = 2 * 3600  # "a day" for the daily gift follows Egypt standard time
 
+# Editable from the admin site; these are the defaults and the allowed range of each rule.
+RULE_LIMITS: dict[str, tuple[int, int, int]] = {
+    # key: (default, min, max)
+    "start_balance": (START_BALANCE, 0, 500),
+    "daily_bonus": (DAILY_BONUS, 0, 50),
+    "ad_reward": (AD_REWARD, 0, 100),
+    "max_ads_per_day": (MAX_ADS_PER_DAY, 0, 20),
+    "max_balance": (MAX_BALANCE, 10, 1000),
+    "cost_per_page": (1, 0, 20),
+    "cost_translate": (2, 0, 50),
+    "max_scan_cost": (MAX_SPEND, 1, 100),
+}
+
 _deps: dict[str, Callable[..., Any]] = {}
 
 
@@ -160,6 +173,10 @@ def init_schema(conn) -> None:
         )
         """
     )
+    conn.execute("ALTER TABLE accounts ADD COLUMN IF NOT EXISTS suspended_at TIMESTAMPTZ")
+    conn.execute(
+        "CREATE TABLE IF NOT EXISTS app_settings (key VARCHAR(40) PRIMARY KEY, value INTEGER NOT NULL)"
+    )
     conn.execute(
         """
         CREATE TABLE IF NOT EXISTS pro_grants (
@@ -186,9 +203,17 @@ def _bearer(authorization: str | None) -> str:
     return authorization[7:].strip()
 
 
-def _cap(balance: int, value: int) -> int:
+def get_rules(conn) -> dict[str, int]:
+    rules = {key: limits[0] for key, limits in RULE_LIMITS.items()}
+    for key, value in conn.execute("SELECT key, value FROM app_settings").fetchall():
+        if key in rules:
+            rules[key] = value
+    return rules
+
+
+def _cap(balance: int, value: int, cap: int = MAX_BALANCE) -> int:
     """A gift never takes points away: a balance already at the cap just stops growing."""
-    return balance if balance >= MAX_BALANCE else min(value, MAX_BALANCE)
+    return balance if balance >= cap else min(value, cap)
 
 
 def pro_state(conn, email: str) -> dict[str, Any]:
@@ -208,7 +233,8 @@ def snapshot(conn, account_id: int) -> dict[str, Any]:
         (account_id,),
     ).fetchone()
     day = today()
-    ads_left = MAX_ADS_PER_DAY - a[5] if a[4] == day else MAX_ADS_PER_DAY
+    rules = get_rules(conn)
+    ads_left = rules["max_ads_per_day"] - a[5] if a[4] == day else rules["max_ads_per_day"]
     return {
         "email": a[0],
         "name": a[1],
@@ -218,17 +244,21 @@ def snapshot(conn, account_id: int) -> dict[str, Any]:
             "dailyBonusAvailable": a[3] != day,
         },
         "pro": pro_state(conn, a[0]),
+        "rules": rules,
         "serverTime": now_ms(),
     }
 
 
 def _account_id(conn, authorization: str | None) -> int:
     row = conn.execute(
-        "UPDATE account_sessions SET last_seen_at = NOW() WHERE token_hash = %s RETURNING account_id",
+        "UPDATE account_sessions s SET last_seen_at = NOW() FROM accounts a "
+        "WHERE s.token_hash = %s AND a.id = s.account_id RETURNING s.account_id, a.suspended_at",
         (_hash(_bearer(authorization)),),
     ).fetchone()
     if row is None:
         raise HTTPException(status_code=401, detail="session expired, sign in again")
+    if row[1] is not None:
+        raise HTTPException(status_code=403, detail="account suspended")
     return row[0]
 
 
@@ -260,7 +290,7 @@ class GoogleSignIn(BaseModel):
 
 class PointsRequest(BaseModel):
     key: str = Field(min_length=8, max_length=64, pattern=r"^[A-Za-z0-9_.:-]+$")
-    amount: int = Field(default=0, ge=0, le=MAX_SPEND)
+    amount: int = Field(default=0, ge=0, le=100)
 
 
 @router.post("/v1/auth/google")
@@ -268,9 +298,12 @@ def sign_in_with_google(body: GoogleSignIn, request: Request) -> dict[str, Any]:
     _rate(request, "signin", 20)
     info = verify_google_id_token(body.idToken)
     with _db() as conn:
-        row = conn.execute("SELECT id FROM accounts WHERE google_sub = %s", (info["sub"],)).fetchone()
+        rules = get_rules(conn)
+        row = conn.execute("SELECT id, suspended_at FROM accounts WHERE google_sub = %s", (info["sub"],)).fetchone()
+        if row is not None and row[1] is not None:
+            raise HTTPException(status_code=403, detail="account suspended")
         if row is None:
-            start = START_BALANCE if body.localBalance is None else min(body.localBalance, MAX_BALANCE)
+            start = rules["start_balance"] if body.localBalance is None else min(body.localBalance, rules["max_balance"])
             row = conn.execute(
                 "INSERT INTO accounts (google_sub, email, name, balance, last_bonus_day) "
                 "VALUES (%s, %s, %s, %s, %s) RETURNING id",
@@ -302,6 +335,13 @@ def sign_out(authorization: str | None = Header(default=None)) -> dict[str, bool
     return {"signedOut": True}
 
 
+@router.get("/v1/rules")
+def public_rules() -> dict[str, Any]:
+    """The points rules the app should follow (the admin site can change them)."""
+    with _db() as conn:
+        return {"rules": get_rules(conn)}
+
+
 @router.delete("/v1/account")
 def delete_account(request: Request, authorization: str | None = Header(default=None)) -> dict[str, bool]:
     _rate(request, "account-delete", 10)
@@ -318,6 +358,9 @@ def spend_points(body: PointsRequest, request: Request, authorization: str | Non
         raise HTTPException(status_code=400, detail="amount must be at least 1")
     with _db() as conn:
         account_id = _account_id(conn, authorization)
+        rules = get_rules(conn)
+        if body.amount > max(rules["max_scan_cost"], rules["cost_translate"]):
+            raise HTTPException(status_code=400, detail="amount is above the allowed cost")
         balance, _, _, _, email = _locked(conn, account_id)
         if pro_state(conn, email)["active"]:
             return {"applied": False, "proActive": True, "balance": balance}  # Pro never pays points
@@ -335,11 +378,12 @@ def daily_bonus(request: Request, authorization: str | None = Header(default=Non
     _rate(request, "points", 120)
     with _db() as conn:
         account_id = _account_id(conn, authorization)
+        rules = get_rules(conn)
         balance, last_bonus_day, _, _, _ = _locked(conn, account_id)
         day = today()
         if last_bonus_day == day:
             return {"applied": False, "balance": balance}
-        new_balance = _cap(balance, balance + DAILY_BONUS)
+        new_balance = _cap(balance, balance + rules["daily_bonus"], rules["max_balance"])
         conn.execute("UPDATE accounts SET balance = %s, last_bonus_day = %s WHERE id = %s", (new_balance, day, account_id))
         return {"applied": True, "balance": new_balance}
 
@@ -350,19 +394,21 @@ def earn_from_ad(body: PointsRequest, request: Request, authorization: str | Non
     _rate(request, "points", 120)
     with _db() as conn:
         account_id = _account_id(conn, authorization)
+        rules = get_rules(conn)
         balance, _, ads_day, ads_today, _ = _locked(conn, account_id)
         day = today()
         used = ads_today if ads_day == day else 0
-        if used >= MAX_ADS_PER_DAY:
+        limit = rules["max_ads_per_day"]
+        if used >= limit:
             return {"applied": False, "balance": balance, "adsLeftToday": 0}
-        if not _claim_key(conn, account_id, body.key, AD_REWARD, "ad"):
-            return {"applied": False, "balance": balance, "adsLeftToday": MAX_ADS_PER_DAY - used}
-        new_balance = _cap(balance, balance + AD_REWARD)
+        if not _claim_key(conn, account_id, body.key, rules["ad_reward"], "ad"):
+            return {"applied": False, "balance": balance, "adsLeftToday": limit - used}
+        new_balance = _cap(balance, balance + rules["ad_reward"], rules["max_balance"])
         conn.execute(
             "UPDATE accounts SET balance = %s, ads_day = %s, ads_today = %s WHERE id = %s",
             (new_balance, day, used + 1, account_id),
         )
-        return {"applied": True, "balance": new_balance, "adsLeftToday": MAX_ADS_PER_DAY - used - 1}
+        return {"applied": True, "balance": new_balance, "adsLeftToday": limit - used - 1}
 
 
 # ---------------------------------------------------------------- admin ----------
@@ -442,41 +488,137 @@ def admin_revoke(email: str, request: Request, x_admin_token: str | None = Heade
     return {"revoked": row is not None}
 
 
+
+
 @router.get("/v1/admin/grants")
-def admin_list_grants(request: Request, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+def admin_list_grants(
+    request: Request, q: str = "", status: str = "all", x_admin_token: str | None = Header(default=None)
+) -> dict[str, Any]:
     _require_admin(request, x_admin_token)
+    like = "%" + _like_text(q) + "%"
     with _db() as conn:
         rows = conn.execute(
-            "SELECT email, plan, ends_at, note, granted_at, revoked_at FROM pro_grants ORDER BY granted_at DESC LIMIT 200"
+            "SELECT email, plan, ends_at, note, granted_at, revoked_at FROM pro_grants "
+            "WHERE email LIKE %s ORDER BY granted_at DESC LIMIT 300",
+            (like,),
         ).fetchall()
     now = now_ms()
-    return {
-        "grants": [
-            {
-                "email": r[0], "plan": r[1], "endsAt": r[2], "note": r[3], "grantedAt": r[4],
-                "active": r[5] is None and (r[2] is None or r[2] > now),
-            }
-            for r in rows
-        ]
-    }
+    grants = [
+        {
+            "email": r[0], "plan": r[1], "endsAt": r[2], "note": r[3], "grantedAt": r[4],
+            "active": r[5] is None and (r[2] is None or r[2] > now),
+            "expiringSoon": r[5] is None and r[2] is not None and now < r[2] < now + 7 * DAY_MS,
+        }
+        for r in rows
+    ]
+    if status == "active":
+        grants = [g for g in grants if g["active"]]
+    elif status == "ended":
+        grants = [g for g in grants if not g["active"]]
+    elif status == "expiring":
+        grants = [g for g in grants if g["expiringSoon"]]
+    return {"grants": grants}
+
+
+def _like_text(q: str) -> str:
+    return q.strip().lower().replace("%", "").replace("_", "").replace("\\", "")[:100]
 
 
 @router.get("/v1/admin/accounts")
-def admin_list_accounts(request: Request, q: str = "", x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+def admin_list_accounts(
+    request: Request,
+    q: str = "",
+    filter: str = "all",
+    offset: int = 0,
+    x_admin_token: str | None = Header(default=None),
+) -> dict[str, Any]:
     _require_admin(request, x_admin_token)
-    like = "%" + q.strip().lower().replace("%", "").replace("_", "")[:100] + "%"
+    where = ["lower(a.email) LIKE %s"]
+    params: list[Any] = ["%" + _like_text(q) + "%"]
+    pro_sql = (
+        "EXISTS (SELECT 1 FROM pro_grants g WHERE g.email = lower(a.email) AND g.revoked_at IS NULL "
+        "AND (g.ends_at IS NULL OR g.ends_at > %s))"
+    )
+    if filter == "pro":
+        where.append(pro_sql)
+        params.append(now_ms())
+    elif filter == "free":
+        where.append("NOT " + pro_sql)
+        params.append(now_ms())
+    elif filter == "suspended":
+        where.append("a.suspended_at IS NOT NULL")
+    clause = " AND ".join(where)
     with _db() as conn:
+        total = conn.execute(f"SELECT COUNT(*) FROM accounts a WHERE {clause}", params).fetchone()[0]
         rows = conn.execute(
-            "SELECT id, email, name, balance, created_at FROM accounts WHERE lower(email) LIKE %s "
-            "ORDER BY created_at DESC LIMIT 50",
-            (like,),
+            f"SELECT a.email, a.name, a.balance, a.created_at, a.suspended_at, {pro_sql} FROM accounts a "
+            f"WHERE {clause} ORDER BY a.created_at DESC LIMIT 30 OFFSET %s",
+            [now_ms(), *params, max(offset, 0)],
         ).fetchall()
-        total = conn.execute("SELECT COUNT(*) FROM accounts").fetchone()[0]
-        accounts = [
-            {"email": r[1], "name": r[2], "balance": r[3], "createdAt": r[4].isoformat(), "pro": pro_state(conn, r[1])["active"]}
+    return {
+        "total": total,
+        "accounts": [
+            {"email": r[0], "name": r[1], "balance": r[2], "createdAt": r[3].isoformat(),
+             "suspended": r[4] is not None, "pro": bool(r[5])}
             for r in rows
-        ]
-    return {"total": total, "accounts": accounts}
+        ],
+    }
+
+
+@router.get("/v1/admin/account")
+def admin_account_detail(request: Request, email: str, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    _require_admin(request, x_admin_token)
+    email = _clean_email(email)
+    with _db() as conn:
+        row = conn.execute("SELECT id, created_at, suspended_at FROM accounts WHERE email = %s ORDER BY id LIMIT 1", (email,)).fetchone()
+        if row is None:
+            raise HTTPException(status_code=404, detail="no account with this email")
+        snap = snapshot(conn, row[0])
+        ledger = conn.execute(
+            "SELECT delta, reason, created_at FROM points_ledger WHERE account_id = %s ORDER BY created_at DESC LIMIT 30",
+            (row[0],),
+        ).fetchall()
+        sessions = conn.execute("SELECT COUNT(*) FROM account_sessions WHERE account_id = %s", (row[0],)).fetchone()[0]
+        grant = conn.execute(
+            "SELECT plan, ends_at, note, revoked_at FROM pro_grants WHERE email = %s", (email,)
+        ).fetchone()
+    return {
+        **snap,
+        "createdAt": row[1].isoformat(),
+        "suspended": row[2] is not None,
+        "sessions": sessions,
+        "grant": None if grant is None else {"plan": grant[0], "endsAt": grant[1], "note": grant[2], "revoked": grant[3] is not None},
+        "ledger": [{"delta": d, "reason": r, "at": c.isoformat()} for d, r, c in ledger],
+    }
+
+
+class SuspendRequest(BaseModel):
+    email: str = Field(max_length=254)
+    suspended: bool
+
+
+@router.post("/v1/admin/accounts/suspend")
+def admin_suspend(body: SuspendRequest, request: Request, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    _require_admin(request, x_admin_token)
+    email = _clean_email(body.email)
+    with _db() as conn:
+        row = conn.execute(
+            "UPDATE accounts SET suspended_at = CASE WHEN %s THEN NOW() ELSE NULL END WHERE email = %s RETURNING id",
+            (body.suspended, email),
+        ).fetchone()
+        if row is None:
+            raise HTTPException(status_code=404, detail="no account with this email")
+        if body.suspended:
+            conn.execute("DELETE FROM account_sessions WHERE account_id = %s", (row[0],))
+    return {"email": email, "suspended": body.suspended}
+
+
+@router.delete("/v1/admin/account")
+def admin_delete_account(request: Request, email: str, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    _require_admin(request, x_admin_token)
+    with _db() as conn:
+        row = conn.execute("DELETE FROM accounts WHERE email = %s RETURNING 1", (_clean_email(email),)).fetchone()
+    return {"deleted": row is not None}
 
 
 @router.post("/v1/admin/points")
@@ -484,73 +626,106 @@ def admin_adjust_points(body: AdminPoints, request: Request, x_admin_token: str 
     _require_admin(request, x_admin_token)
     email = _clean_email(body.email)
     with _db() as conn:
+        cap = get_rules(conn)["max_balance"]
         row = conn.execute("SELECT id, balance FROM accounts WHERE email = %s ORDER BY id LIMIT 1 FOR UPDATE", (email,)).fetchone()
         if row is None:
             raise HTTPException(status_code=404, detail="no account with this email")
-        new_balance = max(0, min(row[1] + body.delta, MAX_BALANCE))
+        new_balance = max(0, min(row[1] + body.delta, max(cap, row[1])))
         conn.execute("UPDATE accounts SET balance = %s WHERE id = %s", (new_balance, row[0]))
+        conn.execute(
+            "INSERT INTO points_ledger (account_id, idem_key, delta, reason) VALUES (%s, %s, %s, 'admin')",
+            (row[0], "admin-" + secrets.token_hex(8), new_balance - row[1]),
+        )
         return {"email": email, "balance": new_balance}
 
 
-ADMIN_PAGE = """<!doctype html>
-<html lang="ar" dir="rtl"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>AB File Pro - الإدارة</title>
-<style>
-:root{--bg:#f6f7fb;--card:#fff;--ink:#16213e;--mut:#667;--line:#dde1ec;--pri:#2563eb;--bad:#c0392b;--ok:#1b7f4b}
-@media (prefers-color-scheme:dark){:root{--bg:#101418;--card:#1a2027;--ink:#e8ecf3;--mut:#9aa6b8;--line:#2b3440;--pri:#6ea0ff;--bad:#ff8a7a;--ok:#5fd39a}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,"Segoe UI",Tahoma,sans-serif;padding:16px}
-main{max-width:560px;margin:0 auto;display:grid;gap:14px}
-h1{font-size:20px;margin:4px 0}h2{font-size:16px;margin:0 0 8px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px}
-label{display:block;font-size:13px;color:var(--mut);margin:8px 0 4px}
-input,select,button{width:100%;font:inherit;padding:11px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
-button{background:var(--pri);color:#fff;border:0;font-weight:700;margin-top:10px}
-button.alt{background:transparent;color:var(--bad);border:1px solid var(--bad)}
-.msg{min-height:22px;font-size:14px;margin-top:8px}.ok{color:var(--ok)}.bad{color:var(--bad)}
-.row{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-top:1px solid var(--line);font-size:14px;word-break:break-all}
-.mut{color:var(--mut);font-size:12px}
-</style></head><body><main>
-<h1>AB File Pro — الإدارة</h1>
-<section class="card"><h2>الدخول</h2>
-<label for="tok">رمز الإدارة</label><input id="tok" type="password" autocomplete="off">
-<div class="mut">بيتحفظ في الجلسة دي بس ويتمسح لما تقفل الصفحة.</div></section>
-<section class="card"><h2>تفعيل Pro بالإيميل</h2>
-<label for="ge">الإيميل</label><input id="ge" type="email" inputmode="email" autocomplete="off">
-<label for="gp">الباقة</label><select id="gp"><option value="monthly">شهري (٣٠ يوم)</option><option value="yearly">سنوي (٣٦٥ يوم)</option><option value="lifetime">مدى الحياة</option><option value="days">عدد أيام محدد</option></select>
-<label for="gd">عدد الأيام (للباقة المحددة)</label><input id="gd" type="number" min="1" max="3650" value="7">
-<label for="gn">ملاحظة</label><input id="gn" maxlength="200">
-<button id="bg">فعّل</button><button id="br" class="alt">إلغاء التفعيل</button><div id="mg" class="msg"></div></section>
-<section class="card"><h2>تعديل النقاط</h2>
-<label for="pe">الإيميل</label><input id="pe" type="email" inputmode="email" autocomplete="off">
-<label for="pd">الزيادة أو النقص (مثال 10 أو -5)</label><input id="pd" type="number" min="-100" max="100" value="10">
-<button id="bp">طبّق</button><div id="mp" class="msg"></div></section>
-<section class="card"><h2>الحسابات</h2>
-<label for="qs">بحث بالإيميل</label><input id="qs" autocomplete="off"><button id="bq">اعرض</button>
-<div id="mq" class="msg"></div><div id="aq"></div></section>
-<section class="card"><h2>التفعيلات</h2><button id="bl">اعرض التفعيلات</button><div id="ml" class="msg"></div><div id="al"></div></section>
-</main><script>
-const $=id=>document.getElementById(id);
-const tok=$("tok");try{tok.value=sessionStorage.getItem("abAdmin")||""}catch(e){}
-tok.addEventListener("input",()=>{try{sessionStorage.setItem("abAdmin",tok.value)}catch(e){}});
-async function call(method,path,body){
-  const r=await fetch(path,{method,headers:{"X-Admin-Token":tok.value,"Content-Type":"application/json"},body:body?JSON.stringify(body):undefined});
-  let d={};try{d=await r.json()}catch(e){}
-  if(!r.ok)throw new Error(typeof d.detail==="string"?d.detail:("خطأ "+r.status));
-  return d;
-}
-function say(id,t,ok){const e=$(id);e.textContent=t;e.className="msg "+(ok?"ok":"bad")}
-function line(parent,a,b){const d=document.createElement("div");d.className="row";const x=document.createElement("span");x.textContent=a;const y=document.createElement("span");y.className="mut";y.textContent=b;d.append(x,y);parent.append(d)}
-const fmt=ms=>ms==null?"مدى الحياة":new Date(ms).toLocaleDateString("ar-EG");
-$("bg").onclick=async()=>{try{const p=$("gp").value;const d=await call("POST","/v1/admin/grants",{email:$("ge").value,plan:p,days:p==="days"?Number($("gd").value):null,note:$("gn").value});say("mg","تم: "+d.email+" — لحد "+fmt(d.endsAt),true)}catch(e){say("mg",e.message,false)}};
-$("br").onclick=async()=>{try{const d=await call("DELETE","/v1/admin/grants/"+encodeURIComponent($("ge").value.trim()));say("mg",d.revoked?"اتلغى التفعيل":"مفيش تفعيل شغال للإيميل ده",d.revoked)}catch(e){say("mg",e.message,false)}};
-$("bp").onclick=async()=>{try{const d=await call("POST","/v1/admin/points",{email:$("pe").value,delta:Number($("pd").value)});say("mp","الرصيد دلوقتي "+d.balance,true)}catch(e){say("mp",e.message,false)}};
-$("bq").onclick=async()=>{try{const d=await call("GET","/v1/admin/accounts?q="+encodeURIComponent($("qs").value));const box=$("aq");box.textContent="";say("mq","إجمالي الحسابات: "+d.total,true);d.accounts.forEach(a=>line(box,a.email+(a.pro?" ★":""),a.balance+" نقطة"))}catch(e){say("mq",e.message,false)}};
-$("bl").onclick=async()=>{try{const d=await call("GET","/v1/admin/grants");const box=$("al");box.textContent="";say("ml",d.grants.length+" تفعيل",true);d.grants.forEach(g=>line(box,g.email,(g.active?"شغال":"منتهي/ملغي")+" — "+fmt(g.endsAt)))}catch(e){say("ml",e.message,false)}};
-</script></body></html>"""
+class GiftAll(BaseModel):
+    delta: int = Field(ge=1, le=50)
+
+
+@router.post("/v1/admin/points/gift-all")
+def admin_gift_all(body: GiftAll, request: Request, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    """A gift to every account. Like every gift it never pushes a balance above the cap."""
+    _require_admin(request, x_admin_token)
+    with _db() as conn:
+        cap = get_rules(conn)["max_balance"]
+        rows = conn.execute(
+            "UPDATE accounts SET balance = LEAST(balance + %s, %s) WHERE balance < %s RETURNING 1",
+            (body.delta, cap, cap),
+        ).fetchall()
+    return {"accountsUpdated": len(rows)}
+
+
+class RulesUpdate(BaseModel):
+    rules: dict[str, int]
+
+
+@router.get("/v1/admin/rules")
+def admin_get_rules(request: Request, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    _require_admin(request, x_admin_token)
+    with _db() as conn:
+        return {"rules": get_rules(conn), "limits": {k: {"default": d, "min": lo, "max": hi} for k, (d, lo, hi) in RULE_LIMITS.items()}}
+
+
+@router.put("/v1/admin/rules")
+def admin_set_rules(body: RulesUpdate, request: Request, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    _require_admin(request, x_admin_token)
+    for key, value in body.rules.items():
+        if key not in RULE_LIMITS:
+            raise HTTPException(status_code=400, detail=f"unknown rule: {key}")
+        _, lo, hi = RULE_LIMITS[key]
+        if not lo <= value <= hi:
+            raise HTTPException(status_code=400, detail=f"{key} must be between {lo} and {hi}")
+    with _db() as conn:
+        for key, value in body.rules.items():
+            conn.execute(
+                "INSERT INTO app_settings (key, value) VALUES (%s, %s) ON CONFLICT (key) DO UPDATE SET value = EXCLUDED.value",
+                (key, value),
+            )
+        return {"rules": get_rules(conn)}
+
+
+@router.get("/v1/admin/dashboard")
+def admin_dashboard(request: Request, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    _require_admin(request, x_admin_token)
+    now = now_ms()
+    with _db() as conn:
+        one = lambda sql, *p: conn.execute(sql, p).fetchone()[0]  # noqa: E731
+        return {
+            "accounts": one("SELECT COUNT(*) FROM accounts"),
+            "newToday": one("SELECT COUNT(*) FROM accounts WHERE created_at >= date_trunc('day', NOW() AT TIME ZONE 'Africa/Cairo') AT TIME ZONE 'Africa/Cairo'"),
+            "new7": one("SELECT COUNT(*) FROM accounts WHERE created_at >= NOW() - INTERVAL '7 days'"),
+            "suspended": one("SELECT COUNT(*) FROM accounts WHERE suspended_at IS NOT NULL"),
+            "proAccounts": one(
+                "SELECT COUNT(*) FROM accounts a WHERE EXISTS (SELECT 1 FROM pro_grants g WHERE g.email = lower(a.email) "
+                "AND g.revoked_at IS NULL AND (g.ends_at IS NULL OR g.ends_at > %s))", now),
+            "grantsActive": one("SELECT COUNT(*) FROM pro_grants WHERE revoked_at IS NULL AND (ends_at IS NULL OR ends_at > %s)", now),
+            "expiring7": one(
+                "SELECT COUNT(*) FROM pro_grants WHERE revoked_at IS NULL AND ends_at IS NOT NULL AND ends_at > %s AND ends_at < %s",
+                now, now + 7 * DAY_MS),
+            "pointsInCirculation": one("SELECT COALESCE(SUM(balance), 0) FROM accounts"),
+            "videosAllTime": one("SELECT COUNT(*) FROM points_ledger WHERE reason = 'ad'"),
+            "videos7": one("SELECT COUNT(*) FROM points_ledger WHERE reason = 'ad' AND created_at >= NOW() - INTERVAL '7 days'"),
+            "pointsSpentAllTime": one("SELECT COALESCE(-SUM(delta), 0) FROM points_ledger WHERE reason = 'spend'"),
+        }
+
+
+@router.get("/v1/admin/health")
+def admin_health(request: Request, x_admin_token: str | None = Header(default=None)) -> dict[str, Any]:
+    _require_admin(request, x_admin_token)
+    with _db() as conn:
+        conn.execute("SELECT 1")
+    return {
+        "database": True,
+        "googleConfigured": bool(google_client_ids()),
+        "googleClientIds": len(google_client_ids()),
+        "adminConfigured": len(admin_token()) >= 16,
+        "serverTime": now_ms(),
+    }
 
 
 @router.get("/admin", response_class=HTMLResponse, include_in_schema=False)
 def admin_page() -> str:
+    from admin_page import ADMIN_PAGE
+
     return ADMIN_PAGE

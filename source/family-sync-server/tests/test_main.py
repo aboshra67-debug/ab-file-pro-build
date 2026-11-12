@@ -15,7 +15,7 @@ pytestmark = pytest.mark.skipif(not os.getenv("DATABASE_URL"), reason="needs Pos
 @pytest.fixture(autouse=True)
 def clean_db():
     with psycopg.connect(os.environ["DATABASE_URL"], autocommit=True) as conn:
-        conn.execute("DROP TABLE IF EXISTS family_chat_messages, family_devices, family_sync_items, family_spaces, points_ledger, account_sessions, accounts, pro_grants CASCADE")
+        conn.execute("DROP TABLE IF EXISTS family_chat_messages, family_devices, family_sync_items, family_spaces, points_ledger, account_sessions, accounts, pro_grants, app_settings CASCADE")
     main._rate_hits.clear()
     with main.db() as conn:
         main.init_schema(conn)

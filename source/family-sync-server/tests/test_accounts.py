@@ -30,7 +30,7 @@ def fresh(monkeypatch):
     with psycopg.connect(os.environ["DATABASE_URL"], autocommit=True) as conn:
         conn.execute(
             "DROP TABLE IF EXISTS family_chat_messages, family_devices, family_sync_items, family_spaces, "
-            "points_ledger, account_sessions, accounts, pro_grants CASCADE"
+            "points_ledger, account_sessions, accounts, pro_grants, app_settings CASCADE"
         )
     main._rate_hits.clear()
     with main.db() as conn:
@@ -166,7 +166,8 @@ def test_a_refused_spend_does_not_burn_its_key():
 def test_spend_amount_is_validated():
     t, _ = login()
     assert client.post("/v1/account/points/spend", json={"key": "spend-zero1", "amount": 0}, headers=h(t)).status_code == 400
-    assert client.post("/v1/account/points/spend", json={"key": "spend-big01", "amount": 21}, headers=h(t)).status_code == 422
+    assert client.post("/v1/account/points/spend", json={"key": "spend-big01", "amount": 21}, headers=h(t)).status_code == 400
+    assert client.post("/v1/account/points/spend", json={"key": "spend-big02", "amount": 101}, headers=h(t)).status_code == 422
     assert client.post("/v1/account/points/spend", json={"key": "bad key!!", "amount": 1}, headers=h(t)).status_code == 422
 
 
@@ -266,7 +267,8 @@ def test_admin_lists_accounts_and_grants_and_adjusts_points():
     login(sub="sub-2", email="sara@example.com", name="Sara")
     admin("POST", "/v1/admin/grants", json={"email": "sara@example.com", "plan": "monthly", "note": "gift"})
     accounts_list = admin("GET", "/v1/admin/accounts", params={"q": "sara"}).json()
-    assert accounts_list["total"] == 2 and [a["email"] for a in accounts_list["accounts"]] == ["sara@example.com"]
+    assert accounts_list["total"] == 1 and [a["email"] for a in accounts_list["accounts"]] == ["sara@example.com"]
+    assert admin("GET", "/v1/admin/accounts").json()["total"] == 2
     assert accounts_list["accounts"][0]["pro"] is True
     grants = admin("GET", "/v1/admin/grants").json()["grants"]
     assert grants[0]["email"] == "sara@example.com" and grants[0]["active"] is True and grants[0]["note"] == "gift"
@@ -279,6 +281,102 @@ def test_admin_lists_accounts_and_grants_and_adjusts_points():
 def test_admin_page_is_served_without_secrets():
     r = client.get("/admin")
     assert r.status_code == 200 and "X-Admin-Token" in r.text and ADMIN not in r.text
+    assert all(word in r.text for word in ("الأرقام", "الحسابات", "التفعيل", "القواعد", "الصحة"))
+
+
+def test_account_filters_pro_free_suspended():
+    login()
+    login(sub="sub-2", email="sara@example.com", name="Sara")
+    admin("POST", "/v1/admin/grants", json={"email": "sara@example.com", "plan": "monthly"})
+    admin("POST", "/v1/admin/accounts/suspend", json={"email": "ali@example.com", "suspended": True})
+    emails = lambda f: [a["email"] for a in admin("GET", "/v1/admin/accounts", params={"filter": f}).json()["accounts"]]
+    assert emails("pro") == ["sara@example.com"]
+    assert emails("free") == ["ali@example.com"]
+    assert emails("suspended") == ["ali@example.com"]
+
+
+def test_suspending_an_account_blocks_it_everywhere_and_can_be_undone():
+    t, _ = login()
+    assert admin("POST", "/v1/admin/accounts/suspend", json={"email": "ali@example.com", "suspended": True}).status_code == 200
+    assert client.get("/v1/account", headers=h(t)).status_code == 401  # sessions were ended
+    assert sign_in().status_code == 403
+    admin("POST", "/v1/admin/accounts/suspend", json={"email": "ali@example.com", "suspended": False})
+    assert sign_in().status_code == 200
+
+
+def test_admin_account_detail_shows_ledger_and_grant():
+    t, _ = login()
+    client.post("/v1/account/points/spend", json={"key": "spend-det01", "amount": 3}, headers=h(t))
+    admin("POST", "/v1/admin/points", json={"email": "ali@example.com", "delta": 7})
+    admin("POST", "/v1/admin/grants", json={"email": "ali@example.com", "plan": "monthly", "note": "vip"})
+    d = admin("GET", "/v1/admin/account", params={"email": "ali@example.com"}).json()
+    assert d["points"]["balance"] == 24 and d["sessions"] == 1 and d["grant"]["note"] == "vip"
+    assert {l["reason"] for l in d["ledger"]} == {"spend", "admin"}
+    assert admin("GET", "/v1/admin/account", params={"email": "nobody@example.com"}).status_code == 404
+
+
+def test_admin_can_delete_an_account():
+    login()
+    assert admin("DELETE", "/v1/admin/account", params={"email": "ali@example.com"}).json() == {"deleted": True}
+    assert admin("DELETE", "/v1/admin/account", params={"email": "ali@example.com"}).json() == {"deleted": False}
+
+
+def test_rules_are_public_editable_and_validated():
+    assert client.get("/v1/rules").json()["rules"]["ad_reward"] == 5
+    assert admin("PUT", "/v1/admin/rules", json={"rules": {"ad_reward": 8, "max_ads_per_day": 5}}).status_code == 200
+    assert client.get("/v1/rules").json()["rules"]["ad_reward"] == 8
+    assert admin("PUT", "/v1/admin/rules", json={"rules": {"ad_reward": 9999}}).status_code == 400
+    assert admin("PUT", "/v1/admin/rules", json={"rules": {"nonsense": 1}}).status_code == 400
+    assert client.put("/v1/admin/rules", json={"rules": {"ad_reward": 1}}).status_code == 401
+
+
+def test_changed_rules_apply_to_new_accounts_videos_and_the_daily_gift():
+    admin("PUT", "/v1/admin/rules", json={"rules": {"start_balance": 50, "ad_reward": 10, "max_ads_per_day": 1, "daily_bonus": 4}})
+    t, body = login()
+    assert body["account"]["points"]["balance"] == 50 and body["account"]["rules"]["ad_reward"] == 10
+    first = client.post("/v1/account/points/earn-ad", json={"key": "video-rule1"}, headers=h(t)).json()
+    assert first["balance"] == 60 and first["adsLeftToday"] == 0
+    assert client.post("/v1/account/points/earn-ad", json={"key": "video-rule2"}, headers=h(t)).json()["applied"] is False
+    set_days_back("ali@example.com", {"last_bonus_day": accounts.today() - 1})
+    assert client.post("/v1/account/points/daily-bonus", headers=h(t)).json()["balance"] == 64
+
+
+def test_gift_to_everyone_respects_the_cap():
+    login()
+    login(sub="sub-2", email="sara@example.com", name="Sara")
+    set_days_back("sara@example.com", {"balance": 98})
+    assert admin("POST", "/v1/admin/points/gift-all", json={"delta": 5}).json()["accountsUpdated"] == 2
+    got = {a["email"]: a["balance"] for a in admin("GET", "/v1/admin/accounts").json()["accounts"]}
+    assert got == {"ali@example.com": 25, "sara@example.com": 100}
+
+
+def test_dashboard_counts():
+    t, _ = login()
+    login(sub="sub-2", email="sara@example.com", name="Sara")
+    admin("POST", "/v1/admin/grants", json={"email": "sara@example.com", "plan": "days", "days": 3})
+    admin("POST", "/v1/admin/grants", json={"email": "ghost@example.com", "plan": "lifetime"})  # no account yet
+    client.post("/v1/account/points/earn-ad", json={"key": "video-dash1"}, headers=h(t))
+    client.post("/v1/account/points/spend", json={"key": "spend-dash1", "amount": 4}, headers=h(t))
+    d = admin("GET", "/v1/admin/dashboard").json()
+    assert d["accounts"] == 2 and d["newToday"] == 2 and d["proAccounts"] == 1
+    assert d["grantsActive"] == 2 and d["expiring7"] == 1
+    assert d["videosAllTime"] == 1 and d["pointsSpentAllTime"] == 4 and d["pointsInCirculation"] == 20 + 5 - 4 + 20
+
+
+def test_grants_filters_and_search():
+    admin("POST", "/v1/admin/grants", json={"email": "a@example.com", "plan": "days", "days": 2})
+    admin("POST", "/v1/admin/grants", json={"email": "b@example.com", "plan": "lifetime"})
+    admin("DELETE", "/v1/admin/grants/b@example.com")
+    names = lambda **p: [g["email"] for g in admin("GET", "/v1/admin/grants", params=p).json()["grants"]]
+    assert names(status="active") == ["a@example.com"] and names(status="ended") == ["b@example.com"]
+    assert names(status="expiring") == ["a@example.com"] and names(q="b@") == ["b@example.com"]
+
+
+def test_health_reports_what_is_configured(monkeypatch):
+    d = admin("GET", "/v1/admin/health").json()
+    assert d["database"] is True and d["googleConfigured"] is True and d["adminConfigured"] is True
+    monkeypatch.delenv("GOOGLE_CLIENT_IDS")
+    assert admin("GET", "/v1/admin/health").json()["googleConfigured"] is False
 
 
 # ------------------------------------------------------------------ deleting ----------
