@@ -16,6 +16,8 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel, Field
 from psycopg.types.json import Jsonb
 
+import accounts
+
 DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
 SUPPORT_EMAIL = os.getenv("AB_FILE_PRO_SUPPORT_EMAIL", "").strip()
 
@@ -46,7 +48,7 @@ PAIRING_MINUTES_REOPEN = 10
 SECRET_ALPHABET = "23456789ABCDEFGHJKMNPQRSTVWXYZ"  # no 0/1/I/L/O/U look-alikes
 SECRET_LENGTH = 10
 
-app = FastAPI(title="AB File Pro Family Sync", version="4.0.0")
+app = FastAPI(title="AB File Pro Family Sync", version="4.1.0")
 
 _rate_lock = Lock()
 _rate_hits: dict[str, deque[float]] = defaultdict(deque)
@@ -353,6 +355,11 @@ def init_schema(conn) -> None:
         "CREATE INDEX IF NOT EXISTS family_chat_messages_family_created_idx "
         "ON family_chat_messages (family_code, created_at DESC)"
     )
+    accounts.init_schema(conn)
+
+
+accounts.bind(db=db, check_rate=check_rate, client_key=client_key)
+app.include_router(accounts.router)
 
 
 @app.on_event("startup")
@@ -655,7 +662,7 @@ the whole family space is deleted.</p>
 </body></html>"""
 
 
-PRIVACY_UPDATED = "2026-11-07"
+PRIVACY_UPDATED = "2026-11-12"
 
 
 @app.get("/privacy", response_class=HTMLResponse)
@@ -686,13 +693,19 @@ you compare (Amazon Egypt, Noon, Jumia).</li>
 models may be downloaded from Google.</li>
 </ul>
 <p>We do not use analytics or tracking of our own, and we do not sell or rent any data.</p>
+<h2>Your account (sign-in with Google)</h2>
+<p>You sign in with your Google account. We receive and store your Google account identifier, email address and name,
+your points balance, and whether you have Pro (including Pro we grant you by email). We use them only to keep your
+points and Pro on every device you sign in on. We do not read your Gmail, contacts or Google Drive, and your files and
+scans are not uploaded. Sessions are stored as hashed tokens. You can delete your account in the app (Settings), which
+removes your account, sessions and points records from our service.</p>
 <h2>Ads (Google Play version only)</h2>
-<p>The Google Play version shows one banner ad on the home screen and offers optional rewarded videos that give you
-points for the free plan. Ads come from Google AdMob. To show ads, Google and its partners may use your advertising ID,
+<p>The Google Play version offers optional rewarded videos that give you points for the free plan; it shows no banner
+ads. Ads come from Google AdMob. To show ads, Google and its partners may use your advertising ID,
 IP address and basic device and usage information; where the law requires it, the app first shows Google's consent form
 and you can change your choice later in the Pro screen. Ads are never shown inside your documents, scans, money, health
 or family screens. Buying Pro or "remove ads" turns ads and points off. The direct APK version contains no ads. Your
-points balance is stored on your phone only.</p>
+points balance is stored in your account on our service.</p>
 <h2>Permissions</h2>
 <p>Camera (scanning, QR, smart camera), microphone (voice recordings and meeting notes), location (prayer times),
 notifications (reminders), all-files access (the file manager), alarms (reminders on time) and a foreground service
@@ -715,11 +728,15 @@ leaves, the whole family space is deleted. See also <a href="/delete-account">/d
 طلبات العائلة وقائمة التسوق ورسائل الشات اللي بتشاركها، والأسماء اللي بتكتبها، والأدوية والمواعيد الصحية لو فعّلت
 مشاركة الصحة بنفسك، ومعرّف عشوائي للجهاز. أسعار العملات والذهب بتتنزل من مصادر عامة من غير أي بيانات شخصية، وكلمات
 البحث في مقارنة الأسعار بتتبعت لصفحات البحث في المتاجر.</p>
-<p>مفيش تحليلات أو تتبع من عندنا، ولا بيع لأي بيانات. نسخة Google Play فيها بانر إعلاني واحد في الشاشة الرئيسية
-وفيديوهات اختيارية بتدّيك نقاط في الباقة المجانية، والإعلانات من Google AdMob اللي ممكن تستخدم معرّف الإعلانات والـ IP
+<p><b>حسابك:</b> بتدخل بحساب Google، وبنستلم ونخزن معرّف الحساب والإيميل والاسم ورصيد النقاط وهل عندك Pro (ومنها
+Pro بنفعّله لك بالإيميل)، وبنستخدمها بس علشان النقاط وPro يفضلوا معاك على أي جهاز. مبنقراش Gmail ولا جهات الاتصال ولا
+Google Drive، وملفاتك ومسحاتك مش بتترفع. تقدر تحذف حسابك من الإعدادات في التطبيق، فيتشال الحساب والجلسات وسجل النقاط
+من خدمتنا.</p>
+<p>مفيش تحليلات أو تتبع من عندنا، ولا بيع لأي بيانات. نسخة Google Play مفيهاش بانرات إعلانية، وفيها
+فيديوهات اختيارية بتدّيك نقاط في الباقة المجانية، والإعلانات من Google AdMob اللي ممكن تستخدم معرّف الإعلانات والـ IP
 وبيانات الجهاز، وبنعرض نموذج موافقة Google لما القانون يطلب ده وتقدر تغيّر اختيارك من شاشة Pro. مفيش إعلانات داخل
 المستندات أو المسح أو المال أو الصحة أو العائلة. شراء Pro أو «إزالة الإعلانات» بيقفل الإعلانات والنقاط، ونسخة الـ APK
-المباشرة من غير إعلانات. رصيد النقاط محفوظ على هاتفك بس. لحذف بيانات العائلة: المساعد الشخصي ← طلبات العائلة ←
+المباشرة من غير إعلانات. رصيد النقاط محفوظ في حسابك على خدمتنا. لحذف بيانات العائلة: المساعد الشخصي ← طلبات العائلة ←
 الإعدادات ← <b>مغادرة العائلة وحذف بياناتي</b>.</p>
 </div>
 </body></html>"""

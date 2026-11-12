@@ -1,8 +1,8 @@
-name: P36 Safe Maintenance, R8 QA and APK
+name: P37 Safe Maintenance, R8 QA and APK
 on:
   workflow_dispatch:
   push:
-    paths: ["app/**", "tools/**", "family-sync-server/**", "*.kts", "gradle.properties", "VERSION", ".github/workflows/p36-standalone.yml"]
+    paths: ["app/**", "tools/**", "family-sync-server/**", "*.kts", "gradle.properties", "VERSION", ".github/workflows/p37-standalone.yml"]
 permissions:
   contents: read
   actions: read
@@ -37,7 +37,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: P36_SERVER_RESULTS
+          name: P37_SERVER_RESULTS
           path: family-sync-server/server-results.xml
           if-no-files-found: warn
   compat:
@@ -94,7 +94,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: P36_COMPAT_API_${{ matrix.api }}
+          name: P37_COMPAT_API_${{ matrix.api }}
           path: |
             compat-${{ matrix.api }}/
             project/app/build/outputs/androidTest-results/
@@ -162,9 +162,9 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: P36_EVIDENCE
+          name: P37_EVIDENCE
           path: |
-            p36-evidence/
+            p37-evidence/
             runtime-evidence/
             project/app/build/outputs/androidTest-results/
             project/app/build/reports/androidTests/
@@ -172,12 +172,12 @@ jobs:
             project/app/build/outputs/mapping/
           if-no-files-found: warn
           retention-days: 14
-      - name: Upload verified P36 outputs
+      - name: Upload verified P37 outputs
         if: ${{ success() }}
         uses: actions/upload-artifact@v4
         with:
-          name: AB98_P36_OUTPUTS
-          path: p36-release/*
+          name: AB98_P37_OUTPUTS
+          path: p37-release/*
           if-no-files-found: ignore
           retention-days: 14
           compression-level: 0

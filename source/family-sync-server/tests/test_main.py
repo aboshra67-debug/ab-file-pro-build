@@ -15,7 +15,7 @@ pytestmark = pytest.mark.skipif(not os.getenv("DATABASE_URL"), reason="needs Pos
 @pytest.fixture(autouse=True)
 def clean_db():
     with psycopg.connect(os.environ["DATABASE_URL"], autocommit=True) as conn:
-        conn.execute("DROP TABLE IF EXISTS family_chat_messages, family_devices, family_sync_items, family_spaces CASCADE")
+        conn.execute("DROP TABLE IF EXISTS family_chat_messages, family_devices, family_sync_items, family_spaces, points_ledger, account_sessions, accounts, pro_grants CASCADE")
     main._rate_hits.clear()
     with main.db() as conn:
         main.init_schema(conn)
@@ -194,5 +194,8 @@ def test_privacy_policy_is_public_and_bilingual():
 
 def test_privacy_policy_discloses_ads_and_points():
     r = client.get("/privacy")
-    assert "Google AdMob" in r.text and "rewarded videos" in r.text and "points balance is stored on your phone only" in r.text
+    assert "Google AdMob" in r.text and "rewarded videos" in r.text and "points balance is stored in your account" in r.text
     assert "We do not show ads" not in r.text and "مفيش إعلانات، ولا" not in r.text
+    # P37: the policy now describes accounts and no longer promises phone-only points or a home banner.
+    assert "sign in with your google account" in r.text.lower() and "delete your account" in r.text.lower()
+    assert "points balance is stored on your phone only" not in r.text and "shows no banner" in r.text
